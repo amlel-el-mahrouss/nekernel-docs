@@ -1,0 +1,25 @@
+var dir_e082f0486162587090e79add868f11c4 =
+[
+    [ "MBCI", "dir_c02736a3bdce7ce915ec3e9ec0128ced.html", "dir_c02736a3bdce7ce915ec3e9ec0128ced" ],
+    [ "PCI", "dir_88a8c307922e29e252fcb6bf1a3c1bbf.html", "dir_88a8c307922e29e252fcb6bf1a3c1bbf" ],
+    [ "Storage", "dir_22bcf223af543e7ea50dd45bb7051466.html", "dir_22bcf223af543e7ea50dd45bb7051466" ],
+    [ "CPUID.h", "_c_p_u_i_d_8h.html", "_c_p_u_i_d_8h" ],
+    [ "HalACPIFactoryInterface.cc", "_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc.html", "_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc" ],
+    [ "HalAPICController.cc", "_hal_a_p_i_c_controller_8cc.html", "_hal_a_p_i_c_controller_8cc" ],
+    [ "HalApplicationProcessor.cc", "_a_m_d64_2_hal_application_processor_8cc.html", "_a_m_d64_2_hal_application_processor_8cc" ],
+    [ "HalCoreInterruptHandlerAMD64.cc", "_hal_core_interrupt_handler_a_m_d64_8cc.html", "_hal_core_interrupt_handler_a_m_d64_8cc" ],
+    [ "HalCoreSystemCalls.cc", "_hal_core_system_calls_8cc.html", null ],
+    [ "HalDebugOutput.cc", "_a_m_d64_2_hal_debug_output_8cc.html", "_a_m_d64_2_hal_debug_output_8cc" ],
+    [ "HalDebugPort.cc", "_hal_debug_port_8cc.html", "_hal_debug_port_8cc" ],
+    [ "HalDescriptorLoader.cc", "_hal_descriptor_loader_8cc.html", "_hal_descriptor_loader_8cc" ],
+    [ "HalKernelMain.cc", "_a_m_d64_2_hal_kernel_main_8cc.html", "_a_m_d64_2_hal_kernel_main_8cc" ],
+    [ "HalKernelPanic.cc", "_a_m_d64_2_hal_kernel_panic_8cc.html", "_a_m_d64_2_hal_kernel_panic_8cc" ],
+    [ "HalPagingMgrAMD64.cc", "_hal_paging_mgr_a_m_d64_8cc.html", "_hal_paging_mgr_a_m_d64_8cc" ],
+    [ "HalProcessorAMD64.cc", "_hal_processor_a_m_d64_8cc.html", "_hal_processor_a_m_d64_8cc" ],
+    [ "HalSchedulerCorePrimitivesAMD64.cc", "_hal_scheduler_core_primitives_a_m_d64_8cc.html", "_hal_scheduler_core_primitives_a_m_d64_8cc" ],
+    [ "HalSystemCallInstall.cc", "_hal_system_call_install_8cc.html", null ],
+    [ "HalTimerAMD64.cc", "_hal_timer_a_m_d64_8cc.html", "_hal_timer_a_m_d64_8cc" ],
+    [ "Hypervisor.h", "_hypervisor_8h.html", "_hypervisor_8h" ],
+    [ "Paging.h", "_a_m_d64_2_paging_8h.html", "_a_m_d64_2_paging_8h" ],
+    [ "Processor.h", "_a_m_d64_2_processor_8h.html", "_a_m_d64_2_processor_8h" ]
+];

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['gib_0',['GIB',['../kernel_2_new_kit_2_macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95',1,'Macros.h']]],
+  ['gib_5fcast_1',['gib_cast',['../kernel_2_new_kit_2_macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b',1,'Macros.h']]],
+  ['gicc_5fbase_2',['GICC_BASE',['../_a_r_m64_2_hal_application_processor_8cc.html#a971c4b3a9504879ce74b96226288f742',1,'HalApplicationProcessor.cc']]],
+  ['gicc_5fctlr_3',['GICC_CTLR',['../_a_r_m64_2_hal_application_processor_8cc.html#a11871e15a62cbfcc1e54f3dd2ce21e74',1,'HalApplicationProcessor.cc']]],
+  ['gicc_5feoir_4',['GICC_EOIR',['../_a_r_m64_2_hal_application_processor_8cc.html#af92519fe60b0cf2183a6100bea15dd43',1,'HalApplicationProcessor.cc']]],
+  ['gicc_5fiar_5',['GICC_IAR',['../_a_r_m64_2_hal_application_processor_8cc.html#a61672c3cde5301e076793c2ad904cdb9',1,'HalApplicationProcessor.cc']]],
+  ['gicc_5fpmr_6',['GICC_PMR',['../_a_r_m64_2_hal_application_processor_8cc.html#a8d72b8216b091c1d148b5812bc46e7d4',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5fbase_7',['GICD_BASE',['../_a_r_m64_2_hal_application_processor_8cc.html#a60145b8750e840c58949fbc9483f2fc5',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5fctlr_8',['GICD_CTLR',['../_a_r_m64_2_hal_application_processor_8cc.html#a00f17ebce4b31e38e18375340fdf3826',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5ficenabler_9',['GICD_ICENABLER',['../_a_r_m64_2_hal_application_processor_8cc.html#a93b67ba2b0e625f47ef7371672c4a763',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5ficfgr_10',['GICD_ICFGR',['../_a_r_m64_2_hal_application_processor_8cc.html#a19a431597ba16fd0c9522a9220ecec4c',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5ficpendr_11',['GICD_ICPENDR',['../_a_r_m64_2_hal_application_processor_8cc.html#a249bdc6117c2852af6101081463ac0f8',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5fipriorityr_12',['GICD_IPRIORITYR',['../_a_r_m64_2_hal_application_processor_8cc.html#a54223891ce5bf421ec198ea84855490a',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5fisenabler_13',['GICD_ISENABLER',['../_a_r_m64_2_hal_application_processor_8cc.html#ad6013481a4c73be9ba10c48b63c0b4b3',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5fispendr_14',['GICD_ISPENDR',['../_a_r_m64_2_hal_application_processor_8cc.html#adcfba29d834be7844951c0db7a9706c8',1,'HalApplicationProcessor.cc']]],
+  ['gicd_5fitargetsr_15',['GICD_ITARGETSR',['../_a_r_m64_2_hal_application_processor_8cc.html#a9128764019e69b9d5ec839ecd583dd87',1,'HalApplicationProcessor.cc']]]
+];
