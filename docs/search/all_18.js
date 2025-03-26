@@ -118,7 +118,7 @@ var searchData=
   ['source_115',['Source',['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#abc4e2dd247bedcab334da43a721bcca5',1,'NeOS::HAL::SDT_OBJECT']]],
   ['sp_116',['SP',['../struct_ne_o_s_1_1_h_a_l_1_1_stack_frame.html#a9754ee5082930d0334731bc34defe02f',1,'NeOS::HAL::StackFrame']]],
   ['spawn_117',['Spawn',['../class_ne_o_s_1_1_user_process_scheduler.html#a9b488509925e14a04180a4728d2becf3',1,'NeOS::UserProcessScheduler']]],
-  ['specification_5fkernel_118',['@page md_docs_2md_2_s_p_e_c_i_f_i_c_a_t_i_o_n___k_e_r_n_e_l SPECIFICATION_KERNEL',['..//Volumes/Dev/src/nekernel/docs/md/SPECIFICATION_KERNEL.md#autotoc_md8',1,'']]],
+  ['specification_5fkernel_118',['@page md_docs_2md_2_s_p_e_c_i_f_i_c_a_t_i_o_n___k_e_r_n_e_l SPECIFICATION_KERNEL',['..//Volumes/Dev/src/nekernel/docs/md/SPECIFICATION_KERNEL.md#autotoc_md3',1,'']]],
   ['specification_5fkernel_2emd_119',['SPECIFICATION_KERNEL.md',['../_s_p_e_c_i_f_i_c_a_t_i_o_n___k_e_r_n_e_l_8md.html',1,'']]],
   ['ssize_120',['SSize',['../namespace_ne_o_s.html#a52038a4ce07477f115d623f724bb6d95',1,'NeOS']]],
   ['ssizet_121',['SSizeT',['../namespace_ne_o_s.html#a85f5efd364b22cf454f28a3238a584aa',1,'NeOS']]],

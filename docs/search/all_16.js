@@ -9,5 +9,5 @@ var searchData=
   ['querymode_6',['querymode',['../struct_efi_simple_text_output_protocol.html#ae0dfc6782629801c9823434ffb725f7e',1,'EfiSimpleTextOutputProtocol::QueryMode'],['../struct_efi_graphics_output_protocol.html#ab32db1dc9f05d723a77df21841f2a1a5',1,'EfiGraphicsOutputProtocol::QueryMode']]],
   ['queryvariableinfo_7',['QueryVariableInfo',['../struct_efi_runtime_services.html#ab44cab3549da14c1260fb2b91b98a700',1,'EfiRuntimeServices']]],
   ['question_8',['question',['../namespacepfd.html#a96ff6709abe317ae8eff98d92bc8db85a5494af1f14a8c19939968c3e9e2d4f79',1,'pfd']]],
-  ['quick_20install_3a_9',['Quick Install:',['../index.html#autotoc_md26',1,'']]]
+  ['quick_20install_3a_9',['Quick Install:',['../index.html#autotoc_md21',1,'']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['g_0',['g',['../struct_c_f_1_1_c_f_color.html#add95544825e9ba2c0414bbdb78bb4351',1,'CF::CFColor']]],
-  ['general_20information_1',['0: General Information',['..//Volumes/Dev/src/nekernel/docs/md/SPECIFICATION_KERNEL.md#autotoc_md9',1,'']]],
+  ['general_20information_1',['0: General Information',['..//Volumes/Dev/src/nekernel/docs/md/SPECIFICATION_KERNEL.md#autotoc_md4',1,'']]],
   ['generator_2',['generator',['../namespaceqr.html#abe85340a4c802d0e304cf1dd6803f1cb',1,'qr']]],
   ['genericsystemperipheral_3',['GenericSystemPeripheral',['../namespace_ne_o_s_1_1_types.html#a7c500ed816c71765b9fae414b3b03d37a9814ee757f194b07466929e7077a229f',1,'NeOS::Types']]],
   ['get_4',['get',['../class_ne_o_s_1_1_n_e___d_y_l_i_b___o_b_j_e_c_t.html#aa18576428666604d325b9700d88c49f2',1,'NeOS::NE_DYLIB_OBJECT::Get()'],['../class_ne_o_s_1_1_i_dylib_object.html#a639abaf5c2f80638c69454462fdd7bb1',1,'NeOS::IDylibObject::Get()'],['../class_ne_o_s_1_1_d_m_a_wrapper.html#af5a4df9963da5f5591c6f59bf529e690',1,'NeOS::DMAWrapper::Get()']]],

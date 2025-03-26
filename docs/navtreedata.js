@@ -25,21 +25,12 @@
 var NAVTREE =
 [
   [ "NeKernel", "index.html", [
-    [ "NeKernel", "index.html#autotoc_md23", [
-      [ "Requirements:", "index.html#autotoc_md24", null ],
-      [ "Notice for Contributors:", "index.html#autotoc_md25", null ],
-      [ "Quick Install:", "index.html#autotoc_md26", null ]
+    [ "NeKernel", "index.html#autotoc_md18", [
+      [ "Requirements:", "index.html#autotoc_md19", null ],
+      [ "Notice for Contributors:", "index.html#autotoc_md20", null ],
+      [ "Quick Install:", "index.html#autotoc_md21", null ]
     ] ],
-    [ "AMD64 Hardware Abstraction Layer", "md_dev_2kernel_2_h_a_l_kit_2_a_m_d64_2_read_me.html", [
-      [ "Brief", "md_dev_2kernel_2_h_a_l_kit_2_a_m_d64_2_read_me.html#autotoc_md2", null ]
-    ] ],
-    [ "ARM64 Hardware Abstraction Layer", "md_dev_2kernel_2_h_a_l_kit_2_a_r_m64_2_read_me.html", null ],
-    [ "ReadMe", "md_dev_2kernel_2_h_a_l_kit_2_p_o_w_e_r_2_read_me.html", null ],
-    [ "ReadMe", "md_dev_2kernel_2_h_a_l_kit_2_r_i_s_c_v_2_read_me.html", null ],
-    [ "Kernel Modules", "md_dev_2modules_2_read_me.html", [
-      [ "Brief", "md_dev_2modules_2_read_me.html#autotoc_md6", null ],
-      [ "To-Do", "md_dev_2modules_2_read_me.html#autotoc_md7", null ]
-    ] ],
+    [ "/props/kern_ver", "md_dev_2boot_2src_2docs_2_k_e_r_n___v_e_r.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -90,25 +81,25 @@ var NAVTREEINDEX =
 "_ne_f_s_8h.html#aeea0cfeb0756651743a012aa2374b45f",
 "_s_c_i_kit_2_macros_8h_source.html",
 "_utils_8cc.html#a50f9bfc141f1757e607f12ab1474b801",
-"class_c_f_1_1_c_f___o_b_j_e_c_t.html#af9b81e7001361da768106be3b7f18e0d",
-"class_ne_o_s_1_1_config_header.html#adeb619424ffe65b2732a35833e180e71",
-"class_ne_o_s_1_1_i_codec.html#ad6c29b4e0903399bf0f2b5301491c563",
-"class_ne_o_s_1_1_lock_delegate.html#ae7e506d79810ff559ae0357dcebf91dd",
-"class_ne_o_s_1_1_network_device.html#ae33e55cf040d0d8ae2a14d50ffbf12ca",
-"class_ne_o_s_1_1_pmm.html#a0c88b912c3fb6546bfd5eae7f4c07bd6",
-"class_ne_o_s_1_1_user.html#ad8943167abb5b47513c1484b17fbfaa8",
-"classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fca568b2ec66ef45be030a47ddc19bc7bba",
-"functions_vars_l.html",
-"kernel_2_storage_kit_2_n_v_m_e_8h_source.html",
-"namespace_ne_o_s.html#a1bc76b75e1c404734726162434b3bb05",
-"namespace_ne_o_s.html#adceb6f36a9d805fe9a5ba09b502a926f",
-"namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997ab66abfe0e0c2ef7c545895c12a0a8837",
-"struct_efi_boot_services.html#a6d74e7f98527d80fd22439ac63d82d7c",
-"struct_fis_pio_setup.html#afb68ed0ba7dd3d4b0359983a92e38eb2",
-"struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#a33d3e8dd5fa1bcdfdaadcde1cd11d4b3",
-"struct_ne_o_s_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a2c80d71c36331df3cf8dca9533261da0",
-"struct_ne_o_s_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html#afbe372ce2428ecebf66f25fc88d13569",
-"struct_ne_o_s_1_1_page_mgr.html#a871c6d062639d59ef30b164ad8f625b5"
+"class_c_f_1_1_c_f___o_b_j_e_c_t.html#af022c413a89a83f0c6519e1241a004d4",
+"class_ne_o_s_1_1_config_header.html#a7683f5e92008a75e3633a05938a79223",
+"class_ne_o_s_1_1_i_codec.html#ac7bb57662e2341ad380ecabec3623427",
+"class_ne_o_s_1_1_lock_delegate.html#ac0367c07acae45a1d657b9f72af88f52",
+"class_ne_o_s_1_1_network_device.html#ae03efbff90c7c56411596f778a2ac919",
+"class_ne_o_s_1_1_pmm.html",
+"class_ne_o_s_1_1_user.html#ad48b5112b94ae2613fe15eb087a53b6a",
+"classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fca4fd9423739ee4c950107a4eef324c559",
+"functions_vars_h.html",
+"kernel_2_storage_kit_2_a_t_a_8h.html",
+"namespace_ne_o_s.html#a236304cb87cbc960fe005a3d510fb453",
+"namespace_ne_o_s.html#adebea452f4bd584cfdff4b4fc24ce59c",
+"namespacepfd.html#a70b4c2a87aca3443a4de387bedae49e8a5c5cb337bb234e240912dc139048038c",
+"struct_efi_boot_services.html#a76ec3a7b8c8832df17dd7d90fbf56062",
+"struct_fis_reg_d2_h.html#a4e4cb3a17a614e955466c899456b220e",
+"struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#a5c3205b52372a36837f73c98fd7b2613",
+"struct_ne_o_s_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a3e9260e979f4d5385cc5aeb82a7352bc",
+"struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header.html#a11c823a57a3da65922d83062da6cb4d4",
+"struct_ne_o_s_1_1_page_mgr.html#ace5d63e973e375b1d1079d0972933071"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
