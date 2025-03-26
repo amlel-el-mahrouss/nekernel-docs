@@ -3,7 +3,7 @@ var dir_47db305ca16612c6e2a66f0f32acfc5a =
     [ "FS", "dir_5ffaf00f1c686c3a186565e973a0cf60.html", "dir_5ffaf00f1c686c3a186565e973a0cf60" ],
     [ "Network", "dir_8efdc78b8aa272a4d2f6e32d387f786a.html", "dir_8efdc78b8aa272a4d2f6e32d387f786a" ],
     [ "Storage", "dir_bbb963131ccbd661a2d90adeae36d6a1.html", "dir_bbb963131ccbd661a2d90adeae36d6a1" ],
-    [ "System", "dir_e632909843da4c92b5cf8f34561ac263.html", "dir_e632909843da4c92b5cf8f34561ac263" ],
+    [ "Swap", "dir_f6991297fcd964d2f277284ebe1cc398.html", "dir_f6991297fcd964d2f277284ebe1cc398" ],
     [ "ACPIFactoryInterface.cc", "_a_c_p_i_factory_interface_8cc.html", null ],
     [ "Array.cc", "_array_8cc.html", null ],
     [ "ArrayList.cc", "_array_list_8cc.html", null ],

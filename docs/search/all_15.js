@@ -121,7 +121,7 @@ var searchData=
   ['processor_5fas_5fbsp_5fbit_118',['PROCESSOR_AS_BSP_BIT',['../_e_f_i_2_e_f_i_8h.html#aa4ad311602617250aebc4349c3ed4095',1,'EFI.h']]],
   ['processor_5fenabled_5fbit_119',['PROCESSOR_ENABLED_BIT',['../_e_f_i_2_e_f_i_8h.html#af71580b95c200041d3b9141572538880',1,'EFI.h']]],
   ['processor_5fhealth_5fstatus_5fbit_120',['PROCESSOR_HEALTH_STATUS_BIT',['../_e_f_i_2_e_f_i_8h.html#a45a9812a74077655a0925b86efd68a66',1,'EFI.h']]],
-  ['processorid_121',['processorid',['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a82d18083c3d5db89faa94d3c184a580b',1,'NeOS::HAL::SDT_OBJECT::ProcessorID'],['../struct___efi_processor_information.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId']]],
+  ['processorid_121',['processorid',['../struct___efi_processor_information.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId'],['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a82d18083c3d5db89faa94d3c184a580b',1,'NeOS::HAL::SDT_OBJECT::ProcessorID']]],
   ['processparentteam_122',['ProcessParentTeam',['../class_ne_o_s_1_1_user_process.html#affa20f78814ed5c3cd861bdc86d6c224',1,'NeOS::UserProcess']]],
   ['processsignal_123',['ProcessSignal',['../class_ne_o_s_1_1_user_process.html#a47c42bad6c11f950269545dc89249bd9',1,'NeOS::UserProcess']]],
   ['processstatuskind_124',['ProcessStatusKind',['../namespace_ne_o_s.html#aaef3134e82ab6c89ea36d797ef47e3dd',1,'NeOS']]],

@@ -12,7 +12,7 @@ var searchData=
   ['select_5ffolder_9',['select_folder',['../classpfd_1_1select__folder.html#ac6611de7b07e4366ffd2442d22ae1924',1,'pfd::select_folder']]],
   ['select_5fmask_10',['select_mask',['../structqr_1_1_qr.html#a4878e135fef31830fef72568a1038aae',1,'qr::Qr']]],
   ['select_5fmode_11',['select_mode',['../namespaceqr.html#ac8796c4a6ee46d2f7b4b6c3ca51105a2',1,'qr']]],
-  ['separator_12',['separator',['../classpfd_1_1path.html#a73bb289af48853c52fb1569c2d00a40c',1,'pfd::path::separator()'],['../class_ne_o_s_1_1_ne_file_system_helper.html#a74c948098f557f0c3b8c531de77b8c17',1,'NeOS::NeFileSystemHelper::Separator()']]],
+  ['separator_12',['separator',['../class_ne_o_s_1_1_ne_file_system_helper.html#a74c948098f557f0c3b8c531de77b8c17',1,'NeOS::NeFileSystemHelper::Separator()'],['../classpfd_1_1path.html#a73bb289af48853c52fb1569c2d00a40c',1,'pfd::path::separator()']]],
   ['set_5farr_5fbit_13',['set_arr_bit',['../structqr_1_1_qr.html#ac2ceff32be91db4c79ba8e9a2ff6a964',1,'qr::Qr::set_arr_bit()'],['../namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331',1,'utl::set_arr_bit(T *p, unsigned n)']]],
   ['set_5fbit_14',['set_bit',['../namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1',1,'utl']]],
   ['setindex_15',['SetIndex',['../class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4.html#a2d03aede4fe37b76651022c786d999c4',1,'NeOS::NE_DEVICE&lt; MountpointInterface * &gt;']]],
@@ -44,6 +44,6 @@ var searchData=
   ['stringncompare_41',['StringNCompare',['../_support_8h.html#a8a6caba321e9917baf0d18313a897cb9',1,'Support.h']]],
   ['stringtolong_42',['StringToLong',['../_support_8h.html#af25309cafd06a4e5d3dcefba4e156acd',1,'Support.h']]],
   ['subclass_43',['Subclass',['../class_ne_o_s_1_1_p_c_i_1_1_device.html#a8654753d7969b5c0a265d6e2ff2ea1ab',1,'NeOS::PCI::Device']]],
-  ['swapdisk_44',['SwapDisk',['../class_ne_o_s_1_1_swap_disk.html#a2651f775e89fa4a728b5e376989acc9b',1,'NeOS::SwapDisk']]],
+  ['swapdiskinterface_44',['SwapDiskInterface',['../class_ne_o_s_1_1_swap_disk_interface.html#a204a3fd7cdd0794e04567d278d56e990',1,'NeOS::SwapDiskInterface']]],
   ['switch_45',['switch',['../class_ne_o_s_1_1_user_process_helper.html#add59d33f294addf36762cb063f12f20e',1,'NeOS::UserProcessHelper::Switch()'],['../class_ne_o_s_1_1_hardware_thread.html#a5c26d9451441203ce50889c8deb97a6e',1,'NeOS::HardwareThread::Switch()']]]
 ];

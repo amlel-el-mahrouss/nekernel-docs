@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lapic_0',['lapic',['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a40d14de9c1a630b64f15a975d64a10d7',1,'NeOS::HAL::SDT_OBJECT::LApic'],['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a4237d3b5840c646925a4580033cd05db',1,'NeOS::HAL::SDT_OBJECT::LAPIC']]],
+  ['lapic_0',['lapic',['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a4237d3b5840c646925a4580033cd05db',1,'NeOS::HAL::SDT_OBJECT::LAPIC'],['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a40d14de9c1a630b64f15a975d64a10d7',1,'NeOS::HAL::SDT_OBJECT::LApic']]],
   ['lapicnmi_1',['LApicNMI',['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a6c4e3bb02fdcd67d6040b4aaca51e0ba',1,'NeOS::HAL::SDT_OBJECT']]],
   ['lapicoverride_2',['LApicOverride',['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a1b1bc4892bfc85f61136a69deb5f8237',1,'NeOS::HAL::SDT_OBJECT']]],
   ['lastaccesstime_3',['LastAccessTime',['../struct_e_f_i___f_i_n_a_l.html#af65d18f13ef0821578cff0cf6b4ed8f0',1,'EFI_FINAL']]],

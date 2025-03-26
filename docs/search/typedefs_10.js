@@ -4,7 +4,7 @@ var searchData=
   ['scsi_5fpacket_5ftype_1',['scsi_packet_type',['../modules_2_s_c_s_i_2_s_c_s_i_8h.html#a8e91162b4f304e56bf1c939e5b44cf16',1,'SCSI.h']]],
   ['semaphore_2',['Semaphore',['../namespace_ne_o_s.html#ad067342dac7e07d5c6f066b4cf1b15c6',1,'NeOS']]],
   ['short_3',['Short',['../namespace_ne_o_s.html#a29e9a7df2b6c0ed8ee86dffa5db2df54',1,'NeOS']]],
-  ['signalkind_4',['SignalKind',['../_signals_8h.html#a0b0dc395edf6ec8cebf83f74a1ef1698',1,'Signals.h']]],
+  ['signalkind_4',['SignalKind',['../namespace_ne_o_s.html#a9eeaa29a7f1c1e0fbf13f78e405416f2',1,'NeOS']]],
   ['sint16_5',['sint16',['../namespace_ne_o_s.html#a309e527c5bf61b958d5fcd1a32377edf',1,'NeOS::SInt16'],['../_s_c_i_kit_2_macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
   ['sint32_6',['sint32',['../namespace_ne_o_s.html#a3785cebc7f656f2d5faef7f2115084f3',1,'NeOS::SInt32'],['../_s_c_i_kit_2_macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
   ['sint64_7',['sint64',['../namespace_ne_o_s.html#adc4c37e98837a38ddbe6ba8fbedc58dd',1,'NeOS::SInt64'],['../_s_c_i_kit_2_macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],

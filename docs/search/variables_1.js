@@ -11,7 +11,7 @@ var searchData=
   ['baseaddress_8',['BaseAddress',['../class_ne_o_s_1_1_config_header.html#a2227243176994e168caa9a89b0534491',1,'NeOS::ConfigHeader']]],
   ['baseofcode_9',['BaseOfCode',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a62e91940c0ba422309e000213d0c5144',1,'LDR_OPTIONAL_HEADER']]],
   ['baseofdata_10',['BaseOfData',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#ad321c46faeb07414f0b459bde26db1dd',1,'LDR_OPTIONAL_HEADER']]],
-  ['bist_11',['bist',['../struct_hba_cmd_header.html#ab68bedd8953e324119155515bb6580b8',1,'HbaCmdHeader::BIST'],['../struct_ne_o_s_1_1_p_c_i_1_1_device_header.html#aabdce27594e1e6c4ba2d6099448e885e',1,'NeOS::PCI::DeviceHeader::Bist'],['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#aee8a3c3d4bc1faf6d3ae3f3c6e85ee81',1,'BIST:&#160;AHCI.h']]],
+  ['bist_11',['bist',['../struct_ne_o_s_1_1_p_c_i_1_1_device_header.html#aabdce27594e1e6c4ba2d6099448e885e',1,'NeOS::PCI::DeviceHeader::Bist'],['../struct_hba_cmd_header.html#ab68bedd8953e324119155515bb6580b8',1,'HbaCmdHeader::BIST'],['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#aee8a3c3d4bc1faf6d3ae3f3c6e85ee81',1,'BIST:&#160;AHCI.h']]],
   ['block_5fcnt_12',['block_cnt',['../struct_d_i___d_i_s_k___i_m_a_g_e.html#a9868fab428da373adf3111474a76f886',1,'DI_DISK_IMAGE']]],
   ['blt_13',['Blt',['../struct_efi_graphics_output_protocol.html#a1629cee2c7e0c66c0bf40c5fcd8af198',1,'EfiGraphicsOutputProtocol']]],
   ['blue_14',['Blue',['../struct_efi_graphics_output_blt_pixel.html#a69c98658044c42f8280e8b7091ff5203',1,'EfiGraphicsOutputBltPixel']]],

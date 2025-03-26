@@ -56,7 +56,7 @@ var searchData=
   ['prevsibling_53',['PrevSibling',['../struct_n_e_f_s___c_a_t_a_l_o_g___s_t_r_u_c_t.html#a3e6d4910afc01115df1ce5d87abd7eec',1,'NEFS_CATALOG_STRUCT']]],
   ['processid_54',['ProcessId',['../class_ne_o_s_1_1_user_process.html#a1956891068c1b0e3cbfc97559f4beba2',1,'NeOS::UserProcess']]],
   ['processmemoryheap_55',['ProcessMemoryHeap',['../class_ne_o_s_1_1_user_process.html#a31cf8be83cb37b349a9ef7b3a151cbe1',1,'NeOS::UserProcess']]],
-  ['processorid_56',['processorid',['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a82d18083c3d5db89faa94d3c184a580b',1,'NeOS::HAL::SDT_OBJECT::ProcessorID'],['../struct___efi_processor_information.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId']]],
+  ['processorid_56',['processorid',['../struct___efi_processor_information.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId'],['../struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a82d18083c3d5db89faa94d3c184a580b',1,'NeOS::HAL::SDT_OBJECT::ProcessorID']]],
   ['processparentteam_57',['ProcessParentTeam',['../class_ne_o_s_1_1_user_process.html#affa20f78814ed5c3cd861bdc86d6c224',1,'NeOS::UserProcess']]],
   ['processsignal_58',['ProcessSignal',['../class_ne_o_s_1_1_user_process.html#a47c42bad6c11f950269545dc89249bd9',1,'NeOS::UserProcess']]],
   ['progif_59',['ProgIf',['../struct_ne_o_s_1_1_p_c_i_1_1_device_header.html#a0ac6a61c25c9e21211a8beba5c185b7a',1,'NeOS::PCI::DeviceHeader']]],

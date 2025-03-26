@@ -228,7 +228,7 @@ var hierarchy =
     [ "STEPS_COMMON_RECORD", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html", null ],
     [ "NeOS::Stream< StreamTrait, Kind >", "class_ne_o_s_1_1_stream.html", null ],
     [ "NeOS::SWAP_DISK_HEADER", "struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html", null ],
-    [ "NeOS::SwapDisk", "class_ne_o_s_1_1_swap_disk.html", null ],
+    [ "NeOS::SwapDiskInterface", "class_ne_o_s_1_1_swap_disk_interface.html", null ],
     [ "THREAD_INFORMATION_BLOCK", "struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html", null ],
     [ "NeOS::TimerInterface", "class_ne_o_s_1_1_timer_interface.html", [
       [ "NeOS::HardwareTimer", "class_ne_o_s_1_1_hardware_timer.html", null ],

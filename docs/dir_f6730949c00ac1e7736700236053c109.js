@@ -1,5 +1,0 @@
-var dir_f6730949c00ac1e7736700236053c109 =
-[
-    [ "NetBoot", "dir_545e77589015334d23fb7463c5ae34c2.html", "dir_545e77589015334d23fb7463c5ae34c2" ],
-    [ "SysChk", "dir_691d8363ea75ab7e9b51127331ac85a1.html", "dir_691d8363ea75ab7e9b51127331ac85a1" ]
-];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['b_0',['b',['../class_ne_o_s_1_1_mountpoint_interface.html#a9c14c8249d0f8008728ff2f7e9af9abe',1,'NeOS::MountpointInterface::B()'],['../struct_c_f_1_1_c_f_color.html#a4da236ec7c1aede2cf342307850c02b0',1,'CF::CFColor::b']]],
-  ['bar_1',['bar',['../class_ne_o_s_1_1_p_c_i_1_1_b_a_r.html',1,'NeOS::PCI::BAR'],['../class_ne_o_s_1_1_p_c_i_1_1_device.html#ae49160f0d6a00660f5fcc7898e0fa788',1,'NeOS::PCI::Device::Bar()'],['../class_ne_o_s_1_1_p_c_i_1_1_detail_1_1_b_a_r.html',1,'NeOS::PCI::Detail::BAR'],['../class_ne_o_s_1_1_p_c_i_1_1_detail_1_1_b_a_r.html#a5f0653d589c63b4121c3775f4b032533',1,'NeOS::PCI::Detail::BAR::BAR()']]],
+  ['b_0',['b',['../struct_c_f_1_1_c_f_color.html#a4da236ec7c1aede2cf342307850c02b0',1,'CF::CFColor::b'],['../class_ne_o_s_1_1_mountpoint_interface.html#a9c14c8249d0f8008728ff2f7e9af9abe',1,'NeOS::MountpointInterface::B()']]],
+  ['bar_1',['bar',['../class_ne_o_s_1_1_p_c_i_1_1_b_a_r.html',1,'NeOS::PCI::BAR'],['../class_ne_o_s_1_1_p_c_i_1_1_detail_1_1_b_a_r.html#a5f0653d589c63b4121c3775f4b032533',1,'NeOS::PCI::Detail::BAR::BAR()'],['../class_ne_o_s_1_1_p_c_i_1_1_detail_1_1_b_a_r.html',1,'NeOS::PCI::Detail::BAR'],['../class_ne_o_s_1_1_p_c_i_1_1_device.html#ae49160f0d6a00660f5fcc7898e0fa788',1,'NeOS::PCI::Device::Bar()']]],
   ['bar1_2',['BAR1',['../class_ne_o_s_1_1_p_c_i_1_1_b_a_r.html#a3d31be769523a7f087d335110d2030cb',1,'NeOS::PCI::BAR']]],
   ['bar2_3',['BAR2',['../class_ne_o_s_1_1_p_c_i_1_1_b_a_r.html#acb7a9dbc2993ef71a2c1fed90f3497da',1,'NeOS::PCI::BAR']]],
   ['bar3_4',['BAR3',['../class_ne_o_s_1_1_p_c_i_1_1_b_a_r.html#aac429f62a62496cf980243f9b55f813c',1,'NeOS::PCI::BAR']]],
@@ -20,7 +20,7 @@ var searchData=
   ['binarymutex_17',['binarymutex',['../class_ne_o_s_1_1_binary_mutex.html',1,'NeOS::BinaryMutex'],['../class_ne_o_s_1_1_binary_mutex.html#aa07e252c99ffeaae8564957deb5c1ed6',1,'NeOS::BinaryMutex::BinaryMutex()']]],
   ['binarymutex_2ecc_18',['BinaryMutex.cc',['../_binary_mutex_8cc.html',1,'']]],
   ['binarymutex_2eh_19',['BinaryMutex.h',['../_binary_mutex_8h.html',1,'']]],
-  ['bist_20',['bist',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#aee8a3c3d4bc1faf6d3ae3f3c6e85ee81',1,'BIST:&#160;AHCI.h'],['../struct_hba_cmd_header.html#ab68bedd8953e324119155515bb6580b8',1,'HbaCmdHeader::BIST'],['../struct_ne_o_s_1_1_p_c_i_1_1_device_header.html#aabdce27594e1e6c4ba2d6099448e885e',1,'NeOS::PCI::DeviceHeader::Bist']]],
+  ['bist_20',['bist',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#aee8a3c3d4bc1faf6d3ae3f3c6e85ee81',1,'BIST:&#160;AHCI.h'],['../struct_ne_o_s_1_1_p_c_i_1_1_device_header.html#aabdce27594e1e6c4ba2d6099448e885e',1,'NeOS::PCI::DeviceHeader::Bist'],['../struct_hba_cmd_header.html#ab68bedd8953e324119155515bb6580b8',1,'HbaCmdHeader::BIST']]],
   ['bit_21',['bit',['../namespaceutl.html#ad229dcf753ec11932521622aa8d07864',1,'utl']]],
   ['bit_2eh_22',['bit.h',['../bit_8h.html',1,'']]],
   ['bit_5fceil_23',['bit_ceil',['../namespaceutl.html#a290a678beef81f5aff62822c7bf461b9',1,'utl']]],

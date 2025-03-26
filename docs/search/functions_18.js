@@ -64,7 +64,7 @@ var searchData=
   ['_7eref_61',['~Ref',['../class_ne_o_s_1_1_ref.html#a3347ad1e7966ad97c3681df70c41b6b8',1,'NeOS::Ref']]],
   ['_7esoftwaretimer_62',['~SoftwareTimer',['../class_ne_o_s_1_1_software_timer.html#a6ea90d3db4e544db3425925038aea4fa',1,'NeOS::SoftwareTimer']]],
   ['_7estream_63',['~Stream',['../class_ne_o_s_1_1_stream.html#a1267a68cac4a0cfec003535a3dae0485',1,'NeOS::Stream']]],
-  ['_7eswapdisk_64',['~SwapDisk',['../class_ne_o_s_1_1_swap_disk.html#a49ac54c5e27a9293ec6369c220165c10',1,'NeOS::SwapDisk']]],
+  ['_7eswapdiskinterface_64',['~SwapDiskInterface',['../class_ne_o_s_1_1_swap_disk_interface.html#aae91693fe410daf5f87d52a7fc3421b5',1,'NeOS::SwapDiskInterface']]],
   ['_7eterminaldevice_65',['~TerminalDevice',['../class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html#a12067326b2c2953942cec772f1315fb3',1,'NeOS::NE_DEVICE&lt; const Char * &gt;']]],
   ['_7etimerinterface_66',['~TimerInterface',['../class_ne_o_s_1_1_timer_interface.html#a23bc049b39399b4e5f6a07d0a9747803',1,'NeOS::TimerInterface']]],
   ['_7euiaccessibilty_67',['~UIAccessibilty',['../class_f_b_1_1_u_i_accessibilty.html#a1d5ee02d1f914ba3e5ce60931f825446',1,'FB::UIAccessibilty']]],

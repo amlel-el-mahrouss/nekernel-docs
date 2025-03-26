@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___
 </div><!--header-->
 <div class="contents">
 
+<p>Swap disk header, containing information about the held virtual memory.  
+ <a href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_swap_disk_8h_source.html">SwapDisk.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -113,18 +116,32 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a43aff2ea56747e8354f57d8467de79d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ff6eacb22bca9a3d3d452623fbe6c3" id="r_a34ff6eacb22bca9a3d3d452623fbe6c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#a34ff6eacb22bca9a3d3d452623fbe6c3">fBlobSz</a></td></tr>
 <tr class="separator:a34ff6eacb22bca9a3d3d452623fbe6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e4478256e3bd1fef4b1f9490ee0652" id="r_a16e4478256e3bd1fef4b1f9490ee0652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#a16e4478256e3bd1fef4b1f9490ee0652">fBlob</a> []</td></tr>
-<tr class="separator:a16e4478256e3bd1fef4b1f9490ee0652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfb614b15934f0aea306a7d277f87cf" id="r_accfb614b15934f0aea306a7d277f87cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#a0835cc5d92716e99fd7387e297984399">UInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#accfb614b15934f0aea306a7d277f87cf">fBlob</a> []</td></tr>
+<tr class="separator:accfb614b15934f0aea306a7d277f87cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a16e4478256e3bd1fef4b1f9490ee0652" name="a16e4478256e3bd1fef4b1f9490ee0652"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16e4478256e3bd1fef4b1f9490ee0652">&#9670;&#160;</a></span>fBlob</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Swap disk header, containing information about the held virtual memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fMagic</td><td>Ident number. </td></tr>
+    <tr><td class="paramname">fHeaderSz</td><td>This header size. </td></tr>
+    <tr><td class="paramname">fTeamID</td><td>Process Team ID. </td></tr>
+    <tr><td class="paramname">fProcessID</td><td>Process ID. </td></tr>
+    <tr><td class="paramname">fVirtualAddress</td><td>Virtual address pointed by data. </td></tr>
+    <tr><td class="paramname">fBlobSz</td><td>Blob's size. </td></tr>
+    <tr><td class="paramname">fBlob</td><td>Data blob. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="accfb614b15934f0aea306a7d277f87cf" name="accfb614b15934f0aea306a7d277f87cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accfb614b15934f0aea306a7d277f87cf">&#9670;&#160;</a></span>fBlob</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> NeOS::SWAP_DISK_HEADER::fBlob[]</td>
+          <td class="memname"><a class="el" href="namespace_ne_o_s.html#a0835cc5d92716e99fd7387e297984399">UInt8</a> NeOS::SWAP_DISK_HEADER::fBlob[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -216,7 +233,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>dev/kernel/SystemKit/<a class="el" href="_swap_disk_8h_source.html">SwapDisk.h</a></li>
+<li>dev/kernel/SwapKit/<a class="el" href="_swap_disk_8h_source.html">SwapDisk.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

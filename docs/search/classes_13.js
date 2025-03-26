@@ -11,5 +11,5 @@ var searchData=
   ['steps_5fcommon_5frecord_8',['STEPS_COMMON_RECORD',['../struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html',1,'']]],
   ['stream_9',['Stream',['../class_ne_o_s_1_1_stream.html',1,'NeOS']]],
   ['swap_5fdisk_5fheader_10',['SWAP_DISK_HEADER',['../struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html',1,'NeOS']]],
-  ['swapdisk_11',['SwapDisk',['../class_ne_o_s_1_1_swap_disk.html',1,'NeOS']]]
+  ['swapdiskinterface_11',['SwapDiskInterface',['../class_ne_o_s_1_1_swap_disk_interface.html',1,'NeOS']]]
 ];

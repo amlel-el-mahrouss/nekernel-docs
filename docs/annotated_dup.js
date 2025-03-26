@@ -142,7 +142,7 @@ var annotated_dup =
       [ "SoftwareTimer", "class_ne_o_s_1_1_software_timer.html", "class_ne_o_s_1_1_software_timer" ],
       [ "Stream", "class_ne_o_s_1_1_stream.html", "class_ne_o_s_1_1_stream" ],
       [ "SWAP_DISK_HEADER", "struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html", "struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r" ],
-      [ "SwapDisk", "class_ne_o_s_1_1_swap_disk.html", "class_ne_o_s_1_1_swap_disk" ],
+      [ "SwapDiskInterface", "class_ne_o_s_1_1_swap_disk_interface.html", "class_ne_o_s_1_1_swap_disk_interface" ],
       [ "TimerInterface", "class_ne_o_s_1_1_timer_interface.html", "class_ne_o_s_1_1_timer_interface" ],
       [ "User", "class_ne_o_s_1_1_user.html", "class_ne_o_s_1_1_user" ],
       [ "UserProcess", "class_ne_o_s_1_1_user_process.html", "class_ne_o_s_1_1_user_process" ],

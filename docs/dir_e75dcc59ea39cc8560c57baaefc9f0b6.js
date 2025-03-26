@@ -12,5 +12,5 @@ var dir_e75dcc59ea39cc8560c57baaefc9f0b6 =
     [ "SignalKit", "dir_4aa439f8d7fec26d660ea6b70d482a21.html", "dir_4aa439f8d7fec26d660ea6b70d482a21" ],
     [ "src", "dir_47db305ca16612c6e2a66f0f32acfc5a.html", "dir_47db305ca16612c6e2a66f0f32acfc5a" ],
     [ "StorageKit", "dir_b2941941db3977fe373a778817728589.html", "dir_b2941941db3977fe373a778817728589" ],
-    [ "SystemKit", "dir_a4603bf64d226737cee4215bbf7b0625.html", "dir_a4603bf64d226737cee4215bbf7b0625" ]
+    [ "SwapKit", "dir_d7a2ff8fa48843283b8feffaa1a4785a.html", "dir_d7a2ff8fa48843283b8feffaa1a4785a" ]
 ];

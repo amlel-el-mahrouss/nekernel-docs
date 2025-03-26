@@ -1,5 +1,10 @@
 var NAVTREEINDEX21 =
 {
+"struct_efi_boot_services.html#a6d74e7f98527d80fd22439ac63d82d7c":[7,0,19,10],
+"struct_efi_boot_services.html#a719a0874aad5270d88ef949b2cd1c056":[7,0,19,40],
+"struct_efi_boot_services.html#a72762acfcdb27aecfe06b7cd845671f7":[7,0,19,1],
+"struct_efi_boot_services.html#a750c9e554331c727d5ef6179e96f29e4":[7,0,19,37],
+"struct_efi_boot_services.html#a76ec3a7b8c8832df17dd7d90fbf56062":[7,0,19,21],
 "struct_efi_boot_services.html#a7a0af12c123c84fe81c2281cce920aef":[7,0,19,36],
 "struct_efi_boot_services.html#a7bad7ae7b68db32c106361cf20eb16f2":[7,0,19,39],
 "struct_efi_boot_services.html#a7e00a1dfd5095069bf7b0abb1dbf7076":[7,0,19,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX21 =
 "struct_fis_pio_setup.html#ac802ac4140b20e021ba3c0845ae7c64d":[7,0,47,13],
 "struct_fis_pio_setup.html#ac84d7cc708a213ae429a64953e0db363":[7,0,47,6],
 "struct_fis_pio_setup.html#aefa0ddcd4915af3f8e319435a94c3967":[7,0,47,16],
-"struct_fis_pio_setup.html#af4ee10d2fcdd9918f31ba561f03f68d0":[7,0,47,8],
-"struct_fis_pio_setup.html#afb68ed0ba7dd3d4b0359983a92e38eb2":[7,0,47,2],
-"struct_fis_reg_d2_h.html":[7,0,48],
-"struct_fis_reg_d2_h.html#a019dc785c67dedfb972dab6aba38a010":[7,0,48,12],
-"struct_fis_reg_d2_h.html#a18ebbc57200713a219c43093395a02f9":[7,0,48,2],
-"struct_fis_reg_d2_h.html#a4e4cb3a17a614e955466c899456b220e":[7,0,48,9]
+"struct_fis_pio_setup.html#af4ee10d2fcdd9918f31ba561f03f68d0":[7,0,47,8]
 };

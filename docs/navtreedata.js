@@ -97,18 +97,18 @@ var NAVTREEINDEX =
 "class_ne_o_s_1_1_network_device.html#ae33e55cf040d0d8ae2a14d50ffbf12ca",
 "class_ne_o_s_1_1_pmm.html#a0c88b912c3fb6546bfd5eae7f4c07bd6",
 "class_ne_o_s_1_1_user.html#ad8943167abb5b47513c1484b17fbfaa8",
-"classpfd_1_1internal_1_1file__dialog.html#ae28b6dd37ab4e47885ce7ca25652212b",
-"functions_vars_p.html",
-"kernel_2src_2_new_09_delete_8cc.html",
-"namespace_ne_o_s.html#a236304cb87cbc960fe005a3d510fb453",
-"namespace_ne_o_s.html#adee3f6fe28b13ab7dc43a2d71f1d3942",
-"namespacepfd.html#a70b4c2a87aca3443a4de387bedae49e8a7928e609b1665227bcb71b20d431fd6a",
-"struct_efi_boot_services.html#a7a0af12c123c84fe81c2281cce920aef",
-"struct_fis_reg_d2_h.html#a63a0df1cebecf0c3e3b6c7618ef68ac2",
-"struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#a6b2750cfdb357870f908bab7ef7ab5ea",
-"struct_ne_o_s_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a3e9260e979f4d5385cc5aeb82a7352bc",
-"struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header.html#a11c823a57a3da65922d83062da6cb4d4",
-"struct_ne_o_s_1_1_page_mgr.html#ace5d63e973e375b1d1079d0972933071"
+"classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fca568b2ec66ef45be030a47ddc19bc7bba",
+"functions_vars_l.html",
+"kernel_2_storage_kit_2_n_v_m_e_8h_source.html",
+"namespace_ne_o_s.html#a1bc76b75e1c404734726162434b3bb05",
+"namespace_ne_o_s.html#adceb6f36a9d805fe9a5ba09b502a926f",
+"namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997ab66abfe0e0c2ef7c545895c12a0a8837",
+"struct_efi_boot_services.html#a6d74e7f98527d80fd22439ac63d82d7c",
+"struct_fis_pio_setup.html#afb68ed0ba7dd3d4b0359983a92e38eb2",
+"struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#a33d3e8dd5fa1bcdfdaadcde1cd11d4b3",
+"struct_ne_o_s_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a2c80d71c36331df3cf8dca9533261da0",
+"struct_ne_o_s_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html#afbe372ce2428ecebf66f25fc88d13569",
+"struct_ne_o_s_1_1_page_mgr.html#a871c6d062639d59ef30b164ad8f625b5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -314,9 +314,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_stream.html">Stream</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">SWAP_DISK_HEADER</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <a href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_swap_disk.html">SwapDisk</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is a disk swap delegate for any data. available as a syscall too.  <a href="class_ne_o_s_1_1_swap_disk.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_swap_disk_interface.html">SwapDiskInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual memory interface to swap memory chunks onto disk.  <a href="class_ne_o_s_1_1_swap_disk_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_timer_interface.html">TimerInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -544,7 +545,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a917e0fbb8be72c487f6ef683b098fd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c99ed27921b4a0baa3ef4911d67ee4" id="r_ab4c99ed27921b4a0baa3ef4911d67ee4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#ab4c99ed27921b4a0baa3ef4911d67ee4">JsonStream</a> = <a class="el" href="class_ne_o_s_1_1_stream.html">Stream</a>&lt; <a class="el" href="struct_ne_o_s_1_1_json_stream_reader.html">JsonStreamReader</a>, <a class="el" href="class_ne_o_s_1_1_json.html">Json</a> &gt;</td></tr>
 <tr class="separator:ab4c99ed27921b4a0baa3ef4911d67ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeaa29a7f1c1e0fbf13f78e405416f2" id="r_a9eeaa29a7f1c1e0fbf13f78e405416f2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_ne_o_s.html#a160d206409956603d46f6292a41b1f52">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a9eeaa29a7f1c1e0fbf13f78e405416f2">SignalKind</a></td></tr>
+<tr class="separator:a9eeaa29a7f1c1e0fbf13f78e405416f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e8ec090454b3ba3877f51262511f0f0" id="r_a0e8ec090454b3ba3877f51262511f0f0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">NeOS::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a0e8ec090454b3ba3877f51262511f0f0">SWAP_DISK_HEADER</a></td></tr>
+<tr class="memdesc:a0e8ec090454b3ba3877f51262511f0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
 <tr class="separator:a0e8ec090454b3ba3877f51262511f0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99e0fb801321ae56afccd13336106462" id="r_a99e0fb801321ae56afccd13336106462"><td class="memItemLeft" align="right" valign="top">typedef ACPIFactoryInterface&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a99e0fb801321ae56afccd13336106462">PowerFactoryInterface</a></td></tr>
 <tr class="separator:a99e0fb801321ae56afccd13336106462"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2211,6 +2215,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9eeaa29a7f1c1e0fbf13f78e405416f2" name="a9eeaa29a7f1c1e0fbf13f78e405416f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eeaa29a7f1c1e0fbf13f78e405416f2">&#9670;&#160;</a></span>SignalKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespace_ne_o_s.html#a160d206409956603d46f6292a41b1f52">UInt32</a> <a class="el" href="namespace_ne_o_s.html#a9eeaa29a7f1c1e0fbf13f78e405416f2">NeOS::SignalKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a309e527c5bf61b958d5fcd1a32377edf" name="a309e527c5bf61b958d5fcd1a32377edf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a309e527c5bf61b958d5fcd1a32377edf">&#9670;&#160;</a></span>SInt16</h2>
 
@@ -2320,6 +2338,20 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Swap disk header, containing information about the held virtual memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fMagic</td><td>Ident number. </td></tr>
+    <tr><td class="paramname">fHeaderSz</td><td>This header size. </td></tr>
+    <tr><td class="paramname">fTeamID</td><td>Process Team ID. </td></tr>
+    <tr><td class="paramname">fProcessID</td><td>Process ID. </td></tr>
+    <tr><td class="paramname">fVirtualAddress</td><td>Virtual address pointed by data. </td></tr>
+    <tr><td class="paramname">fBlobSz</td><td>Blob's size. </td></tr>
+    <tr><td class="paramname">fBlob</td><td>Data blob. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
