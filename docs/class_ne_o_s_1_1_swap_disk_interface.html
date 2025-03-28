@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('class_ne_o_s_1_1_swap_disk_interface.h
 <p>Virtual memory interface to swap memory chunks onto disk.  
  <a href="class_ne_o_s_1_1_swap_disk_interface.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_swap_disk_8h_source.html">SwapDisk.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_disk_swap_8h_source.html">DiskSwap.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -110,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae91693fe410daf5f87d52a7fc3421b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469bd30038fd124051e5b655a52041e9" id="r_a469bd30038fd124051e5b655a52041e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_swap_disk_interface.html#a469bd30038fd124051e5b655a52041e9">NE_COPY_DEFAULT</a> (<a class="el" href="class_ne_o_s_1_1_swap_disk_interface.html">SwapDiskInterface</a>)</td></tr>
 <tr class="separator:a469bd30038fd124051e5b655a52041e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a415cc93a3a9f59d1720afa3a369bbca3" id="r_a415cc93a3a9f59d1720afa3a369bbca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_swap_disk_interface.html#a415cc93a3a9f59d1720afa3a369bbca3">Write</a> (const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *fork_name, const <a class="el" href="namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc">SizeT</a> fork_name_len, <a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">SWAP_DISK_HEADER</a> *data)</td></tr>
+<tr class="memitem:a415cc93a3a9f59d1720afa3a369bbca3" id="r_a415cc93a3a9f59d1720afa3a369bbca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_swap_disk_interface.html#a415cc93a3a9f59d1720afa3a369bbca3">Write</a> (const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *fork_name, const <a class="el" href="namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc">SizeT</a> fork_name_len, <a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">SWAP_DISK_HEADER</a> *data)</td></tr>
 <tr class="memdesc:a415cc93a3a9f59d1720afa3a369bbca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write memory chunk onto disk.  <br /></td></tr>
 <tr class="separator:a415cc93a3a9f59d1720afa3a369bbca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f52b8fe10965938bf427834156af9e" id="r_a28f52b8fe10965938bf427834156af9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">SWAP_DISK_HEADER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_swap_disk_interface.html#a28f52b8fe10965938bf427834156af9e">Read</a> (const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *fork_name, const <a class="el" href="namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc">SizeT</a> fork_name_len, const <a class="el" href="namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc">SizeT</a> data_len)</td></tr>
@@ -241,7 +241,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> NeOS::SwapDiskInterface::Write </td>
+          <td class="memname"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> NeOS::SwapDiskInterface::Write </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *&#160;</td>
           <td class="paramname"><em>fork_name</em>, </td>
@@ -280,8 +280,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>dev/kernel/SwapKit/<a class="el" href="_swap_disk_8h_source.html">SwapDisk.h</a></li>
-<li>dev/kernel/src/Swap/<a class="el" href="_swap_disk_8cc.html">SwapDisk.cc</a></li>
+<li>dev/kernel/SwapKit/<a class="el" href="_disk_swap_8h_source.html">DiskSwap.h</a></li>
+<li>dev/kernel/src/Swap/<a class="el" href="_disk_swap_8cc.html">DiskSwap.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

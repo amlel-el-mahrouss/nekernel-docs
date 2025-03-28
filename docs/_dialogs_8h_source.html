@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#if _WIN32</span></div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            <span class="keywordtype">void</span>                 start_func(std::function&lt;std::string(<span class="keywordtype">int</span>*)&gt; <span class="keyword">const</span>&amp; fun);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <span class="keyword">static</span> <a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CALLBACK enum_windows_callback(HWND hwnd, LPARAM lParam);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <span class="keyword">static</span> <a class="code hl_define" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CALLBACK enum_windows_callback(HWND hwnd, LPARAM lParam);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#elif __EMSCRIPTEN__</span></div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <span class="keywordtype">void</span> start(<span class="keywordtype">int</span> exit_code);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#else</span></div>
@@ -824,7 +824,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        <span class="keywordflow">if</span> (OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY, &amp;token))</div>
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        {</div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>            dll                                            userenv(<span class="stringliteral">&quot;userenv.dll&quot;</span>);</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>            dll::proc&lt;<a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> WINAPI(HANDLE, LPSTR, LPDWORD)&gt; get_user_profile_directory(userenv, <span class="stringliteral">&quot;GetUserProfileDirectoryA&quot;</span>);</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>            dll::proc&lt;<a class="code hl_define" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> WINAPI(HANDLE, LPSTR, LPDWORD)&gt; get_user_profile_directory(userenv, <span class="stringliteral">&quot;GetUserProfileDirectoryA&quot;</span>);</div>
 <div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>            get_user_profile_directory(token, buf, &amp;len);</div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>            CloseHandle(token);</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>            <span class="keywordflow">if</span> (*buf)</div>
@@ -905,7 +905,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 </div>
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="preprocessor">#if _WIN32</span></div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="keyword">inline</span> <a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CALLBACK internal::executor::enum_windows_callback(HWND hwnd, LPARAM lParam)</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="keyword">inline</span> <a class="code hl_define" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CALLBACK internal::executor::enum_windows_callback(HWND hwnd, LPARAM lParam)</div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    {</div>
 <div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        <span class="keyword">auto</span> that = (<a class="code hl_class" href="classpfd_1_1internal_1_1executor.html">executor</a>*)lParam;</div>
 <div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
@@ -958,8 +958,8 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>        <span class="keywordflow">if</span> (m_pid &lt; 0)</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        close(in[m_pid ? 0 : 1]);</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        close(out[m_pid ? 1 : 0]);</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        <a class="code hl_function" href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a>(in[m_pid ? 0 : 1]);</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        <a class="code hl_function" href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a>(out[m_pid ? 1 : 0]);</div>
 <div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
 <div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        <span class="keywordflow">if</span> (m_pid == 0)</div>
 <div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>        {</div>
@@ -967,9 +967,9 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>            dup2(out[1], STDOUT_FILENO);</div>
 <div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
 <div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>            <span class="comment">// Ignore stderr so that it doesn’t pollute the console (e.g. GTK+ errors from zenity)</span></div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>            <span class="keywordtype">int</span> fd = open(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_WRONLY);</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>            <span class="keywordtype">int</span> fd = <a class="code hl_function" href="dev_8h.html#a4a97bf579d8dd726327a23ed36d594bf">open</a>(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_WRONLY);</div>
 <div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            dup2(fd, STDERR_FILENO);</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>            close(fd);</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>            <a class="code hl_function" href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a>(fd);</div>
 <div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span> </div>
 <div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>            std::vector&lt;char*&gt; args;</div>
 <div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>            std::transform(command.cbegin(), command.cend(), std::back_inserter(args),</div>
@@ -980,7 +980,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>            exit(1);</div>
 <div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        }</div>
 <div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span> </div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        close(in[1]);</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        <a class="code hl_function" href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a>(in[1]);</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>        m_fd = out[0];</div>
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        <span class="keyword">auto</span> flags = fcntl(m_fd, F_GETFL);</div>
 <div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        fcntl(m_fd, F_SETFL, flags | O_NONBLOCK);</div>
@@ -1048,7 +1048,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>        }</div>
 <div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span> </div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        close(m_fd);</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        <a class="code hl_function" href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a>(m_fd);</div>
 <div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        m_exit_code = WEXITSTATUS(status);</div>
 <div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span> </div>
@@ -1394,7 +1394,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>                <span class="keywordflow">if</span> (!(options &amp; <a class="code hl_enumvalue" href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997a8fc52a8161c68fcaeebdfdb500a36d4b">opt::force_overwrite</a>))</div>
 <div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>                    ofn.Flags |= OFN_OVERWRITEPROMPT;</div>
 <div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span> </div>
-<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>                dll::proc&lt;<a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> WINAPI(LPOPENFILENAMEW)&gt; get_save_file_name(comdlg32, <span class="stringliteral">&quot;GetSaveFileNameW&quot;</span>);</div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>                dll::proc&lt;<a class="code hl_define" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> WINAPI(LPOPENFILENAMEW)&gt; get_save_file_name(comdlg32, <span class="stringliteral">&quot;GetSaveFileNameW&quot;</span>);</div>
 <div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>                <span class="keywordflow">if</span> (get_save_file_name(&amp;ofn) == 0)</div>
 <div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>                <span class="keywordflow">return</span> internal::wstr2str(woutput.c_str());</div>
@@ -1405,7 +1405,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>                    ofn.Flags |= OFN_ALLOWMULTISELECT;</div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>                ofn.Flags |= OFN_PATHMUSTEXIST;</div>
 <div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span> </div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>                dll::proc&lt;<a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> WINAPI(LPOPENFILENAMEW)&gt; get_open_file_name(comdlg32, <span class="stringliteral">&quot;GetOpenFileNameW&quot;</span>);</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>                dll::proc&lt;<a class="code hl_define" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> WINAPI(LPOPENFILENAMEW)&gt; get_open_file_name(comdlg32, <span class="stringliteral">&quot;GetOpenFileNameW&quot;</span>);</div>
 <div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>                <span class="keywordflow">if</span> (get_open_file_name(&amp;ofn) == 0)</div>
 <div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>            }</div>
@@ -1782,7 +1782,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span>        }</div>
 <div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span> </div>
-<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>        ENUMRESNAMEPROC icon_enum_callback = [](HMODULE, LPCTSTR, LPTSTR lpName, LONG_PTR lParam) -&gt; <a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> {</div>
+<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>        ENUMRESNAMEPROC icon_enum_callback = [](HMODULE, LPCTSTR, LPTSTR lpName, LONG_PTR lParam) -&gt; <a class="code hl_define" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> {</div>
 <div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>            ((NOTIFYICONDATAW*)lParam)-&gt;hIcon = ::LoadIcon(GetModuleHandle(<span class="keyword">nullptr</span>), lpName);</div>
 <div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>        };</div>
@@ -2132,7 +2132,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l01922" name="l01922"></a><span class="lineno"> 1922</span>                                std::string <span class="keyword">const</span>&amp;              default_path <span class="comment">/* = &quot;&quot; */</span>,</div>
 <div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>                                std::vector&lt;std::string&gt; <span class="keyword">const</span>&amp; filters <span class="comment">/* = { &quot;All Files&quot;, &quot;*&quot; } */</span>,</div>
 <div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span>                                <a class="code hl_enumeration" href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997">opt</a>                             options <span class="comment">/* = opt::none */</span>)</div>
-<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>        : file_dialog(<a class="code hl_enumeration" href="classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fc">type</a>::open, title, default_path, filters, options)</div>
+<div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>        : file_dialog(<a class="code hl_enumeration" href="classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fc">type</a>::<a class="code hl_function" href="dev_8h.html#a4a97bf579d8dd726327a23ed36d594bf">open</a>, title, default_path, filters, options)</div>
 <div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>    {</div>
 <div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span>    }</div>
 </div>
@@ -2278,9 +2278,11 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="ttc" id="aclasspfd_1_1settings_html_a7190e52d512b1321acb78731a8cddf42"><div class="ttname"><a href="classpfd_1_1settings.html#a7190e52d512b1321acb78731a8cddf42">pfd::settings::settings</a></div><div class="ttdeci">settings(bool resync=false)</div><div class="ttdef"><b>Definition</b> Dialogs.h:538</div></div>
 <div class="ttc" id="aclasspfd_1_1settings_html_aa79fb10eee785f1acd8d1ff34e226c89"><div class="ttname"><a href="classpfd_1_1settings.html#aa79fb10eee785f1acd8d1ff34e226c89">pfd::settings::is_kdialog</a></div><div class="ttdeci">bool is_kdialog() const</div><div class="ttdef"><b>Definition</b> Dialogs.h:634</div></div>
 <div class="ttc" id="aclasspfd_1_1settings_html_af1c2f6e88ffafd59a2f7609631a9eade"><div class="ttname"><a href="classpfd_1_1settings.html#af1c2f6e88ffafd59a2f7609631a9eade">pfd::settings::check_program</a></div><div class="ttdeci">bool check_program(std::string const &amp;program)</div><div class="ttdef"><b>Definition</b> Dialogs.h:601</div></div>
+<div class="ttc" id="addk_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> ddk.h:25</div></div>
+<div class="ttc" id="adev_8h_html_a4a97bf579d8dd726327a23ed36d594bf"><div class="ttname"><a href="dev_8h.html#a4a97bf579d8dd726327a23ed36d594bf">open</a></div><div class="ttdeci">DDK_EXTERN DDK_DEVICE_PTR open(const char *path)</div><div class="ttdoc">Open a new device from path.</div><div class="ttdef"><b>Definition</b> ddk_dev.c:13</div></div>
+<div class="ttc" id="adev_8h_html_a9b54c1e48e7a4f50016970a5187eadd8"><div class="ttname"><a href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a></div><div class="ttdeci">DDK_EXTERN BOOL close(DDK_DEVICE_PTR device)</div><div class="ttdoc">Close any device.</div><div class="ttdef"><b>Definition</b> ddk_dev.c:23</div></div>
 <div class="ttc" id="akernel_2_new_kit_2_macros_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="kernel_2_new_kit_2_macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> Macros.h:145</div></div>
 <div class="ttc" id="akernel_2_new_kit_2_macros_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="kernel_2_new_kit_2_macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> Macros.h:146</div></div>
-<div class="ttc" id="akernel_2_new_kit_2_macros_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> Macros.h:148</div></div>
 <div class="ttc" id="anamespacepfd_html"><div class="ttname"><a href="namespacepfd.html">pfd</a></div><div class="ttdef"><b>Definition</b> Dialogs.h:71</div></div>
 <div class="ttc" id="anamespacepfd_html_a1a482ccd57bb939dcbf7d9caacd3f997"><div class="ttname"><a href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997">pfd::opt</a></div><div class="ttdeci">opt</div><div class="ttdef"><b>Definition</b> Dialogs.h:104</div></div>
 <div class="ttc" id="anamespacepfd_html_a1a482ccd57bb939dcbf7d9caacd3f997a334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997a334c4a4c42fdb79d7ebc3e73b517e6f8">pfd::opt::none</a></div><div class="ttdeci">@ none</div></div>

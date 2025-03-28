@@ -72,7 +72,7 @@ var searchData=
   ['efivirtualaddress_69',['EfiVirtualAddress',['../_e_f_i_2_e_f_i_8h.html#a78fc502dbd4362df30a0c241d1f17ee2',1,'EFI.h']]],
   ['efiwaitforevent_70',['EfiWaitForEvent',['../_e_f_i_2_e_f_i_8h.html#a09b7326201e98fa174ca581a54d1d324',1,'EFI.h']]],
   ['epm_5fguid_71',['EPM_GUID',['../kernel_2_firmware_kit_2_e_p_m_8h.html#a4d08a9ca3b695caf4113b6e13e291856',1,'EPM.h']]],
-  ['errobject_72',['ErrObject',['../_l_p_c_8h.html#af5eb82c65a17760ca960cf816718de69',1,'LPC.h']]],
+  ['errkind_72',['ErrKind',['../_process_codes_8h.html#a5b12bd1f1b577d8bd407c4522c119aca',1,'ProcessCodes.h']]],
   ['errororany_73',['ErrorOrAny',['../namespace_ne_o_s.html#a917e0fbb8be72c487f6ef683b098fd73',1,'NeOS']]],
   ['errort_74',['ErrorT',['../namespace_ne_o_s.html#ac8fb915120c83a644fca660c64a7db81',1,'NeOS']]]
 ];

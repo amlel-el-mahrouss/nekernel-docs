@@ -30,7 +30,7 @@ var searchData=
   ['drv_5fstd_5fwrite_27',['drv_std_write',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#aa10ee137830d7f898f42a6cbaa00000f',1,'AHCI.h']]],
   ['drvgetdefaultdriveletter_28',['DrvGetDefaultDriveLetter',['../_system_calls_8h.html#aa4ff8a48caa384ca992fcbb6466c9c8d',1,'SystemCalls.h']]],
   ['drvgetdriveletterfrompath_29',['DrvGetDriveLetterFromPath',['../_system_calls_8h.html#ab94895acae1c9d4b1979d58e19bb6f55',1,'SystemCalls.h']]],
-  ['drvgetmounteddrive_30',['DrvGetMountedDrive',['../_system_calls_8h.html#a8544a9afa5f8f2f898d2a348f45a15d8',1,'SystemCalls.h']]],
+  ['drvgetmounteddrive_30',['DrvGetMountedDrive',['../_system_calls_8h.html#aeab1aa99d30cb6b73dec00a66edc94fb',1,'SystemCalls.h']]],
   ['drvmountdrive_31',['DrvMountDrive',['../_system_calls_8h.html#ae2fc51820a562790d31b0632f1ecc95f',1,'SystemCalls.h']]],
   ['drvunmountdrive_32',['DrvUnmountDrive',['../_system_calls_8h.html#aec819d1b831f80c57c08e45b17adfbc6',1,'SystemCalls.h']]]
 ];

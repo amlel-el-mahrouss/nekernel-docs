@@ -8,7 +8,7 @@ var searchData=
   ['cfpropertyarray_5',['CFPropertyArray',['../namespace_c_f.html#a2b229dda071d3ccb79e55a6d27458c91',1,'CF']]],
   ['cfpropertyid_6',['CFPropertyId',['../namespace_c_f.html#a3bdf31935f4a453f6583ae9407727be1',1,'CF']]],
   ['cfreal_7',['CFReal',['../namespace_c_f.html#a015f9e006989dd7e727692d9d9cb4a54',1,'CF']]],
-  ['char_8',['char',['../namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f',1,'NeOS::Char'],['../_s_c_i_kit_2_macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e',1,'Char:&#160;Macros.h']]],
+  ['char_8',['char',['../namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f',1,'NeOS::Char'],['../user_2_macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e',1,'Char:&#160;Macros.h']]],
   ['char16_9',['Char16',['../namespace_ne_o_s.html#a3f14bd9541c95418b00115c5f7ce2175',1,'NeOS']]],
   ['charactertypeutf16_10',['CharacterTypeUTF16',['../namespace_boot.html#ae3c6485eaee1c210cf856d442ce3c7a7',1,'Boot']]],
   ['charactertypeutf8_11',['CharacterTypeUTF8',['../namespace_boot.html#af4fbfbcef45cf86b54114a8d8ac49525',1,'Boot']]],

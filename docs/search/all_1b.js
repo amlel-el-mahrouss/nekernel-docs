@@ -19,7 +19,7 @@ var searchData=
   ['virtualsize_16',['VirtualSize',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#ad938ddde8894d7bd2bc5e352c3335cba',1,'LDR_SECTION_HEADER']]],
   ['virtualstart_17',['VirtualStart',['../struct_efi_memory_descriptor.html#aa28b4fe6eb5213737e970336a1e94d7d',1,'EfiMemoryDescriptor']]],
   ['vmregister_18',['VMRegister',['../class_ne_o_s_1_1_user_process.html#a07928b794ced88423f78647366201e23',1,'NeOS::UserProcess']]],
-  ['void_19',['void',['../_s_c_i_kit_2_macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea',1,'Void:&#160;Macros.h'],['../namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d',1,'NeOS::Void']]],
-  ['voidptr_20',['voidptr',['../namespace_ne_o_s.html#ac1c63bbbae84b587c92428c1f2025036',1,'NeOS::VoidPtr'],['../_s_c_i_kit_2_macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h'],['../namespace_ne_o_s.html#ac5ebc4a72d8bae28b4ccd8ba8ee37fc3',1,'NeOS::voidPtr']]],
+  ['void_19',['void',['../user_2_macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea',1,'Void:&#160;Macros.h'],['../namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d',1,'NeOS::Void']]],
+  ['voidptr_20',['voidptr',['../namespace_ne_o_s.html#ac1c63bbbae84b587c92428c1f2025036',1,'NeOS::VoidPtr'],['../user_2_macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h'],['../namespace_ne_o_s.html#ac5ebc4a72d8bae28b4ccd8ba8ee37fc3',1,'NeOS::voidPtr']]],
   ['vs_21',['Vs',['../struct_hba_mem.html#af9441a9fa303346f66f65ed996ead8d3',1,'HbaMem']]]
 ];

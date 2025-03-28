@@ -19,8 +19,10 @@ var searchData=
   ['ne_5funused_16',['NE_UNUSED',['../kernel_2_new_kit_2_macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469',1,'Macros.h']]],
   ['newkit_5fversion_5fbcd_17',['NEWKIT_VERSION_BCD',['../kernel_2_new_kit_2_defines_8h.html#a448defd2293246a8f38b7033eaf53771',1,'Defines.h']]],
   ['newkit_5fversion_5fstr_18',['NEWKIT_VERSION_STR',['../kernel_2_new_kit_2_defines_8h.html#a10d3284449324d37668b895b31c78c79',1,'Defines.h']]],
-  ['no_19',['no',['../kernel_2_new_kit_2_macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h'],['../_s_c_i_kit_2_macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h'],['../kernel_2_new_kit_2_macros_8h.html#a554d6ecb4ae62985018db18be458114d',1,'No:&#160;Macros.h']]],
-  ['no_5fexec_20',['NO_EXEC',['../kernel_2_new_kit_2_macros_8h.html#acd5f5a08cb161dddd3db84118b45b8d1',1,'Macros.h']]],
-  ['node_5fcast_21',['node_cast',['../_file_mgr_8h.html#ad982918bd93538573706961d2f875999',1,'FileMgr.h']]],
-  ['noop_22',['NoOp',['../_p_o_w_e_r_2_processor_8h.html#ae3d5e3e038c78ab13c711cd65aaf0f55',1,'Processor.h']]]
+  ['nil_19',['nil',['../ddk_8h.html#a7a7ca81d2a85873283b5ec82953b1b25',1,'ddk.h']]],
+  ['no_20',['no',['../ddk_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;ddk.h'],['../kernel_2_new_kit_2_macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h'],['../user_2_macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h'],['../kernel_2_new_kit_2_macros_8h.html#a554d6ecb4ae62985018db18be458114d',1,'No:&#160;Macros.h']]],
+  ['no_5fexec_21',['NO_EXEC',['../kernel_2_new_kit_2_macros_8h.html#acd5f5a08cb161dddd3db84118b45b8d1',1,'Macros.h']]],
+  ['node_5fcast_22',['node_cast',['../_file_mgr_8h.html#ad982918bd93538573706961d2f875999',1,'FileMgr.h']]],
+  ['noop_23',['NoOp',['../_p_o_w_e_r_2_processor_8h.html#ae3d5e3e038c78ab13c711cd65aaf0f55',1,'Processor.h']]],
+  ['null_24',['NULL',['../ddk_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4',1,'ddk.h']]]
 ];

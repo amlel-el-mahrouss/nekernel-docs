@@ -6,7 +6,8 @@ var class_ne_o_s_1_1_variant =
       [ "kNull", "class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12af2655c2dee87cb9b0646f678a630394b", null ],
       [ "kJson", "class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12a319f3b99b8d96c21e2f6b7ebc6fe8d8f", null ],
       [ "kXML", "class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12ad1752a613e98a569918a29cf1dc80ee4", null ],
-      [ "kSwap", "class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12a74db4d0c7312d50be91bc4465d665f2d", null ]
+      [ "kSwap", "class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12a74db4d0c7312d50be91bc4465d665f2d", null ],
+      [ "kInvalid", "class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12ab10913c938482a8aa4ba85b7a1116cb4", null ]
     ] ],
     [ "Variant", "class_ne_o_s_1_1_variant.html#afcc42e62da44ed9c8e9671e12cc93786", null ],
     [ "~Variant", "class_ne_o_s_1_1_variant.html#a1989b7ac7e612d00946373563892ad78", null ],

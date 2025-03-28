@@ -13,9 +13,9 @@ var searchData=
   ['errgetlasterror_10',['ErrGetLastError',['../_system_calls_8h.html#afdb9ceeb9d0294f1d46a20f5cabe566e',1,'SystemCalls.h']]],
   ['error_11',['error',['../class_ne_o_s_1_1_error_or.html#a0ef703a2508e25d6c55802c9625407a9',1,'NeOS::ErrorOr::Error()'],['../class_boot_1_1_boot_file_reader.html#ad2d04a3f2dd07a75384ffaf2dcf33f3a',1,'Boot::BootFileReader::Error()']]],
   ['erroror_12',['erroror',['../class_ne_o_s_1_1_error_or.html#a4a63bf9192d012826fab35db8cfd700e',1,'NeOS::ErrorOr::ErrorOr(T Class)'],['../class_ne_o_s_1_1_error_or.html#a4c91bd63bc007cf941f0167e3efaa735',1,'NeOS::ErrorOr::ErrorOr(T *Class)'],['../class_ne_o_s_1_1_error_or.html#a0428eb7f62b3fd8a43a8e21fa6bd3fa8',1,'NeOS::ErrorOr::ErrorOr(nullPtr Null)'],['../class_ne_o_s_1_1_error_or.html#a1249939f284a51d296e7c37cd960c63a',1,'NeOS::ErrorOr::ErrorOr(Int32 err)'],['../class_ne_o_s_1_1_error_or.html#a4bdb552bd1a6aee8d2ea66ddab5aebed',1,'NeOS::ErrorOr::ErrorOr()=default'],['../class_ne_o_s_1_1_error_or.html#a8cee49863a79ff79fb9fbc2687381c30',1,'NeOS::ErrorOr::ErrorOr(const ErrorOr &amp;)=default']]],
-  ['evtaddlistener_13',['EvtAddListener',['../_system_calls_8h.html#aabc5477b78f4774aa118627556489d18',1,'SystemCalls.h']]],
+  ['evtaddlistener_13',['EvtAddListener',['../_system_calls_8h.html#a84e2a680f02c3f87b245306cb7aa3659',1,'SystemCalls.h']]],
   ['evtdispatchevent_14',['EvtDispatchEvent',['../_system_calls_8h.html#a58f7b58ff381b1c83cbba1b99c82f72e',1,'SystemCalls.h']]],
-  ['evtremovelistener_15',['EvtRemoveListener',['../_system_calls_8h.html#ae3c2cfc4319ab7768d2ae81c72fa7772',1,'SystemCalls.h']]],
+  ['evtremovelistener_15',['EvtRemoveListener',['../_system_calls_8h.html#a8ba475fa72aad249b13177a316d568aa',1,'SystemCalls.h']]],
   ['exit_16',['Exit',['../class_ne_o_s_1_1_user_process.html#a70ecfa561a5633a918e053f8fd88435f',1,'NeOS::UserProcess']]],
-  ['exitbootservices_17',['ExitBootServices',['../namespace_e_f_i.html#abe9f07417729e46206f9b72b8030f736',1,'EFI']]]
+  ['exitbootservices_17',['ExitBootServices',['../namespace_boot.html#a79fb1ed665feb9cc78a21d1ef4f58ae3',1,'Boot']]]
 ];

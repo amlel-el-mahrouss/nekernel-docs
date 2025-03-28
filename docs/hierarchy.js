@@ -37,6 +37,7 @@ var hierarchy =
     [ "CF::CFRect", "struct_c_f_1_1_c_f_rect.html", null ],
     [ "CF::CFRef< T >", "class_c_f_1_1_c_f_ref.html", null ],
     [ "NeOS::ConfigHeader", "class_ne_o_s_1_1_config_header.html", null ],
+    [ "DDK_FINAL", "struct_d_d_k___f_i_n_a_l.html", null ],
     [ "NeOS::DebuggerPortHeader", "class_ne_o_s_1_1_debugger_port_header.html", null ],
     [ "Device", "class_device.html", [
       [ "BootDeviceATA", "class_boot_device_a_t_a.html", null ]
@@ -118,7 +119,7 @@ var hierarchy =
     ] ],
     [ "NeOS::IDylibObject", "class_ne_o_s_1_1_i_dylib_object.html", null ],
     [ "NeOS::IFilesystemMgr", "class_ne_o_s_1_1_i_filesystem_mgr.html", null ],
-    [ "NeOS::Indexer::IndexProperty", "struct_ne_o_s_1_1_indexer_1_1_index_property.html", null ],
+    [ "NeOS::Indexer::Index", "struct_ne_o_s_1_1_indexer_1_1_index.html", null ],
     [ "NeOS::IOArray< Sz >", "class_ne_o_s_1_1_i_o_array.html", null ],
     [ "NeOS::IOBuf< T >", "class_ne_o_s_1_1_i_o_buf.html", null ],
     [ "NeOS::IPC_ADDR", "struct_ne_o_s_1_1_i_p_c___a_d_d_r.html", null ],

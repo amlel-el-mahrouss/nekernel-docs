@@ -6,12 +6,6 @@ var namespaces_dup =
     [ "cxxabiv1", "namespacecxxabiv1.html", [
       [ "__guard", "namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715", null ]
     ] ],
-    [ "EFI", "namespace_e_f_i.html", [
-      [ "ExitBootServices", "namespace_e_f_i.html#abe9f07417729e46206f9b72b8030f736", null ],
-      [ "Platform", "namespace_e_f_i.html#af6ee9dd16a424195a49a5116a6aac82c", null ],
-      [ "Stop", "namespace_e_f_i.html#a3b6e17830a9ad10db87fd20d60917f83", null ],
-      [ "ThrowError", "namespace_e_f_i.html#ace3002b002935de285eaa162c79682aa", null ]
-    ] ],
     [ "FB", "namespace_f_b.html", "namespace_f_b" ],
     [ "Firmware", "namespace_firmware.html", "namespace_firmware" ],
     [ "NeOS", "namespace_ne_o_s.html", "namespace_ne_o_s" ],

@@ -16,5 +16,5 @@ var _boot_kit_8h =
     [ "BSetMem", "_boot_kit_8h.html#ac8357943d859bcce4c8d37834bd837a3", null ],
     [ "BSetMem", "_boot_kit_8h.html#a970eb4520f61c7b2b07ad7eece6f5f38", null ],
     [ "BStrLen", "_boot_kit_8h.html#ab46b01895780074cda4a98a4d1f00153", null ],
-    [ "ThrowError", "_boot_kit_8h.html#ace3002b002935de285eaa162c79682aa", null ]
+    [ "ThrowError", "_boot_kit_8h.html#a770cf51bd60eaa15b9a35af8f2b5bc3b", null ]
 ];

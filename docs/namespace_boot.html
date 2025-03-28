@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('namespace_boot.html',''); initResizabl
   <div class="headertitle"><div class="title">Boot Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>include NeFS header and Support header as well.  
+<a href="namespace_boot.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -104,7 +107,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BootKit Drive Formatter.  <a href="class_boot_1_1_b_disk_format_factory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_boot_1_1_boot_file_reader.html">BootFileReader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BootKit File Reader class Reads the <a class="el" href="namespace_firmware.html">Firmware</a> <a class="el" href="namespace_boot.html">Boot</a> partition and filesystem.  <a href="class_boot_1_1_boot_file_reader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BootKit File Reader class Reads the <a class="el" href="namespace_firmware.html">Firmware</a> <a class="el" href="namespace_boot.html" title="include NeFS header and Support header as well.">Boot</a> partition and filesystem.  <a href="class_boot_1_1_boot_file_reader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_boot_1_1_boot_text_writer.html">BootTextWriter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BootKit Text Writer class Writes to UEFI StdOut.  <a href="class_boot_1_1_boot_text_writer.html#details">More...</a><br /></td></tr>
@@ -130,6 +133,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a770cf51bd60eaa15b9a35af8f2b5bc3b" id="r_a770cf51bd60eaa15b9a35af8f2b5bc3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a77366c1bd428629dc898e188bfd182a3">EXTERN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_boot.html#a770cf51bd60eaa15b9a35af8f2b5bc3b">ThrowError</a> (const <a class="el" href="namespace_ne_o_s.html#a47c41d4526d5406d0f76828b483217e2">WideChar</a> *errorCode, const <a class="el" href="namespace_ne_o_s.html#a47c41d4526d5406d0f76828b483217e2">WideChar</a> *reason) noexcept</td></tr>
+<tr class="separator:a770cf51bd60eaa15b9a35af8f2b5bc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c0c2df329d4e99ad0f602be6adaf79c" id="r_a2c0c2df329d4e99ad0f602be6adaf79c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc">NeOS::SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_boot.html#a2c0c2df329d4e99ad0f602be6adaf79c">BCopyMem</a> (<a class="el" href="namespace_boot.html#ae3c6485eaee1c210cf856d442ce3c7a7">CharacterTypeUTF16</a> *dest, <a class="el" href="namespace_boot.html#ae3c6485eaee1c210cf856d442ce3c7a7">CharacterTypeUTF16</a> *src, const <a class="el" href="namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc">NeOS::SizeT</a> len)</td></tr>
 <tr class="memdesc:a2c0c2df329d4e99ad0f602be6adaf79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">BUGS: 0.  <br /></td></tr>
 <tr class="separator:a2c0c2df329d4e99ad0f602be6adaf79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,9 +148,19 @@ Functions</h2></td></tr>
 <tr class="separator:ac8357943d859bcce4c8d37834bd837a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ca29987d47d4722498cac5fb53f3eb" id="r_a44ca29987d47d4722498cac5fb53f3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_ne_o_s.html#a91a19724952b6c6faf9b52f9efc935f7">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_boot.html#a44ca29987d47d4722498cac5fb53f3eb">rt_jump_to_address</a> (<a class="el" href="namespace_ne_o_s.html#ac1c63bbbae84b587c92428c1f2025036">VoidPtr</a> code, <a class="el" href="struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header.html">HEL::BootInfoHeader</a> *handover, <a class="el" href="namespace_ne_o_s.html#a0835cc5d92716e99fd7387e297984399">UInt8</a> *stack)</td></tr>
 <tr class="separator:a44ca29987d47d4722498cac5fb53f3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0bee034f9cce36874019301bc2ac40" id="r_a8b0bee034f9cce36874019301bc2ac40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_boot.html#a8b0bee034f9cce36874019301bc2ac40">Stop</a> () noexcept</td></tr>
+<tr class="memdesc:a8b0bee034f9cce36874019301bc2ac40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halt and clear interrupts.  <br /></td></tr>
+<tr class="separator:a8b0bee034f9cce36874019301bc2ac40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fb1ed665feb9cc78a21d1ef4f58ae3" id="r_a79fb1ed665feb9cc78a21d1ef4f58ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_boot.html#a79fb1ed665feb9cc78a21d1ef4f58ae3">ExitBootServices</a> (<a class="el" href="namespace_ne_o_s.html#a09d79cd68f15b02280f00125b4e62cb5">UInt64</a> MapKey, <a class="el" href="_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2">EfiHandlePtr</a> ImageHandle) noexcept</td></tr>
+<tr class="memdesc:a79fb1ed665feb9cc78a21d1ef4f58ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit EFI API to let the OS load correctly. Bascially frees everything we have in the EFI side.  <br /></td></tr>
+<tr class="separator:a79fb1ed665feb9cc78a21d1ef4f58ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219033067ceb1ad089818c762d1dfb65" id="r_a219033067ceb1ad089818c762d1dfb65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#a160d206409956603d46f6292a41b1f52">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_boot.html#a219033067ceb1ad089818c762d1dfb65">Platform</a> () noexcept</td></tr>
+<tr class="separator:a219033067ceb1ad089818c762d1dfb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section note"><dt>Note</dt><dd><a class="el" href="class_boot_1_1_boot_thread.html" title="Bootloader Thread class.">BootThread</a> doesn't parse the symbols so doesn't nullify them, .bss is though. </dd></dl>
+<div class="textblock"><p>include NeFS header and Support header as well. </p>
+<p>Include other APIs. Framebuffer helpers.</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="class_boot_1_1_boot_thread.html" title="Bootloader Thread class.">BootThread</a> doesn't parse the symbols so doesn't nullify them, .bss is though. </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ad34c776f9a2e68bf9ceb558f73dbf68c" name="ad34c776f9a2e68bf9ceb558f73dbf68c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad34c776f9a2e68bf9ceb558f73dbf68c">&#9670;&#160;</a></span>BlobType</h2>
@@ -345,6 +360,69 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a79fb1ed665feb9cc78a21d1ef4f58ae3" name="a79fb1ed665feb9cc78a21d1ef4f58ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79fb1ed665feb9cc78a21d1ef4f58ae3">&#9670;&#160;</a></span>ExitBootServices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Boot::ExitBootServices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_ne_o_s.html#a09d79cd68f15b02280f00125b4e62cb5">UInt64</a>&#160;</td>
+          <td class="paramname"><em>MapKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2">EfiHandlePtr</a>&#160;</td>
+          <td class="paramname"><em>ImageHandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exit EFI API to let the OS load correctly. Bascially frees everything we have in the EFI side. </p>
+
+</div>
+</div>
+<a id="a219033067ceb1ad089818c762d1dfb65" name="a219033067ceb1ad089818c762d1dfb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a219033067ceb1ad089818c762d1dfb65">&#9670;&#160;</a></span>Platform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_ne_o_s.html#a160d206409956603d46f6292a41b1f52">UInt32</a> Boot::Platform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44ca29987d47d4722498cac5fb53f3eb" name="a44ca29987d47d4722498cac5fb53f3eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44ca29987d47d4722498cac5fb53f3eb">&#9670;&#160;</a></span>rt_jump_to_address()</h2>
 
@@ -375,6 +453,70 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b0bee034f9cce36874019301bc2ac40" name="a8b0bee034f9cce36874019301bc2ac40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0bee034f9cce36874019301bc2ac40">&#9670;&#160;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a> Boot::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Halt and clear interrupts. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a770cf51bd60eaa15b9a35af8f2b5bc3b" name="a770cf51bd60eaa15b9a35af8f2b5bc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770cf51bd60eaa15b9a35af8f2b5bc3b">&#9670;&#160;</a></span>ThrowError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Boot::ThrowError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_ne_o_s.html#a47c41d4526d5406d0f76828b483217e2">WideChar</a> *&#160;</td>
+          <td class="paramname"><em>errorCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_ne_o_s.html#a47c41d4526d5406d0f76828b483217e2">WideChar</a> *&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

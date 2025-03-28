@@ -52,8 +52,8 @@ var annotated_dup =
         [ "BootInfoHeader", "struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header.html", "struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header" ]
       ] ],
       [ "Indexer", "namespace_ne_o_s_1_1_indexer.html", [
-        [ "IndexableProperty", "class_ne_o_s_1_1_indexer_1_1_indexable_property.html", "class_ne_o_s_1_1_indexer_1_1_indexable_property" ],
-        [ "IndexProperty", "struct_ne_o_s_1_1_indexer_1_1_index_property.html", "struct_ne_o_s_1_1_indexer_1_1_index_property" ]
+        [ "Index", "struct_ne_o_s_1_1_indexer_1_1_index.html", "struct_ne_o_s_1_1_indexer_1_1_index" ],
+        [ "IndexableProperty", "class_ne_o_s_1_1_indexer_1_1_indexable_property.html", "class_ne_o_s_1_1_indexer_1_1_indexable_property" ]
       ] ],
       [ "PCI", "namespace_ne_o_s_1_1_p_c_i.html", [
         [ "Detail", "namespace_ne_o_s_1_1_p_c_i_1_1_detail.html", [
@@ -179,6 +179,7 @@ var annotated_dup =
     [ "atexit_func_entry_t", "structatexit__func__entry__t.html", "structatexit__func__entry__t" ],
     [ "BootDeviceATA", "class_boot_device_a_t_a.html", "class_boot_device_a_t_a" ],
     [ "BootDeviceSATA", "class_boot_device_s_a_t_a.html", "class_boot_device_s_a_t_a" ],
+    [ "DDK_FINAL", "struct_d_d_k___f_i_n_a_l.html", "struct_d_d_k___f_i_n_a_l" ],
     [ "Device", "class_device.html", "class_device" ],
     [ "DI_DISK_IMAGE", "struct_d_i___d_i_s_k___i_m_a_g_e.html", "struct_d_i___d_i_s_k___i_m_a_g_e" ],
     [ "EFI_FINAL", "struct_e_f_i___f_i_n_a_l.html", "struct_e_f_i___f_i_n_a_l" ],
