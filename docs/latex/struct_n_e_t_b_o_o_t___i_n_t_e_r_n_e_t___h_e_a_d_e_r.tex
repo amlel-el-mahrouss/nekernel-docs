@@ -1,0 +1,166 @@
+\doxysection{NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER Struct Reference}
+\hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r}{}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r}\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+
+
+the internet header is used to download updates OTA.  
+
+
+
+
+{\ttfamily \#include $<$Net\+Boot.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a93be4ccb52f14fb7cd55bebeb5ef74a5}{NB1}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a52479351e9b35a244d52055ac7c1531f}{NB2}}
+\begin{DoxyCompactList}\small\item\em magic char 1 \textquotesingle{}N\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeef01010c6ecfa17d22e6ec95c5f17fb}{NB3}}
+\begin{DoxyCompactList}\small\item\em magic char 2 \textquotesingle{}E\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_adb039be91403d72cccc8d76cae70eec0}{NB4}}
+\begin{DoxyCompactList}\small\item\em magic char 3 \textquotesingle{}T\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a054a3e4f9c96e6393004760231b0cda8}{Patch\+Name}} \mbox{[}\mbox{\hyperlink{boot_2modules_2_net_boot_2_net_boot_8h_a6286e689e45cd518d069178a47b25ac5}{k\+Net\+Boot\+Name\+Len}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em magic char 4 \textquotesingle{}B\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a6876768a123b8b09564cc4d77f744899}{Patch\+Length}}
+\begin{DoxyCompactList}\small\item\em example\+: Modjo \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a628f3e846acc85514276b9776fd5512f}{Patch\+Target}} \mbox{[}\mbox{\hyperlink{boot_2modules_2_net_boot_2_net_boot_8h_a6286e689e45cd518d069178a47b25ac5}{k\+Net\+Boot\+Name\+Len}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em the patch length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a94e32c1524d43ca4f77a84ea24956e10}{EEPROM}}\+: 1
+\begin{DoxyCompactList}\small\item\em the target file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeff308c8216e34f71554bee233b481c6}{Preflight}}\+: 1
+\begin{DoxyCompactList}\small\item\em does it imply an EEPROM reprogram? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aab150e3723f98362aad12f9dcf417abe}{Patch\+Data}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em is it a preflight packet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a4e96c2d5c39651db8aa571bc02ba1723}{Implies\+ROM}}
+\begin{DoxyCompactList}\small\item\em the target file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a85e0c081f574d41d4cec8d52bf9dbb53}{Patch}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em is it a preflight packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the internet header is used to download updates OTA. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a94e32c1524d43ca4f77a84ea24956e10}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a94e32c1524d43ca4f77a84ea24956e10} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!EEPROM@{EEPROM}}
+\index{EEPROM@{EEPROM}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{EEPROM}{EEPROM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+EEPROM}
+
+
+
+the target file. 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a4e96c2d5c39651db8aa571bc02ba1723}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a4e96c2d5c39651db8aa571bc02ba1723} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!ImpliesROM@{ImpliesROM}}
+\index{ImpliesROM@{ImpliesROM}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{ImpliesROM}{ImpliesROM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+Implies\+ROM}
+
+
+
+the target file. 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a93be4ccb52f14fb7cd55bebeb5ef74a5}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a93be4ccb52f14fb7cd55bebeb5ef74a5} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!NB1@{NB1}}
+\index{NB1@{NB1}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{NB1}{NB1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+NB1}
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a52479351e9b35a244d52055ac7c1531f}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a52479351e9b35a244d52055ac7c1531f} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!NB2@{NB2}}
+\index{NB2@{NB2}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{NB2}{NB2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+NB2}
+
+
+
+magic char 1 \textquotesingle{}N\textquotesingle{} 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeef01010c6ecfa17d22e6ec95c5f17fb}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeef01010c6ecfa17d22e6ec95c5f17fb} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!NB3@{NB3}}
+\index{NB3@{NB3}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{NB3}{NB3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+NB3}
+
+
+
+magic char 2 \textquotesingle{}E\textquotesingle{} 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_adb039be91403d72cccc8d76cae70eec0}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_adb039be91403d72cccc8d76cae70eec0} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!NB4@{NB4}}
+\index{NB4@{NB4}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{NB4}{NB4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+NB4}
+
+
+
+magic char 3 \textquotesingle{}T\textquotesingle{} 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a85e0c081f574d41d4cec8d52bf9dbb53}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a85e0c081f574d41d4cec8d52bf9dbb53} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!Patch@{Patch}}
+\index{Patch@{Patch}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{Patch}{Patch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+Patch\mbox{[}$\,$\mbox{]}}
+
+
+
+is it a preflight packet. 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aab150e3723f98362aad12f9dcf417abe}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aab150e3723f98362aad12f9dcf417abe} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!PatchData@{PatchData}}
+\index{PatchData@{PatchData}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{PatchData}{PatchData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+Patch\+Data\mbox{[}$\,$\mbox{]}}
+
+
+
+is it a preflight packet. 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a6876768a123b8b09564cc4d77f744899}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a6876768a123b8b09564cc4d77f744899} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!PatchLength@{PatchLength}}
+\index{PatchLength@{PatchLength}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{PatchLength}{PatchLength}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+Patch\+Length}
+
+
+
+example\+: Modjo 
+
+example\+: Cold\+Choco \Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a054a3e4f9c96e6393004760231b0cda8}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a054a3e4f9c96e6393004760231b0cda8} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!PatchName@{PatchName}}
+\index{PatchName@{PatchName}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{PatchName}{PatchName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+Patch\+Name}
+
+
+
+magic char 4 \textquotesingle{}B\textquotesingle{} 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a628f3e846acc85514276b9776fd5512f}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a628f3e846acc85514276b9776fd5512f} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!PatchTarget@{PatchTarget}}
+\index{PatchTarget@{PatchTarget}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{PatchTarget}{PatchTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+Patch\+Target}
+
+
+
+the patch length. 
+
+\Hypertarget{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeff308c8216e34f71554bee233b481c6}\label{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeff308c8216e34f71554bee233b481c6} 
+\index{NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}!Preflight@{Preflight}}
+\index{Preflight@{Preflight}!NETBOOT\_INTERNET\_HEADER@{NETBOOT\_INTERNET\_HEADER}}
+\doxysubsubsection{\texorpdfstring{Preflight}{Preflight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}} NETBOOT\+\_\+\+INTERNET\+\_\+\+HEADER\+::\+Preflight}
+
+
+
+does it imply an EEPROM reprogram? 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/boot/modules/\+Net\+Boot/\mbox{\hyperlink{boot_2modules_2_net_boot_2_net_boot_8h}{Net\+Boot.\+h}}\item 
+dev/kernel/\+Firmware\+Kit/\+Core\+Boot/\mbox{\hyperlink{kernel_2_firmware_kit_2_core_boot_2_net_boot_8h}{Net\+Boot.\+h}}\end{DoxyCompactItemize}

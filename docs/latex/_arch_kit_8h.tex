@@ -1,0 +1,90 @@
+\doxysection{dev/kernel/\+Arch\+Kit/\+Arch\+Kit.h File Reference}
+\hypertarget{_arch_kit_8h}{}\label{_arch_kit_8h}\index{dev/kernel/ArchKit/ArchKit.h@{dev/kernel/ArchKit/ArchKit.h}}
+{\ttfamily \#include $<$New\+Kit/\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Function.\+h$>$}\newline
+{\ttfamily \#include $<$Firmware\+Kit/\+Handover.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_hal_syscall_entry}{Hal\+Syscall\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l}{Ne\+OS\+::\+HAL}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{\doxylink{namespace_ne_o_s_1_1_h_a_l}{HAL}}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_arch_kit_8h_a7527d5ca1027f9a8a527139bc6e5ce63}{k\+Kernel\+Max\+System\+Calls}}~(512U)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_arch_kit_8h_a1a80e1543faa7142a32d42d237b78265}{rt\+\_\+syscall\+\_\+proc}}) (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a85f5efd364b22cf454f28a3238a584aa}{SSizeT}} \mbox{\hyperlink{namespace_ne_o_s_ace61fe07d2ec52073431034afb45386c}{Ne\+OS\+::rt\+\_\+hash\+\_\+seed}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}seed, int mul)
+\item 
+{\footnotesize template$<$typename Data\+Kind $>$ }\\\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_a50845433b5f1f063fd481ff26d3ff42c}{Ne\+OS\+::ke\+\_\+dma\+\_\+write}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} base, Data\+Kind reg, Data\+Kind value) noexcept
+\begin{DoxyCompactList}\small\item\em write to mapped memory register \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Data\+Kind $>$ }\\\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{namespace_ne_o_s_a88bc927f09c1dad51e2e3c81bb45d46f}{Ne\+OS\+::ke\+\_\+dma\+\_\+read}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} base, Data\+Kind reg) noexcept
+\begin{DoxyCompactList}\small\item\em read from mapped memory register. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a534c8ef3402fde155a68e29f283dbd51}{Ne\+OS\+::\+HAL\+::mm\+\_\+is\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{Ne\+OS\+::\+HAL\+::\+Stack\+Frame\+Ptr}} \mbox{\hyperlink{_arch_kit_8h_a2332a9d1e69e367783ab1b2c7411edb3}{mp\+\_\+get\+\_\+current\+\_\+context}} (\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} pid)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ \mbox{\hyperlink{struct_hal_syscall_entry}{Hal\+Syscall\+Entry}}, \mbox{\hyperlink{_arch_kit_8h_a7527d5ca1027f9a8a527139bc6e5ce63}{k\+Kernel\+Max\+System\+Calls}} $>$ \mbox{\hyperlink{_arch_kit_8h_a5361083e36f237d22b13b4268863661a}{k\+Syscalls}}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ \mbox{\hyperlink{struct_hal_syscall_entry}{Hal\+Syscall\+Entry}}, \mbox{\hyperlink{_arch_kit_8h_a7527d5ca1027f9a8a527139bc6e5ce63}{k\+Kernel\+Max\+System\+Calls}} $>$ \mbox{\hyperlink{_arch_kit_8h_aaea525ea2a3ccdfdb6754fb7e1610dcf}{k\+Kerncalls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_arch_kit_8h_a7527d5ca1027f9a8a527139bc6e5ce63}\label{_arch_kit_8h_a7527d5ca1027f9a8a527139bc6e5ce63} 
+\index{ArchKit.h@{ArchKit.h}!kKernelMaxSystemCalls@{kKernelMaxSystemCalls}}
+\index{kKernelMaxSystemCalls@{kKernelMaxSystemCalls}!ArchKit.h@{ArchKit.h}}
+\doxysubsubsection{\texorpdfstring{kKernelMaxSystemCalls}{kKernelMaxSystemCalls}}
+{\footnotesize\ttfamily \#define k\+Kernel\+Max\+System\+Calls~(512U)}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_arch_kit_8h_a1a80e1543faa7142a32d42d237b78265}\label{_arch_kit_8h_a1a80e1543faa7142a32d42d237b78265} 
+\index{ArchKit.h@{ArchKit.h}!rt\_syscall\_proc@{rt\_syscall\_proc}}
+\index{rt\_syscall\_proc@{rt\_syscall\_proc}!ArchKit.h@{ArchKit.h}}
+\doxysubsubsection{\texorpdfstring{rt\_syscall\_proc}{rt\_syscall\_proc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}}(\texorpdfstring{$\ast$}{*} rt\+\_\+syscall\+\_\+proc) (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}})}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_arch_kit_8h_a2332a9d1e69e367783ab1b2c7411edb3}\label{_arch_kit_8h_a2332a9d1e69e367783ab1b2c7411edb3} 
+\index{ArchKit.h@{ArchKit.h}!mp\_get\_current\_context@{mp\_get\_current\_context}}
+\index{mp\_get\_current\_context@{mp\_get\_current\_context}!ArchKit.h@{ArchKit.h}}
+\doxysubsubsection{\texorpdfstring{mp\_get\_current\_context()}{mp\_get\_current\_context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{Ne\+OS\+::\+HAL\+::\+Stack\+Frame\+Ptr}} mp\+\_\+get\+\_\+current\+\_\+context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}}}]{pid }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_arch_kit_8h_aaea525ea2a3ccdfdb6754fb7e1610dcf}\label{_arch_kit_8h_aaea525ea2a3ccdfdb6754fb7e1610dcf} 
+\index{ArchKit.h@{ArchKit.h}!kKerncalls@{kKerncalls}}
+\index{kKerncalls@{kKerncalls}!ArchKit.h@{ArchKit.h}}
+\doxysubsubsection{\texorpdfstring{kKerncalls}{kKerncalls}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$\mbox{\hyperlink{struct_hal_syscall_entry}{Hal\+Syscall\+Entry}}, \mbox{\hyperlink{_arch_kit_8h_a7527d5ca1027f9a8a527139bc6e5ce63}{k\+Kernel\+Max\+System\+Calls}}$>$ k\+Kerncalls\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_arch_kit_8h_a5361083e36f237d22b13b4268863661a}\label{_arch_kit_8h_a5361083e36f237d22b13b4268863661a} 
+\index{ArchKit.h@{ArchKit.h}!kSyscalls@{kSyscalls}}
+\index{kSyscalls@{kSyscalls}!ArchKit.h@{ArchKit.h}}
+\doxysubsubsection{\texorpdfstring{kSyscalls}{kSyscalls}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$\mbox{\hyperlink{struct_hal_syscall_entry}{Hal\+Syscall\+Entry}}, \mbox{\hyperlink{_arch_kit_8h_a7527d5ca1027f9a8a527139bc6e5ce63}{k\+Kernel\+Max\+System\+Calls}}$>$ k\+Syscalls\hspace{0.3cm}{\ttfamily [inline]}}
+

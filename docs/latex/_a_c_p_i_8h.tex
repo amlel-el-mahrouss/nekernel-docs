@@ -1,0 +1,50 @@
+\doxysection{dev/modules/\+ACPI/\+ACPI.h File Reference}
+\hypertarget{_a_c_p_i_8h}{}\label{_a_c_p_i_8h}\index{dev/modules/ACPI/ACPI.h@{dev/modules/ACPI/ACPI.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_s_d_t}{Ne\+OS\+::\+SDT}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_r_s_d_p}{Ne\+OS\+::\+RSDP}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_config_header}{Ne\+OS\+::\+Config\+Header}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_a_c_p_i___a_d_d_r_e_s_s}{Ne\+OS\+::\+ACPI\+\_\+\+ADDRESS}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_r_s_d_t}{Ne\+OS\+::\+RSDT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_a_c_p_i_8h_a7a338e800248cd56cde3effbf5cc6c44}{SDT\+\_\+\+OBJECT}}~\+: public \mbox{\hyperlink{class_ne_o_s_1_1_s_d_t}{Ne\+OS\+::\+SDT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24}{Ne\+OS\+::\+ACPI\+\_\+\+ADDRESS\+\_\+\+SPACE\+\_\+\+KIND}} \+: UInt8 \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24abb3324405116db3bf56bf49bbb766c00}{Ne\+OS\+::e\+System\+Memory}} = 0
+, \mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24a242ff44afc4abdb86e1469a3a7bb5250}{Ne\+OS\+::e\+System\+IO}} = 1
+, \mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24ac99fae74f53ce705163d664d705298df}{Ne\+OS\+::e\+Pci}} = 2
+, \mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24a3d46ae3cf849bfa2d923066149f46216}{Ne\+OS\+::e\+Controller}} = 3
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24a8748b5d93a0325847aab0994aec3ea9d}{Ne\+OS\+::e\+Sm\+Bus}} = 4
+, \mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24aef8144c7d2eb707592aef4127242d415}{Ne\+OS\+::e\+Count}} = 5
+, \mbox{\hyperlink{namespace_ne_o_s_a35caf034fe357498028446f545d94d24af67a86c70b2c8605fd9b1438a382d309}{Ne\+OS\+::e\+Invalid}} = 0x\+FF
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_a_c_p_i_8h_a7a338e800248cd56cde3effbf5cc6c44}\label{_a_c_p_i_8h_a7a338e800248cd56cde3effbf5cc6c44} 
+\index{ACPI.h@{ACPI.h}!SDT\_OBJECT@{SDT\_OBJECT}}
+\index{SDT\_OBJECT@{SDT\_OBJECT}!ACPI.h@{ACPI.h}}
+\doxysubsubsection{\texorpdfstring{SDT\_OBJECT}{SDT\_OBJECT}}
+{\footnotesize\ttfamily \#define SDT\+\_\+\+OBJECT~\+: public \mbox{\hyperlink{class_ne_o_s_1_1_s_d_t}{Ne\+OS\+::\+SDT}}}
+
+\href{https://uefi.org/specs/ACPI/6.5/05_ACPI_Software_Programming_Model.html}{\texttt{ https\+://uefi.\+org/specs/\+ACPI/6.\+5/05\+\_\+\+ACPI\+\_\+\+Software\+\_\+\+Programming\+\_\+\+Model.\+html}} 

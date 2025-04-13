@@ -1,0 +1,64 @@
+\doxysection{Processor.\+h}
+\hypertarget{_p_o_w_e_r_2_processor_8h_source}{}\label{_p_o_w_e_r_2_processor_8h_source}\index{dev/kernel/HALKit/POWER/Processor.h@{dev/kernel/HALKit/POWER/Processor.h}}
+\mbox{\hyperlink{_p_o_w_e_r_2_processor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ Purpose:\ POWER\ processor\ header.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{}}
+\DoxyCodeLine{00007\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_new_kit_2_utils_8h}{NewKit/Utils.h}}>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ NoOp()\ \ \ \ \ \ \ \ \ \ \ asm\ volatile("{}mr\ 0,\ 0"{})}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ kHalPPCAlignment\ \_\_attribute\_\_((aligned(4)))}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l}{NeOS::HAL}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{user_2_macros_8h_aea33bdc955927086847adc88212e6b2e}{UIntPtr}}\ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a8bd7da6ad620b53e88d03f8077b51a32}{Reg}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a36d525cf4d116b2fe4ecc00222b256f1}{PACKED}}\ StackFrame\ final}
+\DoxyCodeLine{00023\ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Reg\ R8\{0\};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ Reg\ R9\{0\};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ Reg\ R10\{0\};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ Reg\ R11\{0\};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ Reg\ R12\{0\};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Reg\ R13\{0\};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ Reg\ R14\{0\};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ Reg\ R15\{0\};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ Reg\ SP\{0\};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ Reg\ BP\{0\};}
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{typedef}\ StackFrame*\ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{StackFramePtr}};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a691ad54da06d757ef4c4989e2b5bae13}{rt\_halt}}()}
+\DoxyCodeLine{00039\ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_p_o_w_e_r_2_processor_8h_ae3d5e3e038c78ab13c711cd65aaf0f55}{NoOp}}();\ \textcolor{comment}{//\ no\ oop.}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a763a5c2ec6347ff296e81bcef7e7634a}{rt\_cli}}()}
+\DoxyCodeLine{00047\ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_p_o_w_e_r_2_processor_8h_ae3d5e3e038c78ab13c711cd65aaf0f55}{NoOp}}();\ \textcolor{comment}{//\ no\ oop}}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \}\ \textcolor{comment}{//\ namespace\ NeOS::HAL}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \mbox{\hyperlink{_a_m_d64_2_processor_8h_a18f433471d4ed45378539802211a7ccb}{EXTERN\_C}}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{_p_o_w_e_r_2_processor_8h_ab8ab9f5ec903655ccd187c3b98c562b9}{int\_handle\_math}}(\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{NeOS::UIntPtr}}\ sp);}
+\DoxyCodeLine{00053\ \mbox{\hyperlink{_a_m_d64_2_processor_8h_a18f433471d4ed45378539802211a7ccb}{EXTERN\_C}}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{_p_o_w_e_r_2_processor_8h_aa86853f72b72d1deaf91eea97f7f8af6}{int\_handle\_pf}}(\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{NeOS::UIntPtr}}\ sp);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{NeOS::Bool}}\ \mbox{\hyperlink{_p_o_w_e_r_2_processor_8h_a438d78570f36306a8d9d7ecf7f19efea}{hal\_set\_tlb}}(\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ tlb,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ epn,\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{NeOS::UInt64}}\ rpn,\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ perms,\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ wimge,\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ ts,\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ esel,\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ tsize,\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ iprot);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{_p_o_w_e_r_2_processor_8h_a4a4a55f0d2aab9be4f17120a54c531ed}{hal\_write\_tlb}}(\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ mas0,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ mas1,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ mas2,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ mas3,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ mas7);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \mbox{\hyperlink{_a_m_d64_2_processor_8h_a18f433471d4ed45378539802211a7ccb}{EXTERN\_C}}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{_p_o_w_e_r_2_processor_8h_a3e81efcdafebb18189e07a4cbee2c1d5}{hal\_flush\_tlb}}();}
+
+\end{DoxyCode}

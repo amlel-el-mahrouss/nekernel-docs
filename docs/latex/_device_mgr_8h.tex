@@ -1,0 +1,58 @@
+\doxysection{dev/kernel/\+Kernel\+Kit/\+Device\+Mgr.h File Reference}
+\hypertarget{_device_mgr_8h}{}\label{_device_mgr_8h}\index{dev/kernel/KernelKit/DeviceMgr.h@{dev/kernel/KernelKit/DeviceMgr.h}}
+{\ttfamily \#include $<$New\+Kit/\+Error\+Or.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Ref.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_device}{Device} contract interface, represents an HW device. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_i_o_buf}{Ne\+OS\+::\+IOBuf$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Input Output abstract class. Used mainly to communicate between OS to hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_device_mgr_8h_ab7e01a3cafb4b8eb1365b0bfc7e37b23}{k\+Device\+Mgr\+Root\+Dir\+Path}}~"{}/Devices/"{}
+\item 
+\#define \mbox{\hyperlink{_device_mgr_8h_a003e6c4700d518adbf5ca256c38f4b7e}{NE\+\_\+\+DEVICE}}~\+: public \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{\+::\+Ne\+OS\+::\+IDevice\+Object}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a1a4aea30b27947b56cd5c98743ceaf67}{Ne\+OS\+::k\+Device\+Type\+IDE}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a5f875493a9a9b728a0deae71c1f20c5d}{Ne\+OS\+::k\+Device\+Type\+Ethernet}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a9930bf46d2aece94439f654ee1bfc1b5}{Ne\+OS\+::k\+Device\+Type\+Wi\+Fi}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a413898e631b243c551e5c5e2f89b91aa}{Ne\+OS\+::k\+Device\+Type\+FW}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a9826daaa3d448e10d55a0815bb6f2ad0}{Ne\+OS\+::k\+Device\+Type\+BT}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a16260af33220f40a043bc7ea0a2a7129}{Ne\+OS\+::k\+Device\+Type\+RS232}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a39a52ce822fc2f40044f5a11e9f190f1}{Ne\+OS\+::k\+Device\+Type\+SCSI}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a10082848e4cafbd9e468048fea1163b2}{Ne\+OS\+::k\+Device\+Type\+AHCI}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16aa9ef8e30d3ba99afd99c688b208efe57}{Ne\+OS\+::k\+Device\+Type\+MBCI}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16aae321d410ae9221ad9520df3be9c3aee}{Ne\+OS\+::k\+Device\+Type\+USB}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a7acee0cd0b8aed1c60fb975379c386ba}{Ne\+OS\+::k\+Device\+Type\+Media\+Ctrl}}
+, \mbox{\hyperlink{namespace_ne_o_s_ab9ab80ffb38ab917116ef033d0a65a16a8c2cbd5bb2587406cf6917a5d598838c}{Ne\+OS\+::k\+Device\+Type\+Count}}
+ \}
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_device_mgr_8h_ab7e01a3cafb4b8eb1365b0bfc7e37b23}\label{_device_mgr_8h_ab7e01a3cafb4b8eb1365b0bfc7e37b23} 
+\index{DeviceMgr.h@{DeviceMgr.h}!kDeviceMgrRootDirPath@{kDeviceMgrRootDirPath}}
+\index{kDeviceMgrRootDirPath@{kDeviceMgrRootDirPath}!DeviceMgr.h@{DeviceMgr.h}}
+\doxysubsubsection{\texorpdfstring{kDeviceMgrRootDirPath}{kDeviceMgrRootDirPath}}
+{\footnotesize\ttfamily \#define k\+Device\+Mgr\+Root\+Dir\+Path~"{}/Devices/"{}}
+
+\Hypertarget{_device_mgr_8h_a003e6c4700d518adbf5ca256c38f4b7e}\label{_device_mgr_8h_a003e6c4700d518adbf5ca256c38f4b7e} 
+\index{DeviceMgr.h@{DeviceMgr.h}!NE\_DEVICE@{NE\_DEVICE}}
+\index{NE\_DEVICE@{NE\_DEVICE}!DeviceMgr.h@{DeviceMgr.h}}
+\doxysubsubsection{\texorpdfstring{NE\_DEVICE}{NE\_DEVICE}}
+{\footnotesize\ttfamily \#define NE\+\_\+\+DEVICE~\+: public \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{\+::\+Ne\+OS\+::\+IDevice\+Object}}}
+

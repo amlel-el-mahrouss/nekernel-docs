@@ -1,0 +1,60 @@
+\doxysection{dev/modules/\+NVME/\+NVME.h File Reference}
+\hypertarget{modules_2_n_v_m_e_2_n_v_m_e_8h}{}\label{modules_2_n_v_m_e_2_n_v_m_e_8h}\index{dev/modules/NVME/NVME.h@{dev/modules/NVME/NVME.h}}
+
+
+NVME driver.  
+
+
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___n_v_m_e___b_a_r__0}{Ne\+OS\+::\+HAL\+\_\+\+NVME\+\_\+\+BAR\+\_\+0}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___n_v_m_e___q_u_e_u_e}{Ne\+OS\+::\+HAL\+\_\+\+NVME\+\_\+\+QUEUE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{modules_2_n_v_m_e_2_n_v_m_e_8h_aee349063183d3316c2ed371cb3670368}{NE\+\_\+\+ALIGN\+\_\+\+NVME}}~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(aligned(sizeof(\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}})))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99ba2f3e7b362ca2a206e277dc216f191f16}{Ne\+OS\+::k\+Invalid\+NVME}}
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99bacc5ae660855786f4974e9f425d5c6687}{Ne\+OS\+::k\+Create\+Completion\+Queue\+NVME}} = 0x05
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99ba00f7a7b6d03d80a5c3ea948641995000}{Ne\+OS\+::k\+Create\+Submission\+Queue\+NVME}} = 0x01
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99ba23db4d93a65cfed9ee996a2fed5dbeb0}{Ne\+OS\+::k\+Identify\+NVME}} = 0x06
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99ba49537489e260e0ca54afbd4464e51451}{Ne\+OS\+::k\+Read\+NVME}} = 0x02
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99ba75973b52e180ee3632ef6318d83fe9a4}{Ne\+OS\+::k\+Write\+NVME}} = 0x01
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99bae06bbad56e940c4bf36a68691d6b7cba}{Ne\+OS\+::k\+Count\+NVME}} = 5
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Opcode$>$ }\\\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{namespace_ne_o_s_accd959398b91176b4d3e76efb6e8fdf8}{Ne\+OS\+::nvme\+\_\+create\+\_\+admin\+\_\+command}} (\mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___n_v_m_e___q_u_e_u_e}{HAL\+\_\+\+NVME\+\_\+\+QUEUE}} \texorpdfstring{$\ast$}{*}entry, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} nsid, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} prp\+Transfer\mbox{[}3\mbox{]}, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} starting\+Lba\mbox{[}2\mbox{]}, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} low\+Transfer\+Blocks)
+\begin{DoxyCompactList}\small\item\em Creates an admin command for a DMA operation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Opcode$>$ }\\\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{namespace_ne_o_s_a5ccace38e1865fff7226f0b6e1c62433}{Ne\+OS\+::nvme\+\_\+create\+\_\+io\+\_\+command}} (\mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___n_v_m_e___q_u_e_u_e}{HAL\+\_\+\+NVME\+\_\+\+QUEUE}} \texorpdfstring{$\ast$}{*}entry, \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} base\+Address, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} ident\+Lo\+And\+Queue\+Size\+Hi, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} flags\+Lo\+And\+Queue\+Compl\+Id\+Hi, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} identify, \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} provide\+Identify=\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}, \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} namespace\+Identify=\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}})
+\begin{DoxyCompactList}\small\item\em Creates an I/O command for a DMA operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+NVME driver. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{modules_2_n_v_m_e_2_n_v_m_e_8h_aee349063183d3316c2ed371cb3670368}\label{modules_2_n_v_m_e_2_n_v_m_e_8h_aee349063183d3316c2ed371cb3670368} 
+\index{NVME.h@{NVME.h}!NE\_ALIGN\_NVME@{NE\_ALIGN\_NVME}}
+\index{NE\_ALIGN\_NVME@{NE\_ALIGN\_NVME}!NVME.h@{NVME.h}}
+\doxysubsubsection{\texorpdfstring{NE\_ALIGN\_NVME}{NE\_ALIGN\_NVME}}
+{\footnotesize\ttfamily \#define NE\+\_\+\+ALIGN\+\_\+\+NVME~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(aligned(sizeof(\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}})))}
+

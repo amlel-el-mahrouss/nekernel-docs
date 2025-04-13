@@ -1,0 +1,143 @@
+\doxysection{Ne\+OS\+::Nullable\+Mutable\+Array\texorpdfstring{$<$}{<} T, \+\_\+\+Place\+Holder\+Value \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_ne_o_s_1_1_nullable_mutable_array}{}\label{class_ne_o_s_1_1_nullable_mutable_array}\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+
+
+{\ttfamily \#include $<$Mutable\+Array.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a39bf2cba9c5014b6f47566aa25c32fef}{Nullable\+Mutable\+Array}} ()
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a48299e5d379e2135be71b26c7ccb80c3}{\texorpdfstring{$\sim$}{\string~}\+Nullable\+Mutable\+Array}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Nullable\+Mutable\+Array}} \& \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a8db015dba0abc44225a613198695e68e}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Nullable\+Mutable\+Array}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_ad7db5ace7d56c0e747d91669ecbbe8e8}{Nullable\+Mutable\+Array}} (const \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Nullable\+Mutable\+Array}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_add5aeb93d2e8b77249ca70cbeb07d543}{operator bool}} ()
+\item 
+T \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_aabfca11707d37442c93c377b4baaffa3}{operator\mbox{[}$\,$\mbox{]}}} (const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&Index) const
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a9970adbee69060115d21bb1e4fb752f5}{Count}} () const
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_ae1c1eca06efc1e6ff88d3c04bfd23525}{Remove}} (const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&Index)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a18c8a63ad7c15adf614451d3bf99d9f8}{Add}} (const T val)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_mutable_linked_list}{Mutable\+Linked\+List}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a8314791dd7b3c3777aa66bd720a78914}{f\+Last\+Node}} \{nullptr\}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_mutable_linked_list}{Mutable\+Linked\+List}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a6daeee5973aed34d674a9d10cabef4df}{f\+First\+Node}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_accb0463e81abe687a7331a8356541c28}{f\+Node\+Count}} \{0\}
+\item 
+friend \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array_a83502a6716fe10888395705d39baa298}{Mutable\+Array$<$ T $>$}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a39bf2cba9c5014b6f47566aa25c32fef}\label{class_ne_o_s_1_1_nullable_mutable_array_a39bf2cba9c5014b6f47566aa25c32fef} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!NullableMutableArray@{NullableMutableArray}}
+\index{NullableMutableArray@{NullableMutableArray}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{NullableMutableArray()}{NullableMutableArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::\+Nullable\+Mutable\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a48299e5d379e2135be71b26c7ccb80c3}\label{class_ne_o_s_1_1_nullable_mutable_array_a48299e5d379e2135be71b26c7ccb80c3} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!````~NullableMutableArray@{\texorpdfstring{$\sim$}{\string~}NullableMutableArray}}
+\index{````~NullableMutableArray@{\texorpdfstring{$\sim$}{\string~}NullableMutableArray}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}NullableMutableArray()}{\string~NullableMutableArray()}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Nullable\+Mutable\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_ad7db5ace7d56c0e747d91669ecbbe8e8}\label{class_ne_o_s_1_1_nullable_mutable_array_ad7db5ace7d56c0e747d91669ecbbe8e8} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!NullableMutableArray@{NullableMutableArray}}
+\index{NullableMutableArray@{NullableMutableArray}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{NullableMutableArray()}{NullableMutableArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::\+Nullable\+Mutable\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a18c8a63ad7c15adf614451d3bf99d9f8}\label{class_ne_o_s_1_1_nullable_mutable_array_a18c8a63ad7c15adf614451d3bf99d9f8} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!Add@{Add}}
+\index{Add@{Add}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::\+Add (\begin{DoxyParamCaption}\item[{const T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a9970adbee69060115d21bb1e4fb752f5}\label{class_ne_o_s_1_1_nullable_mutable_array_a9970adbee69060115d21bb1e4fb752f5} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!Count@{Count}}
+\index{Count@{Count}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_add5aeb93d2e8b77249ca70cbeb07d543}\label{class_ne_o_s_1_1_nullable_mutable_array_add5aeb93d2e8b77249ca70cbeb07d543} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a8db015dba0abc44225a613198695e68e}\label{class_ne_o_s_1_1_nullable_mutable_array_a8db015dba0abc44225a613198695e68e} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Nullable\+Mutable\+Array}} \& \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_aabfca11707d37442c93c377b4baaffa3}\label{class_ne_o_s_1_1_nullable_mutable_array_aabfca11707d37442c93c377b4baaffa3} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+T \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&}]{Index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_ae1c1eca06efc1e6ff88d3c04bfd23525}\label{class_ne_o_s_1_1_nullable_mutable_array_ae1c1eca06efc1e6ff88d3c04bfd23525} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::\+Remove (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&}]{Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a6daeee5973aed34d674a9d10cabef4df}\label{class_ne_o_s_1_1_nullable_mutable_array_a6daeee5973aed34d674a9d10cabef4df} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!fFirstNode@{fFirstNode}}
+\index{fFirstNode@{fFirstNode}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{fFirstNode}{fFirstNode}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_mutable_linked_list}{Mutable\+Linked\+List}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::f\+First\+Node \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a8314791dd7b3c3777aa66bd720a78914}\label{class_ne_o_s_1_1_nullable_mutable_array_a8314791dd7b3c3777aa66bd720a78914} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!fLastNode@{fLastNode}}
+\index{fLastNode@{fLastNode}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{fLastNode}{fLastNode}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_mutable_linked_list}{Mutable\+Linked\+List}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::f\+Last\+Node \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_accb0463e81abe687a7331a8356541c28}\label{class_ne_o_s_1_1_nullable_mutable_array_accb0463e81abe687a7331a8356541c28} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!fNodeCount@{fNodeCount}}
+\index{fNodeCount@{fNodeCount}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{fNodeCount}{fNodeCount}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::f\+Node\+Count \{0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_nullable_mutable_array_a83502a6716fe10888395705d39baa298}\label{class_ne_o_s_1_1_nullable_mutable_array_a83502a6716fe10888395705d39baa298} 
+\index{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}!MutableArray$<$ T $>$@{MutableArray$<$ T $>$}}
+\index{MutableArray$<$ T $>$@{MutableArray$<$ T $>$}!NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$@{NeOS::NullableMutableArray$<$ T, \_PlaceHolderValue $>$}}
+\doxysubsubsection{\texorpdfstring{MutableArray$<$ T $>$}{MutableArray< T >}}
+{\footnotesize\ttfamily template$<$typename T , T \+\_\+\+Place\+Holder\+Value$>$ \\
+friend \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array}}$<$ T, \+\_\+\+Place\+Holder\+Value $>$\+::\+Mutable\+Array$<$ T $>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+New\+Kit/\mbox{\hyperlink{_mutable_array_8h}{Mutable\+Array.\+h}}\end{DoxyCompactItemize}

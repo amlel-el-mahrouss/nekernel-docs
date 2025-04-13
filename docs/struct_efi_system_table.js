@@ -1,7 +1,7 @@
 var struct_efi_system_table =
 [
     [ "BootServices", "struct_efi_system_table.html#ab5e346992a8fab892aaee3c2118e948c", null ],
-    [ "ConfigurationTable", "struct_efi_system_table.html#a421b6fd0677173eb3d24c2d6fbce33dc", null ],
+    [ "ConfigurationTable", "struct_efi_system_table.html#a557bbaa8312cf3443ed26955e333f10a", null ],
     [ "ConIn", "struct_efi_system_table.html#ac65ba81cbd96df44f2110ff0ad45f682", null ],
     [ "ConOut", "struct_efi_system_table.html#a97db1865b82bf26947eac349474779c5", null ],
     [ "ConsoleInHandle", "struct_efi_system_table.html#a2922bed026624079711a61c16b5e30b3", null ],

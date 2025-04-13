@@ -1,0 +1,55 @@
+\doxysection{XCOFF.\+h}
+\hypertarget{_x_c_o_f_f_8h_source}{}\label{_x_c_o_f_f_8h_source}\index{dev/kernel/KernelKit/XCOFF.h@{dev/kernel/KernelKit/XCOFF.h}}
+\mbox{\hyperlink{_x_c_o_f_f_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ File:\ XCOFF.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ Purpose:\ XCOFF\ for\ Kernel.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ \ \ \ Revision\ History:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ \ \ \ 04/07/24:\ Added\ file\ (amlel)}}
+\DoxyCodeLine{00011\ \textcolor{comment}{}}
+\DoxyCodeLine{00012\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ INC\_XOCFF\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ INC\_XOCFF\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ kXCOFF64Magic\ (0x01F7)}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ kXCOFFRelFlg\ \ \ \ \ (0x0001)}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ kXCOFFExecutable\ (0x0002)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ kXCOFFLnno\ \ \ \ \ \ \ (0x0004)}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ kXCOFFLSyms\ \ \ \ \ \ (0x0008)}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_x_coff_file_header}{XCoffFileHeader}};}
+\DoxyCodeLine{00027\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_x_coff_fork_header}{XCoffForkHeader}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_x_coff_file_header}{XCoffFileHeader}}}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{NeOS::UInt16}}\ \ \mbox{\hyperlink{struct_x_coff_file_header_acae3a2224a423a646dada0d3d5f04ad3}{fMagic}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{NeOS::UInt16}}\ \ \mbox{\hyperlink{struct_x_coff_file_header_a3ba5a6ceeee9df886efc29bbe9267520}{fTarget}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{NeOS::UInt16}}\ \ \mbox{\hyperlink{struct_x_coff_file_header_af4e7d01dab0d630ba45b1ae5c8c7f91b}{fNumSecs}};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ \ \mbox{\hyperlink{struct_x_coff_file_header_a938b924f95255e80b1d58846c3da92c8}{fTimeDat}};}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{NeOS::UIntPtr}}\ \mbox{\hyperlink{struct_x_coff_file_header_a2caa256eb134fac580a1edb36f3f8f11}{fSymPtr}};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ \ \mbox{\hyperlink{struct_x_coff_file_header_aaab625e10a5d0ec5e751a0e318076f3c}{fNumSyms}};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{NeOS::UInt16}}\ \ \mbox{\hyperlink{struct_x_coff_file_header_a2b6a17cd3a389f03ae88390be95e719a}{fOptHdr}};\ \textcolor{comment}{//\ ?:\ Number\ of\ bytes\ in\ optional\ header}}
+\DoxyCodeLine{00039\ \}\ \mbox{\hyperlink{_x_c_o_f_f_8h_a20607df7e0322f981b51c3f54ed6b3a7}{XCoffFileHeader64}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ kForkNameLen\ (256U)}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_x_coff_fork_header}{XCoffForkHeader}}}
+\DoxyCodeLine{00045\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \mbox{\hyperlink{struct_x_coff_fork_header_a1234daa05c73f565c7d086a2d767a360}{fPropertiesXMLFork}}[\mbox{\hyperlink{_x_c_o_f_f_8h_adb45a2c4e7d2b0d6651739fcf26319b4}{kForkNameLen}}];}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \mbox{\hyperlink{struct_x_coff_fork_header_a4698524d9f7608d04c85c952adb78ba2}{fDynamicLoaderFork}}[\mbox{\hyperlink{_x_c_o_f_f_8h_adb45a2c4e7d2b0d6651739fcf26319b4}{kForkNameLen}}];}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \mbox{\hyperlink{struct_x_coff_fork_header_a5dc9b30ae6f50a1327175065ca998f06}{fCodeSignFork}}[\mbox{\hyperlink{_x_c_o_f_f_8h_adb45a2c4e7d2b0d6651739fcf26319b4}{kForkNameLen}}];}
+\DoxyCodeLine{00049\ \}\ \mbox{\hyperlink{struct_x_coff_fork_header}{XCoffForkHeader}};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifndef\ INC\_XOCFF\_H}}
+
+\end{DoxyCode}

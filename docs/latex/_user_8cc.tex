@@ -1,0 +1,51 @@
+\doxysection{dev/kernel/src/\+User.cc File Reference}
+\hypertarget{_user_8cc}{}\label{_user_8cc}\index{dev/kernel/src/User.cc@{dev/kernel/src/User.cc}}
+
+
+Multi-\/user support.  
+
+
+{\ttfamily \#include $<$Kernel\+Kit/\+User.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+KPC.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Kernel\+Panic.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+File\+Mgr.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Memory\+Mgr.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_detail}{Ne\+OS\+::\+Detail}}
+\begin{DoxyCompactList}\small\item\em Implementation details namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_user_8cc_acfc35efb420250c41191995010c4ea73}{k\+Std\+User\+Type}}~(0x\+EE)
+\item 
+\#define \mbox{\hyperlink{_user_8cc_a33b1b94fa3000902c4779f0bca68d8be}{k\+Super\+User\+Type}}~(0x\+EF)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a47a51cebeb81dc677b945a9dfa33e049}{Ne\+OS\+::\+Detail\+::cred\+\_\+construct\+\_\+token}} (\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}password, const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}in\+\_\+password, \mbox{\hyperlink{class_ne_o_s_1_1_user}{User}} \texorpdfstring{$\ast$}{*}user, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} length)
+\begin{DoxyCompactList}\small\item\em Constructs a password by hashing the password. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Multi-\/user support. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_user_8cc_acfc35efb420250c41191995010c4ea73}\label{_user_8cc_acfc35efb420250c41191995010c4ea73} 
+\index{User.cc@{User.cc}!kStdUserType@{kStdUserType}}
+\index{kStdUserType@{kStdUserType}!User.cc@{User.cc}}
+\doxysubsubsection{\texorpdfstring{kStdUserType}{kStdUserType}}
+{\footnotesize\ttfamily \#define k\+Std\+User\+Type~(0x\+EE)}
+
+\Hypertarget{_user_8cc_a33b1b94fa3000902c4779f0bca68d8be}\label{_user_8cc_a33b1b94fa3000902c4779f0bca68d8be} 
+\index{User.cc@{User.cc}!kSuperUserType@{kSuperUserType}}
+\index{kSuperUserType@{kSuperUserType}!User.cc@{User.cc}}
+\doxysubsubsection{\texorpdfstring{kSuperUserType}{kSuperUserType}}
+{\footnotesize\ttfamily \#define k\+Super\+User\+Type~(0x\+EF)}
+

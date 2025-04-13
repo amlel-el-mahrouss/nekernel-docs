@@ -1,0 +1,46 @@
+\doxysection{dev/\+Kernel/\+Kernel\+Kit/\+PCI/\+Device.h File Reference}
+\hypertarget{_kernel_2_kernel_kit_2_p_c_i_2_device_8h}{}\label{_kernel_2_kernel_kit_2_p_c_i_2_device_8h}\index{dev/Kernel/KernelKit/PCI/Device.h@{dev/Kernel/KernelKit/PCI/Device.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_p_c_i_1_1_device}{Ne\+OS\+::\+PCI\+::\+Device}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace where it\textquotesingle{}s API resides. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_p_c_i}{Ne\+OS\+::\+PCI}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_1_1_p_c_i_a3a92143b8f44ac30311a9a11fb7958bf}{Ne\+OS\+::\+PCI\+::\+Pci\+Config\+Kind}} \+: UShort \{ \mbox{\hyperlink{namespace_ne_o_s_1_1_p_c_i_a3a92143b8f44ac30311a9a11fb7958bfa8fefe9709090df50a1d6d7b6bcf6f7c0}{Ne\+OS\+::\+PCI\+::\+Config\+Address}} = 0x\+CF8
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_p_c_i_a3a92143b8f44ac30311a9a11fb7958bfacbc879c4bd3682a47d02e7fd332c3d43}{Ne\+OS\+::\+PCI\+::\+Config\+Data}} = 0x\+CFC
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_p_c_i_a3a92143b8f44ac30311a9a11fb7958bfa11450bdf07b4ea5cc6ad0e81c8d44527}{Ne\+OS\+::\+PCI\+::\+Command\+Reg}} = 0x0004
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_p_c_i_a3a92143b8f44ac30311a9a11fb7958bfa4bbb8f967da6d1a610596d7257179c2b}{Ne\+OS\+::\+PCI\+::\+Invalid}} = 0x\+FFFF
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void \mbox{\hyperlink{_kernel_2_kernel_kit_2_p_c_i_2_device_8h_ad10e3cd0f3fb6531bb07c4888c8d1eb1}{New\+OSPCISet\+Cfg\+Target}} (\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} bar)
+\item 
+\mbox{\hyperlink{_kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} \mbox{\hyperlink{_kernel_2_kernel_kit_2_p_c_i_2_device_8h_ad5c980ad1d12d80e4201242a3ca4d82d}{New\+OSPCIRead\+Raw}} (\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} bar)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_kernel_2_kernel_kit_2_p_c_i_2_device_8h_ad5c980ad1d12d80e4201242a3ca4d82d}\label{_kernel_2_kernel_kit_2_p_c_i_2_device_8h_ad5c980ad1d12d80e4201242a3ca4d82d} 
+\index{Device.h@{Device.h}!NewOSPCIReadRaw@{NewOSPCIReadRaw}}
+\index{NewOSPCIReadRaw@{NewOSPCIReadRaw}!Device.h@{Device.h}}
+\doxysubsubsection{\texorpdfstring{NewOSPCIReadRaw()}{NewOSPCIReadRaw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} New\+OSPCIRead\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}}}]{bar }\end{DoxyParamCaption})}
+
+\Hypertarget{_kernel_2_kernel_kit_2_p_c_i_2_device_8h_ad10e3cd0f3fb6531bb07c4888c8d1eb1}\label{_kernel_2_kernel_kit_2_p_c_i_2_device_8h_ad10e3cd0f3fb6531bb07c4888c8d1eb1} 
+\index{Device.h@{Device.h}!NewOSPCISetCfgTarget@{NewOSPCISetCfgTarget}}
+\index{NewOSPCISetCfgTarget@{NewOSPCISetCfgTarget}!Device.h@{Device.h}}
+\doxysubsubsection{\texorpdfstring{NewOSPCISetCfgTarget()}{NewOSPCISetCfgTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void New\+OSPCISet\+Cfg\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}}}]{bar }\end{DoxyParamCaption})}
+

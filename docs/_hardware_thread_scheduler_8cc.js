@@ -1,6 +1,6 @@
 var _hardware_thread_scheduler_8cc =
 [
-    [ "hal_check_stack", "_hardware_thread_scheduler_8cc.html#add6766e380a571ba6856110079f29064", null ],
-    [ "mp_register_process", "_hardware_thread_scheduler_8cc.html#a236304cb87cbc960fe005a3d510fb453", null ],
-    [ "kHardwareThreadScheduler", "_hardware_thread_scheduler_8cc.html#ab433be96109866fe94afed694ed8364e", null ]
+    [ "hal_check_stack", "_hardware_thread_scheduler_8cc.html#a36a6beda41f24859f5c253d100c4e7fa", null ],
+    [ "mp_register_process", "_hardware_thread_scheduler_8cc.html#aa2bc0a36c74951a06b21313fc5e210f2", null ],
+    [ "kHardwareThreadScheduler", "_hardware_thread_scheduler_8cc.html#aa66f65d40cbb5026e365c91ef8dff16c", null ]
 ];

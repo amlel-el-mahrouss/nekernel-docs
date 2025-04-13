@@ -1,0 +1,184 @@
+\doxysection{Text\+Mgr.\+h}
+\hypertarget{_text_mgr_8h_source}{}\label{_text_mgr_8h_source}\index{dev/modules/CoreGfx/TextMgr.h@{dev/modules/CoreGfx/TextMgr.h}}
+\mbox{\hyperlink{_text_mgr_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_f_b_mgr_8h}{modules/CoreGfx/FBMgr.h}}>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ kFontSizeX\ \ \ \ 8}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ kFontSizeY\ \ \ \ 8}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ kFontNOFChars\ 128}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{inline}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ \mbox{\hyperlink{_text_mgr_8h_a93c9f115ded2a658866f5f667a9c5e96}{kFontBitmap}}[\mbox{\hyperlink{_text_mgr_8h_aa67270a9c6e5182e886f3f1f2dcae601}{kFontNOFChars}}][\mbox{\hyperlink{_text_mgr_8h_a9229a483a526d22552c8bd9d543f3e36}{kFontSizeX}}]\ =\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0000\ (nul)}}
+\DoxyCodeLine{00018\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0001}}
+\DoxyCodeLine{00019\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0002}}
+\DoxyCodeLine{00020\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0003}}
+\DoxyCodeLine{00021\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0004}}
+\DoxyCodeLine{00022\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0005}}
+\DoxyCodeLine{00023\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0006}}
+\DoxyCodeLine{00024\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0007}}
+\DoxyCodeLine{00025\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0008}}
+\DoxyCodeLine{00026\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0009}}
+\DoxyCodeLine{00027\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+000A}}
+\DoxyCodeLine{00028\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+000B}}
+\DoxyCodeLine{00029\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+000C}}
+\DoxyCodeLine{00030\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+000D}}
+\DoxyCodeLine{00031\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+000E}}
+\DoxyCodeLine{00032\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+000F}}
+\DoxyCodeLine{00033\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0010}}
+\DoxyCodeLine{00034\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0011}}
+\DoxyCodeLine{00035\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0012}}
+\DoxyCodeLine{00036\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0013}}
+\DoxyCodeLine{00037\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0014}}
+\DoxyCodeLine{00038\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0015}}
+\DoxyCodeLine{00039\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0016}}
+\DoxyCodeLine{00040\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0017}}
+\DoxyCodeLine{00041\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0018}}
+\DoxyCodeLine{00042\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0019}}
+\DoxyCodeLine{00043\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+001A}}
+\DoxyCodeLine{00044\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+001B}}
+\DoxyCodeLine{00045\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+001C}}
+\DoxyCodeLine{00046\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+001D}}
+\DoxyCodeLine{00047\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+001E}}
+\DoxyCodeLine{00048\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+001F}}
+\DoxyCodeLine{00049\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0020\ (space)}}
+\DoxyCodeLine{00050\ \ \ \ \ \{0x18,\ 0x3C,\ 0x3C,\ 0x18,\ 0x18,\ 0x00,\ 0x18,\ 0x00\},\ \textcolor{comment}{//\ U+0021\ (!)}}
+\DoxyCodeLine{00051\ \ \ \ \ \{0x36,\ 0x36,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0022\ ("{})}}
+\DoxyCodeLine{00052\ \ \ \ \ \{0x36,\ 0x36,\ 0x7F,\ 0x36,\ 0x7F,\ 0x36,\ 0x36,\ 0x00\},\ \textcolor{comment}{//\ U+0023\ (\#)}}
+\DoxyCodeLine{00053\ \ \ \ \ \{0x0C,\ 0x3E,\ 0x03,\ 0x1E,\ 0x30,\ 0x1F,\ 0x0C,\ 0x00\},\ \textcolor{comment}{//\ U+0024\ (\$)}}
+\DoxyCodeLine{00054\ \ \ \ \ \{0x00,\ 0x63,\ 0x33,\ 0x18,\ 0x0C,\ 0x66,\ 0x63,\ 0x00\},\ \textcolor{comment}{//\ U+0025\ (\%)}}
+\DoxyCodeLine{00055\ \ \ \ \ \{0x1C,\ 0x36,\ 0x1C,\ 0x6E,\ 0x3B,\ 0x33,\ 0x6E,\ 0x00\},\ \textcolor{comment}{//\ U+0026\ (\&)}}
+\DoxyCodeLine{00056\ \ \ \ \ \{0x06,\ 0x06,\ 0x03,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0027\ (')}}
+\DoxyCodeLine{00057\ \ \ \ \ \{0x18,\ 0x0C,\ 0x06,\ 0x06,\ 0x06,\ 0x0C,\ 0x18,\ 0x00\},\ \textcolor{comment}{//\ U+0028\ (()}}
+\DoxyCodeLine{00058\ \ \ \ \ \{0x06,\ 0x0C,\ 0x18,\ 0x18,\ 0x18,\ 0x0C,\ 0x06,\ 0x00\},\ \textcolor{comment}{//\ U+0029\ ())}}
+\DoxyCodeLine{00059\ \ \ \ \ \{0x00,\ 0x66,\ 0x3C,\ 0xFF,\ 0x3C,\ 0x66,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+002A\ (*)}}
+\DoxyCodeLine{00060\ \ \ \ \ \{0x00,\ 0x0C,\ 0x0C,\ 0x3F,\ 0x0C,\ 0x0C,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+002B\ (+)}}
+\DoxyCodeLine{00061\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x0C,\ 0x0C,\ 0x06\},\ \textcolor{comment}{//\ U+002C\ (,)}}
+\DoxyCodeLine{00062\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x3F,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+002D\ (-\/)}}
+\DoxyCodeLine{00063\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x0C,\ 0x0C,\ 0x00\},\ \textcolor{comment}{//\ U+002E\ (.)}}
+\DoxyCodeLine{00064\ \ \ \ \ \{0x60,\ 0x30,\ 0x18,\ 0x0C,\ 0x06,\ 0x03,\ 0x01,\ 0x00\},\ \textcolor{comment}{//\ U+002F\ (/)}}
+\DoxyCodeLine{00065\ \ \ \ \ \{0x3E,\ 0x63,\ 0x73,\ 0x7B,\ 0x6F,\ 0x67,\ 0x3E,\ 0x00\},\ \textcolor{comment}{//\ U+0030\ (0)}}
+\DoxyCodeLine{00066\ \ \ \ \ \{0x0C,\ 0x0E,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x3F,\ 0x00\},\ \textcolor{comment}{//\ U+0031\ (1)}}
+\DoxyCodeLine{00067\ \ \ \ \ \{0x1E,\ 0x33,\ 0x30,\ 0x1C,\ 0x06,\ 0x33,\ 0x3F,\ 0x00\},\ \textcolor{comment}{//\ U+0032\ (2)}}
+\DoxyCodeLine{00068\ \ \ \ \ \{0x1E,\ 0x33,\ 0x30,\ 0x1C,\ 0x30,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0033\ (3)}}
+\DoxyCodeLine{00069\ \ \ \ \ \{0x38,\ 0x3C,\ 0x36,\ 0x33,\ 0x7F,\ 0x30,\ 0x78,\ 0x00\},\ \textcolor{comment}{//\ U+0034\ (4)}}
+\DoxyCodeLine{00070\ \ \ \ \ \{0x3F,\ 0x03,\ 0x1F,\ 0x30,\ 0x30,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0035\ (5)}}
+\DoxyCodeLine{00071\ \ \ \ \ \{0x1C,\ 0x06,\ 0x03,\ 0x1F,\ 0x33,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0036\ (6)}}
+\DoxyCodeLine{00072\ \ \ \ \ \{0x3F,\ 0x33,\ 0x30,\ 0x18,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x00\},\ \textcolor{comment}{//\ U+0037\ (7)}}
+\DoxyCodeLine{00073\ \ \ \ \ \{0x1E,\ 0x33,\ 0x33,\ 0x1E,\ 0x33,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0038\ (8)}}
+\DoxyCodeLine{00074\ \ \ \ \ \{0x1E,\ 0x33,\ 0x33,\ 0x3E,\ 0x30,\ 0x18,\ 0x0E,\ 0x00\},\ \textcolor{comment}{//\ U+0039\ (9)}}
+\DoxyCodeLine{00075\ \ \ \ \ \{0x00,\ 0x0C,\ 0x0C,\ 0x00,\ 0x00,\ 0x0C,\ 0x0C,\ 0x00\},\ \textcolor{comment}{//\ U+003A\ (:)}}
+\DoxyCodeLine{00076\ \ \ \ \ \{0x00,\ 0x0C,\ 0x0C,\ 0x00,\ 0x00,\ 0x0C,\ 0x0C,\ 0x06\},\ \textcolor{comment}{//\ U+003B\ (;)}}
+\DoxyCodeLine{00077\ \ \ \ \ \{0x18,\ 0x0C,\ 0x06,\ 0x03,\ 0x06,\ 0x0C,\ 0x18,\ 0x00\},\ \textcolor{comment}{//\ U+003C\ (<)}}
+\DoxyCodeLine{00078\ \ \ \ \ \{0x00,\ 0x00,\ 0x3F,\ 0x00,\ 0x00,\ 0x3F,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+003D\ (=)}}
+\DoxyCodeLine{00079\ \ \ \ \ \{0x06,\ 0x0C,\ 0x18,\ 0x30,\ 0x18,\ 0x0C,\ 0x06,\ 0x00\},\ \textcolor{comment}{//\ U+003E\ (>)}}
+\DoxyCodeLine{00080\ \ \ \ \ \{0x1E,\ 0x33,\ 0x30,\ 0x18,\ 0x0C,\ 0x00,\ 0x0C,\ 0x00\},\ \textcolor{comment}{//\ U+003F\ (?)}}
+\DoxyCodeLine{00081\ \ \ \ \ \{0x3E,\ 0x63,\ 0x7B,\ 0x7B,\ 0x7B,\ 0x03,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0040\ (@)}}
+\DoxyCodeLine{00082\ \ \ \ \ \{0x0C,\ 0x1E,\ 0x33,\ 0x33,\ 0x3F,\ 0x33,\ 0x33,\ 0x00\},\ \textcolor{comment}{//\ U+0041\ (A)}}
+\DoxyCodeLine{00083\ \ \ \ \ \{0x3F,\ 0x66,\ 0x66,\ 0x3E,\ 0x66,\ 0x66,\ 0x3F,\ 0x00\},\ \textcolor{comment}{//\ U+0042\ (B)}}
+\DoxyCodeLine{00084\ \ \ \ \ \{0x3C,\ 0x66,\ 0x03,\ 0x03,\ 0x03,\ 0x66,\ 0x3C,\ 0x00\},\ \textcolor{comment}{//\ U+0043\ (C)}}
+\DoxyCodeLine{00085\ \ \ \ \ \{0x1F,\ 0x36,\ 0x66,\ 0x66,\ 0x66,\ 0x36,\ 0x1F,\ 0x00\},\ \textcolor{comment}{//\ U+0044\ (D)}}
+\DoxyCodeLine{00086\ \ \ \ \ \{0x7F,\ 0x46,\ 0x16,\ 0x1E,\ 0x16,\ 0x46,\ 0x7F,\ 0x00\},\ \textcolor{comment}{//\ U+0045\ (E)}}
+\DoxyCodeLine{00087\ \ \ \ \ \{0x7F,\ 0x46,\ 0x16,\ 0x1E,\ 0x16,\ 0x06,\ 0x0F,\ 0x00\},\ \textcolor{comment}{//\ U+0046\ (F)}}
+\DoxyCodeLine{00088\ \ \ \ \ \{0x3C,\ 0x66,\ 0x03,\ 0x03,\ 0x73,\ 0x66,\ 0x7C,\ 0x00\},\ \textcolor{comment}{//\ U+0047\ (G)}}
+\DoxyCodeLine{00089\ \ \ \ \ \{0x33,\ 0x33,\ 0x33,\ 0x3F,\ 0x33,\ 0x33,\ 0x33,\ 0x00\},\ \textcolor{comment}{//\ U+0048\ (H)}}
+\DoxyCodeLine{00090\ \ \ \ \ \{0x1E,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0049\ (I)}}
+\DoxyCodeLine{00091\ \ \ \ \ \{0x78,\ 0x30,\ 0x30,\ 0x30,\ 0x33,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+004A\ (J)}}
+\DoxyCodeLine{00092\ \ \ \ \ \{0x67,\ 0x66,\ 0x36,\ 0x1E,\ 0x36,\ 0x66,\ 0x67,\ 0x00\},\ \textcolor{comment}{//\ U+004B\ (K)}}
+\DoxyCodeLine{00093\ \ \ \ \ \{0x0F,\ 0x06,\ 0x06,\ 0x06,\ 0x46,\ 0x66,\ 0x7F,\ 0x00\},\ \textcolor{comment}{//\ U+004C\ (L)}}
+\DoxyCodeLine{00094\ \ \ \ \ \{0x63,\ 0x77,\ 0x7F,\ 0x7F,\ 0x6B,\ 0x63,\ 0x63,\ 0x00\},\ \textcolor{comment}{//\ U+004D\ (M)}}
+\DoxyCodeLine{00095\ \ \ \ \ \{0x63,\ 0x67,\ 0x6F,\ 0x7B,\ 0x73,\ 0x63,\ 0x63,\ 0x00\},\ \textcolor{comment}{//\ U+004E\ (N)}}
+\DoxyCodeLine{00096\ \ \ \ \ \{0x1C,\ 0x36,\ 0x63,\ 0x63,\ 0x63,\ 0x36,\ 0x1C,\ 0x00\},\ \textcolor{comment}{//\ U+004F\ (O)}}
+\DoxyCodeLine{00097\ \ \ \ \ \{0x3F,\ 0x66,\ 0x66,\ 0x3E,\ 0x06,\ 0x06,\ 0x0F,\ 0x00\},\ \textcolor{comment}{//\ U+0050\ (P)}}
+\DoxyCodeLine{00098\ \ \ \ \ \{0x1E,\ 0x33,\ 0x33,\ 0x33,\ 0x3B,\ 0x1E,\ 0x38,\ 0x00\},\ \textcolor{comment}{//\ U+0051\ (Q)}}
+\DoxyCodeLine{00099\ \ \ \ \ \{0x3F,\ 0x66,\ 0x66,\ 0x3E,\ 0x36,\ 0x66,\ 0x67,\ 0x00\},\ \textcolor{comment}{//\ U+0052\ (R)}}
+\DoxyCodeLine{00100\ \ \ \ \ \{0x1E,\ 0x33,\ 0x07,\ 0x0E,\ 0x38,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0053\ (S)}}
+\DoxyCodeLine{00101\ \ \ \ \ \{0x3F,\ 0x2D,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0054\ (T)}}
+\DoxyCodeLine{00102\ \ \ \ \ \{0x33,\ 0x33,\ 0x33,\ 0x33,\ 0x33,\ 0x33,\ 0x3F,\ 0x00\},\ \textcolor{comment}{//\ U+0055\ (U)}}
+\DoxyCodeLine{00103\ \ \ \ \ \{0x33,\ 0x33,\ 0x33,\ 0x33,\ 0x33,\ 0x1E,\ 0x0C,\ 0x00\},\ \textcolor{comment}{//\ U+0056\ (V)}}
+\DoxyCodeLine{00104\ \ \ \ \ \{0x63,\ 0x63,\ 0x63,\ 0x6B,\ 0x7F,\ 0x77,\ 0x63,\ 0x00\},\ \textcolor{comment}{//\ U+0057\ (W)}}
+\DoxyCodeLine{00105\ \ \ \ \ \{0x63,\ 0x63,\ 0x36,\ 0x1C,\ 0x1C,\ 0x36,\ 0x63,\ 0x00\},\ \textcolor{comment}{//\ U+0058\ (X)}}
+\DoxyCodeLine{00106\ \ \ \ \ \{0x33,\ 0x33,\ 0x33,\ 0x1E,\ 0x0C,\ 0x0C,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0059\ (Y)}}
+\DoxyCodeLine{00107\ \ \ \ \ \{0x7F,\ 0x63,\ 0x31,\ 0x18,\ 0x4C,\ 0x66,\ 0x7F,\ 0x00\},\ \textcolor{comment}{//\ U+005A\ (Z)}}
+\DoxyCodeLine{00108\ \ \ \ \ \{0x1E,\ 0x06,\ 0x06,\ 0x06,\ 0x06,\ 0x06,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+005B\ ([)}}
+\DoxyCodeLine{00109\ \ \ \ \ \{0x03,\ 0x06,\ 0x0C,\ 0x18,\ 0x30,\ 0x60,\ 0x40,\ 0x00\},\ \textcolor{comment}{//\ U+005C\ (\(\backslash\))}}
+\DoxyCodeLine{00110\ \ \ \ \ \{0x1E,\ 0x18,\ 0x18,\ 0x18,\ 0x18,\ 0x18,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+005D\ (])}}
+\DoxyCodeLine{00111\ \ \ \ \ \{0x08,\ 0x1C,\ 0x36,\ 0x63,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+005E\ (\string^)}}
+\DoxyCodeLine{00112\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0xFF\},\ \textcolor{comment}{//\ U+005F\ (\_)}}
+\DoxyCodeLine{00113\ \ \ \ \ \{0x0C,\ 0x0C,\ 0x18,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+0060\ (`)}}
+\DoxyCodeLine{00114\ \ \ \ \ \{0x00,\ 0x00,\ 0x1E,\ 0x30,\ 0x3E,\ 0x33,\ 0x6E,\ 0x00\},\ \textcolor{comment}{//\ U+0061\ (a)}}
+\DoxyCodeLine{00115\ \ \ \ \ \{0x07,\ 0x06,\ 0x06,\ 0x3E,\ 0x66,\ 0x66,\ 0x3B,\ 0x00\},\ \textcolor{comment}{//\ U+0062\ (b)}}
+\DoxyCodeLine{00116\ \ \ \ \ \{0x00,\ 0x00,\ 0x1E,\ 0x33,\ 0x03,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0063\ (c)}}
+\DoxyCodeLine{00117\ \ \ \ \ \{0x38,\ 0x30,\ 0x30,\ 0x3e,\ 0x33,\ 0x33,\ 0x6E,\ 0x00\},\ \textcolor{comment}{//\ U+0064\ (d)}}
+\DoxyCodeLine{00118\ \ \ \ \ \{0x00,\ 0x00,\ 0x1E,\ 0x33,\ 0x3f,\ 0x03,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0065\ (e)}}
+\DoxyCodeLine{00119\ \ \ \ \ \{0x1C,\ 0x36,\ 0x06,\ 0x0f,\ 0x06,\ 0x06,\ 0x0F,\ 0x00\},\ \textcolor{comment}{//\ U+0066\ (f)}}
+\DoxyCodeLine{00120\ \ \ \ \ \{0x00,\ 0x00,\ 0x6E,\ 0x33,\ 0x33,\ 0x3E,\ 0x30,\ 0x1F\},\ \textcolor{comment}{//\ U+0067\ (g)}}
+\DoxyCodeLine{00121\ \ \ \ \ \{0x07,\ 0x06,\ 0x36,\ 0x6E,\ 0x66,\ 0x66,\ 0x67,\ 0x00\},\ \textcolor{comment}{//\ U+0068\ (h)}}
+\DoxyCodeLine{00122\ \ \ \ \ \{0x0C,\ 0x00,\ 0x0E,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+0069\ (i)}}
+\DoxyCodeLine{00123\ \ \ \ \ \{0x30,\ 0x00,\ 0x30,\ 0x30,\ 0x30,\ 0x33,\ 0x33,\ 0x1E\},\ \textcolor{comment}{//\ U+006A\ (j)}}
+\DoxyCodeLine{00124\ \ \ \ \ \{0x07,\ 0x06,\ 0x66,\ 0x36,\ 0x1E,\ 0x36,\ 0x67,\ 0x00\},\ \textcolor{comment}{//\ U+006B\ (k)}}
+\DoxyCodeLine{00125\ \ \ \ \ \{0x0E,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x0C,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+006C\ (l)}}
+\DoxyCodeLine{00126\ \ \ \ \ \{0x00,\ 0x00,\ 0x33,\ 0x7F,\ 0x7F,\ 0x6B,\ 0x63,\ 0x00\},\ \textcolor{comment}{//\ U+006D\ (m)}}
+\DoxyCodeLine{00127\ \ \ \ \ \{0x00,\ 0x00,\ 0x1F,\ 0x33,\ 0x33,\ 0x33,\ 0x33,\ 0x00\},\ \textcolor{comment}{//\ U+006E\ (n)}}
+\DoxyCodeLine{00128\ \ \ \ \ \{0x00,\ 0x00,\ 0x1E,\ 0x33,\ 0x33,\ 0x33,\ 0x1E,\ 0x00\},\ \textcolor{comment}{//\ U+006F\ (o)}}
+\DoxyCodeLine{00129\ \ \ \ \ \{0x00,\ 0x00,\ 0x3B,\ 0x66,\ 0x66,\ 0x3E,\ 0x06,\ 0x0F\},\ \textcolor{comment}{//\ U+0070\ (p)}}
+\DoxyCodeLine{00130\ \ \ \ \ \{0x00,\ 0x00,\ 0x6E,\ 0x33,\ 0x33,\ 0x3E,\ 0x30,\ 0x78\},\ \textcolor{comment}{//\ U+0071\ (q)}}
+\DoxyCodeLine{00131\ \ \ \ \ \{0x00,\ 0x00,\ 0x3B,\ 0x6E,\ 0x66,\ 0x06,\ 0x0F,\ 0x00\},\ \textcolor{comment}{//\ U+0072\ (r)}}
+\DoxyCodeLine{00132\ \ \ \ \ \{0x00,\ 0x00,\ 0x3E,\ 0x03,\ 0x1E,\ 0x30,\ 0x1F,\ 0x00\},\ \textcolor{comment}{//\ U+0073\ (s)}}
+\DoxyCodeLine{00133\ \ \ \ \ \{0x08,\ 0x0C,\ 0x3E,\ 0x0C,\ 0x0C,\ 0x2C,\ 0x18,\ 0x00\},\ \textcolor{comment}{//\ U+0074\ (t)}}
+\DoxyCodeLine{00134\ \ \ \ \ \{0x00,\ 0x00,\ 0x33,\ 0x33,\ 0x33,\ 0x33,\ 0x6E,\ 0x00\},\ \textcolor{comment}{//\ U+0075\ (u)}}
+\DoxyCodeLine{00135\ \ \ \ \ \{0x00,\ 0x00,\ 0x33,\ 0x33,\ 0x33,\ 0x1E,\ 0x0C,\ 0x00\},\ \textcolor{comment}{//\ U+0076\ (v)}}
+\DoxyCodeLine{00136\ \ \ \ \ \{0x00,\ 0x00,\ 0x63,\ 0x6B,\ 0x7F,\ 0x7F,\ 0x36,\ 0x00\},\ \textcolor{comment}{//\ U+0077\ (w)}}
+\DoxyCodeLine{00137\ \ \ \ \ \{0x00,\ 0x00,\ 0x63,\ 0x36,\ 0x1C,\ 0x36,\ 0x63,\ 0x00\},\ \textcolor{comment}{//\ U+0078\ (x)}}
+\DoxyCodeLine{00138\ \ \ \ \ \{0x00,\ 0x00,\ 0x33,\ 0x33,\ 0x33,\ 0x3E,\ 0x30,\ 0x1F\},\ \textcolor{comment}{//\ U+0079\ (y)}}
+\DoxyCodeLine{00139\ \ \ \ \ \{0x00,\ 0x00,\ 0x3F,\ 0x19,\ 0x0C,\ 0x26,\ 0x3F,\ 0x00\},\ \textcolor{comment}{//\ U+007A\ (z)}}
+\DoxyCodeLine{00140\ \ \ \ \ \{0x38,\ 0x0C,\ 0x0C,\ 0x07,\ 0x0C,\ 0x0C,\ 0x38,\ 0x00\},\ \textcolor{comment}{//\ U+007B\ (\{)}}
+\DoxyCodeLine{00141\ \ \ \ \ \{0x18,\ 0x18,\ 0x18,\ 0x00,\ 0x18,\ 0x18,\ 0x18,\ 0x00\},\ \textcolor{comment}{//\ U+007C\ (|)}}
+\DoxyCodeLine{00142\ \ \ \ \ \{0x07,\ 0x0C,\ 0x0C,\ 0x38,\ 0x0C,\ 0x0C,\ 0x07,\ 0x00\},\ \textcolor{comment}{//\ U+007D\ (\})}}
+\DoxyCodeLine{00143\ \ \ \ \ \{0x6E,\ 0x3B,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\},\ \textcolor{comment}{//\ U+007E\ (\string~)}}
+\DoxyCodeLine{00144\ \ \ \ \ \{0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00,\ 0x00\}\ \ \textcolor{comment}{//\ U+007F}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{_text_mgr_8h_ab838b33e7f6b2c57aa96747baf00df4b}{fb\_render\_string\_for\_bitmap}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}*\ bitmap,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{NeOS::SizeT}}\&\ x\_sz,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{NeOS::SizeT}}\&\ y\_sz,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\&\ x\_dst,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\&\ y\_dst,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\&\ color)}
+\DoxyCodeLine{00149\ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ x,\ y;}
+\DoxyCodeLine{00151\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ set;}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \ \ x\ \ \ =\ 0;}
+\DoxyCodeLine{00154\ \ \ \ \ y\ \ \ =\ 0;}
+\DoxyCodeLine{00155\ \ \ \ \ set\ =\ 0;}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordflow}{for}\ (;\ y\ <\ y\_sz;\ ++y)}
+\DoxyCodeLine{00158\ \ \ \ \ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (x\ =\ 0;\ x\ <\ x\_sz;\ ++x)}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ set\ =\ bitmap[x]\ \&\ (1\ <<\ y);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (set)}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_f_b_mgr_8h_ae16cf1e77ab82769ae955d1fac7e4935}{FBDrawInRegion}}(color,\ 1,\ 1,\ ((x\_dst)\ +\ x),\ ((y\_dst)\ +\ y));}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00168\ \ \ \ \ \}}
+\DoxyCodeLine{00169\ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{_text_mgr_8h_a81899754b43a9eef6df788031546f16c}{fb\_render\_string}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}*\ text,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ x\_dst,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ y\_dst,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ color)}
+\DoxyCodeLine{00172\ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{NeOS::SizeT}}\ i\ =\ 0;\ text[i]\ !=\ 0;\ ++i)}
+\DoxyCodeLine{00174\ \ \ \ \ \{}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_text_mgr_8h_ab838b33e7f6b2c57aa96747baf00df4b}{fb\_render\_string\_for\_bitmap}}(\&\mbox{\hyperlink{_text_mgr_8h_a93c9f115ded2a658866f5f667a9c5e96}{kFontBitmap}}[text[i]][0],\ \mbox{\hyperlink{_text_mgr_8h_a9229a483a526d22552c8bd9d543f3e36}{kFontSizeX}},\ \mbox{\hyperlink{_text_mgr_8h_a86dbf198e5ec9c0c6878ac9bd2201a4a}{kFontSizeY}},\ x\_dst,\ y\_dst,\ color);}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ y\_dst\ +=\ \mbox{\hyperlink{_text_mgr_8h_a86dbf198e5ec9c0c6878ac9bd2201a4a}{kFontSizeY}};}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+\DoxyCodeLine{00178\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,102 @@
+\doxysection{EPM.\+h}
+\hypertarget{_kernel_2_firmware_kit_2_e_p_m_8h_source}{}\label{_kernel_2_firmware_kit_2_e_p_m_8h_source}\index{dev/Kernel/FirmwareKit/EPM.h@{dev/Kernel/FirmwareKit/EPM.h}}
+\mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ FIRMWAREKIT\_EPM\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ FIRMWAREKIT\_EPM\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ kEPMNameLength\ \ \ \ \ \ \ (32)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ kEPMFilesystemLength\ (16)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ kEPMMagicLength\ \ \ \ \ \ (5)}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{/*\ @brief\ AMD64\ magic\ for\ EPM\ */}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ kEPMMagic86\ "{}EPMAM"{}}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{comment}{/*\ @brief\ RISC-\/V\ magic\ for\ EPM\ */}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ kEPMMagicRISCV\ "{}EPMRV"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{/*\ @brief\ ARM\ magic\ for\ EPM\ */}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ kEPMMagicARM\ "{}EPMAR"{}}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{/*\ @brief\ 64x0\ magic\ for\ EPM\ */}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ kEPMMagic64k\ "{}EPM64"{}}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{/*\ @brief\ 32x0\ magic\ for\ EPM\ */}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ kEPMMagic32k\ "{}EPM32"{}}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{comment}{/*\ @brief\ POWER\ magic\ for\ EPM\ */}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ kEPMMagicPPC\ "{}EPMPC"{}}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{comment}{/*\ @brief\ Invalid\ magic\ for\ EPM\ */}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ kEPMMagicError\ "{}EPM??"{}}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#ifdef\ \_\_NE\_AMD64\_\_}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ kEPMMagic\ kEPMMagic86}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#ifdef\ \_\_NE\_ARM64\_\_}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ kEPMMagic\ kEPMMagicARM}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ kEPMMagic\ kEPMMagicError}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ kEPMPartBlockLba\ (sizeof(EPM\_PART\_BLOCK))}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ kEPMRevisionBcd\ (0x0100)}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ kEPMBootBlockLba\ (0U)}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ kEPMReserveLen\ (399)}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\_GUID}};}
+\DoxyCodeLine{00064\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k}{EPM\_PART\_BLOCK}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{comment}{/*\ The\ first\ 0\ >\ 128\ addresses\ of\ a\ disk\ contains\ these\ headers.\ */}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\_GUID}}}
+\DoxyCodeLine{00070\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ \mbox{\hyperlink{struct_e_p_m___g_u_i_d_a91bde10d7cc5811ab5d5e583521b2614}{Data1}};}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{NeOS::UInt16}}\ \mbox{\hyperlink{struct_e_p_m___g_u_i_d_afb1f3e781ddb185e3ab31a241814e59b}{Data2}};}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{NeOS::UInt16}}\ \mbox{\hyperlink{struct_e_p_m___g_u_i_d_a97ce4b5915fbf8d314cdd784eca4d6d9}{Data3}};}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ \ \ \mbox{\hyperlink{struct_e_p_m___g_u_i_d_a2ff3c22f854633b85a2624c66c28b966}{Data4}}[8];}
+\DoxyCodeLine{00075\ \}\ \mbox{\hyperlink{_kernel_2_new_kit_2_macros_8h_a36d525cf4d116b2fe4ecc00222b256f1}{PACKED}}\ \mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\_GUID}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{_kernel_2_new_kit_2_macros_8h_a36d525cf4d116b2fe4ecc00222b256f1}{PACKED}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k}{EPM\_PART\_BLOCK}}}
+\DoxyCodeLine{00082\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ Magic[\mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_a09c2902efeeaa9d984036760b49b3dff}{kEPMMagicLength}}];}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ Name[\mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_ac3912d171db6af2ed5eaf657d981c245}{kEPMNameLength}}];}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\_GUID}}\ \ \ \ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a7a607d4efb637663353be5bad59f6b75}{Guid}};}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad88e51fe8b9d041f17d2cc292e9b1203}{Version}};}
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{NeOS::Int64}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3289fb32eb8a6a5d843830129676b1ec}{NumBlocks}};}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{NeOS::Int64}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a1c666357a24f3fbebe671d3efa29cd69}{SectorSz}};}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{NeOS::Int64}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad899878ff82e1d9cfa7a2947db949d36}{LbaStart}};\ \textcolor{comment}{//\ base\ offset}}
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{NeOS::Int64}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a525445fdb06cf443ffa2a8da9e5fab6c}{LbaEnd}};\ \ \ \ \ \ \textcolor{comment}{//\ end\ offset}}
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{NeOS::Int16}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_adccb0fabdd343277f82cb11047fe145b}{Kind}};}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{NeOS::Int16}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a6c1d9b54306df781256aeb722a1a3cfd}{Flags}};}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3b1d02de6cbcdd7d9e1030f8969867c3}{FsVersion}};}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ Fs[\mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_a8f8b00f66a9459c8948024c0024e2032}{kEPMFilesystemLength}}];\ \textcolor{comment}{/*\ NeFS,\ HPFS...\ */}}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ Reserved[\mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_afc4be870457fbc60fd8eb87ea3285a40}{kEPMReserveLen}}];\ \textcolor{comment}{//\ to\ fill\ a\ full\ sector.}}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00102\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600ad430e0f5b2a0e64bcfffd23eac2d77ab}{kEPMInvalid}}\ \ \ \ =\ 0x00,}
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a6a6bea2f5a017b3d45860d47e6e03b24}{kEPMGenericOS}}\ =\ 0xcf,\ \textcolor{comment}{//\ Generic\ OS}}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a4758188a1bb3ae292a95f96398d7fa77}{kEPMLinux}}\ \ \ \ =\ 0x8f,\ \textcolor{comment}{//\ Linux\ on\ EPM}}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a5f57a68f05f1e2a5484c1485ac10623b}{kEPMBSD}}\ \ \ \ \ \ \ \ =\ 0x9f,\ \textcolor{comment}{//\ Berkeley\ Soft.\ Distribution}}
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a7f7e2054fbcb15071a81adea2cfb5ba5}{kEPMNeOS}}\ \ \ \ \ \ =\ 0x1f,\ \textcolor{comment}{//\ This\ OS.}}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{_kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a668042d44640f2b91cb2747cd4ccce6c}{kEPMInvalidOS}}\ =\ 0xff,}
+\DoxyCodeLine{00109\ \};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifndef\ FIRMWAREKIT\_EPM\_H}}
+
+\end{DoxyCode}

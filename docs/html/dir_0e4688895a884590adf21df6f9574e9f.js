@@ -1,0 +1,26 @@
+var dir_0e4688895a884590adf21df6f9574e9f =
+[
+    [ "Array.h", "dev_2kernel_2_new_kit_2_array_8h.html", "dev_2kernel_2_new_kit_2_array_8h" ],
+    [ "ArrayList.h", "_array_list_8h.html", "_array_list_8h" ],
+    [ "Atom.h", "dev_2kernel_2_new_kit_2_atom_8h.html", "dev_2kernel_2_new_kit_2_atom_8h" ],
+    [ "Crc32.h", "_crc32_8h.html", "_crc32_8h" ],
+    [ "CxxAbi.h", "_cxx_abi_8h.html", "_cxx_abi_8h" ],
+    [ "Defines.h", "kernel_2_new_kit_2_defines_8h.html", "kernel_2_new_kit_2_defines_8h" ],
+    [ "ErrorOr.h", "_error_or_8h.html", "_error_or_8h" ],
+    [ "Function.h", "_function_8h.html", "_function_8h" ],
+    [ "Json.h", "_json_8h.html", "_json_8h" ],
+    [ "KernelPanic.h", "_kernel_panic_8h.html", "_kernel_panic_8h" ],
+    [ "KString.h", "_k_string_8h.html", "_k_string_8h" ],
+    [ "Macros.h", "kernel_2_new_kit_2_macros_8h.html", "kernel_2_new_kit_2_macros_8h" ],
+    [ "MutableArray.h", "_mutable_array_8h.html", "_mutable_array_8h" ],
+    [ "New.h", "_new_8h.html", "_new_8h" ],
+    [ "NewKit.h", "_new_kit_8h.html", null ],
+    [ "OwnPtr.h", "_own_ptr_8h.html", "_own_ptr_8h" ],
+    [ "PageMgr.h", "_page_mgr_8h.html", "_page_mgr_8h" ],
+    [ "Pair.h", "_pair_8h.html", null ],
+    [ "Pmm.h", "_pmm_8h.html", "_pmm_8h" ],
+    [ "Ref.h", "dev_2kernel_2_new_kit_2_ref_8h.html", "dev_2kernel_2_new_kit_2_ref_8h" ],
+    [ "Stream.h", "_stream_8h.html", "_stream_8h" ],
+    [ "Utils.h", "_new_kit_2_utils_8h.html", "_new_kit_2_utils_8h" ],
+    [ "Variant.h", "_variant_8h.html", "_variant_8h" ]
+];

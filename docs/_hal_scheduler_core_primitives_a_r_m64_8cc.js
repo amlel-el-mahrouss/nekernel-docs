@@ -1,5 +1,5 @@
 var _hal_scheduler_core_primitives_a_r_m64_8cc =
 [
-    [ "__zka_pure_call", "_hal_scheduler_core_primitives_a_r_m64_8cc.html#aee26379783b55e8fe5d40e0f8a6cbd3f", null ],
-    [ "hal_check_stack", "_hal_scheduler_core_primitives_a_r_m64_8cc.html#add6766e380a571ba6856110079f29064", null ]
+    [ "__zka_pure_call", "_hal_scheduler_core_primitives_a_r_m64_8cc.html#acb83055ae462456b3e63ec700b0287ea", null ],
+    [ "hal_check_stack", "_hal_scheduler_core_primitives_a_r_m64_8cc.html#a36a6beda41f24859f5c253d100c4e7fa", null ]
 ];

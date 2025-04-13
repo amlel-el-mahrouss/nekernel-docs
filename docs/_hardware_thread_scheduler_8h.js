@@ -1,18 +1,18 @@
 var _hardware_thread_scheduler_8h =
 [
-    [ "NeOS::HardwareThread", "class_ne_o_s_1_1_hardware_thread.html", "class_ne_o_s_1_1_hardware_thread" ],
-    [ "NeOS::HardwareThreadScheduler", "class_ne_o_s_1_1_hardware_thread_scheduler.html", "class_ne_o_s_1_1_hardware_thread_scheduler" ],
+    [ "Kernel::HardwareThread", "class_kernel_1_1_hardware_thread.html", "class_kernel_1_1_hardware_thread" ],
+    [ "Kernel::HardwareThreadScheduler", "class_kernel_1_1_hardware_thread_scheduler.html", "class_kernel_1_1_hardware_thread_scheduler" ],
     [ "kMaxAPInsideSched", "_hardware_thread_scheduler_8h.html#a3fb9c9286c56c1b21877b03d4a8499ca", null ],
-    [ "ThreadID", "_hardware_thread_scheduler_8h.html#a595e6c7866a05c171d2d811b8eadbab1", null ],
-    [ "ThreadKind", "_hardware_thread_scheduler_8h.html#a162ba2a9ad40e4905da7fa0a83bbfcf1", null ],
-    [ "ThreadKind", "_hardware_thread_scheduler_8h.html#a7ed051e98acfa04e8358d9f76150ed06", [
-      [ "kAPInvalid", "_hardware_thread_scheduler_8h.html#a7ed051e98acfa04e8358d9f76150ed06a5c067747e5f574033f7fb1fae9b54007", null ],
-      [ "kAPSystemReserved", "_hardware_thread_scheduler_8h.html#a7ed051e98acfa04e8358d9f76150ed06a963dfbe3a1cf9935b9457192dc488293", null ],
-      [ "kAPStandard", "_hardware_thread_scheduler_8h.html#a7ed051e98acfa04e8358d9f76150ed06af870cb2d4dacc3ddfa33b8e5c13da0df", null ],
-      [ "kAPRealTime", "_hardware_thread_scheduler_8h.html#a7ed051e98acfa04e8358d9f76150ed06ad83664acc41b31e347009c4219a8a31b", null ],
-      [ "kAPBoot", "_hardware_thread_scheduler_8h.html#a7ed051e98acfa04e8358d9f76150ed06ac83186d6fc07cf2829439a399a94b603", null ],
-      [ "kAPCount", "_hardware_thread_scheduler_8h.html#a7ed051e98acfa04e8358d9f76150ed06a093d889eceb5d2e1ae81d1b6e87a2a96", null ]
+    [ "ThreadID", "_hardware_thread_scheduler_8h.html#a08b8ab6ca1547ec251abf45ef1e2e0af", null ],
+    [ "ThreadKind", "_hardware_thread_scheduler_8h.html#a9192b011073165dcf43bee53f2e4c0b3", null ],
+    [ "ThreadKind", "_hardware_thread_scheduler_8h.html#abf43712634987021cb1b00decb0f91f2", [
+      [ "kAPInvalid", "_hardware_thread_scheduler_8h.html#abf43712634987021cb1b00decb0f91f2a88a960ab6395cc9b2eb61ee2e728549e", null ],
+      [ "kAPSystemReserved", "_hardware_thread_scheduler_8h.html#abf43712634987021cb1b00decb0f91f2acfefe218fa2e85a473595c4913270913", null ],
+      [ "kAPStandard", "_hardware_thread_scheduler_8h.html#abf43712634987021cb1b00decb0f91f2a95045bf7fe74311aa0441da1df778acb", null ],
+      [ "kAPRealTime", "_hardware_thread_scheduler_8h.html#abf43712634987021cb1b00decb0f91f2a08aa70989aa53b54244b6d014bee5643", null ],
+      [ "kAPBoot", "_hardware_thread_scheduler_8h.html#abf43712634987021cb1b00decb0f91f2a80d0f10280df710d5aa3d0225ee617f5", null ],
+      [ "kAPCount", "_hardware_thread_scheduler_8h.html#abf43712634987021cb1b00decb0f91f2a4f35917a1d837b96d2cb4d6500431dea", null ]
     ] ],
-    [ "mp_hang_thread", "_hardware_thread_scheduler_8h.html#a75b918bc9e0255dde5cad562d698ee99", null ],
-    [ "mp_wakeup_thread", "_hardware_thread_scheduler_8h.html#a53e882986068d5e81c01505ccd15fa48", null ]
+    [ "mp_hang_thread", "_hardware_thread_scheduler_8h.html#add9ede6e160b5b12fffa1a1cbe003250", null ],
+    [ "mp_wakeup_thread", "_hardware_thread_scheduler_8h.html#ab76a39d56c9856ec0080e25627843e96", null ]
 ];

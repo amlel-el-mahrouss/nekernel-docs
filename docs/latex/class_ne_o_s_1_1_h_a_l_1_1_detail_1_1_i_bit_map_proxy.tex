@@ -1,0 +1,112 @@
+\doxysection{Ne\+OS\+::HAL\+::Detail\+::IBit\+Map\+Proxy Class Reference}
+\hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy}{}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy}\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+
+
+Proxy Interface to manage a bitmap allocator.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a0842affb61907e7edf531e2fedf6bbf6}{IBit\+Map\+Proxy}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a945991a5266ee6dc3b5ff3d19165aec7}{\texorpdfstring{$\sim$}{\string~}\+IBit\+Map\+Proxy}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a510b64a6aac054e018874ad8cc18e908}{NE\+\_\+\+COPY\+\_\+\+DELETE}} (\mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy}{IBit\+Map\+Proxy}})
+\item 
+auto \mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_aab2df342b064aaaf7e233393e77b0eb1}{Is\+Bit\+Map}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} page\+\_\+ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\item 
+auto \mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a03ecc4d31d940524ed83ee5dced5a13e}{Free\+Bit\+Map}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} page\+\_\+ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a1e83225f29920771f8be3dd3eb1fc785}{Make\+MMFlags}} (\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} wr, \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} user)
+\item 
+auto \mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_ace827159306dcfbde9af6d293d93f978}{Find\+Bit\+Map}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} base\+\_\+ptr, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} size, const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} wr, const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} user, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} pad) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Iterate over availables bitmap, until we find a free entry. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_ab1172f4f1dc6a5180d097992a63fb88f}{Get\+Bit\+Map\+Status}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \texorpdfstring{$\ast$}{*}ptr\+\_\+bit\+\_\+set) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}
+\begin{DoxyCompactList}\small\item\em Print Bitmap status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Proxy Interface to manage a bitmap allocator. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a0842affb61907e7edf531e2fedf6bbf6}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a0842affb61907e7edf531e2fedf6bbf6} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!IBitMapProxy@{IBitMapProxy}}
+\index{IBitMapProxy@{IBitMapProxy}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{IBitMapProxy()}{IBitMapProxy()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\+IBit\+Map\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a945991a5266ee6dc3b5ff3d19165aec7}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a945991a5266ee6dc3b5ff3d19165aec7} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!````~IBitMapProxy@{\texorpdfstring{$\sim$}{\string~}IBitMapProxy}}
+\index{````~IBitMapProxy@{\texorpdfstring{$\sim$}{\string~}IBitMapProxy}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IBitMapProxy()}{\string~IBitMapProxy()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\texorpdfstring{$\sim$}{\string~}\+IBit\+Map\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_ace827159306dcfbde9af6d293d93f978}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_ace827159306dcfbde9af6d293d93f978} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!FindBitMap@{FindBitMap}}
+\index{FindBitMap@{FindBitMap}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{FindBitMap()}{FindBitMap()}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\+Find\+Bit\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{base\+\_\+ptr,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{size,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}]{wr,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}]{user,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{pad }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}     \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iterate over availables bitmap, until we find a free entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & base pointer to look on. \\
+\hline
+{\em size} & the size of the requested data structure. \\
+\hline
+{\em wr} & is writable flag? \\
+\hline
+{\em user} & is user flag? \\
+\hline
+{\em pad} & additional padding added to {\bfseries{size}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new free address, or nullptr. 
+\end{DoxyReturn}
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a03ecc4d31d940524ed83ee5dced5a13e}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a03ecc4d31d940524ed83ee5dced5a13e} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!FreeBitMap@{FreeBitMap}}
+\index{FreeBitMap@{FreeBitMap}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{FreeBitMap()}{FreeBitMap()}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\+Free\+Bit\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{page\+\_\+ptr }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}     \hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_ab1172f4f1dc6a5180d097992a63fb88f}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_ab1172f4f1dc6a5180d097992a63fb88f} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!GetBitMapStatus@{GetBitMapStatus}}
+\index{GetBitMapStatus@{GetBitMapStatus}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{GetBitMapStatus()}{GetBitMapStatus()}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\+Get\+Bit\+Map\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \texorpdfstring{$\ast$}{*}}]{ptr\+\_\+bit\+\_\+set }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}     \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Print Bitmap status. 
+
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_aab2df342b064aaaf7e233393e77b0eb1}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_aab2df342b064aaaf7e233393e77b0eb1} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!IsBitMap@{IsBitMap}}
+\index{IsBitMap@{IsBitMap}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{IsBitMap()}{IsBitMap()}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\+Is\+Bit\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{page\+\_\+ptr }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}     \hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a1e83225f29920771f8be3dd3eb1fc785}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a1e83225f29920771f8be3dd3eb1fc785} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!MakeMMFlags@{MakeMMFlags}}
+\index{MakeMMFlags@{MakeMMFlags}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{MakeMMFlags()}{MakeMMFlags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\+Make\+MMFlags (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}]{wr,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a510b64a6aac054e018874ad8cc18e908}\label{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy_a510b64a6aac054e018874ad8cc18e908} 
+\index{NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}!NE\_COPY\_DELETE@{NE\_COPY\_DELETE}}
+\index{NE\_COPY\_DELETE@{NE\_COPY\_DELETE}!NeOS::HAL::Detail::IBitMapProxy@{NeOS::HAL::Detail::IBitMapProxy}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DELETE()}{NE\_COPY\_DELETE()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy\+::\+NE\+\_\+\+COPY\+\_\+\+DELETE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy}{IBit\+Map\+Proxy}}}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/src/\mbox{\hyperlink{_bit_map_mgr_8cc}{Bit\+Map\+Mgr.\+cc}}\end{DoxyCompactItemize}

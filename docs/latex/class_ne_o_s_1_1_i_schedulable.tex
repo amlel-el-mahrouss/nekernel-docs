@@ -1,0 +1,119 @@
+\doxysection{Ne\+OS\+::ISchedulable Class Reference}
+\hypertarget{class_ne_o_s_1_1_i_schedulable}{}\label{class_ne_o_s_1_1_i_schedulable}\index{NeOS::ISchedulable@{NeOS::ISchedulable}}
+
+
+Scheduler interface, represents a scheduler object.  
+
+
+
+
+{\ttfamily \#include $<$Defines.\+h$>$}
+
+Inheritance diagram for Ne\+OS\+::ISchedulable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ne_o_s_1_1_i_schedulable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable_a0c2a232d987f8e6c7cbbfc9ee52c4410}{ISchedulable}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable_a04d4781237efa35b2981376ff9491900}{\texorpdfstring{$\sim$}{\string~}\+ISchedulable}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable}{ISchedulable}} \& \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable_a27afd429603df82da1303b4043310748}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable}{ISchedulable}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable_abc03ed892405fce4b1dd4e459f8ac028}{ISchedulable}} (const \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable}{ISchedulable}} \&)=default
+\item 
+virtual const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable_aabc6e851bfaa705cf68a5ac36ce2293b}{Is\+User}} ()
+\begin{DoxyCompactList}\small\item\em Is this object only accepting user tasks? \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable_a28e8383c7c46b1ec1af7aef1ecdc4967}{Is\+Kernel}} ()
+\begin{DoxyCompactList}\small\item\em Is this object only accepting kernel tasks? \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable_a17181ba51575c0297b5df398ddd6d68d}{Has\+MP}} ()
+\begin{DoxyCompactList}\small\item\em Is this object offloading to another CPU? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Scheduler interface, represents a scheduler object. 
+
+\begin{DoxyNote}{Note}
+This is used to schedule tasks, such as threads, drivers, user threads, etc. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_i_schedulable_a0c2a232d987f8e6c7cbbfc9ee52c4410}\label{class_ne_o_s_1_1_i_schedulable_a0c2a232d987f8e6c7cbbfc9ee52c4410} 
+\index{NeOS::ISchedulable@{NeOS::ISchedulable}!ISchedulable@{ISchedulable}}
+\index{ISchedulable@{ISchedulable}!NeOS::ISchedulable@{NeOS::ISchedulable}}
+\doxysubsubsection{\texorpdfstring{ISchedulable()}{ISchedulable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+ISchedulable\+::\+ISchedulable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_schedulable_a04d4781237efa35b2981376ff9491900}\label{class_ne_o_s_1_1_i_schedulable_a04d4781237efa35b2981376ff9491900} 
+\index{NeOS::ISchedulable@{NeOS::ISchedulable}!````~ISchedulable@{\texorpdfstring{$\sim$}{\string~}ISchedulable}}
+\index{````~ISchedulable@{\texorpdfstring{$\sim$}{\string~}ISchedulable}!NeOS::ISchedulable@{NeOS::ISchedulable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ISchedulable()}{\string~ISchedulable()}}
+{\footnotesize\ttfamily virtual Ne\+OS\+::\+ISchedulable\+::\texorpdfstring{$\sim$}{\string~}\+ISchedulable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_schedulable_abc03ed892405fce4b1dd4e459f8ac028}\label{class_ne_o_s_1_1_i_schedulable_abc03ed892405fce4b1dd4e459f8ac028} 
+\index{NeOS::ISchedulable@{NeOS::ISchedulable}!ISchedulable@{ISchedulable}}
+\index{ISchedulable@{ISchedulable}!NeOS::ISchedulable@{NeOS::ISchedulable}}
+\doxysubsubsection{\texorpdfstring{ISchedulable()}{ISchedulable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+ISchedulable\+::\+ISchedulable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable}{ISchedulable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_i_schedulable_a17181ba51575c0297b5df398ddd6d68d}\label{class_ne_o_s_1_1_i_schedulable_a17181ba51575c0297b5df398ddd6d68d} 
+\index{NeOS::ISchedulable@{NeOS::ISchedulable}!HasMP@{HasMP}}
+\index{HasMP@{HasMP}!NeOS::ISchedulable@{NeOS::ISchedulable}}
+\doxysubsubsection{\texorpdfstring{HasMP()}{HasMP()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+ISchedulable\+::\+Has\+MP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Is this object offloading to another CPU? 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ne_o_s_1_1_hardware_thread_scheduler_a13137ce3c67b0c09439542b3bd38ce86}{Ne\+OS\+::\+Hardware\+Thread\+Scheduler}}, and \mbox{\hyperlink{class_ne_o_s_1_1_user_process_scheduler_a185062c3978edbc271ca87772d2413b2}{Ne\+OS\+::\+User\+Process\+Scheduler}}.
+
+\Hypertarget{class_ne_o_s_1_1_i_schedulable_a28e8383c7c46b1ec1af7aef1ecdc4967}\label{class_ne_o_s_1_1_i_schedulable_a28e8383c7c46b1ec1af7aef1ecdc4967} 
+\index{NeOS::ISchedulable@{NeOS::ISchedulable}!IsKernel@{IsKernel}}
+\index{IsKernel@{IsKernel}!NeOS::ISchedulable@{NeOS::ISchedulable}}
+\doxysubsubsection{\texorpdfstring{IsKernel()}{IsKernel()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+ISchedulable\+::\+Is\+Kernel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Is this object only accepting kernel tasks? 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ne_o_s_1_1_hardware_thread_scheduler_a9be9074b553b4d09ffb839b57dfef278}{Ne\+OS\+::\+Hardware\+Thread\+Scheduler}}, and \mbox{\hyperlink{class_ne_o_s_1_1_user_process_scheduler_a007ae8125e9f801a4d8c77bf5c399191}{Ne\+OS\+::\+User\+Process\+Scheduler}}.
+
+\Hypertarget{class_ne_o_s_1_1_i_schedulable_aabc6e851bfaa705cf68a5ac36ce2293b}\label{class_ne_o_s_1_1_i_schedulable_aabc6e851bfaa705cf68a5ac36ce2293b} 
+\index{NeOS::ISchedulable@{NeOS::ISchedulable}!IsUser@{IsUser}}
+\index{IsUser@{IsUser}!NeOS::ISchedulable@{NeOS::ISchedulable}}
+\doxysubsubsection{\texorpdfstring{IsUser()}{IsUser()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+ISchedulable\+::\+Is\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Is this object only accepting user tasks? 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ne_o_s_1_1_hardware_thread_scheduler_a77c362a2bf3ef648167e49811f3d1c96}{Ne\+OS\+::\+Hardware\+Thread\+Scheduler}}, and \mbox{\hyperlink{class_ne_o_s_1_1_user_process_scheduler_a7caf2648cf855f6e0c8b2f0e45ddc333}{Ne\+OS\+::\+User\+Process\+Scheduler}}.
+
+\Hypertarget{class_ne_o_s_1_1_i_schedulable_a27afd429603df82da1303b4043310748}\label{class_ne_o_s_1_1_i_schedulable_a27afd429603df82da1303b4043310748} 
+\index{NeOS::ISchedulable@{NeOS::ISchedulable}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::ISchedulable@{NeOS::ISchedulable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable}{ISchedulable}} \& Ne\+OS\+::\+ISchedulable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_i_schedulable}{ISchedulable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+New\+Kit/\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{Defines.\+h}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var _json_8cc =
 [
-    [ "RTL_INIT_OBJECT", "_json_8cc.html#a9e6a74493459057f9693c3512462dba9", null ]
+    [ "rtl_init_object", "_json_8cc.html#a315730562b3e1b234927fee4e6020a7c", null ]
 ];

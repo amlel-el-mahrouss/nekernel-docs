@@ -1,0 +1,54 @@
+\doxysection{dev/kernel/\+New\+Kit/\+Json.h File Reference}
+\hypertarget{_json_8h}{}\label{_json_8h}\index{dev/kernel/NewKit/Json.h@{dev/kernel/NewKit/Json.h}}
+{\ttfamily \#include $<$Compiler\+Kit/\+Compiler\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Stream.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+KString.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Utils.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_json}{Ne\+OS\+::\+Json}}
+\begin{DoxyCompactList}\small\item\em Java\+Script object class. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_json_stream_reader}{Ne\+OS\+::\+Json\+Stream\+Reader}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_ne_o_s_1_1_json}{Json} stream reader helper. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_json_8h_a74ac0bb3f2342eb0a6ffb3e9e451cf55}{k\+Max\+Json\+Path}}~8196
+\item 
+\#define \mbox{\hyperlink{_json_8h_aa37c64d6485a606a3c170ded02c09873}{k\+JSONLen}}~256
+\item 
+\#define \mbox{\hyperlink{_json_8h_ae13195ace3a10e6916ff6e8fecfc2fb4}{k\+JSONNull}}~"{}\mbox{[}$\,$\mbox{]}"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespace_ne_o_s_ab4c99ed27921b4a0baa3ef4911d67ee4}{Ne\+OS\+::\+Json\+Stream}} = \mbox{\hyperlink{class_ne_o_s_1_1_stream}{Stream}}$<$ \mbox{\hyperlink{struct_ne_o_s_1_1_json_stream_reader}{Json\+Stream\+Reader}}, \mbox{\hyperlink{class_ne_o_s_1_1_json}{Json}} $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_json_8h_aa37c64d6485a606a3c170ded02c09873}\label{_json_8h_aa37c64d6485a606a3c170ded02c09873} 
+\index{Json.h@{Json.h}!kJSONLen@{kJSONLen}}
+\index{kJSONLen@{kJSONLen}!Json.h@{Json.h}}
+\doxysubsubsection{\texorpdfstring{kJSONLen}{kJSONLen}}
+{\footnotesize\ttfamily \#define k\+JSONLen~256}
+
+\Hypertarget{_json_8h_ae13195ace3a10e6916ff6e8fecfc2fb4}\label{_json_8h_ae13195ace3a10e6916ff6e8fecfc2fb4} 
+\index{Json.h@{Json.h}!kJSONNull@{kJSONNull}}
+\index{kJSONNull@{kJSONNull}!Json.h@{Json.h}}
+\doxysubsubsection{\texorpdfstring{kJSONNull}{kJSONNull}}
+{\footnotesize\ttfamily \#define k\+JSONNull~"{}\mbox{[}$\,$\mbox{]}"{}}
+
+\Hypertarget{_json_8h_a74ac0bb3f2342eb0a6ffb3e9e451cf55}\label{_json_8h_a74ac0bb3f2342eb0a6ffb3e9e451cf55} 
+\index{Json.h@{Json.h}!kMaxJsonPath@{kMaxJsonPath}}
+\index{kMaxJsonPath@{kMaxJsonPath}!Json.h@{Json.h}}
+\doxysubsubsection{\texorpdfstring{kMaxJsonPath}{kMaxJsonPath}}
+{\footnotesize\ttfamily \#define k\+Max\+Json\+Path~8196}
+

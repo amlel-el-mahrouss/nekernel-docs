@@ -1,0 +1,247 @@
+\doxysection{Efi\+File\+Protocol Struct Reference}
+\hypertarget{struct_efi_file_protocol}{}\label{struct_efi_file_protocol}\index{EfiFileProtocol@{EfiFileProtocol}}
+
+
+{\ttfamily \#include $<$EFI.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a22492fb8f154d69bc20a5001002b09f0}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Open)(struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a7d9973f84f35b52138186a1e82c32814}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Close)(struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self)
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a5b956ff7fd85d9f216baff78982620d6}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Delete)(struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self)
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_acb53b89ff670db63143ae2742e97dae8}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Read)(struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_ab9d3a6b2ad1994e6738693b00172bb66}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{modules_2_a_h_c_i_2_a_h_c_i_8h_a7a9e0d1c2c1ac92baa698f393e953c87}{Write}})(struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a532161a78b4156cc262fff32b672234e}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Get\+Position)(\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a3c303c3ed76aa622b167d8fc95c01162}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Set\+Position)(\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_ad0c75867446eb2f84fd19c23c642e26a}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Get\+Info)(struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}
+\item 
+struct \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{Efi\+GUID}} \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_aaf5c7ff7183fe7367783683da346f007}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Set\+Info)(struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}
+\item 
+struct \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{Efi\+GUID}} \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} void struct \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{Efi\+GUID}} \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_a15054fcde50c122903abbc36fd19f9f1}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Flush)(\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*})
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a451f02fa58435781b9fc765fdd3b38ee}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Open\+Ex)(\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a8031d8d7cc092a45990c883cdfe3246c}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Read\+Ex)(\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_afba59f1eaf3f1efe9bca959ead8b0391}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Write\+Ex)(\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol_a921b1aa2833e27a2bf4be4d503ace140}{Efi\+Status\+Type}} (\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}Flush\+Ex)(\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}Self
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_file_protocol_a6efbcb3a5c89ab746f7e23df4ba823c5}{Revision}}
+\item 
+struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_a77a682759cbe3f58380bbe0fd45c4b66}{Out}}
+\item 
+struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_a4512d20961aa5d640733fe8ad4f9f872}{Char\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_file_protocol_a347d2724d6d396cbfaad86cfcf567e03}{Open\+Mode}}
+\item 
+struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_file_protocol_a92e743200fba9c60b7cfed93ab356997}{Attrib}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_a8dc2daf98874aa8e900a90eacc4cff1c}{Buf\+Size}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{struct_efi_file_protocol_af4fe944000c950623484ed2758217a7f}{Buf\+Out}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_adef0d5814ddee808942bbc1da9863598}{Position}}
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_a9aa4a5b9ff1c1ac22eec0185fc698a6e}{Out\+Handle}}
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_a7d83025e5402a077f6d2d7a41eeac71b}{Path}}
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_file_protocol_a3fcdb94394469693594316e1f533b79a}{Mode}}
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_file_protocol_ad459f81f9c27d3e9629b909251a1ed81}{Attrib}}
+\item 
+\mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} struct \mbox{\hyperlink{struct_efi_i_o_token}{Efi\+IOToken}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_a47d8ad2c135d95a7299de12b9d45e12b}{Token}}
+\item 
+struct \mbox{\hyperlink{struct_efi_i_o_token}{Efi\+IOToken}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_file_protocol_ac6d1c4eab54ac39cf150855b7d8c3dd6}{Token}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_efi_file_protocol_a7d9973f84f35b52138186a1e82c32814}\label{struct_efi_file_protocol_a7d9973f84f35b52138186a1e82c32814} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Close }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a5b956ff7fd85d9f216baff78982620d6}\label{struct_efi_file_protocol_a5b956ff7fd85d9f216baff78982620d6} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Delete }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a15054fcde50c122903abbc36fd19f9f1}\label{struct_efi_file_protocol_a15054fcde50c122903abbc36fd19f9f1} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [3/14]}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{Efi\+GUID}} \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} void struct \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{Efi\+GUID}} \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} void \texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Flush }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a921b1aa2833e27a2bf4be4d503ace140}\label{struct_efi_file_protocol_a921b1aa2833e27a2bf4be4d503ace140} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [4/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Flush\+Ex }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_ad0c75867446eb2f84fd19c23c642e26a}\label{struct_efi_file_protocol_ad0c75867446eb2f84fd19c23c642e26a} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [5/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Get\+Info }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a532161a78b4156cc262fff32b672234e}\label{struct_efi_file_protocol_a532161a78b4156cc262fff32b672234e} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [6/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Get\+Position }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a22492fb8f154d69bc20a5001002b09f0}\label{struct_efi_file_protocol_a22492fb8f154d69bc20a5001002b09f0} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [7/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Open }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a451f02fa58435781b9fc765fdd3b38ee}\label{struct_efi_file_protocol_a451f02fa58435781b9fc765fdd3b38ee} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [8/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Open\+Ex }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_acb53b89ff670db63143ae2742e97dae8}\label{struct_efi_file_protocol_acb53b89ff670db63143ae2742e97dae8} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [9/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Read }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a8031d8d7cc092a45990c883cdfe3246c}\label{struct_efi_file_protocol_a8031d8d7cc092a45990c883cdfe3246c} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [10/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Read\+Ex }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_aaf5c7ff7183fe7367783683da346f007}\label{struct_efi_file_protocol_aaf5c7ff7183fe7367783683da346f007} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [11/14]}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{Efi\+GUID}} \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} void \texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Set\+Info }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_a3c303c3ed76aa622b167d8fc95c01162}\label{struct_efi_file_protocol_a3c303c3ed76aa622b167d8fc95c01162} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [12/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Set\+Position }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_ab9d3a6b2ad1994e6738693b00172bb66}\label{struct_efi_file_protocol_ab9d3a6b2ad1994e6738693b00172bb66} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [13/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Write }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_efi_file_protocol_afba59f1eaf3f1efe9bca959ead8b0391}\label{struct_efi_file_protocol_afba59f1eaf3f1efe9bca959ead8b0391} 
+\index{EfiFileProtocol@{EfiFileProtocol}!EfiStatusType@{EfiStatusType}}
+\index{EfiStatusType@{EfiStatusType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{EfiStatusType()}{EfiStatusType()}\hspace{0.1cm}{\footnotesize\ttfamily [14/14]}}
+{\footnotesize\ttfamily Efi\+File\+Protocol\+::\+Efi\+Status\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\+\_\+\+API}} \texorpdfstring{$\ast$}{*}}]{Write\+Ex }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_efi_file_protocol_a92e743200fba9c60b7cfed93ab356997}\label{struct_efi_file_protocol_a92e743200fba9c60b7cfed93ab356997} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Attrib@{Attrib}}
+\index{Attrib@{Attrib}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Attrib}{Attrib}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+File\+Protocol\+::\+Attrib}
+
+\Hypertarget{struct_efi_file_protocol_ad459f81f9c27d3e9629b909251a1ed81}\label{struct_efi_file_protocol_ad459f81f9c27d3e9629b909251a1ed81} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Attrib@{Attrib}}
+\index{Attrib@{Attrib}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Attrib}{Attrib}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+File\+Protocol\+::\+Attrib}
+
+\Hypertarget{struct_efi_file_protocol_af4fe944000c950623484ed2758217a7f}\label{struct_efi_file_protocol_af4fe944000c950623484ed2758217a7f} 
+\index{EfiFileProtocol@{EfiFileProtocol}!BufOut@{BufOut}}
+\index{BufOut@{BufOut}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{BufOut}{BufOut}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} Efi\+File\+Protocol\+::\+Buf\+Out}
+
+\Hypertarget{struct_efi_file_protocol_a8dc2daf98874aa8e900a90eacc4cff1c}\label{struct_efi_file_protocol_a8dc2daf98874aa8e900a90eacc4cff1c} 
+\index{EfiFileProtocol@{EfiFileProtocol}!BufSize@{BufSize}}
+\index{BufSize@{BufSize}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{BufSize}{BufSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Buf\+Size}
+
+\Hypertarget{struct_efi_file_protocol_a4512d20961aa5d640733fe8ad4f9f872}\label{struct_efi_file_protocol_a4512d20961aa5d640733fe8ad4f9f872} 
+\index{EfiFileProtocol@{EfiFileProtocol}!CharType@{CharType}}
+\index{CharType@{CharType}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{CharType}{CharType}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}}\texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Char\+Type}
+
+\Hypertarget{struct_efi_file_protocol_a3fcdb94394469693594316e1f533b79a}\label{struct_efi_file_protocol_a3fcdb94394469693594316e1f533b79a} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Mode@{Mode}}
+\index{Mode@{Mode}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+File\+Protocol\+::\+Mode}
+
+\Hypertarget{struct_efi_file_protocol_a347d2724d6d396cbfaad86cfcf567e03}\label{struct_efi_file_protocol_a347d2724d6d396cbfaad86cfcf567e03} 
+\index{EfiFileProtocol@{EfiFileProtocol}!OpenMode@{OpenMode}}
+\index{OpenMode@{OpenMode}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{OpenMode}{OpenMode}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+File\+Protocol\+::\+Open\+Mode}
+
+\Hypertarget{struct_efi_file_protocol_a77a682759cbe3f58380bbe0fd45c4b66}\label{struct_efi_file_protocol_a77a682759cbe3f58380bbe0fd45c4b66} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Out@{Out}}
+\index{Out@{Out}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Out}{Out}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Out}
+
+\Hypertarget{struct_efi_file_protocol_a9aa4a5b9ff1c1ac22eec0185fc698a6e}\label{struct_efi_file_protocol_a9aa4a5b9ff1c1ac22eec0185fc698a6e} 
+\index{EfiFileProtocol@{EfiFileProtocol}!OutHandle@{OutHandle}}
+\index{OutHandle@{OutHandle}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{OutHandle}{OutHandle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Out\+Handle}
+
+\Hypertarget{struct_efi_file_protocol_a7d83025e5402a077f6d2d7a41eeac71b}\label{struct_efi_file_protocol_a7d83025e5402a077f6d2d7a41eeac71b} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Path@{Path}}
+\index{Path@{Path}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Path}{Path}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_file_protocol}{Efi\+File\+Protocol}} \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{Efi\+Char\+Type}}\texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Path}
+
+\Hypertarget{struct_efi_file_protocol_adef0d5814ddee808942bbc1da9863598}\label{struct_efi_file_protocol_adef0d5814ddee808942bbc1da9863598} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Position@{Position}}
+\index{Position@{Position}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Position}
+
+\Hypertarget{struct_efi_file_protocol_a6efbcb3a5c89ab746f7e23df4ba823c5}\label{struct_efi_file_protocol_a6efbcb3a5c89ab746f7e23df4ba823c5} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Revision@{Revision}}
+\index{Revision@{Revision}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Revision}{Revision}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+File\+Protocol\+::\+Revision}
+
+\Hypertarget{struct_efi_file_protocol_a47d8ad2c135d95a7299de12b9d45e12b}\label{struct_efi_file_protocol_a47d8ad2c135d95a7299de12b9d45e12b} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Token@{Token}}
+\index{Token@{Token}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Token}{Token}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_efi_i_o_token}{Efi\+IOToken}} \texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Token}
+
+\Hypertarget{struct_efi_file_protocol_ac6d1c4eab54ac39cf150855b7d8c3dd6}\label{struct_efi_file_protocol_ac6d1c4eab54ac39cf150855b7d8c3dd6} 
+\index{EfiFileProtocol@{EfiFileProtocol}!Token@{Token}}
+\index{Token@{Token}!EfiFileProtocol@{EfiFileProtocol}}
+\doxysubsubsection{\texorpdfstring{Token}{Token}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_efi_i_o_token}{Efi\+IOToken}}\texorpdfstring{$\ast$}{*} Efi\+File\+Protocol\+::\+Token}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Firmware\+Kit/\+EFI/\mbox{\hyperlink{_e_f_i_2_e_f_i_8h}{EFI.\+h}}\end{DoxyCompactItemize}

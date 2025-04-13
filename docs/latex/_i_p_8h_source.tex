@@ -1,0 +1,83 @@
+\doxysection{IP.\+h}
+\hypertarget{_i_p_8h_source}{}\label{_i_p_8h_source}\index{dev/kernel/NetworkKit/IP.h@{dev/kernel/NetworkKit/IP.h}}
+\mbox{\hyperlink{_i_p_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_debug_output_8h}{KernelKit/DebugOutput.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{dev_2kernel_2_new_kit_2_ref_8h}{NewKit/Ref.h}}>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_k_string_8h}{NewKit/KString.h}}>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }RawIPAddress6;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }RawIPAddress;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }IPFactory;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address}{RawIPAddress}}\ final}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address}{RawIPAddress}}(\textcolor{keywordtype}{char}\ bytes[4]);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a17d66a8872c4295ddaf4058f871b117e}{\string~RawIPAddress}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address}{RawIPAddress}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a397442e194e8cbac1fc4f619a18d2d34}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address}{RawIPAddress}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a8635e27f511c633617449bf44b7a0977}{RawIPAddress}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address}{RawIPAddress}}\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a2a3896f8d636eb864960eba0ef419660}{Address}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a00636b7dfef48b3a198317ada380e8a8}{operator[]}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}}\&\ index);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a26a4eddb608be8b12b2d7bf31bf46e3d}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address}{RawIPAddress}}\&\ ipv6);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a77c8722bdd621fbb6844c534e1f4ac6d}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address}{RawIPAddress}}\&\ ipv6);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_ab8af845e7c0fe3735bcc7b9c7a0c8ddc}{fAddr}}[4];}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address_a31075c22ce6fbb6e6a476a5b5c48167d}{IPFactory}};\ \textcolor{comment}{//\ it\ is\ the\ one\ creating\ these\ addresses,\ thus\ this}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ is\ why\ the\ constructors\ are\ private.}}
+\DoxyCodeLine{00042\ \ \ \ \ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{RawIPAddress6}}\ final}
+\DoxyCodeLine{00048\ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{RawIPAddress6}}(\textcolor{keywordtype}{char}\ Bytes[8]);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a683f9cbd4ba759feae3fa25cc1f5c9d2}{\string~RawIPAddress6}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{RawIPAddress6}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a4c2b32f0387c243d1c5c3b74a8bd7d39}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{RawIPAddress6}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_aa4849cecc5bc6fa4f4eda151ccd44de6}{RawIPAddress6}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{RawIPAddress6}}\&)\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a057147026d0fb541296a9c4adbf97813}{Address}}()}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a7636baee2e89c6f1d0919a0b6224298b}{fAddr}};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a035cf28a4d4e21a86862f401b4c0bb5e}{operator[]}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}}\&\ index);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a21e9a168e2844612d6f7e5cbcb97d4e5}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{RawIPAddress6}}\&\ ipv6);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a1213da3e07099f6f9eb2676daa1bb064}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{RawIPAddress6}}\&\ ipv6);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a7636baee2e89c6f1d0919a0b6224298b}{fAddr}}[8];}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_ad9c3ac2b6557bc9f877c4f422070361d}{IPFactory}};}
+\DoxyCodeLine{00071\ \ \ \ \ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_i_p_factory}{IPFactory}}\ final}
+\DoxyCodeLine{00077\ \ \ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_ne_o_s_1_1_error_or}{ErrorOr<KString>}}\ \mbox{\hyperlink{class_ne_o_s_1_1_i_p_factory_a3b1fd265ea6139597988e2cb2184a17a}{ToKString}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<RawIPAddress6>}}\&\ ipv6);}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_ne_o_s_1_1_error_or}{ErrorOr<KString>}}\ \mbox{\hyperlink{class_ne_o_s_1_1_i_p_factory_a3b1fd265ea6139597988e2cb2184a17a}{ToKString}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<RawIPAddress>}}\&\ ipv4);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_i_p_factory_a437f6f3190a881ad272fdaed35e5dd4d}{IpCheckVersion4}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ ip);}
+\DoxyCodeLine{00082\ \ \ \ \ \};}
+\DoxyCodeLine{00083\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

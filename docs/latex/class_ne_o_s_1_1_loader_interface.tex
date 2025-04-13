@@ -1,0 +1,131 @@
+\doxysection{Ne\+OS\+::Loader\+Interface Class Reference}
+\hypertarget{class_ne_o_s_1_1_loader_interface}{}\label{class_ne_o_s_1_1_loader_interface}\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+
+
+This interface is used to make loader contracts (MSCOFF, PEF).  
+
+
+
+
+{\ttfamily \#include $<$Loader\+Interface.\+h$>$}
+
+Inheritance diagram for Ne\+OS\+::Loader\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ne_o_s_1_1_loader_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_afdef410b157926ca1b9af347c8350a00}{Loader\+Interface}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_a98e77e380fc5b589a0715d6abf72c391}{\texorpdfstring{$\sim$}{\string~}\+Loader\+Interface}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_a10c33f85fdaa9bbd8ee4d0785f131248}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_loader_interface}{Loader\+Interface}})
+\item 
+virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} \mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_a789df8e31077fac5f02751cba4d93d01}{Get\+Blob}} ()=0
+\item 
+virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_a0c30b641076c4685d771bd364e8b4595}{As\+String}} ()=0
+\item 
+virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_ae53312d9100c5e2cfe1eb52513776225}{MIME}} ()=0
+\item 
+virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_a273441305b99c01c6dc12c771e6b86f6}{Path}} ()=0
+\item 
+virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} \mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_a334880242094f609cb7e5a4b01b2729c}{Find\+Start}} ()=0
+\item 
+virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_loader_interface_aff3f0ad98c7c9999d4aae3bb7a343f51}{Find\+Symbol}} (\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}name, \mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} kind)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface is used to make loader contracts (MSCOFF, PEF). 
+
+\begin{DoxyAuthor}{Author}
+@\+Amlal-\/El-\/\+Mahrouss 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_loader_interface_afdef410b157926ca1b9af347c8350a00}\label{class_ne_o_s_1_1_loader_interface_afdef410b157926ca1b9af347c8350a00} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!LoaderInterface@{LoaderInterface}}
+\index{LoaderInterface@{LoaderInterface}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{LoaderInterface()}{LoaderInterface()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Loader\+Interface\+::\+Loader\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_loader_interface_a98e77e380fc5b589a0715d6abf72c391}\label{class_ne_o_s_1_1_loader_interface_a98e77e380fc5b589a0715d6abf72c391} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!````~LoaderInterface@{\texorpdfstring{$\sim$}{\string~}LoaderInterface}}
+\index{````~LoaderInterface@{\texorpdfstring{$\sim$}{\string~}LoaderInterface}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LoaderInterface()}{\string~LoaderInterface()}}
+{\footnotesize\ttfamily virtual Ne\+OS\+::\+Loader\+Interface\+::\texorpdfstring{$\sim$}{\string~}\+Loader\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_loader_interface_a0c30b641076c4685d771bd364e8b4595}\label{class_ne_o_s_1_1_loader_interface_a0c30b641076c4685d771bd364e8b4595} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!AsString@{AsString}}
+\index{AsString@{AsString}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{AsString()}{AsString()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Loader\+Interface\+::\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_ne_o_s_1_1_p_e_f_loader_a9c79b8a3463bf1d2e8c2326b7348030c}{Ne\+OS\+::\+PEFLoader}}.
+
+\Hypertarget{class_ne_o_s_1_1_loader_interface_a334880242094f609cb7e5a4b01b2729c}\label{class_ne_o_s_1_1_loader_interface_a334880242094f609cb7e5a4b01b2729c} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!FindStart@{FindStart}}
+\index{FindStart@{FindStart}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{FindStart()}{FindStart()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} \mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} $>$ Ne\+OS\+::\+Loader\+Interface\+::\+Find\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_ne_o_s_1_1_p_e_f_loader_a48ef00113dad0815a40d65e8371a6fcd}{Ne\+OS\+::\+PEFLoader}}.
+
+\Hypertarget{class_ne_o_s_1_1_loader_interface_aff3f0ad98c7c9999d4aae3bb7a343f51}\label{class_ne_o_s_1_1_loader_interface_aff3f0ad98c7c9999d4aae3bb7a343f51} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!FindSymbol@{FindSymbol}}
+\index{FindSymbol@{FindSymbol}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{FindSymbol()}{FindSymbol()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} Ne\+OS\+::\+Loader\+Interface\+::\+Find\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{name,  }\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}}]{kind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{class_ne_o_s_1_1_loader_interface_a789df8e31077fac5f02751cba4d93d01}\label{class_ne_o_s_1_1_loader_interface_a789df8e31077fac5f02751cba4d93d01} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!GetBlob@{GetBlob}}
+\index{GetBlob@{GetBlob}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{GetBlob()}{GetBlob()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} \mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} $>$ Ne\+OS\+::\+Loader\+Interface\+::\+Get\+Blob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_ne_o_s_1_1_p_e_f_loader_afeab6cc1077b8f4d2bde2de81a81cbf4}{Ne\+OS\+::\+PEFLoader}}.
+
+\Hypertarget{class_ne_o_s_1_1_loader_interface_ae53312d9100c5e2cfe1eb52513776225}\label{class_ne_o_s_1_1_loader_interface_ae53312d9100c5e2cfe1eb52513776225} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!MIME@{MIME}}
+\index{MIME@{MIME}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{MIME()}{MIME()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Loader\+Interface\+::\+MIME (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_ne_o_s_1_1_p_e_f_loader_a5c06911d7989315edf19d8fa5693ad6f}{Ne\+OS\+::\+PEFLoader}}.
+
+\Hypertarget{class_ne_o_s_1_1_loader_interface_a10c33f85fdaa9bbd8ee4d0785f131248}\label{class_ne_o_s_1_1_loader_interface_a10c33f85fdaa9bbd8ee4d0785f131248} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Loader\+Interface\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_loader_interface}{Loader\+Interface}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_loader_interface_a273441305b99c01c6dc12c771e6b86f6}\label{class_ne_o_s_1_1_loader_interface_a273441305b99c01c6dc12c771e6b86f6} 
+\index{NeOS::LoaderInterface@{NeOS::LoaderInterface}!Path@{Path}}
+\index{Path@{Path}!NeOS::LoaderInterface@{NeOS::LoaderInterface}}
+\doxysubsubsection{\texorpdfstring{Path()}{Path()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Loader\+Interface\+::\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_ne_o_s_1_1_p_e_f_loader_a4b6789346109dcb00aafa9be39c8d927}{Ne\+OS\+::\+PEFLoader}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_loader_interface_8h}{Loader\+Interface.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{Window\+Connection.\+h}
+\hypertarget{_window_connection_8h_source}{}\label{_window_connection_8h_source}\index{dev/User/LibWM/WindowConnection.h@{dev/User/LibWM/WindowConnection.h}}
+\mbox{\hyperlink{_window_connection_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{}}
+\DoxyCodeLine{00006\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_object_8h}{LibCF/Object.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_user_2_lib_c_f_2_array_8h}{LibCF/Array.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_lib_c_f}{LibCF}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }CFWindowConnection\_;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }CFWindowConnection\_\ \mbox{\hyperlink{_object_8h_aaaa3f6329bcb486279ed2497eeaaedc2}{CF\_OBJECT}}}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a24c09bc4256173577e21c4d7e78f62ba}{CFWindowConnection\_}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a96f13fd47c93458490ef87ebcb03835f}{\string~CFWindowConnection\_}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a7cf56f7eec1d28b8f67743c54b22e33f}{SCI\_COPY\_DEFAULT}}(CFWindowConnection\_);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{libsci_2_macros_8h_aab68908257a1ee8e227048141326e457}{SInt16}}\ kMaxPeers\ =\ 16;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{libsci_2_macros_8h_a7942e32f6409fbd1fd347a8c23ef725e}{Char}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mConnName[256]\ =\ \{0\};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{libsci_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mConnPeersCnt\{0\};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_array}{CFArray<VoidPtr,\ kMaxPeers>}}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a4ac115a27b9103cbfe86757442f42bc7}{mConnPeers}};}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+\DoxyCodeLine{00031\ \}\ \textcolor{comment}{//\ namespace\ LibCF}}
+
+\end{DoxyCode}

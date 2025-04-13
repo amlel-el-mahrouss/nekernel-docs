@@ -2,9 +2,8 @@ var _a_m_d64_2_boot_e_f_i_8cc =
 [
     [ "kExpectedHeight", "_a_m_d64_2_boot_e_f_i_8cc.html#a91c296b9120b9c636e3cd538057b112c", null ],
     [ "kExpectedWidth", "_a_m_d64_2_boot_e_f_i_8cc.html#af40623aa029bf6a91ebe357a5c7e6a9d", null ],
-    [ "kMachineModel", "_a_m_d64_2_boot_e_f_i_8cc.html#ad16f9967352b47795f4b1d0d3f92a842", null ],
     [ "boot_init_fb", "_a_m_d64_2_boot_e_f_i_8cc.html#a3f766b34e76144e82b3b9e558a23d945", null ],
-    [ "Main", "_a_m_d64_2_boot_e_f_i_8cc.html#ae7b733d4703c7b0ddec923327add6d97", null ],
+    [ "ModuleMain", "_a_m_d64_2_boot_e_f_i_8cc.html#a09227d565ddfaf88b34a1fff375ae876", null ],
     [ "rt_reset_hardware", "_a_m_d64_2_boot_e_f_i_8cc.html#a0908b40c96960891de26d84dfa738fda", null ],
     [ "BS", "_a_m_d64_2_boot_e_f_i_8cc.html#a78d359eab2435f640c4c7633e81155bd", null ],
     [ "kEfiGlobalNamespaceVarGUID", "_a_m_d64_2_boot_e_f_i_8cc.html#af8f35b390d6952c1895bc0e4afe65d7d", null ],

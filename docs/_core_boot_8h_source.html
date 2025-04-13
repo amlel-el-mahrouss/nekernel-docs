@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('_core_boot_8h_source.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <a href="_core_boot_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="foldopen" id="foldopen00001" data-start="{" data-end="}">
-<div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespace_firmware_1_1_detail_1_1_core_boot.html#a73c79d2a2f5ad8cf3741616028fe7c1c">    1</a></span><span class="comment">/* -------------------------------------------</span></div>
+<div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespace_firmware_1_1_detail_1_1_core_boot.html#ad594d0799dc492be61c7a3105c5e98f1">    1</a></span><span class="comment">/* -------------------------------------------</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">    Copyright (C) 2024-2025, Amlal EL Mahrouss, all rights reserved.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">    Copyright (C) 2024-2025, Amlal El Mahrouss, all rights reserved.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"></span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">------------------------------------------- */</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
@@ -112,29 +112,35 @@ $(document).ready(function(){initNavTree('_core_boot_8h_source.html',''); initRe
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespace_firmware.html">   11</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_firmware_1_1_detail_1_1_core_boot.html">Firmware::Detail::CoreBoot</a></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_ne_o_s.html">NeOS</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_kernel.html">Kernel</a>;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">struct </span>LEHeader;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">struct </span><a class="code hl_class" href="class_kernel_1_1_error_or.html">COREBOOT_LINEAR_EXEC</a>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">struct </span><a class="code hl_define" href="ddk_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5">ATTRIBUTE</a>(aligned(4)) LEHeader</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">struct </span><a class="code hl_define" href="ddk_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5">ATTRIBUTE</a>(<a class="code hl_class" href="class_kernel_1_1_error_or.html">aligned</a>(4)) <a class="code hl_class" href="class_kernel_1_1_error_or.html">COREBOOT_LINEAR_EXEC</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="user_2_macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a>   fMagic[2];     <span class="comment">// magic number</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="user_2_macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a>   fName[10];     <span class="comment">// operating system name</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="user_2_macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a> fRevision;     <span class="comment">// firmware revision</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="user_2_macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a> <a class="code hl_class" href="class_kernel_1_1_error_or.html">fRevision</a>;     <span class="comment">// firmware revision</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="user_2_macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a> fStartAddress; <span class="comment">// start address (master/slave(s) thread)</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef NE_IS_EXTENDED_COREBOOT</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="user_2_macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a> fMasterStructure;        <span class="comment">// master structure for MP/PM and device tree and such (ARM)</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="user_2_macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a> fMasterStructureVersion; <span class="comment">// master structure version.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_typedef" href="user_2_macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a> <a class="code hl_class" href="class_kernel_1_1_error_or.html">fMasterStructure</a>;          <span class="comment">// master structure for MP/PM and device tree and such. (ARM)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_typedef" href="user_2_macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a> <a class="code hl_class" href="class_kernel_1_1_error_or.html">fMasterStructureVersion</a>; <span class="comment">// master structure version.</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    };</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// namespace Firmware::Detail::CoreBoot</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#ifdef NE_IS_MBCI_COREBOOT</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_typedef" href="user_2_macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a> <a class="code hl_class" href="class_kernel_1_1_error_or.html">fMBCIStructure</a>;      <span class="comment">// MBCI structure for MBCI (ARM)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_typedef" href="user_2_macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a> <a class="code hl_class" href="class_kernel_1_1_error_or.html">fMBCIStructureVersion</a>; <span class="comment">// MBCI structure version.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>} <span class="comment">// namespace Firmware::Detail::CoreBoot</span></div>
 </div>
 </div>
+<div class="ttc" id="aclass_kernel_1_1_error_or_html"><div class="ttname"><a href="class_kernel_1_1_error_or.html">Kernel::ErrorOr</a></div><div class="ttdef"><b>Definition</b> ErrorOr.h:21</div></div>
 <div class="ttc" id="addk_8h_html_a9254c960163dfe80c8fe6aa8dfdf56a5"><div class="ttname"><a href="ddk_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5">ATTRIBUTE</a></div><div class="ttdeci">#define ATTRIBUTE(X)</div><div class="ttdef"><b>Definition</b> ddk.h:44</div></div>
 <div class="ttc" id="akernel_2_new_kit_2_defines_8h_html"><div class="ttname"><a href="kernel_2_new_kit_2_defines_8h.html">Defines.h</a></div></div>
 <div class="ttc" id="anamespace_firmware_1_1_detail_1_1_core_boot_html"><div class="ttname"><a href="namespace_firmware_1_1_detail_1_1_core_boot.html">Firmware::Detail::CoreBoot</a></div><div class="ttdef"><b>Definition</b> CoreBoot.h:12</div></div>
-<div class="ttc" id="anamespace_ne_o_s_html"><div class="ttname"><a href="namespace_ne_o_s.html">NeOS</a></div><div class="ttdoc">The Kernel namespace.</div><div class="ttdef"><b>Definition</b> Qr.h:969</div></div>
+<div class="ttc" id="anamespace_kernel_html"><div class="ttname"><a href="namespace_kernel.html">Kernel</a></div><div class="ttdoc">Process scheduler inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:969</div></div>
 <div class="ttc" id="auser_2_macros_8h_html_a1f75821f5858b98dc453711e46bf9ada"><div class="ttname"><a href="user_2_macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a></div><div class="ttdeci">__UINT32_TYPE__ UInt32</div><div class="ttdef"><b>Definition</b> Macros.h:48</div></div>
 <div class="ttc" id="auser_2_macros_8h_html_a7942e32f6409fbd1fd347a8c23ef725e"><div class="ttname"><a href="user_2_macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a></div><div class="ttdeci">char Char</div><div class="ttdef"><b>Definition</b> Macros.h:61</div></div>
 <div class="ttc" id="auser_2_macros_8h_html_aea33bdc955927086847adc88212e6b2e"><div class="ttname"><a href="user_2_macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a></div><div class="ttdeci">__UINTPTR_TYPE__ UIntPtr</div><div class="ttdef"><b>Definition</b> Macros.h:60</div></div>

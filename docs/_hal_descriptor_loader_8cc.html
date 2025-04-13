@@ -98,18 +98,20 @@ $(document).ready(function(){initNavTree('_hal_descriptor_loader_8cc.html',''); 
   <div class="headertitle"><div class="title">HalDescriptorLoader.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_ne_f_s_8h_source.html">FSKit/NeFS.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_a_m_d64_2_processor_8h_source.html">HALKit/AMD64/Processor.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_ne_o_s" id="r_namespace_ne_o_s"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html">NeOS</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>Kernel</b> namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_ne_o_s_1_1_h_a_l" id="r_namespace_ne_o_s_1_1_h_a_l"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_h_a_l.html">NeOS::HAL</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s_1_1_h_a_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b><a class="el" href="namespace_ne_o_s_1_1_h_a_l.html" title="The HAL namespace.">HAL</a></b> namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel_1_1_h_a_l" id="r_namespace_kernel_1_1_h_a_l"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html">Kernel::HAL</a></td></tr>
+<tr class="memdesc:namespace_kernel_1_1_h_a_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware Abstraction Layer. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_ne_o_s_1_1_h_a_l_1_1_detail" id="r_namespace_ne_o_s_1_1_h_a_l_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_h_a_l_1_1_detail.html">NeOS::HAL::Detail</a></td></tr>
+<tr class="memitem:namespace_kernel_1_1_h_a_l_1_1_detail" id="r_namespace_kernel_1_1_h_a_l_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l_1_1_detail.html">Kernel::HAL::Detail</a></td></tr>
+<tr class="memdesc:namespace_kernel_1_1_h_a_l_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor specific namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -119,17 +121,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab8dd7e4bdd8fd37962f4cfafd581ec52" id="r_ab8dd7e4bdd8fd37962f4cfafd581ec52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#ab8dd7e4bdd8fd37962f4cfafd581ec52">NeOS::HAL::Detail::hal_set_irq_mask</a> (<a class="el" href="namespace_ne_o_s.html#a0835cc5d92716e99fd7387e297984399">UInt8</a> irql)</td></tr>
-<tr class="separator:ab8dd7e4bdd8fd37962f4cfafd581ec52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab22deb39e1bce327b6a34671b0bb8f91" id="r_ab22deb39e1bce327b6a34671b0bb8f91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#ab22deb39e1bce327b6a34671b0bb8f91">NeOS::HAL::Detail::hal_clear_irq_mask</a> (<a class="el" href="namespace_ne_o_s.html#a0835cc5d92716e99fd7387e297984399">UInt8</a> irql)</td></tr>
-<tr class="separator:ab22deb39e1bce327b6a34671b0bb8f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6edaffb6af3442c731fa670fb3ec9e97" id="r_a6edaffb6af3442c731fa670fb3ec9e97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a6edaffb6af3442c731fa670fb3ec9e97">NeOS::HAL::Detail::hal_enable_pit</a> (<a class="el" href="namespace_ne_o_s.html#a4885ae005fc56130691bdea86d9a88d7">UInt16</a> ticks) noexcept</td></tr>
-<tr class="separator:a6edaffb6af3442c731fa670fb3ec9e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922ae91f65812613a862549bfd840568" id="r_a922ae91f65812613a862549bfd840568"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_error_or.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l_1_1_detail.html#a922ae91f65812613a862549bfd840568">Kernel::HAL::Detail::hal_clear_irq_mask</a> (<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> <a class="el" href="class_kernel_1_1_error_or.html">irql</a>)</td></tr>
+<tr class="separator:a922ae91f65812613a862549bfd840568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54828f386021e62103f157c4fe9e09c" id="r_aa54828f386021e62103f157c4fe9e09c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l_1_1_detail.html#aa54828f386021e62103f157c4fe9e09c">Kernel::HAL::Detail::hal_enable_pit</a> (<a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> <a class="el" href="class_kernel_1_1_error_or.html">ticks</a>) <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="separator:aa54828f386021e62103f157c4fe9e09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8712d698095f5a884425fe6f741f0d37" id="r_a8712d698095f5a884425fe6f741f0d37"><td class="memItemLeft" align="right" valign="top">STATIC::NeOS::Detail::AMD64::InterruptDescriptorAMD64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a8712d698095f5a884425fe6f741f0d37">NeOS::HAL::Detail::kInterruptVectorTable</a> [<a class="el" href="_a_m_d64_2_processor_8h.html#a014c3cfcee9c046c03e48d765d7379c7">kKernelIdtSize</a>] = {}</td></tr>
-<tr class="separator:a8712d698095f5a884425fe6f741f0d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa02b9af5a4ea8e388c0bb314f64f02" id="r_a0fa02b9af5a4ea8e388c0bb314f64f02"><td class="memItemLeft" align="right" valign="top">STATIC::Kernel::Detail::AMD64::InterruptDescriptorAMD64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l_1_1_detail.html#a0fa02b9af5a4ea8e388c0bb314f64f02">Kernel::HAL::Detail::kInterruptVectorTable</a> [<a class="el" href="_a_m_d64_2_processor_8h.html#a014c3cfcee9c046c03e48d765d7379c7">kKernelIdtSize</a>] = {}</td></tr>
+<tr class="separator:a0fa02b9af5a4ea8e388c0bb314f64f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aaab74744d7b4761fafa41bf545458898" name="aaab74744d7b4761fafa41bf545458898"></a>

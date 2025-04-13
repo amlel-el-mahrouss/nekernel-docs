@@ -1,0 +1,167 @@
+\doxysection{Drive\+Mgr.\+h}
+\hypertarget{_drive_mgr_8h_source}{}\label{_drive_mgr_8h_source}\index{dev/kernel/KernelKit/DriveMgr.h@{dev/kernel/KernelKit/DriveMgr.h}}
+\mbox{\hyperlink{_drive_mgr_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ INC\_DRIVE\_MANAGER\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ INC\_DRIVE\_MANAGER\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_user_process_scheduler_8h}{KernelKit/UserProcessScheduler.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_compiler_kit_8h}{CompilerKit/CompilerKit.h}}>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_debug_output_8h}{KernelKit/DebugOutput.h}}>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_device_mgr_8h}{KernelKit/DeviceMgr.h}}>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_k_p_c_8h}{KernelKit/KPC.h}}>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_k_string_8h}{NewKit/KString.h}}>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{dev_2kernel_2_new_kit_2_ref_8h}{NewKit/Ref.h}}>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ kDriveMaxCount\ \ (4U)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ kDriveSectorSz\ \ (512U)}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ kDriveInvalidID\ (-\/1)}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ kDriveNameLen\ \ \ (32)}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ drv\_sector\_cnt(SIZE,\ SECTOR\_SZ)\ (((SIZE)\ +\ (SECTOR\_SZ))\ /\ (SECTOR\_SZ))}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00029\ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a1be80d1ec4b4004eb318479f3d03147d}{kInvalidDrive}}\ =\ -\/1,}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a1681655c5d67b0a4358204c024126a20}{kBlockDevice}}\ \ \ \ \ \ =\ 0xAD,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a8d4d2ecc9191be0f6ec0eb5875b7d2d1}{kMassStorageDrive}}\ =\ 0xDA,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25aef47408c7a0ed4e561602763d5900850}{kFloppyDrive}}\ \ \ \ \ \ =\ 0xCD,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25ade897c20a0c5bd40cdf1ea00a90027b1}{kOpticalDrive}}\ \ \ \ =\ 0xDC,\ \textcolor{comment}{//\ CD-\/ROM/DVD-\/ROM/Blu-\/Ray}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a35f0ca87146f5f7bd1a1b88a5b8ace4a}{kTapeDrive}}\ \ \ \ \ \ \ \ \ \ =\ 0xD7,}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a97dcefaad3f24b221ed121c63fcebb5f}{kReadOnlyDrive}}\ \ \ \ \ \ =\ 0x10,\ \textcolor{comment}{//\ Read\ only\ drive}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a2d70d2c025857f901351073584259202}{kEPMDrive}}\ \ \ \ \ \ \ \ =\ 0x11,\ \textcolor{comment}{//\ Explicit\ Partition\ Map.}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25aee064d06fa3a3afc0b662264113392af}{kEPTDrive}}\ \ \ \ \ \ \ \ =\ 0x12,\ \textcolor{comment}{//\ ESP\ w/\ EPM\ partition.}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a74f461ade2c8f2df5de121c2140e7307}{kMBRDrive}}\ \ \ \ \ \ \ \ =\ 0x13,\ \textcolor{comment}{//\ PC\ classic\ partition\ scheme}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a48400d40aa301862ab2816764ffde1af}{kGPTDrive}}\ \ \ \ \ \ \ \ =\ 0x14,\ \textcolor{comment}{//\ PC\ new\ partition\ scheme}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a86727130e9bae92b32881f604abfc8a1}{kUnformattedDrive}}\ =\ 0x15,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aa4b67f13c2b149cb721dd57d2deb5a25a609f23a7b84b5fda5a438a03479c212c}{kStorageCount}}\ \ \ \ =\ 9,}
+\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\ final}
+\DoxyCodeLine{00051\ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a07c5b1146413720905508bf492f9344e}{fName}}[\mbox{\hyperlink{_drive_mgr_8h_adb8e15f10bd1de61647614c474a0b7ca}{kDriveNameLen}}];\ \textcolor{comment}{//\ /System,\ /boot,\ //./Devices/USB...}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a8b47a0848813b72bf845025008ed76ed}{fKind}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ fMassStorage,\ fFloppy,\ fOpticalDrive.}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_add940ed409092af6832775d6c4fabb21}{fFlags}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ fReadOnly,\ fEPMDrive...}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet}{DrivePacket}}\ final}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet_a4a7da34e2ff806694bc2511e2d13bcb4}{fPacketContent}}\{\textcolor{keyword}{nullptr}\};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet_ad24bf7fda342c59f697d09c09b4b7b47}{fPacketMime}}[\mbox{\hyperlink{_drive_mgr_8h_adb8e15f10bd1de61647614c474a0b7ca}{kDriveNameLen}}]\ =\ \textcolor{stringliteral}{"{}*/*"{}};\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet_a46eaa53bb0b093c70a43f745b83e7453}{fPacketSize}}\{0UL\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet_a0cec6a9e14d8496dc8eeb2b6ab075821}{fPacketCRC32}}\{0UL\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet_ae67bf6979085a7ff03b33c8d59ad7a34}{fPacketGood}}\{\mbox{\hyperlink{ddk_8h_a7ebc9a785e5ab85457c98595aac81589}{YES}}\};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Lba}}\ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet_ad385c28cd2d691e85eb8be36b9759a1a}{fPacketLba}}\{0UL\};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet_a14e95b4c0120fa561657ee26c30afec7}{fPacketReadOnly}}\{\mbox{\hyperlink{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}\};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a949ff7b2b30089fdfa1bd58cdd799e10}{fPacket}};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Lba}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a55b570d6477789d8689f4b4228d78a3b}{fLbaStart}}\{0\},\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a4cd737f57632f2801dcf5ecb6e0394cd}{fLbaEnd}}\{0\};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a46c27e98e997296d4c65e59ee6a1d9a2}{fSectorSz}}\{512\};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ (*\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_adc6337b41040291954784fdb869c101f}{fInput}})(\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet}{DrivePacket}}\ packet);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ (*\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a62bf3eaadbab022a91df2da3545ba115}{fOutput}})(\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet}{DrivePacket}}\ packet);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ (*\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a890b5e985a03cecbfeedbc8205e4557f}{fVerify}})(\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet}{DrivePacket}}\ packet);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ (*\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_a28209a6b2128f1fa513a7b2ddd5a3b4b}{fInit}})(\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet}{DrivePacket}}\ packet);}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ (*fDriveKind)(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}});}
+\DoxyCodeLine{00076\ \ \ \ \ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}*\ \mbox{\hyperlink{namespace_ne_o_s_a94ee2e4103829c0c6b9d1ad81cde94b4}{DriveTraitPtr}};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{MountpointInterface}}\ final}
+\DoxyCodeLine{00087\ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a2a66ca2a45f5820fa2c3036cf11212a3}{MountpointInterface}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ae1dcb01e92f466719511b04defaa596b}{\string~MountpointInterface}}()\ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a93f196f32eff889d09483ded85b6d46c}{NE\_COPY\_DEFAULT}}(\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{MountpointInterface}});}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_af7659558033a9ae0b1111f035b0e2375}{A}}()}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ad54ec6d611930b23911c40b02a3ca2cc}{mA}};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a9c14c8249d0f8008728ff2f7e9af9abe}{B}}()}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ae1ea37223d5c1539b1d400c0e80a2169}{mB}};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a6b4074e271ef9cbde107de3985218dc2}{C}}()}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_aef08fbf7bb58d4d1542f7e378a3d6608}{mC}};}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ab37b1b5f6ced8cf3525368c32f7ee4f9}{D}}()}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a92941b1ee04b4637ea1da02afde53b04}{mD}};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a947e38fb1e7b8dcdeb2256f30b4497e7}{kDriveIndexA}}\ =\ 0,}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a5e33519d160d008d7f8231dd02828c95}{kDriveIndexB}},}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a0272e0df82c5e71d15aafc9e01b4047b}{kDriveIndexC}},}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2ad2b055310aedaaf832592cbc18576829}{kDriveIndexD}},}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a427b3c44620b0229847047721c1674ed}{kDriveIndexInvalid}},}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTraitPtr}}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a334d9b5c4ccb68b750eb21f2320e8571}{GetAddressOf}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\&\ index)}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_k_p_c_8h_a0dd62977e726877749cf96209a818111}{err\_local\_get}}()\ =\ \mbox{\hyperlink{namespace_ne_o_s_ad83d47273cc42a34aac83471c911a94e}{kErrorSuccess}};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (index)}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a947e38fb1e7b8dcdeb2256f30b4497e7}{kDriveIndexA}}:}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ad54ec6d611930b23911c40b02a3ca2cc}{mA}};}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a5e33519d160d008d7f8231dd02828c95}{kDriveIndexB}}:}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ae1ea37223d5c1539b1d400c0e80a2169}{mB}};}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a0272e0df82c5e71d15aafc9e01b4047b}{kDriveIndexC}}:}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_aef08fbf7bb58d4d1542f7e378a3d6608}{mC}};}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2ad2b055310aedaaf832592cbc18576829}{kDriveIndexD}}:}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a92941b1ee04b4637ea1da02afde53b04}{mD}};}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_k_p_c_8h_a0dd62977e726877749cf96209a818111}{err\_local\_get}}()\ =\ \mbox{\hyperlink{namespace_ne_o_s_a45b24a9f0b8fbca1caeb168a129672d2}{kErrorNoSuchDisk}};}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_output_8h_a18983745cdbaca69cc1eb2cb33f02ada}{kout}}\ <<\ \textcolor{stringliteral}{"{}No\ such\ disc\ letter.\(\backslash\)n"{}};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ad54ec6d611930b23911c40b02a3ca2cc}{mA}},\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ae1ea37223d5c1539b1d400c0e80a2169}{mB}},\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_aef08fbf7bb58d4d1542f7e378a3d6608}{mC}},\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a92941b1ee04b4637ea1da02afde53b04}{mD}};}
+\DoxyCodeLine{00151\ \ \ \ \ \};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ \mbox{\hyperlink{namespace_ne_o_s_ae275e45fed9d209eac42b3158b81ab3b}{io\_drv\_unimplemented}}(\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait_1_1_drive_packet}{DriveTrait::DrivePacket}}*\ pckt)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ \mbox{\hyperlink{namespace_ne_o_s_a5aa57083b8ffd5e7fa36c871142dbc43}{io\_drv\_kind}}(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}});}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00165\ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\ \mbox{\hyperlink{namespace_ne_o_s_a8a4fa513352e731d8031622d5790210f}{io\_construct\_blank\_drive}}(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00169\ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\ \mbox{\hyperlink{namespace_ne_o_s_ab281baa58340fc2fdd4212a1e0272000}{io\_construct\_main\_drive}}(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{namespace\ }Detect}
+\DoxyCodeLine{00172\ \ \ \ \ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ \mbox{\hyperlink{namespace_ne_o_s_1_1_detect_ae00ec96b40b2c7a96c80def33f14c44b}{io\_detect\_drive}}(\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\&\ trait);}
+\DoxyCodeLine{00174\ \ \ \ \ \}}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00181\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ \mbox{\hyperlink{namespace_ne_o_s_a11d179ba82cbedd0dd9e919465a3c87c}{fs\_ifs\_read}}(\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{MountpointInterface}}*\ Mnt,\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\&\ DrvTrait,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ DrvIndex);}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ \mbox{\hyperlink{namespace_ne_o_s_a00229e25fc8111d2a479d81616d730c9}{fs\_ifs\_write}}(\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{MountpointInterface}}*\ Mnt,\ \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{DriveTrait}}\&\ DrvTrait,\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ DrvIndex);}
+\DoxyCodeLine{00189\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ ifndef\ INC\_DRIVE\_MANAGER\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

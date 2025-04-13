@@ -1,0 +1,158 @@
+\doxysection{dev/kernel/\+HALKit/\+ARM64/\+Hal\+Application\+Processor.cc File Reference}
+\hypertarget{_a_r_m64_2_hal_application_processor_8cc}{}\label{_a_r_m64_2_hal_application_processor_8cc}\index{dev/kernel/HALKit/ARM64/HalApplicationProcessor.cc@{dev/kernel/HALKit/ARM64/HalApplicationProcessor.cc}}
+{\ttfamily \#include $<$HALKit/\+ARM64/\+Processor.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Debug\+Output.\+h$>$}\newline
+{\ttfamily \#include $<$HALKit/\+ARM64/\+Application\+Processor.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+User\+Process\+Scheduler.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k}{Ne\+OS\+::\+PROCESS\+\_\+\+CONTROL\+\_\+\+BLOCK}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_detail}{Ne\+OS\+::\+Detail}}
+\begin{DoxyCompactList}\small\item\em Implementation details namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a60145b8750e840c58949fbc9483f2fc5}{GICD\+\_\+\+BASE}}~0x08000000
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a971c4b3a9504879ce74b96226288f742}{GICC\+\_\+\+BASE}}~0x08010000
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a00f17ebce4b31e38e18375340fdf3826}{GICD\+\_\+\+CTLR}}~0x000
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_ad6013481a4c73be9ba10c48b63c0b4b3}{GICD\+\_\+\+ISENABLER}}~0x100
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a93b67ba2b0e625f47ef7371672c4a763}{GICD\+\_\+\+ICENABLER}}~0x180
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_adcfba29d834be7844951c0db7a9706c8}{GICD\+\_\+\+ISPENDR}}~0x200
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a249bdc6117c2852af6101081463ac0f8}{GICD\+\_\+\+ICPENDR}}~0x280
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a54223891ce5bf421ec198ea84855490a}{GICD\+\_\+\+IPRIORITYR}}~0x400
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a9128764019e69b9d5ec839ecd583dd87}{GICD\+\_\+\+ITARGETSR}}~0x800
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a19a431597ba16fd0c9522a9220ecec4c}{GICD\+\_\+\+ICFGR}}~0x\+C00
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a11871e15a62cbfcc1e54f3dd2ce21e74}{GICC\+\_\+\+CTLR}}~0x000
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a8d72b8216b091c1d148b5812bc46e7d4}{GICC\+\_\+\+PMR}}~0x004
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_a61672c3cde5301e076793c2ad904cdb9}{GICC\+\_\+\+IAR}}~0x00C
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_hal_application_processor_8cc_af92519fe60b0cf2183a6100bea15dd43}{GICC\+\_\+\+EOIR}}~0x010
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a5e353fa2ff1a729bc47fc54721ce7641}{Ne\+OS\+::\+Detail\+::mp\+\_\+hang\+\_\+fn}} (void)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_af56fe88fbf9cfbf266087b46fb30f727}{Ne\+OS\+::\+Detail\+::mp\+\_\+setup\+\_\+gic\+\_\+el0}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a4e00d32981130e36e155ca496bdb4f40}{Ne\+OS\+::\+Detail\+::mp\+\_\+handle\+\_\+gic\+\_\+interrupt\+\_\+el0}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_a369dfc2b6455ac8bcd354d78ffdd0148}{Ne\+OS\+::mp\+\_\+get\+\_\+current\+\_\+context}} (\mbox{\hyperlink{namespace_ne_o_s_af180f8fc4c88cb9674ca595d93859ef0}{Process\+ID}} pid)
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{namespace_ne_o_s_a236304cb87cbc960fe005a3d510fb453}{Ne\+OS\+::mp\+\_\+register\+\_\+process}} (\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}} stack\+\_\+frame, \mbox{\hyperlink{namespace_ne_o_s_af180f8fc4c88cb9674ca595d93859ef0}{Process\+ID}} pid)
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{namespace_ne_o_s_abd69040ad94358d8b140f87ecf00c246}{Ne\+OS\+::mp\+\_\+initialize\+\_\+gic}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{struct_ne_o_s_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k}{PROCESS\+\_\+\+CONTROL\+\_\+\+BLOCK}} \mbox{\hyperlink{namespace_ne_o_s_a16484dddbe5c3403bf56b0f34d818a8e}{Ne\+OS\+::k\+Process\+Blocks}} \mbox{[}\mbox{\hyperlink{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}{k\+Sched\+Process\+Limit\+Per\+Team}}\mbox{]} = \{0\}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_adcc0ad51bcc3f97090b9444c8b9e0416}{Ne\+OS\+::\+Detail\+::k\+GICEnabled}} = \mbox{\hyperlink{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a971c4b3a9504879ce74b96226288f742}\label{_a_r_m64_2_hal_application_processor_8cc_a971c4b3a9504879ce74b96226288f742} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICC\_BASE@{GICC\_BASE}}
+\index{GICC\_BASE@{GICC\_BASE}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICC\_BASE}{GICC\_BASE}}
+{\footnotesize\ttfamily \#define GICC\+\_\+\+BASE~0x08010000}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a11871e15a62cbfcc1e54f3dd2ce21e74}\label{_a_r_m64_2_hal_application_processor_8cc_a11871e15a62cbfcc1e54f3dd2ce21e74} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICC\_CTLR@{GICC\_CTLR}}
+\index{GICC\_CTLR@{GICC\_CTLR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICC\_CTLR}{GICC\_CTLR}}
+{\footnotesize\ttfamily \#define GICC\+\_\+\+CTLR~0x000}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_af92519fe60b0cf2183a6100bea15dd43}\label{_a_r_m64_2_hal_application_processor_8cc_af92519fe60b0cf2183a6100bea15dd43} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICC\_EOIR@{GICC\_EOIR}}
+\index{GICC\_EOIR@{GICC\_EOIR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICC\_EOIR}{GICC\_EOIR}}
+{\footnotesize\ttfamily \#define GICC\+\_\+\+EOIR~0x010}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a61672c3cde5301e076793c2ad904cdb9}\label{_a_r_m64_2_hal_application_processor_8cc_a61672c3cde5301e076793c2ad904cdb9} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICC\_IAR@{GICC\_IAR}}
+\index{GICC\_IAR@{GICC\_IAR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICC\_IAR}{GICC\_IAR}}
+{\footnotesize\ttfamily \#define GICC\+\_\+\+IAR~0x00C}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a8d72b8216b091c1d148b5812bc46e7d4}\label{_a_r_m64_2_hal_application_processor_8cc_a8d72b8216b091c1d148b5812bc46e7d4} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICC\_PMR@{GICC\_PMR}}
+\index{GICC\_PMR@{GICC\_PMR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICC\_PMR}{GICC\_PMR}}
+{\footnotesize\ttfamily \#define GICC\+\_\+\+PMR~0x004}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a60145b8750e840c58949fbc9483f2fc5}\label{_a_r_m64_2_hal_application_processor_8cc_a60145b8750e840c58949fbc9483f2fc5} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_BASE@{GICD\_BASE}}
+\index{GICD\_BASE@{GICD\_BASE}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_BASE}{GICD\_BASE}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+BASE~0x08000000}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a00f17ebce4b31e38e18375340fdf3826}\label{_a_r_m64_2_hal_application_processor_8cc_a00f17ebce4b31e38e18375340fdf3826} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_CTLR@{GICD\_CTLR}}
+\index{GICD\_CTLR@{GICD\_CTLR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_CTLR}{GICD\_CTLR}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+CTLR~0x000}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a93b67ba2b0e625f47ef7371672c4a763}\label{_a_r_m64_2_hal_application_processor_8cc_a93b67ba2b0e625f47ef7371672c4a763} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_ICENABLER@{GICD\_ICENABLER}}
+\index{GICD\_ICENABLER@{GICD\_ICENABLER}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_ICENABLER}{GICD\_ICENABLER}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+ICENABLER~0x180}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a19a431597ba16fd0c9522a9220ecec4c}\label{_a_r_m64_2_hal_application_processor_8cc_a19a431597ba16fd0c9522a9220ecec4c} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_ICFGR@{GICD\_ICFGR}}
+\index{GICD\_ICFGR@{GICD\_ICFGR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_ICFGR}{GICD\_ICFGR}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+ICFGR~0x\+C00}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a249bdc6117c2852af6101081463ac0f8}\label{_a_r_m64_2_hal_application_processor_8cc_a249bdc6117c2852af6101081463ac0f8} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_ICPENDR@{GICD\_ICPENDR}}
+\index{GICD\_ICPENDR@{GICD\_ICPENDR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_ICPENDR}{GICD\_ICPENDR}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+ICPENDR~0x280}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a54223891ce5bf421ec198ea84855490a}\label{_a_r_m64_2_hal_application_processor_8cc_a54223891ce5bf421ec198ea84855490a} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_IPRIORITYR@{GICD\_IPRIORITYR}}
+\index{GICD\_IPRIORITYR@{GICD\_IPRIORITYR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_IPRIORITYR}{GICD\_IPRIORITYR}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+IPRIORITYR~0x400}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_ad6013481a4c73be9ba10c48b63c0b4b3}\label{_a_r_m64_2_hal_application_processor_8cc_ad6013481a4c73be9ba10c48b63c0b4b3} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_ISENABLER@{GICD\_ISENABLER}}
+\index{GICD\_ISENABLER@{GICD\_ISENABLER}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_ISENABLER}{GICD\_ISENABLER}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+ISENABLER~0x100}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_adcfba29d834be7844951c0db7a9706c8}\label{_a_r_m64_2_hal_application_processor_8cc_adcfba29d834be7844951c0db7a9706c8} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_ISPENDR@{GICD\_ISPENDR}}
+\index{GICD\_ISPENDR@{GICD\_ISPENDR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_ISPENDR}{GICD\_ISPENDR}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+ISPENDR~0x200}
+
+\Hypertarget{_a_r_m64_2_hal_application_processor_8cc_a9128764019e69b9d5ec839ecd583dd87}\label{_a_r_m64_2_hal_application_processor_8cc_a9128764019e69b9d5ec839ecd583dd87} 
+\index{HalApplicationProcessor.cc@{HalApplicationProcessor.cc}!GICD\_ITARGETSR@{GICD\_ITARGETSR}}
+\index{GICD\_ITARGETSR@{GICD\_ITARGETSR}!HalApplicationProcessor.cc@{HalApplicationProcessor.cc}}
+\doxysubsubsection{\texorpdfstring{GICD\_ITARGETSR}{GICD\_ITARGETSR}}
+{\footnotesize\ttfamily \#define GICD\+\_\+\+ITARGETSR~0x800}
+

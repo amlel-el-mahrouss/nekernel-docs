@@ -1,0 +1,163 @@
+\doxysection{Ne\+OS\+::NE\+\_\+\+DEVICE\texorpdfstring{$<$}{<} Mountpoint\+Interface \texorpdfstring{$\ast$}{*} \texorpdfstring{$>$}{>} Class Reference}
+\hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4}{}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4}\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+
+
+{\ttfamily \#include $<$AHCI.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}{AHCIDevice\+Interface}} (void(\texorpdfstring{$\ast$}{*}out)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}self, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}out), void(\texorpdfstring{$\ast$}{*}in)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}self, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}in), void(\texorpdfstring{$\ast$}{*}cleanup)(void))
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a0d436caa45a4ab216434cd272826e222}{\texorpdfstring{$\sim$}{\string~}\+AHCIDevice\+Interface}} () override
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}{AHCIDevice\+Interface}} \& \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a481f8ca5a7375549d063b4cd6db94ffd}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}{AHCIDevice\+Interface}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a31faf1b7be340060a1ff0cc33d3376e4}{AHCIDevice\+Interface}} (const AHCIDevice\+Interface \&)=default
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a7bd8b6c746b9a1ac0b8077046e1019dd}{Name}} () const override
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \& \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8ca8da103bbed4b16433c18c051f4794}{Get\+Ports\+Implemented}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a37d1e58db131aa620825a61ba5e2b9b1}{Set\+Ports\+Implemented}} (const \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \&pi)
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \& \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a58d8e45eb376f663c8ad34c0e712c85c}{Get\+Index}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a2d03aede4fe37b76651022c786d999c4}{Set\+Index}} (const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \&drv)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a1b55c2b00eb0f3c496f9523949a6e019}{NVMEDevice\+Interface}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*}out)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}out\+\_\+packet), \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*}in)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}in\+\_\+packet), \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*}cleanup)(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}))
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a22794de71ec582c5e5547ec56004b99f}{\texorpdfstring{$\sim$}{\string~}\+NVMEDevice\+Interface}} () override
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a54076dea13c2beee689dfafa0040df87}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a1b55c2b00eb0f3c496f9523949a6e019}{NVMEDevice\+Interface}})
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a7bd8b6c746b9a1ac0b8077046e1019dd}{Name}} () const override
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_af5a31329ad3f7cb7f0d1e4de00a6d4dc}{operator()}} (\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} dma\+\_\+low, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} dma\+\_\+high, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} dma\+\_\+sz)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a26503d8364de710aac5359432b821999}{f\+Cleanup}} )(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}) = \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a08955f3bd94cd492056b0caf1ab81005}{f\+Ports\+Implemented}} \{0U\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a525438d4bb707e95f487d71bff375bcb}{f\+Drive\+Index}} \{0U\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a0d436caa45a4ab216434cd272826e222}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a0d436caa45a4ab216434cd272826e222} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!````~AHCIDeviceInterface@{\texorpdfstring{$\sim$}{\string~}AHCIDeviceInterface}}
+\index{````~AHCIDeviceInterface@{\texorpdfstring{$\sim$}{\string~}AHCIDeviceInterface}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AHCIDeviceInterface()}{\string~AHCIDeviceInterface()}}
+{\footnotesize\ttfamily virtual Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}{AHCIDevice\+Interface}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a22794de71ec582c5e5547ec56004b99f}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a22794de71ec582c5e5547ec56004b99f} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!````~NVMEDeviceInterface@{\texorpdfstring{$\sim$}{\string~}NVMEDeviceInterface}}
+\index{````~NVMEDeviceInterface@{\texorpdfstring{$\sim$}{\string~}NVMEDeviceInterface}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}NVMEDeviceInterface()}{\string~NVMEDeviceInterface()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a1b55c2b00eb0f3c496f9523949a6e019}{NVMEDevice\+Interface}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a31faf1b7be340060a1ff0cc33d3376e4}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a31faf1b7be340060a1ff0cc33d3376e4} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!AHCIDeviceInterface@{AHCIDeviceInterface}}
+\index{AHCIDeviceInterface@{AHCIDeviceInterface}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{AHCIDeviceInterface()}{AHCIDeviceInterface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+AHCIDevice\+Interface (\begin{DoxyParamCaption}\item[{const AHCIDevice\+Interface \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!AHCIDeviceInterface@{AHCIDeviceInterface}}
+\index{AHCIDeviceInterface@{AHCIDeviceInterface}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{AHCIDeviceInterface()}{AHCIDeviceInterface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+AHCIDevice\+Interface (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}self, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}out)}]{out,  }\item[{void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}self, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}in)}]{in,  }\item[{void(\texorpdfstring{$\ast$}{*})(void)}]{cleanup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a58d8e45eb376f663c8ad34c0e712c85c}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a58d8e45eb376f663c8ad34c0e712c85c} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \& Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+Get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8ca8da103bbed4b16433c18c051f4794}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8ca8da103bbed4b16433c18c051f4794} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!GetPortsImplemented@{GetPortsImplemented}}
+\index{GetPortsImplemented@{GetPortsImplemented}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{GetPortsImplemented()}{GetPortsImplemented()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \& Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+Get\+Ports\+Implemented (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a7bd8b6c746b9a1ac0b8077046e1019dd}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a7bd8b6c746b9a1ac0b8077046e1019dd} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!Name@{Name}}
+\index{Name@{Name}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a7bd8b6c746b9a1ac0b8077046e1019dd}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a7bd8b6c746b9a1ac0b8077046e1019dd} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!Name@{Name}}
+\index{Name@{Name}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a54076dea13c2beee689dfafa0040df87}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a54076dea13c2beee689dfafa0040df87} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a1b55c2b00eb0f3c496f9523949a6e019}{NVMEDevice\+Interface}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a1b55c2b00eb0f3c496f9523949a6e019}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a1b55c2b00eb0f3c496f9523949a6e019} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!NVMEDeviceInterface@{NVMEDeviceInterface}}
+\index{NVMEDeviceInterface@{NVMEDeviceInterface}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{NVMEDeviceInterface()}{NVMEDeviceInterface()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+NVMEDevice\+Interface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}out\+\_\+packet)}]{out,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}in\+\_\+packet)}]{in,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})}]{cleanup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_af5a31329ad3f7cb7f0d1e4de00a6d4dc}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_af5a31329ad3f7cb7f0d1e4de00a6d4dc} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{dma\+\_\+low,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{dma\+\_\+high,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{dma\+\_\+sz }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a481f8ca5a7375549d063b4cd6db94ffd}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a481f8ca5a7375549d063b4cd6db94ffd} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}{AHCIDevice\+Interface}} \& Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}{AHCIDevice\+Interface}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a2d03aede4fe37b76651022c786d999c4}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a2d03aede4fe37b76651022c786d999c4} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!SetIndex@{SetIndex}}
+\index{SetIndex@{SetIndex}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{SetIndex()}{SetIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+Set\+Index (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \&}]{drv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a37d1e58db131aa620825a61ba5e2b9b1}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a37d1e58db131aa620825a61ba5e2b9b1} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!SetPortsImplemented@{SetPortsImplemented}}
+\index{SetPortsImplemented@{SetPortsImplemented}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{SetPortsImplemented()}{SetPortsImplemented()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::\+Set\+Ports\+Implemented (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \&}]{pi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a26503d8364de710aac5359432b821999}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a26503d8364de710aac5359432b821999} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!fCleanup@{fCleanup}}
+\index{fCleanup@{fCleanup}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{fCleanup}{fCleanup}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::f\+Cleanup)(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}) = \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a525438d4bb707e95f487d71bff375bcb}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a525438d4bb707e95f487d71bff375bcb} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!fDriveIndex@{fDriveIndex}}
+\index{fDriveIndex@{fDriveIndex}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{fDriveIndex}{fDriveIndex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::f\+Drive\+Index \{0U\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a08955f3bd94cd492056b0caf1ab81005}\label{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a08955f3bd94cd492056b0caf1ab81005} 
+\index{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}!fPortsImplemented@{fPortsImplemented}}
+\index{fPortsImplemented@{fPortsImplemented}!NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$@{NeOS::NE\_DEVICE$<$ MountpointInterface \texorpdfstring{$\ast$}{*} $>$}}
+\doxysubsubsection{\texorpdfstring{fPortsImplemented}{fPortsImplemented}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$\+::f\+Ports\+Implemented \{0U\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Storage\+Kit/\mbox{\hyperlink{kernel_2_storage_kit_2_a_h_c_i_8h}{AHCI.\+h}}\item 
+dev/kernel/\+Storage\+Kit/\mbox{\hyperlink{kernel_2_storage_kit_2_n_v_m_e_8h}{NVME.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\doxysection{Network\+Device.\+h}
+\hypertarget{_network_device_8h_source}{}\label{_network_device_8h_source}\index{dev/kernel/NetworkKit/NetworkDevice.h@{dev/kernel/NetworkKit/NetworkDevice.h}}
+\mbox{\hyperlink{_network_device_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_\_INC\_NETWORK\_DEVICE\_H\_\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_\_INC\_NETWORK\_DEVICE\_H\_\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_device_mgr_8h}{KernelKit/DeviceMgr.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_i_p_8h}{NetworkKit/IP.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }NetworkDeviceCommand;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_device}{NetworkDevice}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDeviceObject}}<NetworkDeviceCommand>}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}}(\textcolor{keywordtype}{void}\ (*out)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDeviceObject<NetworkDeviceCommand>}}*,\ \mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command}{NetworkDeviceCommand}}),}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ (*in)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDeviceObject<NetworkDeviceCommand>}}*,\ \mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command}{NetworkDeviceCommand}}),}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ (*onCleanup)(\textcolor{keywordtype}{void})\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_network_device_ae03efbff90c7c56411596f778a2ac919}{\string~NetworkDevice}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device_af0fe88620010ed0dec4cd0a141eeda80}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}}\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_network_device_a9d5a5c0b337e24b290b74dfad5d9606f}{NetworkDevice}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}}\&)\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device_ae5cffd1dc87b43b6ff413b53480551cc}{Name}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_network_device_ae5cffd1dc87b43b6ff413b53480551cc}{Name}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ newStr);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device_aea898f7785c8580fefbf4fd2bd57de52}{cNetworkNameLen}}\ =\ 512;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ (*\mbox{\hyperlink{class_ne_o_s_1_1_network_device_aafdbdc40fb6e9e9b99396a3342ed49a3}{fCleanup}})(void);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device_ae33e55cf040d0d8ae2a14d50ffbf12ca}{fNetworkName}}[\mbox{\hyperlink{class_ne_o_s_1_1_network_device_aea898f7785c8580fefbf4fd2bd57de52}{cNetworkNameLen}}];}
+\DoxyCodeLine{00045\ \ \ \ \ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command}{NetworkDeviceCommand}}\ final}
+\DoxyCodeLine{00048\ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command_a71d82fb567093c10d7d098ddc10d4173}{CommandName}};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command_ad38363eade20985a69123701f4482c4a}{CommandType}};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command_ab4f5089b150a74904e294607d0db47aa}{CommandFlags}};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command_a6f0ca31d94ca17788055145057118bfc}{CommandBuffer}};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_network_device_command_a722cebb9df0afa1a0392477d923af246}{CommandSizeBuffer}};}
+\DoxyCodeLine{00054\ \ \ \ \ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{TCPNetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{UDPNetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{PPPNetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{IPCNetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{GPRSNetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{GSMNetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{BTNetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_ne_o_s_1_1_network_device}{LTENetworkDevice}}\ =\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00079\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_network_device_8inl}{NetworkKit/NetworkDevice.inl}}>}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !\_\_INC\_NETWORK\_DEVICE\_H\_\_}}
+
+\end{DoxyCode}

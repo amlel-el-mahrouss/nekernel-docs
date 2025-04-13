@@ -1,0 +1,113 @@
+\doxysection{Fis\+Dma\+Setup Struct Reference}
+\hypertarget{struct_fis_dma_setup}{}\label{struct_fis_dma_setup}\index{FisDmaSetup@{FisDmaSetup}}
+
+
+{\ttfamily \#include $<$AHCI.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{struct_fis_dma_setup_a61cd136c495efe0cdd5fca634734a858}{Fis\+Type}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{struct_fis_dma_setup_a79fe2c9d5666d26abf43238360c4980f}{Port\+Mul}}\+: 4
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{struct_fis_dma_setup_ae671f0f26e58f7036cb73a51dd7764db}{Reserved0}}\+: 1
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{struct_fis_dma_setup_a00efa8f8da2ca02c3c25b0fad89cc1b5}{DTD}}\+: 1
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{struct_fis_dma_setup_a5bb2bf82a0f340c1a98af4e3e6292003}{IE}}\+: 1
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{struct_fis_dma_setup_ae3c7158529cdb0fd885f7bc54370fa08}{Auto\+Enable}}\+: 1
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{struct_fis_dma_setup_ac39e66d3e856a3cbc7e9f9f668d32322}{Reserved1}} \mbox{[}2\mbox{]}
+\item 
+volatile \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}} \mbox{\hyperlink{struct_fis_dma_setup_a5656436d475ba5926e6048956011dc47}{Dma\+Buffer\+Id}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_fis_dma_setup_a1d836508c1c9febfe0b9e93c0a333d29}{Rsvd}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_fis_dma_setup_ad77028f6afbf84c408118e7a9bd8af7d}{Dmabuf\+Offset}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_fis_dma_setup_abbca6408c07af3e4ea17d9b4aa240a41}{Transfer\+Count}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_fis_dma_setup_ac2fedc99f66f299096e04e869f3e7fe7}{Reserved3}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_fis_dma_setup_ae3c7158529cdb0fd885f7bc54370fa08}\label{struct_fis_dma_setup_ae3c7158529cdb0fd885f7bc54370fa08} 
+\index{FisDmaSetup@{FisDmaSetup}!AutoEnable@{AutoEnable}}
+\index{AutoEnable@{AutoEnable}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{AutoEnable}{AutoEnable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Fis\+Dma\+Setup\+::\+Auto\+Enable}
+
+\Hypertarget{struct_fis_dma_setup_a5656436d475ba5926e6048956011dc47}\label{struct_fis_dma_setup_a5656436d475ba5926e6048956011dc47} 
+\index{FisDmaSetup@{FisDmaSetup}!DmaBufferId@{DmaBufferId}}
+\index{DmaBufferId@{DmaBufferId}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{DmaBufferId}{DmaBufferId}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}} Fis\+Dma\+Setup\+::\+Dma\+Buffer\+Id}
+
+\Hypertarget{struct_fis_dma_setup_ad77028f6afbf84c408118e7a9bd8af7d}\label{struct_fis_dma_setup_ad77028f6afbf84c408118e7a9bd8af7d} 
+\index{FisDmaSetup@{FisDmaSetup}!DmabufOffset@{DmabufOffset}}
+\index{DmabufOffset@{DmabufOffset}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{DmabufOffset}{DmabufOffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Fis\+Dma\+Setup\+::\+Dmabuf\+Offset}
+
+\Hypertarget{struct_fis_dma_setup_a00efa8f8da2ca02c3c25b0fad89cc1b5}\label{struct_fis_dma_setup_a00efa8f8da2ca02c3c25b0fad89cc1b5} 
+\index{FisDmaSetup@{FisDmaSetup}!DTD@{DTD}}
+\index{DTD@{DTD}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{DTD}{DTD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Fis\+Dma\+Setup\+::\+DTD}
+
+\Hypertarget{struct_fis_dma_setup_a61cd136c495efe0cdd5fca634734a858}\label{struct_fis_dma_setup_a61cd136c495efe0cdd5fca634734a858} 
+\index{FisDmaSetup@{FisDmaSetup}!FisType@{FisType}}
+\index{FisType@{FisType}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{FisType}{FisType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Fis\+Dma\+Setup\+::\+Fis\+Type}
+
+\Hypertarget{struct_fis_dma_setup_a5bb2bf82a0f340c1a98af4e3e6292003}\label{struct_fis_dma_setup_a5bb2bf82a0f340c1a98af4e3e6292003} 
+\index{FisDmaSetup@{FisDmaSetup}!IE@{IE}}
+\index{IE@{IE}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{IE}{IE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Fis\+Dma\+Setup\+::\+IE}
+
+\Hypertarget{struct_fis_dma_setup_a79fe2c9d5666d26abf43238360c4980f}\label{struct_fis_dma_setup_a79fe2c9d5666d26abf43238360c4980f} 
+\index{FisDmaSetup@{FisDmaSetup}!PortMul@{PortMul}}
+\index{PortMul@{PortMul}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{PortMul}{PortMul}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Fis\+Dma\+Setup\+::\+Port\+Mul}
+
+\Hypertarget{struct_fis_dma_setup_ae671f0f26e58f7036cb73a51dd7764db}\label{struct_fis_dma_setup_ae671f0f26e58f7036cb73a51dd7764db} 
+\index{FisDmaSetup@{FisDmaSetup}!Reserved0@{Reserved0}}
+\index{Reserved0@{Reserved0}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{Reserved0}{Reserved0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Fis\+Dma\+Setup\+::\+Reserved0}
+
+\Hypertarget{struct_fis_dma_setup_ac39e66d3e856a3cbc7e9f9f668d32322}\label{struct_fis_dma_setup_ac39e66d3e856a3cbc7e9f9f668d32322} 
+\index{FisDmaSetup@{FisDmaSetup}!Reserved1@{Reserved1}}
+\index{Reserved1@{Reserved1}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{Reserved1}{Reserved1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Fis\+Dma\+Setup\+::\+Reserved1\mbox{[}2\mbox{]}}
+
+\Hypertarget{struct_fis_dma_setup_ac2fedc99f66f299096e04e869f3e7fe7}\label{struct_fis_dma_setup_ac2fedc99f66f299096e04e869f3e7fe7} 
+\index{FisDmaSetup@{FisDmaSetup}!Reserved3@{Reserved3}}
+\index{Reserved3@{Reserved3}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{Reserved3}{Reserved3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Fis\+Dma\+Setup\+::\+Reserved3}
+
+\Hypertarget{struct_fis_dma_setup_a1d836508c1c9febfe0b9e93c0a333d29}\label{struct_fis_dma_setup_a1d836508c1c9febfe0b9e93c0a333d29} 
+\index{FisDmaSetup@{FisDmaSetup}!Rsvd@{Rsvd}}
+\index{Rsvd@{Rsvd}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{Rsvd}{Rsvd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Fis\+Dma\+Setup\+::\+Rsvd}
+
+\Hypertarget{struct_fis_dma_setup_abbca6408c07af3e4ea17d9b4aa240a41}\label{struct_fis_dma_setup_abbca6408c07af3e4ea17d9b4aa240a41} 
+\index{FisDmaSetup@{FisDmaSetup}!TransferCount@{TransferCount}}
+\index{TransferCount@{TransferCount}!FisDmaSetup@{FisDmaSetup}}
+\doxysubsubsection{\texorpdfstring{TransferCount}{TransferCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Fis\+Dma\+Setup\+::\+Transfer\+Count}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/modules/\+AHCI/\mbox{\hyperlink{modules_2_a_h_c_i_2_a_h_c_i_8h}{AHCI.\+h}}\end{DoxyCompactItemize}

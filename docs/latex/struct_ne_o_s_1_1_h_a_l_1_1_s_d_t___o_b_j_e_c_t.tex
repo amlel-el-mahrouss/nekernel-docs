@@ -1,0 +1,212 @@
+\doxysection{Ne\+OS\+::HAL\+::SDT\+\_\+\+OBJECT Struct Reference}
+\hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t}{}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t}\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+
+
+Multiple APIC Descriptor Table.  
+
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a818e1410e93bb944eed7e86701028903}{Address}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_acf91d8d5e6b2bbb8ef640b9f53682942}{Flags}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a246d91ecb81f57e445862ebae937172c}{Type}}\\
+\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac3b98c4187870d95b17e3453cb1b4633}{Len}}\\
+\>union \{\\
+\>\>struct \{\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a2dd3164a93e401d95f16e847af3d75ef}{IoID}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac4fb0ac3bd6a22cd470423c763009f1d}{Zero}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ab55d86eafae72d4856796b274755c690}{IoAddress}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a6c85f1ba9b2625d8ca3d732db47a8d47}{GISBase}}\\
+\>\>\} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac06341901e76fe90edc92a26dba8511d}{IOAPIC}}\\
+\>\>struct \{\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_abc4e2dd247bedcab334da43a721bcca5}{Source}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a7ce3a584d71dafa93b228cafbe688b73}{IRQSource}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_af32a94d9591148b3f3205e7aee94a356}{GSI}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a08e9d54365db39839d70f0ce762c3886}{Flags}}\\
+\>\>\} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a6c4e3bb02fdcd67d6040b4aaca51e0ba}{LApicNMI}}\\
+\>\>struct \{\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a82d18083c3d5db89faa94d3c184a580b}{ProcessorID}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a08e9d54365db39839d70f0ce762c3886}{Flags}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a7768f80d142ce48ec6ea0c4c0f88da87}{LINT}}\\
+\>\>\} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a4237d3b5840c646925a4580033cd05db}{LAPIC}}\\
+\>\>struct \{\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a064c2e60a3294c47b533530d1fb16453}{Reserved}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_af6f785b1cdafbcc85c94e74aef915098}{Address}}\\
+\>\>\} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a1b1bc4892bfc85f61136a69deb5f8237}{LApicOverride}}\\
+\>\>struct \{\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a064c2e60a3294c47b533530d1fb16453}{Reserved}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a2cba27a684b9d3e7f9949e46e9c1b2a5}{x2APICID}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a5c81ef2dbf684cbee11bccccdf60e98b}{Flags}}\\
+\>\>\>\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a9f682cf334f7e78c03c9c8617b321ff1}{AcpiID}}\\
+\>\>\} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a40d14de9c1a630b64f15a975d64a10d7}{LApic}}\\
+\>\} \\
+\} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a8e4fca032f598b5a9f9478da6563e37a}{List}} \mbox{[}$\,$\mbox{]}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Multiple APIC Descriptor Table. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a9f682cf334f7e78c03c9c8617b321ff1}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a9f682cf334f7e78c03c9c8617b321ff1} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!AcpiID@{AcpiID}}
+\index{AcpiID@{AcpiID}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{AcpiID}{AcpiID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Acpi\+ID}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a818e1410e93bb944eed7e86701028903}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a818e1410e93bb944eed7e86701028903} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Address@{Address}}
+\index{Address@{Address}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Address}{Address}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Address}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_af6f785b1cdafbcc85c94e74aef915098}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_af6f785b1cdafbcc85c94e74aef915098} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Address@{Address}}
+\index{Address@{Address}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Address}{Address}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Address}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_acf91d8d5e6b2bbb8ef640b9f53682942}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_acf91d8d5e6b2bbb8ef640b9f53682942} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Flags@{Flags}}
+\index{Flags@{Flags}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Flags}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a08e9d54365db39839d70f0ce762c3886}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a08e9d54365db39839d70f0ce762c3886} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Flags@{Flags}}
+\index{Flags@{Flags}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Flags}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a5c81ef2dbf684cbee11bccccdf60e98b}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a5c81ef2dbf684cbee11bccccdf60e98b} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Flags@{Flags}}
+\index{Flags@{Flags}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Flags}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a6c85f1ba9b2625d8ca3d732db47a8d47}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a6c85f1ba9b2625d8ca3d732db47a8d47} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!GISBase@{GISBase}}
+\index{GISBase@{GISBase}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{GISBase}{GISBase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+GISBase}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_af32a94d9591148b3f3205e7aee94a356}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_af32a94d9591148b3f3205e7aee94a356} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!GSI@{GSI}}
+\index{GSI@{GSI}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{GSI}{GSI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+GSI}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ab55d86eafae72d4856796b274755c690}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ab55d86eafae72d4856796b274755c690} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!IoAddress@{IoAddress}}
+\index{IoAddress@{IoAddress}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{IoAddress}{IoAddress}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Io\+Address}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac06341901e76fe90edc92a26dba8511d}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac06341901e76fe90edc92a26dba8511d} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!IOAPIC@{IOAPIC}}
+\index{IOAPIC@{IOAPIC}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+IOAPIC}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a2dd3164a93e401d95f16e847af3d75ef}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a2dd3164a93e401d95f16e847af3d75ef} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!IoID@{IoID}}
+\index{IoID@{IoID}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{IoID}{IoID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Io\+ID}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a7ce3a584d71dafa93b228cafbe688b73}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a7ce3a584d71dafa93b228cafbe688b73} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!IRQSource@{IRQSource}}
+\index{IRQSource@{IRQSource}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{IRQSource}{IRQSource}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+IRQSource}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a4237d3b5840c646925a4580033cd05db}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a4237d3b5840c646925a4580033cd05db} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!LAPIC@{LAPIC}}
+\index{LAPIC@{LAPIC}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+LAPIC}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a40d14de9c1a630b64f15a975d64a10d7}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a40d14de9c1a630b64f15a975d64a10d7} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!LApic@{LApic}}
+\index{LApic@{LApic}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+LApic}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a6c4e3bb02fdcd67d6040b4aaca51e0ba}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a6c4e3bb02fdcd67d6040b4aaca51e0ba} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!LApicNMI@{LApicNMI}}
+\index{LApicNMI@{LApicNMI}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+LApic\+NMI}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a1b1bc4892bfc85f61136a69deb5f8237}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a1b1bc4892bfc85f61136a69deb5f8237} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!LApicOverride@{LApicOverride}}
+\index{LApicOverride@{LApicOverride}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+LApic\+Override}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac3b98c4187870d95b17e3453cb1b4633}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac3b98c4187870d95b17e3453cb1b4633} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Len@{Len}}
+\index{Len@{Len}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Len}{Len}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Len}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a7768f80d142ce48ec6ea0c4c0f88da87}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a7768f80d142ce48ec6ea0c4c0f88da87} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!LINT@{LINT}}
+\index{LINT@{LINT}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{LINT}{LINT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+LINT}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a8e4fca032f598b5a9f9478da6563e37a}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a8e4fca032f598b5a9f9478da6563e37a} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!List@{List}}
+\index{List@{List}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+List\mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a82d18083c3d5db89faa94d3c184a580b}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a82d18083c3d5db89faa94d3c184a580b} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!ProcessorID@{ProcessorID}}
+\index{ProcessorID@{ProcessorID}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{ProcessorID}{ProcessorID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Processor\+ID}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a064c2e60a3294c47b533530d1fb16453}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a064c2e60a3294c47b533530d1fb16453} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Reserved@{Reserved}}
+\index{Reserved@{Reserved}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Reserved}{Reserved}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Reserved}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_abc4e2dd247bedcab334da43a721bcca5}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_abc4e2dd247bedcab334da43a721bcca5} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Source@{Source}}
+\index{Source@{Source}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Source}{Source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Source}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a246d91ecb81f57e445862ebae937172c}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a246d91ecb81f57e445862ebae937172c} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Type@{Type}}
+\index{Type@{Type}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Type}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a2cba27a684b9d3e7f9949e46e9c1b2a5}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_a2cba27a684b9d3e7f9949e46e9c1b2a5} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!x2APICID@{x2APICID}}
+\index{x2APICID@{x2APICID}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{x2APICID}{x2APICID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::x2\+APICID}
+
+\Hypertarget{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac4fb0ac3bd6a22cd470423c763009f1d}\label{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t_ac4fb0ac3bd6a22cd470423c763009f1d} 
+\index{NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}!Zero@{Zero}}
+\index{Zero@{Zero}!NeOS::HAL::SDT\_OBJECT@{NeOS::HAL::SDT\_OBJECT}}
+\doxysubsubsection{\texorpdfstring{Zero}{Zero}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+SDT\+\_\+\+OBJECT\+::\+Zero}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+HALKit/\+AMD64/\mbox{\hyperlink{_a_m_d64_2_hal_application_processor_8cc}{Hal\+Application\+Processor.\+cc}}\end{DoxyCompactItemize}

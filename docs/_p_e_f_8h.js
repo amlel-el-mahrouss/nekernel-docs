@@ -1,7 +1,7 @@
 var _p_e_f_8h =
 [
-    [ "NeOS::PEFContainer", "struct_ne_o_s_1_1_p_e_f_container.html", "struct_ne_o_s_1_1_p_e_f_container" ],
-    [ "NeOS::PEFCommandHeader", "struct_ne_o_s_1_1_p_e_f_command_header.html", "struct_ne_o_s_1_1_p_e_f_command_header" ],
+    [ "Kernel::PEFContainer", "struct_kernel_1_1_p_e_f_container.html", "struct_kernel_1_1_p_e_f_container" ],
+    [ "Kernel::PEFCommandHeader", "struct_kernel_1_1_p_e_f_command_header.html", "struct_kernel_1_1_p_e_f_command_header" ],
     [ "kPefAbi", "_p_e_f_8h.html#af25a0b0fa23ae66742fdd12f6975477a", null ],
     [ "kPefBaseOrigin", "_p_e_f_8h.html#a724902064959928e47270d2d2087dbd2", null ],
     [ "kPefDebugExt", "_p_e_f_8h.html#ace6465bced1199518a4d2f4c4ee9b702", null ],
@@ -18,6 +18,6 @@ var _p_e_f_8h =
     [ "kPefObjectExt", "_p_e_f_8h.html#a02947bc4eff53eb410aeee3770e60685", null ],
     [ "kPefStart", "_p_e_f_8h.html#a24805061766bc16a2be024d217f64a45", null ],
     [ "kPefVersion", "_p_e_f_8h.html#a59a1c4fa90abbb06331de310cc22c228", null ],
-    [ "PEFCommandHeader", "_p_e_f_8h.html#a9e81652c2962b7c89312e1d2186bd8b6", null ],
-    [ "PEFContainer", "_p_e_f_8h.html#afc4c314383cbfd406a8e37a06dddccee", null ]
+    [ "PEFCommandHeader", "_p_e_f_8h.html#a0626234a2ff1fbb74eabc3f8c0cb1bcf", null ],
+    [ "PEFContainer", "_p_e_f_8h.html#a66e9322503a2c59644efa91a11b1a412", null ]
 ];

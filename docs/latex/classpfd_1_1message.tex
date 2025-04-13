@@ -1,0 +1,130 @@
+\doxysection{pfd\+::message Class Reference}
+\hypertarget{classpfd_1_1message}{}\label{classpfd_1_1message}\index{pfd::message@{pfd::message}}
+
+
+{\ttfamily \#include $<$Dialogs.\+h$>$}
+
+Inheritance diagram for pfd\+::message\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpfd_1_1message}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpfd_1_1message_a38e0ce9a58c006011708a4968be17833}{message}} (std\+::string const \&title, std\+::string const \&text, \mbox{\hyperlink{namespacepfd_a70b4c2a87aca3443a4de387bedae49e8}{choice}} \+\_\+choice=\mbox{\hyperlink{namespacepfd_a70b4c2a87aca3443a4de387bedae49e8a809da5df9c86c6426c8d8db2934d3f51}{choice\+::ok\+\_\+cancel}}, \mbox{\hyperlink{namespacepfd_a96ff6709abe317ae8eff98d92bc8db85}{icon}} \+\_\+icon=\mbox{\hyperlink{namespacepfd_a96ff6709abe317ae8eff98d92bc8db85acaf9b6b99962bf5c2264824231d7a40c}{icon\+::info}})
+\item 
+\mbox{\hyperlink{namespacepfd_aad4fba5e0884b6d814006a7e92ade679}{button}} \mbox{\hyperlink{classpfd_1_1message_aeee673bf19f45328a7eb8ec2c1e01fc9}{result}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpfd_1_1internal_1_1dialog}{pfd\+::internal\+::dialog}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_a77f20e6063f83e601ce23ed4899907c6}{ready}} (int timeout=default\+\_\+wait\+\_\+timeout) const
+\item 
+bool \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_a226b1502acd1d2cb86e34dd3df36772a}{kill}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ int, \mbox{\hyperlink{namespacepfd_aad4fba5e0884b6d814006a7e92ade679}{button}} $>$ \mbox{\hyperlink{classpfd_1_1message_abd55bdeb662938db1c8e6747d3acb7b4}{m\+\_\+mappings}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Types inherited from \mbox{\hyperlink{classpfd_1_1settings}{pfd\+::settings}}}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aad}{flag}} \{ \newline
+\mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aada11dd6b78f267a47638211f4c7e23d434}{is\+\_\+scanned}} = 0
+, \mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aadad9da28952c27749f53c23675db49d560}{is\+\_\+verbose}}
+, \mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aadaee57842698a0690e4b89730b469edc31}{has\+\_\+zenity}}
+, \mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aada1267dfaf66b51761e04b042bb2c4dd7a}{has\+\_\+matedialog}}
+, \newline
+\mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aada1a652e3d6a785053942b6cffc2c4669d}{has\+\_\+qarma}}
+, \mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aada1f1a19f0bf1fe1a63ed3e73e40466b4b}{has\+\_\+kdialog}}
+, \mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aadaea0bbb642237ecdaa68a14a0d7212448}{is\+\_\+vista}}
+, \mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aada73b7af539db867cb9edf24a3cb7b8a36}{max\+\_\+flag}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpfd_1_1internal_1_1dialog}{pfd\+::internal\+::dialog}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpfd_1_1internal_1_1dialog_a05f9a4fcba8f8a9411d7dfaf18ee11ad}{dialog}} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_aadaf6cb30620c85f4b97993e3c819188}{desktop\+\_\+helper}} () const
+\item 
+std\+::string \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_aae2255eceb0b3b18b55d1618fd7e1635}{powershell\+\_\+quote}} (std\+::string const \&str) const
+\item 
+std\+::string \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_adc0ec6f5c8137cbdb0ea6669b5263a73}{osascript\+\_\+quote}} (std\+::string const \&str) const
+\item 
+std\+::string \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_a1a4f28c3c2bbd1629f2f882314fff63e}{shell\+\_\+quote}} (std\+::string const \&str) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpfd_1_1settings}{pfd\+::settings}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpfd_1_1settings_a7190e52d512b1321acb78731a8cddf42}{settings}} (bool resync=\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}})
+\item 
+bool \mbox{\hyperlink{classpfd_1_1settings_af1c2f6e88ffafd59a2f7609631a9eade}{check\+\_\+program}} (std\+::string const \&program)
+\item 
+bool \mbox{\hyperlink{classpfd_1_1settings_a4e22d6fb43d387ddc980bf6e2a6aad24}{is\+\_\+osascript}} () const
+\item 
+bool \mbox{\hyperlink{classpfd_1_1settings_a08e4a5b150186d77158a974cc8c2d4a2}{is\+\_\+zenity}} () const
+\item 
+bool \mbox{\hyperlink{classpfd_1_1settings_aa79fb10eee785f1acd8d1ff34e226c89}{is\+\_\+kdialog}} () const
+\item 
+bool const \& \mbox{\hyperlink{classpfd_1_1settings_a1445f3cf0311b15182d401f244b012d8}{flags}} (\mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aad}{flag}} in\+\_\+flag) const
+\item 
+bool \& \mbox{\hyperlink{classpfd_1_1settings_a9b611d06856910f0d8c358dd0eadfcee}{flags}} (\mbox{\hyperlink{classpfd_1_1settings_a61077e0fd48da6de7bb0f5dd9d9d1aad}{flag}} in\+\_\+flag)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classpfd_1_1internal_1_1dialog}{pfd\+::internal\+::dialog}}}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_ac906c01d0365c13c9066cea857fd258a}{buttons\+\_\+to\+\_\+name}} (\mbox{\hyperlink{namespacepfd_a70b4c2a87aca3443a4de387bedae49e8}{choice}} \+\_\+choice)
+\item 
+static std\+::string \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_ae94362bed052ab6050e38852712cb97a}{get\+\_\+icon\+\_\+name}} (\mbox{\hyperlink{namespacepfd_a96ff6709abe317ae8eff98d92bc8db85}{icon}} \+\_\+icon)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classpfd_1_1settings}{pfd\+::settings}}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classpfd_1_1settings_a54fb5598e7501ac38d17e3629190b2fe}{available}} ()
+\item 
+static void \mbox{\hyperlink{classpfd_1_1settings_a0ed32e8ed039106028474eb9f0a0a7bc}{verbose}} (bool value)
+\item 
+static void \mbox{\hyperlink{classpfd_1_1settings_a60023ab0ac98008d2c52a568e9ee540f}{rescan}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpfd_1_1internal_1_1dialog}{pfd\+::internal\+::dialog}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpfd_1_1internal_1_1executor}{executor}} $>$ \mbox{\hyperlink{classpfd_1_1internal_1_1dialog_a91f4b2666fb920a7859df9cdc079502d}{m\+\_\+async}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpfd_1_1message_a38e0ce9a58c006011708a4968be17833}\label{classpfd_1_1message_a38e0ce9a58c006011708a4968be17833} 
+\index{pfd::message@{pfd::message}!message@{message}}
+\index{message@{message}!pfd::message@{pfd::message}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}}
+{\footnotesize\ttfamily pfd\+::message\+::message (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{title,  }\item[{std\+::string const \&}]{text,  }\item[{\mbox{\hyperlink{namespacepfd_a70b4c2a87aca3443a4de387bedae49e8}{choice}}}]{\+\_\+choice = {\ttfamily \mbox{\hyperlink{namespacepfd_a70b4c2a87aca3443a4de387bedae49e8a809da5df9c86c6426c8d8db2934d3f51}{choice\+::ok\+\_\+cancel}}},  }\item[{\mbox{\hyperlink{namespacepfd_a96ff6709abe317ae8eff98d92bc8db85}{icon}}}]{\+\_\+icon = {\ttfamily \mbox{\hyperlink{namespacepfd_a96ff6709abe317ae8eff98d92bc8db85acaf9b6b99962bf5c2264824231d7a40c}{icon\+::info}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpfd_1_1message_aeee673bf19f45328a7eb8ec2c1e01fc9}\label{classpfd_1_1message_aeee673bf19f45328a7eb8ec2c1e01fc9} 
+\index{pfd::message@{pfd::message}!result@{result}}
+\index{result@{result}!pfd::message@{pfd::message}}
+\doxysubsubsection{\texorpdfstring{result()}{result()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepfd_aad4fba5e0884b6d814006a7e92ade679}{button}} pfd\+::message\+::result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpfd_1_1message_abd55bdeb662938db1c8e6747d3acb7b4}\label{classpfd_1_1message_abd55bdeb662938db1c8e6747d3acb7b4} 
+\index{pfd::message@{pfd::message}!m\_mappings@{m\_mappings}}
+\index{m\_mappings@{m\_mappings}!pfd::message@{pfd::message}}
+\doxysubsubsection{\texorpdfstring{m\_mappings}{m\_mappings}}
+{\footnotesize\ttfamily std\+::map$<$int, \mbox{\hyperlink{namespacepfd_aad4fba5e0884b6d814006a7e92ade679}{button}}$>$ pfd\+::message\+::m\+\_\+mappings\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+public/tools/diutil/vendor/\mbox{\hyperlink{_dialogs_8h}{Dialogs.\+h}}\end{DoxyCompactItemize}

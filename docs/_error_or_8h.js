@@ -1,6 +1,6 @@
 var _error_or_8h =
 [
-    [ "NeOS::ErrorOr< T >", "class_ne_o_s_1_1_error_or.html", "class_ne_o_s_1_1_error_or" ],
-    [ "ErrorOrAny", "_error_or_8h.html#a917e0fbb8be72c487f6ef683b098fd73", null ],
-    [ "ErrorT", "_error_or_8h.html#ac8fb915120c83a644fca660c64a7db81", null ]
+    [ "Kernel::ErrorOr< T >", "class_kernel_1_1_error_or.html", "class_kernel_1_1_error_or" ],
+    [ "ErrorOrAny", "_error_or_8h.html#ae93d3ed63889cb9899feae5c3f489ebd", null ],
+    [ "ErrorT", "_error_or_8h.html#a7c65ae6e6a2df84f4bab9ce133cc838d", null ]
 ];

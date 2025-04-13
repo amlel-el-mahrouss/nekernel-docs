@@ -1,0 +1,153 @@
+\doxysection{Ne\+OS\+::Detail\+::MM\+\_\+\+INFORMATION\+\_\+\+BLOCK Struct Reference}
+\hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+
+
+Kernel heap information block. Located before the address bytes. \texorpdfstring{$\vert$}{|} HIB \texorpdfstring{$\vert$}{|} CLASS/\+STRUCT/\+DATA TYPES... \texorpdfstring{$\vert$}{|}.  
+
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a38f6c92a80e144c671a75af95dad6ab8}{f\+Magic}}\+: 24
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_aefdb102e74becbd33aa775cd74ae7ea0}{f\+Present}}\+: 1
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a867a25f899856a99c93bf752cebb0368}{f\+Write\+Read}}\+: 1
+\begin{DoxyCompactList}\small\item\em Is this value writable? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a7f5471772cf4f3697003662779c54ced}{f\+User}}\+: 1
+\begin{DoxyCompactList}\small\item\em Is this value owned by the user? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab445e10deadb19ddc917f2f1bd8bbbfb}{f\+Page}}\+: 1
+\begin{DoxyCompactList}\small\item\em Is this a page pointer? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a88b285ce84a1e2ef3ca5afa387af2477}{f\+CRC32}}
+\begin{DoxyCompactList}\small\item\em 32-\/bit CRC checksum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a14649337b5d764525369c1fc7a36a80a}{f\+Flags}}
+\begin{DoxyCompactList}\small\item\em 64-\/bit Allocation flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a2aa34565bcbbb0f9b9872b1cfdc2561f}{f\+Size}}
+\begin{DoxyCompactList}\small\item\em 64-\/bit pointer size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab170658b0d8bb8fbad0443b7748bc018}{f\+Offset}}
+\begin{DoxyCompactList}\small\item\em 64-\/bit target offset pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab1b0d73f8df0bc79cb0e57ffb1b468c2}{f\+Pad}}
+\begin{DoxyCompactList}\small\item\em Padding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a208509e88792eb649aa3915242855f98}{f\+Padding}} \mbox{[}\mbox{\hyperlink{_memory_mgr_8cc_a7b2f1160ea314725e28dd39120b7e6e0}{k\+Memory\+Mgr\+Align\+Sz}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Padding bytes for header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kernel heap information block. Located before the address bytes. \texorpdfstring{$\vert$}{|} HIB \texorpdfstring{$\vert$}{|} CLASS/\+STRUCT/\+DATA TYPES... \texorpdfstring{$\vert$}{|}. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a88b285ce84a1e2ef3ca5afa387af2477}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a88b285ce84a1e2ef3ca5afa387af2477} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fCRC32@{fCRC32}}
+\index{fCRC32@{fCRC32}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fCRC32}{fCRC32}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+CRC32}
+
+
+
+32-\/bit CRC checksum. 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a14649337b5d764525369c1fc7a36a80a}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a14649337b5d764525369c1fc7a36a80a} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fFlags@{fFlags}}
+\index{fFlags@{fFlags}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fFlags}{fFlags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Flags}
+
+
+
+64-\/bit Allocation flags. 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a38f6c92a80e144c671a75af95dad6ab8}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a38f6c92a80e144c671a75af95dad6ab8} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fMagic@{fMagic}}
+\index{fMagic@{fMagic}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fMagic}{fMagic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Magic}
+
+
+
+! 
+
+32-\/bit value which contains the magic number of the heap. \Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab170658b0d8bb8fbad0443b7748bc018}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab170658b0d8bb8fbad0443b7748bc018} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fOffset@{fOffset}}
+\index{fOffset@{fOffset}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fOffset}{fOffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Offset}
+
+
+
+64-\/bit target offset pointer. 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab1b0d73f8df0bc79cb0e57ffb1b468c2}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab1b0d73f8df0bc79cb0e57ffb1b468c2} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fPad@{fPad}}
+\index{fPad@{fPad}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fPad}{fPad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Pad}
+
+
+
+Padding. 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a208509e88792eb649aa3915242855f98}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a208509e88792eb649aa3915242855f98} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fPadding@{fPadding}}
+\index{fPadding@{fPadding}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fPadding}{fPadding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Padding\mbox{[}\mbox{\hyperlink{_memory_mgr_8cc_a7b2f1160ea314725e28dd39120b7e6e0}{k\+Memory\+Mgr\+Align\+Sz}}\mbox{]}}
+
+
+
+Padding bytes for header. 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab445e10deadb19ddc917f2f1bd8bbbfb}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_ab445e10deadb19ddc917f2f1bd8bbbfb} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fPage@{fPage}}
+\index{fPage@{fPage}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fPage}{fPage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Page}
+
+
+
+Is this a page pointer? 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_aefdb102e74becbd33aa775cd74ae7ea0}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_aefdb102e74becbd33aa775cd74ae7ea0} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fPresent@{fPresent}}
+\index{fPresent@{fPresent}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fPresent}{fPresent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Present}
+
+
+
+! 
+
+Is the heap present? \Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a2aa34565bcbbb0f9b9872b1cfdc2561f}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a2aa34565bcbbb0f9b9872b1cfdc2561f} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fSize@{fSize}}
+\index{fSize@{fSize}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fSize}{fSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Size}
+
+
+
+64-\/bit pointer size. 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a7f5471772cf4f3697003662779c54ced}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a7f5471772cf4f3697003662779c54ced} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fUser@{fUser}}
+\index{fUser@{fUser}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fUser}{fUser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+User}
+
+
+
+Is this value owned by the user? 
+
+\Hypertarget{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a867a25f899856a99c93bf752cebb0368}\label{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k_a867a25f899856a99c93bf752cebb0368} 
+\index{NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}!fWriteRead@{fWriteRead}}
+\index{fWriteRead@{fWriteRead}!NeOS::Detail::MM\_INFORMATION\_BLOCK@{NeOS::Detail::MM\_INFORMATION\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{fWriteRead}{fWriteRead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+::f\+Write\+Read}
+
+
+
+Is this value writable? 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/src/\mbox{\hyperlink{_memory_mgr_8cc}{Memory\+Mgr.\+cc}}\end{DoxyCompactItemize}

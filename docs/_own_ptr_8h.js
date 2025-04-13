@@ -1,5 +1,5 @@
 var _own_ptr_8h =
 [
-    [ "NeOS::OwnPtr< T >", "class_ne_o_s_1_1_own_ptr.html", "class_ne_o_s_1_1_own_ptr" ],
-    [ "make_ptr", "_own_ptr_8h.html#a5b9f646b039d5c999a8deac6fbde76cf", null ]
+    [ "Kernel::OwnPtr< T >", "class_kernel_1_1_own_ptr.html", "class_kernel_1_1_own_ptr" ],
+    [ "mm_make_own_ptr", "_own_ptr_8h.html#a484cd81c88f49d3e7cc9968c2ba9bbaa", null ]
 ];

@@ -1,0 +1,117 @@
+\doxysection{Lib\+CF\+::CFFont Class Reference}
+\hypertarget{class_lib_c_f_1_1_c_f_font}{}\label{class_lib_c_f_1_1_c_f_font}\index{LibCF::CFFont@{LibCF::CFFont}}
+
+
+{\ttfamily \#include $<$Font.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_aefe18b18c9c9bea231219af7696ba6b0}{CFFont}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_aa4aa08c6aa1acecd97c08e0689712d88}{\texorpdfstring{$\sim$}{\string~}\+CFFont}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_a355fedae5b4a4a0b252c6c4ca6438f59}{CFFont}} (const \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font}{CFFont}} \&fnt)=delete
+\item 
+\mbox{\hyperlink{class_lib_c_f_1_1_c_f_font}{CFFont}} \& \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_a6cdee91d133dce1123fa6abc243272f7}{operator=}} (const \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font}{CFFont}} \&fnt)=delete
+\item 
+virtual \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_a4ea1b7f5b3b1c59694356857cf75765a}{render\+\_\+}} (\mbox{\hyperlink{struct_lib_c_f_1_1_c_f_point}{CFPoint}} pos, \mbox{\hyperlink{namespace_lib_c_f_a601b8ed897fc8fc5135f198550dfe4aa}{CFChar16}} character, \mbox{\hyperlink{struct_lib_c_f_1_1_c_f_color}{CFColor}} color)=0
+\item 
+virtual void \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_aa1165911a5057e73bf92b6423bec32d8}{dispose\+\_\+}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_lib_c_f_1_1_c_f_rect}{CFRect}} \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_a643bdd0d8bcf62b4e1b7e7cb8c7bccfc}{m\+\_\+size}} \{\}
+\item 
+\mbox{\hyperlink{struct_lib_c_f_1_1_c_f_rect}{CFRect}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_a391f8d11dc0f2649cd20019b9a8f53a9}{m\+\_\+glyphs}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_lib_c_f_ae2c54e6cc5647384cb6296f184e28b01}{CFInteger32}} \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_a36b8c30219a9f42da43a5fa352cfdb86}{m\+\_\+glyphs\+\_\+cnt}} \{0\}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_a906da4aab1edf3c38b288f927f89aa42}{m\+\_\+bold}} \{\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}\}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font_ad8578a232bb5c2fbbc97b7c59254028f}{m\+\_\+italic}} \{\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_lib_c_f_1_1_c_f_font_aefe18b18c9c9bea231219af7696ba6b0}\label{class_lib_c_f_1_1_c_f_font_aefe18b18c9c9bea231219af7696ba6b0} 
+\index{LibCF::CFFont@{LibCF::CFFont}!CFFont@{CFFont}}
+\index{CFFont@{CFFont}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{CFFont()}{CFFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Lib\+CF\+::\+CFFont\+::\+CFFont (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_aa4aa08c6aa1acecd97c08e0689712d88}\label{class_lib_c_f_1_1_c_f_font_aa4aa08c6aa1acecd97c08e0689712d88} 
+\index{LibCF::CFFont@{LibCF::CFFont}!````~CFFont@{\texorpdfstring{$\sim$}{\string~}CFFont}}
+\index{````~CFFont@{\texorpdfstring{$\sim$}{\string~}CFFont}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CFFont()}{\string~CFFont()}}
+{\footnotesize\ttfamily virtual Lib\+CF\+::\+CFFont\+::\texorpdfstring{$\sim$}{\string~}\+CFFont (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_a355fedae5b4a4a0b252c6c4ca6438f59}\label{class_lib_c_f_1_1_c_f_font_a355fedae5b4a4a0b252c6c4ca6438f59} 
+\index{LibCF::CFFont@{LibCF::CFFont}!CFFont@{CFFont}}
+\index{CFFont@{CFFont}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{CFFont()}{CFFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Lib\+CF\+::\+CFFont\+::\+CFFont (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font}{CFFont}} \&}]{fnt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lib_c_f_1_1_c_f_font_aa1165911a5057e73bf92b6423bec32d8}\label{class_lib_c_f_1_1_c_f_font_aa1165911a5057e73bf92b6423bec32d8} 
+\index{LibCF::CFFont@{LibCF::CFFont}!dispose\_@{dispose\_}}
+\index{dispose\_@{dispose\_}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{dispose\_()}{dispose\_()}}
+{\footnotesize\ttfamily virtual void Lib\+CF\+::\+CFFont\+::dispose\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_a6cdee91d133dce1123fa6abc243272f7}\label{class_lib_c_f_1_1_c_f_font_a6cdee91d133dce1123fa6abc243272f7} 
+\index{LibCF::CFFont@{LibCF::CFFont}!operator=@{operator=}}
+\index{operator=@{operator=}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font}{CFFont}} \& Lib\+CF\+::\+CFFont\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lib_c_f_1_1_c_f_font}{CFFont}} \&}]{fnt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_a4ea1b7f5b3b1c59694356857cf75765a}\label{class_lib_c_f_1_1_c_f_font_a4ea1b7f5b3b1c59694356857cf75765a} 
+\index{LibCF::CFFont@{LibCF::CFFont}!render\_@{render\_}}
+\index{render\_@{render\_}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{render\_()}{render\_()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Lib\+CF\+::\+CFFont\+::render\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lib_c_f_1_1_c_f_point}{CFPoint}}}]{pos,  }\item[{\mbox{\hyperlink{namespace_lib_c_f_a601b8ed897fc8fc5135f198550dfe4aa}{CFChar16}}}]{character,  }\item[{\mbox{\hyperlink{struct_lib_c_f_1_1_c_f_color}{CFColor}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_lib_c_f_1_1_c_f_font_a906da4aab1edf3c38b288f927f89aa42}\label{class_lib_c_f_1_1_c_f_font_a906da4aab1edf3c38b288f927f89aa42} 
+\index{LibCF::CFFont@{LibCF::CFFont}!m\_bold@{m\_bold}}
+\index{m\_bold@{m\_bold}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{m\_bold}{m\_bold}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Lib\+CF\+::\+CFFont\+::m\+\_\+bold \{\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_a391f8d11dc0f2649cd20019b9a8f53a9}\label{class_lib_c_f_1_1_c_f_font_a391f8d11dc0f2649cd20019b9a8f53a9} 
+\index{LibCF::CFFont@{LibCF::CFFont}!m\_glyphs@{m\_glyphs}}
+\index{m\_glyphs@{m\_glyphs}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{m\_glyphs}{m\_glyphs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lib_c_f_1_1_c_f_rect}{CFRect}}\texorpdfstring{$\ast$}{*} Lib\+CF\+::\+CFFont\+::m\+\_\+glyphs \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_a36b8c30219a9f42da43a5fa352cfdb86}\label{class_lib_c_f_1_1_c_f_font_a36b8c30219a9f42da43a5fa352cfdb86} 
+\index{LibCF::CFFont@{LibCF::CFFont}!m\_glyphs\_cnt@{m\_glyphs\_cnt}}
+\index{m\_glyphs\_cnt@{m\_glyphs\_cnt}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{m\_glyphs\_cnt}{m\_glyphs\_cnt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_lib_c_f_ae2c54e6cc5647384cb6296f184e28b01}{CFInteger32}} Lib\+CF\+::\+CFFont\+::m\+\_\+glyphs\+\_\+cnt \{0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_ad8578a232bb5c2fbbc97b7c59254028f}\label{class_lib_c_f_1_1_c_f_font_ad8578a232bb5c2fbbc97b7c59254028f} 
+\index{LibCF::CFFont@{LibCF::CFFont}!m\_italic@{m\_italic}}
+\index{m\_italic@{m\_italic}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{m\_italic}{m\_italic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Lib\+CF\+::\+CFFont\+::m\+\_\+italic \{\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_lib_c_f_1_1_c_f_font_a643bdd0d8bcf62b4e1b7e7cb8c7bccfc}\label{class_lib_c_f_1_1_c_f_font_a643bdd0d8bcf62b4e1b7e7cb8c7bccfc} 
+\index{LibCF::CFFont@{LibCF::CFFont}!m\_size@{m\_size}}
+\index{m\_size@{m\_size}!LibCF::CFFont@{LibCF::CFFont}}
+\doxysubsubsection{\texorpdfstring{m\_size}{m\_size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lib_c_f_1_1_c_f_rect}{CFRect}} Lib\+CF\+::\+CFFont\+::m\+\_\+size \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/\+User/\+Lib\+Font/\mbox{\hyperlink{_font_8h}{Font.\+h}}\end{DoxyCompactItemize}

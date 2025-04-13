@@ -1,0 +1,52 @@
+\doxysection{SATA.\+h}
+\hypertarget{_s_a_t_a_8h_source}{}\label{_s_a_t_a_8h_source}\index{dev/boot/BootKit/HW/SATA.h@{dev/boot/BootKit/HW/SATA.h}}
+\mbox{\hyperlink{_s_a_t_a_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_compiler_kit_8h}{CompilerKit/CompilerKit.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{modules_2_a_h_c_i_2_a_h_c_i_8h}{modules/AHCI/AHCI.h}}>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_boot_device_s_a_t_a}{BootDeviceSATA}}\ final}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_boot_device_s_a_t_a_a2639824e8590566f98562979f445ea32}{BootDeviceSATA}}()\ noexcept;}
+\DoxyCodeLine{00016\ \ \ \ \ \string~\mbox{\hyperlink{class_boot_device_s_a_t_a}{BootDeviceSATA}}()\ =\ default;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{_detail_8h_a855fc6b9e935d41c084c0b89a4b82bd2}{NE\_COPY\_DEFAULT}}(\mbox{\hyperlink{class_boot_device_s_a_t_a}{BootDeviceSATA}});}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ struct\ \mbox{\hyperlink{struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait}{SATATrait}}\ final}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{NeOS::SizeT}}\ \ \ \ mBase\{1024\};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ mErr\{\textcolor{keyword}{false}\};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ mDetected\{\textcolor{keyword}{false}\};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{operator}\ bool()}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !this-\/>mErr;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{operator}\ bool()}
+\DoxyCodeLine{00033\ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_boot_device_s_a_t_a_afec7c1f79c25aafe75322eb001dac447}{Leak}}().\mbox{\hyperlink{struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait_a898ae53ffd1a244ee130ca7b614cfaba}{mDetected}};}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_boot_device_s_a_t_a}{BootDeviceSATA}}\&\ \mbox{\hyperlink{class_boot_device_s_a_t_a_a209adc9020f0e5e78632e5811a3aaa1c}{Read}}(\mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{NeOS::WideChar}}*\ Buf,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{NeOS::SizeT}}\&\ SecCount);}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_boot_device_s_a_t_a}{BootDeviceSATA}}\&\ \mbox{\hyperlink{class_boot_device_s_a_t_a_a129d41c1743d38e2689e332d3b4e6c2e}{Write}}(\mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{NeOS::WideChar}}*\ Buf,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{NeOS::SizeT}}\&\ SecCount);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait}{SATATrait}}\&\ \mbox{\hyperlink{class_boot_device_s_a_t_a_afec7c1f79c25aafe75322eb001dac447}{Leak}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait}{SATATrait}}\ \mbox{\hyperlink{class_boot_device_s_a_t_a_ad19ce0b119f55756be80cc665041a1b8}{mTrait}};}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ kAHCISectorSz\ 4096}}
+
+\end{DoxyCode}

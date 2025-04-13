@@ -1,6 +1,6 @@
 var _a_r_m64_2_hal_kernel_panic_8cc =
 [
-    [ "NeOS::RecoveryFactory", "class_ne_o_s_1_1_recovery_factory.html", "class_ne_o_s_1_1_recovery_factory" ],
-    [ "ke_panic", "_a_r_m64_2_hal_kernel_panic_8cc.html#a989feb3221f46d48287bc8cf13506892", null ],
-    [ "ke_runtime_check", "_a_r_m64_2_hal_kernel_panic_8cc.html#a8b0d06866c612e4bc6a89f7949a7fcbb", null ]
+    [ "Kernel::RecoveryFactory", "class_kernel_1_1_recovery_factory.html", "class_kernel_1_1_recovery_factory" ],
+    [ "ke_panic", "_a_r_m64_2_hal_kernel_panic_8cc.html#a05f4ac957b25737365c415f1a1396dbc", null ],
+    [ "ke_runtime_check", "_a_r_m64_2_hal_kernel_panic_8cc.html#ad4673076c24720c3b405ad974edc5646", null ]
 ];

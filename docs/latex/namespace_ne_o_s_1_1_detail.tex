@@ -1,0 +1,233 @@
+\doxysection{Ne\+OS\+::Detail Namespace Reference}
+\hypertarget{namespace_ne_o_s_1_1_detail}{}\label{namespace_ne_o_s_1_1_detail}\index{NeOS::Detail@{NeOS::Detail}}
+
+
+Implementation details namespace.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_f_a_d_t}{FADT}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_h_p_e_t___b_l_o_c_k}{HPET\+\_\+\+BLOCK}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}}
+\begin{DoxyCompactList}\small\item\em Kernel heap information block. Located before the address bytes. \texorpdfstring{$\vert$}{|} HIB \texorpdfstring{$\vert$}{|} CLASS/\+STRUCT/\+DATA TYPES... \texorpdfstring{$\vert$}{|}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_aa61dca87de40ff6d68f1f7aad2c99db7}{MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+\_\+\+PTR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Int16}} PORT$>$ }\\bool \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a6432e25b15c2024c57bc9b36573d3973}{hal\+\_\+serial\+\_\+init}} () noexcept
+\begin{DoxyCompactList}\small\item\em Init COM1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a275cc52f09d7ad5c155d5af9ac04b3aa}{sk\+\_\+io\+\_\+read\+\_\+ahci}} (\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}self, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}mnt)
+\begin{DoxyCompactList}\small\item\em Read AHCI device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a435076d327d4c44790f9d05cbf5f8d61}{sk\+\_\+io\+\_\+write\+\_\+ahci}} (\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}self, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}mnt)
+\begin{DoxyCompactList}\small\item\em Write AHCI device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a5e353fa2ff1a729bc47fc54721ce7641}{mp\+\_\+hang\+\_\+fn}} (void)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_af56fe88fbf9cfbf266087b46fb30f727}{mp\+\_\+setup\+\_\+gic\+\_\+el0}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a4e00d32981130e36e155ca496bdb4f40}{mp\+\_\+handle\+\_\+gic\+\_\+interrupt\+\_\+el0}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a109b99fdd516a11bdc8a0c9e2c7e29e2}{\+\_\+write\+\_\+number}} (const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&x, Terminal\+Device \&term)
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_ae1832fe8238aa20220bc323e3f07563a}{\+\_\+write\+\_\+number\+\_\+hex}} (const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&x, Terminal\+Device \&term)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_afcfd7643ff71b84ee3e4e8ca8dd27af9}{io\+\_\+detect\+\_\+drive}} (\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \&trait)
+\item 
+\mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} auto \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a69d95cfb527151800b35617d507e9d37}{mm\+\_\+check\+\_\+heap\+\_\+address}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\begin{DoxyCompactList}\small\item\em Check for heap address validity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a8715475dd9ba8b24bcdfd6683d5fea0c}{ldr\+\_\+get\+\_\+platform}} (void) noexcept
+\begin{DoxyCompactList}\small\item\em Get the PEF platform signature according to the compiled architecture. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a47a51cebeb81dc677b945a9dfa33e049}{cred\+\_\+construct\+\_\+token}} (\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}password, const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}in\+\_\+password, \mbox{\hyperlink{class_ne_o_s_1_1_user}{User}} \texorpdfstring{$\ast$}{*}user, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} length)
+\begin{DoxyCompactList}\small\item\em Constructs a password by hashing the password. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr const \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a7f8930d6a60144969ed9aec5483cf4cc}{k\+Port}} = 0x3\+F8
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_h_p_e_t___b_l_o_c_k}{Ne\+OS\+::\+Detail\+::\+HPET\+\_\+\+BLOCK}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a3b7ea873330a50ace01ab29fb1c955f7}{PACKED}}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_adcc0ad51bcc3f97090b9444c8b9e0416}{k\+GICEnabled}} = \mbox{\hyperlink{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}
+\item 
+struct \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a3b7ea873330a50ace01ab29fb1c955f7}{PACKED}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a22a5c8a0391b14f63fb8f7c5025f81e2}{MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation details namespace. 
+
+Implementation details. 
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_detail_aa61dca87de40ff6d68f1f7aad2c99db7}\label{namespace_ne_o_s_1_1_detail_aa61dca87de40ff6d68f1f7aad2c99db7} 
+\index{NeOS::Detail@{NeOS::Detail}!MM\_INFORMATION\_BLOCK\_PTR@{MM\_INFORMATION\_BLOCK\_PTR}}
+\index{MM\_INFORMATION\_BLOCK\_PTR@{MM\_INFORMATION\_BLOCK\_PTR}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{MM\_INFORMATION\_BLOCK\_PTR}{MM\_INFORMATION\_BLOCK\_PTR}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_aa61dca87de40ff6d68f1f7aad2c99db7}{Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+\_\+\+PTR}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_detail_a109b99fdd516a11bdc8a0c9e2c7e29e2}\label{namespace_ne_o_s_1_1_detail_a109b99fdd516a11bdc8a0c9e2c7e29e2} 
+\index{NeOS::Detail@{NeOS::Detail}!\_write\_number@{\_write\_number}}
+\index{\_write\_number@{\_write\_number}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{\_write\_number()}{\_write\_number()}}
+{\footnotesize\ttfamily Terminal\+Device Ne\+OS\+::\+Detail\+::\+\_\+write\+\_\+number (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&}]{x,  }\item[{Terminal\+Device \&}]{term }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_ae1832fe8238aa20220bc323e3f07563a}\label{namespace_ne_o_s_1_1_detail_ae1832fe8238aa20220bc323e3f07563a} 
+\index{NeOS::Detail@{NeOS::Detail}!\_write\_number\_hex@{\_write\_number\_hex}}
+\index{\_write\_number\_hex@{\_write\_number\_hex}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{\_write\_number\_hex()}{\_write\_number\_hex()}}
+{\footnotesize\ttfamily Terminal\+Device Ne\+OS\+::\+Detail\+::\+\_\+write\+\_\+number\+\_\+hex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&}]{x,  }\item[{Terminal\+Device \&}]{term }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a47a51cebeb81dc677b945a9dfa33e049}\label{namespace_ne_o_s_1_1_detail_a47a51cebeb81dc677b945a9dfa33e049} 
+\index{NeOS::Detail@{NeOS::Detail}!cred\_construct\_token@{cred\_construct\_token}}
+\index{cred\_construct\_token@{cred\_construct\_token}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{cred\_construct\_token()}{cred\_construct\_token()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Ne\+OS\+::\+Detail\+::cred\+\_\+construct\+\_\+token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{password,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{in\+\_\+password,  }\item[{\mbox{\hyperlink{class_ne_o_s_1_1_user}{User}} \texorpdfstring{$\ast$}{*}}]{user,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{length }\end{DoxyParamCaption})}
+
+
+
+Constructs a password by hashing the password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & password to hash. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the hashed password 
+\end{DoxyReturn}
+\Hypertarget{namespace_ne_o_s_1_1_detail_a6432e25b15c2024c57bc9b36573d3973}\label{namespace_ne_o_s_1_1_detail_a6432e25b15c2024c57bc9b36573d3973} 
+\index{NeOS::Detail@{NeOS::Detail}!hal\_serial\_init@{hal\_serial\_init}}
+\index{hal\_serial\_init@{hal\_serial\_init}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{hal\_serial\_init()}{hal\_serial\_init()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Int16}} PORT$>$ \\
+bool Ne\+OS\+::\+Detail\+::hal\+\_\+serial\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Init COM1. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_ne_o_s_1_1_detail_afcfd7643ff71b84ee3e4e8ca8dd27af9}\label{namespace_ne_o_s_1_1_detail_afcfd7643ff71b84ee3e4e8ca8dd27af9} 
+\index{NeOS::Detail@{NeOS::Detail}!io\_detect\_drive@{io\_detect\_drive}}
+\index{io\_detect\_drive@{io\_detect\_drive}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{io\_detect\_drive()}{io\_detect\_drive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+Detail\+::io\+\_\+detect\+\_\+drive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \&}]{trait }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a8715475dd9ba8b24bcdfd6683d5fea0c}\label{namespace_ne_o_s_1_1_detail_a8715475dd9ba8b24bcdfd6683d5fea0c} 
+\index{NeOS::Detail@{NeOS::Detail}!ldr\_get\_platform@{ldr\_get\_platform}}
+\index{ldr\_get\_platform@{ldr\_get\_platform}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{ldr\_get\_platform()}{ldr\_get\_platform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+Detail\+::ldr\+\_\+get\+\_\+platform (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Get the PEF platform signature according to the compiled architecture. 
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a69d95cfb527151800b35617d507e9d37}\label{namespace_ne_o_s_1_1_detail_a69d95cfb527151800b35617d507e9d37} 
+\index{NeOS::Detail@{NeOS::Detail}!mm\_check\_heap\_address@{mm\_check\_heap\_address}}
+\index{mm\_check\_heap\_address@{mm\_check\_heap\_address}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{mm\_check\_heap\_address()}{mm\_check\_heap\_address()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} auto Ne\+OS\+::\+Detail\+::mm\+\_\+check\+\_\+heap\+\_\+address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{heap\+\_\+ptr }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}   }
+
+
+
+Check for heap address validity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em heap\+\_\+ptr} & The address\+\_\+ptr to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool if the pointer is valid or not. 
+\end{DoxyReturn}
+Add that check in case we\textquotesingle{}re having an integer underflow. ///\Hypertarget{namespace_ne_o_s_1_1_detail_a4e00d32981130e36e155ca496bdb4f40}\label{namespace_ne_o_s_1_1_detail_a4e00d32981130e36e155ca496bdb4f40} 
+\index{NeOS::Detail@{NeOS::Detail}!mp\_handle\_gic\_interrupt\_el0@{mp\_handle\_gic\_interrupt\_el0}}
+\index{mp\_handle\_gic\_interrupt\_el0@{mp\_handle\_gic\_interrupt\_el0}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{mp\_handle\_gic\_interrupt\_el0()}{mp\_handle\_gic\_interrupt\_el0()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Ne\+OS\+::\+Detail\+::mp\+\_\+handle\+\_\+gic\+\_\+interrupt\+\_\+el0 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a5e353fa2ff1a729bc47fc54721ce7641}\label{namespace_ne_o_s_1_1_detail_a5e353fa2ff1a729bc47fc54721ce7641} 
+\index{NeOS::Detail@{NeOS::Detail}!mp\_hang\_fn@{mp\_hang\_fn}}
+\index{mp\_hang\_fn@{mp\_hang\_fn}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{mp\_hang\_fn()}{mp\_hang\_fn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void Ne\+OS\+::\+Detail\+::mp\+\_\+hang\+\_\+fn (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_af56fe88fbf9cfbf266087b46fb30f727}\label{namespace_ne_o_s_1_1_detail_af56fe88fbf9cfbf266087b46fb30f727} 
+\index{NeOS::Detail@{NeOS::Detail}!mp\_setup\_gic\_el0@{mp\_setup\_gic\_el0}}
+\index{mp\_setup\_gic\_el0@{mp\_setup\_gic\_el0}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{mp\_setup\_gic\_el0()}{mp\_setup\_gic\_el0()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+Detail\+::mp\+\_\+setup\+\_\+gic\+\_\+el0 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a275cc52f09d7ad5c155d5af9ac04b3aa}\label{namespace_ne_o_s_1_1_detail_a275cc52f09d7ad5c155d5af9ac04b3aa} 
+\index{NeOS::Detail@{NeOS::Detail}!sk\_io\_read\_ahci@{sk\_io\_read\_ahci}}
+\index{sk\_io\_read\_ahci@{sk\_io\_read\_ahci}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{sk\_io\_read\_ahci()}{sk\_io\_read\_ahci()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+Detail\+::sk\+\_\+io\+\_\+read\+\_\+ahci (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{self,  }\item[{\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}}]{mnt }\end{DoxyParamCaption})}
+
+
+
+Read AHCI device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & device \\
+\hline
+{\em mnt} & mounted disk. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_ne_o_s_1_1_detail_a435076d327d4c44790f9d05cbf5f8d61}\label{namespace_ne_o_s_1_1_detail_a435076d327d4c44790f9d05cbf5f8d61} 
+\index{NeOS::Detail@{NeOS::Detail}!sk\_io\_write\_ahci@{sk\_io\_write\_ahci}}
+\index{sk\_io\_write\_ahci@{sk\_io\_write\_ahci}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{sk\_io\_write\_ahci()}{sk\_io\_write\_ahci()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+Detail\+::sk\+\_\+io\+\_\+write\+\_\+ahci (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{self,  }\item[{\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}}]{mnt }\end{DoxyParamCaption})}
+
+
+
+Write AHCI device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & device \\
+\hline
+{\em mnt} & mounted disk. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_detail_adcc0ad51bcc3f97090b9444c8b9e0416}\label{namespace_ne_o_s_1_1_detail_adcc0ad51bcc3f97090b9444c8b9e0416} 
+\index{NeOS::Detail@{NeOS::Detail}!kGICEnabled@{kGICEnabled}}
+\index{kGICEnabled@{kGICEnabled}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{kGICEnabled}{kGICEnabled}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Ne\+OS\+::\+Detail\+::k\+GICEnabled = \mbox{\hyperlink{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a7f8930d6a60144969ed9aec5483cf4cc}\label{namespace_ne_o_s_1_1_detail_a7f8930d6a60144969ed9aec5483cf4cc} 
+\index{NeOS::Detail@{NeOS::Detail}!kPort@{kPort}}
+\index{kPort@{kPort}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{kPort}{kPort}}
+{\footnotesize\ttfamily constexpr const \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Ne\+OS\+::\+Detail\+::k\+Port = 0x3\+F8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a22a5c8a0391b14f63fb8f7c5025f81e2}\label{namespace_ne_o_s_1_1_detail_a22a5c8a0391b14f63fb8f7c5025f81e2} 
+\index{NeOS::Detail@{NeOS::Detail}!MM\_INFORMATION\_BLOCK@{MM\_INFORMATION\_BLOCK}}
+\index{MM\_INFORMATION\_BLOCK@{MM\_INFORMATION\_BLOCK}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{MM\_INFORMATION\_BLOCK}{MM\_INFORMATION\_BLOCK}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a3b7ea873330a50ace01ab29fb1c955f7}{PACKED}} \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_detail_a3b7ea873330a50ace01ab29fb1c955f7}\label{namespace_ne_o_s_1_1_detail_a3b7ea873330a50ace01ab29fb1c955f7} 
+\index{NeOS::Detail@{NeOS::Detail}!PACKED@{PACKED}}
+\index{PACKED@{PACKED}!NeOS::Detail@{NeOS::Detail}}
+\doxysubsubsection{\texorpdfstring{PACKED}{PACKED}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_h_p_e_t___b_l_o_c_k}{Ne\+OS\+::\+Detail\+::\+HPET\+\_\+\+BLOCK}} Ne\+OS\+::\+Detail\+::\+PACKED}
+

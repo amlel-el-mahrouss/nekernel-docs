@@ -1,0 +1,69 @@
+\doxysection{Ne\+OS\+::Swap\+Disk Class Reference}
+\hypertarget{class_ne_o_s_1_1_swap_disk}{}\label{class_ne_o_s_1_1_swap_disk}\index{NeOS::SwapDisk@{NeOS::SwapDisk}}
+
+
+This class is a disk swap delegate for any data. available as a syscall too.  
+
+
+
+
+{\ttfamily \#include $<$Swap\+Disk.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_swap_disk_a2651f775e89fa4a728b5e376989acc9b}{Swap\+Disk}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_swap_disk_a49ac54c5e27a9293ec6369c220165c10}{\texorpdfstring{$\sim$}{\string~}\+Swap\+Disk}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_swap_disk_aa321d38951477c6320a5af6d33a1ed1a}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_swap_disk}{Swap\+Disk}})
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{class_ne_o_s_1_1_swap_disk_a9d4d8d3a331e2df5a80c48092a632d0f}{Write}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}fork\+\_\+name, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} fork\+\_\+name\+\_\+len, \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}{SWAP\+\_\+\+DISK\+\_\+\+HEADER}} \texorpdfstring{$\ast$}{*}data, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} data\+\_\+len)
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}{SWAP\+\_\+\+DISK\+\_\+\+HEADER}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_swap_disk_ad4a6f8c415b18452d108d1ad648b4d63}{Read}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}fork\+\_\+name, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} fork\+\_\+name\+\_\+len, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} data\+\_\+len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a disk swap delegate for any data. available as a syscall too. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_swap_disk_a2651f775e89fa4a728b5e376989acc9b}\label{class_ne_o_s_1_1_swap_disk_a2651f775e89fa4a728b5e376989acc9b} 
+\index{NeOS::SwapDisk@{NeOS::SwapDisk}!SwapDisk@{SwapDisk}}
+\index{SwapDisk@{SwapDisk}!NeOS::SwapDisk@{NeOS::SwapDisk}}
+\doxysubsubsection{\texorpdfstring{SwapDisk()}{SwapDisk()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Swap\+Disk\+::\+Swap\+Disk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_swap_disk_a49ac54c5e27a9293ec6369c220165c10}\label{class_ne_o_s_1_1_swap_disk_a49ac54c5e27a9293ec6369c220165c10} 
+\index{NeOS::SwapDisk@{NeOS::SwapDisk}!````~SwapDisk@{\texorpdfstring{$\sim$}{\string~}SwapDisk}}
+\index{````~SwapDisk@{\texorpdfstring{$\sim$}{\string~}SwapDisk}!NeOS::SwapDisk@{NeOS::SwapDisk}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SwapDisk()}{\string~SwapDisk()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Swap\+Disk\+::\texorpdfstring{$\sim$}{\string~}\+Swap\+Disk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_swap_disk_aa321d38951477c6320a5af6d33a1ed1a}\label{class_ne_o_s_1_1_swap_disk_aa321d38951477c6320a5af6d33a1ed1a} 
+\index{NeOS::SwapDisk@{NeOS::SwapDisk}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::SwapDisk@{NeOS::SwapDisk}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Swap\+Disk\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_swap_disk}{Swap\+Disk}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_swap_disk_ad4a6f8c415b18452d108d1ad648b4d63}\label{class_ne_o_s_1_1_swap_disk_ad4a6f8c415b18452d108d1ad648b4d63} 
+\index{NeOS::SwapDisk@{NeOS::SwapDisk}!Read@{Read}}
+\index{Read@{Read}!NeOS::SwapDisk@{NeOS::SwapDisk}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}{SWAP\+\_\+\+DISK\+\_\+\+HEADER}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Swap\+Disk\+::\+Read (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{fork\+\_\+name,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{fork\+\_\+name\+\_\+len,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{data\+\_\+len }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_swap_disk_a9d4d8d3a331e2df5a80c48092a632d0f}\label{class_ne_o_s_1_1_swap_disk_a9d4d8d3a331e2df5a80c48092a632d0f} 
+\index{NeOS::SwapDisk@{NeOS::SwapDisk}!Write@{Write}}
+\index{Write@{Write}!NeOS::SwapDisk@{NeOS::SwapDisk}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Ne\+OS\+::\+Swap\+Disk\+::\+Write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{fork\+\_\+name,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{fork\+\_\+name\+\_\+len,  }\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}{SWAP\+\_\+\+DISK\+\_\+\+HEADER}} \texorpdfstring{$\ast$}{*}}]{data,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{data\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+System\+Kit/\mbox{\hyperlink{_swap_disk_8h}{Swap\+Disk.\+h}}\item 
+dev/kernel/src/\+System/\mbox{\hyperlink{_swap_disk_8cc}{Swap\+Disk.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,620 @@
+\doxysection{dev/kernel/\+FSKit/\+Ne\+FS.h File Reference}
+\hypertarget{_ne_f_s_8h}{}\label{_ne_f_s_8h}\index{dev/kernel/FSKit/NeFS.h@{dev/kernel/FSKit/NeFS.h}}
+{\ttfamily \#include $<$Compiler\+Kit/\+Compiler\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$hint/\+Compiler\+Hint.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Drive\+Mgr.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+KString.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_n_e_f_s___c_a_t_a_l_o_g___s_t_r_u_c_t}{NEFS\+\_\+\+CATALOG\+\_\+\+STRUCT}}
+\begin{DoxyCompactList}\small\item\em Catalog type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t}{NEFS\+\_\+\+FORK\+\_\+\+STRUCT}}
+\begin{DoxyCompactList}\small\item\em Fork type, contains a data page. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k}{NEFS\+\_\+\+ROOT\+\_\+\+PARTITION\+\_\+\+BLOCK}}
+\begin{DoxyCompactList}\small\item\em Partition block type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_ne_file_system_parser}{Ne\+OS\+::\+Ne\+File\+System\+Parser}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_ne_file_system_helper}{Ne\+OS\+::\+Ne\+File\+System\+Helper}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_ne_file_system_journal}{Ne\+OS\+::\+Ne\+File\+System\+Journal}}
+\begin{DoxyCompactList}\small\item\em Journal class for \doxylink{namespace_ne_o_s_1_1_ne_f_s}{Ne\+FS}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_ne_f_s}{Ne\+OS\+::\+Ne\+FS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a9fd6c8996cb4da388f120dc042468e3d}{k\+Ne\+FSInvalid\+Fork}}~(-\/1)
+\begin{DoxyCompactList}\small\item\em New extended File System specification. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a9d0243599fd10b7b98bff5e22afc85b6}{k\+Ne\+FSInvalid\+Catalog}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a87fd947a9f17688b55acd361f064b5ca}{k\+Ne\+FSCatalog\+Name\+Len}}~(256)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_acf55712e23e5c7a0e2013d3b51250528}{k\+Ne\+FSMinimum\+Disk\+Size}}~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(8))
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a3c16daa40382f0900e69a8d1007e4388}{k\+Ne\+FSSector\+Sz}}~(512)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a4d5831600df92d8486f9a1d25772ead4}{k\+Ne\+FSIdent\+Len}}~(8)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_aa63173db3f6fc3ff4c5b65e7cdc398b1}{k\+Ne\+FSIdent}}~"{}  Ne\+FS"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a8d60c2e247b0639e75cbe4ef25db6aed}{k\+Ne\+FSPad\+Len}}~(392)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_abdc4e430522a2fbf030ed47ba8432d7b}{k\+Ne\+FSMeta\+File\+Prefix}}~\textquotesingle{}\$\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a61176cf58288663dd7c6cd9e060aa945}{k\+Ne\+FSVersion\+Integer}}~(0x0129)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a643f45130215fd1e3435cb632d44af15}{k\+Ne\+FSVerion\+String}}~"{}1.\+2.\+9"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a2393558e1b7cb52e826dc3dc5eba4bf3}{k\+Ne\+FSData\+Fork}}~"{}main\+\_\+data"{}
+\begin{DoxyCompactList}\small\item\em Standard fork types. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_adb38e80688645fbc5bd85e1dfee7b1f0}{k\+Ne\+FSResource\+Fork}}~"{}main\+\_\+rsrc"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_acd7b904178b52aea934b247cc7044957}{k\+Ne\+FSFork\+Size}}~(sizeof(\mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t}{NEFS\+\_\+\+FORK\+\_\+\+STRUCT}}))
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_aeb5912e09d7c47a2a83d21f2f68ceaae}{k\+Ne\+FSPartition\+Type\+Standard}}~(7)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a75bc372b238203466e0a3ca4bc6efc1a}{k\+Ne\+FSPartition\+Type\+Page}}~(8)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a4b6dd80513d7a502a5568ac9b41ab345}{k\+Ne\+FSPartition\+Type\+Boot}}~(9)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a65008e286b4d6612cda9d071693effec}{k\+Ne\+FSCatalog\+Kind\+File}}~(1)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a17f401949f09e18ce535b7fa26d60c39}{k\+Ne\+FSCatalog\+Kind\+Dir}}~(2)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a7d07630ed59a41e1c2aa0c48e1190f00}{k\+Ne\+FSCatalog\+Kind\+Alias}}~(3)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_aecef6500f384b6d0f868718088ce9dd6}{k\+Ne\+FSCatalog\+Kind\+Shared}}~(4)
+\begin{DoxyCompactList}\small\item\em Shared between network and/or partitions. Export forks as .zip when copying. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a37441a0bca82f1b2a8b35d9940d89c7f}{k\+Ne\+FSCatalog\+Kind\+Resource}}~(5)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_adb23124acb87c6e7e397861c0be435a5}{k\+Ne\+FSCatalog\+Kind\+Executable}}~(6)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a9de222e13576baf365304a8bcf9465ab}{k\+Ne\+FSCatalog\+Kind\+Page}}~(8)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a6e3b726fc1f4f366fb67af72690d6c56}{k\+Ne\+FSCatalog\+Kind\+Device}}~(9)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_af9b4c8ca0c4e841696ba5e1bc966ded6}{k\+Ne\+FSCatalog\+Kind\+Lock}}~(10)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_abb7eafd57cad4abdc5f8575ab95f0df8}{k\+Ne\+FSCatalog\+Kind\+RLE}}~(11)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_adb53adaef291fb7e2c618e9efd420d44}{k\+Ne\+FSCatalog\+Kind\+Meta\+File}}~(12)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a90e5e65fd9edd53e0cf99a881351a791}{k\+Ne\+FSCatalog\+Kind\+TTF}}~(13)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a15460ff85bffbb0af7d4c82cc9cbcb99}{k\+Ne\+FSCatalog\+Kind\+RIFF}}~(14)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a5628724c5cfa559cadb52ad3eb5c267d}{k\+Ne\+FSCatalog\+Kind\+MPEG}}~(15)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_aa583c67f53d4348a24ef9600583ffae2}{k\+Ne\+FSCatalog\+Kind\+MOFF}}~(16)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a4ae811da1230bd99f58e62486a9316cd}{k\+Ne\+FSSeparator}}~\textquotesingle{}/\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a173c4baa5e001c2b098e93436d37c2f5}{k\+Ne\+FSSeparator\+Alt}}~\textquotesingle{}/\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a47f31c7a1d415d074c699e26a762656a}{k\+Ne\+FSUp\+Dir}}~"{}.."{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_af0e978de0f1c45ae3ba6c0a29b5d1df8}{k\+Ne\+FSRoot}}~"{}/"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a5e71f8d63161660c5e26a110c66cd7e1}{k\+Ne\+FSRoot\+Alt}}~"{}/"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a457433c63a153194ef0fb700eab12535}{k\+Ne\+FSLF}}~\textquotesingle{}\textbackslash{}r\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a20f4f9d6ddd3a480ed565df95b7dcbc0}{k\+Ne\+FSEOF}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_afd4143b6a3696b5f3700038cc5f9fbe8}{k\+Ne\+FSBit\+Width}}~(sizeof(\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}}))
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a02b4eae72bb2568bb24d6a31832a4c4c}{k\+Ne\+FSLba\+Type}}~(\mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}})
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_af90b1a36da8473bdb033363e9ef27474}{k\+Ne\+FSRoot\+Catalog\+Start\+Address}}~(1024)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a5fe8079384c8a6b4f83adbef1bed84fa}{k\+Ne\+FSCatalog\+Start\+Address}}~(\mbox{\hyperlink{_ne_f_s_8h_af90b1a36da8473bdb033363e9ef27474}{k\+Ne\+FSRoot\+Catalog\+Start\+Address}} + sizeof(\mbox{\hyperlink{struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k}{NEFS\+\_\+\+ROOT\+\_\+\+PARTITION\+\_\+\+BLOCK}}))
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_af8da24d04751dd8508c346929085faef}{k\+Resource\+Type\+Dialog}}~(10)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_aeea0cfeb0756651743a012aa2374b45f}{k\+Resource\+Type\+String}}~(11)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a86a7957445741df9a771b7d3d7f328f0}{k\+Resource\+Type\+Menu}}~(12)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a7a700e52f6bcf888e244cd9541241fb6}{k\+Resource\+Type\+Sound}}~(13)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_acccac8730375e914351759fb12ff53fd}{k\+Resource\+Type\+Font}}~(14)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a6212f98c444307a18f8d703b1d79d8bb}{k\+Ne\+FSPart\+Len}}~(32)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a6af88a2969e497e3d0458a9bad03d47b}{k\+Ne\+FSFlag\+Deleted}}~(70)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a68ea2695c4868536b39f0cea3a83dcca}{k\+Ne\+FSFlag\+Unallocated}}~(0)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_abdc83b3461b6e9a5cf5de76d49afba38}{k\+Ne\+FSFlag\+Created}}~(71)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a7de74eb5c4a6672ff23e28bb05ded850}{k\+Ne\+FSMime\+Name\+Len}}~(200)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a2ce15e0241edade3ef3ee8abb3cd1d92}{k\+Ne\+FSFork\+Name\+Len}}~(200)
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a947b77deefc690981ce4fd88efd2ce65}{k\+Ne\+FSFramework\+Ext}}~"{}.fwrk/"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_aab2e8894c850cd41fa7475fbfd5ca161}{k\+Ne\+FSSteps\+Ext}}~"{}.step/"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_a80c8ccfc5522bf72e956b6e92bc6342d}{k\+Ne\+FSApplication\+Ext}}~"{}.app/"{}
+\item 
+\#define \mbox{\hyperlink{_ne_f_s_8h_acc37d54a194ca91606c180f871944b62}{k\+Ne\+FSJournal\+Ext}}~"{}.jrnl"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a749dd6d76b68f5502be64aba13b0e0c0}{k\+Ne\+FSHard\+Drive}} = 0x\+C0
+, \mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a05e30f37a85f331b7d05d3bc0e9991b6}{k\+Ne\+FSSolid\+State\+Drive}} = 0x\+C1
+, \mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25aff308748bccdd9e9512d1af0749da519}{k\+Ne\+FSOptical\+Drive}} = 0x0C
+, \mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a17c8d4f70d6135ae016101417c6fa3fa}{k\+Ne\+FSMass\+Storage\+Device}} = 0x\+CC
+, \newline
+\mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25acab16a01a9fc2c94d9a0450dbdcf0c85}{k\+Ne\+FSScsi\+Drive}} = 0x\+C4
+, \mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a9be166fde8cd3222224d583955258231}{k\+Ne\+FSFlash\+Drive}} = 0x\+C6
+, \mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25aa9f5765d353c8ad72e8a4daf7ebebf0f}{k\+Ne\+FSUnknown}} = 0x\+FF
+, \mbox{\hyperlink{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25ae28c5f5fbd276382aa3927cb79f709f8}{k\+Ne\+FSDrive\+Count}} = 7
+ \}
+\item 
+enum \{ \mbox{\hyperlink{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fceab0d4a3855ba33438d25fecf25f70171b}{k\+Ne\+FSStatus\+Unlocked}} = 0x18
+, \mbox{\hyperlink{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea5708a145bca95639f47f29b4299b97b3}{k\+Ne\+FSStatus\+Locked}}
+, \mbox{\hyperlink{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea34bc8e801039a72304ac3bc229a19077}{k\+Ne\+FSStatus\+Error}}
+, \mbox{\hyperlink{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea5cf8155fae50a6dd868fa0db4c531d10}{k\+Ne\+FSStatus\+Invalid}}
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a1c8361d873c19e4f1e48499da298616ca1cecce53528646a977ca4cdb0d82a98c}{Ne\+OS\+::k\+Ne\+FSSub\+DriveA}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1c8361d873c19e4f1e48499da298616ca865b10e6f15f8c1821bfa2e5d3436249}{Ne\+OS\+::k\+Ne\+FSSub\+DriveB}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1c8361d873c19e4f1e48499da298616ca454aa6aed95afc367cc9c8f66488051f}{Ne\+OS\+::k\+Ne\+FSSub\+DriveC}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1c8361d873c19e4f1e48499da298616caa07032c675ea6e8aa9092e763e754729}{Ne\+OS\+::k\+Ne\+FSSub\+DriveD}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a1c8361d873c19e4f1e48499da298616ca371bcee27807e97d824cffd8bb0877a1}{Ne\+OS\+::k\+Ne\+FSSub\+Drive\+Invalid}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1c8361d873c19e4f1e48499da298616cae1d20aea88c555dac108e9318b4dd441}{Ne\+OS\+::k\+Ne\+FSSub\+Drive\+Count}}
+ \}
+\item 
+enum \{ \mbox{\hyperlink{namespace_ne_o_s_adb3d0677ed96af98018be66a736661aeae8fc4809f555dd26d5cca55895701253}{Ne\+OS\+::k\+Ne\+FSRsrc\+Fork\+Kind}} = 0
+, \mbox{\hyperlink{namespace_ne_o_s_adb3d0677ed96af98018be66a736661aea37511fef57938327d901589acb95a138}{Ne\+OS\+::k\+Ne\+FSData\+Fork\+Kind}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Resource fork kind. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{namespace_ne_o_s_1_1_ne_f_s_a1459f22cf89619452603b80628c75275}{Ne\+OS\+::\+Ne\+FS\+::fs\+\_\+init\+\_\+nefs}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_ne_f_s_8h_a80c8ccfc5522bf72e956b6e92bc6342d}\label{_ne_f_s_8h_a80c8ccfc5522bf72e956b6e92bc6342d} 
+\index{NeFS.h@{NeFS.h}!kNeFSApplicationExt@{kNeFSApplicationExt}}
+\index{kNeFSApplicationExt@{kNeFSApplicationExt}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSApplicationExt}{kNeFSApplicationExt}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSApplication\+Ext~"{}.app/"{}}
+
+\Hypertarget{_ne_f_s_8h_afd4143b6a3696b5f3700038cc5f9fbe8}\label{_ne_f_s_8h_afd4143b6a3696b5f3700038cc5f9fbe8} 
+\index{NeFS.h@{NeFS.h}!kNeFSBitWidth@{kNeFSBitWidth}}
+\index{kNeFSBitWidth@{kNeFSBitWidth}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSBitWidth}{kNeFSBitWidth}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSBit\+Width~(sizeof(\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}}))}
+
+\Hypertarget{_ne_f_s_8h_a7d07630ed59a41e1c2aa0c48e1190f00}\label{_ne_f_s_8h_a7d07630ed59a41e1c2aa0c48e1190f00} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindAlias@{kNeFSCatalogKindAlias}}
+\index{kNeFSCatalogKindAlias@{kNeFSCatalogKindAlias}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindAlias}{kNeFSCatalogKindAlias}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Alias~(3)}
+
+\Hypertarget{_ne_f_s_8h_a6e3b726fc1f4f366fb67af72690d6c56}\label{_ne_f_s_8h_a6e3b726fc1f4f366fb67af72690d6c56} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindDevice@{kNeFSCatalogKindDevice}}
+\index{kNeFSCatalogKindDevice@{kNeFSCatalogKindDevice}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindDevice}{kNeFSCatalogKindDevice}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Device~(9)}
+
+\Hypertarget{_ne_f_s_8h_a17f401949f09e18ce535b7fa26d60c39}\label{_ne_f_s_8h_a17f401949f09e18ce535b7fa26d60c39} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindDir@{kNeFSCatalogKindDir}}
+\index{kNeFSCatalogKindDir@{kNeFSCatalogKindDir}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindDir}{kNeFSCatalogKindDir}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Dir~(2)}
+
+\Hypertarget{_ne_f_s_8h_adb23124acb87c6e7e397861c0be435a5}\label{_ne_f_s_8h_adb23124acb87c6e7e397861c0be435a5} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindExecutable@{kNeFSCatalogKindExecutable}}
+\index{kNeFSCatalogKindExecutable@{kNeFSCatalogKindExecutable}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindExecutable}{kNeFSCatalogKindExecutable}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Executable~(6)}
+
+\Hypertarget{_ne_f_s_8h_a65008e286b4d6612cda9d071693effec}\label{_ne_f_s_8h_a65008e286b4d6612cda9d071693effec} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindFile@{kNeFSCatalogKindFile}}
+\index{kNeFSCatalogKindFile@{kNeFSCatalogKindFile}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindFile}{kNeFSCatalogKindFile}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+File~(1)}
+
+\Hypertarget{_ne_f_s_8h_af9b4c8ca0c4e841696ba5e1bc966ded6}\label{_ne_f_s_8h_af9b4c8ca0c4e841696ba5e1bc966ded6} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindLock@{kNeFSCatalogKindLock}}
+\index{kNeFSCatalogKindLock@{kNeFSCatalogKindLock}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindLock}{kNeFSCatalogKindLock}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Lock~(10)}
+
+\Hypertarget{_ne_f_s_8h_adb53adaef291fb7e2c618e9efd420d44}\label{_ne_f_s_8h_adb53adaef291fb7e2c618e9efd420d44} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindMetaFile@{kNeFSCatalogKindMetaFile}}
+\index{kNeFSCatalogKindMetaFile@{kNeFSCatalogKindMetaFile}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindMetaFile}{kNeFSCatalogKindMetaFile}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Meta\+File~(12)}
+
+\Hypertarget{_ne_f_s_8h_aa583c67f53d4348a24ef9600583ffae2}\label{_ne_f_s_8h_aa583c67f53d4348a24ef9600583ffae2} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindMOFF@{kNeFSCatalogKindMOFF}}
+\index{kNeFSCatalogKindMOFF@{kNeFSCatalogKindMOFF}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindMOFF}{kNeFSCatalogKindMOFF}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+MOFF~(16)}
+
+\Hypertarget{_ne_f_s_8h_a5628724c5cfa559cadb52ad3eb5c267d}\label{_ne_f_s_8h_a5628724c5cfa559cadb52ad3eb5c267d} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindMPEG@{kNeFSCatalogKindMPEG}}
+\index{kNeFSCatalogKindMPEG@{kNeFSCatalogKindMPEG}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindMPEG}{kNeFSCatalogKindMPEG}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+MPEG~(15)}
+
+\Hypertarget{_ne_f_s_8h_a9de222e13576baf365304a8bcf9465ab}\label{_ne_f_s_8h_a9de222e13576baf365304a8bcf9465ab} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindPage@{kNeFSCatalogKindPage}}
+\index{kNeFSCatalogKindPage@{kNeFSCatalogKindPage}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindPage}{kNeFSCatalogKindPage}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Page~(8)}
+
+\Hypertarget{_ne_f_s_8h_a37441a0bca82f1b2a8b35d9940d89c7f}\label{_ne_f_s_8h_a37441a0bca82f1b2a8b35d9940d89c7f} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindResource@{kNeFSCatalogKindResource}}
+\index{kNeFSCatalogKindResource@{kNeFSCatalogKindResource}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindResource}{kNeFSCatalogKindResource}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Resource~(5)}
+
+\Hypertarget{_ne_f_s_8h_a15460ff85bffbb0af7d4c82cc9cbcb99}\label{_ne_f_s_8h_a15460ff85bffbb0af7d4c82cc9cbcb99} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindRIFF@{kNeFSCatalogKindRIFF}}
+\index{kNeFSCatalogKindRIFF@{kNeFSCatalogKindRIFF}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindRIFF}{kNeFSCatalogKindRIFF}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+RIFF~(14)}
+
+\Hypertarget{_ne_f_s_8h_abb7eafd57cad4abdc5f8575ab95f0df8}\label{_ne_f_s_8h_abb7eafd57cad4abdc5f8575ab95f0df8} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindRLE@{kNeFSCatalogKindRLE}}
+\index{kNeFSCatalogKindRLE@{kNeFSCatalogKindRLE}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindRLE}{kNeFSCatalogKindRLE}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+RLE~(11)}
+
+\Hypertarget{_ne_f_s_8h_aecef6500f384b6d0f868718088ce9dd6}\label{_ne_f_s_8h_aecef6500f384b6d0f868718088ce9dd6} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindShared@{kNeFSCatalogKindShared}}
+\index{kNeFSCatalogKindShared@{kNeFSCatalogKindShared}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindShared}{kNeFSCatalogKindShared}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+Shared~(4)}
+
+
+
+Shared between network and/or partitions. Export forks as .zip when copying. 
+
+\Hypertarget{_ne_f_s_8h_a90e5e65fd9edd53e0cf99a881351a791}\label{_ne_f_s_8h_a90e5e65fd9edd53e0cf99a881351a791} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogKindTTF@{kNeFSCatalogKindTTF}}
+\index{kNeFSCatalogKindTTF@{kNeFSCatalogKindTTF}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogKindTTF}{kNeFSCatalogKindTTF}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Kind\+TTF~(13)}
+
+\Hypertarget{_ne_f_s_8h_a87fd947a9f17688b55acd361f064b5ca}\label{_ne_f_s_8h_a87fd947a9f17688b55acd361f064b5ca} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogNameLen@{kNeFSCatalogNameLen}}
+\index{kNeFSCatalogNameLen@{kNeFSCatalogNameLen}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogNameLen}{kNeFSCatalogNameLen}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Name\+Len~(256)}
+
+\Hypertarget{_ne_f_s_8h_a5fe8079384c8a6b4f83adbef1bed84fa}\label{_ne_f_s_8h_a5fe8079384c8a6b4f83adbef1bed84fa} 
+\index{NeFS.h@{NeFS.h}!kNeFSCatalogStartAddress@{kNeFSCatalogStartAddress}}
+\index{kNeFSCatalogStartAddress@{kNeFSCatalogStartAddress}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSCatalogStartAddress}{kNeFSCatalogStartAddress}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSCatalog\+Start\+Address~(\mbox{\hyperlink{_ne_f_s_8h_af90b1a36da8473bdb033363e9ef27474}{k\+Ne\+FSRoot\+Catalog\+Start\+Address}} + sizeof(\mbox{\hyperlink{struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k}{NEFS\+\_\+\+ROOT\+\_\+\+PARTITION\+\_\+\+BLOCK}}))}
+
+\Hypertarget{_ne_f_s_8h_a2393558e1b7cb52e826dc3dc5eba4bf3}\label{_ne_f_s_8h_a2393558e1b7cb52e826dc3dc5eba4bf3} 
+\index{NeFS.h@{NeFS.h}!kNeFSDataFork@{kNeFSDataFork}}
+\index{kNeFSDataFork@{kNeFSDataFork}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSDataFork}{kNeFSDataFork}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSData\+Fork~"{}main\+\_\+data"{}}
+
+
+
+Standard fork types. 
+
+\Hypertarget{_ne_f_s_8h_a20f4f9d6ddd3a480ed565df95b7dcbc0}\label{_ne_f_s_8h_a20f4f9d6ddd3a480ed565df95b7dcbc0} 
+\index{NeFS.h@{NeFS.h}!kNeFSEOF@{kNeFSEOF}}
+\index{kNeFSEOF@{kNeFSEOF}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSEOF}{kNeFSEOF}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSEOF~(-\/1)}
+
+\Hypertarget{_ne_f_s_8h_abdc83b3461b6e9a5cf5de76d49afba38}\label{_ne_f_s_8h_abdc83b3461b6e9a5cf5de76d49afba38} 
+\index{NeFS.h@{NeFS.h}!kNeFSFlagCreated@{kNeFSFlagCreated}}
+\index{kNeFSFlagCreated@{kNeFSFlagCreated}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSFlagCreated}{kNeFSFlagCreated}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSFlag\+Created~(71)}
+
+\Hypertarget{_ne_f_s_8h_a6af88a2969e497e3d0458a9bad03d47b}\label{_ne_f_s_8h_a6af88a2969e497e3d0458a9bad03d47b} 
+\index{NeFS.h@{NeFS.h}!kNeFSFlagDeleted@{kNeFSFlagDeleted}}
+\index{kNeFSFlagDeleted@{kNeFSFlagDeleted}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSFlagDeleted}{kNeFSFlagDeleted}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSFlag\+Deleted~(70)}
+
+\Hypertarget{_ne_f_s_8h_a68ea2695c4868536b39f0cea3a83dcca}\label{_ne_f_s_8h_a68ea2695c4868536b39f0cea3a83dcca} 
+\index{NeFS.h@{NeFS.h}!kNeFSFlagUnallocated@{kNeFSFlagUnallocated}}
+\index{kNeFSFlagUnallocated@{kNeFSFlagUnallocated}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSFlagUnallocated}{kNeFSFlagUnallocated}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSFlag\+Unallocated~(0)}
+
+\Hypertarget{_ne_f_s_8h_a2ce15e0241edade3ef3ee8abb3cd1d92}\label{_ne_f_s_8h_a2ce15e0241edade3ef3ee8abb3cd1d92} 
+\index{NeFS.h@{NeFS.h}!kNeFSForkNameLen@{kNeFSForkNameLen}}
+\index{kNeFSForkNameLen@{kNeFSForkNameLen}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSForkNameLen}{kNeFSForkNameLen}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSFork\+Name\+Len~(200)}
+
+\Hypertarget{_ne_f_s_8h_acd7b904178b52aea934b247cc7044957}\label{_ne_f_s_8h_acd7b904178b52aea934b247cc7044957} 
+\index{NeFS.h@{NeFS.h}!kNeFSForkSize@{kNeFSForkSize}}
+\index{kNeFSForkSize@{kNeFSForkSize}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSForkSize}{kNeFSForkSize}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSFork\+Size~(sizeof(\mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t}{NEFS\+\_\+\+FORK\+\_\+\+STRUCT}}))}
+
+\Hypertarget{_ne_f_s_8h_a947b77deefc690981ce4fd88efd2ce65}\label{_ne_f_s_8h_a947b77deefc690981ce4fd88efd2ce65} 
+\index{NeFS.h@{NeFS.h}!kNeFSFrameworkExt@{kNeFSFrameworkExt}}
+\index{kNeFSFrameworkExt@{kNeFSFrameworkExt}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSFrameworkExt}{kNeFSFrameworkExt}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSFramework\+Ext~"{}.fwrk/"{}}
+
+\Hypertarget{_ne_f_s_8h_aa63173db3f6fc3ff4c5b65e7cdc398b1}\label{_ne_f_s_8h_aa63173db3f6fc3ff4c5b65e7cdc398b1} 
+\index{NeFS.h@{NeFS.h}!kNeFSIdent@{kNeFSIdent}}
+\index{kNeFSIdent@{kNeFSIdent}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSIdent}{kNeFSIdent}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSIdent~"{}  Ne\+FS"{}}
+
+\Hypertarget{_ne_f_s_8h_a4d5831600df92d8486f9a1d25772ead4}\label{_ne_f_s_8h_a4d5831600df92d8486f9a1d25772ead4} 
+\index{NeFS.h@{NeFS.h}!kNeFSIdentLen@{kNeFSIdentLen}}
+\index{kNeFSIdentLen@{kNeFSIdentLen}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSIdentLen}{kNeFSIdentLen}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSIdent\+Len~(8)}
+
+\Hypertarget{_ne_f_s_8h_a9d0243599fd10b7b98bff5e22afc85b6}\label{_ne_f_s_8h_a9d0243599fd10b7b98bff5e22afc85b6} 
+\index{NeFS.h@{NeFS.h}!kNeFSInvalidCatalog@{kNeFSInvalidCatalog}}
+\index{kNeFSInvalidCatalog@{kNeFSInvalidCatalog}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSInvalidCatalog}{kNeFSInvalidCatalog}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSInvalid\+Catalog~(-\/1)}
+
+\Hypertarget{_ne_f_s_8h_a9fd6c8996cb4da388f120dc042468e3d}\label{_ne_f_s_8h_a9fd6c8996cb4da388f120dc042468e3d} 
+\index{NeFS.h@{NeFS.h}!kNeFSInvalidFork@{kNeFSInvalidFork}}
+\index{kNeFSInvalidFork@{kNeFSInvalidFork}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSInvalidFork}{kNeFSInvalidFork}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSInvalid\+Fork~(-\/1)}
+
+
+
+New extended File System specification. 
+
+\begin{DoxyAuthor}{Author}
+Amlal EL Mahrouss (Amlal EL Mahrouss, amlalelmahrouss at icloud dot com) 
+\end{DoxyAuthor}
+\Hypertarget{_ne_f_s_8h_acc37d54a194ca91606c180f871944b62}\label{_ne_f_s_8h_acc37d54a194ca91606c180f871944b62} 
+\index{NeFS.h@{NeFS.h}!kNeFSJournalExt@{kNeFSJournalExt}}
+\index{kNeFSJournalExt@{kNeFSJournalExt}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSJournalExt}{kNeFSJournalExt}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSJournal\+Ext~"{}.jrnl"{}}
+
+\Hypertarget{_ne_f_s_8h_a02b4eae72bb2568bb24d6a31832a4c4c}\label{_ne_f_s_8h_a02b4eae72bb2568bb24d6a31832a4c4c} 
+\index{NeFS.h@{NeFS.h}!kNeFSLbaType@{kNeFSLbaType}}
+\index{kNeFSLbaType@{kNeFSLbaType}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSLbaType}{kNeFSLbaType}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSLba\+Type~(\mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}})}
+
+\Hypertarget{_ne_f_s_8h_a457433c63a153194ef0fb700eab12535}\label{_ne_f_s_8h_a457433c63a153194ef0fb700eab12535} 
+\index{NeFS.h@{NeFS.h}!kNeFSLF@{kNeFSLF}}
+\index{kNeFSLF@{kNeFSLF}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSLF}{kNeFSLF}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSLF~\textquotesingle{}\textbackslash{}r\textquotesingle{}}
+
+\Hypertarget{_ne_f_s_8h_abdc4e430522a2fbf030ed47ba8432d7b}\label{_ne_f_s_8h_abdc4e430522a2fbf030ed47ba8432d7b} 
+\index{NeFS.h@{NeFS.h}!kNeFSMetaFilePrefix@{kNeFSMetaFilePrefix}}
+\index{kNeFSMetaFilePrefix@{kNeFSMetaFilePrefix}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSMetaFilePrefix}{kNeFSMetaFilePrefix}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSMeta\+File\+Prefix~\textquotesingle{}\$\textquotesingle{}}
+
+\Hypertarget{_ne_f_s_8h_a7de74eb5c4a6672ff23e28bb05ded850}\label{_ne_f_s_8h_a7de74eb5c4a6672ff23e28bb05ded850} 
+\index{NeFS.h@{NeFS.h}!kNeFSMimeNameLen@{kNeFSMimeNameLen}}
+\index{kNeFSMimeNameLen@{kNeFSMimeNameLen}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSMimeNameLen}{kNeFSMimeNameLen}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSMime\+Name\+Len~(200)}
+
+\Hypertarget{_ne_f_s_8h_acf55712e23e5c7a0e2013d3b51250528}\label{_ne_f_s_8h_acf55712e23e5c7a0e2013d3b51250528} 
+\index{NeFS.h@{NeFS.h}!kNeFSMinimumDiskSize@{kNeFSMinimumDiskSize}}
+\index{kNeFSMinimumDiskSize@{kNeFSMinimumDiskSize}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSMinimumDiskSize}{kNeFSMinimumDiskSize}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSMinimum\+Disk\+Size~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(8))}
+
+\Hypertarget{_ne_f_s_8h_a8d60c2e247b0639e75cbe4ef25db6aed}\label{_ne_f_s_8h_a8d60c2e247b0639e75cbe4ef25db6aed} 
+\index{NeFS.h@{NeFS.h}!kNeFSPadLen@{kNeFSPadLen}}
+\index{kNeFSPadLen@{kNeFSPadLen}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSPadLen}{kNeFSPadLen}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSPad\+Len~(392)}
+
+\Hypertarget{_ne_f_s_8h_a4b6dd80513d7a502a5568ac9b41ab345}\label{_ne_f_s_8h_a4b6dd80513d7a502a5568ac9b41ab345} 
+\index{NeFS.h@{NeFS.h}!kNeFSPartitionTypeBoot@{kNeFSPartitionTypeBoot}}
+\index{kNeFSPartitionTypeBoot@{kNeFSPartitionTypeBoot}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSPartitionTypeBoot}{kNeFSPartitionTypeBoot}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSPartition\+Type\+Boot~(9)}
+
+\Hypertarget{_ne_f_s_8h_a75bc372b238203466e0a3ca4bc6efc1a}\label{_ne_f_s_8h_a75bc372b238203466e0a3ca4bc6efc1a} 
+\index{NeFS.h@{NeFS.h}!kNeFSPartitionTypePage@{kNeFSPartitionTypePage}}
+\index{kNeFSPartitionTypePage@{kNeFSPartitionTypePage}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSPartitionTypePage}{kNeFSPartitionTypePage}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSPartition\+Type\+Page~(8)}
+
+\Hypertarget{_ne_f_s_8h_aeb5912e09d7c47a2a83d21f2f68ceaae}\label{_ne_f_s_8h_aeb5912e09d7c47a2a83d21f2f68ceaae} 
+\index{NeFS.h@{NeFS.h}!kNeFSPartitionTypeStandard@{kNeFSPartitionTypeStandard}}
+\index{kNeFSPartitionTypeStandard@{kNeFSPartitionTypeStandard}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSPartitionTypeStandard}{kNeFSPartitionTypeStandard}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSPartition\+Type\+Standard~(7)}
+
+\Hypertarget{_ne_f_s_8h_a6212f98c444307a18f8d703b1d79d8bb}\label{_ne_f_s_8h_a6212f98c444307a18f8d703b1d79d8bb} 
+\index{NeFS.h@{NeFS.h}!kNeFSPartLen@{kNeFSPartLen}}
+\index{kNeFSPartLen@{kNeFSPartLen}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSPartLen}{kNeFSPartLen}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSPart\+Len~(32)}
+
+\Hypertarget{_ne_f_s_8h_adb38e80688645fbc5bd85e1dfee7b1f0}\label{_ne_f_s_8h_adb38e80688645fbc5bd85e1dfee7b1f0} 
+\index{NeFS.h@{NeFS.h}!kNeFSResourceFork@{kNeFSResourceFork}}
+\index{kNeFSResourceFork@{kNeFSResourceFork}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSResourceFork}{kNeFSResourceFork}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSResource\+Fork~"{}main\+\_\+rsrc"{}}
+
+\Hypertarget{_ne_f_s_8h_af0e978de0f1c45ae3ba6c0a29b5d1df8}\label{_ne_f_s_8h_af0e978de0f1c45ae3ba6c0a29b5d1df8} 
+\index{NeFS.h@{NeFS.h}!kNeFSRoot@{kNeFSRoot}}
+\index{kNeFSRoot@{kNeFSRoot}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSRoot}{kNeFSRoot}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSRoot~"{}/"{}}
+
+\Hypertarget{_ne_f_s_8h_a5e71f8d63161660c5e26a110c66cd7e1}\label{_ne_f_s_8h_a5e71f8d63161660c5e26a110c66cd7e1} 
+\index{NeFS.h@{NeFS.h}!kNeFSRootAlt@{kNeFSRootAlt}}
+\index{kNeFSRootAlt@{kNeFSRootAlt}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSRootAlt}{kNeFSRootAlt}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSRoot\+Alt~"{}/"{}}
+
+\Hypertarget{_ne_f_s_8h_af90b1a36da8473bdb033363e9ef27474}\label{_ne_f_s_8h_af90b1a36da8473bdb033363e9ef27474} 
+\index{NeFS.h@{NeFS.h}!kNeFSRootCatalogStartAddress@{kNeFSRootCatalogStartAddress}}
+\index{kNeFSRootCatalogStartAddress@{kNeFSRootCatalogStartAddress}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSRootCatalogStartAddress}{kNeFSRootCatalogStartAddress}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSRoot\+Catalog\+Start\+Address~(1024)}
+
+\begin{DoxyNote}{Note}
+Start after the partition map header. (Virtual addressing) 
+\end{DoxyNote}
+\Hypertarget{_ne_f_s_8h_a3c16daa40382f0900e69a8d1007e4388}\label{_ne_f_s_8h_a3c16daa40382f0900e69a8d1007e4388} 
+\index{NeFS.h@{NeFS.h}!kNeFSSectorSz@{kNeFSSectorSz}}
+\index{kNeFSSectorSz@{kNeFSSectorSz}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSSectorSz}{kNeFSSectorSz}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSSector\+Sz~(512)}
+
+\Hypertarget{_ne_f_s_8h_a4ae811da1230bd99f58e62486a9316cd}\label{_ne_f_s_8h_a4ae811da1230bd99f58e62486a9316cd} 
+\index{NeFS.h@{NeFS.h}!kNeFSSeparator@{kNeFSSeparator}}
+\index{kNeFSSeparator@{kNeFSSeparator}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSSeparator}{kNeFSSeparator}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSSeparator~\textquotesingle{}/\textquotesingle{}}
+
+\Hypertarget{_ne_f_s_8h_a173c4baa5e001c2b098e93436d37c2f5}\label{_ne_f_s_8h_a173c4baa5e001c2b098e93436d37c2f5} 
+\index{NeFS.h@{NeFS.h}!kNeFSSeparatorAlt@{kNeFSSeparatorAlt}}
+\index{kNeFSSeparatorAlt@{kNeFSSeparatorAlt}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSSeparatorAlt}{kNeFSSeparatorAlt}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSSeparator\+Alt~\textquotesingle{}/\textquotesingle{}}
+
+\Hypertarget{_ne_f_s_8h_aab2e8894c850cd41fa7475fbfd5ca161}\label{_ne_f_s_8h_aab2e8894c850cd41fa7475fbfd5ca161} 
+\index{NeFS.h@{NeFS.h}!kNeFSStepsExt@{kNeFSStepsExt}}
+\index{kNeFSStepsExt@{kNeFSStepsExt}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSStepsExt}{kNeFSStepsExt}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSSteps\+Ext~"{}.step/"{}}
+
+\Hypertarget{_ne_f_s_8h_a47f31c7a1d415d074c699e26a762656a}\label{_ne_f_s_8h_a47f31c7a1d415d074c699e26a762656a} 
+\index{NeFS.h@{NeFS.h}!kNeFSUpDir@{kNeFSUpDir}}
+\index{kNeFSUpDir@{kNeFSUpDir}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSUpDir}{kNeFSUpDir}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSUp\+Dir~"{}.."{}}
+
+\Hypertarget{_ne_f_s_8h_a643f45130215fd1e3435cb632d44af15}\label{_ne_f_s_8h_a643f45130215fd1e3435cb632d44af15} 
+\index{NeFS.h@{NeFS.h}!kNeFSVerionString@{kNeFSVerionString}}
+\index{kNeFSVerionString@{kNeFSVerionString}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSVerionString}{kNeFSVerionString}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSVerion\+String~"{}1.\+2.\+9"{}}
+
+\Hypertarget{_ne_f_s_8h_a61176cf58288663dd7c6cd9e060aa945}\label{_ne_f_s_8h_a61176cf58288663dd7c6cd9e060aa945} 
+\index{NeFS.h@{NeFS.h}!kNeFSVersionInteger@{kNeFSVersionInteger}}
+\index{kNeFSVersionInteger@{kNeFSVersionInteger}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kNeFSVersionInteger}{kNeFSVersionInteger}}
+{\footnotesize\ttfamily \#define k\+Ne\+FSVersion\+Integer~(0x0129)}
+
+\Hypertarget{_ne_f_s_8h_af8da24d04751dd8508c346929085faef}\label{_ne_f_s_8h_af8da24d04751dd8508c346929085faef} 
+\index{NeFS.h@{NeFS.h}!kResourceTypeDialog@{kResourceTypeDialog}}
+\index{kResourceTypeDialog@{kResourceTypeDialog}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kResourceTypeDialog}{kResourceTypeDialog}}
+{\footnotesize\ttfamily \#define k\+Resource\+Type\+Dialog~(10)}
+
+\Hypertarget{_ne_f_s_8h_acccac8730375e914351759fb12ff53fd}\label{_ne_f_s_8h_acccac8730375e914351759fb12ff53fd} 
+\index{NeFS.h@{NeFS.h}!kResourceTypeFont@{kResourceTypeFont}}
+\index{kResourceTypeFont@{kResourceTypeFont}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kResourceTypeFont}{kResourceTypeFont}}
+{\footnotesize\ttfamily \#define k\+Resource\+Type\+Font~(14)}
+
+\Hypertarget{_ne_f_s_8h_a86a7957445741df9a771b7d3d7f328f0}\label{_ne_f_s_8h_a86a7957445741df9a771b7d3d7f328f0} 
+\index{NeFS.h@{NeFS.h}!kResourceTypeMenu@{kResourceTypeMenu}}
+\index{kResourceTypeMenu@{kResourceTypeMenu}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kResourceTypeMenu}{kResourceTypeMenu}}
+{\footnotesize\ttfamily \#define k\+Resource\+Type\+Menu~(12)}
+
+\Hypertarget{_ne_f_s_8h_a7a700e52f6bcf888e244cd9541241fb6}\label{_ne_f_s_8h_a7a700e52f6bcf888e244cd9541241fb6} 
+\index{NeFS.h@{NeFS.h}!kResourceTypeSound@{kResourceTypeSound}}
+\index{kResourceTypeSound@{kResourceTypeSound}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kResourceTypeSound}{kResourceTypeSound}}
+{\footnotesize\ttfamily \#define k\+Resource\+Type\+Sound~(13)}
+
+\Hypertarget{_ne_f_s_8h_aeea0cfeb0756651743a012aa2374b45f}\label{_ne_f_s_8h_aeea0cfeb0756651743a012aa2374b45f} 
+\index{NeFS.h@{NeFS.h}!kResourceTypeString@{kResourceTypeString}}
+\index{kResourceTypeString@{kResourceTypeString}!NeFS.h@{NeFS.h}}
+\doxysubsubsection{\texorpdfstring{kResourceTypeString}{kResourceTypeString}}
+{\footnotesize\ttfamily \#define k\+Resource\+Type\+String~(11)}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSHardDrive@{kNeFSHardDrive}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSHardDrive@{kNeFSHardDrive}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a749dd6d76b68f5502be64aba13b0e0c0}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a749dd6d76b68f5502be64aba13b0e0c0} 
+k\+Ne\+FSHard\+Drive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSSolidStateDrive@{kNeFSSolidStateDrive}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSSolidStateDrive@{kNeFSSolidStateDrive}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a05e30f37a85f331b7d05d3bc0e9991b6}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a05e30f37a85f331b7d05d3bc0e9991b6} 
+k\+Ne\+FSSolid\+State\+Drive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSOpticalDrive@{kNeFSOpticalDrive}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSOpticalDrive@{kNeFSOpticalDrive}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25aff308748bccdd9e9512d1af0749da519}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25aff308748bccdd9e9512d1af0749da519} 
+k\+Ne\+FSOptical\+Drive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSMassStorageDevice@{kNeFSMassStorageDevice}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSMassStorageDevice@{kNeFSMassStorageDevice}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a17c8d4f70d6135ae016101417c6fa3fa}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a17c8d4f70d6135ae016101417c6fa3fa} 
+k\+Ne\+FSMass\+Storage\+Device&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSScsiDrive@{kNeFSScsiDrive}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSScsiDrive@{kNeFSScsiDrive}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25acab16a01a9fc2c94d9a0450dbdcf0c85}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25acab16a01a9fc2c94d9a0450dbdcf0c85} 
+k\+Ne\+FSScsi\+Drive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSFlashDrive@{kNeFSFlashDrive}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSFlashDrive@{kNeFSFlashDrive}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a9be166fde8cd3222224d583955258231}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25a9be166fde8cd3222224d583955258231} 
+k\+Ne\+FSFlash\+Drive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSUnknown@{kNeFSUnknown}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSUnknown@{kNeFSUnknown}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25aa9f5765d353c8ad72e8a4daf7ebebf0f}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25aa9f5765d353c8ad72e8a4daf7ebebf0f} 
+k\+Ne\+FSUnknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSDriveCount@{kNeFSDriveCount}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSDriveCount@{kNeFSDriveCount}}}\Hypertarget{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25ae28c5f5fbd276382aa3927cb79f709f8}\label{_ne_f_s_8h_aba01db17f4a2bfbc3db60dc172972a25ae28c5f5fbd276382aa3927cb79f709f8} 
+k\+Ne\+FSDrive\+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fce}\label{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fce} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSStatusUnlocked@{kNeFSStatusUnlocked}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSStatusUnlocked@{kNeFSStatusUnlocked}}}\Hypertarget{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fceab0d4a3855ba33438d25fecf25f70171b}\label{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fceab0d4a3855ba33438d25fecf25f70171b} 
+k\+Ne\+FSStatus\+Unlocked&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSStatusLocked@{kNeFSStatusLocked}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSStatusLocked@{kNeFSStatusLocked}}}\Hypertarget{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea5708a145bca95639f47f29b4299b97b3}\label{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea5708a145bca95639f47f29b4299b97b3} 
+k\+Ne\+FSStatus\+Locked&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSStatusError@{kNeFSStatusError}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSStatusError@{kNeFSStatusError}}}\Hypertarget{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea34bc8e801039a72304ac3bc229a19077}\label{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea34bc8e801039a72304ac3bc229a19077} 
+k\+Ne\+FSStatus\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNeFSStatusInvalid@{kNeFSStatusInvalid}!NeFS.h@{NeFS.h}}\index{NeFS.h@{NeFS.h}!kNeFSStatusInvalid@{kNeFSStatusInvalid}}}\Hypertarget{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea5cf8155fae50a6dd868fa0db4c531d10}\label{_ne_f_s_8h_aaf105ae5beaca1dee30ae54530691fcea5cf8155fae50a6dd868fa0db4c531d10} 
+k\+Ne\+FSStatus\+Invalid&\\
+\hline
+
+\end{DoxyEnumFields}

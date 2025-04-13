@@ -1,0 +1,66 @@
+\doxysection{dev/kernel/\+New\+Kit/\+New.h File Reference}
+\hypertarget{_new_8h}{}\label{_new_8h}\index{dev/kernel/NewKit/New.h@{dev/kernel/NewKit/New.h}}
+{\ttfamily \#include $<$Kernel\+Kit/\+Memory\+Mgr.\+h$>$}\newline
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+\_\+\+SIZE\+\_\+\+TYPE\+\_\+\+\_\+ \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_new_8h_aa284d28f730d3338d26fd2781571ebbb}{operator new}} (\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} ptr)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_new_8h_ae856bca313c6289c220b4fe4de8266d2}{operator new\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} ptr)
+\item 
+void \mbox{\hyperlink{_new_8h_a3d97a7e2a0208075b4b37328c96ed390}{operator delete}} (void \texorpdfstring{$\ast$}{*}ptr)
+\item 
+void \mbox{\hyperlink{_new_8h_a7baa8446febbbfab1d55cd4d1ffb1226}{operator delete}} (void \texorpdfstring{$\ast$}{*}ptr, unsigned long)
+\item 
+void \mbox{\hyperlink{_new_8h_a1d8b2d6f17242ae0d182b0f7a98ba54f}{operator delete\mbox{[}$\,$\mbox{]}}} (void \texorpdfstring{$\ast$}{*}ptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}\label{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e} 
+\index{New.h@{New.h}!size\_t@{size\_t}}
+\index{size\_t@{size\_t}!New.h@{New.h}}
+\doxysubsubsection{\texorpdfstring{size\_t}{size\_t}}
+{\footnotesize\ttfamily typedef \+\_\+\+\_\+\+SIZE\+\_\+\+TYPE\+\_\+\+\_\+ \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}}}
+
+\begin{DoxyNote}{Note}
+compatible with tk too. 
+\end{DoxyNote}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_new_8h_a3d97a7e2a0208075b4b37328c96ed390}\label{_new_8h_a3d97a7e2a0208075b4b37328c96ed390} 
+\index{New.h@{New.h}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!New.h@{New.h}}
+\doxysubsubsection{\texorpdfstring{operator delete()}{operator delete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void operator delete (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{ptr }\end{DoxyParamCaption})}
+
+\Hypertarget{_new_8h_a7baa8446febbbfab1d55cd4d1ffb1226}\label{_new_8h_a7baa8446febbbfab1d55cd4d1ffb1226} 
+\index{New.h@{New.h}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!New.h@{New.h}}
+\doxysubsubsection{\texorpdfstring{operator delete()}{operator delete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void operator delete (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{ptr,  }\item[{unsigned long}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_new_8h_a1d8b2d6f17242ae0d182b0f7a98ba54f}\label{_new_8h_a1d8b2d6f17242ae0d182b0f7a98ba54f} 
+\index{New.h@{New.h}!operator delete\mbox{[}\mbox{]}@{operator delete[]}}
+\index{operator delete\mbox{[}\mbox{]}@{operator delete[]}!New.h@{New.h}}
+\doxysubsubsection{\texorpdfstring{operator delete[]()}{operator delete[]()}}
+{\footnotesize\ttfamily void operator delete\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{ptr }\end{DoxyParamCaption})}
+
+\Hypertarget{_new_8h_aa284d28f730d3338d26fd2781571ebbb}\label{_new_8h_aa284d28f730d3338d26fd2781571ebbb} 
+\index{New.h@{New.h}!operator new@{operator new}}
+\index{operator new@{operator new}!New.h@{New.h}}
+\doxysubsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*} operator new (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}}}]{ptr }\end{DoxyParamCaption})}
+
+\Hypertarget{_new_8h_ae856bca313c6289c220b4fe4de8266d2}\label{_new_8h_ae856bca313c6289c220b4fe4de8266d2} 
+\index{New.h@{New.h}!operator new\mbox{[}\mbox{]}@{operator new[]}}
+\index{operator new\mbox{[}\mbox{]}@{operator new[]}!New.h@{New.h}}
+\doxysubsubsection{\texorpdfstring{operator new[]()}{operator new[]()}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*} operator new\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}}}]{ptr }\end{DoxyParamCaption})}
+

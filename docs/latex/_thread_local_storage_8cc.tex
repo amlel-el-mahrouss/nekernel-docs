@@ -1,0 +1,66 @@
+\doxysection{dev/kernel/src/\+Thread\+Local\+Storage.cc File Reference}
+\hypertarget{_thread_local_storage_8cc}{}\label{_thread_local_storage_8cc}\index{dev/kernel/src/ThreadLocalStorage.cc@{dev/kernel/src/ThreadLocalStorage.cc}}
+
+
+Process Thread Local Storage.  
+
+
+{\ttfamily \#include $<$New\+Kit/\+KString.\+h$>$}\newline
+{\ttfamily \#include $<$CFKit/\+Property.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+User\+Process\+Scheduler.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Thread\+Local\+Storage.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{_thread_local_storage_8cc_a8a532a538cb8d2511904c248aa2bf55c}{tls\+\_\+check\+\_\+tib}} (\mbox{\hyperlink{struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{THREAD\+\_\+\+INFORMATION\+\_\+\+BLOCK}} \texorpdfstring{$\ast$}{*}tib\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Checks for cookie inside the TIB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{_thread_local_storage_8cc_a4e7419306fc2651c7e526519f32fdb78}{tls\+\_\+check\+\_\+syscall\+\_\+impl}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}} tib\+\_\+ptr) noexcept
+\begin{DoxyCompactList}\small\item\em System call implementation of the TLS check. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Process Thread Local Storage. 
+
+@bugs\+: 0 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_thread_local_storage_8cc_a4e7419306fc2651c7e526519f32fdb78}\label{_thread_local_storage_8cc_a4e7419306fc2651c7e526519f32fdb78} 
+\index{ThreadLocalStorage.cc@{ThreadLocalStorage.cc}!tls\_check\_syscall\_impl@{tls\_check\_syscall\_impl}}
+\index{tls\_check\_syscall\_impl@{tls\_check\_syscall\_impl}!ThreadLocalStorage.cc@{ThreadLocalStorage.cc}}
+\doxysubsubsection{\texorpdfstring{tls\_check\_syscall\_impl()}{tls\_check\_syscall\_impl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} tls\+\_\+check\+\_\+syscall\+\_\+impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}}}]{tib\+\_\+ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+System call implementation of the TLS check. 
+
+TLS check (syscall)
+
+
+\begin{DoxyParams}{Parameters}
+{\em tib\+\_\+ptr} & The TIB record. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the TIB record is valid or not. 
+\end{DoxyReturn}
+\Hypertarget{_thread_local_storage_8cc_a8a532a538cb8d2511904c248aa2bf55c}\label{_thread_local_storage_8cc_a8a532a538cb8d2511904c248aa2bf55c} 
+\index{ThreadLocalStorage.cc@{ThreadLocalStorage.cc}!tls\_check\_tib@{tls\_check\_tib}}
+\index{tls\_check\_tib@{tls\_check\_tib}!ThreadLocalStorage.cc@{ThreadLocalStorage.cc}}
+\doxysubsubsection{\texorpdfstring{tls\_check\_tib()}{tls\_check\_tib()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} tls\+\_\+check\+\_\+tib (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{THREAD\+\_\+\+INFORMATION\+\_\+\+BLOCK}} \texorpdfstring{$\ast$}{*}}]{tib\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Checks for cookie inside the TIB. 
+
+!
+
+
+\begin{DoxyParams}{Parameters}
+{\em tib\+\_\+ptr} & the TIB to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the cookie is enabled, true; false otherwise 
+\end{DoxyReturn}

@@ -102,42 +102,42 @@ $(document).ready(function(){initNavTree('_a_m_d64_2_hal_debug_output_8cc.html',
 <code>#include &lt;<a class="el" href="_debug_output_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_new_kit_2_utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_new_8h_source.html">NewKit/New.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_f_b_mgr_8h_source.html">modules/CoreGfx/FBMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_text_mgr_8h_source.html">modules/CoreGfx/TextMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_core_gfx_8h_source.html">modules/CoreGfx/CoreGfx.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_text_gfx_8h_source.html">modules/CoreGfx/TextGfx.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_ne_o_s" id="r_namespace_ne_o_s"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html">NeOS</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>Kernel</b> namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_ne_o_s_1_1_detail" id="r_namespace_ne_o_s_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_detail.html">NeOS::Detail</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
+<tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a9df48b02e49e381449637e697b4c7762" id="r_a9df48b02e49e381449637e697b4c7762"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a9df48b02e49e381449637e697b4c7762">NeOS::CommStatus</a> : UInt16 { <a class="el" href="namespace_ne_o_s.html#a9df48b02e49e381449637e697b4c7762ae8d76cffa42e5ffe25d1a725e3e9a54b">NeOS::kStateInvalid</a>
-, <a class="el" href="namespace_ne_o_s.html#a9df48b02e49e381449637e697b4c7762a152fd7bd23808699819ef700c403a29b">NeOS::kStateReady</a> = 0xCF
-, <a class="el" href="namespace_ne_o_s.html#a9df48b02e49e381449637e697b4c7762a3d2f8405bb9948d9fc5a13b80f93bc7d">NeOS::kStateTransmit</a> = 0xFC
-, <a class="el" href="namespace_ne_o_s.html#a9df48b02e49e381449637e697b4c7762a6cedee6783fd9e69eaf3b9d5d3483d12">NeOS::kStateCnt</a> = 3
+<tr class="memitem:a7bc2f72a71bd085f3d4f7de8343008b9" id="r_a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9">Kernel::CommStatus</a> : UInt16 { <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5e92a48a74777783aafa4ff15071f5ea">Kernel::kStateInvalid</a>
+, <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9ac8ad6f8f9cd3b26e97883edb92c9e9a2">Kernel::kStateReady</a> = 0xCF
+, <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5343586fd107aaa721dfafa833524247">Kernel::kStateTransmit</a> = 0xFC
+, <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a1dbf76d5c3b4041e27a3510832614801">Kernel::kStateCnt</a> = 3
  }</td></tr>
-<tr class="separator:a9df48b02e49e381449637e697b4c7762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6432e25b15c2024c57bc9b36573d3973" id="r_a6432e25b15c2024c57bc9b36573d3973"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_ne_o_s.html#a766352969fccd3361b84236345ee30a5">Int16</a> PORT&gt; </td></tr>
-<tr class="memitem:a6432e25b15c2024c57bc9b36573d3973"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_detail.html#a6432e25b15c2024c57bc9b36573d3973">NeOS::Detail::hal_serial_init</a> () noexcept</td></tr>
-<tr class="memdesc:a6432e25b15c2024c57bc9b36573d3973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init COM1.  <br /></td></tr>
-<tr class="separator:a6432e25b15c2024c57bc9b36573d3973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7be081bc6c4653f1d7aeb24d753c9849" id="r_a7be081bc6c4653f1d7aeb24d753c9849"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a7be081bc6c4653f1d7aeb24d753c9849">NeOS::ke_io_write</a> (<a class="el" href="class_ne_o_s_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> * &gt; *obj, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *bytes)</td></tr>
-<tr class="separator:a7be081bc6c4653f1d7aeb24d753c9849"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b7c6038066a25582c7248ef1120ef0" id="r_a71b7c6038066a25582c7248ef1120ef0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a71b7c6038066a25582c7248ef1120ef0">NeOS::ke_io_read</a> (<a class="el" href="class_ne_o_s_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> * &gt; *, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *bytes)</td></tr>
-<tr class="separator:a71b7c6038066a25582c7248ef1120ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfc42bc1a7dac85b5349d71f3012141" id="r_abcfc42bc1a7dac85b5349d71f3012141"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_kernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a> PORT&gt; </td></tr>
+<tr class="memitem:abcfc42bc1a7dac85b5349d71f3012141"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#abcfc42bc1a7dac85b5349d71f3012141">Kernel::Detail::hal_serial_init</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memdesc:abcfc42bc1a7dac85b5349d71f3012141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init COM1.  <br /></td></tr>
+<tr class="separator:abcfc42bc1a7dac85b5349d71f3012141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1085600b4f13e33bd21543937b0468a" id="r_ad1085600b4f13e33bd21543937b0468a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="class_kernel_1_1_error_or.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ad1085600b4f13e33bd21543937b0468a">Kernel::ke_io_write</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *<a class="el" href="class_kernel_1_1_error_or.html">obj</a>, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *<a class="el" href="class_kernel_1_1_error_or.html">bytes</a>)</td></tr>
+<tr class="separator:ad1085600b4f13e33bd21543937b0468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d41361c1685ee5da3e190d75c529378" id="r_a9d41361c1685ee5da3e190d75c529378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="class_kernel_1_1_error_or.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a9d41361c1685ee5da3e190d75c529378">Kernel::ke_io_read</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *<a class="el" href="class_kernel_1_1_error_or.html">bytes</a>)</td></tr>
+<tr class="separator:a9d41361c1685ee5da3e190d75c529378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7f8930d6a60144969ed9aec5483cf4cc" id="r_a7f8930d6a60144969ed9aec5483cf4cc"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="namespace_ne_o_s.html#a4885ae005fc56130691bdea86d9a88d7">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s_1_1_detail.html#a7f8930d6a60144969ed9aec5483cf4cc">NeOS::Detail::kPort</a> = 0x3F8</td></tr>
-<tr class="separator:a7f8930d6a60144969ed9aec5483cf4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb709c5262ae6b615008c111788d4d7" id="r_a3eb709c5262ae6b615008c111788d4d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">constexpr</a> <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a3eb709c5262ae6b615008c111788d4d7">Kernel::Detail::kPort</a> = 0x3F8</td></tr>
+<tr class="separator:a3eb709c5262ae6b615008c111788d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,61 @@
+\doxysection{EFI Namespace Reference}
+\hypertarget{namespace_e_f_i}{}\label{namespace_e_f_i}\index{EFI@{EFI}}
+
+
+include Ne\+FS header and Support header as well.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}} void \mbox{\hyperlink{namespace_e_f_i_ace3002b002935de285eaa162c79682aa}{Throw\+Error}} (const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}error\+Code, const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}reason) noexcept
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_e_f_i_a3b6e17830a9ad10db87fd20d60917f83}{Stop}} () noexcept
+\begin{DoxyCompactList}\small\item\em Halt and clear interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_e_f_i_abe9f07417729e46206f9b72b8030f736}{Exit\+Boot\+Services}} (\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Map\+Key, \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} Image\+Handle) noexcept
+\begin{DoxyCompactList}\small\item\em Exit \doxylink{namespace_e_f_i}{EFI} API to let the OS load correctly. Bascially frees everything we have in the \doxylink{namespace_e_f_i}{EFI} side. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{namespace_e_f_i_af6ee9dd16a424195a49a5116a6aac82c}{Platform}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+include Ne\+FS header and Support header as well. 
+
+Include other APIs. Framebuffer helpers. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_e_f_i_abe9f07417729e46206f9b72b8030f736}\label{namespace_e_f_i_abe9f07417729e46206f9b72b8030f736} 
+\index{EFI@{EFI}!ExitBootServices@{ExitBootServices}}
+\index{ExitBootServices@{ExitBootServices}!EFI@{EFI}}
+\doxysubsubsection{\texorpdfstring{ExitBootServices()}{ExitBootServices()}}
+{\footnotesize\ttfamily void EFI\+::\+Exit\+Boot\+Services (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}}]{Map\+Key,  }\item[{\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}}}]{Image\+Handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Exit \doxylink{namespace_e_f_i}{EFI} API to let the OS load correctly. Bascially frees everything we have in the \doxylink{namespace_e_f_i}{EFI} side. 
+
+\Hypertarget{namespace_e_f_i_af6ee9dd16a424195a49a5116a6aac82c}\label{namespace_e_f_i_af6ee9dd16a424195a49a5116a6aac82c} 
+\index{EFI@{EFI}!Platform@{Platform}}
+\index{Platform@{Platform}!EFI@{EFI}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} EFI\+::\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{namespace_e_f_i_a3b6e17830a9ad10db87fd20d60917f83}\label{namespace_e_f_i_a3b6e17830a9ad10db87fd20d60917f83} 
+\index{EFI@{EFI}!Stop@{Stop}}
+\index{Stop@{Stop}!EFI@{EFI}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} EFI\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Halt and clear interrupts. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_e_f_i_ace3002b002935de285eaa162c79682aa}\label{namespace_e_f_i_ace3002b002935de285eaa162c79682aa} 
+\index{EFI@{EFI}!ThrowError@{ThrowError}}
+\index{ThrowError@{ThrowError}!EFI@{EFI}}
+\doxysubsubsection{\texorpdfstring{ThrowError()}{ThrowError()}}
+{\footnotesize\ttfamily void EFI\+::\+Throw\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}}]{error\+Code,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+

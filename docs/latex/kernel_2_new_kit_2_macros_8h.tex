@@ -1,0 +1,401 @@
+\doxysection{dev/kernel/\+New\+Kit/\+Macros.h File Reference}
+\hypertarget{kernel_2_new_kit_2_macros_8h}{}\label{kernel_2_new_kit_2_macros_8h}\index{dev/kernel/NewKit/Macros.h@{dev/kernel/NewKit/Macros.h}}
+
+
+Core Types and Macros.  
+
+
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ab0a8038a8d6c5f1a602f028fa8bf32a0}{KIB}}(X)~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((X) / 1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a52e48c290bb7842c6640ef253c9023ab}{kib\+\_\+cast}}(X)~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((X)\texorpdfstring{$\ast$}{*}1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3d3145295541b38666bf1e095a7d74f6}{MIB}}(X)~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ab0a8038a8d6c5f1a602f028fa8bf32a0}{KIB}}(X) / 1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(X)~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a52e48c290bb7842c6640ef253c9023ab}{kib\+\_\+cast}}(X) \texorpdfstring{$\ast$}{*} 1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a9b71ebdfa9bf39cd412661b46eb3dc95}{GIB}}(X)~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3d3145295541b38666bf1e095a7d74f6}{MIB}}(X) / 1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(X)~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(X) \texorpdfstring{$\ast$}{*} 1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a8d236eda4577d4fc3bf28ffc5e36b5ca}{TIB}}(X)~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a9b71ebdfa9bf39cd412661b46eb3dc95}{GIB}}(X) / 1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a88a22810bf835b7794ce207e15732da8}{tib\+\_\+cast}}(X)~((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(X) \texorpdfstring{$\ast$}{*} 1024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a25f003de16c08a4888b69f619d70f427}{ARRAY\+\_\+\+SIZE}}(a)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ac1e8a42306d8e67cb94ca31c3956ee78}{DEPRECATED}}~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(deprecated)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a7fae0c251a6c18c95ca3a6363c6b1da0}{ALIGN}}(X)~\+\_\+\+\_\+attribute\+\_\+\+\_\+((aligned(X)))
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a8e09fc0acc49f63edf8ca7dd1c194598}{ATTRIBUTE}}(...)~\+\_\+\+\_\+attribute\+\_\+\+\_\+((\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+))
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_aeb2f846630e74da7c3ef2c61e72304d6}{\+\_\+\+\_\+\+NE\+\_\+\+VER\+\_\+\+\_\+}}~(2024)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}~extern
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}}~extern "{}C"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_aa8c1bad13059adc3e356392ae1ef9daf}{MAKE\+\_\+\+ENUM}}(NAME)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_afb96a4f1fb3f74444883723265d6121b}{END\+\_\+\+ENUM}}()
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a01626b98408c4d01b0f4c4e59f94539f}{MAKE\+\_\+\+STRING\+\_\+\+ENUM}}(NAME)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a973c5c37874adc092f94f3917df8f663}{ENUM\+\_\+\+STRING}}(NAME,  VAL)~inline constexpr const char\texorpdfstring{$\ast$}{*} e\#\#NAME = VAL
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_aba2e214220b4832db034e3a0fbd8319b}{END\+\_\+\+STRING\+\_\+\+ENUM}}()~\}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a73e964a8b06f3ee45f2d04ab6c91096c}{RTL\+\_\+\+ALLOCA}}(sz)~\+\_\+\+\_\+builtin\+\_\+alloca(sz)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a1e5a0d5e8d82cf431d053de327336909}{CANT\+\_\+\+REACH}}()~\+\_\+\+\_\+builtin\+\_\+unreachable()
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae6907b878d2ef234fa615e99a1c92ce2}{k\+Invalid\+Address}}~0x\+FBFBFBFBFBFBFBFB
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a95e415fed809f333f28c3691058f3375}{k\+Bad\+Address}}~0x0000000000000000
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ace90abacfea16d359d2362b2b9750993}{k\+Max\+Addr}}~0x\+FFFFFFFFFFFFFFFF
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a348e01990cb6bce27f125183c9722b91}{k\+Path\+Len}}~0x100
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a36d525cf4d116b2fe4ecc00222b256f1}{PACKED}}~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(packed)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_acd5f5a08cb161dddd3db84118b45b8d1}{NO\+\_\+\+EXEC}}~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(noexec)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}~extern
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}}~static
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a0c33b494a68ce28497e7ce8e5e95feff}{CONST}}~const
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a43e1cad902b6477bec893cb6430bd6c8}{STRINGIFY}}(X)~\#X
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a6177d0ef3b5f68134c0b7df840f47469}{NE\+\_\+\+UNUSED}}(X)~((\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}})X)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a52d6f67c629ccece695186d3ccceba54}{RGB}}(R,  G,  B)~(\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}})(R \texorpdfstring{$\vert$}{|} G $<$$<$ 0x8 \texorpdfstring{$\vert$}{|} B $<$$<$ 0x10)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a39407ed8d5c7b81d124ee9eddcd75bf1}{dbg\+\_\+break\+\_\+point}}()~((void)0)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_aa5758c5d37f292d61ebb9ea3c58f1cc5}{RTL\+\_\+\+ENDIAN}}(address,  value)
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_adf4f44e25f5216808d6ca83186e89119}{Yes}}~\mbox{\hyperlink{user_2_macros_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a554d6ecb4ae62985018db18be458114d}{No}}~\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a7ebc9a785e5ab85457c98595aac81589}{YES}}~\mbox{\hyperlink{user_2_macros_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}~\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{TRUE}}~\mbox{\hyperlink{user_2_macros_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}}~\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}~\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a171cc9c81f84474d52f4fc6df2dc12fe}{RTL\+\_\+\+INIT\+\_\+\+OBJECT}}(OBJ,  TYPE, ...)~TYPE OBJ = TYPE(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Core Types and Macros. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{kernel_2_new_kit_2_macros_8h_aeb2f846630e74da7c3ef2c61e72304d6}\label{kernel_2_new_kit_2_macros_8h_aeb2f846630e74da7c3ef2c61e72304d6} 
+\index{Macros.h@{Macros.h}!\_\_NE\_VER\_\_@{\_\_NE\_VER\_\_}}
+\index{\_\_NE\_VER\_\_@{\_\_NE\_VER\_\_}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{\_\_NE\_VER\_\_}{\_\_NE\_VER\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+NE\+\_\+\+VER\+\_\+\+\_\+~(2024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a7fae0c251a6c18c95ca3a6363c6b1da0}\label{kernel_2_new_kit_2_macros_8h_a7fae0c251a6c18c95ca3a6363c6b1da0} 
+\index{Macros.h@{Macros.h}!ALIGN@{ALIGN}}
+\index{ALIGN@{ALIGN}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{ALIGN}{ALIGN}}
+{\footnotesize\ttfamily \#define ALIGN(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~\+\_\+\+\_\+attribute\+\_\+\+\_\+((aligned(X)))}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a25f003de16c08a4888b69f619d70f427}\label{kernel_2_new_kit_2_macros_8h_a25f003de16c08a4888b69f619d70f427} 
+\index{Macros.h@{Macros.h}!ARRAY\_SIZE@{ARRAY\_SIZE}}
+\index{ARRAY\_SIZE@{ARRAY\_SIZE}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{ARRAY\_SIZE}{ARRAY\_SIZE}}
+{\footnotesize\ttfamily \#define ARRAY\+\_\+\+SIZE(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ (((\textcolor{keyword}{sizeof}(a)\ /\ \textcolor{keyword}{sizeof}(*(a)))\ /\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ (\textcolor{keyword}{static\_cast<}\mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{NeOS::Size}}\textcolor{keyword}{>}(!(\textcolor{keyword}{sizeof}(a)\ \%\ \textcolor{keyword}{sizeof}(*(a)))))))}
+
+\end{DoxyCode}
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a8e09fc0acc49f63edf8ca7dd1c194598}\label{kernel_2_new_kit_2_macros_8h_a8e09fc0acc49f63edf8ca7dd1c194598} 
+\index{Macros.h@{Macros.h}!ATTRIBUTE@{ATTRIBUTE}}
+\index{ATTRIBUTE@{ATTRIBUTE}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE}{ATTRIBUTE}}
+{\footnotesize\ttfamily \#define ATTRIBUTE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+\_\+attribute\+\_\+\+\_\+((\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+))}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa}\label{kernel_2_new_kit_2_macros_8h_ae4cc35dcc70810fa972cc8a5185a28fa} 
+\index{Macros.h@{Macros.h}!BOOL@{BOOL}}
+\index{BOOL@{BOOL}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{BOOL}{BOOL}}
+{\footnotesize\ttfamily \#define BOOL~\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Ne\+OS\+::\+Boolean}}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a1e5a0d5e8d82cf431d053de327336909}\label{kernel_2_new_kit_2_macros_8h_a1e5a0d5e8d82cf431d053de327336909} 
+\index{Macros.h@{Macros.h}!CANT\_REACH@{CANT\_REACH}}
+\index{CANT\_REACH@{CANT\_REACH}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{CANT\_REACH}{CANT\_REACH}}
+{\footnotesize\ttfamily \#define CANT\+\_\+\+REACH(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\+\_\+\+\_\+builtin\+\_\+unreachable()}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a0c33b494a68ce28497e7ce8e5e95feff}\label{kernel_2_new_kit_2_macros_8h_a0c33b494a68ce28497e7ce8e5e95feff} 
+\index{Macros.h@{Macros.h}!CONST@{CONST}}
+\index{CONST@{CONST}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{CONST}{CONST}}
+{\footnotesize\ttfamily \#define CONST~const}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a39407ed8d5c7b81d124ee9eddcd75bf1}\label{kernel_2_new_kit_2_macros_8h_a39407ed8d5c7b81d124ee9eddcd75bf1} 
+\index{Macros.h@{Macros.h}!dbg\_break\_point@{dbg\_break\_point}}
+\index{dbg\_break\_point@{dbg\_break\_point}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{dbg\_break\_point}{dbg\_break\_point}}
+{\footnotesize\ttfamily \#define dbg\+\_\+break\+\_\+point(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~((void)0)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_ac1e8a42306d8e67cb94ca31c3956ee78}\label{kernel_2_new_kit_2_macros_8h_ac1e8a42306d8e67cb94ca31c3956ee78} 
+\index{Macros.h@{Macros.h}!DEPRECATED@{DEPRECATED}}
+\index{DEPRECATED@{DEPRECATED}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{DEPRECATED}{DEPRECATED}}
+{\footnotesize\ttfamily \#define DEPRECATED~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(deprecated)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_afb96a4f1fb3f74444883723265d6121b}\label{kernel_2_new_kit_2_macros_8h_afb96a4f1fb3f74444883723265d6121b} 
+\index{Macros.h@{Macros.h}!END\_ENUM@{END\_ENUM}}
+\index{END\_ENUM@{END\_ENUM}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{END\_ENUM}{END\_ENUM}}
+{\footnotesize\ttfamily \#define END\+\_\+\+ENUM(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ ;}
+
+\end{DoxyCode}
+\Hypertarget{kernel_2_new_kit_2_macros_8h_aba2e214220b4832db034e3a0fbd8319b}\label{kernel_2_new_kit_2_macros_8h_aba2e214220b4832db034e3a0fbd8319b} 
+\index{Macros.h@{Macros.h}!END\_STRING\_ENUM@{END\_STRING\_ENUM}}
+\index{END\_STRING\_ENUM@{END\_STRING\_ENUM}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{END\_STRING\_ENUM}{END\_STRING\_ENUM}}
+{\footnotesize\ttfamily \#define END\+\_\+\+STRING\+\_\+\+ENUM(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a973c5c37874adc092f94f3917df8f663}\label{kernel_2_new_kit_2_macros_8h_a973c5c37874adc092f94f3917df8f663} 
+\index{Macros.h@{Macros.h}!ENUM\_STRING@{ENUM\_STRING}}
+\index{ENUM\_STRING@{ENUM\_STRING}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{ENUM\_STRING}{ENUM\_STRING}}
+{\footnotesize\ttfamily \#define ENUM\+\_\+\+STRING(\begin{DoxyParamCaption}\item[{}]{NAME,  }\item[{}]{VAL }\end{DoxyParamCaption})~inline constexpr const char\texorpdfstring{$\ast$}{*} e\#\#NAME = VAL}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3}\label{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3} 
+\index{Macros.h@{Macros.h}!EXTERN@{EXTERN}}
+\index{EXTERN@{EXTERN}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{EXTERN}{EXTERN}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define EXTERN~extern}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3}\label{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3} 
+\index{Macros.h@{Macros.h}!EXTERN@{EXTERN}}
+\index{EXTERN@{EXTERN}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{EXTERN}{EXTERN}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define EXTERN~extern}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}\label{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77} 
+\index{Macros.h@{Macros.h}!EXTERN\_C@{EXTERN\_C}}
+\index{EXTERN\_C@{EXTERN\_C}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{EXTERN\_C}{EXTERN\_C}}
+{\footnotesize\ttfamily \#define EXTERN\+\_\+C~extern "{}C"{}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{kernel_2_new_kit_2_macros_8h_aa93f0eb578d23995850d61f7d61c55c1} 
+\index{Macros.h@{Macros.h}!FALSE@{FALSE}}
+\index{FALSE@{FALSE}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{FALSE}{FALSE}}
+{\footnotesize\ttfamily \#define FALSE~\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a9b71ebdfa9bf39cd412661b46eb3dc95}\label{kernel_2_new_kit_2_macros_8h_a9b71ebdfa9bf39cd412661b46eb3dc95} 
+\index{Macros.h@{Macros.h}!GIB@{GIB}}
+\index{GIB@{GIB}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{GIB}{GIB}}
+{\footnotesize\ttfamily \#define GIB(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3d3145295541b38666bf1e095a7d74f6}{MIB}}(X) / 1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}\label{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b} 
+\index{Macros.h@{Macros.h}!gib\_cast@{gib\_cast}}
+\index{gib\_cast@{gib\_cast}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{gib\_cast}{gib\_cast}}
+{\footnotesize\ttfamily \#define gib\+\_\+cast(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(X) \texorpdfstring{$\ast$}{*} 1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a95e415fed809f333f28c3691058f3375}\label{kernel_2_new_kit_2_macros_8h_a95e415fed809f333f28c3691058f3375} 
+\index{Macros.h@{Macros.h}!kBadAddress@{kBadAddress}}
+\index{kBadAddress@{kBadAddress}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{kBadAddress}{kBadAddress}}
+{\footnotesize\ttfamily \#define k\+Bad\+Address~0x0000000000000000}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_ab0a8038a8d6c5f1a602f028fa8bf32a0}\label{kernel_2_new_kit_2_macros_8h_ab0a8038a8d6c5f1a602f028fa8bf32a0} 
+\index{Macros.h@{Macros.h}!KIB@{KIB}}
+\index{KIB@{KIB}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{KIB}{KIB}}
+{\footnotesize\ttfamily \#define KIB(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((X) / 1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a52e48c290bb7842c6640ef253c9023ab}\label{kernel_2_new_kit_2_macros_8h_a52e48c290bb7842c6640ef253c9023ab} 
+\index{Macros.h@{Macros.h}!kib\_cast@{kib\_cast}}
+\index{kib\_cast@{kib\_cast}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{kib\_cast}{kib\_cast}}
+{\footnotesize\ttfamily \#define kib\+\_\+cast(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((X)\texorpdfstring{$\ast$}{*}1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_ae6907b878d2ef234fa615e99a1c92ce2}\label{kernel_2_new_kit_2_macros_8h_ae6907b878d2ef234fa615e99a1c92ce2} 
+\index{Macros.h@{Macros.h}!kInvalidAddress@{kInvalidAddress}}
+\index{kInvalidAddress@{kInvalidAddress}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{kInvalidAddress}{kInvalidAddress}}
+{\footnotesize\ttfamily \#define k\+Invalid\+Address~0x\+FBFBFBFBFBFBFBFB}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_ace90abacfea16d359d2362b2b9750993}\label{kernel_2_new_kit_2_macros_8h_ace90abacfea16d359d2362b2b9750993} 
+\index{Macros.h@{Macros.h}!kMaxAddr@{kMaxAddr}}
+\index{kMaxAddr@{kMaxAddr}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{kMaxAddr}{kMaxAddr}}
+{\footnotesize\ttfamily \#define k\+Max\+Addr~0x\+FFFFFFFFFFFFFFFF}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a348e01990cb6bce27f125183c9722b91}\label{kernel_2_new_kit_2_macros_8h_a348e01990cb6bce27f125183c9722b91} 
+\index{Macros.h@{Macros.h}!kPathLen@{kPathLen}}
+\index{kPathLen@{kPathLen}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{kPathLen}{kPathLen}}
+{\footnotesize\ttfamily \#define k\+Path\+Len~0x100}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_aa8c1bad13059adc3e356392ae1ef9daf}\label{kernel_2_new_kit_2_macros_8h_aa8c1bad13059adc3e356392ae1ef9daf} 
+\index{Macros.h@{Macros.h}!MAKE\_ENUM@{MAKE\_ENUM}}
+\index{MAKE\_ENUM@{MAKE\_ENUM}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{MAKE\_ENUM}{MAKE\_ENUM}}
+{\footnotesize\ttfamily \#define MAKE\+\_\+\+ENUM(\begin{DoxyParamCaption}\item[{}]{NAME }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{enum}\ NAME\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{}
+
+\end{DoxyCode}
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a01626b98408c4d01b0f4c4e59f94539f}\label{kernel_2_new_kit_2_macros_8h_a01626b98408c4d01b0f4c4e59f94539f} 
+\index{Macros.h@{Macros.h}!MAKE\_STRING\_ENUM@{MAKE\_STRING\_ENUM}}
+\index{MAKE\_STRING\_ENUM@{MAKE\_STRING\_ENUM}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{MAKE\_STRING\_ENUM}{MAKE\_STRING\_ENUM}}
+{\footnotesize\ttfamily \#define MAKE\+\_\+\+STRING\+\_\+\+ENUM(\begin{DoxyParamCaption}\item[{}]{NAME }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{namespace\ }NAME\ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{}
+
+\end{DoxyCode}
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a3d3145295541b38666bf1e095a7d74f6}\label{kernel_2_new_kit_2_macros_8h_a3d3145295541b38666bf1e095a7d74f6} 
+\index{Macros.h@{Macros.h}!MIB@{MIB}}
+\index{MIB@{MIB}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{MIB}{MIB}}
+{\footnotesize\ttfamily \#define MIB(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_ab0a8038a8d6c5f1a602f028fa8bf32a0}{KIB}}(X) / 1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}\label{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852} 
+\index{Macros.h@{Macros.h}!mib\_cast@{mib\_cast}}
+\index{mib\_cast@{mib\_cast}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{mib\_cast}{mib\_cast}}
+{\footnotesize\ttfamily \#define mib\+\_\+cast(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a52e48c290bb7842c6640ef253c9023ab}{kib\+\_\+cast}}(X) \texorpdfstring{$\ast$}{*} 1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a6177d0ef3b5f68134c0b7df840f47469}\label{kernel_2_new_kit_2_macros_8h_a6177d0ef3b5f68134c0b7df840f47469} 
+\index{Macros.h@{Macros.h}!NE\_UNUSED@{NE\_UNUSED}}
+\index{NE\_UNUSED@{NE\_UNUSED}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{NE\_UNUSED}{NE\_UNUSED}}
+{\footnotesize\ttfamily \#define NE\+\_\+\+UNUSED(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~((\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}})X)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a554d6ecb4ae62985018db18be458114d}\label{kernel_2_new_kit_2_macros_8h_a554d6ecb4ae62985018db18be458114d} 
+\index{Macros.h@{Macros.h}!No@{No}}
+\index{No@{No}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{No}{No}}
+{\footnotesize\ttfamily \#define No~\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a996bde01ecac342918f0a2c4e7ce7bd5}\label{kernel_2_new_kit_2_macros_8h_a996bde01ecac342918f0a2c4e7ce7bd5} 
+\index{Macros.h@{Macros.h}!NO@{NO}}
+\index{NO@{NO}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{NO}{NO}}
+{\footnotesize\ttfamily \#define NO~\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_acd5f5a08cb161dddd3db84118b45b8d1}\label{kernel_2_new_kit_2_macros_8h_acd5f5a08cb161dddd3db84118b45b8d1} 
+\index{Macros.h@{Macros.h}!NO\_EXEC@{NO\_EXEC}}
+\index{NO\_EXEC@{NO\_EXEC}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{NO\_EXEC}{NO\_EXEC}}
+{\footnotesize\ttfamily \#define NO\+\_\+\+EXEC~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(noexec)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a36d525cf4d116b2fe4ecc00222b256f1}\label{kernel_2_new_kit_2_macros_8h_a36d525cf4d116b2fe4ecc00222b256f1} 
+\index{Macros.h@{Macros.h}!PACKED@{PACKED}}
+\index{PACKED@{PACKED}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{PACKED}{PACKED}}
+{\footnotesize\ttfamily \#define PACKED~\mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(packed)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a52d6f67c629ccece695186d3ccceba54}\label{kernel_2_new_kit_2_macros_8h_a52d6f67c629ccece695186d3ccceba54} 
+\index{Macros.h@{Macros.h}!RGB@{RGB}}
+\index{RGB@{RGB}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{RGB}{RGB}}
+{\footnotesize\ttfamily \#define RGB(\begin{DoxyParamCaption}\item[{}]{R,  }\item[{}]{G,  }\item[{}]{B }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}})(R \texorpdfstring{$\vert$}{|} G $<$$<$ 0x8 \texorpdfstring{$\vert$}{|} B $<$$<$ 0x10)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a73e964a8b06f3ee45f2d04ab6c91096c}\label{kernel_2_new_kit_2_macros_8h_a73e964a8b06f3ee45f2d04ab6c91096c} 
+\index{Macros.h@{Macros.h}!RTL\_ALLOCA@{RTL\_ALLOCA}}
+\index{RTL\_ALLOCA@{RTL\_ALLOCA}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{RTL\_ALLOCA}{RTL\_ALLOCA}}
+{\footnotesize\ttfamily \#define RTL\+\_\+\+ALLOCA(\begin{DoxyParamCaption}\item[{}]{sz }\end{DoxyParamCaption})~\+\_\+\+\_\+builtin\+\_\+alloca(sz)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_aa5758c5d37f292d61ebb9ea3c58f1cc5}\label{kernel_2_new_kit_2_macros_8h_aa5758c5d37f292d61ebb9ea3c58f1cc5} 
+\index{Macros.h@{Macros.h}!RTL\_ENDIAN@{RTL\_ENDIAN}}
+\index{RTL\_ENDIAN@{RTL\_ENDIAN}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{RTL\_ENDIAN}{RTL\_ENDIAN}}
+{\footnotesize\ttfamily \#define RTL\+\_\+\+ENDIAN(\begin{DoxyParamCaption}\item[{}]{address,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ (((\textcolor{keyword}{reinterpret\_cast<}\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}*\textcolor{keyword}{>}(address)[0])\ ==\ (value))\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ ?\ (\mbox{\hyperlink{namespace_ne_o_s_a94354868f8bc9f384acc486cd8f18fe8aa9bf0a902ac186ab6b7c9a0b22c485ad}{NeOS::Endian::kEndianBig}})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ :\ (\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}::Endian::kEndianLittle))}
+
+\end{DoxyCode}
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a171cc9c81f84474d52f4fc6df2dc12fe}\label{kernel_2_new_kit_2_macros_8h_a171cc9c81f84474d52f4fc6df2dc12fe} 
+\index{Macros.h@{Macros.h}!RTL\_INIT\_OBJECT@{RTL\_INIT\_OBJECT}}
+\index{RTL\_INIT\_OBJECT@{RTL\_INIT\_OBJECT}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{RTL\_INIT\_OBJECT}{RTL\_INIT\_OBJECT}}
+{\footnotesize\ttfamily \#define RTL\+\_\+\+INIT\+\_\+\+OBJECT(\begin{DoxyParamCaption}\item[{}]{OBJ,  }\item[{}]{TYPE,  }\item[{}]{... }\end{DoxyParamCaption})~TYPE OBJ = TYPE(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}\label{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb} 
+\index{Macros.h@{Macros.h}!STATIC@{STATIC}}
+\index{STATIC@{STATIC}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{STATIC}{STATIC}}
+{\footnotesize\ttfamily \#define STATIC~static}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a43e1cad902b6477bec893cb6430bd6c8}\label{kernel_2_new_kit_2_macros_8h_a43e1cad902b6477bec893cb6430bd6c8} 
+\index{Macros.h@{Macros.h}!STRINGIFY@{STRINGIFY}}
+\index{STRINGIFY@{STRINGIFY}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{STRINGIFY}{STRINGIFY}}
+{\footnotesize\ttfamily \#define STRINGIFY(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~\#X}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a8d236eda4577d4fc3bf28ffc5e36b5ca}\label{kernel_2_new_kit_2_macros_8h_a8d236eda4577d4fc3bf28ffc5e36b5ca} 
+\index{Macros.h@{Macros.h}!TIB@{TIB}}
+\index{TIB@{TIB}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{TIB}{TIB}}
+{\footnotesize\ttfamily \#define TIB(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a9b71ebdfa9bf39cd412661b46eb3dc95}{GIB}}(X) / 1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a88a22810bf835b7794ce207e15732da8}\label{kernel_2_new_kit_2_macros_8h_a88a22810bf835b7794ce207e15732da8} 
+\index{Macros.h@{Macros.h}!tib\_cast@{tib\_cast}}
+\index{tib\_cast@{tib\_cast}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{tib\_cast}{tib\_cast}}
+{\footnotesize\ttfamily \#define tib\+\_\+cast(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~((\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{Ne\+OS\+::\+UInt64}})\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(X) \texorpdfstring{$\ast$}{*} 1024)}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{kernel_2_new_kit_2_macros_8h_aa8cecfc5c5c054d2875c03e77b7be15d} 
+\index{Macros.h@{Macros.h}!TRUE@{TRUE}}
+\index{TRUE@{TRUE}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{TRUE}{TRUE}}
+{\footnotesize\ttfamily \#define TRUE~\mbox{\hyperlink{user_2_macros_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_adf4f44e25f5216808d6ca83186e89119}\label{kernel_2_new_kit_2_macros_8h_adf4f44e25f5216808d6ca83186e89119} 
+\index{Macros.h@{Macros.h}!Yes@{Yes}}
+\index{Yes@{Yes}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{Yes}{Yes}}
+{\footnotesize\ttfamily \#define Yes~\mbox{\hyperlink{user_2_macros_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\Hypertarget{kernel_2_new_kit_2_macros_8h_a7ebc9a785e5ab85457c98595aac81589}\label{kernel_2_new_kit_2_macros_8h_a7ebc9a785e5ab85457c98595aac81589} 
+\index{Macros.h@{Macros.h}!YES@{YES}}
+\index{YES@{YES}!Macros.h@{Macros.h}}
+\doxysubsubsection{\texorpdfstring{YES}{YES}}
+{\footnotesize\ttfamily \#define YES~\mbox{\hyperlink{user_2_macros_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+

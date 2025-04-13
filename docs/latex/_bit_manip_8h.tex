@@ -1,0 +1,56 @@
+\doxysection{dev/boot/\+Boot\+Kit/\+Bit\+Manip.h File Reference}
+\hypertarget{_bit_manip_8h}{}\label{_bit_manip_8h}\index{dev/boot/BootKit/BitManip.h@{dev/boot/BootKit/BitManip.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_bit_manip_8h_ac8faf0c9b98f2fe6a8c5028809409885}{bk\+\_\+set\+\_\+bit}}(X,  O)~X = (1 $<$$<$ O) \texorpdfstring{$\vert$}{|} X
+\item 
+\#define \mbox{\hyperlink{_bit_manip_8h_ad7d6635adf8db23b4472a8378ee3b032}{bk\+\_\+clear\+\_\+bit}}(X,  O)~X = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ O) \& X
+\item 
+\#define \mbox{\hyperlink{_bit_manip_8h_ab4b87976ca2e23fa7a185b391a95ebb9}{bk\+\_\+toogle}}(X,  O)~X = (1 $<$$<$ O) \texorpdfstring{$^\wedge$}{\string^} X
+\item 
+\#define \mbox{\hyperlink{_bit_manip_8h_ab3425a0da7b56682db636eca6df2b44a}{bk\+\_\+lsb}}(X)~X = X \& -\/X
+\item 
+\#define \mbox{\hyperlink{_bit_manip_8h_a955fc3767d69d70ebd4ffad30e66cafd}{bk\+\_\+msb}}(X)~X = -\/(mp\+\_\+lsb(X)) \& X
+\item 
+\#define \mbox{\hyperlink{_bit_manip_8h_a4e8df0d285429b39005d88691857d3d2}{bk\+\_\+look\+\_\+for\+\_\+bit}}(X,  O)~(1 $<$$<$ O) \texorpdfstring{$\vert$}{|} X
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_bit_manip_8h_ad7d6635adf8db23b4472a8378ee3b032}\label{_bit_manip_8h_ad7d6635adf8db23b4472a8378ee3b032} 
+\index{BitManip.h@{BitManip.h}!bk\_clear\_bit@{bk\_clear\_bit}}
+\index{bk\_clear\_bit@{bk\_clear\_bit}!BitManip.h@{BitManip.h}}
+\doxysubsubsection{\texorpdfstring{bk\_clear\_bit}{bk\_clear\_bit}}
+{\footnotesize\ttfamily \#define bk\+\_\+clear\+\_\+bit(\begin{DoxyParamCaption}\item[{}]{X,  }\item[{}]{O }\end{DoxyParamCaption})~X = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ O) \& X}
+
+\Hypertarget{_bit_manip_8h_a4e8df0d285429b39005d88691857d3d2}\label{_bit_manip_8h_a4e8df0d285429b39005d88691857d3d2} 
+\index{BitManip.h@{BitManip.h}!bk\_look\_for\_bit@{bk\_look\_for\_bit}}
+\index{bk\_look\_for\_bit@{bk\_look\_for\_bit}!BitManip.h@{BitManip.h}}
+\doxysubsubsection{\texorpdfstring{bk\_look\_for\_bit}{bk\_look\_for\_bit}}
+{\footnotesize\ttfamily \#define bk\+\_\+look\+\_\+for\+\_\+bit(\begin{DoxyParamCaption}\item[{}]{X,  }\item[{}]{O }\end{DoxyParamCaption})~(1 $<$$<$ O) \texorpdfstring{$\vert$}{|} X}
+
+\Hypertarget{_bit_manip_8h_ab3425a0da7b56682db636eca6df2b44a}\label{_bit_manip_8h_ab3425a0da7b56682db636eca6df2b44a} 
+\index{BitManip.h@{BitManip.h}!bk\_lsb@{bk\_lsb}}
+\index{bk\_lsb@{bk\_lsb}!BitManip.h@{BitManip.h}}
+\doxysubsubsection{\texorpdfstring{bk\_lsb}{bk\_lsb}}
+{\footnotesize\ttfamily \#define bk\+\_\+lsb(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~X = X \& -\/X}
+
+\Hypertarget{_bit_manip_8h_a955fc3767d69d70ebd4ffad30e66cafd}\label{_bit_manip_8h_a955fc3767d69d70ebd4ffad30e66cafd} 
+\index{BitManip.h@{BitManip.h}!bk\_msb@{bk\_msb}}
+\index{bk\_msb@{bk\_msb}!BitManip.h@{BitManip.h}}
+\doxysubsubsection{\texorpdfstring{bk\_msb}{bk\_msb}}
+{\footnotesize\ttfamily \#define bk\+\_\+msb(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~X = -\/(mp\+\_\+lsb(X)) \& X}
+
+\Hypertarget{_bit_manip_8h_ac8faf0c9b98f2fe6a8c5028809409885}\label{_bit_manip_8h_ac8faf0c9b98f2fe6a8c5028809409885} 
+\index{BitManip.h@{BitManip.h}!bk\_set\_bit@{bk\_set\_bit}}
+\index{bk\_set\_bit@{bk\_set\_bit}!BitManip.h@{BitManip.h}}
+\doxysubsubsection{\texorpdfstring{bk\_set\_bit}{bk\_set\_bit}}
+{\footnotesize\ttfamily \#define bk\+\_\+set\+\_\+bit(\begin{DoxyParamCaption}\item[{}]{X,  }\item[{}]{O }\end{DoxyParamCaption})~X = (1 $<$$<$ O) \texorpdfstring{$\vert$}{|} X}
+
+File\+: \doxylink{_bit_manip_8h}{Bit\+Manip.\+h} Purpose\+: Bit manipulation helpers, based on coreboot-\/dev. \Hypertarget{_bit_manip_8h_ab4b87976ca2e23fa7a185b391a95ebb9}\label{_bit_manip_8h_ab4b87976ca2e23fa7a185b391a95ebb9} 
+\index{BitManip.h@{BitManip.h}!bk\_toogle@{bk\_toogle}}
+\index{bk\_toogle@{bk\_toogle}!BitManip.h@{BitManip.h}}
+\doxysubsubsection{\texorpdfstring{bk\_toogle}{bk\_toogle}}
+{\footnotesize\ttfamily \#define bk\+\_\+toogle(\begin{DoxyParamCaption}\item[{}]{X,  }\item[{}]{O }\end{DoxyParamCaption})~X = (1 $<$$<$ O) \texorpdfstring{$^\wedge$}{\string^} X}
+

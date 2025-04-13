@@ -1,0 +1,197 @@
+\doxysection{dev/kernel/\+New\+Kit/\+Kernel\+Panic.h File Reference}
+\hypertarget{_kernel_panic_8h}{}\label{_kernel_panic_8h}\index{dev/kernel/NewKit/KernelPanic.h@{dev/kernel/NewKit/KernelPanic.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_kernel_panic_8h_abaca09ea2b9deed3f481a2303ea89826}{MUST\+\_\+\+PASS\+\_\+\+COMPILER}}(EXPR,  MSG)~static\+\_\+assert(EXPR, MSG)
+\item 
+\#define \mbox{\hyperlink{_kernel_panic_8h_aa1706c3dd2db94d27734f834a7be5ed1}{TRY}}(X)
+\item 
+\#define \mbox{\hyperlink{_kernel_panic_8h_a90761906556ea7e47b7f55ca64423905}{\+\_\+\+\_\+\+MUST\+\_\+\+PASS}}(EXPR,  FILE,  LINE)~ \mbox{\hyperlink{namespace_ne_o_s_a8b0d06866c612e4bc6a89f7949a7fcbb}{Ne\+OS\+::ke\+\_\+runtime\+\_\+check}}(EXPR, FILE, \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a43e1cad902b6477bec893cb6430bd6c8}{STRINGIFY}}(LINE))
+\item 
+\#define \mbox{\hyperlink{_kernel_panic_8h_a21aee4c355d56e3630f2f341f59b9406}{MUST\+\_\+\+PASS}}(EXPR)~(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}})(EXPR)
+\item 
+\#define \mbox{\hyperlink{_kernel_panic_8h_a5b1dafe65f1b0085675cf1fffe12b53e}{assert}}(EXPR)~(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}})(EXPR)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4}{RUNTIME\+\_\+\+CHECK}} \mbox{\hyperlink{_kernel_panic_8h_a544450d6622b613e983172992807881a}{RTL\+\_\+\+RUNTIME\+\_\+\+CHECK}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4}{RUNTIME\+\_\+\+CHECK}} \{ \newline
+\mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a529db072ff5a094a841ce8995c2af755}{RUNTIME\+\_\+\+CHECK\+\_\+\+FAILED}} = 1111
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a5df62bbd5068bcb6bea3d2865b9d4f8a}{RUNTIME\+\_\+\+CHECK\+\_\+\+POINTER}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a239e3efac3fa4bdcc4baa45327dcccbb}{RUNTIME\+\_\+\+CHECK\+\_\+\+EXPRESSION}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a54c7a0e52f2492f144a9e124cc21a8e2}{RUNTIME\+\_\+\+CHECK\+\_\+\+FILE}}
+, \newline
+\mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4ae1291e8d56a70053a9a85706057094c2}{RUNTIME\+\_\+\+CHECK\+\_\+\+IPC}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4ac1a838fdc43dbd9ab9d6468b6ca63db4}{RUNTIME\+\_\+\+CHECK\+\_\+\+TLS}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a2611a53ec2000a30a6108559df698d95}{RUNTIME\+\_\+\+CHECK\+\_\+\+HANDSHAKE}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6ed4252b21c56a4f017675a5cbbddcb5}{RUNTIME\+\_\+\+CHECK\+\_\+\+ACPI}}
+, \newline
+\mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4aee7d054510b2edc87fc0f5ccb40db622}{RUNTIME\+\_\+\+CHECK\+\_\+\+INVALID\+\_\+\+PRIVILEGE}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6057fbefb6666380f0a2dfb2cac1ec52}{RUNTIME\+\_\+\+CHECK\+\_\+\+PROCESS}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a1337f6e8eac26af363fc25cb42f7fb37}{RUNTIME\+\_\+\+CHECK\+\_\+\+BAD\+\_\+\+BEHAVIOR}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a217045525c052e1c77a7beb71bf574cd}{RUNTIME\+\_\+\+CHECK\+\_\+\+BOOTSTRAP}}
+, \newline
+\mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a9f0f2429c1b43fa5bb7f5ba819de3004}{RUNTIME\+\_\+\+CHECK\+\_\+\+UNEXCPECTED}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a731f03e909cd2b53999175b46e3c1055}{RUNTIME\+\_\+\+CHECK\+\_\+\+FILESYSTEM}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6b654133bc3b6210a5f109677c9c4bfe}{RUNTIME\+\_\+\+CHECK\+\_\+\+VIRTUAL\+\_\+\+OUT\+\_\+\+OF\+\_\+\+MEM}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4addda1caab2a570872cc5bf4a2b73faf8}{RUNTIME\+\_\+\+CHECK\+\_\+\+PAGE}}
+, \newline
+\mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4aa7e9f4f55366b48d9ead120dfbe630c9}{RUNTIME\+\_\+\+CHECK\+\_\+\+INVALID}}
+, \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a716660d7deb97b759f4a22ca6fb3ff6f}{RUNTIME\+\_\+\+CHECK\+\_\+\+COUNT}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_ne_o_s_a8b0d06866c612e4bc6a89f7949a7fcbb}{Ne\+OS\+::ke\+\_\+runtime\+\_\+check}} (bool expr, const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}file, const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}line)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_a989feb3221f46d48287bc8cf13506892}{Ne\+OS\+::ke\+\_\+panic}} (const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \&id, const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}message)
+\begin{DoxyCompactList}\small\item\em Stops execution of the kernel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_kernel_panic_8h_a90761906556ea7e47b7f55ca64423905}\label{_kernel_panic_8h_a90761906556ea7e47b7f55ca64423905} 
+\index{KernelPanic.h@{KernelPanic.h}!\_\_MUST\_PASS@{\_\_MUST\_PASS}}
+\index{\_\_MUST\_PASS@{\_\_MUST\_PASS}!KernelPanic.h@{KernelPanic.h}}
+\doxysubsubsection{\texorpdfstring{\_\_MUST\_PASS}{\_\_MUST\_PASS}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+MUST\+\_\+\+PASS(\begin{DoxyParamCaption}\item[{}]{EXPR,  }\item[{}]{FILE,  }\item[{}]{LINE }\end{DoxyParamCaption})~ \mbox{\hyperlink{namespace_ne_o_s_a8b0d06866c612e4bc6a89f7949a7fcbb}{Ne\+OS\+::ke\+\_\+runtime\+\_\+check}}(EXPR, FILE, \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a43e1cad902b6477bec893cb6430bd6c8}{STRINGIFY}}(LINE))}
+
+\Hypertarget{_kernel_panic_8h_a5b1dafe65f1b0085675cf1fffe12b53e}\label{_kernel_panic_8h_a5b1dafe65f1b0085675cf1fffe12b53e} 
+\index{KernelPanic.h@{KernelPanic.h}!assert@{assert}}
+\index{assert@{assert}!KernelPanic.h@{KernelPanic.h}}
+\doxysubsubsection{\texorpdfstring{assert}{assert}}
+{\footnotesize\ttfamily \#define assert(\begin{DoxyParamCaption}\item[{}]{EXPR }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}})(EXPR)}
+
+\Hypertarget{_kernel_panic_8h_a21aee4c355d56e3630f2f341f59b9406}\label{_kernel_panic_8h_a21aee4c355d56e3630f2f341f59b9406} 
+\index{KernelPanic.h@{KernelPanic.h}!MUST\_PASS@{MUST\_PASS}}
+\index{MUST\_PASS@{MUST\_PASS}!KernelPanic.h@{KernelPanic.h}}
+\doxysubsubsection{\texorpdfstring{MUST\_PASS}{MUST\_PASS}}
+{\footnotesize\ttfamily \#define MUST\+\_\+\+PASS(\begin{DoxyParamCaption}\item[{}]{EXPR }\end{DoxyParamCaption})~(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}})(EXPR)}
+
+\Hypertarget{_kernel_panic_8h_abaca09ea2b9deed3f481a2303ea89826}\label{_kernel_panic_8h_abaca09ea2b9deed3f481a2303ea89826} 
+\index{KernelPanic.h@{KernelPanic.h}!MUST\_PASS\_COMPILER@{MUST\_PASS\_COMPILER}}
+\index{MUST\_PASS\_COMPILER@{MUST\_PASS\_COMPILER}!KernelPanic.h@{KernelPanic.h}}
+\doxysubsubsection{\texorpdfstring{MUST\_PASS\_COMPILER}{MUST\_PASS\_COMPILER}}
+{\footnotesize\ttfamily \#define MUST\+\_\+\+PASS\+\_\+\+COMPILER(\begin{DoxyParamCaption}\item[{}]{EXPR,  }\item[{}]{MSG }\end{DoxyParamCaption})~static\+\_\+assert(EXPR, MSG)}
+
+\Hypertarget{_kernel_panic_8h_aa1706c3dd2db94d27734f834a7be5ed1}\label{_kernel_panic_8h_aa1706c3dd2db94d27734f834a7be5ed1} 
+\index{KernelPanic.h@{KernelPanic.h}!TRY@{TRY}}
+\index{TRY@{TRY}!KernelPanic.h@{KernelPanic.h}}
+\doxysubsubsection{\texorpdfstring{TRY}{TRY}}
+{\footnotesize\ttfamily \#define TRY(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ fn\ =\ X;\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ if\ ((fn())\ ==\ \mbox{\hyperlink{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}})\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ MUST\_PASS(\mbox{\hyperlink{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}});\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_kernel_panic_8h_a544450d6622b613e983172992807881a}\label{_kernel_panic_8h_a544450d6622b613e983172992807881a} 
+\index{KernelPanic.h@{KernelPanic.h}!RTL\_RUNTIME\_CHECK@{RTL\_RUNTIME\_CHECK}}
+\index{RTL\_RUNTIME\_CHECK@{RTL\_RUNTIME\_CHECK}!KernelPanic.h@{KernelPanic.h}}
+\doxysubsubsection{\texorpdfstring{RTL\_RUNTIME\_CHECK}{RTL\_RUNTIME\_CHECK}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4}{RUNTIME\+\_\+\+CHECK}} \mbox{\hyperlink{_kernel_panic_8h_a544450d6622b613e983172992807881a}{RTL\+\_\+\+RUNTIME\+\_\+\+CHECK}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4} 
+\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK@{RUNTIME\_CHECK}}
+\index{RUNTIME\_CHECK@{RUNTIME\_CHECK}!KernelPanic.h@{KernelPanic.h}}
+\doxysubsubsection{\texorpdfstring{RUNTIME\_CHECK}{RUNTIME\_CHECK}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4}{RUNTIME\+\_\+\+CHECK}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_FAILED@{RUNTIME\_CHECK\_FAILED}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_FAILED@{RUNTIME\_CHECK\_FAILED}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a529db072ff5a094a841ce8995c2af755}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a529db072ff5a094a841ce8995c2af755} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+FAILED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_POINTER@{RUNTIME\_CHECK\_POINTER}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_POINTER@{RUNTIME\_CHECK\_POINTER}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a5df62bbd5068bcb6bea3d2865b9d4f8a}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a5df62bbd5068bcb6bea3d2865b9d4f8a} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+POINTER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_EXPRESSION@{RUNTIME\_CHECK\_EXPRESSION}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_EXPRESSION@{RUNTIME\_CHECK\_EXPRESSION}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a239e3efac3fa4bdcc4baa45327dcccbb}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a239e3efac3fa4bdcc4baa45327dcccbb} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+EXPRESSION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_FILE@{RUNTIME\_CHECK\_FILE}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_FILE@{RUNTIME\_CHECK\_FILE}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a54c7a0e52f2492f144a9e124cc21a8e2}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a54c7a0e52f2492f144a9e124cc21a8e2} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+FILE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_IPC@{RUNTIME\_CHECK\_IPC}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_IPC@{RUNTIME\_CHECK\_IPC}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4ae1291e8d56a70053a9a85706057094c2}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4ae1291e8d56a70053a9a85706057094c2} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+IPC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_TLS@{RUNTIME\_CHECK\_TLS}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_TLS@{RUNTIME\_CHECK\_TLS}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4ac1a838fdc43dbd9ab9d6468b6ca63db4}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4ac1a838fdc43dbd9ab9d6468b6ca63db4} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+TLS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_HANDSHAKE@{RUNTIME\_CHECK\_HANDSHAKE}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_HANDSHAKE@{RUNTIME\_CHECK\_HANDSHAKE}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a2611a53ec2000a30a6108559df698d95}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a2611a53ec2000a30a6108559df698d95} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+HANDSHAKE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_ACPI@{RUNTIME\_CHECK\_ACPI}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_ACPI@{RUNTIME\_CHECK\_ACPI}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6ed4252b21c56a4f017675a5cbbddcb5}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6ed4252b21c56a4f017675a5cbbddcb5} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+ACPI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_INVALID\_PRIVILEGE@{RUNTIME\_CHECK\_INVALID\_PRIVILEGE}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_INVALID\_PRIVILEGE@{RUNTIME\_CHECK\_INVALID\_PRIVILEGE}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4aee7d054510b2edc87fc0f5ccb40db622}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4aee7d054510b2edc87fc0f5ccb40db622} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+INVALID\+\_\+\+PRIVILEGE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_PROCESS@{RUNTIME\_CHECK\_PROCESS}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_PROCESS@{RUNTIME\_CHECK\_PROCESS}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6057fbefb6666380f0a2dfb2cac1ec52}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6057fbefb6666380f0a2dfb2cac1ec52} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+PROCESS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_BAD\_BEHAVIOR@{RUNTIME\_CHECK\_BAD\_BEHAVIOR}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_BAD\_BEHAVIOR@{RUNTIME\_CHECK\_BAD\_BEHAVIOR}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a1337f6e8eac26af363fc25cb42f7fb37}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a1337f6e8eac26af363fc25cb42f7fb37} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+BAD\+\_\+\+BEHAVIOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_BOOTSTRAP@{RUNTIME\_CHECK\_BOOTSTRAP}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_BOOTSTRAP@{RUNTIME\_CHECK\_BOOTSTRAP}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a217045525c052e1c77a7beb71bf574cd}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a217045525c052e1c77a7beb71bf574cd} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+BOOTSTRAP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_UNEXCPECTED@{RUNTIME\_CHECK\_UNEXCPECTED}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_UNEXCPECTED@{RUNTIME\_CHECK\_UNEXCPECTED}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a9f0f2429c1b43fa5bb7f5ba819de3004}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a9f0f2429c1b43fa5bb7f5ba819de3004} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+UNEXCPECTED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_FILESYSTEM@{RUNTIME\_CHECK\_FILESYSTEM}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_FILESYSTEM@{RUNTIME\_CHECK\_FILESYSTEM}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a731f03e909cd2b53999175b46e3c1055}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a731f03e909cd2b53999175b46e3c1055} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+FILESYSTEM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_VIRTUAL\_OUT\_OF\_MEM@{RUNTIME\_CHECK\_VIRTUAL\_OUT\_OF\_MEM}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_VIRTUAL\_OUT\_OF\_MEM@{RUNTIME\_CHECK\_VIRTUAL\_OUT\_OF\_MEM}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6b654133bc3b6210a5f109677c9c4bfe}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a6b654133bc3b6210a5f109677c9c4bfe} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+VIRTUAL\+\_\+\+OUT\+\_\+\+OF\+\_\+\+MEM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_PAGE@{RUNTIME\_CHECK\_PAGE}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_PAGE@{RUNTIME\_CHECK\_PAGE}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4addda1caab2a570872cc5bf4a2b73faf8}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4addda1caab2a570872cc5bf4a2b73faf8} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+PAGE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_INVALID@{RUNTIME\_CHECK\_INVALID}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_INVALID@{RUNTIME\_CHECK\_INVALID}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4aa7e9f4f55366b48d9ead120dfbe630c9}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4aa7e9f4f55366b48d9ead120dfbe630c9} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+INVALID&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNTIME\_CHECK\_COUNT@{RUNTIME\_CHECK\_COUNT}!KernelPanic.h@{KernelPanic.h}}\index{KernelPanic.h@{KernelPanic.h}!RUNTIME\_CHECK\_COUNT@{RUNTIME\_CHECK\_COUNT}}}\Hypertarget{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a716660d7deb97b759f4a22ca6fb3ff6f}\label{_kernel_panic_8h_ae8f6c6e9ebbc1cc782b2dfa4524229d4a716660d7deb97b759f4a22ca6fb3ff6f} 
+RUNTIME\+\_\+\+CHECK\+\_\+\+COUNT&\\
+\hline
+
+\end{DoxyEnumFields}

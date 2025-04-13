@@ -1,0 +1,99 @@
+\doxysection{CFKit Namespace Reference}
+\hypertarget{namespace_c_f_kit}{}\label{namespace_c_f_kit}\index{CFKit@{CFKit}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_c_f_kit_1_1_x_r_n}{XRN}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36}{Property\+Id}} = \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}}
+\begin{DoxyCompactList}\small\item\em handle to anything (number, ptr, string...) \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ }\\using \mbox{\hyperlink{namespace_c_f_kit_a48f8048f077916423a86f8e9f5c5a358}{Property\+Array}} = \mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}}$<$ \mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}}, N $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{namespace_c_f_kit_af5848d0b4e337544bf50f8eac3c478d3}{ldr\+\_\+find\+\_\+exec\+\_\+header}} (\mbox{\hyperlink{_m_s_d_o_s_8h_a528bb549d190f8c368943dbe1701f7f2}{Dos\+Header\+Ptr}} ptr\+Dos) -\/$>$ \mbox{\hyperlink{_p_e_8h_a41852792e574e18e99b6372eea017ea3}{LDR\+\_\+\+EXEC\+\_\+\+HEADER\+\_\+\+PTR}}
+\begin{DoxyCompactList}\small\item\em Finds the PE header inside the blob. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespace_c_f_kit_ab2b671450c03da716849df4c312e35b5}{ldr\+\_\+find\+\_\+opt\+\_\+exec\+\_\+header}} (\mbox{\hyperlink{_m_s_d_o_s_8h_a528bb549d190f8c368943dbe1701f7f2}{Dos\+Header\+Ptr}} ptr\+Dos) -\/$>$ \mbox{\hyperlink{_p_e_8h_a7acf40b3cbcf5afda57dc0cd46f74923}{LDR\+\_\+\+OPTIONAL\+\_\+\+HEADER\+\_\+\+PTR}}
+\begin{DoxyCompactList}\small\item\em Finds the PE optional header inside the blob. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespace_c_f_kit_af4db60221391d3911ad967f82843595f}{ldr\+\_\+find\+\_\+exec\+\_\+header}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}ptr\+Dos) -\/$>$ \mbox{\hyperlink{_p_e_8h_a41852792e574e18e99b6372eea017ea3}{LDR\+\_\+\+EXEC\+\_\+\+HEADER\+\_\+\+PTR}}
+\begin{DoxyCompactList}\small\item\em Finds the PE header inside the blob. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespace_c_f_kit_a7ef28c03414eb4ec9919cce5a69b2d92}{ldr\+\_\+find\+\_\+opt\+\_\+exec\+\_\+header}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}ptr\+Dos) -\/$>$ \mbox{\hyperlink{_p_e_8h_a7acf40b3cbcf5afda57dc0cd46f74923}{LDR\+\_\+\+OPTIONAL\+\_\+\+HEADER\+\_\+\+PTR}}
+\begin{DoxyCompactList}\small\item\em Finds the PE header inside the blob. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespace_c_f_kit_a48f8048f077916423a86f8e9f5c5a358}\label{namespace_c_f_kit_a48f8048f077916423a86f8e9f5c5a358} 
+\index{CFKit@{CFKit}!PropertyArray@{PropertyArray}}
+\index{PropertyArray@{PropertyArray}!CFKit@{CFKit}}
+\doxysubsubsection{\texorpdfstring{PropertyArray}{PropertyArray}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+using \mbox{\hyperlink{namespace_c_f_kit_a48f8048f077916423a86f8e9f5c5a358}{CFKit\+::\+Property\+Array}} = typedef \mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}}$<$\mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}}, N$>$}
+
+\Hypertarget{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36}\label{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36} 
+\index{CFKit@{CFKit}!PropertyId@{PropertyId}}
+\index{PropertyId@{PropertyId}!CFKit@{CFKit}}
+\doxysubsubsection{\texorpdfstring{PropertyId}{PropertyId}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36}{CFKit\+::\+Property\+Id}} = typedef \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}}}
+
+
+
+handle to anything (number, ptr, string...) 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_c_f_kit_af4db60221391d3911ad967f82843595f}\label{namespace_c_f_kit_af4db60221391d3911ad967f82843595f} 
+\index{CFKit@{CFKit}!ldr\_find\_exec\_header@{ldr\_find\_exec\_header}}
+\index{ldr\_find\_exec\_header@{ldr\_find\_exec\_header}!CFKit@{CFKit}}
+\doxysubsubsection{\texorpdfstring{ldr\_find\_exec\_header()}{ldr\_find\_exec\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto CFKit\+::ldr\+\_\+find\+\_\+exec\+\_\+header (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{ptr\+Dos }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{_p_e_8h_a41852792e574e18e99b6372eea017ea3}{LDR\+\_\+\+EXEC\+\_\+\+HEADER\+\_\+\+PTR}}  \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds the PE header inside the blob. 
+
+\begin{DoxyNote}{Note}
+overloaded function. 
+\end{DoxyNote}
+\Hypertarget{namespace_c_f_kit_af5848d0b4e337544bf50f8eac3c478d3}\label{namespace_c_f_kit_af5848d0b4e337544bf50f8eac3c478d3} 
+\index{CFKit@{CFKit}!ldr\_find\_exec\_header@{ldr\_find\_exec\_header}}
+\index{ldr\_find\_exec\_header@{ldr\_find\_exec\_header}!CFKit@{CFKit}}
+\doxysubsubsection{\texorpdfstring{ldr\_find\_exec\_header()}{ldr\_find\_exec\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto CFKit\+::ldr\+\_\+find\+\_\+exec\+\_\+header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_m_s_d_o_s_8h_a528bb549d190f8c368943dbe1701f7f2}{Dos\+Header\+Ptr}}}]{ptr\+Dos }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{_p_e_8h_a41852792e574e18e99b6372eea017ea3}{LDR\+\_\+\+EXEC\+\_\+\+HEADER\+\_\+\+PTR}}  \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds the PE header inside the blob. 
+
+\Hypertarget{namespace_c_f_kit_a7ef28c03414eb4ec9919cce5a69b2d92}\label{namespace_c_f_kit_a7ef28c03414eb4ec9919cce5a69b2d92} 
+\index{CFKit@{CFKit}!ldr\_find\_opt\_exec\_header@{ldr\_find\_opt\_exec\_header}}
+\index{ldr\_find\_opt\_exec\_header@{ldr\_find\_opt\_exec\_header}!CFKit@{CFKit}}
+\doxysubsubsection{\texorpdfstring{ldr\_find\_opt\_exec\_header()}{ldr\_find\_opt\_exec\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto CFKit\+::ldr\+\_\+find\+\_\+opt\+\_\+exec\+\_\+header (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{ptr\+Dos }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{_p_e_8h_a7acf40b3cbcf5afda57dc0cd46f74923}{LDR\+\_\+\+OPTIONAL\+\_\+\+HEADER\+\_\+\+PTR}}  \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds the PE header inside the blob. 
+
+\begin{DoxyNote}{Note}
+overloaded function. 
+\end{DoxyNote}
+\Hypertarget{namespace_c_f_kit_ab2b671450c03da716849df4c312e35b5}\label{namespace_c_f_kit_ab2b671450c03da716849df4c312e35b5} 
+\index{CFKit@{CFKit}!ldr\_find\_opt\_exec\_header@{ldr\_find\_opt\_exec\_header}}
+\index{ldr\_find\_opt\_exec\_header@{ldr\_find\_opt\_exec\_header}!CFKit@{CFKit}}
+\doxysubsubsection{\texorpdfstring{ldr\_find\_opt\_exec\_header()}{ldr\_find\_opt\_exec\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto CFKit\+::ldr\+\_\+find\+\_\+opt\+\_\+exec\+\_\+header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_m_s_d_o_s_8h_a528bb549d190f8c368943dbe1701f7f2}{Dos\+Header\+Ptr}}}]{ptr\+Dos }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{_p_e_8h_a7acf40b3cbcf5afda57dc0cd46f74923}{LDR\+\_\+\+OPTIONAL\+\_\+\+HEADER\+\_\+\+PTR}}  \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Finds the PE optional header inside the blob. 
+

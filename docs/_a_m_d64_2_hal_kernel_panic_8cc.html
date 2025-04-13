@@ -104,29 +104,29 @@ $(document).ready(function(){initNavTree('_a_m_d64_2_hal_kernel_panic_8cc.html',
 <code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_handover_8h_source.html">FirmwareKit/Handover.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_file_mgr_8h_source.html">KernelKit/FileMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_f_b_mgr_8h_source.html">modules/CoreGfx/FBMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_text_mgr_8h_source.html">modules/CoreGfx/TextMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_core_gfx_8h_source.html">modules/CoreGfx/CoreGfx.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_text_gfx_8h_source.html">modules/CoreGfx/TextGfx.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_new_kit_2_utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_recovery_factory.html">NeOS::RecoveryFactory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumping factory class.  <a href="class_ne_o_s_1_1_recovery_factory.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_recovery_factory.html">Kernel::RecoveryFactory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumping factory class.  <a href="class_kernel_1_1_recovery_factory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_ne_o_s" id="r_namespace_ne_o_s"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html">NeOS</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>Kernel</b> namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a989feb3221f46d48287bc8cf13506892" id="r_a989feb3221f46d48287bc8cf13506892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a989feb3221f46d48287bc8cf13506892">NeOS::ke_panic</a> (const <a class="el" href="namespace_ne_o_s.html#a91a19724952b6c6faf9b52f9efc935f7">NeOS::Int32</a> &amp;id, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *message)</td></tr>
-<tr class="memdesc:a989feb3221f46d48287bc8cf13506892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops execution of the kernel.  <br /></td></tr>
-<tr class="separator:a989feb3221f46d48287bc8cf13506892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b0d06866c612e4bc6a89f7949a7fcbb" id="r_a8b0d06866c612e4bc6a89f7949a7fcbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a8b0d06866c612e4bc6a89f7949a7fcbb">NeOS::ke_runtime_check</a> (bool expr, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *file, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *line)</td></tr>
-<tr class="separator:a8b0d06866c612e4bc6a89f7949a7fcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f4ac957b25737365c415f1a1396dbc" id="r_a05f4ac957b25737365c415f1a1396dbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a05f4ac957b25737365c415f1a1396dbc">Kernel::ke_panic</a> (<a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a> &amp;<a class="el" href="class_kernel_1_1_error_or.html">id</a>, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *message)</td></tr>
+<tr class="memdesc:a05f4ac957b25737365c415f1a1396dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops execution of the kernel.  <br /></td></tr>
+<tr class="separator:a05f4ac957b25737365c415f1a1396dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4673076c24720c3b405ad974edc5646" id="r_ad4673076c24720c3b405ad974edc5646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a> (<a class="el" href="class_kernel_1_1_error_or.html">bool</a> <a class="el" href="class_kernel_1_1_error_or.html">expr</a>, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *<a class="el" href="class_kernel_1_1_error_or.html">file</a>, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *<a class="el" href="class_kernel_1_1_error_or.html">line</a>)</td></tr>
+<tr class="separator:ad4673076c24720c3b405ad974edc5646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

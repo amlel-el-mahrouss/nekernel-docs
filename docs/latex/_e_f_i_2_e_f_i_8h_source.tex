@@ -1,0 +1,799 @@
+\doxysection{EFI.\+h}
+\hypertarget{_e_f_i_2_e_f_i_8h_source}{}\label{_e_f_i_2_e_f_i_8h_source}\index{dev/kernel/FirmwareKit/EFI/EFI.h@{dev/kernel/FirmwareKit/EFI/EFI.h}}
+\mbox{\hyperlink{_e_f_i_2_e_f_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ FIRMWARE\_KIT\_EFI\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ FIRMWARE\_KIT\_EFI\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{/*\ we\ always\ use\ stdcall\ in\ EFI,\ the\ pascal\ way\ of\ calling\ functions.\ */}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifndef\ EPI\_API}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ EFI\_API\ \_\_attribute\_\_((ms\_abi))}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifndef\ EPI\_API}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ IN}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ OUT}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ OPTIONAL}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ EFI\_FINAL\ final}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ Forward\ decls}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_table_header}{EfiTableHeader}};}
+\DoxyCodeLine{00033\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_load_file_protocol}{EfiLoadFileProtocol}};}
+\DoxyCodeLine{00034\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}};}
+\DoxyCodeLine{00035\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_device_path_protocol}{EfiDevicePathProtocol}};}
+\DoxyCodeLine{00036\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_boot_services}{EfiBootServices}};}
+\DoxyCodeLine{00037\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_memory_descriptor}{EfiMemoryDescriptor}};}
+\DoxyCodeLine{00038\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_system_table}{EfiSystemTable}};}
+\DoxyCodeLine{00039\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}};}
+\DoxyCodeLine{00040\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_device_path_protocol}{EfiFileDevicePathProtocol}};}
+\DoxyCodeLine{00041\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_handle}{EfiHandle}};}
+\DoxyCodeLine{00042\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_graphics_output_protocol}{EfiGraphicsOutputProtocol}};}
+\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_bitmask}{EfiBitmask}};}
+\DoxyCodeLine{00044\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}};}
+\DoxyCodeLine{00045\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_text_input_protocol}{EfiSimpleTextInputProtocol}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a3f14bd9541c95418b00115c5f7ce2175}{Char16}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a9c7dc330bb85cbc8a17f2b4aa34db3ad}{EfiChar16Type}};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_handle}{EfiHandle}}}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \}\ *\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{EfiHandlePtr}};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{comment}{/*\ UEFI\ uses\ wide\ characters\ by\ default.\ */}}
+\DoxyCodeLine{00058\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{EfiCharType}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a39c7f6966178f1342309afab5e67897e}{EfiPhysicalAddress}};}
+\DoxyCodeLine{00061\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a78fc502dbd4362df30a0c241d1f17ee2}{EfiVirtualAddress}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ad1ab2467dbe37db4a5f4790791cc96fb}{EfiTextString}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}}*\ Self,}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}});}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aae0c628326c039d8d1dab5a340f137b6}{EfiTextAttrib}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}}*\ Self,}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Attribute);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a28f785d488b91fd5684541146bcf5eda}{EfiTextClear}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}}*\ Self);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a2cfc9dd579d8185b1586bb8054e73954}{EfiLoadFile}})(\mbox{\hyperlink{struct_efi_load_file_protocol}{EfiLoadFileProtocol}}*\ \ \ \ \ \ \ \ Self,}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_device_path_protocol}{EfiFileDevicePathProtocol}}*\ FilePath,}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BootPolicy,}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BufferSize,}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Buffer);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a333b0023d8b93dd14bf748c099a6d5dc}{EfiCopyMem}})(\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ DstBuf,\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ SrcBuf,\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ Length);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a446fb18e994f224588ebab83520a159d}{EfiSetMem}})(\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ DstBuf,\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\ Byte,\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ Length);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac9856cc1033953d293cfbb5c1fcb0bad}{EfiHandleProtocol}})(\mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ Handle,\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}*\ Guid,\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}*\ \mbox{\hyperlink{class_device}{Device}});}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0ae88957f24852ec56c12fa88024b129}{EfiLocateDevicePath}})(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Protocol,}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_device_path_protocol}{EfiDevicePathProtocol}}**\ DevicePath,}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_device}{Device}});}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a9af64df21e4456d688c85676ba1887c9}{EfiStartImage}})(\mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ Handle,\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ ArgsSize,\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ ArgsPtr);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aac5975d6cd3731b3b78a10abb0381dc3}{EfiLoadImage}})(\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BootPolicy,}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ParentHandle,}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_device_path_protocol}{EfiFileDevicePathProtocol}}*\ DeviceFile,}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ buffer,}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ size,}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ ppHandle);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1f}{EfiMemoryType}}}
+\DoxyCodeLine{00104\ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa2dcfe6887a5a7e78344d7b5aa0799adf}{EfiReservedMemoryType}},}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fabf71319747323abe8c0aa4253588f49a}{EfiLoaderCode}},}
+\DoxyCodeLine{00118\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa4896def316fb5a157dc02c9571ee43db}{EfiLoaderData}},}
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa3527bf982297d34fe0a8aaa8bc087d82}{EfiBootServicesCode}},}
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa111e9c32ba00e989ee6d356bc46a572b}{EfiBootServicesData}},}
+\DoxyCodeLine{00131\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1faf39d90a15a64282255a96a3d665ff165}{EfiRuntimeServicesCode}},}
+\DoxyCodeLine{00137\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1faf7b09f731fa6f3cd90c019d0f52e29cb}{EfiRuntimeServicesData}},}
+\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa3606d9045f535adda54e5f1448211718}{EfiConventionalMemory}},}
+\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa0343d670021aa14e784b345ea5ed2d49}{EfiUnusableMemory}},}
+\DoxyCodeLine{00149\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fab8cd8f20847ddf6580ee3477bee4a86c}{EfiACPIReclaimMemory}},}
+\DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa86f1b80e03e6705be56d024782b9169a}{EfiACPIMemoryNVS}},}
+\DoxyCodeLine{00159\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fac04ba41d1e215972b683e9fecb84a406}{EfiMemoryMappedIO}},}
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa9de7c4958790d373fa9c16e5884c611f}{EfiMemoryMappedIOPortSpace}},}
+\DoxyCodeLine{00169\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fae2aac81fe88eda95e04b49b798945cfe}{EfiPalCode}},}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa21888770ae7dbcf59114aba85c050418}{EfiPersistentMemory}},}
+\DoxyCodeLine{00179\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1faccba4111e51fabdba07eb1782eedb66a}{EfiUnacceptedMemoryType}},}
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1fa2139957bd5f8c3067730c1e902d2a98c}{EfiMaxMemoryType}},}
+\DoxyCodeLine{00185\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1f}{EfiMemoryType}};}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a72c499658fc12d830e27ae2db23324a8}{EfiAllocateType}}}
+\DoxyCodeLine{00188\ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a72c499658fc12d830e27ae2db23324a8aa3885c7caaabe9e43bafbfaae48ca49a}{AllocateAnyPages}},}
+\DoxyCodeLine{00191\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a72c499658fc12d830e27ae2db23324a8a04bb1bb7ae4b90da5ba22d4a19617003}{AllocateMaxAddress}},}
+\DoxyCodeLine{00195\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a72c499658fc12d830e27ae2db23324a8a925be7b9bb228f50488049bcd3343ed8}{AllocateAddress}},}
+\DoxyCodeLine{00199\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a72c499658fc12d830e27ae2db23324a8aa919d7bdd1e81f691e39ca797a850258}{MaxAllocateType}}}
+\DoxyCodeLine{00200\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a72c499658fc12d830e27ae2db23324a8}{EfiAllocateType}};}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_memory_descriptor}{EfiMemoryDescriptor}}}
+\DoxyCodeLine{00203\ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_memory_descriptor_ae5fce5df9f4f8615f5fa8ac8b1ea1a87}{Kind}};}
+\DoxyCodeLine{00216\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a39c7f6966178f1342309afab5e67897e}{EfiPhysicalAddress}}\ \mbox{\hyperlink{struct_efi_memory_descriptor_a1de2cc21453dde19f0d629da3ee30dab}{PhysicalStart}};}
+\DoxyCodeLine{00222\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a78fc502dbd4362df30a0c241d1f17ee2}{EfiVirtualAddress}}\ \mbox{\hyperlink{struct_efi_memory_descriptor_aa28b4fe6eb5213737e970336a1e94d7d}{VirtualStart}};}
+\DoxyCodeLine{00229\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_efi_memory_descriptor_a3a3e56f5f4f7dfc5d4e277065702b20b}{NumberOfPages}};}
+\DoxyCodeLine{00235\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_efi_memory_descriptor_a15f4be22d4f8e43ed353bcb597b732b2}{Attribute}};}
+\DoxyCodeLine{00236\ \}\ \mbox{\hyperlink{struct_efi_memory_descriptor}{EfiMemoryDescriptor}};}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afa645b9cea4af7ecd478149516c891d0}{EfiAllocatePool}})(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1f}{EfiMemoryType}}\ PoolType,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}},\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}*\ Buffer);}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_acb761799076b2a2680c6ba52b4f6b489}{EfiFreePool}})(\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ Buffer);}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a736398d849ac3f4727517fb2c0560e83}{EfiCalculateCrc32}})(\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ Data,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ DataSize,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ CrcOut);}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00247\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_table_header}{EfiTableHeader}}}
+\DoxyCodeLine{00248\ \{}
+\DoxyCodeLine{00249\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_efi_table_header_a100f11e9c42c5fc389b42fabc7ec668c}{Signature}};}
+\DoxyCodeLine{00250\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_table_header_ab3c03d2714de33556005d649bdab2ad3}{Revision}};}
+\DoxyCodeLine{00251\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_table_header_aad006ccbae92f3b598f309e32be5ad92}{HeaderSize}};}
+\DoxyCodeLine{00252\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_table_header_aaaf2adb29a014a275c79d5dde7e5369f}{Crc32}};}
+\DoxyCodeLine{00253\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_table_header_a06e3977f0ed27628fce133911ea0967a}{Reserved}};}
+\DoxyCodeLine{00254\ \}\ \mbox{\hyperlink{struct_efi_table_header}{EfiTableHeader}};}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00256\ \textcolor{preprocessor}{\#define\ EFI\_ACPI\_TABLE\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00257\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00258\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0xffe06bdd,\ 0x6107,\ 0x46a6,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00259\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00260\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x7b,\ 0xb2,\ 0x5a,\ 0x9c,\ 0x7e,\ 0xc5,\ 0x27,\ 0x5c\ \(\backslash\)}}
+\DoxyCodeLine{00261\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00262\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00263\ }
+\DoxyCodeLine{00264\ \textcolor{preprocessor}{\#define\ EFI\_LOAD\_FILE\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00265\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00266\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x56EC3091,\ 0x954C,\ 0x11d2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00267\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00268\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x8e,\ 0x3f,\ 0x00,\ 0xa0,\ 0xc9,\ 0x69,\ 0x72,\ 0x3b\ \(\backslash\)}}
+\DoxyCodeLine{00269\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00270\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ \textcolor{preprocessor}{\#define\ EFI\_LOAD\_FILE2\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00273\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00274\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x4006c0c1,\ 0xfcb3,\ 0x403e,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00275\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00276\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x99,\ 0x6d,\ 0x4a,\ 0x6c,\ 0x87,\ 0x24,\ 0xe0,\ 0x6d\ \(\backslash\)}}
+\DoxyCodeLine{00277\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00278\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \textcolor{preprocessor}{\#define\ EFI\_LOADED\_IMAGE\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00281\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00282\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x5B1B31A1,\ 0x9562,\ 0x11d2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00283\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00284\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x8E,\ 0x3F,\ 0x00,\ 0xA0,\ 0xC9,\ 0x69,\ 0x72,\ 0x3B\ \(\backslash\)}}
+\DoxyCodeLine{00285\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00286\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00288\ \textcolor{preprocessor}{\#define\ EFI\_GRAPHICS\_OUTPUT\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00289\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00290\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x9042a9de,\ 0x23dc,\ 0x4a38,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00291\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00292\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x96,\ 0xfb,\ 0x7a,\ 0xde,\ 0xd0,\ 0x80,\ 0x51,\ 0x6a\ \(\backslash\)}}
+\DoxyCodeLine{00293\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00294\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00296\ \textcolor{preprocessor}{\#define\ EFI\_LOADED\_IMAGE\_PROTOCOL\_REVISION\ 0x1000}}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ \textcolor{preprocessor}{\#define\ EFI\_SIMPLE\_FILE\_SYSTEM\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00299\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00300\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x0964e5b22,\ 0x6459,\ 0x11d2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00301\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00302\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x8e,\ 0x39,\ 0x00,\ 0xa0,\ 0xc9,\ 0x69,\ 0x72,\ 0x3b\ \(\backslash\)}}
+\DoxyCodeLine{00303\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00304\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00305\ }
+\DoxyCodeLine{00306\ \textcolor{preprocessor}{\#define\ EFI\_LOADED\_IMAGE\_DEVICE\_PATH\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00307\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00308\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0xbc62157e,\ 0x3e33,\ 0x4fec,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00309\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00310\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x99,\ 0x20,\ 0x2d,\ 0x3b,\ 0x36,\ 0xd7,\ 0x50,\ 0xdf\ \(\backslash\)}}
+\DoxyCodeLine{00311\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00312\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00314\ \textcolor{preprocessor}{\#define\ EFI\_DEVICE\_PATH\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00315\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00316\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x9576e91,\ 0x6d3f,\ 0x11d2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00317\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00318\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x8e,\ 0x39,\ 0x0,\ 0xa0,\ 0xc9,\ 0x69,\ 0x72,\ 0x3b\ \(\backslash\)}}
+\DoxyCodeLine{00319\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00320\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00321\ }
+\DoxyCodeLine{00322\ \textcolor{preprocessor}{\#define\ EFI\_SIMPLE\_FILE\_SYSTEM\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00323\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00324\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x0964e5b22,\ 0x6459,\ 0x11d2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00325\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00326\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x8e,\ 0x39,\ 0x00,\ 0xa0,\ 0xc9,\ 0x69,\ 0x72,\ 0x3b\ \(\backslash\)}}
+\DoxyCodeLine{00327\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00328\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00329\ }
+\DoxyCodeLine{00330\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abaa52d3b7317e43b5664548c3f6002d6}{EfiImageUnload}})(\mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ ImageHandle);}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00332\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00333\ \{}
+\DoxyCodeLine{00334\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a61dadd085c1777f559549e05962b2c9ea5894a67b564c9bec010dc2feabcbd139}{kPixelRedGreenBlueReserved8BitPerColor}},}
+\DoxyCodeLine{00335\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a61dadd085c1777f559549e05962b2c9eaaa931b6cda097bb7c0fbfdd62d1c5ca4}{kPixelBlueGreenRedReserved8BitPerColor}},}
+\DoxyCodeLine{00336\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a61dadd085c1777f559549e05962b2c9eadf86d1b9e6005360a1ad13be69975730}{kPixelBitMask}},}
+\DoxyCodeLine{00337\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a61dadd085c1777f559549e05962b2c9eac4e31399db1ac24e604e94e15a46f178}{kPixelBltOnly}},}
+\DoxyCodeLine{00338\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a61dadd085c1777f559549e05962b2c9ea70fee96141031bdc414e5603dea212a7}{kPixelFormatMax}}}
+\DoxyCodeLine{00339\ \};}
+\DoxyCodeLine{00340\ }
+\DoxyCodeLine{00341\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_bitmask}{EfiBitmask}}}
+\DoxyCodeLine{00342\ \{}
+\DoxyCodeLine{00343\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_bitmask_aa713a805791825b28351c061624d594d}{RedMask}};}
+\DoxyCodeLine{00344\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_bitmask_a88f33d6dc53e15c7294c0b677b9734cb}{GreenMask}};}
+\DoxyCodeLine{00345\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_bitmask_ad5f2abfeaeba93e840cc2ef0a76907d1}{BlueMask}};}
+\DoxyCodeLine{00346\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_bitmask_a87698b9a619b8c582bcc87cc10f16d49}{ReservedMask}};}
+\DoxyCodeLine{00347\ \}\ \mbox{\hyperlink{struct_efi_bitmask}{EfiBitmask}};}
+\DoxyCodeLine{00348\ }
+\DoxyCodeLine{00349\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00350\ \{}
+\DoxyCodeLine{00351\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_graphics_output_blt_pixel_a69c98658044c42f8280e8b7091ff5203}{Blue}};}
+\DoxyCodeLine{00352\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_graphics_output_blt_pixel_abb7cdfd4d3bd7e29ad4728f414ebbc1b}{Green}};}
+\DoxyCodeLine{00353\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_graphics_output_blt_pixel_a0043252d644f8ae17007aeb3ccc83cb1}{Red}};}
+\DoxyCodeLine{00354\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_graphics_output_blt_pixel_a848f0d214b048db7d41e85b4df892724}{Reserved}};}
+\DoxyCodeLine{00355\ \}\ \mbox{\hyperlink{struct_efi_graphics_output_blt_pixel}{EfiGraphicsOutputBltPixel}};}
+\DoxyCodeLine{00356\ }
+\DoxyCodeLine{00357\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14}{EfiGraphicsOutputProtocolBltOperation}}}
+\DoxyCodeLine{00358\ \{}
+\DoxyCodeLine{00359\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14adf8bc06c68743d9b9663ae608f4e4dc5}{EfiBltVideoFill}},}
+\DoxyCodeLine{00360\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14ab42a153fb18724a64051943f3b7c771f}{EfiBltVideoToBltBuffer}},}
+\DoxyCodeLine{00361\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14ac20009a657b3d88fda849c8b38e603db}{EfiBltBufferToVideo}},}
+\DoxyCodeLine{00362\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14af5010ee8626fbd126bb7df5182a2ff95}{EfiBltVideoToVideo}},}
+\DoxyCodeLine{00363\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14ad5eebd88284dc4cc53341f844afd161b}{EfiGraphicsOutputBltOperationMax}}}
+\DoxyCodeLine{00364\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14}{EfiGraphicsOutputProtocolBltOperation}};}
+\DoxyCodeLine{00365\ }
+\DoxyCodeLine{00366\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information}{EfiGraphicsOutputProtocolModeInformation}}}
+\DoxyCodeLine{00367\ \{}
+\DoxyCodeLine{00368\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information_a979a0c5efe00e8d64ee88eed5dfc2678}{Version}};}
+\DoxyCodeLine{00369\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information_a14b4ae222d9f2cde20a5e7bfc48c2c89}{HorizontalResolution}};}
+\DoxyCodeLine{00370\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information_a86f19cf632cb09b18ded1968d1ecef4e}{VerticalResolution}};}
+\DoxyCodeLine{00371\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information_a3f77b1b9e16cd723439414e47f72698f}{PixelFormat}};}
+\DoxyCodeLine{00372\ \ \ \ \ \mbox{\hyperlink{struct_efi_bitmask}{EfiBitmask}}\ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information_a6da18a57a7f5d5ef89a6929c742eb242}{PixelInformation}};}
+\DoxyCodeLine{00373\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information_abda463cbec35e2fd5a39ff483d5476a7}{PixelsPerScanLine}};}
+\DoxyCodeLine{00374\ \}\ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information}{EfiGraphicsOutputProtocolModeInformation}};}
+\DoxyCodeLine{00375\ }
+\DoxyCodeLine{00376\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a95092560b5cbc60227535ef0831b825a}{EfiGraphicsOutputProtocolQueryMode}})(}
+\DoxyCodeLine{00377\ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol}{EfiGraphicsOutputProtocol}}*\ Self,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ ModeNumber,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ SizeOfInfo,\ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information}{EfiGraphicsOutputProtocolModeInformation}}**\ Info);}
+\DoxyCodeLine{00378\ }
+\DoxyCodeLine{00379\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac8d51f75f67a29d13e0cc1585b7cefda}{EfiGraphicsOutputProtocolSetMode}})(}
+\DoxyCodeLine{00380\ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol}{EfiGraphicsOutputProtocol}}*\ Self,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ ModeNumber);}
+\DoxyCodeLine{00381\ }
+\DoxyCodeLine{00382\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a3da79c78c74539d77b9c268079678274}{EfiGraphicsOutputProtocolBlt}})(}
+\DoxyCodeLine{00383\ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol}{EfiGraphicsOutputProtocol}}*\ Self,\ \mbox{\hyperlink{struct_efi_graphics_output_blt_pixel}{EfiGraphicsOutputBltPixel}}*\ BltBuffer,\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a6771f328e075594263a382d710ddaa14}{EfiGraphicsOutputProtocolBltOperation}}\ BltOperation,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ SourceX,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ SourceY,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ DestinationX,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ DestinationY,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ Width,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ Height,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ Delta);}
+\DoxyCodeLine{00384\ }
+\DoxyCodeLine{00385\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00386\ \{}
+\DoxyCodeLine{00387\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_a92739390f289f45e69561923a70e33e2}{MaxMode}};}
+\DoxyCodeLine{00388\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_aa9f2a4a3b81eee8e0af983cd6e203c9d}{Mode}};}
+\DoxyCodeLine{00389\ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_information}{EfiGraphicsOutputProtocolModeInformation}}*\ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_adb947234705e1f1af3c245bdfe99300e}{Info}};}
+\DoxyCodeLine{00390\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_a1528aeaac500fa8dfe3e3cf5ee4de275}{SizeOfInfo}};}
+\DoxyCodeLine{00391\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_a28764c598e1445fcd4785ca98705ccfb}{FrameBufferBase}};}
+\DoxyCodeLine{00392\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode_a9769a3ca866e90e271d0912c378334fe}{FrameBufferSize}};}
+\DoxyCodeLine{00393\ \}\ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode}{EfiGraphicsOutputProtocolMode}};}
+\DoxyCodeLine{00394\ }
+\DoxyCodeLine{00395\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_graphics_output_protocol}{EfiGraphicsOutputProtocol}}}
+\DoxyCodeLine{00396\ \{}
+\DoxyCodeLine{00397\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a95092560b5cbc60227535ef0831b825a}{EfiGraphicsOutputProtocolQueryMode}}\ \mbox{\hyperlink{struct_efi_graphics_output_protocol_ab32db1dc9f05d723a77df21841f2a1a5}{QueryMode}};}
+\DoxyCodeLine{00398\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac8d51f75f67a29d13e0cc1585b7cefda}{EfiGraphicsOutputProtocolSetMode}}\ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_a4ab54c2d45e3169bfb9cba7edaf238cc}{SetMode}};}
+\DoxyCodeLine{00399\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a3da79c78c74539d77b9c268079678274}{EfiGraphicsOutputProtocolBlt}}\ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_a1629cee2c7e0c66c0bf40c5fcd8af198}{Blt}};}
+\DoxyCodeLine{00400\ \ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_mode}{EfiGraphicsOutputProtocolMode}}*\ \ \ \ \mbox{\hyperlink{struct_efi_graphics_output_protocol_a930e7e2f4c1c1beaa7cae73ffe24f688}{Mode}};}
+\DoxyCodeLine{00401\ \}\ \mbox{\hyperlink{struct_efi_graphics_output_protocol}{EfiGraphicsOutputProtocol}};}
+\DoxyCodeLine{00402\ }
+\DoxyCodeLine{00403\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_load_image_protocol}{EfiLoadImageProtocol}}}
+\DoxyCodeLine{00404\ \{}
+\DoxyCodeLine{00405\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_load_image_protocol_a6c311d371f0c22be7d2100791e98925f}{Revision}};}
+\DoxyCodeLine{00406\ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ \ \ \ \mbox{\hyperlink{struct_efi_load_image_protocol_ab3809aa66fb7064e0fe90fb80b756741}{ParentHandle}};}
+\DoxyCodeLine{00407\ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table}{EfiSystemTable}}*\ \mbox{\hyperlink{struct_efi_load_image_protocol_ad53f43180afa41ce7e6790aa5044fe48}{SystemTable}};}
+\DoxyCodeLine{00408\ }
+\DoxyCodeLine{00409\ \ \ \ \ \textcolor{comment}{//\ Source\ location\ of\ the\ image}}
+\DoxyCodeLine{00410\ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_load_image_protocol_a55ca64671bb2b91223f82bbee92355d7}{DeviceHandle}};}
+\DoxyCodeLine{00411\ \ \ \ \ \mbox{\hyperlink{struct_efi_device_path_protocol}{EfiDevicePathProtocol}}*\ \mbox{\hyperlink{struct_efi_load_image_protocol_a0dc2463f789c568f4b2966e78e0ce786}{FilePath}};}
+\DoxyCodeLine{00412\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_load_image_protocol_afb46115aafc92057b9219c38fcabb3d5}{Reserved}};}
+\DoxyCodeLine{00413\ }
+\DoxyCodeLine{00414\ \ \ \ \ \textcolor{comment}{//\ Image’s\ load\ options}}
+\DoxyCodeLine{00415\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_load_image_protocol_a17b168a8cee487ff5cc8db114d368a44}{LoadOptionsSize}};}
+\DoxyCodeLine{00416\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}*\ \ \mbox{\hyperlink{struct_efi_load_image_protocol_ae2d7fd4785cd8d1d2d6933bfa9dde83e}{LoadOptions}};}
+\DoxyCodeLine{00417\ }
+\DoxyCodeLine{00418\ \ \ \ \ \textcolor{comment}{//\ Location\ where\ image\ was\ loaded}}
+\DoxyCodeLine{00419\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}*\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_load_image_protocol_a1cfced080aebf1787c5334911fa78207}{ImageBase}};}
+\DoxyCodeLine{00420\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_load_image_protocol_afd55ff517198c829a112e6290a3443cd}{ImageSize}};}
+\DoxyCodeLine{00421\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1f}{EfiMemoryType}}\ \ \mbox{\hyperlink{struct_efi_load_image_protocol_a2a4c683608226df043f8df0398322f57}{ImageCodeType}};}
+\DoxyCodeLine{00422\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1f}{EfiMemoryType}}\ \ \mbox{\hyperlink{struct_efi_load_image_protocol_ab19cdf40c2b2fc45e17b2787bcb88266}{ImageDataType}};}
+\DoxyCodeLine{00423\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abaa52d3b7317e43b5664548c3f6002d6}{EfiImageUnload}}\ \mbox{\hyperlink{struct_efi_load_image_protocol_a4dc0e91a59197aed35368cc9774ffe61}{Unload}};}
+\DoxyCodeLine{00424\ \}\ \mbox{\hyperlink{struct_efi_load_image_protocol}{EfiLoadImageProtocol}};}
+\DoxyCodeLine{00425\ }
+\DoxyCodeLine{00426\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_load_file_protocol}{EfiLoadFileProtocol}}}
+\DoxyCodeLine{00427\ \{}
+\DoxyCodeLine{00428\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a2cfc9dd579d8185b1586bb8054e73954}{EfiLoadFile}}\ \mbox{\hyperlink{struct_efi_load_file_protocol_a0f5268e9496722aa478db1f2e04c72ca}{LoadFile}};}
+\DoxyCodeLine{00429\ \}\ \mbox{\hyperlink{struct_efi_load_file_protocol}{EfiLoadFileProtocol}};}
+\DoxyCodeLine{00430\ }
+\DoxyCodeLine{00431\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_device_path_protocol}{EfiDevicePathProtocol}}}
+\DoxyCodeLine{00432\ \{}
+\DoxyCodeLine{00433\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_device_path_protocol_ab015d79ba7eca9ac609d2b93da76c0a0}{Kind}};}
+\DoxyCodeLine{00434\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_device_path_protocol_ab6ecaf88e62160513100e1330562addc}{SubType}};}
+\DoxyCodeLine{00435\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_device_path_protocol_a765eee3ba0f8dada167d7dd82cde0d9a}{Length}}[2];}
+\DoxyCodeLine{00436\ \}\ \mbox{\hyperlink{struct_efi_device_path_protocol}{EfiDevicePathProtocol}};}
+\DoxyCodeLine{00437\ }
+\DoxyCodeLine{00438\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_device_path_protocol}{EfiFileDevicePathProtocol}}}
+\DoxyCodeLine{00439\ \{}
+\DoxyCodeLine{00440\ \ \ \ \ \mbox{\hyperlink{struct_efi_device_path_protocol}{EfiDevicePathProtocol}}\ \mbox{\hyperlink{struct_efi_file_device_path_protocol_ae1e77abcad57bc78d7f7194c613674a0}{Proto}};}
+\DoxyCodeLine{00441\ }
+\DoxyCodeLine{00445\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}\ \mbox{\hyperlink{struct_efi_file_device_path_protocol_a82198f6c6b8e21246454b29ed72126e2}{Path}}[\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a348e01990cb6bce27f125183c9722b91}{kPathLen}}];}
+\DoxyCodeLine{00446\ \}\ \mbox{\hyperlink{struct_efi_file_device_path_protocol}{EfiFileDevicePathProtocol}};}
+\DoxyCodeLine{00447\ }
+\DoxyCodeLine{00448\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac79c85d637b071774624032fb22e75ab}{EfiExitBootServices}})(\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ ImageHandle,}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ MapKey);}
+\DoxyCodeLine{00450\ }
+\DoxyCodeLine{00451\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ad054762833d850eb1b6775b814580d57}{EfiAllocatePages}})(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a72c499658fc12d830e27ae2db23324a8}{EfiAllocateType}}\ \ \ \ \ AllocType,}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a5b524fe93de766914b9a99d5446f4d1f}{EfiMemoryType}}\ \ \ \ \ \ \ \ \ \ MemType,}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ Count,}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a39c7f6966178f1342309afab5e67897e}{EfiPhysicalAddress}}*\ Memory);}
+\DoxyCodeLine{00455\ }
+\DoxyCodeLine{00456\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a54d216d3ac2d5be89a79d33ffd6de297}{EfiFreePages}})(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a39c7f6966178f1342309afab5e67897e}{EfiPhysicalAddress}}*\ Memory,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ Pages);}
+\DoxyCodeLine{00457\ }
+\DoxyCodeLine{00458\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a11cb73336e15d95ced14f3c1778a15f2}{EfiGetMemoryMap}})(\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \ \ \ \ \ \ \ \ \ \ \ MapSize,}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_memory_descriptor}{EfiMemoryDescriptor}}*\ DescPtr,}
+\DoxyCodeLine{00460\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \ \ \ \ \ \ \ \ \ \ \ MapKey,}
+\DoxyCodeLine{00461\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \ \ \ \ \ \ \ \ \ \ \ DescSize,}
+\DoxyCodeLine{00462\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \ \ \ \ \ \ \ \ \ \ \ DescVersion);}
+\DoxyCodeLine{00463\ }
+\DoxyCodeLine{00467\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l}{EFI\_FINAL}}}
+\DoxyCodeLine{00468\ \{}
+\DoxyCodeLine{00469\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_a3a63c09af099a20e7f70fa147fffc38f}{Data1}};}
+\DoxyCodeLine{00470\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_a40530ea8c130af0e2a705603e4def6c5}{Data2}};}
+\DoxyCodeLine{00471\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_aa07790a16e556679c8705e6fbc99deb3}{Data3}};}
+\DoxyCodeLine{00472\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ Data4[8];}
+\DoxyCodeLine{00473\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}};}
+\DoxyCodeLine{00474\ }
+\DoxyCodeLine{00475\ \textcolor{comment}{/***}}
+\DoxyCodeLine{00476\ \textcolor{comment}{\ *\ Protocol\ stuff...}}
+\DoxyCodeLine{00477\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00478\ }
+\DoxyCodeLine{00479\ \textcolor{preprocessor}{\#define\ EFI\_SIMPLE\_TEXT\_INPUT\_PROTOCOL\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00480\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00481\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x387477c1,\ 0x69c7,\ 0x11d2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00482\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00483\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x8e,\ 0x39,\ 0x00,\ 0xa0,\ 0xc9,\ 0x69,\ 0x72,\ 0x3b\ \(\backslash\)}}
+\DoxyCodeLine{00484\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00485\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00486\ }
+\DoxyCodeLine{00488\ \textcolor{preprocessor}{\#define\ EFI\_OPEN\_PROTOCOL\_BY\_HANDLE\_PROTOCOL\ \ 0x00000001}}
+\DoxyCodeLine{00489\ \textcolor{preprocessor}{\#define\ EFI\_OPEN\_PROTOCOL\_GET\_PROTOCOL\ \ \ \ \ \ \ \ 0x00000002}}
+\DoxyCodeLine{00490\ \textcolor{preprocessor}{\#define\ EFI\_OPEN\_PROTOCOL\_TEST\_PROTOCOL\ \ \ \ \ \ \ 0x00000004}}
+\DoxyCodeLine{00491\ \textcolor{preprocessor}{\#define\ EFI\_OPEN\_PROTOCOL\_BY\_CHILD\_CONTROLLER\ 0x00000008}}
+\DoxyCodeLine{00492\ \textcolor{preprocessor}{\#define\ EFI\_OPEN\_PROTOCOL\_BY\_DRIVER\ \ \ \ \ \ \ \ \ \ \ 0x00000010}}
+\DoxyCodeLine{00493\ \textcolor{preprocessor}{\#define\ EFI\_OPEN\_PROTOCOL\_EXCLUSIVE\ \ \ \ \ \ \ \ \ \ \ 0x00000020}}
+\DoxyCodeLine{00494\ }
+\DoxyCodeLine{00495\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aa00f200e8ef1231c98524312bf3368d9}{EfiLocateProtocol}})(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}*\ Protocol,}
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ Registration,}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}*\ Interface);}
+\DoxyCodeLine{00498\ }
+\DoxyCodeLine{00499\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae306795dd22f845adc68654159ee4d0a}{EfiOpenProtocol}})(\mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ Handle,\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}*\ Guid,\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}*\ Interface,\ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ AgentHandle,\ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ ControllerHandle,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ Attributes);}
+\DoxyCodeLine{00500\ }
+\DoxyCodeLine{00501\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a7f0b30bdbfd7319183968d8a0c4a7856}{EfiEnableCursor}})(\mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}}*\ Self,\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ Visible);}
+\DoxyCodeLine{00502\ }
+\DoxyCodeLine{00508\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_boot_services}{EfiBootServices}}}
+\DoxyCodeLine{00509\ \{}
+\DoxyCodeLine{00510\ \ \ \ \ \mbox{\hyperlink{struct_efi_table_header}{EfiTableHeader}}\ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ab3219724d168594a0372327e6d942fe1}{SystemTable}};}
+\DoxyCodeLine{00511\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a8c8e5f7d7decbe1458fd8d268d0d1240}{RaiseTPL}};}
+\DoxyCodeLine{00512\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a7a0af12c123c84fe81c2281cce920aef}{RestoreTPL}};}
+\DoxyCodeLine{00513\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ad054762833d850eb1b6775b814580d57}{EfiAllocatePages}}\ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a72762acfcdb27aecfe06b7cd845671f7}{AllocatePages}};}
+\DoxyCodeLine{00514\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a54d216d3ac2d5be89a79d33ffd6de297}{EfiFreePages}}\ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ad9095dc3c628b4709ec82a1aef0388ee}{FreePages}};}
+\DoxyCodeLine{00515\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a11cb73336e15d95ced14f3c1778a15f2}{EfiGetMemoryMap}}\ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ac38973f7c7e0d29a32d7f05f9c7baecf}{GetMemoryMap}};}
+\DoxyCodeLine{00516\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afa645b9cea4af7ecd478149516c891d0}{EfiAllocatePool}}\ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a15d94f31ba81a2670edfca592ffb3cd8}{AllocatePool}};}
+\DoxyCodeLine{00517\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_acb761799076b2a2680c6ba52b4f6b489}{EfiFreePool}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a5e925ea9c667632a7e176524f0f69c9b}{FreePool}};}
+\DoxyCodeLine{00518\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ac83642082467270b8213543abed7fe05}{CreateEvent}};}
+\DoxyCodeLine{00519\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ace7277ca6b605e5604646cf0f7426347}{SetTimer}};}
+\DoxyCodeLine{00520\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_afd38f34c1000a900497466a17d491a67}{WaitForEvent}};}
+\DoxyCodeLine{00521\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a7bad7ae7b68db32c106361cf20eb16f2}{SignalEvent}};}
+\DoxyCodeLine{00522\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a272f4d18026b9b14ead022e1551f6f91}{CloseEvent}};}
+\DoxyCodeLine{00523\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ae2ed97267f8f658791b96219dec04a33}{CheckEvent}};}
+\DoxyCodeLine{00524\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a96f64dda8653536df363144b91e05bf8}{InstallProtocolInterface}};}
+\DoxyCodeLine{00525\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a604ae9953ca3915535e593d5e5dfa2f1}{ReinstallProtocolInterface}};}
+\DoxyCodeLine{00526\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a5819c5c019beb98c81d4aee6e3070838}{UninstallProtocolInterface}};}
+\DoxyCodeLine{00527\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac9856cc1033953d293cfbb5c1fcb0bad}{EfiHandleProtocol}}\ \ \mbox{\hyperlink{struct_efi_boot_services_ad0056e920569301e1810c488f00680b1}{HandleProtocol}};}
+\DoxyCodeLine{00528\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ab50a6437816c879cc5bd64b838d116ff}{Reserved}};}
+\DoxyCodeLine{00529\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a128de04694bf4b5a89a3fabe49868bfe}{RegisterProtocolNotify}};}
+\DoxyCodeLine{00530\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a4e36a1b8aa953bf29f040f5de96f9077}{LocateHandle}};}
+\DoxyCodeLine{00531\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0ae88957f24852ec56c12fa88024b129}{EfiLocateDevicePath}}\ \mbox{\hyperlink{struct_efi_boot_services_a1ed04af814c86c42a92c90258bf82fa8}{LocateDevicePath}};}
+\DoxyCodeLine{00532\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a76ec3a7b8c8832df17dd7d90fbf56062}{InstallConfigurationTable}};}
+\DoxyCodeLine{00533\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aac5975d6cd3731b3b78a10abb0381dc3}{EfiLoadImage}}\ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a446de78277ae660341e575823a0c11d8}{LoadImage}};}
+\DoxyCodeLine{00534\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a9af64df21e4456d688c85676ba1887c9}{EfiStartImage}}\ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ac2eb645d829b2756ba0fde9fe7b8c02a}{StartImage}};}
+\DoxyCodeLine{00535\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a9ca673c80663974e472f3fa78cc26e99}{Exit}};}
+\DoxyCodeLine{00536\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a2d3d00b2de314d99854593170d168bf4}{UnloadImage}};}
+\DoxyCodeLine{00537\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac79c85d637b071774624032fb22e75ab}{EfiExitBootServices}}\ \mbox{\hyperlink{struct_efi_boot_services_a5dd91394df55cc588c603bcead788e0e}{ExitBootServices}};}
+\DoxyCodeLine{00538\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a4ce753eee3763aebdc54e5fed191ee2f}{GetNextMonotonicCount}};}
+\DoxyCodeLine{00539\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a719a0874aad5270d88ef949b2cd1c056}{Stall}};}
+\DoxyCodeLine{00540\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ SetWatchdogTimer)(\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ Timeout,\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_efi_boot_services_a11ab6fd62011829af61308f82f68595d}{WatchdogCode}},\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_boot_services_afa08bbbeb99a3d435ec530f1b54f35cd}{DataSize}},\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{EfiCharType}}*\ \mbox{\hyperlink{struct_efi_boot_services_a7e00a1dfd5095069bf7b0abb1dbf7076}{Data}});}
+\DoxyCodeLine{00541\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_adb7bbcd01a89498365ba058fad4a7a27}{ConnectController}};}
+\DoxyCodeLine{00542\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a9c91961326809856c165d13a15aae323}{DriveonnectController}};}
+\DoxyCodeLine{00543\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae306795dd22f845adc68654159ee4d0a}{EfiOpenProtocol}}\ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ac9187d2b799df2df4bc56145d878e8ea}{OpenProtocol}};}
+\DoxyCodeLine{00544\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a341af3eebace5f5b49690c00c4407fc6}{CloseProtocol}};}
+\DoxyCodeLine{00545\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a11d987bfc9f14f170ea8fc45bdd42b91}{OpenProtocolInformation}};}
+\DoxyCodeLine{00546\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_ad99c4ae3b3c7c57d39a6e6d4c4f59e2a}{ProtocolsPerHandle}};}
+\DoxyCodeLine{00547\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_af4c8101e4bc6d1822f87cbab46e71fa2}{LocateHandleBuffer}};}
+\DoxyCodeLine{00548\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aa00f200e8ef1231c98524312bf3368d9}{EfiLocateProtocol}}\ \mbox{\hyperlink{struct_efi_boot_services_abcc222f24a9f237413a082b648a2965f}{LocateProtocol}};}
+\DoxyCodeLine{00549\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a643de9aff22f5d258fe047d83897e745}{InstallMultipleProtocolInterfaces}};}
+\DoxyCodeLine{00550\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a8109f54afa3c5b25054ace50597e85e1}{UninstallMultipleProtocolInterfaces}};}
+\DoxyCodeLine{00551\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a736398d849ac3f4727517fb2c0560e83}{EfiCalculateCrc32}}\ \mbox{\hyperlink{struct_efi_boot_services_a236d52d7e21f880420d6e8bd049b8f8e}{CalculateCrc32}};}
+\DoxyCodeLine{00552\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a333b0023d8b93dd14bf748c099a6d5dc}{EfiCopyMem}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a9b54932816340f86173e6e3105a440d2}{CopyMem}};}
+\DoxyCodeLine{00553\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a446fb18e994f224588ebab83520a159d}{EfiSetMem}}\ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a750c9e554331c727d5ef6179e96f29e4}{SetMem}};}
+\DoxyCodeLine{00554\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services_a6d74e7f98527d80fd22439ac63d82d7c}{CreateEventEx}};}
+\DoxyCodeLine{00555\ \}\ \mbox{\hyperlink{struct_efi_boot_services}{EfiBootServices}};}
+\DoxyCodeLine{00556\ }
+\DoxyCodeLine{00557\ \textcolor{preprocessor}{\#define\ kEntireDevPath\ \ \ \ 0xFF}}
+\DoxyCodeLine{00558\ \textcolor{preprocessor}{\#define\ kThisInstancePath\ 0x01}}
+\DoxyCodeLine{00559\ }
+\DoxyCodeLine{00563\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}}}
+\DoxyCodeLine{00564\ \{}
+\DoxyCodeLine{00565\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_a75d98924a4cfb23de02c4dfa87de9e67}{Reset}};}
+\DoxyCodeLine{00566\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ad1ab2467dbe37db4a5f4790791cc96fb}{EfiTextString}}\ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}};}
+\DoxyCodeLine{00567\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_abf8a0436ae85ac8c04fbb313cafd52af}{TestString}};}
+\DoxyCodeLine{00568\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_ae0dfc6782629801c9823434ffb725f7e}{QueryMode}};}
+\DoxyCodeLine{00569\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_ab404ded360d3bb3efcb7338ff56ec71f}{SetMode}};}
+\DoxyCodeLine{00570\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aae0c628326c039d8d1dab5a340f137b6}{EfiTextAttrib}}\ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_a5a59cd42519103439661aadaad3117a5}{SetAttribute}};}
+\DoxyCodeLine{00571\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a28f785d488b91fd5684541146bcf5eda}{EfiTextClear}}\ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_af4bd33424f001ee63d49d83299dc2a48}{ClearScreen}};}
+\DoxyCodeLine{00572\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_aef84ad9e4843b25ee0e4f5a54dea83d9}{SetCursorPosition}};}
+\DoxyCodeLine{00573\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a7f0b30bdbfd7319183968d8a0c4a7856}{EfiEnableCursor}}\ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_a78051ee6398cbe32226b4ef212eff7f3}{EnableCursor}};}
+\DoxyCodeLine{00574\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol_a57d729b99634e7dbd152421bd5852672}{Mode}};}
+\DoxyCodeLine{00575\ \}\ \mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}};}
+\DoxyCodeLine{00576\ }
+\DoxyCodeLine{00577\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00578\ \{}
+\DoxyCodeLine{00579\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_input_key_adff2156319b5ea35031112d1d332e0df}{ScanCode}};}
+\DoxyCodeLine{00580\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a9c7dc330bb85cbc8a17f2b4aa34db3ad}{EfiChar16Type}}\ \mbox{\hyperlink{struct_efi_input_key_acd277339a6209aa9a1b6aadc1d869fdf}{UnicodeChar}};}
+\DoxyCodeLine{00581\ \}\ \mbox{\hyperlink{struct_efi_input_key}{EfiInputKey}};}
+\DoxyCodeLine{00582\ }
+\DoxyCodeLine{00583\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a37fef6764a9431e6b410f086c15f3cd7}{EfiInputReadKey}})(}
+\DoxyCodeLine{00584\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{struct_efi_simple_text_input_protocol}{EfiSimpleTextInputProtocol}}*\ This,}
+\DoxyCodeLine{00585\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \mbox{\hyperlink{struct_efi_input_key}{EfiInputKey}}*\ Key);}
+\DoxyCodeLine{00586\ }
+\DoxyCodeLine{00587\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a91d0028f78b3ddfb23e3941f3d793a7e}{EfiInputReset}})(}
+\DoxyCodeLine{00588\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{struct_efi_simple_text_input_protocol}{EfiSimpleTextInputProtocol}}*\ This,}
+\DoxyCodeLine{00589\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ExtendedChk);}
+\DoxyCodeLine{00590\ }
+\DoxyCodeLine{00591\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a09b7326201e98fa174ca581a54d1d324}{EfiWaitForEvent}})(}
+\DoxyCodeLine{00592\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ NumberOfEvents,}
+\DoxyCodeLine{00593\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ Event,}
+\DoxyCodeLine{00594\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ Index);}
+\DoxyCodeLine{00595\ }
+\DoxyCodeLine{00596\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_text_input_protocol}{EfiSimpleTextInputProtocol}}}
+\DoxyCodeLine{00597\ \{}
+\DoxyCodeLine{00598\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a91d0028f78b3ddfb23e3941f3d793a7e}{EfiInputReset}}\ \ \mbox{\hyperlink{struct_efi_simple_text_input_protocol_aa2dee846ae1c7f6d2134374c6826567d}{Reset}};}
+\DoxyCodeLine{00599\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a37fef6764a9431e6b410f086c15f3cd7}{EfiInputReadKey}}\ \mbox{\hyperlink{struct_efi_simple_text_input_protocol_adc1a11a24965a10012cf1f9f12e588ef}{ReadKeyStroke}};}
+\DoxyCodeLine{00600\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a09b7326201e98fa174ca581a54d1d324}{EfiWaitForEvent}}\ \mbox{\hyperlink{struct_efi_simple_text_input_protocol_ab0f7b1937c8f3192dc3953cbfe47884a}{WaitForKey}};}
+\DoxyCodeLine{00601\ \}\ \mbox{\hyperlink{struct_efi_simple_text_input_protocol}{EfiSimpleTextInputProtocol}};}
+\DoxyCodeLine{00602\ }
+\DoxyCodeLine{00604\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a2ced11e945b45058725b49e6d1e6384f}{EfiOpenVolume}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_filesystem_protocol}{EfiSimpleFilesystemProtocol}}*,}
+\DoxyCodeLine{00605\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}**);}
+\DoxyCodeLine{00606\ }
+\DoxyCodeLine{00607\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_simple_filesystem_protocol}{EfiSimpleFilesystemProtocol}}}
+\DoxyCodeLine{00608\ \{}
+\DoxyCodeLine{00609\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_filesystem_protocol_a52d14e142976a707b5e37869edecc8a7}{Revision}};}
+\DoxyCodeLine{00610\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a2ced11e945b45058725b49e6d1e6384f}{EfiOpenVolume}}\ \mbox{\hyperlink{struct_efi_simple_filesystem_protocol_a90053268b192592e406aa253108fb4fe}{OpenVolume}};}
+\DoxyCodeLine{00611\ \};}
+\DoxyCodeLine{00612\ }
+\DoxyCodeLine{00613\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_runtime_services}{EfiRuntimeServices}}}
+\DoxyCodeLine{00614\ \{}
+\DoxyCodeLine{00615\ \ \ \ \ \mbox{\hyperlink{struct_efi_table_header}{EfiTableHeader}}\ \mbox{\hyperlink{struct_efi_runtime_services_a1c7878e174117a3b995c894e45c1765b}{SystemTable}};}
+\DoxyCodeLine{00616\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_runtime_services_a2d0e74a2f7964f8d15eb974c9754bfe7}{GetTime}},\ \mbox{\hyperlink{struct_efi_runtime_services_a391df541043f89280022138620a60b01}{SetTime}},\ \mbox{\hyperlink{struct_efi_runtime_services_aca72509f68003ae2bc2a414b162f3d5d}{GetWakeupTime}},\ \mbox{\hyperlink{struct_efi_runtime_services_a895affa0feedf05c76c7280a8ab2fe1c}{SetWakeupTime}},\ \mbox{\hyperlink{struct_efi_runtime_services_a62abfbe39d0798b7c4dd4ec93bf134b3}{SetVirtualAddressMap}},\ \mbox{\hyperlink{struct_efi_runtime_services_a59c772ebd93070734246b0446e26ff6a}{ConvertPointer}};}
+\DoxyCodeLine{00617\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ GetVariable)(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}*\ Name,\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}\ \mbox{\hyperlink{struct_efi_runtime_services_a4ca582138d3fd4ab015563c3fc8eb58a}{VendorGUID}},\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \mbox{\hyperlink{struct_efi_runtime_services_a397901b41cfadb7c7786e34ab980b634}{Attributes}},\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \mbox{\hyperlink{struct_efi_runtime_services_a88c59b0a4bae88cd24f86a201cb5399e}{DataSize}},\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_a24485f8e3009c891deb448fb8906d89a}{Data}});}
+\DoxyCodeLine{00618\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_a76ef1da34327674d9deac57c0a9e44fb}{GetNextVariable}};}
+\DoxyCodeLine{00619\ \ \ \ \ \mbox{\hyperlink{struct_efi_runtime_services_a8343150dbf8bef0899f1e5e23aee91aa}{UInt64}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ SetVariable)(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}*\ Name,\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}\ \mbox{\hyperlink{struct_efi_runtime_services_a4ca582138d3fd4ab015563c3fc8eb58a}{VendorGUID}},\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \mbox{\hyperlink{struct_efi_runtime_services_a397901b41cfadb7c7786e34ab980b634}{Attributes}},\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \mbox{\hyperlink{struct_efi_runtime_services_a88c59b0a4bae88cd24f86a201cb5399e}{DataSize}},\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_a24485f8e3009c891deb448fb8906d89a}{Data}});}
+\DoxyCodeLine{00620\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_ab55cdedbcb34b3a22e76d9cec0a89b34}{GetNextHighMonotonicCount}};}
+\DoxyCodeLine{00621\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_a4bcc39fdd7c6701ef58e4d9caa543f93}{ResetSystem}};}
+\DoxyCodeLine{00622\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_a5796e43b0bc613e59598f01a54adbd72}{UpdateCapsule}};}
+\DoxyCodeLine{00623\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_a25fbb923f55088618e434eafaed3ae4f}{QueryCapsuleCapabilites}};}
+\DoxyCodeLine{00624\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_runtime_services_ab44cab3549da14c1260fb2b91b98a700}{QueryVariableInfo}};}
+\DoxyCodeLine{00625\ \}\ \mbox{\hyperlink{struct_efi_runtime_services}{EfiRuntimeServices}};}
+\DoxyCodeLine{00626\ }
+\DoxyCodeLine{00630\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_system_table}{EfiSystemTable}}}
+\DoxyCodeLine{00631\ \{}
+\DoxyCodeLine{00632\ \ \ \ \ \mbox{\hyperlink{struct_efi_table_header}{EfiTableHeader}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_af0985f55edaee9540d7a21f569cefe44}{SystemHeader}};}
+\DoxyCodeLine{00633\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_a660f1fab26ef9140329c0b986e7812f3}{FirmwareVendor}};}
+\DoxyCodeLine{00634\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_af3570ddd87d8b26626a8321af055f4a1}{FirmwareRevision}};}
+\DoxyCodeLine{00635\ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_a2922bed026624079711a61c16b5e30b3}{ConsoleInHandle}};}
+\DoxyCodeLine{00636\ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_input_protocol}{EfiSimpleTextInputProtocol}}*\ \ \ \ \mbox{\hyperlink{struct_efi_system_table_ac65ba81cbd96df44f2110ff0ad45f682}{ConIn}};}
+\DoxyCodeLine{00637\ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_aa2d3251cb141a2aee635c629ddcf132c}{ConsoleOutHandle}};}
+\DoxyCodeLine{00638\ \ \ \ \ \mbox{\hyperlink{struct_efi_simple_text_output_protocol}{EfiSimpleTextOutputProtocol}}*\ \mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}};}
+\DoxyCodeLine{00639\ \ \ \ \ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_a9f6fd23f39d5276641ce5e7005333456}{StandardErrorHandle}};}
+\DoxyCodeLine{00640\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_ad629bdaaf942faae82a5c6bf71fc9ff7}{StdErr}};}
+\DoxyCodeLine{00641\ \ \ \ \ \mbox{\hyperlink{struct_efi_runtime_services}{EfiRuntimeServices}}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_a338596c17be71e5030b06d92b3fd5eb2}{RuntimeServices}};}
+\DoxyCodeLine{00642\ \ \ \ \ \mbox{\hyperlink{struct_efi_boot_services}{EfiBootServices}}*\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_ab5e346992a8fab892aaee3c2118e948c}{BootServices}};}
+\DoxyCodeLine{00643\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_system_table_a4cf4ce6eff7a7f8966782312a1abb3b1}{NumberOfTableEntries}};}
+\DoxyCodeLine{00645\ \ \ \ \ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00646\ \ \ \ \ \{}
+\DoxyCodeLine{00647\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}\ \mbox{\hyperlink{struct_efi_system_table_aa0d618419c0d5bf1b1745c4a4f9931c4}{VendorGUID}};}
+\DoxyCodeLine{00648\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_system_table_a4bd3c922838a28d4d5996d18880d061f}{VendorTable}};}
+\DoxyCodeLine{00649\ \ \ \ \ \}\ *\ \mbox{\hyperlink{struct_efi_system_table_a421b6fd0677173eb3d24c2d6fbce33dc}{ConfigurationTable}};}
+\DoxyCodeLine{00650\ \}\ \mbox{\hyperlink{struct_efi_system_table}{EfiSystemTable}};}
+\DoxyCodeLine{00651\ }
+\DoxyCodeLine{00652\ \textcolor{preprocessor}{\#define\ kEfiOk\ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00653\ \textcolor{preprocessor}{\#define\ kEfiFail\ \ \ \ \ \ \ \ -\/1}}
+\DoxyCodeLine{00654\ \textcolor{preprocessor}{\#define\ kBufferTooSmall\ 5}}
+\DoxyCodeLine{00655\ }
+\DoxyCodeLine{00656\ \textcolor{preprocessor}{\#define\ EFI\_EXTERN\_C\ extern\ "{}C"{}}}
+\DoxyCodeLine{00657\ }
+\DoxyCodeLine{00658\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_i_p_v4}{EfiIPV4}}}
+\DoxyCodeLine{00659\ \{}
+\DoxyCodeLine{00660\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_i_p_v4_a4622fd18079c5b7fc8a4004d6d8dd82a}{Addr}}[4];}
+\DoxyCodeLine{00661\ \}\ \mbox{\hyperlink{struct_efi_i_p_v4}{EfiIPV4}};}
+\DoxyCodeLine{00662\ }
+\DoxyCodeLine{00666\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_i_p_v6}{EfiIPV6}}}
+\DoxyCodeLine{00667\ \{}
+\DoxyCodeLine{00668\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \mbox{\hyperlink{struct_efi_i_p_v6_ad4e45c7db169e79e972c69563165e0aa}{Addr}}[16];}
+\DoxyCodeLine{00669\ \}\ \mbox{\hyperlink{struct_efi_i_p_v6}{EfiIPV6}};}
+\DoxyCodeLine{00670\ }
+\DoxyCodeLine{00671\ \textcolor{preprocessor}{\#define\ kEFIYellow\ (0x01\ |\ 0x02\ |\ 0x04\ |\ 0x08)}}
+\DoxyCodeLine{00672\ }
+\DoxyCodeLine{00673\ \textcolor{preprocessor}{\#ifdef\ \_\_x86\_64}}
+\DoxyCodeLine{00674\ \textcolor{preprocessor}{\#define\ \_\_EFI\_x86\_64\_\_\ 1}}
+\DoxyCodeLine{00675\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_x86\_64}}
+\DoxyCodeLine{00676\ }
+\DoxyCodeLine{00677\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00678\ \{}
+\DoxyCodeLine{00679\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a726ca809ffd3d67ab4b8476646f26635abfc2e1448c1065d752b58d99815c5d8c}{kEFIHwDevicePath}}\ \ \ \ \ \ \ =\ 0x01,}
+\DoxyCodeLine{00680\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a726ca809ffd3d67ab4b8476646f26635a795e3660cd596a610641bb06963d0a8d}{kEFIAcpiDevicePath}}\ \ \ \ \ \ \ =\ 0x02,}
+\DoxyCodeLine{00681\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a726ca809ffd3d67ab4b8476646f26635ac6193d796c411c821eb1e3f0e754f996}{kEFIMessaingDevicePath}}\ =\ 0x03,}
+\DoxyCodeLine{00682\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a726ca809ffd3d67ab4b8476646f26635aa4201f17ac3f9c6800bb33ef9e445ec8}{kEFIMediaDevicePath}}\ \ \ \ \ =\ 0x04,}
+\DoxyCodeLine{00683\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a726ca809ffd3d67ab4b8476646f26635a41b3c6d609c345b5c312f773c38784aa}{kEFIBiosBootPath}}\ \ \ \ \ \ \ =\ 0x05,}
+\DoxyCodeLine{00684\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a726ca809ffd3d67ab4b8476646f26635a924f3e7a2dae30cba2ecf3a727fda3ce}{kEFIEndOfPath}}\ \ \ \ \ \ \ \ \ =\ 0x06,}
+\DoxyCodeLine{00685\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a726ca809ffd3d67ab4b8476646f26635aa6bd1ce02da202541cf3ff153c24c92f}{kEFICount}}\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 6,}
+\DoxyCodeLine{00686\ \};}
+\DoxyCodeLine{00687\ }
+\DoxyCodeLine{00688\ \textcolor{preprocessor}{\#define\ END\_DEVICE\_PATH\_TYPE\ \ \ \ \ \ \ \ \ \ \ \ \ 0x7f}}
+\DoxyCodeLine{00689\ \textcolor{preprocessor}{\#define\ END\_ENTIRE\_DEVICE\_PATH\_SUBTYPE\ \ \ 0xFF}}
+\DoxyCodeLine{00690\ \textcolor{preprocessor}{\#define\ END\_INSTANCE\_DEVICE\_PATH\_SUBTYPE\ 0x01}}
+\DoxyCodeLine{00691\ }
+\DoxyCodeLine{00692\ \textcolor{preprocessor}{\#define\ kEfiOffsetOf(T,\ F)\ \_\_builtin\_offsetof(T,\ F)}}
+\DoxyCodeLine{00693\ }
+\DoxyCodeLine{00695\ }
+\DoxyCodeLine{00696\ \textcolor{preprocessor}{\#define\ kEFIFileRead\ \ \ 0x0000000000000001}}
+\DoxyCodeLine{00697\ \textcolor{preprocessor}{\#define\ kEFIFileWrite\ \ 0x0000000000000002}}
+\DoxyCodeLine{00698\ \textcolor{preprocessor}{\#define\ kEFIFileCreate\ 0x0000000000000000}}
+\DoxyCodeLine{00699\ }
+\DoxyCodeLine{00700\ \textcolor{preprocessor}{\#define\ kEFIReadOnly\ \ 0x01}}
+\DoxyCodeLine{00701\ \textcolor{preprocessor}{\#define\ kEFIHidden\ \ \ \ 0x02}}
+\DoxyCodeLine{00702\ \textcolor{preprocessor}{\#define\ kEFISystem\ \ \ \ 0x04}}
+\DoxyCodeLine{00703\ \textcolor{preprocessor}{\#define\ kEFIReserved\ \ 0x08}}
+\DoxyCodeLine{00704\ \textcolor{preprocessor}{\#define\ kEFIDirectory\ 0x10}}
+\DoxyCodeLine{00705\ \textcolor{preprocessor}{\#define\ kEFIArchive\ \ \ 0x20}}
+\DoxyCodeLine{00706\ }
+\DoxyCodeLine{00707\ \textcolor{preprocessor}{\#define\ EFI\_FILE\_PROTOCOL\_REVISION\ \ \ \ \ \ \ \ 0x00010000}}
+\DoxyCodeLine{00708\ \textcolor{preprocessor}{\#define\ EFI\_FILE\_PROTOCOL\_REVISION2\ \ \ \ \ \ \ 0x00020000}}
+\DoxyCodeLine{00709\ \textcolor{preprocessor}{\#define\ EFI\_FILE\_PROTOCOL\_LATEST\_REVISION\ EFI\_FILE\_PROTOCOL\_REVISION2}}
+\DoxyCodeLine{00710\ }
+\DoxyCodeLine{00711\ \textcolor{preprocessor}{\#define\ EFI\_EXTRA\_DESCRIPTOR\_SIZE\ 8}}
+\DoxyCodeLine{00712\ }
+\DoxyCodeLine{00713\ \textcolor{preprocessor}{\#define\ EFI\_MP\_SERVICES\_PROTOCOL\_GUID\ \ \(\backslash\)}}
+\DoxyCodeLine{00714\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00715\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x3fdda605,\ 0xa76e,\ 0x4f46,\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00716\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00717\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0xad,\ 0x29,\ 0x12,\ 0xf4,\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00718\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x53,\ 0x1b,\ 0x3d,\ 0x08\ \(\backslash\)}}
+\DoxyCodeLine{00719\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00720\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00721\ }
+\DoxyCodeLine{00722\ \textcolor{preprocessor}{\#define\ PROCESSOR\_AS\_BSP\_BIT\ \ \ \ \ \ \ \ 0x00000001}}
+\DoxyCodeLine{00723\ \textcolor{preprocessor}{\#define\ PROCESSOR\_ENABLED\_BIT\ \ \ \ \ \ \ 0x00000002}}
+\DoxyCodeLine{00724\ \textcolor{preprocessor}{\#define\ PROCESSOR\_HEALTH\_STATUS\_BIT\ 0x00000004}}
+\DoxyCodeLine{00725\ }
+\DoxyCodeLine{00726\ \textcolor{preprocessor}{\#define\ END\_OF\_CPU\_LIST\ 0xffffffff}}
+\DoxyCodeLine{00727\ }
+\DoxyCodeLine{00728\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_i_o_token}{EfiIOToken}}}
+\DoxyCodeLine{00729\ \{}
+\DoxyCodeLine{00730\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00731\ \ \ \ \ \textcolor{comment}{//\ If\ Event\ is\ NULL,\ then\ blocking\ I/O\ is\ performed.}}
+\DoxyCodeLine{00732\ \ \ \ \ \textcolor{comment}{//\ If\ Event\ is\ not\ NULL\ and\ non-\/blocking\ I/O\ is\ supported,\ then\ non-\/blocking}}
+\DoxyCodeLine{00733\ \ \ \ \ \textcolor{comment}{//\ I/O\ is\ performed,\ and\ Event\ will\ be\ signaled\ when\ the\ read\ request\ is}}
+\DoxyCodeLine{00734\ \ \ \ \ \textcolor{comment}{//\ completed.\ The\ caller\ must\ be\ prepared\ to\ handle\ the\ case\ where\ the}}
+\DoxyCodeLine{00735\ \ \ \ \ \textcolor{comment}{//\ callback\ associated\ with\ Event\ occurs\ before\ the\ original\ asynchronous\ I/O}}
+\DoxyCodeLine{00736\ \ \ \ \ \textcolor{comment}{//\ request\ call\ returns.}}
+\DoxyCodeLine{00737\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00738\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_efi_i_o_token_a68458f7c0a3e8e3d14a14425e7d7cb87}{Event}};}
+\DoxyCodeLine{00739\ }
+\DoxyCodeLine{00740\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00741\ \ \ \ \ \textcolor{comment}{//\ Defines\ whether\ or\ not\ the\ signaled\ event\ encountered\ an\ error.}}
+\DoxyCodeLine{00742\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00743\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_efi_i_o_token_a5654c742f7c7bfb035bba6ff7733a072}{Status}};}
+\DoxyCodeLine{00744\ }
+\DoxyCodeLine{00745\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00746\ \ \ \ \ \textcolor{comment}{//\ For\ OpenEx():\ \ Not\ Used,\ ignored.}}
+\DoxyCodeLine{00747\ \ \ \ \ \textcolor{comment}{//\ For\ ReadEx():\ \ On\ input,\ the\ size\ of\ the\ Buffer.\ On\ output,\ the\ amount\ of}}
+\DoxyCodeLine{00748\ \ \ \ \ \textcolor{comment}{//\ data\ returned\ in\ Buffer.}}
+\DoxyCodeLine{00749\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ In\ both\ cases,\ the\ size\ is\ measured\ in\ bytes.}}
+\DoxyCodeLine{00750\ \ \ \ \ \textcolor{comment}{//\ For\ WriteEx():\ On\ input,\ the\ size\ of\ the\ Buffer.\ On\ output,\ the\ amount\ of}}
+\DoxyCodeLine{00751\ \ \ \ \ \textcolor{comment}{//\ data\ actually\ written.}}
+\DoxyCodeLine{00752\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ In\ both\ cases,\ the\ size\ is\ measured\ in\ bytes.}}
+\DoxyCodeLine{00753\ \ \ \ \ \textcolor{comment}{//\ For\ FlushEx():\ Not\ used,\ ignored.}}
+\DoxyCodeLine{00754\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00755\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_i_o_token_af36a8aad90839ed258043753b796cb1b}{BufferSize}};}
+\DoxyCodeLine{00756\ }
+\DoxyCodeLine{00757\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00758\ \ \ \ \ \textcolor{comment}{//\ For\ OpenEx():\ \ Not\ Used,\ ignored.}}
+\DoxyCodeLine{00759\ \ \ \ \ \textcolor{comment}{//\ For\ ReadEx():\ \ The\ buffer\ into\ which\ the\ data\ is\ read.}}
+\DoxyCodeLine{00760\ \ \ \ \ \textcolor{comment}{//\ For\ WriteEx():\ The\ buffer\ of\ data\ to\ write.}}
+\DoxyCodeLine{00761\ \ \ \ \ \textcolor{comment}{//\ For\ FlushEx():\ Not\ Used,\ ignored.}}
+\DoxyCodeLine{00762\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00763\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}*\ \mbox{\hyperlink{struct_efi_i_o_token_a4dfe98a941e9fcd50cc37491620e9d6d}{Buffer}};}
+\DoxyCodeLine{00764\ \}\ \mbox{\hyperlink{struct_efi_i_o_token}{EfiIOToken}};}
+\DoxyCodeLine{00765\ }
+\DoxyCodeLine{00766\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}}
+\DoxyCodeLine{00767\ \{}
+\DoxyCodeLine{00768\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_efi_file_protocol_a6efbcb3a5c89ab746f7e23df4ba823c5}{Revision}};}
+\DoxyCodeLine{00769\ }
+\DoxyCodeLine{00770\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a22492fb8f154d69bc20a5001002b09f0}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ Open)(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ \ Self,}
+\DoxyCodeLine{00771\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}**\ \mbox{\hyperlink{struct_efi_file_protocol_a77a682759cbe3f58380bbe0fd45c4b66}{Out}},}
+\DoxyCodeLine{00772\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{EfiCharType}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a4512d20961aa5d640733fe8ad4f9f872}{CharType}},}
+\DoxyCodeLine{00773\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a347d2724d6d396cbfaad86cfcf567e03}{OpenMode}},}
+\DoxyCodeLine{00774\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a92e743200fba9c60b7cfed93ab356997}{Attrib}});}
+\DoxyCodeLine{00775\ }
+\DoxyCodeLine{00776\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a7d9973f84f35b52138186a1e82c32814}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ Close)(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ Self);}
+\DoxyCodeLine{00777\ }
+\DoxyCodeLine{00778\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a5b956ff7fd85d9f216baff78982620d6}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ Delete)(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ Self);}
+\DoxyCodeLine{00779\ }
+\DoxyCodeLine{00780\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ Read)(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ Self,\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}*\ \mbox{\hyperlink{struct_efi_file_protocol_a8dc2daf98874aa8e900a90eacc4cff1c}{BufSize}},\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_file_protocol_af4fe944000c950623484ed2758217a7f}{BufOut}});}
+\DoxyCodeLine{00781\ }
+\DoxyCodeLine{00782\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_ab9d3a6b2ad1994e6738693b00172bb66}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ \mbox{\hyperlink{modules_2_a_h_c_i_2_a_h_c_i_8h_a7a9e0d1c2c1ac92baa698f393e953c87}{Write}})(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ Self,\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}*\ \mbox{\hyperlink{struct_efi_file_protocol_a8dc2daf98874aa8e900a90eacc4cff1c}{BufSize}},\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_efi_file_protocol_af4fe944000c950623484ed2758217a7f}{BufOut}});}
+\DoxyCodeLine{00783\ }
+\DoxyCodeLine{00784\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a532161a78b4156cc262fff32b672234e}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ GetPosition)(\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ Self,\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}*\ \mbox{\hyperlink{struct_efi_file_protocol_adef0d5814ddee808942bbc1da9863598}{Position}});}
+\DoxyCodeLine{00785\ }
+\DoxyCodeLine{00786\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a3c303c3ed76aa622b167d8fc95c01162}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ SetPosition)(\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ Self,\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}*\ \mbox{\hyperlink{struct_efi_file_protocol_adef0d5814ddee808942bbc1da9863598}{Position}});}
+\DoxyCodeLine{00787\ }
+\DoxyCodeLine{00788\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_ad0c75867446eb2f84fd19c23c642e26a}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ GetInfo)(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*,\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}*,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*,\ \textcolor{keywordtype}{void}*);}
+\DoxyCodeLine{00789\ }
+\DoxyCodeLine{00790\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_aaf5c7ff7183fe7367783683da346f007}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ SetInfo)(\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*,\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}}*,\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*,\ \textcolor{keywordtype}{void}*);}
+\DoxyCodeLine{00791\ }
+\DoxyCodeLine{00792\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a15054fcde50c122903abbc36fd19f9f1}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ Flush)(\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*);}
+\DoxyCodeLine{00793\ }
+\DoxyCodeLine{00794\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a451f02fa58435781b9fc765fdd3b38ee}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ OpenEx)(\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ \ \ \ Self,}
+\DoxyCodeLine{00795\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}**\ \ \mbox{\hyperlink{struct_efi_file_protocol_a9aa4a5b9ff1c1ac22eec0185fc698a6e}{OutHandle}},}
+\DoxyCodeLine{00796\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{EfiCharType}}*\ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a7d83025e5402a077f6d2d7a41eeac71b}{Path}},}
+\DoxyCodeLine{00797\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a3fcdb94394469693594316e1f533b79a}{Mode}},}
+\DoxyCodeLine{00798\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_ad459f81f9c27d3e9629b909251a1ed81}{Attrib}},}
+\DoxyCodeLine{00799\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_i_o_token}{EfiIOToken}}*\ \mbox{\hyperlink{struct_efi_file_protocol_a47d8ad2c135d95a7299de12b9d45e12b}{Token}});}
+\DoxyCodeLine{00800\ }
+\DoxyCodeLine{00801\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a8031d8d7cc092a45990c883cdfe3246c}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ ReadEx)(\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ \ \ \ Self,}
+\DoxyCodeLine{00802\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_i_o_token}{EfiIOToken}}*\ \mbox{\hyperlink{struct_efi_file_protocol_ac6d1c4eab54ac39cf150855b7d8c3dd6}{Token}});}
+\DoxyCodeLine{00803\ }
+\DoxyCodeLine{00804\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_afba59f1eaf3f1efe9bca959ead8b0391}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ WriteEx)(\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ \ \ Self,}
+\DoxyCodeLine{00805\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_i_o_token}{EfiIOToken}}*\ \mbox{\hyperlink{struct_efi_file_protocol_a47d8ad2c135d95a7299de12b9d45e12b}{Token}});}
+\DoxyCodeLine{00806\ }
+\DoxyCodeLine{00807\ \ \ \ \ \mbox{\hyperlink{struct_efi_file_protocol_a921b1aa2833e27a2bf4be4d503ace140}{EfiStatusType}}(\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}*\ FlushEx)(\mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}}*\ \ \ Self,}
+\DoxyCodeLine{00808\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_i_o_token}{EfiIOToken}}*\ \mbox{\hyperlink{struct_efi_file_protocol_a47d8ad2c135d95a7299de12b9d45e12b}{Token}});}
+\DoxyCodeLine{00809\ \}\ \mbox{\hyperlink{struct_efi_file_protocol}{EfiFileProtocol}},\ *\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8c6900e9868c014fc05d3747e77e5963}{EfiFileProtocolPtr}};}
+\DoxyCodeLine{00810\ }
+\DoxyCodeLine{00811\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a9300e2f469b07dbdb9d460d602badb44}{EfiCursorType}};}
+\DoxyCodeLine{00812\ }
+\DoxyCodeLine{00813\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_efi_time}{EfiTime}}}
+\DoxyCodeLine{00814\ \{}
+\DoxyCodeLine{00815\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}\ \mbox{\hyperlink{struct_efi_time_ac57467a913439ce93d93d9a040f1dcc4}{Year}};}
+\DoxyCodeLine{00816\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_a27b06e5a08038a44b05db1216bad2a89}{Month}};}
+\DoxyCodeLine{00817\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_ae84ea07d1687254ca9959ab1dc857bf4}{Day}};}
+\DoxyCodeLine{00818\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_a1c31faf74a62d31e9f2482ad38e2a031}{Hour}};}
+\DoxyCodeLine{00819\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_a598aa81f881979faef52a46e17973d31}{Minute}};}
+\DoxyCodeLine{00820\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_a261e7a14d3d5f14e9cb7a38e1533b1fa}{Second}};}
+\DoxyCodeLine{00821\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_a8005736a41b4f1f7c9fdfd4c018927ad}{Pad1}};}
+\DoxyCodeLine{00822\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_efi_time_ad868149f7c7810ef78e6a55a63e55a5e}{Nanosecond}};}
+\DoxyCodeLine{00823\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Int16}}\ \ \mbox{\hyperlink{struct_efi_time_a449853c49a93d06f681036a0f50d26c3}{TimeZone}};}
+\DoxyCodeLine{00824\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_a665c34e8e20038794e902ed09632e9a6}{Daylight}};}
+\DoxyCodeLine{00825\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_efi_time_a6b6636aef542728e5b9d9a9264a98e1a}{Pad2}};}
+\DoxyCodeLine{00826\ \}\ \mbox{\hyperlink{struct_efi_time}{EfiTime}};}
+\DoxyCodeLine{00827\ }
+\DoxyCodeLine{00828\ \textcolor{preprocessor}{\#define\ EFI\_FILE\_INFO\_GUID\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00829\ \textcolor{preprocessor}{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00830\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ 0x09576e92,\ 0x6d3f,\ 0x11d2,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00831\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00832\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ 0x8e,\ 0x39,\ 0x00,\ 0xa0,\ 0xc9,\ 0x69,\ 0x72,\ 0x3b\ \(\backslash\)}}
+\DoxyCodeLine{00833\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00834\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00835\ }
+\DoxyCodeLine{00836\ \textcolor{keyword}{struct\ }EfiFileInfo\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l}{EFI\_FINAL}}}
+\DoxyCodeLine{00837\ \{}
+\DoxyCodeLine{00839\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_ad7c9966159c6cbf73d2d03989efd7662}{Size}};}
+\DoxyCodeLine{00841\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_a26f4426b7cacddd3c9b3ccdb78fb91d2}{FileSize}};}
+\DoxyCodeLine{00843\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_adb8769f0c3724fefa0beb258b48a130f}{PhysicalSize}};}
+\DoxyCodeLine{00845\ \ \ \ \ \mbox{\hyperlink{struct_efi_time}{EfiTime}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_afe97f31b8b95425cbc821254bf97912c}{CreateTime}};}
+\DoxyCodeLine{00847\ \ \ \ \ \mbox{\hyperlink{struct_efi_time}{EfiTime}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_af65d18f13ef0821578cff0cf6b4ed8f0}{LastAccessTime}};}
+\DoxyCodeLine{00849\ \ \ \ \ \mbox{\hyperlink{struct_efi_time}{EfiTime}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_a89ee2a0013d81af3e42873a9bb7c824b}{EditTime}};}
+\DoxyCodeLine{00851\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_e_f_i___f_i_n_a_l_a850913a2916aaa32242c01f4d38baf7d}{Attribute}};}
+\DoxyCodeLine{00853\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}\ FileName[1];}
+\DoxyCodeLine{00854\ \};}
+\DoxyCodeLine{00855\ }
+\DoxyCodeLine{00856\ \textcolor{comment}{//*******************************************************}}
+\DoxyCodeLine{00857\ \textcolor{comment}{//\ EFI\_CPU\_PHYSICAL\_LOCATION}}
+\DoxyCodeLine{00858\ \textcolor{comment}{//\ @note\ As\ in\ the\ EFI\ specs.}}
+\DoxyCodeLine{00859\ \textcolor{comment}{//*******************************************************}}
+\DoxyCodeLine{00860\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_c_p_u_phyiscal_location}{\_EfiCPUPhyiscalLocation}}}
+\DoxyCodeLine{00861\ \{}
+\DoxyCodeLine{00862\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct___efi_c_p_u_phyiscal_location_aeaf37ef1056c14c9dcdf12bdbc8d8185}{Package}};}
+\DoxyCodeLine{00863\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct___efi_c_p_u_phyiscal_location_a652581975555d0584730e85f62ea6b26}{Core}};}
+\DoxyCodeLine{00864\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct___efi_c_p_u_phyiscal_location_abaf714defc717c9a7d46f903fdf3ff46}{Thread}};}
+\DoxyCodeLine{00865\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a4467d4af8cd8a63f0ab83a01c6026629}{EfiCPUPhyiscalLocation}};}
+\DoxyCodeLine{00866\ }
+\DoxyCodeLine{00867\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{union\ }\mbox{\hyperlink{union___efi_extended_processor_information}{\_EfiExtendedProcessorInformation}}\ \{}
+\DoxyCodeLine{00868\ \ \ \ \ \mbox{\hyperlink{struct___efi_c_p_u_phyiscal_location}{EfiCPUPhyiscalLocation}}\ \mbox{\hyperlink{union___efi_extended_processor_information_ac751c0d38970e04d97626610c15deb0c}{Location2}};}
+\DoxyCodeLine{00869\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aad783b1334cd7d692d08f3fda96ea29c}{EfiExtendedProcessorInformation}};}
+\DoxyCodeLine{00870\ }
+\DoxyCodeLine{00871\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_processor_information}{\_EfiProcessorInformation}}}
+\DoxyCodeLine{00872\ \{}
+\DoxyCodeLine{00873\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_processor_information_a8216fe3d70e7d1e6e8b688a063da1529}{ProcessorId}};}
+\DoxyCodeLine{00874\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_processor_information_aa5c7c61b5cbea606a5cd83c9e1e4d541}{StatusFlag}};}
+\DoxyCodeLine{00875\ \ \ \ \ \mbox{\hyperlink{struct___efi_c_p_u_phyiscal_location}{EfiCPUPhyiscalLocation}}\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_processor_information_ad2ed86dd74a533ea9b00436b72854c0e}{Location}};}
+\DoxyCodeLine{00876\ \ \ \ \ \mbox{\hyperlink{union___efi_extended_processor_information}{EfiExtendedProcessorInformation}}\ \mbox{\hyperlink{struct___efi_processor_information_a1d7828d6d95d7763c2a5e2ab344a311a}{ExtendedInformation}};}
+\DoxyCodeLine{00877\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aa27870ef18f49d30a7a8cc64902b062b}{EfiProcessorInformation}};}
+\DoxyCodeLine{00878\ }
+\DoxyCodeLine{00879\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae222b529ad9f60bdd252ec7508eb8215}{EfiMpServicesGetNumberOfProcessors}})(}
+\DoxyCodeLine{00880\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}*\ Self,}
+\DoxyCodeLine{00881\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ NumberOfProcessors,}
+\DoxyCodeLine{00882\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ NumberOfEnabledProcessors);}
+\DoxyCodeLine{00883\ }
+\DoxyCodeLine{00884\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abb4833b2b8b8b41029c61b5d96a69ece}{EfiMpServicesGetProcessorInfo}})(}
+\DoxyCodeLine{00885\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}*\ Self,}
+\DoxyCodeLine{00886\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProcessorNumber,}
+\DoxyCodeLine{00887\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_processor_information}{\_EfiProcessorInformation}}*\ NumberOfEnabledProcessors);}
+\DoxyCodeLine{00888\ }
+\DoxyCodeLine{00889\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ad16592d067cef8faf464899fba105f6a}{EFI\_AP\_PROCEDURE}})(}
+\DoxyCodeLine{00890\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ ProcedureArgument);}
+\DoxyCodeLine{00891\ }
+\DoxyCodeLine{00892\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8a0f0168bd2589b93a5fd4ed17a802cf}{EfiMpServicesStartupAllAPS}})(}
+\DoxyCodeLine{00893\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}*\ Self,}
+\DoxyCodeLine{00894\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ad16592d067cef8faf464899fba105f6a}{EFI\_AP\_PROCEDURE}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Procedure,}
+\DoxyCodeLine{00895\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SingleThread,}
+\DoxyCodeLine{00896\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ WaitEvent\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afdff552467cc2d2d5815831e9656cffc}{OPTIONAL}},\ \textcolor{comment}{//\ EFI\_EVENT\ first,\ but\ unused\ here.}}
+\DoxyCodeLine{00897\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TimeoutInMicroSeconds,}
+\DoxyCodeLine{00898\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}*\ ProcedureArgument\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afdff552467cc2d2d5815831e9656cffc}{OPTIONAL}},}
+\DoxyCodeLine{00899\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}**\ FailedCpuList\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afdff552467cc2d2d5815831e9656cffc}{OPTIONAL}});}
+\DoxyCodeLine{00900\ }
+\DoxyCodeLine{00901\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a40d6a17c80e7aec8a3bdf1f876483ac8}{EfiMpServicesSwitchBSP}})(}
+\DoxyCodeLine{00902\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}*\ Self,}
+\DoxyCodeLine{00903\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProcessorNumber,}
+\DoxyCodeLine{00904\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ EnableOldBSP);}
+\DoxyCodeLine{00905\ }
+\DoxyCodeLine{00906\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a05d2c7bf836ebf05a567efc2859a8473}{EfiMpServicesStartupThisAP}})(}
+\DoxyCodeLine{00907\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}*\ Self,}
+\DoxyCodeLine{00908\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ad16592d067cef8faf464899fba105f6a}{EFI\_AP\_PROCEDURE}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Procedure,}
+\DoxyCodeLine{00909\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProcessorNumber,}
+\DoxyCodeLine{00910\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ WaitEvent\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afdff552467cc2d2d5815831e9656cffc}{OPTIONAL}},}
+\DoxyCodeLine{00911\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TimeoutInMicroseconds,}
+\DoxyCodeLine{00912\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}*\ ProcedureArgument\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afdff552467cc2d2d5815831e9656cffc}{OPTIONAL}},}
+\DoxyCodeLine{00913\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}*\ Finished\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afdff552467cc2d2d5815831e9656cffc}{OPTIONAL}});}
+\DoxyCodeLine{00914\ }
+\DoxyCodeLine{00915\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ab92b0624c3727b3473c0cb6983335ab9}{EfiMpServicesDisableThisAP}})(}
+\DoxyCodeLine{00916\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}*\ Self,}
+\DoxyCodeLine{00917\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProcessorNumber,}
+\DoxyCodeLine{00918\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ EnableAP,}
+\DoxyCodeLine{00919\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ HealthFlag\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_afdff552467cc2d2d5815831e9656cffc}{OPTIONAL}});}
+\DoxyCodeLine{00920\ }
+\DoxyCodeLine{00921\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a15ff120df5ace6c6ab15d242b5346ef9}{EfiStatusType}}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae011c5c900283f3b3a22ce56a6000471}{EFI\_API}}\ (*\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a146d8b4221d3b982307aba0b84a1e144}{EfiMpServicesWhoAmI}})(}
+\DoxyCodeLine{00922\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ac2bbd6d630a06a980d9a92ddb9a49928}{IN}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}*\ Self,}
+\DoxyCodeLine{00923\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_aec78e7a9e90a406a56f859ee456e8eae}{OUT}}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}*\ ProcessorNumber);}
+\DoxyCodeLine{00924\ }
+\DoxyCodeLine{00925\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___efi_mp_services_protocol}{\_EfiMpServicesProtocol}}}
+\DoxyCodeLine{00926\ \{}
+\DoxyCodeLine{00927\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae222b529ad9f60bdd252ec7508eb8215}{EfiMpServicesGetNumberOfProcessors}}\ \mbox{\hyperlink{struct___efi_mp_services_protocol_a3710e7f7d9ca70b5f30c6bc0ab06917e}{GetNumberOfProcessors}};}
+\DoxyCodeLine{00928\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abb4833b2b8b8b41029c61b5d96a69ece}{EfiMpServicesGetProcessorInfo}}\ \ \ \ \ \mbox{\hyperlink{struct___efi_mp_services_protocol_ae4869e12a9fbd0c5d4aa78958c5aaa53}{GetProcessorInfo}};}
+\DoxyCodeLine{00929\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8a0f0168bd2589b93a5fd4ed17a802cf}{EfiMpServicesStartupAllAPS}}\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_mp_services_protocol_afa1c2e7120ff8c7e439ed5eafb554cea}{StartupAllAPs}};}
+\DoxyCodeLine{00930\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a05d2c7bf836ebf05a567efc2859a8473}{EfiMpServicesStartupThisAP}}\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_mp_services_protocol_a110c8db30007807f6df3050b37f50ae1}{StartupThisAP}};}
+\DoxyCodeLine{00931\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a40d6a17c80e7aec8a3bdf1f876483ac8}{EfiMpServicesSwitchBSP}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_mp_services_protocol_afa3a129d6860d8565c4f4b1bb09abc73}{SwitchBSP}};}
+\DoxyCodeLine{00932\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ab92b0624c3727b3473c0cb6983335ab9}{EfiMpServicesDisableThisAP}}\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_mp_services_protocol_a4c0d9d34baca7583a024475632458a5d}{EnableDisableAP}};}
+\DoxyCodeLine{00933\ \ \ \ \ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a146d8b4221d3b982307aba0b84a1e144}{EfiMpServicesWhoAmI}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct___efi_mp_services_protocol_ac89d032b0953a4428ca3b114e6f97ad5}{WhoAmI}};}
+\DoxyCodeLine{00934\ \}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a668ac61db8b981743e9586c445b2085b}{EfiMpServicesProtocol}};}
+\DoxyCodeLine{00935\ }
+\DoxyCodeLine{00936\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifndef\ FIRMWARE\_KIT\_EFI\_H}}
+
+\end{DoxyCode}

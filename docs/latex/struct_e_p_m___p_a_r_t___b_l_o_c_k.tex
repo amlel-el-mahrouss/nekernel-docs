@@ -1,0 +1,134 @@
+\doxysection{EPM\+\_\+\+PART\+\_\+\+BLOCK Struct Reference}
+\hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k}{}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k}\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+
+
+The EPM boot block.  
+
+
+
+
+{\ttfamily \#include $<$EPM.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a4f30ba9b5d66842435a5239c979f8f55}{Magic}} \mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a09c2902efeeaa9d984036760b49b3dff}{k\+EPMMagic\+Length}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_abb51a21ee2b0ac847c39613a8b122eff}{Name}} \mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ac3912d171db6af2ed5eaf657d981c245}{k\+EPMName\+Length}}\mbox{]}
+\item 
+\mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\+\_\+\+GUID}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a7a607d4efb637663353be5bad59f6b75}{Guid}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad88e51fe8b9d041f17d2cc292e9b1203}{Version}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3289fb32eb8a6a5d843830129676b1ec}{Num\+Blocks}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a1c666357a24f3fbebe671d3efa29cd69}{Sector\+Sz}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad899878ff82e1d9cfa7a2947db949d36}{Lba\+Start}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a525445fdb06cf443ffa2a8da9e5fab6c}{Lba\+End}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Ne\+OS\+::\+Int16}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_adccb0fabdd343277f82cb11047fe145b}{Kind}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Ne\+OS\+::\+Int16}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a6c1d9b54306df781256aeb722a1a3cfd}{Flags}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3b1d02de6cbcdd7d9e1030f8969867c3}{Fs\+Version}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a8fa92a83d389e1421dd65497d7e56710}{Fs}} \mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a8f8b00f66a9459c8948024c0024e2032}{k\+EPMFilesystem\+Length}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k_a96a8365feb47aee5d3102f3f8a50081d}{Reserved}} \mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_afc4be870457fbc60fd8eb87ea3285a40}{k\+EPMReserve\+Len}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The EPM boot block. 
+
+\begin{DoxyNote}{Note}
+Num\+Block and Lba\+Start are ignored on some platforms. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a6c1d9b54306df781256aeb722a1a3cfd}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a6c1d9b54306df781256aeb722a1a3cfd} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Flags@{Flags}}
+\index{Flags@{Flags}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Ne\+OS\+::\+Int16}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Flags}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a8fa92a83d389e1421dd65497d7e56710}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a8fa92a83d389e1421dd65497d7e56710} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Fs@{Fs}}
+\index{Fs@{Fs}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Fs}{Fs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Fs\mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a8f8b00f66a9459c8948024c0024e2032}{k\+EPMFilesystem\+Length}}\mbox{]}}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3b1d02de6cbcdd7d9e1030f8969867c3}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3b1d02de6cbcdd7d9e1030f8969867c3} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!FsVersion@{FsVersion}}
+\index{FsVersion@{FsVersion}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{FsVersion}{FsVersion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Fs\+Version}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a7a607d4efb637663353be5bad59f6b75}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a7a607d4efb637663353be5bad59f6b75} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Guid@{Guid}}
+\index{Guid@{Guid}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Guid}{Guid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\+\_\+\+GUID}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Guid}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_adccb0fabdd343277f82cb11047fe145b}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_adccb0fabdd343277f82cb11047fe145b} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Kind@{Kind}}
+\index{Kind@{Kind}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Kind}{Kind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Ne\+OS\+::\+Int16}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Kind}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a525445fdb06cf443ffa2a8da9e5fab6c}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a525445fdb06cf443ffa2a8da9e5fab6c} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!LbaEnd@{LbaEnd}}
+\index{LbaEnd@{LbaEnd}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{LbaEnd}{LbaEnd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Lba\+End}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad899878ff82e1d9cfa7a2947db949d36}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad899878ff82e1d9cfa7a2947db949d36} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!LbaStart@{LbaStart}}
+\index{LbaStart@{LbaStart}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{LbaStart}{LbaStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Lba\+Start}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a4f30ba9b5d66842435a5239c979f8f55}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a4f30ba9b5d66842435a5239c979f8f55} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Magic@{Magic}}
+\index{Magic@{Magic}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Magic}{Magic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Magic\mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a09c2902efeeaa9d984036760b49b3dff}{k\+EPMMagic\+Length}}\mbox{]}}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_abb51a21ee2b0ac847c39613a8b122eff}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_abb51a21ee2b0ac847c39613a8b122eff} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Name@{Name}}
+\index{Name@{Name}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Name\mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ac3912d171db6af2ed5eaf657d981c245}{k\+EPMName\+Length}}\mbox{]}}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3289fb32eb8a6a5d843830129676b1ec}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a3289fb32eb8a6a5d843830129676b1ec} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!NumBlocks@{NumBlocks}}
+\index{NumBlocks@{NumBlocks}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{NumBlocks}{NumBlocks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Num\+Blocks}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a96a8365feb47aee5d3102f3f8a50081d}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a96a8365feb47aee5d3102f3f8a50081d} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Reserved@{Reserved}}
+\index{Reserved@{Reserved}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Reserved}{Reserved}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Reserved\mbox{[}\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_afc4be870457fbc60fd8eb87ea3285a40}{k\+EPMReserve\+Len}}\mbox{]}}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_a1c666357a24f3fbebe671d3efa29cd69}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_a1c666357a24f3fbebe671d3efa29cd69} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!SectorSz@{SectorSz}}
+\index{SectorSz@{SectorSz}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{SectorSz}{SectorSz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Sector\+Sz}
+
+\Hypertarget{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad88e51fe8b9d041f17d2cc292e9b1203}\label{struct_e_p_m___p_a_r_t___b_l_o_c_k_ad88e51fe8b9d041f17d2cc292e9b1203} 
+\index{EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}!Version@{Version}}
+\index{Version@{Version}!EPM\_PART\_BLOCK@{EPM\_PART\_BLOCK}}
+\doxysubsubsection{\texorpdfstring{Version}{Version}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} EPM\+\_\+\+PART\+\_\+\+BLOCK\+::\+Version}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Firmware\+Kit/\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h}{EPM.\+h}}\end{DoxyCompactItemize}

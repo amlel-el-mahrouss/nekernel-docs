@@ -1,0 +1,70 @@
+\doxysection{dev/modules/\+Core\+Gfx/\+Text\+Mgr.h File Reference}
+\hypertarget{_text_mgr_8h}{}\label{_text_mgr_8h}\index{dev/modules/CoreGfx/TextMgr.h@{dev/modules/CoreGfx/TextMgr.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$modules/\+Core\+Gfx/\+FBMgr.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_text_mgr_8h_a9229a483a526d22552c8bd9d543f3e36}{k\+Font\+SizeX}}~8
+\item 
+\#define \mbox{\hyperlink{_text_mgr_8h_a86dbf198e5ec9c0c6878ac9bd2201a4a}{k\+Font\+SizeY}}~8
+\item 
+\#define \mbox{\hyperlink{_text_mgr_8h_aa67270a9c6e5182e886f3f1f2dcae601}{k\+Font\+NOFChars}}~128
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}} \mbox{\hyperlink{_text_mgr_8h_ab838b33e7f6b2c57aa96747baf00df4b}{fb\+\_\+render\+\_\+string\+\_\+for\+\_\+bitmap}} (const \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \texorpdfstring{$\ast$}{*}bitmap, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \&x\+\_\+sz, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \&y\+\_\+sz, \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \&x\+\_\+dst, \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \&y\+\_\+dst, \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \&color)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}} \mbox{\hyperlink{_text_mgr_8h_a81899754b43a9eef6df788031546f16c}{fb\+\_\+render\+\_\+string}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \texorpdfstring{$\ast$}{*}text, \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} x\+\_\+dst, \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} y\+\_\+dst, \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \mbox{\hyperlink{_text_mgr_8h_a93c9f115ded2a658866f5f667a9c5e96}{k\+Font\+Bitmap}} \mbox{[}\mbox{\hyperlink{_text_mgr_8h_aa67270a9c6e5182e886f3f1f2dcae601}{k\+Font\+NOFChars}}\mbox{]}\mbox{[}\mbox{\hyperlink{_text_mgr_8h_a9229a483a526d22552c8bd9d543f3e36}{k\+Font\+SizeX}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_text_mgr_8h_aa67270a9c6e5182e886f3f1f2dcae601}\label{_text_mgr_8h_aa67270a9c6e5182e886f3f1f2dcae601} 
+\index{TextMgr.h@{TextMgr.h}!kFontNOFChars@{kFontNOFChars}}
+\index{kFontNOFChars@{kFontNOFChars}!TextMgr.h@{TextMgr.h}}
+\doxysubsubsection{\texorpdfstring{kFontNOFChars}{kFontNOFChars}}
+{\footnotesize\ttfamily \#define k\+Font\+NOFChars~128}
+
+\Hypertarget{_text_mgr_8h_a9229a483a526d22552c8bd9d543f3e36}\label{_text_mgr_8h_a9229a483a526d22552c8bd9d543f3e36} 
+\index{TextMgr.h@{TextMgr.h}!kFontSizeX@{kFontSizeX}}
+\index{kFontSizeX@{kFontSizeX}!TextMgr.h@{TextMgr.h}}
+\doxysubsubsection{\texorpdfstring{kFontSizeX}{kFontSizeX}}
+{\footnotesize\ttfamily \#define k\+Font\+SizeX~8}
+
+\Hypertarget{_text_mgr_8h_a86dbf198e5ec9c0c6878ac9bd2201a4a}\label{_text_mgr_8h_a86dbf198e5ec9c0c6878ac9bd2201a4a} 
+\index{TextMgr.h@{TextMgr.h}!kFontSizeY@{kFontSizeY}}
+\index{kFontSizeY@{kFontSizeY}!TextMgr.h@{TextMgr.h}}
+\doxysubsubsection{\texorpdfstring{kFontSizeY}{kFontSizeY}}
+{\footnotesize\ttfamily \#define k\+Font\+SizeY~8}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_text_mgr_8h_a81899754b43a9eef6df788031546f16c}\label{_text_mgr_8h_a81899754b43a9eef6df788031546f16c} 
+\index{TextMgr.h@{TextMgr.h}!fb\_render\_string@{fb\_render\_string}}
+\index{fb\_render\_string@{fb\_render\_string}!TextMgr.h@{TextMgr.h}}
+\doxysubsubsection{\texorpdfstring{fb\_render\_string()}{fb\_render\_string()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}} fb\+\_\+render\+\_\+string (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \texorpdfstring{$\ast$}{*}}]{text,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}}}]{x\+\_\+dst,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}}}]{y\+\_\+dst,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_text_mgr_8h_ab838b33e7f6b2c57aa96747baf00df4b}\label{_text_mgr_8h_ab838b33e7f6b2c57aa96747baf00df4b} 
+\index{TextMgr.h@{TextMgr.h}!fb\_render\_string\_for\_bitmap@{fb\_render\_string\_for\_bitmap}}
+\index{fb\_render\_string\_for\_bitmap@{fb\_render\_string\_for\_bitmap}!TextMgr.h@{TextMgr.h}}
+\doxysubsubsection{\texorpdfstring{fb\_render\_string\_for\_bitmap()}{fb\_render\_string\_for\_bitmap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Ne\+OS\+::\+Void}} fb\+\_\+render\+\_\+string\+\_\+for\+\_\+bitmap (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} \texorpdfstring{$\ast$}{*}}]{bitmap,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \&}]{x\+\_\+sz,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \&}]{y\+\_\+sz,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \&}]{x\+\_\+dst,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \&}]{y\+\_\+dst,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_text_mgr_8h_a93c9f115ded2a658866f5f667a9c5e96}\label{_text_mgr_8h_a93c9f115ded2a658866f5f667a9c5e96} 
+\index{TextMgr.h@{TextMgr.h}!kFontBitmap@{kFontBitmap}}
+\index{kFontBitmap@{kFontBitmap}!TextMgr.h@{TextMgr.h}}
+\doxysubsubsection{\texorpdfstring{kFontBitmap}{kFontBitmap}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} k\+Font\+Bitmap\mbox{[}\mbox{\hyperlink{_text_mgr_8h_aa67270a9c6e5182e886f3f1f2dcae601}{k\+Font\+NOFChars}}\mbox{]}\mbox{[}\mbox{\hyperlink{_text_mgr_8h_a9229a483a526d22552c8bd9d543f3e36}{k\+Font\+SizeX}}\mbox{]}\hspace{0.3cm}{\ttfamily [inline]}}
+

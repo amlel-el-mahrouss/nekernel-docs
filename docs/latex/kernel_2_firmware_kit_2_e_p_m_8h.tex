@@ -1,0 +1,220 @@
+\doxysection{dev/kernel/\+Firmware\+Kit/\+EPM.h File Reference}
+\hypertarget{kernel_2_firmware_kit_2_e_p_m_8h}{}\label{kernel_2_firmware_kit_2_e_p_m_8h}\index{dev/kernel/FirmwareKit/EPM.h@{dev/kernel/FirmwareKit/EPM.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\+\_\+\+GUID}}
+\begin{DoxyCompactList}\small\item\em EPM GUID structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k}{EPM\+\_\+\+PART\+\_\+\+BLOCK}}
+\begin{DoxyCompactList}\small\item\em The EPM boot block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ac3912d171db6af2ed5eaf657d981c245}{k\+EPMName\+Length}}~(32)
+\begin{DoxyCompactList}\small\item\em The Explicit Partition Map scheme. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a8f8b00f66a9459c8948024c0024e2032}{k\+EPMFilesystem\+Length}}~(16)
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a09c2902efeeaa9d984036760b49b3dff}{k\+EPMMagic\+Length}}~(5)
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_aea46a6b44ae32c324bad33b81e76a893}{k\+EPMMagic86}}~"{}EPMAM"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a834537c126ad86d35b4f20ea4629d04e}{k\+EPMMagic\+RISCV}}~"{}EPMRV"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a1d2860a4781a105027fa20b09ad774fd}{k\+EPMMagic\+ARM}}~"{}EPMAR"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a16df280140e1ac0ee57ad83303957c35}{k\+EPMMagic64k}}~"{}EPM64"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ae7b1bbf1514fde9ba5f389a38e6e5acc}{k\+EPMMagic32k}}~"{}EPM32"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_aa387d5c6671c45ab84d5f8e9366d2c43}{k\+EPMMagic\+PPC}}~"{}EPMPC"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ae65d34a2d7c26f29251c80f9e51f6f53}{k\+EPMMagic\+Error}}~"{}EPM??"{}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ab80664c8631dacf12102260c3d986f27}{k\+EPMMagic}}~\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ae65d34a2d7c26f29251c80f9e51f6f53}{k\+EPMMagic\+Error}}
+\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_af39793dfdb32f4d8d2075fd8dd4b2ac9}{k\+EPMPart\+Block\+Lba}}~(sizeof(\mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k}{EPM\+\_\+\+PART\+\_\+\+BLOCK}}))
+\begin{DoxyCompactList}\small\item\em partition must start at this address. Anything below is reserved for Data backup by the Main OS. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a5cb6697fb3970ebaedde66d1c90e9a1c}{k\+EPMRevision\+Bcd}}~(0x0100)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ae1907cf593bdc3ccdb2dce3892982f98}{k\+EPMBoot\+Block\+Lba}}~(0U)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_afc4be870457fbc60fd8eb87ea3285a40}{k\+EPMReserve\+Len}}~(399)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\+\_\+\+GUID}} \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_a4d08a9ca3b695caf4113b6e13e291856}{EPM\+\_\+\+GUID}}
+\begin{DoxyCompactList}\small\item\em EPM GUID structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600ad430e0f5b2a0e64bcfffd23eac2d77ab}{k\+EPMInvalid}} = 0x00
+, \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a6a6bea2f5a017b3d45860d47e6e03b24}{k\+EPMGeneric\+OS}} = 0xcf
+, \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a4758188a1bb3ae292a95f96398d7fa77}{k\+EPMLinux}} = 0x8f
+, \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a5f57a68f05f1e2a5484c1485ac10623b}{k\+EPMBSD}} = 0x9f
+, \newline
+\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a7f7e2054fbcb15071a81adea2cfb5ba5}{k\+EPMNe\+OS}} = 0x1f
+, \mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a668042d44640f2b91cb2747cd4ccce6c}{k\+EPMInvalid\+OS}} = 0xff
+ \}
+\begin{DoxyCompactList}\small\item\em Version kind enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_ae1907cf593bdc3ccdb2dce3892982f98}\label{kernel_2_firmware_kit_2_e_p_m_8h_ae1907cf593bdc3ccdb2dce3892982f98} 
+\index{EPM.h@{EPM.h}!kEPMBootBlockLba@{kEPMBootBlockLba}}
+\index{kEPMBootBlockLba@{kEPMBootBlockLba}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMBootBlockLba}{kEPMBootBlockLba}}
+{\footnotesize\ttfamily \#define k\+EPMBoot\+Block\+Lba~(0U)}
+
+
+
+! 
+
+EPM boot block address. \Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_a8f8b00f66a9459c8948024c0024e2032}\label{kernel_2_firmware_kit_2_e_p_m_8h_a8f8b00f66a9459c8948024c0024e2032} 
+\index{EPM.h@{EPM.h}!kEPMFilesystemLength@{kEPMFilesystemLength}}
+\index{kEPMFilesystemLength@{kEPMFilesystemLength}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMFilesystemLength}{kEPMFilesystemLength}}
+{\footnotesize\ttfamily \#define k\+EPMFilesystem\+Length~(16)}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_ab80664c8631dacf12102260c3d986f27}\label{kernel_2_firmware_kit_2_e_p_m_8h_ab80664c8631dacf12102260c3d986f27} 
+\index{EPM.h@{EPM.h}!kEPMMagic@{kEPMMagic}}
+\index{kEPMMagic@{kEPMMagic}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagic}{kEPMMagic}}
+{\footnotesize\ttfamily \#define k\+EPMMagic~\mbox{\hyperlink{kernel_2_firmware_kit_2_e_p_m_8h_ae65d34a2d7c26f29251c80f9e51f6f53}{k\+EPMMagic\+Error}}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_ae7b1bbf1514fde9ba5f389a38e6e5acc}\label{kernel_2_firmware_kit_2_e_p_m_8h_ae7b1bbf1514fde9ba5f389a38e6e5acc} 
+\index{EPM.h@{EPM.h}!kEPMMagic32k@{kEPMMagic32k}}
+\index{kEPMMagic32k@{kEPMMagic32k}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagic32k}{kEPMMagic32k}}
+{\footnotesize\ttfamily \#define k\+EPMMagic32k~"{}EPM32"{}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_a16df280140e1ac0ee57ad83303957c35}\label{kernel_2_firmware_kit_2_e_p_m_8h_a16df280140e1ac0ee57ad83303957c35} 
+\index{EPM.h@{EPM.h}!kEPMMagic64k@{kEPMMagic64k}}
+\index{kEPMMagic64k@{kEPMMagic64k}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagic64k}{kEPMMagic64k}}
+{\footnotesize\ttfamily \#define k\+EPMMagic64k~"{}EPM64"{}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_aea46a6b44ae32c324bad33b81e76a893}\label{kernel_2_firmware_kit_2_e_p_m_8h_aea46a6b44ae32c324bad33b81e76a893} 
+\index{EPM.h@{EPM.h}!kEPMMagic86@{kEPMMagic86}}
+\index{kEPMMagic86@{kEPMMagic86}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagic86}{kEPMMagic86}}
+{\footnotesize\ttfamily \#define k\+EPMMagic86~"{}EPMAM"{}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_a1d2860a4781a105027fa20b09ad774fd}\label{kernel_2_firmware_kit_2_e_p_m_8h_a1d2860a4781a105027fa20b09ad774fd} 
+\index{EPM.h@{EPM.h}!kEPMMagicARM@{kEPMMagicARM}}
+\index{kEPMMagicARM@{kEPMMagicARM}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagicARM}{kEPMMagicARM}}
+{\footnotesize\ttfamily \#define k\+EPMMagic\+ARM~"{}EPMAR"{}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_ae65d34a2d7c26f29251c80f9e51f6f53}\label{kernel_2_firmware_kit_2_e_p_m_8h_ae65d34a2d7c26f29251c80f9e51f6f53} 
+\index{EPM.h@{EPM.h}!kEPMMagicError@{kEPMMagicError}}
+\index{kEPMMagicError@{kEPMMagicError}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagicError}{kEPMMagicError}}
+{\footnotesize\ttfamily \#define k\+EPMMagic\+Error~"{}EPM??"{}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_a09c2902efeeaa9d984036760b49b3dff}\label{kernel_2_firmware_kit_2_e_p_m_8h_a09c2902efeeaa9d984036760b49b3dff} 
+\index{EPM.h@{EPM.h}!kEPMMagicLength@{kEPMMagicLength}}
+\index{kEPMMagicLength@{kEPMMagicLength}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagicLength}{kEPMMagicLength}}
+{\footnotesize\ttfamily \#define k\+EPMMagic\+Length~(5)}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_aa387d5c6671c45ab84d5f8e9366d2c43}\label{kernel_2_firmware_kit_2_e_p_m_8h_aa387d5c6671c45ab84d5f8e9366d2c43} 
+\index{EPM.h@{EPM.h}!kEPMMagicPPC@{kEPMMagicPPC}}
+\index{kEPMMagicPPC@{kEPMMagicPPC}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagicPPC}{kEPMMagicPPC}}
+{\footnotesize\ttfamily \#define k\+EPMMagic\+PPC~"{}EPMPC"{}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_a834537c126ad86d35b4f20ea4629d04e}\label{kernel_2_firmware_kit_2_e_p_m_8h_a834537c126ad86d35b4f20ea4629d04e} 
+\index{EPM.h@{EPM.h}!kEPMMagicRISCV@{kEPMMagicRISCV}}
+\index{kEPMMagicRISCV@{kEPMMagicRISCV}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMMagicRISCV}{kEPMMagicRISCV}}
+{\footnotesize\ttfamily \#define k\+EPMMagic\+RISCV~"{}EPMRV"{}}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_ac3912d171db6af2ed5eaf657d981c245}\label{kernel_2_firmware_kit_2_e_p_m_8h_ac3912d171db6af2ed5eaf657d981c245} 
+\index{EPM.h@{EPM.h}!kEPMNameLength@{kEPMNameLength}}
+\index{kEPMNameLength@{kEPMNameLength}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMNameLength}{kEPMNameLength}}
+{\footnotesize\ttfamily \#define k\+EPMName\+Length~(32)}
+
+
+
+The Explicit Partition Map scheme. 
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_af39793dfdb32f4d8d2075fd8dd4b2ac9}\label{kernel_2_firmware_kit_2_e_p_m_8h_af39793dfdb32f4d8d2075fd8dd4b2ac9} 
+\index{EPM.h@{EPM.h}!kEPMPartBlockLba@{kEPMPartBlockLba}}
+\index{kEPMPartBlockLba@{kEPMPartBlockLba}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMPartBlockLba}{kEPMPartBlockLba}}
+{\footnotesize\ttfamily \#define k\+EPMPart\+Block\+Lba~(sizeof(\mbox{\hyperlink{struct_e_p_m___p_a_r_t___b_l_o_c_k}{EPM\+\_\+\+PART\+\_\+\+BLOCK}}))}
+
+
+
+partition must start at this address. Anything below is reserved for Data backup by the Main OS. 
+
+! \Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_afc4be870457fbc60fd8eb87ea3285a40}\label{kernel_2_firmware_kit_2_e_p_m_8h_afc4be870457fbc60fd8eb87ea3285a40} 
+\index{EPM.h@{EPM.h}!kEPMReserveLen@{kEPMReserveLen}}
+\index{kEPMReserveLen@{kEPMReserveLen}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMReserveLen}{kEPMReserveLen}}
+{\footnotesize\ttfamily \#define k\+EPMReserve\+Len~(399)}
+
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_a5cb6697fb3970ebaedde66d1c90e9a1c}\label{kernel_2_firmware_kit_2_e_p_m_8h_a5cb6697fb3970ebaedde66d1c90e9a1c} 
+\index{EPM.h@{EPM.h}!kEPMRevisionBcd@{kEPMRevisionBcd}}
+\index{kEPMRevisionBcd@{kEPMRevisionBcd}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{kEPMRevisionBcd}{kEPMRevisionBcd}}
+{\footnotesize\ttfamily \#define k\+EPMRevision\+Bcd~(0x0100)}
+
+
+
+! 
+
+Current EPM revision. 
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_a4d08a9ca3b695caf4113b6e13e291856}\label{kernel_2_firmware_kit_2_e_p_m_8h_a4d08a9ca3b695caf4113b6e13e291856} 
+\index{EPM.h@{EPM.h}!EPM\_GUID@{EPM\_GUID}}
+\index{EPM\_GUID@{EPM\_GUID}!EPM.h@{EPM.h}}
+\doxysubsubsection{\texorpdfstring{EPM\_GUID}{EPM\_GUID}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\+\_\+\+GUID}} \mbox{\hyperlink{struct_e_p_m___g_u_i_d}{EPM\+\_\+\+GUID}}}
+
+
+
+EPM GUID structure. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600}\label{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+Version kind enum. 
+
+! Use in boot block version field. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kEPMInvalid@{kEPMInvalid}!EPM.h@{EPM.h}}\index{EPM.h@{EPM.h}!kEPMInvalid@{kEPMInvalid}}}\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600ad430e0f5b2a0e64bcfffd23eac2d77ab}\label{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600ad430e0f5b2a0e64bcfffd23eac2d77ab} 
+k\+EPMInvalid&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kEPMGenericOS@{kEPMGenericOS}!EPM.h@{EPM.h}}\index{EPM.h@{EPM.h}!kEPMGenericOS@{kEPMGenericOS}}}\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a6a6bea2f5a017b3d45860d47e6e03b24}\label{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a6a6bea2f5a017b3d45860d47e6e03b24} 
+k\+EPMGeneric\+OS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kEPMLinux@{kEPMLinux}!EPM.h@{EPM.h}}\index{EPM.h@{EPM.h}!kEPMLinux@{kEPMLinux}}}\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a4758188a1bb3ae292a95f96398d7fa77}\label{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a4758188a1bb3ae292a95f96398d7fa77} 
+k\+EPMLinux&Generic OS. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kEPMBSD@{kEPMBSD}!EPM.h@{EPM.h}}\index{EPM.h@{EPM.h}!kEPMBSD@{kEPMBSD}}}\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a5f57a68f05f1e2a5484c1485ac10623b}\label{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a5f57a68f05f1e2a5484c1485ac10623b} 
+k\+EPMBSD&Linux on EPM. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kEPMNeOS@{kEPMNeOS}!EPM.h@{EPM.h}}\index{EPM.h@{EPM.h}!kEPMNeOS@{kEPMNeOS}}}\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a7f7e2054fbcb15071a81adea2cfb5ba5}\label{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a7f7e2054fbcb15071a81adea2cfb5ba5} 
+k\+EPMNe\+OS&Berkeley Soft. Distribution. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kEPMInvalidOS@{kEPMInvalidOS}!EPM.h@{EPM.h}}\index{EPM.h@{EPM.h}!kEPMInvalidOS@{kEPMInvalidOS}}}\Hypertarget{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a668042d44640f2b91cb2747cd4ccce6c}\label{kernel_2_firmware_kit_2_e_p_m_8h_abed82baf7f470b522273a3e37c24c600a668042d44640f2b91cb2747cd4ccce6c} 
+k\+EPMInvalid\+OS&Ne\+Kernel. \\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,89 @@
+\doxysection{dev/modules/\+MBCI/\+MBCI.h File Reference}
+\hypertarget{_m_b_c_i_8h}{}\label{_m_b_c_i_8h}\index{dev/modules/MBCI/MBCI.h@{dev/modules/MBCI/MBCI.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$Mod/\+ACPI/\+ACPI.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_i_m_b_c_i_host}{Ne\+OS\+::\+IMBCIHost}}
+\begin{DoxyCompactList}\small\item\em MBCI Host header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace where it\textquotesingle{}s API resides. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_m_b_c_i_8h_a15b4c4257e1fb19fd66409906eaf4dda}{k\+MBCIZero\+Sz}}~(8)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a406a9b113be80ffb4ea4be651fe4f3d4}{Ne\+OS\+::\+MBCIAuth\+Key\+Type}}
+\begin{DoxyCompactList}\small\item\em An Auth\+Key is a context used to decrpy data from an MBCI packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99baa54011f81196f14ae223b4fb855e1e3f}{Ne\+OS\+::k\+MBCISpeed\+Device\+Invalid}}
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99badfc35b0d2c3e4b27b242fc43cfc30817}{Ne\+OS\+::k\+MBCILow\+Speed\+Device}}
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99ba4b999bb7c5ca052d2b06ea561198c90c}{Ne\+OS\+::k\+MBCIHigh\+Speed\+Device}}
+, \mbox{\hyperlink{namespace_ne_o_s_a6869e60ec587314f3e18ae181818a99ba300dfb9b6c6d7a967a94338c8426d514}{Ne\+OS\+::k\+MBCISpeed\+Device\+Count}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_ne_o_s_a751d8015704b7fdc94cedb746d36796a}{Ne\+OS\+::\+MBCIHost\+Flags}} \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a751d8015704b7fdc94cedb746d36796aa221c4083cec4da77390de1f7e4de4932}{Ne\+OS\+::k\+MBCIHost\+Flags\+Supports\+Nothing}}
+, \mbox{\hyperlink{namespace_ne_o_s_a751d8015704b7fdc94cedb746d36796aa86c6b807fce0e35d2fbe7b1617fd3af3}{Ne\+OS\+::k\+MBCIHost\+Flags\+Supports\+APM}}
+, \mbox{\hyperlink{namespace_ne_o_s_a751d8015704b7fdc94cedb746d36796aa29ae2785520e39c65adb7e7d15a301df}{Ne\+OS\+::k\+MBCIHost\+Flags\+Supports\+Daisy\+Chain}}
+, \mbox{\hyperlink{namespace_ne_o_s_a751d8015704b7fdc94cedb746d36796aa078a9af692acb94913394ea3f1c9185b}{Ne\+OS\+::k\+MBCIHost\+Flags\+Supports\+HWInterrupts}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a751d8015704b7fdc94cedb746d36796aa7c46764abe97f9647da4ddd95a8fce4d}{Ne\+OS\+::k\+MBCIHost\+Flags\+Supports\+DMA}}
+, \mbox{\hyperlink{namespace_ne_o_s_a751d8015704b7fdc94cedb746d36796aa07b2e65f32f28d18621267d86397fa30}{Ne\+OS\+::k\+MBCIHost\+Flags\+Extended}}
+ \}
+\begin{DoxyCompactList}\small\item\em MBCI host flags. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3}{Ne\+OS\+::\+MBCIHost\+Kind}} \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3a9148252ce3cf24ff861ed4ba8efc5ad3}{Ne\+OS\+::k\+MBCIHost\+Kind\+Hard\+Disk}}
+, \mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3a7273cafc4be9646e47f09fbbe05cd5ff}{Ne\+OS\+::k\+MBCIHost\+Kind\+Optical\+Disk}}
+, \mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3a002f2603ccaf0369bd0c5776fa01ddbb}{Ne\+OS\+::k\+MBCIHost\+Kind\+Keyboard\+Low}}
+, \mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3a106cb73a798845754e0cbcb36b61c686}{Ne\+OS\+::k\+MBCIHost\+Kind\+Mouse\+Low}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3af31c7e360f02977b32a8b7e2f0b32ff1}{Ne\+OS\+::k\+MBCIHost\+Kind\+Mouse\+High}}
+, \mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3af1049848802977ad32ac07f0f277eff2}{Ne\+OS\+::k\+MBCIHost\+Kind\+Keyboard\+High}}
+, \mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3ae6adbd82654a2c8f7743089d360460a0}{Ne\+OS\+::k\+MBCIHost\+Kind\+Network\+Interface}}
+, \mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3ae634513e70cd4e7b5f2dc7ffd97a7a2d}{Ne\+OS\+::k\+MBCIHost\+Kind\+Daisy\+Chain}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a2293adef5deb3e4a2a48074e207a13f3ac8670069f09be2daea5410b74d101f4e}{Ne\+OS\+::k\+MBCIHost\+Kind\+Start\+Extended}}
+ \}
+\begin{DoxyCompactList}\small\item\em MBCI host kind. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1a}{Ne\+OS\+::\+MBCIHost\+State}} \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aa23d1c9dc4e93790d908a19a6d9813cc7}{Ne\+OS\+::k\+MBCIHost\+State\+Invalid}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aaa04172f768ef0558c1fb90f847cd2cb9}{Ne\+OS\+::k\+MBCIHost\+State\+Reset}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aa2efb15cc82dcef5139955b7acfb83107}{Ne\+OS\+::k\+MBCIHost\+State\+Success}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aa647b3fc904240e4bdc1f723f11011976}{Ne\+OS\+::k\+MBCIHost\+State\+Ready}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aa32b0da826e9af55ce2a01d435193a370}{Ne\+OS\+::k\+MBCIHost\+State\+Dma\+Start}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aaed7c16faf44d5fda8d711ad93179928d}{Ne\+OS\+::k\+MBCIHost\+State\+Dma\+End}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aa89e2c467248a72ba7cef23fb34005f36}{Ne\+OS\+::k\+MBCIHost\+State\+Fail}}
+, \mbox{\hyperlink{namespace_ne_o_s_a1dfcb3e3f44bfd8f8b4768a094ca6d1aada5191622d94e37860c1e784be49210f}{Ne\+OS\+::k\+MBCIHost\+State\+Count}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_m_b_c_i_8h_a15b4c4257e1fb19fd66409906eaf4dda}\label{_m_b_c_i_8h_a15b4c4257e1fb19fd66409906eaf4dda} 
+\index{MBCI.h@{MBCI.h}!kMBCIZeroSz@{kMBCIZeroSz}}
+\index{kMBCIZeroSz@{kMBCIZeroSz}!MBCI.h@{MBCI.h}}
+\doxysubsubsection{\texorpdfstring{kMBCIZeroSz}{kMBCIZeroSz}}
+{\footnotesize\ttfamily \#define k\+MBCIZero\+Sz~(8)}
+
+
+\begin{DoxyItemize}
+\item VCC (IN) (OUT for MCU)
+\item CLK (IN) (OUT for MCU)
+\item ACK (BI) (Contains an Acknowledge Packet Frame)
+\item D0-\/ (IN) (Starts with the Host Interface Packet Frame)
+\item D1-\/ (IN) (Starts with the Host Interface Packet Frame)
+\item D0+ (OUT) (Starts with the Host Interface Packet Frame)
+\item D1+ (OUT) (Starts with the Host Interface Packet Frame)
+\item GND (IN) (OUT for MCU) 
+\end{DoxyItemize}

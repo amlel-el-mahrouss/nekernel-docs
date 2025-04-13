@@ -1,15 +1,15 @@
 var struct_fis_dma_setup =
 [
-    [ "AutoEnable", "struct_fis_dma_setup.html#ae3c7158529cdb0fd885f7bc54370fa08", null ],
-    [ "DmaBufferId", "struct_fis_dma_setup.html#a5656436d475ba5926e6048956011dc47", null ],
-    [ "DmabufOffset", "struct_fis_dma_setup.html#ad77028f6afbf84c408118e7a9bd8af7d", null ],
-    [ "DTD", "struct_fis_dma_setup.html#a00efa8f8da2ca02c3c25b0fad89cc1b5", null ],
-    [ "FisType", "struct_fis_dma_setup.html#a61cd136c495efe0cdd5fca634734a858", null ],
-    [ "IE", "struct_fis_dma_setup.html#a5bb2bf82a0f340c1a98af4e3e6292003", null ],
-    [ "PortMul", "struct_fis_dma_setup.html#a79fe2c9d5666d26abf43238360c4980f", null ],
-    [ "Reserved0", "struct_fis_dma_setup.html#ae671f0f26e58f7036cb73a51dd7764db", null ],
-    [ "Reserved1", "struct_fis_dma_setup.html#ac39e66d3e856a3cbc7e9f9f668d32322", null ],
-    [ "Reserved3", "struct_fis_dma_setup.html#ac2fedc99f66f299096e04e869f3e7fe7", null ],
-    [ "Rsvd", "struct_fis_dma_setup.html#a1d836508c1c9febfe0b9e93c0a333d29", null ],
-    [ "TransferCount", "struct_fis_dma_setup.html#abbca6408c07af3e4ea17d9b4aa240a41", null ]
+    [ "AutoEnable", "struct_fis_dma_setup.html#a5e985e510d6f70985058c325fc0a80ca", null ],
+    [ "DmaBufferId", "struct_fis_dma_setup.html#ad567f6c5ca86a6680da428727fcfe439", null ],
+    [ "DmabufOffset", "struct_fis_dma_setup.html#a4056a30475fcc0b19fa0542a8fc5cf97", null ],
+    [ "DTD", "struct_fis_dma_setup.html#a48370376f15a724072fbd24667554263", null ],
+    [ "FisType", "struct_fis_dma_setup.html#acf7a2c37da669ec99d87e1f0abc9b7aa", null ],
+    [ "IE", "struct_fis_dma_setup.html#a9519239be81c4677f38b0bd79411a995", null ],
+    [ "PortMul", "struct_fis_dma_setup.html#a50a931379aab334250589fcbfeec8edd", null ],
+    [ "Reserved0", "struct_fis_dma_setup.html#a6e661401ca899a17f0d2518db574bbc3", null ],
+    [ "Reserved1", "struct_fis_dma_setup.html#abfdca5fe463ac1d1e12b9ade7ab52ec7", null ],
+    [ "Reserved3", "struct_fis_dma_setup.html#a4f47b0edd60319392b95e0edb5d89091", null ],
+    [ "Rsvd", "struct_fis_dma_setup.html#adbb6564e2e4e8534ea506f5dbd13bc9c", null ],
+    [ "TransferCount", "struct_fis_dma_setup.html#a6f97273bf001a3c2e164dfc35bdc1c55", null ]
 ];

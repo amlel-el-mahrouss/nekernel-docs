@@ -1,0 +1,138 @@
+\doxysection{NEFS\+\_\+\+FORK\+\_\+\+STRUCT Struct Reference}
+\hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t}{}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t}\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+
+
+Fork type, contains a data page.  
+
+
+
+
+{\ttfamily \#include $<$Ne\+FS.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a2ccf7291b82b9838649955bbd8305dc6}{Fork\+Or\+Catalog}}\+: 1 \{1\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a4524c4d182aa6bb52f264517c1fd27e0}{Fork\+Name}} \mbox{[}\mbox{\hyperlink{_ne_f_s_8h_a2ce15e0241edade3ef3ee8abb3cd1d92}{k\+Ne\+FSFork\+Name\+Len}}\mbox{]} = \{0\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a7a4a6c5da71478ae16d1454024f2986b}{Catalog\+Name}} \mbox{[}\mbox{\hyperlink{_ne_f_s_8h_a87fd947a9f17688b55acd361f064b5ca}{k\+Ne\+FSCatalog\+Name\+Len}}\mbox{]} = \{0\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ac730abc554b21e4bc58e105f4232b283}{Flags}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a503f2fafcfdc3cd9bff18cdc02a63de6}{Kind}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ab35b9993897f14cf2febecf13a82783d}{Resource\+Id}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a12f05480e1fa9365a019188d2f519ccc}{Resource\+Kind}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ae527cf712767dec1bfd6ec40fa52a9b3}{Resource\+Flags}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a2b86767ff566d2af60d5eebc97fe544e}{Data\+Offset}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a6324312c4b5c86f53a7b2b8accd77e16}{Data\+Size}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a65ba494b314c299b4bd7b34bf76844f7}{Next\+Sibling}}
+\begin{DoxyCompactList}\small\item\em Data size according using sector count. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ac3274e12a8572d37ef833855502d7930}{Previous\+Sibling}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} \mbox{\hyperlink{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a4c9c63216dd78d5ec2a94060603e0874}{Pad}} \mbox{[}2\mbox{]} = \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fork type, contains a data page. 
+
+\begin{DoxyNote}{Note}
+The way we store is way different than how other filesystems do, specific chunk of code are written into either the data fork or resource fork, the resource fork is reserved for file metadata. whereas the data fork is reserved for file data. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a7a4a6c5da71478ae16d1454024f2986b}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a7a4a6c5da71478ae16d1454024f2986b} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!CatalogName@{CatalogName}}
+\index{CatalogName@{CatalogName}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{CatalogName}{CatalogName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Catalog\+Name\mbox{[}\mbox{\hyperlink{_ne_f_s_8h_a87fd947a9f17688b55acd361f064b5ca}{k\+Ne\+FSCatalog\+Name\+Len}}\mbox{]} = \{0\}}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a2b86767ff566d2af60d5eebc97fe544e}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a2b86767ff566d2af60d5eebc97fe544e} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!DataOffset@{DataOffset}}
+\index{DataOffset@{DataOffset}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{DataOffset}{DataOffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Data\+Offset}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a6324312c4b5c86f53a7b2b8accd77e16}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a6324312c4b5c86f53a7b2b8accd77e16} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!DataSize@{DataSize}}
+\index{DataSize@{DataSize}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{DataSize}{DataSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Data\+Size}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ac730abc554b21e4bc58e105f4232b283}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ac730abc554b21e4bc58e105f4232b283} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!Flags@{Flags}}
+\index{Flags@{Flags}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Flags}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a4524c4d182aa6bb52f264517c1fd27e0}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a4524c4d182aa6bb52f264517c1fd27e0} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!ForkName@{ForkName}}
+\index{ForkName@{ForkName}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{ForkName}{ForkName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Fork\+Name\mbox{[}\mbox{\hyperlink{_ne_f_s_8h_a2ce15e0241edade3ef3ee8abb3cd1d92}{k\+Ne\+FSFork\+Name\+Len}}\mbox{]} = \{0\}}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a2ccf7291b82b9838649955bbd8305dc6}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a2ccf7291b82b9838649955bbd8305dc6} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!ForkOrCatalog@{ForkOrCatalog}}
+\index{ForkOrCatalog@{ForkOrCatalog}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{ForkOrCatalog}{ForkOrCatalog}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Fork\+Or\+Catalog}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a503f2fafcfdc3cd9bff18cdc02a63de6}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a503f2fafcfdc3cd9bff18cdc02a63de6} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!Kind@{Kind}}
+\index{Kind@{Kind}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{Kind}{Kind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Kind}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a65ba494b314c299b4bd7b34bf76844f7}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a65ba494b314c299b4bd7b34bf76844f7} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!NextSibling@{NextSibling}}
+\index{NextSibling@{NextSibling}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{NextSibling}{NextSibling}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Next\+Sibling}
+
+
+
+Data size according using sector count. 
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a4c9c63216dd78d5ec2a94060603e0874}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a4c9c63216dd78d5ec2a94060603e0874} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!Pad@{Pad}}
+\index{Pad@{Pad}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{Pad}{Pad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Ne\+OS\+::\+Char}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Pad\mbox{[}2\mbox{]} = \{0\}}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ac3274e12a8572d37ef833855502d7930}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ac3274e12a8572d37ef833855502d7930} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!PreviousSibling@{PreviousSibling}}
+\index{PreviousSibling@{PreviousSibling}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{PreviousSibling}{PreviousSibling}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Ne\+OS\+::\+Lba}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Previous\+Sibling}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ae527cf712767dec1bfd6ec40fa52a9b3}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ae527cf712767dec1bfd6ec40fa52a9b3} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!ResourceFlags@{ResourceFlags}}
+\index{ResourceFlags@{ResourceFlags}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{ResourceFlags}{ResourceFlags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Resource\+Flags}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ab35b9993897f14cf2febecf13a82783d}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_ab35b9993897f14cf2febecf13a82783d} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!ResourceId@{ResourceId}}
+\index{ResourceId@{ResourceId}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{ResourceId}{ResourceId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Ne\+OS\+::\+Int64}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Resource\+Id}
+
+\Hypertarget{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a12f05480e1fa9365a019188d2f519ccc}\label{struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t_a12f05480e1fa9365a019188d2f519ccc} 
+\index{NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}!ResourceKind@{ResourceKind}}
+\index{ResourceKind@{ResourceKind}!NEFS\_FORK\_STRUCT@{NEFS\_FORK\_STRUCT}}
+\doxysubsubsection{\texorpdfstring{ResourceKind}{ResourceKind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Ne\+OS\+::\+Int32}} NEFS\+\_\+\+FORK\+\_\+\+STRUCT\+::\+Resource\+Kind}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+FSKit/\mbox{\hyperlink{_ne_f_s_8h}{Ne\+FS.\+h}}\end{DoxyCompactItemize}

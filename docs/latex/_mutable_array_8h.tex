@@ -1,0 +1,82 @@
+\doxysection{dev/kernel/\+New\+Kit/\+Mutable\+Array.h File Reference}
+\hypertarget{_mutable_array_8h}{}\label{_mutable_array_8h}\index{dev/kernel/NewKit/MutableArray.h@{dev/kernel/NewKit/MutableArray.h}}
+{\ttfamily \#include $<$Compiler\+Kit/\+Compiler\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_mutable_linked_list}{Ne\+OS\+::\+Mutable\+Linked\+List$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_nullable_mutable_array}{Ne\+OS\+::\+Nullable\+Mutable\+Array$<$ T, \+\_\+\+Place\+Holder\+Value $>$}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_mutable_array}{Ne\+OS\+::\+Mutable\+Array$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_mutable_array_8h_acdc18e410f981fe6942451a9963cefe1}{TRY\+\_\+\+FIND\+\_\+\+NODE}}(NAME,  NODE)
+\item 
+\#define \mbox{\hyperlink{_mutable_array_8h_a076eb36a090e7a5f46c9531f853fb9f7}{TRY\+\_\+\+FIND\+\_\+\+NODE2}}(NAME,  NODE)
+\item 
+\#define \mbox{\hyperlink{_mutable_array_8h_aa03228683e13f251ecccb07ee6247b98}{TRY\+\_\+\+REMOVE\+\_\+\+NODE}}(NODE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_mutable_array_8h_acdc18e410f981fe6942451a9963cefe1}\label{_mutable_array_8h_acdc18e410f981fe6942451a9963cefe1} 
+\index{MutableArray.h@{MutableArray.h}!TRY\_FIND\_NODE@{TRY\_FIND\_NODE}}
+\index{TRY\_FIND\_NODE@{TRY\_FIND\_NODE}!MutableArray.h@{MutableArray.h}}
+\doxysubsubsection{\texorpdfstring{TRY\_FIND\_NODE}{TRY\_FIND\_NODE}}
+{\footnotesize\ttfamily \#define TRY\+\_\+\+FIND\+\_\+\+NODE(\begin{DoxyParamCaption}\item[{}]{NAME,  }\item[{}]{NODE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{auto}*\ NAME\ =\ NODE;\ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ while\ (NAME)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ if\ (NAME-\/>fIndex\ ==\ Index)\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NAME-\/>fVal;\ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ NAME\ =\ NAME-\/>fNext;\ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{_mutable_array_8h_a076eb36a090e7a5f46c9531f853fb9f7}\label{_mutable_array_8h_a076eb36a090e7a5f46c9531f853fb9f7} 
+\index{MutableArray.h@{MutableArray.h}!TRY\_FIND\_NODE2@{TRY\_FIND\_NODE2}}
+\index{TRY\_FIND\_NODE2@{TRY\_FIND\_NODE2}!MutableArray.h@{MutableArray.h}}
+\doxysubsubsection{\texorpdfstring{TRY\_FIND\_NODE2}{TRY\_FIND\_NODE2}}
+{\footnotesize\ttfamily \#define TRY\+\_\+\+FIND\+\_\+\+NODE2(\begin{DoxyParamCaption}\item[{}]{NAME,  }\item[{}]{NODE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{auto}*\ NAME\ =\ NODE;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ while\ (NAME)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ if\ (NAME-\/>fIndex\ ==\ Index)\ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_system_calls_8h_a569e85f2d10d138139759df87f3b8508}{Ref<T>}}\{NAME-\/>fVal\};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ NAME\ =\ NAME-\/>fNext;\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{_mutable_array_8h_aa03228683e13f251ecccb07ee6247b98}\label{_mutable_array_8h_aa03228683e13f251ecccb07ee6247b98} 
+\index{MutableArray.h@{MutableArray.h}!TRY\_REMOVE\_NODE@{TRY\_REMOVE\_NODE}}
+\index{TRY\_REMOVE\_NODE@{TRY\_REMOVE\_NODE}!MutableArray.h@{MutableArray.h}}
+\doxysubsubsection{\texorpdfstring{TRY\_REMOVE\_NODE}{TRY\_REMOVE\_NODE}}
+{\footnotesize\ttfamily \#define TRY\+\_\+\+REMOVE\+\_\+\+NODE(\begin{DoxyParamCaption}\item[{}]{NODE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (NODE\ \&\&\ NODE-\/>fIndex\ ==\ Index)\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ NODE-\/>fUsed\ \ =\ \textcolor{keyword}{false};\ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ NODE-\/>fIndex\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}

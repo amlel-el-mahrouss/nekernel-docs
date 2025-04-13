@@ -1,0 +1,132 @@
+\doxysection{Ne\+OS\+::Binary\+Mutex Class Reference}
+\hypertarget{class_ne_o_s_1_1_binary_mutex}{}\label{class_ne_o_s_1_1_binary_mutex}\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+
+
+Access control class, which locks a task until one is done.  
+
+
+
+
+{\ttfamily \#include $<$Binary\+Mutex.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_aa07e252c99ffeaae8564957deb5c1ed6}{Binary\+Mutex}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_a5ff5afa31a919edce74f40f1fc016ef5}{\texorpdfstring{$\sim$}{\string~}\+Binary\+Mutex}} ()=default
+\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_ad5321256e0fab64d0820f57de0bf1d4b}{Is\+Locked}} () const
+\begin{DoxyCompactList}\small\item\em Checks if process is locked. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_af6256e5e0c86c6d9d20e9e4a7656bdfa}{Unlock}} () noexcept
+\begin{DoxyCompactList}\small\item\em Unlocks the semaphore. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_a1dc747714fa97d4ea46371f3ce681076}{Wait\+For\+Process}} (const \mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Int16}} \&sec) noexcept
+\begin{DoxyCompactList}\small\item\em Wait for process {\bfseries{sec}} until we check if it\textquotesingle{}s free. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_a2c6da7234e74a513403f1c96abf260db}{Lock}} (\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&process)
+\begin{DoxyCompactList}\small\item\em Locks process in the semaphore. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_a7920b8627cb3872846cc8bcd3426f4ea}{Lock\+Or\+Wait}} (\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&process, \mbox{\hyperlink{class_ne_o_s_1_1_timer_interface}{Timer\+Interface}} \texorpdfstring{$\ast$}{*}timer)
+\begin{DoxyCompactList}\small\item\em Try lock or wait. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_a0bc6079079a24b0f35a3075d1d39f15b}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex}{Binary\+Mutex}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a97b015325434d16a10f83c3d33bb0346}{User\+Process\+Ref}} \mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex_a59b388932cdc33cf17d0e59561f33ff0}{f\+Locking\+Process}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Access control class, which locks a task until one is done. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_aa07e252c99ffeaae8564957deb5c1ed6}\label{class_ne_o_s_1_1_binary_mutex_aa07e252c99ffeaae8564957deb5c1ed6} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!BinaryMutex@{BinaryMutex}}
+\index{BinaryMutex@{BinaryMutex}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{BinaryMutex()}{BinaryMutex()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Binary\+Mutex\+::\+Binary\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_a5ff5afa31a919edce74f40f1fc016ef5}\label{class_ne_o_s_1_1_binary_mutex_a5ff5afa31a919edce74f40f1fc016ef5} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!````~BinaryMutex@{\texorpdfstring{$\sim$}{\string~}BinaryMutex}}
+\index{````~BinaryMutex@{\texorpdfstring{$\sim$}{\string~}BinaryMutex}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BinaryMutex()}{\string~BinaryMutex()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Binary\+Mutex\+::\texorpdfstring{$\sim$}{\string~}\+Binary\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_ad5321256e0fab64d0820f57de0bf1d4b}\label{class_ne_o_s_1_1_binary_mutex_ad5321256e0fab64d0820f57de0bf1d4b} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!IsLocked@{IsLocked}}
+\index{IsLocked@{IsLocked}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{IsLocked()}{IsLocked()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+Binary\+Mutex\+::\+Is\+Locked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if process is locked. 
+
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_a2c6da7234e74a513403f1c96abf260db}\label{class_ne_o_s_1_1_binary_mutex_a2c6da7234e74a513403f1c96abf260db} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!Lock@{Lock}}
+\index{Lock@{Lock}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{Lock()}{Lock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+Binary\+Mutex\+::\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&}]{process }\end{DoxyParamCaption})}
+
+
+
+Locks process in the semaphore. 
+
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_a7920b8627cb3872846cc8bcd3426f4ea}\label{class_ne_o_s_1_1_binary_mutex_a7920b8627cb3872846cc8bcd3426f4ea} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!LockOrWait@{LockOrWait}}
+\index{LockOrWait@{LockOrWait}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{LockOrWait()}{LockOrWait()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+Binary\+Mutex\+::\+Lock\+Or\+Wait (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&}]{process,  }\item[{\mbox{\hyperlink{class_ne_o_s_1_1_timer_interface}{Timer\+Interface}} \texorpdfstring{$\ast$}{*}}]{timer }\end{DoxyParamCaption})}
+
+
+
+Try lock or wait. 
+
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_a0bc6079079a24b0f35a3075d1d39f15b}\label{class_ne_o_s_1_1_binary_mutex_a0bc6079079a24b0f35a3075d1d39f15b} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Binary\+Mutex\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_binary_mutex}{Binary\+Mutex}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_af6256e5e0c86c6d9d20e9e4a7656bdfa}\label{class_ne_o_s_1_1_binary_mutex_af6256e5e0c86c6d9d20e9e4a7656bdfa} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{Unlock()}{Unlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+Binary\+Mutex\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Unlocks the semaphore. 
+
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_a1dc747714fa97d4ea46371f3ce681076}\label{class_ne_o_s_1_1_binary_mutex_a1dc747714fa97d4ea46371f3ce681076} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!WaitForProcess@{WaitForProcess}}
+\index{WaitForProcess@{WaitForProcess}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{WaitForProcess()}{WaitForProcess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Ne\+OS\+::\+Binary\+Mutex\+::\+Wait\+For\+Process (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a766352969fccd3361b84236345ee30a5}{Int16}} \&}]{sec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Wait for process {\bfseries{sec}} until we check if it\textquotesingle{}s free. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sec} & seconds. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_binary_mutex_a59b388932cdc33cf17d0e59561f33ff0}\label{class_ne_o_s_1_1_binary_mutex_a59b388932cdc33cf17d0e59561f33ff0} 
+\index{NeOS::BinaryMutex@{NeOS::BinaryMutex}!fLockingProcess@{fLockingProcess}}
+\index{fLockingProcess@{fLockingProcess}!NeOS::BinaryMutex@{NeOS::BinaryMutex}}
+\doxysubsubsection{\texorpdfstring{fLockingProcess}{fLockingProcess}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a97b015325434d16a10f83c3d33bb0346}{User\+Process\+Ref}} Ne\+OS\+::\+Binary\+Mutex\+::f\+Locking\+Process\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_binary_mutex_8h}{Binary\+Mutex.\+h}}\item 
+dev/kernel/src/\mbox{\hyperlink{_binary_mutex_8cc}{Binary\+Mutex.\+cc}}\end{DoxyCompactItemize}

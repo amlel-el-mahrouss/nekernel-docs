@@ -1,0 +1,90 @@
+\doxysection{ddk.\+h}
+\hypertarget{ddk_8h_source}{}\label{ddk_8h_source}\index{dev/ddk/ddk.h@{dev/ddk/ddk.h}}
+\mbox{\hyperlink{ddk_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ Amlal\ EL\ Mahrouss.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ FILE:\ ddk.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ PURPOSE:\ DDK\ Driver\ model\ base\ header.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#if\ defined(\_\_cplusplus)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ BOOL\ \ \ \ \ \ \ bool}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ YES\ \ \ \ \ \ \ \ true}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ NO\ \ \ \ \ \ \ \ \ false}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ DDK\_EXTERN\ extern\ "{}C"{}\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ nil\ \ \ \ \ \ \ \ nullptr}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#undef\ NULL}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ NULL\ \ \ \ \ \ 0}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ DDK\_FINAL\ final}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ BOOL\ \ \ \ \ \ \ char}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ YES\ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ NO\ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ DDK\_EXTERN\ extern\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ nil\ \ \ \ \ \ \ \ ((void*)0)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#undef\ NULL}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ NULL\ ((void*)0)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ DDK\_FINAL}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ defined(\_\_cplusplus)}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#ifndef\ \_\_DDK\_\_}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#undef\ DDK\_EXTERN}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#if\ defined(\_\_cplusplus)}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ DDK\_EXTERN\ extern\ "{}C"{}\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ DDK\_EXTERN\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ ATTRIBUTE(X)\ \_\_attribute\_\_((X))}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#ifndef\ \_\_NEOSKRNL\_\_}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#error\ !!!\ Do\ not\ include\ header\ in\ EL0/Ring\ 3\ mode\ !!!}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_MINOSKRNL\_\_}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{struct\ }DDK\_STATUS\_STRUCT;}
+\DoxyCodeLine{00051\ \textcolor{keyword}{struct\ }DDK\_OBJECT\_MANIFEST;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{struct\ }DDK\_OBJECT\_MANIFEST\ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l}{DDK\_FINAL}}}
+\DoxyCodeLine{00055\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{char}*\ \ \ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a369602b7abe759a1f07fc3591b050e99}{p\_name}};}
+\DoxyCodeLine{00057\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a8378cc48d7b2174729fcad746c358aba}{p\_kind}};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}*\ \ \ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a99ca9cabda9972c1fc14d5770387a8a9}{p\_object}};}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{struct\ }DDK\_STATUS\_STRUCT\ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l}{DDK\_FINAL}}}
+\DoxyCodeLine{00063\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a4ddec8c571d5f6917f0375d7db3c193a}{s\_action\_id}};}
+\DoxyCodeLine{00065\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_ac913d8061e4ed4282ac2b0d5614a02e8}{s\_issuer\_id}};}
+\DoxyCodeLine{00066\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a357572177bdc47e0bb7c8d2ee35854a5}{s\_group\_id}};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}*\ \ \ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_ac8eca32afc2a7ee5b53ded1e1e3b27b4}{s\_object}};}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00076\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \textcolor{keywordtype}{void}*\ \mbox{\hyperlink{ddk_8h_ad5be25988d9d04cc388260a53c7453de}{ke\_call}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ int32\_t\ cnt,\ \textcolor{keywordtype}{void}*\ dat,\ \textcolor{keywordtype}{size\_t}\ sz);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ddk_8h_a1d5f62254e7c1f833c5deb72a8916532}{ke\_add\_syscall}}(\textcolor{keyword}{const}\ int32\_t\ slot,\ \textcolor{keywordtype}{void}\ (*slotFn)(\textcolor{keywordtype}{void}*\ a0));}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \textcolor{keywordtype}{void}*\ \mbox{\hyperlink{ddk_8h_a3846a7dd13e8ce2d288fcb7d54e76052}{kalloc}}(\textcolor{keywordtype}{size\_t}\ sz);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00090\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ddk_8h_a2e83e08d4d404fca342fac316b2b9c20}{kfree}}(\textcolor{keywordtype}{void}*\ the\_ptr);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \textcolor{keyword}{struct\ }DDK\_OBJECT\_MANIFEST*\ \mbox{\hyperlink{ddk_8h_a763d2d877f202682c19575d9cc6e0e29}{ke\_get\_obj}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ slot,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \textcolor{keywordtype}{void}*\ \mbox{\hyperlink{ddk_8h_a685b048ef66c79d2d6eea41a92e4e8cb}{ke\_set\_obj}}(\textcolor{keyword}{const}\ int32\_t\ slot,\ \textcolor{keyword}{const}\ \textcolor{keyword}{struct}\ DDK\_OBJECT\_MANIFEST*\ ddk\_pr);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00106\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ int32\_t\ \mbox{\hyperlink{ddk_8h_a98b043e184a1fc76fb961197db8ce2eb}{kApiVersionHighest}};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00109\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ int32\_t\ \mbox{\hyperlink{ddk_8h_ae975680533ba71cd3c3bb9edc62f6596}{kApiVersionLowest}};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00112\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ int32\_t\ \mbox{\hyperlink{ddk_8h_a1a70a2af5cb8091f4553f378fb0fa31d}{kApiVersion}};}
+
+\end{DoxyCode}

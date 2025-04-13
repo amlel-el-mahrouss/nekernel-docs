@@ -7,8 +7,9 @@ var dir_c2fcd6ee37e2acd7488d32963cc11f40 =
     [ "CoreGfx", "dir_1c77728a91c2178621b4f526fb3fcc78.html", "dir_1c77728a91c2178621b4f526fb3fcc78" ],
     [ "HPET", "dir_2bc16f2026562936bc9b7dd00e330fb5.html", "dir_2bc16f2026562936bc9b7dd00e330fb5" ],
     [ "LTE", "dir_b906144c1a9f4345165b547810c62e15.html", "dir_b906144c1a9f4345165b547810c62e15" ],
+    [ "MBCI", "dir_d8c82d73a550f47a0a9dc3a0f4386c18.html", "dir_d8c82d73a550f47a0a9dc3a0f4386c18" ],
     [ "NVME", "dir_aeb9784cb009bd6a480c5f2a7ebb33c1.html", "dir_aeb9784cb009bd6a480c5f2a7ebb33c1" ],
-    [ "Pwr", "dir_c304d439e1008b99f374bf7ea093fd98.html", "dir_c304d439e1008b99f374bf7ea093fd98" ],
+    [ "Power", "dir_9317ad28f61699e365e2ac519d289aee.html", "dir_9317ad28f61699e365e2ac519d289aee" ],
     [ "SCSI", "dir_dbf7ece1834def834ae8d21179b113d1.html", "dir_dbf7ece1834def834ae8d21179b113d1" ],
     [ "XHCI", "dir_d4ef1423b1616d11b7507a05f95bacb2.html", "dir_d4ef1423b1616d11b7507a05f95bacb2" ]
 ];

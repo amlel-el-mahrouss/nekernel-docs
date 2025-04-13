@@ -1,14 +1,14 @@
 var struct_fis_dev_bits =
 [
-    [ "Act", "struct_fis_dev_bits.html#a894a3cb0c24e51cbd4e5776e3039ae7e", null ],
-    [ "Error", "struct_fis_dev_bits.html#aa22840fcddd3c6b7c68daa8b06c3345b", null ],
-    [ "FisType", "struct_fis_dev_bits.html#a32c9570f043abdcf81dc26bc68c1ab71", null ],
-    [ "IE", "struct_fis_dev_bits.html#a7b2b3b2bf27c94632d00bd93bd5cd96c", null ],
-    [ "N", "struct_fis_dev_bits.html#a61bdb5055945a3242594ee98b64fb2ba", null ],
-    [ "R0", "struct_fis_dev_bits.html#af5b14c2666d65ecbb1de86a73b80639f", null ],
-    [ "R1", "struct_fis_dev_bits.html#a734a0e62fd4a8acfe4cfd237d82062c4", null ],
-    [ "R2", "struct_fis_dev_bits.html#a0a4288a258b8cfc232eccd8dcd9812ce", null ],
-    [ "Reserved0", "struct_fis_dev_bits.html#aebb04c65f8e8ffa8f09fa6421af654aa", null ],
-    [ "StatusHigh", "struct_fis_dev_bits.html#a0fb4af8164343e07ac6dd06105455b23", null ],
-    [ "StatusLow", "struct_fis_dev_bits.html#add04739616d463617eee0d14971f7049", null ]
+    [ "Act", "struct_fis_dev_bits.html#a74599585db293cf6f1ebe920d310eed1", null ],
+    [ "Error", "struct_fis_dev_bits.html#aeddddc05a331232939c5d291e68dfeb0", null ],
+    [ "FisType", "struct_fis_dev_bits.html#af47c1861c343b8449a4c3b9edae264f8", null ],
+    [ "IE", "struct_fis_dev_bits.html#a92c8f698c5612467dc6743d37045f0d9", null ],
+    [ "N", "struct_fis_dev_bits.html#af83c1e541bd0da965aace664c52b9817", null ],
+    [ "R0", "struct_fis_dev_bits.html#a47a8632bbca936add2fff469103ed606", null ],
+    [ "R1", "struct_fis_dev_bits.html#a45ceb217875ef4985c5535e081a45018", null ],
+    [ "R2", "struct_fis_dev_bits.html#af1449ad9b32fdf600a831f5a6a6dc05a", null ],
+    [ "Reserved0", "struct_fis_dev_bits.html#a2cb8048a10c3b4b320341055b0a7d035", null ],
+    [ "StatusHigh", "struct_fis_dev_bits.html#aed3b9dc0edac80c73c42a8d35291dd75", null ],
+    [ "StatusLow", "struct_fis_dev_bits.html#a0f465c92e281a792562028d6503bfc51", null ]
 ];

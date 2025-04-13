@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('_kernel_panic_8h.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_ne_o_s" id="r_namespace_ne_o_s"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html">NeOS</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>Kernel</b> namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -115,11 +115,11 @@ Macros</h2></td></tr>
 <tr class="separator:abaca09ea2b9deed3f481a2303ea89826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1706c3dd2db94d27734f834a7be5ed1" id="r_aa1706c3dd2db94d27734f834a7be5ed1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#aa1706c3dd2db94d27734f834a7be5ed1">TRY</a>(X)</td></tr>
 <tr class="separator:aa1706c3dd2db94d27734f834a7be5ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90761906556ea7e47b7f55ca64423905" id="r_a90761906556ea7e47b7f55ca64423905"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a90761906556ea7e47b7f55ca64423905">__MUST_PASS</a>(EXPR,  FILE,  LINE)&#160;&#160;&#160;	<a class="el" href="namespace_ne_o_s.html#a8b0d06866c612e4bc6a89f7949a7fcbb">NeOS::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td></tr>
+<tr class="memitem:a90761906556ea7e47b7f55ca64423905" id="r_a90761906556ea7e47b7f55ca64423905"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a90761906556ea7e47b7f55ca64423905">__MUST_PASS</a>(EXPR,  FILE,  LINE)&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td></tr>
 <tr class="separator:a90761906556ea7e47b7f55ca64423905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21aee4c355d56e3630f2f341f59b9406" id="r_a21aee4c355d56e3630f2f341f59b9406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a21aee4c355d56e3630f2f341f59b9406">MUST_PASS</a>(EXPR)&#160;&#160;&#160;(<a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">NeOS::Void</a>)(EXPR)</td></tr>
+<tr class="memitem:a21aee4c355d56e3630f2f341f59b9406" id="r_a21aee4c355d56e3630f2f341f59b9406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a21aee4c355d56e3630f2f341f59b9406">MUST_PASS</a>(EXPR)&#160;&#160;&#160;(<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)(EXPR)</td></tr>
 <tr class="separator:a21aee4c355d56e3630f2f341f59b9406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b1dafe65f1b0085675cf1fffe12b53e" id="r_a5b1dafe65f1b0085675cf1fffe12b53e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a5b1dafe65f1b0085675cf1fffe12b53e">assert</a>(EXPR)&#160;&#160;&#160;(<a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">NeOS::Void</a>)(EXPR)</td></tr>
+<tr class="memitem:a5b1dafe65f1b0085675cf1fffe12b53e" id="r_a5b1dafe65f1b0085675cf1fffe12b53e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a5b1dafe65f1b0085675cf1fffe12b53e">assert</a>(EXPR)&#160;&#160;&#160;(<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)(EXPR)</td></tr>
 <tr class="separator:a5b1dafe65f1b0085675cf1fffe12b53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -158,11 +158,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8b0d06866c612e4bc6a89f7949a7fcbb" id="r_a8b0d06866c612e4bc6a89f7949a7fcbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a8b0d06866c612e4bc6a89f7949a7fcbb">NeOS::ke_runtime_check</a> (bool expr, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *file, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *line)</td></tr>
-<tr class="separator:a8b0d06866c612e4bc6a89f7949a7fcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a989feb3221f46d48287bc8cf13506892" id="r_a989feb3221f46d48287bc8cf13506892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a989feb3221f46d48287bc8cf13506892">NeOS::ke_panic</a> (const <a class="el" href="namespace_ne_o_s.html#a91a19724952b6c6faf9b52f9efc935f7">NeOS::Int32</a> &amp;id, const <a class="el" href="namespace_ne_o_s.html#af96b578c23518d339d562bbab4efa72f">Char</a> *message)</td></tr>
-<tr class="memdesc:a989feb3221f46d48287bc8cf13506892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops execution of the kernel.  <br /></td></tr>
-<tr class="separator:a989feb3221f46d48287bc8cf13506892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4673076c24720c3b405ad974edc5646" id="r_ad4673076c24720c3b405ad974edc5646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a> (<a class="el" href="class_kernel_1_1_error_or.html">bool</a> <a class="el" href="class_kernel_1_1_error_or.html">expr</a>, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *<a class="el" href="class_kernel_1_1_error_or.html">file</a>, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *<a class="el" href="class_kernel_1_1_error_or.html">line</a>)</td></tr>
+<tr class="separator:ad4673076c24720c3b405ad974edc5646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f4ac957b25737365c415f1a1396dbc" id="r_a05f4ac957b25737365c415f1a1396dbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a05f4ac957b25737365c415f1a1396dbc">Kernel::ke_panic</a> (<a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a> &amp;<a class="el" href="class_kernel_1_1_error_or.html">id</a>, <a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *message)</td></tr>
+<tr class="memdesc:a05f4ac957b25737365c415f1a1396dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops execution of the kernel.  <br /></td></tr>
+<tr class="separator:a05f4ac957b25737365c415f1a1396dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a90761906556ea7e47b7f55ca64423905" name="a90761906556ea7e47b7f55ca64423905"></a>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	<a class="el" href="namespace_ne_o_s.html#a8b0d06866c612e4bc6a89f7949a7fcbb">NeOS::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,7 +210,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">EXPR</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">NeOS::Void</a>)(EXPR)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)(EXPR)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -228,7 +228,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">EXPR</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">NeOS::Void</a>)(EXPR)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)(EXPR)</td>
         </tr>
       </table>
 </div><div class="memdoc">

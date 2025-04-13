@@ -1,0 +1,56 @@
+\doxysection{Property.\+h}
+\hypertarget{_user_2_lib_c_f_2_property_8h_source}{}\label{_user_2_lib_c_f_2_property_8h_source}\index{dev/User/LibCF/Property.h@{dev/User/LibCF/Property.h}}
+\mbox{\hyperlink{_user_2_lib_c_f_2_property_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_PROPS\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_PROPS\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_s_c_i_8h}{libsci/SCI.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_user_2_lib_c_f_2_ref_8h}{LibCF/Ref.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ kMaxPropLen\ (256U)}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_lib_c_f}{LibCF}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }CFString;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }CFProperty;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }CFGUID;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Cls,\ SizeT\ N>}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{class\ }CFArray;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_lib_c_f_aef35d65f3e984e261673be4421a83d4c}{CFPropertyId}}\ =\ \mbox{\hyperlink{libsci_2_macros_8h_aea33bdc955927086847adc88212e6b2e}{UIntPtr}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{class\ }CFProperty\ final\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t}{CF\_OBJECT}}}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a22b372c1a1d87f0e84f6bae64764e41b}{CFProperty}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a8c1f6c4d713b48ccfcaf95a055e1c568}{\string~CFProperty}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ CFProperty\&\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a4c1d291cfe9b29cd12233e86baadce18}{operator=}}(\textcolor{keyword}{const}\ CFProperty\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a5e89a02e2f72d7a726345062e8004fb1}{CFProperty}}(\textcolor{keyword}{const}\ CFProperty\&)\ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{libsci_2_macros_8h_a76a8b016e5ad61faf9062cc387df5016}{Bool}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a234d297cffd4f11d34abc8bee8e23dd2}{StringEquals}}(CFString\&\ name);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_lib_c_f_aef35d65f3e984e261673be4421a83d4c}{CFPropertyId}}\&\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a8a1c73b308a85cc051a6386c3c4cb7d3}{GetValue}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ CFString\&\ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f___o_b_j_e_c_t_a952961381a595cc06948ee562f2ec372}{GetKey}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ CFString*\ \ \ \ fName\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_lib_c_f_aef35d65f3e984e261673be4421a83d4c}{CFPropertyId}}\ fValue\{0UL\};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ Ref<CFGUID>\ \ fGUID\{\};}
+\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{template}\ <SizeT\ N>}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_lib_c_f_1_1_c_f_array}{CFPropertyArray}}\ =\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_array}{CFArray<CFProperty,\ N>}};}
+\DoxyCodeLine{00051\ \}\ \textcolor{comment}{//\ namespace\ LibCF}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !CFKIT\_PROPS\_H}}
+
+\end{DoxyCode}

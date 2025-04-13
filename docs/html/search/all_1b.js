@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['valid_0',['Valid',['../struct_ne_o_s_1_1_h_a_l_1_1_p_t_e__4_k_b.html#a3cd0e16f7399b3f452b2576576cc1dae',1,'NeOS::HAL::PTE_4KB']]],
+  ['variant_1',['variant',['../class_ne_o_s_1_1_variant.html#abd6748175f72a6074d6a764966d3c6d0',1,'NeOS::Variant::Variant(SWAP_DISK_HEADER *ptr)'],['../class_ne_o_s_1_1_variant.html#acb26002972232f043370356161498112',1,'NeOS::Variant::Variant(VoidPtr ptr)'],['../class_ne_o_s_1_1_variant.html#acfa30318e9f8b09bdc3646db120fec7e',1,'NeOS::Variant::Variant(nullPtr ptr)'],['../class_ne_o_s_1_1_variant.html',1,'NeOS::Variant'],['../class_ne_o_s_1_1_variant.html#afcc42e62da44ed9c8e9671e12cc93786',1,'NeOS::Variant::Variant()=delete'],['../class_ne_o_s_1_1_variant.html#a7dbbc31da88dc5d74f4c57f732ebd706',1,'NeOS::Variant::Variant(KString *stringView)'],['../class_ne_o_s_1_1_variant.html#a3ef6d024e8d78b033a1c2f97f5458485',1,'NeOS::Variant::Variant(Json *json)']]],
+  ['variant_2ecc_2',['Variant.cc',['../_variant_8cc.html',1,'']]],
+  ['variant_2eh_3',['Variant.h',['../_variant_8h.html',1,'']]],
+  ['variantkind_4',['VariantKind',['../class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12',1,'NeOS::Variant']]],
+  ['vector_5fresult_5',['vector_result',['../classpfd_1_1internal_1_1file__dialog.html#ae28b6dd37ab4e47885ce7ca25652212b',1,'pfd::internal::file_dialog']]],
+  ['vendor_6',['vendor',['../struct_hba_mem.html#a9db8bf49bb57fd2f203401597d84e5eb',1,'HbaMem::Vendor'],['../struct_hba_port.html#a4b9d489baae77fe32bdd45668bee9c59',1,'HbaPort::Vendor'],['../class_ne_o_s_1_1_p_c_i_1_1_device.html#a44c8719f325922fdcc83a0ca9d606836',1,'NeOS::PCI::Device::Vendor()']]],
+  ['vendorguid_7',['vendorguid',['../struct_efi_system_table.html#aa0d618419c0d5bf1b1745c4a4f9931c4',1,'EfiSystemTable::VendorGUID'],['../struct_efi_runtime_services.html#a4ca582138d3fd4ab015563c3fc8eb58a',1,'EfiRuntimeServices::VendorGUID']]],
+  ['vendorid_8',['vendorid',['../class_ne_o_s_1_1_p_c_i_1_1_device.html#a2e832939b888af7c5a3bb7286c2a599c',1,'NeOS::PCI::Device::VendorId()'],['../struct_ne_o_s_1_1_p_c_i_1_1_device_header.html#a318fa14809d9b046129c45e1d789706e',1,'NeOS::PCI::DeviceHeader::VendorId']]],
+  ['vendortable_9',['VendorTable',['../struct_efi_system_table.html#a4bd3c922838a28d4d5996d18880d061f',1,'EfiSystemTable']]],
+  ['verbose_10',['verbose',['../classpfd_1_1settings.html#a0ed32e8ed039106028474eb9f0a0a7bc',1,'pfd::settings']]],
+  ['version_11',['version',['../struct_ne_o_s_1_1_p_e_f_container.html#ab67bef52489743881177c50d3d10db8b',1,'NeOS::PEFContainer::Version'],['../struct_efi_graphics_output_protocol_mode_information.html#a979a0c5efe00e8d64ee88eed5dfc2678',1,'EfiGraphicsOutputProtocolModeInformation::Version'],['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#ad88e51fe8b9d041f17d2cc292e9b1203',1,'EPM_PART_BLOCK::Version'],['../struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#aa96cf3f189e3449ab9635289e0501e0d',1,'NEFS_ROOT_PARTITION_BLOCK::Version']]],
+  ['version_2eh_12',['Version.h',['../_version_8h.html',1,'']]],
+  ['verticalresolution_13',['VerticalResolution',['../struct_efi_graphics_output_protocol_mode_information.html#a86f19cf632cb09b18ded1968d1ecef4e',1,'EfiGraphicsOutputProtocolModeInformation']]],
+  ['virtualaddress_14',['virtualaddress',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#a25009f5fbe2649527ec37c12d2214928',1,'LDR_SECTION_HEADER::VirtualAddress'],['../struct_l_d_r___d_a_t_a___d_i_r_e_c_t_o_r_y.html#a9e612d5ec0f575ad0c29d7dafba9a342',1,'LDR_DATA_DIRECTORY::VirtualAddress'],['../class_ne_o_s_1_1_p_t_e_wrapper.html#a6d189a2c1d694bfbec65402dba34e50b',1,'NeOS::PTEWrapper::VirtualAddress()']]],
+  ['virtualaddresskind_15',['VirtualAddressKind',['../namespace_ne_o_s.html#ab7e67fa782913a9ee6d630d8e1871416',1,'NeOS']]],
+  ['virtualsize_16',['VirtualSize',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#ad938ddde8894d7bd2bc5e352c3335cba',1,'LDR_SECTION_HEADER']]],
+  ['virtualstart_17',['VirtualStart',['../struct_efi_memory_descriptor.html#aa28b4fe6eb5213737e970336a1e94d7d',1,'EfiMemoryDescriptor']]],
+  ['vmregister_18',['VMRegister',['../class_ne_o_s_1_1_user_process.html#a07928b794ced88423f78647366201e23',1,'NeOS::UserProcess']]],
+  ['void_19',['void',['../user_2_macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea',1,'Void:&#160;Macros.h'],['../namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d',1,'NeOS::Void']]],
+  ['voidptr_20',['voidptr',['../namespace_ne_o_s.html#ac1c63bbbae84b587c92428c1f2025036',1,'NeOS::VoidPtr'],['../user_2_macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h'],['../namespace_ne_o_s.html#ac5ebc4a72d8bae28b4ccd8ba8ee37fc3',1,'NeOS::voidPtr']]],
+  ['vs_21',['Vs',['../struct_hba_mem.html#af9441a9fa303346f66f65ed996ead8d3',1,'HbaMem']]]
+];

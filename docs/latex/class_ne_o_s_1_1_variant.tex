@@ -1,0 +1,201 @@
+\doxysection{Ne\+OS\+::Variant Class Reference}
+\hypertarget{class_ne_o_s_1_1_variant}{}\label{class_ne_o_s_1_1_variant}\index{NeOS::Variant@{NeOS::Variant}}
+
+
+{\ttfamily \#include $<$Variant.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12}{Variant\+Kind}} \{ \newline
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a302e56d566a2561033b27c13680ea4b2}{k\+String}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a4b9ccf72f3995d1aa0555f144d6ae00f}{k\+Blob}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12af2655c2dee87cb9b0646f678a630394b}{k\+Null}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a319f3b99b8d96c21e2f6b7ebc6fe8d8f}{k\+Json}}
+, \newline
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12ad1752a613e98a569918a29cf1dc80ee4}{k\+XML}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a74db4d0c7312d50be91bc4465d665f2d}{k\+Swap}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12ab10913c938482a8aa4ba85b7a1116cb4}{k\+Invalid}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_afcc42e62da44ed9c8e9671e12cc93786}{Variant}} ()=delete
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_a4655344e26dd99a80c858fab1755a343}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_variant}{Variant}})
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_a1989b7ac7e612d00946373563892ad78}{\texorpdfstring{$\sim$}{\string~}\+Variant}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_a7dbbc31da88dc5d74f4c57f732ebd706}{Variant}} (\mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} \texorpdfstring{$\ast$}{*}string\+View)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_a3ef6d024e8d78b033a1c2f97f5458485}{Variant}} (\mbox{\hyperlink{class_ne_o_s_1_1_json}{Json}} \texorpdfstring{$\ast$}{*}json)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_acfa30318e9f8b09bdc3646db120fec7e}{Variant}} (\mbox{\hyperlink{namespace_ne_o_s_a38971d0f185d8b481f6e1e8a13bd694e}{null\+Ptr}} ptr)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_abd6748175f72a6074d6a764966d3c6d0}{Variant}} (\mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}{SWAP\+\_\+\+DISK\+\_\+\+HEADER}} \texorpdfstring{$\ast$}{*}ptr)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_acb26002972232f043370356161498112}{Variant}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} ptr)
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_variant_a78d80e19cc66c80fdb469f65b0532565}{To\+String}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_variant_a60e9e8ef90b3c9e336824833f6617551}{Leak}} ()
+\begin{DoxyCompactList}\small\item\em Leak variant\textquotesingle{}s instance. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_variant_abf03f9bb9cd3c30fd33f22970a473048}{As}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12}{Variant\+Kind}} \& \mbox{\hyperlink{class_ne_o_s_1_1_variant_a2e323f2305a60f3f2105cab6c8e6b302}{Kind}} ()
+\begin{DoxyCompactList}\small\item\em Return variant\textquotesingle{}s kind. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_variant_afae99499e9da30b929a82947f12b7ef4}{f\+Ptr}} \{nullptr\}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12}{Variant\+Kind}} \mbox{\hyperlink{class_ne_o_s_1_1_variant_aa0fe5dcda92f6a806e88cde54b68ba77}{f\+Kind}} \{\mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12af2655c2dee87cb9b0646f678a630394b}{Variant\+Kind\+::k\+Null}}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12} 
+\index{NeOS::Variant@{NeOS::Variant}!VariantKind@{VariantKind}}
+\index{VariantKind@{VariantKind}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{VariantKind}{VariantKind}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12}{Ne\+OS\+::\+Variant\+::\+Variant\+Kind}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kString@{kString}!NeOS::Variant@{NeOS::Variant}}\index{NeOS::Variant@{NeOS::Variant}!kString@{kString}}}\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a302e56d566a2561033b27c13680ea4b2}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a302e56d566a2561033b27c13680ea4b2} 
+k\+String&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kBlob@{kBlob}!NeOS::Variant@{NeOS::Variant}}\index{NeOS::Variant@{NeOS::Variant}!kBlob@{kBlob}}}\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a4b9ccf72f3995d1aa0555f144d6ae00f}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a4b9ccf72f3995d1aa0555f144d6ae00f} 
+k\+Blob&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNull@{kNull}!NeOS::Variant@{NeOS::Variant}}\index{NeOS::Variant@{NeOS::Variant}!kNull@{kNull}}}\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12af2655c2dee87cb9b0646f678a630394b}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12af2655c2dee87cb9b0646f678a630394b} 
+k\+Null&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kJson@{kJson}!NeOS::Variant@{NeOS::Variant}}\index{NeOS::Variant@{NeOS::Variant}!kJson@{kJson}}}\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a319f3b99b8d96c21e2f6b7ebc6fe8d8f}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a319f3b99b8d96c21e2f6b7ebc6fe8d8f} 
+k\+Json&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kXML@{kXML}!NeOS::Variant@{NeOS::Variant}}\index{NeOS::Variant@{NeOS::Variant}!kXML@{kXML}}}\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12ad1752a613e98a569918a29cf1dc80ee4}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12ad1752a613e98a569918a29cf1dc80ee4} 
+k\+XML&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kSwap@{kSwap}!NeOS::Variant@{NeOS::Variant}}\index{NeOS::Variant@{NeOS::Variant}!kSwap@{kSwap}}}\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a74db4d0c7312d50be91bc4465d665f2d}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12a74db4d0c7312d50be91bc4465d665f2d} 
+k\+Swap&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kInvalid@{kInvalid}!NeOS::Variant@{NeOS::Variant}}\index{NeOS::Variant@{NeOS::Variant}!kInvalid@{kInvalid}}}\Hypertarget{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12ab10913c938482a8aa4ba85b7a1116cb4}\label{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12ab10913c938482a8aa4ba85b7a1116cb4} 
+k\+Invalid&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_variant_afcc42e62da44ed9c8e9671e12cc93786}\label{class_ne_o_s_1_1_variant_afcc42e62da44ed9c8e9671e12cc93786} 
+\index{NeOS::Variant@{NeOS::Variant}!Variant@{Variant}}
+\index{Variant@{Variant}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Variant()}{Variant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\+Variant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_a1989b7ac7e612d00946373563892ad78}\label{class_ne_o_s_1_1_variant_a1989b7ac7e612d00946373563892ad78} 
+\index{NeOS::Variant@{NeOS::Variant}!````~Variant@{\texorpdfstring{$\sim$}{\string~}Variant}}
+\index{````~Variant@{\texorpdfstring{$\sim$}{\string~}Variant}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Variant()}{\string~Variant()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\texorpdfstring{$\sim$}{\string~}\+Variant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_a7dbbc31da88dc5d74f4c57f732ebd706}\label{class_ne_o_s_1_1_variant_a7dbbc31da88dc5d74f4c57f732ebd706} 
+\index{NeOS::Variant@{NeOS::Variant}!Variant@{Variant}}
+\index{Variant@{Variant}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Variant()}{Variant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\+Variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} \texorpdfstring{$\ast$}{*}}]{string\+View }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_a3ef6d024e8d78b033a1c2f97f5458485}\label{class_ne_o_s_1_1_variant_a3ef6d024e8d78b033a1c2f97f5458485} 
+\index{NeOS::Variant@{NeOS::Variant}!Variant@{Variant}}
+\index{Variant@{Variant}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Variant()}{Variant()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\+Variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_json}{Json}} \texorpdfstring{$\ast$}{*}}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_acfa30318e9f8b09bdc3646db120fec7e}\label{class_ne_o_s_1_1_variant_acfa30318e9f8b09bdc3646db120fec7e} 
+\index{NeOS::Variant@{NeOS::Variant}!Variant@{Variant}}
+\index{Variant@{Variant}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Variant()}{Variant()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\+Variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a38971d0f185d8b481f6e1e8a13bd694e}{null\+Ptr}}}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_abd6748175f72a6074d6a764966d3c6d0}\label{class_ne_o_s_1_1_variant_abd6748175f72a6074d6a764966d3c6d0} 
+\index{NeOS::Variant@{NeOS::Variant}!Variant@{Variant}}
+\index{Variant@{Variant}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Variant()}{Variant()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\+Variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}{SWAP\+\_\+\+DISK\+\_\+\+HEADER}} \texorpdfstring{$\ast$}{*}}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_acb26002972232f043370356161498112}\label{class_ne_o_s_1_1_variant_acb26002972232f043370356161498112} 
+\index{NeOS::Variant@{NeOS::Variant}!Variant@{Variant}}
+\index{Variant@{Variant}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Variant()}{Variant()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\+Variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_variant_abf03f9bb9cd3c30fd33f22970a473048}\label{class_ne_o_s_1_1_variant_abf03f9bb9cd3c30fd33f22970a473048} 
+\index{NeOS::Variant@{NeOS::Variant}!As@{As}}
+\index{As@{As}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{As()}{As()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Variant\+::\+As (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_a2e323f2305a60f3f2105cab6c8e6b302}\label{class_ne_o_s_1_1_variant_a2e323f2305a60f3f2105cab6c8e6b302} 
+\index{NeOS::Variant@{NeOS::Variant}!Kind@{Kind}}
+\index{Kind@{Kind}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Kind()}{Kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12}{Variant\+::\+Variant\+Kind}} \& Ne\+OS\+::\+Variant\+::\+Kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return variant\textquotesingle{}s kind. 
+
+\Hypertarget{class_ne_o_s_1_1_variant_a60e9e8ef90b3c9e336824833f6617551}\label{class_ne_o_s_1_1_variant_a60e9e8ef90b3c9e336824833f6617551} 
+\index{NeOS::Variant@{NeOS::Variant}!Leak@{Leak}}
+\index{Leak@{Leak}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{Leak()}{Leak()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} Ne\+OS\+::\+Variant\+::\+Leak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Leak variant\textquotesingle{}s instance. 
+
+\Hypertarget{class_ne_o_s_1_1_variant_a4655344e26dd99a80c858fab1755a343}\label{class_ne_o_s_1_1_variant_a4655344e26dd99a80c858fab1755a343} 
+\index{NeOS::Variant@{NeOS::Variant}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Variant\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_variant}{Variant}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_variant_a78d80e19cc66c80fdb469f65b0532565}\label{class_ne_o_s_1_1_variant_a78d80e19cc66c80fdb469f65b0532565} 
+\index{NeOS::Variant@{NeOS::Variant}!ToString@{ToString}}
+\index{ToString@{ToString}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Variant\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_variant_aa0fe5dcda92f6a806e88cde54b68ba77}\label{class_ne_o_s_1_1_variant_aa0fe5dcda92f6a806e88cde54b68ba77} 
+\index{NeOS::Variant@{NeOS::Variant}!fKind@{fKind}}
+\index{fKind@{fKind}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{fKind}{fKind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12}{Variant\+Kind}} Ne\+OS\+::\+Variant\+::f\+Kind \{\mbox{\hyperlink{class_ne_o_s_1_1_variant_af9a7a12954dc166c82a352c6c0f83c12af2655c2dee87cb9b0646f678a630394b}{Variant\+Kind\+::k\+Null}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_variant_afae99499e9da30b929a82947f12b7ef4}\label{class_ne_o_s_1_1_variant_afae99499e9da30b929a82947f12b7ef4} 
+\index{NeOS::Variant@{NeOS::Variant}!fPtr@{fPtr}}
+\index{fPtr@{fPtr}!NeOS::Variant@{NeOS::Variant}}
+\doxysubsubsection{\texorpdfstring{fPtr}{fPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}} Ne\+OS\+::\+Variant\+::f\+Ptr \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+New\+Kit/\mbox{\hyperlink{_variant_8h}{Variant.\+h}}\item 
+dev/kernel/src/\mbox{\hyperlink{_variant_8cc}{Variant.\+cc}}\end{DoxyCompactItemize}

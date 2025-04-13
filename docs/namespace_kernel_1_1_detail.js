@@ -1,0 +1,26 @@
+var namespace_kernel_1_1_detail =
+[
+    [ "AMD64", "namespace_kernel_1_1_detail_1_1_a_m_d64.html", "namespace_kernel_1_1_detail_1_1_a_m_d64" ],
+    [ "FADT", "struct_kernel_1_1_detail_1_1_f_a_d_t.html", "struct_kernel_1_1_detail_1_1_f_a_d_t" ],
+    [ "HPET_BLOCK", "struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html", "struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k" ],
+    [ "MM_INFORMATION_BLOCK", "struct_kernel_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html", "struct_kernel_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k" ],
+    [ "MM_INFORMATION_BLOCK_PTR", "namespace_kernel_1_1_detail.html#ac66013dc7a69b68640b6ddf4f2e5a187", null ],
+    [ "_write_number", "namespace_kernel_1_1_detail.html#a2eb868ebdd8e496cd8140d5c14b5952f", null ],
+    [ "_write_number_hex", "namespace_kernel_1_1_detail.html#a8e8d2eed7173b4eb867187eb74924322", null ],
+    [ "cred_construct_token", "namespace_kernel_1_1_detail.html#ae06296f83da9733db8e053f758e99114", null ],
+    [ "hal_serial_init", "namespace_kernel_1_1_detail.html#abcfc42bc1a7dac85b5349d71f3012141", null ],
+    [ "io_detect_drive", "namespace_kernel_1_1_detail.html#a44c6ea754d5c28b34dff620149402180", null ],
+    [ "ldr_get_platform", "namespace_kernel_1_1_detail.html#afd688bf34a4a06a2417ee52159eeb718", null ],
+    [ "mm_check_heap_address", "namespace_kernel_1_1_detail.html#ae2211aa4f2dace284f3069c93efac029", null ],
+    [ "mp_handle_gic_interrupt_el0", "namespace_kernel_1_1_detail.html#aedd5f4f4181ace1817f83345fc73f12f", null ],
+    [ "mp_hang_fn", "namespace_kernel_1_1_detail.html#a6c3cc05fa8d9f6dc5a43d122da95b12f", null ],
+    [ "mp_setup_gic_el0", "namespace_kernel_1_1_detail.html#ad27629969d1c8c83035cac27fc1d9bd9", null ],
+    [ "sk_io_read_ahci", "namespace_kernel_1_1_detail.html#af5309d5033bbee2c09242d9bc1a9249a", null ],
+    [ "sk_io_read_pio", "namespace_kernel_1_1_detail.html#aa011d5e4bda18cdd44be2e47b387305c", null ],
+    [ "sk_io_write_ahci", "namespace_kernel_1_1_detail.html#af0a56274e3fe11028ff6bd8bfe14c854", null ],
+    [ "sk_io_write_pio", "namespace_kernel_1_1_detail.html#a256c24bfbe268d9e3889b370bd6e32ee", null ],
+    [ "kGICEnabled", "namespace_kernel_1_1_detail.html#a1d3140ee2ff731643e55951a785cb51b", null ],
+    [ "kPort", "namespace_kernel_1_1_detail.html#a3eb709c5262ae6b615008c111788d4d7", null ],
+    [ "MM_INFORMATION_BLOCK", "namespace_kernel_1_1_detail.html#aeb33a27af8d703b08d25c38a7ffbd143", null ],
+    [ "PACKED", "namespace_kernel_1_1_detail.html#a413dd27937a507eda0a290f6f19bb624", null ]
+];

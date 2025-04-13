@@ -7,7 +7,7 @@ var struct___dos_header =
     [ "eIp", "struct___dos_header.html#a53d687363926b20021770970f8805805", null ],
     [ "eLfanew", "struct___dos_header.html#adc3c7c97183e85eb75a5a0b64e8cc904", null ],
     [ "eLfarlc", "struct___dos_header.html#a31f2fb27cc7e81ce3018401e4a70a1af", null ],
-    [ "eMagic", "struct___dos_header.html#a32c518bfa569775318bc3467df43bf52", null ],
+    [ "eMagic", "struct___dos_header.html#a6f92f1a1397f4b2d923fd54abe900aaf", null ],
     [ "eMagLen", "struct___dos_header.html#ac7b4007e3276618daef86dd3730c14ca", null ],
     [ "eMaxAlloc", "struct___dos_header.html#a6a1ee6c3455be5f14662aa8df6574511", null ],
     [ "eMinAlloc", "struct___dos_header.html#a5495d31112914f303c4931a0ba09b690", null ],

@@ -1,0 +1,36 @@
+\doxysection{dev.\+h}
+\hypertarget{dev_8h_source}{}\label{dev_8h_source}\index{dev/ddk/dev.h@{dev/ddk/dev.h}}
+\mbox{\hyperlink{dev_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ Amlal\ EL\ Mahrouss.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ File:\ dev.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ Purpose:\ DDK\ device\ support.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{ddk_8h}{ddk/ddk.h}}>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\_DDK\_DEVICE;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ DDK\_DEVICE\_NAME\_LEN\ (255)}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\_DDK\_DEVICE\ \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l}{DDK\_FINAL}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{char}\ d\_name[\mbox{\hyperlink{dev_8h_aa3295d9adad766a7bfaaa012c133c313}{DDK\_DEVICE\_NAME\_LEN}}];\ \ \ \ \ \textcolor{comment}{//\ the\ device\ name.\ Could\ be\ /./DEVICE\_NAME/}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}*\ (*d\_read)(\textcolor{keywordtype}{void}*\ arg,\ \textcolor{keywordtype}{int}\ len);\ \textcolor{comment}{//\ read\ from\ device.}}
+\DoxyCodeLine{00023\ \ \ \ \ void\ (*d\_write)(\textcolor{keywordtype}{void}*\ arg,\ \textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00024\ \ \ \ \ void\ (*d\_wait)(void);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ write\ to\ device.}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{struct\ }\_DDK\_DEVICE*\ (*d\_open)(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ path);\ \textcolor{comment}{//\ open\ device.}}
+\DoxyCodeLine{00026\ \ \ \ \ void\ (*d\_close)(\textcolor{keyword}{struct\ }\_DDK\_DEVICE*\ dev);\ \ \ \ \ \ \ \ \textcolor{comment}{//\ close\ device.}}
+\DoxyCodeLine{00027\ \}\ \mbox{\hyperlink{dev_8h_a50aa9f8785c96fdba18dc3384ba2aac8}{DDK\_DEVICE}},\ *\mbox{\hyperlink{dev_8h_ae76edbc51a8f00a3a5e2ca42af0e12ed}{DDK\_DEVICE\_PTR}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00031\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \mbox{\hyperlink{dev_8h_ae76edbc51a8f00a3a5e2ca42af0e12ed}{DDK\_DEVICE\_PTR}}\ \mbox{\hyperlink{dev_8h_a4a97bf579d8dd726327a23ed36d594bf}{open}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ path);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00035\ \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\_EXTERN}}\ \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}\ \mbox{\hyperlink{dev_8h_a9b54c1e48e7a4f50016970a5187eadd8}{close}}(\mbox{\hyperlink{dev_8h_ae76edbc51a8f00a3a5e2ca42af0e12ed}{DDK\_DEVICE\_PTR}}\ device);}
+
+\end{DoxyCode}

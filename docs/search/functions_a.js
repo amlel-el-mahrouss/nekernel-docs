@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['json_0',['json',['../class_ne_o_s_1_1_json.html#a67320ab93601020dc53f201abac745eb',1,'NeOS::Json::Json()'],['../class_ne_o_s_1_1_json.html#af1fded421e7a8f8f566bd23dfd13e480',1,'NeOS::Json::Json(SizeT lhsLen, SizeT rhsLen)']]]
+  ['json_0',['json',['../class_kernel_1_1_json.html#abbe7826bafc5a2b8dbc312b423882987',1,'Kernel::Json::Json()'],['../class_kernel_1_1_json.html#a08d90c00c4620019fb5bcf5918448c47',1,'Kernel::Json::Json(SizeT lhsLen, SizeT rhsLen)']]]
 ];

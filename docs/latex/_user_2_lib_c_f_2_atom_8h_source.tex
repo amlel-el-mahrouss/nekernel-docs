@@ -1,0 +1,53 @@
+\doxysection{Atom.\+h}
+\hypertarget{_user_2_lib_c_f_2_atom_8h_source}{}\label{_user_2_lib_c_f_2_atom_8h_source}\index{dev/User/LibCF/Atom.h@{dev/User/LibCF/Atom.h}}
+\mbox{\hyperlink{_user_2_lib_c_f_2_atom_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_foundation_8h}{LibCF/Foundation.h}}>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_lib_c_f}{LibCF}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom}{CFAtom}}\ final}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_a52c40d76b1717575ea8ad57459887535}{CFAtom}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_abf7c03c75317cd5a6fc8d91beda12d25}{\string~CFAtom}}()\ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom}{CFAtom}}\&\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_a9078a887884e01c583138360720dc856}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom}{CFAtom}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_aa32213aa788f49b91e3c67c37138a328}{CFAtom}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom}{CFAtom}}\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_a36c1399bfc3b23c3d13840eea96830fb}{operator[]}}(\mbox{\hyperlink{libsci_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}}\ bit)}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_a9bb4fd0a59544a21978b0595fb30c38b}{fArrayOfAtoms}}\ \&\ (1\ <<\ bit));}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_ab997289a5a740359e1ff2238896a3b13}{operator|}}(\mbox{\hyperlink{libsci_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}}\ bit)}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_a9bb4fd0a59544a21978b0595fb30c38b}{fArrayOfAtoms}}\ |=\ (1\ <<\ bit);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{libsci_2_macros_8h_a3790b6de8c45ebee9af548380c3fb8d2}{Boolean}}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_ab4912d806a2e5d4e8b6e31f475f90702}{operator==}}(\mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom}{CFAtom<T>}}\&\ atomic,\ \textcolor{keyword}{const}\ T\&\ idx)}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ atomic[idx]\ ==\ idx;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{libsci_2_macros_8h_a3790b6de8c45ebee9af548380c3fb8d2}{Boolean}}\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_a9ba67870cabf990dd7f73a466543a60f}{operator!=}}(\mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom}{CFAtom<T>}}\&\ atomic,\ \textcolor{keyword}{const}\ T\&\ idx)}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ atomic[idx]\ ==\ idx;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{class_lib_c_f_1_1_c_f_atom_a9bb4fd0a59544a21978b0595fb30c38b}{fArrayOfAtoms}};}
+\DoxyCodeLine{00046\ \ \ \ \ \};}
+\DoxyCodeLine{00047\ \}\ \textcolor{comment}{//\ namespace\ LibCF}}
+
+\end{DoxyCode}

@@ -96,22 +96,22 @@ $(document).ready(function(){initNavTree('_hal_scheduler_core_a_r_m64_8cc.html',
   <div class="headertitle"><div class="title">HalSchedulerCoreARM64.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_user_process_scheduler_8h_source.html">KernelKit/UserProcessScheduler.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_ne_o_s" id="r_namespace_ne_o_s"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html">NeOS</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>Kernel</b> namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a85b712827bea6a4de1e3ed567d48e4b6" id="r_a85b712827bea6a4de1e3ed567d48e4b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a85b712827bea6a4de1e3ed567d48e4b6">NeOS::mp_wakeup_thread</a> (<a class="el" href="struct_ne_o_s_1_1_h_a_l_1_1_stack_frame.html">HAL::StackFrame</a> *stack)</td></tr>
-<tr class="memdesc:a85b712827bea6a4de1e3ed567d48e4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wakes up thread. Wakes up thread from the hang state.  <br /></td></tr>
-<tr class="separator:a85b712827bea6a4de1e3ed567d48e4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c8fc339aca4142191f0ff98a71e974" id="r_ab5c8fc339aca4142191f0ff98a71e974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#ab5c8fc339aca4142191f0ff98a71e974">NeOS::mp_hang_thread</a> (<a class="el" href="struct_ne_o_s_1_1_h_a_l_1_1_stack_frame.html">HAL::StackFrame</a> *stack)</td></tr>
-<tr class="memdesc:ab5c8fc339aca4142191f0ff98a71e974"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes the thread sleep on a loop. hooks and hangs thread to prevent code from executing.  <br /></td></tr>
-<tr class="separator:ab5c8fc339aca4142191f0ff98a71e974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e60b7abb449e3b2ff9003ee789718b1" id="r_a3e60b7abb449e3b2ff9003ee789718b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a3e60b7abb449e3b2ff9003ee789718b1">Kernel::mp_wakeup_thread</a> (<a class="el" href="struct_kernel_1_1_h_a_l_1_1_stack_frame.html">HAL::StackFrame</a> *<a class="el" href="class_kernel_1_1_error_or.html">stack</a>)</td></tr>
+<tr class="memdesc:a3e60b7abb449e3b2ff9003ee789718b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wakes up thread. Wakes up thread from the hang state.  <br /></td></tr>
+<tr class="separator:a3e60b7abb449e3b2ff9003ee789718b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae9b52ba72a2c5b8733c0835087aa6e" id="r_a7ae9b52ba72a2c5b8733c0835087aa6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a7ae9b52ba72a2c5b8733c0835087aa6e">Kernel::mp_hang_thread</a> (<a class="el" href="struct_kernel_1_1_h_a_l_1_1_stack_frame.html">HAL::StackFrame</a> *<a class="el" href="class_kernel_1_1_error_or.html">stack</a>)</td></tr>
+<tr class="memdesc:a7ae9b52ba72a2c5b8733c0835087aa6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes the thread sleep on a loop. hooks and hangs thread to prevent code from executing.  <br /></td></tr>
+<tr class="separator:a7ae9b52ba72a2c5b8733c0835087aa6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,58 @@
+\doxysection{MSDOS.\+h}
+\hypertarget{_m_s_d_o_s_8h_source}{}\label{_m_s_d_o_s_8h_source}\index{dev/kernel/KernelKit/MSDOS.h@{dev/kernel/KernelKit/MSDOS.h}}
+\mbox{\hyperlink{_m_s_d_o_s_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ File:\ MSDOS.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ Purpose:\ MS-\/DOS\ header\ for\ Kernel.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ \ \ \ Revision\ History:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ \ \ \ 30/01/24:\ Added\ file\ (amlel)}}
+\DoxyCodeLine{00011\ \textcolor{comment}{}}
+\DoxyCodeLine{00012\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ \_\_MSDOS\_EXEC\_\_}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ \_\_MSDOS\_EXEC\_\_}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_p_e_8h}{KernelKit/PE.h}}>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ Last\ Rev}}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ Sat\ Feb\ 24\ CET\ 2024}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ kMagMz0\ 'M'}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ kMagMz1\ 'Z'}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}};}
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{NeOS::Long}}\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_ac2472010ffd0764368ec30fb19f66400}{DosLong}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct___dos_header}{\_DosHeader}}}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ \mbox{\hyperlink{struct___dos_header_a32c518bfa569775318bc3467df43bf52}{eMagic}}[2];}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_ac7b4007e3276618daef86dd3730c14ca}{eMagLen}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a45d161afc78c99e0352ac8898771e7aa}{ePagesCount}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_ad23fc49829d1e44998a82fdd3d767c21}{eCrlc}};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a2dadf9e621068debd247ff87021ce1d0}{eCParHdr}};}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a5495d31112914f303c4931a0ba09b690}{eMinAlloc}};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a6a1ee6c3455be5f14662aa8df6574511}{eMaxAlloc}};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a72ab5daa0f0fdb46de12347b96e96f3b}{eStackSeg}};}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_ab5509cd69c527880cb580c3f894b5c18}{eStackPtr}};}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_acfc1f4f9d48e8e54c6ae1af0ffc33425}{eChksum}};}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a53d687363926b20021770970f8805805}{eIp}};}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a203443291819c3e6cff2a04466c708b0}{eCs}};}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a31f2fb27cc7e81ce3018401e4a70a1af}{eLfarlc}};}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a138c5e83b2158b9851bc9ce2e74106d2}{eOvno}};}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a13fcc5758d61165cc3c32f3ac885e4bc}{eRes}}[4];}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a825d09ac267f9ea53f84b8a9efee9d76}{eOemid}};}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_a5ecb01817e4741abedcc65bec4ae32a8}{eOeminfo}};}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_a1c3d3f08dce04e3b65d80173e33b918c}{DosWord}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_ab517790b5a9e0475360e6c62cd9cbd73}{eRes2}}[10];}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{_m_s_d_o_s_8h_ac2472010ffd0764368ec30fb19f66400}{DosLong}}\ \ \ \ \ \ \mbox{\hyperlink{struct___dos_header_adc3c7c97183e85eb75a5a0b64e8cc904}{eLfanew}};}
+\DoxyCodeLine{00050\ \}\ \mbox{\hyperlink{_m_s_d_o_s_8h_aee7d7b1d320dcf41b577b14d1c1f7344}{DosHeader}},\ *\mbox{\hyperlink{_m_s_d_o_s_8h_a528bb549d190f8c368943dbe1701f7f2}{DosHeaderPtr}};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ ifndef\ \_\_MSDOS\_EXEC\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('_qr_8h_source.html',''); initResizable
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="bit_8h.html">BootKit/Shared/bit.h</a>&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_qr_prelude_8h.html">BootKit/QrPrelude.h</a>&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="_f_b_mgr_8h.html">modules/CoreGfx/FBMgr.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="_core_gfx_8h.html">modules/CoreGfx/CoreGfx.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_support_8h.html">BootKit/Support.h</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_detail_8h.html">CompilerKit/Detail.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -503,20 +503,20 @@ $(document).ready(function(){initNavTree('_qr_8h_source.html',''); initResizable
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        <span class="keywordflow">if</span> (!this-&gt;status)</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// it may be invalid.</span></div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        <a class="code hl_define" href="_f_b_mgr_8h.html#af426c91c49821bcf155ae7b712e52b1b">fb_init</a>();</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        <a class="code hl_define" href="_core_gfx_8h.html#af426c91c49821bcf155ae7b712e52b1b">fb_init</a>();</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; (this-&gt;side_size()); ++y)</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        {</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; (this-&gt;side_size()); ++x)</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            {</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                <a class="code hl_define" href="_f_b_mgr_8h.html#ae16cf1e77ab82769ae955d1fac7e4935">FBDrawInRegion</a>(</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                <a class="code hl_define" href="_core_gfx_8h.html#a1b705c9b5bf3dc14dfc742420dc843d2">FBDrawInRegion</a>(</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                    (this-&gt;module(x, y) ? <a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a>(00, 00, 00) : <a class="code hl_define" href="kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a>(0xFF, 0xFF, 0xFF)),</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                    1, 1,</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                    x + whereX, y + whereY);</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>            }</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        }</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        <a class="code hl_define" href="_f_b_mgr_8h.html#a5eb2b0e3f79ee92449f5bad2d00c664a">fb_clear</a>();</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        <a class="code hl_define" href="_core_gfx_8h.html#a5eb2b0e3f79ee92449f5bad2d00c664a">fb_clear</a>();</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    }</div>
@@ -1123,8 +1123,9 @@ $(document).ready(function(){initNavTree('_qr_8h_source.html',''); initResizable
 <div class="line"><a id="l00954" name="l00954"></a><span class="lineno"><a class="line" href="classqr_1_1_qr_delegate.html#a1b5f0ba642703957cface508e82e551a">  954</a></span>        <span class="keyword">explicit</span> <a class="code hl_function" href="classqr_1_1_qr_delegate.html#a1b5f0ba642703957cface508e82e551a">QrDelegate</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno"><a class="line" href="classqr_1_1_qr_delegate.html#a0342aef47d459c32076b53d082e98672">  955</a></span>        <a class="code hl_function" href="classqr_1_1_qr_delegate.html#a0342aef47d459c32076b53d082e98672">~QrDelegate</a>()         = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span> </div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno"><a class="line" href="classqr_1_1_qr_delegate.html#ad8f7b80d449a2e896b63096b57789a7d">  957</a></span>        <a class="code hl_function" href="classqr_1_1_qr_delegate.html#ad8f7b80d449a2e896b63096b57789a7d">NE_COPY_DEFAULT</a>(<a class="code hl_class" href="classqr_1_1_qr_delegate.html">QrDelegate</a>);</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>        <a class="code hl_define" href="_detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">NE_COPY_DEFAULT</a>(<a class="code hl_class" href="classqr_1_1_qr_delegate.html">QrDelegate</a>)</div>
 <div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>        </div>
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> V&gt;</div>
 <div class="foldopen" id="foldopen00961" data-start="{" data-end="}">
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno"><a class="line" href="classqr_1_1_qr_delegate.html#aa0135a4c1798b48370c81f0f23d7eb84">  961</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classqr_1_1_qr_delegate.html#aa0135a4c1798b48370c81f0f23d7eb84">draw</a>(<a class="code hl_struct" href="structqr_1_1_qr.html">Qr&lt;V&gt;</a>&amp; subject, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">noexcept</span></div>
@@ -1138,18 +1139,19 @@ $(document).ready(function(){initNavTree('_qr_8h_source.html',''); initResizable
 </div>
 <div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span> </div>
 <div class="foldopen" id="foldopen00968" data-start="{" data-end="}">
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno"><a class="line" href="namespace_ne_o_s.html">  968</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ne_o_s_1_1_qr.html">NeOS::Qr</a></div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno"><a class="line" href="namespace_kernel.html">  968</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_kernel_1_1_qr.html">Kernel::Qr</a></div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>{</div>
 <div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceqr.html">qr</a>;</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>} <span class="comment">// namespace NeOS::Qr</span></div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>} <span class="comment">// namespace Kernel::Qr</span></div>
 </div>
 <div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span> </div>
 <div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span><span class="preprocessor">#endif </span><span class="comment">// QR_H</span></div>
+<div class="ttc" id="a_core_gfx_8h_html"><div class="ttname"><a href="_core_gfx_8h.html">CoreGfx.h</a></div></div>
+<div class="ttc" id="a_core_gfx_8h_html_a1b705c9b5bf3dc14dfc742420dc843d2"><div class="ttname"><a href="_core_gfx_8h.html#a1b705c9b5bf3dc14dfc742420dc843d2">FBDrawInRegion</a></div><div class="ttdeci">#define FBDrawInRegion(clr, height, width, base_x, base_y)</div><div class="ttdef"><b>Definition</b> CoreGfx.h:120</div></div>
+<div class="ttc" id="a_core_gfx_8h_html_a5eb2b0e3f79ee92449f5bad2d00c664a"><div class="ttname"><a href="_core_gfx_8h.html#a5eb2b0e3f79ee92449f5bad2d00c664a">fb_clear</a></div><div class="ttdeci">#define fb_clear()</div><div class="ttdef"><b>Definition</b> CoreGfx.h:17</div></div>
+<div class="ttc" id="a_core_gfx_8h_html_af426c91c49821bcf155ae7b712e52b1b"><div class="ttname"><a href="_core_gfx_8h.html#af426c91c49821bcf155ae7b712e52b1b">fb_init</a></div><div class="ttdeci">#define fb_init()</div><div class="ttdef"><b>Definition</b> CoreGfx.h:11</div></div>
 <div class="ttc" id="a_detail_8h_html"><div class="ttname"><a href="_detail_8h.html">Detail.h</a></div></div>
-<div class="ttc" id="a_f_b_mgr_8h_html"><div class="ttname"><a href="_f_b_mgr_8h.html">FBMgr.h</a></div></div>
-<div class="ttc" id="a_f_b_mgr_8h_html_a5eb2b0e3f79ee92449f5bad2d00c664a"><div class="ttname"><a href="_f_b_mgr_8h.html#a5eb2b0e3f79ee92449f5bad2d00c664a">fb_clear</a></div><div class="ttdeci">#define fb_clear()</div><div class="ttdef"><b>Definition</b> FBMgr.h:17</div></div>
-<div class="ttc" id="a_f_b_mgr_8h_html_ae16cf1e77ab82769ae955d1fac7e4935"><div class="ttname"><a href="_f_b_mgr_8h.html#ae16cf1e77ab82769ae955d1fac7e4935">FBDrawInRegion</a></div><div class="ttdeci">#define FBDrawInRegion(_Clr, height, width, base_x, base_y)</div><div class="ttdef"><b>Definition</b> FBMgr.h:120</div></div>
-<div class="ttc" id="a_f_b_mgr_8h_html_af426c91c49821bcf155ae7b712e52b1b"><div class="ttname"><a href="_f_b_mgr_8h.html#af426c91c49821bcf155ae7b712e52b1b">fb_init</a></div><div class="ttdeci">#define fb_init()</div><div class="ttdef"><b>Definition</b> FBMgr.h:11</div></div>
+<div class="ttc" id="a_detail_8h_html_a855fc6b9e935d41c084c0b89a4b82bd2"><div class="ttname"><a href="_detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">NE_COPY_DEFAULT</a></div><div class="ttdeci">#define NE_COPY_DEFAULT(KLASS)</div><div class="ttdef"><b>Definition</b> Detail.h:17</div></div>
 <div class="ttc" id="a_qr_prelude_8h_html"><div class="ttname"><a href="_qr_prelude_8h.html">QrPrelude.h</a></div></div>
 <div class="ttc" id="a_support_8h_html"><div class="ttname"><a href="_support_8h.html">Support.h</a></div><div class="ttdoc">Purpose of this file is to help port libs into the bootloader.</div></div>
 <div class="ttc" id="a_support_8h_html_a013574543d2f27a210fdfd5fa284ebe3"><div class="ttname"><a href="_support_8h.html#a013574543d2f27a210fdfd5fa284ebe3">CopyMem</a></div><div class="ttdeci">#define CopyMem(dst, src, sz)</div><div class="ttdef"><b>Definition</b> Support.h:47</div></div>
@@ -1162,10 +1164,9 @@ $(document).ready(function(){initNavTree('_qr_8h_source.html',''); initResizable
 <div class="ttc" id="aclassqr_1_1_qr_delegate_html_a0342aef47d459c32076b53d082e98672"><div class="ttname"><a href="classqr_1_1_qr_delegate.html#a0342aef47d459c32076b53d082e98672">qr::QrDelegate::~QrDelegate</a></div><div class="ttdeci">~QrDelegate()=default</div></div>
 <div class="ttc" id="aclassqr_1_1_qr_delegate_html_a1b5f0ba642703957cface508e82e551a"><div class="ttname"><a href="classqr_1_1_qr_delegate.html#a1b5f0ba642703957cface508e82e551a">qr::QrDelegate::QrDelegate</a></div><div class="ttdeci">QrDelegate()=default</div></div>
 <div class="ttc" id="aclassqr_1_1_qr_delegate_html_aa0135a4c1798b48370c81f0f23d7eb84"><div class="ttname"><a href="classqr_1_1_qr_delegate.html#aa0135a4c1798b48370c81f0f23d7eb84">qr::QrDelegate::draw</a></div><div class="ttdeci">bool draw(Qr&lt; V &gt; &amp;subject, int x, int y) noexcept</div><div class="ttdoc">Draw method delegate.</div><div class="ttdef"><b>Definition</b> Qr.h:961</div></div>
-<div class="ttc" id="aclassqr_1_1_qr_delegate_html_ad8f7b80d449a2e896b63096b57789a7d"><div class="ttname"><a href="classqr_1_1_qr_delegate.html#ad8f7b80d449a2e896b63096b57789a7d">qr::QrDelegate::NE_COPY_DEFAULT</a></div><div class="ttdeci">NE_COPY_DEFAULT(QrDelegate)</div></div>
 <div class="ttc" id="addk_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="ddk_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> ddk.h:31</div></div>
 <div class="ttc" id="akernel_2_new_kit_2_macros_8h_html_a52d6f67c629ccece695186d3ccceba54"><div class="ttname"><a href="kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a></div><div class="ttdeci">#define RGB(R, G, B)</div><div class="ttdef"><b>Definition</b> Macros.h:125</div></div>
-<div class="ttc" id="anamespace_ne_o_s_1_1_qr_html"><div class="ttname"><a href="namespace_ne_o_s_1_1_qr.html">NeOS::Qr</a></div><div class="ttdef"><b>Definition</b> Qr.h:969</div></div>
+<div class="ttc" id="anamespace_kernel_1_1_qr_html"><div class="ttname"><a href="namespace_kernel_1_1_qr.html">Kernel::Qr</a></div><div class="ttdef"><b>Definition</b> Qr.h:969</div></div>
 <div class="ttc" id="anamespaceqr_html"><div class="ttname"><a href="namespaceqr.html">qr</a></div><div class="ttdef"><b>Definition</b> Qr.h:15</div></div>
 <div class="ttc" id="anamespaceqr_html_a3310a533383c4dbf029cc201f27daba5"><div class="ttname"><a href="namespaceqr.html#a3310a533383c4dbf029cc201f27daba5">qr::Mode</a></div><div class="ttdeci">Mode</div><div class="ttdef"><b>Definition</b> Qr.h:238</div></div>
 <div class="ttc" id="anamespaceqr_html_a3310a533383c4dbf029cc201f27daba5a387d09f39018df13dd6d92c92f43da10"><div class="ttname"><a href="namespaceqr.html#a3310a533383c4dbf029cc201f27daba5a387d09f39018df13dd6d92c92f43da10">qr::M_KANJI</a></div><div class="ttdeci">@ M_KANJI</div><div class="ttdef"><b>Definition</b> Qr.h:242</div></div>

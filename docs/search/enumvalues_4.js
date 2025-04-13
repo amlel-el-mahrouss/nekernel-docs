@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['econtroller_0',['eController',['../namespace_ne_o_s.html#a35caf034fe357498028446f545d94d24a3d46ae3cf849bfa2d923066149f46216',1,'NeOS']]],
-  ['ecount_1',['eCount',['../namespace_ne_o_s.html#a35caf034fe357498028446f545d94d24aef8144c7d2eb707592aef4127242d415',1,'NeOS']]],
+  ['econtroller_0',['eController',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a6c51368a9497deaff2ed989c31ec1d08',1,'Kernel']]],
+  ['ecount_1',['eCount',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a1885821ecd9577452227c134ae242eac',1,'Kernel']]],
   ['efiacpimemorynvs_2',['EfiACPIMemoryNVS',['../_e_f_i_2_e_f_i_8h.html#a5b524fe93de766914b9a99d5446f4d1fa86f1b80e03e6705be56d024782b9169a',1,'EFI.h']]],
   ['efiacpireclaimmemory_3',['EfiACPIReclaimMemory',['../_e_f_i_2_e_f_i_8h.html#a5b524fe93de766914b9a99d5446f4d1fab8cd8f20847ddf6580ee3477bee4a86c',1,'EFI.h']]],
   ['efibltbuffertovideo_4',['EfiBltBufferToVideo',['../_e_f_i_2_e_f_i_8h.html#a6771f328e075594263a382d710ddaa14ac20009a657b3d88fda849c8b38e603db',1,'EFI.h']]],
@@ -24,12 +24,12 @@ var searchData=
   ['efiruntimeservicesdata_21',['EfiRuntimeServicesData',['../_e_f_i_2_e_f_i_8h.html#a5b524fe93de766914b9a99d5446f4d1faf7b09f731fa6f3cd90c019d0f52e29cb',1,'EFI.h']]],
   ['efiunacceptedmemorytype_22',['EfiUnacceptedMemoryType',['../_e_f_i_2_e_f_i_8h.html#a5b524fe93de766914b9a99d5446f4d1faccba4111e51fabdba07eb1782eedb66a',1,'EFI.h']]],
   ['efiunusablememory_23',['EfiUnusableMemory',['../_e_f_i_2_e_f_i_8h.html#a5b524fe93de766914b9a99d5446f4d1fa0343d670021aa14e784b345ea5ed2d49',1,'EFI.h']]],
-  ['einvalid_24',['eInvalid',['../namespace_ne_o_s.html#a35caf034fe357498028446f545d94d24af67a86c70b2c8605fd9b1438a382d309',1,'NeOS']]],
-  ['emulation_25',['emulation',['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef',1,'NeOS::HAL::Detail::Emulation'],['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef',1,'NeOS::HAL::Detail::Emulation'],['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef',1,'NeOS::HAL::Detail::Emulation'],['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef',1,'NeOS::HAL::Detail::Emulation']]],
-  ['epci_26',['ePci',['../namespace_ne_o_s.html#a35caf034fe357498028446f545d94d24ac99fae74f53ce705163d664d705298df',1,'NeOS']]],
+  ['einvalid_24',['eInvalid',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a49303b53652254acb58df67a9cc2770b',1,'Kernel']]],
+  ['emulation_25',['emulation',['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation']]],
+  ['epci_26',['ePci',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a03006993233a9c9ac54d09f386410efb',1,'Kernel']]],
   ['error_27',['error',['../namespacepfd.html#a96ff6709abe317ae8eff98d92bc8db85acb5e100e5a9a3e7f6d1fd97512215282',1,'pfd']]],
-  ['esmbus_28',['eSmBus',['../namespace_ne_o_s.html#a35caf034fe357498028446f545d94d24a8748b5d93a0325847aab0994aec3ea9d',1,'NeOS']]],
-  ['esystemio_29',['eSystemIO',['../namespace_ne_o_s.html#a35caf034fe357498028446f545d94d24a242ff44afc4abdb86e1469a3a7bb5250',1,'NeOS']]],
-  ['esystemmemory_30',['eSystemMemory',['../namespace_ne_o_s.html#a35caf034fe357498028446f545d94d24abb3324405116db3bf56bf49bbb766c00',1,'NeOS']]],
-  ['extensiontype_31',['extensiontype',['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76',1,'NeOS::HAL::Detail::ExtensionType'],['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76',1,'NeOS::HAL::Detail::ExtensionType'],['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76',1,'NeOS::HAL::Detail::ExtensionType'],['../namespace_ne_o_s_1_1_h_a_l_1_1_detail.html#a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76',1,'NeOS::HAL::Detail::ExtensionType']]]
+  ['esmbus_28',['eSmBus',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a74d5beb9ae5c8f07eb47531cc0d49ff8',1,'Kernel']]],
+  ['esystemio_29',['eSystemIO',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afb105c7b9564beb0479ed5bfaea63984',1,'Kernel']]],
+  ['esystemmemory_30',['eSystemMemory',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afaf47a2ce3cd1a464062f9571d64c9fe',1,'Kernel']]],
+  ['extensiontype_31',['extensiontype',['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType']]]
 ];

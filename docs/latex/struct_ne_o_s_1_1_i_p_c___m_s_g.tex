@@ -1,0 +1,125 @@
+\doxysection{Ne\+OS\+::IPC\+\_\+\+MSG Struct Reference}
+\hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g}{}\label{struct_ne_o_s_1_1_i_p_c___m_s_g}\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+
+
+IPC connection header, message cannot be greater than 6K.  
+
+
+
+
+{\ttfamily \#include $<$IPC.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_ab325662c29948aeb515b74d0f1c7e60b}{Pass}} (\mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g}{IPC\+\_\+\+MSG}} \texorpdfstring{$\ast$}{*}self, \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g}{IPC\+\_\+\+MSG}} \texorpdfstring{$\ast$}{*}target) noexcept
+\begin{DoxyCompactList}\small\item\em Passes the message to target, could be anything, HTTP packet, JSON or whatever. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_a2f8fd4f154543d412170cf4b60bcddf9}{Ipc\+Header\+Magic}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_a23700171f285fc9bdfd7d01f16d85789}{Ipc\+Endianess}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_aaea03500b045a3a4c85f3daf74361fa0}{Ipc\+Packet\+Size}}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___a_d_d_r}{IPC\+\_\+\+ADDR}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_a9ad68d0199addb2a1f5fac5f326232aa}{Ipc\+From}}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___a_d_d_r}{IPC\+\_\+\+ADDR}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_af157d9f73460f1486ceaac097bf254c5}{Ipc\+To}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_a6674afb1c4d80e29f8d5b06e79b452c7}{Ipc\+CRC32}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_a07992547627001c1b8ae7b278cf790e0}{Ipc\+Msg}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_aab72457c73f8f872daef7577270b62ac}{Ipc\+Msg\+Sz}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g_a72a0f947b71f49ef8649d842b8a6f77a}{Ipc\+Data}} \mbox{[}\mbox{\hyperlink{namespace_ne_o_s_ab91304166b710a44c411cfd2ffa9593d}{k\+IPCMsg\+Size}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+IPC connection header, message cannot be greater than 6K. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_ab325662c29948aeb515b74d0f1c7e60b}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_ab325662c29948aeb515b74d0f1c7e60b} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!Pass@{Pass}}
+\index{Pass@{Pass}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{Pass()}{Pass()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Pass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g}{IPC\+\_\+\+MSG}} \texorpdfstring{$\ast$}{*}}]{src,  }\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___m_s_g}{IPC\+\_\+\+MSG}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+
+
+Passes the message to target, could be anything, HTTP packet, JSON or whatever. 
+
+Pass message from {\bfseries{src}} to {\bfseries{target}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source message. \\
+\hline
+{\em target} & Target message. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_a6674afb1c4d80e29f8d5b06e79b452c7}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_a6674afb1c4d80e29f8d5b06e79b452c7} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcCRC32@{IpcCRC32}}
+\index{IpcCRC32@{IpcCRC32}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcCRC32}{IpcCRC32}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+CRC32}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_a72a0f947b71f49ef8649d842b8a6f77a}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_a72a0f947b71f49ef8649d842b8a6f77a} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcData@{IpcData}}
+\index{IpcData@{IpcData}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcData}{IpcData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+Data\mbox{[}\mbox{\hyperlink{namespace_ne_o_s_ab91304166b710a44c411cfd2ffa9593d}{k\+IPCMsg\+Size}}\mbox{]}}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_a23700171f285fc9bdfd7d01f16d85789}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_a23700171f285fc9bdfd7d01f16d85789} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcEndianess@{IpcEndianess}}
+\index{IpcEndianess@{IpcEndianess}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcEndianess}{IpcEndianess}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+Endianess}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_a9ad68d0199addb2a1f5fac5f326232aa}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_a9ad68d0199addb2a1f5fac5f326232aa} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcFrom@{IpcFrom}}
+\index{IpcFrom@{IpcFrom}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcFrom}{IpcFrom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___a_d_d_r}{IPC\+\_\+\+ADDR}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+From}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_a2f8fd4f154543d412170cf4b60bcddf9}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_a2f8fd4f154543d412170cf4b60bcddf9} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcHeaderMagic@{IpcHeaderMagic}}
+\index{IpcHeaderMagic@{IpcHeaderMagic}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcHeaderMagic}{IpcHeaderMagic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+Header\+Magic}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_a07992547627001c1b8ae7b278cf790e0}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_a07992547627001c1b8ae7b278cf790e0} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcMsg@{IpcMsg}}
+\index{IpcMsg@{IpcMsg}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcMsg}{IpcMsg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+Msg}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_aab72457c73f8f872daef7577270b62ac}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_aab72457c73f8f872daef7577270b62ac} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcMsgSz@{IpcMsgSz}}
+\index{IpcMsgSz@{IpcMsgSz}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcMsgSz}{IpcMsgSz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+Msg\+Sz}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_aaea03500b045a3a4c85f3daf74361fa0}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_aaea03500b045a3a4c85f3daf74361fa0} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcPacketSize@{IpcPacketSize}}
+\index{IpcPacketSize@{IpcPacketSize}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcPacketSize}{IpcPacketSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+Packet\+Size}
+
+\Hypertarget{struct_ne_o_s_1_1_i_p_c___m_s_g_af157d9f73460f1486ceaac097bf254c5}\label{struct_ne_o_s_1_1_i_p_c___m_s_g_af157d9f73460f1486ceaac097bf254c5} 
+\index{NeOS::IPC\_MSG@{NeOS::IPC\_MSG}!IpcTo@{IpcTo}}
+\index{IpcTo@{IpcTo}!NeOS::IPC\_MSG@{NeOS::IPC\_MSG}}
+\doxysubsubsection{\texorpdfstring{IpcTo}{IpcTo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_i_p_c___a_d_d_r}{IPC\+\_\+\+ADDR}} Ne\+OS\+::\+IPC\+\_\+\+MSG\+::\+Ipc\+To}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Network\+Kit/\mbox{\hyperlink{_i_p_c_8h}{IPC.\+h}}\item 
+dev/kernel/src/\+Network/\mbox{\hyperlink{_i_p_c_msg_8cc}{IPCMsg.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,292 @@
+\doxysection{dev/ddk/ddk.h File Reference}
+\hypertarget{ddk_8h}{}\label{ddk_8h}\index{dev/ddk/ddk.h@{dev/ddk/ddk.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l}{DDK\+\_\+\+FINAL}}
+\begin{DoxyCompactList}\small\item\em Object handle manifest. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}~char
+\item 
+\#define \mbox{\hyperlink{ddk_8h_a7ebc9a785e5ab85457c98595aac81589}{YES}}~1
+\item 
+\#define \mbox{\hyperlink{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}{NO}}~0
+\item 
+\#define \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}}~extern \+\_\+\+\_\+declspec(dllexport)
+\item 
+\#define \mbox{\hyperlink{ddk_8h_a7a7ca81d2a85873283b5ec82953b1b25}{nil}}~((void\texorpdfstring{$\ast$}{*})0)
+\item 
+\#define \mbox{\hyperlink{ddk_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}~((void\texorpdfstring{$\ast$}{*})0)
+\item 
+\#define \mbox{\hyperlink{ddk_8h_adef9f344af60c2452c67598f97d11904}{DDK\+\_\+\+FINAL}}
+\item 
+\#define \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}}~\+\_\+\+\_\+declspec(dllimport)
+\item 
+\#define \mbox{\hyperlink{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}{ATTRIBUTE}}(X)~\+\_\+\+\_\+attribute\+\_\+\+\_\+((X))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ddk_8h_ad5be25988d9d04cc388260a53c7453de}{ke\+\_\+call}} (const char \texorpdfstring{$\ast$}{*}name, int32\+\_\+t cnt, void \texorpdfstring{$\ast$}{*}dat, \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} sz)
+\begin{DoxyCompactList}\small\item\em Call Kernel procedure. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \mbox{\hyperlink{ddk_8h_a1d5f62254e7c1f833c5deb72a8916532}{ke\+\_\+add\+\_\+syscall}} (const int32\+\_\+t slot, void(\texorpdfstring{$\ast$}{*}slot\+Fn)(void \texorpdfstring{$\ast$}{*}a0))
+\begin{DoxyCompactList}\small\item\em add a system call. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ddk_8h_a3846a7dd13e8ce2d288fcb7d54e76052}{kalloc}} (\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} sz)
+\begin{DoxyCompactList}\small\item\em Allocates an heap ptr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \mbox{\hyperlink{ddk_8h_a2e83e08d4d404fca342fac316b2b9c20}{kfree}} (void \texorpdfstring{$\ast$}{*}the\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Frees an heap ptr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ddk_8h_a763d2d877f202682c19575d9cc6e0e29}{ke\+\_\+get\+\_\+obj}} (const int slot, const char \texorpdfstring{$\ast$}{*}name)
+\begin{DoxyCompactList}\small\item\em Gets a Kernel object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ddk_8h_a685b048ef66c79d2d6eea41a92e4e8cb}{ke\+\_\+set\+\_\+obj}} (const int32\+\_\+t slot, const struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*}ddk\+\_\+pr)
+\begin{DoxyCompactList}\small\item\em Set a Kernel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} int32\+\_\+t \mbox{\hyperlink{ddk_8h_a98b043e184a1fc76fb961197db8ce2eb}{k\+Api\+Version\+Highest}}
+\begin{DoxyCompactList}\small\item\em The highest API version of the DDK. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} int32\+\_\+t \mbox{\hyperlink{ddk_8h_ae975680533ba71cd3c3bb9edc62f6596}{k\+Api\+Version\+Lowest}}
+\begin{DoxyCompactList}\small\item\em The lowest API version of the DDK. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} int32\+\_\+t \mbox{\hyperlink{ddk_8h_a1a70a2af5cb8091f4553f378fb0fa31d}{k\+Api\+Version}}
+\begin{DoxyCompactList}\small\item\em API version in BCD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5}\label{ddk_8h_a9254c960163dfe80c8fe6aa8dfdf56a5} 
+\index{ddk.h@{ddk.h}!ATTRIBUTE@{ATTRIBUTE}}
+\index{ATTRIBUTE@{ATTRIBUTE}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE}{ATTRIBUTE}}
+{\footnotesize\ttfamily \#define ATTRIBUTE(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})~\+\_\+\+\_\+attribute\+\_\+\+\_\+((X))}
+
+\Hypertarget{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}\label{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa} 
+\index{ddk.h@{ddk.h}!BOOL@{BOOL}}
+\index{BOOL@{BOOL}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{BOOL}{BOOL}}
+{\footnotesize\ttfamily \#define BOOL~char}
+
+\Hypertarget{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}\label{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba} 
+\index{ddk.h@{ddk.h}!DDK\_EXTERN@{DDK\_EXTERN}}
+\index{DDK\_EXTERN@{DDK\_EXTERN}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{DDK\_EXTERN}{DDK\_EXTERN}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define DDK\+\_\+\+EXTERN~extern \+\_\+\+\_\+declspec(dllexport)}
+
+\Hypertarget{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}\label{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba} 
+\index{ddk.h@{ddk.h}!DDK\_EXTERN@{DDK\_EXTERN}}
+\index{DDK\_EXTERN@{DDK\_EXTERN}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{DDK\_EXTERN}{DDK\_EXTERN}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define DDK\+\_\+\+EXTERN~\+\_\+\+\_\+declspec(dllimport)}
+
+\Hypertarget{ddk_8h_adef9f344af60c2452c67598f97d11904}\label{ddk_8h_adef9f344af60c2452c67598f97d11904} 
+\index{ddk.h@{ddk.h}!DDK\_FINAL@{DDK\_FINAL}}
+\index{DDK\_FINAL@{DDK\_FINAL}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{DDK\_FINAL}{DDK\_FINAL}}
+{\footnotesize\ttfamily \#define \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l}{DDK\+\_\+\+FINAL}}}
+
+\Hypertarget{ddk_8h_a7a7ca81d2a85873283b5ec82953b1b25}\label{ddk_8h_a7a7ca81d2a85873283b5ec82953b1b25} 
+\index{ddk.h@{ddk.h}!nil@{nil}}
+\index{nil@{nil}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{nil}{nil}}
+{\footnotesize\ttfamily \#define nil~((void\texorpdfstring{$\ast$}{*})0)}
+
+\Hypertarget{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5}\label{ddk_8h_a996bde01ecac342918f0a2c4e7ce7bd5} 
+\index{ddk.h@{ddk.h}!NO@{NO}}
+\index{NO@{NO}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{NO}{NO}}
+{\footnotesize\ttfamily \#define NO~0}
+
+\Hypertarget{ddk_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}\label{ddk_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4} 
+\index{ddk.h@{ddk.h}!NULL@{NULL}}
+\index{NULL@{NULL}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{NULL}{NULL}}
+{\footnotesize\ttfamily \#define NULL~((void\texorpdfstring{$\ast$}{*})0)}
+
+\Hypertarget{ddk_8h_a7ebc9a785e5ab85457c98595aac81589}\label{ddk_8h_a7ebc9a785e5ab85457c98595aac81589} 
+\index{ddk.h@{ddk.h}!YES@{YES}}
+\index{YES@{YES}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{YES}{YES}}
+{\footnotesize\ttfamily \#define YES~1}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ddk_8h_a3846a7dd13e8ce2d288fcb7d54e76052}\label{ddk_8h_a3846a7dd13e8ce2d288fcb7d54e76052} 
+\index{ddk.h@{ddk.h}!kalloc@{kalloc}}
+\index{kalloc@{kalloc}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{kalloc()}{kalloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} kalloc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}}}]{sz }\end{DoxyParamCaption})}
+
+
+
+Allocates an heap ptr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz} & size of the allocated struct/type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pointer allocated or {\bfseries{nil}}.
+\end{DoxyReturn}
+Allocates an heap ptr.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz} & the size of the heap block. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly allocated pointer. 
+\end{DoxyReturn}
+\Hypertarget{ddk_8h_a1d5f62254e7c1f833c5deb72a8916532}\label{ddk_8h_a1d5f62254e7c1f833c5deb72a8916532} 
+\index{ddk.h@{ddk.h}!ke\_add\_syscall@{ke\_add\_syscall}}
+\index{ke\_add\_syscall@{ke\_add\_syscall}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{ke\_add\_syscall()}{ke\_add\_syscall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void ke\+\_\+add\+\_\+syscall (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{slot,  }\item[{void(\texorpdfstring{$\ast$}{*})(void \texorpdfstring{$\ast$}{*}a0)}]{slot\+Fn }\end{DoxyParamCaption})}
+
+
+
+add a system call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & system call slot id. \\
+\hline
+{\em slot\+Fn,syscall} & slot. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{ddk_8h_ad5be25988d9d04cc388260a53c7453de}\label{ddk_8h_ad5be25988d9d04cc388260a53c7453de} 
+\index{ddk.h@{ddk.h}!ke\_call@{ke\_call}}
+\index{ke\_call@{ke\_call}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{ke\_call()}{ke\_call()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} ke\+\_\+call (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{int32\+\_\+t}]{cnt,  }\item[{void \texorpdfstring{$\ast$}{*}}]{dat,  }\item[{\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}}}]{sz }\end{DoxyParamCaption})}
+
+
+
+Call Kernel procedure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the procedure name. \\
+\hline
+{\em cnt} & number of elements in {\bfseries{dat}} \\
+\hline
+{\em dat} & data argument pointer. \\
+\hline
+{\em sz} & sz of whole data argument pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result of call 
+\end{DoxyReturn}
+\Hypertarget{ddk_8h_a763d2d877f202682c19575d9cc6e0e29}\label{ddk_8h_a763d2d877f202682c19575d9cc6e0e29} 
+\index{ddk.h@{ddk.h}!ke\_get\_obj@{ke\_get\_obj}}
+\index{ke\_get\_obj@{ke\_get\_obj}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{ke\_get\_obj()}{ke\_get\_obj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*} ke\+\_\+get\+\_\+obj (\begin{DoxyParamCaption}\item[{const int}]{slot,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{name }\end{DoxyParamCaption})}
+
+
+
+Gets a Kernel object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & object id (can be 0) \\
+\hline
+{\em name} & the property\textquotesingle{}s name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST.
+\end{DoxyReturn}
+Gets a Kernel object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & property id (always 0) \\
+\hline
+{\em name} & the object\textquotesingle{}s name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object manifest. 
+\end{DoxyReturn}
+\Hypertarget{ddk_8h_a685b048ef66c79d2d6eea41a92e4e8cb}\label{ddk_8h_a685b048ef66c79d2d6eea41a92e4e8cb} 
+\index{ddk.h@{ddk.h}!ke\_set\_obj@{ke\_set\_obj}}
+\index{ke\_set\_obj@{ke\_set\_obj}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{ke\_set\_obj()}{ke\_set\_obj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} ke\+\_\+set\+\_\+obj (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{slot,  }\item[{const struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*}}]{ddk\+\_\+pr }\end{DoxyParamCaption})}
+
+
+
+Set a Kernel object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & object id (can be 0) \\
+\hline
+{\em name} & the property\textquotesingle{}s name. \\
+\hline
+{\em ddk\+\_\+pr} & pointer to a object\textquotesingle{}s DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returned object. 
+\end{DoxyReturn}
+\Hypertarget{ddk_8h_a2e83e08d4d404fca342fac316b2b9c20}\label{ddk_8h_a2e83e08d4d404fca342fac316b2b9c20} 
+\index{ddk.h@{ddk.h}!kfree@{kfree}}
+\index{kfree@{kfree}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{kfree()}{kfree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void kfree (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{ptr }\end{DoxyParamCaption})}
+
+
+
+Frees an heap ptr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointer} & kernel pointer to free.\\
+\hline
+\end{DoxyParams}
+Frees an heap ptr.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & the pointer to free. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{ddk_8h_a1a70a2af5cb8091f4553f378fb0fa31d}\label{ddk_8h_a1a70a2af5cb8091f4553f378fb0fa31d} 
+\index{ddk.h@{ddk.h}!kApiVersion@{kApiVersion}}
+\index{kApiVersion@{kApiVersion}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{kApiVersion}{kApiVersion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} int32\+\_\+t k\+Api\+Version}
+
+
+
+API version in BCD. 
+
+\Hypertarget{ddk_8h_a98b043e184a1fc76fb961197db8ce2eb}\label{ddk_8h_a98b043e184a1fc76fb961197db8ce2eb} 
+\index{ddk.h@{ddk.h}!kApiVersionHighest@{kApiVersionHighest}}
+\index{kApiVersionHighest@{kApiVersionHighest}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{kApiVersionHighest}{kApiVersionHighest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} int32\+\_\+t k\+Api\+Version\+Highest}
+
+
+
+The highest API version of the DDK. 
+
+\Hypertarget{ddk_8h_ae975680533ba71cd3c3bb9edc62f6596}\label{ddk_8h_ae975680533ba71cd3c3bb9edc62f6596} 
+\index{ddk.h@{ddk.h}!kApiVersionLowest@{kApiVersionLowest}}
+\index{kApiVersionLowest@{kApiVersionLowest}!ddk.h@{ddk.h}}
+\doxysubsubsection{\texorpdfstring{kApiVersionLowest}{kApiVersionLowest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} int32\+\_\+t k\+Api\+Version\+Lowest}
+
+
+
+The lowest API version of the DDK. 
+

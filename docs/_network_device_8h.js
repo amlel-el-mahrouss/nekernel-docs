@@ -1,13 +1,13 @@
 var _network_device_8h =
 [
-    [ "NeOS::NetworkDevice", "class_ne_o_s_1_1_network_device.html", "class_ne_o_s_1_1_network_device" ],
-    [ "NeOS::NetworkDeviceCommand", "struct_ne_o_s_1_1_network_device_command.html", "struct_ne_o_s_1_1_network_device_command" ],
-    [ "BTNetworkDevice", "_network_device_8h.html#a388933137dae98d3a6df5166b0518bf5", null ],
-    [ "GPRSNetworkDevice", "_network_device_8h.html#a1fbb5ce7fea632016057082221015154", null ],
-    [ "GSMNetworkDevice", "_network_device_8h.html#ad373b86f8f34fd80fe4c4e9fb10f544e", null ],
-    [ "IPCNetworkDevice", "_network_device_8h.html#ad9d158f93439bc794301bc68c7d872ed", null ],
-    [ "LTENetworkDevice", "_network_device_8h.html#a01afe8cdfafdb06274bdd6fb5aaf6cae", null ],
-    [ "PPPNetworkDevice", "_network_device_8h.html#a91834fb04996c638b2ddf16c22fa8dfa", null ],
-    [ "TCPNetworkDevice", "_network_device_8h.html#a6f931c92e24651469886452a801d0acc", null ],
-    [ "UDPNetworkDevice", "_network_device_8h.html#a256bd859552a38a425f09bb1ffd4ca49", null ]
+    [ "Kernel::NetworkDevice", "class_kernel_1_1_network_device.html", "class_kernel_1_1_network_device" ],
+    [ "Kernel::NetworkDeviceCommand", "struct_kernel_1_1_network_device_command.html", "struct_kernel_1_1_network_device_command" ],
+    [ "BTNetworkDevice", "_network_device_8h.html#ad2b36064212a0095c719febc952dd522", null ],
+    [ "GPRSNetworkDevice", "_network_device_8h.html#a8e70e696944a038673c0be4175a0195e", null ],
+    [ "GSMNetworkDevice", "_network_device_8h.html#a5d21e6bf43ae6a69aca0cfc81fb6f386", null ],
+    [ "IPCNetworkDevice", "_network_device_8h.html#a83da575b6420b596810c166a3228864e", null ],
+    [ "LTENetworkDevice", "_network_device_8h.html#a551c63cbbac605c6696adf91d55cdc8a", null ],
+    [ "PPPNetworkDevice", "_network_device_8h.html#a15ddeff36f0b39a2eda517164573e27b", null ],
+    [ "TCPNetworkDevice", "_network_device_8h.html#a1ffce7d5ea25555a8fe5104835da9c1f", null ],
+    [ "UDPNetworkDevice", "_network_device_8h.html#afcbc34890cf01b2365866531e173c55b", null ]
 ];

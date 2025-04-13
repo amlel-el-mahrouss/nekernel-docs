@@ -1,0 +1,89 @@
+\doxysection{Ne\+OS\+::IDylib\+Object Class Reference}
+\hypertarget{class_ne_o_s_1_1_i_dylib_object}{}\label{class_ne_o_s_1_1_i_dylib_object}\index{NeOS::IDylibObject@{NeOS::IDylibObject}}
+
+
+DLL class object. A handle to a shared library.  
+
+
+
+
+{\ttfamily \#include $<$IDylib\+Object.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s}{DLL\+\_\+\+TRAITS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object_a639dc7bd5e6d364d29ea6d09f28c4d83}{IDylib\+Object}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object_aeed8e4e15d0e410ffaa4ac433cac5de9}{\texorpdfstring{$\sim$}{\string~}\+IDylib\+Object}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object_acdc885e1e7fdaa1dcae5551b6dcdceb1}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object}{IDylib\+Object}})
+\item 
+virtual \mbox{\hyperlink{struct_ne_o_s_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s}{DLL\+\_\+\+TRAITS}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object_ad7201bc499868317c7783509ee72d956}{Get\+Address\+Of}} ()=0
+\item 
+virtual \mbox{\hyperlink{struct_ne_o_s_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s}{DLL\+\_\+\+TRAITS}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object_a639abaf5c2f80638c69454462fdd7bb1}{Get}} ()=0
+\item 
+virtual \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object_a5db345511527000a4d489bc09432ceb5}{Mount}} (\mbox{\hyperlink{struct_ne_o_s_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s}{DLL\+\_\+\+TRAITS}} \texorpdfstring{$\ast$}{*}to\+\_\+mount)=0
+\item 
+virtual \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object_ac4c47abf6242dd86e1bf0b88d1f213e0}{Unmount}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+DLL class object. A handle to a shared library. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_i_dylib_object_a639dc7bd5e6d364d29ea6d09f28c4d83}\label{class_ne_o_s_1_1_i_dylib_object_a639dc7bd5e6d364d29ea6d09f28c4d83} 
+\index{NeOS::IDylibObject@{NeOS::IDylibObject}!IDylibObject@{IDylibObject}}
+\index{IDylibObject@{IDylibObject}!NeOS::IDylibObject@{NeOS::IDylibObject}}
+\doxysubsubsection{\texorpdfstring{IDylibObject()}{IDylibObject()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+IDylib\+Object\+::\+IDylib\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_dylib_object_aeed8e4e15d0e410ffaa4ac433cac5de9}\label{class_ne_o_s_1_1_i_dylib_object_aeed8e4e15d0e410ffaa4ac433cac5de9} 
+\index{NeOS::IDylibObject@{NeOS::IDylibObject}!````~IDylibObject@{\texorpdfstring{$\sim$}{\string~}IDylibObject}}
+\index{````~IDylibObject@{\texorpdfstring{$\sim$}{\string~}IDylibObject}!NeOS::IDylibObject@{NeOS::IDylibObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IDylibObject()}{\string~IDylibObject()}}
+{\footnotesize\ttfamily virtual Ne\+OS\+::\+IDylib\+Object\+::\texorpdfstring{$\sim$}{\string~}\+IDylib\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_i_dylib_object_a639abaf5c2f80638c69454462fdd7bb1}\label{class_ne_o_s_1_1_i_dylib_object_a639abaf5c2f80638c69454462fdd7bb1} 
+\index{NeOS::IDylibObject@{NeOS::IDylibObject}!Get@{Get}}
+\index{Get@{Get}!NeOS::IDylibObject@{NeOS::IDylibObject}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_ne_o_s_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s}{DLL\+\_\+\+TRAITS}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+IDylib\+Object\+::\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_dylib_object_ad7201bc499868317c7783509ee72d956}\label{class_ne_o_s_1_1_i_dylib_object_ad7201bc499868317c7783509ee72d956} 
+\index{NeOS::IDylibObject@{NeOS::IDylibObject}!GetAddressOf@{GetAddressOf}}
+\index{GetAddressOf@{GetAddressOf}!NeOS::IDylibObject@{NeOS::IDylibObject}}
+\doxysubsubsection{\texorpdfstring{GetAddressOf()}{GetAddressOf()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_ne_o_s_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s}{DLL\+\_\+\+TRAITS}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+IDylib\+Object\+::\+Get\+Address\+Of (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_dylib_object_a5db345511527000a4d489bc09432ceb5}\label{class_ne_o_s_1_1_i_dylib_object_a5db345511527000a4d489bc09432ceb5} 
+\index{NeOS::IDylibObject@{NeOS::IDylibObject}!Mount@{Mount}}
+\index{Mount@{Mount}!NeOS::IDylibObject@{NeOS::IDylibObject}}
+\doxysubsubsection{\texorpdfstring{Mount()}{Mount()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+IDylib\+Object\+::\+Mount (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s}{DLL\+\_\+\+TRAITS}} \texorpdfstring{$\ast$}{*}}]{to\+\_\+mount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_dylib_object_acdc885e1e7fdaa1dcae5551b6dcdceb1}\label{class_ne_o_s_1_1_i_dylib_object_acdc885e1e7fdaa1dcae5551b6dcdceb1} 
+\index{NeOS::IDylibObject@{NeOS::IDylibObject}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::IDylibObject@{NeOS::IDylibObject}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+IDylib\+Object\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object}{IDylib\+Object}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_i_dylib_object_ac4c47abf6242dd86e1bf0b88d1f213e0}\label{class_ne_o_s_1_1_i_dylib_object_ac4c47abf6242dd86e1bf0b88d1f213e0} 
+\index{NeOS::IDylibObject@{NeOS::IDylibObject}!Unmount@{Unmount}}
+\index{Unmount@{Unmount}!NeOS::IDylibObject@{NeOS::IDylibObject}}
+\doxysubsubsection{\texorpdfstring{Unmount()}{Unmount()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+IDylib\+Object\+::\+Unmount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_i_dylib_object_8h}{IDylib\+Object.\+h}}\end{DoxyCompactItemize}

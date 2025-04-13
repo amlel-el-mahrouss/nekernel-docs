@@ -1,0 +1,40 @@
+\doxysection{dev/ddk/src/ddk\+\_\+dev.c File Reference}
+\hypertarget{ddk__dev_8c}{}\label{ddk__dev_8c}\index{dev/ddk/src/ddk\_dev.c@{dev/ddk/src/ddk\_dev.c}}
+{\ttfamily \#include $<$ddk/dev.\+h$>$}\newline
+{\ttfamily \#include $<$ddk/str.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} \mbox{\hyperlink{dev_8h_ae76edbc51a8f00a3a5e2ca42af0e12ed}{DDK\+\_\+\+DEVICE\+\_\+\+PTR}} \mbox{\hyperlink{ddk__dev_8c_acc6fd9f125a3e62492567a7a9b912b74}{open}} (const char \texorpdfstring{$\ast$}{*}device\+Path)
+\begin{DoxyCompactList}\small\item\em Open a new binary device from path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{ddk__dev_8c_a9b54c1e48e7a4f50016970a5187eadd8}{close}} (\mbox{\hyperlink{dev_8h_ae76edbc51a8f00a3a5e2ca42af0e12ed}{DDK\+\_\+\+DEVICE\+\_\+\+PTR}} device)
+\begin{DoxyCompactList}\small\item\em Close any device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ddk__dev_8c_a9b54c1e48e7a4f50016970a5187eadd8}\label{ddk__dev_8c_a9b54c1e48e7a4f50016970a5187eadd8} 
+\index{ddk\_dev.c@{ddk\_dev.c}!close@{close}}
+\index{close@{close}!ddk\_dev.c@{ddk\_dev.c}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dev_8h_ae76edbc51a8f00a3a5e2ca42af0e12ed}{DDK\+\_\+\+DEVICE\+\_\+\+PTR}}}]{device }\end{DoxyParamCaption})}
+
+
+
+Close any device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & valid device. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{ddk__dev_8c_acc6fd9f125a3e62492567a7a9b912b74}\label{ddk__dev_8c_acc6fd9f125a3e62492567a7a9b912b74} 
+\index{ddk\_dev.c@{ddk\_dev.c}!open@{open}}
+\index{open@{open}!ddk\_dev.c@{ddk\_dev.c}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} \mbox{\hyperlink{dev_8h_ae76edbc51a8f00a3a5e2ca42af0e12ed}{DDK\+\_\+\+DEVICE\+\_\+\+PTR}} open (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{device\+Path }\end{DoxyParamCaption})}
+
+
+
+Open a new binary device from path. 
+
+Open a new device from path. 

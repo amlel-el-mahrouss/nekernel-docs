@@ -1,0 +1,163 @@
+\doxysection{dev/kernel/\+Kernel\+Kit/\+User\+Process\+Scheduler.h File Reference}
+\hypertarget{_user_process_scheduler_8h}{}\label{_user_process_scheduler_8h}\index{dev/kernel/KernelKit/UserProcessScheduler.h@{dev/kernel/KernelKit/UserProcessScheduler.h}}
+{\ttfamily \#include $<$Arch\+Kit/\+Arch\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Lock\+Delegate.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+User.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Mutable\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Thread\+Local\+Storage.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+User\+Process\+Scheduler.\+inl$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_image}{Ne\+OS\+::\+User\+Process\+Image}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_user_process}{Ne\+OS\+::\+User\+Process}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list}{Ne\+OS\+::\+User\+Process\+::\+Process\+Memory\+Heap\+List}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_user_process_signal}{Ne\+OS\+::\+User\+Process\+::\+User\+Process\+Signal}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_user_process_team}{Ne\+OS\+::\+User\+Process\+Team}}
+\begin{DoxyCompactList}\small\item\em Processs Team (contains multiple processes inside it.) Equivalent to a process batch. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_user_process_scheduler}{Ne\+OS\+::\+User\+Process\+Scheduler}}
+\begin{DoxyCompactList}\small\item\em Process scheduler class. The main class which you call to schedule user processes. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_user_process_helper}{Ne\+OS\+::\+User\+Process\+Helper}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_ne_o_s_1_1_user_process}{User\+Process} helper class, which contains needed utilities for the scheduler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_user_process_scheduler_8h_a8c5f8dfaa515acaa19b5a50204a39bdd}{k\+Sched\+Min\+Micro\+Time}}~(Affinity\+Kind\+::k\+Standard)
+\item 
+\#define \mbox{\hyperlink{_user_process_scheduler_8h_a1d537f5b893dc6838811704135744b72}{k\+Sched\+Invalid\+PID}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}{k\+Sched\+Process\+Limit\+Per\+Team}}~(32U)
+\item 
+\#define \mbox{\hyperlink{_user_process_scheduler_8h_af15d27971febb6ea29dd62469e47424d}{k\+Sched\+Max\+Memory\+Limit}}~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(128) /\texorpdfstring{$\ast$}{*} max physical memory limit \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{_user_process_scheduler_8h_ab226cdb47327ca7fe2c483852d35ce2c}{k\+Sched\+Max\+Stack\+Sz}}~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(8)   /\texorpdfstring{$\ast$}{*} maximum stack size \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{_user_process_scheduler_8h_ac2dfb09b8404d9ed4f164e37f7022a88}{k\+Process\+Invalid\+ID}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{_user_process_scheduler_8h_af12ea5c3a94df92098d03e789558e0e6}{k\+Process\+Name\+Len}}~(128U)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_ae9468f37b05939a22e347c61e2a4bf88}{Ne\+OS\+::\+PTime}}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} \mbox{\hyperlink{namespace_ne_o_s_af180f8fc4c88cb9674ca595d93859ef0}{Ne\+OS\+::\+Process\+ID}}
+\begin{DoxyCompactList}\small\item\em Local Process identifier. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{namespace_ne_o_s_a4dfbeee64cedc9cbf2d0bce0fe4ed946}{Ne\+OS\+::\+Process\+Time}} = \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}
+\item 
+using \mbox{\hyperlink{namespace_ne_o_s_adf3245fc30d7047cf8e6347bd0a85da7}{Ne\+OS\+::\+PID}} = \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}}
+\item 
+using \mbox{\hyperlink{namespace_ne_o_s_a09fdb1f1ccded9b7cc1692b94d87f82a}{Ne\+OS\+::\+Image\+Ptr}} = \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Helper type to describe a code image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dd}{Ne\+OS\+::\+Process\+Status\+Kind}} \+: Int32 \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3ddab10913c938482a8aa4ba85b7a1116cb4}{Ne\+OS\+::k\+Invalid}}
+, \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda03fb3e2d7f3d8e2d339479a2d4e337f6}{Ne\+OS\+::k\+Starting}}
+, \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda2fc7fbf0d19294f85dd3880460dd3c0a}{Ne\+OS\+::k\+Running}}
+, \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda1350eef47aadec7321071fa167454d1e}{Ne\+OS\+::k\+Killed}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda9b118db4682cb2b26264e1c068718b2d}{Ne\+OS\+::k\+Frozen}}
+, \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda16b903606caf0e3128389431c392faf3}{Ne\+OS\+::k\+Finished}}
+, \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda5a162d352f3b3603e03fc9b2f043fb40}{Ne\+OS\+::k\+Count}}
+ \}
+\begin{DoxyCompactList}\small\item\em Local Process status enum. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Ne\+OS\+::\+Affinity\+Kind}} \+: Int32 \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4ae0f4fc1e0994e23b803ed82fb5e9930b}{Ne\+OS\+::k\+Real\+Time}} = 500
+, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4ab19e80cac5b7f585659031a6cff1489b}{Ne\+OS\+::k\+Very\+High}} = 250
+, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4aa022f15e910eb36278094efb6e808a07}{Ne\+OS\+::k\+High}} = 200
+, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4a821da62632c491ea619ead7b31c094bf}{Ne\+OS\+::k\+Standard}} = 1000
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4a6fc62c4bc4a2866a04a3aaed3dd683f9}{Ne\+OS\+::k\+Low\+Usage}} = 1500
+, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4a13f6c056527aad863a9c3a46b6398aa5}{Ne\+OS\+::k\+Very\+Low\+Usage}} = 2000
+ \}
+\begin{DoxyCompactList}\small\item\em Affinity is the amount of nano-\/seconds this process is going to run. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6}{Ne\+OS\+::\+Process\+Subsystem}} \+: Int32 \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6a3866b7f130c172bcbd757548fa82cd02}{Ne\+OS\+::k\+Process\+Subsystem\+Security}} = 100
+, \mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6acf156487a4a7b6e44a568ab1303e3f37}{Ne\+OS\+::k\+Process\+Subsystem\+Application}}
+, \mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6a8069881ad9a19e2bda12ef381f1349e3}{Ne\+OS\+::k\+Process\+Subsystem\+Service}}
+, \mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6a5fecdbaa1dcade5c561b4ec47c284be3}{Ne\+OS\+::k\+Process\+Subsystem\+Driver}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6a4d03d85bad0d1656fc4c845b3531117b}{Ne\+OS\+::k\+Process\+Subsystem\+Invalid}} = 256U
+, \mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6a8ac11671d61d56c2508a9f9c4d026739}{Ne\+OS\+::k\+Process\+Subsystem\+Count}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Subsystem enum type. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_a041ae4e83fd6f2a3402e7e888eb1725d}{Ne\+OS\+::\+Process\+Level\+Ring}} \+: Int32 \{ \mbox{\hyperlink{namespace_ne_o_s_a041ae4e83fd6f2a3402e7e888eb1725da4273218a9bea7fb97d46ca7501cbeb5b}{Ne\+OS\+::k\+Ring\+Std\+User}} = 1
+, \mbox{\hyperlink{namespace_ne_o_s_a041ae4e83fd6f2a3402e7e888eb1725da4215aa66f39b8ac7be3873fb4f938164}{Ne\+OS\+::k\+Ring\+Super\+User}} = 2
+, \mbox{\hyperlink{namespace_ne_o_s_a041ae4e83fd6f2a3402e7e888eb1725daa475eaec0320dbeccd09f64fc4beff05}{Ne\+OS\+::k\+Ring\+Guest\+User}} = 5
+, \mbox{\hyperlink{namespace_ne_o_s_a041ae4e83fd6f2a3402e7e888eb1725da9fb09bc213dbaf1dff9fc3a42d0237b5}{Ne\+OS\+::k\+Ring\+Count}} = 5
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespace_ne_o_s_acb27e9365b080ce9d813b727f5297ea6}{Ne\+OS\+::operator$<$}} (\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} lhs, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} rhs)
+\begin{DoxyCompactList}\small\item\em Operators for Affinity\+Kind. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_ne_o_s_afbe0634a467c6ece2a7d215eed98989e}{Ne\+OS\+::operator$>$}} (\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} lhs, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} rhs)
+\item 
+bool \mbox{\hyperlink{namespace_ne_o_s_a25b07e9e30c2a7fda2120f5e142442d2}{Ne\+OS\+::operator$<$=}} (\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} lhs, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} rhs)
+\item 
+bool \mbox{\hyperlink{namespace_ne_o_s_a851d07952a1142dbf34dfb123d86ead2}{Ne\+OS\+::operator$>$=}} (\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} lhs, \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} rhs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{User\+Process}
+User process class, holds information about the running process/thread. \begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}}, \mbox{\hyperlink{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}{k\+Sched\+Process\+Limit\+Per\+Team}} $>$ \mbox{\hyperlink{namespace_ne_o_s_abb4ec536c3398dd2c0174ab4fac54e31}{Ne\+OS\+::\+User\+Thread\+Array}}
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \& \mbox{\hyperlink{namespace_ne_o_s_a664f1b9363ef8f08402cb52fff8110cb}{Ne\+OS\+::sched\+\_\+get\+\_\+exit\+\_\+code}} (void) noexcept
+\begin{DoxyCompactList}\small\item\em Gets the last exit code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_user_process_scheduler_8h_ac2dfb09b8404d9ed4f164e37f7022a88}\label{_user_process_scheduler_8h_ac2dfb09b8404d9ed4f164e37f7022a88} 
+\index{UserProcessScheduler.h@{UserProcessScheduler.h}!kProcessInvalidID@{kProcessInvalidID}}
+\index{kProcessInvalidID@{kProcessInvalidID}!UserProcessScheduler.h@{UserProcessScheduler.h}}
+\doxysubsubsection{\texorpdfstring{kProcessInvalidID}{kProcessInvalidID}}
+{\footnotesize\ttfamily \#define k\+Process\+Invalid\+ID~(-\/1)}
+
+\Hypertarget{_user_process_scheduler_8h_af12ea5c3a94df92098d03e789558e0e6}\label{_user_process_scheduler_8h_af12ea5c3a94df92098d03e789558e0e6} 
+\index{UserProcessScheduler.h@{UserProcessScheduler.h}!kProcessNameLen@{kProcessNameLen}}
+\index{kProcessNameLen@{kProcessNameLen}!UserProcessScheduler.h@{UserProcessScheduler.h}}
+\doxysubsubsection{\texorpdfstring{kProcessNameLen}{kProcessNameLen}}
+{\footnotesize\ttfamily \#define k\+Process\+Name\+Len~(128U)}
+
+\Hypertarget{_user_process_scheduler_8h_a1d537f5b893dc6838811704135744b72}\label{_user_process_scheduler_8h_a1d537f5b893dc6838811704135744b72} 
+\index{UserProcessScheduler.h@{UserProcessScheduler.h}!kSchedInvalidPID@{kSchedInvalidPID}}
+\index{kSchedInvalidPID@{kSchedInvalidPID}!UserProcessScheduler.h@{UserProcessScheduler.h}}
+\doxysubsubsection{\texorpdfstring{kSchedInvalidPID}{kSchedInvalidPID}}
+{\footnotesize\ttfamily \#define k\+Sched\+Invalid\+PID~(-\/1)}
+
+\Hypertarget{_user_process_scheduler_8h_af15d27971febb6ea29dd62469e47424d}\label{_user_process_scheduler_8h_af15d27971febb6ea29dd62469e47424d} 
+\index{UserProcessScheduler.h@{UserProcessScheduler.h}!kSchedMaxMemoryLimit@{kSchedMaxMemoryLimit}}
+\index{kSchedMaxMemoryLimit@{kSchedMaxMemoryLimit}!UserProcessScheduler.h@{UserProcessScheduler.h}}
+\doxysubsubsection{\texorpdfstring{kSchedMaxMemoryLimit}{kSchedMaxMemoryLimit}}
+{\footnotesize\ttfamily \#define k\+Sched\+Max\+Memory\+Limit~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(128) /\texorpdfstring{$\ast$}{*} max physical memory limit \texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{_user_process_scheduler_8h_ab226cdb47327ca7fe2c483852d35ce2c}\label{_user_process_scheduler_8h_ab226cdb47327ca7fe2c483852d35ce2c} 
+\index{UserProcessScheduler.h@{UserProcessScheduler.h}!kSchedMaxStackSz@{kSchedMaxStackSz}}
+\index{kSchedMaxStackSz@{kSchedMaxStackSz}!UserProcessScheduler.h@{UserProcessScheduler.h}}
+\doxysubsubsection{\texorpdfstring{kSchedMaxStackSz}{kSchedMaxStackSz}}
+{\footnotesize\ttfamily \#define k\+Sched\+Max\+Stack\+Sz~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(8)   /\texorpdfstring{$\ast$}{*} maximum stack size \texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{_user_process_scheduler_8h_a8c5f8dfaa515acaa19b5a50204a39bdd}\label{_user_process_scheduler_8h_a8c5f8dfaa515acaa19b5a50204a39bdd} 
+\index{UserProcessScheduler.h@{UserProcessScheduler.h}!kSchedMinMicroTime@{kSchedMinMicroTime}}
+\index{kSchedMinMicroTime@{kSchedMinMicroTime}!UserProcessScheduler.h@{UserProcessScheduler.h}}
+\doxysubsubsection{\texorpdfstring{kSchedMinMicroTime}{kSchedMinMicroTime}}
+{\footnotesize\ttfamily \#define k\+Sched\+Min\+Micro\+Time~(Affinity\+Kind\+::k\+Standard)}
+
+\Hypertarget{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}\label{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9} 
+\index{UserProcessScheduler.h@{UserProcessScheduler.h}!kSchedProcessLimitPerTeam@{kSchedProcessLimitPerTeam}}
+\index{kSchedProcessLimitPerTeam@{kSchedProcessLimitPerTeam}!UserProcessScheduler.h@{UserProcessScheduler.h}}
+\doxysubsubsection{\texorpdfstring{kSchedProcessLimitPerTeam}{kSchedProcessLimitPerTeam}}
+{\footnotesize\ttfamily \#define k\+Sched\+Process\+Limit\+Per\+Team~(32U)}
+

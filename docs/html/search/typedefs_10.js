@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['scsi_5fpacket_5ftype_0',['scsi_packet_type',['../modules_2_s_c_s_i_2_s_c_s_i_8h.html#a8e91162b4f304e56bf1c939e5b44cf16',1,'SCSI.h']]],
+  ['semaphore_1',['Semaphore',['../namespace_ne_o_s.html#ad067342dac7e07d5c6f066b4cf1b15c6',1,'NeOS']]],
+  ['short_2',['Short',['../namespace_ne_o_s.html#a29e9a7df2b6c0ed8ee86dffa5db2df54',1,'NeOS']]],
+  ['signalkind_3',['SignalKind',['../namespace_ne_o_s.html#a9eeaa29a7f1c1e0fbf13f78e405416f2',1,'NeOS']]],
+  ['sint16_4',['sint16',['../namespace_ne_o_s.html#a309e527c5bf61b958d5fcd1a32377edf',1,'NeOS::SInt16'],['../user_2_macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
+  ['sint32_5',['sint32',['../namespace_ne_o_s.html#a3785cebc7f656f2d5faef7f2115084f3',1,'NeOS::SInt32'],['../user_2_macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
+  ['sint64_6',['sint64',['../namespace_ne_o_s.html#adc4c37e98837a38ddbe6ba8fbedc58dd',1,'NeOS::SInt64'],['../user_2_macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],
+  ['sint8_7',['SInt8',['../user_2_macros_8h.html#aaa25d67f876e77346aeca5db9fdc34e8',1,'Macros.h']]],
+  ['size_8',['Size',['../namespace_ne_o_s.html#a83fc5fb64d170235fdc4061a31f2f766',1,'NeOS']]],
+  ['size_5ft_9',['size_t',['../_new_8h.html#aa9d55e2f20e580b7445617d0d12fff6e',1,'New.h']]],
+  ['sizet_10',['sizet',['../namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc',1,'NeOS::SizeT'],['../user_2_macros_8h.html#ab5060adaff7d15b3ac19481139e04c10',1,'SizeT:&#160;Macros.h']]],
+  ['socketref_11',['SocketRef',['../_system_calls_8h.html#a33b5198f7ba47dba8faac36d3d787cc8',1,'SystemCalls.h']]],
+  ['ssize_12',['SSize',['../namespace_ne_o_s.html#a52038a4ce07477f115d623f724bb6d95',1,'NeOS']]],
+  ['ssizet_13',['SSizeT',['../namespace_ne_o_s.html#a85f5efd364b22cf454f28a3238a584aa',1,'NeOS']]],
+  ['stackframeptr_14',['StackFramePtr',['../namespace_ne_o_s_1_1_h_a_l.html#ae90d9eb7564d3c072785e9d1b601eb89',1,'NeOS::HAL']]],
+  ['swap_5fdisk_5fheader_15',['SWAP_DISK_HEADER',['../namespace_ne_o_s.html#a0e8ec090454b3ba3877f51262511f0f0',1,'NeOS']]]
+];

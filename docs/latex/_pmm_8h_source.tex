@@ -1,0 +1,49 @@
+\doxysection{Pmm.\+h}
+\hypertarget{_pmm_8h_source}{}\label{_pmm_8h_source}\index{dev/kernel/NewKit/Pmm.h@{dev/kernel/NewKit/Pmm.h}}
+\mbox{\hyperlink{_pmm_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{}}
+\DoxyCodeLine{00006\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_page_mgr_8h}{NewKit/PageMgr.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{dev_2kernel_2_new_kit_2_ref_8h}{NewKit/Ref.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }Pmm;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }PTEWrapper;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_pmm}{Pmm}}\ final}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_a0c88b912c3fb6546bfd5eae7f4c07bd6}{Pmm}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_aad02adab3294496195ed586b551105bc}{\string~Pmm}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_pmm}{Pmm}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_ae193698dec2d6b36f12153fd6c5c61b1}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm}{Pmm}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_afc6c9a7164f18c757f244452d9192c69}{Pmm}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm}{Pmm}}\&)\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PTEWrapper>}}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_aa02d1d5c09ddc98202fe2f9c138740a3}{RequestPage}}(\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ user\ =\ \textcolor{keyword}{false},\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ readWrite\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_a85b68d7926c7514c002fba3fb80e6eb8}{FreePage}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PTEWrapper>}}\ refPage);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_ae18b9e1a4a3b3164dccda09fcd67c131}{ToggleRw}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PTEWrapper>}}\ refPage,\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ enable\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_a482389106e41d2f5ca00f227244a2691}{TogglePresent}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PTEWrapper>}}\ refPage,\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ enable\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_afb5cba6eba042bd16f1e8cb2a7ef1947}{ToggleUser}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PTEWrapper>}}\ refPage,\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ enable\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_a6fb4cfcb6754818d4540fb60520d2823}{ToggleShare}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PTEWrapper>}}\ refPage,\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ enable\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PageMgr>}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_afcba4d5d5a30dc6704789c13099de622}{Leak}}()}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_a435d2b5843fbbd72a31dcd00f61b95c6}{fPageMgr}};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PageMgr>}}\ \mbox{\hyperlink{class_ne_o_s_1_1_pmm_a435d2b5843fbbd72a31dcd00f61b95c6}{fPageMgr}};}
+\DoxyCodeLine{00043\ \ \ \ \ \};}
+\DoxyCodeLine{00044\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

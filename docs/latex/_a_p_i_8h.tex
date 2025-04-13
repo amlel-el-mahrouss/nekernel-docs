@@ -1,0 +1,93 @@
+\doxysection{dev/kernel/\+Firmware\+Kit/\+EFI/\+API.h File Reference}
+\hypertarget{_a_p_i_8h}{}\label{_a_p_i_8h}\index{dev/kernel/FirmwareKit/EFI/API.h@{dev/kernel/FirmwareKit/EFI/API.h}}
+{\ttfamily \#include $<$Firmware\+Kit/\+EFI/\+EFI.\+h$>$}\newline
+{\ttfamily \#include $<$Firmware\+Kit/\+Handover.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+MSDOS.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+PE.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_boot}{Boot}}
+\begin{DoxyCompactList}\small\item\em include Ne\+FS header and Support header as well. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_a_p_i_8h_a40dd3478791bf7a3996e84efb20bf13b}{k\+Ne\+Website\+Macro}}~"{}https\+://aker.\+com/help"{}
+\item 
+\#define \mbox{\hyperlink{_a_p_i_8h_a4916e571e9ef915eb186e535a9f6adc5}{k\+Ne\+Kernel\+Subsystem}}~(\mbox{\hyperlink{_support_8h_a94a5b7998848651b99c8b45e19c534d7}{Str\+Len}}(\mbox{\hyperlink{_a_p_i_8h_a40dd3478791bf7a3996e84efb20bf13b}{k\+Ne\+Website\+Macro}}))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void \mbox{\hyperlink{_a_p_i_8h_a12e982db5e3c511132fa1479d1d447ec}{rt\+\_\+cli}} ()
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void \mbox{\hyperlink{_a_p_i_8h_a64a53c31476ac8a8ffdd2a678c53c837}{rt\+\_\+hlt}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_boot_a8b0bee034f9cce36874019301bc2ac40}{Boot\+::\+Stop}} () noexcept
+\begin{DoxyCompactList}\small\item\em Halt and clear interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_boot_a79fb1ed665feb9cc78a21d1ef4f58ae3}{Boot\+::\+Exit\+Boot\+Services}} (\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Map\+Key, \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} Image\+Handle) noexcept
+\begin{DoxyCompactList}\small\item\em Exit EFI API to let the OS load correctly. Bascially frees everything we have in the EFI side. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{namespace_boot_a219033067ceb1ad089818c762d1dfb65}{Boot\+::\+Platform}} () noexcept
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}} void \mbox{\hyperlink{namespace_boot_a770cf51bd60eaa15b9a35af8f2b5bc3b}{Boot\+::\+Throw\+Error}} (const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}error\+Code, const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}reason) noexcept
+\item 
+void \mbox{\hyperlink{_a_p_i_8h_abdd928fdf55b87dc59c5797d059c917e}{Init\+EFI}} (\mbox{\hyperlink{struct_efi_system_table}{Efi\+System\+Table}} \texorpdfstring{$\ast$}{*}System\+Table) noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_efi_system_table}{Efi\+System\+Table}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}} = nullptr
+\item 
+\mbox{\hyperlink{struct_efi_boot_services}{Efi\+Boot\+Services}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_a_p_i_8h_a67af7de1a62f48363917e0d14fbf2dc1}{BS}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_a_p_i_8h_a4916e571e9ef915eb186e535a9f6adc5}\label{_a_p_i_8h_a4916e571e9ef915eb186e535a9f6adc5} 
+\index{API.h@{API.h}!kNeKernelSubsystem@{kNeKernelSubsystem}}
+\index{kNeKernelSubsystem@{kNeKernelSubsystem}!API.h@{API.h}}
+\doxysubsubsection{\texorpdfstring{kNeKernelSubsystem}{kNeKernelSubsystem}}
+{\footnotesize\ttfamily \#define k\+Ne\+Kernel\+Subsystem~(\mbox{\hyperlink{_support_8h_a94a5b7998848651b99c8b45e19c534d7}{Str\+Len}}(\mbox{\hyperlink{_a_p_i_8h_a40dd3478791bf7a3996e84efb20bf13b}{k\+Ne\+Website\+Macro}}))}
+
+\Hypertarget{_a_p_i_8h_a40dd3478791bf7a3996e84efb20bf13b}\label{_a_p_i_8h_a40dd3478791bf7a3996e84efb20bf13b} 
+\index{API.h@{API.h}!kNeWebsiteMacro@{kNeWebsiteMacro}}
+\index{kNeWebsiteMacro@{kNeWebsiteMacro}!API.h@{API.h}}
+\doxysubsubsection{\texorpdfstring{kNeWebsiteMacro}{kNeWebsiteMacro}}
+{\footnotesize\ttfamily \#define k\+Ne\+Website\+Macro~"{}https\+://aker.\+com/help"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_a_p_i_8h_abdd928fdf55b87dc59c5797d059c917e}\label{_a_p_i_8h_abdd928fdf55b87dc59c5797d059c917e} 
+\index{API.h@{API.h}!InitEFI@{InitEFI}}
+\index{InitEFI@{InitEFI}!API.h@{API.h}}
+\doxysubsubsection{\texorpdfstring{InitEFI()}{InitEFI()}}
+{\footnotesize\ttfamily void Init\+EFI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_efi_system_table}{Efi\+System\+Table}} \texorpdfstring{$\ast$}{*}}]{System\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{_a_p_i_8h_a12e982db5e3c511132fa1479d1d447ec}\label{_a_p_i_8h_a12e982db5e3c511132fa1479d1d447ec} 
+\index{API.h@{API.h}!rt\_cli@{rt\_cli}}
+\index{rt\_cli@{rt\_cli}!API.h@{API.h}}
+\doxysubsubsection{\texorpdfstring{rt\_cli()}{rt\_cli()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void rt\+\_\+cli (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_a_p_i_8h_a64a53c31476ac8a8ffdd2a678c53c837}\label{_a_p_i_8h_a64a53c31476ac8a8ffdd2a678c53c837} 
+\index{API.h@{API.h}!rt\_hlt@{rt\_hlt}}
+\index{rt\_hlt@{rt\_hlt}!API.h@{API.h}}
+\doxysubsubsection{\texorpdfstring{rt\_hlt()}{rt\_hlt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void rt\+\_\+hlt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_a_p_i_8h_a67af7de1a62f48363917e0d14fbf2dc1}\label{_a_p_i_8h_a67af7de1a62f48363917e0d14fbf2dc1} 
+\index{API.h@{API.h}!BS@{BS}}
+\index{BS@{BS}!API.h@{API.h}}
+\doxysubsubsection{\texorpdfstring{BS}{BS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_boot_services}{Efi\+Boot\+Services}}\texorpdfstring{$\ast$}{*} BS = nullptr\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}\label{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8} 
+\index{API.h@{API.h}!ST@{ST}}
+\index{ST@{ST}!API.h@{API.h}}
+\doxysubsubsection{\texorpdfstring{ST}{ST}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_system_table}{Efi\+System\+Table}}\texorpdfstring{$\ast$}{*} ST = nullptr\hspace{0.3cm}{\ttfamily [inline]}}
+

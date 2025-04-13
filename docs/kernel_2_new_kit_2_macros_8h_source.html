@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('kernel_2_new_kit_2_macros_8h_source.ht
 <div class="contents">
 <a href="kernel_2_new_kit_2_macros_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* -------------------------------------------</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">    Copyright (C) 2024-2025, Amlal EL Mahrouss, all rights reserved.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">    Copyright (C) 2024-2025, Amlal El Mahrouss, all rights reserved.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"></span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">------------------------------------------- */</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
@@ -110,42 +110,42 @@ $(document).ready(function(){initNavTree('kernel_2_new_kit_2_macros_8h_source.ht
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/***********************************************************************************/</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef KIB</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#ab0a8038a8d6c5f1a602f028fa8bf32a0">   15</a></span><span class="preprocessor">#define KIB(X) (NeOS::UInt64)((X) / 1024)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#ab0a8038a8d6c5f1a602f028fa8bf32a0">   15</a></span><span class="preprocessor">#define KIB(X) (Kernel::UInt64)((X) / 1024)</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef kib_cast</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">   19</a></span><span class="preprocessor">#define kib_cast(X) (NeOS::UInt64)((X)*1024)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">   19</a></span><span class="preprocessor">#define kib_cast(X) (Kernel::UInt64)((X)*1024)</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef MIB</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a3d3145295541b38666bf1e095a7d74f6">   23</a></span><span class="preprocessor">#define MIB(X) (NeOS::UInt64)((NeOS::UInt64)KIB(X) / 1024)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a3d3145295541b38666bf1e095a7d74f6">   23</a></span><span class="preprocessor">#define MIB(X) (Kernel::UInt64)((Kernel::UInt64)KIB(X) / 1024)</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef mib_cast</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">   27</a></span><span class="preprocessor">#define mib_cast(X) (NeOS::UInt64)((NeOS::UInt64)kib_cast(X) * 1024)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">   27</a></span><span class="preprocessor">#define mib_cast(X) (Kernel::UInt64)((Kernel::UInt64)kib_cast(X) * 1024)</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef GIB</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95">   31</a></span><span class="preprocessor">#define GIB(X) (NeOS::UInt64)((NeOS::UInt64)MIB(X) / 1024)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95">   31</a></span><span class="preprocessor">#define GIB(X) (Kernel::UInt64)((Kernel::UInt64)MIB(X) / 1024)</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#ifndef gib_cast</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">   35</a></span><span class="preprocessor">#define gib_cast(X) (NeOS::UInt64)((NeOS::UInt64)mib_cast(X) * 1024)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">   35</a></span><span class="preprocessor">#define gib_cast(X) (Kernel::UInt64)((Kernel::UInt64)mib_cast(X) * 1024)</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifndef TIB</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca">   39</a></span><span class="preprocessor">#define TIB(X) (NeOS::UInt64)((NeOS::UInt64)GIB(X) / 1024)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca">   39</a></span><span class="preprocessor">#define TIB(X) (Kernel::UInt64)((Kernel::UInt64)GIB(X) / 1024)</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifndef tib_cast</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a88a22810bf835b7794ce207e15732da8">   43</a></span><span class="preprocessor">#define tib_cast(X) ((NeOS::UInt64)gib_cast(X) * 1024)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a88a22810bf835b7794ce207e15732da8">   43</a></span><span class="preprocessor">#define tib_cast(X) ((Kernel::UInt64)gib_cast(X) * 1024)</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#ifndef ARRAY_SIZE</span></div>
 <div class="foldopen" id="foldopen00047" data-start="" data-end="">
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a25f003de16c08a4888b69f619d70f427">   47</a></span><span class="preprocessor">#define ARRAY_SIZE(a)              \</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    (((sizeof(a) / sizeof(*(a))) / \</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">      (static_cast&lt;NeOS::Size&gt;(!(sizeof(a) % sizeof(*(a)))))))</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">      (static_cast&lt;Kernel::Size&gt;(!(sizeof(a) % sizeof(*(a)))))))</span></div>
 </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
@@ -225,10 +225,10 @@ $(document).ready(function(){initNavTree('kernel_2_new_kit_2_macros_8h_source.ht
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">  119</a></span><span class="preprocessor">#define CONST const</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">  121</a></span><span class="preprocessor">#define STRINGIFY(X) #X</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469">  122</a></span><span class="preprocessor">#define NE_UNUSED(X) ((NeOS::Void)X)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469">  122</a></span><span class="preprocessor">#define NE_UNUSED(X) ((Kernel::Void)X)</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#ifndef RGB</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54">  125</a></span><span class="preprocessor">#define RGB(R, G, B) (NeOS::UInt32)(R | G &lt;&lt; 0x8 | B &lt;&lt; 0x10)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54">  125</a></span><span class="preprocessor">#define RGB(R, G, B) (Kernel::UInt32)(R | G &lt;&lt; 0x8 | B &lt;&lt; 0x10)</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif </span><span class="comment">// !RGB</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#ifdef __NE_AMD64__</span></div>
@@ -238,10 +238,10 @@ $(document).ready(function(){initNavTree('kernel_2_new_kit_2_macros_8h_source.ht
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="foldopen" id="foldopen00134" data-start="" data-end="">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#aa5758c5d37f292d61ebb9ea3c58f1cc5">  134</a></span><span class="preprocessor">#define RTL_ENDIAN(address, value)                            \</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">    (((reinterpret_cast&lt;NeOS::Char*&gt;(address)[0]) == (value)) \</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">         ? (NeOS::Endian::kEndianBig)                         \</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">         : (NeOS::Endian::kEndianLittle))</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#aa5758c5d37f292d61ebb9ea3c58f1cc5">  134</a></span><span class="preprocessor">#define RTL_ENDIAN(address, value)                              \</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">    (((reinterpret_cast&lt;Kernel::Char*&gt;(address)[0]) == (value)) \</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">         ? (Kernel::Endian::kEndianBig)                         \</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">         : (Kernel::Endian::kEndianLittle))</span></div>
 </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#adf4f44e25f5216808d6ca83186e89119">  139</a></span><span class="preprocessor">#define Yes true</span></div>
@@ -253,13 +253,13 @@ $(document).ready(function(){initNavTree('kernel_2_new_kit_2_macros_8h_source.ht
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">  145</a></span><span class="preprocessor">#define TRUE  true</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">  146</a></span><span class="preprocessor">#define FALSE false</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">  148</a></span><span class="preprocessor">#define BOOL NeOS::Boolean</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">  148</a></span><span class="preprocessor">#define BOOL Kernel::Boolean</span></div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#ifdef RTL_INIT_OBJECT</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#undef RTL_INIT_OBJECT</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#endif </span><span class="comment">// ifdef RTL_INIT_OBJECT</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#ifdef rtl_init_object</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#undef rtl_init_object</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#endif </span><span class="comment">// ifdef rtl_init_object</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a171cc9c81f84474d52f4fc6df2dc12fe">  154</a></span><span class="preprocessor">#define RTL_INIT_OBJECT(OBJ, TYPE, ...) TYPE OBJ = TYPE(__VA_ARGS__)</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a44164fc643bea9300f06ccb9be8673f2">  154</a></span><span class="preprocessor">#define rtl_init_object(OBJ, TYPE, ...) TYPE OBJ = TYPE(__VA_ARGS__)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

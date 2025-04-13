@@ -1,0 +1,501 @@
+\doxysection{Ne\+OS\+::User\+Process Class Reference}
+\hypertarget{class_ne_o_s_1_1_user_process}{}\label{class_ne_o_s_1_1_user_process}\index{NeOS::UserProcess@{NeOS::UserProcess}}
+
+
+{\ttfamily \#include $<$User\+Process\+Scheduler.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list}{Process\+Memory\+Heap\+List}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_user_process_signal}{User\+Process\+Signal}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aac5d9e182b1a029cf72aac54661a7aca5}{k\+Invalid\+Executable\+Kind}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa00aaa5353f2456b447eac85c12e8148b}{k\+Exectuable\+Kind}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa17fdeb8b14c11cb9bd7b6a07f0710756}{k\+Exectuable\+Dylib\+Kind}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa2cd407f92561402c85947664e1fa0ccf}{k\+Exectuable\+Kind\+Count}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_user_process_afcb0586b7ac0a6386ff8a02c9b2a60c9}{User\+Process}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a8941d37dccfe2feb466343c1edc654f6}{\texorpdfstring{$\sim$}{\string~}\+User\+Process}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_user_process_ad95cd7485c110b55cfb4b6f4b9af686a}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}})
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a24ef609067025ab41baf9f950d593028}{operator bool}} ()
+\begin{DoxyCompactList}\small\item\em boolean operator, check status. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a26a76730173475f52763c6745bc34830}{Crash}} ()
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a70ecfa561a5633a918e053f8fd88435f}{Exit}} (const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \&exit\+\_\+code=0)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ad6a2763dfd57c792a1ac2322cc57ad6c}{New}} (const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&sz, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&pad\+\_\+amount=0)
+\begin{DoxyCompactList}\small\item\em TLS allocate. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a66a0eda7ced5b5d05ce026e3759353bb}{Delete}} (\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ T \texorpdfstring{$\ast$}{*} $>$ ptr, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&sz)
+\begin{DoxyCompactList}\small\item\em TLS free. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_aad74686f2514818dacc933c1b59347a7}{Wake}} (const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} wakeup=\mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}})
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \& \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a6829c59f57b7164eada87639acb8fb21}{Get\+Exit\+Code}} () noexcept
+\begin{DoxyCompactList}\small\item\em Gets the local exit code. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a90033c36e537254c8b2a063768988faf}{Get\+Name}} () noexcept
+\begin{DoxyCompactList}\small\item\em Gets the name of the current process. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \& \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ac866106235a973ac3fc20eb5fa1c7c2a}{Get\+Local\+Code}} () noexcept
+\begin{DoxyCompactList}\small\item\em return local error code of process. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_ne_o_s_1_1_user}{User}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a6440d63cfabb298b2867e23ab9e75e15}{Get\+Owner}} () noexcept
+\begin{DoxyCompactList}\small\item\em Gets the owner of the process. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dd}{Process\+Status\+Kind}} \& \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ae906fd35b1977c48810270e27d17ee92}{Get\+Status}} () noexcept
+\begin{DoxyCompactList}\small\item\em \doxylink{class_ne_o_s_1_1_user_process}{User\+Process} status getter. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} \& \mbox{\hyperlink{class_ne_o_s_1_1_user_process_aa43ed7cf59cfe4d46c8838095ce6f1d2}{Get\+Affinity}} () noexcept
+\begin{DoxyCompactList}\small\item\em Affinity is the time slot allowed for the process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a4c72e39921145a1b614488d54c7483e7}{Name}} \mbox{[}\mbox{\hyperlink{_user_process_scheduler_8h_af12ea5c3a94df92098d03e789558e0e6}{k\+Process\+Name\+Len}}\mbox{]} = \{"{}Process"{}\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6}{Process\+Subsystem}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a57605547c2df806442e2c2df1bb08969}{Sub\+System}} \{\mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6a4d03d85bad0d1656fc4c845b3531117b}{Process\+Subsystem\+::k\+Process\+Subsystem\+Invalid}}\}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_user}{User}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a634cbce7e0dc64384977c47e5b860671}{Owner}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ad1d72deccba8f832c71be41668a26f1a}{Stack\+Frame}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a85d51154575fdbbeeb9d9962a62688e6}{Affinity}} \{\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4a821da62632c491ea619ead7b31c094bf}{Affinity\+Kind\+::k\+Standard}}\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dd}{Process\+Status\+Kind}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ad3dc3cad7116248c2d762e72d492e6d9}{Status}} \{\mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda16b903606caf0e3128389431c392faf3}{Process\+Status\+Kind\+::k\+Finished}}\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ac89f142e89dcb1a3d2cbe2d2626c128f}{Stack\+Reserve}} \{nullptr\}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_user_process_image}{User\+Process\+Image}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a7ee49fc0f50c33ab0d4331f81709b854}{Image}} \{\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_af740a5025f8f62a49c394e7d7507c84d}{Stack\+Size}} \{\mbox{\hyperlink{_user_process_scheduler_8h_ab226cdb47327ca7fe2c483852d35ce2c}{k\+Sched\+Max\+Stack\+Sz}}\}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object}{IDylib\+Object}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a401ba23dece35be2a99575d6914de648}{Dylib\+Delegate}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a89a08f64150dfa04feca6d03ea4b09f5}{Memory\+Cursor}} \{0\+UL\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_af13b7ccdf06b744f44986ca3b3f7c5d7}{Memory\+Limit}} \{\mbox{\hyperlink{_user_process_scheduler_8h_af15d27971febb6ea29dd62469e47424d}{k\+Sched\+Max\+Memory\+Limit}}\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a533b2df019b6c34f099214f862066c41}{Used\+Memory}} \{0\+UL\}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_user_process_signal}{User\+Process\+Signal}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a47c42bad6c11f950269545dc89249bd9}{Process\+Signal}}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list}{Process\+Memory\+Heap\+List}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a31cf8be83cb37b349a9ef7b3a151cbe1}{Process\+Memory\+Heap}} \{nullptr\}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_user_process_team}{User\+Process\+Team}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_affa20f78814ed5c3cd861bdc86d6c224}{Process\+Parent\+Team}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a07928b794ced88423f78647366201e23}{VMRegister}} \{0\+UL\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a4dfbeee64cedc9cbf2d0bce0fe4ed946}{Process\+Time}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a982dbf32ef1403b4e3f7ad6acf4a2045}{PTime}} \{0\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_adf3245fc30d7047cf8e6347bd0a85da7}{PID}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a1956891068c1b0e3cbfc97559f4beba2}{Process\+Id}} \{\mbox{\hyperlink{_user_process_scheduler_8h_a1d537f5b893dc6838811704135744b72}{k\+Sched\+Invalid\+PID}}\}
+\begin{DoxyCompactList}\small\item\em Process allocated tine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a4f5a764657e36e6a80fe8d5d1119eec5}{Kind}} \{\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa00aaa5353f2456b447eac85c12e8148b}{k\+Exectuable\+Kind}}\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ae5ff84d15cfa3581dd18ff8f1fef8b1a}{f\+Last\+Exit\+Code}} \{0\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a23703c474501a368ff5145b72c2261b5}{f\+Local\+Code}} \{0\}
+\item 
+friend \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a189d74df7f619efedd6447481ce26c48}{User\+Process\+Scheduler}}
+\item 
+friend \mbox{\hyperlink{class_ne_o_s_1_1_user_process_ab1fae857aa4e70c1ea6e58be71686518}{User\+Process\+Helper}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75a}\label{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75a} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kInvalidExecutableKind@{kInvalidExecutableKind}!NeOS::UserProcess@{NeOS::UserProcess}}\index{NeOS::UserProcess@{NeOS::UserProcess}!kInvalidExecutableKind@{kInvalidExecutableKind}}}\Hypertarget{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aac5d9e182b1a029cf72aac54661a7aca5}\label{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aac5d9e182b1a029cf72aac54661a7aca5} 
+k\+Invalid\+Executable\+Kind&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kExectuableKind@{kExectuableKind}!NeOS::UserProcess@{NeOS::UserProcess}}\index{NeOS::UserProcess@{NeOS::UserProcess}!kExectuableKind@{kExectuableKind}}}\Hypertarget{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa00aaa5353f2456b447eac85c12e8148b}\label{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa00aaa5353f2456b447eac85c12e8148b} 
+k\+Exectuable\+Kind&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kExectuableDylibKind@{kExectuableDylibKind}!NeOS::UserProcess@{NeOS::UserProcess}}\index{NeOS::UserProcess@{NeOS::UserProcess}!kExectuableDylibKind@{kExectuableDylibKind}}}\Hypertarget{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa17fdeb8b14c11cb9bd7b6a07f0710756}\label{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa17fdeb8b14c11cb9bd7b6a07f0710756} 
+k\+Exectuable\+Dylib\+Kind&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kExectuableKindCount@{kExectuableKindCount}!NeOS::UserProcess@{NeOS::UserProcess}}\index{NeOS::UserProcess@{NeOS::UserProcess}!kExectuableKindCount@{kExectuableKindCount}}}\Hypertarget{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa2cd407f92561402c85947664e1fa0ccf}\label{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa2cd407f92561402c85947664e1fa0ccf} 
+k\+Exectuable\+Kind\+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_user_process_afcb0586b7ac0a6386ff8a02c9b2a60c9}\label{class_ne_o_s_1_1_user_process_afcb0586b7ac0a6386ff8a02c9b2a60c9} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!UserProcess@{UserProcess}}
+\index{UserProcess@{UserProcess}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{UserProcess()}{UserProcess()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+User\+Process\+::\+User\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a8941d37dccfe2feb466343c1edc654f6}\label{class_ne_o_s_1_1_user_process_a8941d37dccfe2feb466343c1edc654f6} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!````~UserProcess@{\texorpdfstring{$\sim$}{\string~}UserProcess}}
+\index{````~UserProcess@{\texorpdfstring{$\sim$}{\string~}UserProcess}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}UserProcess()}{\string~UserProcess()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+User\+Process\+::\texorpdfstring{$\sim$}{\string~}\+User\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_user_process_a26a76730173475f52763c6745bc34830}\label{class_ne_o_s_1_1_user_process_a26a76730173475f52763c6745bc34830} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Crash@{Crash}}
+\index{Crash@{Crash}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Crash()}{Crash()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+User\+Process\+::\+Crash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Crashes the current process.
+
+Crashes the app, exits with code \texorpdfstring{$\sim$}{\string~}0. \Hypertarget{class_ne_o_s_1_1_user_process_a66a0eda7ced5b5d05ce026e3759353bb}\label{class_ne_o_s_1_1_user_process_a66a0eda7ced5b5d05ce026e3759353bb} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Delete@{Delete}}
+\index{Delete@{Delete}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} Ne\+OS\+::\+User\+Process\+::\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ T \texorpdfstring{$\ast$}{*} $>$}]{ptr,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&}]{sz }\end{DoxyParamCaption})}
+
+
+
+TLS free. 
+
+Free pointer from usage.
+
+!
+\begin{DoxyParams}{Parameters}
+{\em ptr} & the pointer to free. \\
+\hline
+{\em sz} & the size of it. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ne_o_s_1_1_user_process_a70ecfa561a5633a918e053f8fd88435f}\label{class_ne_o_s_1_1_user_process_a70ecfa561a5633a918e053f8fd88435f} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Exit@{Exit}}
+\index{Exit@{Exit}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+User\+Process\+::\+Exit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \&}]{exit\+\_\+code = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Exit process method.
+
+Exits the app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em exit\+\_\+code} & The process\textquotesingle{}s exit code. \\
+\hline
+\end{DoxyParams}
+Free the memory\textquotesingle{}s page directory.
+
+Delete image if not done already.
+
+Delete blob too.
+
+Delete stack frame.
+
+Delete stack reserve.
+
+Avoid use after free.\Hypertarget{class_ne_o_s_1_1_user_process_aa43ed7cf59cfe4d46c8838095ce6f1d2}\label{class_ne_o_s_1_1_user_process_aa43ed7cf59cfe4d46c8838095ce6f1d2} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!GetAffinity@{GetAffinity}}
+\index{GetAffinity@{GetAffinity}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{GetAffinity()}{GetAffinity()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} \& Ne\+OS\+::\+User\+Process\+::\+Get\+Affinity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Affinity is the time slot allowed for the process. 
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a6829c59f57b7164eada87639acb8fb21}\label{class_ne_o_s_1_1_user_process_a6829c59f57b7164eada87639acb8fb21} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!GetExitCode@{GetExitCode}}
+\index{GetExitCode@{GetExitCode}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{GetExitCode()}{GetExitCode()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \& Ne\+OS\+::\+User\+Process\+::\+Get\+Exit\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Gets the local exit code. 
+
+Gets the local last exit code.
+
+\begin{DoxyNote}{Note}
+Not thread-\/safe. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Int32 the last exit code. 
+\end{DoxyReturn}
+\Hypertarget{class_ne_o_s_1_1_user_process_ac866106235a973ac3fc20eb5fa1c7c2a}\label{class_ne_o_s_1_1_user_process_ac866106235a973ac3fc20eb5fa1c7c2a} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!GetLocalCode@{GetLocalCode}}
+\index{GetLocalCode@{GetLocalCode}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{GetLocalCode()}{GetLocalCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \& Ne\+OS\+::\+User\+Process\+::\+Get\+Local\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+return local error code of process. 
+
+Error code variable getter.
+
+\begin{DoxyReturn}{Returns}
+Int32 local error code. 
+\end{DoxyReturn}
+\Hypertarget{class_ne_o_s_1_1_user_process_a90033c36e537254c8b2a063768988faf}\label{class_ne_o_s_1_1_user_process_a90033c36e537254c8b2a063768988faf} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!GetName@{GetName}}
+\index{GetName@{GetName}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+User\+Process\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Gets the name of the current process. 
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a6440d63cfabb298b2867e23ab9e75e15}\label{class_ne_o_s_1_1_user_process_a6440d63cfabb298b2867e23ab9e75e15} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!GetOwner@{GetOwner}}
+\index{GetOwner@{GetOwner}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{GetOwner()}{GetOwner()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_ne_o_s_1_1_user}{User}} \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+User\+Process\+::\+Get\+Owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Gets the owner of the process. 
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ae906fd35b1977c48810270e27d17ee92}\label{class_ne_o_s_1_1_user_process_ae906fd35b1977c48810270e27d17ee92} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!GetStatus@{GetStatus}}
+\index{GetStatus@{GetStatus}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dd}{Process\+Status\+Kind}} \& Ne\+OS\+::\+User\+Process\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxylink{class_ne_o_s_1_1_user_process}{User\+Process} status getter. 
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ad95cd7485c110b55cfb4b6f4b9af686a}\label{class_ne_o_s_1_1_user_process_ad95cd7485c110b55cfb4b6f4b9af686a} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+User\+Process\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ad6a2763dfd57c792a1ac2322cc57ad6c}\label{class_ne_o_s_1_1_user_process_ad6a2763dfd57c792a1ac2322cc57ad6c} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!New@{New}}
+\index{New@{New}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} $>$ Ne\+OS\+::\+User\+Process\+::\+New (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&}]{sz,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&}]{pad\+\_\+amount = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+TLS allocate. 
+
+Allocate pointer to track list.
+
+!
+\begin{DoxyParams}{Parameters}
+{\em sz} & size of data structure. \\
+\hline
+{\em pad\+\_\+amount} & amount to add after pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A wrapped pointer, or error code. 
+\end{DoxyReturn}
+\Hypertarget{class_ne_o_s_1_1_user_process_a24ef609067025ab41baf9f950d593028}\label{class_ne_o_s_1_1_user_process_a24ef609067025ab41baf9f950d593028} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+User\+Process\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+boolean operator, check status. 
+
+\Hypertarget{class_ne_o_s_1_1_user_process_aad74686f2514818dacc933c1b59347a7}\label{class_ne_o_s_1_1_user_process_aad74686f2514818dacc933c1b59347a7} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Wake@{Wake}}
+\index{Wake@{Wake}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Wake()}{Wake()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+User\+Process\+::\+Wake (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}]{should\+\_\+wakeup = {\ttfamily \mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}} }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Wakes process header.
+
+Wakes up thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\+\_\+wakeup} & if the program shall wakeup or not. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_user_process_a85d51154575fdbbeeb9d9962a62688e6}\label{class_ne_o_s_1_1_user_process_a85d51154575fdbbeeb9d9962a62688e6} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Affinity@{Affinity}}
+\index{Affinity@{Affinity}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Affinity}{Affinity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4}{Affinity\+Kind}} Ne\+OS\+::\+User\+Process\+::\+Affinity \{\mbox{\hyperlink{namespace_ne_o_s_ac078214fad2942d92668502ac78e68c4a821da62632c491ea619ead7b31c094bf}{Affinity\+Kind\+::k\+Standard}}\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a401ba23dece35be2a99575d6914de648}\label{class_ne_o_s_1_1_user_process_a401ba23dece35be2a99575d6914de648} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!DylibDelegate@{DylibDelegate}}
+\index{DylibDelegate@{DylibDelegate}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{DylibDelegate}{DylibDelegate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_i_dylib_object}{IDylib\+Object}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+User\+Process\+::\+Dylib\+Delegate \{nullptr\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ae5ff84d15cfa3581dd18ff8f1fef8b1a}\label{class_ne_o_s_1_1_user_process_ae5ff84d15cfa3581dd18ff8f1fef8b1a} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!fLastExitCode@{fLastExitCode}}
+\index{fLastExitCode@{fLastExitCode}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{fLastExitCode}{fLastExitCode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+User\+Process\+::f\+Last\+Exit\+Code \{0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a23703c474501a368ff5145b72c2261b5}\label{class_ne_o_s_1_1_user_process_a23703c474501a368ff5145b72c2261b5} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!fLocalCode@{fLocalCode}}
+\index{fLocalCode@{fLocalCode}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{fLocalCode}{fLocalCode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Ne\+OS\+::\+User\+Process\+::f\+Local\+Code \{0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a7ee49fc0f50c33ab0d4331f81709b854}\label{class_ne_o_s_1_1_user_process_a7ee49fc0f50c33ab0d4331f81709b854} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Image@{Image}}
+\index{Image@{Image}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_image}{User\+Process\+Image}} Ne\+OS\+::\+User\+Process\+::\+Image \{\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a4f5a764657e36e6a80fe8d5d1119eec5}\label{class_ne_o_s_1_1_user_process_a4f5a764657e36e6a80fe8d5d1119eec5} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Kind@{Kind}}
+\index{Kind@{Kind}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Kind}{Kind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Ne\+OS\+::\+User\+Process\+::\+Kind \{\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a96f7977af1a0cb45537d96dcc6c4e75aa00aaa5353f2456b447eac85c12e8148b}{k\+Exectuable\+Kind}}\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a89a08f64150dfa04feca6d03ea4b09f5}\label{class_ne_o_s_1_1_user_process_a89a08f64150dfa04feca6d03ea4b09f5} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!MemoryCursor@{MemoryCursor}}
+\index{MemoryCursor@{MemoryCursor}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{MemoryCursor}{MemoryCursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+User\+Process\+::\+Memory\+Cursor \{0\+UL\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_af13b7ccdf06b744f44986ca3b3f7c5d7}\label{class_ne_o_s_1_1_user_process_af13b7ccdf06b744f44986ca3b3f7c5d7} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!MemoryLimit@{MemoryLimit}}
+\index{MemoryLimit@{MemoryLimit}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{MemoryLimit}{MemoryLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+User\+Process\+::\+Memory\+Limit \{\mbox{\hyperlink{_user_process_scheduler_8h_af15d27971febb6ea29dd62469e47424d}{k\+Sched\+Max\+Memory\+Limit}}\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a4c72e39921145a1b614488d54c7483e7}\label{class_ne_o_s_1_1_user_process_a4c72e39921145a1b614488d54c7483e7} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Name@{Name}}
+\index{Name@{Name}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} Ne\+OS\+::\+User\+Process\+::\+Name\mbox{[}\mbox{\hyperlink{_user_process_scheduler_8h_af12ea5c3a94df92098d03e789558e0e6}{k\+Process\+Name\+Len}}\mbox{]} = \{"{}Process"{}\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a634cbce7e0dc64384977c47e5b860671}\label{class_ne_o_s_1_1_user_process_a634cbce7e0dc64384977c47e5b860671} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Owner@{Owner}}
+\index{Owner@{Owner}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Owner}{Owner}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_user}{User}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+User\+Process\+::\+Owner \{nullptr\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a1956891068c1b0e3cbfc97559f4beba2}\label{class_ne_o_s_1_1_user_process_a1956891068c1b0e3cbfc97559f4beba2} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!ProcessId@{ProcessId}}
+\index{ProcessId@{ProcessId}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{ProcessId}{ProcessId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_adf3245fc30d7047cf8e6347bd0a85da7}{PID}} Ne\+OS\+::\+User\+Process\+::\+Process\+Id \{\mbox{\hyperlink{_user_process_scheduler_8h_a1d537f5b893dc6838811704135744b72}{k\+Sched\+Invalid\+PID}}\}}
+
+
+
+Process allocated tine. 
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a31cf8be83cb37b349a9ef7b3a151cbe1}\label{class_ne_o_s_1_1_user_process_a31cf8be83cb37b349a9ef7b3a151cbe1} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!ProcessMemoryHeap@{ProcessMemoryHeap}}
+\index{ProcessMemoryHeap@{ProcessMemoryHeap}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{ProcessMemoryHeap}{ProcessMemoryHeap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list}{Process\+Memory\+Heap\+List}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+User\+Process\+::\+Process\+Memory\+Heap \{nullptr\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_affa20f78814ed5c3cd861bdc86d6c224}\label{class_ne_o_s_1_1_user_process_affa20f78814ed5c3cd861bdc86d6c224} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!ProcessParentTeam@{ProcessParentTeam}}
+\index{ProcessParentTeam@{ProcessParentTeam}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{ProcessParentTeam}{ProcessParentTeam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_user_process_team}{User\+Process\+Team}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+User\+Process\+::\+Process\+Parent\+Team}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a47c42bad6c11f950269545dc89249bd9}\label{class_ne_o_s_1_1_user_process_a47c42bad6c11f950269545dc89249bd9} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!ProcessSignal@{ProcessSignal}}
+\index{ProcessSignal@{ProcessSignal}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{ProcessSignal}{ProcessSignal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_user_process_signal}{User\+Process\+Signal}} Ne\+OS\+::\+User\+Process\+::\+Process\+Signal}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a982dbf32ef1403b4e3f7ad6acf4a2045}\label{class_ne_o_s_1_1_user_process_a982dbf32ef1403b4e3f7ad6acf4a2045} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!PTime@{PTime}}
+\index{PTime@{PTime}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{PTime}{PTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4dfbeee64cedc9cbf2d0bce0fe4ed946}{Process\+Time}} Ne\+OS\+::\+User\+Process\+::\+PTime \{0\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ad1d72deccba8f832c71be41668a26f1a}\label{class_ne_o_s_1_1_user_process_ad1d72deccba8f832c71be41668a26f1a} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!StackFrame@{StackFrame}}
+\index{StackFrame@{StackFrame}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{StackFrame}{StackFrame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}} Ne\+OS\+::\+User\+Process\+::\+Stack\+Frame \{nullptr\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ac89f142e89dcb1a3d2cbe2d2626c128f}\label{class_ne_o_s_1_1_user_process_ac89f142e89dcb1a3d2cbe2d2626c128f} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!StackReserve@{StackReserve}}
+\index{StackReserve@{StackReserve}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{StackReserve}{StackReserve}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+User\+Process\+::\+Stack\+Reserve \{nullptr\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_af740a5025f8f62a49c394e7d7507c84d}\label{class_ne_o_s_1_1_user_process_af740a5025f8f62a49c394e7d7507c84d} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!StackSize@{StackSize}}
+\index{StackSize@{StackSize}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{StackSize}{StackSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+User\+Process\+::\+Stack\+Size \{\mbox{\hyperlink{_user_process_scheduler_8h_ab226cdb47327ca7fe2c483852d35ce2c}{k\+Sched\+Max\+Stack\+Sz}}\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ad3dc3cad7116248c2d762e72d492e6d9}\label{class_ne_o_s_1_1_user_process_ad3dc3cad7116248c2d762e72d492e6d9} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!Status@{Status}}
+\index{Status@{Status}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dd}{Process\+Status\+Kind}} Ne\+OS\+::\+User\+Process\+::\+Status \{\mbox{\hyperlink{namespace_ne_o_s_aaef3134e82ab6c89ea36d797ef47e3dda16b903606caf0e3128389431c392faf3}{Process\+Status\+Kind\+::k\+Finished}}\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a57605547c2df806442e2c2df1bb08969}\label{class_ne_o_s_1_1_user_process_a57605547c2df806442e2c2df1bb08969} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!SubSystem@{SubSystem}}
+\index{SubSystem@{SubSystem}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{SubSystem}{SubSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6}{Process\+Subsystem}} Ne\+OS\+::\+User\+Process\+::\+Sub\+System \{\mbox{\hyperlink{namespace_ne_o_s_ad6ea067b3faba784b2f1ed5303a984e6a4d03d85bad0d1656fc4c845b3531117b}{Process\+Subsystem\+::k\+Process\+Subsystem\+Invalid}}\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a533b2df019b6c34f099214f862066c41}\label{class_ne_o_s_1_1_user_process_a533b2df019b6c34f099214f862066c41} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!UsedMemory@{UsedMemory}}
+\index{UsedMemory@{UsedMemory}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{UsedMemory}{UsedMemory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+User\+Process\+::\+Used\+Memory \{0\+UL\}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_ab1fae857aa4e70c1ea6e58be71686518}\label{class_ne_o_s_1_1_user_process_ab1fae857aa4e70c1ea6e58be71686518} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!UserProcessHelper@{UserProcessHelper}}
+\index{UserProcessHelper@{UserProcessHelper}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{UserProcessHelper}{UserProcessHelper}}
+{\footnotesize\ttfamily friend Ne\+OS\+::\+User\+Process\+::\+User\+Process\+Helper\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a189d74df7f619efedd6447481ce26c48}\label{class_ne_o_s_1_1_user_process_a189d74df7f619efedd6447481ce26c48} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!UserProcessScheduler@{UserProcessScheduler}}
+\index{UserProcessScheduler@{UserProcessScheduler}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{UserProcessScheduler}{UserProcessScheduler}}
+{\footnotesize\ttfamily friend Ne\+OS\+::\+User\+Process\+::\+User\+Process\+Scheduler\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_user_process_a07928b794ced88423f78647366201e23}\label{class_ne_o_s_1_1_user_process_a07928b794ced88423f78647366201e23} 
+\index{NeOS::UserProcess@{NeOS::UserProcess}!VMRegister@{VMRegister}}
+\index{VMRegister@{VMRegister}!NeOS::UserProcess@{NeOS::UserProcess}}
+\doxysubsubsection{\texorpdfstring{VMRegister}{VMRegister}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} Ne\+OS\+::\+User\+Process\+::\+VMRegister \{0\+UL\}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_user_process_scheduler_8h}{User\+Process\+Scheduler.\+h}}\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_user_process_scheduler_8inl}{User\+Process\+Scheduler.\+inl}}\item 
+dev/kernel/src/\mbox{\hyperlink{_user_process_scheduler_8cc}{User\+Process\+Scheduler.\+cc}}\end{DoxyCompactItemize}

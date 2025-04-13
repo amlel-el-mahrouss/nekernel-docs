@@ -2,7 +2,7 @@ var dir_8d511ee8e7d00cce1ae9a33a2bdfb1ae =
 [
     [ "PCI", "dir_cd8154aac2b0b8eee0e85b21c5ce5b29.html", "dir_cd8154aac2b0b8eee0e85b21c5ce5b29" ],
     [ "Storage", "dir_e9ddbaf17113d19574054d28a5a105a4.html", "dir_e9ddbaf17113d19574054d28a5a105a4" ],
-    [ "CPUID.h", "_c_p_u_i_d_8h.html", "_c_p_u_i_d_8h" ],
+    [ "CPUID.h", "_c_p_u_i_d_8h.html", null ],
     [ "HalACPIFactoryInterface.cc", "_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc.html", "_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc" ],
     [ "HalAPICController.cc", "_hal_a_p_i_c_controller_8cc.html", "_hal_a_p_i_c_controller_8cc" ],
     [ "HalApplicationProcessor.cc", "_a_m_d64_2_hal_application_processor_8cc.html", "_a_m_d64_2_hal_application_processor_8cc" ],
@@ -16,7 +16,6 @@ var dir_8d511ee8e7d00cce1ae9a33a2bdfb1ae =
     [ "HalPagingMgrAMD64.cc", "_hal_paging_mgr_a_m_d64_8cc.html", "_hal_paging_mgr_a_m_d64_8cc" ],
     [ "HalProcessorAMD64.cc", "_hal_processor_a_m_d64_8cc.html", "_hal_processor_a_m_d64_8cc" ],
     [ "HalSchedulerCorePrimitivesAMD64.cc", "_hal_scheduler_core_primitives_a_m_d64_8cc.html", "_hal_scheduler_core_primitives_a_m_d64_8cc" ],
-    [ "HalSystemCallInstall.cc", "_hal_system_call_install_8cc.html", null ],
     [ "HalTimerAMD64.cc", "_hal_timer_a_m_d64_8cc.html", "_hal_timer_a_m_d64_8cc" ],
     [ "Hypervisor.h", "_hypervisor_8h.html", "_hypervisor_8h" ],
     [ "Paging.h", "_a_m_d64_2_paging_8h.html", "_a_m_d64_2_paging_8h" ],

@@ -1,0 +1,40 @@
+\doxysection{PRDT.\+h}
+\hypertarget{_p_r_d_t_8h_source}{}\label{_p_r_d_t_8h_source}\index{dev/kernel/StorageKit/PRDT.h@{dev/kernel/StorageKit/PRDT.h}}
+\mbox{\hyperlink{_p_r_d_t_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_d_m_a_8h}{KernelKit/PCI/DMA.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_iterator_8h}{KernelKit/PCI/Iterator.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{dev_2kernel_2_new_kit_2_ref_8h}{NewKit/Ref.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ kPrdtTransferSize\ (sizeof(NeOS::UShort))}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48}{kPRDTTransfer}}}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48a2d3ab197fe50517743dcab2906d70df5}{kPRDTTransferInProgress}},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48a75f278323c84c0107bd39fdd18a4918b}{kPRDTTransferIsDone}},}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48a0279576785cf6338e0e75ac0a6e0baeb}{kPRDTTransferCount}},}
+\DoxyCodeLine{00023\ \ \ \ \ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ne_o_s_1_1_p_r_d_t}{PRDT}}}
+\DoxyCodeLine{00027\ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_p_r_d_t_acfb25760fc895083700171b83f9b35a8}{fPhysAddress}};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_p_r_d_t_afb4a4661510f4b1030d7888d448b04b5}{fSectorCount}};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_p_r_d_t_a59f381c2c2dd442feffb5abeb30cf3b9}{fEndBit}};}
+\DoxyCodeLine{00031\ \ \ \ \ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_ne_o_s_ab2cc1026fe10e29bf0bffd969fa59756}{construct\_prdt}}(\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref<PRDT>}}\&\ prd);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\_C}}\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ \mbox{\hyperlink{namespace_ne_o_s_a4851ea17dc092789cc96f6b8f476ab9c}{kPRDTTransferStatus}};}
+\DoxyCodeLine{00036\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

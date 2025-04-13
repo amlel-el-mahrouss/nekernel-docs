@@ -36,7 +36,7 @@ var kernel_2_new_kit_2_macros_8h =
     [ "RGB", "kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54", null ],
     [ "RTL_ALLOCA", "kernel_2_new_kit_2_macros_8h.html#a73e964a8b06f3ee45f2d04ab6c91096c", null ],
     [ "RTL_ENDIAN", "kernel_2_new_kit_2_macros_8h.html#aa5758c5d37f292d61ebb9ea3c58f1cc5", null ],
-    [ "RTL_INIT_OBJECT", "kernel_2_new_kit_2_macros_8h.html#a171cc9c81f84474d52f4fc6df2dc12fe", null ],
+    [ "rtl_init_object", "kernel_2_new_kit_2_macros_8h.html#a44164fc643bea9300f06ccb9be8673f2", null ],
     [ "STATIC", "kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb", null ],
     [ "STRINGIFY", "kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8", null ],
     [ "TIB", "kernel_2_new_kit_2_macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca", null ],

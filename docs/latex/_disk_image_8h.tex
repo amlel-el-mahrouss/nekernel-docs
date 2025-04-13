@@ -1,0 +1,135 @@
+\doxysection{public/frameworks/\+Disk\+Image.fwrk/headers/\+Disk\+Image.h File Reference}
+\hypertarget{_disk_image_8h}{}\label{_disk_image_8h}\index{public/frameworks/DiskImage.fwrk/headers/DiskImage.h@{public/frameworks/DiskImage.fwrk/headers/DiskImage.h}}
+{\ttfamily \#include $<$user/\+System\+Calls.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}}
+\begin{DoxyCompactList}\small\item\em Disk Image file structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_a1885ffb04a636698df9f5b0000659f31}{k\+DISector\+Sz}}~(512)
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_ae5ee56a524530230a36072cb038f7f50}{k\+DIMin\+Disk\+Sz}}~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(1)
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_a43a1a5f1849f79fa70b6df6d03532125}{k\+DIDefault\+Output\+Name}}~"{}disk.\+eimg"{}
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_a92a21155f47827fc11bf8bdf067034fd}{k\+DIDefault\+Disk\+Name}}~"{}Disk"{}
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_aed1229694084c41aa3df646783b45212}{k\+DISuccess\+Status}}~(0)
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_a25ddcdea55b288edd1d1f06c3974ea66}{k\+DIFailure\+Status}}~(1)
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_aab030650db686fd009509ca5a7d9ee59}{k\+DIDisk\+Name\+Len}}~(16)
+\item 
+\#define \mbox{\hyperlink{_disk_image_8h_ab25b457cca505d99340a42657e835237}{k\+DIOut\+Name\+Len}}~(256)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} \mbox{\hyperlink{_disk_image_8h_aaeeb394618cbbff42c07c13605748dfa}{DIFormat\+Partition\+EPM}} (struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&img) noexcept
+\begin{DoxyCompactList}\small\item\em Format with an EPM partition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} \mbox{\hyperlink{_disk_image_8h_ad885206804a333c3711f5c7181040be3}{DIFormat\+Filesystem\+Ne\+FS}} (struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&img) noexcept
+\begin{DoxyCompactList}\small\item\em Ne\+FS format over EPM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_disk_image_8h_a92a21155f47827fc11bf8bdf067034fd}\label{_disk_image_8h_a92a21155f47827fc11bf8bdf067034fd} 
+\index{DiskImage.h@{DiskImage.h}!kDIDefaultDiskName@{kDIDefaultDiskName}}
+\index{kDIDefaultDiskName@{kDIDefaultDiskName}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDIDefaultDiskName}{kDIDefaultDiskName}}
+{\footnotesize\ttfamily \#define k\+DIDefault\+Disk\+Name~"{}Disk"{}}
+
+\Hypertarget{_disk_image_8h_a43a1a5f1849f79fa70b6df6d03532125}\label{_disk_image_8h_a43a1a5f1849f79fa70b6df6d03532125} 
+\index{DiskImage.h@{DiskImage.h}!kDIDefaultOutputName@{kDIDefaultOutputName}}
+\index{kDIDefaultOutputName@{kDIDefaultOutputName}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDIDefaultOutputName}{kDIDefaultOutputName}}
+{\footnotesize\ttfamily \#define k\+DIDefault\+Output\+Name~"{}disk.\+eimg"{}}
+
+\Hypertarget{_disk_image_8h_aab030650db686fd009509ca5a7d9ee59}\label{_disk_image_8h_aab030650db686fd009509ca5a7d9ee59} 
+\index{DiskImage.h@{DiskImage.h}!kDIDiskNameLen@{kDIDiskNameLen}}
+\index{kDIDiskNameLen@{kDIDiskNameLen}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDIDiskNameLen}{kDIDiskNameLen}}
+{\footnotesize\ttfamily \#define k\+DIDisk\+Name\+Len~(16)}
+
+\Hypertarget{_disk_image_8h_a25ddcdea55b288edd1d1f06c3974ea66}\label{_disk_image_8h_a25ddcdea55b288edd1d1f06c3974ea66} 
+\index{DiskImage.h@{DiskImage.h}!kDIFailureStatus@{kDIFailureStatus}}
+\index{kDIFailureStatus@{kDIFailureStatus}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDIFailureStatus}{kDIFailureStatus}}
+{\footnotesize\ttfamily \#define k\+DIFailure\+Status~(1)}
+
+\Hypertarget{_disk_image_8h_ae5ee56a524530230a36072cb038f7f50}\label{_disk_image_8h_ae5ee56a524530230a36072cb038f7f50} 
+\index{DiskImage.h@{DiskImage.h}!kDIMinDiskSz@{kDIMinDiskSz}}
+\index{kDIMinDiskSz@{kDIMinDiskSz}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDIMinDiskSz}{kDIMinDiskSz}}
+{\footnotesize\ttfamily \#define k\+DIMin\+Disk\+Sz~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(1)}
+
+\Hypertarget{_disk_image_8h_ab25b457cca505d99340a42657e835237}\label{_disk_image_8h_ab25b457cca505d99340a42657e835237} 
+\index{DiskImage.h@{DiskImage.h}!kDIOutNameLen@{kDIOutNameLen}}
+\index{kDIOutNameLen@{kDIOutNameLen}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDIOutNameLen}{kDIOutNameLen}}
+{\footnotesize\ttfamily \#define k\+DIOut\+Name\+Len~(256)}
+
+\Hypertarget{_disk_image_8h_a1885ffb04a636698df9f5b0000659f31}\label{_disk_image_8h_a1885ffb04a636698df9f5b0000659f31} 
+\index{DiskImage.h@{DiskImage.h}!kDISectorSz@{kDISectorSz}}
+\index{kDISectorSz@{kDISectorSz}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDISectorSz}{kDISectorSz}}
+{\footnotesize\ttfamily \#define k\+DISector\+Sz~(512)}
+
+\Hypertarget{_disk_image_8h_aed1229694084c41aa3df646783b45212}\label{_disk_image_8h_aed1229694084c41aa3df646783b45212} 
+\index{DiskImage.h@{DiskImage.h}!kDISuccessStatus@{kDISuccessStatus}}
+\index{kDISuccessStatus@{kDISuccessStatus}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{kDISuccessStatus}{kDISuccessStatus}}
+{\footnotesize\ttfamily \#define k\+DISuccess\+Status~(0)}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_disk_image_8h_ad885206804a333c3711f5c7181040be3}\label{_disk_image_8h_ad885206804a333c3711f5c7181040be3} 
+\index{DiskImage.h@{DiskImage.h}!DIFormatFilesystemNeFS@{DIFormatFilesystemNeFS}}
+\index{DIFormatFilesystemNeFS@{DIFormatFilesystemNeFS}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{DIFormatFilesystemNeFS()}{DIFormatFilesystemNeFS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} DIFormat\+Filesystem\+Ne\+FS (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Ne\+FS format over EPM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & disk image structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code upon completion. 
+\end{DoxyReturn}
+\Hypertarget{_disk_image_8h_aaeeb394618cbbff42c07c13605748dfa}\label{_disk_image_8h_aaeeb394618cbbff42c07c13605748dfa} 
+\index{DiskImage.h@{DiskImage.h}!DIFormatPartitionEPM@{DIFormatPartitionEPM}}
+\index{DIFormatPartitionEPM@{DIFormatPartitionEPM}!DiskImage.h@{DiskImage.h}}
+\doxysubsubsection{\texorpdfstring{DIFormatPartitionEPM()}{DIFormatPartitionEPM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} DIFormat\+Partition\+EPM (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Format with an EPM partition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & disk image structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code upon completion.
+\end{DoxyReturn}
+Format with an EPM partition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & disk image structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code upon completion. 
+\end{DoxyReturn}

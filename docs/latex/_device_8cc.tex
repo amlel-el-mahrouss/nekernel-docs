@@ -1,0 +1,71 @@
+\doxysection{dev/kernel/\+HALKit/\+AMD64/\+PCI/\+Device.cc File Reference}
+\hypertarget{_device_8cc}{}\label{_device_8cc}\index{dev/kernel/HALKit/AMD64/PCI/Device.cc@{dev/kernel/HALKit/AMD64/PCI/Device.cc}}
+{\ttfamily \#include $<$Arch\+Kit/\+Arch\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+PCI/\+Device.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_p_c_i}{Ne\+OS\+::\+PCI}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_device_8cc_a959211a91f46ea1222f3f67486db9fd6}{PCI\+\_\+\+BAR\+\_\+\+IO}}~0x01
+\item 
+\#define \mbox{\hyperlink{_device_8cc_a8e4d5a1733d63679c69d3284b0e2c012}{PCI\+\_\+\+BAR\+\_\+\+LOWMEM}}~0x02
+\item 
+\#define \mbox{\hyperlink{_device_8cc_a575c08ec947154460975c8a0c30e195d}{PCI\+\_\+\+BAR\+\_\+64}}~0x04
+\item 
+\#define \mbox{\hyperlink{_device_8cc_a5f1f5eb1af38a0041db4f5fe776b7c1f}{PCI\+\_\+\+BAR\+\_\+\+PREFETCH}}~0x08
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} \mbox{\hyperlink{_device_8cc_a5c1da0db431c19facc627859ff922470}{NE\+\_\+\+PCIRead\+Raw}} (\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} bar, \mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}} bus, \mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}} dev, \mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}} fun)
+\item 
+void \mbox{\hyperlink{_device_8cc_a14233a539a0791064986457654cf20a5}{NE\+\_\+\+PCISet\+Cfg\+Target}} (\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} bar, \mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}} bus, \mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}} dev, \mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}} fun)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_device_8cc_a575c08ec947154460975c8a0c30e195d}\label{_device_8cc_a575c08ec947154460975c8a0c30e195d} 
+\index{Device.cc@{Device.cc}!PCI\_BAR\_64@{PCI\_BAR\_64}}
+\index{PCI\_BAR\_64@{PCI\_BAR\_64}!Device.cc@{Device.cc}}
+\doxysubsubsection{\texorpdfstring{PCI\_BAR\_64}{PCI\_BAR\_64}}
+{\footnotesize\ttfamily \#define PCI\+\_\+\+BAR\+\_\+64~0x04}
+
+\Hypertarget{_device_8cc_a959211a91f46ea1222f3f67486db9fd6}\label{_device_8cc_a959211a91f46ea1222f3f67486db9fd6} 
+\index{Device.cc@{Device.cc}!PCI\_BAR\_IO@{PCI\_BAR\_IO}}
+\index{PCI\_BAR\_IO@{PCI\_BAR\_IO}!Device.cc@{Device.cc}}
+\doxysubsubsection{\texorpdfstring{PCI\_BAR\_IO}{PCI\_BAR\_IO}}
+{\footnotesize\ttfamily \#define PCI\+\_\+\+BAR\+\_\+\+IO~0x01}
+
+\Hypertarget{_device_8cc_a8e4d5a1733d63679c69d3284b0e2c012}\label{_device_8cc_a8e4d5a1733d63679c69d3284b0e2c012} 
+\index{Device.cc@{Device.cc}!PCI\_BAR\_LOWMEM@{PCI\_BAR\_LOWMEM}}
+\index{PCI\_BAR\_LOWMEM@{PCI\_BAR\_LOWMEM}!Device.cc@{Device.cc}}
+\doxysubsubsection{\texorpdfstring{PCI\_BAR\_LOWMEM}{PCI\_BAR\_LOWMEM}}
+{\footnotesize\ttfamily \#define PCI\+\_\+\+BAR\+\_\+\+LOWMEM~0x02}
+
+\Hypertarget{_device_8cc_a5f1f5eb1af38a0041db4f5fe776b7c1f}\label{_device_8cc_a5f1f5eb1af38a0041db4f5fe776b7c1f} 
+\index{Device.cc@{Device.cc}!PCI\_BAR\_PREFETCH@{PCI\_BAR\_PREFETCH}}
+\index{PCI\_BAR\_PREFETCH@{PCI\_BAR\_PREFETCH}!Device.cc@{Device.cc}}
+\doxysubsubsection{\texorpdfstring{PCI\_BAR\_PREFETCH}{PCI\_BAR\_PREFETCH}}
+{\footnotesize\ttfamily \#define PCI\+\_\+\+BAR\+\_\+\+PREFETCH~0x08}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_device_8cc_a5c1da0db431c19facc627859ff922470}\label{_device_8cc_a5c1da0db431c19facc627859ff922470} 
+\index{Device.cc@{Device.cc}!NE\_PCIReadRaw@{NE\_PCIReadRaw}}
+\index{NE\_PCIReadRaw@{NE\_PCIReadRaw}!Device.cc@{Device.cc}}
+\doxysubsubsection{\texorpdfstring{NE\_PCIReadRaw()}{NE\_PCIReadRaw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}} NE\+\_\+\+PCIRead\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}}}]{bar,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}}]{bus,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}}]{dev,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}}]{fun }\end{DoxyParamCaption})}
+
+\Hypertarget{_device_8cc_a14233a539a0791064986457654cf20a5}\label{_device_8cc_a14233a539a0791064986457654cf20a5} 
+\index{Device.cc@{Device.cc}!NE\_PCISetCfgTarget@{NE\_PCISetCfgTarget}}
+\index{NE\_PCISetCfgTarget@{NE\_PCISetCfgTarget}!Device.cc@{Device.cc}}
+\doxysubsubsection{\texorpdfstring{NE\_PCISetCfgTarget()}{NE\_PCISetCfgTarget()}}
+{\footnotesize\ttfamily void NE\+\_\+\+PCISet\+Cfg\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ab593fceae447211cf5e55db6a5f5ac1c}{Ne\+OS\+::\+UInt}}}]{bar,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}}]{bus,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}}]{dev,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}}]{fun }\end{DoxyParamCaption})}
+

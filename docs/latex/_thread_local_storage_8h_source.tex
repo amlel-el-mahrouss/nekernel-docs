@@ -1,0 +1,63 @@
+\doxysection{Thread\+Local\+Storage.\+h}
+\hypertarget{_thread_local_storage_8h_source}{}\label{_thread_local_storage_8h_source}\index{dev/kernel/KernelKit/ThreadLocalStorage.h@{dev/kernel/KernelKit/ThreadLocalStorage.h}}
+\mbox{\hyperlink{_thread_local_storage_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ KERNELKIT\_TLS\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ KERNELKIT\_TLS\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_error_or_8h}{NewKit/ErrorOr.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ kCookieMag0Idx\ 0}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ kCookieMag1Idx\ 1}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ kCookieMag2Idx\ 2}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ kCookieMag0\ 'Z'}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ kCookieMag1\ 'K'}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ kCookieMag2\ 'A'}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ kTLSCookieLen\ (3U)}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{THREAD\_INFORMATION\_BLOCK}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a36d525cf4d116b2fe4ecc00222b256f1}{PACKED}}\ \mbox{\hyperlink{struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{THREAD\_INFORMATION\_BLOCK}}\ final}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ \ \ Cookie[\mbox{\hyperlink{_thread_local_storage_8h_a3254ac69ed0c1cc604149addb63c3402}{kTLSCookieLen}}]\{0\};\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{NeOS::VoidPtr}}\ Record\{\textcolor{keyword}{nullptr}\};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{_thread_local_storage_8h_acbf6340182913c60a98a6ffd18175d02}{tls\_check\_tib}}(\mbox{\hyperlink{struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{THREAD\_INFORMATION\_BLOCK}}*\ the\_tib);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00040\ T*\ \mbox{\hyperlink{_thread_local_storage_8h_a3e273becb8719d0ad0de7253b51dd2be}{tls\_new\_ptr}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00044\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{_thread_local_storage_8h_ab385bd8ac0de475e955abe3aafe222f8}{tls\_delete\_ptr}}(T*\ ptr)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00049\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{NeOS::Bool}}\ \mbox{\hyperlink{_thread_local_storage_8h_ab385bd8ac0de475e955abe3aafe222f8}{tls\_delete\_ptr}}(\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{NeOS::ErrorOr<T>}}\ obj)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00054\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{NeOS::Bool}}\ \mbox{\hyperlink{_thread_local_storage_8h_ab385bd8ac0de475e955abe3aafe222f8}{tls\_delete\_ptr}}(\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{NeOS::ErrorOr<T*>}}\ obj)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T,\ \textcolor{keyword}{typename}...\ Args>}
+\DoxyCodeLine{00057\ T*\ \mbox{\hyperlink{_thread_local_storage_8h_aeb447845d0d9eee77a67d2bd3bd4d86f}{tls\_new\_class}}(Args\&\&...\ args);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00060\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\_C}}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{_thread_local_storage_8h_a34d263f62015b78514dc82b05dd9e04f}{rt\_install\_tib}}(\mbox{\hyperlink{struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{THREAD\_INFORMATION\_BLOCK}}*\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a8d236eda4577d4fc3bf28ffc5e36b5ca}{TIB}},\ \mbox{\hyperlink{struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{THREAD\_INFORMATION\_BLOCK}}*\ PIB);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00063\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\_C}}\ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{NeOS::Bool}}\ \mbox{\hyperlink{_thread_local_storage_8h_a744f001ded3bc48a964f201dcf7170f8}{tls\_check\_syscall\_impl}}(\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{NeOS::VoidPtr}}\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a8d236eda4577d4fc3bf28ffc5e36b5ca}{TIB}})\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_thread_local_storage_8inl}{KernelKit/ThreadLocalStorage.inl}}>}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{//\ last\ rev\ 7/7/24}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ ifndef\ KERNELKIT\_TLS\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

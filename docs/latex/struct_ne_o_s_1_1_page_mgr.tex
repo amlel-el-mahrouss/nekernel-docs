@@ -1,0 +1,145 @@
+\doxysection{Ne\+OS\+::Page\+Mgr Struct Reference}
+\hypertarget{struct_ne_o_s_1_1_page_mgr}{}\label{struct_ne_o_s_1_1_page_mgr}\index{NeOS::PageMgr@{NeOS::PageMgr}}
+
+
+{\ttfamily \#include $<$Page\+Mgr.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_a4b07f552d2767c8dfb8b4e883359c8de}{Page\+Mgr}} ()=default
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_a871c6d062639d59ef30b164ad8f625b5}{\texorpdfstring{$\sim$}{\string~}\+Page\+Mgr}} ()=default
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr}{Page\+Mgr}} \& \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_a76a6c14328e2caba193edcd9b3799792}{operator=}} (const \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr}{Page\+Mgr}} \&)=default
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_aad7d7afb8d0ab679d20fab7b4d7c1745}{Page\+Mgr}} (const \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr}{Page\+Mgr}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_p_t_e_wrapper}{PTEWrapper}} \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_a5130ae29d93b7492a5219f5206c84042}{Request}} (\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} Rw, \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_user}{User}}, \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} Exec\+Disable, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Sz, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Pad)
+\begin{DoxyCompactList}\small\item\em Request a PTE. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_a0e9327240d4731254ca48441de6c0ade}{Free}} (\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_p_t_e_wrapper}{PTEWrapper}} $>$ \&wrapper)
+\begin{DoxyCompactList}\small\item\em Disable Bit\+Map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_ace5d63e973e375b1d1079d0972933071}{Flush\+TLB}} ()
+\begin{DoxyCompactList}\small\item\em Flush virtual address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+friend \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_a08285f49c1ccabc5ad5fd9825b925105}{PTEWrapper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr_a5e2a43ffb17b72932c2a4ceb9a1253c5}{Pmm}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_a4b07f552d2767c8dfb8b4e883359c8de}\label{struct_ne_o_s_1_1_page_mgr_a4b07f552d2767c8dfb8b4e883359c8de} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!PageMgr@{PageMgr}}
+\index{PageMgr@{PageMgr}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{PageMgr()}{PageMgr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Page\+Mgr\+::\+Page\+Mgr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_a871c6d062639d59ef30b164ad8f625b5}\label{struct_ne_o_s_1_1_page_mgr_a871c6d062639d59ef30b164ad8f625b5} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!````~PageMgr@{\texorpdfstring{$\sim$}{\string~}PageMgr}}
+\index{````~PageMgr@{\texorpdfstring{$\sim$}{\string~}PageMgr}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PageMgr()}{\string~PageMgr()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Page\+Mgr\+::\texorpdfstring{$\sim$}{\string~}\+Page\+Mgr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_aad7d7afb8d0ab679d20fab7b4d7c1745}\label{struct_ne_o_s_1_1_page_mgr_aad7d7afb8d0ab679d20fab7b4d7c1745} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!PageMgr@{PageMgr}}
+\index{PageMgr@{PageMgr}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{PageMgr()}{PageMgr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Page\+Mgr\+::\+Page\+Mgr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr}{Page\+Mgr}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_ace5d63e973e375b1d1079d0972933071}\label{struct_ne_o_s_1_1_page_mgr_ace5d63e973e375b1d1079d0972933071} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!FlushTLB@{FlushTLB}}
+\index{FlushTLB@{FlushTLB}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{FlushTLB()}{FlushTLB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+Page\+Mgr\+::\+Flush\+TLB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Flush virtual address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Virt\+Addr} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_a0e9327240d4731254ca48441de6c0ade}\label{struct_ne_o_s_1_1_page_mgr_a0e9327240d4731254ca48441de6c0ade} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!Free@{Free}}
+\index{Free@{Free}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+Page\+Mgr\+::\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_p_t_e_wrapper}{PTEWrapper}} $>$ \&}]{wrapper }\end{DoxyParamCaption})}
+
+
+
+Disable Bit\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrapper} & the wrapper. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the page bitmap was cleared or not. 
+\end{DoxyReturn}
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_a76a6c14328e2caba193edcd9b3799792}\label{struct_ne_o_s_1_1_page_mgr_a76a6c14328e2caba193edcd9b3799792} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr}{Page\+Mgr}} \& Ne\+OS\+::\+Page\+Mgr\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ne_o_s_1_1_page_mgr}{Page\+Mgr}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_a5130ae29d93b7492a5219f5206c84042}\label{struct_ne_o_s_1_1_page_mgr_a5130ae29d93b7492a5219f5206c84042} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!Request@{Request}}
+\index{Request@{Request}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_p_t_e_wrapper}{PTEWrapper}} Ne\+OS\+::\+Page\+Mgr\+::\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}}]{Rw,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}}]{User,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}}]{Exec\+Disable,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{Sz,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{Pad }\end{DoxyParamCaption})}
+
+
+
+Request a PTE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Rw} & r/w? \\
+\hline
+{\em \doxylink{class_ne_o_s_1_1_user}{User}} & user mode? \\
+\hline
+{\em Exec\+Disable} & disable execution on page? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_a5e2a43ffb17b72932c2a4ceb9a1253c5}\label{struct_ne_o_s_1_1_page_mgr_a5e2a43ffb17b72932c2a4ceb9a1253c5} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!Pmm@{Pmm}}
+\index{Pmm@{Pmm}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{Pmm}{Pmm}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_ne_o_s_1_1_pmm}{Pmm}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_ne_o_s_1_1_page_mgr_a08285f49c1ccabc5ad5fd9825b925105}\label{struct_ne_o_s_1_1_page_mgr_a08285f49c1ccabc5ad5fd9825b925105} 
+\index{NeOS::PageMgr@{NeOS::PageMgr}!PTEWrapper@{PTEWrapper}}
+\index{PTEWrapper@{PTEWrapper}!NeOS::PageMgr@{NeOS::PageMgr}}
+\doxysubsubsection{\texorpdfstring{PTEWrapper}{PTEWrapper}}
+{\footnotesize\ttfamily friend Ne\+OS\+::\+Page\+Mgr\+::\+PTEWrapper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+New\+Kit/\mbox{\hyperlink{_page_mgr_8h}{Page\+Mgr.\+h}}\item 
+dev/kernel/src/\mbox{\hyperlink{_page_mgr_8cc}{Page\+Mgr.\+cc}}\end{DoxyCompactItemize}

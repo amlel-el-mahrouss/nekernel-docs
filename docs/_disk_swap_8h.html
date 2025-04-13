@@ -105,31 +105,31 @@ $(document).ready(function(){initNavTree('_disk_swap_8h.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ne_o_s_1_1_swap_disk_interface.html">NeOS::SwapDiskInterface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual memory interface to swap memory chunks onto disk.  <a href="class_ne_o_s_1_1_swap_disk_interface.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_swap_disk_interface.html">Kernel::SwapDiskInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual memory interface to swap memory chunks onto disk.  <a href="class_kernel_1_1_swap_disk_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">NeOS::SWAP_DISK_HEADER</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <a href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">Kernel::SWAP_DISK_HEADER</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <a href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespace_ne_o_s" id="r_namespace_ne_o_s"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html">NeOS</a></td></tr>
-<tr class="memdesc:namespace_ne_o_s"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>Kernel</b> namespace. <br /></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a018714f623dede19fb8a5101f5a4c844" id="r_a018714f623dede19fb8a5101f5a4c844"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a018714f623dede19fb8a5101f5a4c844">kSwapBlockMaxSize</a>&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(16))</td></tr>
 <tr class="separator:a018714f623dede19fb8a5101f5a4c844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d7539724dd75f766b3e807b3d78581a" id="r_a7d7539724dd75f766b3e807b3d78581a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a7d7539724dd75f766b3e807b3d78581a">kSwapPageFile</a>&#160;&#160;&#160;&quot;/boot/pagefile.sys&quot;</td></tr>
+<tr class="memitem:a7d7539724dd75f766b3e807b3d78581a" id="r_a7d7539724dd75f766b3e807b3d78581a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a7d7539724dd75f766b3e807b3d78581a">kSwapPageFile</a>&#160;&#160;&#160;&quot;/boot/pagefile.efi&quot;</td></tr>
 <tr class="separator:a7d7539724dd75f766b3e807b3d78581a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0e8ec090454b3ba3877f51262511f0f0" id="r_a0e8ec090454b3ba3877f51262511f0f0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">NeOS::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ne_o_s.html#a0e8ec090454b3ba3877f51262511f0f0">NeOS::SWAP_DISK_HEADER</a></td></tr>
-<tr class="memdesc:a0e8ec090454b3ba3877f51262511f0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
-<tr class="separator:a0e8ec090454b3ba3877f51262511f0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d025f2d18ee23a8968b516036e8a734" id="r_a7d025f2d18ee23a8968b516036e8a734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">typedef</a> <a class="el" href="class_kernel_1_1_error_or.html">struct</a> <a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">Kernel::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a7d025f2d18ee23a8968b516036e8a734">Kernel::SWAP_DISK_HEADER</a></td></tr>
+<tr class="memdesc:a7d025f2d18ee23a8968b516036e8a734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
+<tr class="separator:a7d025f2d18ee23a8968b516036e8a734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a018714f623dede19fb8a5101f5a4c844" name="a018714f623dede19fb8a5101f5a4c844"></a>
@@ -153,7 +153,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kSwapPageFile&#160;&#160;&#160;&quot;/boot/pagefile.sys&quot;</td>
+          <td class="memname">#define kSwapPageFile&#160;&#160;&#160;&quot;/boot/pagefile.efi&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

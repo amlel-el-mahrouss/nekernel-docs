@@ -1,0 +1,53 @@
+\doxysection{public/frameworks/\+Disk\+Image.fwrk/src/\+Disk\+Image.cc File Reference}
+\hypertarget{_disk_image_8cc}{}\label{_disk_image_8cc}\index{public/frameworks/DiskImage.fwrk/src/DiskImage.cc@{public/frameworks/DiskImage.fwrk/src/DiskImage.cc}}
+{\ttfamily \#include $<$Disk\+Image.\+fwrk/headers/\+Disk\+Image.\+h$>$}\newline
+{\ttfamily \#include $<$Firmware\+Kit/\+EPM.\+h$>$}\newline
+{\ttfamily \#include $<$FSKit/\+Ne\+FS.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} \mbox{\hyperlink{_disk_image_8cc_aaeeb394618cbbff42c07c13605748dfa}{DIFormat\+Partition\+EPM}} (struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&img) noexcept
+\begin{DoxyCompactList}\small\item\em EPM format disk. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} \mbox{\hyperlink{_disk_image_8cc_ad885206804a333c3711f5c7181040be3}{DIFormat\+Filesystem\+Ne\+FS}} (struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&img) noexcept
+\begin{DoxyCompactList}\small\item\em Ne\+FS format over EPM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_disk_image_8cc_ad885206804a333c3711f5c7181040be3}\label{_disk_image_8cc_ad885206804a333c3711f5c7181040be3} 
+\index{DiskImage.cc@{DiskImage.cc}!DIFormatFilesystemNeFS@{DIFormatFilesystemNeFS}}
+\index{DIFormatFilesystemNeFS@{DIFormatFilesystemNeFS}!DiskImage.cc@{DiskImage.cc}}
+\doxysubsubsection{\texorpdfstring{DIFormatFilesystemNeFS()}{DIFormatFilesystemNeFS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} DIFormat\+Filesystem\+Ne\+FS (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Ne\+FS format over EPM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & disk image structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code upon completion. 
+\end{DoxyReturn}
+\Hypertarget{_disk_image_8cc_aaeeb394618cbbff42c07c13605748dfa}\label{_disk_image_8cc_aaeeb394618cbbff42c07c13605748dfa} 
+\index{DiskImage.cc@{DiskImage.cc}!DIFormatPartitionEPM@{DIFormatPartitionEPM}}
+\index{DIFormatPartitionEPM@{DIFormatPartitionEPM}!DiskImage.cc@{DiskImage.cc}}
+\doxysubsubsection{\texorpdfstring{DIFormatPartitionEPM()}{DIFormatPartitionEPM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}} DIFormat\+Partition\+EPM (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\+\_\+\+DISK\+\_\+\+IMAGE}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+EPM format disk. 
+
+Format with an EPM partition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & disk image structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code upon completion. 
+\end{DoxyReturn}

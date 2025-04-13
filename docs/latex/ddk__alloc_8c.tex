@@ -1,0 +1,50 @@
+\doxysection{dev/ddk/src/ddk\+\_\+alloc.c File Reference}
+\hypertarget{ddk__alloc_8c}{}\label{ddk__alloc_8c}\index{dev/ddk/src/ddk\_alloc.c@{dev/ddk/src/ddk\_alloc.c}}
+{\ttfamily \#include $<$ddk/ddk.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ddk__alloc_8c_a3846a7dd13e8ce2d288fcb7d54e76052}{kalloc}} (\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} sz)
+\begin{DoxyCompactList}\small\item\em Allocates a new heap on the Kernel\textquotesingle{}s side. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \mbox{\hyperlink{ddk__alloc_8c_a0ed703155f740e05ad722199ad48b118}{kfree}} (void \texorpdfstring{$\ast$}{*}ptr)
+\begin{DoxyCompactList}\small\item\em Frees a pointer from the heap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ddk__alloc_8c_a3846a7dd13e8ce2d288fcb7d54e76052}\label{ddk__alloc_8c_a3846a7dd13e8ce2d288fcb7d54e76052} 
+\index{ddk\_alloc.c@{ddk\_alloc.c}!kalloc@{kalloc}}
+\index{kalloc@{kalloc}!ddk\_alloc.c@{ddk\_alloc.c}}
+\doxysubsubsection{\texorpdfstring{kalloc()}{kalloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} kalloc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}}}]{sz }\end{DoxyParamCaption})}
+
+
+
+Allocates a new heap on the Kernel\textquotesingle{}s side. 
+
+Allocates an heap ptr.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz} & the size of the heap block. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly allocated pointer. 
+\end{DoxyReturn}
+\Hypertarget{ddk__alloc_8c_a0ed703155f740e05ad722199ad48b118}\label{ddk__alloc_8c_a0ed703155f740e05ad722199ad48b118} 
+\index{ddk\_alloc.c@{ddk\_alloc.c}!kfree@{kfree}}
+\index{kfree@{kfree}!ddk\_alloc.c@{ddk\_alloc.c}}
+\doxysubsubsection{\texorpdfstring{kfree()}{kfree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void kfree (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{ptr }\end{DoxyParamCaption})}
+
+
+
+Frees a pointer from the heap. 
+
+Frees an heap ptr.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & the pointer to free. \\
+\hline
+\end{DoxyParams}

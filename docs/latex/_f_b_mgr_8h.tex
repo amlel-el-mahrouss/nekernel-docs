@@ -1,0 +1,164 @@
+\doxysection{dev/modules/\+Core\+Gfx/\+FBMgr.h File Reference}
+\hypertarget{_f_b_mgr_8h}{}\label{_f_b_mgr_8h}\index{dev/modules/CoreGfx/FBMgr.h@{dev/modules/CoreGfx/FBMgr.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$modules/\+Core\+Gfx/\+Accessibility\+Mgr.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_f_b}{FB}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_af426c91c49821bcf155ae7b712e52b1b}{fb\+\_\+init}}()~\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} k\+CGCursor = 0
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_af28350f097594c70f7262b748c26e298}{fb\+\_\+color}}(R,  G,  B)~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a52d6f67c629ccece695186d3ccceba54}{RGB}}(R, G, B)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_a191005e9f135522357849344f75bbfdf}{fb\+\_\+get\+\_\+clear\+\_\+clr}}()~\mbox{\hyperlink{_f_b_mgr_8h_af28350f097594c70f7262b748c26e298}{fb\+\_\+color}}(0x20, 0x20, 0x20)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_a5eb2b0e3f79ee92449f5bad2d00c664a}{fb\+\_\+clear}}()~k\+CGCursor = 0
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_ac9b75c28f1f58ff11644bd5c062c22de}{FBDraw\+Bit\+Map\+In\+RegionA}}(reg\+\_\+ptr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_afe9e38b283f7a8ca6fac220560774ade}{FBDraw\+Bit\+Map\+In\+Region}}(reg\+\_\+ptr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_a60b2752959bd8e90e7c9ebdca2e3816b}{FBDraw\+Bit\+Map\+In\+Region\+To\+Rgn}}(\+\_\+\+Rgn,  reg\+\_\+ptr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_ada17142ef251f0a301c23fdaa00488ed}{CGClear\+Region}}(height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_ae16cf1e77ab82769ae955d1fac7e4935}{FBDraw\+In\+Region}}(\+\_\+\+Clr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_a3ff83f2611b853301740a90bd664fb52}{FBDraw\+In\+Region\+To\+Rgn}}(\+\_\+\+Rgn,  \+\_\+\+Clr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_af1fd86e991df7f400ba42a778c76fdd8}{FBDraw\+In\+RegionA}}(\+\_\+\+Clr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_ac9b75c28f1f58ff11644bd5c062c22de}{FBDraw\+Bit\+Map\+In\+RegionA}}(reg\+\_\+ptr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_afe9e38b283f7a8ca6fac220560774ade}{FBDraw\+Bit\+Map\+In\+Region}}(reg\+\_\+ptr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_a60b2752959bd8e90e7c9ebdca2e3816b}{FBDraw\+Bit\+Map\+In\+Region\+To\+Rgn}}(\+\_\+\+Rgn,  reg\+\_\+ptr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_ada17142ef251f0a301c23fdaa00488ed}{CGClear\+Region}}(height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_ae16cf1e77ab82769ae955d1fac7e4935}{FBDraw\+In\+Region}}(\+\_\+\+Clr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_a3ff83f2611b853301740a90bd664fb52}{FBDraw\+In\+Region\+To\+Rgn}}(\+\_\+\+Rgn,  \+\_\+\+Clr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\item 
+\#define \mbox{\hyperlink{_f_b_mgr_8h_af1fd86e991df7f400ba42a778c76fdd8}{FBDraw\+In\+RegionA}}(\+\_\+\+Clr,  height,  width,  base\+\_\+x,  base\+\_\+y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_f_b_a0dc6b3ea07f1c32fba3c7d42724a8a5f}{FB\+::fb\+\_\+clear\+\_\+video}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_f_b_mgr_8h_ada17142ef251f0a301c23fdaa00488ed}\label{_f_b_mgr_8h_ada17142ef251f0a301c23fdaa00488ed} 
+\index{FBMgr.h@{FBMgr.h}!CGClearRegion@{CGClearRegion}}
+\index{CGClearRegion@{CGClearRegion}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{CGClearRegion}{CGClearRegion}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define CGClear\+Region(\begin{DoxyParamCaption}\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_ada17142ef251f0a301c23fdaa00488ed}\label{_f_b_mgr_8h_ada17142ef251f0a301c23fdaa00488ed} 
+\index{FBMgr.h@{FBMgr.h}!CGClearRegion@{CGClearRegion}}
+\index{CGClearRegion@{CGClearRegion}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{CGClearRegion}{CGClearRegion}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define CGClear\+Region(\begin{DoxyParamCaption}\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_a5eb2b0e3f79ee92449f5bad2d00c664a}\label{_f_b_mgr_8h_a5eb2b0e3f79ee92449f5bad2d00c664a} 
+\index{FBMgr.h@{FBMgr.h}!fb\_clear@{fb\_clear}}
+\index{fb\_clear@{fb\_clear}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{fb\_clear}{fb\_clear}}
+{\footnotesize\ttfamily \#define fb\+\_\+clear(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~k\+CGCursor = 0}
+
+\Hypertarget{_f_b_mgr_8h_af28350f097594c70f7262b748c26e298}\label{_f_b_mgr_8h_af28350f097594c70f7262b748c26e298} 
+\index{FBMgr.h@{FBMgr.h}!fb\_color@{fb\_color}}
+\index{fb\_color@{fb\_color}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{fb\_color}{fb\_color}}
+{\footnotesize\ttfamily \#define fb\+\_\+color(\begin{DoxyParamCaption}\item[{}]{R,  }\item[{}]{G,  }\item[{}]{B }\end{DoxyParamCaption})~\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a52d6f67c629ccece695186d3ccceba54}{RGB}}(R, G, B)}
+
+\Hypertarget{_f_b_mgr_8h_a191005e9f135522357849344f75bbfdf}\label{_f_b_mgr_8h_a191005e9f135522357849344f75bbfdf} 
+\index{FBMgr.h@{FBMgr.h}!fb\_get\_clear\_clr@{fb\_get\_clear\_clr}}
+\index{fb\_get\_clear\_clr@{fb\_get\_clear\_clr}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{fb\_get\_clear\_clr}{fb\_get\_clear\_clr}}
+{\footnotesize\ttfamily \#define fb\+\_\+get\+\_\+clear\+\_\+clr(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{_f_b_mgr_8h_af28350f097594c70f7262b748c26e298}{fb\+\_\+color}}(0x20, 0x20, 0x20)}
+
+\Hypertarget{_f_b_mgr_8h_af426c91c49821bcf155ae7b712e52b1b}\label{_f_b_mgr_8h_af426c91c49821bcf155ae7b712e52b1b} 
+\index{FBMgr.h@{FBMgr.h}!fb\_init@{fb\_init}}
+\index{fb\_init@{fb\_init}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{fb\_init}{fb\_init}}
+{\footnotesize\ttfamily \#define fb\+\_\+init(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} k\+CGCursor = 0}
+
+\Hypertarget{_f_b_mgr_8h_afe9e38b283f7a8ca6fac220560774ade}\label{_f_b_mgr_8h_afe9e38b283f7a8ca6fac220560774ade} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawBitMapInRegion@{FBDrawBitMapInRegion}}
+\index{FBDrawBitMapInRegion@{FBDrawBitMapInRegion}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawBitMapInRegion}{FBDrawBitMapInRegion}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+Bit\+Map\+In\+Region(\begin{DoxyParamCaption}\item[{}]{reg\+\_\+ptr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_afe9e38b283f7a8ca6fac220560774ade}\label{_f_b_mgr_8h_afe9e38b283f7a8ca6fac220560774ade} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawBitMapInRegion@{FBDrawBitMapInRegion}}
+\index{FBDrawBitMapInRegion@{FBDrawBitMapInRegion}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawBitMapInRegion}{FBDrawBitMapInRegion}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+Bit\+Map\+In\+Region(\begin{DoxyParamCaption}\item[{}]{reg\+\_\+ptr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_ac9b75c28f1f58ff11644bd5c062c22de}\label{_f_b_mgr_8h_ac9b75c28f1f58ff11644bd5c062c22de} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawBitMapInRegionA@{FBDrawBitMapInRegionA}}
+\index{FBDrawBitMapInRegionA@{FBDrawBitMapInRegionA}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawBitMapInRegionA}{FBDrawBitMapInRegionA}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+Bit\+Map\+In\+RegionA(\begin{DoxyParamCaption}\item[{}]{reg\+\_\+ptr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_ac9b75c28f1f58ff11644bd5c062c22de}\label{_f_b_mgr_8h_ac9b75c28f1f58ff11644bd5c062c22de} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawBitMapInRegionA@{FBDrawBitMapInRegionA}}
+\index{FBDrawBitMapInRegionA@{FBDrawBitMapInRegionA}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawBitMapInRegionA}{FBDrawBitMapInRegionA}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+Bit\+Map\+In\+RegionA(\begin{DoxyParamCaption}\item[{}]{reg\+\_\+ptr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_a60b2752959bd8e90e7c9ebdca2e3816b}\label{_f_b_mgr_8h_a60b2752959bd8e90e7c9ebdca2e3816b} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawBitMapInRegionToRgn@{FBDrawBitMapInRegionToRgn}}
+\index{FBDrawBitMapInRegionToRgn@{FBDrawBitMapInRegionToRgn}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawBitMapInRegionToRgn}{FBDrawBitMapInRegionToRgn}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+Bit\+Map\+In\+Region\+To\+Rgn(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Rgn,  }\item[{}]{reg\+\_\+ptr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_a60b2752959bd8e90e7c9ebdca2e3816b}\label{_f_b_mgr_8h_a60b2752959bd8e90e7c9ebdca2e3816b} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawBitMapInRegionToRgn@{FBDrawBitMapInRegionToRgn}}
+\index{FBDrawBitMapInRegionToRgn@{FBDrawBitMapInRegionToRgn}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawBitMapInRegionToRgn}{FBDrawBitMapInRegionToRgn}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+Bit\+Map\+In\+Region\+To\+Rgn(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Rgn,  }\item[{}]{reg\+\_\+ptr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_ae16cf1e77ab82769ae955d1fac7e4935}\label{_f_b_mgr_8h_ae16cf1e77ab82769ae955d1fac7e4935} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawInRegion@{FBDrawInRegion}}
+\index{FBDrawInRegion@{FBDrawInRegion}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawInRegion}{FBDrawInRegion}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+In\+Region(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Clr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_ae16cf1e77ab82769ae955d1fac7e4935}\label{_f_b_mgr_8h_ae16cf1e77ab82769ae955d1fac7e4935} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawInRegion@{FBDrawInRegion}}
+\index{FBDrawInRegion@{FBDrawInRegion}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawInRegion}{FBDrawInRegion}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+In\+Region(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Clr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_af1fd86e991df7f400ba42a778c76fdd8}\label{_f_b_mgr_8h_af1fd86e991df7f400ba42a778c76fdd8} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawInRegionA@{FBDrawInRegionA}}
+\index{FBDrawInRegionA@{FBDrawInRegionA}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawInRegionA}{FBDrawInRegionA}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+In\+RegionA(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Clr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_af1fd86e991df7f400ba42a778c76fdd8}\label{_f_b_mgr_8h_af1fd86e991df7f400ba42a778c76fdd8} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawInRegionA@{FBDrawInRegionA}}
+\index{FBDrawInRegionA@{FBDrawInRegionA}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawInRegionA}{FBDrawInRegionA}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+In\+RegionA(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Clr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_a3ff83f2611b853301740a90bd664fb52}\label{_f_b_mgr_8h_a3ff83f2611b853301740a90bd664fb52} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawInRegionToRgn@{FBDrawInRegionToRgn}}
+\index{FBDrawInRegionToRgn@{FBDrawInRegionToRgn}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawInRegionToRgn}{FBDrawInRegionToRgn}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+In\+Region\+To\+Rgn(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Rgn,  }\item[{}]{\+\_\+\+Clr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+
+\Hypertarget{_f_b_mgr_8h_a3ff83f2611b853301740a90bd664fb52}\label{_f_b_mgr_8h_a3ff83f2611b853301740a90bd664fb52} 
+\index{FBMgr.h@{FBMgr.h}!FBDrawInRegionToRgn@{FBDrawInRegionToRgn}}
+\index{FBDrawInRegionToRgn@{FBDrawInRegionToRgn}!FBMgr.h@{FBMgr.h}}
+\doxysubsubsection{\texorpdfstring{FBDrawInRegionToRgn}{FBDrawInRegionToRgn}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define FBDraw\+In\+Region\+To\+Rgn(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+Rgn,  }\item[{}]{\+\_\+\+Clr,  }\item[{}]{height,  }\item[{}]{width,  }\item[{}]{base\+\_\+x,  }\item[{}]{base\+\_\+y }\end{DoxyParamCaption})}
+

@@ -1,0 +1,582 @@
+\doxysection{Ne\+OS\+::HAL Namespace Reference}
+\hypertarget{namespace_ne_o_s_1_1_h_a_l}{}\label{namespace_ne_o_s_1_1_h_a_l}\index{NeOS::HAL@{NeOS::HAL}}
+
+
+The {\bfseries{\doxylink{namespace_ne_o_s_1_1_h_a_l}{HAL}}} namespace.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail}{Detail}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_n_e___p_a_g_e___s_t_o_r_e}{NE\+\_\+\+PAGE\+\_\+\+STORE}}
+\begin{DoxyCompactList}\small\item\em Page store type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_n_e___p_d_e}{NE\+\_\+\+PDE}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_n_e___p_t_e}{NE\+\_\+\+PTE}}
+\begin{DoxyCompactList}\small\item\em Final page entry (Not PML, PDPT) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_p_d_e__4_k_b}{PDE\+\_\+4\+KB}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k}{PROCESS\+\_\+\+CONTROL\+\_\+\+BLOCK}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_p_t_e__4_k_b}{PTE\+\_\+4\+KB}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_register64}{Register64}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t}{SDT\+\_\+\+OBJECT}}
+\begin{DoxyCompactList}\small\item\em Multiple APIC Descriptor Table. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_stack_frame}{Stack\+Frame}}
+\begin{DoxyCompactList}\small\item\em Stack frame (as retrieved from assembly.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a99716eb8148f26075ba99afb0cb1333f}{Page\+Table\+Index}}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a8bd7da6ad620b53e88d03f8077b51a32}{Reg}}
+\item 
+typedef \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_register64}{Register64}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a6f1134319f054f1f8e910a3d7a7f9470}{Register}}
+\item 
+typedef \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_stack_frame}{Stack\+Frame}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{Stack\+Frame\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a5e947d6b2ac20e8aea4df1430ae35f91}{k\+MMFlags\+Present}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26aa38d57d66fffc5ad46f190e6ceb042bf}{k\+MMFlags\+Wr}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a8d9a8566743b9d80105921d1be0fa399}{k\+MMFlags\+User}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26adb64aa03e573186c2a59bfacbba3d69a}{k\+MMFlags\+NX}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a02fd5de9a8577c1d354ad1425094ae7f}{k\+MMFlags\+Count}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Memory Manager mapping flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a534c8ef3402fde155a68e29f283dbd51}{mm\+\_\+is\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a96dbb76cde75a10cfccd11f89e2462e5}{hal\+\_\+send\+\_\+start\+\_\+ipi}} (\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} target, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} apic\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Send IPI command to APIC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a1cb3dbf089c572bbc98a6a3020121fc3}{hal\+\_\+send\+\_\+sipi}} (\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} target, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} apic\+\_\+id, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} vector)
+\begin{DoxyCompactList}\small\item\em Send end IPI for CPU. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a6023c31223479bc3b5fb8cb8eb57e2fb}{mp\+\_\+get\+\_\+current\+\_\+context}} (\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} pid)
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a97102e2ead1a0fd768e513ce70068fab}{mp\+\_\+register\+\_\+process}} (\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}} stack\+\_\+frame, \mbox{\hyperlink{namespace_ne_o_s_af180f8fc4c88cb9674ca595d93859ef0}{Process\+ID}} pid)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ac1f00a48ba44fdc740a4bd1905540a21}{mp\+\_\+is\+\_\+smp}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}) noexcept
+\begin{DoxyCompactList}\small\item\em Is the current config SMP aware? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a2455d2816a1f6ec46490c7d35f959289}{mp\+\_\+get\+\_\+cores}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} vendor\+\_\+ptr) noexcept
+\begin{DoxyCompactList}\small\item\em Fetch and enable SMP scheduler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a240abd61f8f02e913c64f7003f136d18}{hal\+\_\+get\+\_\+phys\+\_\+address}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} virtual\+\_\+address)
+\begin{DoxyCompactList}\small\item\em Go over the Page structure and find the address of {\itshape virtual\+\_\+address} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_aed85446ae197bf7a67ab032f940edbe0}{mmi\+\_\+page\+\_\+status}} (\mbox{\hyperlink{namespace_ne_o_s_a1b7765533b4dcf0bd5616019108ce22d}{PTE}} \texorpdfstring{$\ast$}{*}pte)
+\begin{DoxyCompactList}\small\item\em Retrieve the page status of a PTE. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a1de0bc91f82ec1d510f70924381f5b2d}{mmi\+\_\+map\+\_\+page\+\_\+table\+\_\+entry}} (\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} physical\+\_\+address, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} flags, \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_n_e___p_t_e}{NE\+\_\+\+PTE}} \texorpdfstring{$\ast$}{*}pt\+\_\+entry, \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_n_e___p_d_e}{NE\+\_\+\+PDE}} \texorpdfstring{$\ast$}{*}pd\+\_\+entry)
+\begin{DoxyCompactList}\small\item\em Maps flags for a specific pte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a603338b13300ca63b61169992dafc071}{mm\+\_\+map\+\_\+page}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} virtual\+\_\+address, \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} physical\+\_\+address, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} flags)
+\begin{DoxyCompactList}\small\item\em Maps or allocates a page from virtual\+\_\+address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ad7889c0ed54821443959792f12f8e970}{lrt\+\_\+out8}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} port, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} value)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ab65ad2953448734c11e6a74c0e42f969}{lrt\+\_\+out16}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} port, \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} value)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ad028b6bf657648a568fb8a1c0c1fb4c4}{lrt\+\_\+out32}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} port, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} value)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a9cde742b3a7f0b34fe4df738ccf98039}{lrt\+\_\+in8}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} port)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a181ab484908fed9c1d301ddfe4fed034}{lrt\+\_\+in16}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} port)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_af0b5f5df7ff683fb484cd9346e171214}{lrt\+\_\+in32}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} port)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a691ad54da06d757ef4c4989e2b5bae13}{rt\+\_\+halt}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a763a5c2ec6347ff296e81bcef7e7634a}{rt\+\_\+cli}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_aa0fb578eee9097fd7bd14dccd3470002}{rt\+\_\+sti}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a53bffac7988e80a69c4e5c22f8e577de}{rt\+\_\+cld}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a312aaca4369b0db32322767ea47cd88a}{rt\+\_\+std}} ()
+\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a09756f1109e3e4a64cdbfcc51255082f}{mm\+\_\+alloc\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} wr, \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} user, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} size, \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} is\+\_\+page, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} pad) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Allocate a new page to be used by the OS. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a8843a7ba141c931fc66ff5e2693759d4}{mm\+\_\+free\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\begin{DoxyCompactList}\small\item\em Free Bitmap, and mark it as absent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae85724dced94b5c27b526cef9910e168}{mmi\+\_\+map\+\_\+page\+\_\+table\+\_\+entry}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} virtual\+\_\+address, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} flags, \mbox{\hyperlink{namespace_ne_o_s_a1b7765533b4dcf0bd5616019108ce22d}{PTE}} \texorpdfstring{$\ast$}{*}pt\+\_\+entry)
+\begin{DoxyCompactList}\small\item\em Maps flags for a specific pte. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ada723da65a1a114a9d3816e2142b05e0}{mm\+\_\+alloc\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} wr, \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} user, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} size, \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} is\+\_\+page) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}
+\item 
+{\footnotesize template$<$typename Data\+Kind $>$ }\\void \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_affbcdebabcf76f6f2c02fa8d6f8c4990}{hal\+\_\+dma\+\_\+write}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} address, Data\+Kind value)
+\item 
+{\footnotesize template$<$typename Data\+Kind $>$ }\\Data\+Kind \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_adc5ca1b4079e454708564c722b8abca9}{hal\+\_\+dma\+\_\+read}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} address)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a221328a3ddf54016589331755d936eea}{hal\+\_\+wfi}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} struct PROCESS\+\_\+\+APIC\+\_\+\+MADT \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a9c57eabf2560a7ad09e5836703107d05}{k\+MADTBlock}} = nullptr
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a3078b41f7b2824359cd5027eb0f02a55}{k\+SMPAware}} = \mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ab899280ca82a9ced40b92145150e5b4d}{k\+SMPCount}} = 0
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a33bf10ce453d29cd03523b736ad312da}{k\+Apic\+Base\+Address}} = 0\+UL
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_aa09c0a2f412e408dc8bed73177e42287}{k\+SMPInterrupt}} = 0
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a8a9abb02e642bf8d5f577fb99914f6c7}{k\+APICLocales}} \mbox{[}\mbox{\hyperlink{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}{k\+Sched\+Process\+Limit\+Per\+Team}}\mbox{]} = \{0\}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a2e2929636b974930b38c36b6a91701a0}{k\+Raw\+MADT}} = nullptr
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k}{PROCESS\+\_\+\+CONTROL\+\_\+\+BLOCK}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a7a50a0c001e6bd525c27f8c722c1866e}{k\+Process\+Blocks}} \mbox{[}\mbox{\hyperlink{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}{k\+Sched\+Process\+Limit\+Per\+Team}}\mbox{]} = \{0\}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a5830f85fabdd2fcf181976719875e115}{hal\+\_\+ap\+\_\+blob\+\_\+start}}
+\begin{DoxyCompactList}\small\item\em Assembly symbol to bootstrap AP. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ad5cf6b6093c7767df512e0be80add867}{hal\+\_\+ap\+\_\+blob\+\_\+end}}
+\begin{DoxyCompactList}\small\item\em Assembly symbol to bootstrap AP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\bfseries{\doxylink{namespace_ne_o_s_1_1_h_a_l}{HAL}}} namespace. 
+
+\begin{DoxyNote}{Note}
+\+: \+\_\+hal\+\_\+switch\+\_\+context is internal 
+\end{DoxyNote}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a99716eb8148f26075ba99afb0cb1333f}\label{namespace_ne_o_s_1_1_h_a_l_a99716eb8148f26075ba99afb0cb1333f} 
+\index{NeOS::HAL@{NeOS::HAL}!PageTableIndex@{PageTableIndex}}
+\index{PageTableIndex@{PageTableIndex}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{PageTableIndex}{PageTableIndex}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a99716eb8148f26075ba99afb0cb1333f}{Ne\+OS\+::\+HAL\+::\+Page\+Table\+Index}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a8bd7da6ad620b53e88d03f8077b51a32}\label{namespace_ne_o_s_1_1_h_a_l_a8bd7da6ad620b53e88d03f8077b51a32} 
+\index{NeOS::HAL@{NeOS::HAL}!Reg@{Reg}}
+\index{Reg@{Reg}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{Reg}{Reg}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a8bd7da6ad620b53e88d03f8077b51a32}{Ne\+OS\+::\+HAL\+::\+Reg}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a6f1134319f054f1f8e910a3d7a7f9470}\label{namespace_ne_o_s_1_1_h_a_l_a6f1134319f054f1f8e910a3d7a7f9470} 
+\index{NeOS::HAL@{NeOS::HAL}!Register@{Register}}
+\index{Register@{Register}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{Register}{Register}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_register64}{Register64}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a6f1134319f054f1f8e910a3d7a7f9470}{Ne\+OS\+::\+HAL\+::\+Register}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}\label{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89} 
+\index{NeOS::HAL@{NeOS::HAL}!StackFramePtr@{StackFramePtr}}
+\index{StackFramePtr@{StackFramePtr}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{StackFramePtr}{StackFramePtr}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_stack_frame}{Stack\+Frame}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{Ne\+OS\+::\+HAL\+::\+Stack\+Frame\+Ptr}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26}\label{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+Memory Manager mapping flags. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMMFlagsPresent@{kMMFlagsPresent}!NeOS::HAL@{NeOS::HAL}}\index{NeOS::HAL@{NeOS::HAL}!kMMFlagsPresent@{kMMFlagsPresent}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a5e947d6b2ac20e8aea4df1430ae35f91}\label{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a5e947d6b2ac20e8aea4df1430ae35f91} 
+k\+MMFlags\+Present&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMMFlagsWr@{kMMFlagsWr}!NeOS::HAL@{NeOS::HAL}}\index{NeOS::HAL@{NeOS::HAL}!kMMFlagsWr@{kMMFlagsWr}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26aa38d57d66fffc5ad46f190e6ceb042bf}\label{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26aa38d57d66fffc5ad46f190e6ceb042bf} 
+k\+MMFlags\+Wr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMMFlagsUser@{kMMFlagsUser}!NeOS::HAL@{NeOS::HAL}}\index{NeOS::HAL@{NeOS::HAL}!kMMFlagsUser@{kMMFlagsUser}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a8d9a8566743b9d80105921d1be0fa399}\label{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a8d9a8566743b9d80105921d1be0fa399} 
+k\+MMFlags\+User&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMMFlagsNX@{kMMFlagsNX}!NeOS::HAL@{NeOS::HAL}}\index{NeOS::HAL@{NeOS::HAL}!kMMFlagsNX@{kMMFlagsNX}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26adb64aa03e573186c2a59bfacbba3d69a}\label{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26adb64aa03e573186c2a59bfacbba3d69a} 
+k\+MMFlags\+NX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMMFlagsCount@{kMMFlagsCount}!NeOS::HAL@{NeOS::HAL}}\index{NeOS::HAL@{NeOS::HAL}!kMMFlagsCount@{kMMFlagsCount}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a02fd5de9a8577c1d354ad1425094ae7f}\label{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a02fd5de9a8577c1d354ad1425094ae7f} 
+k\+MMFlags\+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_adc5ca1b4079e454708564c722b8abca9}\label{namespace_ne_o_s_1_1_h_a_l_adc5ca1b4079e454708564c722b8abca9} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_dma\_read@{hal\_dma\_read}}
+\index{hal\_dma\_read@{hal\_dma\_read}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_dma\_read()}{hal\_dma\_read()}}
+{\footnotesize\ttfamily template$<$typename Data\+Kind $>$ \\
+Data\+Kind Ne\+OS\+::\+HAL\+::hal\+\_\+dma\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}}}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_affbcdebabcf76f6f2c02fa8d6f8c4990}\label{namespace_ne_o_s_1_1_h_a_l_affbcdebabcf76f6f2c02fa8d6f8c4990} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_dma\_write@{hal\_dma\_write}}
+\index{hal\_dma\_write@{hal\_dma\_write}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_dma\_write()}{hal\_dma\_write()}}
+{\footnotesize\ttfamily template$<$typename Data\+Kind $>$ \\
+void Ne\+OS\+::\+HAL\+::hal\+\_\+dma\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}}}]{address,  }\item[{Data\+Kind}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a240abd61f8f02e913c64f7003f136d18}\label{namespace_ne_o_s_1_1_h_a_l_a240abd61f8f02e913c64f7003f136d18} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_get\_phys\_address@{hal\_get\_phys\_address}}
+\index{hal\_get\_phys\_address@{hal\_get\_phys\_address}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_get\_phys\_address()}{hal\_get\_phys\_address()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} Ne\+OS\+::\+HAL\+::hal\+\_\+get\+\_\+phys\+\_\+address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{virtual\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+Go over the Page structure and find the address of {\itshape virtual\+\_\+address} 
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a1cb3dbf089c572bbc98a6a3020121fc3}\label{namespace_ne_o_s_1_1_h_a_l_a1cb3dbf089c572bbc98a6a3020121fc3} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_send\_sipi@{hal\_send\_sipi}}
+\index{hal\_send\_sipi@{hal\_send\_sipi}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_send\_sipi()}{hal\_send\_sipi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::hal\+\_\+send\+\_\+sipi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{target,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{apic\+\_\+id,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{vector }\end{DoxyParamCaption})}
+
+
+
+Send end IPI for CPU. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apic\+\_\+id} & \\
+\hline
+{\em vector} & \\
+\hline
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a96dbb76cde75a10cfccd11f89e2462e5}\label{namespace_ne_o_s_1_1_h_a_l_a96dbb76cde75a10cfccd11f89e2462e5} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_send\_start\_ipi@{hal\_send\_start\_ipi}}
+\index{hal\_send\_start\_ipi@{hal\_send\_start\_ipi}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_send\_start\_ipi()}{hal\_send\_start\_ipi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::hal\+\_\+send\+\_\+start\+\_\+ipi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{target,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{apic\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Send IPI command to APIC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apic\+\_\+id} & programmable interrupt controller id. \\
+\hline
+{\em vector} & vector interrupt. \\
+\hline
+{\em target} & target APIC adress. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a221328a3ddf54016589331755d936eea}\label{namespace_ne_o_s_1_1_h_a_l_a221328a3ddf54016589331755d936eea} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_wfi@{hal\_wfi}}
+\index{hal\_wfi@{hal\_wfi}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_wfi()}{hal\_wfi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::hal\+\_\+wfi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a181ab484908fed9c1d301ddfe4fed034}\label{namespace_ne_o_s_1_1_h_a_l_a181ab484908fed9c1d301ddfe4fed034} 
+\index{NeOS::HAL@{NeOS::HAL}!lrt\_in16@{lrt\_in16}}
+\index{lrt\_in16@{lrt\_in16}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{lrt\_in16()}{lrt\_in16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Ne\+OS\+::\+HAL\+::lrt\+\_\+in16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{port }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_af0b5f5df7ff683fb484cd9346e171214}\label{namespace_ne_o_s_1_1_h_a_l_af0b5f5df7ff683fb484cd9346e171214} 
+\index{NeOS::HAL@{NeOS::HAL}!lrt\_in32@{lrt\_in32}}
+\index{lrt\_in32@{lrt\_in32}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{lrt\_in32()}{lrt\_in32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+HAL\+::lrt\+\_\+in32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{port }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a9cde742b3a7f0b34fe4df738ccf98039}\label{namespace_ne_o_s_1_1_h_a_l_a9cde742b3a7f0b34fe4df738ccf98039} 
+\index{NeOS::HAL@{NeOS::HAL}!lrt\_in8@{lrt\_in8}}
+\index{lrt\_in8@{lrt\_in8}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{lrt\_in8()}{lrt\_in8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::lrt\+\_\+in8 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{port }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ab65ad2953448734c11e6a74c0e42f969}\label{namespace_ne_o_s_1_1_h_a_l_ab65ad2953448734c11e6a74c0e42f969} 
+\index{NeOS::HAL@{NeOS::HAL}!lrt\_out16@{lrt\_out16}}
+\index{lrt\_out16@{lrt\_out16}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{lrt\_out16()}{lrt\_out16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::lrt\+\_\+out16 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{port,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ad028b6bf657648a568fb8a1c0c1fb4c4}\label{namespace_ne_o_s_1_1_h_a_l_ad028b6bf657648a568fb8a1c0c1fb4c4} 
+\index{NeOS::HAL@{NeOS::HAL}!lrt\_out32@{lrt\_out32}}
+\index{lrt\_out32@{lrt\_out32}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{lrt\_out32()}{lrt\_out32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::lrt\+\_\+out32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{port,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ad7889c0ed54821443959792f12f8e970}\label{namespace_ne_o_s_1_1_h_a_l_ad7889c0ed54821443959792f12f8e970} 
+\index{NeOS::HAL@{NeOS::HAL}!lrt\_out8@{lrt\_out8}}
+\index{lrt\_out8@{lrt\_out8}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{lrt\_out8()}{lrt\_out8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::lrt\+\_\+out8 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{port,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ada723da65a1a114a9d3816e2142b05e0}\label{namespace_ne_o_s_1_1_h_a_l_ada723da65a1a114a9d3816e2142b05e0} 
+\index{NeOS::HAL@{NeOS::HAL}!mm\_alloc\_bitmap@{mm\_alloc\_bitmap}}
+\index{mm\_alloc\_bitmap@{mm\_alloc\_bitmap}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mm\_alloc\_bitmap()}{mm\_alloc\_bitmap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::mm\+\_\+alloc\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}}]{wr,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}}]{user,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{size,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}]{is\+\_\+page }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a09756f1109e3e4a64cdbfcc51255082f}\label{namespace_ne_o_s_1_1_h_a_l_a09756f1109e3e4a64cdbfcc51255082f} 
+\index{NeOS::HAL@{NeOS::HAL}!mm\_alloc\_bitmap@{mm\_alloc\_bitmap}}
+\index{mm\_alloc\_bitmap@{mm\_alloc\_bitmap}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mm\_alloc\_bitmap()}{mm\_alloc\_bitmap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::mm\+\_\+alloc\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}}]{wr,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}}]{user,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{size,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}]{is\+\_\+page,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{pad }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}
+
+
+
+Allocate a new page to be used by the OS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wr} & read/write bit. \\
+\hline
+{\em user} & user bit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new bitmap allocated pointer. 
+\end{DoxyReturn}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a8843a7ba141c931fc66ff5e2693759d4}\label{namespace_ne_o_s_1_1_h_a_l_a8843a7ba141c931fc66ff5e2693759d4} 
+\index{NeOS::HAL@{NeOS::HAL}!mm\_free\_bitmap@{mm\_free\_bitmap}}
+\index{mm\_free\_bitmap@{mm\_free\_bitmap}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mm\_free\_bitmap()}{mm\_free\_bitmap()}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::mm\+\_\+free\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{ptr }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}
+
+
+
+Free Bitmap, and mark it as absent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & the pointer to free. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a534c8ef3402fde155a68e29f283dbd51}\label{namespace_ne_o_s_1_1_h_a_l_a534c8ef3402fde155a68e29f283dbd51} 
+\index{NeOS::HAL@{NeOS::HAL}!mm\_is\_bitmap@{mm\_is\_bitmap}}
+\index{mm\_is\_bitmap@{mm\_is\_bitmap}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_bitmap()}{mm\_is\_bitmap()}}
+{\footnotesize\ttfamily auto Ne\+OS\+::\+HAL\+::mm\+\_\+is\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{ptr }\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a603338b13300ca63b61169992dafc071}\label{namespace_ne_o_s_1_1_h_a_l_a603338b13300ca63b61169992dafc071} 
+\index{NeOS::HAL@{NeOS::HAL}!mm\_map\_page@{mm\_map\_page}}
+\index{mm\_map\_page@{mm\_map\_page}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mm\_map\_page()}{mm\_map\_page()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Ne\+OS\+::\+HAL\+::mm\+\_\+map\+\_\+page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{virtual\+\_\+address,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{physical\+\_\+address,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{flags }\end{DoxyParamCaption})}
+
+
+
+Maps or allocates a page from virtual\+\_\+address. 
+
+Set a PTE from pd\+\_\+base.
+
+
+\begin{DoxyParams}{Parameters}
+{\em virtual\+\_\+address} & a valid virtual address. \\
+\hline
+{\em phys\+\_\+addr} & point to physical address. \\
+\hline
+{\em flags} & the flags to put on the page. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code of page manipulation process.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em virt\+\_\+addr} & a valid virtual address. \\
+\hline
+{\em phys\+\_\+addr} & point to physical address. \\
+\hline
+{\em flags} & the flags to put on the page. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code of page manip. 
+\end{DoxyReturn}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a1de0bc91f82ec1d510f70924381f5b2d}\label{namespace_ne_o_s_1_1_h_a_l_a1de0bc91f82ec1d510f70924381f5b2d} 
+\index{NeOS::HAL@{NeOS::HAL}!mmi\_map\_page\_table\_entry@{mmi\_map\_page\_table\_entry}}
+\index{mmi\_map\_page\_table\_entry@{mmi\_map\_page\_table\_entry}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mmi\_map\_page\_table\_entry()}{mmi\_map\_page\_table\_entry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Ne\+OS\+::\+HAL\+::mmi\+\_\+map\+\_\+page\+\_\+table\+\_\+entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{physical\+\_\+address,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{flags,  }\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_n_e___p_t_e}{NE\+\_\+\+PTE}} \texorpdfstring{$\ast$}{*}}]{pt\+\_\+entry,  }\item[{\mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_n_e___p_d_e}{NE\+\_\+\+PDE}} \texorpdfstring{$\ast$}{*}}]{pd\+\_\+entry }\end{DoxyParamCaption})}
+
+
+
+Maps flags for a specific pte. 
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ae85724dced94b5c27b526cef9910e168}\label{namespace_ne_o_s_1_1_h_a_l_ae85724dced94b5c27b526cef9910e168} 
+\index{NeOS::HAL@{NeOS::HAL}!mmi\_map\_page\_table\_entry@{mmi\_map\_page\_table\_entry}}
+\index{mmi\_map\_page\_table\_entry@{mmi\_map\_page\_table\_entry}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mmi\_map\_page\_table\_entry()}{mmi\_map\_page\_table\_entry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Ne\+OS\+::\+HAL\+::mmi\+\_\+map\+\_\+page\+\_\+table\+\_\+entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{virtual\+\_\+address,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{flags,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a1b7765533b4dcf0bd5616019108ce22d}{PTE}} \texorpdfstring{$\ast$}{*}}]{pt\+\_\+entry }\end{DoxyParamCaption})}
+
+
+
+Maps flags for a specific pte. 
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_aed85446ae197bf7a67ab032f940edbe0}\label{namespace_ne_o_s_1_1_h_a_l_aed85446ae197bf7a67ab032f940edbe0} 
+\index{NeOS::HAL@{NeOS::HAL}!mmi\_page\_status@{mmi\_page\_status}}
+\index{mmi\_page\_status@{mmi\_page\_status}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mmi\_page\_status()}{mmi\_page\_status()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::mmi\+\_\+page\+\_\+status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a1b7765533b4dcf0bd5616019108ce22d}{PTE}} \texorpdfstring{$\ast$}{*}}]{pte }\end{DoxyParamCaption})}
+
+
+
+Retrieve the page status of a PTE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pte} & Page Table Entry pointer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a2455d2816a1f6ec46490c7d35f959289}\label{namespace_ne_o_s_1_1_h_a_l_a2455d2816a1f6ec46490c7d35f959289} 
+\index{NeOS::HAL@{NeOS::HAL}!mp\_get\_cores@{mp\_get\_cores}}
+\index{mp\_get\_cores@{mp\_get\_cores}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mp\_get\_cores()}{mp\_get\_cores()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::mp\+\_\+get\+\_\+cores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{vendor\+\_\+ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Fetch and enable SMP scheduler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendor\+\_\+ptr} & SMP containing structure. \\
+\hline
+\end{DoxyParams}
+TODO\+: \doxylink{namespace_ne_o_s_1_1_h_a_l}{HAL} helper to create an address.
+
+TODO\+: Notify \doxylink{namespace_boot}{Boot} AP that it must start.\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a6023c31223479bc3b5fb8cb8eb57e2fb}\label{namespace_ne_o_s_1_1_h_a_l_a6023c31223479bc3b5fb8cb8eb57e2fb} 
+\index{NeOS::HAL@{NeOS::HAL}!mp\_get\_current\_context@{mp\_get\_current\_context}}
+\index{mp\_get\_current\_context@{mp\_get\_current\_context}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mp\_get\_current\_context()}{mp\_get\_current\_context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}} Ne\+OS\+::\+HAL\+::mp\+\_\+get\+\_\+current\+\_\+context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}}}]{pid }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ac1f00a48ba44fdc740a4bd1905540a21}\label{namespace_ne_o_s_1_1_h_a_l_ac1f00a48ba44fdc740a4bd1905540a21} 
+\index{NeOS::HAL@{NeOS::HAL}!mp\_is\_smp@{mp\_is\_smp}}
+\index{mp\_is\_smp@{mp\_is\_smp}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mp\_is\_smp()}{mp\_is\_smp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+HAL\+::mp\+\_\+is\+\_\+smp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Is the current config SMP aware? 
+
+\begin{DoxyReturn}{Returns}
+True if YES, False if not. 
+\end{DoxyReturn}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a97102e2ead1a0fd768e513ce70068fab}\label{namespace_ne_o_s_1_1_h_a_l_a97102e2ead1a0fd768e513ce70068fab} 
+\index{NeOS::HAL@{NeOS::HAL}!mp\_register\_process@{mp\_register\_process}}
+\index{mp\_register\_process@{mp\_register\_process}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{mp\_register\_process()}{mp\_register\_process()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Ne\+OS\+::\+HAL\+::mp\+\_\+register\+\_\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{HAL\+::\+Stack\+Frame\+Ptr}}}]{stack\+\_\+frame,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_af180f8fc4c88cb9674ca595d93859ef0}{Process\+ID}}}]{pid }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a53bffac7988e80a69c4e5c22f8e577de}\label{namespace_ne_o_s_1_1_h_a_l_a53bffac7988e80a69c4e5c22f8e577de} 
+\index{NeOS::HAL@{NeOS::HAL}!rt\_cld@{rt\_cld}}
+\index{rt\_cld@{rt\_cld}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{rt\_cld()}{rt\_cld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::rt\+\_\+cld (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a763a5c2ec6347ff296e81bcef7e7634a}\label{namespace_ne_o_s_1_1_h_a_l_a763a5c2ec6347ff296e81bcef7e7634a} 
+\index{NeOS::HAL@{NeOS::HAL}!rt\_cli@{rt\_cli}}
+\index{rt\_cli@{rt\_cli}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{rt\_cli()}{rt\_cli()}}
+{\footnotesize\ttfamily void Ne\+OS\+::\+HAL\+::rt\+\_\+cli (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a691ad54da06d757ef4c4989e2b5bae13}\label{namespace_ne_o_s_1_1_h_a_l_a691ad54da06d757ef4c4989e2b5bae13} 
+\index{NeOS::HAL@{NeOS::HAL}!rt\_halt@{rt\_halt}}
+\index{rt\_halt@{rt\_halt}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{rt\_halt()}{rt\_halt()}}
+{\footnotesize\ttfamily void Ne\+OS\+::\+HAL\+::rt\+\_\+halt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a312aaca4369b0db32322767ea47cd88a}\label{namespace_ne_o_s_1_1_h_a_l_a312aaca4369b0db32322767ea47cd88a} 
+\index{NeOS::HAL@{NeOS::HAL}!rt\_std@{rt\_std}}
+\index{rt\_std@{rt\_std}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{rt\_std()}{rt\_std()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::rt\+\_\+std (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_aa0fb578eee9097fd7bd14dccd3470002}\label{namespace_ne_o_s_1_1_h_a_l_aa0fb578eee9097fd7bd14dccd3470002} 
+\index{NeOS::HAL@{NeOS::HAL}!rt\_sti@{rt\_sti}}
+\index{rt\_sti@{rt\_sti}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{rt\_sti()}{rt\_sti()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::rt\+\_\+sti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ad5cf6b6093c7767df512e0be80add867}\label{namespace_ne_o_s_1_1_h_a_l_ad5cf6b6093c7767df512e0be80add867} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_ap\_blob\_end@{hal\_ap\_blob\_end}}
+\index{hal\_ap\_blob\_end@{hal\_ap\_blob\_end}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_ap\_blob\_end}{hal\_ap\_blob\_end}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+HAL\+::hal\+\_\+ap\+\_\+blob\+\_\+end}
+
+
+
+Assembly symbol to bootstrap AP. 
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a5830f85fabdd2fcf181976719875e115}\label{namespace_ne_o_s_1_1_h_a_l_a5830f85fabdd2fcf181976719875e115} 
+\index{NeOS::HAL@{NeOS::HAL}!hal\_ap\_blob\_start@{hal\_ap\_blob\_start}}
+\index{hal\_ap\_blob\_start@{hal\_ap\_blob\_start}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{hal\_ap\_blob\_start}{hal\_ap\_blob\_start}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+HAL\+::hal\+\_\+ap\+\_\+blob\+\_\+start}
+
+
+
+Assembly symbol to bootstrap AP. 
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a33bf10ce453d29cd03523b736ad312da}\label{namespace_ne_o_s_1_1_h_a_l_a33bf10ce453d29cd03523b736ad312da} 
+\index{NeOS::HAL@{NeOS::HAL}!kApicBaseAddress@{kApicBaseAddress}}
+\index{kApicBaseAddress@{kApicBaseAddress}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kApicBaseAddress}{kApicBaseAddress}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} Ne\+OS\+::\+HAL\+::k\+Apic\+Base\+Address = 0\+UL}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a8a9abb02e642bf8d5f577fb99914f6c7}\label{namespace_ne_o_s_1_1_h_a_l_a8a9abb02e642bf8d5f577fb99914f6c7} 
+\index{NeOS::HAL@{NeOS::HAL}!kAPICLocales@{kAPICLocales}}
+\index{kAPICLocales@{kAPICLocales}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kAPICLocales}{kAPICLocales}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Ne\+OS\+::\+HAL\+::k\+APICLocales\mbox{[}\mbox{\hyperlink{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}{k\+Sched\+Process\+Limit\+Per\+Team}}\mbox{]} = \{0\}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a9c57eabf2560a7ad09e5836703107d05}\label{namespace_ne_o_s_1_1_h_a_l_a9c57eabf2560a7ad09e5836703107d05} 
+\index{NeOS::HAL@{NeOS::HAL}!kMADTBlock@{kMADTBlock}}
+\index{kMADTBlock@{kMADTBlock}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kMADTBlock}{kMADTBlock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} struct PROCESS\+\_\+\+APIC\+\_\+\+MADT\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+HAL\+::k\+MADTBlock = nullptr}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a7a50a0c001e6bd525c27f8c722c1866e}\label{namespace_ne_o_s_1_1_h_a_l_a7a50a0c001e6bd525c27f8c722c1866e} 
+\index{NeOS::HAL@{NeOS::HAL}!kProcessBlocks@{kProcessBlocks}}
+\index{kProcessBlocks@{kProcessBlocks}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kProcessBlocks}{kProcessBlocks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k}{PROCESS\+\_\+\+CONTROL\+\_\+\+BLOCK}} Ne\+OS\+::\+HAL\+::k\+Process\+Blocks\mbox{[}\mbox{\hyperlink{_user_process_scheduler_8h_ae633e81676a77d8dc3d29554f5d283c9}{k\+Sched\+Process\+Limit\+Per\+Team}}\mbox{]} = \{0\}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a2e2929636b974930b38c36b6a91701a0}\label{namespace_ne_o_s_1_1_h_a_l_a2e2929636b974930b38c36b6a91701a0} 
+\index{NeOS::HAL@{NeOS::HAL}!kRawMADT@{kRawMADT}}
+\index{kRawMADT@{kRawMADT}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kRawMADT}{kRawMADT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} Ne\+OS\+::\+HAL\+::k\+Raw\+MADT = nullptr}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_a3078b41f7b2824359cd5027eb0f02a55}\label{namespace_ne_o_s_1_1_h_a_l_a3078b41f7b2824359cd5027eb0f02a55} 
+\index{NeOS::HAL@{NeOS::HAL}!kSMPAware@{kSMPAware}}
+\index{kSMPAware@{kSMPAware}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kSMPAware}{kSMPAware}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} Ne\+OS\+::\+HAL\+::k\+SMPAware = \mbox{\hyperlink{user_2_macros_8h_a65e9886d74aaee76545e83dd09011727}{false}}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_ab899280ca82a9ced40b92145150e5b4d}\label{namespace_ne_o_s_1_1_h_a_l_ab899280ca82a9ced40b92145150e5b4d} 
+\index{NeOS::HAL@{NeOS::HAL}!kSMPCount@{kSMPCount}}
+\index{kSMPCount@{kSMPCount}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kSMPCount}{kSMPCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} Ne\+OS\+::\+HAL\+::k\+SMPCount = 0}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_aa09c0a2f412e408dc8bed73177e42287}\label{namespace_ne_o_s_1_1_h_a_l_aa09c0a2f412e408dc8bed73177e42287} 
+\index{NeOS::HAL@{NeOS::HAL}!kSMPInterrupt@{kSMPInterrupt}}
+\index{kSMPInterrupt@{kSMPInterrupt}!NeOS::HAL@{NeOS::HAL}}
+\doxysubsubsection{\texorpdfstring{kSMPInterrupt}{kSMPInterrupt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} Ne\+OS\+::\+HAL\+::k\+SMPInterrupt = 0}
+

@@ -1,0 +1,90 @@
+\doxysection{dev/boot/\+Boot\+Kit/\+Boot\+Kit.h File Reference}
+\hypertarget{_boot_kit_8h}{}\label{_boot_kit_8h}\index{dev/boot/BootKit/BootKit.h@{dev/boot/BootKit/BootKit.h}}
+
+
+Bootloader Application Programming Interface.  
+
+
+{\ttfamily \#include $<$Boot\+Kit/\+HW/\+ATA.\+h$>$}\newline
+{\ttfamily \#include $<$Firmware\+Kit/\+EPM.\+h$>$}\newline
+{\ttfamily \#include $<$Compiler\+Kit/\+Version.\+h$>$}\newline
+{\ttfamily \#include $<$modules/\+Core\+Gfx/\+FBMgr.\+h$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Rsrc/zka\+\_\+disk.\+rsrc$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Rsrc/zka\+\_\+no\+\_\+disk.\+rsrc$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Rsrc/zka\+\_\+has\+\_\+disk.\+rsrc$>$}\newline
+{\ttfamily \#include $<$FSKit/\+Ne\+FS.\+h$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Support.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$modules/\+ATA/\+ATA.\+h$>$}\newline
+{\ttfamily \#include $<$Firmware\+Kit/\+EFI.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_boot_1_1_boot_text_writer}{Boot\+::\+Boot\+Text\+Writer}}
+\begin{DoxyCompactList}\small\item\em Boot\+Kit Text Writer class Writes to UEFI Std\+Out. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_boot_1_1_boot_file_reader}{Boot\+::\+Boot\+File\+Reader}}
+\begin{DoxyCompactList}\small\item\em Boot\+Kit File Reader class Reads the \doxylink{namespace_firmware}{Firmware} \doxylink{namespace_boot}{Boot} partition and filesystem. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_boot_1_1_b_version_string}{Boot\+::\+BVersion\+String}}
+\item 
+class \mbox{\hyperlink{class_boot_1_1_b_disk_format_factory}{Boot\+::\+BDisk\+Format\+Factory$<$ Boot\+Dev $>$}}
+\begin{DoxyCompactList}\small\item\em Boot\+Kit Drive Formatter. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_boot_1_1_b_disk_format_factory_1_1_b_file_descriptor}{Boot\+::\+BDisk\+Format\+Factory$<$ Boot\+Dev $>$\+::\+BFile\+Descriptor}}
+\begin{DoxyCompactList}\small\item\em File entry for {\bfseries{\doxylink{class_boot_1_1_b_disk_format_factory}{BDisk\+Format\+Factory}}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_boot}{Boot}}
+\begin{DoxyCompactList}\small\item\em include Ne\+FS header and Support header as well. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_boot_kit_8h_a487ad30e0d030890f8409996d3d3e4e2}{k\+BKBoot\+File\+Mime}}~"{}boot-\/x/file"{}
+\item 
+\#define \mbox{\hyperlink{_boot_kit_8h_a282a2cb0c0fd7b648616c166f7242d92}{k\+BKBoot\+Dir\+Mime}}~"{}boot-\/x/dir"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_boot_ac67bee9ccd686407f223b58b860bc6d0}{Boot\+::\+PEFImage\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_boot_ac6c34d095a1f0a7c06f5b87964c78191}{Boot\+::\+PEImage\+Ptr}}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \mbox{\hyperlink{namespace_boot_ae3c6485eaee1c210cf856d442ce3c7a7}{Boot\+::\+Character\+Type\+UTF16}}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \mbox{\hyperlink{namespace_boot_af4fbfbcef45cf86b54114a8d8ac49525}{Boot\+::\+Character\+Type\+UTF8}}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_boot_ad34c776f9a2e68bf9ceb558f73dbf68c}{Boot\+::\+Blob\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}} void \mbox{\hyperlink{namespace_boot_a770cf51bd60eaa15b9a35af8f2b5bc3b}{Boot\+::\+Throw\+Error}} (const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}error\+Code, const \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*}reason) noexcept
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \mbox{\hyperlink{namespace_boot_a2c0c2df329d4e99ad0f602be6adaf79c}{Boot\+::\+BCopy\+Mem}} (\mbox{\hyperlink{namespace_boot_ae3c6485eaee1c210cf856d442ce3c7a7}{Character\+Type\+UTF16}} \texorpdfstring{$\ast$}{*}dest, \mbox{\hyperlink{namespace_boot_ae3c6485eaee1c210cf856d442ce3c7a7}{Character\+Type\+UTF16}} \texorpdfstring{$\ast$}{*}src, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} len)
+\begin{DoxyCompactList}\small\item\em BUGS\+: 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \mbox{\hyperlink{namespace_boot_a970eb4520f61c7b2b07ad7eece6f5f38}{Boot\+::\+BSet\+Mem}} (\mbox{\hyperlink{namespace_boot_af4fbfbcef45cf86b54114a8d8ac49525}{Character\+Type\+UTF8}} \texorpdfstring{$\ast$}{*}src, const \mbox{\hyperlink{namespace_boot_af4fbfbcef45cf86b54114a8d8ac49525}{Character\+Type\+UTF8}} byte, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} len)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \mbox{\hyperlink{namespace_boot_ab46b01895780074cda4a98a4d1f00153}{Boot\+::\+BStr\+Len}} (const \mbox{\hyperlink{namespace_boot_ae3c6485eaee1c210cf856d442ce3c7a7}{Character\+Type\+UTF16}} \texorpdfstring{$\ast$}{*}ptr)
+\begin{DoxyCompactList}\small\item\em String length functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} \mbox{\hyperlink{namespace_boot_ac8357943d859bcce4c8d37834bd837a3}{Boot\+::\+BSet\+Mem}} (\mbox{\hyperlink{namespace_boot_ae3c6485eaee1c210cf856d442ce3c7a7}{Character\+Type\+UTF16}} \texorpdfstring{$\ast$}{*}src, const \mbox{\hyperlink{namespace_boot_ae3c6485eaee1c210cf856d442ce3c7a7}{Character\+Type\+UTF16}} byte, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{Ne\+OS\+::\+SizeT}} len)
+\begin{DoxyCompactList}\small\item\em set memory with custom value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bootloader Application Programming Interface. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_boot_kit_8h_a282a2cb0c0fd7b648616c166f7242d92}\label{_boot_kit_8h_a282a2cb0c0fd7b648616c166f7242d92} 
+\index{BootKit.h@{BootKit.h}!kBKBootDirMime@{kBKBootDirMime}}
+\index{kBKBootDirMime@{kBKBootDirMime}!BootKit.h@{BootKit.h}}
+\doxysubsubsection{\texorpdfstring{kBKBootDirMime}{kBKBootDirMime}}
+{\footnotesize\ttfamily \#define k\+BKBoot\+Dir\+Mime~"{}boot-\/x/dir"{}}
+
+\Hypertarget{_boot_kit_8h_a487ad30e0d030890f8409996d3d3e4e2}\label{_boot_kit_8h_a487ad30e0d030890f8409996d3d3e4e2} 
+\index{BootKit.h@{BootKit.h}!kBKBootFileMime@{kBKBootFileMime}}
+\index{kBKBootFileMime@{kBKBootFileMime}!BootKit.h@{BootKit.h}}
+\doxysubsubsection{\texorpdfstring{kBKBootFileMime}{kBKBootFileMime}}
+{\footnotesize\ttfamily \#define k\+BKBoot\+File\+Mime~"{}boot-\/x/file"{}}
+

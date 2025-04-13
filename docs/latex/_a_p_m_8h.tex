@@ -1,0 +1,34 @@
+\doxysection{dev/modules/\+APM/\+APM.h File Reference}
+\hypertarget{_a_p_m_8h}{}\label{_a_p_m_8h}\index{dev/modules/APM/APM.h@{dev/modules/APM/APM.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_a3e83e237c34df8e49571870754ce3f52}{Ne\+OS\+::\+APMPower\+Cmd}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_acc7f22704dbd546cf220615efcb0f611a8baaa9c7f04d6bcbf706239f13a40c33}{Ne\+OS\+::k\+APMPower\+Command\+Invalid}} = 0x00
+, \mbox{\hyperlink{namespace_ne_o_s_acc7f22704dbd546cf220615efcb0f611addcce5e8a3e065693bf74e7c28bee2d9}{Ne\+OS\+::k\+APMPower\+Command\+Stop}} = 0x01
+, \mbox{\hyperlink{namespace_ne_o_s_acc7f22704dbd546cf220615efcb0f611ae547b5edd92fd32633ad994572105c45}{Ne\+OS\+::k\+APMPower\+Command\+Start}} = 0x02
+, \mbox{\hyperlink{namespace_ne_o_s_acc7f22704dbd546cf220615efcb0f611aac8553a4eb53700c2e2397ea9d703f9f}{Ne\+OS\+::k\+APMPower\+Command\+Sleep}} = 0x04
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_acc7f22704dbd546cf220615efcb0f611a91f01f0b8a8ab07e7ffaaa87c2cb9e4b}{Ne\+OS\+::k\+APMPower\+Command\+Wakeup}} = 0x06
+, \mbox{\hyperlink{namespace_ne_o_s_acc7f22704dbd546cf220615efcb0f611a2f00a31bbd5c5a82a1548db7e6f6b4e4}{Ne\+OS\+::k\+APMPower\+Command\+Shutdown}} = 0x07
+, \mbox{\hyperlink{namespace_ne_o_s_acc7f22704dbd546cf220615efcb0f611aaa2a6bbc58f483c34ce08d61e7fc586b}{Ne\+OS\+::k\+APMPower\+Command\+Reboot}} = 0x08
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_ab9ee9c8b4d19910965d836d8115f5652}{Ne\+OS\+::apm\+\_\+send\+\_\+dma\+\_\+command}} (\mbox{\hyperlink{namespace_ne_o_s_ac5a72a39bb3b2bf77fde0e2d28a0ef93}{Ptr64}} register\+\_\+addr, \mbox{\hyperlink{namespace_ne_o_s_a3e83e237c34df8e49571870754ce3f52}{APMPower\+Cmd}} value)
+\begin{DoxyCompactList}\small\item\em Send a APM command into it\textquotesingle{}s own DMA space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_a1143c09abfe28630686197f30a5b75fc}{Ne\+OS\+::apm\+\_\+send\+\_\+io\+\_\+command}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} cmd, \mbox{\hyperlink{namespace_ne_o_s_a3e83e237c34df8e49571870754ce3f52}{APMPower\+Cmd}} value)
+\begin{DoxyCompactList}\small\item\em Send a APM command into it\textquotesingle{}s own IO space. \end{DoxyCompactList}\end{DoxyCompactItemize}

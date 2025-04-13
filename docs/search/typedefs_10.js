@@ -1,19 +1,13 @@
 var searchData=
 [
-  ['scsi_5fpacket_5ftype_0',['scsi_packet_type',['../modules_2_s_c_s_i_2_s_c_s_i_8h.html#a8e91162b4f304e56bf1c939e5b44cf16',1,'SCSI.h']]],
-  ['semaphore_1',['Semaphore',['../namespace_ne_o_s.html#ad067342dac7e07d5c6f066b4cf1b15c6',1,'NeOS']]],
-  ['short_2',['Short',['../namespace_ne_o_s.html#a29e9a7df2b6c0ed8ee86dffa5db2df54',1,'NeOS']]],
-  ['signalkind_3',['SignalKind',['../namespace_ne_o_s.html#a9eeaa29a7f1c1e0fbf13f78e405416f2',1,'NeOS']]],
-  ['sint16_4',['sint16',['../namespace_ne_o_s.html#a309e527c5bf61b958d5fcd1a32377edf',1,'NeOS::SInt16'],['../user_2_macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
-  ['sint32_5',['sint32',['../namespace_ne_o_s.html#a3785cebc7f656f2d5faef7f2115084f3',1,'NeOS::SInt32'],['../user_2_macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
-  ['sint64_6',['sint64',['../namespace_ne_o_s.html#adc4c37e98837a38ddbe6ba8fbedc58dd',1,'NeOS::SInt64'],['../user_2_macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],
-  ['sint8_7',['SInt8',['../user_2_macros_8h.html#aaa25d67f876e77346aeca5db9fdc34e8',1,'Macros.h']]],
-  ['size_8',['Size',['../namespace_ne_o_s.html#a83fc5fb64d170235fdc4061a31f2f766',1,'NeOS']]],
-  ['size_5ft_9',['size_t',['../_new_8h.html#aa9d55e2f20e580b7445617d0d12fff6e',1,'New.h']]],
-  ['sizet_10',['sizet',['../namespace_ne_o_s.html#a5bbd9eec89d9fb8e95178b14ce2fcafc',1,'NeOS::SizeT'],['../user_2_macros_8h.html#ab5060adaff7d15b3ac19481139e04c10',1,'SizeT:&#160;Macros.h']]],
-  ['socketref_11',['SocketRef',['../_system_calls_8h.html#a33b5198f7ba47dba8faac36d3d787cc8',1,'SystemCalls.h']]],
-  ['ssize_12',['SSize',['../namespace_ne_o_s.html#a52038a4ce07477f115d623f724bb6d95',1,'NeOS']]],
-  ['ssizet_13',['SSizeT',['../namespace_ne_o_s.html#a85f5efd364b22cf454f28a3238a584aa',1,'NeOS']]],
-  ['stackframeptr_14',['StackFramePtr',['../namespace_ne_o_s_1_1_h_a_l.html#ae90d9eb7564d3c072785e9d1b601eb89',1,'NeOS::HAL']]],
-  ['swap_5fdisk_5fheader_15',['SWAP_DISK_HEADER',['../namespace_ne_o_s.html#a0e8ec090454b3ba3877f51262511f0f0',1,'NeOS']]]
+  ['rawregister_0',['RawRegister',['../namespace_kernel_1_1_h_a_l.html#a6a3e3c8de2c11e93f42614553b924694',1,'Kernel::HAL']]],
+  ['ref_1',['Ref',['../_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508',1,'SystemCalls.h']]],
+  ['reg_2',['Reg',['../namespace_kernel_1_1_h_a_l.html#a0e6c177fa2ec78f7015d0cfec1b1f7c9',1,'Kernel::HAL']]],
+  ['register_3',['Register',['../namespace_kernel_1_1_h_a_l.html#a67d280aa9f255270d18db39badf23d2e',1,'Kernel::HAL']]],
+  ['rt_5fdebug_5ftype_4',['rt_debug_type',['../namespace_kernel.html#afe9116ef3d01498b731cef67d840eedf',1,'Kernel']]],
+  ['rt_5fsyscall_5fproc_5',['rt_syscall_proc',['../_arch_kit_8h.html#a8b2a6fead47ca043054ea08608b45e7b',1,'ArchKit.h']]],
+  ['rtl_5fctor_5fkind_6',['rtl_ctor_kind',['../namespace_kernel.html#a65632a6a778ed791876488c7cab230b9',1,'Kernel']]],
+  ['rtl_5fdtor_5fkind_7',['rtl_dtor_kind',['../namespace_kernel.html#a88ecda1c50a52cea1a41712482fa9844',1,'Kernel']]],
+  ['rtl_5fmain_5fkind_8',['rtl_main_kind',['../namespace_kernel.html#a9c9692fd9a42272f995f098936d5bd0e',1,'Kernel']]],
+  ['rtl_5fruntime_5fcheck_9',['RTL_RUNTIME_CHECK',['../_kernel_panic_8h.html#a544450d6622b613e983172992807881a',1,'KernelPanic.h']]]
 ];

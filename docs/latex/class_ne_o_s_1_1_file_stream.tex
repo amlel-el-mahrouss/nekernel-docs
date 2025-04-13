@@ -1,0 +1,224 @@
+\doxysection{Ne\+OS\+::File\+Stream\texorpdfstring{$<$}{<} Encoding, FSClass \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_ne_o_s_1_1_file_stream}{}\label{class_ne_o_s_1_1_file_stream}\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+
+
+{\ttfamily \#include $<$File\+Mgr.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ae12919c419f637c5a2e309b734df7345}{k\+File\+Mgr\+Restrict\+Read}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ab968613cb59d90799d7b6cf21ef6dba3}{k\+File\+Mgr\+Restrict\+Read\+Binary}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613a75b949b91325dead4a9dadbe8ea5f4f2}{k\+File\+Mgr\+Restrict\+Write}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613a58d6e17d020f6d8b2f593cb9d44d2cac}{k\+File\+Mgr\+Restrict\+Write\+Binary}}
+, \newline
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613af8db9d096d88c4ed7181232b82544ded}{k\+File\+Mgr\+Restrict\+Read\+Write}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613acf388939c4d1d8c2af72a4c627933e11}{k\+File\+Mgr\+Restrict\+Read\+Write\+Binary}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream_a28385228d2692f4b1cd9282a1be6fb01}{File\+Stream}} (const Encoding \texorpdfstring{$\ast$}{*}path, const Encoding \texorpdfstring{$\ast$}{*}restrict\+\_\+type)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream_abacfcd740ca2b2017ac6864f33ddad45}{\texorpdfstring{$\sim$}{\string~}\+File\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em destructor of the file stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{File\+Stream}} \& \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_aa3433b0bf1fc1a9feccf1d0700f40ef8}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{File\+Stream}} \&)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream_a87e56841b653fb74e8e06db6fb37a763}{File\+Stream}} (const \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{File\+Stream}} \&)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_acb3676c38a349eb51b6008dc8f58ee14}{Write}} (const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} offset, const \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} data, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} len) noexcept
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_afb24c628eb6879cd995414375685e1fc}{Write}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}name, const \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} data, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} len) noexcept
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_a24ff7e9dbfb92ca7179501b0bf153fc2}{Read}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}name, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} sz) noexcept
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_a3d46ff92bd728b3580242a4cbcaa38ec}{Read}} (\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} offset, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} sz)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af4f18fc960ae4e89aec41832c9af24ba}{Node\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_a83121d9490a496c60a7e421a0ded6549}{Leak}} ()
+\begin{DoxyCompactList}\small\item\em Leak node pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_a40b90a410f03f291a1b521b84a68ec11}{MIME}} () noexcept
+\begin{DoxyCompactList}\small\item\em Leak MIME. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_af4f18fc960ae4e89aec41832c9af24ba}{Node\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_affda3a4723452d8778c1a0c15a762944}{f\+File}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_a804cde283db07c5e1c6d2e668b64897f}{f\+File\+Restrict}} \{\mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ab968613cb59d90799d7b6cf21ef6dba3}{k\+File\+Mgr\+Restrict\+Read\+Binary}}\}
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad1664bb485f462e70fa1acc06ab03ab3}{f\+Mime}} \{\mbox{\hyperlink{_file_mgr_8h_aa15d37f24895cfd300c5e721fd7c543f}{k\+File\+Mime\+Generic}}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding = Char, typename FSClass = IFilesystem\+Mgr$>$\newline
+class Ne\+OS\+::\+File\+Stream$<$ Encoding, FSClass $>$}
+\doxylink{class_ne_o_s_1_1_file_stream}{File\+Stream} class. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Encoding} & file encoding (char, wchar\+\_\+t...) \\
+\hline
+{\em FSClass} & Filesystem contract who takes care of it. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613}\label{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFileMgrRestrictRead@{kFileMgrRestrictRead}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!kFileMgrRestrictRead@{kFileMgrRestrictRead}}}\Hypertarget{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ae12919c419f637c5a2e309b734df7345}\label{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ae12919c419f637c5a2e309b734df7345} 
+k\+File\+Mgr\+Restrict\+Read&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFileMgrRestrictReadBinary@{kFileMgrRestrictReadBinary}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!kFileMgrRestrictReadBinary@{kFileMgrRestrictReadBinary}}}\Hypertarget{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ab968613cb59d90799d7b6cf21ef6dba3}\label{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ab968613cb59d90799d7b6cf21ef6dba3} 
+k\+File\+Mgr\+Restrict\+Read\+Binary&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFileMgrRestrictWrite@{kFileMgrRestrictWrite}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!kFileMgrRestrictWrite@{kFileMgrRestrictWrite}}}\Hypertarget{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613a75b949b91325dead4a9dadbe8ea5f4f2}\label{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613a75b949b91325dead4a9dadbe8ea5f4f2} 
+k\+File\+Mgr\+Restrict\+Write&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFileMgrRestrictWriteBinary@{kFileMgrRestrictWriteBinary}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!kFileMgrRestrictWriteBinary@{kFileMgrRestrictWriteBinary}}}\Hypertarget{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613a58d6e17d020f6d8b2f593cb9d44d2cac}\label{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613a58d6e17d020f6d8b2f593cb9d44d2cac} 
+k\+File\+Mgr\+Restrict\+Write\+Binary&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFileMgrRestrictReadWrite@{kFileMgrRestrictReadWrite}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!kFileMgrRestrictReadWrite@{kFileMgrRestrictReadWrite}}}\Hypertarget{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613af8db9d096d88c4ed7181232b82544ded}\label{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613af8db9d096d88c4ed7181232b82544ded} 
+k\+File\+Mgr\+Restrict\+Read\+Write&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFileMgrRestrictReadWriteBinary@{kFileMgrRestrictReadWriteBinary}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!kFileMgrRestrictReadWriteBinary@{kFileMgrRestrictReadWriteBinary}}}\Hypertarget{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613acf388939c4d1d8c2af72a4c627933e11}\label{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613acf388939c4d1d8c2af72a4c627933e11} 
+k\+File\+Mgr\+Restrict\+Read\+Write\+Binary&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_file_stream_a28385228d2692f4b1cd9282a1be6fb01}\label{class_ne_o_s_1_1_file_stream_a28385228d2692f4b1cd9282a1be6fb01} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!FileStream@{FileStream}}
+\index{FileStream@{FileStream}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{FileStream()}{FileStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Class $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, Class $>$\+::\+File\+Stream (\begin{DoxyParamCaption}\item[{const Encoding \texorpdfstring{$\ast$}{*}}]{path,  }\item[{const Encoding \texorpdfstring{$\ast$}{*}}]{restrict\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+constructor 
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_abacfcd740ca2b2017ac6864f33ddad45}\label{class_ne_o_s_1_1_file_stream_abacfcd740ca2b2017ac6864f33ddad45} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!````~FileStream@{\texorpdfstring{$\sim$}{\string~}FileStream}}
+\index{````~FileStream@{\texorpdfstring{$\sim$}{\string~}FileStream}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FileStream()}{\string~FileStream()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Class $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, Class $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{File\+Stream}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+destructor of the file stream. 
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_a87e56841b653fb74e8e06db6fb37a763}\label{class_ne_o_s_1_1_file_stream_a87e56841b653fb74e8e06db6fb37a763} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!FileStream@{FileStream}}
+\index{FileStream@{FileStream}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{FileStream()}{FileStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::\+File\+Stream (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{File\+Stream}}$<$ Encoding, FSClass $>$ \&}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_file_stream_a83121d9490a496c60a7e421a0ded6549}\label{class_ne_o_s_1_1_file_stream_a83121d9490a496c60a7e421a0ded6549} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!Leak@{Leak}}
+\index{Leak@{Leak}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{Leak()}{Leak()}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_af4f18fc960ae4e89aec41832c9af24ba}{Node\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::\+Leak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Leak node pointer. 
+
+\begin{DoxyReturn}{Returns}
+The node pointer. 
+\end{DoxyReturn}
+\Hypertarget{class_ne_o_s_1_1_file_stream_a40b90a410f03f291a1b521b84a68ec11}\label{class_ne_o_s_1_1_file_stream_a40b90a410f03f291a1b521b84a68ec11} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!MIME@{MIME}}
+\index{MIME@{MIME}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{MIME()}{MIME()}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::\+MIME (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Leak MIME. 
+
+\begin{DoxyReturn}{Returns}
+The MIME. 
+\end{DoxyReturn}
+\Hypertarget{class_ne_o_s_1_1_file_stream_aa3433b0bf1fc1a9feccf1d0700f40ef8}\label{class_ne_o_s_1_1_file_stream_aa3433b0bf1fc1a9feccf1d0700f40ef8} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{File\+Stream}} \& \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{File\+Stream}}$<$ Encoding, FSClass $>$ \&}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_a24ff7e9dbfb92ca7179501b0bf153fc2}\label{class_ne_o_s_1_1_file_stream_a24ff7e9dbfb92ca7179501b0bf153fc2} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!Read@{Read}}
+\index{Read@{Read}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::\+Read (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{name,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_a3d46ff92bd728b3580242a4cbcaa38ec}\label{class_ne_o_s_1_1_file_stream_a3d46ff92bd728b3580242a4cbcaa38ec} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!Read@{Read}}
+\index{Read@{Read}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{offset,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_afb24c628eb6879cd995414375685e1fc}\label{class_ne_o_s_1_1_file_stream_afb24c628eb6879cd995414375685e1fc} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!Write@{Write}}
+\index{Write@{Write}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::\+Write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}}]{name,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{data,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_acb3676c38a349eb51b6008dc8f58ee14}\label{class_ne_o_s_1_1_file_stream_acb3676c38a349eb51b6008dc8f58ee14} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!Write@{Write}}
+\index{Write@{Write}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{Error\+Or}}$<$ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} $>$ \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::\+Write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{offset,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}}]{data,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_file_stream_affda3a4723452d8778c1a0c15a762944}\label{class_ne_o_s_1_1_file_stream_affda3a4723452d8778c1a0c15a762944} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!fFile@{fFile}}
+\index{fFile@{fFile}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{fFile}{fFile}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_af4f18fc960ae4e89aec41832c9af24ba}{Node\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::f\+File \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_a804cde283db07c5e1c6d2e668b64897f}\label{class_ne_o_s_1_1_file_stream_a804cde283db07c5e1c6d2e668b64897f} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!fFileRestrict@{fFileRestrict}}
+\index{fFileRestrict@{fFileRestrict}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{fFileRestrict}{fFileRestrict}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::f\+File\+Restrict \{\mbox{\hyperlink{class_ne_o_s_1_1_file_stream_ad09ee57932a860944f4e239bd7f9f613ab968613cb59d90799d7b6cf21ef6dba3}{k\+File\+Mgr\+Restrict\+Read\+Binary}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_file_stream_ad1664bb485f462e70fa1acc06ab03ab3}\label{class_ne_o_s_1_1_file_stream_ad1664bb485f462e70fa1acc06ab03ab3} 
+\index{NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}!fMime@{fMime}}
+\index{fMime@{fMime}!NeOS::FileStream$<$ Encoding, FSClass $>$@{NeOS::FileStream$<$ Encoding, FSClass $>$}}
+\doxysubsubsection{\texorpdfstring{fMime}{fMime}}
+{\footnotesize\ttfamily template$<$typename Encoding  = Char, typename FSClass  = IFilesystem\+Mgr$>$ \\
+const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_file_stream}{Ne\+OS\+::\+File\+Stream}}$<$ Encoding, FSClass $>$\+::f\+Mime \{\mbox{\hyperlink{_file_mgr_8h_aa15d37f24895cfd300c5e721fd7c543f}{k\+File\+Mime\+Generic}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_file_mgr_8h}{File\+Mgr.\+h}}\end{DoxyCompactItemize}

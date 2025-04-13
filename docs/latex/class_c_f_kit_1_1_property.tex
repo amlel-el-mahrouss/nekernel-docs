@@ -1,0 +1,138 @@
+\doxysection{CFKit\+::Property Class Reference}
+\hypertarget{class_c_f_kit_1_1_property}{}\label{class_c_f_kit_1_1_property}\index{CFKit::Property@{CFKit::Property}}
+
+
+{\ttfamily \#include $<$Property.\+h$>$}
+
+Inheritance diagram for CFKit\+::Property\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_f_kit_1_1_property}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_f_kit_1_1_property_ab4d77f78e2d9966c16fcfc2a925124e2}{Property}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_f_kit_1_1_property_aacf460ede731095bb4a1d28640a0b396}{\texorpdfstring{$\sim$}{\string~}\+Property}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}} \& \mbox{\hyperlink{class_c_f_kit_1_1_property_aeb86bc1eda6dadaa798df0185a66991c}{operator=}} (const \mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}} \&)=default
+\item 
+\mbox{\hyperlink{class_c_f_kit_1_1_property_ab275ad5f27f2aa5dfd16985cf4f54b66}{Property}} (const \mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}} \&)=default
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{class_c_f_kit_1_1_property_a6e9522f5026a17a3aa151b479118a4e5}{String\+Equals}} (\mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} \&name)
+\begin{DoxyCompactList}\small\item\em Check if property\textquotesingle{}s name equals to name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36}{Property\+Id}} \& \mbox{\hyperlink{class_c_f_kit_1_1_property_a3eab0f4b0b56ad28157d6c9bbaeca215}{Get\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Gets the value of the property. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} \& \mbox{\hyperlink{class_c_f_kit_1_1_property_a5c3209fdbc45042831d6dba05754a980}{Get\+Key}} ()
+\begin{DoxyCompactList}\small\item\em Gets the key (name) of property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} \mbox{\hyperlink{class_c_f_kit_1_1_property_adf3690518d40f9bcc603663473e3283c}{f\+Name}} \{\mbox{\hyperlink{dev_2kernel_2_c_f_kit_2_property_8h_a271f7e382f332f69d51d9efc7d9ff544}{k\+Max\+Prop\+Len}}\}
+\item 
+\mbox{\hyperlink{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36}{Property\+Id}} \mbox{\hyperlink{class_c_f_kit_1_1_property_a5ef6714d4e5ad0ff480a38533105061c}{f\+Value}} \{0\+UL\}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref}}$<$ \mbox{\hyperlink{class_c_f_kit_1_1_x_r_n_1_1_g_u_i_d}{XRN\+::\+GUID}} $>$ \mbox{\hyperlink{class_c_f_kit_1_1_property_afe033482a37bc3a1b30dd7fb117fa15a}{f\+GUID}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_c_f_kit_1_1_property_ab4d77f78e2d9966c16fcfc2a925124e2}\label{class_c_f_kit_1_1_property_ab4d77f78e2d9966c16fcfc2a925124e2} 
+\index{CFKit::Property@{CFKit::Property}!Property@{Property}}
+\index{Property@{Property}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{Property()}{Property()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CFKit\+::\+Property\+::\+Property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructor. 
+
+\Hypertarget{class_c_f_kit_1_1_property_aacf460ede731095bb4a1d28640a0b396}\label{class_c_f_kit_1_1_property_aacf460ede731095bb4a1d28640a0b396} 
+\index{CFKit::Property@{CFKit::Property}!````~Property@{\texorpdfstring{$\sim$}{\string~}Property}}
+\index{````~Property@{\texorpdfstring{$\sim$}{\string~}Property}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Property()}{\string~Property()}}
+{\footnotesize\ttfamily CFKit\+::\+Property\+::\texorpdfstring{$\sim$}{\string~}\+Property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor. 
+
+\Hypertarget{class_c_f_kit_1_1_property_ab275ad5f27f2aa5dfd16985cf4f54b66}\label{class_c_f_kit_1_1_property_ab275ad5f27f2aa5dfd16985cf4f54b66} 
+\index{CFKit::Property@{CFKit::Property}!Property@{Property}}
+\index{Property@{Property}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{Property()}{Property()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CFKit\+::\+Property\+::\+Property (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_f_kit_1_1_property_a5c3209fdbc45042831d6dba05754a980}\label{class_c_f_kit_1_1_property_a5c3209fdbc45042831d6dba05754a980} 
+\index{CFKit::Property@{CFKit::Property}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} \& CFKit\+::\+Property\+::\+Get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the key (name) of property. 
+
+\Hypertarget{class_c_f_kit_1_1_property_a3eab0f4b0b56ad28157d6c9bbaeca215}\label{class_c_f_kit_1_1_property_a3eab0f4b0b56ad28157d6c9bbaeca215} 
+\index{CFKit::Property@{CFKit::Property}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36}{Property\+Id}} \& CFKit\+::\+Property\+::\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of the property. 
+
+\Hypertarget{class_c_f_kit_1_1_property_aeb86bc1eda6dadaa798df0185a66991c}\label{class_c_f_kit_1_1_property_aeb86bc1eda6dadaa798df0185a66991c} 
+\index{CFKit::Property@{CFKit::Property}!operator=@{operator=}}
+\index{operator=@{operator=}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}} \& CFKit\+::\+Property\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_f_kit_1_1_property}{Property}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_c_f_kit_1_1_property_a6e9522f5026a17a3aa151b479118a4e5}\label{class_c_f_kit_1_1_property_a6e9522f5026a17a3aa151b479118a4e5} 
+\index{CFKit::Property@{CFKit::Property}!StringEquals@{StringEquals}}
+\index{StringEquals@{StringEquals}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{StringEquals()}{StringEquals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} CFKit\+::\+Property\+::\+String\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Check if property\textquotesingle{}s name equals to name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string to check. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_c_f_kit_1_1_property_afe033482a37bc3a1b30dd7fb117fa15a}\label{class_c_f_kit_1_1_property_afe033482a37bc3a1b30dd7fb117fa15a} 
+\index{CFKit::Property@{CFKit::Property}!fGUID@{fGUID}}
+\index{fGUID@{fGUID}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{fGUID}{fGUID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref}}$<$\mbox{\hyperlink{class_c_f_kit_1_1_x_r_n_1_1_g_u_i_d}{XRN\+::\+GUID}}$>$ CFKit\+::\+Property\+::f\+GUID \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_c_f_kit_1_1_property_adf3690518d40f9bcc603663473e3283c}\label{class_c_f_kit_1_1_property_adf3690518d40f9bcc603663473e3283c} 
+\index{CFKit::Property@{CFKit::Property}!fName@{fName}}
+\index{fName@{fName}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{fName}{fName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_k_string}{KString}} CFKit\+::\+Property\+::f\+Name \{\mbox{\hyperlink{dev_2kernel_2_c_f_kit_2_property_8h_a271f7e382f332f69d51d9efc7d9ff544}{k\+Max\+Prop\+Len}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_c_f_kit_1_1_property_a5ef6714d4e5ad0ff480a38533105061c}\label{class_c_f_kit_1_1_property_a5ef6714d4e5ad0ff480a38533105061c} 
+\index{CFKit::Property@{CFKit::Property}!fValue@{fValue}}
+\index{fValue@{fValue}!CFKit::Property@{CFKit::Property}}
+\doxysubsubsection{\texorpdfstring{fValue}{fValue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_c_f_kit_a63a27d7aa1de2227465a4949f16bff36}{Property\+Id}} CFKit\+::\+Property\+::f\+Value \{0\+UL\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+CFKit/\mbox{\hyperlink{dev_2kernel_2_c_f_kit_2_property_8h}{Property.\+h}}\item 
+dev/kernel/src/\mbox{\hyperlink{_property_8cc}{Property.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\doxysection{Ne\+OS\+::Mountpoint\+Interface Class Reference}
+\hypertarget{class_ne_o_s_1_1_mountpoint_interface}{}\label{class_ne_o_s_1_1_mountpoint_interface}\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+
+
+Mounted drives interface.  
+
+
+
+
+{\ttfamily \#include $<$Drive\+Mgr.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a947e38fb1e7b8dcdeb2256f30b4497e7}{k\+Drive\+IndexA}} = 0
+, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a5e33519d160d008d7f8231dd02828c95}{k\+Drive\+IndexB}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a0272e0df82c5e71d15aafc9e01b4047b}{k\+Drive\+IndexC}}
+, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2ad2b055310aedaaf832592cbc18576829}{k\+Drive\+IndexD}}
+, \newline
+\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a427b3c44620b0229847047721c1674ed}{k\+Drive\+Index\+Invalid}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a2a66ca2a45f5820fa2c3036cf11212a3}{Mountpoint\+Interface}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ae1dcb01e92f466719511b04defaa596b}{\texorpdfstring{$\sim$}{\string~}\+Mountpoint\+Interface}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a93f196f32eff889d09483ded85b6d46c}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}})
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_af7659558033a9ae0b1111f035b0e2375}{A}} ()
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a9c14c8249d0f8008728ff2f7e9af9abe}{B}} ()
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a6b4074e271ef9cbde107de3985218dc2}{C}} ()
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ab37b1b5f6ced8cf3525368c32f7ee4f9}{D}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a94ee2e4103829c0c6b9d1ad81cde94b4}{Drive\+Trait\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a334d9b5c4ccb68b750eb21f2320e8571}{Get\+Address\+Of}} (const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \&index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ad54ec6d611930b23911c40b02a3ca2cc}{mA}}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_ae1ea37223d5c1539b1d400c0e80a2169}{mB}}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_aef08fbf7bb58d4d1542f7e378a3d6608}{mC}}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a92941b1ee04b4637ea1da02afde53b04}{mD}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mounted drives interface. 
+
+\begin{DoxyNote}{Note}
+This class has all of it\textquotesingle{}s drive set to nullptr, allocate them using Get\+Address\+Of(index). 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2}\label{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kDriveIndexA@{kDriveIndexA}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!kDriveIndexA@{kDriveIndexA}}}\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a947e38fb1e7b8dcdeb2256f30b4497e7}\label{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a947e38fb1e7b8dcdeb2256f30b4497e7} 
+k\+Drive\+IndexA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kDriveIndexB@{kDriveIndexB}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!kDriveIndexB@{kDriveIndexB}}}\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a5e33519d160d008d7f8231dd02828c95}\label{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a5e33519d160d008d7f8231dd02828c95} 
+k\+Drive\+IndexB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kDriveIndexC@{kDriveIndexC}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!kDriveIndexC@{kDriveIndexC}}}\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a0272e0df82c5e71d15aafc9e01b4047b}\label{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a0272e0df82c5e71d15aafc9e01b4047b} 
+k\+Drive\+IndexC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kDriveIndexD@{kDriveIndexD}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!kDriveIndexD@{kDriveIndexD}}}\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2ad2b055310aedaaf832592cbc18576829}\label{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2ad2b055310aedaaf832592cbc18576829} 
+k\+Drive\+IndexD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kDriveIndexInvalid@{kDriveIndexInvalid}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!kDriveIndexInvalid@{kDriveIndexInvalid}}}\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a427b3c44620b0229847047721c1674ed}\label{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a427b3c44620b0229847047721c1674ed} 
+k\+Drive\+Index\+Invalid&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a2a66ca2a45f5820fa2c3036cf11212a3}\label{class_ne_o_s_1_1_mountpoint_interface_a2a66ca2a45f5820fa2c3036cf11212a3} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!MountpointInterface@{MountpointInterface}}
+\index{MountpointInterface@{MountpointInterface}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{MountpointInterface()}{MountpointInterface()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Mountpoint\+Interface\+::\+Mountpoint\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_ae1dcb01e92f466719511b04defaa596b}\label{class_ne_o_s_1_1_mountpoint_interface_ae1dcb01e92f466719511b04defaa596b} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!````~MountpointInterface@{\texorpdfstring{$\sim$}{\string~}MountpointInterface}}
+\index{````~MountpointInterface@{\texorpdfstring{$\sim$}{\string~}MountpointInterface}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MountpointInterface()}{\string~MountpointInterface()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Mountpoint\+Interface\+::\texorpdfstring{$\sim$}{\string~}\+Mountpoint\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_af7659558033a9ae0b1111f035b0e2375}\label{class_ne_o_s_1_1_mountpoint_interface_af7659558033a9ae0b1111f035b0e2375} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!A@{A}}
+\index{A@{A}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{A()}{A()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& Ne\+OS\+::\+Mountpoint\+Interface\+::A (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a9c14c8249d0f8008728ff2f7e9af9abe}\label{class_ne_o_s_1_1_mountpoint_interface_a9c14c8249d0f8008728ff2f7e9af9abe} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!B@{B}}
+\index{B@{B}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{B()}{B()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& Ne\+OS\+::\+Mountpoint\+Interface\+::B (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a6b4074e271ef9cbde107de3985218dc2}\label{class_ne_o_s_1_1_mountpoint_interface_a6b4074e271ef9cbde107de3985218dc2} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!C@{C}}
+\index{C@{C}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{C()}{C()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& Ne\+OS\+::\+Mountpoint\+Interface\+::C (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_ab37b1b5f6ced8cf3525368c32f7ee4f9}\label{class_ne_o_s_1_1_mountpoint_interface_ab37b1b5f6ced8cf3525368c32f7ee4f9} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!D@{D}}
+\index{D@{D}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{D()}{D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} \& Ne\+OS\+::\+Mountpoint\+Interface\+::D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a334d9b5c4ccb68b750eb21f2320e8571}\label{class_ne_o_s_1_1_mountpoint_interface_a334d9b5c4ccb68b750eb21f2320e8571} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!GetAddressOf@{GetAddressOf}}
+\index{GetAddressOf@{GetAddressOf}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{GetAddressOf()}{GetAddressOf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a94ee2e4103829c0c6b9d1ad81cde94b4}{Drive\+Trait\+Ptr}} Ne\+OS\+::\+Mountpoint\+Interface\+::\+Get\+Address\+Of (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a93f196f32eff889d09483ded85b6d46c}\label{class_ne_o_s_1_1_mountpoint_interface_a93f196f32eff889d09483ded85b6d46c} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Mountpoint\+Interface\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_ad54ec6d611930b23911c40b02a3ca2cc}\label{class_ne_o_s_1_1_mountpoint_interface_ad54ec6d611930b23911c40b02a3ca2cc} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!mA@{mA}}
+\index{mA@{mA}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{mA}{mA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} Ne\+OS\+::\+Mountpoint\+Interface\+::mA\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_ae1ea37223d5c1539b1d400c0e80a2169}\label{class_ne_o_s_1_1_mountpoint_interface_ae1ea37223d5c1539b1d400c0e80a2169} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!mB@{mB}}
+\index{mB@{mB}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{mB}{mB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} Ne\+OS\+::\+Mountpoint\+Interface\+::mB\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_aef08fbf7bb58d4d1542f7e378a3d6608}\label{class_ne_o_s_1_1_mountpoint_interface_aef08fbf7bb58d4d1542f7e378a3d6608} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!mC@{mC}}
+\index{mC@{mC}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{mC}{mC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} Ne\+OS\+::\+Mountpoint\+Interface\+::mC\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_mountpoint_interface_a92941b1ee04b4637ea1da02afde53b04}\label{class_ne_o_s_1_1_mountpoint_interface_a92941b1ee04b4637ea1da02afde53b04} 
+\index{NeOS::MountpointInterface@{NeOS::MountpointInterface}!mD@{mD}}
+\index{mD@{mD}!NeOS::MountpointInterface@{NeOS::MountpointInterface}}
+\doxysubsubsection{\texorpdfstring{mD}{mD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_drive_trait}{Drive\+Trait}} Ne\+OS\+::\+Mountpoint\+Interface\+::mD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_drive_mgr_8h}{Drive\+Mgr.\+h}}\end{DoxyCompactItemize}

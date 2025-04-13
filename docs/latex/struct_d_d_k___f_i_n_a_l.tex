@@ -1,0 +1,134 @@
+\doxysection{DDK\+\_\+\+FINAL Struct Reference}
+\hypertarget{struct_d_d_k___f_i_n_a_l}{}\label{struct_d_d_k___f_i_n_a_l}\index{DDK\_FINAL@{DDK\_FINAL}}
+
+
+Object handle manifest.  
+
+
+
+
+{\ttfamily \#include $<$ddk.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a369602b7abe759a1f07fc3591b050e99}{p\+\_\+name}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a8378cc48d7b2174729fcad746c358aba}{p\+\_\+kind}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a99ca9cabda9972c1fc14d5770387a8a9}{p\+\_\+object}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a4ddec8c571d5f6917f0375d7db3c193a}{s\+\_\+action\+\_\+id}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_ac913d8061e4ed4282ac2b0d5614a02e8}{s\+\_\+issuer\+\_\+id}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a357572177bdc47e0bb7c8d2ee35854a5}{s\+\_\+group\+\_\+id}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_ac8eca32afc2a7ee5b53ded1e1e3b27b4}{s\+\_\+object}}
+\item 
+char \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_af14d29ebddd44f8ea0a657604b62a847}{d\+\_\+name}} \mbox{[}\mbox{\hyperlink{dev_8h_aa3295d9adad766a7bfaaa012c133c313}{DDK\+\_\+\+DEVICE\+\_\+\+NAME\+\_\+\+LEN}}\mbox{]}
+\item 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a4dca1ea1fa294c6680b4744270849760}{d\+\_\+read}} )(void \texorpdfstring{$\ast$}{*}arg, int len)
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a63d71540ba50cbe6f6bcf46f71f3f9a7}{d\+\_\+write}} )(void \texorpdfstring{$\ast$}{*}arg, int len)
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_aeedbf4fb382799d47971eb9f8416040f}{d\+\_\+wait}} )(void)
+\item 
+struct \+\_\+\+DDK\+\_\+\+DEVICE \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_ab87ac645bc8fea772ce3a7ecac957281}{d\+\_\+open}} )(const char \texorpdfstring{$\ast$}{*}path)
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_d_d_k___f_i_n_a_l_a42a5e448b729e7f3f06cd56c956f9a24}{d\+\_\+close}} )(struct \+\_\+\+DDK\+\_\+\+DEVICE \texorpdfstring{$\ast$}{*}dev)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Object handle manifest. 
+
+Kernel \doxylink{class_device}{Device} driver.
+
+DDK status ping structure. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a42a5e448b729e7f3f06cd56c956f9a24}\label{struct_d_d_k___f_i_n_a_l_a42a5e448b729e7f3f06cd56c956f9a24} 
+\index{DDK\_FINAL@{DDK\_FINAL}!d\_close@{d\_close}}
+\index{d\_close@{d\_close}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{d\_close}{d\_close}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::d\+\_\+close) (struct \+\_\+\+DDK\+\_\+\+DEVICE \texorpdfstring{$\ast$}{*}dev)}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_af14d29ebddd44f8ea0a657604b62a847}\label{struct_d_d_k___f_i_n_a_l_af14d29ebddd44f8ea0a657604b62a847} 
+\index{DDK\_FINAL@{DDK\_FINAL}!d\_name@{d\_name}}
+\index{d\_name@{d\_name}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{d\_name}{d\_name}}
+{\footnotesize\ttfamily char DDK\+\_\+\+FINAL\+::d\+\_\+name\mbox{[}\mbox{\hyperlink{dev_8h_aa3295d9adad766a7bfaaa012c133c313}{DDK\+\_\+\+DEVICE\+\_\+\+NAME\+\_\+\+LEN}}\mbox{]}}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_ab87ac645bc8fea772ce3a7ecac957281}\label{struct_d_d_k___f_i_n_a_l_ab87ac645bc8fea772ce3a7ecac957281} 
+\index{DDK\_FINAL@{DDK\_FINAL}!d\_open@{d\_open}}
+\index{d\_open@{d\_open}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{d\_open}{d\_open}}
+{\footnotesize\ttfamily struct \+\_\+\+DDK\+\_\+\+DEVICE \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::d\+\_\+open) (const char \texorpdfstring{$\ast$}{*}path)}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a4dca1ea1fa294c6680b4744270849760}\label{struct_d_d_k___f_i_n_a_l_a4dca1ea1fa294c6680b4744270849760} 
+\index{DDK\_FINAL@{DDK\_FINAL}!d\_read@{d\_read}}
+\index{d\_read@{d\_read}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{d\_read}{d\_read}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::d\+\_\+read) (void \texorpdfstring{$\ast$}{*}arg, int len)}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_aeedbf4fb382799d47971eb9f8416040f}\label{struct_d_d_k___f_i_n_a_l_aeedbf4fb382799d47971eb9f8416040f} 
+\index{DDK\_FINAL@{DDK\_FINAL}!d\_wait@{d\_wait}}
+\index{d\_wait@{d\_wait}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{d\_wait}{d\_wait}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::d\+\_\+wait) (void)}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a63d71540ba50cbe6f6bcf46f71f3f9a7}\label{struct_d_d_k___f_i_n_a_l_a63d71540ba50cbe6f6bcf46f71f3f9a7} 
+\index{DDK\_FINAL@{DDK\_FINAL}!d\_write@{d\_write}}
+\index{d\_write@{d\_write}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{d\_write}{d\_write}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::d\+\_\+write) (void \texorpdfstring{$\ast$}{*}arg, int len)}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a8378cc48d7b2174729fcad746c358aba}\label{struct_d_d_k___f_i_n_a_l_a8378cc48d7b2174729fcad746c358aba} 
+\index{DDK\_FINAL@{DDK\_FINAL}!p\_kind@{p\_kind}}
+\index{p\_kind@{p\_kind}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{p\_kind}{p\_kind}}
+{\footnotesize\ttfamily int32\+\_\+t DDK\+\_\+\+FINAL\+::p\+\_\+kind}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a369602b7abe759a1f07fc3591b050e99}\label{struct_d_d_k___f_i_n_a_l_a369602b7abe759a1f07fc3591b050e99} 
+\index{DDK\_FINAL@{DDK\_FINAL}!p\_name@{p\_name}}
+\index{p\_name@{p\_name}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{p\_name}{p\_name}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::p\+\_\+name}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a99ca9cabda9972c1fc14d5770387a8a9}\label{struct_d_d_k___f_i_n_a_l_a99ca9cabda9972c1fc14d5770387a8a9} 
+\index{DDK\_FINAL@{DDK\_FINAL}!p\_object@{p\_object}}
+\index{p\_object@{p\_object}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{p\_object}{p\_object}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::p\+\_\+object}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a4ddec8c571d5f6917f0375d7db3c193a}\label{struct_d_d_k___f_i_n_a_l_a4ddec8c571d5f6917f0375d7db3c193a} 
+\index{DDK\_FINAL@{DDK\_FINAL}!s\_action\_id@{s\_action\_id}}
+\index{s\_action\_id@{s\_action\_id}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{s\_action\_id}{s\_action\_id}}
+{\footnotesize\ttfamily int32\+\_\+t DDK\+\_\+\+FINAL\+::s\+\_\+action\+\_\+id}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_a357572177bdc47e0bb7c8d2ee35854a5}\label{struct_d_d_k___f_i_n_a_l_a357572177bdc47e0bb7c8d2ee35854a5} 
+\index{DDK\_FINAL@{DDK\_FINAL}!s\_group\_id@{s\_group\_id}}
+\index{s\_group\_id@{s\_group\_id}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{s\_group\_id}{s\_group\_id}}
+{\footnotesize\ttfamily int32\+\_\+t DDK\+\_\+\+FINAL\+::s\+\_\+group\+\_\+id}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_ac913d8061e4ed4282ac2b0d5614a02e8}\label{struct_d_d_k___f_i_n_a_l_ac913d8061e4ed4282ac2b0d5614a02e8} 
+\index{DDK\_FINAL@{DDK\_FINAL}!s\_issuer\_id@{s\_issuer\_id}}
+\index{s\_issuer\_id@{s\_issuer\_id}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{s\_issuer\_id}{s\_issuer\_id}}
+{\footnotesize\ttfamily int32\+\_\+t DDK\+\_\+\+FINAL\+::s\+\_\+issuer\+\_\+id}
+
+\Hypertarget{struct_d_d_k___f_i_n_a_l_ac8eca32afc2a7ee5b53ded1e1e3b27b4}\label{struct_d_d_k___f_i_n_a_l_ac8eca32afc2a7ee5b53ded1e1e3b27b4} 
+\index{DDK\_FINAL@{DDK\_FINAL}!s\_object@{s\_object}}
+\index{s\_object@{s\_object}!DDK\_FINAL@{DDK\_FINAL}}
+\doxysubsubsection{\texorpdfstring{s\_object}{s\_object}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} DDK\+\_\+\+FINAL\+::s\+\_\+object}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/ddk/\mbox{\hyperlink{ddk_8h}{ddk.\+h}}\item 
+dev/ddk/\mbox{\hyperlink{dev_8h}{dev.\+h}}\end{DoxyCompactItemize}

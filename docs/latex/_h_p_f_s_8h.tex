@@ -1,0 +1,120 @@
+\doxysection{dev/kernel/\+FSKit/\+HPFS.h File Reference}
+\hypertarget{_h_p_f_s_8h}{}\label{_h_p_f_s_8h}\index{dev/kernel/FSKit/HPFS.h@{dev/kernel/FSKit/HPFS.h}}
+
+
+HPFS filesystem support.  
+
+
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_h_p_f_s___b_o_o_t___n_o_d_e}{HPFS\+\_\+\+BOOT\+\_\+\+NODE}}
+\item 
+struct \mbox{\hyperlink{struct_h_p_f_s___i_n_d_e_x___n_o_d_e}{HPFS\+\_\+\+INDEX\+\_\+\+NODE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_h_p_f_s_8h_a1f0964e7da4c01bbfb48f27c3cc593c0}{k\+HPFSVersion}}~(0x0100)
+\item 
+\#define \mbox{\hyperlink{_h_p_f_s_8h_ab309b189c7162be0e2a1cb294b69aa6b}{k\+HPFSMagic}}~"{}  HPFS"{}
+\item 
+\#define \mbox{\hyperlink{_h_p_f_s_8h_ab138f72213826abd917dbea886d1caa1}{k\+HPFSMagic\+Len}}~(8)
+\item 
+\#define \mbox{\hyperlink{_h_p_f_s_8h_afaf45626cf031d447e0cfaab770e7482}{k\+HPFSFile\+Name\+Len}}~(256U)
+\item 
+\#define \mbox{\hyperlink{_h_p_f_s_8h_af13a152b0daf8c5086b8962815e6c94e}{k\+HPFSPart\+Name\+Len}}~(256U)
+\item 
+\#define \mbox{\hyperlink{_h_p_f_s_8h_acac34e75c67291f0ce41c1fc29eacf0b}{k\+HPFSMinimum\+Disk\+Size}}~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(64))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da0dfd444e271aa2c90c0b01de8fa0bda3}{k\+HPFSInvalid\+Drive}}
+, \mbox{\hyperlink{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da2419312d5b09261a1ded186098254c43}{k\+HPFSHDDDrive}}
+, \mbox{\hyperlink{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da44070658e3e2febc93f949b1e5a825fb}{k\+HPFSSSDDrive}}
+, \mbox{\hyperlink{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da149ad5687a6719ea4e063a9edcc4a983}{k\+HPFSMass\+Storage\+Drive}}
+, \newline
+\mbox{\hyperlink{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4dafa1b649268bf6cb4c0051606da4daada}{k\+HPFSSCSIDrive}}
+, \mbox{\hyperlink{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da46a239bb250ecde20a1faa023998c97d}{k\+HPFSDrive\+Count}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+HPFS filesystem support. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_h_p_f_s_8h_afaf45626cf031d447e0cfaab770e7482}\label{_h_p_f_s_8h_afaf45626cf031d447e0cfaab770e7482} 
+\index{HPFS.h@{HPFS.h}!kHPFSFileNameLen@{kHPFSFileNameLen}}
+\index{kHPFSFileNameLen@{kHPFSFileNameLen}!HPFS.h@{HPFS.h}}
+\doxysubsubsection{\texorpdfstring{kHPFSFileNameLen}{kHPFSFileNameLen}}
+{\footnotesize\ttfamily \#define k\+HPFSFile\+Name\+Len~(256U)}
+
+\Hypertarget{_h_p_f_s_8h_ab309b189c7162be0e2a1cb294b69aa6b}\label{_h_p_f_s_8h_ab309b189c7162be0e2a1cb294b69aa6b} 
+\index{HPFS.h@{HPFS.h}!kHPFSMagic@{kHPFSMagic}}
+\index{kHPFSMagic@{kHPFSMagic}!HPFS.h@{HPFS.h}}
+\doxysubsubsection{\texorpdfstring{kHPFSMagic}{kHPFSMagic}}
+{\footnotesize\ttfamily \#define k\+HPFSMagic~"{}  HPFS"{}}
+
+\Hypertarget{_h_p_f_s_8h_ab138f72213826abd917dbea886d1caa1}\label{_h_p_f_s_8h_ab138f72213826abd917dbea886d1caa1} 
+\index{HPFS.h@{HPFS.h}!kHPFSMagicLen@{kHPFSMagicLen}}
+\index{kHPFSMagicLen@{kHPFSMagicLen}!HPFS.h@{HPFS.h}}
+\doxysubsubsection{\texorpdfstring{kHPFSMagicLen}{kHPFSMagicLen}}
+{\footnotesize\ttfamily \#define k\+HPFSMagic\+Len~(8)}
+
+\Hypertarget{_h_p_f_s_8h_acac34e75c67291f0ce41c1fc29eacf0b}\label{_h_p_f_s_8h_acac34e75c67291f0ce41c1fc29eacf0b} 
+\index{HPFS.h@{HPFS.h}!kHPFSMinimumDiskSize@{kHPFSMinimumDiskSize}}
+\index{kHPFSMinimumDiskSize@{kHPFSMinimumDiskSize}!HPFS.h@{HPFS.h}}
+\doxysubsubsection{\texorpdfstring{kHPFSMinimumDiskSize}{kHPFSMinimumDiskSize}}
+{\footnotesize\ttfamily \#define k\+HPFSMinimum\+Disk\+Size~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(64))}
+
+\Hypertarget{_h_p_f_s_8h_af13a152b0daf8c5086b8962815e6c94e}\label{_h_p_f_s_8h_af13a152b0daf8c5086b8962815e6c94e} 
+\index{HPFS.h@{HPFS.h}!kHPFSPartNameLen@{kHPFSPartNameLen}}
+\index{kHPFSPartNameLen@{kHPFSPartNameLen}!HPFS.h@{HPFS.h}}
+\doxysubsubsection{\texorpdfstring{kHPFSPartNameLen}{kHPFSPartNameLen}}
+{\footnotesize\ttfamily \#define k\+HPFSPart\+Name\+Len~(256U)}
+
+\Hypertarget{_h_p_f_s_8h_a1f0964e7da4c01bbfb48f27c3cc593c0}\label{_h_p_f_s_8h_a1f0964e7da4c01bbfb48f27c3cc593c0} 
+\index{HPFS.h@{HPFS.h}!kHPFSVersion@{kHPFSVersion}}
+\index{kHPFSVersion@{kHPFSVersion}!HPFS.h@{HPFS.h}}
+\doxysubsubsection{\texorpdfstring{kHPFSVersion}{kHPFSVersion}}
+{\footnotesize\ttfamily \#define k\+HPFSVersion~(0x0100)}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4d}\label{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4d} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kHPFSInvalidDrive@{kHPFSInvalidDrive}!HPFS.h@{HPFS.h}}\index{HPFS.h@{HPFS.h}!kHPFSInvalidDrive@{kHPFSInvalidDrive}}}\Hypertarget{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da0dfd444e271aa2c90c0b01de8fa0bda3}\label{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da0dfd444e271aa2c90c0b01de8fa0bda3} 
+k\+HPFSInvalid\+Drive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kHPFSHDDDrive@{kHPFSHDDDrive}!HPFS.h@{HPFS.h}}\index{HPFS.h@{HPFS.h}!kHPFSHDDDrive@{kHPFSHDDDrive}}}\Hypertarget{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da2419312d5b09261a1ded186098254c43}\label{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da2419312d5b09261a1ded186098254c43} 
+k\+HPFSHDDDrive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kHPFSSSDDrive@{kHPFSSSDDrive}!HPFS.h@{HPFS.h}}\index{HPFS.h@{HPFS.h}!kHPFSSSDDrive@{kHPFSSSDDrive}}}\Hypertarget{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da44070658e3e2febc93f949b1e5a825fb}\label{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da44070658e3e2febc93f949b1e5a825fb} 
+k\+HPFSSSDDrive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kHPFSMassStorageDrive@{kHPFSMassStorageDrive}!HPFS.h@{HPFS.h}}\index{HPFS.h@{HPFS.h}!kHPFSMassStorageDrive@{kHPFSMassStorageDrive}}}\Hypertarget{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da149ad5687a6719ea4e063a9edcc4a983}\label{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da149ad5687a6719ea4e063a9edcc4a983} 
+k\+HPFSMass\+Storage\+Drive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kHPFSSCSIDrive@{kHPFSSCSIDrive}!HPFS.h@{HPFS.h}}\index{HPFS.h@{HPFS.h}!kHPFSSCSIDrive@{kHPFSSCSIDrive}}}\Hypertarget{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4dafa1b649268bf6cb4c0051606da4daada}\label{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4dafa1b649268bf6cb4c0051606da4daada} 
+k\+HPFSSCSIDrive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kHPFSDriveCount@{kHPFSDriveCount}!HPFS.h@{HPFS.h}}\index{HPFS.h@{HPFS.h}!kHPFSDriveCount@{kHPFSDriveCount}}}\Hypertarget{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da46a239bb250ecde20a1faa023998c97d}\label{_h_p_f_s_8h_a16af7b253440dadd46a80a4b9fddba4da46a239bb250ecde20a1faa023998c97d} 
+k\+HPFSDrive\+Count&\\
+\hline
+
+\end{DoxyEnumFields}

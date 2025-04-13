@@ -1,0 +1,67 @@
+\doxysection{User\+Process\+Scheduler.\+inl}
+\hypertarget{_user_process_scheduler_8inl_source}{}\label{_user_process_scheduler_8inl_source}\index{dev/kernel/KernelKit/UserProcessScheduler.inl@{dev/kernel/KernelKit/UserProcessScheduler.inl}}
+\mbox{\hyperlink{_user_process_scheduler_8inl}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ FILE:\ UserProcessScheduler.inl}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ PURPOSE:\ Low\ level/Ring-\/3\ Process\ scheduler.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ \ \ \ /***********************************************************************************/}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ \ \ \ /***********************************************************************************/}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_user_process_a66a0eda7ced5b5d05ce026e3759353bb}{UserProcess::Delete}}(\mbox{\hyperlink{class_ne_o_s_1_1_error_or}{ErrorOr<T*>}}\ ptr,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\&\ sz)}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!ptr)}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a554d6ecb4ae62985018db18be458114d}{No}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!this-\/>\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a31cf8be83cb37b349a9ef7b3a151cbe1}{ProcessMemoryHeap}})}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_output_8h_a18983745cdbaca69cc1eb2cb33f02ada}{kout}}\ <<\ \textcolor{stringliteral}{"{}Process\ Memory\ is\ empty.\(\backslash\)r"{}};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a554d6ecb4ae62985018db18be458114d}{No}};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list}{ProcessMemoryHeapList}}*\ entry\ =\ this-\/>\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a31cf8be83cb37b349a9ef7b3a151cbe1}{ProcessMemoryHeap}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (entry\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (entry-\/>\mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list_ab3772bd8478641b876482c6f7aeb0eb0}{MemoryEntry}}\ ==\ ptr.\mbox{\hyperlink{class_ne_o_s_1_1_error_or_af0319b3ff5fd9882da48564e154cae11}{Leak}}().Leak())}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a533b2df019b6c34f099214f862066c41}{UsedMemory}}\ -\/=\ entry-\/>\mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list_ab422afbe444457bd3305f60164727d0c}{MemoryEntrySize}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#ifdef\ \_\_NE\_AMD64\_\_}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ pd\ =\ \mbox{\hyperlink{_a_m_d64_2_paging_8h_aa51398e348a5792af02061fb49fece47}{hal\_read\_cr3}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_m_d64_2_paging_8h_aa10b7fc3fcd5739cb133b417ff3ebcb8}{hal\_write\_cr3}}(this-\/>\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a07928b794ced88423f78647366201e23}{VMRegister}});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ ret\ =\ \mbox{\hyperlink{namespace_ne_o_s_aa81857a2033441e004abaf5df755413e}{mm\_delete\_heap}}(entry-\/>\mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list_ab3772bd8478641b876482c6f7aeb0eb0}{MemoryEntry}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_m_d64_2_paging_8h_aa10b7fc3fcd5739cb133b417ff3ebcb8}{hal\_write\_cr3}}(pd);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ret\ ==\ \mbox{\hyperlink{namespace_ne_o_s_ad83d47273cc42a34aac83471c911a94e}{kErrorSuccess}};}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}\ ret\ =\ \mbox{\hyperlink{namespace_ne_o_s_aa81857a2033441e004abaf5df755413e}{mm\_delete\_heap}}(ptr.\mbox{\hyperlink{class_ne_o_s_1_1_error_or_af0319b3ff5fd9882da48564e154cae11}{Leak}}().Leak());}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ret\ ==\ \mbox{\hyperlink{namespace_ne_o_s_ad83d47273cc42a34aac83471c911a94e}{kErrorSuccess}};}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ entry\ =\ entry-\/>\mbox{\hyperlink{struct_ne_o_s_1_1_user_process_1_1_process_memory_heap_list_a3fb8dc684c2a4dba8cbbe293dfda5b6a}{MemoryNext}};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_debug_output_8h_a18983745cdbaca69cc1eb2cb33f02ada}{kout}}\ <<\ \textcolor{stringliteral}{"{}Invalid\ Pointer:\ Trying\ to\ free\ a\ pointer\ which\ doesn't\ exist.\(\backslash\)r"{}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{class_ne_o_s_1_1_user_process_a26a76730173475f52763c6745bc34830}{Crash}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a554d6ecb4ae62985018db18be458114d}{No}};}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

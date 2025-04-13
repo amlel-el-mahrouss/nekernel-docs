@@ -1,0 +1,48 @@
+\doxysection{Boot\+Thread.\+h}
+\hypertarget{_boot_thread_8h_source}{}\label{_boot_thread_8h_source}\index{dev/boot/BootKit/BootThread.h@{dev/boot/BootKit/BootThread.h}}
+\mbox{\hyperlink{_boot_thread_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_p_e_8h}{KernelKit/PE.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_m_s_d_o_s_8h}{KernelKit/MSDOS.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_handover_8h}{FirmwareKit/Handover.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_boot}{Boot}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }BootThread;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_boot_1_1_boot_thread}{BootThread}}\ final}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_boot_1_1_boot_thread_aff5b0d5b16a81c2ccbeb85b54a100f9e}{BootThread}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_ae6a07a52dc6e746944db49033e151978}{\string~BootThread}}()\ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_boot_1_1_boot_thread_aff5b0d5b16a81c2ccbeb85b54a100f9e}{BootThread}}(\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{NeOS::VoidPtr}}\ blob);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread}{BootThread}}\&\ \mbox{\hyperlink{class_boot_1_1_boot_thread_aa74fb47d319adf63201a53a3dcba484b}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_boot_1_1_boot_thread}{BootThread}}\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_ab79cfaec1be5284d4efae834aa914ec4}{BootThread}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_boot_1_1_boot_thread}{BootThread}}\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_a13cc72f629972a1f5638a78d81d2374b}{Start}}(\mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{HEL::BootInfoHeader}}*\ handover,\ \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}\ is\_own\_stack);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_af0b05408daeab96317a58a06854b6727}{SetName}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_boot_1_1_boot_thread_a7ce081e80484a7a59d2469421eb411df}{GetName}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_a079bd8940157af19f13d094ae105e838}{IsValid}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_a18eb6c9c93696dd78fe7684b7e274d00}{fBlobName}}[256U]\ =\ \{\textcolor{stringliteral}{"{}BootThread"{}}\};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_acfade727a5512f55fe313fc4b6ded9a3}{fStartAddress}}\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_ae636b184a1d8ae85ed2e38ec80749ae0}{fBlob}}\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_boot_1_1_boot_thread_a4f0bc60b2a69597c5902b71de3316a7b}{fStack}}\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{HEL::BootInfoHeader}}*\ \mbox{\hyperlink{class_boot_1_1_boot_thread_a2ec4f63920b8f17fc16398f8032087c0}{fHandover}}\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00042\ \ \ \ \ \};}
+\DoxyCodeLine{00043\ \}\ \textcolor{comment}{//\ namespace\ Boot}}
+
+\end{DoxyCode}

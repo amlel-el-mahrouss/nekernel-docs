@@ -2,13 +2,13 @@ var namespaces_dup =
 [
     [ "Boot", "namespace_boot.html", "namespace_boot" ],
     [ "CF", "namespace_c_f.html", "namespace_c_f" ],
-    [ "CFKit", "namespace_c_f_kit.html", "namespace_c_f_kit" ],
     [ "cxxabiv1", "namespacecxxabiv1.html", [
       [ "__guard", "namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715", null ]
     ] ],
+    [ "DI", "namespace_d_i.html", "namespace_d_i" ],
     [ "FB", "namespace_f_b.html", "namespace_f_b" ],
     [ "Firmware", "namespace_firmware.html", "namespace_firmware" ],
-    [ "NeOS", "namespace_ne_o_s.html", "namespace_ne_o_s" ],
+    [ "Kernel", "namespace_kernel.html", "namespace_kernel" ],
     [ "pfd", "namespacepfd.html", "namespacepfd" ],
     [ "qr", "namespaceqr.html", "namespaceqr" ],
     [ "UI", "namespace_u_i.html", [

@@ -1,0 +1,139 @@
+\doxysection{Hba\+Cmd\+Header Struct Reference}
+\hypertarget{struct_hba_cmd_header}{}\label{struct_hba_cmd_header}\index{HbaCmdHeader@{HbaCmdHeader}}
+
+
+{\ttfamily \#include $<$AHCI.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_aeff7f8354ec148920860d2c5bda5a108}{Cfl}}: 5\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_a083cf7e5def22a88e07122995f092a7f}{Atapi}}: 1\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_ab0d1c170e97370a5502cd8a630502751}{Write}}: 1\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_a2615e27da1f8b19417158ce2a59dc492}{Prefetchable}}: 1\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_ac18eca4b25f055a9deb0a66ab87ca9ca}{Reset}}: 1\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_ab68bedd8953e324119155515bb6580b8}{BIST}}: 1\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_a28c0cee20ddad3210cdfe4913c1b4a3d}{Clear}}: 1\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_aeb378722ea1d7093165381481bbc906e}{Reserved0}}: 1\\
+\>\>\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}} \mbox{\hyperlink{struct_hba_cmd_header_a64915de00145d868a0273477a00c535f}{Pmp}}: 4\\
+\>\} \\
+\>\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{NeOS::UInt16}} \mbox{\hyperlink{struct_hba_cmd_header_a3fd6c8a9a9a6068c717b49c8693385cb}{Flags}}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{Ne\+OS\+::\+UInt16}} \mbox{\hyperlink{struct_hba_cmd_header_a50c263d2630d0f8e678781ebb422d83c}{Prdtl}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_hba_cmd_header_a0a722a36a6178d2f6ba3f9de96fa9a7b}{Prdbc}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_hba_cmd_header_aae4b45ce4797d2d4f6d264684adf174a}{Ctba}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_hba_cmd_header_accf7e40bdf7ca30434e4b7b8a3821a28}{Ctbau}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} \mbox{\hyperlink{struct_hba_cmd_header_ade5c2b83707064f8dba10624812a8316}{Rsv}} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_hba_cmd_header_a77a6f1cbbe4d6cdc831cf6ecf7a53b40}\label{struct_hba_cmd_header_a77a6f1cbbe4d6cdc831cf6ecf7a53b40} 
+\doxysubsubsection{\texorpdfstring{[union]}{[union]}}
+{\footnotesize\ttfamily union  \{ ... \}  \mbox{\hyperlink{struct_hba_cmd_header}{Hba\+Cmd\+Header}}}
+
+\Hypertarget{struct_hba_cmd_header_a083cf7e5def22a88e07122995f092a7f}\label{struct_hba_cmd_header_a083cf7e5def22a88e07122995f092a7f} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Atapi@{Atapi}}
+\index{Atapi@{Atapi}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Atapi}{Atapi}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Atapi}
+
+\Hypertarget{struct_hba_cmd_header_ab68bedd8953e324119155515bb6580b8}\label{struct_hba_cmd_header_ab68bedd8953e324119155515bb6580b8} 
+\index{HbaCmdHeader@{HbaCmdHeader}!BIST@{BIST}}
+\index{BIST@{BIST}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{BIST}{BIST}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+BIST}
+
+\Hypertarget{struct_hba_cmd_header_aeff7f8354ec148920860d2c5bda5a108}\label{struct_hba_cmd_header_aeff7f8354ec148920860d2c5bda5a108} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Cfl@{Cfl}}
+\index{Cfl@{Cfl}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Cfl}{Cfl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Cfl}
+
+\Hypertarget{struct_hba_cmd_header_a28c0cee20ddad3210cdfe4913c1b4a3d}\label{struct_hba_cmd_header_a28c0cee20ddad3210cdfe4913c1b4a3d} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Clear@{Clear}}
+\index{Clear@{Clear}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Clear}{Clear}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Clear}
+
+\Hypertarget{struct_hba_cmd_header_aae4b45ce4797d2d4f6d264684adf174a}\label{struct_hba_cmd_header_aae4b45ce4797d2d4f6d264684adf174a} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Ctba@{Ctba}}
+\index{Ctba@{Ctba}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Ctba}{Ctba}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Hba\+Cmd\+Header\+::\+Ctba}
+
+\Hypertarget{struct_hba_cmd_header_accf7e40bdf7ca30434e4b7b8a3821a28}\label{struct_hba_cmd_header_accf7e40bdf7ca30434e4b7b8a3821a28} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Ctbau@{Ctbau}}
+\index{Ctbau@{Ctbau}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Ctbau}{Ctbau}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Hba\+Cmd\+Header\+::\+Ctbau}
+
+\Hypertarget{struct_hba_cmd_header_a3fd6c8a9a9a6068c717b49c8693385cb}\label{struct_hba_cmd_header_a3fd6c8a9a9a6068c717b49c8693385cb} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Flags@{Flags}}
+\index{Flags@{Flags}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{Ne\+OS\+::\+UInt16}} Hba\+Cmd\+Header\+::\+Flags}
+
+\Hypertarget{struct_hba_cmd_header_a64915de00145d868a0273477a00c535f}\label{struct_hba_cmd_header_a64915de00145d868a0273477a00c535f} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Pmp@{Pmp}}
+\index{Pmp@{Pmp}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Pmp}{Pmp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Pmp}
+
+\Hypertarget{struct_hba_cmd_header_a0a722a36a6178d2f6ba3f9de96fa9a7b}\label{struct_hba_cmd_header_a0a722a36a6178d2f6ba3f9de96fa9a7b} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Prdbc@{Prdbc}}
+\index{Prdbc@{Prdbc}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Prdbc}{Prdbc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Hba\+Cmd\+Header\+::\+Prdbc}
+
+\Hypertarget{struct_hba_cmd_header_a50c263d2630d0f8e678781ebb422d83c}\label{struct_hba_cmd_header_a50c263d2630d0f8e678781ebb422d83c} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Prdtl@{Prdtl}}
+\index{Prdtl@{Prdtl}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Prdtl}{Prdtl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{Ne\+OS\+::\+UInt16}} Hba\+Cmd\+Header\+::\+Prdtl}
+
+\Hypertarget{struct_hba_cmd_header_a2615e27da1f8b19417158ce2a59dc492}\label{struct_hba_cmd_header_a2615e27da1f8b19417158ce2a59dc492} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Prefetchable@{Prefetchable}}
+\index{Prefetchable@{Prefetchable}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Prefetchable}{Prefetchable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Prefetchable}
+
+\Hypertarget{struct_hba_cmd_header_aeb378722ea1d7093165381481bbc906e}\label{struct_hba_cmd_header_aeb378722ea1d7093165381481bbc906e} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Reserved0@{Reserved0}}
+\index{Reserved0@{Reserved0}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Reserved0}{Reserved0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Reserved0}
+
+\Hypertarget{struct_hba_cmd_header_ac18eca4b25f055a9deb0a66ab87ca9ca}\label{struct_hba_cmd_header_ac18eca4b25f055a9deb0a66ab87ca9ca} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Reset@{Reset}}
+\index{Reset@{Reset}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Reset}{Reset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Reset}
+
+\Hypertarget{struct_hba_cmd_header_ade5c2b83707064f8dba10624812a8316}\label{struct_hba_cmd_header_ade5c2b83707064f8dba10624812a8316} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Rsv@{Rsv}}
+\index{Rsv@{Rsv}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Rsv}{Rsv}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{Ne\+OS\+::\+UInt32}} Hba\+Cmd\+Header\+::\+Rsv\mbox{[}4\mbox{]}}
+
+\Hypertarget{struct_hba_cmd_header_ab0d1c170e97370a5502cd8a630502751}\label{struct_hba_cmd_header_ab0d1c170e97370a5502cd8a630502751} 
+\index{HbaCmdHeader@{HbaCmdHeader}!Write@{Write}}
+\index{Write@{Write}!HbaCmdHeader@{HbaCmdHeader}}
+\doxysubsubsection{\texorpdfstring{Write}{Write}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{Ne\+OS\+::\+UInt8}} Hba\+Cmd\+Header\+::\+Write}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/modules/\+AHCI/\mbox{\hyperlink{modules_2_a_h_c_i_2_a_h_c_i_8h}{AHCI.\+h}}\end{DoxyCompactItemize}

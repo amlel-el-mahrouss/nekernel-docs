@@ -1,0 +1,58 @@
+\doxysection{dev/kernel/src/\+IPEFDylib\+Object.cc File Reference}
+\hypertarget{_i_p_e_f_dylib_object_8cc}{}\label{_i_p_e_f_dylib_object_8cc}\index{dev/kernel/src/IPEFDylibObject.cc@{dev/kernel/src/IPEFDylibObject.cc}}
+
+
+PEF\textquotesingle{}s Dylib runtime.  
+
+
+{\ttfamily \#include $<$Kernel\+Kit/\+Debug\+Output.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+PEF.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+IPEFDylib\+Object.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+User\+Process\+Scheduler.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Thread\+Local\+Storage.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_aa8c8353efab82cab4d244834345daed5}{IDylib\+Ref}} \mbox{\hyperlink{_i_p_e_f_dylib_object_8cc_a32dc15bc7ea41f8985f7dfe61b2fc14a}{rtl\+\_\+init\+\_\+dylib}} (\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&process)
+\begin{DoxyCompactList}\small\item\em Library initializer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{_i_p_e_f_dylib_object_8cc_afbca70acaa8dea8a047a17206f7934ac}{rtl\+\_\+fini\+\_\+dylib}} (\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&process, \mbox{\hyperlink{namespace_ne_o_s_aa8c8353efab82cab4d244834345daed5}{IDylib\+Ref}} dll\+\_\+obj, \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \texorpdfstring{$\ast$}{*}successful)
+\begin{DoxyCompactList}\small\item\em Frees the dll\+\_\+obj. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PEF\textquotesingle{}s Dylib runtime. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_i_p_e_f_dylib_object_8cc_afbca70acaa8dea8a047a17206f7934ac}\label{_i_p_e_f_dylib_object_8cc_afbca70acaa8dea8a047a17206f7934ac} 
+\index{IPEFDylibObject.cc@{IPEFDylibObject.cc}!rtl\_fini\_dylib@{rtl\_fini\_dylib}}
+\index{rtl\_fini\_dylib@{rtl\_fini\_dylib}!IPEFDylibObject.cc@{IPEFDylibObject.cc}}
+\doxysubsubsection{\texorpdfstring{rtl\_fini\_dylib()}{rtl\_fini\_dylib()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} rtl\+\_\+fini\+\_\+dylib (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&}]{process,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_aa8c8353efab82cab4d244834345daed5}{IDylib\+Ref}}}]{dll\+\_\+obj,  }\item[{\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \texorpdfstring{$\ast$}{*}}]{successful }\end{DoxyParamCaption})}
+
+
+
+Frees the dll\+\_\+obj. 
+
+\begin{DoxyNote}{Note}
+Please check if the dll\+\_\+obj got freed! 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em dll\+\_\+obj} & The dll\+\_\+obj to free. \\
+\hline
+{\em successful} & Reports if successful or not. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_i_p_e_f_dylib_object_8cc_a32dc15bc7ea41f8985f7dfe61b2fc14a}\label{_i_p_e_f_dylib_object_8cc_a32dc15bc7ea41f8985f7dfe61b2fc14a} 
+\index{IPEFDylibObject.cc@{IPEFDylibObject.cc}!rtl\_init\_dylib@{rtl\_init\_dylib}}
+\index{rtl\_init\_dylib@{rtl\_init\_dylib}!IPEFDylibObject.cc@{IPEFDylibObject.cc}}
+\doxysubsubsection{\texorpdfstring{rtl\_init\_dylib()}{rtl\_init\_dylib()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_aa8c8353efab82cab4d244834345daed5}{IDylib\+Ref}} rtl\+\_\+init\+\_\+dylib (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_user_process}{User\+Process}} \&}]{process }\end{DoxyParamCaption})}
+
+
+
+Library initializer. 
+

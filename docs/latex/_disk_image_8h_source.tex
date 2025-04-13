@@ -1,0 +1,42 @@
+\doxysection{Disk\+Image.\+h}
+\hypertarget{_disk_image_8h_source}{}\label{_disk_image_8h_source}\index{public/frameworks/DiskImage.fwrk/headers/DiskImage.h@{public/frameworks/DiskImage.fwrk/headers/DiskImage.h}}
+\mbox{\hyperlink{_disk_image_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ FILE:\ DiskImage.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ PURPOSE:\ Disk\ Imaging\ framework.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_system_calls_8h}{user/SystemCalls.h}}>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ kDISectorSz\ \ \ \ \ \ \ \ \ \ (512)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ kDIMinDiskSz\ \ \ \ \ \ \ \ \ mib\_cast(1)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ kDIDefaultOutputName\ "{}disk.eimg"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ kDIDefaultDiskName\ \ \ "{}Disk"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ kDISuccessStatus\ \ \ \ \ (0)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ kDIFailureStatus\ \ \ \ \ (1)}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ kDIDiskNameLen\ (16)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ kDIOutNameLen\ \ (256)}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\_DISK\_IMAGE}}}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{user_2_macros_8h_a7942e32f6409fbd1fd347a8c23ef725e}{Char}}\ \ \ \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e_a66c4876e4e5d8f1accad946f3d93d1be}{disk\_name}}[\mbox{\hyperlink{_disk_image_8h_aab030650db686fd009509ca5a7d9ee59}{kDIDiskNameLen}}]\ =\ \mbox{\hyperlink{_disk_image_8h_a92a21155f47827fc11bf8bdf067034fd}{kDIDefaultDiskName}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}}\ \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e_a144d2c1d7760b2b00943b77b81df2698}{sector\_sz}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \mbox{\hyperlink{_disk_image_8h_a1885ffb04a636698df9f5b0000659f31}{kDISectorSz}};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}}\ \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e_a9868fab428da373adf3111474a76f886}{block\_cnt}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{user_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}}\ \ \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e_abdcaa2f5b7a19a7d2510bc0255ee105a}{disk\_sz}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \mbox{\hyperlink{_disk_image_8h_ae5ee56a524530230a36072cb038f7f50}{kDIMinDiskSz}};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{user_2_macros_8h_a7942e32f6409fbd1fd347a8c23ef725e}{Char}}\ \ \ \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e_a17a8ee6e53587d5740bf8ab001a396dd}{out\_name}}[\mbox{\hyperlink{_disk_image_8h_ab25b457cca505d99340a42657e835237}{kDIOutNameLen}}]\ \ =\ \mbox{\hyperlink{_disk_image_8h_a43a1a5f1849f79fa70b6df6d03532125}{kDIDefaultOutputName}};}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}}\ \mbox{\hyperlink{_disk_image_8h_aaeeb394618cbbff42c07c13605748dfa}{DIFormatPartitionEPM}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\_DISK\_IMAGE}}\&\ img)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}}\ \mbox{\hyperlink{_disk_image_8h_ad885206804a333c3711f5c7181040be3}{DIFormatFilesystemNeFS}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{struct_d_i___d_i_s_k___i_m_a_g_e}{DI\_DISK\_IMAGE}}\&\ img)\ \textcolor{keyword}{noexcept};}
+
+\end{DoxyCode}

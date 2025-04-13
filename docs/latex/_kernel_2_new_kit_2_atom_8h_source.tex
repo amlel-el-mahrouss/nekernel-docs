@@ -1,0 +1,53 @@
+\doxysection{Atom.\+h}
+\hypertarget{_kernel_2_new_kit_2_atom_8h_source}{}\label{_kernel_2_new_kit_2_atom_8h_source}\index{dev/Kernel/NewKit/Atom.h@{dev/Kernel/NewKit/Atom.h}}
+\mbox{\hyperlink{_kernel_2_new_kit_2_atom_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_atom}{Atom}}\ final}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_atom_a86316a6ba339ba961fb031e4c63d42f1}{Atom}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_atom_aadd1df8b4c6189961f99667bf43c2b02}{\string~Atom}}()\ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_atom}{Atom}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_atom_a84ac00b7e543d1d9c8a2a334543be4c0}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_atom}{Atom}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_atom_abc22e48a3021dcdd5a739d0838c63d4c}{Atom}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_atom}{Atom}}\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{class_ne_o_s_1_1_atom_a6da58b42821d5db335ae2e60be1e911c}{operator[]}}(\mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}}\ bit)}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_ne_o_s_1_1_atom_ae6beb29b089abbf5dbfe27c5d6acbbbf}{fArrayOfAtoms}}\ \&\ (1\ <<\ bit));}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ne_o_s_1_1_atom_a7b1e23b6159417b9acb4b12a5dab0295}{operator|}}(\mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}}\ bit)}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_atom_ae6beb29b089abbf5dbfe27c5d6acbbbf}{fArrayOfAtoms}}\ |=\ (1\ <<\ bit);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_atom_a0e6822cf7b2018c5f7859417a8e37a40}{operator==}}(\mbox{\hyperlink{class_ne_o_s_1_1_atom}{Atom<T>}}\&\ atomic,\ \textcolor{keyword}{const}\ T\&\ idx)}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ atomic[idx]\ ==\ idx;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_atom_a55753f14362e89e88a7bfff9447af9bb}{operator!=}}(\mbox{\hyperlink{class_ne_o_s_1_1_atom}{Atom<T>}}\&\ atomic,\ \textcolor{keyword}{const}\ T\&\ idx)}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ atomic[idx]\ ==\ idx;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ T\ \mbox{\hyperlink{class_ne_o_s_1_1_atom_ae6beb29b089abbf5dbfe27c5d6acbbbf}{fArrayOfAtoms}};}
+\DoxyCodeLine{00046\ \ \ \ \ \};}
+\DoxyCodeLine{00047\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

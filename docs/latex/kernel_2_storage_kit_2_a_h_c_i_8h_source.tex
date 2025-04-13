@@ -1,0 +1,66 @@
+\doxysection{AHCI.\+h}
+\hypertarget{kernel_2_storage_kit_2_a_h_c_i_8h_source}{}\label{kernel_2_storage_kit_2_a_h_c_i_8h_source}\index{dev/kernel/StorageKit/AHCI.h@{dev/kernel/StorageKit/AHCI.h}}
+\mbox{\hyperlink{kernel_2_storage_kit_2_a_h_c_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_device_mgr_8h}{KernelKit/DeviceMgr.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_drive_mgr_8h}{KernelKit/DriveMgr.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_own_ptr_8h}{NewKit/OwnPtr.h}}>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }AHCIDeviceInterface\ \mbox{\hyperlink{_device_mgr_8h_a003e6c4700d518adbf5ca256c38f4b7e}{NE\_DEVICE}}<\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{MountpointInterface}}*>}
+\DoxyCodeLine{00016\ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8e9371b7d0c9cf3ad638805b643a022e}{AHCIDeviceInterface}}(\textcolor{keywordtype}{void}\ (*out)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDeviceObject}}*\ self,\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{MountpointInterface}}*\ out),}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ (*in)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDeviceObject}}*\ self,\ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{MountpointInterface}}*\ in),}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ (*cleanup)(\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a0d436caa45a4ab216434cd272826e222}{\string~AHCIDeviceInterface}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ AHCIDeviceInterface\&\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a481f8ca5a7375549d063b4cd6db94ffd}{operator=}}(\textcolor{keyword}{const}\ AHCIDeviceInterface\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a31faf1b7be340060a1ff0cc33d3376e4}{AHCIDeviceInterface}}(\textcolor{keyword}{const}\ AHCIDeviceInterface\&)\ \ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a7bd8b6c746b9a1ac0b8077046e1019dd}{Name}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a8ca8da103bbed4b16433c18c051f4794}{GetPortsImplemented}}()}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>fPortsImplemented;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a37d1e58db131aa620825a61ba5e2b9b1}{SetPortsImplemented}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}\&\ pi)}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_kernel_panic_8h_a21aee4c355d56e3630f2f341f59b9406}{MUST\_PASS}}(pi\ >\ 0);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>fPortsImplemented\ =\ pi;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a58d8e45eb376f663c8ad34c0e712c85c}{GetIndex}}()}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>fDriveIndex;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4_a2d03aede4fe37b76651022c786d999c4}{SetIndex}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\&\ drv)}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_kernel_panic_8h_a21aee4c355d56e3630f2f341f59b9406}{MUST\_PASS}}(\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface_a3601616fabc8abf426387a924c6693d2a427b3c44620b0229847047721c1674ed}{MountpointInterface::kDriveIndexInvalid}}\ !=\ drv);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>fDriveIndex\ =\ drv;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ (*fCleanup)(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})\ =\ \{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}\ fPortsImplemented\{0U\};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ fDriveIndex\{0U\};}
+\DoxyCodeLine{00056\ \ \ \ \ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{user_2_macros_8h_a52977b924e23d8e96863e9e904a29048}{UInt16}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a83eb52538c700658beb073f39ea5265b}{sk\_init\_ahci\_device}}(\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}\ atapi);}
+\DoxyCodeLine{00059\ \ \ \ \ ErrorOr<AHCIDeviceInterface>\ \mbox{\hyperlink{namespace_ne_o_s_ad84cc1ceddd8f4e0d7691f14466bdc78}{sk\_acquire\_ahci\_device}}(\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ drv\_index);}
+\DoxyCodeLine{00060\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('_a_m_d64_2_boot_e_f_i_8cc.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_boot_kit_8h_source.html">BootKit/BootKit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_f_b_mgr_8h_source.html">modules/CoreGfx/FBMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_text_mgr_8h_source.html">modules/CoreGfx/TextMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_core_gfx_8h_source.html">modules/CoreGfx/CoreGfx.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_text_gfx_8h_source.html">modules/CoreGfx/TextGfx.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_e_f_i_8h_source.html">FirmwareKit/EFI.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_a_p_i_8h_source.html">FirmwareKit/EFI/API.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_handover_8h_source.html">FirmwareKit/Handover.h</a>&gt;</code><br />
@@ -112,29 +112,27 @@ $(document).ready(function(){initNavTree('_a_m_d64_2_boot_e_f_i_8cc.html',''); i
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad16f9967352b47795f4b1d0d3f92a842" id="r_ad16f9967352b47795f4b1d0d3f92a842"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#ad16f9967352b47795f4b1d0d3f92a842">kMachineModel</a>&#160;&#160;&#160;&quot;ZkaOS&quot;</td></tr>
-<tr class="separator:ad16f9967352b47795f4b1d0d3f92a842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af40623aa029bf6a91ebe357a5c7e6a9d" id="r_af40623aa029bf6a91ebe357a5c7e6a9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#af40623aa029bf6a91ebe357a5c7e6a9d">kExpectedWidth</a>&#160;&#160;&#160;(1280)</td></tr>
+<tr class="memitem:af40623aa029bf6a91ebe357a5c7e6a9d" id="r_af40623aa029bf6a91ebe357a5c7e6a9d"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="class_kernel_1_1_error_or.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#af40623aa029bf6a91ebe357a5c7e6a9d">kExpectedWidth</a>&#160;&#160;&#160;(800)</td></tr>
 <tr class="separator:af40623aa029bf6a91ebe357a5c7e6a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c296b9120b9c636e3cd538057b112c" id="r_a91c296b9120b9c636e3cd538057b112c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a91c296b9120b9c636e3cd538057b112c">kExpectedHeight</a>&#160;&#160;&#160;(720)</td></tr>
+<tr class="memitem:a91c296b9120b9c636e3cd538057b112c" id="r_a91c296b9120b9c636e3cd538057b112c"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="class_kernel_1_1_error_or.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a91c296b9120b9c636e3cd538057b112c">kExpectedHeight</a>&#160;&#160;&#160;(600)</td></tr>
 <tr class="separator:a91c296b9120b9c636e3cd538057b112c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0908b40c96960891de26d84dfa738fda" id="r_a0908b40c96960891de26d84dfa738fda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a0908b40c96960891de26d84dfa738fda">rt_reset_hardware</a> ()</td></tr>
+<tr class="memitem:a0908b40c96960891de26d84dfa738fda" id="r_a0908b40c96960891de26d84dfa738fda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a0908b40c96960891de26d84dfa738fda">rt_reset_hardware</a> ()</td></tr>
 <tr class="separator:a0908b40c96960891de26d84dfa738fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f766b34e76144e82b3b9e558a23d945" id="r_a3f766b34e76144e82b3b9e558a23d945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_ne_o_s.html#ad5f3c5e87966b36f6741ac5897f80120">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a3f766b34e76144e82b3b9e558a23d945">boot_init_fb</a> () noexcept</td></tr>
+<tr class="memitem:a3f766b34e76144e82b3b9e558a23d945" id="r_a3f766b34e76144e82b3b9e558a23d945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a3f766b34e76144e82b3b9e558a23d945">boot_init_fb</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
 <tr class="memdesc:a3f766b34e76144e82b3b9e558a23d945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds and stores the GOP object.  <br /></td></tr>
 <tr class="separator:a3f766b34e76144e82b3b9e558a23d945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b733d4703c7b0ddec923327add6d97" id="r_ae7b733d4703c7b0ddec923327add6d97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_f_i_2_e_f_i_8h.html#a6d12db15898c506de9a7ec08fb1bbf5d">EFI_EXTERN_C</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#ae011c5c900283f3b3a22ce56a6000471">EFI_API</a> <a class="el" href="namespace_ne_o_s.html#a91a19724952b6c6faf9b52f9efc935f7">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#ae7b733d4703c7b0ddec923327add6d97">Main</a> (<a class="el" href="_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2">EfiHandlePtr</a> image_handle, <a class="el" href="struct_efi_system_table.html">EfiSystemTable</a> *sys_table)</td></tr>
-<tr class="memdesc:ae7b733d4703c7b0ddec923327add6d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main EFI entrypoint.  <br /></td></tr>
-<tr class="separator:ae7b733d4703c7b0ddec923327add6d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09227d565ddfaf88b34a1fff375ae876" id="r_a09227d565ddfaf88b34a1fff375ae876"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_f_i_2_e_f_i_8h.html#a6d12db15898c506de9a7ec08fb1bbf5d">EFI_EXTERN_C</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#ae011c5c900283f3b3a22ce56a6000471">EFI_API</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a09227d565ddfaf88b34a1fff375ae876">ModuleMain</a> (<a class="el" href="_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2">EfiHandlePtr</a> <a class="el" href="class_kernel_1_1_error_or.html">image_handle</a>, <a class="el" href="struct_efi_system_table.html">EfiSystemTable</a> *<a class="el" href="class_kernel_1_1_error_or.html">sys_table</a>)</td></tr>
+<tr class="memdesc:a09227d565ddfaf88b34a1fff375ae876"><td class="mdescLeft">&#160;</td><td class="mdescRight">ModuleMain EFI entrypoint.  <br /></td></tr>
+<tr class="separator:a09227d565ddfaf88b34a1fff375ae876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3829aba0f8fbd5c64a3b79ae0799b53c" id="r_a3829aba0f8fbd5c64a3b79ae0799b53c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_efi_graphics_output_protocol.html">EfiGraphicsOutputProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a3829aba0f8fbd5c64a3b79ae0799b53c">kGop</a> = nullptr</td></tr>
+<tr class="memitem:a3829aba0f8fbd5c64a3b79ae0799b53c" id="r_a3829aba0f8fbd5c64a3b79ae0799b53c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_efi_graphics_output_protocol.html">EfiGraphicsOutputProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a3829aba0f8fbd5c64a3b79ae0799b53c">kGop</a> = <a class="el" href="class_kernel_1_1_error_or.html">nullptr</a></td></tr>
 <tr class="separator:a3829aba0f8fbd5c64a3b79ae0799b53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1b13e56d446b2b0bd3c580bf6a9e059" id="r_ab1b13e56d446b2b0bd3c580bf6a9e059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_ne_o_s.html#a4885ae005fc56130691bdea86d9a88d7">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#ab1b13e56d446b2b0bd3c580bf6a9e059">kGopStride</a> = 0U</td></tr>
+<tr class="memitem:ab1b13e56d446b2b0bd3c580bf6a9e059" id="r_ab1b13e56d446b2b0bd3c580bf6a9e059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#ab1b13e56d446b2b0bd3c580bf6a9e059">kGopStride</a> = 0U</td></tr>
 <tr class="separator:ab1b13e56d446b2b0bd3c580bf6a9e059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a5243ff8016352eb7720bd8393200be" id="r_a7a5243ff8016352eb7720bd8393200be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368">EfiGUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_boot_e_f_i_8cc.html#a7a5243ff8016352eb7720bd8393200be">kGopGuid</a></td></tr>
 <tr class="separator:a7a5243ff8016352eb7720bd8393200be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +149,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kExpectedHeight&#160;&#160;&#160;(720)</td>
+          <td class="memname">#<a class="el" href="class_kernel_1_1_error_or.html">define</a> kExpectedHeight&#160;&#160;&#160;(600)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -165,21 +163,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kExpectedWidth&#160;&#160;&#160;(1280)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad16f9967352b47795f4b1d0d3f92a842" name="ad16f9967352b47795f4b1d0d3f92a842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad16f9967352b47795f4b1d0d3f92a842">&#9670;&#160;</a></span>kMachineModel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kMachineModel&#160;&#160;&#160;&quot;ZkaOS&quot;</td>
+          <td class="memname">#<a class="el" href="class_kernel_1_1_error_or.html">define</a> kExpectedWidth&#160;&#160;&#160;(800)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -197,7 +181,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_ne_o_s.html#ad5f3c5e87966b36f6741ac5897f80120">Bool</a> boot_init_fb </td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> boot_init_fb </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -214,14 +198,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7b733d4703c7b0ddec923327add6d97" name="ae7b733d4703c7b0ddec923327add6d97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b733d4703c7b0ddec923327add6d97">&#9670;&#160;</a></span>Main()</h2>
+<a id="a09227d565ddfaf88b34a1fff375ae876" name="a09227d565ddfaf88b34a1fff375ae876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09227d565ddfaf88b34a1fff375ae876">&#9670;&#160;</a></span>ModuleMain()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_e_f_i_2_e_f_i_8h.html#a6d12db15898c506de9a7ec08fb1bbf5d">EFI_EXTERN_C</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#ae011c5c900283f3b3a22ce56a6000471">EFI_API</a> <a class="el" href="namespace_ne_o_s.html#a91a19724952b6c6faf9b52f9efc935f7">Int32</a> Main </td>
+          <td class="memname"><a class="el" href="_e_f_i_2_e_f_i_8h.html#a6d12db15898c506de9a7ec08fb1bbf5d">EFI_EXTERN_C</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#ae011c5c900283f3b3a22ce56a6000471">EFI_API</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> ModuleMain </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2">EfiHandlePtr</a>&#160;</td>
           <td class="paramname"><em>image_handle</em>, </td>
@@ -240,7 +224,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Main EFI entrypoint. </p>
+<p>ModuleMain EFI entrypoint. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image_handle</td><td>Handle of this image. </td></tr>
@@ -261,7 +245,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_ne_o_s.html#ad33956dfc567efebd063d7bc6d1ae82d">Void</a> rt_reset_hardware </td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> rt_reset_hardware </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -311,7 +295,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_efi_graphics_output_protocol.html">EfiGraphicsOutputProtocol</a>* kGop = nullptr</td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_efi_graphics_output_protocol.html">EfiGraphicsOutputProtocol</a>* kGop = <a class="el" href="class_kernel_1_1_error_or.html">nullptr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -340,7 +324,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_ne_o_s.html#a4885ae005fc56130691bdea86d9a88d7">UInt16</a> kGopStride = 0U</td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kGopStride = 0U</td>
         </tr>
       </table>
 </div><div class="memdoc">

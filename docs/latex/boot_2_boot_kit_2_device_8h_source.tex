@@ -1,0 +1,42 @@
+\doxysection{Device.\+h}
+\hypertarget{boot_2_boot_kit_2_device_8h_source}{}\label{boot_2_boot_kit_2_device_8h_source}\index{dev/boot/BootKit/Device.h@{dev/boot/BootKit/Device.h}}
+\mbox{\hyperlink{boot_2_boot_kit_2_device_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{modules_2_a_t_a_2_a_t_a_8h}{modules/ATA/ATA.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{modules_2_a_h_c_i_2_a_h_c_i_8h}{modules/AHCI/AHCI.h}}>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_device}{Device}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_device_aeedac8c21921d1379d33ffc0e72a7b07}{Device}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_device_a6fef4f7180512c7517c9696cd95e503a}{\string~Device}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_device_a77571628839606e44153921aa16ea2fc}{NE\_MOVE\_DEFAULT}}(\mbox{\hyperlink{class_device}{Device}});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_device_1_1_trait}{Trait}}}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \mbox{\hyperlink{struct_device_1_1_trait_a3d5ab5c93781985e26ea7b7609a883b1}{mBase}}\{1024\};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \mbox{\hyperlink{struct_device_1_1_trait_ad756009452907309c78a4ce5aef57ab6}{mSize}}\{1024\};}
+\DoxyCodeLine{00027\ \ \ \ \ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{struct_device_1_1_trait}{Trait}}\&\ \mbox{\hyperlink{class_device_a2603be6ddc2be307d81c5b392615aa51}{Leak}}()\ =\ 0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_device}{Device}}\&\ \mbox{\hyperlink{class_device_a6f4c2a14de8be631f9dc09abd8d6807d}{Read}}(\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ Buf,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\&\ SecCount)\ \ \ =\ 0;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_device}{Device}}\&\ \mbox{\hyperlink{class_device_a7ccc699f6067e5baaa982830dc581a90}{Write}}(\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}}*\ Buf,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\&\ SecCount)\ =\ 0;}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{class_device}{Device}}\ \mbox{\hyperlink{boot_2_boot_kit_2_device_8h_a30a15ab7226949e31b6049b8c7b11039}{BootDevice}};}
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{class_device}{Device}}\ \mbox{\hyperlink{class_ne_o_s_1_1_network_device}{NetworkDevice}};}
+\DoxyCodeLine{00037\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{class_device}{Device}}\ \mbox{\hyperlink{boot_2_boot_kit_2_device_8h_a6dda5a08386a6d212033f7e9391636d6}{DiskDevice}};}
+
+\end{DoxyCode}

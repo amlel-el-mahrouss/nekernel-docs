@@ -1,0 +1,57 @@
+\doxysection{Efi\+Memory\+Descriptor Struct Reference}
+\hypertarget{struct_efi_memory_descriptor}{}\label{struct_efi_memory_descriptor}\index{EfiMemoryDescriptor@{EfiMemoryDescriptor}}
+
+
+{\ttfamily \#include $<$EFI.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_efi_memory_descriptor_ae5fce5df9f4f8615f5fa8ac8b1ea1a87}{Kind}}
+\item 
+\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a39c7f6966178f1342309afab5e67897e}{Efi\+Physical\+Address}} \mbox{\hyperlink{struct_efi_memory_descriptor_a1de2cc21453dde19f0d629da3ee30dab}{Physical\+Start}}
+\item 
+\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a78fc502dbd4362df30a0c241d1f17ee2}{Efi\+Virtual\+Address}} \mbox{\hyperlink{struct_efi_memory_descriptor_aa28b4fe6eb5213737e970336a1e94d7d}{Virtual\+Start}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_memory_descriptor_a3a3e56f5f4f7dfc5d4e277065702b20b}{Number\+Of\+Pages}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_memory_descriptor_a15f4be22d4f8e43ed353bcb597b732b2}{Attribute}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_efi_memory_descriptor_a15f4be22d4f8e43ed353bcb597b732b2}\label{struct_efi_memory_descriptor_a15f4be22d4f8e43ed353bcb597b732b2} 
+\index{EfiMemoryDescriptor@{EfiMemoryDescriptor}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!EfiMemoryDescriptor@{EfiMemoryDescriptor}}
+\doxysubsubsection{\texorpdfstring{Attribute}{Attribute}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+Memory\+Descriptor\+::\+Attribute}
+
+Attributes of the memory region that describe the bit mask of capabilities for that memory region, and not necessarily the current settings for that memory region. \Hypertarget{struct_efi_memory_descriptor_ae5fce5df9f4f8615f5fa8ac8b1ea1a87}\label{struct_efi_memory_descriptor_ae5fce5df9f4f8615f5fa8ac8b1ea1a87} 
+\index{EfiMemoryDescriptor@{EfiMemoryDescriptor}!Kind@{Kind}}
+\index{Kind@{Kind}!EfiMemoryDescriptor@{EfiMemoryDescriptor}}
+\doxysubsubsection{\texorpdfstring{Kind}{Kind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Efi\+Memory\+Descriptor\+::\+Kind}
+
+Kind of the memory region. Kind EFI\+\_\+\+MEMORY\+\_\+\+TYPE is defined in the Allocate\+Pages() function description. \Hypertarget{struct_efi_memory_descriptor_a3a3e56f5f4f7dfc5d4e277065702b20b}\label{struct_efi_memory_descriptor_a3a3e56f5f4f7dfc5d4e277065702b20b} 
+\index{EfiMemoryDescriptor@{EfiMemoryDescriptor}!NumberOfPages@{NumberOfPages}}
+\index{NumberOfPages@{NumberOfPages}!EfiMemoryDescriptor@{EfiMemoryDescriptor}}
+\doxysubsubsection{\texorpdfstring{NumberOfPages}{NumberOfPages}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+Memory\+Descriptor\+::\+Number\+Of\+Pages}
+
+Number\+Of\+Pages Number of 4 KiB pages in the memory region. Number\+Of\+Pages must not be 0, and must not be any value that would represent a memory page with a start address, either physical or virtual, above 0xfffffffffffff000. \Hypertarget{struct_efi_memory_descriptor_a1de2cc21453dde19f0d629da3ee30dab}\label{struct_efi_memory_descriptor_a1de2cc21453dde19f0d629da3ee30dab} 
+\index{EfiMemoryDescriptor@{EfiMemoryDescriptor}!PhysicalStart@{PhysicalStart}}
+\index{PhysicalStart@{PhysicalStart}!EfiMemoryDescriptor@{EfiMemoryDescriptor}}
+\doxysubsubsection{\texorpdfstring{PhysicalStart}{PhysicalStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a39c7f6966178f1342309afab5e67897e}{Efi\+Physical\+Address}} Efi\+Memory\+Descriptor\+::\+Physical\+Start}
+
+Physical address of the first byte in the memory region. Physical\+Start must be aligned on a 4 KiB boundary, and must not be above 0xfffffffffffff000. Kind EFI\+\_\+\+PHYSICAL\+\_\+\+ADDRESS is defined in the Allocate\+Pages() function description \Hypertarget{struct_efi_memory_descriptor_aa28b4fe6eb5213737e970336a1e94d7d}\label{struct_efi_memory_descriptor_aa28b4fe6eb5213737e970336a1e94d7d} 
+\index{EfiMemoryDescriptor@{EfiMemoryDescriptor}!VirtualStart@{VirtualStart}}
+\index{VirtualStart@{VirtualStart}!EfiMemoryDescriptor@{EfiMemoryDescriptor}}
+\doxysubsubsection{\texorpdfstring{VirtualStart}{VirtualStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a78fc502dbd4362df30a0c241d1f17ee2}{Efi\+Virtual\+Address}} Efi\+Memory\+Descriptor\+::\+Virtual\+Start}
+
+Virtual address of the first byte in the memory region. Virtual\+Start must be aligned on a 4 KiB boundary, and must not be above 0xfffffffffffff000. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Firmware\+Kit/\+EFI/\mbox{\hyperlink{_e_f_i_2_e_f_i_8h}{EFI.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{AP.\+h}
+\hypertarget{_r_i_s_c_v_2_a_p_8h_source}{}\label{_r_i_s_c_v_2_a_p_8h_source}\index{dev/kernel/HALKit/RISCV/AP.h@{dev/kernel/HALKit/RISCV/AP.h}}
+\mbox{\hyperlink{_r_i_s_c_v_2_a_p_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ \ File:\ AP.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ \ Purpose:\ RISC-\/V\ hardware\ threads.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ \ \ \ Revision\ History:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ \ \ \ 30/01/24:\ Added\ file\ (amlel)}}
+\DoxyCodeLine{00011\ \textcolor{comment}{}}
+\DoxyCodeLine{00012\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}}\ \mbox{\hyperlink{namespace_ne_o_s_aee39feaa609c4d0504c596efe16a338c}{hal\_ap\_kind}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{namespace_ne_o_s_aabb28905dda7ba7cd3a51d14be7b993c}{HAL\_HARDWARE\_THREAD}}}
+\DoxyCodeLine{00023\ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{NeOS::UIntPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d_a86d710ef441f49e149e2b631ec896521}{fStartAddress}};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{NeOS::UInt8}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d_ac6a02cd1f3969d9e686079e5c4738435}{fPrivleged}}\ :\ 1;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{NeOS::UInt32}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d_aab675abcd33dd70287a62c325bb1356f}{fPageMemoryFlags}};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aee39feaa609c4d0504c596efe16a338c}{hal\_ap\_kind}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d_a21c41c02e657594bb2ec623ecc16e175}{fIdentNumber}};}
+\DoxyCodeLine{00028\ \ \ \ \ \}\ \mbox{\hyperlink{namespace_ne_o_s_aabb28905dda7ba7cd3a51d14be7b993c}{HAL\_HARDWARE\_THREAD}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\_C}}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{NeOS::Void}}\ \mbox{\hyperlink{namespace_ne_o_s_ab8615bc865f6b71f2e082d5a6e79e7af}{hal\_set\_pc\_to\_hart}}(HAL\_HARDWARE\_THREAD*\ hart,\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{NeOS::VoidPtr}}\ epc);}
+\DoxyCodeLine{00035\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

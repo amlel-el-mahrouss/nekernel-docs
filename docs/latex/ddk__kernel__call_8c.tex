@@ -1,0 +1,89 @@
+\doxysection{dev/ddk/src/ddk\+\_\+kernel\+\_\+call.c File Reference}
+\hypertarget{ddk__kernel__call_8c}{}\label{ddk__kernel__call_8c}\index{dev/ddk/src/ddk\_kernel\_call.c@{dev/ddk/src/ddk\_kernel\_call.c}}
+{\ttfamily \#include $<$ddk/ddk.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} \mbox{\hyperlink{ddk__kernel__call_8c_ae63bbedea77fb478fc2e68e27ef28713}{ATTRIBUTE}} (naked)
+\begin{DoxyCompactList}\small\item\em this is an internal call, do not use it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \mbox{\hyperlink{ddk__kernel__call_8c_a727601c606d7712503e7bf82617066a9}{ke\+\_\+add\+\_\+syscall}} (const int slot, void(\texorpdfstring{$\ast$}{*}slot\+Fn)(void \texorpdfstring{$\ast$}{*}a0))
+\begin{DoxyCompactList}\small\item\em Add system call. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ddk__kernel__call_8c_a763d2d877f202682c19575d9cc6e0e29}{ke\+\_\+get\+\_\+obj}} (const int slot, const char \texorpdfstring{$\ast$}{*}name)
+\begin{DoxyCompactList}\small\item\em Get a Kernel object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ddk__kernel__call_8c_ab374156d62ae91e14f7d41faf8d13a7b}{ke\+\_\+set\+\_\+obj}} (const int slot, const struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*}ddk\+\_\+pr)
+\begin{DoxyCompactList}\small\item\em Set a Kernel object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ddk__kernel__call_8c_ae63bbedea77fb478fc2e68e27ef28713}\label{ddk__kernel__call_8c_ae63bbedea77fb478fc2e68e27ef28713} 
+\index{ddk\_kernel\_call.c@{ddk\_kernel\_call.c}!ATTRIBUTE@{ATTRIBUTE}}
+\index{ATTRIBUTE@{ATTRIBUTE}!ddk\_kernel\_call.c@{ddk\_kernel\_call.c}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE()}{ATTRIBUTE()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} ATTRIBUTE (\begin{DoxyParamCaption}\item[{naked}]{ }\end{DoxyParamCaption})}
+
+
+
+this is an internal call, do not use it. 
+
+\Hypertarget{ddk__kernel__call_8c_a727601c606d7712503e7bf82617066a9}\label{ddk__kernel__call_8c_a727601c606d7712503e7bf82617066a9} 
+\index{ddk\_kernel\_call.c@{ddk\_kernel\_call.c}!ke\_add\_syscall@{ke\_add\_syscall}}
+\index{ke\_add\_syscall@{ke\_add\_syscall}!ddk\_kernel\_call.c@{ddk\_kernel\_call.c}}
+\doxysubsubsection{\texorpdfstring{ke\_add\_syscall()}{ke\_add\_syscall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void ke\+\_\+add\+\_\+syscall (\begin{DoxyParamCaption}\item[{const int}]{slot,  }\item[{void(\texorpdfstring{$\ast$}{*})(void \texorpdfstring{$\ast$}{*}a0)}]{slot\+Fn }\end{DoxyParamCaption})}
+
+
+
+Add system call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & system call slot \\
+\hline
+{\em slot\+Fn,syscall} & slot. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{ddk__kernel__call_8c_a763d2d877f202682c19575d9cc6e0e29}\label{ddk__kernel__call_8c_a763d2d877f202682c19575d9cc6e0e29} 
+\index{ddk\_kernel\_call.c@{ddk\_kernel\_call.c}!ke\_get\_obj@{ke\_get\_obj}}
+\index{ke\_get\_obj@{ke\_get\_obj}!ddk\_kernel\_call.c@{ddk\_kernel\_call.c}}
+\doxysubsubsection{\texorpdfstring{ke\_get\_obj()}{ke\_get\_obj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*} ke\+\_\+get\+\_\+obj (\begin{DoxyParamCaption}\item[{const int}]{slot,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{name }\end{DoxyParamCaption})}
+
+
+
+Get a Kernel object. 
+
+Gets a Kernel object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & property id (always 0) \\
+\hline
+{\em name} & the object\textquotesingle{}s name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object manifest. 
+\end{DoxyReturn}
+\Hypertarget{ddk__kernel__call_8c_ab374156d62ae91e14f7d41faf8d13a7b}\label{ddk__kernel__call_8c_ab374156d62ae91e14f7d41faf8d13a7b} 
+\index{ddk\_kernel\_call.c@{ddk\_kernel\_call.c}!ke\_set\_obj@{ke\_set\_obj}}
+\index{ke\_set\_obj@{ke\_set\_obj}!ddk\_kernel\_call.c@{ddk\_kernel\_call.c}}
+\doxysubsubsection{\texorpdfstring{ke\_set\_obj()}{ke\_set\_obj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \texorpdfstring{$\ast$}{*} ke\+\_\+set\+\_\+obj (\begin{DoxyParamCaption}\item[{const int}]{slot,  }\item[{const struct DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST \texorpdfstring{$\ast$}{*}}]{ddk\+\_\+pr }\end{DoxyParamCaption})}
+
+
+
+Set a Kernel object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & property id (always 0) \\
+\hline
+{\em name} & the object\textquotesingle{}s name. \\
+\hline
+{\em ddk\+\_\+pr} & pointer to a object\textquotesingle{}s DDK\+\_\+\+OBJECT\+\_\+\+MANIFEST. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+property\textquotesingle{}s object. 
+\end{DoxyReturn}

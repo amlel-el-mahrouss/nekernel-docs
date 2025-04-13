@@ -1,0 +1,188 @@
+\doxysection{Ne\+OS\+::ATADevice\+Interface Class Reference}
+\hypertarget{class_ne_o_s_1_1_a_t_a_device_interface}{}\label{class_ne_o_s_1_1_a_t_a_device_interface}\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+
+
+ATA device interface type.  
+
+
+
+
+{\ttfamily \#include $<$ATA.\+h$>$}
+
+Inheritance diagram for Ne\+OS\+::ATADevice\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ne_o_s_1_1_a_t_a_device_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_a7d68cc16d206a9fc1386e4d383ee3a3f}{ATADevice\+Interface}} (void(\texorpdfstring{$\ast$}{*}Out)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}outpacket), void(\texorpdfstring{$\ast$}{*}In)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}inpacket), void(\texorpdfstring{$\ast$}{*}Cleanup)(void))
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_afddd8bf021e50ca5dd3dc766b9382437}{\texorpdfstring{$\sim$}{\string~}\+ATADevice\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Class desctructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \& \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_acb36f41d37225fc4f6fa132955194e56}{operator$<$$<$}} (\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}Data) override
+\begin{DoxyCompactList}\small\item\em Output operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \& \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_aca0192e11e85a9af759b396cf7d31d8a}{operator$>$$>$}} (\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}Data) override
+\begin{DoxyCompactList}\small\item\em Input operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \& \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_a5117813e017613eb8af68d4b46e33295}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_a698edc0a42f1d5525a4739432668db02}{ATADevice\+Interface}} (const \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \&)=default
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_ad4afc8d3109dcd8f2a28b3c589062995}{Name}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the name of the device interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object$<$ Mountpoint\+Interface \texorpdfstring{$\ast$}{*} $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_afb3a58e778f44f8a742060d0edb963d0}{IDevice\+Object}} (void(\texorpdfstring{$\ast$}{*}Out)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}), void(\texorpdfstring{$\ast$}{*}In)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}))
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_af3491478bf41e68cd9861baeae9ae55e}{IDevice\+Object}} (const \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \&)=default
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_ab0135d603e7638878263cc81d2651bc7}{\texorpdfstring{$\sim$}{\string~}\+IDevice\+Object}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \& \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a55ae440d92f6001205ce00a986b32922}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a81bd22f7093d1c302d50d06a5e884f9d}{operator bool}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_ab81f982308fe2e1cc4ddc4be949f638e}{operator!}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_ad5f27e5e128faeb4cf8e8d9425efb7fd}{f\+Cleanup}} )(void) = \{nullptr\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object$<$ Mountpoint\+Interface \texorpdfstring{$\ast$}{*} $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a7aebb75a8f387f9251287703aaad1f00}{f\+Out}} )(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} Data)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a865d9ce021a2f7406a4a2a7b00c67e84}{f\+In}} )(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*} Data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ATA device interface type. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_a7d68cc16d206a9fc1386e4d383ee3a3f}\label{class_ne_o_s_1_1_a_t_a_device_interface_a7d68cc16d206a9fc1386e4d383ee3a3f} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!ATADeviceInterface@{ATADeviceInterface}}
+\index{ATADeviceInterface@{ATADeviceInterface}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{ATADeviceInterface()}{ATADeviceInterface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ATADevice\+Interface\+::\+ATADevice\+Interface (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}outpacket)}]{Out,  }\item[{void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}inpacket)}]{In,  }\item[{void(\texorpdfstring{$\ast$}{*})(void)}]{Cleanup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Out} & Drive output \\
+\hline
+{\em In} & Drive input \\
+\hline
+{\em Cleanup} & Drive cleanup. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_afddd8bf021e50ca5dd3dc766b9382437}\label{class_ne_o_s_1_1_a_t_a_device_interface_afddd8bf021e50ca5dd3dc766b9382437} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!````~ATADeviceInterface@{\texorpdfstring{$\sim$}{\string~}ATADeviceInterface}}
+\index{````~ATADeviceInterface@{\texorpdfstring{$\sim$}{\string~}ATADeviceInterface}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ATADeviceInterface()}{\string~ATADeviceInterface()}}
+{\footnotesize\ttfamily ATADevice\+Interface\+::\texorpdfstring{$\sim$}{\string~}\+ATADevice\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Class desctructor. 
+
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_a698edc0a42f1d5525a4739432668db02}\label{class_ne_o_s_1_1_a_t_a_device_interface_a698edc0a42f1d5525a4739432668db02} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!ATADeviceInterface@{ATADeviceInterface}}
+\index{ATADeviceInterface@{ATADeviceInterface}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{ATADeviceInterface()}{ATADeviceInterface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+ATADevice\+Interface\+::\+ATADevice\+Interface (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_ad4afc8d3109dcd8f2a28b3c589062995}\label{class_ne_o_s_1_1_a_t_a_device_interface_ad4afc8d3109dcd8f2a28b3c589062995} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!Name@{Name}}
+\index{Name@{Name}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*} ATADevice\+Interface\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the name of the device interface. 
+
+\begin{DoxyReturn}{Returns}
+it\textquotesingle{}s name as a string. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_ad64b16b0500bb465bc76f923bf3c5434}{Ne\+OS\+::\+IDevice\+Object$<$ Mountpoint\+Interface \texorpdfstring{$\ast$}{*} $>$}}.
+
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_acb36f41d37225fc4f6fa132955194e56}\label{class_ne_o_s_1_1_a_t_a_device_interface_acb36f41d37225fc4f6fa132955194e56} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \& ATADevice\+Interface\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}}]{Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Output operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_acac0274876df08c20f47500d40fac08c}{Ne\+OS\+::\+IDevice\+Object$<$ Mountpoint\+Interface \texorpdfstring{$\ast$}{*} $>$}}.
+
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_a5117813e017613eb8af68d4b46e33295}\label{class_ne_o_s_1_1_a_t_a_device_interface_a5117813e017613eb8af68d4b46e33295} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \& Ne\+OS\+::\+ATADevice\+Interface\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_aca0192e11e85a9af759b396cf7d31d8a}\label{class_ne_o_s_1_1_a_t_a_device_interface_aca0192e11e85a9af759b396cf7d31d8a} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface}{ATADevice\+Interface}} \& ATADevice\+Interface\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_mountpoint_interface}{Mountpoint\+Interface}} \texorpdfstring{$\ast$}{*}}]{Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Input operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a621b0240819bd2cc8083df67a3c5c46c}{Ne\+OS\+::\+IDevice\+Object$<$ Mountpoint\+Interface \texorpdfstring{$\ast$}{*} $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_a_t_a_device_interface_ad5f27e5e128faeb4cf8e8d9425efb7fd}\label{class_ne_o_s_1_1_a_t_a_device_interface_ad5f27e5e128faeb4cf8e8d9425efb7fd} 
+\index{NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}!fCleanup@{fCleanup}}
+\index{fCleanup@{fCleanup}!NeOS::ATADeviceInterface@{NeOS::ATADeviceInterface}}
+\doxysubsubsection{\texorpdfstring{fCleanup}{fCleanup}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+ATADevice\+Interface\+::f\+Cleanup) (void) = \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Storage\+Kit/\mbox{\hyperlink{kernel_2_storage_kit_2_a_t_a_8h}{ATA.\+h}}\item 
+dev/kernel/src/\+Storage/\mbox{\hyperlink{_a_t_a_device_interface_8cc}{ATADevice\+Interface.\+cc}}\end{DoxyCompactItemize}

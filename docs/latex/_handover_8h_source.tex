@@ -1,0 +1,94 @@
+\doxysection{Handover.\+h}
+\hypertarget{_handover_8h_source}{}\label{_handover_8h_source}\index{dev/kernel/FirmwareKit/Handover.h@{dev/kernel/FirmwareKit/Handover.h}}
+\mbox{\hyperlink{_handover_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ kHandoverMagic\ \ \ 0xBADCC}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ kHandoverVersion\ 0x0117}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{/*\ Initial\ bitmap\ pointer\ location\ and\ size.\ */}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ kHandoverBitMapSz\ (gib\_cast(4))}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ kHandoverStructSz\ sizeof(HEL::BootInfoHeader)}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l}{NeOS::HEL}}}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00035\ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa768c980fc5b3cf95c21647d6173ef1b0}{kTypeKernel}}\ \ \ \ \ \ \ \ =\ 100,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa912bc9ab59ce7a9dbf300e783b41091c}{kTypeKernelDriver}}\ =\ 101,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa80b746191df25c88cd061cec1e60cf56}{kTypeRsrc}}\ \ \ \ \ \ \ \ =\ 102,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa7f12edcda3358b99fee6bca8687b70fc}{kTypeInvalid}}\ \ \ \ \ \ =\ 103,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa2b2a96911fa74184730278e067f805f4}{kTypeCount}}\ \ \ \ \ \ \ \ \ \ =\ 4,}
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00048\ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a7f2178dc9964997be1488d64b067fb7e}{kArchAMD64}}\ =\ 122,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a7eb1ccc55b37e6d1706c8a1e0357dcca}{kArchARM64}}\ =\ 123,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a1c7ad5dc6295e2c4e46b8cc2e834817f}{kArchRISCV}}\ =\ 124,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a2e0ae517170ed4adf4177eb36103a8ee}{kArchCount}}\ =\ 3,}
+\DoxyCodeLine{00053\ \ \ \ \ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{BootInfoHeader}}\ final}
+\DoxyCodeLine{00056\ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a1684069d2efcdd6b51407807c1964537}{f\_Magic}};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_aafc90634257e490f5a559ec57767c976}{f\_Version}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a7c6c6be2603b77275d91b5358557c8f1}{f\_BitMapStart}};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a5054874f1399b1f337cbf2cedb4d4e68}{f\_BitMapSize}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_aff28f6880f38a927467044e575714640}{f\_PageStart}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_adcc83b72ae4ec498c07fc4c715063796}{f\_KernelImage}};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_ac70a4d4f146ff58cd1e90d3428bd4c2c}{f\_KernelSz}};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a89c44b656874dcefbb032eab04b7413f}{f\_StartupImage}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a11c823a57a3da65922d83062da6cb4d4}{f\_StartupSz}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{WideChar}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a4611c7808508e41232ecc033ad1076ad}{f\_FirmwareVendorName}}[32];}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a92b7fab290fd094a3c3d2a7d175e58e7}{f\_FirmwareVendorLen}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_aac5c75e44b7df583cb4163401b843081}{f\_FirmwareCustomTables}}[2];\ \textcolor{comment}{//\ On\ EFI\ 0:\ BS\ 1:\ ST}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a26d2d24212559ef1e31c05a9b138b2e9}{f\_SmBios}};}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_ac60bb1c78ab50eaa63d285ab1e949862}{f\_VendorPtr}};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_ab31001960a2632bb83207593877ed923}{f\_MpPtr}};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a4910ff8343cb40fcb84f4414a1bef35d}{f\_MultiProcessingEnabled}};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_ad30fff0f783f4d8e2656a43c5911c10f}{f\_HardwareTables}};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_affe47d46122b53ae5f6594432924d8f8}{f\_The}};}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}\ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a39555ff7ae6ab29a7d3d9a7cb2abb969}{f\_Size}};}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a99a193471f878b3f57d69894a08784a0}{f\_Width}};}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_afa49d59082193c7896e176e31dd2abcb}{f\_Height}};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a795a6d61ab9b23a166f699cac36be317}{f\_PixelFormat}};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \ \ \ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_ab93171a4d68ded6273d288906be4b114}{f\_PixelPerLine}};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a78b65e7c4fecaebdc18613ee2ccc7169}{f\_GOP}};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header_a92083b7375dfafd32fb0b3e0ff44229b}{f\_FirmwareSpecific}}[8];}
+\DoxyCodeLine{00094\ \ \ \ \ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00097\ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a0462b2940f0e811e9a4e714c0c1a9a06a3c8689a00c3a03d3773d65983b161aa9}{kHandoverSpecificKind}},}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a0462b2940f0e811e9a4e714c0c1a9a06a841e8fec3d4fa7b68c41117006fccf2f}{kHandoverSpecificAttrib}},}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a0462b2940f0e811e9a4e714c0c1a9a06ae3ca219a64ad9a5a463dca3291cfb45b}{kHandoverSpecificMemoryEfi}},}
+\DoxyCodeLine{00101\ \ \ \ \ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ (*\mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a4a110c9f1e927b18f065a0e83a7c1f58}{HandoverProc}})(\mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{BootInfoHeader}}*\ boot\_info);}
+\DoxyCodeLine{00105\ \}\ \textcolor{comment}{//\ namespace\ NeOS::HEL}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00108\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{NeOS::HEL::BootInfoHeader}}*\ \mbox{\hyperlink{_handover_8h_a48647599f5977443a7b26df988544483}{kHandoverHeader}}\ =\ \textcolor{keyword}{nullptr};}
+
+\end{DoxyCode}

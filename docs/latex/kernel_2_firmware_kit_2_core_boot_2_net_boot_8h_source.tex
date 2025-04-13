@@ -1,0 +1,30 @@
+\doxysection{Net\+Boot.\+h}
+\hypertarget{kernel_2_firmware_kit_2_core_boot_2_net_boot_8h_source}{}\label{kernel_2_firmware_kit_2_core_boot_2_net_boot_8h_source}\index{dev/kernel/FirmwareKit/CoreBoot/NetBoot.h@{dev/kernel/FirmwareKit/CoreBoot/NetBoot.h}}
+\mbox{\hyperlink{kernel_2_firmware_kit_2_core_boot_2_net_boot_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r}{NETBOOT\_INTERNET\_HEADER}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a93be4ccb52f14fb7cd55bebeb5ef74a5}{NB1}};\ }
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a52479351e9b35a244d52055ac7c1531f}{NB2}};\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeef01010c6ecfa17d22e6ec95c5f17fb}{NB3}};\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_adb039be91403d72cccc8d76cae70eec0}{NB4}};\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ \ \ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a054a3e4f9c96e6393004760231b0cda8}{PatchName}}[256U];\ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ \ \ \ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a6876768a123b8b09564cc4d77f744899}{PatchLength}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ \ \ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a628f3e846acc85514276b9776fd5512f}{PatchTarget}}[256U];\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a4e96c2d5c39651db8aa571bc02ba1723}{ImpliesROM}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_aeff308c8216e34f71554bee233b481c6}{Preflight}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}\ \ \ \ \ \ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r_a85e0c081f574d41d4cec8d52bf9dbb53}{Patch}}[];\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \}\ \mbox{\hyperlink{struct_n_e_t_b_o_o_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r}{NETBOOT\_INTERNET\_HEADER}};}
+
+\end{DoxyCode}

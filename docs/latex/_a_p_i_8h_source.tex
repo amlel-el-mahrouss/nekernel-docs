@@ -1,0 +1,107 @@
+\doxysection{API.\+h}
+\hypertarget{_a_p_i_8h_source}{}\label{_a_p_i_8h_source}\index{dev/kernel/FirmwareKit/EFI/API.h@{dev/kernel/FirmwareKit/EFI/API.h}}
+\mbox{\hyperlink{_a_p_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_\_EFI\_API\_\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_\_EFI\_API\_\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_e_f_i_2_e_f_i_8h}{FirmwareKit/EFI/EFI.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_handover_8h}{FirmwareKit/Handover.h}}>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_m_s_d_o_s_8h}{KernelKit/MSDOS.h}}>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_p_e_8h}{KernelKit/PE.h}}>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ kNeWebsiteMacro\ \ \ \ "{}https://aker.com/help"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ kNeKernelSubsystem\ (StrLen(kNeWebsiteMacro))}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifdef\ \_\_BOOTZ\_\_}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ forward\ decl.}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }BootTextWriter;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ \_\_BOOTKIT\_NO\_INCLUDE\_\_\ 1}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_boot_kit_8h}{BootKit/BootKit.h}}>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_f_b_mgr_8h}{modules/CoreGfx/FBMgr.h}}>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifdef\ \_\_BOOTZ\_\_}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_efi_system_table}{EfiSystemTable}}*\ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00029\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_efi_boot_services}{EfiBootServices}}*\ \mbox{\hyperlink{_a_p_i_8h_a67af7de1a62f48363917e0d14fbf2dc1}{BS}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\_C}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_a_p_i_8h_a12e982db5e3c511132fa1479d1d447ec}{rt\_cli}}();}
+\DoxyCodeLine{00032\ \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\_C}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_a_p_i_8h_a64a53c31476ac8a8ffdd2a678c53c837}{rt\_hlt}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_boot}{Boot}}}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ \mbox{\hyperlink{namespace_boot_a8b0bee034f9cce36874019301bc2ac40}{Stop}}()\ noexcept}
+\DoxyCodeLine{00039\ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{ddk_8h_a7ebc9a785e5ab85457c98595aac81589}{YES}})}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a12e982db5e3c511132fa1479d1d447ec}{rt\_cli}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_m_d64_2_boot_platform_8cc_a4e5fc109991d7736ddadd761b0a24113}{rt\_hlt}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_boot_a79fb1ed665feb9cc78a21d1ef4f58ae3}{ExitBootServices}}(\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}\ MapKey,\ \mbox{\hyperlink{struct_efi_handle}{EfiHandlePtr}}\ ImageHandle)\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00052\ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}})}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_ab5e346992a8fab892aaee3c2118e948c}{BootServices}}-\/>\mbox{\hyperlink{struct_efi_boot_services_a5dd91394df55cc588c603bcead788e0e}{ExitBootServices}}(ImageHandle,\ MapKey);}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\ \mbox{\hyperlink{namespace_boot_a219033067ceb1ad089818c762d1dfb65}{Platform}}()\ noexcept}
+\DoxyCodeLine{00060\ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_p_e_8h_a034e3c688c72b793a7f2b52812b2e5bc}{kPeMachineAMD64}};}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{comment}{\ \ \ \ /***}}
+\DoxyCodeLine{00065\ \textcolor{comment}{\ \ \ \ \ *\ @brief\ Throw\ an\ error,\ stop\ execution\ as\ well.}}
+\DoxyCodeLine{00066\ \textcolor{comment}{\ \ \ \ \ *\ @param\ ErrorCode\ error\ code\ to\ be\ print.}}
+\DoxyCodeLine{00067\ \textcolor{comment}{\ \ \ \ \ *\ @param\ Reason\ reason\ to\ be\ print.}}
+\DoxyCodeLine{00068\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_boot_a770cf51bd60eaa15b9a35af8f2b5bc3b}{ThrowError}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{EfiCharType}}*\ ErrorCode,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a0638520bc60d26b11e6500d8a28f83ec}{EfiCharType}}*\ Reason)\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00071\ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}}(\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}},\ L\textcolor{stringliteral}{"{}\(\backslash\)r***\ STOP\ ***\(\backslash\)r"{}});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}}(\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}},\ L\textcolor{stringliteral}{"{}***\ ERROR:\ "{}});}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}}(\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}},\ ErrorCode);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}}(\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}},\ L\textcolor{stringliteral}{"{}\ ***\(\backslash\)r\ ***\ REASON:\ "{}});}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}}(\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}},\ Reason);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a37cfebd0fdc6ece6c5f1a0b0fd47f78a}{OutputString}}(\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}},\ L\textcolor{stringliteral}{"{}\ ***\(\backslash\)r"{}});}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_boot_a8b0bee034f9cce36874019301bc2ac40}{Boot::Stop}}();}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \}\ \textcolor{comment}{//\ namespace\ Boot}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_a_p_i_8h_abdd928fdf55b87dc59c5797d059c917e}{InitEFI}}(\mbox{\hyperlink{struct_efi_system_table}{EfiSystemTable}}*\ SystemTable)\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00087\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{if}\ (!SystemTable)}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}\ =\ SystemTable;}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a67af7de1a62f48363917e0d14fbf2dc1}{BS}}\ =\ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_ab5e346992a8fab892aaee3c2118e948c}{BootServices}};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_af4bd33424f001ee63d49d83299dc2a48}{ClearScreen}}(SystemTable-\/>ConOut);}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a5a59cd42519103439661aadaad3117a5}{SetAttribute}}(SystemTable-\/>ConOut,\ \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_ae324bc72fda47653c2a2b617bdea18e3}{kEFIYellow}});}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_ab5e346992a8fab892aaee3c2118e948c}{BootServices}}-\/>SetWatchdogTimer(0,\ 0,\ 0,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}}-\/>\mbox{\hyperlink{struct_efi_simple_text_output_protocol_a78051ee6398cbe32226b4ef212eff7f3}{EnableCursor}}(\mbox{\hyperlink{_a_p_i_8h_a4a3d7a685d6b337c5a9b8f6b9ac45da8}{ST}}-\/>\mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{ConOut}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00099\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#ifdef\ \_\_BOOTZ\_\_}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_platform_8h}{BootKit/Platform.h}}>}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifdef\ \_\_BOOTZ\_\_}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ ifndef\ \_\_EFI\_API\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,121 @@
+\doxysection{dev/kernel/\+Firmware\+Kit/\+Handover.h File Reference}
+\hypertarget{_handover_8h}{}\label{_handover_8h}\index{dev/kernel/FirmwareKit/Handover.h@{dev/kernel/FirmwareKit/Handover.h}}
+
+
+The handover boot protocol.  
+
+
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{Ne\+OS\+::\+HEL\+::\+Boot\+Info\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l}{Ne\+OS\+::\+HEL}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_handover_8h_a443bd757976520ac5a90cc01fbaac596}{k\+Handover\+Magic}}~0x\+BADCC
+\item 
+\#define \mbox{\hyperlink{_handover_8h_a72dc4bbb04a1dbc05e645a2a2d497ae6}{k\+Handover\+Version}}~0x0117
+\item 
+\#define \mbox{\hyperlink{_handover_8h_ad667acb388ffbc55c9b4812217254657}{k\+Handover\+Bit\+Map\+Sz}}~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(4))
+\item 
+\#define \mbox{\hyperlink{_handover_8h_acb6f972064235181c6010db9b00c32a3}{k\+Handover\+Struct\+Sz}}~sizeof(HEL\+::\+Boot\+Info\+Header)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a4a110c9f1e927b18f065a0e83a7c1f58}{Ne\+OS\+::\+HEL\+::\+Handover\+Proc}}) (\mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{Boot\+Info\+Header}} \texorpdfstring{$\ast$}{*}boot\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Alias of bootloader main type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa768c980fc5b3cf95c21647d6173ef1b0}{Ne\+OS\+::\+HEL\+::k\+Type\+Kernel}} = 100
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa912bc9ab59ce7a9dbf300e783b41091c}{Ne\+OS\+::\+HEL\+::k\+Type\+Kernel\+Driver}} = 101
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa80b746191df25c88cd061cec1e60cf56}{Ne\+OS\+::\+HEL\+::k\+Type\+Rsrc}} = 102
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa7f12edcda3358b99fee6bca8687b70fc}{Ne\+OS\+::\+HEL\+::k\+Type\+Invalid}} = 103
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_af1056d226efac0694d47bcea4438dadaa2b2a96911fa74184730278e067f805f4}{Ne\+OS\+::\+HEL\+::k\+Type\+Count}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em The executable type enum. \end{DoxyCompactList}\item 
+enum \{ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a7f2178dc9964997be1488d64b067fb7e}{Ne\+OS\+::\+HEL\+::k\+Arch\+AMD64}} = 122
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a7eb1ccc55b37e6d1706c8a1e0357dcca}{Ne\+OS\+::\+HEL\+::k\+Arch\+ARM64}} = 123
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a1c7ad5dc6295e2c4e46b8cc2e834817f}{Ne\+OS\+::\+HEL\+::k\+Arch\+RISCV}} = 124
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_ac33764ab87855350f91e687802a3c0e2a2e0ae517170ed4adf4177eb36103a8ee}{Ne\+OS\+::\+HEL\+::k\+Arch\+Count}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em The executable architecture enum. \end{DoxyCompactList}\item 
+enum \{ \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a0462b2940f0e811e9a4e714c0c1a9a06a3c8689a00c3a03d3773d65983b161aa9}{Ne\+OS\+::\+HEL\+::k\+Handover\+Specific\+Kind}}
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a0462b2940f0e811e9a4e714c0c1a9a06a841e8fec3d4fa7b68c41117006fccf2f}{Ne\+OS\+::\+HEL\+::k\+Handover\+Specific\+Attrib}}
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_e_l_a0462b2940f0e811e9a4e714c0c1a9a06ae3ca219a64ad9a5a463dca3291cfb45b}{Ne\+OS\+::\+HEL\+::k\+Handover\+Specific\+Memory\+Efi}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{Ne\+OS\+::\+HEL\+::\+Boot\+Info\+Header}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_handover_8h_a48647599f5977443a7b26df988544483}{k\+Handover\+Header}} = nullptr
+\begin{DoxyCompactList}\small\item\em Bootloader information header global variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The handover boot protocol. 
+
+\begin{DoxyAuthor}{Author}
+Amlal EL Mahrouss (\href{mailto:amlal@nekernel.org}{\texttt{ amlal@nekernel.\+org}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+15 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/02-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024, Amlal EL Mahrouss 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_handover_8h_ad667acb388ffbc55c9b4812217254657}\label{_handover_8h_ad667acb388ffbc55c9b4812217254657} 
+\index{Handover.h@{Handover.h}!kHandoverBitMapSz@{kHandoverBitMapSz}}
+\index{kHandoverBitMapSz@{kHandoverBitMapSz}!Handover.h@{Handover.h}}
+\doxysubsubsection{\texorpdfstring{kHandoverBitMapSz}{kHandoverBitMapSz}}
+{\footnotesize\ttfamily \#define k\+Handover\+Bit\+Map\+Sz~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a64fe7b8422cbe3b1e09bef7fa04e177b}{gib\+\_\+cast}}(4))}
+
+\Hypertarget{_handover_8h_a443bd757976520ac5a90cc01fbaac596}\label{_handover_8h_a443bd757976520ac5a90cc01fbaac596} 
+\index{Handover.h@{Handover.h}!kHandoverMagic@{kHandoverMagic}}
+\index{kHandoverMagic@{kHandoverMagic}!Handover.h@{Handover.h}}
+\doxysubsubsection{\texorpdfstring{kHandoverMagic}{kHandoverMagic}}
+{\footnotesize\ttfamily \#define k\+Handover\+Magic~0x\+BADCC}
+
+\Hypertarget{_handover_8h_acb6f972064235181c6010db9b00c32a3}\label{_handover_8h_acb6f972064235181c6010db9b00c32a3} 
+\index{Handover.h@{Handover.h}!kHandoverStructSz@{kHandoverStructSz}}
+\index{kHandoverStructSz@{kHandoverStructSz}!Handover.h@{Handover.h}}
+\doxysubsubsection{\texorpdfstring{kHandoverStructSz}{kHandoverStructSz}}
+{\footnotesize\ttfamily \#define k\+Handover\+Struct\+Sz~sizeof(HEL\+::\+Boot\+Info\+Header)}
+
+\Hypertarget{_handover_8h_a72dc4bbb04a1dbc05e645a2a2d497ae6}\label{_handover_8h_a72dc4bbb04a1dbc05e645a2a2d497ae6} 
+\index{Handover.h@{Handover.h}!kHandoverVersion@{kHandoverVersion}}
+\index{kHandoverVersion@{kHandoverVersion}!Handover.h@{Handover.h}}
+\doxysubsubsection{\texorpdfstring{kHandoverVersion}{kHandoverVersion}}
+{\footnotesize\ttfamily \#define k\+Handover\+Version~0x0117}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_handover_8h_a48647599f5977443a7b26df988544483}\label{_handover_8h_a48647599f5977443a7b26df988544483} 
+\index{Handover.h@{Handover.h}!kHandoverHeader@{kHandoverHeader}}
+\index{kHandoverHeader@{kHandoverHeader}!Handover.h@{Handover.h}}
+\doxysubsubsection{\texorpdfstring{kHandoverHeader}{kHandoverHeader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header}{Ne\+OS\+::\+HEL\+::\+Boot\+Info\+Header}}\texorpdfstring{$\ast$}{*} k\+Handover\+Header = nullptr\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Bootloader information header global variable. 
+

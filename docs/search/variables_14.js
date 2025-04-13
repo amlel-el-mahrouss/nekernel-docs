@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['valid_0',['Valid',['../struct_ne_o_s_1_1_h_a_l_1_1_p_t_e__4_k_b.html#a3cd0e16f7399b3f452b2576576cc1dae',1,'NeOS::HAL::PTE_4KB']]],
-  ['vendor_1',['vendor',['../struct_hba_port.html#a4b9d489baae77fe32bdd45668bee9c59',1,'HbaPort::Vendor'],['../struct_hba_mem.html#a9db8bf49bb57fd2f203401597d84e5eb',1,'HbaMem::Vendor']]],
+  ['valid_0',['Valid',['../struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html#a4fa6ac9106fe8007592e8bf88dffdf99',1,'Kernel::HAL::PTE_4KB']]],
+  ['vendor_1',['vendor',['../struct_hba_port.html#a77210981d8177ce5713d43ac4175dba9',1,'HbaPort::Vendor'],['../struct_hba_mem.html#a6bbc29823304f83a73c77206226e0ed0',1,'HbaMem::Vendor']]],
   ['vendorguid_2',['vendorguid',['../struct_efi_runtime_services.html#a4ca582138d3fd4ab015563c3fc8eb58a',1,'EfiRuntimeServices::VendorGUID'],['../struct_efi_system_table.html#aa0d618419c0d5bf1b1745c4a4f9931c4',1,'EfiSystemTable::VendorGUID']]],
-  ['vendorid_3',['VendorId',['../struct_ne_o_s_1_1_p_c_i_1_1_device_header.html#a318fa14809d9b046129c45e1d789706e',1,'NeOS::PCI::DeviceHeader']]],
+  ['vendorid_3',['vendorid',['../struct_kernel_1_1_p_c_i_1_1_device_header.html#a4bc471e7ea7c01d9646062bf25062c4a',1,'Kernel::PCI::DeviceHeader::VendorId'],['../struct_kernel_1_1_i_m_b_c_i_host.html#a246a265d01392e6f5f30a7cbf286e2cc',1,'Kernel::IMBCIHost::VendorId']]],
   ['vendortable_4',['VendorTable',['../struct_efi_system_table.html#a4bd3c922838a28d4d5996d18880d061f',1,'EfiSystemTable']]],
-  ['version_5',['version',['../struct_efi_graphics_output_protocol_mode_information.html#a979a0c5efe00e8d64ee88eed5dfc2678',1,'EfiGraphicsOutputProtocolModeInformation::Version'],['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#ad88e51fe8b9d041f17d2cc292e9b1203',1,'EPM_PART_BLOCK::Version'],['../struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#aa96cf3f189e3449ab9635289e0501e0d',1,'NEFS_ROOT_PARTITION_BLOCK::Version'],['../struct_ne_o_s_1_1_p_e_f_container.html#ab67bef52489743881177c50d3d10db8b',1,'NeOS::PEFContainer::Version']]],
+  ['version_5',['version',['../struct_efi_graphics_output_protocol_mode_information.html#a979a0c5efe00e8d64ee88eed5dfc2678',1,'EfiGraphicsOutputProtocolModeInformation::Version'],['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a8a9eb4acb3612a661ff7235508410d35',1,'EPM_PART_BLOCK::Version'],['../struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#a058a5b44f1377e48afe282845f0cc36a',1,'NEFS_ROOT_PARTITION_BLOCK::Version'],['../struct_kernel_1_1_p_e_f_container.html#ad99a9e36bc6b890ef4699e0f90e919a6',1,'Kernel::PEFContainer::Version']]],
   ['verticalresolution_6',['VerticalResolution',['../struct_efi_graphics_output_protocol_mode_information.html#a86f19cf632cb09b18ded1968d1ecef4e',1,'EfiGraphicsOutputProtocolModeInformation']]],
-  ['virtualaddress_7',['virtualaddress',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#a25009f5fbe2649527ec37c12d2214928',1,'LDR_SECTION_HEADER::VirtualAddress'],['../struct_l_d_r___d_a_t_a___d_i_r_e_c_t_o_r_y.html#a9e612d5ec0f575ad0c29d7dafba9a342',1,'LDR_DATA_DIRECTORY::VirtualAddress']]],
-  ['virtualsize_8',['VirtualSize',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#ad938ddde8894d7bd2bc5e352c3335cba',1,'LDR_SECTION_HEADER']]],
+  ['virtualaddress_7',['virtualaddress',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#a42a41a7991b23de9a203c13b9b6d759e',1,'LDR_SECTION_HEADER::VirtualAddress'],['../struct_l_d_r___d_a_t_a___d_i_r_e_c_t_o_r_y.html#a4360402031e4f8a2c0dd126dccd1a5e0',1,'LDR_DATA_DIRECTORY::VirtualAddress']]],
+  ['virtualsize_8',['VirtualSize',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#a624c83616cb562d6bbdf2068b647ce3d',1,'LDR_SECTION_HEADER']]],
   ['virtualstart_9',['VirtualStart',['../struct_efi_memory_descriptor.html#aa28b4fe6eb5213737e970336a1e94d7d',1,'EfiMemoryDescriptor']]],
-  ['vmregister_10',['VMRegister',['../class_ne_o_s_1_1_user_process.html#a07928b794ced88423f78647366201e23',1,'NeOS::UserProcess']]],
-  ['vs_11',['Vs',['../struct_hba_mem.html#af9441a9fa303346f66f65ed996ead8d3',1,'HbaMem']]]
+  ['vmregister_10',['VMRegister',['../class_kernel_1_1_process.html#aed27bbd9174429de4951fbcb14de5302',1,'Kernel::Process']]],
+  ['vs_11',['Vs',['../struct_hba_mem.html#ac0c830f2792fcd0ef3962e461e4cfad4',1,'HbaMem']]]
 ];

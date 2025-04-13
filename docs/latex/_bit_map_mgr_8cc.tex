@@ -1,0 +1,74 @@
+\doxysection{dev/kernel/src/\+Bit\+Map\+Mgr.cc File Reference}
+\hypertarget{_bit_map_mgr_8cc}{}\label{_bit_map_mgr_8cc}\index{dev/kernel/src/BitMapMgr.cc@{dev/kernel/src/BitMapMgr.cc}}
+{\ttfamily \#include $<$Arch\+Kit/\+Arch\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Kernel\+Panic.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy}{Ne\+OS\+::\+HAL\+::\+Detail\+::\+IBit\+Map\+Proxy}}
+\begin{DoxyCompactList}\small\item\em Proxy Interface to manage a bitmap allocator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l}{Ne\+OS\+::\+HAL}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{\doxylink{namespace_ne_o_s_1_1_h_a_l}{HAL}}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail}{Ne\+OS\+::\+HAL\+::\+Detail}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_bit_map_mgr_8cc_ae0a595d9e78aeeeadf15463af7d4cdcd}{k\+Bit\+Map\+Magic}}~(0x10210U)
+\item 
+\#define \mbox{\hyperlink{_bit_map_mgr_8cc_a17594eeafcb25a2f3549c04e77358626}{k\+Bit\+Map\+Pad\+Size}}~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(16))
+\item 
+\#define \mbox{\hyperlink{_bit_map_mgr_8cc_ade7018091efca568616090348e40e7ee}{k\+Bit\+Map\+Mag\+Idx}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_bit_map_mgr_8cc_adbc27d0f4ec220b618c70228709244d0}{k\+Bit\+Map\+Size\+Idx}}~(1U)
+\item 
+\#define \mbox{\hyperlink{_bit_map_mgr_8cc_a9e794d29465d4273ec6fb05fb175b494}{k\+Bit\+Map\+Used\+Idx}}~(2U)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a534c8ef3402fde155a68e29f283dbd51}{Ne\+OS\+::\+HAL\+::mm\+\_\+is\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a09756f1109e3e4a64cdbfcc51255082f}{Ne\+OS\+::\+HAL\+::mm\+\_\+alloc\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} wr, \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} user, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} size, \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} is\+\_\+page, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} pad) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}}
+\begin{DoxyCompactList}\small\item\em Allocate a new page to be used by the OS. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a8843a7ba141c931fc66ff5e2693759d4}{Ne\+OS\+::\+HAL\+::mm\+\_\+free\+\_\+bitmap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\begin{DoxyCompactList}\small\item\em Free Bitmap, and mark it as absent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_bit_map_mgr_8cc_ae0a595d9e78aeeeadf15463af7d4cdcd}\label{_bit_map_mgr_8cc_ae0a595d9e78aeeeadf15463af7d4cdcd} 
+\index{BitMapMgr.cc@{BitMapMgr.cc}!kBitMapMagic@{kBitMapMagic}}
+\index{kBitMapMagic@{kBitMapMagic}!BitMapMgr.cc@{BitMapMgr.cc}}
+\doxysubsubsection{\texorpdfstring{kBitMapMagic}{kBitMapMagic}}
+{\footnotesize\ttfamily \#define k\+Bit\+Map\+Magic~(0x10210U)}
+
+\Hypertarget{_bit_map_mgr_8cc_ade7018091efca568616090348e40e7ee}\label{_bit_map_mgr_8cc_ade7018091efca568616090348e40e7ee} 
+\index{BitMapMgr.cc@{BitMapMgr.cc}!kBitMapMagIdx@{kBitMapMagIdx}}
+\index{kBitMapMagIdx@{kBitMapMagIdx}!BitMapMgr.cc@{BitMapMgr.cc}}
+\doxysubsubsection{\texorpdfstring{kBitMapMagIdx}{kBitMapMagIdx}}
+{\footnotesize\ttfamily \#define k\+Bit\+Map\+Mag\+Idx~(0U)}
+
+\Hypertarget{_bit_map_mgr_8cc_a17594eeafcb25a2f3549c04e77358626}\label{_bit_map_mgr_8cc_a17594eeafcb25a2f3549c04e77358626} 
+\index{BitMapMgr.cc@{BitMapMgr.cc}!kBitMapPadSize@{kBitMapPadSize}}
+\index{kBitMapPadSize@{kBitMapPadSize}!BitMapMgr.cc@{BitMapMgr.cc}}
+\doxysubsubsection{\texorpdfstring{kBitMapPadSize}{kBitMapPadSize}}
+{\footnotesize\ttfamily \#define k\+Bit\+Map\+Pad\+Size~(\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a3bbca7c26c20ee1c42338c1b55993852}{mib\+\_\+cast}}(16))}
+
+\Hypertarget{_bit_map_mgr_8cc_adbc27d0f4ec220b618c70228709244d0}\label{_bit_map_mgr_8cc_adbc27d0f4ec220b618c70228709244d0} 
+\index{BitMapMgr.cc@{BitMapMgr.cc}!kBitMapSizeIdx@{kBitMapSizeIdx}}
+\index{kBitMapSizeIdx@{kBitMapSizeIdx}!BitMapMgr.cc@{BitMapMgr.cc}}
+\doxysubsubsection{\texorpdfstring{kBitMapSizeIdx}{kBitMapSizeIdx}}
+{\footnotesize\ttfamily \#define k\+Bit\+Map\+Size\+Idx~(1U)}
+
+\Hypertarget{_bit_map_mgr_8cc_a9e794d29465d4273ec6fb05fb175b494}\label{_bit_map_mgr_8cc_a9e794d29465d4273ec6fb05fb175b494} 
+\index{BitMapMgr.cc@{BitMapMgr.cc}!kBitMapUsedIdx@{kBitMapUsedIdx}}
+\index{kBitMapUsedIdx@{kBitMapUsedIdx}!BitMapMgr.cc@{BitMapMgr.cc}}
+\doxysubsubsection{\texorpdfstring{kBitMapUsedIdx}{kBitMapUsedIdx}}
+{\footnotesize\ttfamily \#define k\+Bit\+Map\+Used\+Idx~(2U)}
+

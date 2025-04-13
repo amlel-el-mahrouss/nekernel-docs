@@ -1,0 +1,34 @@
+\doxysection{dev/user/src/\+System\+Calls.cc File Reference}
+\hypertarget{_system_calls_8cc}{}\label{_system_calls_8cc}\index{dev/user/src/SystemCalls.cc@{dev/user/src/SystemCalls.cc}}
+{\ttfamily \#include $<$user/\+System\+Calls.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{user_2_macros_8h_ac8c44412d7453216e1f1b939bf235b89}{IMPORT\+\_\+C}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}} \mbox{\hyperlink{_system_calls_8cc_aa5a16136b6b95ab0385d2835d71ec738}{Mm\+Copy\+Memory}} (\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}} dest, \mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}} src, \mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}} len)
+\begin{DoxyCompactList}\small\item\em Copy memory region. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{user_2_macros_8h_ac8c44412d7453216e1f1b939bf235b89}{IMPORT\+\_\+C}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}} \mbox{\hyperlink{_system_calls_8cc_a423e7c626951f84e6273fd5cc92c4504}{Mm\+Fill\+Memory}} (\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}} dest, \mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}} len, \mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_afa67a934526c218d732989fc15aac69e}{UInt8}} value)
+\begin{DoxyCompactList}\small\item\em Fill memory region with {\bfseries{value}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_system_calls_8cc_aa5a16136b6b95ab0385d2835d71ec738}\label{_system_calls_8cc_aa5a16136b6b95ab0385d2835d71ec738} 
+\index{SystemCalls.cc@{SystemCalls.cc}!MmCopyMemory@{MmCopyMemory}}
+\index{MmCopyMemory@{MmCopyMemory}!SystemCalls.cc@{SystemCalls.cc}}
+\doxysubsubsection{\texorpdfstring{MmCopyMemory()}{MmCopyMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_2_macros_8h_ac8c44412d7453216e1f1b939bf235b89}{IMPORT\+\_\+C}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}} Mm\+Copy\+Memory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}}}]{dest,  }\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}}}]{src,  }\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}}}]{len }\end{DoxyParamCaption})}
+
+
+
+Copy memory region. 
+
+\Hypertarget{_system_calls_8cc_a423e7c626951f84e6273fd5cc92c4504}\label{_system_calls_8cc_a423e7c626951f84e6273fd5cc92c4504} 
+\index{SystemCalls.cc@{SystemCalls.cc}!MmFillMemory@{MmFillMemory}}
+\index{MmFillMemory@{MmFillMemory}!SystemCalls.cc@{SystemCalls.cc}}
+\doxysubsubsection{\texorpdfstring{MmFillMemory()}{MmFillMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_2_macros_8h_ac8c44412d7453216e1f1b939bf235b89}{IMPORT\+\_\+C}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}} Mm\+Fill\+Memory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{Void\+Ptr}}}]{dest,  }\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}}}]{len,  }\item[{\mbox{\hyperlink{_compiler_hint_8h_a9e1208aa9152d0712c61a4e34561abd1}{\+\_\+\+Input}} \mbox{\hyperlink{user_2_macros_8h_afa67a934526c218d732989fc15aac69e}{UInt8}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Fill memory region with {\bfseries{value}}. 
+
+Fill memory region. 

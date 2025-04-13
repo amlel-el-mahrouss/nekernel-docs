@@ -27,6 +27,6 @@ var searchData=
   ['efitime_24',['EfiTime',['../struct_efi_time.html',1,'']]],
   ['epm_5fguid_25',['EPM_GUID',['../struct_e_p_m___g_u_i_d.html',1,'']]],
   ['epm_5fpart_5fblock_26',['EPM_PART_BLOCK',['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html',1,'']]],
-  ['erroror_27',['ErrorOr',['../class_ne_o_s_1_1_error_or.html',1,'NeOS']]],
+  ['erroror_27',['ErrorOr',['../class_kernel_1_1_error_or.html',1,'Kernel']]],
   ['executor_28',['executor',['../classpfd_1_1internal_1_1executor.html',1,'pfd::internal']]]
 ];

@@ -103,17 +103,19 @@ $(document).ready(function(){initNavTree('_x_c_o_f_f_8h.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_coff_file_header.html">XCoffFileHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XCoff file header, meant for POWER apps.  <a href="struct_x_coff_file_header.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">XCoff file header, meant for POWER apps.  <a href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_coff_fork_header.html">XCoffForkHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This the executable manifest fork.  <a href="struct_x_coff_fork_header.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html">XCOFF_FORK_HEADER</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This the executable's manifest fork, designed for NeFS.  <a href="struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a5e6347d370e405247ab5230616beb37f" id="r_a5e6347d370e405247ab5230616beb37f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a5e6347d370e405247ab5230616beb37f">kXCOFF64Magic</a>&#160;&#160;&#160;(0x01F7)</td></tr>
 <tr class="separator:a5e6347d370e405247ab5230616beb37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea255d8f7cbf168894beaaa69247890" id="r_a8ea255d8f7cbf168894beaaa69247890"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a8ea255d8f7cbf168894beaaa69247890">kXCOFF64ForkNameLen</a>&#160;&#160;&#160;(256U)</td></tr>
+<tr class="separator:a8ea255d8f7cbf168894beaaa69247890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d54af39d2b6cd7bc5e9736f758b3063" id="r_a7d54af39d2b6cd7bc5e9736f758b3063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a7d54af39d2b6cd7bc5e9736f758b3063">kXCOFFRelFlg</a>&#160;&#160;&#160;(0x0001)</td></tr>
 <tr class="separator:a7d54af39d2b6cd7bc5e9736f758b3063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37e4fe5f0528d0d3dc79893d96fb763" id="r_af37e4fe5f0528d0d3dc79893d96fb763"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#af37e4fe5f0528d0d3dc79893d96fb763">kXCOFFExecutable</a>&#160;&#160;&#160;(0x0002)</td></tr>
@@ -122,27 +124,29 @@ Macros</h2></td></tr>
 <tr class="separator:a1284f8c349681e7b5930a1d0107e5937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5521136d3143f6bfa049e3f7a74cd1b7" id="r_a5521136d3143f6bfa049e3f7a74cd1b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a5521136d3143f6bfa049e3f7a74cd1b7">kXCOFFLSyms</a>&#160;&#160;&#160;(0x0008)</td></tr>
 <tr class="separator:a5521136d3143f6bfa049e3f7a74cd1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb45a2c4e7d2b0d6651739fcf26319b4" id="r_adb45a2c4e7d2b0d6651739fcf26319b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#adb45a2c4e7d2b0d6651739fcf26319b4">kForkNameLen</a>&#160;&#160;&#160;(256U)</td></tr>
-<tr class="separator:adb45a2c4e7d2b0d6651739fcf26319b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a20607df7e0322f981b51c3f54ed6b3a7" id="r_a20607df7e0322f981b51c3f54ed6b3a7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_coff_file_header.html">XCoffFileHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a20607df7e0322f981b51c3f54ed6b3a7">XCoffFileHeader64</a></td></tr>
-<tr class="memdesc:a20607df7e0322f981b51c3f54ed6b3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">XCoff file header, meant for POWER apps.  <br /></td></tr>
-<tr class="separator:a20607df7e0322f981b51c3f54ed6b3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4b7a3949eb544d775c6e5683067b248" id="r_ad4b7a3949eb544d775c6e5683067b248"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_coff_fork_header.html">XCoffForkHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#ad4b7a3949eb544d775c6e5683067b248">XCoffForkHeader</a></td></tr>
-<tr class="memdesc:ad4b7a3949eb544d775c6e5683067b248"><td class="mdescLeft">&#160;</td><td class="mdescRight">This the executable manifest fork.  <br /></td></tr>
-<tr class="separator:ad4b7a3949eb544d775c6e5683067b248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f7cba32efe2a5336c3ee2c130ccff7" id="r_a58f7cba32efe2a5336c3ee2c130ccff7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a58f7cba32efe2a5336c3ee2c130ccff7">XCOFF_FILE_HEADER</a></td></tr>
+<tr class="memdesc:a58f7cba32efe2a5336c3ee2c130ccff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">XCoff file header, meant for POWER apps.  <br /></td></tr>
+<tr class="separator:a58f7cba32efe2a5336c3ee2c130ccff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a42856c4d8be38da23da82ffb8f37c4" id="r_a3a42856c4d8be38da23da82ffb8f37c4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a3a42856c4d8be38da23da82ffb8f37c4">XCOFF_FILE_HEADER32</a></td></tr>
+<tr class="separator:a3a42856c4d8be38da23da82ffb8f37c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36923ad2a5e2579c33546dddef6a4cb5" id="r_a36923ad2a5e2579c33546dddef6a4cb5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a36923ad2a5e2579c33546dddef6a4cb5">XCOFF_FILE_HEADER64</a></td></tr>
+<tr class="separator:a36923ad2a5e2579c33546dddef6a4cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed5ed1baa0bec226f725f447818a31d" id="r_a6ed5ed1baa0bec226f725f447818a31d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html">XCOFF_FORK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_c_o_f_f_8h.html#a6ed5ed1baa0bec226f725f447818a31d">XCOFF_FORK_HEADER</a></td></tr>
+<tr class="memdesc:a6ed5ed1baa0bec226f725f447818a31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This the executable's manifest fork, designed for NeFS.  <br /></td></tr>
+<tr class="separator:a6ed5ed1baa0bec226f725f447818a31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="adb45a2c4e7d2b0d6651739fcf26319b4" name="adb45a2c4e7d2b0d6651739fcf26319b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb45a2c4e7d2b0d6651739fcf26319b4">&#9670;&#160;</a></span>kForkNameLen</h2>
+<a id="a8ea255d8f7cbf168894beaaa69247890" name="a8ea255d8f7cbf168894beaaa69247890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea255d8f7cbf168894beaaa69247890">&#9670;&#160;</a></span>kXCOFF64ForkNameLen</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kForkNameLen&#160;&#160;&#160;(256U)</td>
+          <td class="memname">#define kXCOFF64ForkNameLen&#160;&#160;&#160;(256U)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,14 +224,14 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a20607df7e0322f981b51c3f54ed6b3a7" name="a20607df7e0322f981b51c3f54ed6b3a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20607df7e0322f981b51c3f54ed6b3a7">&#9670;&#160;</a></span>XCoffFileHeader64</h2>
+<a id="a58f7cba32efe2a5336c3ee2c130ccff7" name="a58f7cba32efe2a5336c3ee2c130ccff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f7cba32efe2a5336c3ee2c130ccff7">&#9670;&#160;</a></span>XCOFF_FILE_HEADER</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_x_coff_file_header.html">XCoffFileHeader</a> <a class="el" href="_x_c_o_f_f_8h.html#a20607df7e0322f981b51c3f54ed6b3a7">XCoffFileHeader64</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a> <a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,19 +240,55 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4b7a3949eb544d775c6e5683067b248" name="ad4b7a3949eb544d775c6e5683067b248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4b7a3949eb544d775c6e5683067b248">&#9670;&#160;</a></span>XCoffForkHeader</h2>
+<a id="a3a42856c4d8be38da23da82ffb8f37c4" name="a3a42856c4d8be38da23da82ffb8f37c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a42856c4d8be38da23da82ffb8f37c4">&#9670;&#160;</a></span>XCOFF_FILE_HEADER32</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_x_coff_fork_header.html">XCoffForkHeader</a> <a class="el" href="struct_x_coff_fork_header.html">XCoffForkHeader</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a> <a class="el" href="_x_c_o_f_f_8h.html#a3a42856c4d8be38da23da82ffb8f37c4">XCOFF_FILE_HEADER32</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This the executable manifest fork. </p>
+</div>
+</div>
+<a id="a36923ad2a5e2579c33546dddef6a4cb5" name="a36923ad2a5e2579c33546dddef6a4cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36923ad2a5e2579c33546dddef6a4cb5">&#9670;&#160;</a></span>XCOFF_FILE_HEADER64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html">XCOFF_FILE_HEADER</a> <a class="el" href="_x_c_o_f_f_8h.html#a36923ad2a5e2579c33546dddef6a4cb5">XCOFF_FILE_HEADER64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ed5ed1baa0bec226f725f447818a31d" name="a6ed5ed1baa0bec226f725f447818a31d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed5ed1baa0bec226f725f447818a31d">&#9670;&#160;</a></span>XCOFF_FORK_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html">XCOFF_FORK_HEADER</a> <a class="el" href="struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html">XCOFF_FORK_HEADER</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This the executable's manifest fork, designed for NeFS. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fPropertiesXMLFork</td><td>The XML fork of the executable. </td></tr>
+    <tr><td class="paramname">fDynamicLoaderFork</td><td>The DYLD fork metadata. </td></tr>
+    <tr><td class="paramname">fCodeSignFork</td><td>Executable's certificate contained in a fork. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

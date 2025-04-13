@@ -1,8 +1,8 @@
 var struct_fis_data =
 [
-    [ "Data", "struct_fis_data.html#a45d127323cc4b57c319342b3728e2547", null ],
-    [ "FisType", "struct_fis_data.html#abee37ee52f4511399f5e2d4fd1426a67", null ],
-    [ "PortMul", "struct_fis_data.html#a2cccf9437b09daf5a272c8ca75c4bb82", null ],
-    [ "Reserved0", "struct_fis_data.html#a0bd69e6e5c8838cfb6706df408e611fb", null ],
-    [ "Reserved1", "struct_fis_data.html#ab13c9009c5a87c9466b9cb2e0503c3a9", null ]
+    [ "Data", "struct_fis_data.html#a244fd1eec6801667f5eee481f6ec93e3", null ],
+    [ "FisType", "struct_fis_data.html#a420f35e2c9aecefc09a50fffe3231f65", null ],
+    [ "PortMul", "struct_fis_data.html#ae24a3eec6bda93ffad97fe2ca9089e57", null ],
+    [ "Reserved0", "struct_fis_data.html#abb1d02284a9aea6775dbe65e53f6589a", null ],
+    [ "Reserved1", "struct_fis_data.html#adb21cf42e47d983fa67a2463383d6eb7", null ]
 ];

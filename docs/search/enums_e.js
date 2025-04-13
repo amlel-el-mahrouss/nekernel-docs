@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variantkind_0',['VariantKind',['../class_ne_o_s_1_1_variant.html#af9a7a12954dc166c82a352c6c0f83c12',1,'NeOS::Variant']]]
+  ['variantkind_0',['VariantKind',['../class_kernel_1_1_variant.html#a3df8075bec52e61d531760d036656f4f',1,'Kernel::Variant']]]
 ];

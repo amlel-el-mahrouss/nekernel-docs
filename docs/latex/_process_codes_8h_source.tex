@@ -1,0 +1,59 @@
+\doxysection{Process\+Codes.\+h}
+\hypertarget{_process_codes_8h_source}{}\label{_process_codes_8h_source}\index{dev/user/ProcessCodes.h@{dev/user/ProcessCodes.h}}
+\mbox{\hyperlink{_process_codes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{user_2_macros_8h}{user/Macros.h}}>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ err\_local\_ok()\ \ \ (kLastError\ ==\ kErrorSuccess)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ err\_local\_fail()\ (kLastError\ !=\ kErrorSuccess)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ err\_local\_get()\ \ (kLastError)}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{user_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a94e290c6d544087b5a1480008b39ff50}{kErrorSuccess}}\ \ \ \ \ \ \ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a9f31cc6bdc66c849823d19b41a134101}{kErrorExecutable}}\ \ \ \ \ \ \ \ \ \ =\ 33;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_ac28ac356f5de6578ad1abba3d6d03005}{kErrorExecutableLib}}\ \ \ \ =\ 34;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_aded4eec8d65526d4785c501ff6eab88d}{kErrorFileNotFound}}\ \ \ \ \ \ \ \ \ \ =\ 35;}
+\DoxyCodeLine{00024\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_afa9fbd3d9b97f7fc07a6504dbe3690f1}{kErrorDirectoryNotFound}}\ \ =\ 36;}
+\DoxyCodeLine{00025\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a475801490cdb0835fc268da345d2c1d0}{kErrorDiskReadOnly}}\ \ \ \ \ \ \ \ \ \ =\ 37;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a584ac3da1d6b7b06d8e94265e12af8ca}{kErrorDiskIsFull}}\ \ \ \ \ \ \ \ \ \ =\ 38;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a4f0f29c2d8e6da36434a934dc4b08d6c}{kErrorProcessFault}}\ \ \ \ \ \ \ \ \ \ =\ 39;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_aea4edc951d0ef9d6569c84bec4c35083}{kErrorSocketHangUp}}\ \ \ \ \ \ \ \ \ \ =\ 40;}
+\DoxyCodeLine{00029\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a0139c6bb86d142889cb74af6ffad3639}{kErrorThreadLocalStorage}}\ =\ 41;}
+\DoxyCodeLine{00030\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a620ebb2c95d226c5b7402d38fe232636}{kErrorMath}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 42;}
+\DoxyCodeLine{00031\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a1da435bb5ce4c94e16e4b62a6621d5c8}{kErrorNoNetwork}}\ \ \ \ \ \ \ \ =\ 43;}
+\DoxyCodeLine{00032\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_af6642aaf97eca1dd20dc67f1227aa115}{kErrorHeapOutOfMemory}}\ \ \ \ =\ 44;}
+\DoxyCodeLine{00033\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a509bb0ecffde65afe14ee9284d4afb74}{kErrorNoSuchDisk}}\ \ \ \ \ \ \ \ \ \ =\ 45;}
+\DoxyCodeLine{00034\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a6801dd41e750ec2f0905bc966292effd}{kErrorFileExists}}\ \ \ \ \ \ \ \ \ \ =\ 46;}
+\DoxyCodeLine{00035\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a8e3e85ee335fa0db4deb41ea6d412e64}{kErrorFormatFailed}}\ \ \ \ \ \ \ \ \ \ =\ 47;}
+\DoxyCodeLine{00036\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a37a8176b97d173850e9feefe9231b639}{kErrorNetworkTimeout}}\ \ \ \ \ \ =\ 48;}
+\DoxyCodeLine{00037\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_abcf627311714ecef3944856730458253}{kErrorInternal}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 49;}
+\DoxyCodeLine{00038\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a79e8460477e14ca83ccd145cab902dca}{kErrorForkAlreadyExists}}\ \ =\ 50;}
+\DoxyCodeLine{00039\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_ad0cf07cf4fcf1213fc8e89b7759f3acd}{kErrorOutOfTeamSlot}}\ \ \ \ =\ 51;}
+\DoxyCodeLine{00040\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a2a31cb1cac74b5bb0d3006a01d698eaa}{kErrorHeapNotPresent}}\ \ \ \ \ \ =\ 52;}
+\DoxyCodeLine{00041\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a057bc5a2d2203cbe306dd1f7df250aae}{kErrorNoEntrypoint}}\ \ \ \ \ \ \ \ \ \ =\ 53;}
+\DoxyCodeLine{00042\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a31648a0d74df18ddc93f6d7d35db8ad7}{kErrorDiskIsCorrupted}}\ \ \ \ =\ 54;}
+\DoxyCodeLine{00043\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a951285b6fd76c377b8ca35a943df5050}{kErrorDisk}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 55;}
+\DoxyCodeLine{00044\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a974e82fc2be850ea81a99c2f0f224460}{kErrorInvalidData}}\ \ \ \ \ \ \ \ =\ 56;}
+\DoxyCodeLine{00045\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_aee5409846c875a524151cb766291cdb4}{kErrorAsync}}\ \ \ \ \ \ \ \ \ \ \ \ =\ 57;}
+\DoxyCodeLine{00046\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a2d7542ddc522d9744331027bf68ae975}{kErrorNonBlocking}}\ \ \ \ \ \ \ \ =\ 58;}
+\DoxyCodeLine{00047\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a53640a569272780ddaff74d7d5c512ff}{kErrorIPC}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 59;}
+\DoxyCodeLine{00048\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a16b37686d899aaf311bbc0d91ebe8287}{kErrorSign}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 60;}
+\DoxyCodeLine{00049\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_ae37b8a0d7e0e840a07f92126f153a98c}{kErrorInvalidCreds}}\ \ \ \ \ \ \ \ \ \ =\ 61;}
+\DoxyCodeLine{00050\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_af125714dba240fba11501fb06b9250e7}{kErrorCDTrayBroken}}\ \ \ \ \ \ \ \ \ \ =\ 62;}
+\DoxyCodeLine{00051\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a95ba7247abf311076f21e8d662fab0f9}{kErrorUnrecoverableDisk}}\ \ =\ 63;}
+\DoxyCodeLine{00052\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a9ed96b0bc985c95a17aed0c3be5ada9c}{kErrorFileLocked}}\ \ \ \ \ \ \ \ \ \ =\ 64;}
+\DoxyCodeLine{00053\ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a5a87373035952db52226dca39811ce6e}{kErrorUnimplemented}}\ \ \ \ =\ -\/1;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \mbox{\hyperlink{user_2_macros_8h_ac8c44412d7453216e1f1b939bf235b89}{IMPORT\_C}}\ \mbox{\hyperlink{_process_codes_8h_a5b12bd1f1b577d8bd407c4522c119aca}{ErrKind}}\ \mbox{\hyperlink{_process_codes_8h_a8624cdbb2cebf695aefa7dc294b0efcf}{kLastError}};}
+
+\end{DoxyCode}

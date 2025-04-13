@@ -1,0 +1,147 @@
+\doxysection{Ne\+OS\+::IDevice\+Object\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_ne_o_s_1_1_i_device_object}{}\label{class_ne_o_s_1_1_i_device_object}\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+
+
+\doxylink{class_device}{Device} contract interface, represents an HW device.  
+
+
+
+
+{\ttfamily \#include $<$Device\+Mgr.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_afb3a58e778f44f8a742060d0edb963d0}{IDevice\+Object}} (void(\texorpdfstring{$\ast$}{*}Out)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T), void(\texorpdfstring{$\ast$}{*}In)(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T))
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_ab0135d603e7638878263cc81d2651bc7}{\texorpdfstring{$\sim$}{\string~}\+IDevice\+Object}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \& \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a55ae440d92f6001205ce00a986b32922}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_af3491478bf41e68cd9861baeae9ae55e}{IDevice\+Object}} (const \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \&)=default
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \& \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_acac0274876df08c20f47500d40fac08c}{operator$<$$<$}} (T Data)
+\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \& \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a621b0240819bd2cc8083df67a3c5c46c}{operator$>$$>$}} (T Data)
+\item 
+virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_ad64b16b0500bb465bc76f923bf3c5434}{Name}} () const
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a81bd22f7093d1c302d50d06a5e884f9d}{operator bool}} ()
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_ab81f982308fe2e1cc4ddc4be949f638e}{operator!}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a7aebb75a8f387f9251287703aaad1f00}{f\+Out}} )(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T Data) = \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object_a865d9ce021a2f7406a4a2a7b00c67e84}{f\+In}} )(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T Data) = \{nullptr\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Ne\+OS\+::\+IDevice\+Object$<$ T $>$}
+\doxylink{class_device}{Device} contract interface, represents an HW device. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_i_device_object_afb3a58e778f44f8a742060d0edb963d0}\label{class_ne_o_s_1_1_i_device_object_afb3a58e778f44f8a742060d0edb963d0} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!IDeviceObject@{IDeviceObject}}
+\index{IDeviceObject@{IDeviceObject}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IDeviceObject()}{IDeviceObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::\+IDevice\+Object (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T)}]{Out,  }\item[{void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T)}]{In }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_ab0135d603e7638878263cc81d2651bc7}\label{class_ne_o_s_1_1_i_device_object_ab0135d603e7638878263cc81d2651bc7} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!````~IDeviceObject@{\texorpdfstring{$\sim$}{\string~}IDeviceObject}}
+\index{````~IDeviceObject@{\texorpdfstring{$\sim$}{\string~}IDeviceObject}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IDeviceObject()}{\string~IDeviceObject()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_af3491478bf41e68cd9861baeae9ae55e}\label{class_ne_o_s_1_1_i_device_object_af3491478bf41e68cd9861baeae9ae55e} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!IDeviceObject@{IDeviceObject}}
+\index{IDeviceObject@{IDeviceObject}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IDeviceObject()}{IDeviceObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::\+IDevice\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_i_device_object_ad64b16b0500bb465bc76f923bf3c5434}\label{class_ne_o_s_1_1_i_device_object_ad64b16b0500bb465bc76f923bf3c5434} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!Name@{Name}}
+\index{Name@{Name}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ne_o_s_1_1_network_device_ae5cffd1dc87b43b6ff413b53480551cc}{Ne\+OS\+::\+Network\+Device}}, and \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_ad4afc8d3109dcd8f2a28b3c589062995}{Ne\+OS\+::\+ATADevice\+Interface}}.
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_a81bd22f7093d1c302d50d06a5e884f9d}\label{class_ne_o_s_1_1_i_device_object_a81bd22f7093d1c302d50d06a5e884f9d} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_ab81f982308fe2e1cc4ddc4be949f638e}\label{class_ne_o_s_1_1_i_device_object_ab81f982308fe2e1cc4ddc4be949f638e} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_acac0274876df08c20f47500d40fac08c}\label{class_ne_o_s_1_1_i_device_object_acac0274876df08c20f47500d40fac08c} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \& \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{T}]{Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_acb36f41d37225fc4f6fa132955194e56}{Ne\+OS\+::\+ATADevice\+Interface}}.
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_a55ae440d92f6001205ce00a986b32922}\label{class_ne_o_s_1_1_i_device_object_a55ae440d92f6001205ce00a986b32922} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}} \& \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_a621b0240819bd2cc8083df67a3c5c46c}\label{class_ne_o_s_1_1_i_device_object_a621b0240819bd2cc8083df67a3c5c46c} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \& \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{T}]{Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ne_o_s_1_1_a_t_a_device_interface_aca0192e11e85a9af759b396cf7d31d8a}{Ne\+OS\+::\+ATADevice\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_i_device_object_a865d9ce021a2f7406a4a2a7b00c67e84}\label{class_ne_o_s_1_1_i_device_object_a865d9ce021a2f7406a4a2a7b00c67e84} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!fIn@{fIn}}
+\index{fIn@{fIn}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fIn}{fIn}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::f\+In) (\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T Data) = \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_ne_o_s_1_1_i_device_object_a7aebb75a8f387f9251287703aaad1f00}\label{class_ne_o_s_1_1_i_device_object_a7aebb75a8f387f9251287703aaad1f00} 
+\index{NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}!fOut@{fOut}}
+\index{fOut@{fOut}!NeOS::IDeviceObject$<$ T $>$@{NeOS::IDeviceObject$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fOut}{fOut}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{Ne\+OS\+::\+IDevice\+Object}}$<$ T $>$\+::f\+Out) (\mbox{\hyperlink{class_ne_o_s_1_1_i_device_object}{IDevice\+Object}}$<$ T $>$ \texorpdfstring{$\ast$}{*}, T Data) = \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_device_mgr_8h}{Device\+Mgr.\+h}}\end{DoxyCompactItemize}

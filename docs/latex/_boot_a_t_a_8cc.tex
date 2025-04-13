@@ -1,0 +1,99 @@
+\doxysection{dev/boot/src/\+HEL/\+AMD64/\+Boot\+ATA.cc File Reference}
+\hypertarget{_boot_a_t_a_8cc}{}\label{_boot_a_t_a_8cc}\index{dev/boot/src/HEL/AMD64/BootATA.cc@{dev/boot/src/HEL/AMD64/BootATA.cc}}
+
+
+ATA driver.  
+
+
+{\ttfamily \#include $<$Firmware\+Kit/\+EFI.\+h$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Boot\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+HW/\+ATA.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_boot_a_t_a_8cc_a0ed1077d0b7cee4b51cb1ab93949a361}{k\+ATAData\+Len}}~256
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{_boot_a_t_a_8cc_a42fc5f167d4bf255c355a2e8adaadef5}{boot\+\_\+ata\+\_\+detected}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})
+\begin{DoxyCompactList}\small\item\em @check is ATA detected? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{_boot_a_t_a_8cc_a4a0e4eec5ee54e4e756e6f5e294cf743}{boot\+\_\+ata\+\_\+wait\+\_\+io}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} IO)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{_boot_a_t_a_8cc_a435db2a98cc7ce40ebe1e08911e74bb8}{boot\+\_\+ata\+\_\+select}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Bus)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{_boot_a_t_a_8cc_a2fad13cecf67d98f3dbab9d314cdd28f}{boot\+\_\+ata\+\_\+init}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} Bus, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Drive, \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \&Out\+Bus, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \&Out\+Master)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{_boot_a_t_a_8cc_a862cd7d31cb7423808c6a75493282b05}{boot\+\_\+ata\+\_\+read}} (\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Lba}}, \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} IO, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Master, \mbox{\hyperlink{namespace_boot_af4fbfbcef45cf86b54114a8d8ac49525}{Character\+Type\+UTF8}} \texorpdfstring{$\ast$}{*}Buf, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Sector\+Sz, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}})
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{_boot_a_t_a_8cc_a6b6fda9425e1625c3dfc6df00bb1bb33}{boot\+\_\+ata\+\_\+write}} (\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_a6c7d716f879df82186c7178f1271e502}{Lba}}, \mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} IO, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Master, \mbox{\hyperlink{namespace_boot_af4fbfbcef45cf86b54114a8d8ac49525}{Character\+Type\+UTF8}} \texorpdfstring{$\ast$}{*}Buf, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Sector\+Sz, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ATA driver. 
+
+\begin{DoxyAuthor}{Author}
+Amlal EL Mahrouss (\href{mailto:amlal@nekernel.org}{\texttt{ amlal@nekernel.\+org}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/02-\/02
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) Amlal EL Mahrouss 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_boot_a_t_a_8cc_a0ed1077d0b7cee4b51cb1ab93949a361}\label{_boot_a_t_a_8cc_a0ed1077d0b7cee4b51cb1ab93949a361} 
+\index{BootATA.cc@{BootATA.cc}!kATADataLen@{kATADataLen}}
+\index{kATADataLen@{kATADataLen}!BootATA.cc@{BootATA.cc}}
+\doxysubsubsection{\texorpdfstring{kATADataLen}{kATADataLen}}
+{\footnotesize\ttfamily \#define k\+ATAData\+Len~256}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_boot_a_t_a_8cc_a42fc5f167d4bf255c355a2e8adaadef5}\label{_boot_a_t_a_8cc_a42fc5f167d4bf255c355a2e8adaadef5} 
+\index{BootATA.cc@{BootATA.cc}!boot\_ata\_detected@{boot\_ata\_detected}}
+\index{boot\_ata\_detected@{boot\_ata\_detected}!BootATA.cc@{BootATA.cc}}
+\doxysubsubsection{\texorpdfstring{boot\_ata\_detected()}{boot\_ata\_detected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} boot\+\_\+ata\+\_\+detected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+@check is ATA detected? 
+
+\Hypertarget{_boot_a_t_a_8cc_a2fad13cecf67d98f3dbab9d314cdd28f}\label{_boot_a_t_a_8cc_a2fad13cecf67d98f3dbab9d314cdd28f} 
+\index{BootATA.cc@{BootATA.cc}!boot\_ata\_init@{boot\_ata\_init}}
+\index{boot\_ata\_init@{boot\_ata\_init}!BootATA.cc@{BootATA.cc}}
+\doxysubsubsection{\texorpdfstring{boot\_ata\_init()}{boot\_ata\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} boot\+\_\+ata\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{Bus,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{Drive,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} \&}]{Out\+Bus,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \&}]{Out\+Master }\end{DoxyParamCaption})}
+
+fetch serial info model, speed, number of sectors...\Hypertarget{_boot_a_t_a_8cc_a862cd7d31cb7423808c6a75493282b05}\label{_boot_a_t_a_8cc_a862cd7d31cb7423808c6a75493282b05} 
+\index{BootATA.cc@{BootATA.cc}!boot\_ata\_read@{boot\_ata\_read}}
+\index{boot\_ata\_read@{boot\_ata\_read}!BootATA.cc@{BootATA.cc}}
+\doxysubsubsection{\texorpdfstring{boot\_ata\_read()}{boot\_ata\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} boot\+\_\+ata\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}}]{Lba,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{IO,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{Master,  }\item[{\mbox{\hyperlink{namespace_boot_af4fbfbcef45cf86b54114a8d8ac49525}{Character\+Type\+UTF8}} \texorpdfstring{$\ast$}{*}}]{Buf,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{Sector\+Sz,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{Size }\end{DoxyParamCaption})}
+
+\Hypertarget{_boot_a_t_a_8cc_a435db2a98cc7ce40ebe1e08911e74bb8}\label{_boot_a_t_a_8cc_a435db2a98cc7ce40ebe1e08911e74bb8} 
+\index{BootATA.cc@{BootATA.cc}!boot\_ata\_select@{boot\_ata\_select}}
+\index{boot\_ata\_select@{boot\_ata\_select}!BootATA.cc@{BootATA.cc}}
+\doxysubsubsection{\texorpdfstring{boot\_ata\_select()}{boot\_ata\_select()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} boot\+\_\+ata\+\_\+select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{Bus }\end{DoxyParamCaption})}
+
+\Hypertarget{_boot_a_t_a_8cc_a4a0e4eec5ee54e4e756e6f5e294cf743}\label{_boot_a_t_a_8cc_a4a0e4eec5ee54e4e756e6f5e294cf743} 
+\index{BootATA.cc@{BootATA.cc}!boot\_ata\_wait\_io@{boot\_ata\_wait\_io}}
+\index{boot\_ata\_wait\_io@{boot\_ata\_wait\_io}!BootATA.cc@{BootATA.cc}}
+\doxysubsubsection{\texorpdfstring{boot\_ata\_wait\_io()}{boot\_ata\_wait\_io()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} boot\+\_\+ata\+\_\+wait\+\_\+io (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{IO }\end{DoxyParamCaption})}
+
+\Hypertarget{_boot_a_t_a_8cc_a6b6fda9425e1625c3dfc6df00bb1bb33}\label{_boot_a_t_a_8cc_a6b6fda9425e1625c3dfc6df00bb1bb33} 
+\index{BootATA.cc@{BootATA.cc}!boot\_ata\_write@{boot\_ata\_write}}
+\index{boot\_ata\_write@{boot\_ata\_write}!BootATA.cc@{BootATA.cc}}
+\doxysubsubsection{\texorpdfstring{boot\_ata\_write()}{boot\_ata\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} boot\+\_\+ata\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}}]{Lba,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{IO,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{Master,  }\item[{\mbox{\hyperlink{namespace_boot_af4fbfbcef45cf86b54114a8d8ac49525}{Character\+Type\+UTF8}} \texorpdfstring{$\ast$}{*}}]{Buf,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{Sector\+Sz,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}}}]{Size }\end{DoxyParamCaption})}
+

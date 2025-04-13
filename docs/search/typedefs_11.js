@@ -1,8 +1,20 @@
 var searchData=
 [
-  ['tcpnetworkdevice_0',['TCPNetworkDevice',['../namespace_ne_o_s.html#a6f931c92e24651469886452a801d0acc',1,'NeOS']]],
-  ['thread_5fproc_5fkind_1',['thread_proc_kind',['../_system_calls_8h.html#a11728dc14f45b0db402dd385679b2a72',1,'SystemCalls.h']]],
-  ['threadid_2',['ThreadID',['../namespace_ne_o_s.html#a595e6c7866a05c171d2d811b8eadbab1',1,'NeOS']]],
-  ['threadkind_3',['ThreadKind',['../namespace_ne_o_s.html#a162ba2a9ad40e4905da7fa0a83bbfcf1',1,'NeOS']]],
-  ['threadref_4',['ThreadRef',['../_system_calls_8h.html#ad88ea14c0f28fc81e5a53a6a473cf263',1,'SystemCalls.h']]]
+  ['scsi_5fpacket_5ftype_0',['scsi_packet_type',['../modules_2_s_c_s_i_2_s_c_s_i_8h.html#ad56b96da28e4a7693b37388e979340e5',1,'SCSI.h']]],
+  ['segmentarray_1',['SegmentArray',['../namespace_kernel_1_1_h_a_l.html#a5307b33b203457671876a78de0e37231',1,'Kernel::HAL']]],
+  ['semaphore_2',['Semaphore',['../namespace_kernel.html#a2b8b9e81b4f070c7efab3420d14975e8',1,'Kernel']]],
+  ['short_3',['Short',['../namespace_kernel.html#ac861a8f71a08950dbdacbf5814efddae',1,'Kernel']]],
+  ['signalkind_4',['SignalKind',['../namespace_kernel.html#a39b76eab2ccf186a18143464b97e73c7',1,'Kernel']]],
+  ['sint16_5',['sint16',['../namespace_kernel.html#ae9d81b8d5478b971df17a4295efeaf39',1,'Kernel::SInt16'],['../user_2_macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
+  ['sint32_6',['sint32',['../namespace_kernel.html#acbc040f7132975ab615ece6b877b4c25',1,'Kernel::SInt32'],['../user_2_macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
+  ['sint64_7',['sint64',['../namespace_kernel.html#aaa04483922d796a944f29817e74a4ba3',1,'Kernel::SInt64'],['../user_2_macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],
+  ['sint8_8',['SInt8',['../user_2_macros_8h.html#aaa25d67f876e77346aeca5db9fdc34e8',1,'Macros.h']]],
+  ['size_9',['Size',['../namespace_kernel.html#a491c180e187771df3ce5885241ed061b',1,'Kernel']]],
+  ['size_5ft_10',['size_t',['../_new_8h.html#aa9d55e2f20e580b7445617d0d12fff6e',1,'New.h']]],
+  ['sizet_11',['sizet',['../namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63',1,'Kernel::SizeT'],['../user_2_macros_8h.html#ab5060adaff7d15b3ac19481139e04c10',1,'SizeT:&#160;Macros.h']]],
+  ['socketref_12',['SocketRef',['../_system_calls_8h.html#a33b5198f7ba47dba8faac36d3d787cc8',1,'SystemCalls.h']]],
+  ['ssize_13',['SSize',['../namespace_kernel.html#a2bc4382d02e68601e3976fa71cb8338b',1,'Kernel']]],
+  ['ssizet_14',['SSizeT',['../namespace_kernel.html#a193842946b685b42acd908caef26c30d',1,'Kernel']]],
+  ['stackframeptr_15',['StackFramePtr',['../namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b',1,'Kernel::HAL']]],
+  ['swap_5fdisk_5fheader_16',['SWAP_DISK_HEADER',['../namespace_kernel.html#a7d025f2d18ee23a8968b516036e8a734',1,'Kernel']]]
 ];

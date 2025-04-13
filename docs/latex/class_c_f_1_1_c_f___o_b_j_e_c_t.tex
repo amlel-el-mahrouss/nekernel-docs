@@ -1,0 +1,216 @@
+\doxysection{CF\+::CF\+\_\+\+OBJECT\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t}{}\label{class_c_f_1_1_c_f___o_b_j_e_c_t}\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Property.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4}{CFProperty}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_ab0d11cf93450938236b51e71ccddec36}{\texorpdfstring{$\sim$}{\string~}\+CFProperty}} ()
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4}{CFProperty}} \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a72464fb1e0ed4b1c13c753625d1eef75}{operator=}} (const \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4}{CFProperty}} \&)=default
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_ab631e251ec6533c1ff4896ae71ee8853}{CFProperty}} (const CFProperty \&)=default
+\item 
+\mbox{\hyperlink{user_2_macros_8h_a76a8b016e5ad61faf9062cc387df5016}{Bool}} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_ad902289ab143b68a2153e12fcdc5554b}{String\+Equals}} (CFString \&name)
+\item 
+\mbox{\hyperlink{namespace_c_f_a3bdf31935f4a453f6583ae9407727be1}{CFProperty\+Id}} \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a7c9bc58be0a7a5c96d0c59e291577d3e}{Get\+Value}} ()
+\item 
+CFString \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a141aad5828cd7283ed36dc21efc5f542}{Get\+Key}} ()
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a4c059a3c52935fdfde3ae5e6b7de4c5d}{CFRef}} ()=default
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a2e17c0c821f7ff139fd2d475bc3ceb7f}{\texorpdfstring{$\sim$}{\string~}\+CFRef}} ()
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a3dea8aa58fe4443d7f216434e3138deb}{CFRef}} (T \texorpdfstring{$\ast$}{*}cls)
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a2b3eb24a2ca4f463de4a49fb4458b9a3}{CFRef}} (T cls)
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f_ref}{CFRef}} \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a733d33098fe3470e02ced5df2b25506f}{operator=}} (T ref)
+\item 
+T \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_acab0fb138af64bbe60bc94b556e1b69c}{operator-\/$>$}} () const
+\item 
+T \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_ae4aa7468070ad121a10fa613c9bdc619}{Leak}} () noexcept
+\item 
+T \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a0dcfa81c5907859d0d2ebefe0d7ac6d9}{Try\+Leak}} () const noexcept
+\item 
+T \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a2e837deb473e4bb731bfbcada3f8e001}{operator\texorpdfstring{$\ast$}{*}}} ()
+\item 
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a46cca54592aa702a2ceefdaff62185ca}{operator bool}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CFString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_a17eda766d9e75c043ff734f43b99202e}{f\+Name}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_c_f_a3bdf31935f4a453f6583ae9407727be1}{CFProperty\+Id}} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_ae4a7ab53b228647484518bbd8031e0d3}{f\+Value}} \{0\+UL\}
+\item 
+\mbox{\hyperlink{_system_calls_8h_a569e85f2d10d138139759df87f3b8508}{Ref}}$<$ CFGUID $>$ \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_adfd70b9805d4cb93a02e6596416e4dba}{f\+GUID}} \{\}
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_af9b81e7001361da768106be3b7f18e0d}{f\+Class}} \{nullptr\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_ab0d11cf93450938236b51e71ccddec36}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_ab0d11cf93450938236b51e71ccddec36} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!````~CFProperty@{\texorpdfstring{$\sim$}{\string~}CFProperty}}
+\index{````~CFProperty@{\texorpdfstring{$\sim$}{\string~}CFProperty}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CFProperty()}{\string~CFProperty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4}{CFProperty}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a2e17c0c821f7ff139fd2d475bc3ceb7f}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a2e17c0c821f7ff139fd2d475bc3ceb7f} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!````~CFRef@{\texorpdfstring{$\sim$}{\string~}CFRef}}
+\index{````~CFRef@{\texorpdfstring{$\sim$}{\string~}CFRef}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CFRef()}{\string~CFRef()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_c_f_1_1_c_f_ref}{CFRef}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!CFProperty@{CFProperty}}
+\index{CFProperty@{CFProperty}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CFProperty()}{CFProperty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+CFProperty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_ab631e251ec6533c1ff4896ae71ee8853}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_ab631e251ec6533c1ff4896ae71ee8853} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!CFProperty@{CFProperty}}
+\index{CFProperty@{CFProperty}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CFProperty()}{CFProperty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+CFProperty (\begin{DoxyParamCaption}\item[{const CFProperty \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a4c059a3c52935fdfde3ae5e6b7de4c5d}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a4c059a3c52935fdfde3ae5e6b7de4c5d} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!CFRef@{CFRef}}
+\index{CFRef@{CFRef}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CFRef()}{CFRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+CFRef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a3dea8aa58fe4443d7f216434e3138deb}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a3dea8aa58fe4443d7f216434e3138deb} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!CFRef@{CFRef}}
+\index{CFRef@{CFRef}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CFRef()}{CFRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+CFRef (\begin{DoxyParamCaption}\item[{T \texorpdfstring{$\ast$}{*}}]{cls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a2b3eb24a2ca4f463de4a49fb4458b9a3}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a2b3eb24a2ca4f463de4a49fb4458b9a3} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!CFRef@{CFRef}}
+\index{CFRef@{CFRef}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CFRef()}{CFRef()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+CFRef (\begin{DoxyParamCaption}\item[{T}]{cls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a141aad5828cd7283ed36dc21efc5f542}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a141aad5828cd7283ed36dc21efc5f542} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+CFString \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+Get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a7c9bc58be0a7a5c96d0c59e291577d3e}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a7c9bc58be0a7a5c96d0c59e291577d3e} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespace_c_f_a3bdf31935f4a453f6583ae9407727be1}{CFProperty\+Id}} \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_ae4aa7468070ad121a10fa613c9bdc619}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_ae4aa7468070ad121a10fa613c9bdc619} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!Leak@{Leak}}
+\index{Leak@{Leak}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Leak()}{Leak()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+Leak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a46cca54592aa702a2ceefdaff62185ca}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a46cca54592aa702a2ceefdaff62185ca} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a2e837deb473e4bb731bfbcada3f8e001}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a2e837deb473e4bb731bfbcada3f8e001} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_acab0fb138af64bbe60bc94b556e1b69c}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_acab0fb138af64bbe60bc94b556e1b69c} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a72464fb1e0ed4b1c13c753625d1eef75}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a72464fb1e0ed4b1c13c753625d1eef75} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4}{CFProperty}} \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t_af022c413a89a83f0c6519e1241a004d4}{CFProperty}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a733d33098fe3470e02ced5df2b25506f}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a733d33098fe3470e02ced5df2b25506f} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_c_f_1_1_c_f_ref}{CFRef}} \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{T}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_ad902289ab143b68a2153e12fcdc5554b}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_ad902289ab143b68a2153e12fcdc5554b} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!StringEquals@{StringEquals}}
+\index{StringEquals@{StringEquals}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StringEquals()}{StringEquals()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{user_2_macros_8h_a76a8b016e5ad61faf9062cc387df5016}{Bool}} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+String\+Equals (\begin{DoxyParamCaption}\item[{CFString \&}]{name }\end{DoxyParamCaption})}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a0dcfa81c5907859d0d2ebefe0d7ac6d9}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a0dcfa81c5907859d0d2ebefe0d7ac6d9} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!TryLeak@{TryLeak}}
+\index{TryLeak@{TryLeak}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryLeak()}{TryLeak()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::\+Try\+Leak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_af9b81e7001361da768106be3b7f18e0d}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_af9b81e7001361da768106be3b7f18e0d} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!fClass@{fClass}}
+\index{fClass@{fClass}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fClass}{fClass}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::f\+Class \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_adfd70b9805d4cb93a02e6596416e4dba}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_adfd70b9805d4cb93a02e6596416e4dba} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!fGUID@{fGUID}}
+\index{fGUID@{fGUID}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fGUID}{fGUID}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{_system_calls_8h_a569e85f2d10d138139759df87f3b8508}{Ref}}$<$CFGUID$>$ \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::f\+GUID \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_a17eda766d9e75c043ff734f43b99202e}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_a17eda766d9e75c043ff734f43b99202e} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!fName@{fName}}
+\index{fName@{fName}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fName}{fName}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+CFString\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::f\+Name \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_c_f_1_1_c_f___o_b_j_e_c_t_ae4a7ab53b228647484518bbd8031e0d3}\label{class_c_f_1_1_c_f___o_b_j_e_c_t_ae4a7ab53b228647484518bbd8031e0d3} 
+\index{CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}!fValue@{fValue}}
+\index{fValue@{fValue}!CF::CF\_OBJECT$<$ T $>$@{CF::CF\_OBJECT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fValue}{fValue}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespace_c_f_a3bdf31935f4a453f6583ae9407727be1}{CFProperty\+Id}} \mbox{\hyperlink{class_c_f_1_1_c_f___o_b_j_e_c_t}{CF\+::\+CF\+\_\+\+OBJECT}}$<$ T $>$\+::f\+Value \{0\+UL\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+public/frameworks/\+Core\+Foundation.\+fwrk/headers/\mbox{\hyperlink{public_2frameworks_2_core_foundation_8fwrk_2headers_2_property_8h}{Property.\+h}}\item 
+public/frameworks/\+Core\+Foundation.\+fwrk/headers/\mbox{\hyperlink{public_2frameworks_2_core_foundation_8fwrk_2headers_2_ref_8h}{Ref.\+h}}\end{DoxyCompactItemize}

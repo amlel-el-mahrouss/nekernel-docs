@@ -1,5 +1,5 @@
 var _crc32_8cc =
 [
-    [ "ke_calculate_crc32", "_crc32_8cc.html#ab91f00fddf5d9cda5e9f18f97b16f115", null ],
-    [ "kCrcTbl", "_crc32_8cc.html#afb9324db8731ffecf11d44807bd00d19", null ]
+    [ "ke_calculate_crc32", "_crc32_8cc.html#a975017fe71e8bd3726877bf268387150", null ],
+    [ "kChecksumPolys", "_crc32_8cc.html#abadd9595279b46b91936497a566572b0", null ]
 ];

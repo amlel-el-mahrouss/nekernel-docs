@@ -8,12 +8,12 @@ var _thread_local_storage_8h =
     [ "kCookieMag2", "_thread_local_storage_8h.html#aaa7f99f2086a60125a41be9ee290c1d4", null ],
     [ "kCookieMag2Idx", "_thread_local_storage_8h.html#a5d55858d4f22bdb9c35fdeb1c0ca88c8", null ],
     [ "kTLSCookieLen", "_thread_local_storage_8h.html#a3254ac69ed0c1cc604149addb63c3402", null ],
-    [ "rt_install_tib", "_thread_local_storage_8h.html#a34d263f62015b78514dc82b05dd9e04f", null ],
-    [ "tls_check_syscall_impl", "_thread_local_storage_8h.html#a744f001ded3bc48a964f201dcf7170f8", null ],
-    [ "tls_check_tib", "_thread_local_storage_8h.html#acbf6340182913c60a98a6ffd18175d02", null ],
-    [ "tls_delete_ptr", "_thread_local_storage_8h.html#aa3ef907fcf7b76f131f51e0de02100f6", null ],
-    [ "tls_delete_ptr", "_thread_local_storage_8h.html#a6f08739957d1e7e2d02535186da2b378", null ],
-    [ "tls_delete_ptr", "_thread_local_storage_8h.html#ab385bd8ac0de475e955abe3aafe222f8", null ],
+    [ "rt_install_tib", "_thread_local_storage_8h.html#a78887fe531343d5c58429ed6ce78b401", null ],
+    [ "tls_check_syscall_impl", "_thread_local_storage_8h.html#a69fe1123b02ca28de94829abb328b269", null ],
+    [ "tls_check_tib", "_thread_local_storage_8h.html#ad638241642268000c48db243cd4fe1a7", null ],
+    [ "tls_delete_ptr", "_thread_local_storage_8h.html#a7a7644f6204d27e3ac4faacf81c221f5", null ],
+    [ "tls_delete_ptr", "_thread_local_storage_8h.html#a01e4a4cef40eca1912cf9c9700ae5646", null ],
+    [ "tls_delete_ptr", "_thread_local_storage_8h.html#ac19127bd6253434be49fcff74e77e761", null ],
     [ "tls_new_class", "_thread_local_storage_8h.html#aeb447845d0d9eee77a67d2bd3bd4d86f", null ],
     [ "tls_new_ptr", "_thread_local_storage_8h.html#a3e273becb8719d0ad0de7253b51dd2be", null ]
 ];

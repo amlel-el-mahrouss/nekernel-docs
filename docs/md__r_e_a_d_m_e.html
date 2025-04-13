@@ -93,11 +93,18 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
   <div class="headertitle"><div class="title">README</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md27"></a>
-NeKernel</h1>
+<div class="textblock"><div align="center"> <img src="meta/png/nekernel.png" alt="Logo" width="128" class="inline"/> <h1>NeKernel</h1>
+</div><div align="center"> </div><p><img src="https://github.com/amlel-el-mahrouss/nekernel/actions/workflows/boot-pio.yml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/> <img src="https://github.com/amlel-el-mahrouss/nekernel/actions/workflows/kernel-ahci.yml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/> [<img src="https://img.shields.io/badge/license-GPL--3.0-blue.svg" alt="License: GPL-3.0" style="pointer-events: none;" class="inline"/>](LICENSE) "" "![QEMU Tested](https://img.shields.io/badge/QEMU-Tested-success)"</p>
+<h2><a class="anchor" id="autotoc_md39"></a>
+Brief:</h2>
+<p>A kernel for engineers who want a custom solution for their stack, written mostly in C++ it aims to provide a base for other projects/products.</p>
+<h2><a class="anchor" id="autotoc_md40"></a>
+User Friendly Diagram:</h2>
+<div align="center"> <img src="docs/svg/OS_DESIGN.png" alt="Diagram" class="inline"/> </div><h2><a class="anchor" id="autotoc_md41"></a>
+Notice for Doxygen:</h2>
 <p>Use the doxygen command to build documentation. <br  />
  A documentation regarding building, and developing for NeKernel is available here: <a href="https://amlel-el-mahrouss.github.io/nekernel-docs/">https://amlel-el-mahrouss.github.io/nekernel-docs/</a></p>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md42"></a>
 Requirements:</h2>
 <ul>
 <li><a href="https://www.mingw-w64.org/">MINGW-W64</a></li>
@@ -106,20 +113,22 @@ Requirements:</h2>
 <li><a href="https://git-scm.com/">GIT</a></li>
 <li><a href="https://github.com/amlel-el-mahrouss/btb">BTB</a></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md29"></a>
+<h2><a class="anchor" id="autotoc_md43"></a>
 Notice for Contributors:</h2>
 <ul>
-<li>You must mount the contents to the neos_esp.img prior running! Otherwise the emulator won't find a valid ESP.</li>
-<li>Always use <code>format.sh</code> before commiting and pushing your code!</li>
+<li>You must mount the contents to the nekernel-esp.img prior running!<ul>
+<li>It depends mostly on how your platform manages them, so have a look at it.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md30"></a>
-Quick Install:</h2>
-<p>Clone the repository:</p>
+</li>
+<li>Run <code>format.sh</code> before commiting, it formats the code according to the .clang-format.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md44"></a>
+Getting Started:</h2>
 <div class="fragment"><div class="line">git clone git@github.com:amlel-el-mahrouss/nekernel.git</div>
 <div class="line">cd nekernel</div>
 <div class="line">./setup_amd64.sh</div>
-<div class="line">./debug_ata.sh # Generic ATA PIO target</div>
-</div><!-- fragment --><h6>Copyright (C) 2024-2025 Amlal EL Mahrouss, All rights reserved.</h6>
+<div class="line">./debug_ata_x64.sh # Generic ATA PIO target</div>
+</div><!-- fragment --><h6>Copyright (C) 2024-2025 Amlal El Mahrouss, All rights reserved.</h6>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

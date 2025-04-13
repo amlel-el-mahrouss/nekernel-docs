@@ -1,0 +1,87 @@
+\doxysection{DMA.\+h}
+\hypertarget{_d_m_a_8h_source}{}\label{_d_m_a_8h_source}\index{dev/kernel/KernelKit/PCI/DMA.h@{dev/kernel/KernelKit/PCI/DMA.h}}
+\mbox{\hyperlink{_d_m_a_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_device_mgr_8h}{KernelKit/DeviceMgr.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_kernel_kit_2_p_c_i_2_device_8h}{KernelKit/PCI/Device.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{dev_2kernel_2_new_kit_2_array_8h}{NewKit/Array.h}}>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_own_ptr_8h}{NewKit/OwnPtr.h}}>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{dev_2kernel_2_new_kit_2_ref_8h}{NewKit/Ref.h}}>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2}{DmaKind}}}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2ac89b74e7544d782dd33c25fdaae40b8f}{PCI}},\ \textcolor{comment}{//\ Bus\ mastering\ is\ required\ to\ be\ turned\ on.\ Basiaclly\ a\ request}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ control\ system.\ 64-\/Bit\ access\ depends\ on\ the\ PAE\ bit\ and\ the\ device}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ (if\ Double\ Address\ Cycle\ is\ available)}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2a64f288ef838ec6e8bd8a3a8833c54047}{ISA}},\ \textcolor{comment}{//\ Four\ DMA\ channels\ 0-\/3;\ 8\ bit\ transfers\ and\ only\ a\ megabyte\ of\ RAM.}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2a4bbb8f967da6d1a610596d7257179c2b}{Invalid}},}
+\DoxyCodeLine{00024\ \ \ \ \ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}}\ final}
+\DoxyCodeLine{00027\ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a66d94ce9d5ebf6ad56d11993c7318a17}{DMAWrapper}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a6f024332c6fa826c9e77d0c2541378d1}{DMAWrapper}}(\mbox{\hyperlink{namespace_ne_o_s_a38971d0f185d8b481f6e1e8a13bd694e}{nullPtr}})\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a754d334dd8c41a78a5767fdf9e3db04d}{DMAWrapper}}(\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{voidPtr}}\ Ptr,\ \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2}{DmaKind}}\ Kind\ =\ \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2ac89b74e7544d782dd33c25fdaae40b8f}{DmaKind::PCI}})}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_adfe3281714059e00ca4286f02b4bb3fa}{fAddress}}(Ptr),\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a26114cde634dc7c9d5163141d46894aa}{fKind}}(Kind)}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a3533fb074fd05c97ddf20367e86267f7}{operator=}}(\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{voidPtr}}\ Ptr);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}}\&\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a7c61d7bbf1bd4b28eba73d13314d0593}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}}\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_aa0ec2799e8d3f7a2461be24c83c722dc}{DMAWrapper}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}}\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a1ee0c97854c14df7487aabcfb8227717}{\string~DMAWrapper}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ T*\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a457db671af3f7ba2d72c8c068140b4b7}{operator-\/>}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ T*\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_af5a4df9963da5f5591c6f59bf529e690}{Get}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\ off\ =\ 0);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{operator}\ bool();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a3dc8735b2b2f7f840dae2346a472e222}{operator!}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \mbox{\hyperlink{modules_2_a_h_c_i_2_a_h_c_i_8h_a7a9e0d1c2c1ac92baa698f393e953c87}{Write}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\&\ bit,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\&\ offset);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a9bfcb9b067a5c917a4a14e34ddc64276}{Read}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}\&\ offset);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a2622c0f2c5ca1091fd80f6b2da09f9e5}{Check}}(\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\ offset)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a96ed45a4de466f356cd73945369c2bcb}{operator[]}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UIntPtr}}\&\ offset);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{voidPtr}}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_adfe3281714059e00ca4286f02b4bb3fa}{fAddress}}\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2}{DmaKind}}\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a26114cde634dc7c9d5163141d46894aa}{fKind}}\{\mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2a4bbb8f967da6d1a610596d7257179c2b}{DmaKind::Invalid}}\};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_factory}{DMAFactory}};}
+\DoxyCodeLine{00072\ \ \ \ \ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_factory}{DMAFactory}}\ final}
+\DoxyCodeLine{00075\ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{OwnPtr<IOBuf<Char*>}}>\ \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_factory_a8ddcb6f1b3182be7075ba8accef68142}{Construct}}(\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{OwnPtr<DMAWrapper>}}\&\ dma);}
+\DoxyCodeLine{00078\ \ \ \ \ \};}
+\DoxyCodeLine{00079\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_d_m_a_8inl}{KernelKit/PCI/DMA.inl}}>}}
+
+\end{DoxyCode}

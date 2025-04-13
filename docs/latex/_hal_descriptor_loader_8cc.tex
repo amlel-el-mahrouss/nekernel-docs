@@ -1,0 +1,41 @@
+\doxysection{dev/kernel/\+HALKit/\+AMD64/\+Hal\+Descriptor\+Loader.cc File Reference}
+\hypertarget{_hal_descriptor_loader_8cc}{}\label{_hal_descriptor_loader_8cc}\index{dev/kernel/HALKit/AMD64/HalDescriptorLoader.cc@{dev/kernel/HALKit/AMD64/HalDescriptorLoader.cc}}
+{\ttfamily \#include $<$Arch\+Kit/\+Arch\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$HALKit/\+AMD64/\+Processor.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l}{Ne\+OS\+::\+HAL}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{\doxylink{namespace_ne_o_s_1_1_h_a_l}{HAL}}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail}{Ne\+OS\+::\+HAL\+::\+Detail}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_hal_descriptor_loader_8cc_aaab74744d7b4761fafa41bf545458898}{k\+PITDefault\+Ticks}}~(1000U)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab8dd7e4bdd8fd37962f4cfafd581ec52}{Ne\+OS\+::\+HAL\+::\+Detail\+::hal\+\_\+set\+\_\+irq\+\_\+mask}} (\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} irql)
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab22deb39e1bce327b6a34671b0bb8f91}{Ne\+OS\+::\+HAL\+::\+Detail\+::hal\+\_\+clear\+\_\+irq\+\_\+mask}} (\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} irql)
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a6edaffb6af3442c731fa670fb3ec9e97}{Ne\+OS\+::\+HAL\+::\+Detail\+::hal\+\_\+enable\+\_\+pit}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} ticks) noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+STATIC\+::\+Ne\+OS\+::\+Detail\+::\+AMD64\+::\+Interrupt\+Descriptor\+AMD64 \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a8712d698095f5a884425fe6f741f0d37}{Ne\+OS\+::\+HAL\+::\+Detail\+::k\+Interrupt\+Vector\+Table}} \mbox{[}\mbox{\hyperlink{_a_m_d64_2_processor_8h_a014c3cfcee9c046c03e48d765d7379c7}{k\+Kernel\+Idt\+Size}}\mbox{]} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_hal_descriptor_loader_8cc_aaab74744d7b4761fafa41bf545458898}\label{_hal_descriptor_loader_8cc_aaab74744d7b4761fafa41bf545458898} 
+\index{HalDescriptorLoader.cc@{HalDescriptorLoader.cc}!kPITDefaultTicks@{kPITDefaultTicks}}
+\index{kPITDefaultTicks@{kPITDefaultTicks}!HalDescriptorLoader.cc@{HalDescriptorLoader.cc}}
+\doxysubsubsection{\texorpdfstring{kPITDefaultTicks}{kPITDefaultTicks}}
+{\footnotesize\ttfamily \#define k\+PITDefault\+Ticks~(1000U)}
+

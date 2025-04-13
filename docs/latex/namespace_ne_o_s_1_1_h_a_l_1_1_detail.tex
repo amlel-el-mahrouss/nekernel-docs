@@ -1,0 +1,317 @@
+\doxysection{Ne\+OS\+::HAL\+::Detail Namespace Reference}
+\hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail}{}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy}{IBit\+Map\+Proxy}}
+\begin{DoxyCompactList}\small\item\em Proxy Interface to manage a bitmap allocator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}{Control\+Register\+Bits}} \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}{Protected\+Mode\+Enable}} = 0
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}{Monitor\+Co\+Processor}} = 1
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}{Emulation}} = 2
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}{Task\+Switched}} = 3
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}{Extension\+Type}} = 4
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}{Numeric\+Error}} = 5
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}{Write\+Protect}} = 16
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}{Alignement\+Mask}} = 18
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}{Not\+Write\+Through}} = 29
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}{Cache\+Disable}} = 30
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}{Page\+Enable}} = 31
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}{Protected\+Mode\+Enable}} = 0
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}{Monitor\+Co\+Processor}} = 1
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}{Emulation}} = 2
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}{Task\+Switched}} = 3
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}{Extension\+Type}} = 4
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}{Numeric\+Error}} = 5
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}{Write\+Protect}} = 16
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}{Alignement\+Mask}} = 18
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}{Not\+Write\+Through}} = 29
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}{Cache\+Disable}} = 30
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}{Page\+Enable}} = 31
+ \}
+\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}{Control\+Register\+Bits}} \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}{Protected\+Mode\+Enable}} = 0
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}{Monitor\+Co\+Processor}} = 1
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}{Emulation}} = 2
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}{Task\+Switched}} = 3
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}{Extension\+Type}} = 4
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}{Numeric\+Error}} = 5
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}{Write\+Protect}} = 16
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}{Alignement\+Mask}} = 18
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}{Not\+Write\+Through}} = 29
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}{Cache\+Disable}} = 30
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}{Page\+Enable}} = 31
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}{Protected\+Mode\+Enable}} = 0
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}{Monitor\+Co\+Processor}} = 1
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}{Emulation}} = 2
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}{Task\+Switched}} = 3
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}{Extension\+Type}} = 4
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}{Numeric\+Error}} = 5
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}{Write\+Protect}} = 16
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}{Alignement\+Mask}} = 18
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}{Not\+Write\+Through}} = 29
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}{Cache\+Disable}} = 30
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}{Page\+Enable}} = 31
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab8dd7e4bdd8fd37962f4cfafd581ec52}{hal\+\_\+set\+\_\+irq\+\_\+mask}} (\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} irql)
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab22deb39e1bce327b6a34671b0bb8f91}{hal\+\_\+clear\+\_\+irq\+\_\+mask}} (\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} irql)
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a6edaffb6af3442c731fa670fb3ec9e97}{hal\+\_\+enable\+\_\+pit}} (\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}} ticks) noexcept
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ae63a2237871dd2402b74d29fb189bc18}{control\+\_\+register\+\_\+cast}} (\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}{Control\+Register\+Bits}} reg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+STATIC\+::\+Ne\+OS\+::\+Detail\+::\+AMD64\+::\+Interrupt\+Descriptor\+AMD64 \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a8712d698095f5a884425fe6f741f0d37}{k\+Interrupt\+Vector\+Table}} \mbox{[}\mbox{\hyperlink{_a_m_d64_2_processor_8h_a014c3cfcee9c046c03e48d765d7379c7}{k\+Kernel\+Idt\+Size}}\mbox{]} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0} 
+\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ControlRegisterBits@{ControlRegisterBits}}
+\index{ControlRegisterBits@{ControlRegisterBits}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection{\texorpdfstring{ControlRegisterBits}{ControlRegisterBits}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}{Ne\+OS\+::\+HAL\+::\+Detail\+::\+Control\+Register\+Bits}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ProtectedModeEnable@{ProtectedModeEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ProtectedModeEnable@{ProtectedModeEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb} 
+Protected\+Mode\+Enable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MonitorCoProcessor@{MonitorCoProcessor}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!MonitorCoProcessor@{MonitorCoProcessor}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e} 
+Monitor\+Co\+Processor&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Emulation@{Emulation}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!Emulation@{Emulation}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef} 
+Emulation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TaskSwitched@{TaskSwitched}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!TaskSwitched@{TaskSwitched}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907} 
+Task\+Switched&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ExtensionType@{ExtensionType}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ExtensionType@{ExtensionType}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76} 
+Extension\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NumericError@{NumericError}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NumericError@{NumericError}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7} 
+Numeric\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WriteProtect@{WriteProtect}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!WriteProtect@{WriteProtect}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6} 
+Write\+Protect&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlignementMask@{AlignementMask}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!AlignementMask@{AlignementMask}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea} 
+Alignement\+Mask&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotWriteThrough@{NotWriteThrough}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NotWriteThrough@{NotWriteThrough}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e} 
+Not\+Write\+Through&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CacheDisable@{CacheDisable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!CacheDisable@{CacheDisable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2} 
+Cache\+Disable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PageEnable@{PageEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!PageEnable@{PageEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a} 
+Page\+Enable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ProtectedModeEnable@{ProtectedModeEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ProtectedModeEnable@{ProtectedModeEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb} 
+Protected\+Mode\+Enable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MonitorCoProcessor@{MonitorCoProcessor}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!MonitorCoProcessor@{MonitorCoProcessor}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e} 
+Monitor\+Co\+Processor&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Emulation@{Emulation}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!Emulation@{Emulation}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef} 
+Emulation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TaskSwitched@{TaskSwitched}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!TaskSwitched@{TaskSwitched}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907} 
+Task\+Switched&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ExtensionType@{ExtensionType}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ExtensionType@{ExtensionType}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76} 
+Extension\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NumericError@{NumericError}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NumericError@{NumericError}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7} 
+Numeric\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WriteProtect@{WriteProtect}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!WriteProtect@{WriteProtect}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6} 
+Write\+Protect&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlignementMask@{AlignementMask}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!AlignementMask@{AlignementMask}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea} 
+Alignement\+Mask&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotWriteThrough@{NotWriteThrough}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NotWriteThrough@{NotWriteThrough}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e} 
+Not\+Write\+Through&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CacheDisable@{CacheDisable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!CacheDisable@{CacheDisable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2} 
+Cache\+Disable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PageEnable@{PageEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!PageEnable@{PageEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a} 
+Page\+Enable&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0} 
+\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ControlRegisterBits@{ControlRegisterBits}}
+\index{ControlRegisterBits@{ControlRegisterBits}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection{\texorpdfstring{ControlRegisterBits}{ControlRegisterBits}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}{Ne\+OS\+::\+HAL\+::\+Detail\+::\+Control\+Register\+Bits}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ProtectedModeEnable@{ProtectedModeEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ProtectedModeEnable@{ProtectedModeEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb} 
+Protected\+Mode\+Enable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MonitorCoProcessor@{MonitorCoProcessor}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!MonitorCoProcessor@{MonitorCoProcessor}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e} 
+Monitor\+Co\+Processor&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Emulation@{Emulation}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!Emulation@{Emulation}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef} 
+Emulation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TaskSwitched@{TaskSwitched}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!TaskSwitched@{TaskSwitched}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907} 
+Task\+Switched&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ExtensionType@{ExtensionType}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ExtensionType@{ExtensionType}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76} 
+Extension\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NumericError@{NumericError}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NumericError@{NumericError}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7} 
+Numeric\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WriteProtect@{WriteProtect}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!WriteProtect@{WriteProtect}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6} 
+Write\+Protect&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlignementMask@{AlignementMask}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!AlignementMask@{AlignementMask}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea} 
+Alignement\+Mask&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotWriteThrough@{NotWriteThrough}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NotWriteThrough@{NotWriteThrough}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e} 
+Not\+Write\+Through&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CacheDisable@{CacheDisable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!CacheDisable@{CacheDisable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2} 
+Cache\+Disable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PageEnable@{PageEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!PageEnable@{PageEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a} 
+Page\+Enable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ProtectedModeEnable@{ProtectedModeEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ProtectedModeEnable@{ProtectedModeEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a9dc63f0e7a22ebb856e41d14c41c4ceb} 
+Protected\+Mode\+Enable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MonitorCoProcessor@{MonitorCoProcessor}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!MonitorCoProcessor@{MonitorCoProcessor}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a44b1de65153deada585fc0e9d62a584e} 
+Monitor\+Co\+Processor&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Emulation@{Emulation}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!Emulation@{Emulation}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a430e23dfa8a1005a5eec889f0e7426ef} 
+Emulation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TaskSwitched@{TaskSwitched}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!TaskSwitched@{TaskSwitched}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ab923242061b4a50addee055eb7b14907} 
+Task\+Switched&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ExtensionType@{ExtensionType}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!ExtensionType@{ExtensionType}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a1a43216615cf5a8e458ee01e92e38d76} 
+Extension\+Type&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NumericError@{NumericError}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NumericError@{NumericError}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a74c3ca2bd91477788d26d55ea28a20f7} 
+Numeric\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WriteProtect@{WriteProtect}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!WriteProtect@{WriteProtect}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a4f5b6e2769b831adcda40ded8391abb6} 
+Write\+Protect&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlignementMask@{AlignementMask}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!AlignementMask@{AlignementMask}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0acdfbee46b947c52e4d0aaecd1cafd4ea} 
+Alignement\+Mask&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotWriteThrough@{NotWriteThrough}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!NotWriteThrough@{NotWriteThrough}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0ae5adf61ff182eaf03cb932a934186e3e} 
+Not\+Write\+Through&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CacheDisable@{CacheDisable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!CacheDisable@{CacheDisable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a310a6aa1b983a986a3f7c92ab71283c2} 
+Cache\+Disable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PageEnable@{PageEnable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!PageEnable@{PageEnable}}}\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0a282b7048593d29199e7b7186c69c677a} 
+Page\+Enable&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ae63a2237871dd2402b74d29fb189bc18}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ae63a2237871dd2402b74d29fb189bc18} 
+\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!control\_register\_cast@{control\_register\_cast}}
+\index{control\_register\_cast@{control\_register\_cast}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection{\texorpdfstring{control\_register\_cast()}{control\_register\_cast()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+HAL\+::\+Detail\+::control\+\_\+register\+\_\+cast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a269a85f0e29071e43ae9f6a0f89f31c0}{Control\+Register\+Bits}}}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab22deb39e1bce327b6a34671b0bb8f91}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab22deb39e1bce327b6a34671b0bb8f91} 
+\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!hal\_clear\_irq\_mask@{hal\_clear\_irq\_mask}}
+\index{hal\_clear\_irq\_mask@{hal\_clear\_irq\_mask}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection{\texorpdfstring{hal\_clear\_irq\_mask()}{hal\_clear\_irq\_mask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void Ne\+OS\+::\+HAL\+::\+Detail\+::hal\+\_\+clear\+\_\+irq\+\_\+mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{irql }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a6edaffb6af3442c731fa670fb3ec9e97}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a6edaffb6af3442c731fa670fb3ec9e97} 
+\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!hal\_enable\_pit@{hal\_enable\_pit}}
+\index{hal\_enable\_pit@{hal\_enable\_pit}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection{\texorpdfstring{hal\_enable\_pit()}{hal\_enable\_pit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} Ne\+OS\+::\+HAL\+::\+Detail\+::hal\+\_\+enable\+\_\+pit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a4885ae005fc56130691bdea86d9a88d7}{UInt16}}}]{ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab8dd7e4bdd8fd37962f4cfafd581ec52}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_ab8dd7e4bdd8fd37962f4cfafd581ec52} 
+\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!hal\_set\_irq\_mask@{hal\_set\_irq\_mask}}
+\index{hal\_set\_irq\_mask@{hal\_set\_irq\_mask}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection{\texorpdfstring{hal\_set\_irq\_mask()}{hal\_set\_irq\_mask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}} void Ne\+OS\+::\+HAL\+::\+Detail\+::hal\+\_\+set\+\_\+irq\+\_\+mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{irql }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a8712d698095f5a884425fe6f741f0d37}\label{namespace_ne_o_s_1_1_h_a_l_1_1_detail_a8712d698095f5a884425fe6f741f0d37} 
+\index{NeOS::HAL::Detail@{NeOS::HAL::Detail}!kInterruptVectorTable@{kInterruptVectorTable}}
+\index{kInterruptVectorTable@{kInterruptVectorTable}!NeOS::HAL::Detail@{NeOS::HAL::Detail}}
+\doxysubsubsection{\texorpdfstring{kInterruptVectorTable}{kInterruptVectorTable}}
+{\footnotesize\ttfamily STATIC\+::\+Ne\+OS\+::\+Detail\+::\+AMD64\+::\+Interrupt\+Descriptor\+AMD64 Ne\+OS\+::\+HAL\+::\+Detail\+::k\+Interrupt\+Vector\+Table\mbox{[}\mbox{\hyperlink{_a_m_d64_2_processor_8h_a014c3cfcee9c046c03e48d765d7379c7}{k\+Kernel\+Idt\+Size}}\mbox{]} = \{\}}
+

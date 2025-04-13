@@ -1,0 +1,135 @@
+\doxysection{Ne\+OS\+::Own\+Ptr\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_ne_o_s_1_1_own_ptr}{}\label{class_ne_o_s_1_1_own_ptr}\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Own\+Ptr.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a9793272eba885e49554ae476cc6c2134}{Own\+Ptr}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a562c4c392e46a94adcd613dd226ff453}{\texorpdfstring{$\sim$}{\string~}\+Own\+Ptr}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}} \& \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a9406b58c8f17ce337b3b4f1507e86ce0}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a5d5d9897e67ed6e3adb4857807a07841}{Own\+Ptr}} (const \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}} \&)=default
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\bool \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a2efc1077d96b625cae9de44f207811c7}{New}} (Args \&\&... arg)
+\item 
+void \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a4f0c8732cd9245c755d7ab357af87fbe}{Delete}} ()
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a5a06711994ab0fed401dcd140e939121}{operator-\/$>$}} () const
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_ac7927059056a3d939b816ba4dd7235bf}{Raw}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref}}$<$ T $>$ \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_adf2da3f82696ebb961fe5c146630f9ff}{As\+Ref}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a25c0ebe86e6ec77efba720eaae6739fa}{operator bool}} ()
+\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_a2568fd47340791d4077c8d4f13fa69dc}{operator!}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr_ad108c999f5d89ea44b6d70f3ea4ea894}{f\+Cls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a9793272eba885e49554ae476cc6c2134}\label{class_ne_o_s_1_1_own_ptr_a9793272eba885e49554ae476cc6c2134} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!OwnPtr@{OwnPtr}}
+\index{OwnPtr@{OwnPtr}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{OwnPtr()}{OwnPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::\+Own\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a562c4c392e46a94adcd613dd226ff453}\label{class_ne_o_s_1_1_own_ptr_a562c4c392e46a94adcd613dd226ff453} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!````~OwnPtr@{\texorpdfstring{$\sim$}{\string~}OwnPtr}}
+\index{````~OwnPtr@{\texorpdfstring{$\sim$}{\string~}OwnPtr}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}OwnPtr()}{\string~OwnPtr()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a5d5d9897e67ed6e3adb4857807a07841}\label{class_ne_o_s_1_1_own_ptr_a5d5d9897e67ed6e3adb4857807a07841} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!OwnPtr@{OwnPtr}}
+\index{OwnPtr@{OwnPtr}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{OwnPtr()}{OwnPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::\+Own\+Ptr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_own_ptr_adf2da3f82696ebb961fe5c146630f9ff}\label{class_ne_o_s_1_1_own_ptr_adf2da3f82696ebb961fe5c146630f9ff} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!AsRef@{AsRef}}
+\index{AsRef@{AsRef}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AsRef()}{AsRef()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref}}$<$ T $>$ \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::\+As\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a4f0c8732cd9245c755d7ab357af87fbe}\label{class_ne_o_s_1_1_own_ptr_a4f0c8732cd9245c755d7ab357af87fbe} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!Delete@{Delete}}
+\index{Delete@{Delete}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a2efc1077d96b625cae9de44f207811c7}\label{class_ne_o_s_1_1_own_ptr_a2efc1077d96b625cae9de44f207811c7} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!New@{New}}
+\index{New@{New}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename... Args$>$ \\
+bool \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::\+New (\begin{DoxyParamCaption}\item[{Args \&\&...}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a25c0ebe86e6ec77efba720eaae6739fa}\label{class_ne_o_s_1_1_own_ptr_a25c0ebe86e6ec77efba720eaae6739fa} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a2568fd47340791d4077c8d4f13fa69dc}\label{class_ne_o_s_1_1_own_ptr_a2568fd47340791d4077c8d4f13fa69dc} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a5a06711994ab0fed401dcd140e939121}\label{class_ne_o_s_1_1_own_ptr_a5a06711994ab0fed401dcd140e939121} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_a9406b58c8f17ce337b3b4f1507e86ce0}\label{class_ne_o_s_1_1_own_ptr_a9406b58c8f17ce337b3b4f1507e86ce0} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}} \& \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Own\+Ptr}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_own_ptr_ac7927059056a3d939b816ba4dd7235bf}\label{class_ne_o_s_1_1_own_ptr_ac7927059056a3d939b816ba4dd7235bf} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!Raw@{Raw}}
+\index{Raw@{Raw}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Raw()}{Raw()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::\+Raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_own_ptr_ad108c999f5d89ea44b6d70f3ea4ea894}\label{class_ne_o_s_1_1_own_ptr_ad108c999f5d89ea44b6d70f3ea4ea894} 
+\index{NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}!fCls@{fCls}}
+\index{fCls@{fCls}!NeOS::OwnPtr$<$ T $>$@{NeOS::OwnPtr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fCls}{fCls}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_own_ptr}{Ne\+OS\+::\+Own\+Ptr}}$<$ T $>$\+::f\+Cls\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+New\+Kit/\mbox{\hyperlink{_own_ptr_8h}{Own\+Ptr.\+h}}\end{DoxyCompactItemize}

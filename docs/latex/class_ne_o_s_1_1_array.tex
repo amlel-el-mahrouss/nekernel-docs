@@ -1,0 +1,125 @@
+\doxysection{Ne\+OS\+::Array\texorpdfstring{$<$}{<} T, N \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_ne_o_s_1_1_array}{}\label{class_ne_o_s_1_1_array}\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+
+
+{\ttfamily \#include $<$Array.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_array_ac17dcd959e3f3807c90a5e2813ce56c9}{Array}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_array_a8c19be8125c1f3d333f33b17d09dda48}{\texorpdfstring{$\sim$}{\string~}\+Array}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}} \& \mbox{\hyperlink{class_ne_o_s_1_1_array_aa39e491b4c7812554e1ba9384f8bfe50}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_array_a5a1d282021e043c5fba2dbe67e2457ce}{Array}} (const \mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}} \&)=default
+\item 
+T \& \mbox{\hyperlink{class_ne_o_s_1_1_array_afefcdfc919f32a743ac9debb6248bac6}{operator\mbox{[}$\,$\mbox{]}}} (const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&at)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_array_aa23a6f136bae8f139ce3ab41ce5feece}{Empty}} ()
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_array_ad5e9995b4012532ec699d91bca47cf86}{Capacity}} ()
+\item 
+const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_array_ab48de109f3fd621bbbc2e6521b205b4d}{Count}} ()
+\item 
+const T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_array_a9995f42e80637e0ff79b9d4baa452f62}{CData}} ()
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_array_a91302a4d644cbe61e89e7714a0d4cada}{operator bool}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_ne_o_s_1_1_array_a6b11b9e090e8ebcc5b9f0491551ea8b6}{f\+Array}} \mbox{[}N\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_array_ac17dcd959e3f3807c90a5e2813ce56c9}\label{class_ne_o_s_1_1_array_ac17dcd959e3f3807c90a5e2813ce56c9} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!Array@{Array}}
+\index{Array@{Array}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_a8c19be8125c1f3d333f33b17d09dda48}\label{class_ne_o_s_1_1_array_a8c19be8125c1f3d333f33b17d09dda48} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!````~Array@{\texorpdfstring{$\sim$}{\string~}Array}}
+\index{````~Array@{\texorpdfstring{$\sim$}{\string~}Array}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Array()}{\string~Array()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_a5a1d282021e043c5fba2dbe67e2457ce}\label{class_ne_o_s_1_1_array_a5a1d282021e043c5fba2dbe67e2457ce} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!Array@{Array}}
+\index{Array@{Array}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}}$<$ T, N $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_array_ad5e9995b4012532ec699d91bca47cf86}\label{class_ne_o_s_1_1_array_ad5e9995b4012532ec699d91bca47cf86} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{Capacity()}{Capacity()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_a9995f42e80637e0ff79b9d4baa452f62}\label{class_ne_o_s_1_1_array_a9995f42e80637e0ff79b9d4baa452f62} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!CData@{CData}}
+\index{CData@{CData}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{CData()}{CData()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+const T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::\+CData (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_ab48de109f3fd621bbbc2e6521b205b4d}\label{class_ne_o_s_1_1_array_ab48de109f3fd621bbbc2e6521b205b4d} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!Count@{Count}}
+\index{Count@{Count}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_aa23a6f136bae8f139ce3ab41ce5feece}\label{class_ne_o_s_1_1_array_aa23a6f136bae8f139ce3ab41ce5feece} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!Empty@{Empty}}
+\index{Empty@{Empty}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{Empty()}{Empty()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_a91302a4d644cbe61e89e7714a0d4cada}\label{class_ne_o_s_1_1_array_a91302a4d644cbe61e89e7714a0d4cada} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_aa39e491b4c7812554e1ba9384f8bfe50}\label{class_ne_o_s_1_1_array_aa39e491b4c7812554e1ba9384f8bfe50} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+\mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}} \& \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_array}{Array}}$<$ T, N $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_array_afefcdfc919f32a743ac9debb6248bac6}\label{class_ne_o_s_1_1_array_afefcdfc919f32a743ac9debb6248bac6} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+T \& \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \&}]{at }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_array_a6b11b9e090e8ebcc5b9f0491551ea8b6}\label{class_ne_o_s_1_1_array_a6b11b9e090e8ebcc5b9f0491551ea8b6} 
+\index{NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}!fArray@{fArray}}
+\index{fArray@{fArray}!NeOS::Array$<$ T, N $>$@{NeOS::Array$<$ T, N $>$}}
+\doxysubsubsection{\texorpdfstring{fArray}{fArray}}
+{\footnotesize\ttfamily template$<$typename T , \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} N$>$ \\
+T \mbox{\hyperlink{class_ne_o_s_1_1_array}{Ne\+OS\+::\+Array}}$<$ T, N $>$\+::f\+Array\mbox{[}N\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+New\+Kit/\mbox{\hyperlink{dev_2kernel_2_new_kit_2_array_8h}{Array.\+h}}\end{DoxyCompactItemize}

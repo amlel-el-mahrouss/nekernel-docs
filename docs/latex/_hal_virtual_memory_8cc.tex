@@ -1,0 +1,47 @@
+\doxysection{dev/kernel/\+HALKit/\+POWER/\+Hal\+Virtual\+Memory.cc File Reference}
+\hypertarget{_hal_virtual_memory_8cc}{}\label{_hal_virtual_memory_8cc}\index{dev/kernel/HALKit/POWER/HalVirtualMemory.cc@{dev/kernel/HALKit/POWER/HalVirtualMemory.cc}}
+{\ttfamily \#include $<$HALKit/\+POWER/\+Processor.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Debug\+Output.\+h$>$}\newline
+{\ttfamily \#include $<$HALKit/\+POWER/\+MMU.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{_hal_virtual_memory_8cc_a989b052f39593531b49950a2cf0c405d}{hal\+\_\+write\+\_\+tlb}} (\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} mas0, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} mas1, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} mas2, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} mas3, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} mas7)
+\begin{DoxyCompactList}\small\item\em Write TLB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} \mbox{\hyperlink{_hal_virtual_memory_8cc_a321dec8dfe8c6e672cf1d02e7eb67087}{hal\+\_\+set\+\_\+tlb}} (\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} tlb, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} epn, \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} rpn, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} perms, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} wimge, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} ts, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} esel, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} tsize, \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} iprot)
+\begin{DoxyCompactList}\small\item\em Set TLB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void \mbox{\hyperlink{_hal_virtual_memory_8cc_afa9bfd1b4d6453035b4ac2e5f3063ebc}{hal\+\_\+flush\+\_\+tlb}} ()
+\begin{DoxyCompactList}\small\item\em Flush TLB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_hal_virtual_memory_8cc_afa9bfd1b4d6453035b4ac2e5f3063ebc}\label{_hal_virtual_memory_8cc_afa9bfd1b4d6453035b4ac2e5f3063ebc} 
+\index{HalVirtualMemory.cc@{HalVirtualMemory.cc}!hal\_flush\_tlb@{hal\_flush\_tlb}}
+\index{hal\_flush\_tlb@{hal\_flush\_tlb}!HalVirtualMemory.cc@{HalVirtualMemory.cc}}
+\doxysubsubsection{\texorpdfstring{hal\_flush\_tlb()}{hal\_flush\_tlb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} void hal\+\_\+flush\+\_\+tlb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flush TLB. 
+
+\Hypertarget{_hal_virtual_memory_8cc_a321dec8dfe8c6e672cf1d02e7eb67087}\label{_hal_virtual_memory_8cc_a321dec8dfe8c6e672cf1d02e7eb67087} 
+\index{HalVirtualMemory.cc@{HalVirtualMemory.cc}!hal\_set\_tlb@{hal\_set\_tlb}}
+\index{hal\_set\_tlb@{hal\_set\_tlb}!HalVirtualMemory.cc@{HalVirtualMemory.cc}}
+\doxysubsubsection{\texorpdfstring{hal\_set\_tlb()}{hal\_set\_tlb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} hal\+\_\+set\+\_\+tlb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{tlb,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{epn,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}}}]{rpn,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{perms,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{wimge,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{ts,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{esel,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{tsize,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}}}]{iprot }\end{DoxyParamCaption})}
+
+
+
+Set TLB. 
+
+\Hypertarget{_hal_virtual_memory_8cc_a989b052f39593531b49950a2cf0c405d}\label{_hal_virtual_memory_8cc_a989b052f39593531b49950a2cf0c405d} 
+\index{HalVirtualMemory.cc@{HalVirtualMemory.cc}!hal\_write\_tlb@{hal\_write\_tlb}}
+\index{hal\_write\_tlb@{hal\_write\_tlb}!HalVirtualMemory.cc@{HalVirtualMemory.cc}}
+\doxysubsubsection{\texorpdfstring{hal\_write\_tlb()}{hal\_write\_tlb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} hal\+\_\+write\+\_\+tlb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{mas0,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{mas1,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{mas2,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{mas3,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}}}]{mas7 }\end{DoxyParamCaption})}
+
+
+
+Write TLB. 
+

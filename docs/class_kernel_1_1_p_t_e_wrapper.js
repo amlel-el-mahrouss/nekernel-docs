@@ -1,0 +1,26 @@
+var class_kernel_1_1_p_t_e_wrapper =
+[
+    [ "PTEWrapper", "class_kernel_1_1_p_t_e_wrapper.html#a522d92b2301926cd3496577395e4b0ce", null ],
+    [ "~PTEWrapper", "class_kernel_1_1_p_t_e_wrapper.html#af26d483b5a54204e8ffca8797af9acb0", null ],
+    [ "PTEWrapper", "class_kernel_1_1_p_t_e_wrapper.html#a7a3b550bd78e1eb3ad64c522c7f0b241", null ],
+    [ "Access", "class_kernel_1_1_p_t_e_wrapper.html#a8b7a93e5fde7c802ae6b769da392ccd5", null ],
+    [ "NoExecute", "class_kernel_1_1_p_t_e_wrapper.html#ac572b5093b4acc9ebb25a09a004bce47", null ],
+    [ "NoExecute", "class_kernel_1_1_p_t_e_wrapper.html#a6887fcc47a953f5a2754b0b002d1d45f", null ],
+    [ "operator bool", "class_kernel_1_1_p_t_e_wrapper.html#a7a106fcc2dbade038087d571b918175e", null ],
+    [ "operator=", "class_kernel_1_1_p_t_e_wrapper.html#a62c8882cf27a0532e037fc9bad3c3567", null ],
+    [ "Present", "class_kernel_1_1_p_t_e_wrapper.html#a634bbedf31d92f2af54ec936132cc546", null ],
+    [ "Reclaim", "class_kernel_1_1_p_t_e_wrapper.html#aa75dcff599fb4b6602e71047c60b2297", null ],
+    [ "Shareable", "class_kernel_1_1_p_t_e_wrapper.html#ab15e70050f9dc06699d19404e95bc26d", null ],
+    [ "VirtualAddress", "class_kernel_1_1_p_t_e_wrapper.html#a27f0a48ed891c166d742af300210f421", null ],
+    [ "PageMgr", "class_kernel_1_1_p_t_e_wrapper.html#a13743d24f868f08677cf75f4e322e9b0", null ],
+    [ "Pmm", "class_kernel_1_1_p_t_e_wrapper.html#a5e2a43ffb17b72932c2a4ceb9a1253c5", null ],
+    [ "fAccessed", "class_kernel_1_1_p_t_e_wrapper.html#ac309af030e56c32dd056559b3679385f", null ],
+    [ "fCache", "class_kernel_1_1_p_t_e_wrapper.html#a5ee6bc741fc829438db7424fb3807493", null ],
+    [ "fExecDisable", "class_kernel_1_1_p_t_e_wrapper.html#ab406d6dd1cd4ef3a5d9905091c005db2", null ],
+    [ "fPresent", "class_kernel_1_1_p_t_e_wrapper.html#a6fcf98471c97d9240699e300ac15ef1a", null ],
+    [ "fRw", "class_kernel_1_1_p_t_e_wrapper.html#ae6e991c8584c4b6b0e061d00a61e021c", null ],
+    [ "fShareable", "class_kernel_1_1_p_t_e_wrapper.html#ade063f8cd9b109a9eea671424f90dae8", null ],
+    [ "fUser", "class_kernel_1_1_p_t_e_wrapper.html#a460e25811d9fc32fc5d9884362fe2b74", null ],
+    [ "fVirtAddr", "class_kernel_1_1_p_t_e_wrapper.html#a25617b599a48516346253099a010f98c", null ],
+    [ "fWt", "class_kernel_1_1_p_t_e_wrapper.html#a6eeac91945a9c3a54267c0bc1c3f6b45", null ]
+];

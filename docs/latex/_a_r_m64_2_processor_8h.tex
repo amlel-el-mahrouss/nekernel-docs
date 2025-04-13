@@ -1,0 +1,99 @@
+\doxysection{dev/kernel/\+HALKit/\+ARM64/\+Processor.h File Reference}
+\hypertarget{_a_r_m64_2_processor_8h}{}\label{_a_r_m64_2_processor_8h}\index{dev/kernel/HALKit/ARM64/Processor.h@{dev/kernel/HALKit/ARM64/Processor.h}}
+{\ttfamily \#include $<$New\+Kit/\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Utils.\+h$>$}\newline
+{\ttfamily \#include $<$Firmware\+Kit/\+Handover.\+h$>$}\newline
+{\ttfamily \#include $<$HALKit/\+ARM64/\+Paging.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_register64}{Ne\+OS\+::\+HAL\+::\+Register64}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_stack_frame}{Ne\+OS\+::\+HAL\+::\+Stack\+Frame}}
+\begin{DoxyCompactList}\small\item\em Stack frame (as retrieved from assembly.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l}{Ne\+OS\+::\+HAL}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{\doxylink{namespace_ne_o_s_1_1_h_a_l}{HAL}}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_a_r_m64_2_processor_8h_a2a2868f5eae47ed9c297019db1dcd02a}{k\+CPUBackend\+Name}}~"{}ARMv8"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a8bd7da6ad620b53e88d03f8077b51a32}{Ne\+OS\+::\+HAL\+::\+Reg}}
+\item 
+typedef \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_register64}{Register64}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a6f1134319f054f1f8e910a3d7a7f9470}{Ne\+OS\+::\+HAL\+::\+Register}}
+\item 
+typedef \mbox{\hyperlink{struct_ne_o_s_1_1_h_a_l_1_1_stack_frame}{Stack\+Frame}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae90d9eb7564d3c072785e9d1b601eb89}{Ne\+OS\+::\+HAL\+::\+Stack\+Frame\+Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a5e947d6b2ac20e8aea4df1430ae35f91}{Ne\+OS\+::\+HAL\+::k\+MMFlags\+Present}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26aa38d57d66fffc5ad46f190e6ceb042bf}{Ne\+OS\+::\+HAL\+::k\+MMFlags\+Wr}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a8d9a8566743b9d80105921d1be0fa399}{Ne\+OS\+::\+HAL\+::k\+MMFlags\+User}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26adb64aa03e573186c2a59bfacbba3d69a}{Ne\+OS\+::\+HAL\+::k\+MMFlags\+NX}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_ae07e4f844754397f20b63d4ba9204e26a02fd5de9a8577c1d354ad1425094ae7f}{Ne\+OS\+::\+HAL\+::k\+MMFlags\+Count}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Memory Manager mapping flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a603338b13300ca63b61169992dafc071}{Ne\+OS\+::\+HAL\+::mm\+\_\+map\+\_\+page}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} virtual\+\_\+address, \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} physical\+\_\+address, \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} flags)
+\begin{DoxyCompactList}\small\item\em Maps or allocates a page from virtual\+\_\+address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a691ad54da06d757ef4c4989e2b5bae13}{Ne\+OS\+::\+HAL\+::rt\+\_\+halt}} ()
+\item 
+{\footnotesize template$<$typename Data\+Kind $>$ }\\void \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_affbcdebabcf76f6f2c02fa8d6f8c4990}{Ne\+OS\+::\+HAL\+::hal\+\_\+dma\+\_\+write}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} address, Data\+Kind value)
+\item 
+{\footnotesize template$<$typename Data\+Kind $>$ }\\Data\+Kind \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_adc5ca1b4079e454708564c722b8abca9}{Ne\+OS\+::\+HAL\+::hal\+\_\+dma\+\_\+read}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} address)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}} \mbox{\hyperlink{namespace_ne_o_s_1_1_h_a_l_a221328a3ddf54016589331755d936eea}{Ne\+OS\+::\+HAL\+::hal\+\_\+wfi}} (\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}} \mbox{\hyperlink{_a_r_m64_2_processor_8h_a755b7cc10f801927cd15ce56b63f1e61}{k\+Kernel\+Bit\+Mp\+Start}} = nullptr
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{Ne\+OS\+::\+UInt\+Ptr}} \mbox{\hyperlink{_a_r_m64_2_processor_8h_a422fa644de13a87a913106aaecf9585e}{k\+Kernel\+Bit\+Mp\+Size}} = 0\+UL
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}} \mbox{\hyperlink{_a_r_m64_2_processor_8h_aa3b371b7daf75f84f8fe8d35b0ae3174}{k\+Kernel\+Physical\+Start}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_a_r_m64_2_processor_8h_a2a2868f5eae47ed9c297019db1dcd02a}\label{_a_r_m64_2_processor_8h_a2a2868f5eae47ed9c297019db1dcd02a} 
+\index{Processor.h@{Processor.h}!kCPUBackendName@{kCPUBackendName}}
+\index{kCPUBackendName@{kCPUBackendName}!Processor.h@{Processor.h}}
+\doxysubsubsection{\texorpdfstring{kCPUBackendName}{kCPUBackendName}}
+{\footnotesize\ttfamily \#define k\+CPUBackend\+Name~"{}ARMv8"{}}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_a_r_m64_2_processor_8h_a422fa644de13a87a913106aaecf9585e}\label{_a_r_m64_2_processor_8h_a422fa644de13a87a913106aaecf9585e} 
+\index{Processor.h@{Processor.h}!kKernelBitMpSize@{kKernelBitMpSize}}
+\index{kKernelBitMpSize@{kKernelBitMpSize}!Processor.h@{Processor.h}}
+\doxysubsubsection{\texorpdfstring{kKernelBitMpSize}{kKernelBitMpSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{Ne\+OS\+::\+UInt\+Ptr}} k\+Kernel\+Bit\+Mp\+Size = 0\+UL\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_a_r_m64_2_processor_8h_a755b7cc10f801927cd15ce56b63f1e61}\label{_a_r_m64_2_processor_8h_a755b7cc10f801927cd15ce56b63f1e61} 
+\index{Processor.h@{Processor.h}!kKernelBitMpStart@{kKernelBitMpStart}}
+\index{kKernelBitMpStart@{kKernelBitMpStart}!Processor.h@{Processor.h}}
+\doxysubsubsection{\texorpdfstring{kKernelBitMpStart}{kKernelBitMpStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}} k\+Kernel\+Bit\+Mp\+Start = nullptr\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_a_r_m64_2_processor_8h_aa3b371b7daf75f84f8fe8d35b0ae3174}\label{_a_r_m64_2_processor_8h_aa3b371b7daf75f84f8fe8d35b0ae3174} 
+\index{Processor.h@{Processor.h}!kKernelPhysicalStart@{kKernelPhysicalStart}}
+\index{kKernelPhysicalStart@{kKernelPhysicalStart}!Processor.h@{Processor.h}}
+\doxysubsubsection{\texorpdfstring{kKernelPhysicalStart}{kKernelPhysicalStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Ne\+OS\+::\+Void\+Ptr}} k\+Kernel\+Physical\+Start = nullptr\hspace{0.3cm}{\ttfamily [inline]}}
+

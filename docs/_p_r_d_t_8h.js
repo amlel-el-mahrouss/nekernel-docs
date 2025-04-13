@@ -1,12 +1,12 @@
 var _p_r_d_t_8h =
 [
-    [ "NeOS::PRDT", "struct_ne_o_s_1_1_p_r_d_t.html", "struct_ne_o_s_1_1_p_r_d_t" ],
+    [ "Kernel::PRDT", "struct_kernel_1_1_p_r_d_t.html", "struct_kernel_1_1_p_r_d_t" ],
     [ "kPrdtTransferSize", "_p_r_d_t_8h.html#ad910a109dfbf7627822aca2f39337b8e", null ],
-    [ "kPRDTTransfer", "_p_r_d_t_8h.html#aabb10933fbc261d161eb8946e36b2b48", [
-      [ "kPRDTTransferInProgress", "_p_r_d_t_8h.html#aabb10933fbc261d161eb8946e36b2b48a2d3ab197fe50517743dcab2906d70df5", null ],
-      [ "kPRDTTransferIsDone", "_p_r_d_t_8h.html#aabb10933fbc261d161eb8946e36b2b48a75f278323c84c0107bd39fdd18a4918b", null ],
-      [ "kPRDTTransferCount", "_p_r_d_t_8h.html#aabb10933fbc261d161eb8946e36b2b48a0279576785cf6338e0e75ac0a6e0baeb", null ]
+    [ "kPRDTTransfer", "_p_r_d_t_8h.html#aaed9a8cb5c3931e55e64b447455c8579", [
+      [ "kPRDTTransferInProgress", "_p_r_d_t_8h.html#aaed9a8cb5c3931e55e64b447455c8579a7ed6e9300a01bec24d553e65f7a9f39d", null ],
+      [ "kPRDTTransferIsDone", "_p_r_d_t_8h.html#aaed9a8cb5c3931e55e64b447455c8579a6417bd08e8e0b9fc927c3f3a5846472c", null ],
+      [ "kPRDTTransferCount", "_p_r_d_t_8h.html#aaed9a8cb5c3931e55e64b447455c8579aa8a2c959cc0741b759fdadd16982a7e1", null ]
     ] ],
-    [ "construct_prdt", "_p_r_d_t_8h.html#ab2cc1026fe10e29bf0bffd969fa59756", null ],
-    [ "kPRDTTransferStatus", "_p_r_d_t_8h.html#a4851ea17dc092789cc96f6b8f476ab9c", null ]
+    [ "construct_prdt", "_p_r_d_t_8h.html#a84eebc889be3e81118c47f8949c9b15b", null ],
+    [ "kPRDTTransferStatus", "_p_r_d_t_8h.html#ad5855fa29b732afeca5c464aba3b545c", null ]
 ];

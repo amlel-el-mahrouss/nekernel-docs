@@ -1,0 +1,94 @@
+\doxysection{dev/kernel/\+Kernel\+Kit/\+XCOFF.h File Reference}
+\hypertarget{_x_c_o_f_f_8h}{}\label{_x_c_o_f_f_8h}\index{dev/kernel/KernelKit/XCOFF.h@{dev/kernel/KernelKit/XCOFF.h}}
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_x_coff_file_header}{XCoff\+File\+Header}}
+\begin{DoxyCompactList}\small\item\em XCoff file header, meant for POWER apps. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_x_coff_fork_header}{XCoff\+Fork\+Header}}
+\begin{DoxyCompactList}\small\item\em This the executable manifest fork. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_x_c_o_f_f_8h_a5e6347d370e405247ab5230616beb37f}{k\+XCOFF64\+Magic}}~(0x01\+F7)
+\item 
+\#define \mbox{\hyperlink{_x_c_o_f_f_8h_a7d54af39d2b6cd7bc5e9736f758b3063}{k\+XCOFFRel\+Flg}}~(0x0001)
+\item 
+\#define \mbox{\hyperlink{_x_c_o_f_f_8h_af37e4fe5f0528d0d3dc79893d96fb763}{k\+XCOFFExecutable}}~(0x0002)
+\item 
+\#define \mbox{\hyperlink{_x_c_o_f_f_8h_a1284f8c349681e7b5930a1d0107e5937}{k\+XCOFFLnno}}~(0x0004)
+\item 
+\#define \mbox{\hyperlink{_x_c_o_f_f_8h_a5521136d3143f6bfa049e3f7a74cd1b7}{k\+XCOFFLSyms}}~(0x0008)
+\item 
+\#define \mbox{\hyperlink{_x_c_o_f_f_8h_adb45a2c4e7d2b0d6651739fcf26319b4}{k\+Fork\+Name\+Len}}~(256U)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_x_coff_file_header}{XCoff\+File\+Header}} \mbox{\hyperlink{_x_c_o_f_f_8h_a20607df7e0322f981b51c3f54ed6b3a7}{XCoff\+File\+Header64}}
+\begin{DoxyCompactList}\small\item\em XCoff file header, meant for POWER apps. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_x_coff_fork_header}{XCoff\+Fork\+Header}} \mbox{\hyperlink{_x_c_o_f_f_8h_ad4b7a3949eb544d775c6e5683067b248}{XCoff\+Fork\+Header}}
+\begin{DoxyCompactList}\small\item\em This the executable manifest fork. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_x_c_o_f_f_8h_adb45a2c4e7d2b0d6651739fcf26319b4}\label{_x_c_o_f_f_8h_adb45a2c4e7d2b0d6651739fcf26319b4} 
+\index{XCOFF.h@{XCOFF.h}!kForkNameLen@{kForkNameLen}}
+\index{kForkNameLen@{kForkNameLen}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{kForkNameLen}{kForkNameLen}}
+{\footnotesize\ttfamily \#define k\+Fork\+Name\+Len~(256U)}
+
+\Hypertarget{_x_c_o_f_f_8h_a5e6347d370e405247ab5230616beb37f}\label{_x_c_o_f_f_8h_a5e6347d370e405247ab5230616beb37f} 
+\index{XCOFF.h@{XCOFF.h}!kXCOFF64Magic@{kXCOFF64Magic}}
+\index{kXCOFF64Magic@{kXCOFF64Magic}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{kXCOFF64Magic}{kXCOFF64Magic}}
+{\footnotesize\ttfamily \#define k\+XCOFF64\+Magic~(0x01\+F7)}
+
+\Hypertarget{_x_c_o_f_f_8h_af37e4fe5f0528d0d3dc79893d96fb763}\label{_x_c_o_f_f_8h_af37e4fe5f0528d0d3dc79893d96fb763} 
+\index{XCOFF.h@{XCOFF.h}!kXCOFFExecutable@{kXCOFFExecutable}}
+\index{kXCOFFExecutable@{kXCOFFExecutable}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{kXCOFFExecutable}{kXCOFFExecutable}}
+{\footnotesize\ttfamily \#define k\+XCOFFExecutable~(0x0002)}
+
+\Hypertarget{_x_c_o_f_f_8h_a1284f8c349681e7b5930a1d0107e5937}\label{_x_c_o_f_f_8h_a1284f8c349681e7b5930a1d0107e5937} 
+\index{XCOFF.h@{XCOFF.h}!kXCOFFLnno@{kXCOFFLnno}}
+\index{kXCOFFLnno@{kXCOFFLnno}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{kXCOFFLnno}{kXCOFFLnno}}
+{\footnotesize\ttfamily \#define k\+XCOFFLnno~(0x0004)}
+
+\Hypertarget{_x_c_o_f_f_8h_a5521136d3143f6bfa049e3f7a74cd1b7}\label{_x_c_o_f_f_8h_a5521136d3143f6bfa049e3f7a74cd1b7} 
+\index{XCOFF.h@{XCOFF.h}!kXCOFFLSyms@{kXCOFFLSyms}}
+\index{kXCOFFLSyms@{kXCOFFLSyms}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{kXCOFFLSyms}{kXCOFFLSyms}}
+{\footnotesize\ttfamily \#define k\+XCOFFLSyms~(0x0008)}
+
+\Hypertarget{_x_c_o_f_f_8h_a7d54af39d2b6cd7bc5e9736f758b3063}\label{_x_c_o_f_f_8h_a7d54af39d2b6cd7bc5e9736f758b3063} 
+\index{XCOFF.h@{XCOFF.h}!kXCOFFRelFlg@{kXCOFFRelFlg}}
+\index{kXCOFFRelFlg@{kXCOFFRelFlg}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{kXCOFFRelFlg}{kXCOFFRelFlg}}
+{\footnotesize\ttfamily \#define k\+XCOFFRel\+Flg~(0x0001)}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_x_c_o_f_f_8h_a20607df7e0322f981b51c3f54ed6b3a7}\label{_x_c_o_f_f_8h_a20607df7e0322f981b51c3f54ed6b3a7} 
+\index{XCOFF.h@{XCOFF.h}!XCoffFileHeader64@{XCoffFileHeader64}}
+\index{XCoffFileHeader64@{XCoffFileHeader64}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{XCoffFileHeader64}{XCoffFileHeader64}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_x_coff_file_header}{XCoff\+File\+Header}} \mbox{\hyperlink{_x_c_o_f_f_8h_a20607df7e0322f981b51c3f54ed6b3a7}{XCoff\+File\+Header64}}}
+
+
+
+XCoff file header, meant for POWER apps. 
+
+\Hypertarget{_x_c_o_f_f_8h_ad4b7a3949eb544d775c6e5683067b248}\label{_x_c_o_f_f_8h_ad4b7a3949eb544d775c6e5683067b248} 
+\index{XCOFF.h@{XCOFF.h}!XCoffForkHeader@{XCoffForkHeader}}
+\index{XCoffForkHeader@{XCoffForkHeader}!XCOFF.h@{XCOFF.h}}
+\doxysubsubsection{\texorpdfstring{XCoffForkHeader}{XCoffForkHeader}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_x_coff_fork_header}{XCoff\+Fork\+Header}} \mbox{\hyperlink{struct_x_coff_fork_header}{XCoff\+Fork\+Header}}}
+
+
+
+This the executable manifest fork. 
+

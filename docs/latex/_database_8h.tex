@@ -1,0 +1,77 @@
+\doxysection{dev/kernel/\+Kernel\+Kit/\+PCI/\+Database.h File Reference}
+\hypertarget{_database_8h}{}\label{_database_8h}\index{dev/kernel/KernelKit/PCI/Database.h@{dev/kernel/KernelKit/PCI/Database.h}}
+{\ttfamily \#include $<$Kernel\+Kit/\+PCI/\+Device.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_types}{Ne\+OS\+::\+Types}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \+: UChar \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37abacad0387993a12340110c2579937e02}{Ne\+OS\+::\+Types\+::\+Mass\+Storage\+Controller}} = 0x1
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a535872a6c2e971bad432d3d02f13de06}{Ne\+OS\+::\+Types\+::\+Network\+Controller}} = 0x2
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a6c8a5b94a3dbcaa869032c0a2b98a9f1}{Ne\+OS\+::\+Types\+::\+Display\+Controller}} = 0x3
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a48a89646eee56c986361338ba8af6e28}{Ne\+OS\+::\+Types\+::\+Multimedia\+Controller}} = 0x4
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37aba253185a3a7d48a4198a49affe70def}{Ne\+OS\+::\+Types\+::\+Memory\+Controller}} = 0x5
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37ade8504b73ea228d0ea9bbce69752092e}{Ne\+OS\+::\+Types\+::\+Bridge}} = 0x6
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a1385a39a4884c42b25f4e2f24d4f52dc}{Ne\+OS\+::\+Types\+::\+Communication\+Controller}} = 0x7
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a9814ee757f194b07466929e7077a229f}{Ne\+OS\+::\+Types\+::\+Generic\+System\+Peripheral}} = 0x8
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37aad405bc9895ad7ff5a9a4a901a9ce5de}{Ne\+OS\+::\+Types\+::\+Input\+Device\+Controller}} = 0x9
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a5e05115c11d7d85a99fe542e9236e2c8}{Ne\+OS\+::\+Types\+::\+Docking\+Station}} = 0xa
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37ae22b6495595f2c4ad67a830d1be05c6e}{Ne\+OS\+::\+Types\+::\+Processor}} = 0xb
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37ae6803b4c3b9a9ee10b1ad611fbced005}{Ne\+OS\+::\+Types\+::\+Serial\+Bus\+Controller}} = 0xc
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37ad7bfe93024f3abbf793e2c5dff0fcffc}{Ne\+OS\+::\+Types\+::\+Wireless\+Controller}} = 0xd
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a9706d31a4595855c4a06022c35c54905}{Ne\+OS\+::\+Types\+::\+Intelligent\+Controller}} = 0xe
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a7b759dcab8365fd7e9e1fef3c09d0f08}{Ne\+OS\+::\+Types\+::\+Satellite\+Communications\+Controller}} = 0xf
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37ac955ffbecf2aebf4bf1e10abe0270244}{Ne\+OS\+::\+Types\+::\+Co\+Processor}} = 0x40
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a896be13d72afab13a3a8b2755f0d5f07}{Ne\+OS\+::\+Types\+::\+Unassgined}} = 0xf
+, \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37a4bbb8f967da6d1a610596d7257179c2b}{Ne\+OS\+::\+Types\+::\+Invalid}} = Unassgined
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{_database_8h_a47851f7343e889d3f8c2e9a4dc2f3b14}{operator!=}} (const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&lhs, \mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}} rhs)
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{_database_8h_a20b4042640d2a5c4569e52eb1c98e864}{operator==}} (const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&lhs, \mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}} rhs)
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{_database_8h_a88f62e6259a5c0c61aaacfc35abeb73e}{operator!=}} (\mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}} lhs, const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&rhs)
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{_database_8h_af26247b688ad07ec0c29d3bbeca6a699}{operator==}} (\mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}} lhs, const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_database_8h_a47851f7343e889d3f8c2e9a4dc2f3b14}\label{_database_8h_a47851f7343e889d3f8c2e9a4dc2f3b14} 
+\index{Database.h@{Database.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Database.h@{Database.h}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&}]{lhs,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_database_8h_a88f62e6259a5c0c61aaacfc35abeb73e}\label{_database_8h_a88f62e6259a5c0c61aaacfc35abeb73e} 
+\index{Database.h@{Database.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Database.h@{Database.h}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}}}]{lhs,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_database_8h_a20b4042640d2a5c4569e52eb1c98e864}\label{_database_8h_a20b4042640d2a5c4569e52eb1c98e864} 
+\index{Database.h@{Database.h}!operator==@{operator==}}
+\index{operator==@{operator==}!Database.h@{Database.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&}]{lhs,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_database_8h_af26247b688ad07ec0c29d3bbeca6a699}\label{_database_8h_af26247b688ad07ec0c29d3bbeca6a699} 
+\index{Database.h@{Database.h}!operator==@{operator==}}
+\index{operator==@{operator==}!Database.h@{Database.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_adb8ea8dee4caf819742316fb6b013d8e}{Ne\+OS\+::\+UChar}}}]{lhs,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_1_1_types_a7c500ed816c71765b9fae414b3b03d37}{Ne\+OS\+::\+Types\+::\+Pci\+Device\+Kind}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

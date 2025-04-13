@@ -72,7 +72,7 @@ var searchData=
   ['efivirtualaddress_69',['EfiVirtualAddress',['../_e_f_i_2_e_f_i_8h.html#a78fc502dbd4362df30a0c241d1f17ee2',1,'EFI.h']]],
   ['efiwaitforevent_70',['EfiWaitForEvent',['../_e_f_i_2_e_f_i_8h.html#a09b7326201e98fa174ca581a54d1d324',1,'EFI.h']]],
   ['epm_5fguid_71',['EPM_GUID',['../kernel_2_firmware_kit_2_e_p_m_8h.html#a4d08a9ca3b695caf4113b6e13e291856',1,'EPM.h']]],
-  ['errkind_72',['ErrKind',['../_process_codes_8h.html#a5b12bd1f1b577d8bd407c4522c119aca',1,'ProcessCodes.h']]],
-  ['errororany_73',['ErrorOrAny',['../namespace_ne_o_s.html#a917e0fbb8be72c487f6ef683b098fd73',1,'NeOS']]],
-  ['errort_74',['ErrorT',['../namespace_ne_o_s.html#ac8fb915120c83a644fca660c64a7db81',1,'NeOS']]]
+  ['errororany_72',['ErrorOrAny',['../namespace_kernel.html#ae93d3ed63889cb9899feae5c3f489ebd',1,'Kernel']]],
+  ['errort_73',['ErrorT',['../namespace_kernel.html#a7c65ae6e6a2df84f4bab9ce133cc838d',1,'Kernel']]],
+  ['errref_74',['ErrRef',['../_process_codes_8h.html#a07cae73966b3677e49bad25770c45400',1,'ProcessCodes.h']]]
 ];

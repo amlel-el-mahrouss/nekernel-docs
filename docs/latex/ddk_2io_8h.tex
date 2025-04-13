@@ -1,0 +1,40 @@
+\doxysection{dev/ddk/io.h File Reference}
+\hypertarget{ddk_2io_8h}{}\label{ddk_2io_8h}\index{dev/ddk/io.h@{dev/ddk/io.h}}
+{\ttfamily \#include $<$ddk/str.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \mbox{\hyperlink{ddk_2io_8h_aaa48261610b038fee444eb7dde06c8d8}{kputc}} (const char ch)
+\begin{DoxyCompactList}\small\item\em print character into UART. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void \mbox{\hyperlink{ddk_2io_8h_ae25d3e45aff4aa44ac0792170341667e}{kprint}} (const char \texorpdfstring{$\ast$}{*}message)
+\begin{DoxyCompactList}\small\item\em print string to UART. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ddk_2io_8h_ae25d3e45aff4aa44ac0792170341667e}\label{ddk_2io_8h_ae25d3e45aff4aa44ac0792170341667e} 
+\index{io.h@{io.h}!kprint@{kprint}}
+\index{kprint@{kprint}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{kprint()}{kprint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void kprint (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{message }\end{DoxyParamCaption})}
+
+
+
+print string to UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & string to transmit to UART.\\
+\hline
+{\em message} & UART to transmit. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{ddk_2io_8h_aaa48261610b038fee444eb7dde06c8d8}\label{ddk_2io_8h_aaa48261610b038fee444eb7dde06c8d8} 
+\index{io.h@{io.h}!kputc@{kputc}}
+\index{kputc@{kputc}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{kputc()}{kputc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_a24efff7fe40f8abca1f11c4c8ee3b0ba}{DDK\+\_\+\+EXTERN}} void kputc (\begin{DoxyParamCaption}\item[{const char}]{ch }\end{DoxyParamCaption})}
+
+
+
+print character into UART. 
+

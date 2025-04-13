@@ -1,0 +1,97 @@
+\doxysection{Macros.\+h}
+\hypertarget{libsci_2_macros_8h_source}{}\label{libsci_2_macros_8h_source}\index{dev/libsci/Macros.h@{dev/libsci/Macros.h}}
+\mbox{\hyperlink{libsci_2_macros_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{File:\ Macros.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{Purpose:\ libsci\ Macros\ header.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{/***********************************************************************************/}}
+\DoxyCodeLine{00015\ \textcolor{comment}{/***********************************************************************************/}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{libsci_2_compiler_hint_8h}{libsci/CompilerHint.h}}>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ ATTRIBUTE(X)\ \_\_attribute\_\_((X))}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ IMPORT\_CXX\ extern\ "{}C++"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ IMPORT\_C\ \ \ extern\ "{}C"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ DEPRECATED\ ATTRIBUTE(deprecated)}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ EXIT\_SUCCESS\ 0}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ EXIT\_FAILURE\ 1}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ FILE\_MAX\_LEN\ 256}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#ifndef\ BOOL}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ BOOL\ bool}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{libsci_2_macros_8h_a76a8b016e5ad61faf9062cc387df5016}{Bool}};}
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{libsci_2_macros_8h_a3790b6de8c45ebee9af548380c3fb8d2}{Boolean}};}
+\DoxyCodeLine{00037\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{libsci_2_macros_8h_afdf0f22c576e6ee1b982f64b839c4bea}{Void}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ \_\_cplusplus}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ true\ 1}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ false\ 0}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ YES\ true}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ NO\ \ false}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \_\_UINT64\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_a3fb8aedfc4331bfce8facae4e2630dc9}{UInt64}};}
+\DoxyCodeLine{00048\ \textcolor{keyword}{typedef}\ \_\_UINT32\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_a1f75821f5858b98dc453711e46bf9ada}{UInt32}};}
+\DoxyCodeLine{00049\ \textcolor{keyword}{typedef}\ \_\_UINT16\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_a52977b924e23d8e96863e9e904a29048}{UInt16}};}
+\DoxyCodeLine{00050\ \textcolor{keyword}{typedef}\ \_\_UINT8\_TYPE\_\_\ \ \mbox{\hyperlink{libsci_2_macros_8h_afa67a934526c218d732989fc15aac69e}{UInt8}};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{typedef}\ \_\_SIZE\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_ab5060adaff7d15b3ac19481139e04c10}{SizeT}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{typedef}\ \_\_INT64\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_a637e6553e682cc8b9ab17bf05201b051}{SInt64}};}
+\DoxyCodeLine{00055\ \textcolor{keyword}{typedef}\ \_\_INT32\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_af45a51e25ce5df3f319f7e085d6d3767}{SInt32}};}
+\DoxyCodeLine{00056\ \textcolor{keyword}{typedef}\ \_\_INT16\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_aab68908257a1ee8e227048141326e457}{SInt16}};}
+\DoxyCodeLine{00057\ \textcolor{keyword}{typedef}\ \_\_INT8\_TYPE\_\_\ \ \mbox{\hyperlink{libsci_2_macros_8h_aaa25d67f876e77346aeca5db9fdc34e8}{SInt8}};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{void}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{libsci_2_macros_8h_a5cca82c5e941051f93ff720e101e6b53}{VoidPtr}};}
+\DoxyCodeLine{00060\ \textcolor{keyword}{typedef}\ \_\_UINTPTR\_TYPE\_\_\ \mbox{\hyperlink{libsci_2_macros_8h_aea33bdc955927086847adc88212e6b2e}{UIntPtr}};}
+\DoxyCodeLine{00061\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{char}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{libsci_2_macros_8h_a7942e32f6409fbd1fd347a8c23ef725e}{Char}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00064\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{decltype}(\textcolor{keyword}{nullptr})\ nullPtr;}
+\DoxyCodeLine{00065\ \textcolor{keyword}{typedef}\ nullPtr\ \ \ \ \ \ \ \ \ \ \ NullPtr;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ SCI\_COPY\_DELETE(KLASS)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(const\ KLASS\&)\ =\ delete;\ \(\backslash\)}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\ \ \ \ KLASS(const\ KLASS\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ delete;}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ SCI\_COPY\_DEFAULT(KLASS)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(const\ KLASS\&)\ =\ default;\ \(\backslash\)}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\ \ \ \ KLASS(const\ KLASS\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ default;}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ SCI\_MOVE\_DELETE(KLASS)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(KLASS\&\&)\ =\ delete;\ \(\backslash\)}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\ \ \ \ KLASS(KLASS\&\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ delete;}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#define\ SCI\_MOVE\_DEFAULT(KLASS)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(KLASS\&\&)\ =\ default;\ \(\backslash\)}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\ \ \ \ KLASS(KLASS\&\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ default;}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \mbox{\hyperlink{libsci_2_macros_8h_ac8c44412d7453216e1f1b939bf235b89}{IMPORT\_C}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{libsci_2_macros_8h_adc9f44a47793f36a2b62f158173d1dfd}{\_rtl\_assert}}(\mbox{\hyperlink{libsci_2_macros_8h_a76a8b016e5ad61faf9062cc387df5016}{Bool}}\ expr,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{libsci_2_macros_8h_a7942e32f6409fbd1fd347a8c23ef725e}{Char}}*\ origin);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#define\ MUST\_PASS(X)\ \_rtl\_assert(X,\ \_\_FILE\_\_)}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#ifndef\ ARRAY\_SIZE}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#define\ ARRAY\_SIZE(a)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\ \ \ \ (((sizeof(a)\ /\ sizeof(*(a)))\ /\ \(\backslash\)}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\ \ \ \ \ \ (static\_cast<SizeT>(!(sizeof(a)\ \%\ sizeof(*(a)))))))}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

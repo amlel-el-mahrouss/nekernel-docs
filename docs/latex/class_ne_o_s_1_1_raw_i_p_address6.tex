@@ -1,0 +1,118 @@
+\doxysection{Ne\+OS\+::Raw\+IPAddress6 Class Reference}
+\hypertarget{class_ne_o_s_1_1_raw_i_p_address6}{}\label{class_ne_o_s_1_1_raw_i_p_address6}\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+
+
+IPv6 address.  
+
+
+
+
+{\ttfamily \#include $<$IP.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a057147026d0fb541296a9c4adbf97813}{Address}} ()
+\item 
+char \& \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a035cf28a4d4e21a86862f401b4c0bb5e}{operator\mbox{[}$\,$\mbox{]}}} (const \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}} \&index)
+\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a21e9a168e2844612d6f7e5cbcb97d4e5}{operator==}} (const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&ipv6)
+\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a1213da3e07099f6f9eb2676daa1bb064}{operator!=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&ipv6)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a003f486ceb14a7029846a4ccdc36512b}{Raw\+IPAddress6}} (char Bytes\mbox{[}8\mbox{]})
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a683f9cbd4ba759feae3fa25cc1f5c9d2}{\texorpdfstring{$\sim$}{\string~}\+Raw\+IPAddress6}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \& \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a4c2b32f0387c243d1c5c3b74a8bd7d39}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&)=delete
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_aa4849cecc5bc6fa4f4eda151ccd44de6}{Raw\+IPAddress6}} (const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&)=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_a7636baee2e89c6f1d0919a0b6224298b}{f\+Addr}} \mbox{[}8\mbox{]}
+\item 
+friend \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6_ad9c3ac2b6557bc9f877c4f422070361d}{IPFactory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+IPv6 address. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a003f486ceb14a7029846a4ccdc36512b}\label{class_ne_o_s_1_1_raw_i_p_address6_a003f486ceb14a7029846a4ccdc36512b} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!RawIPAddress6@{RawIPAddress6}}
+\index{RawIPAddress6@{RawIPAddress6}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{RawIPAddress6()}{RawIPAddress6()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Raw\+IPAddress6\+::\+Raw\+IPAddress6 (\begin{DoxyParamCaption}\item[{char}]{Bytes\mbox{[}8\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a683f9cbd4ba759feae3fa25cc1f5c9d2}\label{class_ne_o_s_1_1_raw_i_p_address6_a683f9cbd4ba759feae3fa25cc1f5c9d2} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!````~RawIPAddress6@{\texorpdfstring{$\sim$}{\string~}RawIPAddress6}}
+\index{````~RawIPAddress6@{\texorpdfstring{$\sim$}{\string~}RawIPAddress6}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RawIPAddress6()}{\string~RawIPAddress6()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Raw\+IPAddress6\+::\texorpdfstring{$\sim$}{\string~}\+Raw\+IPAddress6 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_aa4849cecc5bc6fa4f4eda151ccd44de6}\label{class_ne_o_s_1_1_raw_i_p_address6_aa4849cecc5bc6fa4f4eda151ccd44de6} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!RawIPAddress6@{RawIPAddress6}}
+\index{RawIPAddress6@{RawIPAddress6}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{RawIPAddress6()}{RawIPAddress6()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Raw\+IPAddress6\+::\+Raw\+IPAddress6 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a057147026d0fb541296a9c4adbf97813}\label{class_ne_o_s_1_1_raw_i_p_address6_a057147026d0fb541296a9c4adbf97813} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!Address@{Address}}
+\index{Address@{Address}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{Address()}{Address()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Raw\+IPAddress6\+::\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a1213da3e07099f6f9eb2676daa1bb064}\label{class_ne_o_s_1_1_raw_i_p_address6_a1213da3e07099f6f9eb2676daa1bb064} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Ne\+OS\+::\+Raw\+IPAddress6\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&}]{ipv6 }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a4c2b32f0387c243d1c5c3b74a8bd7d39}\label{class_ne_o_s_1_1_raw_i_p_address6_a4c2b32f0387c243d1c5c3b74a8bd7d39} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \& Ne\+OS\+::\+Raw\+IPAddress6\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a21e9a168e2844612d6f7e5cbcb97d4e5}\label{class_ne_o_s_1_1_raw_i_p_address6_a21e9a168e2844612d6f7e5cbcb97d4e5} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!operator==@{operator==}}
+\index{operator==@{operator==}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Ne\+OS\+::\+Raw\+IPAddress6\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_raw_i_p_address6}{Raw\+IPAddress6}} \&}]{ipv6 }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a035cf28a4d4e21a86862f401b4c0bb5e}\label{class_ne_o_s_1_1_raw_i_p_address6_a035cf28a4d4e21a86862f401b4c0bb5e} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily char \& Ne\+OS\+::\+Raw\+IPAddress6\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{Size}} \&}]{index }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_a7636baee2e89c6f1d0919a0b6224298b}\label{class_ne_o_s_1_1_raw_i_p_address6_a7636baee2e89c6f1d0919a0b6224298b} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!fAddr@{fAddr}}
+\index{fAddr@{fAddr}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{fAddr}{fAddr}}
+{\footnotesize\ttfamily char Ne\+OS\+::\+Raw\+IPAddress6\+::f\+Addr\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_raw_i_p_address6_ad9c3ac2b6557bc9f877c4f422070361d}\label{class_ne_o_s_1_1_raw_i_p_address6_ad9c3ac2b6557bc9f877c4f422070361d} 
+\index{NeOS::RawIPAddress6@{NeOS::RawIPAddress6}!IPFactory@{IPFactory}}
+\index{IPFactory@{IPFactory}!NeOS::RawIPAddress6@{NeOS::RawIPAddress6}}
+\doxysubsubsection{\texorpdfstring{IPFactory}{IPFactory}}
+{\footnotesize\ttfamily friend Ne\+OS\+::\+Raw\+IPAddress6\+::\+IPFactory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Network\+Kit/\mbox{\hyperlink{_i_p_8h}{IP.\+h}}\item 
+dev/kernel/src/\+Network/\mbox{\hyperlink{_i_p_addr_8cc}{IPAddr.\+cc}}\end{DoxyCompactItemize}

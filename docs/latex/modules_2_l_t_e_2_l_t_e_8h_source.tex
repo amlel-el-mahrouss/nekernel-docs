@@ -1,0 +1,42 @@
+\doxysection{LTE.\+h}
+\hypertarget{modules_2_l_t_e_2_l_t_e_8h_source}{}\label{modules_2_l_t_e_2_l_t_e_8h_source}\index{dev/modules/LTE/LTE.h@{dev/modules/LTE/LTE.h}}
+\mbox{\hyperlink{modules_2_l_t_e_2_l_t_e_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved..}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{File:\ LTE\(\backslash\)LTE.h.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{Purpose:\ LTE\ Standard\ Library.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ \_INC\_NETWORK\_LTE\_H\_}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ \_INC\_NETWORK\_LTE\_H\_}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_k_string_8h}{NewKit/KString.h}}>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{modules_2_l_t_e_2_l_t_e_8h_a840105e68ecc3a68b217ba451e7ea3a0}{lte\_turn\_on\_sim}}(\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ simSlot);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{modules_2_l_t_e_2_l_t_e_8h_adf82cb08075666c26115109f6b156479}{lte\_turn\_off\_sim}}(\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ simSlot);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{modules_2_l_t_e_2_l_t_e_8h_ab305d8040ffa39855aa2ba744a922be6}{lte\_send\_at\_command}}(\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}*\ buf,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{NeOS::Size}}\ \ bufReadSz,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ simSlot);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{NeOS::Boolean}}\ \mbox{\hyperlink{modules_2_l_t_e_2_l_t_e_8h_aca435c31692bc9f8b7760f9336ea3dac}{lte\_write\_sim\_file}}(\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}*\ \ \ file,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{NeOS::VoidPtr}}\ buf,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{NeOS::Size}}\ \ \ \ \ \ bufSz,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{NeOS::Size}}\ \ \ \ \ \ offset,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ \ \ simSlot);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{NeOS::VoidPtr}}\ \mbox{\hyperlink{modules_2_l_t_e_2_l_t_e_8h_a80678316c1e13df4c1fff99dcedd5cec}{lte\_read\_sim\_file}}(\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{NeOS::Char}}*\ file,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{NeOS::Size}}\ \ \ \ bufSz,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a83fc5fb64d170235fdc4061a31f2f766}{NeOS::Size}}\ \ \ \ offset,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{NeOS::Int32}}\ simSlot);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifndef\ \_INC\_NETWORK\_LTE\_H\_}}
+
+\end{DoxyCode}

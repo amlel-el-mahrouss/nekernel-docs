@@ -1,0 +1,98 @@
+\doxysection{Ne\+OS\+::Software\+Timer Class Reference}
+\hypertarget{class_ne_o_s_1_1_software_timer}{}\label{class_ne_o_s_1_1_software_timer}\index{NeOS::SoftwareTimer@{NeOS::SoftwareTimer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+Inheritance diagram for Ne\+OS\+::Software\+Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ne_o_s_1_1_software_timer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_software_timer_a1bb23d2c7dd2e40012e288465f173190}{Software\+Timer}} (\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} seconds)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_software_timer_a6ea90d3db4e544db3425925038aea4fa}{\texorpdfstring{$\sim$}{\string~}\+Software\+Timer}} () override
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_software_timer_a3d118ef54f93a401954e88a1c3d55c17}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_software_timer}{Software\+Timer}})
+\item 
+\mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{class_ne_o_s_1_1_software_timer_a873e6e5c64fdb3a27eec2638634947a3}{Wait}} () noexcept override
+\begin{DoxyCompactList}\small\item\em Unimplemented as it is an interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_ne_o_s_1_1_timer_interface}{Ne\+OS\+::\+Timer\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_timer_interface_af7f596f09ff713cedcda8910f2bd81b3}{Timer\+Interface}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ne_o_s_1_1_timer_interface_a23bc049b39399b4e5f6a07d0a9747803}{\texorpdfstring{$\sim$}{\string~}\+Timer\+Interface}} ()=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_timer_interface_ade21dcb250603d534a0ec5344eb68374}{NE\+\_\+\+COPY\+\_\+\+DEFAULT}} (\mbox{\hyperlink{class_ne_o_s_1_1_timer_interface}{Timer\+Interface}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ae7ac0bc4da02675f917928acb9565db6}{Int\+Ptr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_software_timer_a2d7ee26723b121c7e3225e0595801f61}{f\+Digital\+Timer}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} \mbox{\hyperlink{class_ne_o_s_1_1_software_timer_aebf4e89ac85e97b56f832d6dcad494a8}{f\+Wait\+For}} \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_software_timer_a1bb23d2c7dd2e40012e288465f173190}\label{class_ne_o_s_1_1_software_timer_a1bb23d2c7dd2e40012e288465f173190} 
+\index{NeOS::SoftwareTimer@{NeOS::SoftwareTimer}!SoftwareTimer@{SoftwareTimer}}
+\index{SoftwareTimer@{SoftwareTimer}!NeOS::SoftwareTimer@{NeOS::SoftwareTimer}}
+\doxysubsubsection{\texorpdfstring{SoftwareTimer()}{SoftwareTimer()}}
+{\footnotesize\ttfamily Software\+Timer\+::\+Software\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}}}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_software_timer_a6ea90d3db4e544db3425925038aea4fa}\label{class_ne_o_s_1_1_software_timer_a6ea90d3db4e544db3425925038aea4fa} 
+\index{NeOS::SoftwareTimer@{NeOS::SoftwareTimer}!````~SoftwareTimer@{\texorpdfstring{$\sim$}{\string~}SoftwareTimer}}
+\index{````~SoftwareTimer@{\texorpdfstring{$\sim$}{\string~}SoftwareTimer}!NeOS::SoftwareTimer@{NeOS::SoftwareTimer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SoftwareTimer()}{\string~SoftwareTimer()}}
+{\footnotesize\ttfamily Software\+Timer\+::\texorpdfstring{$\sim$}{\string~}\+Software\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_software_timer_a3d118ef54f93a401954e88a1c3d55c17}\label{class_ne_o_s_1_1_software_timer_a3d118ef54f93a401954e88a1c3d55c17} 
+\index{NeOS::SoftwareTimer@{NeOS::SoftwareTimer}!NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}}
+\index{NE\_COPY\_DEFAULT@{NE\_COPY\_DEFAULT}!NeOS::SoftwareTimer@{NeOS::SoftwareTimer}}
+\doxysubsubsection{\texorpdfstring{NE\_COPY\_DEFAULT()}{NE\_COPY\_DEFAULT()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+Software\+Timer\+::\+NE\+\_\+\+COPY\+\_\+\+DEFAULT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ne_o_s_1_1_software_timer}{Software\+Timer}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_software_timer_a873e6e5c64fdb3a27eec2638634947a3}\label{class_ne_o_s_1_1_software_timer_a873e6e5c64fdb3a27eec2638634947a3} 
+\index{NeOS::SoftwareTimer@{NeOS::SoftwareTimer}!Wait@{Wait}}
+\index{Wait@{Wait}!NeOS::SoftwareTimer@{NeOS::SoftwareTimer}}
+\doxysubsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ddk_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Software\+Timer\+::\+Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Unimplemented as it is an interface. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_ne_o_s_1_1_timer_interface_a29a68a13a1624ce22a503e93b75c28dc}{Ne\+OS\+::\+Timer\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_software_timer_a2d7ee26723b121c7e3225e0595801f61}\label{class_ne_o_s_1_1_software_timer_a2d7ee26723b121c7e3225e0595801f61} 
+\index{NeOS::SoftwareTimer@{NeOS::SoftwareTimer}!fDigitalTimer@{fDigitalTimer}}
+\index{fDigitalTimer@{fDigitalTimer}!NeOS::SoftwareTimer@{NeOS::SoftwareTimer}}
+\doxysubsubsection{\texorpdfstring{fDigitalTimer}{fDigitalTimer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ae7ac0bc4da02675f917928acb9565db6}{Int\+Ptr}}\texorpdfstring{$\ast$}{*} Ne\+OS\+::\+Software\+Timer\+::f\+Digital\+Timer \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_software_timer_aebf4e89ac85e97b56f832d6dcad494a8}\label{class_ne_o_s_1_1_software_timer_aebf4e89ac85e97b56f832d6dcad494a8} 
+\index{NeOS::SoftwareTimer@{NeOS::SoftwareTimer}!fWaitFor@{fWaitFor}}
+\index{fWaitFor@{fWaitFor}!NeOS::SoftwareTimer@{NeOS::SoftwareTimer}}
+\doxysubsubsection{\texorpdfstring{fWaitFor}{fWaitFor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a73977fb2765283d322d7060259d9933c}{Int64}} Ne\+OS\+::\+Software\+Timer\+::f\+Wait\+For \{0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\mbox{\hyperlink{_timer_8h}{Timer.\+h}}\item 
+dev/kernel/src/\mbox{\hyperlink{_software_timer_8cc}{Software\+Timer.\+cc}}\end{DoxyCompactItemize}

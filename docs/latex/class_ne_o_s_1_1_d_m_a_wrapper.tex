@@ -1,0 +1,180 @@
+\doxysection{Ne\+OS\+::DMAWrapper Class Reference}
+\hypertarget{class_ne_o_s_1_1_d_m_a_wrapper}{}\label{class_ne_o_s_1_1_d_m_a_wrapper}\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+
+
+{\ttfamily \#include $<$DMA.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a66d94ce9d5ebf6ad56d11993c7318a17}{DMAWrapper}} ()=delete
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a6f024332c6fa826c9e77d0c2541378d1}{DMAWrapper}} (\mbox{\hyperlink{namespace_ne_o_s_a38971d0f185d8b481f6e1e8a13bd694e}{null\+Ptr}})=delete
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a754d334dd8c41a78a5767fdf9e3db04d}{DMAWrapper}} (\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}} Ptr, \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2}{Dma\+Kind}} Kind=\mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2ac89b74e7544d782dd33c25fdaae40b8f}{Dma\+Kind\+::\+PCI}})
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \& \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a3533fb074fd05c97ddf20367e86267f7}{operator=}} (\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}} Ptr)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \& \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a7c61d7bbf1bd4b28eba73d13314d0593}{operator=}} (const \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_aa0ec2799e8d3f7a2461be24c83c722dc}{DMAWrapper}} (const \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \&)=default
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a1ee0c97854c14df7487aabcfb8227717}{\texorpdfstring{$\sim$}{\string~}\+DMAWrapper}} ()=default
+\item 
+{\footnotesize template$<$class T $>$ }\\T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a457db671af3f7ba2d72c8c068140b4b7}{operator-\/$>$}} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_af5a4df9963da5f5591c6f59bf529e690}{Get}} (const \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} off=0)
+\item 
+\mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_af0e648ccc34beb2824f2954f9d8da6f7}{operator bool}} ()
+\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a3dc8735b2b2f7f840dae2346a472e222}{operator!}} ()
+\item 
+bool \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_ad227283307d1c68dcfe5b7034030d2b8}{Write}} (const \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \&bit, const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \&offset)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a9bfcb9b067a5c917a4a14e34ddc64276}{Read}} (const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \&offset)
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a2622c0f2c5ca1091fd80f6b2da09f9e5}{Check}} (\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} offset) const
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a96ed45a4de466f356cd73945369c2bcb}{operator\mbox{[}$\,$\mbox{]}}} (const \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \&offset)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}} \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_adfe3281714059e00ca4286f02b4bb3fa}{f\+Address}} \{nullptr\}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2}{Dma\+Kind}} \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a26114cde634dc7c9d5163141d46894aa}{f\+Kind}} \{\mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2a4bbb8f967da6d1a610596d7257179c2b}{Dma\+Kind\+::\+Invalid}}\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper_a6efaac255488e6a215443062bd861f57}{DMAFactory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a66d94ce9d5ebf6ad56d11993c7318a17}\label{class_ne_o_s_1_1_d_m_a_wrapper_a66d94ce9d5ebf6ad56d11993c7318a17} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!DMAWrapper@{DMAWrapper}}
+\index{DMAWrapper@{DMAWrapper}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{DMAWrapper()}{DMAWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+DMAWrapper\+::\+DMAWrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a6f024332c6fa826c9e77d0c2541378d1}\label{class_ne_o_s_1_1_d_m_a_wrapper_a6f024332c6fa826c9e77d0c2541378d1} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!DMAWrapper@{DMAWrapper}}
+\index{DMAWrapper@{DMAWrapper}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{DMAWrapper()}{DMAWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+DMAWrapper\+::\+DMAWrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a38971d0f185d8b481f6e1e8a13bd694e}{null\+Ptr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [delete]}}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a754d334dd8c41a78a5767fdf9e3db04d}\label{class_ne_o_s_1_1_d_m_a_wrapper_a754d334dd8c41a78a5767fdf9e3db04d} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!DMAWrapper@{DMAWrapper}}
+\index{DMAWrapper@{DMAWrapper}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{DMAWrapper()}{DMAWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+DMAWrapper\+::\+DMAWrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}}}]{Ptr,  }\item[{\mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2}{Dma\+Kind}}}]{Kind = {\ttfamily \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2ac89b74e7544d782dd33c25fdaae40b8f}{Dma\+Kind\+::\+PCI}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_aa0ec2799e8d3f7a2461be24c83c722dc}\label{class_ne_o_s_1_1_d_m_a_wrapper_aa0ec2799e8d3f7a2461be24c83c722dc} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!DMAWrapper@{DMAWrapper}}
+\index{DMAWrapper@{DMAWrapper}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{DMAWrapper()}{DMAWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Ne\+OS\+::\+DMAWrapper\+::\+DMAWrapper (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a1ee0c97854c14df7487aabcfb8227717}\label{class_ne_o_s_1_1_d_m_a_wrapper_a1ee0c97854c14df7487aabcfb8227717} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!````~DMAWrapper@{\texorpdfstring{$\sim$}{\string~}DMAWrapper}}
+\index{````~DMAWrapper@{\texorpdfstring{$\sim$}{\string~}DMAWrapper}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DMAWrapper()}{\string~DMAWrapper()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+DMAWrapper\+::\texorpdfstring{$\sim$}{\string~}\+DMAWrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a2622c0f2c5ca1091fd80f6b2da09f9e5}\label{class_ne_o_s_1_1_d_m_a_wrapper_a2622c0f2c5ca1091fd80f6b2da09f9e5} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!Check@{Check}}
+\index{Check@{Check}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} Ne\+OS\+::\+DMAWrapper\+::\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}}}]{offset }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_af5a4df9963da5f5591c6f59bf529e690}\label{class_ne_o_s_1_1_d_m_a_wrapper_af5a4df9963da5f5591c6f59bf529e690} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!Get@{Get}}
+\index{Get@{Get}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+DMAWrapper\+::\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}}}]{off = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_af0e648ccc34beb2824f2954f9d8da6f7}\label{class_ne_o_s_1_1_d_m_a_wrapper_af0e648ccc34beb2824f2954f9d8da6f7} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily Ne\+OS\+::\+DMAWrapper\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a3dc8735b2b2f7f840dae2346a472e222}\label{class_ne_o_s_1_1_d_m_a_wrapper_a3dc8735b2b2f7f840dae2346a472e222} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily bool Ne\+OS\+::\+DMAWrapper\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a457db671af3f7ba2d72c8c068140b4b7}\label{class_ne_o_s_1_1_d_m_a_wrapper_a457db671af3f7ba2d72c8c068140b4b7} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \texorpdfstring{$\ast$}{*} Ne\+OS\+::\+DMAWrapper\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a7c61d7bbf1bd4b28eba73d13314d0593}\label{class_ne_o_s_1_1_d_m_a_wrapper_a7c61d7bbf1bd4b28eba73d13314d0593} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \& Ne\+OS\+::\+DMAWrapper\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a3533fb074fd05c97ddf20367e86267f7}\label{class_ne_o_s_1_1_d_m_a_wrapper_a3533fb074fd05c97ddf20367e86267f7} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!operator=@{operator=}}
+\index{operator=@{operator=}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_wrapper}{DMAWrapper}} \& Ne\+OS\+::\+DMAWrapper\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}}}]{Ptr }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a96ed45a4de466f356cd73945369c2bcb}\label{class_ne_o_s_1_1_d_m_a_wrapper_a96ed45a4de466f356cd73945369c2bcb} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} Ne\+OS\+::\+DMAWrapper\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \&}]{offset }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a9bfcb9b067a5c917a4a14e34ddc64276}\label{class_ne_o_s_1_1_d_m_a_wrapper_a9bfcb9b067a5c917a4a14e34ddc64276} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!Read@{Read}}
+\index{Read@{Read}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} Ne\+OS\+::\+DMAWrapper\+::\+Read (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \&}]{offset }\end{DoxyParamCaption})}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_ad227283307d1c68dcfe5b7034030d2b8}\label{class_ne_o_s_1_1_d_m_a_wrapper_ad227283307d1c68dcfe5b7034030d2b8} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!Write@{Write}}
+\index{Write@{Write}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily bool Ne\+OS\+::\+DMAWrapper\+::\+Write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_ne_o_s_a45d30b4091e6c91b5e25bcf408ca6dbb}{UInt\+Ptr}} \&}]{bit,  }\item[{const \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \&}]{offset }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a6efaac255488e6a215443062bd861f57}\label{class_ne_o_s_1_1_d_m_a_wrapper_a6efaac255488e6a215443062bd861f57} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!DMAFactory@{DMAFactory}}
+\index{DMAFactory@{DMAFactory}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{DMAFactory}{DMAFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_ne_o_s_1_1_d_m_a_factory}{DMAFactory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_adfe3281714059e00ca4286f02b4bb3fa}\label{class_ne_o_s_1_1_d_m_a_wrapper_adfe3281714059e00ca4286f02b4bb3fa} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!fAddress@{fAddress}}
+\index{fAddress@{fAddress}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{fAddress}{fAddress}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac5ebc4a72d8bae28b4ccd8ba8ee37fc3}{void\+Ptr}} Ne\+OS\+::\+DMAWrapper\+::f\+Address \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_ne_o_s_1_1_d_m_a_wrapper_a26114cde634dc7c9d5163141d46894aa}\label{class_ne_o_s_1_1_d_m_a_wrapper_a26114cde634dc7c9d5163141d46894aa} 
+\index{NeOS::DMAWrapper@{NeOS::DMAWrapper}!fKind@{fKind}}
+\index{fKind@{fKind}!NeOS::DMAWrapper@{NeOS::DMAWrapper}}
+\doxysubsubsection{\texorpdfstring{fKind}{fKind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2}{Dma\+Kind}} Ne\+OS\+::\+DMAWrapper\+::f\+Kind \{\mbox{\hyperlink{namespace_ne_o_s_aaba648945e59d75af3d109cbbf469fd2a4bbb8f967da6d1a610596d7257179c2b}{Dma\+Kind\+::\+Invalid}}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Kernel\+Kit/\+PCI/\mbox{\hyperlink{_d_m_a_8h}{DMA.\+h}}\item 
+dev/kernel/\+HALKit/\+AMD64/\+PCI/\mbox{\hyperlink{_d_m_a_8cc}{DMA.\+cc}}\item 
+dev/kernel/\+Kernel\+Kit/\+PCI/\mbox{\hyperlink{_d_m_a_8inl}{DMA.\+inl}}\end{DoxyCompactItemize}

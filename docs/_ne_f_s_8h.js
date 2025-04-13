@@ -3,9 +3,9 @@ var _ne_f_s_8h =
     [ "NEFS_CATALOG_STRUCT", "struct_n_e_f_s___c_a_t_a_l_o_g___s_t_r_u_c_t.html", "struct_n_e_f_s___c_a_t_a_l_o_g___s_t_r_u_c_t" ],
     [ "NEFS_FORK_STRUCT", "struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t.html", "struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t" ],
     [ "NEFS_ROOT_PARTITION_BLOCK", "struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html", "struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k" ],
-    [ "NeOS::NeFileSystemParser", "class_ne_o_s_1_1_ne_file_system_parser.html", "class_ne_o_s_1_1_ne_file_system_parser" ],
-    [ "NeOS::NeFileSystemHelper", "class_ne_o_s_1_1_ne_file_system_helper.html", "class_ne_o_s_1_1_ne_file_system_helper" ],
-    [ "NeOS::NeFileSystemJournal", "class_ne_o_s_1_1_ne_file_system_journal.html", "class_ne_o_s_1_1_ne_file_system_journal" ],
+    [ "Kernel::NeFileSystemParser", "class_kernel_1_1_ne_file_system_parser.html", "class_kernel_1_1_ne_file_system_parser" ],
+    [ "Kernel::NeFileSystemHelper", "class_kernel_1_1_ne_file_system_helper.html", "class_kernel_1_1_ne_file_system_helper" ],
+    [ "Kernel::NeFileSystemJournal", "class_kernel_1_1_ne_file_system_journal.html", "class_kernel_1_1_ne_file_system_journal" ],
     [ "kNeFSApplicationExt", "_ne_f_s_8h.html#a80c8ccfc5522bf72e956b6e92bc6342d", null ],
     [ "kNeFSBitWidth", "_ne_f_s_8h.html#afd4143b6a3696b5f3700038cc5f9fbe8", null ],
     [ "kNeFSCatalogKindAlias", "_ne_f_s_8h.html#a7d07630ed59a41e1c2aa0c48e1190f00", null ],
@@ -64,5 +64,5 @@ var _ne_f_s_8h =
     [ "kResourceTypeMenu", "_ne_f_s_8h.html#a86a7957445741df9a771b7d3d7f328f0", null ],
     [ "kResourceTypeSound", "_ne_f_s_8h.html#a7a700e52f6bcf888e244cd9541241fb6", null ],
     [ "kResourceTypeString", "_ne_f_s_8h.html#aeea0cfeb0756651743a012aa2374b45f", null ],
-    [ "fs_init_nefs", "_ne_f_s_8h.html#a1459f22cf89619452603b80628c75275", null ]
+    [ "fs_init_nefs", "_ne_f_s_8h.html#aaa13bea36a33c7dba1cb564b2566b0c7", null ]
 ];

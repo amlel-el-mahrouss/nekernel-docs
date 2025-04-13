@@ -9,5 +9,5 @@ var _signals_8h =
     [ "SIGKILL", "_signals_8h.html#addd8dcd406ce514ab3b4f576a5343d42", null ],
     [ "SIGPAUS", "_signals_8h.html#a7a6ee33cbc5279bd9133923c4fb58a16", null ],
     [ "SIGTRAP", "_signals_8h.html#aa2beb906ab1b46676e63823f4e773c38", null ],
-    [ "SignalKind", "_signals_8h.html#a9eeaa29a7f1c1e0fbf13f78e405416f2", null ]
+    [ "SignalKind", "_signals_8h.html#a39b76eab2ccf186a18143464b97e73c7", null ]
 ];

@@ -1,13 +1,13 @@
 var _hal_core_interrupt_handler_a_m_d64_8cc =
 [
-    [ "hal_kernel_call_enter", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a8dcbb5478186ce9e00198a3bf311a55c", null ],
-    [ "hal_system_call_enter", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a2ad63f3f299c57eb83b2cfa52ce881c3", null ],
-    [ "idt_handle_breakpoint", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a03be4a5e6c22bec1907145524e743201", null ],
-    [ "idt_handle_generic", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a762e1f64506224bd2f817cda4943d34f", null ],
-    [ "idt_handle_gpf", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a1b8e90a29a2e5096294d72c3f2af26cb", null ],
-    [ "idt_handle_math", "_hal_core_interrupt_handler_a_m_d64_8cc.html#ab2df61c859d3e3a1ba959badd9bd2937", null ],
-    [ "idt_handle_pf", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a411fe250e336915566e38d5a88873958", null ],
-    [ "idt_handle_scheduler", "_hal_core_interrupt_handler_a_m_d64_8cc.html#ae6c4488cc126bb0cca01655d7e216f4c", null ],
-    [ "idt_handle_ud", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a621f1dc48d72a0817eb12a9ffc607e2f", null ],
+    [ "hal_kernel_call_enter", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a60746ad79af95f888079647e51ca5bab", null ],
+    [ "hal_system_call_enter", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a3b936e1395de777cba5c9385b70b07f5", null ],
+    [ "idt_handle_breakpoint", "_hal_core_interrupt_handler_a_m_d64_8cc.html#adb31a7cee66049d67fb26ae1be31f8d1", null ],
+    [ "idt_handle_generic", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a68bbb05f1b6e823f7e1aa5ea983cc892", null ],
+    [ "idt_handle_gpf", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a1846f02a6dd4e13c47f9da2c73c3c535", null ],
+    [ "idt_handle_math", "_hal_core_interrupt_handler_a_m_d64_8cc.html#ab04283f1695e8c0fc8320f3a9d66ac1e", null ],
+    [ "idt_handle_pf", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a10b80f07ad6e6fcc921154fc73f7ea62", null ],
+    [ "idt_handle_scheduler", "_hal_core_interrupt_handler_a_m_d64_8cc.html#af10fd03c41642a9b1cb54fdf99af420e", null ],
+    [ "idt_handle_ud", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a55c8e878a3d5f6bec99ebbd019ae8998", null ],
     [ "kIsScheduling", "_hal_core_interrupt_handler_a_m_d64_8cc.html#a183e193880d8c0156e2e5611ae1b6024", null ]
 ];

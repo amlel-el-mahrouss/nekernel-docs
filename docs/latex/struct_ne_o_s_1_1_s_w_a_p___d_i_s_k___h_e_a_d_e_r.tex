@@ -1,0 +1,100 @@
+\doxysection{Ne\+OS\+::SWAP\+\_\+\+DISK\+\_\+\+HEADER Struct Reference}
+\hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}{}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r}\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+
+
+Swap disk header, containing information about the held virtual memory.  
+
+
+
+
+{\ttfamily \#include $<$Disk\+Swap.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a436956a70cfe3ea5f8abddc2835e6648}{f\+Magic}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a3ed9d52ecdef176bd94d5bcf9f2418b6}{f\+Header\+Sz}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_ad0ac13b8a2cf27cfbe92fa0baee7a07d}{f\+Team\+ID}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_ad18b387b2a75f36c84c9eb8674ad3872}{f\+Process\+ID}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a43aff2ea56747e8354f57d8467de79d2}{f\+Virtual\+Address}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a34ff6eacb22bca9a3d3d452623fbe6c3}{f\+Blob\+Sz}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} \mbox{\hyperlink{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_accfb614b15934f0aea306a7d277f87cf}{f\+Blob}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Swap disk header, containing information about the held virtual memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Magic} & Ident number. \\
+\hline
+{\em f\+Header\+Sz} & This header size. \\
+\hline
+{\em f\+Team\+ID} & Process Team ID. \\
+\hline
+{\em f\+Process\+ID} & Process ID. \\
+\hline
+{\em f\+Virtual\+Address} & Virtual address pointed by data. \\
+\hline
+{\em f\+Blob\+Sz} & Blob\textquotesingle{}s size. \\
+\hline
+{\em f\+Blob} & Data blob. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_accfb614b15934f0aea306a7d277f87cf}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_accfb614b15934f0aea306a7d277f87cf} 
+\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}!fBlob@{fBlob}}
+\index{fBlob@{fBlob}!NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+\doxysubsubsection{\texorpdfstring{fBlob}{fBlob}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a0835cc5d92716e99fd7387e297984399}{UInt8}} Ne\+OS\+::\+SWAP\+\_\+\+DISK\+\_\+\+HEADER\+::f\+Blob\mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a34ff6eacb22bca9a3d3d452623fbe6c3}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a34ff6eacb22bca9a3d3d452623fbe6c3} 
+\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}!fBlobSz@{fBlobSz}}
+\index{fBlobSz@{fBlobSz}!NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+\doxysubsubsection{\texorpdfstring{fBlobSz}{fBlobSz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+SWAP\+\_\+\+DISK\+\_\+\+HEADER\+::f\+Blob\+Sz}
+
+\Hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a3ed9d52ecdef176bd94d5bcf9f2418b6}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a3ed9d52ecdef176bd94d5bcf9f2418b6} 
+\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}!fHeaderSz@{fHeaderSz}}
+\index{fHeaderSz@{fHeaderSz}!NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+\doxysubsubsection{\texorpdfstring{fHeaderSz}{fHeaderSz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} Ne\+OS\+::\+SWAP\+\_\+\+DISK\+\_\+\+HEADER\+::f\+Header\+Sz}
+
+\Hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a436956a70cfe3ea5f8abddc2835e6648}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a436956a70cfe3ea5f8abddc2835e6648} 
+\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}!fMagic@{fMagic}}
+\index{fMagic@{fMagic}!NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+\doxysubsubsection{\texorpdfstring{fMagic}{fMagic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Ne\+OS\+::\+SWAP\+\_\+\+DISK\+\_\+\+HEADER\+::f\+Magic}
+
+\Hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_ad18b387b2a75f36c84c9eb8674ad3872}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_ad18b387b2a75f36c84c9eb8674ad3872} 
+\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}!fProcessID@{fProcessID}}
+\index{fProcessID@{fProcessID}!NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+\doxysubsubsection{\texorpdfstring{fProcessID}{fProcessID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Ne\+OS\+::\+SWAP\+\_\+\+DISK\+\_\+\+HEADER\+::f\+Process\+ID}
+
+\Hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_ad0ac13b8a2cf27cfbe92fa0baee7a07d}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_ad0ac13b8a2cf27cfbe92fa0baee7a07d} 
+\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}!fTeamID@{fTeamID}}
+\index{fTeamID@{fTeamID}!NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+\doxysubsubsection{\texorpdfstring{fTeamID}{fTeamID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Ne\+OS\+::\+SWAP\+\_\+\+DISK\+\_\+\+HEADER\+::f\+Team\+ID}
+
+\Hypertarget{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a43aff2ea56747e8354f57d8467de79d2}\label{struct_ne_o_s_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r_a43aff2ea56747e8354f57d8467de79d2} 
+\index{NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}!fVirtualAddress@{fVirtualAddress}}
+\index{fVirtualAddress@{fVirtualAddress}!NeOS::SWAP\_DISK\_HEADER@{NeOS::SWAP\_DISK\_HEADER}}
+\doxysubsubsection{\texorpdfstring{fVirtualAddress}{fVirtualAddress}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Ne\+OS\+::\+SWAP\+\_\+\+DISK\+\_\+\+HEADER\+::f\+Virtual\+Address}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Swap\+Kit/\mbox{\hyperlink{_disk_swap_8h}{Disk\+Swap.\+h}}\end{DoxyCompactItemize}

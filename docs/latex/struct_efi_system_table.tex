@@ -1,0 +1,151 @@
+\doxysection{Efi\+System\+Table Struct Reference}
+\hypertarget{struct_efi_system_table}{}\label{struct_efi_system_table}\index{EfiSystemTable@{EfiSystemTable}}
+
+
+The Structure that they give you when booting.  
+
+
+
+
+{\ttfamily \#include $<$EFI.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_efi_table_header}{Efi\+Table\+Header}} \mbox{\hyperlink{struct_efi_system_table_af0985f55edaee9540d7a21f569cefe44}{System\+Header}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_system_table_a660f1fab26ef9140329c0b986e7812f3}{Firmware\+Vendor}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} \mbox{\hyperlink{struct_efi_system_table_af3570ddd87d8b26626a8321af055f4a1}{Firmware\+Revision}}
+\item 
+\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} \mbox{\hyperlink{struct_efi_system_table_a2922bed026624079711a61c16b5e30b3}{Console\+In\+Handle}}
+\item 
+\mbox{\hyperlink{struct_efi_simple_text_input_protocol}{Efi\+Simple\+Text\+Input\+Protocol}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_system_table_ac65ba81cbd96df44f2110ff0ad45f682}{Con\+In}}
+\item 
+\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} \mbox{\hyperlink{struct_efi_system_table_aa2d3251cb141a2aee635c629ddcf132c}{Console\+Out\+Handle}}
+\item 
+\mbox{\hyperlink{struct_efi_simple_text_output_protocol}{Efi\+Simple\+Text\+Output\+Protocol}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}{Con\+Out}}
+\item 
+\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} \mbox{\hyperlink{struct_efi_system_table_a9f6fd23f39d5276641ce5e7005333456}{Standard\+Error\+Handle}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{struct_efi_system_table_ad629bdaaf942faae82a5c6bf71fc9ff7}{Std\+Err}}
+\item 
+\mbox{\hyperlink{struct_efi_runtime_services}{Efi\+Runtime\+Services}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_system_table_a338596c17be71e5030b06d92b3fd5eb2}{Runtime\+Services}}
+\item 
+\mbox{\hyperlink{struct_efi_boot_services}{Efi\+Boot\+Services}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_system_table_ab5e346992a8fab892aaee3c2118e948c}{Boot\+Services}}
+\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{struct_efi_system_table_a4cf4ce6eff7a7f8966782312a1abb3b1}{Number\+Of\+Table\+Entries}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{EfiGUID}} \mbox{\hyperlink{struct_efi_system_table_aa0d618419c0d5bf1b1745c4a4f9931c4}{VendorGUID}}\\
+\>\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{VoidPtr}} \mbox{\hyperlink{struct_efi_system_table_a4bd3c922838a28d4d5996d18880d061f}{VendorTable}}\\
+\} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_efi_system_table_a421b6fd0677173eb3d24c2d6fbce33dc}{ConfigurationTable}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The configuration table (contains the RSD PTR entry.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Structure that they give you when booting. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_efi_system_table_ab5e346992a8fab892aaee3c2118e948c}\label{struct_efi_system_table_ab5e346992a8fab892aaee3c2118e948c} 
+\index{EfiSystemTable@{EfiSystemTable}!BootServices@{BootServices}}
+\index{BootServices@{BootServices}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{BootServices}{BootServices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_boot_services}{Efi\+Boot\+Services}}\texorpdfstring{$\ast$}{*} Efi\+System\+Table\+::\+Boot\+Services}
+
+\Hypertarget{struct_efi_system_table_a421b6fd0677173eb3d24c2d6fbce33dc}\label{struct_efi_system_table_a421b6fd0677173eb3d24c2d6fbce33dc} 
+\index{EfiSystemTable@{EfiSystemTable}!ConfigurationTable@{ConfigurationTable}}
+\index{ConfigurationTable@{ConfigurationTable}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  \texorpdfstring{$\ast$}{*} Efi\+System\+Table\+::\+Configuration\+Table}
+
+
+
+The configuration table (contains the RSD PTR entry.) 
+
+\Hypertarget{struct_efi_system_table_ac65ba81cbd96df44f2110ff0ad45f682}\label{struct_efi_system_table_ac65ba81cbd96df44f2110ff0ad45f682} 
+\index{EfiSystemTable@{EfiSystemTable}!ConIn@{ConIn}}
+\index{ConIn@{ConIn}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{ConIn}{ConIn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_simple_text_input_protocol}{Efi\+Simple\+Text\+Input\+Protocol}}\texorpdfstring{$\ast$}{*} Efi\+System\+Table\+::\+Con\+In}
+
+\Hypertarget{struct_efi_system_table_a97db1865b82bf26947eac349474779c5}\label{struct_efi_system_table_a97db1865b82bf26947eac349474779c5} 
+\index{EfiSystemTable@{EfiSystemTable}!ConOut@{ConOut}}
+\index{ConOut@{ConOut}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{ConOut}{ConOut}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_simple_text_output_protocol}{Efi\+Simple\+Text\+Output\+Protocol}}\texorpdfstring{$\ast$}{*} Efi\+System\+Table\+::\+Con\+Out}
+
+\Hypertarget{struct_efi_system_table_a2922bed026624079711a61c16b5e30b3}\label{struct_efi_system_table_a2922bed026624079711a61c16b5e30b3} 
+\index{EfiSystemTable@{EfiSystemTable}!ConsoleInHandle@{ConsoleInHandle}}
+\index{ConsoleInHandle@{ConsoleInHandle}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{ConsoleInHandle}{ConsoleInHandle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} Efi\+System\+Table\+::\+Console\+In\+Handle}
+
+\Hypertarget{struct_efi_system_table_aa2d3251cb141a2aee635c629ddcf132c}\label{struct_efi_system_table_aa2d3251cb141a2aee635c629ddcf132c} 
+\index{EfiSystemTable@{EfiSystemTable}!ConsoleOutHandle@{ConsoleOutHandle}}
+\index{ConsoleOutHandle@{ConsoleOutHandle}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{ConsoleOutHandle}{ConsoleOutHandle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} Efi\+System\+Table\+::\+Console\+Out\+Handle}
+
+\Hypertarget{struct_efi_system_table_af3570ddd87d8b26626a8321af055f4a1}\label{struct_efi_system_table_af3570ddd87d8b26626a8321af055f4a1} 
+\index{EfiSystemTable@{EfiSystemTable}!FirmwareRevision@{FirmwareRevision}}
+\index{FirmwareRevision@{FirmwareRevision}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{FirmwareRevision}{FirmwareRevision}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a160d206409956603d46f6292a41b1f52}{UInt32}} Efi\+System\+Table\+::\+Firmware\+Revision}
+
+\Hypertarget{struct_efi_system_table_a660f1fab26ef9140329c0b986e7812f3}\label{struct_efi_system_table_a660f1fab26ef9140329c0b986e7812f3} 
+\index{EfiSystemTable@{EfiSystemTable}!FirmwareVendor@{FirmwareVendor}}
+\index{FirmwareVendor@{FirmwareVendor}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{FirmwareVendor}{FirmwareVendor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a47c41d4526d5406d0f76828b483217e2}{Wide\+Char}}\texorpdfstring{$\ast$}{*} Efi\+System\+Table\+::\+Firmware\+Vendor}
+
+\Hypertarget{struct_efi_system_table_a4cf4ce6eff7a7f8966782312a1abb3b1}\label{struct_efi_system_table_a4cf4ce6eff7a7f8966782312a1abb3b1} 
+\index{EfiSystemTable@{EfiSystemTable}!NumberOfTableEntries@{NumberOfTableEntries}}
+\index{NumberOfTableEntries@{NumberOfTableEntries}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{NumberOfTableEntries}{NumberOfTableEntries}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} Efi\+System\+Table\+::\+Number\+Of\+Table\+Entries}
+
+\Hypertarget{struct_efi_system_table_a338596c17be71e5030b06d92b3fd5eb2}\label{struct_efi_system_table_a338596c17be71e5030b06d92b3fd5eb2} 
+\index{EfiSystemTable@{EfiSystemTable}!RuntimeServices@{RuntimeServices}}
+\index{RuntimeServices@{RuntimeServices}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{RuntimeServices}{RuntimeServices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_runtime_services}{Efi\+Runtime\+Services}}\texorpdfstring{$\ast$}{*} Efi\+System\+Table\+::\+Runtime\+Services}
+
+\Hypertarget{struct_efi_system_table_a9f6fd23f39d5276641ce5e7005333456}\label{struct_efi_system_table_a9f6fd23f39d5276641ce5e7005333456} 
+\index{EfiSystemTable@{EfiSystemTable}!StandardErrorHandle@{StandardErrorHandle}}
+\index{StandardErrorHandle@{StandardErrorHandle}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{StandardErrorHandle}{StandardErrorHandle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_abeaad389ed6ec7cf09f86461f4d8f8f2}{Efi\+Handle\+Ptr}} Efi\+System\+Table\+::\+Standard\+Error\+Handle}
+
+\Hypertarget{struct_efi_system_table_ad629bdaaf942faae82a5c6bf71fc9ff7}\label{struct_efi_system_table_ad629bdaaf942faae82a5c6bf71fc9ff7} 
+\index{EfiSystemTable@{EfiSystemTable}!StdErr@{StdErr}}
+\index{StdErr@{StdErr}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{StdErr}{StdErr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} Efi\+System\+Table\+::\+Std\+Err}
+
+\Hypertarget{struct_efi_system_table_af0985f55edaee9540d7a21f569cefe44}\label{struct_efi_system_table_af0985f55edaee9540d7a21f569cefe44} 
+\index{EfiSystemTable@{EfiSystemTable}!SystemHeader@{SystemHeader}}
+\index{SystemHeader@{SystemHeader}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{SystemHeader}{SystemHeader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_efi_table_header}{Efi\+Table\+Header}} Efi\+System\+Table\+::\+System\+Header}
+
+\Hypertarget{struct_efi_system_table_aa0d618419c0d5bf1b1745c4a4f9931c4}\label{struct_efi_system_table_aa0d618419c0d5bf1b1745c4a4f9931c4} 
+\index{EfiSystemTable@{EfiSystemTable}!VendorGUID@{VendorGUID}}
+\index{VendorGUID@{VendorGUID}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{VendorGUID}{VendorGUID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_e_f_i_2_e_f_i_8h_a8272a9918cbc3d38ad859425a95a9368}{Efi\+GUID}} Efi\+System\+Table\+::\+Vendor\+GUID}
+
+\Hypertarget{struct_efi_system_table_a4bd3c922838a28d4d5996d18880d061f}\label{struct_efi_system_table_a4bd3c922838a28d4d5996d18880d061f} 
+\index{EfiSystemTable@{EfiSystemTable}!VendorTable@{VendorTable}}
+\index{VendorTable@{VendorTable}!EfiSystemTable@{EfiSystemTable}}
+\doxysubsubsection{\texorpdfstring{VendorTable}{VendorTable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} Efi\+System\+Table\+::\+Vendor\+Table}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dev/kernel/\+Firmware\+Kit/\+EFI/\mbox{\hyperlink{_e_f_i_2_e_f_i_8h}{EFI.\+h}}\end{DoxyCompactItemize}

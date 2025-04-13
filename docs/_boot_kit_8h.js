@@ -12,9 +12,9 @@ var _boot_kit_8h =
     [ "CharacterTypeUTF8", "_boot_kit_8h.html#af4fbfbcef45cf86b54114a8d8ac49525", null ],
     [ "PEFImagePtr", "_boot_kit_8h.html#ac67bee9ccd686407f223b58b860bc6d0", null ],
     [ "PEImagePtr", "_boot_kit_8h.html#ac6c34d095a1f0a7c06f5b87964c78191", null ],
-    [ "BCopyMem", "_boot_kit_8h.html#a2c0c2df329d4e99ad0f602be6adaf79c", null ],
-    [ "BSetMem", "_boot_kit_8h.html#ac8357943d859bcce4c8d37834bd837a3", null ],
-    [ "BSetMem", "_boot_kit_8h.html#a970eb4520f61c7b2b07ad7eece6f5f38", null ],
-    [ "BStrLen", "_boot_kit_8h.html#ab46b01895780074cda4a98a4d1f00153", null ],
+    [ "BCopyMem", "_boot_kit_8h.html#ab8b98ea609c44d0b4830bf1d4bdb8fe6", null ],
+    [ "BSetMem", "_boot_kit_8h.html#acc12c3d9687f353cf666c27afb6bef99", null ],
+    [ "BSetMem", "_boot_kit_8h.html#ae6d7733aaa334720015b4b8e71aa585a", null ],
+    [ "BStrLen", "_boot_kit_8h.html#afba9c31094f3937a1f432887de8938b8", null ],
     [ "ThrowError", "_boot_kit_8h.html#a770cf51bd60eaa15b9a35af8f2b5bc3b", null ]
 ];

@@ -1,0 +1,77 @@
+\doxysection{dev/boot/\+Boot\+Kit/\+Qr.h File Reference}
+\hypertarget{_qr_8h}{}\label{_qr_8h}\index{dev/boot/BootKit/Qr.h@{dev/boot/BootKit/Qr.h}}
+{\ttfamily \#include $<$Boot\+Kit/\+Shared/base.\+h$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Shared/bit.\+h$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Qr\+Prelude.\+h$>$}\newline
+{\ttfamily \#include $<$modules/\+Core\+Gfx/\+FBMgr.\+h$>$}\newline
+{\ttfamily \#include $<$Boot\+Kit/\+Support.\+h$>$}\newline
+{\ttfamily \#include $<$Compiler\+Kit/\+Detail.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structqr_1_1_qr}{qr\+::\+Qr$<$ V $>$}}
+\item 
+class \mbox{\hyperlink{classqr_1_1_qr_delegate}{qr\+::\+Qr\+Delegate}}
+\begin{DoxyCompactList}\small\item\em QR code encoder class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceqr}{qr}}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_qr}{Ne\+OS\+::\+Qr}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceqr_af98ebde8f935f582815540adba4b1865}{qr\+::\+Ecc}} \{ \mbox{\hyperlink{namespaceqr_af98ebde8f935f582815540adba4b1865afb446127f2771970216e8f03876813bc}{qr\+::L}}
+, \mbox{\hyperlink{namespaceqr_af98ebde8f935f582815540adba4b1865afa1a3065f4423009e728ebdb1087de71}{qr\+::M}}
+, \mbox{\hyperlink{namespaceqr_af98ebde8f935f582815540adba4b1865ae3aae91aef3eb28cd0aae116de679d5e}{qr\+::Q}}
+, \mbox{\hyperlink{namespaceqr_af98ebde8f935f582815540adba4b1865a5053c50355f114b49424fb91510a4320}{qr\+::H}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceqr_a3310a533383c4dbf029cc201f27daba5}{qr\+::\+Mode}} \{ \mbox{\hyperlink{namespaceqr_a3310a533383c4dbf029cc201f27daba5abfbdafba139c92530a4b124098150e20}{qr\+::\+M\+\_\+\+NUMERIC}}
+, \mbox{\hyperlink{namespaceqr_a3310a533383c4dbf029cc201f27daba5af636347b3d6f5176e868eb508d953c37}{qr\+::\+M\+\_\+\+ALPHANUMERIC}}
+, \mbox{\hyperlink{namespaceqr_a3310a533383c4dbf029cc201f27daba5ab92eaf929d5757e20984bb9f2f67dd72}{qr\+::\+M\+\_\+\+BYTE}}
+, \mbox{\hyperlink{namespaceqr_a3310a533383c4dbf029cc201f27daba5a387d09f39018df13dd6d92c92f43da10}{qr\+::\+M\+\_\+\+KANJI}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespaceqr_af35bb909a9cab33489cf3cb92c79d6c1}{qr\+::gf\+\_\+mul}} (uint8\+\_\+t a, uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em galois finite field multiplication. \end{DoxyCompactList}\item 
+constexpr uint8\+\_\+t \mbox{\hyperlink{namespaceqr_ac3512fe60e2972de5666d246e895be90}{qr\+::get\+\_\+bit\+\_\+r}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}arr, int n)
+\item 
+constexpr void \mbox{\hyperlink{namespaceqr_ad69f7ce82d6becb24c34c1904cfcf4d3}{qr\+::add\+\_\+bits}} (uint16\+\_\+t data, int n, uint8\+\_\+t \texorpdfstring{$\ast$}{*}arr, \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} \&pos)
+\item 
+constexpr int \mbox{\hyperlink{namespaceqr_ad06fc24755df3c6b2cd22c39fd0bf010}{qr\+::alphanumeric}} (char c)
+\item 
+constexpr bool \mbox{\hyperlink{namespaceqr_ad37bbcb6af8e2ed3ff013a19cf316c87}{qr\+::is\+\_\+alphanumeric}} (const char \texorpdfstring{$\ast$}{*}str, \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} len)
+\item 
+constexpr bool \mbox{\hyperlink{namespaceqr_abfa7cbee2c756321897cac3449729613}{qr\+::is\+\_\+numeric}} (const char \texorpdfstring{$\ast$}{*}str, \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} len)
+\item 
+constexpr bool \mbox{\hyperlink{namespaceqr_a36c301bb47987365dfcd3245238de28b}{qr\+::is\+\_\+kanji}} (const char \texorpdfstring{$\ast$}{*}str, \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} len)
+\item 
+constexpr void \mbox{\hyperlink{namespaceqr_aeded86590df2c771bb3c036757edbd3e}{qr\+::gf\+\_\+gen\+\_\+poly}} (int degree, uint8\+\_\+t \texorpdfstring{$\ast$}{*}poly)
+\item 
+constexpr void \mbox{\hyperlink{namespaceqr_ab5ff4223e349fdc9712a6cbc016e47a5}{qr\+::gf\+\_\+poly\+\_\+div}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}dividend, \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} len, uint8\+\_\+t \texorpdfstring{$\ast$}{*}divisor, int degree, uint8\+\_\+t \texorpdfstring{$\ast$}{*}result)
+\item 
+constexpr \mbox{\hyperlink{namespaceqr_a3310a533383c4dbf029cc201f27daba5}{Mode}} \mbox{\hyperlink{namespaceqr_ac8796c4a6ee46d2f7b4b6c3ca51105a2}{qr\+::select\+\_\+mode}} (const char \texorpdfstring{$\ast$}{*}str, \mbox{\hyperlink{_new_8h_aa9d55e2f20e580b7445617d0d12fff6e}{size\+\_\+t}} len)
+\item 
+constexpr int \mbox{\hyperlink{namespaceqr_a767860c022121560659853e1bd29113f}{qr\+::cci}} (int ver, \mbox{\hyperlink{namespaceqr_a3310a533383c4dbf029cc201f27daba5}{Mode}} mode)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespaceqr_a878ef9af13c0ca854be02b4c6a464a71}{qr\+::min\+\_\+poly}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespaceqr_abe85340a4c802d0e304cf1dd6803f1cb}{qr\+::generator}} = 0b10
+\item 
+constexpr int \mbox{\hyperlink{namespaceqr_a9d88fcd72ef1e601e4db7e82c6152d98}{qr\+::\+ECC\+\_\+\+CODEWORDS\+\_\+\+PER\+\_\+\+BLOCK}} \mbox{[}4\mbox{]}\mbox{[}41\mbox{]}
+\item 
+constexpr int \mbox{\hyperlink{namespaceqr_a6e44c1a178e5267b6fbae9e51d6d2180}{qr\+::\+N\+\_\+\+ECC\+\_\+\+BLOCKS}} \mbox{[}4\mbox{]}\mbox{[}41\mbox{]}
+\item 
+constexpr int \mbox{\hyperlink{namespaceqr_aa79f24e70db606e9cdf5c18cc0e7aa57}{qr\+::\+ALIGN\+\_\+\+POS}} \mbox{[}41\mbox{]}\mbox{[}7\mbox{]}
+\end{DoxyCompactItemize}

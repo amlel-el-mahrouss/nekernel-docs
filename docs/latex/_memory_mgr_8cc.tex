@@ -1,0 +1,84 @@
+\doxysection{dev/kernel/src/\+Memory\+Mgr.cc File Reference}
+\hypertarget{_memory_mgr_8cc}{}\label{_memory_mgr_8cc}\index{dev/kernel/src/MemoryMgr.cc@{dev/kernel/src/MemoryMgr.cc}}
+
+
+Heap algorithm that serves as the main memory manager.  
+
+
+{\ttfamily \#include $<$Kernel\+Kit/\+Debug\+Output.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+KPC.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Memory\+Mgr.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Crc32.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Page\+Mgr.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Utils.\+h$>$}\newline
+{\ttfamily \#include $<$Arch\+Kit/\+Arch\+Kit.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}}
+\begin{DoxyCompactList}\small\item\em Kernel heap information block. Located before the address bytes. \texorpdfstring{$\vert$}{|} HIB \texorpdfstring{$\vert$}{|} CLASS/\+STRUCT/\+DATA TYPES... \texorpdfstring{$\vert$}{|}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_detail}{Ne\+OS\+::\+Detail}}
+\begin{DoxyCompactList}\small\item\em Implementation details namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_memory_mgr_8cc_a57441e7e52a2a46de57ce11eded38311}{k\+Memory\+Mgr\+Magic}}~(0x\+D4\+D75)
+\item 
+\#define \mbox{\hyperlink{_memory_mgr_8cc_a7b2f1160ea314725e28dd39120b7e6e0}{k\+Memory\+Mgr\+Align\+Sz}}~(4)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{struct_ne_o_s_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k}{MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_aa61dca87de40ff6d68f1f7aad2c99db7}{Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK\+\_\+\+PTR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_compiler_hint_8h_a4094fc0c2f4383d929303d4dfbbae001}{\+\_\+\+Output}} auto \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a69d95cfb527151800b35617d507e9d37}{Ne\+OS\+::\+Detail\+::mm\+\_\+check\+\_\+heap\+\_\+address}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr) -\/$>$ \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}}
+\begin{DoxyCompactList}\small\item\em Check for heap address validity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_a1bc76b75e1c404734726162434b3bb05}{Ne\+OS\+::mm\+\_\+realloc\+\_\+heap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr, \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} new\+\_\+sz)
+\begin{DoxyCompactList}\small\item\em Declare a new size for heap\+\_\+ptr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} \mbox{\hyperlink{namespace_ne_o_s_a635f4bc8f3247a46067d2fffd5f3e6d4}{Ne\+OS\+::mm\+\_\+new\+\_\+heap}} (const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} sz, const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} wr, const \mbox{\hyperlink{namespace_ne_o_s_ad5f3c5e87966b36f6741ac5897f80120}{Bool}} user, const \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} pad\+\_\+amount=0)
+\begin{DoxyCompactList}\small\item\em Allocate chunk of memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_af7f14e35a511c7a988f62bc095d0b470}{Ne\+OS\+::mm\+\_\+make\+\_\+page}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Makes a Kernel page. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_ad474e36fbf65f4817f6a12ab7cdebb04}{Ne\+OS\+::mm\+\_\+make\+\_\+flags}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr, \mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} flags)
+\begin{DoxyCompactList}\small\item\em Overwrites and set the flags of a heap header. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a09d79cd68f15b02280f00125b4e62cb5}{UInt64}} \mbox{\hyperlink{namespace_ne_o_s_abf93c1916b1dbe2bb34e56bf1c8cb60d}{Ne\+OS\+::mm\+\_\+get\+\_\+flags}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Gets the flags of a heap header. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_aa81857a2033441e004abaf5df755413e}{Ne\+OS\+::mm\+\_\+delete\+\_\+heap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Declare pointer as free. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{namespace_ne_o_s_a5f4c773aeac326921ddd4c7e4c33902f}{Ne\+OS\+::mm\+\_\+is\+\_\+valid\+\_\+heap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Check if pointer is a valid Kernel pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}} \mbox{\hyperlink{namespace_ne_o_s_af5187fd9e60b684dcdafbf26b64a3e8e}{Ne\+OS\+::mm\+\_\+protect\+\_\+heap}} (\mbox{\hyperlink{namespace_ne_o_s_ac1c63bbbae84b587c92428c1f2025036}{Void\+Ptr}} heap\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Protect the heap with a CRC value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a3b7ea873330a50ace01ab29fb1c955f7}{PACKED}} \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a22a5c8a0391b14f63fb8f7c5025f81e2}{Ne\+OS\+::\+Detail\+::\+MM\+\_\+\+INFORMATION\+\_\+\+BLOCK}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Heap algorithm that serves as the main memory manager. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_memory_mgr_8cc_a7b2f1160ea314725e28dd39120b7e6e0}\label{_memory_mgr_8cc_a7b2f1160ea314725e28dd39120b7e6e0} 
+\index{MemoryMgr.cc@{MemoryMgr.cc}!kMemoryMgrAlignSz@{kMemoryMgrAlignSz}}
+\index{kMemoryMgrAlignSz@{kMemoryMgrAlignSz}!MemoryMgr.cc@{MemoryMgr.cc}}
+\doxysubsubsection{\texorpdfstring{kMemoryMgrAlignSz}{kMemoryMgrAlignSz}}
+{\footnotesize\ttfamily \#define k\+Memory\+Mgr\+Align\+Sz~(4)}
+
+\Hypertarget{_memory_mgr_8cc_a57441e7e52a2a46de57ce11eded38311}\label{_memory_mgr_8cc_a57441e7e52a2a46de57ce11eded38311} 
+\index{MemoryMgr.cc@{MemoryMgr.cc}!kMemoryMgrMagic@{kMemoryMgrMagic}}
+\index{kMemoryMgrMagic@{kMemoryMgrMagic}!MemoryMgr.cc@{MemoryMgr.cc}}
+\doxysubsubsection{\texorpdfstring{kMemoryMgrMagic}{kMemoryMgrMagic}}
+{\footnotesize\ttfamily \#define k\+Memory\+Mgr\+Magic~(0x\+D4\+D75)}
+

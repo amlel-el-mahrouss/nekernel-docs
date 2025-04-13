@@ -1,0 +1,200 @@
+\doxysection{dev/kernel/\+Kernel\+Kit/\+PEF.h File Reference}
+\hypertarget{_p_e_f_8h}{}\label{_p_e_f_8h}\index{dev/kernel/KernelKit/PEF.h@{dev/kernel/KernelKit/PEF.h}}
+{\ttfamily \#include $<$Compiler\+Kit/\+Compiler\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+Loader\+Interface.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Defines.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_p_e_f_container}{Ne\+OS\+::\+PEFContainer}}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_p_e_f_command_header}{Ne\+OS\+::\+PEFCommand\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a1f008401c93b21562efac2bf62b1443f}{k\+Pef\+Magic}}~"{}Joy!"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_ae1d4265864b168bbdf47eaf153b554a0}{k\+Pef\+Magic\+Fat}}~"{}yo\+J!"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_ac9750b18a6818b8c9d5fb229e0417c5d}{k\+Pef\+Magic\+Len}}~5
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a59a1c4fa90abbb06331de310cc22c228}{k\+Pef\+Version}}~3
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_acfba2dc9def360cf0ca9fb0d3cc875ea}{k\+Pef\+Name\+Len}}~256U
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a5e230147b8536ca4caadb2b11e5364f3}{k\+Pef\+Ext}}~"{}.o"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a9e88c04dbe1d3f515462addeef4dd4d8}{k\+Pef\+Dylib\+Ext}}~"{}.dylib"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_ab2ea102e214d81b71f1fcbd923d56f92}{k\+Pef\+Lib\+Ext}}~"{}.lib"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a02947bc4eff53eb410aeee3770e60685}{k\+Pef\+Object\+Ext}}~"{}.obj"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_ace6465bced1199518a4d2f4c4ee9b702}{k\+Pef\+Debug\+Ext}}~"{}.dbg"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_abed0d1e223612e0b7a5cf28dcafe664a}{k\+Pef\+Driver\+Ext}}~"{}.sys"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_af25a0b0fa23ae66742fdd12f6975477a}{k\+Pef\+Abi}}~(0x5046)
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a724902064959928e47270d2d2087dbd2}{k\+Pef\+Base\+Origin}}~(0x40000000)
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a24805061766bc16a2be024d217f64a45}{k\+Pef\+Start}}~"{}\+\_\+\+\_\+\+Image\+Start"{}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a9de10c22994f3db95ba3b2c2525acc26}{k\+Pef\+Fork\+Kind}}~\mbox{\hyperlink{_p_e_f_8h_a1f008401c93b21562efac2bf62b1443f}{k\+Pef\+Magic}}
+\item 
+\#define \mbox{\hyperlink{_p_e_f_8h_a54b832655d80ec7a1ade3d7d629be0c2}{k\+Pef\+Fork\+Kind\+FAT}}~\mbox{\hyperlink{_p_e_f_8h_ae1d4265864b168bbdf47eaf153b554a0}{k\+Pef\+Magic\+Fat}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_ne_o_s_1_1_p_e_f_container}{Ne\+OS\+::\+PEFContainer}} \mbox{\hyperlink{namespace_ne_o_s_afc4c314383cbfd406a8e37a06dddccee}{Ne\+OS\+::\+PEFContainer}}
+\item 
+typedef struct \mbox{\hyperlink{struct_ne_o_s_1_1_p_e_f_command_header}{Ne\+OS\+::\+PEFCommand\+Header}} \mbox{\hyperlink{namespace_ne_o_s_a9e81652c2962b7c89312e1d2186bd8b6}{Ne\+OS\+::\+PEFCommand\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6a56cfb644b94d24f5476f9326224e9566}{Ne\+OS\+::k\+Pef\+Arch\+Intel86S}}
+, \mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6a5e5472a67cb67a4dcae202b8a92ed7f5}{Ne\+OS\+::k\+Pef\+Arch\+AMD64}}
+, \mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6acb1b411b7077a941ccc94a0ea77fed8f}{Ne\+OS\+::k\+Pef\+Arch\+RISCV}}
+, \mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6a75396b1eeff967a7da155f47f25f6338}{Ne\+OS\+::k\+Pef\+Arch64x0}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6a067d8a546ff0634ad0e751eb61fa6e3f}{Ne\+OS\+::k\+Pef\+Arch32x0}}
+, \mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6a49ef3eed1170961843113bd3bc7cfe59}{Ne\+OS\+::k\+Pef\+Arch\+Power\+PC}}
+, \mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6a9f425fb2decfe96b8ac98025bcd4497d}{Ne\+OS\+::k\+Pef\+Arch\+ARM64}}
+, \mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6acbf9ad91646dbb5fbf2a36f1899598c1}{Ne\+OS\+::k\+Pef\+Arch\+Count}} = (k\+Pef\+Arch\+Power\+PC -\/ k\+Pef\+Arch\+Intel86S) + 1
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a607f5f63b1b8d53d1378d975eda052f6ae11865af6447f8371bd2f0ce8cff6a8a}{Ne\+OS\+::k\+Pef\+Arch\+Invalid}} = 0x\+FF
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_a8778744b0e5802d96f2d042e15ce4d01afa1fbc69c91122062da198cf8a4d273e}{Ne\+OS\+::k\+Pef\+Sub\+Arch\+AMD}}
+, \mbox{\hyperlink{namespace_ne_o_s_a8778744b0e5802d96f2d042e15ce4d01ae604cd6845b0f2fbbad783606235feeb}{Ne\+OS\+::k\+Pef\+Sub\+Arch\+Intel}}
+, \mbox{\hyperlink{namespace_ne_o_s_a8778744b0e5802d96f2d042e15ce4d01ae1779ae3874cdb68c62d14fa1fc139fa}{Ne\+OS\+::k\+Pef\+Sub\+Arch\+ARM}}
+, \mbox{\hyperlink{namespace_ne_o_s_a8778744b0e5802d96f2d042e15ce4d01a6f56d9a108287b56bb1de71451810bc1}{Ne\+OS\+::k\+Pef\+Sub\+Arch\+Generic}}
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_a8778744b0e5802d96f2d042e15ce4d01adb5644a145d088a236c4e6f8bf95c858}{Ne\+OS\+::k\+Pef\+Sub\+Arch\+IBM}}
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{namespace_ne_o_s_ab5922a441638d2e46135d9b56c82b970a4934701f2d68e4b7b847dddc1d1a53a5}{Ne\+OS\+::k\+Pef\+Kind\+Exec}} = 1
+, \mbox{\hyperlink{namespace_ne_o_s_ab5922a441638d2e46135d9b56c82b970aa9f63402bedab72ef5614f4df303f5a8}{Ne\+OS\+::k\+Pef\+Kind\+Dylib}} = 2
+, \mbox{\hyperlink{namespace_ne_o_s_ab5922a441638d2e46135d9b56c82b970a58b3cfc00aae468d9472d02fc420c0b6}{Ne\+OS\+::k\+Pef\+Kind\+Object}} = 4
+, \mbox{\hyperlink{namespace_ne_o_s_ab5922a441638d2e46135d9b56c82b970a85ad6cc16d8f30367bff6195f12ff163}{Ne\+OS\+::k\+Pef\+Kind\+Debug}} = 5
+, \newline
+\mbox{\hyperlink{namespace_ne_o_s_ab5922a441638d2e46135d9b56c82b970a73825ae90290481b6baa79dd8a461fc2}{Ne\+OS\+::k\+Pef\+Kind\+Driver}} = 6
+, \mbox{\hyperlink{namespace_ne_o_s_ab5922a441638d2e46135d9b56c82b970a2c6c166847b10bbf5483f017226bed2a}{Ne\+OS\+::k\+Pef\+Kind\+Count}}
+ \}
+\item 
+enum \{ \mbox{\hyperlink{namespace_ne_o_s_a695354c34a79bc19d87bd6d6ddf6dc2ea232b46ab43e20f62b0730bde27d1fcd9}{Ne\+OS\+::k\+Pef\+Code}} = 0xC
+, \mbox{\hyperlink{namespace_ne_o_s_a695354c34a79bc19d87bd6d6ddf6dc2ea4a96265d6b535cf126d68a2c30c51401}{Ne\+OS\+::k\+Pef\+Data}} = 0xD
+, \mbox{\hyperlink{namespace_ne_o_s_a695354c34a79bc19d87bd6d6ddf6dc2ea334b823591a612f8d59e4c711d015686}{Ne\+OS\+::k\+Pef\+Zero}} = 0xE
+, \mbox{\hyperlink{namespace_ne_o_s_a695354c34a79bc19d87bd6d6ddf6dc2ea13b1a66fec8121d65b399cdc8fc021ba}{Ne\+OS\+::k\+Pef\+Linker\+ID}} = 0x1
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_p_e_f_8h_af25a0b0fa23ae66742fdd12f6975477a}\label{_p_e_f_8h_af25a0b0fa23ae66742fdd12f6975477a} 
+\index{PEF.h@{PEF.h}!kPefAbi@{kPefAbi}}
+\index{kPefAbi@{kPefAbi}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefAbi}{kPefAbi}}
+{\footnotesize\ttfamily \#define k\+Pef\+Abi~(0x5046)}
+
+\Hypertarget{_p_e_f_8h_a724902064959928e47270d2d2087dbd2}\label{_p_e_f_8h_a724902064959928e47270d2d2087dbd2} 
+\index{PEF.h@{PEF.h}!kPefBaseOrigin@{kPefBaseOrigin}}
+\index{kPefBaseOrigin@{kPefBaseOrigin}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefBaseOrigin}{kPefBaseOrigin}}
+{\footnotesize\ttfamily \#define k\+Pef\+Base\+Origin~(0x40000000)}
+
+\Hypertarget{_p_e_f_8h_ace6465bced1199518a4d2f4c4ee9b702}\label{_p_e_f_8h_ace6465bced1199518a4d2f4c4ee9b702} 
+\index{PEF.h@{PEF.h}!kPefDebugExt@{kPefDebugExt}}
+\index{kPefDebugExt@{kPefDebugExt}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefDebugExt}{kPefDebugExt}}
+{\footnotesize\ttfamily \#define k\+Pef\+Debug\+Ext~"{}.dbg"{}}
+
+\Hypertarget{_p_e_f_8h_abed0d1e223612e0b7a5cf28dcafe664a}\label{_p_e_f_8h_abed0d1e223612e0b7a5cf28dcafe664a} 
+\index{PEF.h@{PEF.h}!kPefDriverExt@{kPefDriverExt}}
+\index{kPefDriverExt@{kPefDriverExt}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefDriverExt}{kPefDriverExt}}
+{\footnotesize\ttfamily \#define k\+Pef\+Driver\+Ext~"{}.sys"{}}
+
+\Hypertarget{_p_e_f_8h_a9e88c04dbe1d3f515462addeef4dd4d8}\label{_p_e_f_8h_a9e88c04dbe1d3f515462addeef4dd4d8} 
+\index{PEF.h@{PEF.h}!kPefDylibExt@{kPefDylibExt}}
+\index{kPefDylibExt@{kPefDylibExt}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefDylibExt}{kPefDylibExt}}
+{\footnotesize\ttfamily \#define k\+Pef\+Dylib\+Ext~"{}.dylib"{}}
+
+\Hypertarget{_p_e_f_8h_a5e230147b8536ca4caadb2b11e5364f3}\label{_p_e_f_8h_a5e230147b8536ca4caadb2b11e5364f3} 
+\index{PEF.h@{PEF.h}!kPefExt@{kPefExt}}
+\index{kPefExt@{kPefExt}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefExt}{kPefExt}}
+{\footnotesize\ttfamily \#define k\+Pef\+Ext~"{}.o"{}}
+
+\Hypertarget{_p_e_f_8h_a9de10c22994f3db95ba3b2c2525acc26}\label{_p_e_f_8h_a9de10c22994f3db95ba3b2c2525acc26} 
+\index{PEF.h@{PEF.h}!kPefForkKind@{kPefForkKind}}
+\index{kPefForkKind@{kPefForkKind}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefForkKind}{kPefForkKind}}
+{\footnotesize\ttfamily \#define k\+Pef\+Fork\+Kind~\mbox{\hyperlink{_p_e_f_8h_a1f008401c93b21562efac2bf62b1443f}{k\+Pef\+Magic}}}
+
+\Hypertarget{_p_e_f_8h_a54b832655d80ec7a1ade3d7d629be0c2}\label{_p_e_f_8h_a54b832655d80ec7a1ade3d7d629be0c2} 
+\index{PEF.h@{PEF.h}!kPefForkKindFAT@{kPefForkKindFAT}}
+\index{kPefForkKindFAT@{kPefForkKindFAT}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefForkKindFAT}{kPefForkKindFAT}}
+{\footnotesize\ttfamily \#define k\+Pef\+Fork\+Kind\+FAT~\mbox{\hyperlink{_p_e_f_8h_ae1d4265864b168bbdf47eaf153b554a0}{k\+Pef\+Magic\+Fat}}}
+
+\Hypertarget{_p_e_f_8h_ab2ea102e214d81b71f1fcbd923d56f92}\label{_p_e_f_8h_ab2ea102e214d81b71f1fcbd923d56f92} 
+\index{PEF.h@{PEF.h}!kPefLibExt@{kPefLibExt}}
+\index{kPefLibExt@{kPefLibExt}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefLibExt}{kPefLibExt}}
+{\footnotesize\ttfamily \#define k\+Pef\+Lib\+Ext~"{}.lib"{}}
+
+\Hypertarget{_p_e_f_8h_a1f008401c93b21562efac2bf62b1443f}\label{_p_e_f_8h_a1f008401c93b21562efac2bf62b1443f} 
+\index{PEF.h@{PEF.h}!kPefMagic@{kPefMagic}}
+\index{kPefMagic@{kPefMagic}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefMagic}{kPefMagic}}
+{\footnotesize\ttfamily \#define k\+Pef\+Magic~"{}Joy!"{}}
+
+\Hypertarget{_p_e_f_8h_ae1d4265864b168bbdf47eaf153b554a0}\label{_p_e_f_8h_ae1d4265864b168bbdf47eaf153b554a0} 
+\index{PEF.h@{PEF.h}!kPefMagicFat@{kPefMagicFat}}
+\index{kPefMagicFat@{kPefMagicFat}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefMagicFat}{kPefMagicFat}}
+{\footnotesize\ttfamily \#define k\+Pef\+Magic\+Fat~"{}yo\+J!"{}}
+
+\Hypertarget{_p_e_f_8h_ac9750b18a6818b8c9d5fb229e0417c5d}\label{_p_e_f_8h_ac9750b18a6818b8c9d5fb229e0417c5d} 
+\index{PEF.h@{PEF.h}!kPefMagicLen@{kPefMagicLen}}
+\index{kPefMagicLen@{kPefMagicLen}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefMagicLen}{kPefMagicLen}}
+{\footnotesize\ttfamily \#define k\+Pef\+Magic\+Len~5}
+
+\Hypertarget{_p_e_f_8h_acfba2dc9def360cf0ca9fb0d3cc875ea}\label{_p_e_f_8h_acfba2dc9def360cf0ca9fb0d3cc875ea} 
+\index{PEF.h@{PEF.h}!kPefNameLen@{kPefNameLen}}
+\index{kPefNameLen@{kPefNameLen}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefNameLen}{kPefNameLen}}
+{\footnotesize\ttfamily \#define k\+Pef\+Name\+Len~256U}
+
+\Hypertarget{_p_e_f_8h_a02947bc4eff53eb410aeee3770e60685}\label{_p_e_f_8h_a02947bc4eff53eb410aeee3770e60685} 
+\index{PEF.h@{PEF.h}!kPefObjectExt@{kPefObjectExt}}
+\index{kPefObjectExt@{kPefObjectExt}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefObjectExt}{kPefObjectExt}}
+{\footnotesize\ttfamily \#define k\+Pef\+Object\+Ext~"{}.obj"{}}
+
+\Hypertarget{_p_e_f_8h_a24805061766bc16a2be024d217f64a45}\label{_p_e_f_8h_a24805061766bc16a2be024d217f64a45} 
+\index{PEF.h@{PEF.h}!kPefStart@{kPefStart}}
+\index{kPefStart@{kPefStart}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefStart}{kPefStart}}
+{\footnotesize\ttfamily \#define k\+Pef\+Start~"{}\+\_\+\+\_\+\+Image\+Start"{}}
+
+\Hypertarget{_p_e_f_8h_a59a1c4fa90abbb06331de310cc22c228}\label{_p_e_f_8h_a59a1c4fa90abbb06331de310cc22c228} 
+\index{PEF.h@{PEF.h}!kPefVersion@{kPefVersion}}
+\index{kPefVersion@{kPefVersion}!PEF.h@{PEF.h}}
+\doxysubsubsection{\texorpdfstring{kPefVersion}{kPefVersion}}
+{\footnotesize\ttfamily \#define k\+Pef\+Version~3}
+

@@ -1,4 +1,4 @@
 var _stream_8h =
 [
-    [ "NeOS::Stream< StreamTrait, Kind >", "class_ne_o_s_1_1_stream.html", "class_ne_o_s_1_1_stream" ]
+    [ "Kernel::Stream< StreamTrait, Kind >", "class_kernel_1_1_stream.html", "class_kernel_1_1_stream" ]
 ];

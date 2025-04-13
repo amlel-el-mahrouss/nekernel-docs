@@ -1,0 +1,47 @@
+\doxysection{dev/kernel/\+Storage\+Kit/\+PRDT.h File Reference}
+\hypertarget{_p_r_d_t_8h}{}\label{_p_r_d_t_8h}\index{dev/kernel/StorageKit/PRDT.h@{dev/kernel/StorageKit/PRDT.h}}
+{\ttfamily \#include $<$Kernel\+Kit/\+PCI/\+DMA.\+h$>$}\newline
+{\ttfamily \#include $<$Kernel\+Kit/\+PCI/\+Iterator.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Ref.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ne_o_s_1_1_p_r_d_t}{Ne\+OS\+::\+PRDT}}
+\begin{DoxyCompactList}\small\item\em Physical Region Descriptor Table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_p_r_d_t_8h_ad910a109dfbf7627822aca2f39337b8e}{k\+Prdt\+Transfer\+Size}}~(sizeof(\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48}{Ne\+OS\+::k\+PRDTTransfer}} \{ \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48a2d3ab197fe50517743dcab2906d70df5}{Ne\+OS\+::k\+PRDTTransfer\+In\+Progress}}
+, \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48a75f278323c84c0107bd39fdd18a4918b}{Ne\+OS\+::k\+PRDTTransfer\+Is\+Done}}
+, \mbox{\hyperlink{namespace_ne_o_s_aabb10933fbc261d161eb8946e36b2b48a0279576785cf6338e0e75ac0a6e0baeb}{Ne\+OS\+::k\+PRDTTransfer\+Count}}
+ \}
+\begin{DoxyCompactList}\small\item\em Tranfer information about PRD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_ne_o_s_ab2cc1026fe10e29bf0bffd969fa59756}{Ne\+OS\+::construct\+\_\+prdt}} (\mbox{\hyperlink{class_ne_o_s_1_1_ref}{Ref}}$<$ \mbox{\hyperlink{struct_ne_o_s_1_1_p_r_d_t}{PRDT}} $>$ \&prd)
+\begin{DoxyCompactList}\small\item\em constructs a new PRD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kernel_2_new_kit_2_macros_8h_abbaccfbed35b945162c27ef6d3748e77}{EXTERN\+\_\+C}} \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}} \mbox{\hyperlink{namespace_ne_o_s_a4851ea17dc092789cc96f6b8f476ab9c}{Ne\+OS\+::k\+PRDTTransfer\+Status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_p_r_d_t_8h_ad910a109dfbf7627822aca2f39337b8e}\label{_p_r_d_t_8h_ad910a109dfbf7627822aca2f39337b8e} 
+\index{PRDT.h@{PRDT.h}!kPrdtTransferSize@{kPrdtTransferSize}}
+\index{kPrdtTransferSize@{kPrdtTransferSize}!PRDT.h@{PRDT.h}}
+\doxysubsubsection{\texorpdfstring{kPrdtTransferSize}{kPrdtTransferSize}}
+{\footnotesize\ttfamily \#define k\+Prdt\+Transfer\+Size~(sizeof(\mbox{\hyperlink{namespace_ne_o_s_a00dada5f0d44bcaf0cedffcae3657faf}{Ne\+OS\+::\+UShort}}))}
+

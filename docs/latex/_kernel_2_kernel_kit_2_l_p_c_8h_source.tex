@@ -1,0 +1,70 @@
+\doxysection{LPC.\+h}
+\hypertarget{_kernel_2_kernel_kit_2_l_p_c_8h_source}{}\label{_kernel_2_kernel_kit_2_l_p_c_8h_source}\index{dev/Kernel/KernelKit/LPC.h@{dev/Kernel/KernelKit/LPC.h}}
+\mbox{\hyperlink{_kernel_2_kernel_kit_2_l_p_c_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ err\_local\_ok()\ \ \ (NeOS::UserProcessScheduler::The().CurrentProcess().Leak().GetLocalCode()\ ==\ NeOS::kErrorSuccess)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ err\_local\_fail()\ (NeOS::UserProcessScheduler::The().CurrentProcess().Leak().GetLocalCode()\ !=\ NeOS::kErrorSuccess)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ err\_local\_get()\ \ (NeOS::UserProcessScheduler::The().CurrentProcess().Leak().GetLocalCode())}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ err\_global\_ok()\ \ \ (NeOS::kErrorLocalNumber\ ==\ NeOS::kErrorSuccess)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ err\_global\_fail()\ (NeOS::kErrorLocalNumber\ !=\ NeOS::kErrorSuccess)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ err\_global\_get()\ \ (NeOS::kErrorLocalNumber)}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ne_o_s}{NeOS}}}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{namespace_ne_o_s_a91a19724952b6c6faf9b52f9efc935f7}{Int32}}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a719132616d4ba74baea0b500923208d9}{kErrorLocalNumber}}\ =\ 0UL;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_ad83d47273cc42a34aac83471c911a94e}{kErrorSuccess}}\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a359f31e828630c806960d995a03c9231}{kErrorExecutable}}\ \ \ \ \ \ \ =\ 33;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_aa0f1103abcf2f041613bacac2f5a36c5}{kErrorExecutableLib}}\ \ \ \ \ \ \ \ \ =\ 34;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a02bebc8da16b68a5f39ad3c0ebe38339}{kErrorFileNotFound}}\ \ \ \ \ \ \ =\ 35;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_ab4876b7cc2952288d563ea24b8dae8a8}{kErrorDirectoryNotFound}}\ \ \ \ \ =\ 36;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a0cbe8e4d3da6b508153b79800eba4fd1}{kErrorDiskReadOnly}}\ \ \ \ \ \ \ =\ 37;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a5c0f9f7959472dc5b728c3cd06659330}{kErrorDiskIsFull}}\ \ \ \ \ \ \ =\ 38;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_adf591b0f55961a5b82fa89f8e7ed0a7c}{kErrorProcessFault}}\ \ \ \ \ \ \ =\ 39;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a24501d9b39d155d7ce69647847047cf3}{kErrorSocketHangUp}}\ \ \ \ \ \ \ =\ 40;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_adee3f6fe28b13ab7dc43a2d71f1d3942}{kErrorThreadLocalStorage}}\ =\ 41;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a754b1fa9e7d1d271350e8105f8a2d6a2}{kErrorMath}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 42;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_ac1d1d9e6c477aa5774b2e19e170973b1}{kErrorNoNetwork}}\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 43;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a431153aafa51ec3c9f3c6288ab6e030e}{kErrorHeapOutOfMemory}}\ \ \ \ \ =\ 44;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a45b24a9f0b8fbca1caeb168a129672d2}{kErrorNoSuchDisk}}\ \ \ \ \ \ \ =\ 45;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_afd3feb75d7006725eeefe9a511d0b05f}{kErrorFileExists}}\ \ \ \ \ \ \ =\ 46;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_aaf679a3ada697c52524a9a497d0e2d57}{kErrorFormatFailed}}\ \ \ \ \ \ \ =\ 47;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a55ebeb71a125abd309c3f13f5d89b7ea}{kErrorNetworkTimeout}}\ \ \ =\ 48;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a38ebc623522e5ba8a2ffcc098e8978c0}{kErrorInternal}}\ \ \ \ \ \ \ \ \ \ \ =\ 49;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a8763c08a7d276742aa6742c52ab592f8}{kErrorForkAlreadyExists}}\ \ \ \ \ =\ 50;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a00222a85fc88f76c428a267727ba6a3a}{kErrorOutOfTeamSlot}}\ \ \ \ \ \ \ \ \ =\ 51;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a7cf1d62e2aabe3cb283eafd2b34f8540}{kErrorHeapNotPresent}}\ \ \ =\ 52;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a3f6b5cf1062852650dc72963579f2186}{kErrorNoEntrypoint}}\ \ \ \ \ \ \ =\ 53;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a57f2bdb416d652eccd01d2fe0c0c166f}{kErrorDiskIsCorrupted}}\ \ \ \ \ =\ 54;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a2fbe6ca2daefad8a1493d78a82b785c1}{kErrorDisk}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 55;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_acf5bd7d7f39a6d4a33459919e95b209f}{kErrorInvalidData}}\ \ \ \ \ \ \ \ \ =\ 56;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a4e1e909686c96bcc2fdaae7fc27183ff}{kErrorAsync}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 57;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a37fa678db02ced5906e20dfcec1767c9}{kErrorNonBlocking}}\ \ \ \ \ \ \ \ \ =\ 58;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a2d8dbd69ebcd489c1170be46736cbedd}{kErrorIPC}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 59;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a23f9c0cd795911f8015e0c58ebb9fcc4}{kErrorSign}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 60;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a988bbf35bc2526f1077ce8f2bbbf2e1e}{kErrorInvalidCreds}}\ \ \ \ \ \ \ =\ 61;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_abda73da6fcfdfcfe5cbc319f2b77b0c4}{kErrorCDTrayBroken}}\ \ \ \ \ \ \ =\ 62;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_ab7e1ba20c1c8ab1aaf19ce04d833fafc}{kErrorUnrecoverableDisk}}\ \ \ \ \ =\ 63;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_adad036626bf00160bedc307309255817}{kErrorFileLocked}}\ \ \ \ \ \ \ =\ 64;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{constexpr}\ \mbox{\hyperlink{namespace_ne_o_s_ab1a233538e73dcdd35faf1c594525b19}{HError}}\ \mbox{\hyperlink{namespace_ne_o_s_a3276e3e394c1dc7286c7fa243d62cf3b}{kErrorUnimplemented}}\ \ \ \ \ \ \ \ \ =\ -\/1;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}}\ \mbox{\hyperlink{namespace_ne_o_s_aa43564bf849418d7a72de59aabeaddca}{err\_bug\_check\_raise}}(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{namespace_ne_o_s_a3245bb65efabbdafe2c6b73041d782e0}{Boolean}}\ \mbox{\hyperlink{namespace_ne_o_s_ae961072517d27f465d92657b02744846}{err\_bug\_check}}(\mbox{\hyperlink{namespace_ne_o_s_ad33956dfc567efebd063d7bc6d1ae82d}{Void}})\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00070\ \}\ \textcolor{comment}{//\ namespace\ NeOS}}
+
+\end{DoxyCode}

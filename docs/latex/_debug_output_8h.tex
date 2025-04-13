@@ -1,0 +1,157 @@
+\doxysection{dev/kernel/\+Kernel\+Kit/\+Debug\+Output.h File Reference}
+\hypertarget{_debug_output_8h}{}\label{_debug_output_8h}\index{dev/kernel/KernelKit/DebugOutput.h@{dev/kernel/KernelKit/DebugOutput.h}}
+{\ttfamily \#include $<$Kernel\+Kit/\+Device\+Mgr.\+h$>$}\newline
+{\ttfamily \#include $<$Compiler\+Kit/\+Compiler\+Kit.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Own\+Ptr.\+h$>$}\newline
+{\ttfamily \#include $<$New\+Kit/\+Stream.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4}{Ne\+OS\+::\+NE\+\_\+\+DEVICE$<$ const Char \texorpdfstring{$\ast$}{*} $>$}}
+\item 
+class \mbox{\hyperlink{class_ne_o_s_1_1_debugger_port_header}{Ne\+OS\+::\+Debugger\+Port\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s}{Ne\+OS}}
+\begin{DoxyCompactList}\small\item\em The {\bfseries{Kernel}} namespace. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ne_o_s_1_1_detail}{Ne\+OS\+::\+Detail}}
+\begin{DoxyCompactList}\small\item\em Implementation details namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_aa96cecb26744928a8fc336f1b87bd9a5}{k\+Debug\+Max\+Ports}}~56
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_a28c52b60d0951f3927622b22f12e1da4}{k\+Debug\+Unbound\+Port}}~0x0\+FEED
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_aa2bcae557165602a54ba2ab8930b4820}{k\+Debug\+Mag0}}~\textquotesingle{}Z\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_a7a83401c4ff1a6662a2e65495ffcf505}{k\+Debug\+Mag1}}~\textquotesingle{}D\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_a4044f2e2470238f2037c304c89a99958}{k\+Debug\+Mag2}}~\textquotesingle{}B\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_ace5ca2976b880cad64f54c7e126de9cc}{k\+Debug\+Mag3}}~\textquotesingle{}G\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_ae6fd1fa71e265706b43f340ba9b94744}{k\+Debug\+Source\+File}}~0
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_aa034e77f3730c1eb70b64d7b927770a2}{k\+Debug\+Line}}~33
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_a66c7aeab9a588349f44f547869329ff5}{k\+Debug\+Team}}~43
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_ad5acb9641843f1e767f5933c22dc162d}{k\+Debug\+EOP}}~49
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_a18983745cdbaca69cc1eb2cb33f02ada}{kout}}~Ne\+OS\+::\+Terminal\+Device\+::\+The() $<$$<$ "{}\mbox{[}Ne\+Kernel\mbox{]} \texorpdfstring{$\ast$}{*}"{} $<$$<$ \+\_\+\+\_\+\+FILE\+\_\+\+\_\+ $<$$<$ "{}\texorpdfstring{$\ast$}{*}\+: "{}
+\item 
+\#define \mbox{\hyperlink{_debug_output_8h_a173df498dc6af1f7e50f8b1cd465d59a}{kendl}}~Ne\+OS\+::\+Terminal\+Device\+::\+The() $<$$<$ \mbox{\hyperlink{namespace_ne_o_s_adceb6f36a9d805fe9a5ba09b502a926f}{Ne\+OS\+::end\+\_\+line}}()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \mbox{\hyperlink{namespace_ne_o_s_a3c809e12b287e55d627a34722cdd00bd}{Ne\+OS\+::rt\+\_\+debug\+\_\+type}}\mbox{[}\mbox{\hyperlink{namespace_ne_o_s_a4b38b2e0b8565c7874c1bf61a6445292}{k\+Debug\+Type\+Len}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_adceb6f36a9d805fe9a5ba09b502a926f}{Ne\+OS\+::end\+\_\+line}} ()
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_aa366bb84db2934c0fd72161da7d9723a}{Ne\+OS\+::number}} (const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&x)
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_abc0690982b2737b69012b87d777df567}{Ne\+OS\+::hex\+\_\+number}} (const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&x)
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_ae9df6afd7b8a095e15dc9f9850d024cd}{Ne\+OS\+::carriage\+\_\+return}} ()
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_a579a4356fd1254bca857fdf8e8dff09e}{Ne\+OS\+::tabulate}} ()
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_a33027bfd4612472896325db9050943e9}{Ne\+OS\+::bell}} ()
+\begin{DoxyCompactList}\small\item\em emulate a terminal bell, like the VT100 does. \end{DoxyCompactList}\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_a109b99fdd516a11bdc8a0c9e2c7e29e2}{Ne\+OS\+::\+Detail\+::\+\_\+write\+\_\+number}} (const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&x, Terminal\+Device \&term)
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_1_1_detail_ae1832fe8238aa20220bc323e3f07563a}{Ne\+OS\+::\+Detail\+::\+\_\+write\+\_\+number\+\_\+hex}} (const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&x, Terminal\+Device \&term)
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_a83cd1791ed20c4365d7dcc08ea80ea21}{Ne\+OS\+::number}} (const \mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}x)
+\item 
+Terminal\+Device \mbox{\hyperlink{namespace_ne_o_s_a028852ca997bd35d3591ea2c467d986f}{Ne\+OS\+::get\+\_\+console\+\_\+in}} (\mbox{\hyperlink{namespace_ne_o_s_af96b578c23518d339d562bbab4efa72f}{Char}} \texorpdfstring{$\ast$}{*}buf)
+\item 
+Terminal\+Device \& \mbox{\hyperlink{namespace_ne_o_s_aed3297696a737bfa1a9af3f137f4471c}{Ne\+OS\+::operator$<$$<$}} (Terminal\+Device \&src, const \mbox{\hyperlink{namespace_ne_o_s_ada093c29aefef728f900e05a6fccec3d}{Long}} \&num)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{namespace_ne_o_s_a5bbd9eec89d9fb8e95178b14ce2fcafc}{SizeT}} \mbox{\hyperlink{namespace_ne_o_s_a4b38b2e0b8565c7874c1bf61a6445292}{Ne\+OS\+::k\+Debug\+Type\+Len}} = 256U
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_debug_output_8h_ad5acb9641843f1e767f5933c22dc162d}\label{_debug_output_8h_ad5acb9641843f1e767f5933c22dc162d} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugEOP@{kDebugEOP}}
+\index{kDebugEOP@{kDebugEOP}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugEOP}{kDebugEOP}}
+{\footnotesize\ttfamily \#define k\+Debug\+EOP~49}
+
+\Hypertarget{_debug_output_8h_aa034e77f3730c1eb70b64d7b927770a2}\label{_debug_output_8h_aa034e77f3730c1eb70b64d7b927770a2} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugLine@{kDebugLine}}
+\index{kDebugLine@{kDebugLine}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugLine}{kDebugLine}}
+{\footnotesize\ttfamily \#define k\+Debug\+Line~33}
+
+\Hypertarget{_debug_output_8h_aa2bcae557165602a54ba2ab8930b4820}\label{_debug_output_8h_aa2bcae557165602a54ba2ab8930b4820} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugMag0@{kDebugMag0}}
+\index{kDebugMag0@{kDebugMag0}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugMag0}{kDebugMag0}}
+{\footnotesize\ttfamily \#define k\+Debug\+Mag0~\textquotesingle{}Z\textquotesingle{}}
+
+\Hypertarget{_debug_output_8h_a7a83401c4ff1a6662a2e65495ffcf505}\label{_debug_output_8h_a7a83401c4ff1a6662a2e65495ffcf505} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugMag1@{kDebugMag1}}
+\index{kDebugMag1@{kDebugMag1}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugMag1}{kDebugMag1}}
+{\footnotesize\ttfamily \#define k\+Debug\+Mag1~\textquotesingle{}D\textquotesingle{}}
+
+\Hypertarget{_debug_output_8h_a4044f2e2470238f2037c304c89a99958}\label{_debug_output_8h_a4044f2e2470238f2037c304c89a99958} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugMag2@{kDebugMag2}}
+\index{kDebugMag2@{kDebugMag2}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugMag2}{kDebugMag2}}
+{\footnotesize\ttfamily \#define k\+Debug\+Mag2~\textquotesingle{}B\textquotesingle{}}
+
+\Hypertarget{_debug_output_8h_ace5ca2976b880cad64f54c7e126de9cc}\label{_debug_output_8h_ace5ca2976b880cad64f54c7e126de9cc} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugMag3@{kDebugMag3}}
+\index{kDebugMag3@{kDebugMag3}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugMag3}{kDebugMag3}}
+{\footnotesize\ttfamily \#define k\+Debug\+Mag3~\textquotesingle{}G\textquotesingle{}}
+
+\Hypertarget{_debug_output_8h_aa96cecb26744928a8fc336f1b87bd9a5}\label{_debug_output_8h_aa96cecb26744928a8fc336f1b87bd9a5} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugMaxPorts@{kDebugMaxPorts}}
+\index{kDebugMaxPorts@{kDebugMaxPorts}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugMaxPorts}{kDebugMaxPorts}}
+{\footnotesize\ttfamily \#define k\+Debug\+Max\+Ports~56}
+
+\Hypertarget{_debug_output_8h_ae6fd1fa71e265706b43f340ba9b94744}\label{_debug_output_8h_ae6fd1fa71e265706b43f340ba9b94744} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugSourceFile@{kDebugSourceFile}}
+\index{kDebugSourceFile@{kDebugSourceFile}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugSourceFile}{kDebugSourceFile}}
+{\footnotesize\ttfamily \#define k\+Debug\+Source\+File~0}
+
+\Hypertarget{_debug_output_8h_a66c7aeab9a588349f44f547869329ff5}\label{_debug_output_8h_a66c7aeab9a588349f44f547869329ff5} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugTeam@{kDebugTeam}}
+\index{kDebugTeam@{kDebugTeam}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugTeam}{kDebugTeam}}
+{\footnotesize\ttfamily \#define k\+Debug\+Team~43}
+
+\Hypertarget{_debug_output_8h_a28c52b60d0951f3927622b22f12e1da4}\label{_debug_output_8h_a28c52b60d0951f3927622b22f12e1da4} 
+\index{DebugOutput.h@{DebugOutput.h}!kDebugUnboundPort@{kDebugUnboundPort}}
+\index{kDebugUnboundPort@{kDebugUnboundPort}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kDebugUnboundPort}{kDebugUnboundPort}}
+{\footnotesize\ttfamily \#define k\+Debug\+Unbound\+Port~0x0\+FEED}
+
+\Hypertarget{_debug_output_8h_a173df498dc6af1f7e50f8b1cd465d59a}\label{_debug_output_8h_a173df498dc6af1f7e50f8b1cd465d59a} 
+\index{DebugOutput.h@{DebugOutput.h}!kendl@{kendl}}
+\index{kendl@{kendl}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kendl}{kendl}}
+{\footnotesize\ttfamily \#define kendl~Ne\+OS\+::\+Terminal\+Device\+::\+The() $<$$<$ \mbox{\hyperlink{namespace_ne_o_s_adceb6f36a9d805fe9a5ba09b502a926f}{Ne\+OS\+::end\+\_\+line}}()}
+
+\Hypertarget{_debug_output_8h_a18983745cdbaca69cc1eb2cb33f02ada}\label{_debug_output_8h_a18983745cdbaca69cc1eb2cb33f02ada} 
+\index{DebugOutput.h@{DebugOutput.h}!kout@{kout}}
+\index{kout@{kout}!DebugOutput.h@{DebugOutput.h}}
+\doxysubsubsection{\texorpdfstring{kout}{kout}}
+{\footnotesize\ttfamily \#define kout~Ne\+OS\+::\+Terminal\+Device\+::\+The() $<$$<$ "{}\mbox{[}Ne\+Kernel\mbox{]} \texorpdfstring{$\ast$}{*}"{} $<$$<$ \+\_\+\+\_\+\+FILE\+\_\+\+\_\+ $<$$<$ "{}\texorpdfstring{$\ast$}{*}\+: "{}}
+

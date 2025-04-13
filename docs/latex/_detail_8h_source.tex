@@ -1,0 +1,33 @@
+\doxysection{Detail.\+h}
+\hypertarget{_detail_8h_source}{}\label{_detail_8h_source}\index{dev/kernel/CompilerKit/Detail.h@{dev/kernel/CompilerKit/Detail.h}}
+\mbox{\hyperlink{_detail_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ Copyright\ (C)\ 2024-\/2025,\ Amlal\ EL\ Mahrouss,\ all\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifdef\ \_\_NEOSKRNL\_\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{kernel_2_new_kit_2_defines_8h}{NewKit/Defines.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ifdef\ \_\_NEOSKRNL\_\_}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ NE\_COPY\_DELETE(KLASS)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(const\ KLASS\&)\ =\ delete;\ \(\backslash\)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ KLASS(const\ KLASS\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ delete;}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ NE\_COPY\_DEFAULT(KLASS)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(const\ KLASS\&)\ =\ default;\ \(\backslash\)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ KLASS(const\ KLASS\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ default;}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ NE\_MOVE\_DELETE(KLASS)\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(KLASS\&\&)\ =\ delete;\ \(\backslash\)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ KLASS(KLASS\&\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ delete;}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ NE\_MOVE\_DEFAULT(KLASS)\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ KLASS\&\ operator=(KLASS\&\&)\ =\ default;\ \(\backslash\)}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\ \ \ \ KLASS(KLASS\&\&)\ \ \ \ \ \ \ \ \ \ \ \ =\ default;}}
+
+\end{DoxyCode}

@@ -91,13 +91,14 @@ $(document).ready(function(){initNavTree('_sys_chk_8cc.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">SysChk.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_boot_kit_8h_source.html">BootKit/BootKit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_f_b_mgr_8h_source.html">modules/CoreGfx/FBMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_text_mgr_8h_source.html">modules/CoreGfx/TextMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_core_gfx_8h_source.html">modules/CoreGfx/CoreGfx.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_text_gfx_8h_source.html">modules/CoreGfx/TextGfx.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_e_f_i_8h_source.html">FirmwareKit/EFI.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_a_p_i_8h_source.html">FirmwareKit/EFI/API.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_handover_8h_source.html">FirmwareKit/Handover.h</a>&gt;</code><br />
@@ -108,22 +109,42 @@ $(document).ready(function(){initNavTree('_sys_chk_8cc.html',''); initResizable(
 <code>#include &lt;<a class="el" href="dev_2kernel_2_new_kit_2_ref_8h_source.html">NewKit/Ref.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_boot_thread_8h_source.html">BootKit/BootThread.h</a>&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad16f9967352b47795f4b1d0d3f92a842" id="r_ad16f9967352b47795f4b1d0d3f92a842"><td class="memItemLeft" align="right" valign="top">#<a class="el" href="class_kernel_1_1_error_or.html">define</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_chk_8cc.html#ad16f9967352b47795f4b1d0d3f92a842">kMachineModel</a>&#160;&#160;&#160;&quot;Ne&quot;</td></tr>
+<tr class="separator:ad16f9967352b47795f4b1d0d3f92a842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad9aebf849a2dc039c484d4665e56722b" id="r_ad9aebf849a2dc039c484d4665e56722b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_ne_o_s.html#a91a19724952b6c6faf9b52f9efc935f7">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_chk_8cc.html#ad9aebf849a2dc039c484d4665e56722b">ModuleMain</a> (<a class="el" href="struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header.html">NeOS::HEL::BootInfoHeader</a> *handover)</td></tr>
-<tr class="separator:ad9aebf849a2dc039c484d4665e56722b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d3b3201995683585356f77ca4954ba" id="r_a17d3b3201995683585356f77ca4954ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_chk_8cc.html#a17d3b3201995683585356f77ca4954ba">SysChkModuleMain</a> (<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">Kernel::HEL::BootInfoHeader</a> *<a class="el" href="class_kernel_1_1_error_or.html">handover</a>)</td></tr>
+<tr class="separator:a17d3b3201995683585356f77ca4954ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ad9aebf849a2dc039c484d4665e56722b" name="ad9aebf849a2dc039c484d4665e56722b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9aebf849a2dc039c484d4665e56722b">&#9670;&#160;</a></span>ModuleMain()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ad16f9967352b47795f4b1d0d3f92a842" name="ad16f9967352b47795f4b1d0d3f92a842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16f9967352b47795f4b1d0d3f92a842">&#9670;&#160;</a></span>kMachineModel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_ne_o_s.html#a91a19724952b6c6faf9b52f9efc935f7">Int32</a> ModuleMain </td>
+          <td class="memname">#<a class="el" href="class_kernel_1_1_error_or.html">define</a> kMachineModel&#160;&#160;&#160;&quot;Ne&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a17d3b3201995683585356f77ca4954ba" name="a17d3b3201995683585356f77ca4954ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d3b3201995683585356f77ca4954ba">&#9670;&#160;</a></span>SysChkModuleMain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> SysChkModuleMain </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_ne_o_s_1_1_h_e_l_1_1_boot_info_header.html">NeOS::HEL::BootInfoHeader</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">Kernel::HEL::BootInfoHeader</a> *&#160;</td>
           <td class="paramname"><em>handover</em></td><td>)</td>
           <td></td>
         </tr>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsonstream_0',['JsonStream',['../namespace_ne_o_s.html#ab4c99ed27921b4a0baa3ef4911d67ee4',1,'NeOS']]]
+  ['jsonstream_0',['JsonStream',['../namespace_kernel.html#a6d73cf6ea17176924442b9667a018d91',1,'Kernel']]]
 ];
