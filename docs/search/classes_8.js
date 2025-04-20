@@ -15,7 +15,9 @@ var searchData=
   ['hbaprdtentry_12',['HbaPrdtEntry',['../struct_hba_prdt_entry.html',1,'']]],
   ['hefs_5fboot_5fnode_13',['HeFS_BOOT_NODE',['../struct_he_f_s___b_o_o_t___n_o_d_e.html',1,'']]],
   ['hefs_5findex_5fnode_14',['HeFS_INDEX_NODE',['../struct_he_f_s___i_n_d_e_x___n_o_d_e.html',1,'']]],
-  ['hpet_5fblock_15',['HPET_BLOCK',['../struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html',1,'Kernel::Detail']]],
-  ['hpetaddressstructure_16',['HPETAddressStructure',['../struct_kernel_1_1_h_p_e_t_address_structure.html',1,'Kernel']]],
-  ['hpetheader_17',['HPETHeader',['../struct_kernel_1_1_h_p_e_t_header.html',1,'Kernel']]]
+  ['hefs_5findex_5fnode_5fdirectory_15',['HeFS_INDEX_NODE_DIRECTORY',['../struct_he_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html',1,'']]],
+  ['hefsfilesystemparser_16',['HeFSFileSystemParser',['../class_kernel_1_1_he_f_s_file_system_parser.html',1,'Kernel']]],
+  ['hpet_5fblock_17',['HPET_BLOCK',['../struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html',1,'Kernel::Detail']]],
+  ['hpetaddressstructure_18',['HPETAddressStructure',['../struct_kernel_1_1_h_p_e_t_address_structure.html',1,'Kernel']]],
+  ['hpetheader_19',['HPETHeader',['../struct_kernel_1_1_h_p_e_t_header.html',1,'Kernel']]]
 ];

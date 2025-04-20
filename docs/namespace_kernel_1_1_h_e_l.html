@@ -105,7 +105,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a100228cda75aa614d41558b187a37713" id="r_a100228cda75aa614d41558b187a37713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">typedef</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_e_l.html#a100228cda75aa614d41558b187a37713">HandoverProc</a>) (<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">BootInfoHeader</a> *<a class="el" href="class_kernel_1_1_error_or.html">boot_info</a>)</td></tr>
+<tr class="memitem:a100228cda75aa614d41558b187a37713" id="r_a100228cda75aa614d41558b187a37713"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_e_l.html#a100228cda75aa614d41558b187a37713">HandoverProc</a>) (<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">BootInfoHeader</a> *boot_info)</td></tr>
 <tr class="memdesc:a100228cda75aa614d41558b187a37713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of bootloader main type.  <br /></td></tr>
 <tr class="separator:a100228cda75aa614d41558b187a37713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,9 +129,9 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aadf65d42b57fe48c065468f5454beb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The executable architecture enum.  <a href="namespace_kernel_1_1_h_e_l.html#aadf65d42b57fe48c065468f5454beb1f">More...</a><br /></td></tr>
 <tr class="separator:aadf65d42b57fe48c065468f5454beb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a7b6640cd0eea7780d72dc04f88a52" id="r_ae0a7b6640cd0eea7780d72dc04f88a52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel_1_1_h_e_l.html#ae0a7b6640cd0eea7780d72dc04f88a52a5bd2fafeac496e72c0232e47e95c5db5">kHandoverSpecificKind</a>
-, <a class="el" href="namespace_kernel_1_1_h_e_l.html#ae0a7b6640cd0eea7780d72dc04f88a52ac87ea5b8752dec753dc4f0a782954be3">kHandoverSpecificAttrib</a>
-, <a class="el" href="namespace_kernel_1_1_h_e_l.html#ae0a7b6640cd0eea7780d72dc04f88a52ae20be7d596b80f2df7e387afe7179f54">kHandoverSpecificMemoryEfi</a>
+<tr class="memitem:ae0a7b6640cd0eea7780d72dc04f88a52" id="r_ae0a7b6640cd0eea7780d72dc04f88a52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel_1_1_h_e_l.html#ae0a7b6640cd0eea7780d72dc04f88a52a0e42e73c3ad0c03190bcb6481e516e9e">kHandoverTableBS</a>
+, <a class="el" href="namespace_kernel_1_1_h_e_l.html#ae0a7b6640cd0eea7780d72dc04f88a52a965657e412bc88b5df50fbe94c3502b0">kHandoverTableST</a>
+, <a class="el" href="namespace_kernel_1_1_h_e_l.html#ae0a7b6640cd0eea7780d72dc04f88a52a8338bcddf40a8574f4fe921d27e29113">kHandoverTableCount</a>
  }</td></tr>
 <tr class="separator:ae0a7b6640cd0eea7780d72dc04f88a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -143,7 +143,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">typedef</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>(* Kernel::HEL::HandoverProc) (<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">BootInfoHeader</a> *<a class="el" href="class_kernel_1_1_error_or.html">boot_info</a>)</td>
+          <td class="memname">typedef <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>(* Kernel::HEL::HandoverProc) (<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">BootInfoHeader</a> *boot_info)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -160,7 +160,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">anonymous</a> <a class="el" href="class_kernel_1_1_error_or.html">enum</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,7 +183,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">anonymous</a> <a class="el" href="class_kernel_1_1_error_or.html">enum</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,14 +205,14 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">anonymous</a> <a class="el" href="class_kernel_1_1_error_or.html">enum</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae0a7b6640cd0eea7780d72dc04f88a52a5bd2fafeac496e72c0232e47e95c5db5" name="ae0a7b6640cd0eea7780d72dc04f88a52a5bd2fafeac496e72c0232e47e95c5db5"></a>kHandoverSpecificKind&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0a7b6640cd0eea7780d72dc04f88a52ac87ea5b8752dec753dc4f0a782954be3" name="ae0a7b6640cd0eea7780d72dc04f88a52ac87ea5b8752dec753dc4f0a782954be3"></a>kHandoverSpecificAttrib&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae0a7b6640cd0eea7780d72dc04f88a52ae20be7d596b80f2df7e387afe7179f54" name="ae0a7b6640cd0eea7780d72dc04f88a52ae20be7d596b80f2df7e387afe7179f54"></a>kHandoverSpecificMemoryEfi&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae0a7b6640cd0eea7780d72dc04f88a52a0e42e73c3ad0c03190bcb6481e516e9e" name="ae0a7b6640cd0eea7780d72dc04f88a52a0e42e73c3ad0c03190bcb6481e516e9e"></a>kHandoverTableBS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0a7b6640cd0eea7780d72dc04f88a52a965657e412bc88b5df50fbe94c3502b0" name="ae0a7b6640cd0eea7780d72dc04f88a52a965657e412bc88b5df50fbe94c3502b0"></a>kHandoverTableST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae0a7b6640cd0eea7780d72dc04f88a52a8338bcddf40a8574f4fe921d27e29113" name="ae0a7b6640cd0eea7780d72dc04f88a52a8338bcddf40a8574f4fe921d27e29113"></a>kHandoverTableCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

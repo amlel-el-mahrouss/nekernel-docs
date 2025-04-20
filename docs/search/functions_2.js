@@ -24,13 +24,14 @@ var searchData=
   ['bootdeviceata_21',['BootDeviceATA',['../class_boot_device_a_t_a.html#aa6e3f9517d7e825623a763b2959dc7f8',1,'BootDeviceATA']]],
   ['bootdevicesata_22',['BootDeviceSATA',['../class_boot_device_s_a_t_a.html#a2639824e8590566f98562979f445ea32',1,'BootDeviceSATA']]],
   ['bootfilereader_23',['bootfilereader',['../class_boot_1_1_boot_file_reader.html#a5ad86bb7e0509ba97e8d674f8941c80e',1,'Boot::BootFileReader::BootFileReader(const CharacterTypeUTF16 *path, EfiHandlePtr ImageHandle)'],['../class_boot_1_1_boot_file_reader.html#af3ae33e9869188a36da5044114c2cd30',1,'Boot::BootFileReader::BootFileReader(const BootFileReader &amp;)=default']]],
-  ['bootnet_5fread_5fudp_5fpacket_24',['bootnet_read_udp_packet',['../_boot_net_8cc.html#a90e82dee93bce607bcbfa35c501ba9fc',1,'BootNet.cc']]],
-  ['bootnetmodulemain_25',['BootNetModuleMain',['../_boot_net_8cc.html#a45c85ead274229095dc2018e25a54ae5',1,'BootNet.cc']]],
-  ['boottextwriter_26',['boottextwriter',['../class_boot_1_1_boot_text_writer.html#aa9e52c2f21d4426330430536c9b7dfb0',1,'Boot::BootTextWriter::BootTextWriter()=default'],['../class_boot_1_1_boot_text_writer.html#a6921b73b7596f68966d766f30244c624',1,'Boot::BootTextWriter::BootTextWriter(const BootTextWriter &amp;)=default']]],
-  ['bootthread_27',['bootthread',['../class_boot_1_1_boot_thread.html#aff5b0d5b16a81c2ccbeb85b54a100f9e',1,'Boot::BootThread::BootThread()=delete'],['../class_boot_1_1_boot_thread.html#a67c7514f626c173cd28f33a60150ad31',1,'Boot::BootThread::BootThread(Kernel::VoidPtr blob)'],['../class_boot_1_1_boot_thread.html#ab79cfaec1be5284d4efae834aa914ec4',1,'Boot::BootThread::BootThread(const BootThread &amp;)=default']]],
-  ['bsetmem_28',['bsetmem',['../namespace_boot.html#ae6d7733aaa334720015b4b8e71aa585a',1,'Boot::BSetMem(CharacterTypeUTF8 *src, const CharacterTypeUTF8 byte, const Kernel::SizeT len)'],['../namespace_boot.html#acc12c3d9687f353cf666c27afb6bef99',1,'Boot::BSetMem(CharacterTypeUTF16 *src, const CharacterTypeUTF16 byte, const Kernel::SizeT len)']]],
-  ['bstrlen_29',['BStrLen',['../namespace_boot.html#afba9c31094f3937a1f432887de8938b8',1,'Boot']]],
-  ['busy_30',['Busy',['../class_kernel_1_1_hardware_thread.html#afd983c7f5d5fec76856da890e8bbe3e0',1,'Kernel::HardwareThread']]],
-  ['buttons_5fto_5fname_31',['buttons_to_name',['../classpfd_1_1internal_1_1dialog.html#ac906c01d0365c13c9066cea857fd258a',1,'pfd::internal::dialog']]],
-  ['bytes_5fin_5fbits_32',['bytes_in_bits',['../namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec',1,'utl']]]
+  ['bootloadermain_24',['bootloadermain',['../_a_m_d64_2_boot_e_f_i_8cc.html#a37e6ce967aeda1abc60e79d486566d94',1,'BootloaderMain(EfiHandlePtr image_handle, EfiSystemTable *sys_table):&#160;BootEFI.cc'],['../_a_r_m64_2_boot_e_f_i_8cc.html#a37e6ce967aeda1abc60e79d486566d94',1,'BootloaderMain(EfiHandlePtr image_handle, EfiSystemTable *sys_table):&#160;BootEFI.cc']]],
+  ['bootnet_5fread_5fip_5fpacket_25',['bootnet_read_ip_packet',['../_boot_net_8cc.html#a05cd36e0f14110c64e792514e5951d25',1,'BootNet.cc']]],
+  ['bootnetmodulemain_26',['BootNetModuleMain',['../_boot_net_8cc.html#a45c85ead274229095dc2018e25a54ae5',1,'BootNet.cc']]],
+  ['boottextwriter_27',['boottextwriter',['../class_boot_1_1_boot_text_writer.html#aa9e52c2f21d4426330430536c9b7dfb0',1,'Boot::BootTextWriter::BootTextWriter()=default'],['../class_boot_1_1_boot_text_writer.html#a6921b73b7596f68966d766f30244c624',1,'Boot::BootTextWriter::BootTextWriter(const BootTextWriter &amp;)=default']]],
+  ['bootthread_28',['bootthread',['../class_boot_1_1_boot_thread.html#aff5b0d5b16a81c2ccbeb85b54a100f9e',1,'Boot::BootThread::BootThread()=delete'],['../class_boot_1_1_boot_thread.html#ab79cfaec1be5284d4efae834aa914ec4',1,'Boot::BootThread::BootThread(const BootThread &amp;)=default'],['../class_boot_1_1_boot_thread.html#a67c7514f626c173cd28f33a60150ad31',1,'Boot::BootThread::BootThread(Kernel::VoidPtr blob)']]],
+  ['bsetmem_29',['bsetmem',['../namespace_boot.html#acc12c3d9687f353cf666c27afb6bef99',1,'Boot::BSetMem(CharacterTypeUTF16 *src, const CharacterTypeUTF16 byte, const Kernel::SizeT len)'],['../namespace_boot.html#ae6d7733aaa334720015b4b8e71aa585a',1,'Boot::BSetMem(CharacterTypeUTF8 *src, const CharacterTypeUTF8 byte, const Kernel::SizeT len)']]],
+  ['bstrlen_30',['BStrLen',['../namespace_boot.html#afba9c31094f3937a1f432887de8938b8',1,'Boot']]],
+  ['busy_31',['Busy',['../class_kernel_1_1_hardware_thread.html#afd983c7f5d5fec76856da890e8bbe3e0',1,'Kernel::HardwareThread']]],
+  ['buttons_5fto_5fname_32',['buttons_to_name',['../classpfd_1_1internal_1_1dialog.html#ac906c01d0365c13c9066cea857fd258a',1,'pfd::internal::dialog']]],
+  ['bytes_5fin_5fbits_33',['bytes_in_bits',['../namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec',1,'utl']]]
 ];

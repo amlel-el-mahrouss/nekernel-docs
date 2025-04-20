@@ -16,5 +16,6 @@ var searchData=
   ['hosttype_13',['HostType',['../struct_kernel_1_1_i_m_b_c_i_host.html#aa5ba350cf59f74e563534b39dc8710a7',1,'Kernel::IMBCIHost']]],
   ['hour_14',['Hour',['../struct_efi_time.html#a1c31faf74a62d31e9f2482ad38e2a031',1,'EfiTime']]],
   ['hpet_5fnumber_15',['hpet_number',['../struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html#a6182d13428229b1757b407e880b2bd11',1,'Kernel::Detail::HPET_BLOCK']]],
-  ['hpetnumber_16',['HpetNumber',['../struct_kernel_1_1_h_p_e_t_header.html#a80ba95daac7ca341dfaacf43dfb348b7',1,'Kernel::HPETHeader']]]
+  ['hpetnumber_16',['HpetNumber',['../struct_kernel_1_1_h_p_e_t_header.html#a80ba95daac7ca341dfaacf43dfb348b7',1,'Kernel::HPETHeader']]],
+  ['hwaddresssize_17',['HwAddressSize',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html#abf033583bba4778bc352e61ab7018eb3',1,'EFI_SIMPLE_NETWORK_MODE']]]
 ];

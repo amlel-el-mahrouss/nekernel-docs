@@ -1,11 +1,11 @@
 var struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d =
 [
-    [ "setup_author", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a59ac6123bd91745fec33b686a4b1f8cd", null ],
-    [ "setup_check_page", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#ae78157451f8004bcb2c460e6e9ebe9fc", null ],
-    [ "setup_company", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a0de42564f3e43ee35ac6cdf4a4f98686", null ],
-    [ "setup_eula_page", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#ac2a2c0df11b5665f8c0754757b12f943", null ],
-    [ "setup_magic", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#ace7768853e2ecccc7257ed7b4da669e5", null ],
-    [ "setup_name", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#abd2d775d59aeee4165035ae1366947e6", null ],
-    [ "setup_pages", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a9b1a86d0c0eecb4f20e3233fca843c40", null ],
-    [ "setup_version", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#afeba14e798b2b802d2c33443e581f55a", null ]
+    [ "author", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a865e6e5d283feeec4f5793048ee1e1e9", null ],
+    [ "check_page", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#abf4006a8a59d48cfa70c620ab93790b0", null ],
+    [ "company", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a09b25084b375e6841c365492f98e8a78", null ],
+    [ "eula_page", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a375497e806f307a994078f0a915df0ca", null ],
+    [ "magic", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#ad2cdd451cc21a603432d6d9b68cd2a87", null ],
+    [ "name", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a20d0ef668ba69f05166ba281f5e0e8b2", null ],
+    [ "pages", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#ada1f537253d958eb52f767ef42aefe0a", null ],
+    [ "version", "struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a46acc2f0d0b74bab9b7277432181db39", null ]
 ];

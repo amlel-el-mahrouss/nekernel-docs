@@ -93,30 +93,212 @@ $(document).ready(function(){initNavTree('struct_he_f_s___i_n_d_e_x___n_o_d_e.ht
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_he_f_s___i_n_d_e_x___n_o_d_e-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">HeFS_INDEX_NODE Struct Reference</div></div>
+  <div class="headertitle"><div class="title">HeFS_INDEX_NODE Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>HeFS index node.  
+ <a href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_he_f_s_8h_source.html">HeFS.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a14d4c5604f800c8ac48b6f81f6f3cb14" id="r_a14d4c5604f800c8ac48b6f81f6f3cb14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a14d4c5604f800c8ac48b6f81f6f3cb14">fName</a> [<a class="el" href="_he_f_s_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465">kHeFSFileNameLen</a>]</td></tr>
-<tr class="separator:a14d4c5604f800c8ac48b6f81f6f3cb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0ec8b2ca4e5180e52c748f834a37ba" id="r_a8a0ec8b2ca4e5180e52c748f834a37ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2c6ff14dd8a82831d54d27370d39c5e1">Kernel::Utf16Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a8a0ec8b2ca4e5180e52c748f834a37ba">fName</a> [<a class="el" href="_he_f_s_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465">kHeFSFileNameLen</a>]</td></tr>
+<tr class="separator:a8a0ec8b2ca4e5180e52c748f834a37ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f04f7bd72dbc480defab18a033644a" id="r_a96f04f7bd72dbc480defab18a033644a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a96f04f7bd72dbc480defab18a033644a">fFlags</a></td></tr>
+<tr class="memdesc:a96f04f7bd72dbc480defab18a033644a"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name.  <br /></td></tr>
 <tr class="separator:a96f04f7bd72dbc480defab18a033644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a139f9b370833c2018ac0798fae653949" id="r_a139f9b370833c2018ac0798fae653949"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">Kernel::UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a139f9b370833c2018ac0798fae653949">fKind</a></td></tr>
+<tr class="memdesc:a139f9b370833c2018ac0798fae653949"><td class="mdescLeft">&#160;</td><td class="mdescRight">File flags.  <br /></td></tr>
 <tr class="separator:a139f9b370833c2018ac0798fae653949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3d24647b51cb0695c2a4102a224609d" id="r_af3d24647b51cb0695c2a4102a224609d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#af3d24647b51cb0695c2a4102a224609d">fSize</a></td></tr>
+<tr class="memdesc:af3d24647b51cb0695c2a4102a224609d"><td class="mdescLeft">&#160;</td><td class="mdescRight">File kind. (Regular, Directory, Block, Character, FIFO, Socket, Symbolic Link, Unknown).  <br /></td></tr>
 <tr class="separator:af3d24647b51cb0695c2a4102a224609d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e4d793b595a1cccb54349cc30352dc" id="r_ad6e4d793b595a1cccb54349cc30352dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#ad6e4d793b595a1cccb54349cc30352dc">fFirstINode</a></td></tr>
-<tr class="separator:ad6e4d793b595a1cccb54349cc30352dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc41d26e5fec409888d94b11e32450a3" id="r_afc41d26e5fec409888d94b11e32450a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#afc41d26e5fec409888d94b11e32450a3">fLastINode</a></td></tr>
-<tr class="separator:afc41d26e5fec409888d94b11e32450a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252cb23f664e8e06c18b92fad6fd66d7" id="r_a252cb23f664e8e06c18b92fad6fd66d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a252cb23f664e8e06c18b92fad6fd66d7">fChecksum</a></td></tr>
+<tr class="memdesc:a252cb23f664e8e06c18b92fad6fd66d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">File size.  <br /></td></tr>
 <tr class="separator:a252cb23f664e8e06c18b92fad6fd66d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b1d02a9d027fdc096b57f4ebc47bb4" id="r_a35b1d02a9d027fdc096b57f4ebc47bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a35b1d02a9d027fdc096b57f4ebc47bb4">fRecoverChecksum</a></td></tr>
+<tr class="separator:a35b1d02a9d027fdc096b57f4ebc47bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61eed4b927855f7df10a4ccde0cb9e09" id="r_a61eed4b927855f7df10a4ccde0cb9e09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a61eed4b927855f7df10a4ccde0cb9e09">fBlockChecksum</a></td></tr>
+<tr class="separator:a61eed4b927855f7df10a4ccde0cb9e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d10154efa4b02e1924a2876ef5bbeef" id="r_a9d10154efa4b02e1924a2876ef5bbeef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a9d10154efa4b02e1924a2876ef5bbeef">fLinkChecksum</a></td></tr>
+<tr class="separator:a9d10154efa4b02e1924a2876ef5bbeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3acb2dd6e730f9174fb19dfef25129" id="r_a8a3acb2dd6e730f9174fb19dfef25129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a8a3acb2dd6e730f9174fb19dfef25129">fCreated</a></td></tr>
+<tr class="memdesc:a8a3acb2dd6e730f9174fb19dfef25129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checksum of the file, recovery checksum, block checksum, link checksum.  <br /></td></tr>
+<tr class="separator:a8a3acb2dd6e730f9174fb19dfef25129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fce7445ffccb9d7bf472fc0987a9a1" id="r_a56fce7445ffccb9d7bf472fc0987a9a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a56fce7445ffccb9d7bf472fc0987a9a1">fAccessed</a></td></tr>
+<tr class="separator:a56fce7445ffccb9d7bf472fc0987a9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8927c923c25dd5f3279d3c1b79f2947" id="r_aa8927c923c25dd5f3279d3c1b79f2947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#aa8927c923c25dd5f3279d3c1b79f2947">fModified</a></td></tr>
+<tr class="separator:aa8927c923c25dd5f3279d3c1b79f2947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c500ca1e1112621dd27dc6d5ad1294f" id="r_a1c500ca1e1112621dd27dc6d5ad1294f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a1c500ca1e1112621dd27dc6d5ad1294f">fDeleted</a></td></tr>
+<tr class="separator:a1c500ca1e1112621dd27dc6d5ad1294f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5795979cef39a05661d2aa207429759" id="r_af5795979cef39a05661d2aa207429759"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#af5795979cef39a05661d2aa207429759">fUID</a></td></tr>
+<tr class="memdesc:af5795979cef39a05661d2aa207429759"><td class="mdescLeft">&#160;</td><td class="mdescRight">File timestamps.  <br /></td></tr>
+<tr class="separator:af5795979cef39a05661d2aa207429759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0a6103d57eafb719b4b82fe77e4627" id="r_acd0a6103d57eafb719b4b82fe77e4627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#acd0a6103d57eafb719b4b82fe77e4627">fGID</a></td></tr>
+<tr class="separator:acd0a6103d57eafb719b4b82fe77e4627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59606388ce2ea537504d6d6f145dae6" id="r_ae59606388ce2ea537504d6d6f145dae6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#ae59606388ce2ea537504d6d6f145dae6">fMode</a></td></tr>
+<tr class="memdesc:ae59606388ce2ea537504d6d6f145dae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">User ID and Group ID of the file.  <br /></td></tr>
+<tr class="separator:ae59606388ce2ea537504d6d6f145dae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7b35afa9bc24d9cc9aaff0488d39d1" id="r_a4b7b35afa9bc24d9cc9aaff0488d39d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a4b7b35afa9bc24d9cc9aaff0488d39d1">fBlockLinkStart</a> [<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td></tr>
+<tr class="memdesc:a4b7b35afa9bc24d9cc9aaff0488d39d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">File mode. (read, write, execute, etc).  <br /></td></tr>
+<tr class="separator:a4b7b35afa9bc24d9cc9aaff0488d39d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa916e2951b5f4f3dc8f856af50cd0628" id="r_aa916e2951b5f4f3dc8f856af50cd0628"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#aa916e2951b5f4f3dc8f856af50cd0628">fBlockLinkEnd</a> [<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td></tr>
+<tr class="memdesc:aa916e2951b5f4f3dc8f856af50cd0628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start of the block link.  <br /></td></tr>
+<tr class="separator:aa916e2951b5f4f3dc8f856af50cd0628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab311ad00c486e8cd2e17cf676cb7f20e" id="r_ab311ad00c486e8cd2e17cf676cb7f20e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#ab311ad00c486e8cd2e17cf676cb7f20e">fBlockStart</a> [<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td></tr>
+<tr class="memdesc:ab311ad00c486e8cd2e17cf676cb7f20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of the block link.  <br /></td></tr>
+<tr class="separator:ab311ad00c486e8cd2e17cf676cb7f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22ed462ae1b92e2532ec5deab3d5563" id="r_aa22ed462ae1b92e2532ec5deab3d5563"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#aa22ed462ae1b92e2532ec5deab3d5563">fBlockEnd</a> [<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td></tr>
+<tr class="memdesc:aa22ed462ae1b92e2532ec5deab3d5563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start of the block.  <br /></td></tr>
+<tr class="separator:aa22ed462ae1b92e2532ec5deab3d5563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4c5ae633d174cea6002f4d026fe390" id="r_afa4c5ae633d174cea6002f4d026fe390"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#afa4c5ae633d174cea6002f4d026fe390">fBlockRecoveryStart</a> [<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td></tr>
+<tr class="memdesc:afa4c5ae633d174cea6002f4d026fe390"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of the block.  <br /></td></tr>
+<tr class="separator:afa4c5ae633d174cea6002f4d026fe390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074d52d7506426989a5e53432d81a4d2" id="r_a074d52d7506426989a5e53432d81a4d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a074d52d7506426989a5e53432d81a4d2">fBlockRecoveryEnd</a> [<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td></tr>
+<tr class="memdesc:a074d52d7506426989a5e53432d81a4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start of the block recovery.  <br /></td></tr>
+<tr class="separator:a074d52d7506426989a5e53432d81a4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73db06c52c72b29ae4e1428050a15995" id="r_a73db06c52c72b29ae4e1428050a15995"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a73db06c52c72b29ae4e1428050a15995">fNext</a></td></tr>
+<tr class="memdesc:a73db06c52c72b29ae4e1428050a15995"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of the block recovery.  <br /></td></tr>
+<tr class="separator:a73db06c52c72b29ae4e1428050a15995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125d98ae81fc5bdaefaa102c322bcb0e" id="r_a125d98ae81fc5bdaefaa102c322bcb0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a125d98ae81fc5bdaefaa102c322bcb0e">fPrev</a></td></tr>
+<tr class="separator:a125d98ae81fc5bdaefaa102c322bcb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6131a83ca734f43d53e79e38d4e497b" id="r_aa6131a83ca734f43d53e79e38d4e497b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#aa6131a83ca734f43d53e79e38d4e497b">fChild</a></td></tr>
+<tr class="separator:aa6131a83ca734f43d53e79e38d4e497b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5074e93667cc7b6f43132d8aa3450158" id="r_a5074e93667cc7b6f43132d8aa3450158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_he_f_s___i_n_d_e_x___n_o_d_e.html#a5074e93667cc7b6f43132d8aa3450158">fParent</a></td></tr>
+<tr class="separator:a5074e93667cc7b6f43132d8aa3450158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>HeFS index node. </p>
+<p>This structure is used to store the file information of a file. </p><dl class="section note"><dt>Note</dt><dd>The index node is a special type of INode that contains the file information. </dd>
+<dd>
+The index node is used to store the file information of a file. </dd></dl>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a56fce7445ffccb9d7bf472fc0987a9a1" name="a56fce7445ffccb9d7bf472fc0987a9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56fce7445ffccb9d7bf472fc0987a9a1">&#9670;&#160;</a></span>fAccessed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a> HeFS_INDEX_NODE::fAccessed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61eed4b927855f7df10a4ccde0cb9e09" name="a61eed4b927855f7df10a4ccde0cb9e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61eed4b927855f7df10a4ccde0cb9e09">&#9670;&#160;</a></span>fBlockChecksum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HeFS_INDEX_NODE::fBlockChecksum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa22ed462ae1b92e2532ec5deab3d5563" name="aa22ed462ae1b92e2532ec5deab3d5563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa22ed462ae1b92e2532ec5deab3d5563">&#9670;&#160;</a></span>fBlockEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HeFS_INDEX_NODE::fBlockEnd[<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start of the block. </p>
+
+</div>
+</div>
+<a id="aa916e2951b5f4f3dc8f856af50cd0628" name="aa916e2951b5f4f3dc8f856af50cd0628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa916e2951b5f4f3dc8f856af50cd0628">&#9670;&#160;</a></span>fBlockLinkEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HeFS_INDEX_NODE::fBlockLinkEnd[<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start of the block link. </p>
+
+</div>
+</div>
+<a id="a4b7b35afa9bc24d9cc9aaff0488d39d1" name="a4b7b35afa9bc24d9cc9aaff0488d39d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7b35afa9bc24d9cc9aaff0488d39d1">&#9670;&#160;</a></span>fBlockLinkStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HeFS_INDEX_NODE::fBlockLinkStart[<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File mode. (read, write, execute, etc). </p>
+
+</div>
+</div>
+<a id="a074d52d7506426989a5e53432d81a4d2" name="a074d52d7506426989a5e53432d81a4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074d52d7506426989a5e53432d81a4d2">&#9670;&#160;</a></span>fBlockRecoveryEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HeFS_INDEX_NODE::fBlockRecoveryEnd[<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start of the block recovery. </p>
+
+</div>
+</div>
+<a id="afa4c5ae633d174cea6002f4d026fe390" name="afa4c5ae633d174cea6002f4d026fe390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4c5ae633d174cea6002f4d026fe390">&#9670;&#160;</a></span>fBlockRecoveryStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HeFS_INDEX_NODE::fBlockRecoveryStart[<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End of the block. </p>
+
+</div>
+</div>
+<a id="ab311ad00c486e8cd2e17cf676cb7f20e" name="ab311ad00c486e8cd2e17cf676cb7f20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab311ad00c486e8cd2e17cf676cb7f20e">&#9670;&#160;</a></span>fBlockStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HeFS_INDEX_NODE::fBlockStart[<a class="el" href="_he_f_s_8h.html#a905e0d11e9760e74d4d9080990f2e3c4">kHeFSBlockCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End of the block link. </p>
+
+</div>
+</div>
 <a id="a252cb23f664e8e06c18b92fad6fd66d7" name="a252cb23f664e8e06c18b92fad6fd66d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a252cb23f664e8e06c18b92fad6fd66d7">&#9670;&#160;</a></span>fChecksum</h2>
 
@@ -129,16 +311,48 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>File size. </p>
+
 </div>
 </div>
-<a id="ad6e4d793b595a1cccb54349cc30352dc" name="ad6e4d793b595a1cccb54349cc30352dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e4d793b595a1cccb54349cc30352dc">&#9670;&#160;</a></span>fFirstINode</h2>
+<a id="aa6131a83ca734f43d53e79e38d4e497b" name="aa6131a83ca734f43d53e79e38d4e497b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6131a83ca734f43d53e79e38d4e497b">&#9670;&#160;</a></span>fChild</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a> HeFS_INDEX_NODE::fFirstINode</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a> HeFS_INDEX_NODE::fChild</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a3acb2dd6e730f9174fb19dfef25129" name="a8a3acb2dd6e730f9174fb19dfef25129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3acb2dd6e730f9174fb19dfef25129">&#9670;&#160;</a></span>fCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a> HeFS_INDEX_NODE::fCreated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checksum of the file, recovery checksum, block checksum, link checksum. </p>
+
+</div>
+</div>
+<a id="a1c500ca1e1112621dd27dc6d5ad1294f" name="a1c500ca1e1112621dd27dc6d5ad1294f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c500ca1e1112621dd27dc6d5ad1294f">&#9670;&#160;</a></span>fDeleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a> HeFS_INDEX_NODE::fDeleted</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,6 +371,22 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>File name. </p>
+
+</div>
+</div>
+<a id="acd0a6103d57eafb719b4b82fe77e4627" name="acd0a6103d57eafb719b4b82fe77e4627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0a6103d57eafb719b4b82fe77e4627">&#9670;&#160;</a></span>fGID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HeFS_INDEX_NODE::fGID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a139f9b370833c2018ac0798fae653949" name="a139f9b370833c2018ac0798fae653949"></a>
@@ -171,30 +401,120 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>File flags. </p>
+
 </div>
 </div>
-<a id="afc41d26e5fec409888d94b11e32450a3" name="afc41d26e5fec409888d94b11e32450a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc41d26e5fec409888d94b11e32450a3">&#9670;&#160;</a></span>fLastINode</h2>
+<a id="a9d10154efa4b02e1924a2876ef5bbeef" name="a9d10154efa4b02e1924a2876ef5bbeef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d10154efa4b02e1924a2876ef5bbeef">&#9670;&#160;</a></span>fLinkChecksum</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a> HeFS_INDEX_NODE::fLastINode</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HeFS_INDEX_NODE::fLinkChecksum</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a14d4c5604f800c8ac48b6f81f6f3cb14" name="a14d4c5604f800c8ac48b6f81f6f3cb14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14d4c5604f800c8ac48b6f81f6f3cb14">&#9670;&#160;</a></span>fName</h2>
+<a id="ae59606388ce2ea537504d6d6f145dae6" name="ae59606388ce2ea537504d6d6f145dae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59606388ce2ea537504d6d6f145dae6">&#9670;&#160;</a></span>fMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> HeFS_INDEX_NODE::fName[<a class="el" href="_he_f_s_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465">kHeFSFileNameLen</a>]</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HeFS_INDEX_NODE::fMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User ID and Group ID of the file. </p>
+
+</div>
+</div>
+<a id="aa8927c923c25dd5f3279d3c1b79f2947" name="aa8927c923c25dd5f3279d3c1b79f2947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8927c923c25dd5f3279d3c1b79f2947">&#9670;&#160;</a></span>fModified</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a> HeFS_INDEX_NODE::fModified</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a0ec8b2ca4e5180e52c748f834a37ba" name="a8a0ec8b2ca4e5180e52c748f834a37ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0ec8b2ca4e5180e52c748f834a37ba">&#9670;&#160;</a></span>fName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a2c6ff14dd8a82831d54d27370d39c5e1">Kernel::Utf16Char</a> HeFS_INDEX_NODE::fName[<a class="el" href="_he_f_s_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465">kHeFSFileNameLen</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73db06c52c72b29ae4e1428050a15995" name="a73db06c52c72b29ae4e1428050a15995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73db06c52c72b29ae4e1428050a15995">&#9670;&#160;</a></span>fNext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a> HeFS_INDEX_NODE::fNext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End of the block recovery. </p>
+
+</div>
+</div>
+<a id="a5074e93667cc7b6f43132d8aa3450158" name="a5074e93667cc7b6f43132d8aa3450158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5074e93667cc7b6f43132d8aa3450158">&#9670;&#160;</a></span>fParent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a> HeFS_INDEX_NODE::fParent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a125d98ae81fc5bdaefaa102c322bcb0e" name="a125d98ae81fc5bdaefaa102c322bcb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125d98ae81fc5bdaefaa102c322bcb0e">&#9670;&#160;</a></span>fPrev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Kernel::Lba</a> HeFS_INDEX_NODE::fPrev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35b1d02a9d027fdc096b57f4ebc47bb4" name="a35b1d02a9d027fdc096b57f4ebc47bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b1d02a9d027fdc096b57f4ebc47bb4">&#9670;&#160;</a></span>fRecoverChecksum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HeFS_INDEX_NODE::fRecoverChecksum</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -212,6 +532,24 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>File kind. (Regular, Directory, Block, Character, FIFO, Socket, Symbolic Link, Unknown). </p>
+
+</div>
+</div>
+<a id="af5795979cef39a05661d2aa207429759" name="af5795979cef39a05661d2aa207429759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5795979cef39a05661d2aa207429759">&#9670;&#160;</a></span>fUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HeFS_INDEX_NODE::fUID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File timestamps. </p>
 
 </div>
 </div>

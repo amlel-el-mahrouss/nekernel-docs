@@ -9,6 +9,8 @@ var struct_kernel_1_1_h_e_l_1_1_boot_info_header =
     [ "f_GOP", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#a1d031a520825ce6e7596f61ca1ef57c0", null ],
     [ "f_HardwareTables", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#abd33665659a4905dfe917df35b5e3c09", null ],
     [ "f_Height", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#a71c28c7c9946738815e626bf9c589319", null ],
+    [ "f_ImageHandle", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#a1b37bd1721bb1dfc841323fde4e9b7cb", null ],
+    [ "f_ImageKey", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#a03e7e7270927cffb94996f7de6e73bfd", null ],
     [ "f_KernelImage", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#a89851dc1f6161a58f6f96b82a0bc7f15", null ],
     [ "f_KernelSz", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#a671087117b7a95b3b304383e48c1c5d5", null ],
     [ "f_Magic", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#acb5cfe03a7d4cb66310156202c6f6621", null ],

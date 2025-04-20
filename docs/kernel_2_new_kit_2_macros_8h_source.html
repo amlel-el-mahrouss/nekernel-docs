@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('kernel_2_new_kit_2_macros_8h_source.ht
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469">  122</a></span><span class="preprocessor">#define NE_UNUSED(X) ((Kernel::Void)X)</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#ifndef RGB</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54">  125</a></span><span class="preprocessor">#define RGB(R, G, B) (Kernel::UInt32)(R | G &lt;&lt; 0x8 | B &lt;&lt; 0x10)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="kernel_2_new_kit_2_macros_8h.html#a52d6f67c629ccece695186d3ccceba54">  125</a></span><span class="preprocessor">#define RGB(R, G, B) ((Kernel::UInt32)((0xFF &lt;&lt; 24) | ((R) &lt;&lt; 16) | ((G) &lt;&lt; 8) | (B)))</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif </span><span class="comment">// !RGB</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#ifdef __NE_AMD64__</span></div>

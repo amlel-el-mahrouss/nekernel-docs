@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_ne_f_s_8h.html',''); initResizable();
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_e_f_s___c_a_t_a_l_o_g___s_t_r_u_c_t.html">NEFS_CATALOG_STRUCT</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Catalog type.  <a href="struct_n_e_f_s___c_a_t_a_l_o_g___s_t_r_u_c_t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Catalog record type.  <a href="struct_n_e_f_s___c_a_t_a_l_o_g___s_t_r_u_c_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t.html">NEFS_FORK_STRUCT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fork type, contains a data page.  <a href="struct_n_e_f_s___f_o_r_k___s_t_r_u_c_t.html#details">More...</a><br /></td></tr>
@@ -258,45 +258,49 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a05589fbab0657f08285ebdfe93f5ec9e" id="r_a05589fbab0657f08285ebdfe93f5ec9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea749dd6d76b68f5502be64aba13b0e0c0">kNeFSHardDrive</a> = 0xC0
-, <a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea05e30f37a85f331b7d05d3bc0e9991b6">kNeFSSolidStateDrive</a> = 0xC1
-, <a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9eaff308748bccdd9e9512d1af0749da519">kNeFSOpticalDrive</a> = 0x0C
-, <a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea17c8d4f70d6135ae016101417c6fa3fa">kNeFSMassStorageDevice</a> = 0xCC
+<tr class="memitem:aaf105ae5beaca1dee30ae54530691fce" id="r_aaf105ae5beaca1dee30ae54530691fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fcea749dd6d76b68f5502be64aba13b0e0c0">kNeFSHardDrive</a> = 0xC0
+, <a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fcea05e30f37a85f331b7d05d3bc0e9991b6">kNeFSSolidStateDrive</a> = 0xC1
+, <a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fceaff308748bccdd9e9512d1af0749da519">kNeFSOpticalDrive</a> = 0x0C
+, <a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fcea17c8d4f70d6135ae016101417c6fa3fa">kNeFSMassStorageDevice</a> = 0xCC
 , <br />
-&#160;&#160;<a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9eacab16a01a9fc2c94d9a0450dbdcf0c85">kNeFSScsiDrive</a> = 0xC4
-, <a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea9be166fde8cd3222224d583955258231">kNeFSFlashDrive</a> = 0xC6
-, <a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9eaa9f5765d353c8ad72e8a4daf7ebebf0f">kNeFSUnknown</a> = 0xFF
-, <a class="el" href="_ne_f_s_8h.html#a05589fbab0657f08285ebdfe93f5ec9eae28c5f5fbd276382aa3927cb79f709f8">kNeFSDriveCount</a> = 7
+&#160;&#160;<a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fceacab16a01a9fc2c94d9a0450dbdcf0c85">kNeFSScsiDrive</a> = 0xC4
+, <a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fcea9be166fde8cd3222224d583955258231">kNeFSFlashDrive</a> = 0xC6
+, <a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fceaa9f5765d353c8ad72e8a4daf7ebebf0f">kNeFSUnknown</a> = 0xFF
+, <a class="el" href="_ne_f_s_8h.html#aaf105ae5beaca1dee30ae54530691fceae28c5f5fbd276382aa3927cb79f709f8">kNeFSDriveCount</a> = 7
 <br />
  }</td></tr>
-<tr class="separator:a05589fbab0657f08285ebdfe93f5ec9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16af7b253440dadd46a80a4b9fddba4d" id="r_a16af7b253440dadd46a80a4b9fddba4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="_ne_f_s_8h.html#a16af7b253440dadd46a80a4b9fddba4dab0d4a3855ba33438d25fecf25f70171b">kNeFSStatusUnlocked</a> = 0x18
-, <a class="el" href="_ne_f_s_8h.html#a16af7b253440dadd46a80a4b9fddba4da5708a145bca95639f47f29b4299b97b3">kNeFSStatusLocked</a>
-, <a class="el" href="_ne_f_s_8h.html#a16af7b253440dadd46a80a4b9fddba4da34bc8e801039a72304ac3bc229a19077">kNeFSStatusError</a>
-, <a class="el" href="_ne_f_s_8h.html#a16af7b253440dadd46a80a4b9fddba4da5cf8155fae50a6dd868fa0db4c531d10">kNeFSStatusInvalid</a>
- }</td></tr>
-<tr class="separator:a16af7b253440dadd46a80a4b9fddba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8584337eb7cf9a6d0ee0c1d1a57d4a37" id="r_a8584337eb7cf9a6d0ee0c1d1a57d4a37"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a8584337eb7cf9a6d0ee0c1d1a57d4a37af6b7d4d0fe77ff04165a2afa27f60856">Kernel::kNeFSSubDriveA</a>
-, <a class="el" href="namespace_kernel.html#a8584337eb7cf9a6d0ee0c1d1a57d4a37abffb83613db295a69302c5cd4d9c49a6">Kernel::kNeFSSubDriveB</a>
-, <a class="el" href="namespace_kernel.html#a8584337eb7cf9a6d0ee0c1d1a57d4a37aab5eb2f8f1d04febe7ec2de462ca91d2">Kernel::kNeFSSubDriveC</a>
-, <a class="el" href="namespace_kernel.html#a8584337eb7cf9a6d0ee0c1d1a57d4a37ac1fe2864c64da327950a9a883122d40a">Kernel::kNeFSSubDriveD</a>
+<tr class="separator:aaf105ae5beaca1dee30ae54530691fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80155586fa275b28773c9b203f52caba" id="r_a80155586fa275b28773c9b203f52caba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="_ne_f_s_8h.html#a80155586fa275b28773c9b203f52cabaab0d4a3855ba33438d25fecf25f70171b">kNeFSStatusUnlocked</a> = 0x18
+, <a class="el" href="_ne_f_s_8h.html#a80155586fa275b28773c9b203f52cabaa5708a145bca95639f47f29b4299b97b3">kNeFSStatusLocked</a>
+, <a class="el" href="_ne_f_s_8h.html#a80155586fa275b28773c9b203f52cabaa34bc8e801039a72304ac3bc229a19077">kNeFSStatusError</a>
+, <a class="el" href="_ne_f_s_8h.html#a80155586fa275b28773c9b203f52cabaa5cf8155fae50a6dd868fa0db4c531d10">kNeFSStatusInvalid</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a8584337eb7cf9a6d0ee0c1d1a57d4a37a7cadc2907eacf7ac967bf854cb0d4441">Kernel::kNeFSSubDriveInvalid</a>
-, <a class="el" href="namespace_kernel.html#a8584337eb7cf9a6d0ee0c1d1a57d4a37a3f90086151f389dd800e86c9d7b5947a">Kernel::kNeFSSubDriveCount</a>
+&#160;&#160;<a class="el" href="_ne_f_s_8h.html#a80155586fa275b28773c9b203f52cabaaaf8e6e07833e3ffb1697a11ada59ec4f">kNeFSStatusCount</a>
 <br />
  }</td></tr>
-<tr class="separator:a8584337eb7cf9a6d0ee0c1d1a57d4a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1779e647f961ea6459120a77aa0c775d" id="r_a1779e647f961ea6459120a77aa0c775d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a1779e647f961ea6459120a77aa0c775da9e42c1e446536b33e11e06b24e20ae04">Kernel::kNeFSRsrcForkKind</a> = 0
-, <a class="el" href="namespace_kernel.html#a1779e647f961ea6459120a77aa0c775da162595e53997ea0666e42406f91e8f09">Kernel::kNeFSDataForkKind</a> = 1
+<tr class="separator:a80155586fa275b28773c9b203f52caba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c36ab2880e2b201b886dc98e7e2c5fc" id="r_a5c36ab2880e2b201b886dc98e7e2c5fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcaf6b7d4d0fe77ff04165a2afa27f60856">Kernel::kNeFSSubDriveA</a>
+, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcabffb83613db295a69302c5cd4d9c49a6">Kernel::kNeFSSubDriveB</a>
+, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcaab5eb2f8f1d04febe7ec2de462ca91d2">Kernel::kNeFSSubDriveC</a>
+, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcac1fe2864c64da327950a9a883122d40a">Kernel::kNeFSSubDriveD</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fca7cadc2907eacf7ac967bf854cb0d4441">Kernel::kNeFSSubDriveInvalid</a>
+, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fca3f90086151f389dd800e86c9d7b5947a">Kernel::kNeFSSubDriveCount</a>
+<br />
  }</td></tr>
-<tr class="memdesc:a1779e647f961ea6459120a77aa0c775d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource fork kind.  <a href="namespace_kernel.html#a1779e647f961ea6459120a77aa0c775d">More...</a><br /></td></tr>
-<tr class="separator:a1779e647f961ea6459120a77aa0c775d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5c36ab2880e2b201b886dc98e7e2c5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a327287715629eece3297dff558a30" id="r_aa9a327287715629eece3297dff558a30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30a9e42c1e446536b33e11e06b24e20ae04">Kernel::kNeFSRsrcForkKind</a> = 0
+, <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30a162595e53997ea0666e42406f91e8f09">Kernel::kNeFSDataForkKind</a> = 1
+ }</td></tr>
+<tr class="memdesc:aa9a327287715629eece3297dff558a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource fork kind.  <a href="namespace_kernel.html#aa9a327287715629eece3297dff558a30">More...</a><br /></td></tr>
+<tr class="separator:aa9a327287715629eece3297dff558a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaa13bea36a33c7dba1cb564b2566b0c7" id="r_aaa13bea36a33c7dba1cb564b2566b0c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_ne_f_s.html#aaa13bea36a33c7dba1cb564b2566b0c7">Kernel::NeFS::fs_init_nefs</a> (<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>) <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memitem:aaa13bea36a33c7dba1cb564b2566b0c7" id="r_aaa13bea36a33c7dba1cb564b2566b0c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_ne_f_s.html#aaa13bea36a33c7dba1cb564b2566b0c7">Kernel::NeFS::fs_init_nefs</a> (<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>) noexcept</td></tr>
 <tr class="separator:aaa13bea36a33c7dba1cb564b2566b0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -1121,8 +1125,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a05589fbab0657f08285ebdfe93f5ec9e" name="a05589fbab0657f08285ebdfe93f5ec9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05589fbab0657f08285ebdfe93f5ec9e">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="aaf105ae5beaca1dee30ae54530691fce" name="aaf105ae5beaca1dee30ae54530691fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf105ae5beaca1dee30ae54530691fce">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1133,20 +1137,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea749dd6d76b68f5502be64aba13b0e0c0" name="a05589fbab0657f08285ebdfe93f5ec9ea749dd6d76b68f5502be64aba13b0e0c0"></a>kNeFSHardDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea05e30f37a85f331b7d05d3bc0e9991b6" name="a05589fbab0657f08285ebdfe93f5ec9ea05e30f37a85f331b7d05d3bc0e9991b6"></a>kNeFSSolidStateDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9eaff308748bccdd9e9512d1af0749da519" name="a05589fbab0657f08285ebdfe93f5ec9eaff308748bccdd9e9512d1af0749da519"></a>kNeFSOpticalDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea17c8d4f70d6135ae016101417c6fa3fa" name="a05589fbab0657f08285ebdfe93f5ec9ea17c8d4f70d6135ae016101417c6fa3fa"></a>kNeFSMassStorageDevice&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9eacab16a01a9fc2c94d9a0450dbdcf0c85" name="a05589fbab0657f08285ebdfe93f5ec9eacab16a01a9fc2c94d9a0450dbdcf0c85"></a>kNeFSScsiDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea9be166fde8cd3222224d583955258231" name="a05589fbab0657f08285ebdfe93f5ec9ea9be166fde8cd3222224d583955258231"></a>kNeFSFlashDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9eaa9f5765d353c8ad72e8a4daf7ebebf0f" name="a05589fbab0657f08285ebdfe93f5ec9eaa9f5765d353c8ad72e8a4daf7ebebf0f"></a>kNeFSUnknown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9eae28c5f5fbd276382aa3927cb79f709f8" name="a05589fbab0657f08285ebdfe93f5ec9eae28c5f5fbd276382aa3927cb79f709f8"></a>kNeFSDriveCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fcea749dd6d76b68f5502be64aba13b0e0c0" name="aaf105ae5beaca1dee30ae54530691fcea749dd6d76b68f5502be64aba13b0e0c0"></a>kNeFSHardDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fcea05e30f37a85f331b7d05d3bc0e9991b6" name="aaf105ae5beaca1dee30ae54530691fcea05e30f37a85f331b7d05d3bc0e9991b6"></a>kNeFSSolidStateDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fceaff308748bccdd9e9512d1af0749da519" name="aaf105ae5beaca1dee30ae54530691fceaff308748bccdd9e9512d1af0749da519"></a>kNeFSOpticalDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fcea17c8d4f70d6135ae016101417c6fa3fa" name="aaf105ae5beaca1dee30ae54530691fcea17c8d4f70d6135ae016101417c6fa3fa"></a>kNeFSMassStorageDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fceacab16a01a9fc2c94d9a0450dbdcf0c85" name="aaf105ae5beaca1dee30ae54530691fceacab16a01a9fc2c94d9a0450dbdcf0c85"></a>kNeFSScsiDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fcea9be166fde8cd3222224d583955258231" name="aaf105ae5beaca1dee30ae54530691fcea9be166fde8cd3222224d583955258231"></a>kNeFSFlashDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fceaa9f5765d353c8ad72e8a4daf7ebebf0f" name="aaf105ae5beaca1dee30ae54530691fceaa9f5765d353c8ad72e8a4daf7ebebf0f"></a>kNeFSUnknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fceae28c5f5fbd276382aa3927cb79f709f8" name="aaf105ae5beaca1dee30ae54530691fceae28c5f5fbd276382aa3927cb79f709f8"></a>kNeFSDriveCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a16af7b253440dadd46a80a4b9fddba4d" name="a16af7b253440dadd46a80a4b9fddba4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16af7b253440dadd46a80a4b9fddba4d">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a80155586fa275b28773c9b203f52caba" name="a80155586fa275b28773c9b203f52caba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80155586fa275b28773c9b203f52caba">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1157,10 +1161,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4dab0d4a3855ba33438d25fecf25f70171b" name="a16af7b253440dadd46a80a4b9fddba4dab0d4a3855ba33438d25fecf25f70171b"></a>kNeFSStatusUnlocked&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da5708a145bca95639f47f29b4299b97b3" name="a16af7b253440dadd46a80a4b9fddba4da5708a145bca95639f47f29b4299b97b3"></a>kNeFSStatusLocked&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da34bc8e801039a72304ac3bc229a19077" name="a16af7b253440dadd46a80a4b9fddba4da34bc8e801039a72304ac3bc229a19077"></a>kNeFSStatusError&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da5cf8155fae50a6dd868fa0db4c531d10" name="a16af7b253440dadd46a80a4b9fddba4da5cf8155fae50a6dd868fa0db4c531d10"></a>kNeFSStatusInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a80155586fa275b28773c9b203f52cabaab0d4a3855ba33438d25fecf25f70171b" name="a80155586fa275b28773c9b203f52cabaab0d4a3855ba33438d25fecf25f70171b"></a>kNeFSStatusUnlocked&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80155586fa275b28773c9b203f52cabaa5708a145bca95639f47f29b4299b97b3" name="a80155586fa275b28773c9b203f52cabaa5708a145bca95639f47f29b4299b97b3"></a>kNeFSStatusLocked&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80155586fa275b28773c9b203f52cabaa34bc8e801039a72304ac3bc229a19077" name="a80155586fa275b28773c9b203f52cabaa34bc8e801039a72304ac3bc229a19077"></a>kNeFSStatusError&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80155586fa275b28773c9b203f52cabaa5cf8155fae50a6dd868fa0db4c531d10" name="a80155586fa275b28773c9b203f52cabaa5cf8155fae50a6dd868fa0db4c531d10"></a>kNeFSStatusInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a80155586fa275b28773c9b203f52cabaaaf8e6e07833e3ffb1697a11ada59ec4f" name="a80155586fa275b28773c9b203f52cabaaaf8e6e07833e3ffb1697a11ada59ec4f"></a>kNeFSStatusCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

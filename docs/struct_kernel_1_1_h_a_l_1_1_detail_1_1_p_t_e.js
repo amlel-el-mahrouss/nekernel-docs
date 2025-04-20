@@ -10,7 +10,7 @@ var struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e =
     [ "Pcd", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a7cc3a3827552c65d9b4daaa3ff1b5964", null ],
     [ "PhysicalAddress", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a66d3d0777e6bf2b600f37dff2c359ae6", null ],
     [ "Present", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#ab42e8c427cce923aef9a1dcb5bd9e0da", null ],
-    [ "Protection_key", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a905394b694b6a94caaee2dcdc8dddd9b", null ],
+    [ "ProtectionKey", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a5986f884bd6f25c7a81aa210a2ea6901", null ],
     [ "Pwt", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a4ffda531d10131e239abaa7361e8fd44", null ],
     [ "Reserved", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a6c993e6385364d5a782c2a5c025fd4ec", null ],
     [ "User", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a3eee5be80a953a9e97ef9378197fe5c3", null ],

@@ -191,6 +191,38 @@ $(document).ready(function(){initNavTree('user_2_macros_8h_source.html',''); ini
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">      (static_cast&lt;SizeT&gt;(!(sizeof(X) % sizeof(*(X)))))))</span></div>
 </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#ifndef KIB</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#ab0a8038a8d6c5f1a602f028fa8bf32a0">   96</a></span><span class="preprocessor">#define KIB(X) (UInt64)((X) / 1024)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#ifndef kib_cast</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">  100</a></span><span class="preprocessor">#define kib_cast(X) (UInt64)((X)*1024)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#ifndef MIB</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#a3d3145295541b38666bf1e095a7d74f6">  104</a></span><span class="preprocessor">#define MIB(X) (UInt64)((UInt64)KIB(X) / 1024)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#ifndef mib_cast</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">  108</a></span><span class="preprocessor">#define mib_cast(X) (UInt64)((UInt64)kib_cast(X) * 1024)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#ifndef GIB</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95">  112</a></span><span class="preprocessor">#define GIB(X) (UInt64)((UInt64)MIB(X) / 1024)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#ifndef gib_cast</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">  116</a></span><span class="preprocessor">#define gib_cast(X) (UInt64)((UInt64)mib_cast(X) * 1024)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#ifndef TIB</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca">  120</a></span><span class="preprocessor">#define TIB(X) (UInt64)((UInt64)GIB(X) / 1024)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#ifndef tib_cast</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="user_2_macros_8h.html#a88a22810bf835b7794ce207e15732da8">  124</a></span><span class="preprocessor">#define tib_cast(X) ((UInt64)gib_cast(X) * 1024)</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_compiler_hint_8h_html"><div class="ttname"><a href="_compiler_hint_8h.html">CompilerHint.h</a></div></div>
 <div class="ttc" id="auser_2_macros_8h_html_a1f75821f5858b98dc453711e46bf9ada"><div class="ttname"><a href="user_2_macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a></div><div class="ttdeci">__UINT32_TYPE__ UInt32</div><div class="ttdef"><b>Definition</b> Macros.h:48</div></div>
 <div class="ttc" id="auser_2_macros_8h_html_a3790b6de8c45ebee9af548380c3fb8d2"><div class="ttname"><a href="user_2_macros_8h.html#a3790b6de8c45ebee9af548380c3fb8d2">Boolean</a></div><div class="ttdeci">bool Boolean</div><div class="ttdef"><b>Definition</b> Macros.h:36</div></div>

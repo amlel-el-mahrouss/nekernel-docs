@@ -96,34 +96,37 @@ $(document).ready(function(){initNavTree('_boot_net_8cc.html',''); initResizable
   <div class="headertitle"><div class="title">BootNet.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="boot_2modules_2_boot_net_2_boot_net_8h_source.html">modules/BootNet/BootNet.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_a_p_i_8h_source.html">FirmwareKit/EFI/API.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="boot_2modules_2_boot_net_2_boot_net_8h_source.html">modules/BootNet/BootNet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_boot_kit_8h_source.html">BootKit/BootKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_boot_thread_8h_source.html">BootKit/BootThread.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a90e82dee93bce607bcbfa35c501ba9fc" id="r_a90e82dee93bce607bcbfa35c501ba9fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_boot_net_8cc.html#a90e82dee93bce607bcbfa35c501ba9fc">bootnet_read_udp_packet</a> (<a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a> &amp;)</td></tr>
-<tr class="separator:a90e82dee93bce607bcbfa35c501ba9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c85ead274229095dc2018e25a54ae5" id="r_a45c85ead274229095dc2018e25a54ae5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_boot_net_8cc.html#a45c85ead274229095dc2018e25a54ae5">BootNetModuleMain</a> (<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">Kernel::HEL::BootInfoHeader</a> *<a class="el" href="class_kernel_1_1_error_or.html">handover</a>)</td></tr>
+<tr class="memitem:a05cd36e0f14110c64e792514e5951d25" id="r_a05cd36e0f14110c64e792514e5951d25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_boot_net_8cc.html#a05cd36e0f14110c64e792514e5951d25">bootnet_read_ip_packet</a> (<a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a>)</td></tr>
+<tr class="separator:a05cd36e0f14110c64e792514e5951d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c85ead274229095dc2018e25a54ae5" id="r_a45c85ead274229095dc2018e25a54ae5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_boot_net_8cc.html#a45c85ead274229095dc2018e25a54ae5">BootNetModuleMain</a> (<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">Kernel::HEL::BootInfoHeader</a> *handover)</td></tr>
 <tr class="separator:a45c85ead274229095dc2018e25a54ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae8262817202a0c5fbb9a3cb1bd3a71b6" id="r_ae8262817202a0c5fbb9a3cb1bd3a71b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368">EfiGUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_boot_net_8cc.html#ae8262817202a0c5fbb9a3cb1bd3a71b6">kEfiIP4ProtoGUID</a> = {}</td></tr>
-<tr class="separator:ae8262817202a0c5fbb9a3cb1bd3a71b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0362ae3fd67025e0ae96ab964d9a95dd" id="r_a0362ae3fd67025e0ae96ab964d9a95dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368">EfiGUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_boot_net_8cc.html#a0362ae3fd67025e0ae96ab964d9a95dd">kEfiSimpleProtoGUID</a> = <a class="el" href="_e_f_i_2_e_f_i_8h.html#ab02a0710419e48834ed51eca4b24f61b">EFI_SIMPLE_NETWORK_PROTOCOL_GUID</a></td></tr>
+<tr class="separator:a0362ae3fd67025e0ae96ab964d9a95dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a558a17a82f525fb24b26a48770900" id="r_a53a558a17a82f525fb24b26a48770900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html">EFI_SIMPLE_NETWORK_PROTOCOL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_boot_net_8cc.html#a53a558a17a82f525fb24b26a48770900">kEfiProtocol</a> = nullptr</td></tr>
+<tr class="separator:a53a558a17a82f525fb24b26a48770900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a90e82dee93bce607bcbfa35c501ba9fc" name="a90e82dee93bce607bcbfa35c501ba9fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90e82dee93bce607bcbfa35c501ba9fc">&#9670;&#160;</a></span>bootnet_read_udp_packet()</h2>
+<a id="a05cd36e0f14110c64e792514e5951d25" name="a05cd36e0f14110c64e792514e5951d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05cd36e0f14110c64e792514e5951d25">&#9670;&#160;</a></span>bootnet_read_ip_packet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> bootnet_read_udp_packet </td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> bootnet_read_ip_packet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a>&#160;</td>
+          <td class="paramname"><em>inet</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -146,20 +149,33 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TODO: Read address from JSON file 'bootnet.json'</p>
 <p>TODO: Program new firmware to EEPROM (if crc and size matches)</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ae8262817202a0c5fbb9a3cb1bd3a71b6" name="ae8262817202a0c5fbb9a3cb1bd3a71b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8262817202a0c5fbb9a3cb1bd3a71b6">&#9670;&#160;</a></span>kEfiIP4ProtoGUID</h2>
+<a id="a53a558a17a82f525fb24b26a48770900" name="a53a558a17a82f525fb24b26a48770900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a558a17a82f525fb24b26a48770900">&#9670;&#160;</a></span>kEfiProtocol</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368">EfiGUID</a> kEfiIP4ProtoGUID = {}</td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html">EFI_SIMPLE_NETWORK_PROTOCOL</a>* kEfiProtocol = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0362ae3fd67025e0ae96ab964d9a95dd" name="a0362ae3fd67025e0ae96ab964d9a95dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0362ae3fd67025e0ae96ab964d9a95dd">&#9670;&#160;</a></span>kEfiSimpleProtoGUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368">EfiGUID</a> kEfiSimpleProtoGUID = <a class="el" href="_e_f_i_2_e_f_i_8h.html#ab02a0710419e48834ed51eca4b24f61b">EFI_SIMPLE_NETWORK_PROTOCOL_GUID</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -11,6 +11,7 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "HardwareThreadScheduler.h", "_hardware_thread_scheduler_8h.html", "_hardware_thread_scheduler_8h" ],
     [ "IDylibObject.h", "_i_dylib_object_8h.html", "_i_dylib_object_8h" ],
     [ "IPEFDylibObject.h", "_i_p_e_f_dylib_object_8h.html", "_i_p_e_f_dylib_object_8h" ],
+    [ "KernelProcessScheduler.h", "_kernel_process_scheduler_8h.html", null ],
     [ "KPC.h", "_k_p_c_8h.html", "_k_p_c_8h" ],
     [ "LoaderInterface.h", "_loader_interface_8h.html", "_loader_interface_8h" ],
     [ "LockDelegate.h", "_lock_delegate_8h.html", "_lock_delegate_8h" ],
@@ -20,12 +21,13 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "PECodeMgr.h", "_p_e_code_mgr_8h.html", null ],
     [ "PEF.h", "_p_e_f_8h.html", "_p_e_f_8h" ],
     [ "PEFCodeMgr.h", "_p_e_f_code_mgr_8h.html", "_p_e_f_code_mgr_8h" ],
-    [ "ProcessScheduler.h", "_process_scheduler_8h.html", "_process_scheduler_8h" ],
+    [ "ProcessScheduler.h", "_process_scheduler_8h.html", null ],
     [ "Semaphore.h", "_semaphore_8h.html", "_semaphore_8h" ],
     [ "ThreadLocalStorage.h", "_thread_local_storage_8h.html", "_thread_local_storage_8h" ],
     [ "ThreadLocalStorage.inl", "_thread_local_storage_8inl.html", "_thread_local_storage_8inl" ],
     [ "Timer.h", "_timer_8h.html", "_timer_8h" ],
     [ "User.h", "_user_8h.html", "_user_8h" ],
+    [ "UserProcessScheduler.h", "_user_process_scheduler_8h.html", "_user_process_scheduler_8h" ],
     [ "UserProcessScheduler.inl", "_user_process_scheduler_8inl.html", null ],
     [ "XCOFF.h", "_x_c_o_f_f_8h.html", "_x_c_o_f_f_8h" ]
 ];

@@ -24,7 +24,8 @@ var searchData=
   ['handover_2eh_21',['Handover.h',['../_handover_8h.html',1,'']]],
   ['hardwarethreadscheduler_2ecc_22',['HardwareThreadScheduler.cc',['../_hardware_thread_scheduler_8cc.html',1,'']]],
   ['hardwarethreadscheduler_2eh_23',['HardwareThreadScheduler.h',['../_hardware_thread_scheduler_8h.html',1,'']]],
-  ['hefs_2ecc_24',['HeFS.cc',['../_he_f_s_8cc.html',1,'']]],
-  ['hefs_2eh_25',['HeFS.h',['../_he_f_s_8h.html',1,'']]],
-  ['hypervisor_2eh_26',['Hypervisor.h',['../_hypervisor_8h.html',1,'']]]
+  ['hefs_2bfilemgr_2ecc_24',['HeFS+FileMgr.cc',['../_he_f_s_09_file_mgr_8cc.html',1,'']]],
+  ['hefs_2ecc_25',['HeFS.cc',['../_he_f_s_8cc.html',1,'']]],
+  ['hefs_2eh_26',['HeFS.h',['../_he_f_s_8h.html',1,'']]],
+  ['hypervisor_2eh_27',['Hypervisor.h',['../_hypervisor_8h.html',1,'']]]
 ];

@@ -49,6 +49,7 @@ var namespace_kernel =
     [ "DMAWrapper", "class_kernel_1_1_d_m_a_wrapper.html", "class_kernel_1_1_d_m_a_wrapper" ],
     [ "DriveTrait", "struct_kernel_1_1_drive_trait.html", "struct_kernel_1_1_drive_trait" ],
     [ "ErrorOr", "class_kernel_1_1_error_or.html", "class_kernel_1_1_error_or" ],
+    [ "FBDevicePacket", "struct_kernel_1_1_f_b_device_packet.html", "struct_kernel_1_1_f_b_device_packet" ],
     [ "FileRestrictKind", "struct_kernel_1_1_file_restrict_kind.html", "struct_kernel_1_1_file_restrict_kind" ],
     [ "FileStream", "class_kernel_1_1_file_stream.html", "class_kernel_1_1_file_stream" ],
     [ "Function", "class_kernel_1_1_function.html", "class_kernel_1_1_function" ],
@@ -61,6 +62,7 @@ var namespace_kernel =
     [ "HardwareThread", "class_kernel_1_1_hardware_thread.html", "class_kernel_1_1_hardware_thread" ],
     [ "HardwareThreadScheduler", "class_kernel_1_1_hardware_thread_scheduler.html", "class_kernel_1_1_hardware_thread_scheduler" ],
     [ "HardwareTimer", "class_kernel_1_1_hardware_timer.html", "class_kernel_1_1_hardware_timer" ],
+    [ "HeFSFileSystemParser", "class_kernel_1_1_he_f_s_file_system_parser.html", "class_kernel_1_1_he_f_s_file_system_parser" ],
     [ "HPETAddressStructure", "struct_kernel_1_1_h_p_e_t_address_structure.html", "struct_kernel_1_1_h_p_e_t_address_structure" ],
     [ "HPETHeader", "struct_kernel_1_1_h_p_e_t_header.html", "struct_kernel_1_1_h_p_e_t_header" ],
     [ "ICodec", "class_kernel_1_1_i_codec.html", "class_kernel_1_1_i_codec" ],
@@ -85,6 +87,7 @@ var namespace_kernel =
     [ "MutableArray", "class_kernel_1_1_mutable_array.html", "class_kernel_1_1_mutable_array" ],
     [ "MutableLinkedList", "class_kernel_1_1_mutable_linked_list.html", "class_kernel_1_1_mutable_linked_list" ],
     [ "NE_DEVICE< const Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4" ],
+    [ "NE_DEVICE< FBDevicePacket * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_f_b_device_packet_01_5_01_4.html", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_f_b_device_packet_01_5_01_4" ],
     [ "NE_DEVICE< MountpointInterface * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4.html", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4" ],
     [ "NE_DYLIB_OBJECT", "class_kernel_1_1_n_e___d_y_l_i_b___o_b_j_e_c_t.html", "class_kernel_1_1_n_e___d_y_l_i_b___o_b_j_e_c_t" ],
     [ "NE_POWER_FACTORY", "class_kernel_1_1_n_e___p_o_w_e_r___f_a_c_t_o_r_y.html", "class_kernel_1_1_n_e___p_o_w_e_r___f_a_c_t_o_r_y" ],
@@ -257,11 +260,6 @@ var namespace_kernel =
       [ "kEndianLittle", "namespace_kernel.html#a72738721513022e56f50bc7098a71781a62188b1258ea7a93260e02c3599d7e2b", null ],
       [ "kEndianMixed", "namespace_kernel.html#a72738721513022e56f50bc7098a71781abe567a5547db37d4f8d127ad1b384cf6", null ],
       [ "kEndianCount", "namespace_kernel.html#a72738721513022e56f50bc7098a71781ae1c864b238e802126209fd5391ec15b5", null ]
-    ] ],
-    [ "kPRDTTransfer", "namespace_kernel.html#aaed9a8cb5c3931e55e64b447455c8579", [
-      [ "kPRDTTransferInProgress", "namespace_kernel.html#aaed9a8cb5c3931e55e64b447455c8579a7ed6e9300a01bec24d553e65f7a9f39d", null ],
-      [ "kPRDTTransferIsDone", "namespace_kernel.html#aaed9a8cb5c3931e55e64b447455c8579a6417bd08e8e0b9fc927c3f3a5846472c", null ],
-      [ "kPRDTTransferCount", "namespace_kernel.html#aaed9a8cb5c3931e55e64b447455c8579aa8a2c959cc0741b759fdadd16982a7e1", null ]
     ] ],
     [ "MBCIHostFlags", "namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8", [
       [ "kMBCIHostFlagsSupportsNothing", "namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8a7a470413e6a845a7d07b5fdbc10b6934", null ],

@@ -2,8 +2,8 @@ var _a_p_i_8h =
 [
     [ "kNeKernelSubsystem", "_a_p_i_8h.html#a4916e571e9ef915eb186e535a9f6adc5", null ],
     [ "kNeWebsiteMacro", "_a_p_i_8h.html#a40dd3478791bf7a3996e84efb20bf13b", null ],
-    [ "ExitBootServices", "_a_p_i_8h.html#a79fb1ed665feb9cc78a21d1ef4f58ae3", null ],
-    [ "InitEFI", "_a_p_i_8h.html#abdd928fdf55b87dc59c5797d059c917e", null ],
+    [ "ExitBootServices", "_a_p_i_8h.html#aa247e784ff03f0a4d17ab37c5b0331dd", null ],
+    [ "fw_init_efi", "_a_p_i_8h.html#a147557aebdc51423b15e02788fcf7c31", null ],
     [ "Platform", "_a_p_i_8h.html#a219033067ceb1ad089818c762d1dfb65", null ],
     [ "rt_cli", "_a_p_i_8h.html#a12e982db5e3c511132fa1479d1d447ec", null ],
     [ "rt_hlt", "_a_p_i_8h.html#a64a53c31476ac8a8ffdd2a678c53c837", null ],

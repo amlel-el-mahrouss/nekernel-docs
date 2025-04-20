@@ -14,7 +14,7 @@ var namespace_boot =
     [ "BSetMem", "namespace_boot.html#acc12c3d9687f353cf666c27afb6bef99", null ],
     [ "BSetMem", "namespace_boot.html#ae6d7733aaa334720015b4b8e71aa585a", null ],
     [ "BStrLen", "namespace_boot.html#afba9c31094f3937a1f432887de8938b8", null ],
-    [ "ExitBootServices", "namespace_boot.html#a79fb1ed665feb9cc78a21d1ef4f58ae3", null ],
+    [ "ExitBootServices", "namespace_boot.html#aa247e784ff03f0a4d17ab37c5b0331dd", null ],
     [ "Platform", "namespace_boot.html#a219033067ceb1ad089818c762d1dfb65", null ],
     [ "rt_jump_to_address", "namespace_boot.html#a44ca29987d47d4722498cac5fb53f3eb", null ],
     [ "Stop", "namespace_boot.html#a8b0bee034f9cce36874019301bc2ac40", null ],

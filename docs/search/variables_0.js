@@ -30,5 +30,6 @@ var searchData=
   ['attribute_27',['attribute',['../struct_efi_memory_descriptor.html#a15f4be22d4f8e43ed353bcb597b732b2',1,'EfiMemoryDescriptor::Attribute'],['../struct_e_f_i___f_i_n_a_l.html#a850913a2916aaa32242c01f4d38baf7d',1,'EFI_FINAL::Attribute']]],
   ['attributes_28',['attributes',['../struct_efi_runtime_services.html#a397901b41cfadb7c7786e34ab980b634',1,'EfiRuntimeServices::Attributes'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___e_n_t_r_y.html#a33390e7458c42882d8f6e691ef50d572',1,'Kernel::GPT_PARTITION_ENTRY::Attributes']]],
   ['attrindex_29',['AttrIndex',['../struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html#ad9600b185bd46406bd90d234de703812',1,'Kernel::HAL::PTE_4KB']]],
-  ['autoenable_30',['AutoEnable',['../struct_fis_dma_setup.html#a5e985e510d6f70985058c325fc0a80ca',1,'FisDmaSetup']]]
+  ['author_30',['author',['../struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a865e6e5d283feeec4f5793048ee1e1e9',1,'STEPS_COMMON_RECORD']]],
+  ['autoenable_31',['AutoEnable',['../struct_fis_dma_setup.html#a5e985e510d6f70985058c325fc0a80ca',1,'FisDmaSetup']]]
 ];

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['lapic_0',['lapic',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#abe503030f09e9e5f4c7e35151a36499d',1,'Kernel::HAL::SDT_OBJECT::LAPIC'],['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a1bf9f8c10bcd2e9220196897d6b5d6eb',1,'Kernel::HAL::SDT_OBJECT::LApic']]],
-  ['lapicnmi_1',['LApicNMI',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#aa6f13ab1cc69b11c733a4e555fd2db0d',1,'Kernel::HAL::SDT_OBJECT']]],
-  ['lapicoverride_2',['LApicOverride',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#aa852234befa2474d26fd20d71fba2d5f',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['lapic_0',['lapic',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a14f4f71e6b5ecd5e7ae92581f075a8e3',1,'Kernel::HAL::SDT_OBJECT::LApic'],['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a82c1043712f4057f1056b7f50de5210a',1,'Kernel::HAL::SDT_OBJECT::LAPIC']]],
+  ['lapicnmi_1',['LApicNMI',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a74cbebd0fe875aad429c13b41b34cabc',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['lapicoverride_2',['LApicOverride',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a1993a998869e354e0fe207b297c5c85f',1,'Kernel::HAL::SDT_OBJECT']]],
   ['lastaccesstime_3',['LastAccessTime',['../struct_e_f_i___f_i_n_a_l.html#af65d18f13ef0821578cff0cf6b4ed8f0',1,'EFI_FINAL']]],
   ['lastgptentry_4',['LastGPTEntry',['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#ac8b5210eeb7a62b7a565b19bb86bc0e4',1,'Kernel::GPT_PARTITION_TABLE']]],
   ['latencytimer_5',['LatencyTimer',['../struct_kernel_1_1_p_c_i_1_1_device_header.html#ae14299daa5bc17914963b0d1194ad63b',1,'Kernel::PCI::DeviceHeader']]],
@@ -23,7 +23,7 @@ var searchData=
   ['limit_20',['limit',['../struct_kernel_1_1_h_a_l_1_1_register64.html#a672a9da6a0d208bba225a84fa6499269',1,'Kernel::HAL::Register64::Limit'],['../class_kernel_1_1_h_a_l_1_1_segment_descriptor.html#a89b4c5aec8e9451bc4120b716a4017af',1,'Kernel::HAL::SegmentDescriptor::Limit']]],
   ['linker_21',['Linker',['../struct_kernel_1_1_p_e_f_container.html#a64d1b1dbba11a98f3bca1da2da69f6bb',1,'Kernel::PEFContainer']]],
   ['lint_22',['LINT',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a015623b6d4121dc942a29369d8a46de8',1,'Kernel::HAL::SDT_OBJECT']]],
-  ['list_23',['List',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#ae457ec9003e1e1f5ff8a2b799cf1b36b',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['list_23',['List',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#aaa049804c8478fd278c5c6ddd2eec7ff',1,'Kernel::HAL::SDT_OBJECT']]],
   ['loaderflags_24',['LoaderFlags',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a4ee80ae66fdeb7afe6ddacc487fc3e64',1,'LDR_OPTIONAL_HEADER']]],
   ['loadfile_25',['LoadFile',['../struct_efi_load_file_protocol.html#a0f5268e9496722aa478db1f2e04c72ca',1,'EfiLoadFileProtocol']]],
   ['loadimage_26',['LoadImage',['../struct_efi_boot_services.html#a446de78277ae660341e575823a0c11d8',1,'EfiBootServices']]],

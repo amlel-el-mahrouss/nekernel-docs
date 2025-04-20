@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('class_kernel_1_1_process.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">ProcessScheduler.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_user_process_scheduler_8h_source.html">UserProcessScheduler.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -112,12 +112,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a075530bf00673ecc48a82b72687a2a20" id="r_a075530bf00673ecc48a82b72687a2a20"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_kernel_1_1_process.html#a075530bf00673ecc48a82b72687a2a20aa86b1be203c8902776ece7cc464e6d8d">kInvalidExecutableKind</a>
-, <a class="el" href="class_kernel_1_1_process.html#a075530bf00673ecc48a82b72687a2a20a65c63e20e023893067e72066148e7415">kExectuableKind</a>
-, <a class="el" href="class_kernel_1_1_process.html#a075530bf00673ecc48a82b72687a2a20a79dd83e545b7feb57f1f2a0af65d3736">kExectuableDylibKind</a>
-, <a class="el" href="class_kernel_1_1_process.html#a075530bf00673ecc48a82b72687a2a20adc460adc9c0379bfe178235484f36f55">kExectuableKindCount</a>
+<tr class="memitem:a81d39b3bbfb77304bcf0720bf089aacc" id="r_a81d39b3bbfb77304bcf0720bf089aacc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_kernel_1_1_process.html#a81d39b3bbfb77304bcf0720bf089aaccaa86b1be203c8902776ece7cc464e6d8d">kInvalidExecutableKind</a>
+, <a class="el" href="class_kernel_1_1_process.html#a81d39b3bbfb77304bcf0720bf089aacca11fcd88a87e9dcf2c778825eef313f54">kExecutableKind</a>
+, <a class="el" href="class_kernel_1_1_process.html#a81d39b3bbfb77304bcf0720bf089aaccaa566fea754fb9d2d2d19b72463382486">kExecutableDylibKind</a>
+, <a class="el" href="class_kernel_1_1_process.html#a81d39b3bbfb77304bcf0720bf089aacca37a025b64453890123829c44b45b3376">kExecutableKindCount</a>
  }</td></tr>
-<tr class="separator:a075530bf00673ecc48a82b72687a2a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a81d39b3bbfb77304bcf0720bf089aacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -131,69 +131,69 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4708f64dde42831a68f4e634085b74ff" id="r_a4708f64dde42831a68f4e634085b74ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a4708f64dde42831a68f4e634085b74ff">Crash</a> ()</td></tr>
 <tr class="memdesc:a4708f64dde42831a68f4e634085b74ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">!  <br /></td></tr>
 <tr class="separator:a4708f64dde42831a68f4e634085b74ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a251a318f84c6a1c19a725c16a36b6fe1" id="r_a251a318f84c6a1c19a725c16a36b6fe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a251a318f84c6a1c19a725c16a36b6fe1">Exit</a> (<a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> &amp;<a class="el" href="class_kernel_1_1_error_or.html">exit_code</a>=0)</td></tr>
+<tr class="memitem:a251a318f84c6a1c19a725c16a36b6fe1" id="r_a251a318f84c6a1c19a725c16a36b6fe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a251a318f84c6a1c19a725c16a36b6fe1">Exit</a> (const <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> &amp;exit_code=0)</td></tr>
 <tr class="memdesc:a251a318f84c6a1c19a725c16a36b6fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">!  <br /></td></tr>
 <tr class="separator:a251a318f84c6a1c19a725c16a36b6fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5702f5c8a49f2e99a5234c9bf75a94ae" id="r_a5702f5c8a49f2e99a5234c9bf75a94ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a5702f5c8a49f2e99a5234c9bf75a94ae">New</a> (<a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> <a class="el" href="class_kernel_1_1_error_or.html">sz</a>, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> <a class="el" href="class_kernel_1_1_error_or.html">pad_amount</a>=0)</td></tr>
+<tr class="memitem:a5702f5c8a49f2e99a5234c9bf75a94ae" id="r_a5702f5c8a49f2e99a5234c9bf75a94ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a5702f5c8a49f2e99a5234c9bf75a94ae">New</a> (<a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> sz, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> pad_amount=0)</td></tr>
 <tr class="memdesc:a5702f5c8a49f2e99a5234c9bf75a94ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS allocate.  <br /></td></tr>
 <tr class="separator:a5702f5c8a49f2e99a5234c9bf75a94ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b0678da5794a9e23ddefa8bda420fc7" id="r_a9b0678da5794a9e23ddefa8bda420fc7"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a class="el" href="class_kernel_1_1_error_or.html">T</a> &gt; </td></tr>
-<tr class="memitem:a9b0678da5794a9e23ddefa8bda420fc7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a9b0678da5794a9e23ddefa8bda420fc7">Delete</a> (<a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; <a class="el" href="class_kernel_1_1_error_or.html">T</a> * &gt; <a class="el" href="class_kernel_1_1_error_or.html">ptr</a>)</td></tr>
+<tr class="memitem:a9b0678da5794a9e23ddefa8bda420fc7" id="r_a9b0678da5794a9e23ddefa8bda420fc7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9b0678da5794a9e23ddefa8bda420fc7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a9b0678da5794a9e23ddefa8bda420fc7">Delete</a> (<a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; T * &gt; ptr)</td></tr>
 <tr class="memdesc:a9b0678da5794a9e23ddefa8bda420fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS free.  <br /></td></tr>
 <tr class="separator:a9b0678da5794a9e23ddefa8bda420fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe145f75a7076c0929ae5369bd9d706c" id="r_afe145f75a7076c0929ae5369bd9d706c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#afe145f75a7076c0929ae5369bd9d706c">Wake</a> (<a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> <a class="el" href="class_kernel_1_1_error_or.html">wakeup</a>=<a class="el" href="user_2_macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
+<tr class="memitem:afe145f75a7076c0929ae5369bd9d706c" id="r_afe145f75a7076c0929ae5369bd9d706c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#afe145f75a7076c0929ae5369bd9d706c">Wake</a> (<a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> wakeup=<a class="el" href="user_2_macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
 <tr class="memdesc:afe145f75a7076c0929ae5369bd9d706c"><td class="mdescLeft">&#160;</td><td class="mdescRight">!  <br /></td></tr>
 <tr class="separator:afe145f75a7076c0929ae5369bd9d706c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8ad4c9e427cf70d68ea66b4f061f24" id="r_a5d8ad4c9e427cf70d68ea66b4f061f24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a5d8ad4c9e427cf70d68ea66b4f061f24">GetExitCode</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memitem:a5d8ad4c9e427cf70d68ea66b4f061f24" id="r_a5d8ad4c9e427cf70d68ea66b4f061f24"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a5d8ad4c9e427cf70d68ea66b4f061f24">GetExitCode</a> () noexcept</td></tr>
 <tr class="memdesc:a5d8ad4c9e427cf70d68ea66b4f061f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local exit code.  <br /></td></tr>
 <tr class="separator:a5d8ad4c9e427cf70d68ea66b4f061f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb1a593cd601b36ca5b2db5248d46d24" id="r_acb1a593cd601b36ca5b2db5248d46d24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#acb1a593cd601b36ca5b2db5248d46d24">GetName</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memitem:acb1a593cd601b36ca5b2db5248d46d24" id="r_acb1a593cd601b36ca5b2db5248d46d24"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#acb1a593cd601b36ca5b2db5248d46d24">GetName</a> () noexcept</td></tr>
 <tr class="memdesc:acb1a593cd601b36ca5b2db5248d46d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the current process.  <br /></td></tr>
 <tr class="separator:acb1a593cd601b36ca5b2db5248d46d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a012d98815ea8e8f2067af166ccac870e" id="r_a012d98815ea8e8f2067af166ccac870e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a012d98815ea8e8f2067af166ccac870e">GetLocalCode</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memitem:a012d98815ea8e8f2067af166ccac870e" id="r_a012d98815ea8e8f2067af166ccac870e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a012d98815ea8e8f2067af166ccac870e">GetLocalCode</a> () noexcept</td></tr>
 <tr class="memdesc:a012d98815ea8e8f2067af166ccac870e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return local error code of process.  <br /></td></tr>
 <tr class="separator:a012d98815ea8e8f2067af166ccac870e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48fa9279fa3f50ae8daf65f7ad0f01d3" id="r_a48fa9279fa3f50ae8daf65f7ad0f01d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="class_kernel_1_1_user.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a48fa9279fa3f50ae8daf65f7ad0f01d3">GetOwner</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memitem:a48fa9279fa3f50ae8daf65f7ad0f01d3" id="r_a48fa9279fa3f50ae8daf65f7ad0f01d3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_kernel_1_1_user.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a48fa9279fa3f50ae8daf65f7ad0f01d3">GetOwner</a> () noexcept</td></tr>
 <tr class="memdesc:a48fa9279fa3f50ae8daf65f7ad0f01d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the owner of the process.  <br /></td></tr>
 <tr class="separator:a48fa9279fa3f50ae8daf65f7ad0f01d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac063bbb753b86331fd5c5554523b0d00" id="r_ac063bbb753b86331fd5c5554523b0d00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a9b3885a37472898354d34d8eb3125897">ProcessStatusKind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#ac063bbb753b86331fd5c5554523b0d00">GetStatus</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memitem:ac063bbb753b86331fd5c5554523b0d00" id="r_ac063bbb753b86331fd5c5554523b0d00"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#a9b3885a37472898354d34d8eb3125897">ProcessStatusKind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#ac063bbb753b86331fd5c5554523b0d00">GetStatus</a> () noexcept</td></tr>
 <tr class="memdesc:ac063bbb753b86331fd5c5554523b0d00"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> status getter.  <br /></td></tr>
 <tr class="separator:ac063bbb753b86331fd5c5554523b0d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e00a2a3fc14022d041397e63f04505" id="r_a06e00a2a3fc14022d041397e63f04505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a06e00a2a3fc14022d041397e63f04505">GetAffinity</a> () <a class="el" href="class_kernel_1_1_error_or.html">noexcept</a></td></tr>
+<tr class="memitem:a06e00a2a3fc14022d041397e63f04505" id="r_a06e00a2a3fc14022d041397e63f04505"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a06e00a2a3fc14022d041397e63f04505">GetAffinity</a> () noexcept</td></tr>
 <tr class="memdesc:a06e00a2a3fc14022d041397e63f04505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affinity is the time slot allowed for the process.  <br /></td></tr>
 <tr class="separator:a06e00a2a3fc14022d041397e63f04505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae6bd1f972ee3d4bb2a3b0e4e7c1102b6" id="r_ae6bd1f972ee3d4bb2a3b0e4e7c1102b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#ae6bd1f972ee3d4bb2a3b0e4e7c1102b6">Name</a> [<a class="el" href="_process_scheduler_8h.html#a9cb9d23e50da76cda835116808be093c">kSchedNameLen</a>] = {&quot;Process&quot;}</td></tr>
+<tr class="memitem:ae6bd1f972ee3d4bb2a3b0e4e7c1102b6" id="r_ae6bd1f972ee3d4bb2a3b0e4e7c1102b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#ae6bd1f972ee3d4bb2a3b0e4e7c1102b6">Name</a> [<a class="el" href="_user_process_scheduler_8h.html#a9cb9d23e50da76cda835116808be093c">kSchedNameLen</a>] = {&quot;Process&quot;}</td></tr>
 <tr class="separator:ae6bd1f972ee3d4bb2a3b0e4e7c1102b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18c0fc33ec0b53d3f5a7d5bf4c31027" id="r_ad18c0fc33ec0b53d3f5a7d5bf4c31027"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a5398d1286c684b8da52e3ab119ccdbe3">ProcessSubsystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#ad18c0fc33ec0b53d3f5a7d5bf4c31027">SubSystem</a> {<a class="el" href="namespace_kernel.html#a5398d1286c684b8da52e3ab119ccdbe3a4d03d85bad0d1656fc4c845b3531117b">ProcessSubsystem::kProcessSubsystemInvalid</a>}</td></tr>
 <tr class="separator:ad18c0fc33ec0b53d3f5a7d5bf4c31027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a0836700c3867b537faa04f87751ee" id="r_a05a0836700c3867b537faa04f87751ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_user.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a05a0836700c3867b537faa04f87751ee">Owner</a> {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td></tr>
+<tr class="memitem:a05a0836700c3867b537faa04f87751ee" id="r_a05a0836700c3867b537faa04f87751ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_user.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a05a0836700c3867b537faa04f87751ee">Owner</a> {nullptr}</td></tr>
 <tr class="separator:a05a0836700c3867b537faa04f87751ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa88d9009a3e6a5d44e81d2e8409e9772" id="r_aa88d9009a3e6a5d44e81d2e8409e9772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#aa88d9009a3e6a5d44e81d2e8409e9772">StackFrame</a> {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td></tr>
+<tr class="memitem:aa88d9009a3e6a5d44e81d2e8409e9772" id="r_aa88d9009a3e6a5d44e81d2e8409e9772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#aa88d9009a3e6a5d44e81d2e8409e9772">StackFrame</a> {nullptr}</td></tr>
 <tr class="separator:aa88d9009a3e6a5d44e81d2e8409e9772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38aa3c4369622daa39f8a53522e8b4ee" id="r_a38aa3c4369622daa39f8a53522e8b4ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a38aa3c4369622daa39f8a53522e8b4ee">Affinity</a> {<a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1a821da62632c491ea619ead7b31c094bf">AffinityKind::kStandard</a>}</td></tr>
 <tr class="separator:a38aa3c4369622daa39f8a53522e8b4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d8104556c8db24a1c9bb90686b2b226" id="r_a6d8104556c8db24a1c9bb90686b2b226"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a9b3885a37472898354d34d8eb3125897">ProcessStatusKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a6d8104556c8db24a1c9bb90686b2b226">Status</a> {<a class="el" href="namespace_kernel.html#a9b3885a37472898354d34d8eb3125897a16b903606caf0e3128389431c392faf3">ProcessStatusKind::kFinished</a>}</td></tr>
 <tr class="separator:a6d8104556c8db24a1c9bb90686b2b226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e61aa1eaa13261755394c9a9cf3bdd8" id="r_a2e61aa1eaa13261755394c9a9cf3bdd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a2e61aa1eaa13261755394c9a9cf3bdd8">StackReserve</a> {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td></tr>
+<tr class="memitem:a2e61aa1eaa13261755394c9a9cf3bdd8" id="r_a2e61aa1eaa13261755394c9a9cf3bdd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a2e61aa1eaa13261755394c9a9cf3bdd8">StackReserve</a> {nullptr}</td></tr>
 <tr class="separator:a2e61aa1eaa13261755394c9a9cf3bdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add6cfba6a94324fe946dde39bd332723" id="r_add6cfba6a94324fe946dde39bd332723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kernel_1_1_process_image.html">ProcessImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#add6cfba6a94324fe946dde39bd332723">Image</a> {}</td></tr>
 <tr class="separator:add6cfba6a94324fe946dde39bd332723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a268d3eaf21e901c37b09fb9b45d95" id="r_a07a268d3eaf21e901c37b09fb9b45d95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a07a268d3eaf21e901c37b09fb9b45d95">StackSize</a> {<a class="el" href="_process_scheduler_8h.html#ab226cdb47327ca7fe2c483852d35ce2c">kSchedMaxStackSz</a>}</td></tr>
+<tr class="memitem:a07a268d3eaf21e901c37b09fb9b45d95" id="r_a07a268d3eaf21e901c37b09fb9b45d95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a07a268d3eaf21e901c37b09fb9b45d95">StackSize</a> {<a class="el" href="_user_process_scheduler_8h.html#ab226cdb47327ca7fe2c483852d35ce2c">kSchedMaxStackSz</a>}</td></tr>
 <tr class="separator:a07a268d3eaf21e901c37b09fb9b45d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c80d5a931d4e80c1fb6ec6c74220362" id="r_a8c80d5a931d4e80c1fb6ec6c74220362"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_i_dylib_object.html">IDylibObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a8c80d5a931d4e80c1fb6ec6c74220362">DylibDelegate</a> {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td></tr>
+<tr class="memitem:a8c80d5a931d4e80c1fb6ec6c74220362" id="r_a8c80d5a931d4e80c1fb6ec6c74220362"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_i_dylib_object.html">IDylibObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a8c80d5a931d4e80c1fb6ec6c74220362">DylibDelegate</a> {nullptr}</td></tr>
 <tr class="separator:a8c80d5a931d4e80c1fb6ec6c74220362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b9f4e07806de3fcfb4c0413e0fe518" id="r_a69b9f4e07806de3fcfb4c0413e0fe518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a69b9f4e07806de3fcfb4c0413e0fe518">MemoryCursor</a> {0UL}</td></tr>
 <tr class="separator:a69b9f4e07806de3fcfb4c0413e0fe518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcca65ed77c184ebcb323d2283a924e8" id="r_abcca65ed77c184ebcb323d2283a924e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#abcca65ed77c184ebcb323d2283a924e8">MemoryLimit</a> {<a class="el" href="_process_scheduler_8h.html#af15d27971febb6ea29dd62469e47424d">kSchedMaxMemoryLimit</a>}</td></tr>
+<tr class="memitem:abcca65ed77c184ebcb323d2283a924e8" id="r_abcca65ed77c184ebcb323d2283a924e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#abcca65ed77c184ebcb323d2283a924e8">MemoryLimit</a> {<a class="el" href="_user_process_scheduler_8h.html#af15d27971febb6ea29dd62469e47424d">kSchedMaxMemoryLimit</a>}</td></tr>
 <tr class="separator:abcca65ed77c184ebcb323d2283a924e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a677e2726a362554c65d301adee26aff9" id="r_a677e2726a362554c65d301adee26aff9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a677e2726a362554c65d301adee26aff9">UsedMemory</a> {0UL}</td></tr>
 <tr class="separator:a677e2726a362554c65d301adee26aff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c7786f7775822b6e4bff9da66d140f2" id="r_a3c7786f7775822b6e4bff9da66d140f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kernel_1_1_process_1_1_process_signal.html">ProcessSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a3c7786f7775822b6e4bff9da66d140f2">ProcessSignal</a></td></tr>
 <tr class="separator:a3c7786f7775822b6e4bff9da66d140f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06521223d14e89f7fa993325efe3665d" id="r_a06521223d14e89f7fa993325efe3665d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kernel_1_1_process_1_1_process_memory_heap_list.html">ProcessMemoryHeapList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a06521223d14e89f7fa993325efe3665d">ProcessMemoryHeap</a> {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td></tr>
+<tr class="memitem:a06521223d14e89f7fa993325efe3665d" id="r_a06521223d14e89f7fa993325efe3665d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kernel_1_1_process_1_1_process_memory_heap_list.html">ProcessMemoryHeapList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a06521223d14e89f7fa993325efe3665d">ProcessMemoryHeap</a> {nullptr}</td></tr>
 <tr class="separator:a06521223d14e89f7fa993325efe3665d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad548c926076bf4a6060a978173442775" id="r_ad548c926076bf4a6060a978173442775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_process_team.html">ProcessTeam</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#ad548c926076bf4a6060a978173442775">ProcessParentTeam</a></td></tr>
 <tr class="separator:ad548c926076bf4a6060a978173442775"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,10 +201,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aed27bbd9174429de4951fbcb14de5302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0eb025c1105862a3e2a4fe3ba41d2fe" id="r_af0eb025c1105862a3e2a4fe3ba41d2fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a4955d9cb19cc64481b15add47aaa41bc">ProcessTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#af0eb025c1105862a3e2a4fe3ba41d2fe">PTime</a> {0}</td></tr>
 <tr class="separator:af0eb025c1105862a3e2a4fe3ba41d2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434f06ee36a925db9f2a5dd006a08006" id="r_a434f06ee36a925db9f2a5dd006a08006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a3cd7ab8391bdadcb7f183eca492dcf1c">PID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a434f06ee36a925db9f2a5dd006a08006">ProcessId</a> {<a class="el" href="_process_scheduler_8h.html#a1d537f5b893dc6838811704135744b72">kSchedInvalidPID</a>}</td></tr>
+<tr class="memitem:a434f06ee36a925db9f2a5dd006a08006" id="r_a434f06ee36a925db9f2a5dd006a08006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a3cd7ab8391bdadcb7f183eca492dcf1c">PID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a434f06ee36a925db9f2a5dd006a08006">ProcessId</a> {<a class="el" href="_user_process_scheduler_8h.html#a1d537f5b893dc6838811704135744b72">kSchedInvalidPID</a>}</td></tr>
 <tr class="memdesc:a434f06ee36a925db9f2a5dd006a08006"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> allocated tine.  <br /></td></tr>
 <tr class="separator:a434f06ee36a925db9f2a5dd006a08006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebf4f6206c2be93de26bc2749cab4769" id="r_aebf4f6206c2be93de26bc2749cab4769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#aebf4f6206c2be93de26bc2749cab4769">Kind</a> {<a class="el" href="class_kernel_1_1_process.html#a075530bf00673ecc48a82b72687a2a20a65c63e20e023893067e72066148e7415">kExectuableKind</a>}</td></tr>
+<tr class="memitem:aebf4f6206c2be93de26bc2749cab4769" id="r_aebf4f6206c2be93de26bc2749cab4769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#aebf4f6206c2be93de26bc2749cab4769">Kind</a> {<a class="el" href="class_kernel_1_1_process.html#a81d39b3bbfb77304bcf0720bf089aacca11fcd88a87e9dcf2c778825eef313f54">kExecutableKind</a>}</td></tr>
 <tr class="separator:aebf4f6206c2be93de26bc2749cab4769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -213,28 +213,28 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac93fe3d927df80d5b294c9892b2fd83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6acc83252b797aaa867e73a7f18f705" id="r_aa6acc83252b797aaa867e73a7f18f705"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#aa6acc83252b797aaa867e73a7f18f705">fLocalCode</a> {0}</td></tr>
 <tr class="separator:aa6acc83252b797aaa867e73a7f18f705"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5927d6ba81de5ca672c4914e5baf1d82" id="r_a5927d6ba81de5ca672c4914e5baf1d82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">friend</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a5927d6ba81de5ca672c4914e5baf1d82">UserProcessScheduler</a></td></tr>
+<tr class="memitem:a5927d6ba81de5ca672c4914e5baf1d82" id="r_a5927d6ba81de5ca672c4914e5baf1d82"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a5927d6ba81de5ca672c4914e5baf1d82">UserProcessScheduler</a></td></tr>
 <tr class="separator:a5927d6ba81de5ca672c4914e5baf1d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f00afcf7886f73fb8e6ae27e9c8ba71" id="r_a9f00afcf7886f73fb8e6ae27e9c8ba71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">friend</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a9f00afcf7886f73fb8e6ae27e9c8ba71">UserProcessHelper</a></td></tr>
+<tr class="memitem:a9f00afcf7886f73fb8e6ae27e9c8ba71" id="r_a9f00afcf7886f73fb8e6ae27e9c8ba71"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_process.html#a9f00afcf7886f73fb8e6ae27e9c8ba71">UserProcessHelper</a></td></tr>
 <tr class="separator:a9f00afcf7886f73fb8e6ae27e9c8ba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a075530bf00673ecc48a82b72687a2a20" name="a075530bf00673ecc48a82b72687a2a20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a075530bf00673ecc48a82b72687a2a20">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a81d39b3bbfb77304bcf0720bf089aacc" name="a81d39b3bbfb77304bcf0720bf089aacc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d39b3bbfb77304bcf0720bf089aacc">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">anonymous</a> <a class="el" href="class_kernel_1_1_error_or.html">enum</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a075530bf00673ecc48a82b72687a2a20aa86b1be203c8902776ece7cc464e6d8d" name="a075530bf00673ecc48a82b72687a2a20aa86b1be203c8902776ece7cc464e6d8d"></a>kInvalidExecutableKind&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a075530bf00673ecc48a82b72687a2a20a65c63e20e023893067e72066148e7415" name="a075530bf00673ecc48a82b72687a2a20a65c63e20e023893067e72066148e7415"></a>kExectuableKind&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a075530bf00673ecc48a82b72687a2a20a79dd83e545b7feb57f1f2a0af65d3736" name="a075530bf00673ecc48a82b72687a2a20a79dd83e545b7feb57f1f2a0af65d3736"></a>kExectuableDylibKind&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a075530bf00673ecc48a82b72687a2a20adc460adc9c0379bfe178235484f36f55" name="a075530bf00673ecc48a82b72687a2a20adc460adc9c0379bfe178235484f36f55"></a>kExectuableKindCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a81d39b3bbfb77304bcf0720bf089aaccaa86b1be203c8902776ece7cc464e6d8d" name="a81d39b3bbfb77304bcf0720bf089aaccaa86b1be203c8902776ece7cc464e6d8d"></a>kInvalidExecutableKind&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a81d39b3bbfb77304bcf0720bf089aacca11fcd88a87e9dcf2c778825eef313f54" name="a81d39b3bbfb77304bcf0720bf089aacca11fcd88a87e9dcf2c778825eef313f54"></a>kExecutableKind&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a81d39b3bbfb77304bcf0720bf089aaccaa566fea754fb9d2d2d19b72463382486" name="a81d39b3bbfb77304bcf0720bf089aaccaa566fea754fb9d2d2d19b72463382486"></a>kExecutableDylibKind&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a81d39b3bbfb77304bcf0720bf089aacca37a025b64453890123829c44b45b3376" name="a81d39b3bbfb77304bcf0720bf089aacca37a025b64453890123829c44b45b3376"></a>kExecutableKindCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -318,12 +318,12 @@ Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a class="el" href="class_kernel_1_1_error_or.html">T</a> &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> Kernel::Process::Delete </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; <a class="el" href="class_kernel_1_1_error_or.html">T</a> * &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; T * &gt;&#160;</td>
           <td class="paramname"><em>ptr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -351,7 +351,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
         <tr>
           <td class="memname"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::Process::Exit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> &amp;&#160;</td>
           <td class="paramname"><em>exit_code</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
@@ -386,7 +386,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> &amp; Kernel::Process::GetAffinity </td>
+          <td class="memname">const <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> &amp; Kernel::Process::GetAffinity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -413,7 +413,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp; Kernel::Process::GetExitCode </td>
+          <td class="memname">const <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp; Kernel::Process::GetExitCode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -472,7 +472,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * Kernel::Process::GetName </td>
+          <td class="memname">const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * Kernel::Process::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -499,7 +499,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="class_kernel_1_1_user.html">User</a> * Kernel::Process::GetOwner </td>
+          <td class="memname">const <a class="el" href="class_kernel_1_1_user.html">User</a> * Kernel::Process::GetOwner </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -526,7 +526,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">const</a> <a class="el" href="namespace_kernel.html#a9b3885a37472898354d34d8eb3125897">ProcessStatusKind</a> &amp; Kernel::Process::GetStatus </td>
+          <td class="memname">const <a class="el" href="namespace_kernel.html#a9b3885a37472898354d34d8eb3125897">ProcessStatusKind</a> &amp; Kernel::Process::GetStatus </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -589,7 +589,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Kernel::Process::operator <a class="el" href="class_kernel_1_1_error_or.html">bool</a> </td>
+          <td class="memname">Kernel::Process::operator bool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -651,7 +651,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_i_dylib_object.html">IDylibObject</a>* Kernel::Process::DylibDelegate {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td>
+          <td class="memname"><a class="el" href="class_kernel_1_1_i_dylib_object.html">IDylibObject</a>* Kernel::Process::DylibDelegate {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -723,7 +723,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> Kernel::Process::Kind {<a class="el" href="class_kernel_1_1_process.html#a075530bf00673ecc48a82b72687a2a20a65c63e20e023893067e72066148e7415">kExectuableKind</a>}</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> Kernel::Process::Kind {<a class="el" href="class_kernel_1_1_process.html#a81d39b3bbfb77304bcf0720bf089aacca11fcd88a87e9dcf2c778825eef313f54">kExecutableKind</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -751,7 +751,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> Kernel::Process::MemoryLimit {<a class="el" href="_process_scheduler_8h.html#af15d27971febb6ea29dd62469e47424d">kSchedMaxMemoryLimit</a>}</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> Kernel::Process::MemoryLimit {<a class="el" href="_user_process_scheduler_8h.html#af15d27971febb6ea29dd62469e47424d">kSchedMaxMemoryLimit</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -765,7 +765,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> Kernel::Process::Name[<a class="el" href="_process_scheduler_8h.html#a9cb9d23e50da76cda835116808be093c">kSchedNameLen</a>] = {&quot;Process&quot;}</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> Kernel::Process::Name[<a class="el" href="_user_process_scheduler_8h.html#a9cb9d23e50da76cda835116808be093c">kSchedNameLen</a>] = {&quot;Process&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -779,7 +779,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_user.html">User</a>* Kernel::Process::Owner {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td>
+          <td class="memname"><a class="el" href="class_kernel_1_1_user.html">User</a>* Kernel::Process::Owner {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -793,7 +793,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a3cd7ab8391bdadcb7f183eca492dcf1c">PID</a> Kernel::Process::ProcessId {<a class="el" href="_process_scheduler_8h.html#a1d537f5b893dc6838811704135744b72">kSchedInvalidPID</a>}</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a3cd7ab8391bdadcb7f183eca492dcf1c">PID</a> Kernel::Process::ProcessId {<a class="el" href="_user_process_scheduler_8h.html#a1d537f5b893dc6838811704135744b72">kSchedInvalidPID</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -809,7 +809,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_kernel_1_1_process_1_1_process_memory_heap_list.html">ProcessMemoryHeapList</a>* Kernel::Process::ProcessMemoryHeap {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td>
+          <td class="memname"><a class="el" href="struct_kernel_1_1_process_1_1_process_memory_heap_list.html">ProcessMemoryHeapList</a>* Kernel::Process::ProcessMemoryHeap {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -865,7 +865,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> Kernel::Process::StackFrame {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td>
+          <td class="memname"><a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> Kernel::Process::StackFrame {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -879,7 +879,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>* Kernel::Process::StackReserve {<a class="el" href="class_kernel_1_1_error_or.html">nullptr</a>}</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>* Kernel::Process::StackReserve {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -893,7 +893,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> Kernel::Process::StackSize {<a class="el" href="_process_scheduler_8h.html#ab226cdb47327ca7fe2c483852d35ce2c">kSchedMaxStackSz</a>}</td>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> Kernel::Process::StackSize {<a class="el" href="_user_process_scheduler_8h.html#ab226cdb47327ca7fe2c483852d35ce2c">kSchedMaxStackSz</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -952,7 +952,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">friend</a> Kernel::Process::UserProcessHelper</td>
+          <td class="memname">friend Kernel::Process::UserProcessHelper</td>
         </tr>
       </table>
   </td>
@@ -974,7 +974,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_error_or.html">friend</a> Kernel::Process::UserProcessScheduler</td>
+          <td class="memname">friend Kernel::Process::UserProcessScheduler</td>
         </tr>
       </table>
   </td>
@@ -1001,7 +1001,7 @@ template&lt;<a class="el" href="class_kernel_1_1_error_or.html">typename</a> <a 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>dev/kernel/KernelKit/<a class="el" href="_process_scheduler_8h_source.html">ProcessScheduler.h</a></li>
+<li>dev/kernel/KernelKit/<a class="el" href="_user_process_scheduler_8h_source.html">UserProcessScheduler.h</a></li>
 <li>dev/kernel/KernelKit/<a class="el" href="_user_process_scheduler_8inl_source.html">UserProcessScheduler.inl</a></li>
 <li>dev/kernel/src/<a class="el" href="_user_process_scheduler_8cc.html">UserProcessScheduler.cc</a></li>
 </ul>
