@@ -1,9 +1,9 @@
 var _he_f_s_8h =
 [
-    [ "HeFS_BOOT_NODE", "struct_he_f_s___b_o_o_t___n_o_d_e.html", "struct_he_f_s___b_o_o_t___n_o_d_e" ],
-    [ "HeFS_INDEX_NODE", "struct_he_f_s___i_n_d_e_x___n_o_d_e.html", "struct_he_f_s___i_n_d_e_x___n_o_d_e" ],
-    [ "HeFS_INDEX_NODE_DIRECTORY", "struct_he_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html", "struct_he_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y" ],
-    [ "Kernel::HeFSFileSystemParser", "class_kernel_1_1_he_f_s_file_system_parser.html", "class_kernel_1_1_he_f_s_file_system_parser" ],
+    [ "HEFS_BOOT_NODE", "struct_h_e_f_s___b_o_o_t___n_o_d_e.html", "struct_h_e_f_s___b_o_o_t___n_o_d_e" ],
+    [ "HEFS_INDEX_NODE", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e.html", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e" ],
+    [ "HEFS_INDEX_NODE_DIRECTORY", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y" ],
+    [ "Kernel::HeFileSystemParser", "class_kernel_1_1_he_file_system_parser.html", "class_kernel_1_1_he_file_system_parser" ],
     [ "kHeFSFileNameLen", "_he_f_s_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465", null ],
     [ "kHeFSMagic", "_he_f_s_8h.html#aaad4ee1c87b58182385840f506b53509", null ],
     [ "kHeFSMagicLen", "_he_f_s_8h.html#a1f0681bf6e2fc8eec0657760dc2348c7", null ],
@@ -16,8 +16,7 @@ var _he_f_s_8h =
     [ "hefs_encoding_to_string", "_he_f_s_8h.html#a8a5c31ab41b4154b2099208d476fe49a", null ],
     [ "hefs_file_flags_to_string", "_he_f_s_8h.html#aef004bb04cd0e523e29f7b60a78f4f82", null ],
     [ "hefs_file_kind_to_string", "_he_f_s_8h.html#ab8365a2fe9a8b33f7e5354ce6e7106e4", null ],
-    [ "hefs_get_block_count", "_he_f_s_8h.html#aa48b5334de4267aecddd3dc4a0048d85", null ],
-    [ "hefs_get_block_size", "_he_f_s_8h.html#a5361f975a272d12b12026a3dd314bcc2", null ],
+    [ "hefs_get_block_size", "_he_f_s_8h.html#aab78ce3957938ce5380d5a4b8c57eae4", null ],
     [ "hefs_hour_get", "_he_f_s_8h.html#a2357f1cfc775d0650f8065401a05c7e2", null ],
     [ "hefs_minute_get", "_he_f_s_8h.html#a80c3016db3ca67b7579de19165dc3ea7", null ],
     [ "hefs_month_get", "_he_f_s_8h.html#a199dcf31cc904d37228db48b642f92ca", null ],

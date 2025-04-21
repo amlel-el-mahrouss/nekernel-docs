@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"_memory_mgr_8cc.html#abdc14455a74d7f5baab35682b232b394":[4,0,0,3,11,32,10],
 "_memory_mgr_8cc.html#ac5790482675a5e40782c5225987761a1":[4,0,0,3,11,32,5],
 "_memory_mgr_8cc.html#ac66013dc7a69b68640b6ddf4f2e5a187":[4,0,0,3,11,32,3],
 "_memory_mgr_8cc.html#ae2211aa4f2dace284f3069c93efac029":[4,0,0,3,11,32,4],
@@ -114,6 +113,7 @@ var NAVTREEINDEX5 =
 "_new_kit_2_utils_8h.html#a0eb7a12ff7869fc14b1d5e70cce9e3b2":[4,0,0,3,9,21,3],
 "_new_kit_2_utils_8h.html#a18524e4f4b3acf4adcf4ca7ff6b10d13":[4,0,0,3,9,21,10],
 "_new_kit_2_utils_8h.html#a1b4831b13185ef765af5cd66d1747148":[4,0,0,3,9,21,15],
+"_new_kit_2_utils_8h.html#a3d324af99e9a0f770de9f82cc0c589d3":[4,0,0,3,9,21,16],
 "_new_kit_2_utils_8h.html#a3dcbc4da2ce0cbd3841bab1977c3fb42":[4,0,0,3,9,21,7],
 "_new_kit_2_utils_8h.html#a5910f9795b6dc366b1d905a48e626d8c":[4,0,0,3,9,21,0],
 "_new_kit_2_utils_8h.html#a768278e9fe819a74b000778dcbb0a331":[4,0,0,3,9,21,4],
@@ -131,6 +131,12 @@ var NAVTREEINDEX5 =
 "_object_8h.html":[4,0,2,0,0,0,3],
 "_object_8h.html#aaaa3f6329bcb486279ed2497eeaaedc2":[4,0,2,0,0,0,3,1],
 "_object_8h_source.html":[4,0,2,0,0,0,3],
+"_opts_8h.html":[4,0,0,5,3],
+"_opts_8h.html#a06d8f574fa9cd248de2ff0d96f9c96d5":[4,0,0,5,3,3],
+"_opts_8h.html#aaf79eaf68b011d41bedb8cc9b17f952b":[4,0,0,5,3,1],
+"_opts_8h.html#ab4e5deecbb5e689ffb5d0eabd1003e82":[4,0,0,5,3,0],
+"_opts_8h.html#ac47a0e8d96e6075638674ac1380fccd4":[4,0,0,5,3,2],
+"_opts_8h_source.html":[4,0,0,5,3],
 "_own_ptr_8cc.html":[4,0,0,3,11,35],
 "_own_ptr_8h.html":[4,0,0,3,9,15],
 "_own_ptr_8h.html#a484cd81c88f49d3e7cc9968c2ba9bbaa":[4,0,0,3,9,15,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX5 =
 "_p_r_d_t_8cc.html":[4,0,0,3,11,39],
 "_p_r_d_t_8cc.html#a84eebc889be3e81118c47f8949c9b15b":[4,0,0,3,11,39,0],
 "_p_r_d_t_8h.html":[4,0,0,3,12,3],
-"_p_r_d_t_8h.html#a84eebc889be3e81118c47f8949c9b15b":[4,0,0,3,12,3,2],
-"_p_r_d_t_8h.html#ad5855fa29b732afeca5c464aba3b545c":[4,0,0,3,12,3,3],
-"_p_r_d_t_8h.html#ad910a109dfbf7627822aca2f39337b8e":[4,0,0,3,12,3,1],
-"_p_r_d_t_8h_source.html":[4,0,0,3,12,3],
-"_page_mgr_8cc.html":[4,0,0,3,11,36],
-"_page_mgr_8h.html":[4,0,0,3,9,16],
-"_page_mgr_8h_source.html":[4,0,0,3,9,16]
+"_p_r_d_t_8h.html#a84eebc889be3e81118c47f8949c9b15b":[4,0,0,3,12,3,2]
 };

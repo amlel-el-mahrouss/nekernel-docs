@@ -48,6 +48,6 @@ var modules_2_a_h_c_i_2_a_h_c_i_8h =
     [ "Reserved0", "modules_2_a_h_c_i_2_a_h_c_i_8h.html#a9fa76e71426721ade4413a4d21d0a966", null ],
     [ "Reset", "modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae7b57132b350445da71941c5303faa81", null ],
     [ "Rsv", "modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae4bdfb4804ffc221b07397ce93f73663", null ],
-    [ "Struc", "modules_2_a_h_c_i_2_a_h_c_i_8h.html#a757eb62864f8b7c49c1b64b8c4c619ff", null ],
+    [ "Struc", "modules_2_a_h_c_i_2_a_h_c_i_8h.html#af456ae6b73132bd6965b03b4c6efcb3a", null ],
     [ "Write", "modules_2_a_h_c_i_2_a_h_c_i_8h.html#a89f84999dceb46d401161325dfb957b4", null ]
 ];

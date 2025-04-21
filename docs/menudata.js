@@ -76,13 +76,16 @@ var menudata={children:[
 {text:"w",url:"namespacemembers_func_w.html#index_w"}]},
 {text:"Variables",url:"namespacemembers_vars.html",children:[
 {text:"a",url:"namespacemembers_vars.html#index_a"},
+{text:"b",url:"namespacemembers_vars.html#index_b"},
 {text:"e",url:"namespacemembers_vars.html#index_e"},
 {text:"g",url:"namespacemembers_vars.html#index_g"},
 {text:"h",url:"namespacemembers_vars.html#index_h"},
+{text:"i",url:"namespacemembers_vars.html#index_i"},
 {text:"k",url:"namespacemembers_vars.html#index_k"},
 {text:"m",url:"namespacemembers_vars.html#index_m"},
 {text:"n",url:"namespacemembers_vars.html#index_n"},
-{text:"p",url:"namespacemembers_vars.html#index_p"}]},
+{text:"p",url:"namespacemembers_vars.html#index_p"},
+{text:"s",url:"namespacemembers_vars.html#index_s"}]},
 {text:"Typedefs",url:"namespacemembers_type.html",children:[
 {text:"_",url:"namespacemembers_type.html#index__5F"},
 {text:"a",url:"namespacemembers_type.html#index_a"},

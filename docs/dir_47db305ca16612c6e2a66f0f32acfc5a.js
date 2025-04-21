@@ -50,5 +50,6 @@ var dir_47db305ca16612c6e2a66f0f32acfc5a =
     [ "User.cc", "_user_8cc.html", "_user_8cc" ],
     [ "UserProcessScheduler.cc", "_user_process_scheduler_8cc.html", "_user_process_scheduler_8cc" ],
     [ "Utils.cc", "_utils_8cc.html", "_utils_8cc" ],
-    [ "Variant.cc", "_variant_8cc.html", null ]
+    [ "Variant.cc", "_variant_8cc.html", null ],
+    [ "WideUtils.cc", "_wide_utils_8cc.html", "_wide_utils_8cc" ]
 ];

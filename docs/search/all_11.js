@@ -1,9 +1,9 @@
 var searchData=
 [
   ['l_0',['L',['../namespaceqr.html#af98ebde8f935f582815540adba4b1865afb446127f2771970216e8f03876813bc',1,'qr']]],
-  ['lapic_1',['lapic',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a82c1043712f4057f1056b7f50de5210a',1,'Kernel::HAL::SDT_OBJECT::LAPIC'],['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a14f4f71e6b5ecd5e7ae92581f075a8e3',1,'Kernel::HAL::SDT_OBJECT::LApic']]],
-  ['lapicnmi_2',['LApicNMI',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a74cbebd0fe875aad429c13b41b34cabc',1,'Kernel::HAL::SDT_OBJECT']]],
-  ['lapicoverride_3',['LApicOverride',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a1993a998869e354e0fe207b297c5c85f',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['lapic_1',['lapic',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a2f46ad7a2d98218c1c0b96bc96ebee12',1,'Kernel::HAL::SDT_OBJECT::LApic'],['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#adebe29550013e0ad9de0f63655e8436b',1,'Kernel::HAL::SDT_OBJECT::LAPIC']]],
+  ['lapicnmi_2',['LApicNMI',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#adfa9d3a2db48db030db71b84aa803c3c',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['lapicoverride_3',['LApicOverride',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#ada48f9a873efd4fd238c9e1ed3b95294',1,'Kernel::HAL::SDT_OBJECT']]],
   ['lastaccesstime_4',['LastAccessTime',['../struct_e_f_i___f_i_n_a_l.html#af65d18f13ef0821578cff0cf6b4ed8f0',1,'EFI_FINAL']]],
   ['lastgptentry_5',['LastGPTEntry',['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#ac8b5210eeb7a62b7a565b19bb86bc0e4',1,'Kernel::GPT_PARTITION_TABLE']]],
   ['latencytimer_6',['LatencyTimer',['../struct_kernel_1_1_p_c_i_1_1_device_header.html#ae14299daa5bc17914963b0d1194ad63b',1,'Kernel::PCI::DeviceHeader']]],
@@ -46,7 +46,7 @@ var searchData=
   ['limit_43',['limit',['../struct_kernel_1_1_h_a_l_1_1_register64.html#a672a9da6a0d208bba225a84fa6499269',1,'Kernel::HAL::Register64::Limit'],['../class_kernel_1_1_h_a_l_1_1_segment_descriptor.html#a89b4c5aec8e9451bc4120b716a4017af',1,'Kernel::HAL::SegmentDescriptor::Limit']]],
   ['linker_44',['Linker',['../struct_kernel_1_1_p_e_f_container.html#a64d1b1dbba11a98f3bca1da2da69f6bb',1,'Kernel::PEFContainer']]],
   ['lint_45',['LINT',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a015623b6d4121dc942a29369d8a46de8',1,'Kernel::HAL::SDT_OBJECT']]],
-  ['list_46',['List',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#aaa049804c8478fd278c5c6ddd2eec7ff',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['list_46',['List',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a6172e258106214ec2fea055c84010296',1,'Kernel::HAL::SDT_OBJECT']]],
   ['load_47',['load',['../class_kernel_1_1_h_a_l_1_1_i_d_t_loader.html#ac161626f8a059c18b0461440556ccfc0',1,'Kernel::HAL::IDTLoader::Load()'],['../class_kernel_1_1_n_e___d_y_l_i_b___o_b_j_e_c_t.html#a5b9254eb16c5c688e62f28d25ce0869f',1,'Kernel::NE_DYLIB_OBJECT::Load()'],['../class_kernel_1_1_h_a_l_1_1_g_d_t_loader.html#a3387f81c594a72021ef63a1ef886ff0d',1,'Kernel::HAL::GDTLoader::Load(Register64 &amp;gdt)'],['../class_kernel_1_1_h_a_l_1_1_g_d_t_loader.html#a93f360afdefb6ca9c1cb434ff5064c49',1,'Kernel::HAL::GDTLoader::Load(Ref&lt; Register64 &gt; &amp;gdt)'],['../class_kernel_1_1_h_a_l_1_1_i_d_t_loader.html#ad2f998d58c68524b5f00dc9dce22ddef',1,'Kernel::HAL::IDTLoader::Load()']]],
   ['loaderflags_48',['LoaderFlags',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a4ee80ae66fdeb7afe6ddacc487fc3e64',1,'LDR_OPTIONAL_HEADER']]],
   ['loaderinterface_49',['loaderinterface',['../class_kernel_1_1_loader_interface.html',1,'Kernel::LoaderInterface'],['../class_kernel_1_1_loader_interface.html#a646e2df6a748b9003336ca91582dbb94',1,'Kernel::LoaderInterface::LoaderInterface()']]],

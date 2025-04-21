@@ -14,6 +14,6 @@ var struct_hba_cmd_header =
     [ "Reserved0", "struct_hba_cmd_header.html#a1c139f0061af918ad8a4be1fe7a03d62", null ],
     [ "Reset", "struct_hba_cmd_header.html#a671f86e0b1f95286b5a8d72bb9dff5cd", null ],
     [ "Rsv", "struct_hba_cmd_header.html#a4f871795cb4354410a38d144d566f6ca", null ],
-    [ "Struc", "struct_hba_cmd_header.html#a7d0b6e19a199fcee4c1de31ddca9d6b4", null ],
+    [ "Struc", "struct_hba_cmd_header.html#a746914b0ac90a79911260f6d6958bbf6", null ],
     [ "Write", "struct_hba_cmd_header.html#af9a170be84a4bab6557b51d8e1024211", null ]
 ];

@@ -14,14 +14,14 @@ var searchData=
   ['printcreate_11',['PrintCreate',['../_system_calls_8h.html#a0c36c64b7124be0618419205653f4860',1,'SystemCalls.h']]],
   ['printget_12',['PrintGet',['../_system_calls_8h.html#aa8a7c9aa3be967a3ba2324db1188c7a7',1,'SystemCalls.h']]],
   ['printin_13',['PrintIn',['../_system_calls_8h.html#a9dccac8b24037e387043d31e215d2e30',1,'SystemCalls.h']]],
-  ['printout_14',['PrintOut',['../_system_calls_8h.html#ab4fe33f58b392cdb3a3674b5b3dbe1d1',1,'SystemCalls.h']]],
+  ['printout_14',['printout',['../_system_calls_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da',1,'PrintOut(_Input IORef desc, const char *fmt,...):&#160;SystemCalls.cc'],['../_system_calls_8h.html#ab4fe33f58b392cdb3a3674b5b3dbe1d1',1,'PrintOut(IORef file, const Char *fmt,...):&#160;SystemCalls.h']]],
   ['printrelease_15',['PrintRelease',['../_system_calls_8h.html#ae59729d13d54a387c19cfc99b25c6619',1,'SystemCalls.h']]],
   ['process_16',['Process',['../class_kernel_1_1_process.html#ad5f8bef8873157fc55971ac43f9e974e',1,'Kernel::Process']]],
   ['processimage_17',['ProcessImage',['../struct_kernel_1_1_process_image.html#ab0abf24424b812a20d1b4ff5e159110b',1,'Kernel::ProcessImage']]],
   ['processteam_18',['ProcessTeam',['../class_kernel_1_1_process_team.html#a2cdcef161ac950c99b4fcbed1c9d4940',1,'Kernel::ProcessTeam']]],
   ['progif_19',['ProgIf',['../class_kernel_1_1_p_c_i_1_1_device.html#a072e178ab31ff129666b916e2f73b920',1,'Kernel::PCI::Device']]],
   ['property_20',['property',['../class_c_f_1_1_property.html#a2010611e0688f761bf6600681d47b88d',1,'CF::Property::Property(const Property &amp;)=default'],['../class_c_f_1_1_property.html#a65c8d4cbcfe60355644bfd711ce5773e',1,'CF::Property::Property()']]],
-  ['ptewrapper_21',['ptewrapper',['../class_kernel_1_1_p_t_e_wrapper.html#a7a3b550bd78e1eb3ad64c522c7f0b241',1,'Kernel::PTEWrapper::PTEWrapper(const PTEWrapper &amp;)=default'],['../class_kernel_1_1_p_t_e_wrapper.html#a522d92b2301926cd3496577395e4b0ce',1,'Kernel::PTEWrapper::PTEWrapper(Boolean Rw=false, Boolean User=false, Boolean ExecDisable=false, UIntPtr Address=0)']]],
+  ['ptewrapper_21',['ptewrapper',['../class_kernel_1_1_p_t_e_wrapper.html#a522d92b2301926cd3496577395e4b0ce',1,'Kernel::PTEWrapper::PTEWrapper(Boolean Rw=false, Boolean User=false, Boolean ExecDisable=false, UIntPtr Address=0)'],['../class_kernel_1_1_p_t_e_wrapper.html#a7a3b550bd78e1eb3ad64c522c7f0b241',1,'Kernel::PTEWrapper::PTEWrapper(const PTEWrapper &amp;)=default']]],
   ['pwrreadcode_22',['PwrReadCode',['../_system_calls_8h.html#a3494e6092044a4d091b15b3812a18358',1,'SystemCalls.h']]],
   ['pwrsendcode_23',['PwrSendCode',['../_system_calls_8h.html#a4e22cb77110de5e46438484e937da611',1,'SystemCalls.h']]]
 ];

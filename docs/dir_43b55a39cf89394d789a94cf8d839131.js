@@ -5,5 +5,6 @@ var dir_43b55a39cf89394d789a94cf8d839131 =
     [ "EFI.h", "_e_f_i_8h.html", null ],
     [ "EPM.h", "kernel_2_firmware_kit_2_e_p_m_8h.html", "kernel_2_firmware_kit_2_e_p_m_8h" ],
     [ "GPT.h", "_g_p_t_8h.html", "_g_p_t_8h" ],
-    [ "Handover.h", "_handover_8h.html", "_handover_8h" ]
+    [ "Handover.h", "_handover_8h.html", "_handover_8h" ],
+    [ "VEPM.h", "_v_e_p_m_8h.html", null ]
 ];

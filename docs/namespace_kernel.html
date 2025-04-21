@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;1.0.1</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
    </div>
   </td>
  </tr>
@@ -188,7 +188,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_hardware_timer.html">HardwareTimer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_he_f_s_file_system_parser.html">HeFSFileSystemParser</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_he_file_system_parser.html">HeFileSystemParser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS filesystem parser class.  <a href="class_kernel_1_1_he_file_system_parser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_h_p_e_t_address_structure.html">HPETAddressStructure</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,81 +571,81 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5c36ab2880e2b201b886dc98e7e2c5fc" id="r_a5c36ab2880e2b201b886dc98e7e2c5fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcaf6b7d4d0fe77ff04165a2afa27f60856">kNeFSSubDriveA</a>
-, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcabffb83613db295a69302c5cd4d9c49a6">kNeFSSubDriveB</a>
-, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcaab5eb2f8f1d04febe7ec2de462ca91d2">kNeFSSubDriveC</a>
-, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fcac1fe2864c64da327950a9a883122d40a">kNeFSSubDriveD</a>
+<tr class="memitem:aa9a327287715629eece3297dff558a30" id="r_aa9a327287715629eece3297dff558a30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30af6b7d4d0fe77ff04165a2afa27f60856">kNeFSSubDriveA</a>
+, <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30abffb83613db295a69302c5cd4d9c49a6">kNeFSSubDriveB</a>
+, <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30aab5eb2f8f1d04febe7ec2de462ca91d2">kNeFSSubDriveC</a>
+, <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30ac1fe2864c64da327950a9a883122d40a">kNeFSSubDriveD</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fca7cadc2907eacf7ac967bf854cb0d4441">kNeFSSubDriveInvalid</a>
-, <a class="el" href="namespace_kernel.html#a5c36ab2880e2b201b886dc98e7e2c5fca3f90086151f389dd800e86c9d7b5947a">kNeFSSubDriveCount</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30a7cadc2907eacf7ac967bf854cb0d4441">kNeFSSubDriveInvalid</a>
+, <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30a3f90086151f389dd800e86c9d7b5947a">kNeFSSubDriveCount</a>
 <br />
  }</td></tr>
-<tr class="separator:a5c36ab2880e2b201b886dc98e7e2c5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9a327287715629eece3297dff558a30" id="r_aa9a327287715629eece3297dff558a30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30a9e42c1e446536b33e11e06b24e20ae04">kNeFSRsrcForkKind</a> = 0
-, <a class="el" href="namespace_kernel.html#aa9a327287715629eece3297dff558a30a162595e53997ea0666e42406f91e8f09">kNeFSDataForkKind</a> = 1
- }</td></tr>
-<tr class="memdesc:aa9a327287715629eece3297dff558a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource fork kind.  <a href="namespace_kernel.html#aa9a327287715629eece3297dff558a30">More...</a><br /></td></tr>
 <tr class="separator:aa9a327287715629eece3297dff558a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794297d1339ae2e1e16c4768fbadd744" id="r_a794297d1339ae2e1e16c4768fbadd744"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a794297d1339ae2e1e16c4768fbadd744a9e42c1e446536b33e11e06b24e20ae04">kNeFSRsrcForkKind</a> = 0
+, <a class="el" href="namespace_kernel.html#a794297d1339ae2e1e16c4768fbadd744a162595e53997ea0666e42406f91e8f09">kNeFSDataForkKind</a> = 1
+ }</td></tr>
+<tr class="memdesc:a794297d1339ae2e1e16c4768fbadd744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource fork kind.  <a href="namespace_kernel.html#a794297d1339ae2e1e16c4768fbadd744">More...</a><br /></td></tr>
+<tr class="separator:a794297d1339ae2e1e16c4768fbadd744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc2f72a71bd085f3d4f7de8343008b9" id="r_a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9">CommStatus</a> : UInt16 { <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5e92a48a74777783aafa4ff15071f5ea">kStateInvalid</a>
 , <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9ac8ad6f8f9cd3b26e97883edb92c9e9a2">kStateReady</a> = 0xCF
 , <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5343586fd107aaa721dfafa833524247">kStateTransmit</a> = 0xFC
 , <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a1dbf76d5c3b4041e27a3510832614801">kStateCnt</a> = 3
  }</td></tr>
 <tr class="separator:a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7152b76708737c69edeab95c54948b32" id="r_a7152b76708737c69edeab95c54948b32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32a39be8e71e17a3f2000f277b4951dad58">kDeviceTypeIDE</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32a8be18d914a44eda2250fa1738a2aa7f9">kDeviceTypeEthernet</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32abd1f30c70290d3771f96f04bd2bc13fe">kDeviceTypeWiFi</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32ab656fed2d875f01a0531fd947efc83c5">kDeviceTypeFW</a>
-, <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32a0c5a136eae3a4a460f7f0881771580b5">kDeviceTypeBT</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32ada9380e06d51517310cbc1ca1b08d103">kDeviceTypeRS232</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32afd8db1895f93ee647c7c687e8acb46cf">kDeviceTypeSCSI</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32a15176f47a1d26d8cf925c00e0c12b513">kDeviceTypeAHCI</a>
-, <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32a52d1c5f98899ff49286ad90b3f2a911f">kDeviceTypeMBCI</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32ab56909e3f52cddfec70695d533459ba0">kDeviceTypeATA</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32a4b045e4f09fd750a02ceda1a84c93994">kDeviceTypeUSB</a>
-, <a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32ae2904e55c01503090a91d15dff50a6f4">kDeviceTypeMediaCtrl</a>
-, <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32a64f682a6999b45e134d3201724bad0c5">kDeviceTypeCount</a>
-<br />
- }</td></tr>
-<tr class="memdesc:a7152b76708737c69edeab95c54948b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">!  <a href="namespace_kernel.html#a7152b76708737c69edeab95c54948b32">More...</a><br /></td></tr>
-<tr class="separator:a7152b76708737c69edeab95c54948b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acebdc221a30d3003cf01bbd8e598671b" id="r_acebdc221a30d3003cf01bbd8e598671b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba30b5cda6cb0d4120b7818fae0a212ca8">kInvalidDrive</a> = -1
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bac9bdc44d5f5615551357f3ab0fecdc74">kBlockDevice</a> = 0xAD
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba84c5bbb7feda914da99969aff89b9def">kMassStorageDrive</a> = 0xDA
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671baa65245362b8bc3fa906fa46bec847760">kFloppyDrive</a> = 0xCD
+&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba39be8e71e17a3f2000f277b4951dad58">kDeviceTypeIDE</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba8be18d914a44eda2250fa1738a2aa7f9">kDeviceTypeEthernet</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671babd1f30c70290d3771f96f04bd2bc13fe">kDeviceTypeWiFi</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bab656fed2d875f01a0531fd947efc83c5">kDeviceTypeFW</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bab779f6a5cf30ef8637711ad0f2364669">kOpticalDrive</a> = 0xDC
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba4db0ee1cb280641f422d8784351035fc">kTapeDrive</a> = 0xD7
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba5c42cfb2cc26712b415e146457a4caf7">kReadOnlyDrive</a> = 0x10
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba099b1741447dcaacac9e19d58fa1d2dc">kEPMDrive</a> = 0x11
+&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba0c5a136eae3a4a460f7f0881771580b5">kDeviceTypeBT</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bada9380e06d51517310cbc1ca1b08d103">kDeviceTypeRS232</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bafd8db1895f93ee647c7c687e8acb46cf">kDeviceTypeSCSI</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba15176f47a1d26d8cf925c00e0c12b513">kDeviceTypeAHCI</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671baf30fe3301b05c9a121ec73ac5b724b91">kEPTDrive</a> = 0x12
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba1b1b0f2367c91dbe56d44653dff69d9a">kMBRDrive</a> = 0x13
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba03415ebe534ec9f44816a6c7129d78b6">kGPTDrive</a> = 0x14
-, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba753b9c0b9e1a83330035e1fe9ecb4397">kUnformattedDrive</a> = 0x15
+&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba52d1c5f98899ff49286ad90b3f2a911f">kDeviceTypeMBCI</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bab56909e3f52cddfec70695d533459ba0">kDeviceTypeATA</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba4b045e4f09fd750a02ceda1a84c93994">kDeviceTypeUSB</a>
+, <a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bae2904e55c01503090a91d15dff50a6f4">kDeviceTypeMediaCtrl</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671bac9725f76e8bf507bfe8bd849beb5ce08">kStorageCount</a> = 9
+&#160;&#160;<a class="el" href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671ba64f682a6999b45e134d3201724bad0c5">kDeviceTypeCount</a>
 <br />
  }</td></tr>
+<tr class="memdesc:acebdc221a30d3003cf01bbd8e598671b"><td class="mdescLeft">&#160;</td><td class="mdescRight">!  <a href="namespace_kernel.html#acebdc221a30d3003cf01bbd8e598671b">More...</a><br /></td></tr>
 <tr class="separator:acebdc221a30d3003cf01bbd8e598671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed6af00ece6653218fec541e5dd3625" id="r_a7ed6af00ece6653218fec541e5dd3625"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625a8d61f20f458902683d6af5376385689f">kFileWriteAll</a> = 100
-, <a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625a98cf54f2e9d54d86bbff85b5175eab41">kFileReadAll</a> = 101
-, <a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625a3ce868ebee02ab8718d189f573113dd2">kFileReadChunk</a> = 102
-, <a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625ab66ea1f76a91bc3bbfcdb01e41b35270">kFileWriteChunk</a> = 103
+<tr class="memitem:a47847d105cd6c735aaa9bf9feb29fdf4" id="r_a47847d105cd6c735aaa9bf9feb29fdf4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a30b5cda6cb0d4120b7818fae0a212ca8">kInvalidDrive</a> = -1
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4ac9bdc44d5f5615551357f3ab0fecdc74">kBlockDevice</a> = 0xAD
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a84c5bbb7feda914da99969aff89b9def">kMassStorageDrive</a> = 0xDA
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4aa65245362b8bc3fa906fa46bec847760">kFloppyDrive</a> = 0xCD
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625a769ba765cbcf1e2e5edb4d4050bd34a1">kFileIOCnt</a> = (kFileWriteChunk - kFileWriteAll) + 1
-, <a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625ad20629548848dc9fe6d5f543f9253ebd">kFileFlagRsrc</a> = 104
-, <a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625a45d559b6b45f5ac01bb6a239a3b5d3d7">kFileFlagData</a> = 105
+&#160;&#160;<a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4ab779f6a5cf30ef8637711ad0f2364669">kOpticalDrive</a> = 0xDC
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a4db0ee1cb280641f422d8784351035fc">kTapeDrive</a> = 0xD7
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a5c42cfb2cc26712b415e146457a4caf7">kReadOnlyDrive</a> = 0x10
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a099b1741447dcaacac9e19d58fa1d2dc">kEPMDrive</a> = 0x11
+, <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4af30fe3301b05c9a121ec73ac5b724b91">kEPTDrive</a> = 0x12
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a1b1b0f2367c91dbe56d44653dff69d9a">kMBRDrive</a> = 0x13
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a03415ebe534ec9f44816a6c7129d78b6">kGPTDrive</a> = 0x14
+, <a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4a753b9c0b9e1a83330035e1fe9ecb4397">kUnformattedDrive</a> = 0x15
+, <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a47847d105cd6c735aaa9bf9feb29fdf4ac9725f76e8bf507bfe8bd849beb5ce08">kStorageCount</a> = 9
 <br />
  }</td></tr>
-<tr class="separator:a7ed6af00ece6653218fec541e5dd3625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a47847d105cd6c735aaa9bf9feb29fdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68852254a7f1f17c7b59bf56306cf06" id="r_ab68852254a7f1f17c7b59bf56306cf06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#ab68852254a7f1f17c7b59bf56306cf06a8d61f20f458902683d6af5376385689f">kFileWriteAll</a> = 100
+, <a class="el" href="namespace_kernel.html#ab68852254a7f1f17c7b59bf56306cf06a98cf54f2e9d54d86bbff85b5175eab41">kFileReadAll</a> = 101
+, <a class="el" href="namespace_kernel.html#ab68852254a7f1f17c7b59bf56306cf06a3ce868ebee02ab8718d189f573113dd2">kFileReadChunk</a> = 102
+, <a class="el" href="namespace_kernel.html#ab68852254a7f1f17c7b59bf56306cf06ab66ea1f76a91bc3bbfcdb01e41b35270">kFileWriteChunk</a> = 103
+, <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#ab68852254a7f1f17c7b59bf56306cf06a769ba765cbcf1e2e5edb4d4050bd34a1">kFileIOCnt</a> = (kFileWriteChunk - kFileWriteAll) + 1
+, <a class="el" href="namespace_kernel.html#ab68852254a7f1f17c7b59bf56306cf06ad20629548848dc9fe6d5f543f9253ebd">kFileFlagRsrc</a> = 104
+, <a class="el" href="namespace_kernel.html#ab68852254a7f1f17c7b59bf56306cf06a45d559b6b45f5ac01bb6a239a3b5d3d7">kFileFlagData</a> = 105
+<br />
+ }</td></tr>
+<tr class="separator:ab68852254a7f1f17c7b59bf56306cf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf43712634987021cb1b00decb0f91f2" id="r_abf43712634987021cb1b00decb0f91f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2">ThreadKind</a> { <br />
 &#160;&#160;<a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2a88a960ab6395cc9b2eb61ee2e728549e">kAPInvalid</a>
 , <a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2acfefe218fa2e85a473595c4913270913">kAPSystemReserved</a>
@@ -656,59 +657,59 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:abf43712634987021cb1b00decb0f91f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d94b34197ca5437fbf07704812f3027" id="r_a7d94b34197ca5437fbf07704812f3027"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a7d94b34197ca5437fbf07704812f3027aa1ef02df9ea1e2acc56e6acf02d05634">kLockInvalid</a>
-, <a class="el" href="namespace_kernel.html#a7d94b34197ca5437fbf07704812f3027a793c188cdff623f99a8092dc06183c57">kLockDone</a> = 200
-, <a class="el" href="namespace_kernel.html#a7d94b34197ca5437fbf07704812f3027a59e3a32ab7861627ea1f92c5010a86cc">kLockTimedOut</a>
-, <a class="el" href="namespace_kernel.html#a7d94b34197ca5437fbf07704812f3027ae1dfce533a64bdd14d5107b5509abf70">kLockCount</a> = 3
+<tr class="memitem:a3c294ec2d03f48e31466bcecdea8a608" id="r_a3c294ec2d03f48e31466bcecdea8a608"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a3c294ec2d03f48e31466bcecdea8a608aa1ef02df9ea1e2acc56e6acf02d05634">kLockInvalid</a>
+, <a class="el" href="namespace_kernel.html#a3c294ec2d03f48e31466bcecdea8a608a793c188cdff623f99a8092dc06183c57">kLockDone</a> = 200
+, <a class="el" href="namespace_kernel.html#a3c294ec2d03f48e31466bcecdea8a608a59e3a32ab7861627ea1f92c5010a86cc">kLockTimedOut</a>
+, <a class="el" href="namespace_kernel.html#a3c294ec2d03f48e31466bcecdea8a608ae1dfce533a64bdd14d5107b5509abf70">kLockCount</a> = 3
  }</td></tr>
-<tr class="separator:a7d94b34197ca5437fbf07704812f3027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3c294ec2d03f48e31466bcecdea8a608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb50351586bdabc9c91534f64cc58e42" id="r_aeb50351586bdabc9c91534f64cc58e42"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aeb50351586bdabc9c91534f64cc58e42">DmaKind</a> { <a class="el" href="namespace_kernel.html#aeb50351586bdabc9c91534f64cc58e42ac89b74e7544d782dd33c25fdaae40b8f">PCI</a>
 , <a class="el" href="namespace_kernel.html#aeb50351586bdabc9c91534f64cc58e42a64f288ef838ec6e8bd8a3a8833c54047">ISA</a>
 , <a class="el" href="namespace_kernel.html#aeb50351586bdabc9c91534f64cc58e42a4bbb8f967da6d1a610596d7257179c2b">Invalid</a>
  }</td></tr>
 <tr class="separator:aeb50351586bdabc9c91534f64cc58e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af986a0d3be20817166b8ac7705c018d9" id="r_af986a0d3be20817166b8ac7705c018d9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9a48b93ef1e6881434b2909c43cd24c5a1">kPefArchIntel86S</a>
-, <a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9a259324a1dd8aef60f4a2841cac5dc04f">kPefArchAMD64</a>
-, <a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9a49f37d7bce092513b694d2c629466f70">kPefArchRISCV</a>
-, <a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9a22bb4f5fb40eb70b872bb2b6dd0137f7">kPefArch64x0</a>
-, <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9ae6672f0c421732eab1b7a04e54f0c688">kPefArch32x0</a>
-, <a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9aa084609fba32b04f133dc1340cb2e4d9">kPefArchPowerPC</a>
-, <a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9a0aa0acb3c38a472b5b97564e3353f01b">kPefArchARM64</a>
-, <a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9a1a9c34a65eaf80dbc5a42997c1b46e47">kPefArchCount</a> = (kPefArchPowerPC - kPefArchIntel86S) + 1
-, <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#af986a0d3be20817166b8ac7705c018d9aff7681186a2000985615fe785a19a654">kPefArchInvalid</a> = 0xFF
-<br />
- }</td></tr>
-<tr class="separator:af986a0d3be20817166b8ac7705c018d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f1944d4df007456fb725c501649539" id="r_ad8f1944d4df007456fb725c501649539"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539aaa37c54e787a067a8dbc8a4549869848">kPefSubArchAMD</a>
-, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539aa06e718a104aa4e832f53b9c8128cdab">kPefSubArchIntel</a>
-, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539afae64e134d7e9baadb9b280bd5beff67">kPefSubArchARM</a>
-, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539a3e9e94b4e97352417e5bbb6a68dcab44">kPefSubArchGeneric</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539a48b93ef1e6881434b2909c43cd24c5a1">kPefArchIntel86S</a>
+, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539a259324a1dd8aef60f4a2841cac5dc04f">kPefArchAMD64</a>
+, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539a49f37d7bce092513b694d2c629466f70">kPefArchRISCV</a>
+, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539a22bb4f5fb40eb70b872bb2b6dd0137f7">kPefArch64x0</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539aa5852ae3789522b6536c983ead307308">kPefSubArchIBM</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539ae6672f0c421732eab1b7a04e54f0c688">kPefArch32x0</a>
+, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539aa084609fba32b04f133dc1340cb2e4d9">kPefArchPowerPC</a>
+, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539a0aa0acb3c38a472b5b97564e3353f01b">kPefArchARM64</a>
+, <a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539a1a9c34a65eaf80dbc5a42997c1b46e47">kPefArchCount</a> = (kPefArchPowerPC - kPefArchIntel86S) + 1
+, <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#ad8f1944d4df007456fb725c501649539aff7681186a2000985615fe785a19a654">kPefArchInvalid</a> = 0xFF
 <br />
  }</td></tr>
 <tr class="separator:ad8f1944d4df007456fb725c501649539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45b422ffafb3521a2176dc9d380dd30" id="r_ac45b422ffafb3521a2176dc9d380dd30"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30a84915740eebbf3c285da45f28e0b7081">kPefKindExec</a> = 1
-, <a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30ae86d3343d83f89701d9f96feee2119b7">kPefKindDylib</a> = 2
-, <a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30af1fc4b8838f2e87af5e7d5f34a0e5a9b">kPefKindObject</a> = 4
-, <a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30af9d9ad662951bad4716175761c4992e4">kPefKindDebug</a> = 5
+&#160;&#160;<a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30aaa37c54e787a067a8dbc8a4549869848">kPefSubArchAMD</a>
+, <a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30aa06e718a104aa4e832f53b9c8128cdab">kPefSubArchIntel</a>
+, <a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30afae64e134d7e9baadb9b280bd5beff67">kPefSubArchARM</a>
+, <a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30a3e9e94b4e97352417e5bbb6a68dcab44">kPefSubArchGeneric</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30acbb5232a97f6c7b8c08552e11b0f5975">kPefKindDriver</a> = 6
-, <a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30a1a16103261741ba96debe934bd3bd669">kPefKindCount</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#ac45b422ffafb3521a2176dc9d380dd30aa5852ae3789522b6536c983ead307308">kPefSubArchIBM</a>
 <br />
  }</td></tr>
 <tr class="separator:ac45b422ffafb3521a2176dc9d380dd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa76979796bc8e99a6fe96ef4063a9b29" id="r_aa76979796bc8e99a6fe96ef4063a9b29"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29aaef7870234019b00d6c3c8e058fd4139">kPefCode</a> = 0xC
-, <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29abe31d83d4c2a865333dcbe9d6a8c8e3e">kPefData</a> = 0xD
-, <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29ad48c144b77180e601d3127d5abeebd86">kPefZero</a> = 0xE
-, <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29aefde1fc09c9af3208404a41e6541fa85">kPefLinkerID</a> = 0x1
+<tr class="memitem:aa76979796bc8e99a6fe96ef4063a9b29" id="r_aa76979796bc8e99a6fe96ef4063a9b29"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29a84915740eebbf3c285da45f28e0b7081">kPefKindExec</a> = 1
+, <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29ae86d3343d83f89701d9f96feee2119b7">kPefKindDylib</a> = 2
+, <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29af1fc4b8838f2e87af5e7d5f34a0e5a9b">kPefKindObject</a> = 4
+, <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29af9d9ad662951bad4716175761c4992e4">kPefKindDebug</a> = 5
+, <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29acbb5232a97f6c7b8c08552e11b0f5975">kPefKindDriver</a> = 6
+, <a class="el" href="namespace_kernel.html#aa76979796bc8e99a6fe96ef4063a9b29a1a16103261741ba96debe934bd3bd669">kPefKindCount</a>
+<br />
  }</td></tr>
 <tr class="separator:aa76979796bc8e99a6fe96ef4063a9b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e2d6c1198fed817953b82927707335" id="r_a44e2d6c1198fed817953b82927707335"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a44e2d6c1198fed817953b82927707335aaef7870234019b00d6c3c8e058fd4139">kPefCode</a> = 0xC
+, <a class="el" href="namespace_kernel.html#a44e2d6c1198fed817953b82927707335abe31d83d4c2a865333dcbe9d6a8c8e3e">kPefData</a> = 0xD
+, <a class="el" href="namespace_kernel.html#a44e2d6c1198fed817953b82927707335ad48c144b77180e601d3127d5abeebd86">kPefZero</a> = 0xE
+, <a class="el" href="namespace_kernel.html#a44e2d6c1198fed817953b82927707335aefde1fc09c9af3208404a41e6541fa85">kPefLinkerID</a> = 0x1
+ }</td></tr>
+<tr class="separator:a44e2d6c1198fed817953b82927707335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf116f03274e4531209432eae894db9e" id="r_abf116f03274e4531209432eae894db9e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9e">UserRingKind</a> { <br />
 &#160;&#160;<a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea06332aa62b5d9ea6c7d63d969677734e">kRingInvalid</a> = 0
 , <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea4273218a9bea7fb97d46ca7501cbeb5b">kRingStdUser</a> = 1
@@ -762,11 +763,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_kernel.html#a865cfc3ba8dace65e34b58be9bbe568ba9fb09bc213dbaf1dff9fc3a42d0237b5">kRingCount</a> = 5
  }</td></tr>
 <tr class="separator:a865cfc3ba8dace65e34b58be9bbe568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da4dd6148576cd8ae87fb52a276a06d" id="r_a5da4dd6148576cd8ae87fb52a276a06d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a5da4dd6148576cd8ae87fb52a276a06dac91c61da257bf355b364411f6f146507">kIPCLittleEndian</a> = 0
-, <a class="el" href="namespace_kernel.html#a5da4dd6148576cd8ae87fb52a276a06daa14658b76be547afd249f37864ceaeb6">kIPCBigEndian</a> = 1
-, <a class="el" href="namespace_kernel.html#a5da4dd6148576cd8ae87fb52a276a06dabbcbfaf32af4b6c07db438b5ed7078a3">kIPCMixedEndian</a> = 2
+<tr class="memitem:af17808f14d03f2a5fa69656874c5877b" id="r_af17808f14d03f2a5fa69656874c5877b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#af17808f14d03f2a5fa69656874c5877bac91c61da257bf355b364411f6f146507">kIPCLittleEndian</a> = 0
+, <a class="el" href="namespace_kernel.html#af17808f14d03f2a5fa69656874c5877baa14658b76be547afd249f37864ceaeb6">kIPCBigEndian</a> = 1
+, <a class="el" href="namespace_kernel.html#af17808f14d03f2a5fa69656874c5877babbcbfaf32af4b6c07db438b5ed7078a3">kIPCMixedEndian</a> = 2
  }</td></tr>
-<tr class="separator:a5da4dd6148576cd8ae87fb52a276a06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af17808f14d03f2a5fa69656874c5877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72738721513022e56f50bc7098a71781" id="r_a72738721513022e56f50bc7098a71781"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a72738721513022e56f50bc7098a71781">Endian</a> : UInt8 { <br />
 &#160;&#160;<a class="el" href="namespace_kernel.html#a72738721513022e56f50bc7098a71781a0ee0032d578e8beea522734ead76c405">kEndianInvalid</a>
 , <a class="el" href="namespace_kernel.html#a72738721513022e56f50bc7098a71781aa9bf0a902ac186ab6b7c9a0b22c485ad">kEndianBig</a>
@@ -777,12 +778,12 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a72738721513022e56f50bc7098a71781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af17808f14d03f2a5fa69656874c5877b" id="r_af17808f14d03f2a5fa69656874c5877b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#af17808f14d03f2a5fa69656874c5877ba7ed6e9300a01bec24d553e65f7a9f39d">kPRDTTransferInProgress</a>
-, <a class="el" href="namespace_kernel.html#af17808f14d03f2a5fa69656874c5877ba6417bd08e8e0b9fc927c3f3a5846472c">kPRDTTransferIsDone</a>
-, <a class="el" href="namespace_kernel.html#af17808f14d03f2a5fa69656874c5877baa8a2c959cc0741b759fdadd16982a7e1">kPRDTTransferCount</a>
+<tr class="memitem:a3a2b5e5f4d2e29724f185a503f598856" id="r_a3a2b5e5f4d2e29724f185a503f598856"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a3a2b5e5f4d2e29724f185a503f598856a7ed6e9300a01bec24d553e65f7a9f39d">kPRDTTransferInProgress</a>
+, <a class="el" href="namespace_kernel.html#a3a2b5e5f4d2e29724f185a503f598856a6417bd08e8e0b9fc927c3f3a5846472c">kPRDTTransferIsDone</a>
+, <a class="el" href="namespace_kernel.html#a3a2b5e5f4d2e29724f185a503f598856aa8a2c959cc0741b759fdadd16982a7e1">kPRDTTransferCount</a>
  }</td></tr>
-<tr class="memdesc:af17808f14d03f2a5fa69656874c5877b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tranfer information about PRD.  <a href="namespace_kernel.html#af17808f14d03f2a5fa69656874c5877b">More...</a><br /></td></tr>
-<tr class="separator:af17808f14d03f2a5fa69656874c5877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a3a2b5e5f4d2e29724f185a503f598856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tranfer information about PRD.  <a href="namespace_kernel.html#a3a2b5e5f4d2e29724f185a503f598856">More...</a><br /></td></tr>
+<tr class="separator:a3a2b5e5f4d2e29724f185a503f598856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e5b4bc80cbec73a76235e1bed52486" id="r_aa8e5b4bc80cbec73a76235e1bed52486"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486">ACPI_ADDRESS_SPACE_KIND</a> : UInt8 { <br />
 &#160;&#160;<a class="el" href="namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afaf47a2ce3cd1a464062f9571d64c9fe">eSystemMemory</a> = 0
 , <a class="el" href="namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afb105c7b9564beb0479ed5bfaea63984">eSystemIO</a> = 1
@@ -795,24 +796,24 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aa8e5b4bc80cbec73a76235e1bed52486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a23d095be37ef3187b4155ab530cac5" id="r_a5a23d095be37ef3187b4155ab530cac5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a5a23d095be37ef3187b4155ab530cac5aaf1a16cf1723d1850649e25e6c721095">kAPMPowerCommandInvalid</a> = 0x00
-, <a class="el" href="namespace_kernel.html#a5a23d095be37ef3187b4155ab530cac5a89cd40f9e23db00c59d40f743f7025c0">kAPMPowerCommandStop</a> = 0x01
-, <a class="el" href="namespace_kernel.html#a5a23d095be37ef3187b4155ab530cac5afea26ca2bcd94386ae2c4e60b40347ff">kAPMPowerCommandStart</a> = 0x02
-, <a class="el" href="namespace_kernel.html#a5a23d095be37ef3187b4155ab530cac5a2073b13d01b87766268183ac0332b3e6">kAPMPowerCommandSleep</a> = 0x04
+<tr class="memitem:a15d9b00b8fab365048c2217e5a9bfb31" id="r_a15d9b00b8fab365048c2217e5a9bfb31"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a15d9b00b8fab365048c2217e5a9bfb31aaf1a16cf1723d1850649e25e6c721095">kAPMPowerCommandInvalid</a> = 0x00
+, <a class="el" href="namespace_kernel.html#a15d9b00b8fab365048c2217e5a9bfb31a89cd40f9e23db00c59d40f743f7025c0">kAPMPowerCommandStop</a> = 0x01
+, <a class="el" href="namespace_kernel.html#a15d9b00b8fab365048c2217e5a9bfb31afea26ca2bcd94386ae2c4e60b40347ff">kAPMPowerCommandStart</a> = 0x02
+, <a class="el" href="namespace_kernel.html#a15d9b00b8fab365048c2217e5a9bfb31a2073b13d01b87766268183ac0332b3e6">kAPMPowerCommandSleep</a> = 0x04
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a5a23d095be37ef3187b4155ab530cac5ae6900016f4c45a7329bd412c7e7edbb8">kAPMPowerCommandWakeup</a> = 0x06
-, <a class="el" href="namespace_kernel.html#a5a23d095be37ef3187b4155ab530cac5af4ff85ad71378130fda1fd2882010c2d">kAPMPowerCommandShutdown</a> = 0x07
-, <a class="el" href="namespace_kernel.html#a5a23d095be37ef3187b4155ab530cac5a6de70771417fa454f282d60a90fd1d3a">kAPMPowerCommandReboot</a> = 0x08
+&#160;&#160;<a class="el" href="namespace_kernel.html#a15d9b00b8fab365048c2217e5a9bfb31ae6900016f4c45a7329bd412c7e7edbb8">kAPMPowerCommandWakeup</a> = 0x06
+, <a class="el" href="namespace_kernel.html#a15d9b00b8fab365048c2217e5a9bfb31af4ff85ad71378130fda1fd2882010c2d">kAPMPowerCommandShutdown</a> = 0x07
+, <a class="el" href="namespace_kernel.html#a15d9b00b8fab365048c2217e5a9bfb31a6de70771417fa454f282d60a90fd1d3a">kAPMPowerCommandReboot</a> = 0x08
 <br />
  }</td></tr>
-<tr class="separator:a5a23d095be37ef3187b4155ab530cac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad46b7b22358719ee2dadff04f786f12d" id="r_ad46b7b22358719ee2dadff04f786f12d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#ad46b7b22358719ee2dadff04f786f12dab04d94e34a43848abc3fac1ba7d53f29">kMBCISpeedDeviceInvalid</a>
-, <a class="el" href="namespace_kernel.html#ad46b7b22358719ee2dadff04f786f12da9680bc26cad6355230da5f7c3d06dfb5">kMBCILowSpeedDevice</a>
-, <a class="el" href="namespace_kernel.html#ad46b7b22358719ee2dadff04f786f12da48fb69baf250d11e4c7726c0f0aa3e23">kMBCIHighSpeedDevice</a>
-, <a class="el" href="namespace_kernel.html#ad46b7b22358719ee2dadff04f786f12dac8c96d8296ffe7676d044ad9c031513d">kMBCISpeedDeviceCount</a>
+<tr class="separator:a15d9b00b8fab365048c2217e5a9bfb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d16b39cb148aa323254bcb35b13471f" id="r_a5d16b39cb148aa323254bcb35b13471f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fab04d94e34a43848abc3fac1ba7d53f29">kMBCISpeedDeviceInvalid</a>
+, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fa9680bc26cad6355230da5f7c3d06dfb5">kMBCILowSpeedDevice</a>
+, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fa48fb69baf250d11e4c7726c0f0aa3e23">kMBCIHighSpeedDevice</a>
+, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fac8c96d8296ffe7676d044ad9c031513d">kMBCISpeedDeviceCount</a>
  }</td></tr>
-<tr class="separator:ad46b7b22358719ee2dadff04f786f12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5d16b39cb148aa323254bcb35b13471f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c04e0dbc40d1ccf2d772727ee1178d8" id="r_a6c04e0dbc40d1ccf2d772727ee1178d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8">MBCIHostFlags</a> { <br />
 &#160;&#160;<a class="el" href="namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8a7a470413e6a845a7d07b5fdbc10b6934">kMBCIHostFlagsSupportsNothing</a>
 , <a class="el" href="namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8a5b3e8da139156a7af93b378bb2e58df6">kMBCIHostFlagsSupportsAPM</a>
@@ -854,18 +855,18 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aba316bb1bff2d7b01d4a08595031ef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d16b39cb148aa323254bcb35b13471f" id="r_a5d16b39cb148aa323254bcb35b13471f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471faafbbddbd4a0ab93e2170e74ccf3f6fea">kInvalidNVME</a> = 0xFF
-, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fa8d9bc85a0267dc3e0188633363a549e6">kCreateCompletionQueueNVME</a> = 0x05
-, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471faa9e3f921d7b8e47ba169228bb81c81bf">kCreateSubmissionQueueNVME</a> = 0x01
-, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fac3a0de6f08647f1447dcfba4618dc009">kIdentifyNVME</a> = 0x06
+<tr class="memitem:a14982be475cb4835499cd1690f780d03" id="r_a14982be475cb4835499cd1690f780d03"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a14982be475cb4835499cd1690f780d03aafbbddbd4a0ab93e2170e74ccf3f6fea">kInvalidNVME</a> = 0xFF
+, <a class="el" href="namespace_kernel.html#a14982be475cb4835499cd1690f780d03a8d9bc85a0267dc3e0188633363a549e6">kCreateCompletionQueueNVME</a> = 0x05
+, <a class="el" href="namespace_kernel.html#a14982be475cb4835499cd1690f780d03aa9e3f921d7b8e47ba169228bb81c81bf">kCreateSubmissionQueueNVME</a> = 0x01
+, <a class="el" href="namespace_kernel.html#a14982be475cb4835499cd1690f780d03ac3a0de6f08647f1447dcfba4618dc009">kIdentifyNVME</a> = 0x06
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fa2abcd68af7293031801abfbeea842ed5">kReadNVME</a> = 0x02
-, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fabb910594051543bb8430913fa31b2c41">kWriteNVME</a> = 0x01
-, <a class="el" href="namespace_kernel.html#a5d16b39cb148aa323254bcb35b13471fa5677f8495f75056d7fda4fcdf22a644c">kCountNVME</a> = 5
+&#160;&#160;<a class="el" href="namespace_kernel.html#a14982be475cb4835499cd1690f780d03a2abcd68af7293031801abfbeea842ed5">kReadNVME</a> = 0x02
+, <a class="el" href="namespace_kernel.html#a14982be475cb4835499cd1690f780d03abb910594051543bb8430913fa31b2c41">kWriteNVME</a> = 0x01
+, <a class="el" href="namespace_kernel.html#a14982be475cb4835499cd1690f780d03a5677f8495f75056d7fda4fcdf22a644c">kCountNVME</a> = 5
 <br />
  }</td></tr>
-<tr class="separator:a5d16b39cb148aa323254bcb35b13471f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a14982be475cb4835499cd1690f780d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -1082,6 +1083,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5910f9795b6dc366b1d905a48e626d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18524e4f4b3acf4adcf4ca7ff6b10d13" id="r_a18524e4f4b3acf4adcf4ca7ff6b10d13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a18524e4f4b3acf4adcf4ca7ff6b10d13">rt_string_len</a> (const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str)</td></tr>
 <tr class="separator:a18524e4f4b3acf4adcf4ca7ff6b10d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d324af99e9a0f770de9f82cc0c589d3" id="r_a3d324af99e9a0f770de9f82cc0c589d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a3d324af99e9a0f770de9f82cc0c589d3">wrt_string_len</a> (const <a class="el" href="namespace_kernel.html#a2c6ff14dd8a82831d54d27370d39c5e1">Utf16Char</a> *str)</td></tr>
+<tr class="separator:a3d324af99e9a0f770de9f82cc0c589d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fcf6aa3237616652e0aaca5dacb132" id="r_ae6fcf6aa3237616652e0aaca5dacb132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ae6fcf6aa3237616652e0aaca5dacb132">rt_string_len</a> (const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> _len)</td></tr>
 <tr class="separator:ae6fcf6aa3237616652e0aaca5dacb132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5e8137e36fca427b59b0e8fb07eea3a" id="r_ae5e8137e36fca427b59b0e8fb07eea3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ae5e8137e36fca427b59b0e8fb07eea3a">rt_to_string</a> (<a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str_out, <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> base, <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> limit)</td></tr>
@@ -2709,8 +2712,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a5c36ab2880e2b201b886dc98e7e2c5fc" name="a5c36ab2880e2b201b886dc98e7e2c5fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c36ab2880e2b201b886dc98e7e2c5fc">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="aa9a327287715629eece3297dff558a30" name="aa9a327287715629eece3297dff558a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a327287715629eece3297dff558a30">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2721,18 +2724,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5c36ab2880e2b201b886dc98e7e2c5fcaf6b7d4d0fe77ff04165a2afa27f60856" name="a5c36ab2880e2b201b886dc98e7e2c5fcaf6b7d4d0fe77ff04165a2afa27f60856"></a>kNeFSSubDriveA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c36ab2880e2b201b886dc98e7e2c5fcabffb83613db295a69302c5cd4d9c49a6" name="a5c36ab2880e2b201b886dc98e7e2c5fcabffb83613db295a69302c5cd4d9c49a6"></a>kNeFSSubDriveB&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c36ab2880e2b201b886dc98e7e2c5fcaab5eb2f8f1d04febe7ec2de462ca91d2" name="a5c36ab2880e2b201b886dc98e7e2c5fcaab5eb2f8f1d04febe7ec2de462ca91d2"></a>kNeFSSubDriveC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c36ab2880e2b201b886dc98e7e2c5fcac1fe2864c64da327950a9a883122d40a" name="a5c36ab2880e2b201b886dc98e7e2c5fcac1fe2864c64da327950a9a883122d40a"></a>kNeFSSubDriveD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c36ab2880e2b201b886dc98e7e2c5fca7cadc2907eacf7ac967bf854cb0d4441" name="a5c36ab2880e2b201b886dc98e7e2c5fca7cadc2907eacf7ac967bf854cb0d4441"></a>kNeFSSubDriveInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5c36ab2880e2b201b886dc98e7e2c5fca3f90086151f389dd800e86c9d7b5947a" name="a5c36ab2880e2b201b886dc98e7e2c5fca3f90086151f389dd800e86c9d7b5947a"></a>kNeFSSubDriveCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30af6b7d4d0fe77ff04165a2afa27f60856" name="aa9a327287715629eece3297dff558a30af6b7d4d0fe77ff04165a2afa27f60856"></a>kNeFSSubDriveA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30abffb83613db295a69302c5cd4d9c49a6" name="aa9a327287715629eece3297dff558a30abffb83613db295a69302c5cd4d9c49a6"></a>kNeFSSubDriveB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30aab5eb2f8f1d04febe7ec2de462ca91d2" name="aa9a327287715629eece3297dff558a30aab5eb2f8f1d04febe7ec2de462ca91d2"></a>kNeFSSubDriveC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30ac1fe2864c64da327950a9a883122d40a" name="aa9a327287715629eece3297dff558a30ac1fe2864c64da327950a9a883122d40a"></a>kNeFSSubDriveD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30a7cadc2907eacf7ac967bf854cb0d4441" name="aa9a327287715629eece3297dff558a30a7cadc2907eacf7ac967bf854cb0d4441"></a>kNeFSSubDriveInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30a3f90086151f389dd800e86c9d7b5947a" name="aa9a327287715629eece3297dff558a30a3f90086151f389dd800e86c9d7b5947a"></a>kNeFSSubDriveCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="aa9a327287715629eece3297dff558a30" name="aa9a327287715629eece3297dff558a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9a327287715629eece3297dff558a30">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a794297d1339ae2e1e16c4768fbadd744" name="a794297d1339ae2e1e16c4768fbadd744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794297d1339ae2e1e16c4768fbadd744">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2745,40 +2748,8 @@ Variables</h2></td></tr>
 
 <p>Resource fork kind. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30a9e42c1e446536b33e11e06b24e20ae04" name="aa9a327287715629eece3297dff558a30a9e42c1e446536b33e11e06b24e20ae04"></a>kNeFSRsrcForkKind&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa9a327287715629eece3297dff558a30a162595e53997ea0666e42406f91e8f09" name="aa9a327287715629eece3297dff558a30a162595e53997ea0666e42406f91e8f09"></a>kNeFSDataForkKind&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a7152b76708737c69edeab95c54948b32" name="a7152b76708737c69edeab95c54948b32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7152b76708737c69edeab95c54948b32">&#9670;&#160;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>! </p>
-<p><a class="el" href="class_device.html" title="Device type.">Device</a> enum types. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32a39be8e71e17a3f2000f277b4951dad58" name="a7152b76708737c69edeab95c54948b32a39be8e71e17a3f2000f277b4951dad58"></a>kDeviceTypeIDE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32a8be18d914a44eda2250fa1738a2aa7f9" name="a7152b76708737c69edeab95c54948b32a8be18d914a44eda2250fa1738a2aa7f9"></a>kDeviceTypeEthernet&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32abd1f30c70290d3771f96f04bd2bc13fe" name="a7152b76708737c69edeab95c54948b32abd1f30c70290d3771f96f04bd2bc13fe"></a>kDeviceTypeWiFi&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32ab656fed2d875f01a0531fd947efc83c5" name="a7152b76708737c69edeab95c54948b32ab656fed2d875f01a0531fd947efc83c5"></a>kDeviceTypeFW&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32a0c5a136eae3a4a460f7f0881771580b5" name="a7152b76708737c69edeab95c54948b32a0c5a136eae3a4a460f7f0881771580b5"></a>kDeviceTypeBT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32ada9380e06d51517310cbc1ca1b08d103" name="a7152b76708737c69edeab95c54948b32ada9380e06d51517310cbc1ca1b08d103"></a>kDeviceTypeRS232&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32afd8db1895f93ee647c7c687e8acb46cf" name="a7152b76708737c69edeab95c54948b32afd8db1895f93ee647c7c687e8acb46cf"></a>kDeviceTypeSCSI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32a15176f47a1d26d8cf925c00e0c12b513" name="a7152b76708737c69edeab95c54948b32a15176f47a1d26d8cf925c00e0c12b513"></a>kDeviceTypeAHCI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32a52d1c5f98899ff49286ad90b3f2a911f" name="a7152b76708737c69edeab95c54948b32a52d1c5f98899ff49286ad90b3f2a911f"></a>kDeviceTypeMBCI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32ab56909e3f52cddfec70695d533459ba0" name="a7152b76708737c69edeab95c54948b32ab56909e3f52cddfec70695d533459ba0"></a>kDeviceTypeATA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32a4b045e4f09fd750a02ceda1a84c93994" name="a7152b76708737c69edeab95c54948b32a4b045e4f09fd750a02ceda1a84c93994"></a>kDeviceTypeUSB&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32ae2904e55c01503090a91d15dff50a6f4" name="a7152b76708737c69edeab95c54948b32ae2904e55c01503090a91d15dff50a6f4"></a>kDeviceTypeMediaCtrl&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7152b76708737c69edeab95c54948b32a64f682a6999b45e134d3201724bad0c5" name="a7152b76708737c69edeab95c54948b32a64f682a6999b45e134d3201724bad0c5"></a>kDeviceTypeCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a794297d1339ae2e1e16c4768fbadd744a9e42c1e446536b33e11e06b24e20ae04" name="a794297d1339ae2e1e16c4768fbadd744a9e42c1e446536b33e11e06b24e20ae04"></a>kNeFSRsrcForkKind&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a794297d1339ae2e1e16c4768fbadd744a162595e53997ea0666e42406f91e8f09" name="a794297d1339ae2e1e16c4768fbadd744a162595e53997ea0666e42406f91e8f09"></a>kNeFSDataForkKind&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2794,28 +2765,60 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>! </p>
+<p><a class="el" href="class_device.html" title="Device type.">Device</a> enum types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba30b5cda6cb0d4120b7818fae0a212ca8" name="acebdc221a30d3003cf01bbd8e598671ba30b5cda6cb0d4120b7818fae0a212ca8"></a>kInvalidDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bac9bdc44d5f5615551357f3ab0fecdc74" name="acebdc221a30d3003cf01bbd8e598671bac9bdc44d5f5615551357f3ab0fecdc74"></a>kBlockDevice&#160;</td><td class="fielddoc"><p>Storage types, combine with flags. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba39be8e71e17a3f2000f277b4951dad58" name="acebdc221a30d3003cf01bbd8e598671ba39be8e71e17a3f2000f277b4951dad58"></a>kDeviceTypeIDE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba8be18d914a44eda2250fa1738a2aa7f9" name="acebdc221a30d3003cf01bbd8e598671ba8be18d914a44eda2250fa1738a2aa7f9"></a>kDeviceTypeEthernet&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671babd1f30c70290d3771f96f04bd2bc13fe" name="acebdc221a30d3003cf01bbd8e598671babd1f30c70290d3771f96f04bd2bc13fe"></a>kDeviceTypeWiFi&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bab656fed2d875f01a0531fd947efc83c5" name="acebdc221a30d3003cf01bbd8e598671bab656fed2d875f01a0531fd947efc83c5"></a>kDeviceTypeFW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba0c5a136eae3a4a460f7f0881771580b5" name="acebdc221a30d3003cf01bbd8e598671ba0c5a136eae3a4a460f7f0881771580b5"></a>kDeviceTypeBT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bada9380e06d51517310cbc1ca1b08d103" name="acebdc221a30d3003cf01bbd8e598671bada9380e06d51517310cbc1ca1b08d103"></a>kDeviceTypeRS232&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bafd8db1895f93ee647c7c687e8acb46cf" name="acebdc221a30d3003cf01bbd8e598671bafd8db1895f93ee647c7c687e8acb46cf"></a>kDeviceTypeSCSI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba15176f47a1d26d8cf925c00e0c12b513" name="acebdc221a30d3003cf01bbd8e598671ba15176f47a1d26d8cf925c00e0c12b513"></a>kDeviceTypeAHCI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba52d1c5f98899ff49286ad90b3f2a911f" name="acebdc221a30d3003cf01bbd8e598671ba52d1c5f98899ff49286ad90b3f2a911f"></a>kDeviceTypeMBCI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bab56909e3f52cddfec70695d533459ba0" name="acebdc221a30d3003cf01bbd8e598671bab56909e3f52cddfec70695d533459ba0"></a>kDeviceTypeATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba4b045e4f09fd750a02ceda1a84c93994" name="acebdc221a30d3003cf01bbd8e598671ba4b045e4f09fd750a02ceda1a84c93994"></a>kDeviceTypeUSB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bae2904e55c01503090a91d15dff50a6f4" name="acebdc221a30d3003cf01bbd8e598671bae2904e55c01503090a91d15dff50a6f4"></a>kDeviceTypeMediaCtrl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba64f682a6999b45e134d3201724bad0c5" name="acebdc221a30d3003cf01bbd8e598671ba64f682a6999b45e134d3201724bad0c5"></a>kDeviceTypeCount&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a47847d105cd6c735aaa9bf9feb29fdf4" name="a47847d105cd6c735aaa9bf9feb29fdf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47847d105cd6c735aaa9bf9feb29fdf4">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a30b5cda6cb0d4120b7818fae0a212ca8" name="a47847d105cd6c735aaa9bf9feb29fdf4a30b5cda6cb0d4120b7818fae0a212ca8"></a>kInvalidDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4ac9bdc44d5f5615551357f3ab0fecdc74" name="a47847d105cd6c735aaa9bf9feb29fdf4ac9bdc44d5f5615551357f3ab0fecdc74"></a>kBlockDevice&#160;</td><td class="fielddoc"><p>Storage types, combine with flags. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba84c5bbb7feda914da99969aff89b9def" name="acebdc221a30d3003cf01bbd8e598671ba84c5bbb7feda914da99969aff89b9def"></a>kMassStorageDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671baa65245362b8bc3fa906fa46bec847760" name="acebdc221a30d3003cf01bbd8e598671baa65245362b8bc3fa906fa46bec847760"></a>kFloppyDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bab779f6a5cf30ef8637711ad0f2364669" name="acebdc221a30d3003cf01bbd8e598671bab779f6a5cf30ef8637711ad0f2364669"></a>kOpticalDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba4db0ee1cb280641f422d8784351035fc" name="acebdc221a30d3003cf01bbd8e598671ba4db0ee1cb280641f422d8784351035fc"></a>kTapeDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba5c42cfb2cc26712b415e146457a4caf7" name="acebdc221a30d3003cf01bbd8e598671ba5c42cfb2cc26712b415e146457a4caf7"></a>kReadOnlyDrive&#160;</td><td class="fielddoc"><p>Storage flags, combine with types. </p>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a84c5bbb7feda914da99969aff89b9def" name="a47847d105cd6c735aaa9bf9feb29fdf4a84c5bbb7feda914da99969aff89b9def"></a>kMassStorageDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4aa65245362b8bc3fa906fa46bec847760" name="a47847d105cd6c735aaa9bf9feb29fdf4aa65245362b8bc3fa906fa46bec847760"></a>kFloppyDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4ab779f6a5cf30ef8637711ad0f2364669" name="a47847d105cd6c735aaa9bf9feb29fdf4ab779f6a5cf30ef8637711ad0f2364669"></a>kOpticalDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a4db0ee1cb280641f422d8784351035fc" name="a47847d105cd6c735aaa9bf9feb29fdf4a4db0ee1cb280641f422d8784351035fc"></a>kTapeDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a5c42cfb2cc26712b415e146457a4caf7" name="a47847d105cd6c735aaa9bf9feb29fdf4a5c42cfb2cc26712b415e146457a4caf7"></a>kReadOnlyDrive&#160;</td><td class="fielddoc"><p>Storage flags, combine with types. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba099b1741447dcaacac9e19d58fa1d2dc" name="acebdc221a30d3003cf01bbd8e598671ba099b1741447dcaacac9e19d58fa1d2dc"></a>kEPMDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671baf30fe3301b05c9a121ec73ac5b724b91" name="acebdc221a30d3003cf01bbd8e598671baf30fe3301b05c9a121ec73ac5b724b91"></a>kEPTDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba1b1b0f2367c91dbe56d44653dff69d9a" name="acebdc221a30d3003cf01bbd8e598671ba1b1b0f2367c91dbe56d44653dff69d9a"></a>kMBRDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba03415ebe534ec9f44816a6c7129d78b6" name="acebdc221a30d3003cf01bbd8e598671ba03415ebe534ec9f44816a6c7129d78b6"></a>kGPTDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671ba753b9c0b9e1a83330035e1fe9ecb4397" name="acebdc221a30d3003cf01bbd8e598671ba753b9c0b9e1a83330035e1fe9ecb4397"></a>kUnformattedDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acebdc221a30d3003cf01bbd8e598671bac9725f76e8bf507bfe8bd849beb5ce08" name="acebdc221a30d3003cf01bbd8e598671bac9725f76e8bf507bfe8bd849beb5ce08"></a>kStorageCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a099b1741447dcaacac9e19d58fa1d2dc" name="a47847d105cd6c735aaa9bf9feb29fdf4a099b1741447dcaacac9e19d58fa1d2dc"></a>kEPMDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4af30fe3301b05c9a121ec73ac5b724b91" name="a47847d105cd6c735aaa9bf9feb29fdf4af30fe3301b05c9a121ec73ac5b724b91"></a>kEPTDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a1b1b0f2367c91dbe56d44653dff69d9a" name="a47847d105cd6c735aaa9bf9feb29fdf4a1b1b0f2367c91dbe56d44653dff69d9a"></a>kMBRDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a03415ebe534ec9f44816a6c7129d78b6" name="a47847d105cd6c735aaa9bf9feb29fdf4a03415ebe534ec9f44816a6c7129d78b6"></a>kGPTDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4a753b9c0b9e1a83330035e1fe9ecb4397" name="a47847d105cd6c735aaa9bf9feb29fdf4a753b9c0b9e1a83330035e1fe9ecb4397"></a>kUnformattedDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a47847d105cd6c735aaa9bf9feb29fdf4ac9725f76e8bf507bfe8bd849beb5ce08" name="a47847d105cd6c735aaa9bf9feb29fdf4ac9725f76e8bf507bfe8bd849beb5ce08"></a>kStorageCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a7ed6af00ece6653218fec541e5dd3625" name="a7ed6af00ece6653218fec541e5dd3625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ed6af00ece6653218fec541e5dd3625">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="ab68852254a7f1f17c7b59bf56306cf06" name="ab68852254a7f1f17c7b59bf56306cf06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68852254a7f1f17c7b59bf56306cf06">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2826,19 +2829,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7ed6af00ece6653218fec541e5dd3625a8d61f20f458902683d6af5376385689f" name="a7ed6af00ece6653218fec541e5dd3625a8d61f20f458902683d6af5376385689f"></a>kFileWriteAll&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ed6af00ece6653218fec541e5dd3625a98cf54f2e9d54d86bbff85b5175eab41" name="a7ed6af00ece6653218fec541e5dd3625a98cf54f2e9d54d86bbff85b5175eab41"></a>kFileReadAll&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ed6af00ece6653218fec541e5dd3625a3ce868ebee02ab8718d189f573113dd2" name="a7ed6af00ece6653218fec541e5dd3625a3ce868ebee02ab8718d189f573113dd2"></a>kFileReadChunk&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ed6af00ece6653218fec541e5dd3625ab66ea1f76a91bc3bbfcdb01e41b35270" name="a7ed6af00ece6653218fec541e5dd3625ab66ea1f76a91bc3bbfcdb01e41b35270"></a>kFileWriteChunk&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ed6af00ece6653218fec541e5dd3625a769ba765cbcf1e2e5edb4d4050bd34a1" name="a7ed6af00ece6653218fec541e5dd3625a769ba765cbcf1e2e5edb4d4050bd34a1"></a>kFileIOCnt&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ed6af00ece6653218fec541e5dd3625ad20629548848dc9fe6d5f543f9253ebd" name="a7ed6af00ece6653218fec541e5dd3625ad20629548848dc9fe6d5f543f9253ebd"></a>kFileFlagRsrc&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ed6af00ece6653218fec541e5dd3625a45d559b6b45f5ac01bb6a239a3b5d3d7" name="a7ed6af00ece6653218fec541e5dd3625a45d559b6b45f5ac01bb6a239a3b5d3d7"></a>kFileFlagData&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab68852254a7f1f17c7b59bf56306cf06a8d61f20f458902683d6af5376385689f" name="ab68852254a7f1f17c7b59bf56306cf06a8d61f20f458902683d6af5376385689f"></a>kFileWriteAll&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab68852254a7f1f17c7b59bf56306cf06a98cf54f2e9d54d86bbff85b5175eab41" name="ab68852254a7f1f17c7b59bf56306cf06a98cf54f2e9d54d86bbff85b5175eab41"></a>kFileReadAll&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab68852254a7f1f17c7b59bf56306cf06a3ce868ebee02ab8718d189f573113dd2" name="ab68852254a7f1f17c7b59bf56306cf06a3ce868ebee02ab8718d189f573113dd2"></a>kFileReadChunk&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab68852254a7f1f17c7b59bf56306cf06ab66ea1f76a91bc3bbfcdb01e41b35270" name="ab68852254a7f1f17c7b59bf56306cf06ab66ea1f76a91bc3bbfcdb01e41b35270"></a>kFileWriteChunk&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab68852254a7f1f17c7b59bf56306cf06a769ba765cbcf1e2e5edb4d4050bd34a1" name="ab68852254a7f1f17c7b59bf56306cf06a769ba765cbcf1e2e5edb4d4050bd34a1"></a>kFileIOCnt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab68852254a7f1f17c7b59bf56306cf06ad20629548848dc9fe6d5f543f9253ebd" name="ab68852254a7f1f17c7b59bf56306cf06ad20629548848dc9fe6d5f543f9253ebd"></a>kFileFlagRsrc&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab68852254a7f1f17c7b59bf56306cf06a45d559b6b45f5ac01bb6a239a3b5d3d7" name="ab68852254a7f1f17c7b59bf56306cf06a45d559b6b45f5ac01bb6a239a3b5d3d7"></a>kFileFlagData&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a7d94b34197ca5437fbf07704812f3027" name="a7d94b34197ca5437fbf07704812f3027"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d94b34197ca5437fbf07704812f3027">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a3c294ec2d03f48e31466bcecdea8a608" name="a3c294ec2d03f48e31466bcecdea8a608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c294ec2d03f48e31466bcecdea8a608">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2849,35 +2852,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7d94b34197ca5437fbf07704812f3027aa1ef02df9ea1e2acc56e6acf02d05634" name="a7d94b34197ca5437fbf07704812f3027aa1ef02df9ea1e2acc56e6acf02d05634"></a>kLockInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7d94b34197ca5437fbf07704812f3027a793c188cdff623f99a8092dc06183c57" name="a7d94b34197ca5437fbf07704812f3027a793c188cdff623f99a8092dc06183c57"></a>kLockDone&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7d94b34197ca5437fbf07704812f3027a59e3a32ab7861627ea1f92c5010a86cc" name="a7d94b34197ca5437fbf07704812f3027a59e3a32ab7861627ea1f92c5010a86cc"></a>kLockTimedOut&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7d94b34197ca5437fbf07704812f3027ae1dfce533a64bdd14d5107b5509abf70" name="a7d94b34197ca5437fbf07704812f3027ae1dfce533a64bdd14d5107b5509abf70"></a>kLockCount&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="af986a0d3be20817166b8ac7705c018d9" name="af986a0d3be20817166b8ac7705c018d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af986a0d3be20817166b8ac7705c018d9">&#9670;&#160;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9a48b93ef1e6881434b2909c43cd24c5a1" name="af986a0d3be20817166b8ac7705c018d9a48b93ef1e6881434b2909c43cd24c5a1"></a>kPefArchIntel86S&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9a259324a1dd8aef60f4a2841cac5dc04f" name="af986a0d3be20817166b8ac7705c018d9a259324a1dd8aef60f4a2841cac5dc04f"></a>kPefArchAMD64&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9a49f37d7bce092513b694d2c629466f70" name="af986a0d3be20817166b8ac7705c018d9a49f37d7bce092513b694d2c629466f70"></a>kPefArchRISCV&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9a22bb4f5fb40eb70b872bb2b6dd0137f7" name="af986a0d3be20817166b8ac7705c018d9a22bb4f5fb40eb70b872bb2b6dd0137f7"></a>kPefArch64x0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9ae6672f0c421732eab1b7a04e54f0c688" name="af986a0d3be20817166b8ac7705c018d9ae6672f0c421732eab1b7a04e54f0c688"></a>kPefArch32x0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9aa084609fba32b04f133dc1340cb2e4d9" name="af986a0d3be20817166b8ac7705c018d9aa084609fba32b04f133dc1340cb2e4d9"></a>kPefArchPowerPC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9a0aa0acb3c38a472b5b97564e3353f01b" name="af986a0d3be20817166b8ac7705c018d9a0aa0acb3c38a472b5b97564e3353f01b"></a>kPefArchARM64&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9a1a9c34a65eaf80dbc5a42997c1b46e47" name="af986a0d3be20817166b8ac7705c018d9a1a9c34a65eaf80dbc5a42997c1b46e47"></a>kPefArchCount&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af986a0d3be20817166b8ac7705c018d9aff7681186a2000985615fe785a19a654" name="af986a0d3be20817166b8ac7705c018d9aff7681186a2000985615fe785a19a654"></a>kPefArchInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c294ec2d03f48e31466bcecdea8a608aa1ef02df9ea1e2acc56e6acf02d05634" name="a3c294ec2d03f48e31466bcecdea8a608aa1ef02df9ea1e2acc56e6acf02d05634"></a>kLockInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c294ec2d03f48e31466bcecdea8a608a793c188cdff623f99a8092dc06183c57" name="a3c294ec2d03f48e31466bcecdea8a608a793c188cdff623f99a8092dc06183c57"></a>kLockDone&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c294ec2d03f48e31466bcecdea8a608a59e3a32ab7861627ea1f92c5010a86cc" name="a3c294ec2d03f48e31466bcecdea8a608a59e3a32ab7861627ea1f92c5010a86cc"></a>kLockTimedOut&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c294ec2d03f48e31466bcecdea8a608ae1dfce533a64bdd14d5107b5509abf70" name="a3c294ec2d03f48e31466bcecdea8a608ae1dfce533a64bdd14d5107b5509abf70"></a>kLockCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2894,11 +2872,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539aaa37c54e787a067a8dbc8a4549869848" name="ad8f1944d4df007456fb725c501649539aaa37c54e787a067a8dbc8a4549869848"></a>kPefSubArchAMD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539aa06e718a104aa4e832f53b9c8128cdab" name="ad8f1944d4df007456fb725c501649539aa06e718a104aa4e832f53b9c8128cdab"></a>kPefSubArchIntel&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539afae64e134d7e9baadb9b280bd5beff67" name="ad8f1944d4df007456fb725c501649539afae64e134d7e9baadb9b280bd5beff67"></a>kPefSubArchARM&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539a3e9e94b4e97352417e5bbb6a68dcab44" name="ad8f1944d4df007456fb725c501649539a3e9e94b4e97352417e5bbb6a68dcab44"></a>kPefSubArchGeneric&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539aa5852ae3789522b6536c983ead307308" name="ad8f1944d4df007456fb725c501649539aa5852ae3789522b6536c983ead307308"></a>kPefSubArchIBM&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539a48b93ef1e6881434b2909c43cd24c5a1" name="ad8f1944d4df007456fb725c501649539a48b93ef1e6881434b2909c43cd24c5a1"></a>kPefArchIntel86S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539a259324a1dd8aef60f4a2841cac5dc04f" name="ad8f1944d4df007456fb725c501649539a259324a1dd8aef60f4a2841cac5dc04f"></a>kPefArchAMD64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539a49f37d7bce092513b694d2c629466f70" name="ad8f1944d4df007456fb725c501649539a49f37d7bce092513b694d2c629466f70"></a>kPefArchRISCV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539a22bb4f5fb40eb70b872bb2b6dd0137f7" name="ad8f1944d4df007456fb725c501649539a22bb4f5fb40eb70b872bb2b6dd0137f7"></a>kPefArch64x0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539ae6672f0c421732eab1b7a04e54f0c688" name="ad8f1944d4df007456fb725c501649539ae6672f0c421732eab1b7a04e54f0c688"></a>kPefArch32x0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539aa084609fba32b04f133dc1340cb2e4d9" name="ad8f1944d4df007456fb725c501649539aa084609fba32b04f133dc1340cb2e4d9"></a>kPefArchPowerPC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539a0aa0acb3c38a472b5b97564e3353f01b" name="ad8f1944d4df007456fb725c501649539a0aa0acb3c38a472b5b97564e3353f01b"></a>kPefArchARM64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539a1a9c34a65eaf80dbc5a42997c1b46e47" name="ad8f1944d4df007456fb725c501649539a1a9c34a65eaf80dbc5a42997c1b46e47"></a>kPefArchCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad8f1944d4df007456fb725c501649539aff7681186a2000985615fe785a19a654" name="ad8f1944d4df007456fb725c501649539aff7681186a2000985615fe785a19a654"></a>kPefArchInvalid&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2915,12 +2897,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30a84915740eebbf3c285da45f28e0b7081" name="ac45b422ffafb3521a2176dc9d380dd30a84915740eebbf3c285da45f28e0b7081"></a>kPefKindExec&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30ae86d3343d83f89701d9f96feee2119b7" name="ac45b422ffafb3521a2176dc9d380dd30ae86d3343d83f89701d9f96feee2119b7"></a>kPefKindDylib&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30af1fc4b8838f2e87af5e7d5f34a0e5a9b" name="ac45b422ffafb3521a2176dc9d380dd30af1fc4b8838f2e87af5e7d5f34a0e5a9b"></a>kPefKindObject&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30af9d9ad662951bad4716175761c4992e4" name="ac45b422ffafb3521a2176dc9d380dd30af9d9ad662951bad4716175761c4992e4"></a>kPefKindDebug&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30acbb5232a97f6c7b8c08552e11b0f5975" name="ac45b422ffafb3521a2176dc9d380dd30acbb5232a97f6c7b8c08552e11b0f5975"></a>kPefKindDriver&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30a1a16103261741ba96debe934bd3bd669" name="ac45b422ffafb3521a2176dc9d380dd30a1a16103261741ba96debe934bd3bd669"></a>kPefKindCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30aaa37c54e787a067a8dbc8a4549869848" name="ac45b422ffafb3521a2176dc9d380dd30aaa37c54e787a067a8dbc8a4549869848"></a>kPefSubArchAMD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30aa06e718a104aa4e832f53b9c8128cdab" name="ac45b422ffafb3521a2176dc9d380dd30aa06e718a104aa4e832f53b9c8128cdab"></a>kPefSubArchIntel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30afae64e134d7e9baadb9b280bd5beff67" name="ac45b422ffafb3521a2176dc9d380dd30afae64e134d7e9baadb9b280bd5beff67"></a>kPefSubArchARM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30a3e9e94b4e97352417e5bbb6a68dcab44" name="ac45b422ffafb3521a2176dc9d380dd30a3e9e94b4e97352417e5bbb6a68dcab44"></a>kPefSubArchGeneric&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac45b422ffafb3521a2176dc9d380dd30aa5852ae3789522b6536c983ead307308" name="ac45b422ffafb3521a2176dc9d380dd30aa5852ae3789522b6536c983ead307308"></a>kPefSubArchIBM&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2937,16 +2918,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29aaef7870234019b00d6c3c8e058fd4139" name="aa76979796bc8e99a6fe96ef4063a9b29aaef7870234019b00d6c3c8e058fd4139"></a>kPefCode&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29abe31d83d4c2a865333dcbe9d6a8c8e3e" name="aa76979796bc8e99a6fe96ef4063a9b29abe31d83d4c2a865333dcbe9d6a8c8e3e"></a>kPefData&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29ad48c144b77180e601d3127d5abeebd86" name="aa76979796bc8e99a6fe96ef4063a9b29ad48c144b77180e601d3127d5abeebd86"></a>kPefZero&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29aefde1fc09c9af3208404a41e6541fa85" name="aa76979796bc8e99a6fe96ef4063a9b29aefde1fc09c9af3208404a41e6541fa85"></a>kPefLinkerID&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29a84915740eebbf3c285da45f28e0b7081" name="aa76979796bc8e99a6fe96ef4063a9b29a84915740eebbf3c285da45f28e0b7081"></a>kPefKindExec&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29ae86d3343d83f89701d9f96feee2119b7" name="aa76979796bc8e99a6fe96ef4063a9b29ae86d3343d83f89701d9f96feee2119b7"></a>kPefKindDylib&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29af1fc4b8838f2e87af5e7d5f34a0e5a9b" name="aa76979796bc8e99a6fe96ef4063a9b29af1fc4b8838f2e87af5e7d5f34a0e5a9b"></a>kPefKindObject&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29af9d9ad662951bad4716175761c4992e4" name="aa76979796bc8e99a6fe96ef4063a9b29af9d9ad662951bad4716175761c4992e4"></a>kPefKindDebug&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29acbb5232a97f6c7b8c08552e11b0f5975" name="aa76979796bc8e99a6fe96ef4063a9b29acbb5232a97f6c7b8c08552e11b0f5975"></a>kPefKindDriver&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa76979796bc8e99a6fe96ef4063a9b29a1a16103261741ba96debe934bd3bd669" name="aa76979796bc8e99a6fe96ef4063a9b29a1a16103261741ba96debe934bd3bd669"></a>kPefKindCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a5da4dd6148576cd8ae87fb52a276a06d" name="a5da4dd6148576cd8ae87fb52a276a06d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5da4dd6148576cd8ae87fb52a276a06d">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a44e2d6c1198fed817953b82927707335" name="a44e2d6c1198fed817953b82927707335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e2d6c1198fed817953b82927707335">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2957,9 +2940,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5da4dd6148576cd8ae87fb52a276a06dac91c61da257bf355b364411f6f146507" name="a5da4dd6148576cd8ae87fb52a276a06dac91c61da257bf355b364411f6f146507"></a>kIPCLittleEndian&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5da4dd6148576cd8ae87fb52a276a06daa14658b76be547afd249f37864ceaeb6" name="a5da4dd6148576cd8ae87fb52a276a06daa14658b76be547afd249f37864ceaeb6"></a>kIPCBigEndian&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5da4dd6148576cd8ae87fb52a276a06dabbcbfaf32af4b6c07db438b5ed7078a3" name="a5da4dd6148576cd8ae87fb52a276a06dabbcbfaf32af4b6c07db438b5ed7078a3"></a>kIPCMixedEndian&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335aaef7870234019b00d6c3c8e058fd4139" name="a44e2d6c1198fed817953b82927707335aaef7870234019b00d6c3c8e058fd4139"></a>kPefCode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335abe31d83d4c2a865333dcbe9d6a8c8e3e" name="a44e2d6c1198fed817953b82927707335abe31d83d4c2a865333dcbe9d6a8c8e3e"></a>kPefData&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335ad48c144b77180e601d3127d5abeebd86" name="a44e2d6c1198fed817953b82927707335ad48c144b77180e601d3127d5abeebd86"></a>kPefZero&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335aefde1fc09c9af3208404a41e6541fa85" name="a44e2d6c1198fed817953b82927707335aefde1fc09c9af3208404a41e6541fa85"></a>kPefLinkerID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2975,18 +2959,37 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877bac91c61da257bf355b364411f6f146507" name="af17808f14d03f2a5fa69656874c5877bac91c61da257bf355b364411f6f146507"></a>kIPCLittleEndian&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877baa14658b76be547afd249f37864ceaeb6" name="af17808f14d03f2a5fa69656874c5877baa14658b76be547afd249f37864ceaeb6"></a>kIPCBigEndian&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877babbcbfaf32af4b6c07db438b5ed7078a3" name="af17808f14d03f2a5fa69656874c5877babbcbfaf32af4b6c07db438b5ed7078a3"></a>kIPCMixedEndian&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3a2b5e5f4d2e29724f185a503f598856" name="a3a2b5e5f4d2e29724f185a503f598856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2b5e5f4d2e29724f185a503f598856">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 <p>Tranfer information about PRD. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877ba7ed6e9300a01bec24d553e65f7a9f39d" name="af17808f14d03f2a5fa69656874c5877ba7ed6e9300a01bec24d553e65f7a9f39d"></a>kPRDTTransferInProgress&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877ba6417bd08e8e0b9fc927c3f3a5846472c" name="af17808f14d03f2a5fa69656874c5877ba6417bd08e8e0b9fc927c3f3a5846472c"></a>kPRDTTransferIsDone&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877baa8a2c959cc0741b759fdadd16982a7e1" name="af17808f14d03f2a5fa69656874c5877baa8a2c959cc0741b759fdadd16982a7e1"></a>kPRDTTransferCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856a7ed6e9300a01bec24d553e65f7a9f39d" name="a3a2b5e5f4d2e29724f185a503f598856a7ed6e9300a01bec24d553e65f7a9f39d"></a>kPRDTTransferInProgress&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856a6417bd08e8e0b9fc927c3f3a5846472c" name="a3a2b5e5f4d2e29724f185a503f598856a6417bd08e8e0b9fc927c3f3a5846472c"></a>kPRDTTransferIsDone&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856aa8a2c959cc0741b759fdadd16982a7e1" name="a3a2b5e5f4d2e29724f185a503f598856aa8a2c959cc0741b759fdadd16982a7e1"></a>kPRDTTransferCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a5a23d095be37ef3187b4155ab530cac5" name="a5a23d095be37ef3187b4155ab530cac5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a23d095be37ef3187b4155ab530cac5">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a15d9b00b8fab365048c2217e5a9bfb31" name="a15d9b00b8fab365048c2217e5a9bfb31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d9b00b8fab365048c2217e5a9bfb31">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2997,33 +3000,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5a23d095be37ef3187b4155ab530cac5aaf1a16cf1723d1850649e25e6c721095" name="a5a23d095be37ef3187b4155ab530cac5aaf1a16cf1723d1850649e25e6c721095"></a>kAPMPowerCommandInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a23d095be37ef3187b4155ab530cac5a89cd40f9e23db00c59d40f743f7025c0" name="a5a23d095be37ef3187b4155ab530cac5a89cd40f9e23db00c59d40f743f7025c0"></a>kAPMPowerCommandStop&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a23d095be37ef3187b4155ab530cac5afea26ca2bcd94386ae2c4e60b40347ff" name="a5a23d095be37ef3187b4155ab530cac5afea26ca2bcd94386ae2c4e60b40347ff"></a>kAPMPowerCommandStart&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a23d095be37ef3187b4155ab530cac5a2073b13d01b87766268183ac0332b3e6" name="a5a23d095be37ef3187b4155ab530cac5a2073b13d01b87766268183ac0332b3e6"></a>kAPMPowerCommandSleep&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a23d095be37ef3187b4155ab530cac5ae6900016f4c45a7329bd412c7e7edbb8" name="a5a23d095be37ef3187b4155ab530cac5ae6900016f4c45a7329bd412c7e7edbb8"></a>kAPMPowerCommandWakeup&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a23d095be37ef3187b4155ab530cac5af4ff85ad71378130fda1fd2882010c2d" name="a5a23d095be37ef3187b4155ab530cac5af4ff85ad71378130fda1fd2882010c2d"></a>kAPMPowerCommandShutdown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a23d095be37ef3187b4155ab530cac5a6de70771417fa454f282d60a90fd1d3a" name="a5a23d095be37ef3187b4155ab530cac5a6de70771417fa454f282d60a90fd1d3a"></a>kAPMPowerCommandReboot&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="ad46b7b22358719ee2dadff04f786f12d" name="ad46b7b22358719ee2dadff04f786f12d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad46b7b22358719ee2dadff04f786f12d">&#9670;&#160;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad46b7b22358719ee2dadff04f786f12dab04d94e34a43848abc3fac1ba7d53f29" name="ad46b7b22358719ee2dadff04f786f12dab04d94e34a43848abc3fac1ba7d53f29"></a>kMBCISpeedDeviceInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad46b7b22358719ee2dadff04f786f12da9680bc26cad6355230da5f7c3d06dfb5" name="ad46b7b22358719ee2dadff04f786f12da9680bc26cad6355230da5f7c3d06dfb5"></a>kMBCILowSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad46b7b22358719ee2dadff04f786f12da48fb69baf250d11e4c7726c0f0aa3e23" name="ad46b7b22358719ee2dadff04f786f12da48fb69baf250d11e4c7726c0f0aa3e23"></a>kMBCIHighSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad46b7b22358719ee2dadff04f786f12dac8c96d8296ffe7676d044ad9c031513d" name="ad46b7b22358719ee2dadff04f786f12dac8c96d8296ffe7676d044ad9c031513d"></a>kMBCISpeedDeviceCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a15d9b00b8fab365048c2217e5a9bfb31aaf1a16cf1723d1850649e25e6c721095" name="a15d9b00b8fab365048c2217e5a9bfb31aaf1a16cf1723d1850649e25e6c721095"></a>kAPMPowerCommandInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a15d9b00b8fab365048c2217e5a9bfb31a89cd40f9e23db00c59d40f743f7025c0" name="a15d9b00b8fab365048c2217e5a9bfb31a89cd40f9e23db00c59d40f743f7025c0"></a>kAPMPowerCommandStop&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a15d9b00b8fab365048c2217e5a9bfb31afea26ca2bcd94386ae2c4e60b40347ff" name="a15d9b00b8fab365048c2217e5a9bfb31afea26ca2bcd94386ae2c4e60b40347ff"></a>kAPMPowerCommandStart&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a15d9b00b8fab365048c2217e5a9bfb31a2073b13d01b87766268183ac0332b3e6" name="a15d9b00b8fab365048c2217e5a9bfb31a2073b13d01b87766268183ac0332b3e6"></a>kAPMPowerCommandSleep&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a15d9b00b8fab365048c2217e5a9bfb31ae6900016f4c45a7329bd412c7e7edbb8" name="a15d9b00b8fab365048c2217e5a9bfb31ae6900016f4c45a7329bd412c7e7edbb8"></a>kAPMPowerCommandWakeup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a15d9b00b8fab365048c2217e5a9bfb31af4ff85ad71378130fda1fd2882010c2d" name="a15d9b00b8fab365048c2217e5a9bfb31af4ff85ad71378130fda1fd2882010c2d"></a>kAPMPowerCommandShutdown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a15d9b00b8fab365048c2217e5a9bfb31a6de70771417fa454f282d60a90fd1d3a" name="a15d9b00b8fab365048c2217e5a9bfb31a6de70771417fa454f282d60a90fd1d3a"></a>kAPMPowerCommandReboot&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -3040,13 +3023,33 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471faafbbddbd4a0ab93e2170e74ccf3f6fea" name="a5d16b39cb148aa323254bcb35b13471faafbbddbd4a0ab93e2170e74ccf3f6fea"></a>kInvalidNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fa8d9bc85a0267dc3e0188633363a549e6" name="a5d16b39cb148aa323254bcb35b13471fa8d9bc85a0267dc3e0188633363a549e6"></a>kCreateCompletionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471faa9e3f921d7b8e47ba169228bb81c81bf" name="a5d16b39cb148aa323254bcb35b13471faa9e3f921d7b8e47ba169228bb81c81bf"></a>kCreateSubmissionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fac3a0de6f08647f1447dcfba4618dc009" name="a5d16b39cb148aa323254bcb35b13471fac3a0de6f08647f1447dcfba4618dc009"></a>kIdentifyNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fa2abcd68af7293031801abfbeea842ed5" name="a5d16b39cb148aa323254bcb35b13471fa2abcd68af7293031801abfbeea842ed5"></a>kReadNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fabb910594051543bb8430913fa31b2c41" name="a5d16b39cb148aa323254bcb35b13471fabb910594051543bb8430913fa31b2c41"></a>kWriteNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fa5677f8495f75056d7fda4fcdf22a644c" name="a5d16b39cb148aa323254bcb35b13471fa5677f8495f75056d7fda4fcdf22a644c"></a>kCountNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fab04d94e34a43848abc3fac1ba7d53f29" name="a5d16b39cb148aa323254bcb35b13471fab04d94e34a43848abc3fac1ba7d53f29"></a>kMBCISpeedDeviceInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fa9680bc26cad6355230da5f7c3d06dfb5" name="a5d16b39cb148aa323254bcb35b13471fa9680bc26cad6355230da5f7c3d06dfb5"></a>kMBCILowSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fa48fb69baf250d11e4c7726c0f0aa3e23" name="a5d16b39cb148aa323254bcb35b13471fa48fb69baf250d11e4c7726c0f0aa3e23"></a>kMBCIHighSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d16b39cb148aa323254bcb35b13471fac8c96d8296ffe7676d044ad9c031513d" name="a5d16b39cb148aa323254bcb35b13471fac8c96d8296ffe7676d044ad9c031513d"></a>kMBCISpeedDeviceCount&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a14982be475cb4835499cd1690f780d03" name="a14982be475cb4835499cd1690f780d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14982be475cb4835499cd1690f780d03">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a14982be475cb4835499cd1690f780d03aafbbddbd4a0ab93e2170e74ccf3f6fea" name="a14982be475cb4835499cd1690f780d03aafbbddbd4a0ab93e2170e74ccf3f6fea"></a>kInvalidNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14982be475cb4835499cd1690f780d03a8d9bc85a0267dc3e0188633363a549e6" name="a14982be475cb4835499cd1690f780d03a8d9bc85a0267dc3e0188633363a549e6"></a>kCreateCompletionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14982be475cb4835499cd1690f780d03aa9e3f921d7b8e47ba169228bb81c81bf" name="a14982be475cb4835499cd1690f780d03aa9e3f921d7b8e47ba169228bb81c81bf"></a>kCreateSubmissionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14982be475cb4835499cd1690f780d03ac3a0de6f08647f1447dcfba4618dc009" name="a14982be475cb4835499cd1690f780d03ac3a0de6f08647f1447dcfba4618dc009"></a>kIdentifyNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14982be475cb4835499cd1690f780d03a2abcd68af7293031801abfbeea842ed5" name="a14982be475cb4835499cd1690f780d03a2abcd68af7293031801abfbeea842ed5"></a>kReadNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14982be475cb4835499cd1690f780d03abb910594051543bb8430913fa31b2c41" name="a14982be475cb4835499cd1690f780d03abb910594051543bb8430913fa31b2c41"></a>kWriteNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a14982be475cb4835499cd1690f780d03a5677f8495f75056d7fda4fcdf22a644c" name="a14982be475cb4835499cd1690f780d03a5677f8495f75056d7fda4fcdf22a644c"></a>kCountNVME&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -6872,6 +6875,24 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d324af99e9a0f770de9f82cc0c589d3" name="a3d324af99e9a0f770de9f82cc0c589d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d324af99e9a0f770de9f82cc0c589d3">&#9670;&#160;</a></span>wrt_string_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a> Kernel::wrt_string_len </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_kernel.html#a2c6ff14dd8a82831d54d27370d39c5e1">Utf16Char</a> *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
