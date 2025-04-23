@@ -5,7 +5,7 @@ var searchData=
   ['array_2',['Array',['../class_kernel_1_1_array.html',1,'Kernel']]],
   ['array_3c_20kernel_3a_3ahardwarethread_2c_20kmaxapinsidesched_20_3e_3',['Array&lt; Kernel::HardwareThread, kMaxAPInsideSched &gt;',['../class_kernel_1_1_array.html',1,'Kernel']]],
   ['array_3c_20kernel_3a_3apci_3a_3adevice_2c_20ne_5fbus_5fcount_20_3e_4',['Array&lt; Kernel::PCI::Device, NE_BUS_COUNT &gt;',['../class_kernel_1_1_array.html',1,'Kernel']]],
-  ['array_3c_20kernel_3a_3aprocess_2c_20kschedprocesslimitperteam_20_3e_5',['Array&lt; Kernel::Process, kSchedProcessLimitPerTeam &gt;',['../class_kernel_1_1_array.html',1,'Kernel']]],
+  ['array_3c_20kernel_3a_3auserprocess_2c_20kschedprocesslimitperteam_20_3e_5',['Array&lt; Kernel::UserProcess, kSchedProcessLimitPerTeam &gt;',['../class_kernel_1_1_array.html',1,'Kernel']]],
   ['array_3c_20uint8_2c_20kmacaddrlen_20_3e_6',['Array&lt; UInt8, kMACAddrLen &gt;',['../class_kernel_1_1_array.html',1,'Kernel']]],
   ['array_3c_20ushort_2c_20sz_20_3e_7',['Array&lt; UShort, Sz &gt;',['../class_kernel_1_1_array.html',1,'Kernel']]],
   ['arraylist_8',['ArrayList',['../class_kernel_1_1_array_list.html',1,'Kernel']]],

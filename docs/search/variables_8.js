@@ -6,7 +6,7 @@ var searchData=
   ['iftype_3',['IfType',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html#a5f86326fd7d16392e5874f3fe781bf0f',1,'EFI_SIMPLE_NETWORK_MODE']]],
   ['ignored1_4',['Ignored1',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a159bb40e09afa54a53f3078404fdce65',1,'Kernel::HAL::Detail::PTE']]],
   ['ignored2_5',['Ignored2',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#aef8de7e63e56b962e54310da90fab9ee',1,'Kernel::HAL::Detail::PTE']]],
-  ['image_6',['Image',['../class_kernel_1_1_process.html#add6cfba6a94324fe946dde39bd332723',1,'Kernel::Process']]],
+  ['image_6',['Image',['../class_kernel_1_1_user_process.html#a5d69a5fb7189d865d6bbc6d4e5236b90',1,'Kernel::UserProcess']]],
   ['image_5fpath_7',['image_path',['../namespacemk__img.html#a192818c1387c58f1905ca13c3f9cffac',1,'mk_img']]],
   ['imagebase_8',['imagebase',['../struct_efi_load_image_protocol.html#a1cfced080aebf1787c5334911fa78207',1,'EfiLoadImageProtocol::ImageBase'],['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a0a764790fe3af1e34cfed25380b5a19b',1,'LDR_OPTIONAL_HEADER::ImageBase']]],
   ['imagecodetype_9',['ImageCodeType',['../struct_efi_load_image_protocol.html#a2a4c683608226df043f8df0398322f57',1,'EfiLoadImageProtocol']]],

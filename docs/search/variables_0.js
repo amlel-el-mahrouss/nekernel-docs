@@ -18,7 +18,7 @@ var searchData=
   ['addressofnames_15',['AddressOfNames',['../struct_l_d_r___e_x_p_o_r_t___d_i_r_e_c_t_o_r_y.html#ab64db591dacda08b2c2e3cadee3f7943',1,'LDR_EXPORT_DIRECTORY']]],
   ['addressspaceid_16',['addressspaceid',['../class_kernel_1_1_a_c_p_i___a_d_d_r_e_s_s.html#a1897613939bd5a7070f7e1058e6b46a6',1,'Kernel::ACPI_ADDRESS::AddressSpaceId'],['../struct_kernel_1_1_h_p_e_t_address_structure.html#a13339fb9d0add92cfedc22ecba4372a7',1,'Kernel::HPETAddressStructure::AddressSpaceId']]],
   ['af_17',['AF',['../struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html#a77cf366ff079ac919f1c3d64d469b0cc',1,'Kernel::HAL::PTE_4KB']]],
-  ['affinity_18',['Affinity',['../class_kernel_1_1_process.html#a38aa3c4369622daa39f8a53522e8b4ee',1,'Kernel::Process']]],
+  ['affinity_18',['Affinity',['../class_kernel_1_1_user_process.html#a2abaf33bc81db22d0d53afc0a1532e17',1,'Kernel::UserProcess']]],
   ['align_5fpos_19',['ALIGN_POS',['../namespaceqr.html#aa79f24e70db606e9cdf5c18cc0e7aa57',1,'qr']]],
   ['allocatepages_20',['AllocatePages',['../struct_efi_boot_services.html#a72762acfcdb27aecfe06b7cd845671f7',1,'EfiBootServices']]],
   ['allocatepool_21',['AllocatePool',['../struct_efi_boot_services.html#a15d94f31ba81a2670edfca592ffb3cd8',1,'EfiBootServices']]],

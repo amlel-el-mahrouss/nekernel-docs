@@ -1,8 +1,6 @@
 var _he_f_s_8h =
 [
     [ "HEFS_BOOT_NODE", "struct_h_e_f_s___b_o_o_t___n_o_d_e.html", "struct_h_e_f_s___b_o_o_t___n_o_d_e" ],
-    [ "HEFS_INDEX_NODE", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e.html", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e" ],
-    [ "HEFS_INDEX_NODE_DIRECTORY", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html", "struct_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y" ],
     [ "Kernel::HeFileSystemParser", "class_kernel_1_1_he_file_system_parser.html", "class_kernel_1_1_he_file_system_parser" ],
     [ "kHeFSFileNameLen", "_he_f_s_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465", null ],
     [ "kHeFSMagic", "_he_f_s_8h.html#aaad4ee1c87b58182385840f506b53509", null ],
@@ -11,6 +9,7 @@ var _he_f_s_8h =
     [ "kHeFSPartNameLen", "_he_f_s_8h.html#ab08ee8e374ad69d5f02d7cdb327b56e7", null ],
     [ "kHeFSVersion", "_he_f_s_8h.html#a36b750da7d2881be04e3dc2daf842e91", null ],
     [ "ATime", "_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd", null ],
+    [ "ALIGN", "_he_f_s_8h.html#a24dda53f403a87807703136a9bbe3ab1", null ],
     [ "hefs_day_get", "_he_f_s_8h.html#a813e72b32e5b26835684b6b6295fb21b", null ],
     [ "hefs_drive_kind_to_string", "_he_f_s_8h.html#a077d6a9359808c513a7695c5f2f0d98b", null ],
     [ "hefs_encoding_to_string", "_he_f_s_8h.html#a8a5c31ab41b4154b2099208d476fe49a", null ],

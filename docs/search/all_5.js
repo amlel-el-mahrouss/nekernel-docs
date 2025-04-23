@@ -3,7 +3,7 @@ var searchData=
   ['_5f_5fguard_0',['__guard',['../namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715',1,'cxxabiv1']]],
   ['_5f_5fmust_5fpass_1',['__MUST_PASS',['../_kernel_panic_8h.html#a90761906556ea7e47b7f55ca64423905',1,'KernelPanic.h']]],
   ['_5f_5fne_5fver_5f_5f_2',['__NE_VER__',['../kernel_2_new_kit_2_macros_8h.html#aeb2f846630e74da7c3ef2c61e72304d6',1,'Macros.h']]],
-  ['_5f_5fzka_5fpure_5fcall_3',['__zka_pure_call',['../namespace_kernel.html#acb83055ae462456b3e63ec700b0287ea',1,'Kernel::__zka_pure_call(Process *process)'],['../namespace_kernel.html#a6e4e780b2ff3eb6c4dfd73dea6e3fe5f',1,'Kernel::__zka_pure_call(void)']]],
+  ['_5f_5fzka_5fpure_5fcall_3',['__zka_pure_call',['../namespace_kernel.html#a6156b361f61e9fc607e6a3e5ecb4a3db',1,'Kernel::__zka_pure_call(UserProcess *process)'],['../namespace_kernel.html#a6e4e780b2ff3eb6c4dfd73dea6e3fe5f',1,'Kernel::__zka_pure_call(void)']]],
   ['_5fdosheader_4',['_DosHeader',['../struct___dos_header.html',1,'']]],
   ['_5feficpuphyiscallocation_5',['_EfiCPUPhyiscalLocation',['../struct___efi_c_p_u_phyiscal_location.html',1,'']]],
   ['_5fefiextendedprocessorinformation_6',['_EfiExtendedProcessorInformation',['../union___efi_extended_processor_information.html',1,'']]],

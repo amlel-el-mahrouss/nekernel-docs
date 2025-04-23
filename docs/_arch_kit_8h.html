@@ -115,7 +115,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_h_a_l" id="r_namespace_kernel_1_1_h_a_l"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html">Kernel::HAL</a></td></tr>
 <tr class="memdesc:namespace_kernel_1_1_h_a_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware Abstraction Layer. <br /></td></tr>
@@ -123,8 +123,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a7527d5ca1027f9a8a527139bc6e5ce63" id="r_a7527d5ca1027f9a8a527139bc6e5ce63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arch_kit_8h.html#a7527d5ca1027f9a8a527139bc6e5ce63">kKernelMaxSystemCalls</a>&#160;&#160;&#160;(512U)</td></tr>
-<tr class="separator:a7527d5ca1027f9a8a527139bc6e5ce63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8f3acbdd200ad3af4c0d0ce660b910" id="r_a0b8f3acbdd200ad3af4c0d0ce660b910"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arch_kit_8h.html#a0b8f3acbdd200ad3af4c0d0ce660b910">kMaxDispatchCallCount</a>&#160;&#160;&#160;(512U)</td></tr>
+<tr class="separator:a0b8f3acbdd200ad3af4c0d0ce660b910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -151,20 +151,20 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5229c5091fe4804e0c511d599a5af05a" id="r_a5229c5091fe4804e0c511d599a5af05a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt; <a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a7527d5ca1027f9a8a527139bc6e5ce63">kKernelMaxSystemCalls</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arch_kit_8h.html#a5229c5091fe4804e0c511d599a5af05a">kSyscalls</a></td></tr>
-<tr class="separator:a5229c5091fe4804e0c511d599a5af05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a219c770dc963d6c64f19fea152c7103a" id="r_a219c770dc963d6c64f19fea152c7103a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt; <a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a7527d5ca1027f9a8a527139bc6e5ce63">kKernelMaxSystemCalls</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arch_kit_8h.html#a219c770dc963d6c64f19fea152c7103a">kKerncalls</a></td></tr>
-<tr class="separator:a219c770dc963d6c64f19fea152c7103a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2dcae0036637d6289443c89ddcd957" id="r_a8c2dcae0036637d6289443c89ddcd957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt; <a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a0b8f3acbdd200ad3af4c0d0ce660b910">kMaxDispatchCallCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arch_kit_8h.html#a8c2dcae0036637d6289443c89ddcd957">kSysCalls</a></td></tr>
+<tr class="separator:a8c2dcae0036637d6289443c89ddcd957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181381f240f9adc3ed1f6d9bd04cd86a" id="r_a181381f240f9adc3ed1f6d9bd04cd86a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt; <a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a0b8f3acbdd200ad3af4c0d0ce660b910">kMaxDispatchCallCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_arch_kit_8h.html#a181381f240f9adc3ed1f6d9bd04cd86a">kKernCalls</a></td></tr>
+<tr class="separator:a181381f240f9adc3ed1f6d9bd04cd86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a7527d5ca1027f9a8a527139bc6e5ce63" name="a7527d5ca1027f9a8a527139bc6e5ce63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7527d5ca1027f9a8a527139bc6e5ce63">&#9670;&#160;</a></span>kKernelMaxSystemCalls</h2>
+<a id="a0b8f3acbdd200ad3af4c0d0ce660b910" name="a0b8f3acbdd200ad3af4c0d0ce660b910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8f3acbdd200ad3af4c0d0ce660b910">&#9670;&#160;</a></span>kMaxDispatchCallCount</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kKernelMaxSystemCalls&#160;&#160;&#160;(512U)</td>
+          <td class="memname">#define kMaxDispatchCallCount&#160;&#160;&#160;(512U)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,8 +206,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a219c770dc963d6c64f19fea152c7103a" name="a219c770dc963d6c64f19fea152c7103a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a219c770dc963d6c64f19fea152c7103a">&#9670;&#160;</a></span>kKerncalls</h2>
+<a id="a181381f240f9adc3ed1f6d9bd04cd86a" name="a181381f240f9adc3ed1f6d9bd04cd86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181381f240f9adc3ed1f6d9bd04cd86a">&#9670;&#160;</a></span>kKernCalls</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +216,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt;<a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a7527d5ca1027f9a8a527139bc6e5ce63">kKernelMaxSystemCalls</a>&gt; kKerncalls</td>
+          <td class="memname"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt;<a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a0b8f3acbdd200ad3af4c0d0ce660b910">kMaxDispatchCallCount</a>&gt; kKernCalls</td>
         </tr>
       </table>
   </td>
@@ -228,8 +228,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5229c5091fe4804e0c511d599a5af05a" name="a5229c5091fe4804e0c511d599a5af05a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5229c5091fe4804e0c511d599a5af05a">&#9670;&#160;</a></span>kSyscalls</h2>
+<a id="a8c2dcae0036637d6289443c89ddcd957" name="a8c2dcae0036637d6289443c89ddcd957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2dcae0036637d6289443c89ddcd957">&#9670;&#160;</a></span>kSysCalls</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +238,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt;<a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a7527d5ca1027f9a8a527139bc6e5ce63">kKernelMaxSystemCalls</a>&gt; kSyscalls</td>
+          <td class="memname"><a class="el" href="class_kernel_1_1_array.html">Kernel::Array</a>&lt;<a class="el" href="struct_hal_syscall_entry.html">HalSyscallEntry</a>, <a class="el" href="_arch_kit_8h.html#a0b8f3acbdd200ad3af4c0d0ce660b910">kMaxDispatchCallCount</a>&gt; kSysCalls</td>
         </tr>
       </table>
   </td>

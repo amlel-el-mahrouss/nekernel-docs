@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('_user_process_scheduler_8cc.html','');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Process</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p><a class="el" href="class_kernel_1_1_process.html">Process</a> class, holds information about the running process/thread. </p>
+<tr><td colspan="2"><div class="groupHeader">UserProcess</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> class, holds information about the running process/thread. </p>
 </div></td></tr>
 <tr class="memitem:aa51450a0519e76d9ba3d82a715a009c5" id="r_aa51450a0519e76d9ba3d82a715a009c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa51450a0519e76d9ba3d82a715a009c5">Kernel::sched_get_exit_code</a> (void) noexcept</td></tr>
 <tr class="memdesc:aa51450a0519e76d9ba3d82a715a009c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last exit code.  <br /></td></tr>
@@ -127,9 +127,9 @@ Variables</h2></td></tr>
 <tr class="memitem:aa8089b84581abd0e4212da55b348cd53" id="r_aa8089b84581abd0e4212da55b348cd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa8089b84581abd0e4212da55b348cd53">Kernel::kLastExitCode</a> = 0U</td></tr>
 <tr class="memdesc:aa8089b84581abd0e4212da55b348cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit Code global variable.  <br /></td></tr>
 <tr class="separator:aa8089b84581abd0e4212da55b348cd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf64874b4ad5d6ea7996b26d17e2a4b" id="r_aabf64874b4ad5d6ea7996b26d17e2a4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_user_process_scheduler.html">UserProcessScheduler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aabf64874b4ad5d6ea7996b26d17e2a4b">Kernel::kProcessScheduler</a></td></tr>
-<tr class="memdesc:aabf64874b4ad5d6ea7996b26d17e2a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">External reference of the thread scheduler.  <br /></td></tr>
-<tr class="separator:aabf64874b4ad5d6ea7996b26d17e2a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566fd374158c608cca7ebe8970da799f" id="r_a566fd374158c608cca7ebe8970da799f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_user_process_scheduler.html">UserProcessScheduler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a566fd374158c608cca7ebe8970da799f">Kernel::kScheduler</a></td></tr>
+<tr class="memdesc:a566fd374158c608cca7ebe8970da799f"><td class="mdescLeft">&#160;</td><td class="mdescRight">External reference of the thread scheduler.  <br /></td></tr>
+<tr class="separator:a566fd374158c608cca7ebe8970da799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unprivileged/Ring-3 process scheduler. </p>

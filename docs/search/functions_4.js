@@ -2,7 +2,7 @@ var searchData=
 [
   ['d_0',['D',['../class_kernel_1_1_mountpoint_interface.html#ae89368aab24d81b76616a4fe76b76f4e',1,'Kernel::MountpointInterface']]],
   ['data_1',['data',['../class_kernel_1_1_array_list.html#acf30fdb4ca6b31da92d86600122fb224',1,'Kernel::ArrayList::Data()'],['../class_kernel_1_1_k_string.html#a85844405c70fce83e26785dbcbbe7d21',1,'Kernel::KString::Data()']]],
-  ['delete_2',['delete',['../class_kernel_1_1_process.html#a9b0678da5794a9e23ddefa8bda420fc7',1,'Kernel::Process::Delete()'],['../class_kernel_1_1_own_ptr.html#a81e3a7340967880d91ccfb691309bda9',1,'Kernel::OwnPtr::Delete()']]],
+  ['delete_2',['delete',['../class_kernel_1_1_user_process.html#ac9af9881f9b455a8bfbe88a91f4bda50',1,'Kernel::UserProcess::Delete()'],['../class_kernel_1_1_own_ptr.html#a81e3a7340967880d91ccfb691309bda9',1,'Kernel::OwnPtr::Delete()']]],
   ['desktop_5fhelper_3',['desktop_helper',['../classpfd_1_1internal_1_1dialog.html#aadaf6cb30620c85f4b97993e3c819188',1,'pfd::internal::dialog']]],
   ['device_4',['device',['../class_device.html#aeedac8c21921d1379d33ffc0e72a7b07',1,'Device::Device()'],['../class_kernel_1_1_p_c_i_1_1_device.html#a376f9d93d154aca83fccad481605e6f5',1,'Kernel::PCI::Device::Device()=default'],['../class_kernel_1_1_p_c_i_1_1_device.html#a6f2bd7f1c8e949bf6eaf5f54a9b4c1a1',1,'Kernel::PCI::Device::Device(UShort bus, UShort device, UShort function, UInt32 bar)'],['../class_kernel_1_1_p_c_i_1_1_device.html#a3ddf439e0cd188f2c0ebae39daaf0395',1,'Kernel::PCI::Device::Device(const Device &amp;)=default']]],
   ['deviceid_5',['DeviceId',['../class_kernel_1_1_p_c_i_1_1_device.html#a42764744139da888c5236f8f4b7fb15e',1,'Kernel::PCI::Device']]],

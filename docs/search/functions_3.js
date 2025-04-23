@@ -2,7 +2,7 @@ var searchData=
 [
   ['c_0',['C',['../class_kernel_1_1_mountpoint_interface.html#ab4dca518e845ee88b8e83afeb273fd20',1,'Kernel::MountpointInterface']]],
   ['call_1',['Call',['../class_kernel_1_1_function.html#a5dc04a678413e8103f1dc155189affff',1,'Kernel::Function']]],
-  ['canbescheduled_2',['CanBeScheduled',['../class_kernel_1_1_user_process_helper.html#ac2ed7887cceda02800559d2e8dc861c9',1,'Kernel::UserProcessHelper']]],
+  ['canbescheduled_2',['CanBeScheduled',['../class_kernel_1_1_user_process_helper.html#ac8fb7598678e064f9e78ece6596ad669',1,'Kernel::UserProcessHelper']]],
   ['capacity_3',['capacity',['../class_kernel_1_1_hardware_thread_scheduler.html#a8ab7e9a43c622e4a5115b3891de3e148',1,'Kernel::HardwareThreadScheduler::Capacity()'],['../class_kernel_1_1_array.html#ac24882d23dfbc71ee808363bdc55218f',1,'Kernel::Array::Capacity()'],['../class_c_f_1_1_c_f_array.html#a8e2df22f2f670bb567775a4b52fa22f4',1,'CF::CFArray::Capacity()']]],
   ['carriage_5freturn_4',['carriage_return',['../namespace_kernel.html#a2cc9aca3eece3a98e6c7685e8cada39e',1,'Kernel']]],
   ['cci_5',['cci',['../namespaceqr.html#a767860c022121560659853e1bd29113f',1,'qr']]],
@@ -37,7 +37,7 @@ var searchData=
   ['copy_5fto_5ffat_34',['copy_to_fat',['../namespacemk__img.html#a9c2d5f770ba16a06ac49ef5c6b1db74d',1,'mk_img']]],
   ['count_35',['count',['../class_c_f_1_1_c_f_array.html#a0708624f460bb1eae9bcb98c02b179b8',1,'CF::CFArray::Count()'],['../class_kernel_1_1_array.html#aa51db8e1d0568722875e79feaa7e11b0',1,'Kernel::Array::Count()'],['../class_kernel_1_1_array_list.html#a1e7afe3cd1b44a465134f8780bbd8582',1,'Kernel::ArrayList::Count()'],['../class_kernel_1_1_nullable_mutable_array.html#a336f51e91d18b36d2e240caadef55019',1,'Kernel::NullableMutableArray::Count()'],['../class_kernel_1_1_mutable_array.html#ab0c1d5b1e9e6a57a64636367ede87021',1,'Kernel::MutableArray::Count()']]],
   ['countof_36',['countof',['../namespaceutl.html#af0435bd484c24f994f752e8d67c2acb0',1,'utl']]],
-  ['crash_37',['Crash',['../class_kernel_1_1_process.html#a4708f64dde42831a68f4e634085b74ff',1,'Kernel::Process']]],
+  ['crash_37',['Crash',['../class_kernel_1_1_user_process.html#aa4abc07114029ddae11372bf8225e639',1,'Kernel::UserProcess']]],
   ['create_38',['Create',['../class_kernel_1_1_i_filesystem_mgr.html#a8e8e437d978a618942f98cd6e5fa5b1c',1,'Kernel::IFilesystemMgr']]],
   ['create_5fdirectory_5fstructure_39',['create_directory_structure',['../namespacemk__app.html#a5f5eaf1ba993e25c887ef320ec48f7df',1,'mk_app']]],
   ['createalias_40',['CreateAlias',['../class_kernel_1_1_i_filesystem_mgr.html#a081b5bb7a0f12db6b33f5ab4c6fdbf4e',1,'Kernel::IFilesystemMgr']]],
@@ -47,6 +47,6 @@ var searchData=
   ['createjournal_44',['CreateJournal',['../class_kernel_1_1_ne_file_system_journal.html#a27bf342e545d387d39739291efa5eb0e',1,'Kernel::NeFileSystemJournal']]],
   ['createswapfile_45',['CreateSwapFile',['../class_kernel_1_1_i_filesystem_mgr.html#aeddacb2257837985d01a8b803663b9d0',1,'Kernel::IFilesystemMgr']]],
   ['cred_5fconstruct_5ftoken_46',['cred_construct_token',['../namespace_kernel_1_1_detail.html#ae06296f83da9733db8e053f758e99114',1,'Kernel::Detail']]],
-  ['currentprocess_47',['CurrentProcess',['../class_kernel_1_1_user_process_scheduler.html#a602ab699a23ff250b9cd2b1fe232b979',1,'Kernel::UserProcessScheduler']]],
-  ['currentteam_48',['CurrentTeam',['../class_kernel_1_1_user_process_scheduler.html#accbd3a3eeebf7fc277b6f42b0768d2a3',1,'Kernel::UserProcessScheduler']]]
+  ['currentprocess_47',['CurrentProcess',['../class_kernel_1_1_user_process_scheduler.html#aff3775ddd3d91e849a6ef9a80f1d356f',1,'Kernel::UserProcessScheduler']]],
+  ['currentteam_48',['CurrentTeam',['../class_kernel_1_1_user_process_scheduler.html#afdaeea0ed156471fc0906de143ec0337',1,'Kernel::UserProcessScheduler']]]
 ];

@@ -24,5 +24,5 @@ var searchData=
   ['greenmask_21',['GreenMask',['../struct_efi_bitmask.html#a88f33d6dc53e15c7294c0b677b9734cb',1,'EfiBitmask']]],
   ['gs_22',['GS',['../struct_kernel_1_1_h_a_l_1_1_stack_frame.html#a45869897503ad7c4330b5728a94197f1',1,'Kernel::HAL::StackFrame']]],
   ['gsi_23',['GSI',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a21f8eb55ba9969fee4d6ecda4876c77e',1,'Kernel::HAL::SDT_OBJECT']]],
-  ['guid_24',['guid',['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a7a607d4efb637663353be5bad59f6b75',1,'EPM_PART_BLOCK::Guid'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a4e0b6335f910aba9a2981e899fd37de3',1,'Kernel::GPT_PARTITION_TABLE::Guid']]]
+  ['guid_24',['guid',['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a7a607d4efb637663353be5bad59f6b75',1,'EPM_PART_BLOCK::Guid'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a0349eea16af93cbb9de259a1546fe9c1',1,'Kernel::GPT_PARTITION_TABLE::Guid']]]
 ];

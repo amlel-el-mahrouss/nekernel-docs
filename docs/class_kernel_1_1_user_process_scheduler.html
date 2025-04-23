@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('class_kernel_1_1_user_process_schedule
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler class. The main class which you call to schedule user processes.  
+<p><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler class. The main class which you call to schedule user processes.  
  <a href="class_kernel_1_1_user_process_scheduler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_user_process_scheduler_8h_source.html">UserProcessScheduler.h</a>&gt;</code></p>
@@ -125,9 +125,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a920d3cca32644f9219e7c5926f216dcb" id="r_a920d3cca32644f9219e7c5926f216dcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#a920d3cca32644f9219e7c5926f216dcb">operator!</a> ()</td></tr>
 <tr class="memdesc:a920d3cca32644f9219e7c5926f216dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">this checks if no process is on the team.  <br /></td></tr>
 <tr class="separator:a920d3cca32644f9219e7c5926f216dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accbd3a3eeebf7fc277b6f42b0768d2a3" id="r_accbd3a3eeebf7fc277b6f42b0768d2a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_process_team.html">ProcessTeam</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#accbd3a3eeebf7fc277b6f42b0768d2a3">CurrentTeam</a> ()</td></tr>
-<tr class="memdesc:accbd3a3eeebf7fc277b6f42b0768d2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current scheduled team.  <br /></td></tr>
-<tr class="separator:accbd3a3eeebf7fc277b6f42b0768d2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdaeea0ed156471fc0906de143ec0337" id="r_afdaeea0ed156471fc0906de143ec0337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_user_process_team.html">UserProcessTeam</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#afdaeea0ed156471fc0906de143ec0337">CurrentTeam</a> ()</td></tr>
+<tr class="memdesc:afdaeea0ed156471fc0906de143ec0337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current scheduled team.  <br /></td></tr>
+<tr class="separator:afdaeea0ed156471fc0906de143ec0337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adada55b091897f42495fe624e69a13ab" id="r_adada55b091897f42495fe624e69a13ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#adada55b091897f42495fe624e69a13ab">SwitchTeam</a> (<a class="el" href="class_kernel_1_1_user_process_team.html">UserProcessTeam</a> &amp;team)</td></tr>
+<tr class="memdesc:adada55b091897f42495fe624e69a13ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches the current team.  <br /></td></tr>
+<tr class="separator:adada55b091897f42495fe624e69a13ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcccd53ad3f8ec901a668e5210f2086f" id="r_adcccd53ad3f8ec901a668e5210f2086f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#abba6700dd5b8786ae2dbee68de1a5cea">ProcessID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#adcccd53ad3f8ec901a668e5210f2086f">Spawn</a> (const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *name, <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> code, <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> image)</td></tr>
 <tr class="memdesc:adcccd53ad3f8ec901a668e5210f2086f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add process to team.  <br /></td></tr>
 <tr class="separator:adcccd53ad3f8ec901a668e5210f2086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cab8f007f15f573f7274d559b33b81b" id="r_a3cab8f007f15f573f7274d559b33b81b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#a3cab8f007f15f573f7274d559b33b81b">HasMP</a> () override</td></tr>
 <tr class="memdesc:a3cab8f007f15f573f7274d559b33b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is it a SMP scheduler?  <br /></td></tr>
 <tr class="separator:a3cab8f007f15f573f7274d559b33b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602ab699a23ff250b9cd2b1fe232b979" id="r_a602ab699a23ff250b9cd2b1fe232b979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_ref.html">Ref</a>&lt; <a class="el" href="class_kernel_1_1_process.html">Process</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#a602ab699a23ff250b9cd2b1fe232b979">CurrentProcess</a> ()</td></tr>
-<tr class="memdesc:a602ab699a23ff250b9cd2b1fe232b979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets current running process.  <br /></td></tr>
-<tr class="separator:a602ab699a23ff250b9cd2b1fe232b979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3775ddd3d91e849a6ef9a80f1d356f" id="r_aff3775ddd3d91e849a6ef9a80f1d356f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_ref.html">Ref</a>&lt; <a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#aff3775ddd3d91e849a6ef9a80f1d356f">CurrentProcess</a> ()</td></tr>
+<tr class="memdesc:aff3775ddd3d91e849a6ef9a80f1d356f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets current running process.  <br /></td></tr>
+<tr class="separator:aff3775ddd3d91e849a6ef9a80f1d356f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8104f3228da249fec867975d5c1c8e40" id="r_a8104f3228da249fec867975d5c1c8e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#a8104f3228da249fec867975d5c1c8e40">Run</a> () noexcept</td></tr>
 <tr class="memdesc:a8104f3228da249fec867975d5c1c8e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="class_kernel_1_1_user.html" title="User class.">User</a> scheduler object.  <br /></td></tr>
 <tr class="separator:a8104f3228da249fec867975d5c1c8e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +167,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a98d7dd715ed452210e4b68d845ec5fe3" id="r_a98d7dd715ed452210e4b68d845ec5fe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_process_team.html">ProcessTeam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#a98d7dd715ed452210e4b68d845ec5fe3">mTeam</a> {}</td></tr>
-<tr class="separator:a98d7dd715ed452210e4b68d845ec5fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f944e30f74189afdd0a78fc604cb049" id="r_a2f944e30f74189afdd0a78fc604cb049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_user_process_team.html">UserProcessTeam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user_process_scheduler.html#a2f944e30f74189afdd0a78fc604cb049">mTeam</a> {}</td></tr>
+<tr class="separator:a2f944e30f74189afdd0a78fc604cb049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -173,7 +176,7 @@ Friends</h2></td></tr>
 <tr class="separator:adfcb427039efe7a8b2dad3c9e8ba823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler class. The main class which you call to schedule user processes. </p>
+<div class="textblock"><p><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler class. The main class which you call to schedule user processes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7eaeb9df2e14f1bd48e4fc2c87aaba54" name="a7eaeb9df2e14f1bd48e4fc2c87aaba54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7eaeb9df2e14f1bd48e4fc2c87aaba54">&#9670;&#160;</a></span>UserProcessScheduler()</h2>
@@ -226,14 +229,14 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a602ab699a23ff250b9cd2b1fe232b979" name="a602ab699a23ff250b9cd2b1fe232b979"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a602ab699a23ff250b9cd2b1fe232b979">&#9670;&#160;</a></span>CurrentProcess()</h2>
+<a id="aff3775ddd3d91e849a6ef9a80f1d356f" name="aff3775ddd3d91e849a6ef9a80f1d356f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3775ddd3d91e849a6ef9a80f1d356f">&#9670;&#160;</a></span>CurrentProcess()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_ref.html">Ref</a>&lt; <a class="el" href="class_kernel_1_1_process.html">Process</a> &gt; &amp; Kernel::UserProcessScheduler::CurrentProcess </td>
+          <td class="memname"><a class="el" href="class_kernel_1_1_ref.html">Ref</a>&lt; <a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> &gt; &amp; Kernel::UserProcessScheduler::CurrentProcess </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -246,14 +249,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="accbd3a3eeebf7fc277b6f42b0768d2a3" name="accbd3a3eeebf7fc277b6f42b0768d2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accbd3a3eeebf7fc277b6f42b0768d2a3">&#9670;&#160;</a></span>CurrentTeam()</h2>
+<a id="afdaeea0ed156471fc0906de143ec0337" name="afdaeea0ed156471fc0906de143ec0337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdaeea0ed156471fc0906de143ec0337">&#9670;&#160;</a></span>CurrentTeam()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_process_team.html">ProcessTeam</a> &amp; Kernel::UserProcessScheduler::CurrentTeam </td>
+          <td class="memname"><a class="el" href="class_kernel_1_1_user_process_team.html">UserProcessTeam</a> &amp; Kernel::UserProcessScheduler::CurrentTeam </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -448,7 +451,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Run <a class="el" href="class_kernel_1_1_user.html" title="User class.">User</a> scheduler object. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_kernel_1_1_process.html">Process</a> count executed within a team. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> count executed within a team. </dd></dl>
 <p>we store this guy to tell the scheduler how many things we have scheduled.</p>
 <p>check if the process needs to be run.</p>
 
@@ -497,6 +500,39 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="adada55b091897f42495fe624e69a13ab" name="adada55b091897f42495fe624e69a13ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adada55b091897f42495fe624e69a13ab">&#9670;&#160;</a></span>SwitchTeam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::UserProcessScheduler::SwitchTeam </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_kernel_1_1_user_process_team.html">UserProcessTeam</a> &amp;&#160;</td>
+          <td class="paramname"><em>team</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Switches the current team. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">team</td><td>the new team to switch to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>team was switched. </td></tr>
+    <tr><td class="paramname">false</td><td>team was not switched. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a19e948d65beac1bee639cf6b6880dd21" name="a19e948d65beac1bee639cf6b6880dd21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19e948d65beac1bee639cf6b6880dd21">&#9670;&#160;</a></span>The()</h2>
 
@@ -540,8 +576,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a98d7dd715ed452210e4b68d845ec5fe3" name="a98d7dd715ed452210e4b68d845ec5fe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98d7dd715ed452210e4b68d845ec5fe3">&#9670;&#160;</a></span>mTeam</h2>
+<a id="a2f944e30f74189afdd0a78fc604cb049" name="a2f944e30f74189afdd0a78fc604cb049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f944e30f74189afdd0a78fc604cb049">&#9670;&#160;</a></span>mTeam</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +586,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_kernel_1_1_process_team.html">ProcessTeam</a> Kernel::UserProcessScheduler::mTeam {}</td>
+          <td class="memname"><a class="el" href="class_kernel_1_1_user_process_team.html">UserProcessTeam</a> Kernel::UserProcessScheduler::mTeam {}</td>
         </tr>
       </table>
   </td>

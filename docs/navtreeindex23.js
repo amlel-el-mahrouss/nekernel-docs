@@ -1,5 +1,9 @@
 var NAVTREEINDEX23 =
 {
+"struct_efi_boot_services.html#a7a0af12c123c84fe81c2281cce920aef":[3,0,22,36],
+"struct_efi_boot_services.html#a7bad7ae7b68db32c106361cf20eb16f2":[3,0,22,39],
+"struct_efi_boot_services.html#a7e00a1dfd5095069bf7b0abb1dbf7076":[3,0,22,11],
+"struct_efi_boot_services.html#a8109f54afa3c5b25054ace50597e85e1":[3,0,22,43],
 "struct_efi_boot_services.html#a8c8e5f7d7decbe1458fd8d268d0d1240":[3,0,22,32],
 "struct_efi_boot_services.html#a96f64dda8653536df363144b91e05bf8":[3,0,22,23],
 "struct_efi_boot_services.html#a9b54932816340f86173e6e3105a440d2":[3,0,22,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX23 =
 "struct_fis_reg_d2_h.html":[3,0,54],
 "struct_fis_reg_d2_h.html#a08236a54cd0361f0dd8de6e4b630b59e":[3,0,54,15],
 "struct_fis_reg_d2_h.html#a0b22fab0cbbcdac2522f165a4727cd1f":[3,0,54,16],
-"struct_fis_reg_d2_h.html#a0f0cec275b9e392e6a3325fcc8f439e3":[3,0,54,1],
-"struct_fis_reg_d2_h.html#a2e800d65f92d83030985ded8c826ab83":[3,0,54,6],
-"struct_fis_reg_d2_h.html#a372ae558715eb1f0ea9103cc58d59093":[3,0,54,12],
-"struct_fis_reg_d2_h.html#a3cc0b1df578c149b335f0f12e4f83bd5":[3,0,54,10],
-"struct_fis_reg_d2_h.html#a3f7084e1857a654d0115f746a5267bec":[3,0,54,5]
+"struct_fis_reg_d2_h.html#a0f0cec275b9e392e6a3325fcc8f439e3":[3,0,54,1]
 };

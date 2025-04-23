@@ -10,14 +10,12 @@ var searchData=
   ['pmm_7',['Pmm',['../class_kernel_1_1_pmm.html',1,'Kernel']]],
   ['powerfactory_8',['PowerFactory',['../class_kernel_1_1_power_factory.html',1,'Kernel']]],
   ['prdt_9',['PRDT',['../struct_kernel_1_1_p_r_d_t.html',1,'Kernel']]],
-  ['process_10',['Process',['../class_kernel_1_1_process.html',1,'Kernel']]],
-  ['process_5fcontrol_5fblock_11',['process_control_block',['../struct_kernel_1_1_h_a_l_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k.html',1,'Kernel::HAL::PROCESS_CONTROL_BLOCK'],['../struct_kernel_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k.html',1,'Kernel::PROCESS_CONTROL_BLOCK']]],
-  ['processimage_12',['ProcessImage',['../struct_kernel_1_1_process_image.html',1,'Kernel']]],
-  ['processmemoryheaplist_13',['ProcessMemoryHeapList',['../struct_kernel_1_1_process_1_1_process_memory_heap_list.html',1,'Kernel::Process']]],
-  ['processsignal_14',['ProcessSignal',['../struct_kernel_1_1_process_1_1_process_signal.html',1,'Kernel::Process']]],
-  ['processteam_15',['ProcessTeam',['../class_kernel_1_1_process_team.html',1,'Kernel']]],
-  ['property_16',['Property',['../class_c_f_1_1_property.html',1,'CF']]],
-  ['pte_17',['PTE',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html',1,'Kernel::HAL::Detail']]],
-  ['pte_5f4kb_18',['PTE_4KB',['../struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html',1,'Kernel::HAL']]],
-  ['ptewrapper_19',['PTEWrapper',['../class_kernel_1_1_p_t_e_wrapper.html',1,'Kernel']]]
+  ['process_5fcontrol_5fblock_10',['process_control_block',['../struct_kernel_1_1_h_a_l_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k.html',1,'Kernel::HAL::PROCESS_CONTROL_BLOCK'],['../struct_kernel_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k.html',1,'Kernel::PROCESS_CONTROL_BLOCK']]],
+  ['processimage_11',['ProcessImage',['../struct_kernel_1_1_process_image.html',1,'Kernel']]],
+  ['processmemoryheaplist_12',['ProcessMemoryHeapList',['../struct_kernel_1_1_user_process_1_1_process_memory_heap_list.html',1,'Kernel::UserProcess']]],
+  ['processsignal_13',['ProcessSignal',['../struct_kernel_1_1_user_process_1_1_process_signal.html',1,'Kernel::UserProcess']]],
+  ['property_14',['Property',['../class_c_f_1_1_property.html',1,'CF']]],
+  ['pte_15',['PTE',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html',1,'Kernel::HAL::Detail']]],
+  ['pte_5f4kb_16',['PTE_4KB',['../struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html',1,'Kernel::HAL']]],
+  ['ptewrapper_17',['PTEWrapper',['../class_kernel_1_1_p_t_e_wrapper.html',1,'Kernel']]]
 ];

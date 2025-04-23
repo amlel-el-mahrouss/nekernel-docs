@@ -267,7 +267,7 @@ template&lt;typename BootDev &gt; </div>
 </div><div class="memdoc">
 
 <p>Format disk using partition name and blob. </p>
-<p>Format disk.</p>
+<p>Format disk with a specific partition scheme.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Partition</td><td>part_name the target partition name. </td></tr>
@@ -299,9 +299,9 @@ template&lt;typename BootDev &gt; </div>
   </dd>
 </dl>
 <p>sanity check</p>
-<dl class="section note"><dt>Note</dt><dd>A catalog roughly equal to a sector.</dd>
+<dl class="section note"><dt>Note</dt><dd>A catalog roughly equal to a sector in NeFS terms.</dd>
 <dd>
-also look at EPM headers, for free part blocks.</dd></dl>
+also look at EPM headers, for free part blocks. (only applies if EPM or vEPM is used)</dd></dl>
 
 </div>
 </div>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"functions_t.html":[3,3,0,20],
+"functions_u.html":[3,3,0,21],
+"functions_v.html":[3,3,0,22],
+"functions_vars.html":[3,3,2,0],
 "functions_vars.html":[3,3,2],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
@@ -38,8 +42,8 @@ var NAVTREEINDEX17 =
 "globals_b.html":[4,1,0,2],
 "globals_c.html":[4,1,0,3],
 "globals_d.html":[4,1,0,4],
-"globals_defs.html":[4,1,6],
 "globals_defs.html":[4,1,6,0],
+"globals_defs.html":[4,1,6],
 "globals_defs_a.html":[4,1,6,1],
 "globals_defs_b.html":[4,1,6,2],
 "globals_defs_c.html":[4,1,6,3],
@@ -130,6 +134,7 @@ var NAVTREEINDEX17 =
 "kernel_2_firmware_kit_2_e_p_m_8h.html#a8f8b00f66a9459c8948024c0024e2032":[4,0,0,3,3,3,3],
 "kernel_2_firmware_kit_2_e_p_m_8h.html#aa387d5c6671c45ab84d5f8e9366d2c43":[4,0,0,3,3,3,11],
 "kernel_2_firmware_kit_2_e_p_m_8h.html#ab80664c8631dacf12102260c3d986f27":[4,0,0,3,3,3,4],
+"kernel_2_firmware_kit_2_e_p_m_8h.html#abd48a5fd834694d4b9e9ea1ea492d455":[4,0,0,3,3,3,18],
 "kernel_2_firmware_kit_2_e_p_m_8h.html#ac3912d171db6af2ed5eaf657d981c245":[4,0,0,3,3,3,13],
 "kernel_2_firmware_kit_2_e_p_m_8h.html#ae1907cf593bdc3ccdb2dce3892982f98":[4,0,0,3,3,3,2],
 "kernel_2_firmware_kit_2_e_p_m_8h.html#ae65d34a2d7c26f29251c80f9e51f6f53":[4,0,0,3,3,3,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX17 =
 "kernel_2_new_kit_2_macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca":[4,0,0,3,9,11,39],
 "kernel_2_new_kit_2_macros_8h.html#a8e09fc0acc49f63edf8ca7dd1c194598":[4,0,0,3,9,11,3],
 "kernel_2_new_kit_2_macros_8h.html#a95e415fed809f333f28c3691058f3375":[4,0,0,3,9,11,18],
-"kernel_2_new_kit_2_macros_8h.html#a973c5c37874adc092f94f3917df8f663":[4,0,0,3,9,11,11],
-"kernel_2_new_kit_2_macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5":[4,0,0,3,9,11,30],
-"kernel_2_new_kit_2_macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95":[4,0,0,3,9,11,16],
-"kernel_2_new_kit_2_macros_8h.html#aa5758c5d37f292d61ebb9ea3c58f1cc5":[4,0,0,3,9,11,35],
-"kernel_2_new_kit_2_macros_8h.html#aa8c1bad13059adc3e356392ae1ef9daf":[4,0,0,3,9,11,24],
-"kernel_2_new_kit_2_macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d":[4,0,0,3,9,11,41]
+"kernel_2_new_kit_2_macros_8h.html#a973c5c37874adc092f94f3917df8f663":[4,0,0,3,9,11,11]
 };

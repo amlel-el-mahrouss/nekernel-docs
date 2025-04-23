@@ -22,6 +22,7 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "PEF.h", "_p_e_f_8h.html", "_p_e_f_8h" ],
     [ "PEFCodeMgr.h", "_p_e_f_code_mgr_8h.html", "_p_e_f_code_mgr_8h" ],
     [ "ProcessScheduler.h", "_process_scheduler_8h.html", null ],
+    [ "ProcessSchedulerCore.h", "_process_scheduler_core_8h.html", "_process_scheduler_core_8h" ],
     [ "Semaphore.h", "_semaphore_8h.html", "_semaphore_8h" ],
     [ "ThreadLocalStorage.h", "_thread_local_storage_8h.html", "_thread_local_storage_8h" ],
     [ "ThreadLocalStorage.inl", "_thread_local_storage_8inl.html", "_thread_local_storage_8inl" ],

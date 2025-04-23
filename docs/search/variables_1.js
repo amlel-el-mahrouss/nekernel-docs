@@ -26,7 +26,7 @@ var searchData=
   ['bootservices_23',['BootServices',['../struct_efi_system_table.html#ab5e346992a8fab892aaee3c2118e948c',1,'EfiSystemTable']]],
   ['bp_24',['bp',['../struct_kernel_1_1_h_a_l_1_1_stack_frame.html#a98368702a29ed1c6cd39490fc48eae70',1,'Kernel::HAL::StackFrame::BP'],['../struct_kernel_1_1_h_a_l_1_1_stack_frame.html#a98368702a29ed1c6cd39490fc48eae70',1,'Kernel::HAL::StackFrame::BP']]],
   ['broadcastaddress_25',['BroadcastAddress',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html#a6ccd8ce69edb14ddc1c199f68c7c2b83',1,'EFI_SIMPLE_NETWORK_MODE']]],
-  ['bs_26',['bs',['../_a_p_i_8h.html#a67af7de1a62f48363917e0d14fbf2dc1',1,'BS:&#160;API.h'],['../_boot_thread_8cc.html#aba98b2cec77408ba0010dd5ada85341e',1,'BS:&#160;BootThread.cc'],['../_a_r_m64_2_boot_e_f_i_8cc.html#a78d359eab2435f640c4c7633e81155bd',1,'BS:&#160;BootEFI.cc'],['../_a_m_d64_2_boot_e_f_i_8cc.html#a78d359eab2435f640c4c7633e81155bd',1,'BS:&#160;BootEFI.cc']]],
+  ['bs_26',['bs',['../_a_p_i_8h.html#a67af7de1a62f48363917e0d14fbf2dc1',1,'BS:&#160;API.h'],['../_a_r_m64_2_boot_e_f_i_8cc.html#a78d359eab2435f640c4c7633e81155bd',1,'BS:&#160;BootEFI.cc'],['../_boot_thread_8cc.html#aba98b2cec77408ba0010dd5ada85341e',1,'BS:&#160;BootThread.cc']]],
   ['buffer_27',['Buffer',['../struct_efi_i_o_token.html#a4dfe98a941e9fcd50cc37491620e9d6d',1,'EfiIOToken']]],
   ['buffersize_28',['BufferSize',['../struct_efi_i_o_token.html#af36a8aad90839ed258043753b796cb1b',1,'EfiIOToken']]],
   ['bufout_29',['BufOut',['../struct_efi_file_protocol.html#af4fe944000c950623484ed2758217a7f',1,'EfiFileProtocol']]],

@@ -217,7 +217,7 @@ var searchData=
   ['evtdispatchevent_214',['EvtDispatchEvent',['../_system_calls_8h.html#a58f7b58ff381b1c83cbba1b99c82f72e',1,'SystemCalls.h']]],
   ['evtremovelistener_215',['EvtRemoveListener',['../_system_calls_8h.html#a8ba475fa72aad249b13177a316d568aa',1,'SystemCalls.h']]],
   ['executor_216',['executor',['../classpfd_1_1internal_1_1executor.html',1,'pfd::internal']]],
-  ['exit_217',['exit',['../class_kernel_1_1_process.html#a251a318f84c6a1c19a725c16a36b6fe1',1,'Kernel::Process::Exit()'],['../struct_efi_boot_services.html#a9ca673c80663974e472f3fa78cc26e99',1,'EfiBootServices::Exit']]],
+  ['exit_217',['exit',['../class_kernel_1_1_user_process.html#af1efd0d5347aac24b9c823a468a1d715',1,'Kernel::UserProcess::Exit()'],['../struct_efi_boot_services.html#a9ca673c80663974e472f3fa78cc26e99',1,'EfiBootServices::Exit']]],
   ['exit_5ffailure_218',['EXIT_FAILURE',['../user_2_macros_8h.html#a73efe787c131b385070f25d18b7c9aa4',1,'Macros.h']]],
   ['exit_5fsuccess_219',['EXIT_SUCCESS',['../user_2_macros_8h.html#a687984f47d8cce148d1b914d2b79612a',1,'Macros.h']]],
   ['exitbootservices_220',['exitbootservices',['../struct_efi_boot_services.html#a5dd91394df55cc588c603bcead788e0e',1,'EfiBootServices::ExitBootServices'],['../namespace_boot.html#aa247e784ff03f0a4d17ab37c5b0331dd',1,'Boot::ExitBootServices()']]],

@@ -58,12 +58,12 @@ var searchData=
   ['tranfercount_55',['TranferCount',['../struct_fis_pio_setup.html#afddd5865e3ef88cf95ead529b94b7fee',1,'FisPioSetup']]],
   ['transfercount_56',['TransferCount',['../struct_fis_dma_setup.html#a6f97273bf001a3c2e164dfc35bdc1c55',1,'FisDmaSetup']]],
   ['transmit_57',['Transmit',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html#a28e63d3143a775c8ffe595e083a3d077',1,'EFI_SIMPLE_NETWORK_PROTOCOL']]],
-  ['true_58',['true',['../user_2_macros_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;Macros.h'],['../kernel_2_new_kit_2_macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;Macros.h']]],
+  ['true_58',['true',['../kernel_2_new_kit_2_macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;Macros.h'],['../user_2_macros_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;Macros.h']]],
   ['try_59',['TRY',['../_kernel_panic_8h.html#aa1706c3dd2db94d27734f834a7be5ed1',1,'KernelPanic.h']]],
   ['try_5ffind_5fnode_60',['TRY_FIND_NODE',['../_mutable_array_8h.html#acdc18e410f981fe6942451a9963cefe1',1,'MutableArray.h']]],
   ['try_5ffind_5fnode2_61',['TRY_FIND_NODE2',['../_mutable_array_8h.html#a076eb36a090e7a5f46c9531f853fb9f7',1,'MutableArray.h']]],
   ['try_5fremove_5fnode_62',['TRY_REMOVE_NODE',['../_mutable_array_8h.html#aa03228683e13f251ecccb07ee6247b98',1,'MutableArray.h']]],
   ['tryleak_63',['tryleak',['../class_c_f_1_1_c_f___o_b_j_e_c_t.html#a0dcfa81c5907859d0d2ebefe0d7ac6d9',1,'CF::CF_OBJECT::TryLeak()'],['../class_kernel_1_1_ref.html#a80e57eb624b5043130027901c09f8013',1,'Kernel::Ref::TryLeak()']]],
-  ['type_64',['type',['../classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fc',1,'pfd::internal::file_dialog::type'],['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a306b710f35459ada82182177d2063b17',1,'Kernel::HAL::SDT_OBJECT::Type']]],
+  ['type_64',['type',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a306b710f35459ada82182177d2063b17',1,'Kernel::HAL::SDT_OBJECT::Type'],['../classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fc',1,'pfd::internal::file_dialog::type']]],
   ['typeattributes_65',['TypeAttributes',['../struct_kernel_1_1_detail_1_1_a_m_d64_1_1_interrupt_descriptor_a_m_d64.html#a16cff344e6a991754485624c32987692',1,'Kernel::Detail::AMD64::InterruptDescriptorAMD64']]]
 ];

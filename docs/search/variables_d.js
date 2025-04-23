@@ -18,5 +18,5 @@ var searchData=
   ['out_5fname_15',['out_name',['../struct_d_i_1_1_d_i___d_i_s_k___i_m_a_g_e.html#aebbe5a50866b93e072f5a2da2a6757df',1,'DI::DI_DISK_IMAGE']]],
   ['outhandle_16',['OutHandle',['../struct_efi_file_protocol.html#a9aa4a5b9ff1c1ac22eec0185fc698a6e',1,'EfiFileProtocol']]],
   ['outputstring_17',['OutputString',['../struct_efi_simple_text_output_protocol.html#a37cfebd0fdc6ece6c5f1a0b0fd47f78a',1,'EfiSimpleTextOutputProtocol']]],
-  ['owner_18',['Owner',['../class_kernel_1_1_process.html#a05a0836700c3867b537faa04f87751ee',1,'Kernel::Process']]]
+  ['owner_18',['Owner',['../class_kernel_1_1_user_process.html#a1fab3982785dbd3173d310cb7aa9663c',1,'Kernel::UserProcess']]]
 ];

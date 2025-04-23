@@ -17,5 +17,6 @@ var kernel_2_firmware_kit_2_e_p_m_8h =
     [ "kEPMPartBlockLba", "kernel_2_firmware_kit_2_e_p_m_8h.html#af39793dfdb32f4d8d2075fd8dd4b2ac9", null ],
     [ "kEPMReserveLen", "kernel_2_firmware_kit_2_e_p_m_8h.html#afc4be870457fbc60fd8eb87ea3285a40", null ],
     [ "kEPMRevisionBcd", "kernel_2_firmware_kit_2_e_p_m_8h.html#a5cb6697fb3970ebaedde66d1c90e9a1c", null ],
-    [ "EPM_GUID", "kernel_2_firmware_kit_2_e_p_m_8h.html#a4d08a9ca3b695caf4113b6e13e291856", null ]
+    [ "EPM_GUID", "kernel_2_firmware_kit_2_e_p_m_8h.html#a4d08a9ca3b695caf4113b6e13e291856", null ],
+    [ "kEPMNilGuid", "kernel_2_firmware_kit_2_e_p_m_8h.html#abd48a5fd834694d4b9e9ea1ea492d455", null ]
 ];

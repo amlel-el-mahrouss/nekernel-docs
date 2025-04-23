@@ -8,7 +8,7 @@ var searchData=
   ['ref_3c_20cfguid_20_3e_5',['Ref&lt; CFGUID &gt;',['../class_kernel_1_1_ref.html',1,'Kernel']]],
   ['ref_3c_20kernel_3a_3akstring_20_3e_6',['Ref&lt; Kernel::KString &gt;',['../class_kernel_1_1_ref.html',1,'Kernel']]],
   ['ref_3c_20kernel_3a_3apagemgr_20_3e_7',['Ref&lt; Kernel::PageMgr &gt;',['../class_kernel_1_1_ref.html',1,'Kernel']]],
-  ['ref_3c_20kernel_3a_3aprocess_20_3e_8',['Ref&lt; Kernel::Process &gt;',['../class_kernel_1_1_ref.html',1,'Kernel']]],
+  ['ref_3c_20kernel_3a_3auserprocess_20_3e_8',['Ref&lt; Kernel::UserProcess &gt;',['../class_kernel_1_1_ref.html',1,'Kernel']]],
   ['ref_3c_20kind_20_3e_9',['Ref&lt; Kind &gt;',['../class_kernel_1_1_ref.html',1,'Kernel']]],
   ['ref_3c_20streamtrait_20_3e_10',['Ref&lt; StreamTrait &gt;',['../class_kernel_1_1_ref.html',1,'Kernel']]],
   ['register64_11',['Register64',['../struct_kernel_1_1_h_a_l_1_1_register64.html',1,'Kernel::HAL']]],

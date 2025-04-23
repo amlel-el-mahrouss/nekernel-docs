@@ -133,7 +133,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad5be25988d9d04cc388260a53c7453de" id="r_ad5be25988d9d04cc388260a53c7453de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#ad5be25988d9d04cc388260a53c7453de">ke_call</a> (const char *name, int32_t cnt, void *dat, <a class="el" href="_new_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a> sz)</td></tr>
-<tr class="memdesc:ad5be25988d9d04cc388260a53c7453de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespace_kernel.html" title="Process scheduler inline definitions.">Kernel</a> procedure.  <br /></td></tr>
+<tr class="memdesc:ad5be25988d9d04cc388260a53c7453de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a> procedure.  <br /></td></tr>
 <tr class="separator:ad5be25988d9d04cc388260a53c7453de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d5f62254e7c1f833c5deb72a8916532" id="r_a1d5f62254e7c1f833c5deb72a8916532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a1d5f62254e7c1f833c5deb72a8916532">ke_add_syscall</a> (const int32_t slot, void(*slotFn)(void *a0))</td></tr>
 <tr class="memdesc:a1d5f62254e7c1f833c5deb72a8916532"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a system call.  <br /></td></tr>
@@ -145,10 +145,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a2e83e08d4d404fca342fac316b2b9c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an heap ptr.  <br /></td></tr>
 <tr class="separator:a2e83e08d4d404fca342fac316b2b9c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a763d2d877f202682c19575d9cc6e0e29" id="r_a763d2d877f202682c19575d9cc6e0e29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> struct DDK_OBJECT_MANIFEST *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a763d2d877f202682c19575d9cc6e0e29">ke_get_obj</a> (const int slot, const char *name)</td></tr>
-<tr class="memdesc:a763d2d877f202682c19575d9cc6e0e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="namespace_kernel.html" title="Process scheduler inline definitions.">Kernel</a> object.  <br /></td></tr>
+<tr class="memdesc:a763d2d877f202682c19575d9cc6e0e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a> object.  <br /></td></tr>
 <tr class="separator:a763d2d877f202682c19575d9cc6e0e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685b048ef66c79d2d6eea41a92e4e8cb" id="r_a685b048ef66c79d2d6eea41a92e4e8cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a685b048ef66c79d2d6eea41a92e4e8cb">ke_set_obj</a> (const int32_t slot, const struct DDK_OBJECT_MANIFEST *ddk_pr)</td></tr>
-<tr class="memdesc:a685b048ef66c79d2d6eea41a92e4e8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a <a class="el" href="namespace_kernel.html" title="Process scheduler inline definitions.">Kernel</a> object.  <br /></td></tr>
+<tr class="memdesc:a685b048ef66c79d2d6eea41a92e4e8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a> object.  <br /></td></tr>
 <tr class="separator:a685b048ef66c79d2d6eea41a92e4e8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -405,7 +405,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Call <a class="el" href="namespace_kernel.html" title="Process scheduler inline definitions.">Kernel</a> procedure. </p>
+<p>Call <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a> procedure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the procedure name. </td></tr>
@@ -445,7 +445,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets a <a class="el" href="namespace_kernel.html" title="Process scheduler inline definitions.">Kernel</a> object. </p>
+<p>Gets a <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">slot</td><td>object id (can be 0) </td></tr>
@@ -454,7 +454,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>DDK_OBJECT_MANIFEST.</dd></dl>
-<p>Gets a <a class="el" href="namespace_kernel.html" title="Process scheduler inline definitions.">Kernel</a> object.</p>
+<p>Gets a <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">slot</td><td>property id (always 0) </td></tr>
@@ -492,7 +492,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set a <a class="el" href="namespace_kernel.html" title="Process scheduler inline definitions.">Kernel</a> object. </p>
+<p>Set a <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">slot</td><td>object id (can be 0) </td></tr>

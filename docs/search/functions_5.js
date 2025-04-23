@@ -16,6 +16,6 @@ var searchData=
   ['evtaddlistener_13',['EvtAddListener',['../_system_calls_8h.html#a84e2a680f02c3f87b245306cb7aa3659',1,'SystemCalls.h']]],
   ['evtdispatchevent_14',['EvtDispatchEvent',['../_system_calls_8h.html#a58f7b58ff381b1c83cbba1b99c82f72e',1,'SystemCalls.h']]],
   ['evtremovelistener_15',['EvtRemoveListener',['../_system_calls_8h.html#a8ba475fa72aad249b13177a316d568aa',1,'SystemCalls.h']]],
-  ['exit_16',['Exit',['../class_kernel_1_1_process.html#a251a318f84c6a1c19a725c16a36b6fe1',1,'Kernel::Process']]],
+  ['exit_16',['Exit',['../class_kernel_1_1_user_process.html#af1efd0d5347aac24b9c823a468a1d715',1,'Kernel::UserProcess']]],
   ['exitbootservices_17',['ExitBootServices',['../namespace_boot.html#aa247e784ff03f0a4d17ab37c5b0331dd',1,'Boot']]]
 ];

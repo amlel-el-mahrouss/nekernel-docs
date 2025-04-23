@@ -119,12 +119,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_h_e_f_s___b_o_o_t___n_o_d_e.html">HEFS_BOOT_NODE</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS <a class="el" href="namespace_boot.html" title="include NeFS header and Support header as well.">Boot</a> node.  <a href="struct_h_e_f_s___b_o_o_t___n_o_d_e.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_h_e_f_s___i_n_d_e_x___n_o_d_e.html">HEFS_INDEX_NODE</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS index node.  <a href="struct_h_e_f_s___i_n_d_e_x___n_o_d_e.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html">HEFS_INDEX_NODE_DIRECTORY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS directory node.  <a href="struct_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_he_file_system_parser.html">Kernel::HeFileSystemParser</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS filesystem parser class.  <a href="class_kernel_1_1_he_file_system_parser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +126,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_process.html">Process</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
 <tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
@@ -140,7 +134,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a36b750da7d2881be04e3dc2daf842e91" id="r_a36b750da7d2881be04e3dc2daf842e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_he_f_s_8h.html#a36b750da7d2881be04e3dc2daf842e91">kHeFSVersion</a>&#160;&#160;&#160;(0x0100)</td></tr>
+<tr class="memitem:a36b750da7d2881be04e3dc2daf842e91" id="r_a36b750da7d2881be04e3dc2daf842e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_he_f_s_8h.html#a36b750da7d2881be04e3dc2daf842e91">kHeFSVersion</a>&#160;&#160;&#160;(0x0101)</td></tr>
 <tr class="separator:a36b750da7d2881be04e3dc2daf842e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaad4ee1c87b58182385840f506b53509" id="r_aaad4ee1c87b58182385840f506b53509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_he_f_s_8h.html#aaad4ee1c87b58182385840f506b53509">kHeFSMagic</a>&#160;&#160;&#160;&quot;  HeFS&quot;</td></tr>
 <tr class="separator:aaad4ee1c87b58182385840f506b53509"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +202,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a24dda53f403a87807703136a9bbe3ab1" id="r_a24dda53f403a87807703136a9bbe3ab1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a36d525cf4d116b2fe4ecc00222b256f1">PACKED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_he_f_s_8h.html#a24dda53f403a87807703136a9bbe3ab1">ALIGN</a> (8) HEFS_INDEX_NODE final</td></tr>
+<tr class="memdesc:a24dda53f403a87807703136a9bbe3ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS index node.  <br /></td></tr>
+<tr class="separator:a24dda53f403a87807703136a9bbe3ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d0d8d9b62dbb606e8354075c3f5f795" id="r_a2d0d8d9b62dbb606e8354075c3f5f795"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a2d0d8d9b62dbb606e8354075c3f5f795">Kernel::Detail::hefs_year_get</a> (<a class="el" href="_he_f_s_8h.html#ac80304a2a3e224d7a68bfd7a6dcd98dd">ATime</a> raw_atime) noexcept</td></tr>
 <tr class="memdesc:a2d0d8d9b62dbb606e8354075c3f5f795"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS get year from ATime.  <br /></td></tr>
 <tr class="separator:a2d0d8d9b62dbb606e8354075c3f5f795"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,7 +353,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kHeFSVersion&#160;&#160;&#160;(0x0100)</td>
+          <td class="memname">#define kHeFSVersion&#160;&#160;&#160;(0x0101)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -469,6 +466,69 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fceac37964b8ee8e4bb696a725f3bd88e0e8" name="aaf105ae5beaca1dee30ae54530691fceac37964b8ee8e4bb696a725f3bd88e0e8"></a>kHeFSBlack&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fcea5ee3a3b7cf499df2daba752d8a5b6692" name="aaf105ae5beaca1dee30ae54530691fcea5ee3a3b7cf499df2daba752d8a5b6692"></a>kHeFSColorCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a24dda53f403a87807703136a9bbe3ab1" name="a24dda53f403a87807703136a9bbe3ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24dda53f403a87807703136a9bbe3ab1">&#9670;&#160;</a></span>ALIGN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a36d525cf4d116b2fe4ecc00222b256f1">PACKED</a> ALIGN </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>HeFS index node. </p>
+<p>HeFS directory node.</p>
+<p>This structure is used to store the file information of a file. </p><dl class="section note"><dt>Note</dt><dd>The index node is a special type of INode that contains the file information. </dd>
+<dd>
+The index node is used to store the file information of a file.</dd></dl>
+<p>This structure is used to store the directory information of a file. </p><dl class="section note"><dt>Note</dt><dd>The directory node is a special type of INode that contains the directory entries. </dd></dl>
+<p>File name.</p>
+<p>File flags.</p>
+<p>File kind. (Regular, Directory, Block, Character, FIFO, Socket, Symbolic Link, Unknown).</p>
+<p>File size.</p>
+<p>Checksum of the file, recovery checksum, block checksum, link checksum.</p>
+<p>File timestamps.</p>
+<p>User ID and Group ID of the file.</p>
+<p>File mode. (read, write, execute, etc).</p>
+<p>Start of the block link.</p>
+<p>End of the block link.</p>
+<p>Start of the block.</p>
+<p>End of the block.</p>
+<p>Start of the block recovery.</p>
+<p>End of the block recovery.</p>
+<p>Directory name.</p>
+<p>File flags.</p>
+<p>File kind. (Regular, Directory, Block, Character, FIFO, Socket, Symbolic Link, Unknown).</p>
+<p>Size of the directory.</p>
+<p>Checksum of the file, index node checksum.</p>
+<p>File timestamps.</p>
+<p>User ID and Group ID of the file.</p>
+<p>File mode. (read, write, execute, etc).</p>
+<dl class="section note"><dt>Note</dt><dd>These slices are organized as: [0] = OFFSET [1] = SIZE </dd>
+<dd>
+Thus the += 2 when iterating over them.</dd></dl>
+<p>Start of the index node.</p>
+<p>End of the index node.</p>
+<p>Color of the node. (Red or Black).</p>
+<p>Red-black tree pointers.</p>
 
 </div>
 </div>
