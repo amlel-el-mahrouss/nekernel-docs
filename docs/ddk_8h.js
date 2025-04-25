@@ -1,6 +1,6 @@
 var ddk_8h =
 [
-    [ "DDK_FINAL", "struct_d_d_k___f_i_n_a_l.html", "struct_d_d_k___f_i_n_a_l" ],
+    [ "DDK_FINAL", "structDDK__FINAL.html", "structDDK__FINAL" ],
     [ "ATTRIBUTE", "ddk_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5", null ],
     [ "BOOL", "ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa", null ],
     [ "DDK_EXTERN", "ddk_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba", null ],

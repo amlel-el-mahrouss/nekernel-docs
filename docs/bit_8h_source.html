@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -103,174 +102,155 @@ $(document).ready(function(){initNavTree('bit_8h_source.html',''); initResizable
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;bit&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceutl.html">utl</a></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceutl.html#a84bbcdfbb3b6dc768d73eed01496ce85">   16</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceutl.html#a84bbcdfbb3b6dc768d73eed01496ce85">bit_size</a>()</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(T) * 8;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceutl.html">utl</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespaceutl.html#a84bbcdfbb3b6dc768d73eed01496ce85">   15</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceutl.html#a84bbcdfbb3b6dc768d73eed01496ce85">bit_size</a>() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(T) * 8;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceutl.html#a187afb2fac50a259c568ab1a3c2376fb">   28</a></span>    <span class="keyword">constexpr</span> T <a class="code hl_function" href="namespaceutl.html#a187afb2fac50a259c568ab1a3c2376fb">bit_full</a>()</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">return</span> T(-1);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespaceutl.html#a187afb2fac50a259c568ab1a3c2376fb">   26</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="namespaceutl.html#a187afb2fac50a259c568ab1a3c2376fb">bit_full</a>() {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">return</span> T(-1);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespaceutl.html#a52a31ff2f64f7673586fb778c8627345">   44</a></span>    <span class="keyword">constexpr</span> T <a class="code hl_function" href="namespaceutl.html#a52a31ff2f64f7673586fb778c8627345">bit_wrap</a>()</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> bit_size&lt;T&gt;() - 1;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceutl.html#a52a31ff2f64f7673586fb778c8627345">   41</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="namespaceutl.html#a52a31ff2f64f7673586fb778c8627345">bit_wrap</a>() {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordflow">return</span> bit_size&lt;T&gt;() - 1;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespaceutl.html#a31867c093ac7cd512da5665618f4431d">   60</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceutl.html#a31867c093ac7cd512da5665618f4431d">bit_shft</a>()</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">return</span> std::bit_width(bit_wrap&lt;T&gt;());</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespaceutl.html#a31867c093ac7cd512da5665618f4431d">   56</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceutl.html#a31867c093ac7cd512da5665618f4431d">bit_shft</a>() {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">return</span> std::bit_width(bit_wrap&lt;T&gt;());</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="namespaceutl.html#a290a678beef81f5aff62822c7bf461b9">   74</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceutl.html#a290a678beef81f5aff62822c7bf461b9">bit_ceil</a>(<span class="keyword">auto</span> x)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> (x + bit_wrap&lt;T&gt;()) &gt;&gt; bit_shft&lt;T&gt;();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespaceutl.html#a290a678beef81f5aff62822c7bf461b9">   69</a></span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceutl.html#a290a678beef81f5aff62822c7bf461b9">bit_ceil</a>(<span class="keyword">auto</span> x) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordflow">return</span> (x + bit_wrap&lt;T&gt;()) &gt;&gt; bit_shft&lt;T&gt;();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="namespaceutl.html#a7fc5e51f361bc5d7286439bd4bf9b58d">   85</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <a class="code hl_function" href="namespaceutl.html#a7fc5e51f361bc5d7286439bd4bf9b58d">cntlz</a>(<span class="keyword">auto</span> x)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;<span class="keyword">decltype</span>(x), <span class="keywordtype">int</span>&gt;)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">return</span> std::countl_zero(<span class="keywordtype">unsigned</span>(x));</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">return</span> std::countl_zero(x);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespaceutl.html#a7fc5e51f361bc5d7286439bd4bf9b58d">   79</a></span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <a class="code hl_function" href="namespaceutl.html#a7fc5e51f361bc5d7286439bd4bf9b58d">cntlz</a>(<span class="keyword">auto</span> x) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;<span class="keyword">decltype</span>(x), <span class="keywordtype">int</span>&gt;)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> std::countl_zero(<span class="keywordtype">unsigned</span>(x));</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> std::countl_zero(x);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
 </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="namespaceutl.html#a21cef0a0a9b36b529bb7b405e69f30c0">   99</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <a class="code hl_function" href="namespaceutl.html#a21cef0a0a9b36b529bb7b405e69f30c0">cnttz</a>(<span class="keyword">auto</span> x)</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;<span class="keyword">decltype</span>(x), <span class="keywordtype">int</span>&gt;)</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">return</span> std::countr_zero(<span class="keywordtype">unsigned</span>(x));</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">return</span> std::countr_zero(x);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespaceutl.html#a21cef0a0a9b36b529bb7b405e69f30c0">   92</a></span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <a class="code hl_function" href="namespaceutl.html#a21cef0a0a9b36b529bb7b405e69f30c0">cnttz</a>(<span class="keyword">auto</span> x) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;<span class="keyword">decltype</span>(x), <span class="keywordtype">int</span>&gt;)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> std::countr_zero(<span class="keywordtype">unsigned</span>(x));</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> std::countr_zero(x);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="namespaceutl.html#a30650c701569e3075fcb29e63348536e">  115</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceutl.html#a30650c701569e3075fcb29e63348536e">words_in_bits</a>(<span class="keywordtype">size_t</span> n)</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> (n &gt;&gt; bit_shft&lt;T&gt;()) + !!(n &amp; bit_wrap&lt;T&gt;());</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespaceutl.html#a30650c701569e3075fcb29e63348536e">  107</a></span><span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceutl.html#a30650c701569e3075fcb29e63348536e">words_in_bits</a>(<span class="keywordtype">size_t</span> n) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keywordflow">return</span> (n &gt;&gt; bit_shft&lt;T&gt;()) + !!(n &amp; bit_wrap&lt;T&gt;());</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec">  126</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec">bytes_in_bits</a>(<span class="keywordtype">size_t</span> n)</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">return</span> words_in_bits&lt;uint8_t&gt;(n);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec">  117</a></span><span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec">bytes_in_bits</a>(<span class="keywordtype">size_t</span> n) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordflow">return</span> words_in_bits&lt;uint8_t&gt;(n);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
 </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T = <span class="keywordtype">unsigned</span>&gt;</div>
-<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="namespaceutl.html#ad229dcf753ec11932521622aa8d07864">  139</a></span>    <span class="keyword">constexpr</span> T <a class="code hl_function" href="namespaceutl.html#ad229dcf753ec11932521622aa8d07864">bit</a>(<span class="keywordtype">int</span> n)</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    {</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> T(1) &lt;&lt; n;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T = <span class="keywordtype">unsigned</span>&gt;</div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="namespaceutl.html#ad229dcf753ec11932521622aa8d07864">  129</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="namespaceutl.html#ad229dcf753ec11932521622aa8d07864">bit</a>(<span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordflow">return</span> T(1) &lt;&lt; n;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
 </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">  153</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">get_bit</a>(T x, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">return</span> (x &gt;&gt; n) &amp; 1;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">  142</a></span><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">get_bit</a>(T x, <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordflow">return</span> (x &gt;&gt; n) &amp; 1;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00154" data-start="{" data-end="}">
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">  154</a></span><span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">set_bit</a>(T&amp; x, <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  x |= 1 &lt;&lt; n;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">  166</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">set_bit</a>(T&amp; x, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        x |= 1 &lt;&lt; n;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">  166</a></span><span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">clr_bit</a>(T&amp; x, <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  x &amp;= ~(1 &lt;&lt; n);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}</div>
 </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="foldopen" id="foldopen00179" data-start="{" data-end="}">
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">  179</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">clr_bit</a>(T&amp; x, <span class="keywordtype">int</span> n)</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    {</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        x &amp;= ~(1 &lt;&lt; n);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="namespaceutl.html#a70e866f0b1f83d5b6a9a97073785c4ba">  179</a></span><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceutl.html#a70e866f0b1f83d5b6a9a97073785c4ba">get_arr_bit</a>(<span class="keyword">const</span> T* p, <span class="keywordtype">unsigned</span> n) {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">get_bit</a>(p[n &gt;&gt; bit_shft&lt;T&gt;()], n &amp; bit_wrap&lt;T&gt;());</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
 </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="namespaceutl.html#a70e866f0b1f83d5b6a9a97073785c4ba">  193</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceutl.html#a70e866f0b1f83d5b6a9a97073785c4ba">get_arr_bit</a>(<span class="keyword">const</span> T* p, <span class="keywordtype">unsigned</span> n)</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">get_bit</a>(p[n &gt;&gt; bit_shft&lt;T&gt;()], n &amp; bit_wrap&lt;T&gt;());</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331">  191</a></span><span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331">set_arr_bit</a>(T* p, <span class="keywordtype">unsigned</span> n) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <a class="code hl_function" href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">set_bit</a>(p[n &gt;&gt; bit_shft&lt;T&gt;()], n &amp; bit_wrap&lt;T&gt;());</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
 </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331">  206</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331">set_arr_bit</a>(T* p, <span class="keywordtype">unsigned</span> n)</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <a class="code hl_function" href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">set_bit</a>(p[n &gt;&gt; bit_shft&lt;T&gt;()], n &amp; bit_wrap&lt;T&gt;());</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="namespaceutl.html#a2674f6ed33b433dc1409b5b0a3432f3b">  203</a></span><span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#a2674f6ed33b433dc1409b5b0a3432f3b">clr_arr_bit</a>(T* p, <span class="keywordtype">unsigned</span> n) {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <a class="code hl_function" href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">clr_bit</a>(p[n &gt;&gt; bit_shft&lt;T&gt;()], n &amp; bit_wrap&lt;T&gt;());</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}</div>
 </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="namespaceutl.html#a2674f6ed33b433dc1409b5b0a3432f3b">  219</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#a2674f6ed33b433dc1409b5b0a3432f3b">clr_arr_bit</a>(T* p, <span class="keywordtype">unsigned</span> n)</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <a class="code hl_function" href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">clr_bit</a>(p[n &gt;&gt; bit_shft&lt;T&gt;()], n &amp; bit_wrap&lt;T&gt;());</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> L&gt;</div>
+<div class="foldopen" id="foldopen00218" data-start="{" data-end="}">
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="namespaceutl.html#abd67ca9cf9e9317ee527b31d44cae28d">  218</a></span><span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#abd67ca9cf9e9317ee527b31d44cae28d">shift_left</a>(T (&amp;x)[L]) {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = L - 1; i &gt; 0; --i) {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    x[i] &lt;&lt;= 1;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    x[i] |= x[i - 1] &gt;&gt; bit_wrap&lt;T&gt;();</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  x[0] &lt;&lt;= 1;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>}</div>
 </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keywordtype">size_t</span> L&gt;</div>
-<div class="foldopen" id="foldopen00235" data-start="{" data-end="}">
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="namespaceutl.html#abd67ca9cf9e9317ee527b31d44cae28d">  235</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutl.html#abd67ca9cf9e9317ee527b31d44cae28d">shift_left</a>(T (&amp;x)[L])</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = L - 1; i &gt; 0; --i)</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        {</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            x[i] &lt;&lt;= 1;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            x[i] |= x[i - 1] &gt;&gt; bit_wrap&lt;T&gt;();</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        }</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        x[0] &lt;&lt;= 1;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
-</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>} <span class="comment">// namespace utl</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="anamespaceutl_html"><div class="ttname"><a href="namespaceutl.html">utl</a></div><div class="ttdef"><b>Definition</b> base.h:9</div></div>
-<div class="ttc" id="anamespaceutl_html_a187afb2fac50a259c568ab1a3c2376fb"><div class="ttname"><a href="namespaceutl.html#a187afb2fac50a259c568ab1a3c2376fb">utl::bit_full</a></div><div class="ttdeci">constexpr T bit_full()</div><div class="ttdoc">Integer with all bits set to 1.</div><div class="ttdef"><b>Definition</b> bit.h:28</div></div>
-<div class="ttc" id="anamespaceutl_html_a21cef0a0a9b36b529bb7b405e69f30c0"><div class="ttname"><a href="namespaceutl.html#a21cef0a0a9b36b529bb7b405e69f30c0">utl::cnttz</a></div><div class="ttdeci">constexpr unsigned cnttz(auto x)</div><div class="ttdoc">Count trailing zeros.</div><div class="ttdef"><b>Definition</b> bit.h:99</div></div>
-<div class="ttc" id="anamespaceutl_html_a2674f6ed33b433dc1409b5b0a3432f3b"><div class="ttname"><a href="namespaceutl.html#a2674f6ed33b433dc1409b5b0a3432f3b">utl::clr_arr_bit</a></div><div class="ttdeci">constexpr void clr_arr_bit(T *p, unsigned n)</div><div class="ttdoc">Clear n-th bit in array of words (starting from LSB).</div><div class="ttdef"><b>Definition</b> bit.h:219</div></div>
-<div class="ttc" id="anamespaceutl_html_a290a678beef81f5aff62822c7bf461b9"><div class="ttname"><a href="namespaceutl.html#a290a678beef81f5aff62822c7bf461b9">utl::bit_ceil</a></div><div class="ttdeci">constexpr auto bit_ceil(auto x)</div><div class="ttdoc">Round up division by number of bits within given integer type, which sizeof(T) * 8 is power of two.</div><div class="ttdef"><b>Definition</b> bit.h:74</div></div>
-<div class="ttc" id="anamespaceutl_html_a30650c701569e3075fcb29e63348536e"><div class="ttname"><a href="namespaceutl.html#a30650c701569e3075fcb29e63348536e">utl::words_in_bits</a></div><div class="ttdeci">constexpr size_t words_in_bits(size_t n)</div><div class="ttdoc">Get number of words (integers) required to store N bits.</div><div class="ttdef"><b>Definition</b> bit.h:115</div></div>
-<div class="ttc" id="anamespaceutl_html_a31867c093ac7cd512da5665618f4431d"><div class="ttname"><a href="namespaceutl.html#a31867c093ac7cd512da5665618f4431d">utl::bit_shft</a></div><div class="ttdeci">constexpr auto bit_shft()</div><div class="ttdoc">Number of bits to fit bit_wrap&lt;T&gt; result, in other words bit width of (sizeof(T) * 8 - 1)....</div><div class="ttdef"><b>Definition</b> bit.h:60</div></div>
-<div class="ttc" id="anamespaceutl_html_a3b9fc587871661ae2126709c13fba3ec"><div class="ttname"><a href="namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec">utl::bytes_in_bits</a></div><div class="ttdeci">constexpr size_t bytes_in_bits(size_t n)</div><div class="ttdoc">Get number of bytes required to store N bits.</div><div class="ttdef"><b>Definition</b> bit.h:126</div></div>
-<div class="ttc" id="anamespaceutl_html_a44192b27b1bbe99b59f7733f75aec331"><div class="ttname"><a href="namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331">utl::set_arr_bit</a></div><div class="ttdeci">constexpr void set_arr_bit(T *p, unsigned n)</div><div class="ttdoc">Set n-th bit in array of words (starting from LSB).</div><div class="ttdef"><b>Definition</b> bit.h:206</div></div>
-<div class="ttc" id="anamespaceutl_html_a52a31ff2f64f7673586fb778c8627345"><div class="ttname"><a href="namespaceutl.html#a52a31ff2f64f7673586fb778c8627345">utl::bit_wrap</a></div><div class="ttdeci">constexpr T bit_wrap()</div><div class="ttdoc">Wrap around mask for power of two number of bits within given integer type. For example: [ bit_wrap&lt;u...</div><div class="ttdef"><b>Definition</b> bit.h:44</div></div>
-<div class="ttc" id="anamespaceutl_html_a70e866f0b1f83d5b6a9a97073785c4ba"><div class="ttname"><a href="namespaceutl.html#a70e866f0b1f83d5b6a9a97073785c4ba">utl::get_arr_bit</a></div><div class="ttdeci">constexpr bool get_arr_bit(const T *p, unsigned n)</div><div class="ttdoc">Get n-th bit in array of words (starting from LSB).</div><div class="ttdef"><b>Definition</b> bit.h:193</div></div>
-<div class="ttc" id="anamespaceutl_html_a7fc5e51f361bc5d7286439bd4bf9b58d"><div class="ttname"><a href="namespaceutl.html#a7fc5e51f361bc5d7286439bd4bf9b58d">utl::cntlz</a></div><div class="ttdeci">constexpr unsigned cntlz(auto x)</div><div class="ttdoc">Count leading zeros.</div><div class="ttdef"><b>Definition</b> bit.h:85</div></div>
-<div class="ttc" id="anamespaceutl_html_a84bbcdfbb3b6dc768d73eed01496ce85"><div class="ttname"><a href="namespaceutl.html#a84bbcdfbb3b6dc768d73eed01496ce85">utl::bit_size</a></div><div class="ttdeci">constexpr auto bit_size()</div><div class="ttdoc">Size of object in terms of bits.</div><div class="ttdef"><b>Definition</b> bit.h:16</div></div>
-<div class="ttc" id="anamespaceutl_html_aa938e907f6abff4448ad6d7345c9b6c1"><div class="ttname"><a href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">utl::set_bit</a></div><div class="ttdeci">constexpr void set_bit(T &amp;x, int n)</div><div class="ttdoc">Set n-th bit of an integer.</div><div class="ttdef"><b>Definition</b> bit.h:166</div></div>
-<div class="ttc" id="anamespaceutl_html_abd67ca9cf9e9317ee527b31d44cae28d"><div class="ttname"><a href="namespaceutl.html#abd67ca9cf9e9317ee527b31d44cae28d">utl::shift_left</a></div><div class="ttdeci">constexpr void shift_left(T(&amp;x)[L])</div><div class="ttdoc">Shift bits left in array of integer elements from least significant bit and considering 0-th byte as ...</div><div class="ttdef"><b>Definition</b> bit.h:235</div></div>
-<div class="ttc" id="anamespaceutl_html_ad229dcf753ec11932521622aa8d07864"><div class="ttname"><a href="namespaceutl.html#ad229dcf753ec11932521622aa8d07864">utl::bit</a></div><div class="ttdeci">constexpr T bit(int n)</div><div class="ttdoc">Make integer with bit at given position.</div><div class="ttdef"><b>Definition</b> bit.h:139</div></div>
-<div class="ttc" id="anamespaceutl_html_af438d6637eec39a1f6c428adbacaf1cf"><div class="ttname"><a href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">utl::get_bit</a></div><div class="ttdeci">constexpr bool get_bit(T x, int n)</div><div class="ttdoc">Get n-th bit of an integer.</div><div class="ttdef"><b>Definition</b> bit.h:153</div></div>
-<div class="ttc" id="anamespaceutl_html_af7feaaa0233eef6b5a2ea4f1a475a199"><div class="ttname"><a href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">utl::clr_bit</a></div><div class="ttdeci">constexpr void clr_bit(T &amp;x, int n)</div><div class="ttdoc">Clear n-th bit of an integer.</div><div class="ttdef"><b>Definition</b> bit.h:179</div></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>}  <span class="comment">// namespace utl</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anamespaceutl_html"><div class="ttname"><a href="namespaceutl.html">utl</a></div><div class="ttdef"><b>Definition</b> base.h:8</div></div>
+<div class="ttc" id="anamespaceutl_html_a187afb2fac50a259c568ab1a3c2376fb"><div class="ttname"><a href="namespaceutl.html#a187afb2fac50a259c568ab1a3c2376fb">utl::bit_full</a></div><div class="ttdeci">constexpr T bit_full()</div><div class="ttdoc">Integer with all bits set to 1.</div><div class="ttdef"><b>Definition</b> bit.h:26</div></div>
+<div class="ttc" id="anamespaceutl_html_a21cef0a0a9b36b529bb7b405e69f30c0"><div class="ttname"><a href="namespaceutl.html#a21cef0a0a9b36b529bb7b405e69f30c0">utl::cnttz</a></div><div class="ttdeci">constexpr unsigned cnttz(auto x)</div><div class="ttdoc">Count trailing zeros.</div><div class="ttdef"><b>Definition</b> bit.h:92</div></div>
+<div class="ttc" id="anamespaceutl_html_a2674f6ed33b433dc1409b5b0a3432f3b"><div class="ttname"><a href="namespaceutl.html#a2674f6ed33b433dc1409b5b0a3432f3b">utl::clr_arr_bit</a></div><div class="ttdeci">constexpr void clr_arr_bit(T *p, unsigned n)</div><div class="ttdoc">Clear n-th bit in array of words (starting from LSB).</div><div class="ttdef"><b>Definition</b> bit.h:203</div></div>
+<div class="ttc" id="anamespaceutl_html_a290a678beef81f5aff62822c7bf461b9"><div class="ttname"><a href="namespaceutl.html#a290a678beef81f5aff62822c7bf461b9">utl::bit_ceil</a></div><div class="ttdeci">constexpr auto bit_ceil(auto x)</div><div class="ttdoc">Round up division by number of bits within given integer type, which sizeof(T) * 8 is power of two.</div><div class="ttdef"><b>Definition</b> bit.h:69</div></div>
+<div class="ttc" id="anamespaceutl_html_a30650c701569e3075fcb29e63348536e"><div class="ttname"><a href="namespaceutl.html#a30650c701569e3075fcb29e63348536e">utl::words_in_bits</a></div><div class="ttdeci">constexpr size_t words_in_bits(size_t n)</div><div class="ttdoc">Get number of words (integers) required to store N bits.</div><div class="ttdef"><b>Definition</b> bit.h:107</div></div>
+<div class="ttc" id="anamespaceutl_html_a31867c093ac7cd512da5665618f4431d"><div class="ttname"><a href="namespaceutl.html#a31867c093ac7cd512da5665618f4431d">utl::bit_shft</a></div><div class="ttdeci">constexpr auto bit_shft()</div><div class="ttdoc">Number of bits to fit bit_wrap&lt;T&gt; result, in other words bit width of (sizeof(T) * 8 - 1)....</div><div class="ttdef"><b>Definition</b> bit.h:56</div></div>
+<div class="ttc" id="anamespaceutl_html_a3b9fc587871661ae2126709c13fba3ec"><div class="ttname"><a href="namespaceutl.html#a3b9fc587871661ae2126709c13fba3ec">utl::bytes_in_bits</a></div><div class="ttdeci">constexpr size_t bytes_in_bits(size_t n)</div><div class="ttdoc">Get number of bytes required to store N bits.</div><div class="ttdef"><b>Definition</b> bit.h:117</div></div>
+<div class="ttc" id="anamespaceutl_html_a44192b27b1bbe99b59f7733f75aec331"><div class="ttname"><a href="namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331">utl::set_arr_bit</a></div><div class="ttdeci">constexpr void set_arr_bit(T *p, unsigned n)</div><div class="ttdoc">Set n-th bit in array of words (starting from LSB).</div><div class="ttdef"><b>Definition</b> bit.h:191</div></div>
+<div class="ttc" id="anamespaceutl_html_a52a31ff2f64f7673586fb778c8627345"><div class="ttname"><a href="namespaceutl.html#a52a31ff2f64f7673586fb778c8627345">utl::bit_wrap</a></div><div class="ttdeci">constexpr T bit_wrap()</div><div class="ttdoc">Wrap around mask for power of two number of bits within given integer type. For example: [ bit_wrap&lt;u...</div><div class="ttdef"><b>Definition</b> bit.h:41</div></div>
+<div class="ttc" id="anamespaceutl_html_a70e866f0b1f83d5b6a9a97073785c4ba"><div class="ttname"><a href="namespaceutl.html#a70e866f0b1f83d5b6a9a97073785c4ba">utl::get_arr_bit</a></div><div class="ttdeci">constexpr bool get_arr_bit(const T *p, unsigned n)</div><div class="ttdoc">Get n-th bit in array of words (starting from LSB).</div><div class="ttdef"><b>Definition</b> bit.h:179</div></div>
+<div class="ttc" id="anamespaceutl_html_a7fc5e51f361bc5d7286439bd4bf9b58d"><div class="ttname"><a href="namespaceutl.html#a7fc5e51f361bc5d7286439bd4bf9b58d">utl::cntlz</a></div><div class="ttdeci">constexpr unsigned cntlz(auto x)</div><div class="ttdoc">Count leading zeros.</div><div class="ttdef"><b>Definition</b> bit.h:79</div></div>
+<div class="ttc" id="anamespaceutl_html_a84bbcdfbb3b6dc768d73eed01496ce85"><div class="ttname"><a href="namespaceutl.html#a84bbcdfbb3b6dc768d73eed01496ce85">utl::bit_size</a></div><div class="ttdeci">constexpr auto bit_size()</div><div class="ttdoc">Size of object in terms of bits.</div><div class="ttdef"><b>Definition</b> bit.h:15</div></div>
+<div class="ttc" id="anamespaceutl_html_aa938e907f6abff4448ad6d7345c9b6c1"><div class="ttname"><a href="namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1">utl::set_bit</a></div><div class="ttdeci">constexpr void set_bit(T &amp;x, int n)</div><div class="ttdoc">Set n-th bit of an integer.</div><div class="ttdef"><b>Definition</b> bit.h:154</div></div>
+<div class="ttc" id="anamespaceutl_html_abd67ca9cf9e9317ee527b31d44cae28d"><div class="ttname"><a href="namespaceutl.html#abd67ca9cf9e9317ee527b31d44cae28d">utl::shift_left</a></div><div class="ttdeci">constexpr void shift_left(T(&amp;x)[L])</div><div class="ttdoc">Shift bits left in array of integer elements from least significant bit and considering 0-th byte as ...</div><div class="ttdef"><b>Definition</b> bit.h:218</div></div>
+<div class="ttc" id="anamespaceutl_html_ad229dcf753ec11932521622aa8d07864"><div class="ttname"><a href="namespaceutl.html#ad229dcf753ec11932521622aa8d07864">utl::bit</a></div><div class="ttdeci">constexpr T bit(int n)</div><div class="ttdoc">Make integer with bit at given position.</div><div class="ttdef"><b>Definition</b> bit.h:129</div></div>
+<div class="ttc" id="anamespaceutl_html_af438d6637eec39a1f6c428adbacaf1cf"><div class="ttname"><a href="namespaceutl.html#af438d6637eec39a1f6c428adbacaf1cf">utl::get_bit</a></div><div class="ttdeci">constexpr bool get_bit(T x, int n)</div><div class="ttdoc">Get n-th bit of an integer.</div><div class="ttdef"><b>Definition</b> bit.h:142</div></div>
+<div class="ttc" id="anamespaceutl_html_af7feaaa0233eef6b5a2ea4f1a475a199"><div class="ttname"><a href="namespaceutl.html#af7feaaa0233eef6b5a2ea4f1a475a199">utl::clr_bit</a></div><div class="ttdeci">constexpr void clr_bit(T &amp;x, int n)</div><div class="ttdoc">Clear n-th bit of an integer.</div><div class="ttdef"><b>Definition</b> bit.h:166</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
