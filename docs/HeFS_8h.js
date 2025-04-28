@@ -1,7 +1,7 @@
 var HeFS_8h =
 [
     [ "HEFS_BOOT_NODE", "structHEFS__BOOT__NODE.html", "structHEFS__BOOT__NODE" ],
-    [ "Kernel::HeFileSystemParser", "classKernel_1_1HeFileSystemParser.html", "classKernel_1_1HeFileSystemParser" ],
+    [ "Kernel::HeFS::HeFileSystemParser", "classKernel_1_1HeFS_1_1HeFileSystemParser.html", "classKernel_1_1HeFS_1_1HeFileSystemParser" ],
     [ "kHeFSDefaultVoluneName", "HeFS_8h.html#a7f60729bfef17a7492b037d333cf3834", null ],
     [ "kHeFSFileNameLen", "HeFS_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465", null ],
     [ "kHeFSMagic", "HeFS_8h.html#aaad4ee1c87b58182385840f506b53509", null ],
@@ -12,6 +12,7 @@ var HeFS_8h =
     [ "kHeFSVersion", "HeFS_8h.html#a36b750da7d2881be04e3dc2daf842e91", null ],
     [ "ATime", "HeFS_8h.html#a142217963adf859f32724308be1b8330", null ],
     [ "ALIGN", "HeFS_8h.html#a24dda53f403a87807703136a9bbe3ab1", null ],
+    [ "fs_init_hefs", "HeFS_8h.html#a7f357627cfc3d6d71c4b6959e5d2598d", null ],
     [ "hefs_day_get", "HeFS_8h.html#a08495e328a92830716267351514184ff", null ],
     [ "hefs_drive_kind_to_string", "HeFS_8h.html#a077d6a9359808c513a7695c5f2f0d98b", null ],
     [ "hefs_encoding_to_string", "HeFS_8h.html#a8a5c31ab41b4154b2099208d476fe49a", null ],

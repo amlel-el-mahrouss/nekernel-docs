@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -113,6 +114,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceKernel_1_1HAL" id="r_namespaceKernel_1_1HAL"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html">HAL</a></td></tr>
 <tr class="memdesc:namespaceKernel_1_1HAL"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware Abstraction Layer. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceKernel_1_1HeFS" id="r_namespaceKernel_1_1HeFS"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HeFS.html">HeFS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceKernel_1_1HEL" id="r_namespaceKernel_1_1HEL"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HEL.html">HEL</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceKernel_1_1Indexer" id="r_namespaceKernel_1_1Indexer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1Indexer.html">Indexer</a></td></tr>
@@ -187,9 +190,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HardwareTimer.html">HardwareTimer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html">HeFileSystemParser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS filesystem parser class.  <a href="classKernel_1_1HeFileSystemParser.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1HPETAddressStructure.html">HPETAddressStructure</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1HPETHeader.html">HPETHeader</a></td></tr>
@@ -235,7 +235,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1KString.html">KString</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> string class, not dynamic.  <a href="classKernel_1_1KString.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1KStringBuilder.html">KStringBuilder</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1KStringBuilder.html">KStringBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1LoaderInterface.html">LoaderInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface is used to make loader contracts (MSCOFF, PEF).  <a href="classKernel_1_1LoaderInterface.html#details">More...</a><br /></td></tr>
@@ -557,9 +557,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6d73cf6ea17176924442b9667a018d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b76eab2ccf186a18143464b97e73c7" id="r_a39b76eab2ccf186a18143464b97e73c7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a39b76eab2ccf186a18143464b97e73c7">SignalKind</a></td></tr>
 <tr class="separator:a39b76eab2ccf186a18143464b97e73c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d025f2d18ee23a8968b516036e8a734" id="r_a7d025f2d18ee23a8968b516036e8a734"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structKernel_1_1SWAP__DISK__HEADER.html">Kernel::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a7d025f2d18ee23a8968b516036e8a734">SWAP_DISK_HEADER</a></td></tr>
-<tr class="memdesc:a7d025f2d18ee23a8968b516036e8a734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
-<tr class="separator:a7d025f2d18ee23a8968b516036e8a734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8dbe76db81f52484f68ab8debc198c" id="r_a1b8dbe76db81f52484f68ab8debc198c"><td class="memItemLeft" align="right" valign="top">typedef ACPIFactoryInterface&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1b8dbe76db81f52484f68ab8debc198c">PowerFactoryInterface</a></td></tr>
 <tr class="separator:a1b8dbe76db81f52484f68ab8debc198c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af652e7ba4f63049fb559facf0279406e" id="r_af652e7ba4f63049fb559facf0279406e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#af652e7ba4f63049fb559facf0279406e">APMPowerCmd</a></td></tr>
@@ -682,12 +679,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a4db811c8102148181f6765d7a0116e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa924f23388bd6fd27af3c21d9c35837f" id="r_aa924f23388bd6fd27af3c21d9c35837f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fa8d61f20f458902683d6af5376385689f">kFileWriteAll</a> = 100
+&#160;&#160;<a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837faa5807964cec5547c74b542b4c025dfd7">kFileIOInvalid</a> = 0
+, <a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fa8d61f20f458902683d6af5376385689f">kFileWriteAll</a> = 100
 , <a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fa98cf54f2e9d54d86bbff85b5175eab41">kFileReadAll</a> = 101
 , <a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fa3ce868ebee02ab8718d189f573113dd2">kFileReadChunk</a> = 102
-, <a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fab66ea1f76a91bc3bbfcdb01e41b35270">kFileWriteChunk</a> = 103
 , <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fa769ba765cbcf1e2e5edb4d4050bd34a1">kFileIOCnt</a> = (kFileWriteChunk - kFileWriteAll) + 1
+&#160;&#160;<a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fab66ea1f76a91bc3bbfcdb01e41b35270">kFileWriteChunk</a> = 103
+, <a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fa769ba765cbcf1e2e5edb4d4050bd34a1">kFileIOCnt</a> = (kFileWriteChunk - kFileWriteAll) + 1
 , <a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fad20629548848dc9fe6d5f543f9253ebd">kFileFlagRsrc</a> = 104
 , <a class="el" href="namespaceKernel.html#aa924f23388bd6fd27af3c21d9c35837fa45d559b6b45f5ac01bb6a239a3b5d3d7">kFileFlagData</a> = 105
 <br />
@@ -927,19 +925,19 @@ Functions</h2></td></tr>
 <tr class="separator:a73d9e2b9a7cadfa830aa132efaeccce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c1d514dce5b7d7d07797dd8fd710c5c" id="r_a2c1d514dce5b7d7d07797dd8fd710c5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2c1d514dce5b7d7d07797dd8fd710c5c">ENUM_STRING</a> (Qnx, &quot; QNXQVMBSQG &quot;)</td></tr>
 <tr class="separator:a2c1d514dce5b7d7d07797dd8fd710c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f72e96134d47a24bad09cdea3222847" id="r_a1f72e96134d47a24bad09cdea3222847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1f72e96134d47a24bad09cdea3222847">sk_init_ahci_device</a> (<a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> atapi)</td></tr>
+<tr class="memitem:a1f72e96134d47a24bad09cdea3222847" id="r_a1f72e96134d47a24bad09cdea3222847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1f72e96134d47a24bad09cdea3222847">sk_init_ahci_device</a> (<a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> atapi)</td></tr>
 <tr class="memdesc:a1f72e96134d47a24bad09cdea3222847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an AHCI device (StorageKit)  <br /></td></tr>
 <tr class="separator:a1f72e96134d47a24bad09cdea3222847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b470af7f2a61a6294aa582770dcc33f" id="r_a6b470af7f2a61a6294aa582770dcc33f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKernel_1_1ErrorOr.html">ErrorOr</a>&lt; AHCIDeviceInterface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a6b470af7f2a61a6294aa582770dcc33f">sk_acquire_ahci_device</a> (<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_index)</td></tr>
 <tr class="memdesc:a6b470af7f2a61a6294aa582770dcc33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a new AHCI device with drv_index in mind.  <br /></td></tr>
 <tr class="separator:a6b470af7f2a61a6294aa582770dcc33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1990d2fef5f2ff0e0b9aaf2dc23b9530" id="r_a1990d2fef5f2ff0e0b9aaf2dc23b9530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1990d2fef5f2ff0e0b9aaf2dc23b9530">sk_init_pio_device</a> (<a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> is_master, <a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;io, <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> &amp;master)</td></tr>
-<tr class="memdesc:a1990d2fef5f2ff0e0b9aaf2dc23b9530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an PIO device (StorageKit function)  <br /></td></tr>
-<tr class="separator:a1990d2fef5f2ff0e0b9aaf2dc23b9530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a219b3725030ebb2134a9a33950650667" id="r_a219b3725030ebb2134a9a33950650667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKernel_1_1ErrorOr.html">ErrorOr</a>&lt; <a class="el" href="classKernel_1_1ATADeviceInterface.html">ATADeviceInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a219b3725030ebb2134a9a33950650667">sk_acquire_pio_device</a> (<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_index)</td></tr>
-<tr class="memdesc:a219b3725030ebb2134a9a33950650667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a new PIO device with drv_index in mind.  <br /></td></tr>
-<tr class="separator:a219b3725030ebb2134a9a33950650667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2895544c265cf43ea21fcdf535857ed1" id="r_a2895544c265cf43ea21fcdf535857ed1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2895544c265cf43ea21fcdf535857ed1">mp_initialize_gic</a> (<a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)</td></tr>
+<tr class="memitem:a857c31714e87a5e8777f7d4981581adf" id="r_a857c31714e87a5e8777f7d4981581adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a857c31714e87a5e8777f7d4981581adf">sk_init_ata_device</a> (<a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> is_master, <a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;io, <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> &amp;master)</td></tr>
+<tr class="memdesc:a857c31714e87a5e8777f7d4981581adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an PIO device (StorageKit function)  <br /></td></tr>
+<tr class="separator:a857c31714e87a5e8777f7d4981581adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077b5d580d77a1f4d0207d30f01b7ccf" id="r_a077b5d580d77a1f4d0207d30f01b7ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKernel_1_1ErrorOr.html">ErrorOr</a>&lt; <a class="el" href="classKernel_1_1ATADeviceInterface.html">ATADeviceInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a077b5d580d77a1f4d0207d30f01b7ccf">sk_acquire_ata_device</a> (<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_index)</td></tr>
+<tr class="memdesc:a077b5d580d77a1f4d0207d30f01b7ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a new PIO device with drv_index in mind.  <br /></td></tr>
+<tr class="separator:a077b5d580d77a1f4d0207d30f01b7ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2895544c265cf43ea21fcdf535857ed1" id="r_a2895544c265cf43ea21fcdf535857ed1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2895544c265cf43ea21fcdf535857ed1">mp_initialize_gic</a> (<a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)</td></tr>
 <tr class="separator:a2895544c265cf43ea21fcdf535857ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48458e2389fa5f90c5c85db075cc7500" id="r_a48458e2389fa5f90c5c85db075cc7500"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespaceKernel_1_1HAL.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a48458e2389fa5f90c5c85db075cc7500">mp_get_current_context</a> (<a class="el" href="namespaceKernel.html#abba6700dd5b8786ae2dbee68de1a5cea">ProcessID</a> pid)</td></tr>
 <tr class="separator:a48458e2389fa5f90c5c85db075cc7500"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1033,7 +1031,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:abbe9fc8f44929b5c97892e5a3f428fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the flags of a heap header.  <br /></td></tr>
 <tr class="separator:abbe9fc8f44929b5c97892e5a3f428fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64b2a983bba7ef0619c8b07f50b4a10b" id="r_a64b2a983bba7ef0619c8b07f50b4a10b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
-<tr class="memitem:a64b2a983bba7ef0619c8b07f50b4a10b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a64b2a983bba7ef0619c8b07f50b4a10b">mm_new_class</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> T **cls, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a64b2a983bba7ef0619c8b07f50b4a10b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a64b2a983bba7ef0619c8b07f50b4a10b">mm_new_class</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> T **cls, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a64b2a983bba7ef0619c8b07f50b4a10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate C++ class.  <br /></td></tr>
 <tr class="separator:a64b2a983bba7ef0619c8b07f50b4a10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af948cd47e35340726335c90e8d95857c" id="r_af948cd47e35340726335c90e8d95857c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -1087,8 +1085,6 @@ Functions</h2></td></tr>
 <tr class="separator:a5910f9795b6dc366b1d905a48e626d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18524e4f4b3acf4adcf4ca7ff6b10d13" id="r_a18524e4f4b3acf4adcf4ca7ff6b10d13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a18524e4f4b3acf4adcf4ca7ff6b10d13">rt_string_len</a> (const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str)</td></tr>
 <tr class="separator:a18524e4f4b3acf4adcf4ca7ff6b10d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d324af99e9a0f770de9f82cc0c589d3" id="r_a3d324af99e9a0f770de9f82cc0c589d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a3d324af99e9a0f770de9f82cc0c589d3">wrt_string_len</a> (const <a class="el" href="namespaceKernel.html#a2c6ff14dd8a82831d54d27370d39c5e1">Utf16Char</a> *str)</td></tr>
-<tr class="separator:a3d324af99e9a0f770de9f82cc0c589d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fcf6aa3237616652e0aaca5dacb132" id="r_ae6fcf6aa3237616652e0aaca5dacb132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae6fcf6aa3237616652e0aaca5dacb132">rt_string_len</a> (const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str, <a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> _len)</td></tr>
 <tr class="separator:ae6fcf6aa3237616652e0aaca5dacb132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5e8137e36fca427b59b0e8fb07eea3a" id="r_ae5e8137e36fca427b59b0e8fb07eea3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae5e8137e36fca427b59b0e8fb07eea3a">rt_to_string</a> (<a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str_out, <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> base, <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> limit)</td></tr>
@@ -1108,6 +1104,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a01b8acc5a1e5af65434a6b29e46d7711" id="r_a01b8acc5a1e5af65434a6b29e46d7711"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a01b8acc5a1e5af65434a6b29e46d7711">rt_string_has_char</a> (<a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str, <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> chr)</td></tr>
 <tr class="memdesc:a01b8acc5a1e5af65434a6b29e46d7711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for a string start at the character.  <br /></td></tr>
 <tr class="separator:a01b8acc5a1e5af65434a6b29e46d7711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46d5b75476f521f6b07979bb03bb112" id="r_ae46d5b75476f521f6b07979bb03bb112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a28475bf17d6d4cdb8ed5583d556343fb">Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae46d5b75476f521f6b07979bb03bb112">urt_copy_memory</a> (const <a class="el" href="namespaceKernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a> src, <a class="el" href="namespaceKernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a> dst, <a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a> len)</td></tr>
+<tr class="separator:ae46d5b75476f521f6b07979bb03bb112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd517a85266b9355a7baf20b428acbf6" id="r_afd517a85266b9355a7baf20b428acbf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#afd517a85266b9355a7baf20b428acbf6">urt_string_len</a> (const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *str)</td></tr>
+<tr class="separator:afd517a85266b9355a7baf20b428acbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad790ea6a819b0d66cfd7d4bd7301b1d0" id="r_ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ad790ea6a819b0d66cfd7d4bd7301b1d0">io_drv_input</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt)</td></tr>
 <tr class="memdesc:ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads from an ATA drive.  <br /></td></tr>
 <tr class="separator:ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1147,6 +1147,9 @@ Functions</h2></td></tr>
 <tr class="separator:a57ba6e2941ff935d1eb97d3c4b8e34ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc50b44cc6645673525772574875e48" id="r_aacc50b44cc6645673525772574875e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aacc50b44cc6645673525772574875e48">rt_to_char</a> (<a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> base, <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> limit)</td></tr>
 <tr class="separator:aacc50b44cc6645673525772574875e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2376392098330fa075017af59854f14d" id="r_a2376392098330fa075017af59854f14d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structKernel_1_1SWAP__DISK__HEADER.html">Kernel::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2376392098330fa075017af59854f14d">ALIGN</a> (8) <a class="el" href="structKernel_1_1SWAP__DISK__HEADER.html">SWAP_DISK_HEADER</a></td></tr>
+<tr class="memdesc:a2376392098330fa075017af59854f14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
+<tr class="separator:a2376392098330fa075017af59854f14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d5fe84e43fbf4fc30f34bf0c51101da" id="r_a1d5fe84e43fbf4fc30f34bf0c51101da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1d5fe84e43fbf4fc30f34bf0c51101da">apm_send_dma_command</a> (<a class="el" href="namespaceKernel.html#aeebe7ae3744e16798153acfdce021fb9">Ptr64</a> register_addr, <a class="el" href="namespaceKernel.html#af652e7ba4f63049fb559facf0279406e">APMPowerCmd</a> value)</td></tr>
 <tr class="memdesc:a1d5fe84e43fbf4fc30f34bf0c51101da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a APM command into it's own DMA space.  <br /></td></tr>
 <tr class="separator:a1d5fe84e43fbf4fc30f34bf0c51101da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1156,7 +1159,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aefbab5b54c53d4fe74eeabccbaf1f76b" id="r_aefbab5b54c53d4fe74eeabccbaf1f76b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#adb78430bdcad39212bcae44ff7e7d0ab">MBCIAuthKeyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aefbab5b54c53d4fe74eeabccbaf1f76b">mbci_read_auth_key</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> volatile struct <a class="el" href="structKernel_1_1IMBCIHost.html">IMBCIHost</a> *host)</td></tr>
 <tr class="memdesc:aefbab5b54c53d4fe74eeabccbaf1f76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read Auth key for MBCI host.  <br /></td></tr>
 <tr class="separator:aefbab5b54c53d4fe74eeabccbaf1f76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f3da5faf26a5bf6b814b4080170637" id="r_a33f3da5faf26a5bf6b814b4080170637"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a33f3da5faf26a5bf6b814b4080170637">mbci_test_mmio</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> volatile struct <a class="el" href="structKernel_1_1IMBCIHost.html">IMBCIHost</a> *host)</td></tr>
+<tr class="memitem:a33f3da5faf26a5bf6b814b4080170637" id="r_a33f3da5faf26a5bf6b814b4080170637"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a33f3da5faf26a5bf6b814b4080170637">mbci_test_mmio</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> volatile struct <a class="el" href="structKernel_1_1IMBCIHost.html">IMBCIHost</a> *host)</td></tr>
 <tr class="separator:a33f3da5faf26a5bf6b814b4080170637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6d8fe1c3beca6fd861cf6286ccd236" id="r_a3a6d8fe1c3beca6fd861cf6286ccd236"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> Opcode&gt; </td></tr>
 <tr class="memitem:a3a6d8fe1c3beca6fd861cf6286ccd236"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a3a6d8fe1c3beca6fd861cf6286ccd236">nvme_create_admin_command</a> (<a class="el" href="structKernel_1_1HAL__NVME__QUEUE.html">HAL_NVME_QUEUE</a> *entry, <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> nsid, <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> prpTransfer[3], <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> startingLba[2], <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> lowTransferBlocks)</td></tr>
@@ -1250,7 +1253,13 @@ Variables</h2></td></tr>
 <tr class="separator:aa1dd20c2cda43e48c1e6c7c596f90cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a965a6d3158e148bdc99c38def6ca9dc1" id="r_a965a6d3158e148bdc99c38def6ca9dc1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a965a6d3158e148bdc99c38def6ca9dc1">kErrorFileLocked</a> = 64</td></tr>
 <tr class="separator:a965a6d3158e148bdc99c38def6ca9dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f09eaa96c8da5d8cb446890618236" id="r_a9d9f09eaa96c8da5d8cb446890618236"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9d9f09eaa96c8da5d8cb446890618236">kErrorDiskIsTooTiny</a> = 65</td></tr>
+<tr class="separator:a9d9f09eaa96c8da5d8cb446890618236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f62c13b2e830499aba115dfe1037956" id="r_a8f62c13b2e830499aba115dfe1037956"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">kErrorDmaExhausted</a> = 101</td></tr>
+<tr class="memdesc:a8f62c13b2e830499aba115dfe1037956"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> errors.  <br /></td></tr>
+<tr class="separator:a8f62c13b2e830499aba115dfe1037956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa412f1f2c6810c26e3295d988f1d1b01" id="r_aa412f1f2c6810c26e3295d988f1d1b01"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa412f1f2c6810c26e3295d988f1d1b01">kErrorUnimplemented</a> = -1</td></tr>
+<tr class="memdesc:aa412f1f2c6810c26e3295d988f1d1b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic errors.  <br /></td></tr>
 <tr class="separator:aa412f1f2c6810c26e3295d988f1d1b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e276a5001adc36e16b123cec7ba24ba" id="r_a2e276a5001adc36e16b123cec7ba24ba"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2e276a5001adc36e16b123cec7ba24ba">kMaxPorts</a> = 16</td></tr>
 <tr class="separator:a2e276a5001adc36e16b123cec7ba24ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1270,7 +1279,7 @@ Variables</h2></td></tr>
 <tr class="memitem:aa8089b84581abd0e4212da55b348cd53" id="r_aa8089b84581abd0e4212da55b348cd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa8089b84581abd0e4212da55b348cd53">kLastExitCode</a> = 0U</td></tr>
 <tr class="memdesc:aa8089b84581abd0e4212da55b348cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit Code global variable.  <br /></td></tr>
 <tr class="separator:aa8089b84581abd0e4212da55b348cd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b2da1fd0200cd7867dac455302ca08" id="r_ac6b2da1fd0200cd7867dac455302ca08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ac6b2da1fd0200cd7867dac455302ca08">kCurrentlySwitching</a> = <a class="el" href="kernel_2NewKit_2Macros_8h.html#a554d6ecb4ae62985018db18be458114d">No</a></td></tr>
+<tr class="memitem:ac6b2da1fd0200cd7867dac455302ca08" id="r_ac6b2da1fd0200cd7867dac455302ca08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ac6b2da1fd0200cd7867dac455302ca08">kCurrentlySwitching</a> = <a class="el" href="kernel_2NewKit_2Macros_8h.html#a554d6ecb4ae62985018db18be458114d">No</a></td></tr>
 <tr class="separator:ac6b2da1fd0200cd7867dac455302ca08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a566fd374158c608cca7ebe8970da799f" id="r_a566fd374158c608cca7ebe8970da799f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="classKernel_1_1UserProcessScheduler.html">UserProcessScheduler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a566fd374158c608cca7ebe8970da799f">kScheduler</a></td></tr>
 <tr class="memdesc:a566fd374158c608cca7ebe8970da799f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler itself.  <br /></td></tr>
@@ -2373,34 +2382,6 @@ template&lt;int PacketBitLen&gt; </div>
 
 </div>
 </div>
-<a id="a7d025f2d18ee23a8968b516036e8a734" name="a7d025f2d18ee23a8968b516036e8a734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d025f2d18ee23a8968b516036e8a734">&#9670;&#160;</a></span>SWAP_DISK_HEADER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structKernel_1_1SWAP__DISK__HEADER.html">Kernel::SWAP_DISK_HEADER</a> <a class="el" href="structKernel_1_1SWAP__DISK__HEADER.html">Kernel::SWAP_DISK_HEADER</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Swap disk header, containing information about the held virtual memory. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fMagic</td><td>Ident number. </td></tr>
-    <tr><td class="paramname">fHeaderSz</td><td>This header size. </td></tr>
-    <tr><td class="paramname">fTeamID</td><td>Process Team ID. </td></tr>
-    <tr><td class="paramname">fProcessID</td><td>Process ID. </td></tr>
-    <tr><td class="paramname">fVirtualAddress</td><td>Virtual address pointed by data. </td></tr>
-    <tr><td class="paramname">fBlobSz</td><td>Blob's size. </td></tr>
-    <tr><td class="paramname">fBlob</td><td>Data blob. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a1ffce7d5ea25555a8fe5104835da9c1f" name="a1ffce7d5ea25555a8fe5104835da9c1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ffce7d5ea25555a8fe5104835da9c1f">&#9670;&#160;</a></span>TCPNetworkDevice</h2>
 
@@ -2859,7 +2840,8 @@ template&lt;int PacketBitLen&gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa924f23388bd6fd27af3c21d9c35837fa8d61f20f458902683d6af5376385689f" name="aa924f23388bd6fd27af3c21d9c35837fa8d61f20f458902683d6af5376385689f"></a>kFileWriteAll&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa924f23388bd6fd27af3c21d9c35837faa5807964cec5547c74b542b4c025dfd7" name="aa924f23388bd6fd27af3c21d9c35837faa5807964cec5547c74b542b4c025dfd7"></a>kFileIOInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa924f23388bd6fd27af3c21d9c35837fa8d61f20f458902683d6af5376385689f" name="aa924f23388bd6fd27af3c21d9c35837fa8d61f20f458902683d6af5376385689f"></a>kFileWriteAll&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa924f23388bd6fd27af3c21d9c35837fa98cf54f2e9d54d86bbff85b5175eab41" name="aa924f23388bd6fd27af3c21d9c35837fa98cf54f2e9d54d86bbff85b5175eab41"></a>kFileReadAll&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa924f23388bd6fd27af3c21d9c35837fa3ce868ebee02ab8718d189f573113dd2" name="aa924f23388bd6fd27af3c21d9c35837fa3ce868ebee02ab8718d189f573113dd2"></a>kFileReadChunk&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa924f23388bd6fd27af3c21d9c35837fab66ea1f76a91bc3bbfcdb01e41b35270" name="aa924f23388bd6fd27af3c21d9c35837fab66ea1f76a91bc3bbfcdb01e41b35270"></a>kFileWriteChunk&#160;</td><td class="fielddoc"></td></tr>
@@ -3480,6 +3462,38 @@ template&lt;int PacketBitLen&gt; </div>
 </div><div class="memdoc">
 
 <p>Pure implementation, missing method/function handler. </p>
+
+</div>
+</div>
+<a id="a2376392098330fa075017af59854f14d" name="a2376392098330fa075017af59854f14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2376392098330fa075017af59854f14d">&#9670;&#160;</a></span>ALIGN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structKernel_1_1SWAP__DISK__HEADER.html">Kernel::SWAP_DISK_HEADER</a> Kernel::ALIGN </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swap disk header, containing information about the held virtual memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fMagic</td><td>Ident number. </td></tr>
+    <tr><td class="paramname">fHeaderSz</td><td>This header size. </td></tr>
+    <tr><td class="paramname">fTeamID</td><td>Process Team ID. </td></tr>
+    <tr><td class="paramname">fProcessID</td><td>Process ID. </td></tr>
+    <tr><td class="paramname">fVirtualAddress</td><td>Virtual address pointed by data. </td></tr>
+    <tr><td class="paramname">fBlobSz</td><td>Blob's size. </td></tr>
+    <tr><td class="paramname">fBlob</td><td>Data blob. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -5040,7 +5054,7 @@ template&lt;<a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8d
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::mbci_test_mmio </td>
+          <td class="memname"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::mbci_test_mmio </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> volatile struct <a class="el" href="structKernel_1_1IMBCIHost.html">IMBCIHost</a> *&#160;</td>
           <td class="paramname"><em>host</em></td><td>)</td>
@@ -5298,7 +5312,7 @@ template&lt;typename T , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::mm_new_class </td>
+          <td class="memname"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::mm_new_class </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> T **&#160;</td>
           <td class="paramname"><em>cls</em>, </td>
@@ -5582,7 +5596,7 @@ template&lt;typename Args &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::mp_initialize_gic </td>
+          <td class="memname"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::mp_initialize_gic </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -6833,14 +6847,14 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
 
 </div>
 </div>
-<a id="a219b3725030ebb2134a9a33950650667" name="a219b3725030ebb2134a9a33950650667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a219b3725030ebb2134a9a33950650667">&#9670;&#160;</a></span>sk_acquire_pio_device()</h2>
+<a id="a077b5d580d77a1f4d0207d30f01b7ccf" name="a077b5d580d77a1f4d0207d30f01b7ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077b5d580d77a1f4d0207d30f01b7ccf">&#9670;&#160;</a></span>sk_acquire_ata_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classKernel_1_1ErrorOr.html">ErrorOr</a>&lt; <a class="el" href="classKernel_1_1ATADeviceInterface.html">ATADeviceInterface</a> &gt; Kernel::sk_acquire_pio_device </td>
+          <td class="memname"><a class="el" href="classKernel_1_1ErrorOr.html">ErrorOr</a>&lt; <a class="el" href="classKernel_1_1ATADeviceInterface.html">ATADeviceInterface</a> &gt; Kernel::sk_acquire_ata_device </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td>
           <td class="paramname"><em>drv_index</em></td><td>)</td>
@@ -6870,7 +6884,7 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
         <tr>
           <td class="memname"><a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> Kernel::sk_init_ahci_device </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td>
           <td class="paramname"><em>atapi</em></td><td>)</td>
           <td></td>
         </tr>
@@ -6881,16 +6895,16 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
 
 </div>
 </div>
-<a id="a1990d2fef5f2ff0e0b9aaf2dc23b9530" name="a1990d2fef5f2ff0e0b9aaf2dc23b9530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1990d2fef5f2ff0e0b9aaf2dc23b9530">&#9670;&#160;</a></span>sk_init_pio_device()</h2>
+<a id="a857c31714e87a5e8777f7d4981581adf" name="a857c31714e87a5e8777f7d4981581adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a857c31714e87a5e8777f7d4981581adf">&#9670;&#160;</a></span>sk_init_ata_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::sk_init_pio_device </td>
+          <td class="memname"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::sk_init_ata_device </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td>
           <td class="paramname"><em>is_master</em>, </td>
         </tr>
         <tr>
@@ -6949,16 +6963,50 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
 
 </div>
 </div>
-<a id="a3d324af99e9a0f770de9f82cc0c589d3" name="a3d324af99e9a0f770de9f82cc0c589d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d324af99e9a0f770de9f82cc0c589d3">&#9670;&#160;</a></span>wrt_string_len()</h2>
+<a id="ae46d5b75476f521f6b07979bb03bb112" name="ae46d5b75476f521f6b07979bb03bb112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae46d5b75476f521f6b07979bb03bb112">&#9670;&#160;</a></span>urt_copy_memory()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a> Kernel::wrt_string_len </td>
+          <td class="memname"><a class="el" href="namespaceKernel.html#a28475bf17d6d4cdb8ed5583d556343fb">Int</a> Kernel::urt_copy_memory </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceKernel.html#a2c6ff14dd8a82831d54d27370d39c5e1">Utf16Char</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a>&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a>&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd517a85266b9355a7baf20b428acbf6" name="afd517a85266b9355a7baf20b428acbf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd517a85266b9355a7baf20b428acbf6">&#9670;&#160;</a></span>urt_string_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a> Kernel::urt_string_len </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
           <td></td>
         </tr>
@@ -7013,7 +7061,7 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::kCurrentlySwitching = <a class="el" href="kernel_2NewKit_2Macros_8h.html#a554d6ecb4ae62985018db18be458114d">No</a></td>
+          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::kCurrentlySwitching = <a class="el" href="kernel_2NewKit_2Macros_8h.html#a554d6ecb4ae62985018db18be458114d">No</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -7174,6 +7222,28 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
 
 </div>
 </div>
+<a id="a9d9f09eaa96c8da5d8cb446890618236" name="a9d9f09eaa96c8da5d8cb446890618236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9f09eaa96c8da5d8cb446890618236">&#9670;&#160;</a></span>kErrorDiskIsTooTiny</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a> Kernel::kErrorDiskIsTooTiny = 65</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4a9f1b1632a2fe80ce374e30514c6f87" name="a4a9f1b1632a2fe80ce374e30514c6f87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a9f1b1632a2fe80ce374e30514c6f87">&#9670;&#160;</a></span>kErrorDiskReadOnly</h2>
 
@@ -7193,6 +7263,30 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f62c13b2e830499aba115dfe1037956" name="a8f62c13b2e830499aba115dfe1037956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f62c13b2e830499aba115dfe1037956">&#9670;&#160;</a></span>kErrorDmaExhausted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a> Kernel::kErrorDmaExhausted = 101</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> errors. </p>
 
 </div>
 </div>
@@ -7787,6 +7881,8 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generic errors. </p>
 
 </div>
 </div>

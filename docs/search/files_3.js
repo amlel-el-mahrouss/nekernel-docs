@@ -29,7 +29,8 @@ var searchData=
   ['dma_2ecc_26',['DMA.cc',['../DMA_8cc.html',1,'']]],
   ['dma_2eh_27',['DMA.h',['../DMA_8h.html',1,'']]],
   ['dma_2einl_28',['DMA.inl',['../DMA_8inl.html',1,'']]],
-  ['drivemgr_2bio_2ecc_29',['DriveMgr+IO.cc',['../DriveMgr_09IO_8cc.html',1,'']]],
-  ['drivemgr_2ecc_30',['DriveMgr.cc',['../DriveMgr_8cc.html',1,'']]],
-  ['drivemgr_2eh_31',['DriveMgr.h',['../DriveMgr_8h.html',1,'']]]
+  ['dmapool_2eh_29',['DmaPool.h',['../DmaPool_8h.html',1,'']]],
+  ['drivemgr_2bio_2ecc_30',['DriveMgr+IO.cc',['../DriveMgr_09IO_8cc.html',1,'']]],
+  ['drivemgr_2ecc_31',['DriveMgr.cc',['../DriveMgr_8cc.html',1,'']]],
+  ['drivemgr_2eh_32',['DriveMgr.h',['../DriveMgr_8h.html',1,'']]]
 ];

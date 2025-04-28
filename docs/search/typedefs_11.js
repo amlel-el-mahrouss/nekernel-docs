@@ -8,7 +8,7 @@ var searchData=
   ['signalkind_5',['SignalKind',['../namespaceKernel.html#a39b76eab2ccf186a18143464b97e73c7',1,'Kernel']]],
   ['sint16_6',['sint16',['../namespaceKernel.html#ae9d81b8d5478b971df17a4295efeaf39',1,'Kernel::SInt16'],['../user_2Macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
   ['sint32_7',['sint32',['../namespaceKernel.html#acbc040f7132975ab615ece6b877b4c25',1,'Kernel::SInt32'],['../user_2Macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
-  ['sint64_8',['sint64',['../user_2Macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h'],['../namespaceKernel.html#aaa04483922d796a944f29817e74a4ba3',1,'Kernel::SInt64']]],
+  ['sint64_8',['sint64',['../namespaceKernel.html#aaa04483922d796a944f29817e74a4ba3',1,'Kernel::SInt64'],['../user_2Macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],
   ['sint8_9',['SInt8',['../user_2Macros_8h.html#aaa25d67f876e77346aeca5db9fdc34e8',1,'Macros.h']]],
   ['size_10',['Size',['../namespaceKernel.html#a491c180e187771df3ce5885241ed061b',1,'Kernel']]],
   ['size_5ft_11',['size_t',['../New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e',1,'New.h']]],
@@ -16,6 +16,5 @@ var searchData=
   ['socketref_13',['SocketRef',['../SystemCalls_8h.html#a33b5198f7ba47dba8faac36d3d787cc8',1,'SystemCalls.h']]],
   ['ssize_14',['SSize',['../namespaceKernel.html#a2bc4382d02e68601e3976fa71cb8338b',1,'Kernel']]],
   ['ssizet_15',['SSizeT',['../namespaceKernel.html#a193842946b685b42acd908caef26c30d',1,'Kernel']]],
-  ['stackframeptr_16',['StackFramePtr',['../namespaceKernel_1_1HAL.html#aba672fa291f54ca77d557633ee59c56b',1,'Kernel::HAL']]],
-  ['swap_5fdisk_5fheader_17',['SWAP_DISK_HEADER',['../namespaceKernel.html#a7d025f2d18ee23a8968b516036e8a734',1,'Kernel']]]
+  ['stackframeptr_16',['StackFramePtr',['../namespaceKernel_1_1HAL.html#aba672fa291f54ca77d557633ee59c56b',1,'Kernel::HAL']]]
 ];

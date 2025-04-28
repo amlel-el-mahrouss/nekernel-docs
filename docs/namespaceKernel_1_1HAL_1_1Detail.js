@@ -52,6 +52,7 @@ var namespaceKernel_1_1HAL_1_1Detail =
       [ "CacheDisable", "namespaceKernel_1_1HAL_1_1Detail.html#a97ce83f9cb52a5936bd5956630c6d412a310a6aa1b983a986a3f7c92ab71283c2", null ],
       [ "PageEnable", "namespaceKernel_1_1HAL_1_1Detail.html#a97ce83f9cb52a5936bd5956630c6d412a282b7048593d29199e7b7186c69c677a", null ]
     ] ],
+    [ "ATTRIBUTE", "namespaceKernel_1_1HAL_1_1Detail.html#a29479abbb61b3d488e497e510f7b93f4", null ],
     [ "control_register_cast", "namespaceKernel_1_1HAL_1_1Detail.html#aba17d0f554c358fb46749b3ee50b6ac4", null ],
     [ "hal_clear_irq_mask", "namespaceKernel_1_1HAL_1_1Detail.html#a922ae91f65812613a862549bfd840568", null ],
     [ "hal_enable_pit", "namespaceKernel_1_1HAL_1_1Detail.html#aa54828f386021e62103f157c4fe9e09c", null ],

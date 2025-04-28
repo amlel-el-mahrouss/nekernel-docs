@@ -25,6 +25,6 @@ var searchData=
   ['hardwarethreadscheduler_2eh_22',['HardwareThreadScheduler.h',['../HardwareThreadScheduler_8h.html',1,'']]],
   ['hefs_2bfilemgr_2ecc_23',['HeFS+FileMgr.cc',['../HeFS_09FileMgr_8cc.html',1,'']]],
   ['hefs_2ecc_24',['HeFS.cc',['../HeFS_8cc.html',1,'']]],
-  ['hefs_2eh_25',['HeFS.h',['../HeFS_8h.html',1,'']]],
+  ['hefs_2eh_25',['hefs.h',['../hefs_8h.html',1,'(Global Namespace)'],['../HeFS_8h.html',1,'(Global Namespace)']]],
   ['hypervisor_2eh_26',['Hypervisor.h',['../Hypervisor_8h.html',1,'']]]
 ];

@@ -13,7 +13,7 @@ var searchData=
   ['hbamem_10',['HbaMem',['../structHbaMem.html',1,'']]],
   ['hbaport_11',['HbaPort',['../structHbaPort.html',1,'']]],
   ['hbaprdtentry_12',['HbaPrdtEntry',['../structHbaPrdtEntry.html',1,'']]],
-  ['hefilesystemparser_13',['HeFileSystemParser',['../classKernel_1_1HeFileSystemParser.html',1,'Kernel']]],
+  ['hefilesystemparser_13',['HeFileSystemParser',['../classKernel_1_1HeFS_1_1HeFileSystemParser.html',1,'Kernel::HeFS']]],
   ['hefs_5fboot_5fnode_14',['HEFS_BOOT_NODE',['../structHEFS__BOOT__NODE.html',1,'']]],
   ['hpet_5fblock_15',['HPET_BLOCK',['../structKernel_1_1Detail_1_1HPET__BLOCK.html',1,'Kernel::Detail']]],
   ['hpetaddressstructure_16',['HPETAddressStructure',['../structKernel_1_1HPETAddressStructure.html',1,'Kernel']]],

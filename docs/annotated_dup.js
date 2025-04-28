@@ -59,6 +59,9 @@ var annotated_dup =
         [ "SegmentDescriptorComparator", "classKernel_1_1HAL_1_1SegmentDescriptorComparator.html", "classKernel_1_1HAL_1_1SegmentDescriptorComparator" ],
         [ "StackFrame", "structKernel_1_1HAL_1_1StackFrame.html", "structKernel_1_1HAL_1_1StackFrame" ]
       ] ],
+      [ "HeFS", "namespaceKernel_1_1HeFS.html", [
+        [ "HeFileSystemParser", "classKernel_1_1HeFS_1_1HeFileSystemParser.html", "classKernel_1_1HeFS_1_1HeFileSystemParser" ]
+      ] ],
       [ "HEL", "namespaceKernel_1_1HEL.html", [
         [ "BootInfoHeader", "structKernel_1_1HEL_1_1BootInfoHeader.html", "structKernel_1_1HEL_1_1BootInfoHeader" ]
       ] ],
@@ -100,7 +103,6 @@ var annotated_dup =
       [ "HardwareThread", "classKernel_1_1HardwareThread.html", "classKernel_1_1HardwareThread" ],
       [ "HardwareThreadScheduler", "classKernel_1_1HardwareThreadScheduler.html", "classKernel_1_1HardwareThreadScheduler" ],
       [ "HardwareTimer", "classKernel_1_1HardwareTimer.html", "classKernel_1_1HardwareTimer" ],
-      [ "HeFileSystemParser", "classKernel_1_1HeFileSystemParser.html", "classKernel_1_1HeFileSystemParser" ],
       [ "HPETAddressStructure", "structKernel_1_1HPETAddressStructure.html", "structKernel_1_1HPETAddressStructure" ],
       [ "HPETHeader", "structKernel_1_1HPETHeader.html", "structKernel_1_1HPETHeader" ],
       [ "ICodec", "classKernel_1_1ICodec.html", "classKernel_1_1ICodec" ],
@@ -117,7 +119,7 @@ var annotated_dup =
       [ "Json", "classKernel_1_1Json.html", "classKernel_1_1Json" ],
       [ "JsonStreamReader", "structKernel_1_1JsonStreamReader.html", "structKernel_1_1JsonStreamReader" ],
       [ "KString", "classKernel_1_1KString.html", "classKernel_1_1KString" ],
-      [ "KStringBuilder", "structKernel_1_1KStringBuilder.html", null ],
+      [ "KStringBuilder", "classKernel_1_1KStringBuilder.html", null ],
       [ "LoaderInterface", "classKernel_1_1LoaderInterface.html", "classKernel_1_1LoaderInterface" ],
       [ "LockDelegate", "classKernel_1_1LockDelegate.html", "classKernel_1_1LockDelegate" ],
       [ "MacAddressGetter", "classKernel_1_1MacAddressGetter.html", "classKernel_1_1MacAddressGetter" ],
@@ -166,6 +168,13 @@ var annotated_dup =
       [ "UserProcessScheduler", "classKernel_1_1UserProcessScheduler.html", "classKernel_1_1UserProcessScheduler" ],
       [ "UserProcessTeam", "classKernel_1_1UserProcessTeam.html", "classKernel_1_1UserProcessTeam" ],
       [ "Variant", "classKernel_1_1Variant.html", "classKernel_1_1Variant" ]
+    ] ],
+    [ "mkfs", "namespacemkfs.html", [
+      [ "hefs", "namespacemkfs_1_1hefs.html", [
+        [ "BootNode", "structmkfs_1_1hefs_1_1BootNode.html", "structmkfs_1_1hefs_1_1BootNode" ],
+        [ "IndexNode", "structmkfs_1_1hefs_1_1IndexNode.html", "structmkfs_1_1hefs_1_1IndexNode" ],
+        [ "IndexNodeDirectory", "structmkfs_1_1hefs_1_1IndexNodeDirectory.html", "structmkfs_1_1hefs_1_1IndexNodeDirectory" ]
+      ] ]
     ] ],
     [ "pfd", "namespacepfd.html", [
       [ "internal", "namespacepfd_1_1internal.html", [

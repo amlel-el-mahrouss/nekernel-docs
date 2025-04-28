@@ -40,7 +40,6 @@ var dir_47db305ca16612c6e2a66f0f32acfc5a =
     [ "PEFCodeMgr.cc", "PEFCodeMgr_8cc.html", "PEFCodeMgr_8cc" ],
     [ "Pmm.cc", "Pmm_8cc.html", null ],
     [ "PRDT.cc", "PRDT_8cc.html", "PRDT_8cc" ],
-    [ "ProcessTeam.cc", "ProcessTeam_8cc.html", null ],
     [ "Property.cc", "Property_8cc.html", null ],
     [ "Ref.cc", "Ref_8cc.html", null ],
     [ "SoftwareTimer.cc", "SoftwareTimer_8cc.html", null ],
@@ -49,7 +48,8 @@ var dir_47db305ca16612c6e2a66f0f32acfc5a =
     [ "Timer.cc", "Timer_8cc.html", null ],
     [ "User.cc", "User_8cc.html", "User_8cc" ],
     [ "UserProcessScheduler.cc", "UserProcessScheduler_8cc.html", "UserProcessScheduler_8cc" ],
+    [ "UserProcessTeam.cc", "UserProcessTeam_8cc.html", null ],
+    [ "UtfUtils.cc", "UtfUtils_8cc.html", "UtfUtils_8cc" ],
     [ "Utils.cc", "Utils_8cc.html", "Utils_8cc" ],
-    [ "Variant.cc", "Variant_8cc.html", null ],
-    [ "WideUtils.cc", "WideUtils_8cc.html", "WideUtils_8cc" ]
+    [ "Variant.cc", "Variant_8cc.html", null ]
 ];

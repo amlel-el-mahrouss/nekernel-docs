@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -207,7 +208,13 @@ Variables</h2></td></tr>
 <tr class="separator:aa1dd20c2cda43e48c1e6c7c596f90cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a965a6d3158e148bdc99c38def6ca9dc1" id="r_a965a6d3158e148bdc99c38def6ca9dc1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a965a6d3158e148bdc99c38def6ca9dc1">Kernel::kErrorFileLocked</a> = 64</td></tr>
 <tr class="separator:a965a6d3158e148bdc99c38def6ca9dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f09eaa96c8da5d8cb446890618236" id="r_a9d9f09eaa96c8da5d8cb446890618236"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9d9f09eaa96c8da5d8cb446890618236">Kernel::kErrorDiskIsTooTiny</a> = 65</td></tr>
+<tr class="separator:a9d9f09eaa96c8da5d8cb446890618236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f62c13b2e830499aba115dfe1037956" id="r_a8f62c13b2e830499aba115dfe1037956"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">Kernel::kErrorDmaExhausted</a> = 101</td></tr>
+<tr class="memdesc:a8f62c13b2e830499aba115dfe1037956"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> errors.  <br /></td></tr>
+<tr class="separator:a8f62c13b2e830499aba115dfe1037956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa412f1f2c6810c26e3295d988f1d1b01" id="r_aa412f1f2c6810c26e3295d988f1d1b01"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa412f1f2c6810c26e3295d988f1d1b01">Kernel::kErrorUnimplemented</a> = -1</td></tr>
+<tr class="memdesc:aa412f1f2c6810c26e3295d988f1d1b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic errors.  <br /></td></tr>
 <tr class="separator:aa412f1f2c6810c26e3295d988f1d1b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -280,8 +287,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486">CurrentProcess</a>().Leak().GetLocalCode() != \</div>
 <div class="line">   <a class="code hl_variable" href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a>)</div>
-<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_a19e948d65beac1bee639cf6b6880dd21"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a></div><div class="ttdeci">STATIC UserProcessScheduler &amp; The()</div><div class="ttdoc">Retrieves the singleton of the process scheduler.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:431</div></div>
-<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_ad8bfbbff90de2dc1b55465d4eb262486"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486">Kernel::UserProcessScheduler::CurrentProcess</a></div><div class="ttdeci">Ref&lt; USER_PROCESS &gt; &amp; CurrentProcess()</div><div class="ttdoc">Gets current running process.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:547</div></div>
+<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_a19e948d65beac1bee639cf6b6880dd21"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a></div><div class="ttdeci">STATIC UserProcessScheduler &amp; The()</div><div class="ttdoc">Retrieves the singleton of the process scheduler.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:438</div></div>
+<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_ad8bfbbff90de2dc1b55465d4eb262486"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486">Kernel::UserProcessScheduler::CurrentProcess</a></div><div class="ttdeci">Ref&lt; USER_PROCESS &gt; &amp; CurrentProcess()</div><div class="ttdoc">Gets current running process.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:554</div></div>
 <div class="ttc" id="anamespaceKernel_html_a1ee8cad04f3464b7e0a2df9e45099dc6"><div class="ttname"><a href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a></div><div class="ttdeci">constexpr KPCError kErrorSuccess</div><div class="ttdef"><b>Definition</b> KPC.h:31</div></div>
 </div><!-- fragment -->
 </div>

@@ -83,5 +83,5 @@ var searchData=
   ['ata_5fsr_5ferr_80',['ATA_SR_ERR',['../modules_2ATA_2ATA_8h.html#a8a2cf843df1ae63d4d16748dfe72a592',1,'ATA.h']]],
   ['ata_5fsr_5fidx_81',['ATA_SR_IDX',['../modules_2ATA_2ATA_8h.html#ad74934afc699945311360be6e3700ef5',1,'ATA.h']]],
   ['ata_5fwrite_82',['ATA_WRITE',['../modules_2ATA_2ATA_8h.html#a9a19b84aa7a02ac7e07528795816ffb2',1,'ATA.h']]],
-  ['attribute_83',['attribute',['../ddk_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;ddk.h'],['../kernel_2NewKit_2Macros_8h.html#a8e09fc0acc49f63edf8ca7dd1c194598',1,'ATTRIBUTE:&#160;Macros.h'],['../user_2Macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;Macros.h']]]
+  ['attribute_83',['attribute',['../macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;macros.h'],['../kernel_2NewKit_2Macros_8h.html#a8e09fc0acc49f63edf8ca7dd1c194598',1,'ATTRIBUTE:&#160;Macros.h'],['../user_2Macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;Macros.h']]]
 ];

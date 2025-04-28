@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -130,10 +131,10 @@ $(document).ready(function(){initNavTree('MemoryMgr_8h_source.html',''); initRes
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a64b2a983bba7ef0619c8b07f50b4a10b">   64</a></span><span class="keyword">inline</span> <a class="code hl_define" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="namespaceKernel.html#a64b2a983bba7ef0619c8b07f50b4a10b">mm_new_class</a>(<a class="code hl_define" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="code hl_define" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> T** cls, <a class="code hl_define" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> Args&amp;&amp;... args) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a64b2a983bba7ef0619c8b07f50b4a10b">   64</a></span><span class="keyword">inline</span> <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="namespaceKernel.html#a64b2a983bba7ef0619c8b07f50b4a10b">mm_new_class</a>(<a class="code hl_define" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="code hl_define" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> T** cls, <a class="code hl_define" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> Args&amp;&amp;... args) {</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">if</span> (*cls) {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a9b3bc9dd8d64d3133dec0c36f0d1e54c">Kernel::kErrorInvalidData</a>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="ddk_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  *cls = <span class="keyword">new</span> T(<a class="code hl_function" href="namespaceKernel.html#aa8a1f51c0f56fb9924d000900e4cf686">move</a>(args)...);</div>
@@ -157,8 +158,8 @@ $(document).ready(function(){initNavTree('MemoryMgr_8h_source.html',''); initRes
 <div class="ttc" id="aKPC_8h_html"><div class="ttname"><a href="KPC_8h.html">KPC.h</a></div><div class="ttdoc">Kernel Procedure Code.</div></div>
 <div class="ttc" id="aKPC_8h_html_a1a591a11fe40496846d0680bb30327b7"><div class="ttname"><a href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a></div><div class="ttdeci">#define err_global_get()</div><div class="ttdef"><b>Definition</b> KPC.h:24</div></div>
 <div class="ttc" id="aKernelPanic_8h_html"><div class="ttname"><a href="KernelPanic_8h.html">KernelPanic.h</a></div></div>
-<div class="ttc" id="addk_8h_html_a996bde01ecac342918f0a2c4e7ce7bd5"><div class="ttname"><a href="ddk_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></div><div class="ttdeci">#define NO</div><div class="ttdef"><b>Definition</b> ddk.h:27</div></div>
-<div class="ttc" id="addk_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> ddk.h:25</div></div>
+<div class="ttc" id="amacros_8h_html_a996bde01ecac342918f0a2c4e7ce7bd5"><div class="ttname"><a href="macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></div><div class="ttdeci">#define NO</div><div class="ttdef"><b>Definition</b> macros.h:27</div></div>
+<div class="ttc" id="amacros_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> macros.h:25</div></div>
 <div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
 <div class="ttc" id="anamespaceKernel_html_a0a04e936e5176510cfb9c8227f2394d3"><div class="ttname"><a href="namespaceKernel.html#a0a04e936e5176510cfb9c8227f2394d3">Kernel::mm_is_valid_heap</a></div><div class="ttdeci">Boolean mm_is_valid_heap(VoidPtr heap_ptr)</div><div class="ttdoc">Check if pointer is a valid Kernel pointer.</div><div class="ttdef"><b>Definition</b> MemoryMgr.cc:242</div></div>
 <div class="ttc" id="anamespaceKernel_html_a181ed5ab002d95abdec22f9091372c21"><div class="ttname"><a href="namespaceKernel.html#a181ed5ab002d95abdec22f9091372c21">Kernel::mm_make_flags</a></div><div class="ttdeci">Int32 mm_make_flags(VoidPtr heap_ptr, UInt64 flags)</div><div class="ttdoc">Overwrites and set the flags of a heap header.</div><div class="ttdef"><b>Definition</b> MemoryMgr.cc:172</div></div>

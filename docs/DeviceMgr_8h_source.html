@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -121,7 +122,7 @@ $(document).ready(function(){initNavTree('DeviceMgr_8h_source.html',''); initRes
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="ErrorOr_8h.html">NewKit/ErrorOr.h</a>&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="dev_2kernel_2NewKit_2Ref_8h.html">NewKit/Ref.h</a>&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="DeviceMgr_8h.html#ab7e01a3cafb4b8eb1365b0bfc7e37b23">   25</a></span><span class="preprocessor">#define kDeviceMgrRootDirPath &quot;/dev/&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="DeviceMgr_8h.html#ab7e01a3cafb4b8eb1365b0bfc7e37b23">   25</a></span><span class="preprocessor">#define kDeviceMgrRootDirPath &quot;/devices/&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="DeviceMgr_8h.html#a003e6c4700d518adbf5ca256c38f4b7e">   27</a></span><span class="preprocessor">#define NE_DEVICE : public ::Kernel::IDeviceObject</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -161,7 +162,7 @@ $(document).ready(function(){initNavTree('DeviceMgr_8h_source.html',''); initRes
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
 </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classKernel_1_1IDeviceObject.html#a4cc8d1e485f23510937f098bdacdf94d">   61</a></span>  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classKernel_1_1IDeviceObject.html#a4cc8d1e485f23510937f098bdacdf94d">Name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;/dev/null&quot;</span>; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classKernel_1_1IDeviceObject.html#a4cc8d1e485f23510937f098bdacdf94d">   61</a></span>  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classKernel_1_1IDeviceObject.html#a4cc8d1e485f23510937f098bdacdf94d">Name</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;/devices/null&quot;</span>; }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classKernel_1_1IDeviceObject.html#ada053f174dbac52db8f8881d4435232c">   63</a></span>  <span class="keyword">operator</span> bool() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classKernel_1_1IDeviceObject.html#a38647cd103a80f2167e473ff22b11104">fOut</a> &amp;&amp; <a class="code hl_variable" href="classKernel_1_1IDeviceObject.html#a018c4e4ffc27849eb777d20aac60e864">fIn</a>; }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>

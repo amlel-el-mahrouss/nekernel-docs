@@ -10,6 +10,7 @@ var ProcessCodes_8h =
     [ "kErrorDisk", "ProcessCodes_8h.html#a331829dce19eca241a9e6a36bd8826e3", null ],
     [ "kErrorDiskIsCorrupted", "ProcessCodes_8h.html#a63955b6c54a0c4fa71153222a682493b", null ],
     [ "kErrorDiskIsFull", "ProcessCodes_8h.html#a682efc4b72dcaeca3e71298e46523edc", null ],
+    [ "kErrorDiskIsTooTiny", "ProcessCodes_8h.html#a32c5f261827494ce22feb5504c2ce84c", null ],
     [ "kErrorDiskReadOnly", "ProcessCodes_8h.html#ae91f201f48f5192a85c944776fb78720", null ],
     [ "kErrorExecutable", "ProcessCodes_8h.html#a5992f648e1c706860c9eb25bb12d539c", null ],
     [ "kErrorExecutableLib", "ProcessCodes_8h.html#a5c60d830883e087df30a2ac90f448edb", null ],

@@ -18,5 +18,6 @@ var Utils_8cc =
     [ "rt_to_lower", "Utils_8cc.html#aaafcf0ece21a51bc142e5d43da5654da", null ],
     [ "rt_to_string", "Utils_8cc.html#ae5e8137e36fca427b59b0e8fb07eea3a", null ],
     [ "rt_to_uppercase", "Utils_8cc.html#afe6a25104090afb143ef3811237fbb40", null ],
-    [ "rt_zero_memory", "Utils_8cc.html#a1b4831b13185ef765af5cd66d1747148", null ]
+    [ "rt_zero_memory", "Utils_8cc.html#a1b4831b13185ef765af5cd66d1747148", null ],
+    [ "strcmp", "Utils_8cc.html#ad7dafcecf533b55e5773df37e59ab50c", null ]
 ];

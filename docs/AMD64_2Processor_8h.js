@@ -42,6 +42,7 @@ var AMD64_2Processor_8h =
     [ "idt_handle_math", "AMD64_2Processor_8h.html#ab4c1ea631a29633aa3014a265eb7f909", null ],
     [ "idt_handle_pf", "AMD64_2Processor_8h.html#abe8eaa620233105178b55ed9139cd621", null ],
     [ "mm_map_page", "AMD64_2Processor_8h.html#afebb7d01ea9b86a4b1b9822e09071c67", null ],
+    [ "mm_memory_fence", "AMD64_2Processor_8h.html#ad627503a26fe29846ed83730aa2f36dd", null ],
     [ "mp_init_cores", "AMD64_2Processor_8h.html#ab49a6be9c0d68e9bb13675d5378d6343", null ],
     [ "mp_is_smp", "AMD64_2Processor_8h.html#ae5752db137e33c983d1bc5a68aa6e892", null ],
     [ "rt_cld", "AMD64_2Processor_8h.html#ac7d132be7849daa833d6c13149af2fb4", null ],

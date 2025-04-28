@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -109,6 +110,7 @@ $(document).ready(function(){initNavTree('AHCI_09Generic_8cc.html',''); initResi
 <code>#include &lt;<a class="el" href="ProcessScheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="NewKit_2Utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kernel_2StorageKit_2AHCI_8h_source.html">StorageKit/AHCI.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="DmaPool_8h_source.html">StorageKit/DmaPool.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="modules_2AHCI_2AHCI_8h_source.html">modules/AHCI/AHCI.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="modules_2ATA_2ATA_8h_source.html">modules/ATA/ATA.h</a>&gt;</code><br />
 </div><table class="memberdecls">
@@ -158,7 +160,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab8b8dc8469414e865471bdbfeaad4206" id="r_ab8b8dc8469414e865471bdbfeaad4206"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Write, <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CommandOrCTRL, <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Identify&gt; </td></tr>
+<tr class="memitem:a0a3670d51fe96230509a7954eccf118f" id="r_a0a3670d51fe96230509a7954eccf118f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a0a3670d51fe96230509a7954eccf118f">ALIGN</a> (<a class="el" href="kernel_2NewKit_2Macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(4)) <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kIdentifyData[<a class="el" href="modules_2AHCI_2AHCI_8h.html#a84d4845ed5b2748f0406bdb131d4da7a">kAHCISectorSize</a>]</td></tr>
+<tr class="separator:a0a3670d51fe96230509a7954eccf118f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b8dc8469414e865471bdbfeaad4206" id="r_ab8b8dc8469414e865471bdbfeaad4206"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Write, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CommandOrCTRL, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Identify&gt; </td></tr>
 <tr class="memitem:ab8b8dc8469414e865471bdbfeaad4206"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#ab8b8dc8469414e865471bdbfeaad4206">drv_std_input_output_ahci</a> (<a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> lba, <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *buffer, <a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> sector_sz, <a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size_buffer) noexcept</td></tr>
 <tr class="memdesc:ab8b8dc8469414e865471bdbfeaad4206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an AHCI command, according to the template parameters.  <br /></td></tr>
 <tr class="separator:ab8b8dc8469414e865471bdbfeaad4206"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,22 +170,25 @@ Functions</h2></td></tr>
 <tr class="memdesc:a81793346f8465f747d5174aa7c5f3305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a command slot for a HBA port.  <br /></td></tr>
 <tr class="separator:a81793346f8465f747d5174aa7c5f3305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67852af44304f7a502bc211ad0701db2" id="r_a67852af44304f7a502bc211ad0701db2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a67852af44304f7a502bc211ad0701db2">drv_compute_disk_ahci</a> () noexcept</td></tr>
+<tr class="memdesc:a67852af44304f7a502bc211ad0701db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify device and read LBA info, Disk OEM vendor...  <br /></td></tr>
 <tr class="separator:a67852af44304f7a502bc211ad0701db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a136757d634973d03e56b19e603cc88a0" id="r_a136757d634973d03e56b19e603cc88a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a136757d634973d03e56b19e603cc88a0">drv_get_sector_count_ahci</a> ()</td></tr>
 <tr class="separator:a136757d634973d03e56b19e603cc88a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79095a2620dbea433239656bec8aab3d" id="r_a79095a2620dbea433239656bec8aab3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a79095a2620dbea433239656bec8aab3d">drv_get_size_ahci</a> ()</td></tr>
 <tr class="memdesc:a79095a2620dbea433239656bec8aab3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the drive size.  <br /></td></tr>
 <tr class="separator:a79095a2620dbea433239656bec8aab3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38329190ca6e876c73403c2e83216c49" id="r_a38329190ca6e876c73403c2e83216c49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a38329190ca6e876c73403c2e83216c49">ahci_enable_and_probe</a> ()</td></tr>
+<tr class="memitem:a38329190ca6e876c73403c2e83216c49" id="r_a38329190ca6e876c73403c2e83216c49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a38329190ca6e876c73403c2e83216c49">ahci_enable_and_probe</a> ()</td></tr>
 <tr class="memdesc:a38329190ca6e876c73403c2e83216c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Host and probe using the IDENTIFY command.  <br /></td></tr>
 <tr class="separator:a38329190ca6e876c73403c2e83216c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf101e92a70ac5e67b6e7823ffc9152a" id="r_abf101e92a70ac5e67b6e7823ffc9152a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#abf101e92a70ac5e67b6e7823ffc9152a">drv_std_init_ahci</a> (<a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;pi, <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> &amp;atapi)</td></tr>
+<tr class="memitem:a22af5797b4a4776794a0b7f5684705c4" id="r_a22af5797b4a4776794a0b7f5684705c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a22af5797b4a4776794a0b7f5684705c4">drv_init_command_structures_ahci</a> ()</td></tr>
+<tr class="separator:a22af5797b4a4776794a0b7f5684705c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf101e92a70ac5e67b6e7823ffc9152a" id="r_abf101e92a70ac5e67b6e7823ffc9152a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#abf101e92a70ac5e67b6e7823ffc9152a">drv_std_init_ahci</a> (<a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;pi, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> &amp;atapi)</td></tr>
 <tr class="memdesc:abf101e92a70ac5e67b6e7823ffc9152a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an AHCI disk.  <br /></td></tr>
 <tr class="separator:abf101e92a70ac5e67b6e7823ffc9152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581628e54347deeee3e90542cb2e5c35" id="r_a581628e54347deeee3e90542cb2e5c35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a581628e54347deeee3e90542cb2e5c35">drv_std_detected_ahci</a> ()</td></tr>
 <tr class="memdesc:a581628e54347deeee3e90542cb2e5c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an AHCI device is detected.  <br /></td></tr>
 <tr class="separator:a581628e54347deeee3e90542cb2e5c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f72e96134d47a24bad09cdea3222847" id="r_a1f72e96134d47a24bad09cdea3222847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1f72e96134d47a24bad09cdea3222847">Kernel::sk_init_ahci_device</a> (<a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> atapi)</td></tr>
+<tr class="memitem:a1f72e96134d47a24bad09cdea3222847" id="r_a1f72e96134d47a24bad09cdea3222847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1f72e96134d47a24bad09cdea3222847">Kernel::sk_init_ahci_device</a> (<a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> atapi)</td></tr>
 <tr class="memdesc:a1f72e96134d47a24bad09cdea3222847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an AHCI device (StorageKit)  <br /></td></tr>
 <tr class="separator:a1f72e96134d47a24bad09cdea3222847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5309d5033bbee2c09242d9bc1a9249a" id="r_af5309d5033bbee2c09242d9bc1a9249a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1Detail.html#af5309d5033bbee2c09242d9bc1a9249a">Kernel::Detail::sk_io_read_ahci</a> (<a class="el" href="classKernel_1_1IDeviceObject.html">IDeviceObject</a>&lt; <a class="el" href="classKernel_1_1MountpointInterface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="classKernel_1_1MountpointInterface.html">MountpointInterface</a> *mnt)</td></tr>
@@ -448,7 +455,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> ahci_enable_and_probe </td>
+          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> ahci_enable_and_probe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -457,6 +464,24 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enable Host and probe using the IDENTIFY command. </p>
+
+</div>
+</div>
+<a id="a0a3670d51fe96230509a7954eccf118f" name="a0a3670d51fe96230509a7954eccf118f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3670d51fe96230509a7954eccf118f">&#9670;&#160;</a></span>ALIGN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> ALIGN </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(4)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -482,11 +507,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Normally 512 bytes, but add an additional 512 bytes to make 1 KIB.</p>
-<p>Push it to the stack</p>
-<p>Send AHCI command for identification.</p>
+
+<p>Identify device and read LBA info, Disk OEM vendor... </p>
 <p>Extract 48-bit LBA.</p>
-<p>Now verify if lba48</p>
 
 </div>
 </div>
@@ -562,6 +585,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a22af5797b4a4776794a0b7f5684705c4" name="a22af5797b4a4776794a0b7f5684705c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22af5797b4a4776794a0b7f5684705c4">&#9670;&#160;</a></span>drv_init_command_structures_ahci()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> drv_init_command_structures_ahci </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a581628e54347deeee3e90542cb2e5c35" name="a581628e54347deeee3e90542cb2e5c35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a581628e54347deeee3e90542cb2e5c35">&#9670;&#160;</a></span>drv_std_detected_ahci()</h2>
 
@@ -597,7 +637,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> &amp;&#160;</td>
           <td class="paramname"><em>atapi</em>&#160;</td>
         </tr>
         <tr>
@@ -626,7 +666,7 @@ Variables</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Write, <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CommandOrCTRL, <a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Identify&gt; </div>
+template&lt;<a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Write, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CommandOrCTRL, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Identify&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -678,9 +718,6 @@ template&lt;<a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">B
   </table>
   </dd>
 </dl>
-<p>prepare command header.</p>
-<p>Offset to specific command slot.</p>
-<p>check for command header.</p>
 
 </div>
 </div>

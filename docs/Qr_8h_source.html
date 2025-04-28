@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -510,7 +511,7 @@ $(document).ready(function(){initNavTree('Qr_8h_source.html',''); initResizable(
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>      buf[1] = data[i + 1];</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>      buf[2] = data[i + 2];</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>      uint16_t num = <a class="code hl_function" href="Support_8h.html#af25309cafd06a4e5d3dcefba4e156acd">StringToLong</a>(buf, <a class="code hl_define" href="ddk_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 10);</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>      uint16_t num = <a class="code hl_function" href="Support_8h.html#af25309cafd06a4e5d3dcefba4e156acd">StringToLong</a>(buf, <a class="code hl_define" href="macros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 10);</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>      <a class="code hl_function" href="namespaceqr.html#ad69f7ce82d6becb24c34c1904cfcf4d3">add_bits</a>(num, 10, out, pos);</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    }</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
@@ -519,7 +520,7 @@ $(document).ready(function(){initNavTree('Qr_8h_source.html',''); initResizable(
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>      buf[1]   = data[triplets_size + 1];</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>      buf[rem] = 0;</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>      uint16_t num = <a class="code hl_function" href="Support_8h.html#af25309cafd06a4e5d3dcefba4e156acd">StringToLong</a>(buf, <a class="code hl_define" href="ddk_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 10);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>      uint16_t num = <a class="code hl_function" href="Support_8h.html#af25309cafd06a4e5d3dcefba4e156acd">StringToLong</a>(buf, <a class="code hl_define" href="macros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 10);</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>      <a class="code hl_function" href="namespaceqr.html#ad69f7ce82d6becb24c34c1904cfcf4d3">add_bits</a>(num, rem_bits, out, pos);</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    }</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode == <a class="code hl_enumvalue" href="namespaceqr.html#a3310a533383c4dbf029cc201f27daba5af636347b3d6f5176e868eb508d953c37">M_ALPHANUMERIC</a>) {</div>
@@ -978,8 +979,8 @@ $(document).ready(function(){initNavTree('Qr_8h_source.html',''); initResizable(
 <div class="ttc" id="aclassqr_1_1QrDelegate_html_a0342aef47d459c32076b53d082e98672"><div class="ttname"><a href="classqr_1_1QrDelegate.html#a0342aef47d459c32076b53d082e98672">qr::QrDelegate::~QrDelegate</a></div><div class="ttdeci">~QrDelegate()=default</div></div>
 <div class="ttc" id="aclassqr_1_1QrDelegate_html_a1b5f0ba642703957cface508e82e551a"><div class="ttname"><a href="classqr_1_1QrDelegate.html#a1b5f0ba642703957cface508e82e551a">qr::QrDelegate::QrDelegate</a></div><div class="ttdeci">QrDelegate()=default</div></div>
 <div class="ttc" id="aclassqr_1_1QrDelegate_html_a2b625dfea22f60d2b857f7691148ca2f"><div class="ttname"><a href="classqr_1_1QrDelegate.html#a2b625dfea22f60d2b857f7691148ca2f">qr::QrDelegate::draw</a></div><div class="ttdeci">bool draw(Qr&lt; V &gt; &amp;subject, Int32 x, Int32 y) noexcept</div><div class="ttdoc">Draw method delegate.</div><div class="ttdef"><b>Definition</b> Qr.h:787</div></div>
-<div class="ttc" id="addk_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="ddk_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> ddk.h:31</div></div>
 <div class="ttc" id="akernel_2NewKit_2Macros_8h_html_a52d6f67c629ccece695186d3ccceba54"><div class="ttname"><a href="kernel_2NewKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a></div><div class="ttdeci">#define RGB(R, G, B)</div><div class="ttdef"><b>Definition</b> Macros.h:120</div></div>
+<div class="ttc" id="amacros_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="macros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> macros.h:31</div></div>
 <div class="ttc" id="anamespaceKernel_1_1Qr_html"><div class="ttname"><a href="namespaceKernel_1_1Qr.html">Kernel::Qr</a></div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
 <div class="ttc" id="anamespaceKernel_html_a8fbad4cd517f76cba246c3c170de141d"><div class="ttname"><a href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a></div><div class="ttdeci">int Int32</div><div class="ttdef"><b>Definition</b> Defines.h:38</div></div>
 <div class="ttc" id="anamespaceqr_html"><div class="ttname"><a href="namespaceqr.html">qr</a></div><div class="ttdef"><b>Definition</b> Qr.h:15</div></div>

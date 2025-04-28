@@ -42,6 +42,7 @@ var namespaceKernel_1_1HAL =
     [ "mm_free_bitmap", "namespaceKernel_1_1HAL.html#ad6ccb1cd68f687229cb57f8326f780c4", null ],
     [ "mm_is_bitmap", "namespaceKernel_1_1HAL.html#ac31e41dbca9a0caad492484ce4d99fca", null ],
     [ "mm_map_page", "namespaceKernel_1_1HAL.html#afebb7d01ea9b86a4b1b9822e09071c67", null ],
+    [ "mm_memory_fence", "namespaceKernel_1_1HAL.html#ad627503a26fe29846ed83730aa2f36dd", null ],
     [ "mmi_map_page_table_entry", "namespaceKernel_1_1HAL.html#a190d562ce4abceab0c788cf9e7fb397e", null ],
     [ "mmi_page_status", "namespaceKernel_1_1HAL.html#a47f3770483cefaffb7992c1c190fd2d8", null ],
     [ "mmi_page_status", "namespaceKernel_1_1HAL.html#aca47cf17fa416750f7269e2dffc7bf7b", null ],

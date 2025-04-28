@@ -59,6 +59,7 @@ var NeFS_8h =
     [ "kNeFSUpDir", "NeFS_8h.html#a47f31c7a1d415d074c699e26a762656a", null ],
     [ "kNeFSVerionString", "NeFS_8h.html#a643f45130215fd1e3435cb632d44af15", null ],
     [ "kNeFSVersionInteger", "NeFS_8h.html#a61176cf58288663dd7c6cd9e060aa945", null ],
+    [ "kNeFSVolumeName", "NeFS_8h.html#a3db2b5c6d59d9c7e13b3ed5818ec8f5e", null ],
     [ "kResourceTypeDialog", "NeFS_8h.html#af8da24d04751dd8508c346929085faef", null ],
     [ "kResourceTypeFont", "NeFS_8h.html#acccac8730375e914351759fb12ff53fd", null ],
     [ "kResourceTypeMenu", "NeFS_8h.html#a86a7957445741df9a771b7d3d7f328f0", null ],

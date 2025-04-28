@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -121,7 +122,7 @@ $(document).ready(function(){initNavTree('Support_8h_source.html',''); initResiz
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <span class="keywordtype">size_t</span> strlen(<span class="keyword">const</span> <span class="keywordtype">char</span>* whatToCheck);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <span class="keywordtype">int</span> strcmp(<span class="keyword">const</span> <span class="keywordtype">char</span>* whatToCheck, <span class="keyword">const</span> <span class="keywordtype">char</span>* whatToCheckRight);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <span class="keywordtype">int</span> <a class="code hl_function" href="Utils_8cc.html#ad7dafcecf533b55e5773df37e59ab50c">strcmp</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* whatToCheck, <span class="keyword">const</span> <span class="keywordtype">char</span>* whatToCheckRight);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
@@ -239,8 +240,9 @@ $(document).ready(function(){initNavTree('Support_8h_source.html',''); initResiz
 <div class="ttc" id="aSupport_8h_html_aa10455525824bb5621cc368eca3a2917"><div class="ttname"><a href="Support_8h.html#aa10455525824bb5621cc368eca3a2917">kLongMax</a></div><div class="ttdeci">#define kLongMax</div><div class="ttdef"><b>Definition</b> Support.h:16</div></div>
 <div class="ttc" id="aSupport_8h_html_aef7774b2687fbab911d020871002c67c"><div class="ttname"><a href="Support_8h.html#aef7774b2687fbab911d020871002c67c">kLongMin</a></div><div class="ttdeci">#define kLongMin</div><div class="ttdef"><b>Definition</b> Support.h:17</div></div>
 <div class="ttc" id="aSupport_8h_html_af25309cafd06a4e5d3dcefba4e156acd"><div class="ttname"><a href="Support_8h.html#af25309cafd06a4e5d3dcefba4e156acd">StringToLong</a></div><div class="ttdeci">long StringToLong(const char *nptr, char **endptr, int base)</div><div class="ttdef"><b>Definition</b> Support.h:65</div></div>
-<div class="ttc" id="aUtils_8cc_html_a53393f40237f7cca6734f3125e091645"><div class="ttname"><a href="Utils_8cc.html#a53393f40237f7cca6734f3125e091645">memset</a></div><div class="ttdeci">EXTERN_C void * memset(void *dst, int c, long long unsigned int len)</div><div class="ttdef"><b>Definition</b> Utils.cc:182</div></div>
-<div class="ttc" id="aUtils_8cc_html_a6d599daed06e994ca9485249d295d7ad"><div class="ttname"><a href="Utils_8cc.html#a6d599daed06e994ca9485249d295d7ad">memcpy</a></div><div class="ttdeci">EXTERN_C void * memcpy(void *dst, const void *src, long long unsigned int len)</div><div class="ttdef"><b>Definition</b> Utils.cc:186</div></div>
+<div class="ttc" id="aUtils_8cc_html_a53393f40237f7cca6734f3125e091645"><div class="ttname"><a href="Utils_8cc.html#a53393f40237f7cca6734f3125e091645">memset</a></div><div class="ttdeci">EXTERN_C void * memset(void *dst, int c, long long unsigned int len)</div><div class="ttdef"><b>Definition</b> Utils.cc:184</div></div>
+<div class="ttc" id="aUtils_8cc_html_a6d599daed06e994ca9485249d295d7ad"><div class="ttname"><a href="Utils_8cc.html#a6d599daed06e994ca9485249d295d7ad">memcpy</a></div><div class="ttdeci">EXTERN_C void * memcpy(void *dst, const void *src, long long unsigned int len)</div><div class="ttdef"><b>Definition</b> Utils.cc:188</div></div>
+<div class="ttc" id="aUtils_8cc_html_ad7dafcecf533b55e5773df37e59ab50c"><div class="ttname"><a href="Utils_8cc.html#ad7dafcecf533b55e5773df37e59ab50c">strcmp</a></div><div class="ttdeci">EXTERN_C Kernel::Int32 strcmp(const char *dst, const char *src)</div><div class="ttdef"><b>Definition</b> Utils.cc:193</div></div>
 <div class="ttc" id="akernel_2NewKit_2Macros_8h_html_abbaccfbed35b945162c27ef6d3748e77"><div class="ttname"><a href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a></div><div class="ttdeci">#define EXTERN_C</div><div class="ttdef"><b>Definition</b> Macros.h:70</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

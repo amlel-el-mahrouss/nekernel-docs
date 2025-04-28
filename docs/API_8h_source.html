@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -128,14 +129,14 @@ $(document).ready(function(){initNavTree('API_8h_source.html',''); initResizable
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="API_8h.html#a67af7de1a62f48363917e0d14fbf2dc1">   29</a></span><span class="keyword">inline</span> <a class="code hl_struct" href="structEfiBootServices.html">EfiBootServices</a>* <a class="code hl_variable" href="API_8h.html#a67af7de1a62f48363917e0d14fbf2dc1">BS</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="API_8h.html#a12e982db5e3c511132fa1479d1d447ec">   31</a></span><a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <span class="keywordtype">void</span> <a class="code hl_function" href="API_8h.html#a12e982db5e3c511132fa1479d1d447ec">rt_cli</a>();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <span class="keywordtype">void</span> <a class="code hl_function" href="API_8h.html#a64a53c31476ac8a8ffdd2a678c53c837">rt_hlt</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="API_8h.html#afb28b743ca08d44d7cb3cffb11ec098e">   32</a></span><a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <span class="keywordtype">void</span> <a class="code hl_function" href="API_8h.html#afb28b743ca08d44d7cb3cffb11ec098e">rt_halt</a>();</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBoot.html">Boot</a> {</div>
 <div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespaceBoot.html#a8b0bee034f9cce36874019301bc2ac40">   37</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> <a class="code hl_function" href="namespaceBoot.html#a8b0bee034f9cce36874019301bc2ac40">Stop</a>() noexcept {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">while</span> (<a class="code hl_define" href="ddk_8h.html#a7ebc9a785e5ab85457c98595aac81589">YES</a>) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">while</span> (<a class="code hl_define" href="macros_8h.html#a7ebc9a785e5ab85457c98595aac81589">YES</a>) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="API_8h.html#a12e982db5e3c511132fa1479d1d447ec">rt_cli</a>();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="AMD64_2BootPlatform_8cc.html#a4e5fc109991d7736ddadd761b0a24113">rt_hlt</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="API_8h.html#afb28b743ca08d44d7cb3cffb11ec098e">rt_halt</a>();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 </div>
@@ -192,12 +193,11 @@ $(document).ready(function(){initNavTree('API_8h_source.html',''); initResizable
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef __BOOTZ__</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif </span><span class="comment">/* ifndef __EFI_API__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aAMD64_2BootPlatform_8cc_html_a4e5fc109991d7736ddadd761b0a24113"><div class="ttname"><a href="AMD64_2BootPlatform_8cc.html#a4e5fc109991d7736ddadd761b0a24113">rt_hlt</a></div><div class="ttdeci">void rt_hlt()</div><div class="ttdef"><b>Definition</b> BootPlatform.cc:40</div></div>
 <div class="ttc" id="aAPI_8h_html_a12e982db5e3c511132fa1479d1d447ec"><div class="ttname"><a href="API_8h.html#a12e982db5e3c511132fa1479d1d447ec">rt_cli</a></div><div class="ttdeci">EXTERN_C void rt_cli()</div></div>
 <div class="ttc" id="aAPI_8h_html_a147557aebdc51423b15e02788fcf7c31"><div class="ttname"><a href="API_8h.html#a147557aebdc51423b15e02788fcf7c31">fw_init_efi</a></div><div class="ttdeci">void fw_init_efi(EfiSystemTable *SystemTable) noexcept</div><div class="ttdef"><b>Definition</b> API.h:78</div></div>
 <div class="ttc" id="aAPI_8h_html_a4a3d7a685d6b337c5a9b8f6b9ac45da8"><div class="ttname"><a href="API_8h.html#a4a3d7a685d6b337c5a9b8f6b9ac45da8">ST</a></div><div class="ttdeci">EfiSystemTable * ST</div><div class="ttdef"><b>Definition</b> API.h:28</div></div>
-<div class="ttc" id="aAPI_8h_html_a64a53c31476ac8a8ffdd2a678c53c837"><div class="ttname"><a href="API_8h.html#a64a53c31476ac8a8ffdd2a678c53c837">rt_hlt</a></div><div class="ttdeci">EXTERN_C void rt_hlt()</div><div class="ttdef"><b>Definition</b> BootPlatform.cc:40</div></div>
 <div class="ttc" id="aAPI_8h_html_a67af7de1a62f48363917e0d14fbf2dc1"><div class="ttname"><a href="API_8h.html#a67af7de1a62f48363917e0d14fbf2dc1">BS</a></div><div class="ttdeci">EfiBootServices * BS</div><div class="ttdef"><b>Definition</b> API.h:29</div></div>
+<div class="ttc" id="aAPI_8h_html_afb28b743ca08d44d7cb3cffb11ec098e"><div class="ttname"><a href="API_8h.html#afb28b743ca08d44d7cb3cffb11ec098e">rt_halt</a></div><div class="ttdeci">EXTERN_C void rt_halt()</div></div>
 <div class="ttc" id="aBootKit_8h_html"><div class="ttname"><a href="BootKit_8h.html">BootKit.h</a></div><div class="ttdoc">Bootloader Application Programming Interface.</div></div>
 <div class="ttc" id="aCoreGfx_8h_html"><div class="ttname"><a href="CoreGfx_8h.html">CoreGfx.h</a></div></div>
 <div class="ttc" id="aEFI_2EFI_8h_html"><div class="ttname"><a href="EFI_2EFI_8h.html">EFI.h</a></div></div>
@@ -207,8 +207,8 @@ $(document).ready(function(){initNavTree('API_8h_source.html',''); initResizable
 <div class="ttc" id="aPE_8h_html"><div class="ttname"><a href="PE_8h.html">PE.h</a></div></div>
 <div class="ttc" id="aPE_8h_html_a034e3c688c72b793a7f2b52812b2e5bc"><div class="ttname"><a href="PE_8h.html#a034e3c688c72b793a7f2b52812b2e5bc">kPeMachineAMD64</a></div><div class="ttdeci">#define kPeMachineAMD64</div><div class="ttdef"><b>Definition</b> PE.h:24</div></div>
 <div class="ttc" id="aPlatform_8h_html"><div class="ttname"><a href="Platform_8h.html">Platform.h</a></div><div class="ttdoc">Platform specific code.</div></div>
-<div class="ttc" id="addk_8h_html_a7ebc9a785e5ab85457c98595aac81589"><div class="ttname"><a href="ddk_8h.html#a7ebc9a785e5ab85457c98595aac81589">YES</a></div><div class="ttdeci">#define YES</div><div class="ttdef"><b>Definition</b> ddk.h:26</div></div>
 <div class="ttc" id="akernel_2NewKit_2Macros_8h_html_abbaccfbed35b945162c27ef6d3748e77"><div class="ttname"><a href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a></div><div class="ttdeci">#define EXTERN_C</div><div class="ttdef"><b>Definition</b> Macros.h:70</div></div>
+<div class="ttc" id="amacros_8h_html_a7ebc9a785e5ab85457c98595aac81589"><div class="ttname"><a href="macros_8h.html#a7ebc9a785e5ab85457c98595aac81589">YES</a></div><div class="ttdeci">#define YES</div><div class="ttdef"><b>Definition</b> macros.h:26</div></div>
 <div class="ttc" id="anamespaceBoot_html"><div class="ttname"><a href="namespaceBoot.html">Boot</a></div><div class="ttdoc">Framebuffer helpers.</div><div class="ttdef"><b>Definition</b> BootKit.h:42</div></div>
 <div class="ttc" id="anamespaceBoot_html_a219033067ceb1ad089818c762d1dfb65"><div class="ttname"><a href="namespaceBoot.html#a219033067ceb1ad089818c762d1dfb65">Boot::Platform</a></div><div class="ttdeci">UInt32 Platform() noexcept</div><div class="ttdef"><b>Definition</b> API.h:54</div></div>
 <div class="ttc" id="anamespaceBoot_html_a770cf51bd60eaa15b9a35af8f2b5bc3b"><div class="ttname"><a href="namespaceBoot.html#a770cf51bd60eaa15b9a35af8f2b5bc3b">Boot::ThrowError</a></div><div class="ttdeci">EXTERN void ThrowError(const WideChar *errorCode, const WideChar *reason) noexcept</div><div class="ttdef"><b>Definition</b> API.h:63</div></div>

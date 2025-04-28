@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -115,8 +116,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac913d8061e4ed4282ac2b0d5614a02e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a357572177bdc47e0bb7c8d2ee35854a5" id="r_a357572177bdc47e0bb7c8d2ee35854a5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#a357572177bdc47e0bb7c8d2ee35854a5">s_group_id</a></td></tr>
 <tr class="separator:a357572177bdc47e0bb7c8d2ee35854a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8eca32afc2a7ee5b53ded1e1e3b27b4" id="r_ac8eca32afc2a7ee5b53ded1e1e3b27b4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#ac8eca32afc2a7ee5b53ded1e1e3b27b4">s_object</a></td></tr>
-<tr class="separator:ac8eca32afc2a7ee5b53ded1e1e3b27b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba46ae71b61dbb738ea9a90904e71063" id="r_aba46ae71b61dbb738ea9a90904e71063"><td class="memItemLeft" align="right" valign="top">struct DDK_OBJECT_MANIFEST *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#aba46ae71b61dbb738ea9a90904e71063">s_object</a></td></tr>
+<tr class="separator:aba46ae71b61dbb738ea9a90904e71063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af14d29ebddd44f8ea0a657604b62a847" id="r_af14d29ebddd44f8ea0a657604b62a847"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#af14d29ebddd44f8ea0a657604b62a847">d_name</a> [<a class="el" href="dev_8h.html#aa3295d9adad766a7bfaaa012c133c313">DDK_DEVICE_NAME_LEN</a>]</td></tr>
 <tr class="separator:af14d29ebddd44f8ea0a657604b62a847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dca1ea1fa294c6680b4744270849760" id="r_a4dca1ea1fa294c6680b4744270849760"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#a4dca1ea1fa294c6680b4744270849760">d_read</a> )(void *arg, int len)</td></tr>
@@ -129,6 +130,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab87ac645bc8fea772ce3a7ecac957281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a5e448b729e7f3f06cd56c956f9a24" id="r_a42a5e448b729e7f3f06cd56c956f9a24"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#a42a5e448b729e7f3f06cd56c956f9a24">d_close</a> )(struct _DDK_DEVICE *dev)</td></tr>
 <tr class="separator:a42a5e448b729e7f3f06cd56c956f9a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76504529767febf5b331eb6480248f21" id="r_a76504529767febf5b331eb6480248f21"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#a76504529767febf5b331eb6480248f21">d_seek</a> )(struct _DDK_DEVICE *dev, <a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a> off)</td></tr>
+<tr class="separator:a76504529767febf5b331eb6480248f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a38efac3aaec87d50bcaf467adf2442" id="r_a2a38efac3aaec87d50bcaf467adf2442"><td class="memItemLeft" align="right" valign="top"><a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDDK__FINAL.html#a2a38efac3aaec87d50bcaf467adf2442">d_tell</a> )(struct _DDK_DEVICE *dev)</td></tr>
+<tr class="separator:a2a38efac3aaec87d50bcaf467adf2442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Object handle manifest. </p>
@@ -185,6 +190,34 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void *(* DDK_FINAL::d_read) (void *arg, int len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76504529767febf5b331eb6480248f21" name="a76504529767febf5b331eb6480248f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76504529767febf5b331eb6480248f21">&#9670;&#160;</a></span>d_seek</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* DDK_FINAL::d_seek) (struct _DDK_DEVICE *dev, <a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a> off)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a38efac3aaec87d50bcaf467adf2442" name="a2a38efac3aaec87d50bcaf467adf2442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a38efac3aaec87d50bcaf467adf2442">&#9670;&#160;</a></span>d_tell</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a>(* DDK_FINAL::d_tell) (struct _DDK_DEVICE *dev)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -303,14 +336,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac8eca32afc2a7ee5b53ded1e1e3b27b4" name="ac8eca32afc2a7ee5b53ded1e1e3b27b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8eca32afc2a7ee5b53ded1e1e3b27b4">&#9670;&#160;</a></span>s_object</h2>
+<a id="aba46ae71b61dbb738ea9a90904e71063" name="aba46ae71b61dbb738ea9a90904e71063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba46ae71b61dbb738ea9a90904e71063">&#9670;&#160;</a></span>s_object</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* DDK_FINAL::s_object</td>
+          <td class="memname">struct DDK_OBJECT_MANIFEST* DDK_FINAL::s_object</td>
         </tr>
       </table>
 </div><div class="memdoc">

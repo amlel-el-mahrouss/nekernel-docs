@@ -1,15 +1,6 @@
 var ddk_8h =
 [
     [ "DDK_FINAL", "structDDK__FINAL.html", "structDDK__FINAL" ],
-    [ "ATTRIBUTE", "ddk_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5", null ],
-    [ "BOOL", "ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa", null ],
-    [ "DDK_EXTERN", "ddk_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba", null ],
-    [ "DDK_EXTERN", "ddk_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba", null ],
-    [ "DDK_FINAL", "ddk_8h.html#adef9f344af60c2452c67598f97d11904", null ],
-    [ "nil", "ddk_8h.html#a7a7ca81d2a85873283b5ec82953b1b25", null ],
-    [ "NO", "ddk_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5", null ],
-    [ "NULL", "ddk_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4", null ],
-    [ "YES", "ddk_8h.html#a7ebc9a785e5ab85457c98595aac81589", null ],
     [ "kalloc", "ddk_8h.html#a3846a7dd13e8ce2d288fcb7d54e76052", null ],
     [ "ke_add_syscall", "ddk_8h.html#a1d5f62254e7c1f833c5deb72a8916532", null ],
     [ "ke_call", "ddk_8h.html#ad5be25988d9d04cc388260a53c7453de", null ],

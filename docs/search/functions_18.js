@@ -32,7 +32,7 @@ var searchData=
   ['_7ehardwarethread_29',['~HardwareThread',['../classKernel_1_1HardwareThread.html#ab3aebf8cdf02eab2276ebd77821f4bba',1,'Kernel::HardwareThread']]],
   ['_7ehardwarethreadscheduler_30',['~HardwareThreadScheduler',['../classKernel_1_1HardwareThreadScheduler.html#a3681edd1231242efa3c0debd0d4e4583',1,'Kernel::HardwareThreadScheduler']]],
   ['_7ehardwaretimer_31',['~HardwareTimer',['../classKernel_1_1HardwareTimer.html#aec8d0f97c194e10a65f8c2feb22bc7ee',1,'Kernel::HardwareTimer']]],
-  ['_7ehefilesystemparser_32',['~HeFileSystemParser',['../classKernel_1_1HeFileSystemParser.html#a63131e405ccea8472bce0a35a925f052',1,'Kernel::HeFileSystemParser']]],
+  ['_7ehefilesystemparser_32',['~HeFileSystemParser',['../classKernel_1_1HeFS_1_1HeFileSystemParser.html#ac1e9340437573363f38c0012a1405fb7',1,'Kernel::HeFS::HeFileSystemParser']]],
   ['_7eibitmapproxy_33',['~IBitMapProxy',['../classKernel_1_1HAL_1_1Detail_1_1IBitMapProxy.html#aa8b209a024f0999477895569cb3f839f',1,'Kernel::HAL::Detail::IBitMapProxy']]],
   ['_7eicodec_34',['~ICodec',['../classKernel_1_1ICodec.html#a7f6b1b7f8a779f505de23f32ac41cdec',1,'Kernel::ICodec']]],
   ['_7eideviceobject_35',['~IDeviceObject',['../classKernel_1_1IDeviceObject.html#a5c5bb093745e95a73445698f70409f69',1,'Kernel::IDeviceObject']]],

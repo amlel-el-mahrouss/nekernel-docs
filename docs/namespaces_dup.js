@@ -18,6 +18,7 @@ var namespaces_dup =
       [ "image_path", "namespacemk__img.html#a192818c1387c58f1905ca13c3f9cffac", null ],
       [ "source_dir", "namespacemk__img.html#a57a7c693d1c901f1df79ac02c54c4ce8", null ]
     ] ],
+    [ "mkfs", "namespacemkfs.html", "namespacemkfs" ],
     [ "pfd", "namespacepfd.html", "namespacepfd" ],
     [ "qr", "namespaceqr.html", "namespaceqr" ],
     [ "UI", "namespaceUI.html", [
