@@ -5,5 +5,7 @@ var searchData=
   ['alignementmask_2',['alignementmask',['../namespaceKernel_1_1HAL_1_1Detail.html#a97ce83f9cb52a5936bd5956630c6d412acdfbee46b947c52e4d0aaecd1cafd4ea',1,'Kernel::HAL::Detail::AlignementMask'],['../namespaceKernel_1_1HAL_1_1Detail.html#a97ce83f9cb52a5936bd5956630c6d412acdfbee46b947c52e4d0aaecd1cafd4ea',1,'Kernel::HAL::Detail::AlignementMask'],['../namespaceKernel_1_1HAL_1_1Detail.html#a97ce83f9cb52a5936bd5956630c6d412acdfbee46b947c52e4d0aaecd1cafd4ea',1,'Kernel::HAL::Detail::AlignementMask'],['../namespaceKernel_1_1HAL_1_1Detail.html#a97ce83f9cb52a5936bd5956630c6d412acdfbee46b947c52e4d0aaecd1cafd4ea',1,'Kernel::HAL::Detail::AlignementMask']]],
   ['allocateaddress_3',['AllocateAddress',['../EFI_2EFI_8h.html#a72c499658fc12d830e27ae2db23324a8a925be7b9bb228f50488049bcd3343ed8',1,'EFI.h']]],
   ['allocateanypages_4',['AllocateAnyPages',['../EFI_2EFI_8h.html#a72c499658fc12d830e27ae2db23324a8aa3885c7caaabe9e43bafbfaae48ca49a',1,'EFI.h']]],
-  ['allocatemaxaddress_5',['AllocateMaxAddress',['../EFI_2EFI_8h.html#a72c499658fc12d830e27ae2db23324a8a04bb1bb7ae4b90da5ba22d4a19617003',1,'EFI.h']]]
+  ['allocatemaxaddress_5',['AllocateMaxAddress',['../EFI_2EFI_8h.html#a72c499658fc12d830e27ae2db23324a8a04bb1bb7ae4b90da5ba22d4a19617003',1,'EFI.h']]],
+  ['ansi_6',['Ansi',['../namespacerang.html#af70222b38ecff8fc5aef0958d052b433a0f94b628f89319fb787e49e325d8bac8',1,'rang']]],
+  ['auto_7',['auto',['../namespacerang.html#a9a0ad8048ed47f032f5bdb687ba64164a06b9281e396db002010bde1de57262eb',1,'rang::Auto'],['../namespacerang.html#af70222b38ecff8fc5aef0958d052b433a06b9281e396db002010bde1de57262eb',1,'rang::Auto']]]
 ];

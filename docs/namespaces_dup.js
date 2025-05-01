@@ -21,6 +21,7 @@ var namespaces_dup =
     [ "mkfs", "namespacemkfs.html", "namespacemkfs" ],
     [ "pfd", "namespacepfd.html", "namespacepfd" ],
     [ "qr", "namespaceqr.html", "namespaceqr" ],
+    [ "rang", "namespacerang.html", "namespacerang" ],
     [ "UI", "namespaceUI.html", [
       [ "fb_real_t", "namespaceUI.html#add1f2f2f1cebd31c67a22adf590d3542", null ],
       [ "fb_math_lerp", "namespaceUI.html#afa98a725532e675809b2059b36af5765", null ]

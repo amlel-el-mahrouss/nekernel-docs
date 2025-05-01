@@ -80,8 +80,9 @@ var searchData=
   ['efitime_77',['EfiTime',['../EFI_2EFI_8h.html#a5c07a5e31247cf481f24414f4465f41a',1,'EFI.h']]],
   ['efivirtualaddress_78',['EfiVirtualAddress',['../EFI_2EFI_8h.html#a78fc502dbd4362df30a0c241d1f17ee2',1,'EFI.h']]],
   ['efiwaitforevent_79',['EfiWaitForEvent',['../EFI_2EFI_8h.html#a09b7326201e98fa174ca581a54d1d324',1,'EFI.h']]],
-  ['epm_5fguid_80',['EPM_GUID',['../kernel_2FirmwareKit_2EPM_8h.html#a4d08a9ca3b695caf4113b6e13e291856',1,'EPM.h']]],
-  ['errororany_81',['ErrorOrAny',['../namespaceKernel.html#ae93d3ed63889cb9899feae5c3f489ebd',1,'Kernel']]],
-  ['errort_82',['ErrorT',['../namespaceKernel.html#a7c65ae6e6a2df84f4bab9ce133cc838d',1,'Kernel']]],
-  ['errref_83',['ErrRef',['../ProcessCodes_8h.html#a07cae73966b3677e49bad25770c45400',1,'ProcessCodes.h']]]
+  ['enablestd_80',['enableStd',['../namespacerang_1_1rang__implementation.html#a8d8b41181073c6e9ef8b412f9cb0081c',1,'rang::rang_implementation']]],
+  ['epm_5fguid_81',['EPM_GUID',['../kernel_2FirmwareKit_2EPM_8h.html#a4d08a9ca3b695caf4113b6e13e291856',1,'EPM.h']]],
+  ['errororany_82',['ErrorOrAny',['../namespaceKernel.html#ae93d3ed63889cb9899feae5c3f489ebd',1,'Kernel']]],
+  ['errort_83',['ErrorT',['../namespaceKernel.html#a7c65ae6e6a2df84f4bab9ce133cc838d',1,'Kernel']]],
+  ['errref_84',['ErrRef',['../ProcessCodes_8h.html#a07cae73966b3677e49bad25770c45400',1,'ProcessCodes.h']]]
 ];

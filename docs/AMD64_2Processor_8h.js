@@ -34,13 +34,13 @@ var AMD64_2Processor_8h =
     [ "SegmentArray", "AMD64_2Processor_8h.html#a5307b33b203457671876a78de0e37231", null ],
     [ "StackFramePtr", "AMD64_2Processor_8h.html#aba672fa291f54ca77d557633ee59c56b", null ],
     [ "hal_get_msr", "AMD64_2Processor_8h.html#a77f027d2195162f6bd7e41e62532c6e5", null ],
-    [ "hal_get_phys_address", "AMD64_2Processor_8h.html#a9e787ee93c6d25ed98b23ad1f0ff9a60", null ],
     [ "hal_has_msr", "AMD64_2Processor_8h.html#a0263d5b1a15a5bd7a77f03fd4fb72f17", null ],
     [ "hal_set_msr", "AMD64_2Processor_8h.html#aa5e151dde4e371a9c55074c4b067b51c", null ],
     [ "idt_handle_generic", "AMD64_2Processor_8h.html#a95dcb4c5114090aaf495b72d0e617717", null ],
     [ "idt_handle_gpf", "AMD64_2Processor_8h.html#aaf9f16fb747fc86a241402b88063d9ba", null ],
     [ "idt_handle_math", "AMD64_2Processor_8h.html#ab4c1ea631a29633aa3014a265eb7f909", null ],
     [ "idt_handle_pf", "AMD64_2Processor_8h.html#abe8eaa620233105178b55ed9139cd621", null ],
+    [ "mm_get_phys_address", "AMD64_2Processor_8h.html#a58bfdb0e21d1b8dcf2724ddf5d5a558d", null ],
     [ "mm_map_page", "AMD64_2Processor_8h.html#afebb7d01ea9b86a4b1b9822e09071c67", null ],
     [ "mm_memory_fence", "AMD64_2Processor_8h.html#ad627503a26fe29846ed83730aa2f36dd", null ],
     [ "mp_init_cores", "AMD64_2Processor_8h.html#ab49a6be9c0d68e9bb13675d5378d6343", null ],
@@ -58,5 +58,6 @@ var AMD64_2Processor_8h =
     [ "rt_sti", "AMD64_2Processor_8h.html#ad0537e807031622fec2edc577e7fc4ee", null ],
     [ "rt_wait_400ns", "AMD64_2Processor_8h.html#a53e20308b7ee15a98d49dcfe86094545", null ],
     [ "kKernelBitMpSize", "AMD64_2Processor_8h.html#a26c2b89fe4c1a68fc758344835a4afb5", null ],
-    [ "kKernelBitMpStart", "AMD64_2Processor_8h.html#a51b055ea583f6a02de33149dba52d29e", null ]
+    [ "kKernelBitMpStart", "AMD64_2Processor_8h.html#a51b055ea583f6a02de33149dba52d29e", null ],
+    [ "kKernelCR3", "AMD64_2Processor_8h.html#aef07eec1c57ae8b9084f262a3a44a061", null ]
 ];

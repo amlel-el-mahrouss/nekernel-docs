@@ -30,6 +30,7 @@ var classKernel_1_1USER__PROCESS =
     [ "ParentTeam", "classKernel_1_1USER__PROCESS.html#afcceda7a1766a1442096e92ceac9ae69", null ],
     [ "ProcessId", "classKernel_1_1USER__PROCESS.html#aa1c16e345c72a12b99251390c1ba39fe", null ],
     [ "PTime", "classKernel_1_1USER__PROCESS.html#a19f6ec44845982d128928fd84fdf011c", null ],
+    [ "RTime", "classKernel_1_1USER__PROCESS.html#a606c90bc1419ee14aa825c58c0f131cf", null ],
     [ "Signal", "classKernel_1_1USER__PROCESS.html#a925037c7fb503135b6f5cc32436e7018", null ],
     [ "StackFrame", "classKernel_1_1USER__PROCESS.html#adf2b9a10759d4f87614f8c1355920e0d", null ],
     [ "StackReserve", "classKernel_1_1USER__PROCESS.html#a4b8b832e789c8e6968935b869dd5790c", null ],

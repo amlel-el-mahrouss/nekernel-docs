@@ -10,5 +10,5 @@ var searchData=
   ['worstc2latency_7',['WorstC2Latency',['../structKernel_1_1Detail_1_1FADT.html#a53f6ef0ea10b55ad251f49b49b36befb',1,'Kernel::Detail::FADT']]],
   ['worstc3latency_8',['WorstC3Latency',['../structKernel_1_1Detail_1_1FADT.html#a2659903a5f4bc8fc0e350d0144865bcf',1,'Kernel::Detail::FADT']]],
   ['wr_9',['Wr',['../structKernel_1_1HAL_1_1Detail_1_1PTE.html#af6098d5e4049618cee678d0ecce9889a',1,'Kernel::HAL::Detail::PTE']]],
-  ['write_10',['write',['../structHbaCmdHeader.html#af9a170be84a4bab6557b51d8e1024211',1,'HbaCmdHeader::Write'],['../modules_2AHCI_2AHCI_8h.html#a89f84999dceb46d401161325dfb957b4',1,'Write:&#160;AHCI.h']]]
+  ['write_10',['write',['../structHbaCmdHeader_1_1HbaFlags_1_1HbaFlags__.html#a0daa718f6a6701f167f65c4da9467a23',1,'HbaCmdHeader::HbaFlags::HbaFlags_::Write'],['../structHbaFlags_1_1HbaFlags__.html#a4f27579b1c024a4c1c96cd71b782964f',1,'HbaFlags::HbaFlags_::Write']]]
 ];

@@ -234,9 +234,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0263d5b1a15a5bd7a77f03fd4fb72f17" id="r_a0263d5b1a15a5bd7a77f03fd4fb72f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a0263d5b1a15a5bd7a77f03fd4fb72f17">Kernel::HAL::hal_has_msr</a> () noexcept</td></tr>
 <tr class="memdesc:a0263d5b1a15a5bd7a77f03fd4fb72f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a cpuid to check if MSR exists on CPU.  <br /></td></tr>
 <tr class="separator:a0263d5b1a15a5bd7a77f03fd4fb72f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e787ee93c6d25ed98b23ad1f0ff9a60" id="r_a9e787ee93c6d25ed98b23ad1f0ff9a60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a9e787ee93c6d25ed98b23ad1f0ff9a60">Kernel::HAL::hal_get_phys_address</a> (<a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> virt)</td></tr>
-<tr class="memdesc:a9e787ee93c6d25ed98b23ad1f0ff9a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a physical address from a virtual address.  <br /></td></tr>
-<tr class="separator:a9e787ee93c6d25ed98b23ad1f0ff9a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bfdb0e21d1b8dcf2724ddf5d5a558d" id="r_a58bfdb0e21d1b8dcf2724ddf5d5a558d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a58bfdb0e21d1b8dcf2724ddf5d5a558d">Kernel::HAL::mm_get_phys_address</a> (<a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> virt)</td></tr>
+<tr class="memdesc:a58bfdb0e21d1b8dcf2724ddf5d5a558d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a physical address from a virtual address.  <br /></td></tr>
+<tr class="separator:a58bfdb0e21d1b8dcf2724ddf5d5a558d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77f027d2195162f6bd7e41e62532c6e5" id="r_a77f027d2195162f6bd7e41e62532c6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a77f027d2195162f6bd7e41e62532c6e5">Kernel::HAL::hal_get_msr</a> (<a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> msr, <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> *lo, <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> *hi) noexcept</td></tr>
 <tr class="memdesc:a77f027d2195162f6bd7e41e62532c6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Model specific register inside core.  <br /></td></tr>
 <tr class="separator:a77f027d2195162f6bd7e41e62532c6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,6 +292,8 @@ Variables</h2></td></tr>
 <tr class="separator:a51b055ea583f6a02de33149dba52d29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c2b89fe4c1a68fc758344835a4afb5" id="r_a26c2b89fe4c1a68fc758344835a4afb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AMD64_2Processor_8h.html#a26c2b89fe4c1a68fc758344835a4afb5">kKernelBitMpSize</a> = 0UL</td></tr>
 <tr class="separator:a26c2b89fe4c1a68fc758344835a4afb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef07eec1c57ae8b9084f262a3a44a061" id="r_aef07eec1c57ae8b9084f262a3a44a061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AMD64_2Processor_8h.html#aef07eec1c57ae8b9084f262a3a44a061">kKernelCR3</a> = nullptr</td></tr>
+<tr class="separator:aef07eec1c57ae8b9084f262a3a44a061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a28ddaa4468925f3caaf812cc40030f76" name="a28ddaa4468925f3caaf812cc40030f76"></a>
@@ -672,6 +674,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5">ATTRIBUTE</a> (naked) Kernel <a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5">ATTRIBUTE</a> (naked) Kernel <a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> kKernelBitMpStart = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef07eec1c57ae8b9084f262a3a44a061" name="aef07eec1c57ae8b9084f262a3a44a061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef07eec1c57ae8b9084f262a3a44a061">&#9670;&#160;</a></span>kKernelCR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> kKernelCR3 = nullptr</td>
         </tr>
       </table>
   </td>

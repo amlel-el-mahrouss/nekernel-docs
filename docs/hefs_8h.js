@@ -1,8 +1,5 @@
 var hefs_8h =
 [
-    [ "mkfs::hefs::BootNode", "structmkfs_1_1hefs_1_1BootNode.html", "structmkfs_1_1hefs_1_1BootNode" ],
-    [ "mkfs::hefs::IndexNode", "structmkfs_1_1hefs_1_1IndexNode.html", "structmkfs_1_1hefs_1_1IndexNode" ],
-    [ "mkfs::hefs::IndexNodeDirectory", "structmkfs_1_1hefs_1_1IndexNodeDirectory.html", "structmkfs_1_1hefs_1_1IndexNodeDirectory" ],
     [ "kHeFSDefaultVoluneName", "hefs_8h.html#a7f60729bfef17a7492b037d333cf3834", null ],
     [ "kHeFSFileNameLen", "hefs_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465", null ],
     [ "kHeFSMagic", "hefs_8h.html#aaad4ee1c87b58182385840f506b53509", null ],
@@ -10,7 +7,7 @@ var hefs_8h =
     [ "kHeFSPartNameLen", "hefs_8h.html#ab08ee8e374ad69d5f02d7cdb327b56e7", null ],
     [ "kHeFSVersion", "hefs_8h.html#a36b750da7d2881be04e3dc2daf842e91", null ],
     [ "ATime", "hefs_8h.html#a32493ad67b46f0ec54a847baa414ac9d", null ],
-    [ "kHeFSBlockCount", "hefs_8h.html#a36c8de10104bf450d0991191fb87e7dd", null ],
+    [ "__attribute__", "hefs_8h.html#a1478ebcc1a6659b62a6364d881efc09a", null ],
     [ "kHeFSFileKindBlock", "hefs_8h.html#afbd91b04f40843e711ce8392b65e890b", null ],
     [ "kHeFSFileKindCharacter", "hefs_8h.html#ae3338c0a1b3ef6053e07099451759f10", null ],
     [ "kHeFSFileKindCount", "hefs_8h.html#acde4c4f83a696a68f62781de7a158369", null ],

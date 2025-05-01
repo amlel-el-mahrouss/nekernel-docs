@@ -76,5 +76,6 @@ var searchData=
   ['_7euser_5fprocess_73',['~USER_PROCESS',['../classKernel_1_1USER__PROCESS.html#a8171e4263098cb1cdeaae3dab1d54d4f',1,'Kernel::USER_PROCESS']]],
   ['_7euserprocessscheduler_74',['~UserProcessScheduler',['../classKernel_1_1UserProcessScheduler.html#abc5b4557bd95a9969ad641189e7b6489',1,'Kernel::UserProcessScheduler']]],
   ['_7euserprocessteam_75',['~UserProcessTeam',['../classKernel_1_1UserProcessTeam.html#a528109b354bb82b40e19189c23ea7776',1,'Kernel::UserProcessTeam']]],
-  ['_7evariant_76',['~Variant',['../classKernel_1_1Variant.html#a41f29f7137263dc3ef02c641cf7ebcc9',1,'Kernel::Variant']]]
+  ['_7eutf8terminaldevice_76',['~Utf8TerminalDevice',['../classKernel_1_1NE__DEVICE_3_01const_01Utf8Char_01_5_01_4.html#a94278fc461dd971045930d0db93f4317',1,'Kernel::NE_DEVICE&lt; const Utf8Char * &gt;']]],
+  ['_7evariant_77',['~Variant',['../classKernel_1_1Variant.html#a41f29f7137263dc3ef02c641cf7ebcc9',1,'Kernel::Variant']]]
 ];

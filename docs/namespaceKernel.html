@@ -255,6 +255,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1NE__DEVICE_3_01const_01Char_01_5_01_4.html">NE_DEVICE&lt; const Char * &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1NE__DEVICE_3_01const_01Utf8Char_01_5_01_4.html">NE_DEVICE&lt; const Utf8Char * &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1NE__DEVICE_3_01FBDevicePacket_01_5_01_4.html">NE_DEVICE&lt; FBDevicePacket * &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framebuffer device interface.  <a href="classKernel_1_1NE__DEVICE_3_01FBDevicePacket_01_5_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -588,7 +590,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a794297d1339ae2e1e16c4768fbadd744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource fork kind.  <a href="namespaceKernel.html#a794297d1339ae2e1e16c4768fbadd744">More...</a><br /></td></tr>
 <tr class="separator:a794297d1339ae2e1e16c4768fbadd744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc2f72a71bd085f3d4f7de8343008b9" id="r_a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a7bc2f72a71bd085f3d4f7de8343008b9">CommStatus</a> : UInt16 { <a class="el" href="namespaceKernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5e92a48a74777783aafa4ff15071f5ea">kStateInvalid</a>
+<tr class="memitem:a7bc2f72a71bd085f3d4f7de8343008b9" id="r_a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a7bc2f72a71bd085f3d4f7de8343008b9">CommStatus</a> : UInt16 { <a class="el" href="namespaceKernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5e92a48a74777783aafa4ff15071f5ea">kStateInvalid</a> = 0x64
 , <a class="el" href="namespaceKernel.html#a7bc2f72a71bd085f3d4f7de8343008b9ac8ad6f8f9cd3b26e97883edb92c9e9a2">kStateReady</a> = 0xCF
 , <a class="el" href="namespaceKernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5343586fd107aaa721dfafa833524247">kStateTransmit</a> = 0xFC
 , <a class="el" href="namespaceKernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a1dbf76d5c3b4041e27a3510832614801">kStateCnt</a> = 3
@@ -729,7 +731,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a7ed6af00ece6653218fec541e5dd3625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68852254a7f1f17c7b59bf56306cf06" id="r_ab68852254a7f1f17c7b59bf56306cf06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#ab68852254a7f1f17c7b59bf56306cf06aaa37c54e787a067a8dbc8a4549869848">kPefSubArchAMD</a>
+&#160;&#160;<a class="el" href="namespaceKernel.html#ab68852254a7f1f17c7b59bf56306cf06aaa37c54e787a067a8dbc8a4549869848">kPefSubArchAMD</a> = 200
 , <a class="el" href="namespaceKernel.html#ab68852254a7f1f17c7b59bf56306cf06aa06e718a104aa4e832f53b9c8128cdab">kPefSubArchIntel</a>
 , <a class="el" href="namespaceKernel.html#ab68852254a7f1f17c7b59bf56306cf06afae64e134d7e9baadb9b280bd5beff67">kPefSubArchARM</a>
 , <a class="el" href="namespaceKernel.html#ab68852254a7f1f17c7b59bf56306cf06a3e9e94b4e97352417e5bbb6a68dcab44">kPefSubArchGeneric</a>
@@ -798,24 +800,24 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aa8e5b4bc80cbec73a76235e1bed52486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05eda1c75b0d880eca373fc07e3a54bb" id="r_a05eda1c75b0d880eca373fc07e3a54bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a05eda1c75b0d880eca373fc07e3a54bbaaf1a16cf1723d1850649e25e6c721095">kAPMPowerCommandInvalid</a> = 0x00
-, <a class="el" href="namespaceKernel.html#a05eda1c75b0d880eca373fc07e3a54bba89cd40f9e23db00c59d40f743f7025c0">kAPMPowerCommandStop</a> = 0x01
-, <a class="el" href="namespaceKernel.html#a05eda1c75b0d880eca373fc07e3a54bbafea26ca2bcd94386ae2c4e60b40347ff">kAPMPowerCommandStart</a> = 0x02
-, <a class="el" href="namespaceKernel.html#a05eda1c75b0d880eca373fc07e3a54bba2073b13d01b87766268183ac0332b3e6">kAPMPowerCommandSleep</a> = 0x04
+<tr class="memitem:a44e2d6c1198fed817953b82927707335" id="r_a44e2d6c1198fed817953b82927707335"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceKernel.html#a44e2d6c1198fed817953b82927707335aaf1a16cf1723d1850649e25e6c721095">kAPMPowerCommandInvalid</a> = 0x00
+, <a class="el" href="namespaceKernel.html#a44e2d6c1198fed817953b82927707335a89cd40f9e23db00c59d40f743f7025c0">kAPMPowerCommandStop</a> = 0x01
+, <a class="el" href="namespaceKernel.html#a44e2d6c1198fed817953b82927707335afea26ca2bcd94386ae2c4e60b40347ff">kAPMPowerCommandStart</a> = 0x02
+, <a class="el" href="namespaceKernel.html#a44e2d6c1198fed817953b82927707335a2073b13d01b87766268183ac0332b3e6">kAPMPowerCommandSleep</a> = 0x04
 , <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a05eda1c75b0d880eca373fc07e3a54bbae6900016f4c45a7329bd412c7e7edbb8">kAPMPowerCommandWakeup</a> = 0x06
-, <a class="el" href="namespaceKernel.html#a05eda1c75b0d880eca373fc07e3a54bbaf4ff85ad71378130fda1fd2882010c2d">kAPMPowerCommandShutdown</a> = 0x07
-, <a class="el" href="namespaceKernel.html#a05eda1c75b0d880eca373fc07e3a54bba6de70771417fa454f282d60a90fd1d3a">kAPMPowerCommandReboot</a> = 0x08
+&#160;&#160;<a class="el" href="namespaceKernel.html#a44e2d6c1198fed817953b82927707335ae6900016f4c45a7329bd412c7e7edbb8">kAPMPowerCommandWakeup</a> = 0x06
+, <a class="el" href="namespaceKernel.html#a44e2d6c1198fed817953b82927707335af4ff85ad71378130fda1fd2882010c2d">kAPMPowerCommandShutdown</a> = 0x07
+, <a class="el" href="namespaceKernel.html#a44e2d6c1198fed817953b82927707335a6de70771417fa454f282d60a90fd1d3a">kAPMPowerCommandReboot</a> = 0x08
 <br />
  }</td></tr>
-<tr class="separator:a05eda1c75b0d880eca373fc07e3a54bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a802b76034c840f1b134e60c1cbf411c9" id="r_a802b76034c840f1b134e60c1cbf411c9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceKernel.html#a802b76034c840f1b134e60c1cbf411c9ab04d94e34a43848abc3fac1ba7d53f29">kMBCISpeedDeviceInvalid</a>
-, <a class="el" href="namespaceKernel.html#a802b76034c840f1b134e60c1cbf411c9a9680bc26cad6355230da5f7c3d06dfb5">kMBCILowSpeedDevice</a>
-, <a class="el" href="namespaceKernel.html#a802b76034c840f1b134e60c1cbf411c9a48fb69baf250d11e4c7726c0f0aa3e23">kMBCIHighSpeedDevice</a>
-, <a class="el" href="namespaceKernel.html#a802b76034c840f1b134e60c1cbf411c9ac8c96d8296ffe7676d044ad9c031513d">kMBCISpeedDeviceCount</a>
+<tr class="separator:a44e2d6c1198fed817953b82927707335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17808f14d03f2a5fa69656874c5877b" id="r_af17808f14d03f2a5fa69656874c5877b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceKernel.html#af17808f14d03f2a5fa69656874c5877bab04d94e34a43848abc3fac1ba7d53f29">kMBCISpeedDeviceInvalid</a>
+, <a class="el" href="namespaceKernel.html#af17808f14d03f2a5fa69656874c5877ba9680bc26cad6355230da5f7c3d06dfb5">kMBCILowSpeedDevice</a>
+, <a class="el" href="namespaceKernel.html#af17808f14d03f2a5fa69656874c5877ba48fb69baf250d11e4c7726c0f0aa3e23">kMBCIHighSpeedDevice</a>
+, <a class="el" href="namespaceKernel.html#af17808f14d03f2a5fa69656874c5877bac8c96d8296ffe7676d044ad9c031513d">kMBCISpeedDeviceCount</a>
  }</td></tr>
-<tr class="separator:a802b76034c840f1b134e60c1cbf411c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af17808f14d03f2a5fa69656874c5877b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c04e0dbc40d1ccf2d772727ee1178d8" id="r_a6c04e0dbc40d1ccf2d772727ee1178d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8">MBCIHostFlags</a> { <br />
 &#160;&#160;<a class="el" href="namespaceKernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8a7a470413e6a845a7d07b5fdbc10b6934">kMBCIHostFlagsSupportsNothing</a>
 , <a class="el" href="namespaceKernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8a5b3e8da139156a7af93b378bb2e58df6">kMBCIHostFlagsSupportsAPM</a>
@@ -857,18 +859,18 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aba316bb1bff2d7b01d4a08595031ef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c91b488bc2acf2840db7fe1a4759a4c" id="r_a3c91b488bc2acf2840db7fe1a4759a4c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a3c91b488bc2acf2840db7fe1a4759a4caafbbddbd4a0ab93e2170e74ccf3f6fea">kInvalidNVME</a> = 0xFF
-, <a class="el" href="namespaceKernel.html#a3c91b488bc2acf2840db7fe1a4759a4ca8d9bc85a0267dc3e0188633363a549e6">kCreateCompletionQueueNVME</a> = 0x05
-, <a class="el" href="namespaceKernel.html#a3c91b488bc2acf2840db7fe1a4759a4caa9e3f921d7b8e47ba169228bb81c81bf">kCreateSubmissionQueueNVME</a> = 0x01
-, <a class="el" href="namespaceKernel.html#a3c91b488bc2acf2840db7fe1a4759a4cac3a0de6f08647f1447dcfba4618dc009">kIdentifyNVME</a> = 0x06
+<tr class="memitem:a3a2b5e5f4d2e29724f185a503f598856" id="r_a3a2b5e5f4d2e29724f185a503f598856"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceKernel.html#a3a2b5e5f4d2e29724f185a503f598856aafbbddbd4a0ab93e2170e74ccf3f6fea">kInvalidNVME</a> = 0xFF
+, <a class="el" href="namespaceKernel.html#a3a2b5e5f4d2e29724f185a503f598856a8d9bc85a0267dc3e0188633363a549e6">kCreateCompletionQueueNVME</a> = 0x05
+, <a class="el" href="namespaceKernel.html#a3a2b5e5f4d2e29724f185a503f598856aa9e3f921d7b8e47ba169228bb81c81bf">kCreateSubmissionQueueNVME</a> = 0x01
+, <a class="el" href="namespaceKernel.html#a3a2b5e5f4d2e29724f185a503f598856ac3a0de6f08647f1447dcfba4618dc009">kIdentifyNVME</a> = 0x06
 , <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a3c91b488bc2acf2840db7fe1a4759a4ca2abcd68af7293031801abfbeea842ed5">kReadNVME</a> = 0x02
-, <a class="el" href="namespaceKernel.html#a3c91b488bc2acf2840db7fe1a4759a4cabb910594051543bb8430913fa31b2c41">kWriteNVME</a> = 0x01
-, <a class="el" href="namespaceKernel.html#a3c91b488bc2acf2840db7fe1a4759a4ca5677f8495f75056d7fda4fcdf22a644c">kCountNVME</a> = 5
+&#160;&#160;<a class="el" href="namespaceKernel.html#a3a2b5e5f4d2e29724f185a503f598856a2abcd68af7293031801abfbeea842ed5">kReadNVME</a> = 0x02
+, <a class="el" href="namespaceKernel.html#a3a2b5e5f4d2e29724f185a503f598856abb910594051543bb8430913fa31b2c41">kWriteNVME</a> = 0x01
+, <a class="el" href="namespaceKernel.html#a3a2b5e5f4d2e29724f185a503f598856a5677f8495f75056d7fda4fcdf22a644c">kCountNVME</a> = 5
 <br />
  }</td></tr>
-<tr class="separator:a3c91b488bc2acf2840db7fe1a4759a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3a2b5e5f4d2e29724f185a503f598856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -886,6 +888,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad1085600b4f13e33bd21543937b0468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d41361c1685ee5da3e190d75c529378" id="r_a9d41361c1685ee5da3e190d75c529378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9d41361c1685ee5da3e190d75c529378">ke_io_read</a> (<a class="el" href="classKernel_1_1IDeviceObject.html">IDeviceObject</a>&lt; const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *, const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
 <tr class="separator:a9d41361c1685ee5da3e190d75c529378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc1b14abc426c5e519df22a6c97470b" id="r_a3bc1b14abc426c5e519df22a6c97470b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a3bc1b14abc426c5e519df22a6c97470b">ke_io_write_utf</a> (<a class="el" href="classKernel_1_1IDeviceObject.html">IDeviceObject</a>&lt; const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> * &gt; *, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *str)</td></tr>
+<tr class="separator:a3bc1b14abc426c5e519df22a6c97470b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa183333be993b27584ba42eff2ee2527" id="r_aa183333be993b27584ba42eff2ee2527"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa183333be993b27584ba42eff2ee2527">rt_debug_listen</a> (<a class="el" href="classKernel_1_1DebuggerPortHeader.html">DebuggerPortHeader</a> *theHook) noexcept</td></tr>
 <tr class="separator:aa183333be993b27584ba42eff2ee2527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05f4ac957b25737365c415f1a1396dbc" id="r_a05f4ac957b25737365c415f1a1396dbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a05f4ac957b25737365c415f1a1396dbc">ke_panic</a> (const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a> &amp;id, const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *message)</td></tr>
@@ -967,6 +971,8 @@ Functions</h2></td></tr>
 <tr class="separator:a61e62477e4fb7bdc5cfe287786dc9324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde9d1be10ddd83974871c2ddbd99c5e" id="r_acde9d1be10ddd83974871c2ddbd99c5e"><td class="memItemLeft" align="right" valign="top">TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#acde9d1be10ddd83974871c2ddbd99c5e">hex_number</a> (const <a class="el" href="namespaceKernel.html#aa70dde74e8db97cf15123c3e9a877e40">Long</a> &amp;x)</td></tr>
 <tr class="separator:acde9d1be10ddd83974871c2ddbd99c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c68a7584349cc2ad6660050c45ef89" id="r_ac3c68a7584349cc2ad6660050c45ef89"><td class="memItemLeft" align="right" valign="top">Utf8TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ac3c68a7584349cc2ad6660050c45ef89">utf_end_line</a> ()</td></tr>
+<tr class="separator:ac3c68a7584349cc2ad6660050c45ef89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc9aca3eece3a98e6c7685e8cada39e" id="r_a2cc9aca3eece3a98e6c7685e8cada39e"><td class="memItemLeft" align="right" valign="top">TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2cc9aca3eece3a98e6c7685e8cada39e">carriage_return</a> ()</td></tr>
 <tr class="separator:a2cc9aca3eece3a98e6c7685e8cada39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425f3d84d33e04bcef91b80f33ce9bff" id="r_a425f3d84d33e04bcef91b80f33ce9bff"><td class="memItemLeft" align="right" valign="top">TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a425f3d84d33e04bcef91b80f33ce9bff">tabulate</a> ()</td></tr>
@@ -990,11 +996,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ada6be16e95fd6cf9ad9f7c154074b457" id="r_ada6be16e95fd6cf9ad9f7c154074b457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ada6be16e95fd6cf9ad9f7c154074b457">io_construct_main_drive</a> (<a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>) noexcept</td></tr>
 <tr class="memdesc:ada6be16e95fd6cf9ad9f7c154074b457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the main drive.  <br /></td></tr>
 <tr class="separator:ada6be16e95fd6cf9ad9f7c154074b457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad790ea6a819b0d66cfd7d4bd7301b1d0" id="r_ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ad790ea6a819b0d66cfd7d4bd7301b1d0">io_drv_input</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt)</td></tr>
+<tr class="separator:ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64eb9503628cb0e98272e815728d453a" id="r_a64eb9503628cb0e98272e815728d453a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a64eb9503628cb0e98272e815728d453a">io_drv_output</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt)</td></tr>
+<tr class="separator:a64eb9503628cb0e98272e815728d453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04b092f37c60b382792b8e4d473366fd" id="r_a04b092f37c60b382792b8e4d473366fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a04b092f37c60b382792b8e4d473366fd">fs_ifs_read</a> (<a class="el" href="classKernel_1_1MountpointInterface.html">MountpointInterface</a> *Mnt, <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> &amp;DrvTrait, <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> DrvIndex)</td></tr>
-<tr class="memdesc:a04b092f37c60b382792b8e4d473366fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from newfs disk.  <br /></td></tr>
+<tr class="memdesc:a04b092f37c60b382792b8e4d473366fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from IFS disk.  <br /></td></tr>
 <tr class="separator:a04b092f37c60b382792b8e4d473366fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb3d2a027cf345995c54c44a205ad5c" id="r_a9fb3d2a027cf345995c54c44a205ad5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9fb3d2a027cf345995c54c44a205ad5c">fs_ifs_write</a> (<a class="el" href="classKernel_1_1MountpointInterface.html">MountpointInterface</a> *Mnt, <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> &amp;DrvTrait, <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> DrvIndex)</td></tr>
-<tr class="memdesc:a9fb3d2a027cf345995c54c44a205ad5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to ifs disk.  <br /></td></tr>
+<tr class="memdesc:a9fb3d2a027cf345995c54c44a205ad5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to IFS disk.  <br /></td></tr>
 <tr class="separator:a9fb3d2a027cf345995c54c44a205ad5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4e780b2ff3eb6c4dfd73dea6e3fe5f" id="r_a6e4e780b2ff3eb6c4dfd73dea6e3fe5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a6e4e780b2ff3eb6c4dfd73dea6e3fe5f">__zka_pure_call</a> (void)</td></tr>
 <tr class="memdesc:a6e4e780b2ff3eb6c4dfd73dea6e3fe5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure implementation, missing method/function handler.  <br /></td></tr>
@@ -1108,18 +1118,18 @@ Functions</h2></td></tr>
 <tr class="separator:ae46d5b75476f521f6b07979bb03bb112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd517a85266b9355a7baf20b428acbf6" id="r_afd517a85266b9355a7baf20b428acbf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#afd517a85266b9355a7baf20b428acbf6">urt_string_len</a> (const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *str)</td></tr>
 <tr class="separator:afd517a85266b9355a7baf20b428acbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad790ea6a819b0d66cfd7d4bd7301b1d0" id="r_ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ad790ea6a819b0d66cfd7d4bd7301b1d0">io_drv_input</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt)</td></tr>
-<tr class="memdesc:ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads from an ATA drive.  <br /></td></tr>
-<tr class="separator:ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64eb9503628cb0e98272e815728d453a" id="r_a64eb9503628cb0e98272e815728d453a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a64eb9503628cb0e98272e815728d453a">io_drv_output</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt)</td></tr>
-<tr class="memdesc:a64eb9503628cb0e98272e815728d453a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to an ATA drive.  <br /></td></tr>
-<tr class="separator:a64eb9503628cb0e98272e815728d453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8108386759e33a2917478c736daab45" id="r_ae8108386759e33a2917478c736daab45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae8108386759e33a2917478c736daab45">io_drv_init</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt)</td></tr>
-<tr class="memdesc:ae8108386759e33a2917478c736daab45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a disk check on the ATA drive.  <br /></td></tr>
-<tr class="separator:ae8108386759e33a2917478c736daab45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa05187bc093c004bad7a679c340d70da" id="r_aa05187bc093c004bad7a679c340d70da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa05187bc093c004bad7a679c340d70da">io_drv_unimplemented</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt) noexcept</td></tr>
-<tr class="memdesc:aa05187bc093c004bad7a679c340d70da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unimplemented drive function.  <br /></td></tr>
-<tr class="separator:aa05187bc093c004bad7a679c340d70da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadaf3fcfbf7b388e5abeab6433d82186" id="r_aadaf3fcfbf7b388e5abeab6433d82186"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aadaf3fcfbf7b388e5abeab6433d82186">io_drv_input</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;pckt)</td></tr>
+<tr class="memdesc:aadaf3fcfbf7b388e5abeab6433d82186"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads from an ATA drive.  <br /></td></tr>
+<tr class="separator:aadaf3fcfbf7b388e5abeab6433d82186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1bb96b2f2e1989da311ece473d8bb7" id="r_a2b1bb96b2f2e1989da311ece473d8bb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2b1bb96b2f2e1989da311ece473d8bb7">io_drv_output</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;pckt)</td></tr>
+<tr class="memdesc:a2b1bb96b2f2e1989da311ece473d8bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to an ATA drive.  <br /></td></tr>
+<tr class="separator:a2b1bb96b2f2e1989da311ece473d8bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60d8ee1788d3a0a46769227da6115c6" id="r_ae60d8ee1788d3a0a46769227da6115c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae60d8ee1788d3a0a46769227da6115c6">io_drv_init</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;pckt)</td></tr>
+<tr class="memdesc:ae60d8ee1788d3a0a46769227da6115c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a disk check on the ATA drive.  <br /></td></tr>
+<tr class="separator:ae60d8ee1788d3a0a46769227da6115c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42684ed09fb6759b356e28f7414096f" id="r_ae42684ed09fb6759b356e28f7414096f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae42684ed09fb6759b356e28f7414096f">io_drv_unimplemented</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;pckt) noexcept</td></tr>
+<tr class="memdesc:ae42684ed09fb6759b356e28f7414096f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unimplemented drive function.  <br /></td></tr>
+<tr class="separator:ae42684ed09fb6759b356e28f7414096f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b415ee98d459f23f199f344b2a470f" id="r_a34b415ee98d459f23f199f344b2a470f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a34b415ee98d459f23f199f344b2a470f">io_construct_blank_drive</a> () noexcept</td></tr>
 <tr class="memdesc:a34b415ee98d459f23f199f344b2a470f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a new drive.  <br /></td></tr>
 <tr class="separator:a34b415ee98d459f23f199f344b2a470f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3000,8 +3010,8 @@ template&lt;int PacketBitLen&gt; </div>
 
 </div>
 </div>
-<a id="a05eda1c75b0d880eca373fc07e3a54bb" name="a05eda1c75b0d880eca373fc07e3a54bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05eda1c75b0d880eca373fc07e3a54bb">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a44e2d6c1198fed817953b82927707335" name="a44e2d6c1198fed817953b82927707335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e2d6c1198fed817953b82927707335">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3012,19 +3022,19 @@ template&lt;int PacketBitLen&gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a05eda1c75b0d880eca373fc07e3a54bbaaf1a16cf1723d1850649e25e6c721095" name="a05eda1c75b0d880eca373fc07e3a54bbaaf1a16cf1723d1850649e25e6c721095"></a>kAPMPowerCommandInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05eda1c75b0d880eca373fc07e3a54bba89cd40f9e23db00c59d40f743f7025c0" name="a05eda1c75b0d880eca373fc07e3a54bba89cd40f9e23db00c59d40f743f7025c0"></a>kAPMPowerCommandStop&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05eda1c75b0d880eca373fc07e3a54bbafea26ca2bcd94386ae2c4e60b40347ff" name="a05eda1c75b0d880eca373fc07e3a54bbafea26ca2bcd94386ae2c4e60b40347ff"></a>kAPMPowerCommandStart&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05eda1c75b0d880eca373fc07e3a54bba2073b13d01b87766268183ac0332b3e6" name="a05eda1c75b0d880eca373fc07e3a54bba2073b13d01b87766268183ac0332b3e6"></a>kAPMPowerCommandSleep&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05eda1c75b0d880eca373fc07e3a54bbae6900016f4c45a7329bd412c7e7edbb8" name="a05eda1c75b0d880eca373fc07e3a54bbae6900016f4c45a7329bd412c7e7edbb8"></a>kAPMPowerCommandWakeup&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05eda1c75b0d880eca373fc07e3a54bbaf4ff85ad71378130fda1fd2882010c2d" name="a05eda1c75b0d880eca373fc07e3a54bbaf4ff85ad71378130fda1fd2882010c2d"></a>kAPMPowerCommandShutdown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05eda1c75b0d880eca373fc07e3a54bba6de70771417fa454f282d60a90fd1d3a" name="a05eda1c75b0d880eca373fc07e3a54bba6de70771417fa454f282d60a90fd1d3a"></a>kAPMPowerCommandReboot&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335aaf1a16cf1723d1850649e25e6c721095" name="a44e2d6c1198fed817953b82927707335aaf1a16cf1723d1850649e25e6c721095"></a>kAPMPowerCommandInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335a89cd40f9e23db00c59d40f743f7025c0" name="a44e2d6c1198fed817953b82927707335a89cd40f9e23db00c59d40f743f7025c0"></a>kAPMPowerCommandStop&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335afea26ca2bcd94386ae2c4e60b40347ff" name="a44e2d6c1198fed817953b82927707335afea26ca2bcd94386ae2c4e60b40347ff"></a>kAPMPowerCommandStart&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335a2073b13d01b87766268183ac0332b3e6" name="a44e2d6c1198fed817953b82927707335a2073b13d01b87766268183ac0332b3e6"></a>kAPMPowerCommandSleep&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335ae6900016f4c45a7329bd412c7e7edbb8" name="a44e2d6c1198fed817953b82927707335ae6900016f4c45a7329bd412c7e7edbb8"></a>kAPMPowerCommandWakeup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335af4ff85ad71378130fda1fd2882010c2d" name="a44e2d6c1198fed817953b82927707335af4ff85ad71378130fda1fd2882010c2d"></a>kAPMPowerCommandShutdown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44e2d6c1198fed817953b82927707335a6de70771417fa454f282d60a90fd1d3a" name="a44e2d6c1198fed817953b82927707335a6de70771417fa454f282d60a90fd1d3a"></a>kAPMPowerCommandReboot&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a802b76034c840f1b134e60c1cbf411c9" name="a802b76034c840f1b134e60c1cbf411c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a802b76034c840f1b134e60c1cbf411c9">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="af17808f14d03f2a5fa69656874c5877b" name="af17808f14d03f2a5fa69656874c5877b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17808f14d03f2a5fa69656874c5877b">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3035,16 +3045,16 @@ template&lt;int PacketBitLen&gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a802b76034c840f1b134e60c1cbf411c9ab04d94e34a43848abc3fac1ba7d53f29" name="a802b76034c840f1b134e60c1cbf411c9ab04d94e34a43848abc3fac1ba7d53f29"></a>kMBCISpeedDeviceInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a802b76034c840f1b134e60c1cbf411c9a9680bc26cad6355230da5f7c3d06dfb5" name="a802b76034c840f1b134e60c1cbf411c9a9680bc26cad6355230da5f7c3d06dfb5"></a>kMBCILowSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a802b76034c840f1b134e60c1cbf411c9a48fb69baf250d11e4c7726c0f0aa3e23" name="a802b76034c840f1b134e60c1cbf411c9a48fb69baf250d11e4c7726c0f0aa3e23"></a>kMBCIHighSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a802b76034c840f1b134e60c1cbf411c9ac8c96d8296ffe7676d044ad9c031513d" name="a802b76034c840f1b134e60c1cbf411c9ac8c96d8296ffe7676d044ad9c031513d"></a>kMBCISpeedDeviceCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877bab04d94e34a43848abc3fac1ba7d53f29" name="af17808f14d03f2a5fa69656874c5877bab04d94e34a43848abc3fac1ba7d53f29"></a>kMBCISpeedDeviceInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877ba9680bc26cad6355230da5f7c3d06dfb5" name="af17808f14d03f2a5fa69656874c5877ba9680bc26cad6355230da5f7c3d06dfb5"></a>kMBCILowSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877ba48fb69baf250d11e4c7726c0f0aa3e23" name="af17808f14d03f2a5fa69656874c5877ba48fb69baf250d11e4c7726c0f0aa3e23"></a>kMBCIHighSpeedDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af17808f14d03f2a5fa69656874c5877bac8c96d8296ffe7676d044ad9c031513d" name="af17808f14d03f2a5fa69656874c5877bac8c96d8296ffe7676d044ad9c031513d"></a>kMBCISpeedDeviceCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a3c91b488bc2acf2840db7fe1a4759a4c" name="a3c91b488bc2acf2840db7fe1a4759a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c91b488bc2acf2840db7fe1a4759a4c">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a3a2b5e5f4d2e29724f185a503f598856" name="a3a2b5e5f4d2e29724f185a503f598856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2b5e5f4d2e29724f185a503f598856">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3055,13 +3065,13 @@ template&lt;int PacketBitLen&gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c91b488bc2acf2840db7fe1a4759a4caafbbddbd4a0ab93e2170e74ccf3f6fea" name="a3c91b488bc2acf2840db7fe1a4759a4caafbbddbd4a0ab93e2170e74ccf3f6fea"></a>kInvalidNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c91b488bc2acf2840db7fe1a4759a4ca8d9bc85a0267dc3e0188633363a549e6" name="a3c91b488bc2acf2840db7fe1a4759a4ca8d9bc85a0267dc3e0188633363a549e6"></a>kCreateCompletionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c91b488bc2acf2840db7fe1a4759a4caa9e3f921d7b8e47ba169228bb81c81bf" name="a3c91b488bc2acf2840db7fe1a4759a4caa9e3f921d7b8e47ba169228bb81c81bf"></a>kCreateSubmissionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c91b488bc2acf2840db7fe1a4759a4cac3a0de6f08647f1447dcfba4618dc009" name="a3c91b488bc2acf2840db7fe1a4759a4cac3a0de6f08647f1447dcfba4618dc009"></a>kIdentifyNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c91b488bc2acf2840db7fe1a4759a4ca2abcd68af7293031801abfbeea842ed5" name="a3c91b488bc2acf2840db7fe1a4759a4ca2abcd68af7293031801abfbeea842ed5"></a>kReadNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c91b488bc2acf2840db7fe1a4759a4cabb910594051543bb8430913fa31b2c41" name="a3c91b488bc2acf2840db7fe1a4759a4cabb910594051543bb8430913fa31b2c41"></a>kWriteNVME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c91b488bc2acf2840db7fe1a4759a4ca5677f8495f75056d7fda4fcdf22a644c" name="a3c91b488bc2acf2840db7fe1a4759a4ca5677f8495f75056d7fda4fcdf22a644c"></a>kCountNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856aafbbddbd4a0ab93e2170e74ccf3f6fea" name="a3a2b5e5f4d2e29724f185a503f598856aafbbddbd4a0ab93e2170e74ccf3f6fea"></a>kInvalidNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856a8d9bc85a0267dc3e0188633363a549e6" name="a3a2b5e5f4d2e29724f185a503f598856a8d9bc85a0267dc3e0188633363a549e6"></a>kCreateCompletionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856aa9e3f921d7b8e47ba169228bb81c81bf" name="a3a2b5e5f4d2e29724f185a503f598856aa9e3f921d7b8e47ba169228bb81c81bf"></a>kCreateSubmissionQueueNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856ac3a0de6f08647f1447dcfba4618dc009" name="a3a2b5e5f4d2e29724f185a503f598856ac3a0de6f08647f1447dcfba4618dc009"></a>kIdentifyNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856a2abcd68af7293031801abfbeea842ed5" name="a3a2b5e5f4d2e29724f185a503f598856a2abcd68af7293031801abfbeea842ed5"></a>kReadNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856abb910594051543bb8430913fa31b2c41" name="a3a2b5e5f4d2e29724f185a503f598856abb910594051543bb8430913fa31b2c41"></a>kWriteNVME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3a2b5e5f4d2e29724f185a503f598856a5677f8495f75056d7fda4fcdf22a644c" name="a3a2b5e5f4d2e29724f185a503f598856a5677f8495f75056d7fda4fcdf22a644c"></a>kCountNVME&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -4067,7 +4077,8 @@ template&lt;typename Args &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Read from newfs disk. </p>
+<p>Read from IFS disk. </p>
+<p>Read from newfs disk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Mnt</td><td>mounted interface. </td></tr>
@@ -4112,7 +4123,7 @@ template&lt;typename Args &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Write to ifs disk. </p>
+<p>Write to IFS disk. </p>
 <p>Write to newfs disk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4357,8 +4368,8 @@ template&lt;typename Args &gt; </div>
 
 </div>
 </div>
-<a id="ae8108386759e33a2917478c736daab45" name="ae8108386759e33a2917478c736daab45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8108386759e33a2917478c736daab45">&#9670;&#160;</a></span>io_drv_init()</h2>
+<a id="ae60d8ee1788d3a0a46769227da6115c6" name="ae60d8ee1788d3a0a46769227da6115c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60d8ee1788d3a0a46769227da6115c6">&#9670;&#160;</a></span>io_drv_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4366,7 +4377,7 @@ template&lt;typename Args &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::io_drv_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;&#160;</td>
           <td class="paramname"><em>pckt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -4384,8 +4395,8 @@ template&lt;typename Args &gt; </div>
 
 </div>
 </div>
-<a id="ad790ea6a819b0d66cfd7d4bd7301b1d0" name="ad790ea6a819b0d66cfd7d4bd7301b1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad790ea6a819b0d66cfd7d4bd7301b1d0">&#9670;&#160;</a></span>io_drv_input()</h2>
+<a id="aadaf3fcfbf7b388e5abeab6433d82186" name="aadaf3fcfbf7b388e5abeab6433d82186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadaf3fcfbf7b388e5abeab6433d82186">&#9670;&#160;</a></span>io_drv_input() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4393,7 +4404,7 @@ template&lt;typename Args &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::io_drv_input </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;&#160;</td>
           <td class="paramname"><em>pckt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -4408,6 +4419,24 @@ template&lt;typename Args &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ad790ea6a819b0d66cfd7d4bd7301b1d0" name="ad790ea6a819b0d66cfd7d4bd7301b1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad790ea6a819b0d66cfd7d4bd7301b1d0">&#9670;&#160;</a></span>io_drv_input() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::io_drv_input </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a>&#160;</td>
+          <td class="paramname"><em>pckt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4445,8 +4474,8 @@ template&lt;typename Args &gt; </div>
 
 </div>
 </div>
-<a id="a64eb9503628cb0e98272e815728d453a" name="a64eb9503628cb0e98272e815728d453a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64eb9503628cb0e98272e815728d453a">&#9670;&#160;</a></span>io_drv_output()</h2>
+<a id="a2b1bb96b2f2e1989da311ece473d8bb7" name="a2b1bb96b2f2e1989da311ece473d8bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1bb96b2f2e1989da311ece473d8bb7">&#9670;&#160;</a></span>io_drv_output() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4454,7 +4483,7 @@ template&lt;typename Args &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::io_drv_output </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;&#160;</td>
           <td class="paramname"><em>pckt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -4472,8 +4501,60 @@ template&lt;typename Args &gt; </div>
 
 </div>
 </div>
+<a id="a64eb9503628cb0e98272e815728d453a" name="a64eb9503628cb0e98272e815728d453a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64eb9503628cb0e98272e815728d453a">&#9670;&#160;</a></span>io_drv_output() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::io_drv_output </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a>&#160;</td>
+          <td class="paramname"><em>pckt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae42684ed09fb6759b356e28f7414096f" name="ae42684ed09fb6759b356e28f7414096f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42684ed09fb6759b356e28f7414096f">&#9670;&#160;</a></span>io_drv_unimplemented() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::io_drv_unimplemented </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>pckt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unimplemented drive function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pckt</td><td>the packet to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a57da1f3f2dee09fbd53eff9131a17088" name="a57da1f3f2dee09fbd53eff9131a17088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57da1f3f2dee09fbd53eff9131a17088">&#9670;&#160;</a></span>io_drv_unimplemented() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a57da1f3f2dee09fbd53eff9131a17088">&#9670;&#160;</a></span>io_drv_unimplemented() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4504,40 +4585,6 @@ template&lt;typename Args &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="aa05187bc093c004bad7a679c340d70da" name="aa05187bc093c004bad7a679c340d70da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa05187bc093c004bad7a679c340d70da">&#9670;&#160;</a></span>io_drv_unimplemented() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::io_drv_unimplemented </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a>&#160;</td>
-          <td class="paramname"><em>pckt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unimplemented drive function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pckt</td><td>the packet to read. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -4860,6 +4907,34 @@ template&lt;typename DataKind &gt; </div>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td>
           <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bc1b14abc426c5e519df22a6c97470b" name="a3bc1b14abc426c5e519df22a6c97470b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc1b14abc426c5e519df22a6c97470b">&#9670;&#160;</a></span>ke_io_write_utf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> Kernel::ke_io_write_utf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKernel_1_1IDeviceObject.html">IDeviceObject</a>&lt; const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> * &gt; *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -7011,6 +7086,31 @@ template&lt;<a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3c68a7584349cc2ad6660050c45ef89" name="ac3c68a7584349cc2ad6660050c45ef89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c68a7584349cc2ad6660050c45ef89">&#9670;&#160;</a></span>utf_end_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Utf8TerminalDevice Kernel::utf_end_line </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

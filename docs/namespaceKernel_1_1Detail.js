@@ -7,6 +7,7 @@ var namespaceKernel_1_1Detail =
     [ "MM_INFORMATION_BLOCK_PTR", "namespaceKernel_1_1Detail.html#ac66013dc7a69b68640b6ddf4f2e5a187", null ],
     [ "_write_number", "namespaceKernel_1_1Detail.html#a2eb868ebdd8e496cd8140d5c14b5952f", null ],
     [ "_write_number_hex", "namespaceKernel_1_1Detail.html#a8e8d2eed7173b4eb867187eb74924322", null ],
+    [ "ATTRIBUTE", "namespaceKernel_1_1Detail.html#a7df787e1a62bdf06b7a10e029a7c912b", null ],
     [ "hal_serial_init", "namespaceKernel_1_1Detail.html#abcfc42bc1a7dac85b5349d71f3012141", null ],
     [ "hefs_day_get", "namespaceKernel_1_1Detail.html#a08495e328a92830716267351514184ff", null ],
     [ "hefs_drive_kind_to_string", "namespaceKernel_1_1Detail.html#a077d6a9359808c513a7695c5f2f0d98b", null ],
@@ -35,7 +36,6 @@ var namespaceKernel_1_1Detail =
     [ "kHeFSBaseMinute", "namespaceKernel_1_1Detail.html#af078bab979df189411e5a84cf68fbdfe", null ],
     [ "kHeFSBaseMonth", "namespaceKernel_1_1Detail.html#ac261342b31b67e84de7b2fe40dde744a", null ],
     [ "kHeFSBaseYear", "namespaceKernel_1_1Detail.html#a6883d558553f5128e04ef77d541606e2", null ],
-    [ "kPort", "namespaceKernel_1_1Detail.html#a3eb709c5262ae6b615008c111788d4d7", null ],
     [ "MM_INFORMATION_BLOCK", "namespaceKernel_1_1Detail.html#aeb33a27af8d703b08d25c38a7ffbd143", null ],
     [ "PACKED", "namespaceKernel_1_1Detail.html#a413dd27937a507eda0a290f6f19bb624", null ]
 ];

@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('AHCI_09Generic_8cc.html',''); initResi
 <code>#include &lt;<a class="el" href="LockDelegate_8h_source.html">KernelKit/LockDelegate.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Iterator_8h_source.html">KernelKit/PCI/Iterator.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ProcessScheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Timer_8h_source.html">KernelKit/Timer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="NewKit_2Utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kernel_2StorageKit_2AHCI_8h_source.html">StorageKit/AHCI.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="DmaPool_8h_source.html">StorageKit/DmaPool.h</a>&gt;</code><br />
@@ -125,26 +126,26 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab957a0a50c3cc0acdf6de83b36dd9548" id="r_ab957a0a50c3cc0acdf6de83b36dd9548"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#ab957a0a50c3cc0acdf6de83b36dd9548">kHBAErrTaskFile</a>&#160;&#160;&#160;(1 &lt;&lt; 30)</td></tr>
-<tr class="separator:ab957a0a50c3cc0acdf6de83b36dd9548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad305678f278b85161340811a0f6d8e" id="r_a7ad305678f278b85161340811a0f6d8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a7ad305678f278b85161340811a0f6d8e">kHBAPxCmdST</a>&#160;&#160;&#160;(0x0001)</td></tr>
-<tr class="separator:a7ad305678f278b85161340811a0f6d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e8b600a067a729e5834fd5ae3c3fb9" id="r_af2e8b600a067a729e5834fd5ae3c3fb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#af2e8b600a067a729e5834fd5ae3c3fb9">kHBAPxCmdFre</a>&#160;&#160;&#160;(0x0010)</td></tr>
-<tr class="separator:af2e8b600a067a729e5834fd5ae3c3fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a205a658892ef2e02a22c6fa498579630" id="r_a205a658892ef2e02a22c6fa498579630"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a205a658892ef2e02a22c6fa498579630">kHBAPxCmdFR</a>&#160;&#160;&#160;(0x4000)</td></tr>
-<tr class="separator:a205a658892ef2e02a22c6fa498579630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaf1b319dafc9751f7bc4ca86f9b1c7c" id="r_acaf1b319dafc9751f7bc4ca86f9b1c7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#acaf1b319dafc9751f7bc4ca86f9b1c7c">kHBAPxCmdCR</a>&#160;&#160;&#160;(0x8000)</td></tr>
-<tr class="separator:acaf1b319dafc9751f7bc4ca86f9b1c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d097682df8cf3a08c1976b8720686af" id="r_a6d097682df8cf3a08c1976b8720686af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a6d097682df8cf3a08c1976b8720686af">kSATAErrTaskFile</a>&#160;&#160;&#160;(1 &lt;&lt; 30)</td></tr>
+<tr class="separator:a6d097682df8cf3a08c1976b8720686af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7ed61813115cc13cf6448d81f4cce9" id="r_aba7ed61813115cc13cf6448d81f4cce9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#aba7ed61813115cc13cf6448d81f4cce9">kSATAPxCmdST</a>&#160;&#160;&#160;(0x0001)</td></tr>
+<tr class="separator:aba7ed61813115cc13cf6448d81f4cce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccbbb6c57d86461cdfe299894c8b157" id="r_a5ccbbb6c57d86461cdfe299894c8b157"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a5ccbbb6c57d86461cdfe299894c8b157">kSATAPxCmdFre</a>&#160;&#160;&#160;(0x0010)</td></tr>
+<tr class="separator:a5ccbbb6c57d86461cdfe299894c8b157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60230a460df50a2e00a3874682165f84" id="r_a60230a460df50a2e00a3874682165f84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a60230a460df50a2e00a3874682165f84">kSATAPxCmdFR</a>&#160;&#160;&#160;(0x4000)</td></tr>
+<tr class="separator:a60230a460df50a2e00a3874682165f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6e1718212b8f6d1e6856463830fca7" id="r_aea6e1718212b8f6d1e6856463830fca7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#aea6e1718212b8f6d1e6856463830fca7">kSATAPxCmdCR</a>&#160;&#160;&#160;(0x8000)</td></tr>
+<tr class="separator:aea6e1718212b8f6d1e6856463830fca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a960cb5cd5e9f3d0b57ed89786a4b8436" id="r_a960cb5cd5e9f3d0b57ed89786a4b8436"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a960cb5cd5e9f3d0b57ed89786a4b8436">kSATALBAMode</a>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
 <tr class="separator:a960cb5cd5e9f3d0b57ed89786a4b8436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f42ea770a86dc9f4f2e682045f05ff3" id="r_a5f42ea770a86dc9f4f2e682045f05ff3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a5f42ea770a86dc9f4f2e682045f05ff3">kSATASRBsy</a>&#160;&#160;&#160;(0x80)</td></tr>
 <tr class="separator:a5f42ea770a86dc9f4f2e682045f05ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef538a6e62c40d1abe62d1e269b8862c" id="r_aef538a6e62c40d1abe62d1e269b8862c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#aef538a6e62c40d1abe62d1e269b8862c">kSATASRDrq</a>&#160;&#160;&#160;(0x08)</td></tr>
 <tr class="separator:aef538a6e62c40d1abe62d1e269b8862c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a788a4e8966769b8b17bd895ce8b5a7ab" id="r_a788a4e8966769b8b17bd895ce8b5a7ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a788a4e8966769b8b17bd895ce8b5a7ab">kHBABohcBiosOwned</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
-<tr class="separator:a788a4e8966769b8b17bd895ce8b5a7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01917d9a0ab9b478bf316df78f64f217" id="r_a01917d9a0ab9b478bf316df78f64f217"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a01917d9a0ab9b478bf316df78f64f217">kHBABohcOSOwned</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
-<tr class="separator:a01917d9a0ab9b478bf316df78f64f217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6201b084391145768d66b7b65007ca2" id="r_ab6201b084391145768d66b7b65007ca2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#ab6201b084391145768d66b7b65007ca2">kSATABohcBiosOwned</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="separator:ab6201b084391145768d66b7b65007ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cc94032dee2bcfec0b56c8161737c3" id="r_ae8cc94032dee2bcfec0b56c8161737c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#ae8cc94032dee2bcfec0b56c8161737c3">kSATABohcOSOwned</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:ae8cc94032dee2bcfec0b56c8161737c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae131713444455c9e608464951c29f543" id="r_ae131713444455c9e608464951c29f543"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#ae131713444455c9e608464951c29f543">kSATAPortCnt</a>&#160;&#160;&#160;(0x20)</td></tr>
 <tr class="separator:ae131713444455c9e608464951c29f543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3783986c37a83c41f59055f956ce94ea" id="r_a3783986c37a83c41f59055f956ce94ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a3783986c37a83c41f59055f956ce94ea">kSATASig</a>&#160;&#160;&#160;(0x00000101)</td></tr>
@@ -160,6 +161,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab1139988002f8f9872916fa5478f9a17" id="r_ab1139988002f8f9872916fa5478f9a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="classKernel_1_1HardwareTimer.html">HardwareTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#ab1139988002f8f9872916fa5478f9a17">kSATATimer</a> (rtl_milliseconds(5))</td></tr>
+<tr class="separator:ab1139988002f8f9872916fa5478f9a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a3670d51fe96230509a7954eccf118f" id="r_a0a3670d51fe96230509a7954eccf118f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a0a3670d51fe96230509a7954eccf118f">ALIGN</a> (<a class="el" href="kernel_2NewKit_2Macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(4)) <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kIdentifyData[<a class="el" href="modules_2AHCI_2AHCI_8h.html#a84d4845ed5b2748f0406bdb131d4da7a">kAHCISectorSize</a>]</td></tr>
 <tr class="separator:a0a3670d51fe96230509a7954eccf118f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b8dc8469414e865471bdbfeaad4206" id="r_ab8b8dc8469414e865471bdbfeaad4206"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Write, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CommandOrCTRL, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Identify&gt; </td></tr>
@@ -170,7 +173,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a81793346f8465f747d5174aa7c5f3305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a command slot for a HBA port.  <br /></td></tr>
 <tr class="separator:a81793346f8465f747d5174aa7c5f3305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67852af44304f7a502bc211ad0701db2" id="r_a67852af44304f7a502bc211ad0701db2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a67852af44304f7a502bc211ad0701db2">drv_compute_disk_ahci</a> () noexcept</td></tr>
-<tr class="memdesc:a67852af44304f7a502bc211ad0701db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify device and read LBA info, Disk OEM vendor...  <br /></td></tr>
+<tr class="memdesc:a67852af44304f7a502bc211ad0701db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify device and read LBA info, Disk OEM vendor.  <br /></td></tr>
 <tr class="separator:a67852af44304f7a502bc211ad0701db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a136757d634973d03e56b19e603cc88a0" id="r_a136757d634973d03e56b19e603cc88a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AHCI_09Generic_8cc.html#a136757d634973d03e56b19e603cc88a0">drv_get_sector_count_ahci</a> ()</td></tr>
 <tr class="separator:a136757d634973d03e56b19e603cc88a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,104 +226,6 @@ Variables</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2024-02-02</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>(C) 2024-2025, Amlal El Mahrouss, all rights reserved. </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a788a4e8966769b8b17bd895ce8b5a7ab" name="a788a4e8966769b8b17bd895ce8b5a7ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a788a4e8966769b8b17bd895ce8b5a7ab">&#9670;&#160;</a></span>kHBABohcBiosOwned</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kHBABohcBiosOwned&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a01917d9a0ab9b478bf316df78f64f217" name="a01917d9a0ab9b478bf316df78f64f217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01917d9a0ab9b478bf316df78f64f217">&#9670;&#160;</a></span>kHBABohcOSOwned</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kHBABohcOSOwned&#160;&#160;&#160;(1 &lt;&lt; 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab957a0a50c3cc0acdf6de83b36dd9548" name="ab957a0a50c3cc0acdf6de83b36dd9548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab957a0a50c3cc0acdf6de83b36dd9548">&#9670;&#160;</a></span>kHBAErrTaskFile</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kHBAErrTaskFile&#160;&#160;&#160;(1 &lt;&lt; 30)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acaf1b319dafc9751f7bc4ca86f9b1c7c" name="acaf1b319dafc9751f7bc4ca86f9b1c7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaf1b319dafc9751f7bc4ca86f9b1c7c">&#9670;&#160;</a></span>kHBAPxCmdCR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kHBAPxCmdCR&#160;&#160;&#160;(0x8000)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a205a658892ef2e02a22c6fa498579630" name="a205a658892ef2e02a22c6fa498579630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a205a658892ef2e02a22c6fa498579630">&#9670;&#160;</a></span>kHBAPxCmdFR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kHBAPxCmdFR&#160;&#160;&#160;(0x4000)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af2e8b600a067a729e5834fd5ae3c3fb9" name="af2e8b600a067a729e5834fd5ae3c3fb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e8b600a067a729e5834fd5ae3c3fb9">&#9670;&#160;</a></span>kHBAPxCmdFre</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kHBAPxCmdFre&#160;&#160;&#160;(0x0010)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7ad305678f278b85161340811a0f6d8e" name="a7ad305678f278b85161340811a0f6d8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ad305678f278b85161340811a0f6d8e">&#9670;&#160;</a></span>kHBAPxCmdST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kHBAPxCmdST&#160;&#160;&#160;(0x0001)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aea288e59f506d46d77a6f10cb66c4ba7" name="aea288e59f506d46d77a6f10cb66c4ba7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea288e59f506d46d77a6f10cb66c4ba7">&#9670;&#160;</a></span>kSATABar5</h2>
 
@@ -329,6 +234,48 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define kSATABar5&#160;&#160;&#160;(0x24)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6201b084391145768d66b7b65007ca2" name="ab6201b084391145768d66b7b65007ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6201b084391145768d66b7b65007ca2">&#9670;&#160;</a></span>kSATABohcBiosOwned</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSATABohcBiosOwned&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8cc94032dee2bcfec0b56c8161737c3" name="ae8cc94032dee2bcfec0b56c8161737c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8cc94032dee2bcfec0b56c8161737c3">&#9670;&#160;</a></span>kSATABohcOSOwned</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSATABohcOSOwned&#160;&#160;&#160;(1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d097682df8cf3a08c1976b8720686af" name="a6d097682df8cf3a08c1976b8720686af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d097682df8cf3a08c1976b8720686af">&#9670;&#160;</a></span>kSATAErrTaskFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSATAErrTaskFile&#160;&#160;&#160;(1 &lt;&lt; 30)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -385,6 +332,62 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define kSATAProgIfAHCI&#160;&#160;&#160;(0x01)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea6e1718212b8f6d1e6856463830fca7" name="aea6e1718212b8f6d1e6856463830fca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6e1718212b8f6d1e6856463830fca7">&#9670;&#160;</a></span>kSATAPxCmdCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSATAPxCmdCR&#160;&#160;&#160;(0x8000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60230a460df50a2e00a3874682165f84" name="a60230a460df50a2e00a3874682165f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60230a460df50a2e00a3874682165f84">&#9670;&#160;</a></span>kSATAPxCmdFR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSATAPxCmdFR&#160;&#160;&#160;(0x4000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ccbbb6c57d86461cdfe299894c8b157" name="a5ccbbb6c57d86461cdfe299894c8b157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ccbbb6c57d86461cdfe299894c8b157">&#9670;&#160;</a></span>kSATAPxCmdFre</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSATAPxCmdFre&#160;&#160;&#160;(0x0010)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba7ed61813115cc13cf6448d81f4cce9" name="aba7ed61813115cc13cf6448d81f4cce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7ed61813115cc13cf6448d81f4cce9">&#9670;&#160;</a></span>kSATAPxCmdST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSATAPxCmdST&#160;&#160;&#160;(0x0001)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -508,7 +511,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Identify device and read LBA info, Disk OEM vendor... </p>
+<p>Identify device and read LBA info, Disk OEM vendor. </p>
 <p>Extract 48-bit LBA.</p>
 
 </div>
@@ -544,7 +547,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The slot, or ~0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The slot, or -1. </dd></dl>
 
 </div>
 </div>
@@ -718,6 +721,24 @@ template&lt;<a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab1139988002f8f9872916fa5478f9a17" name="ab1139988002f8f9872916fa5478f9a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1139988002f8f9872916fa5478f9a17">&#9670;&#160;</a></span>kSATATimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="classKernel_1_1HardwareTimer.html">HardwareTimer</a> kSATATimer </td>
+          <td>(</td>
+          <td class="paramtype">rtl_milliseconds(5)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

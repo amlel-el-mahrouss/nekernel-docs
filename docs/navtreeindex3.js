@@ -1,5 +1,15 @@
 var NAVTREEINDEX3 =
 {
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1fa86f1b80e03e6705be56d024782b9169a":[4,0,0,3,3,1,1,171,10],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1fa9de7c4958790d373fa9c16e5884c611f":[4,0,0,3,3,1,1,171,12],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1fab8cd8f20847ddf6580ee3477bee4a86c":[4,0,0,3,3,1,1,171,9],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1fabf71319747323abe8c0aa4253588f49a":[4,0,0,3,3,1,1,171,1],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1fac04ba41d1e215972b683e9fecb84a406":[4,0,0,3,3,1,1,171,11],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1faccba4111e51fabdba07eb1782eedb66a":[4,0,0,3,3,1,1,171,15],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1fae2aac81fe88eda95e04b49b798945cfe":[4,0,0,3,3,1,1,171,13],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1faf39d90a15a64282255a96a3d665ff165":[4,0,0,3,3,1,1,171,5],
+"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1faf7b09f731fa6f3cd90c019d0f52e29cb":[4,0,0,3,3,1,1,171,6],
+"EFI_2EFI_8h.html#a5c07a5e31247cf481f24414f4465f41a":[4,0,0,3,3,1,1,166],
 "EFI_2EFI_8h.html#a5f50df6246c8ff439e824dbdfcd4b562":[4,0,0,3,3,1,1,137],
 "EFI_2EFI_8h.html#a668ac61db8b981743e9586c445b2085b":[4,0,0,3,3,1,1,146],
 "EFI_2EFI_8h.html#a66c808363aa70efb901db73aa4de9e02":[4,0,0,3,3,1,1,71],
@@ -210,7 +220,7 @@ var NAVTREEINDEX3 =
 "HalHardwareThread_8cc.html":[4,0,0,3,6,2,3],
 "HalPagingMgrAMD64_8cc.html":[4,0,0,3,6,0,13],
 "HalPagingMgrAMD64_8cc.html#a47f3770483cefaffb7992c1c190fd2d8":[4,0,0,3,6,0,13,4],
-"HalPagingMgrAMD64_8cc.html#a9e787ee93c6d25ed98b23ad1f0ff9a60":[4,0,0,3,6,0,13,1],
+"HalPagingMgrAMD64_8cc.html#a58bfdb0e21d1b8dcf2724ddf5d5a558d":[4,0,0,3,6,0,13,1],
 "HalPagingMgrAMD64_8cc.html#ad627503a26fe29846ed83730aa2f36dd":[4,0,0,3,6,0,13,3],
 "HalPagingMgrAMD64_8cc.html#afebb7d01ea9b86a4b1b9822e09071c67":[4,0,0,3,6,0,13,2],
 "HalPagingMgrARM64_8cc.html":[4,0,0,3,6,1,8],
@@ -239,15 +249,5 @@ var NAVTREEINDEX3 =
 "HalSchedulerCorePrimitivesAMD64_8cc.html#a3e60b7abb449e3b2ff9003ee789718b1":[4,0,0,3,6,0,15,3],
 "HalSchedulerCorePrimitivesAMD64_8cc.html#a7ae9b52ba72a2c5b8733c0835087aa6e":[4,0,0,3,6,0,15,2],
 "HalSchedulerCorePrimitivesAMD64_8cc.html#add65731e2632ad429a95886971e45b16":[4,0,0,3,6,0,15,0],
-"HalSchedulerCorePrimitivesARM64_8cc.html":[4,0,0,3,6,1,10],
-"HalSchedulerCorePrimitivesARM64_8cc.html#a36a6beda41f24859f5c253d100c4e7fa":[4,0,0,3,6,1,10,1],
-"HalSchedulerCorePrimitivesARM64_8cc.html#add65731e2632ad429a95886971e45b16":[4,0,0,3,6,1,10,0],
-"HalTimerAMD64_8cc.html":[4,0,0,3,6,0,16],
-"HalTimerAMD64_8cc.html#a413dd27937a507eda0a290f6f19bb624":[4,0,0,3,6,0,16,5],
-"HalTimerAMD64_8cc.html#a4a47e0c035aab9f6c3d0f6797a2c1d3c":[4,0,0,3,6,0,16,2],
-"HalTimerAMD64_8cc.html#a708e8c10222f199133fb34bddf5aac33":[4,0,0,3,6,0,16,3],
-"HalTimerAMD64_8cc.html#ab4991b4c6d75895bba81a43bcd37b613":[4,0,0,3,6,0,16,1],
-"HalTimerAMD64_8cc.html#abd53e6035f0b467daa1da12102df0cce":[4,0,0,3,6,0,16,4],
-"HalTimerARM64_8cc.html":[4,0,0,3,6,1,11],
-"HalVirtualMemory_8cc.html":[4,0,0,3,6,2,4]
+"HalSchedulerCorePrimitivesARM64_8cc.html":[4,0,0,3,6,1,10]
 };

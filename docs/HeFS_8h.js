@@ -1,9 +1,12 @@
 var HeFS_8h =
 [
     [ "HEFS_BOOT_NODE", "structHEFS__BOOT__NODE.html", "structHEFS__BOOT__NODE" ],
+    [ "HEFS_INDEX_NODE", "structHEFS__INDEX__NODE.html", "structHEFS__INDEX__NODE" ],
+    [ "HEFS_INDEX_NODE_DIRECTORY", "structHEFS__INDEX__NODE__DIRECTORY.html", "structHEFS__INDEX__NODE__DIRECTORY" ],
     [ "Kernel::HeFS::HeFileSystemParser", "classKernel_1_1HeFS_1_1HeFileSystemParser.html", "classKernel_1_1HeFS_1_1HeFileSystemParser" ],
     [ "kHeFSDefaultVoluneName", "HeFS_8h.html#a7f60729bfef17a7492b037d333cf3834", null ],
     [ "kHeFSFileNameLen", "HeFS_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465", null ],
+    [ "kHeFSINDStartOffset", "HeFS_8h.html#a565fa0969c1b91d050db9eaced1cf2cf", null ],
     [ "kHeFSMagic", "HeFS_8h.html#aaad4ee1c87b58182385840f506b53509", null ],
     [ "kHeFSMagicLen", "HeFS_8h.html#a1f0681bf6e2fc8eec0657760dc2348c7", null ],
     [ "kHeFSMinimumDiskSize", "HeFS_8h.html#a65013263baefd9d8964f9873bf737996", null ],
@@ -11,7 +14,6 @@ var HeFS_8h =
     [ "kHeFSSearchAllStr", "HeFS_8h.html#ac100c02c069947d2e9b97a827b7e1233", null ],
     [ "kHeFSVersion", "HeFS_8h.html#a36b750da7d2881be04e3dc2daf842e91", null ],
     [ "ATime", "HeFS_8h.html#a142217963adf859f32724308be1b8330", null ],
-    [ "ALIGN", "HeFS_8h.html#a24dda53f403a87807703136a9bbe3ab1", null ],
     [ "fs_init_hefs", "HeFS_8h.html#a7f357627cfc3d6d71c4b6959e5d2598d", null ],
     [ "hefs_day_get", "HeFS_8h.html#a08495e328a92830716267351514184ff", null ],
     [ "hefs_drive_kind_to_string", "HeFS_8h.html#a077d6a9359808c513a7695c5f2f0d98b", null ],
@@ -28,7 +30,6 @@ var HeFS_8h =
     [ "kHeFSBaseMinute", "HeFS_8h.html#af078bab979df189411e5a84cf68fbdfe", null ],
     [ "kHeFSBaseMonth", "HeFS_8h.html#ac261342b31b67e84de7b2fe40dde744a", null ],
     [ "kHeFSBaseYear", "HeFS_8h.html#a6883d558553f5128e04ef77d541606e2", null ],
-    [ "kHeFSBlockCount", "HeFS_8h.html#a905e0d11e9760e74d4d9080990f2e3c4", null ],
     [ "kHeFSFileKindBlock", "HeFS_8h.html#a95544d3becdb97dec3080919b7538df3", null ],
     [ "kHeFSFileKindCharacter", "HeFS_8h.html#afb66f0c99bef9c517c47c84eb48838f1", null ],
     [ "kHeFSFileKindCount", "HeFS_8h.html#affc8ef9614f5e247cbdbed083ed022d4", null ],
@@ -39,6 +40,7 @@ var HeFS_8h =
     [ "kHeFSFileKindSymbolicLink", "HeFS_8h.html#aec977316138c58cb6ae059a5e83cc1cf", null ],
     [ "kHeFSFileKindUnknown", "HeFS_8h.html#adb6a455f1dceb2e8f6f42cc29324e014", null ],
     [ "kHeFSInvalidVID", "HeFS_8h.html#a81f82f241f900f1c83909293b4c7e289", null ],
+    [ "kHeFSSliceCount", "HeFS_8h.html#af23fbee19fdaa427a1086ceb2b1801d4", null ],
     [ "kHeFSTimeInvalid", "HeFS_8h.html#aae21c3442d5a4415fa1743e05e1b3464", null ],
     [ "kHeFSTimeMax", "HeFS_8h.html#a0c5113baf7ecbd4104730fe5b9a5f753", null ]
 ];

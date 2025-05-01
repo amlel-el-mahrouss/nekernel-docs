@@ -2,6 +2,7 @@ var AMD64_2BootEFI_8cc =
 [
     [ "kMachineModel", "AMD64_2BootEFI_8cc.html#ad16f9967352b47795f4b1d0d3f92a842", null ],
     [ "boot_init_fb", "AMD64_2BootEFI_8cc.html#a3f766b34e76144e82b3b9e558a23d945", null ],
+    [ "boot_read_cr3", "AMD64_2BootEFI_8cc.html#a96132ca2221d4fc771939f75a0d1221d", null ],
     [ "BootloaderMain", "AMD64_2BootEFI_8cc.html#a37e6ce967aeda1abc60e79d486566d94", null ],
     [ "rt_reset_hardware", "AMD64_2BootEFI_8cc.html#a0908b40c96960891de26d84dfa738fda", null ],
     [ "kEfiGlobalNamespaceVarGUID", "AMD64_2BootEFI_8cc.html#af8f35b390d6952c1895bc0e4afe65d7d", null ],

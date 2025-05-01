@@ -127,6 +127,7 @@ var annotated_dup =
       [ "MutableArray", "classKernel_1_1MutableArray.html", "classKernel_1_1MutableArray" ],
       [ "MutableLinkedList", "classKernel_1_1MutableLinkedList.html", "classKernel_1_1MutableLinkedList" ],
       [ "NE_DEVICE< const Char * >", "classKernel_1_1NE__DEVICE_3_01const_01Char_01_5_01_4.html", "classKernel_1_1NE__DEVICE_3_01const_01Char_01_5_01_4" ],
+      [ "NE_DEVICE< const Utf8Char * >", "classKernel_1_1NE__DEVICE_3_01const_01Utf8Char_01_5_01_4.html", "classKernel_1_1NE__DEVICE_3_01const_01Utf8Char_01_5_01_4" ],
       [ "NE_DEVICE< FBDevicePacket * >", "classKernel_1_1NE__DEVICE_3_01FBDevicePacket_01_5_01_4.html", "classKernel_1_1NE__DEVICE_3_01FBDevicePacket_01_5_01_4" ],
       [ "NE_DEVICE< MountpointInterface * >", "classKernel_1_1NE__DEVICE_3_01MountpointInterface_01_5_01_4.html", "classKernel_1_1NE__DEVICE_3_01MountpointInterface_01_5_01_4" ],
       [ "NE_DYLIB_OBJECT", "classKernel_1_1NE__DYLIB__OBJECT.html", "classKernel_1_1NE__DYLIB__OBJECT" ],
@@ -168,13 +169,6 @@ var annotated_dup =
       [ "UserProcessScheduler", "classKernel_1_1UserProcessScheduler.html", "classKernel_1_1UserProcessScheduler" ],
       [ "UserProcessTeam", "classKernel_1_1UserProcessTeam.html", "classKernel_1_1UserProcessTeam" ],
       [ "Variant", "classKernel_1_1Variant.html", "classKernel_1_1Variant" ]
-    ] ],
-    [ "mkfs", "namespacemkfs.html", [
-      [ "hefs", "namespacemkfs_1_1hefs.html", [
-        [ "BootNode", "structmkfs_1_1hefs_1_1BootNode.html", "structmkfs_1_1hefs_1_1BootNode" ],
-        [ "IndexNode", "structmkfs_1_1hefs_1_1IndexNode.html", "structmkfs_1_1hefs_1_1IndexNode" ],
-        [ "IndexNodeDirectory", "structmkfs_1_1hefs_1_1IndexNodeDirectory.html", "structmkfs_1_1hefs_1_1IndexNodeDirectory" ]
-      ] ]
     ] ],
     [ "pfd", "namespacepfd.html", [
       [ "internal", "namespacepfd_1_1internal.html", [
@@ -248,10 +242,13 @@ var annotated_dup =
     [ "HbaCmdHeader", "structHbaCmdHeader.html", "structHbaCmdHeader" ],
     [ "HbaCmdTbl", "structHbaCmdTbl.html", "structHbaCmdTbl" ],
     [ "HbaFis", "structHbaFis.html", "structHbaFis" ],
+    [ "HbaFlags", "unionHbaFlags.html", "unionHbaFlags" ],
     [ "HbaMem", "structHbaMem.html", "structHbaMem" ],
     [ "HbaPort", "structHbaPort.html", "structHbaPort" ],
     [ "HbaPrdtEntry", "structHbaPrdtEntry.html", "structHbaPrdtEntry" ],
     [ "HEFS_BOOT_NODE", "structHEFS__BOOT__NODE.html", "structHEFS__BOOT__NODE" ],
+    [ "HEFS_INDEX_NODE", "structHEFS__INDEX__NODE.html", "structHEFS__INDEX__NODE" ],
+    [ "HEFS_INDEX_NODE_DIRECTORY", "structHEFS__INDEX__NODE__DIRECTORY.html", "structHEFS__INDEX__NODE__DIRECTORY" ],
     [ "LDR_DATA_DIRECTORY", "structLDR__DATA__DIRECTORY.html", "structLDR__DATA__DIRECTORY" ],
     [ "LDR_EXEC_HEADER", "structLDR__EXEC__HEADER.html", "structLDR__EXEC__HEADER" ],
     [ "LDR_EXPORT_DIRECTORY", "structLDR__EXPORT__DIRECTORY.html", "structLDR__EXPORT__DIRECTORY" ],

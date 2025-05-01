@@ -6,7 +6,7 @@ var classKernel_1_1PE32Loader =
     [ "~PE32Loader", "classKernel_1_1PE32Loader.html#a017406c019ee0712a918dc8352281646", null ],
     [ "AsString", "classKernel_1_1PE32Loader.html#a3574c8fed74cc9b1c7ecb4e144db0a8d", null ],
     [ "FindStart", "classKernel_1_1PE32Loader.html#a6c802dc854bffbb2e6ff51bfaa5b240d", null ],
-    [ "FindSymbol", "classKernel_1_1PE32Loader.html#a996d3a4c445ed55d567d03873adf127f", null ],
+    [ "FindSymbol", "classKernel_1_1PE32Loader.html#a1c9257f5a2b020e8ebd37c1173a28ad3", null ],
     [ "GetBlob", "classKernel_1_1PE32Loader.html#af18e74bf631b92d37e8d986fd58bc9a6", null ],
     [ "IsLoaded", "classKernel_1_1PE32Loader.html#ad0f95a416da1967739de0e94ba970538", null ],
     [ "MIME", "classKernel_1_1PE32Loader.html#a8959208a8085228c5c44c8aef805e3fd", null ],

@@ -15,6 +15,8 @@ var DriveMgr_8h =
     [ "io_construct_main_drive", "DriveMgr_8h.html#ada6be16e95fd6cf9ad9f7c154074b457", null ],
     [ "io_detect_drive", "DriveMgr_8h.html#ac2098d3995e72954e49112525089fd0d", null ],
     [ "io_detect_drive", "DriveMgr_8h.html#a44c6ea754d5c28b34dff620149402180", null ],
+    [ "io_drv_input", "DriveMgr_8h.html#ad790ea6a819b0d66cfd7d4bd7301b1d0", null ],
     [ "io_drv_kind", "DriveMgr_8h.html#a806e5f49dcbcff47d0ee6c57abe4b959", null ],
+    [ "io_drv_output", "DriveMgr_8h.html#a64eb9503628cb0e98272e815728d453a", null ],
     [ "io_drv_unimplemented", "DriveMgr_8h.html#a57da1f3f2dee09fbd53eff9131a17088", null ]
 ];
