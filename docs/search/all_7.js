@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b_0',['b',['../classKernel_1_1MountpointInterface.html#a173f14a34be0c859f3f4d2a1aba73d2b',1,'Kernel::MountpointInterface::B()'],['../structCF_1_1CFColor.html#a4da236ec7c1aede2cf342307850c02b0',1,'CF::CFColor::b']]],
+  ['b_0',['b',['../structCF_1_1CFColor.html#a4da236ec7c1aede2cf342307850c02b0',1,'CF::CFColor::b'],['../classKernel_1_1MountpointInterface.html#a173f14a34be0c859f3f4d2a1aba73d2b',1,'Kernel::MountpointInterface::B()']]],
   ['bar_1',['bar',['../classKernel_1_1PCI_1_1Detail_1_1BAR.html',1,'Kernel::PCI::Detail::BAR'],['../classKernel_1_1PCI_1_1Detail_1_1BAR.html#a47a6b09b9bb9b67a9c9c508e6261bab0',1,'Kernel::PCI::Detail::BAR::BAR()'],['../classKernel_1_1PCI_1_1Device.html#ae49160f0d6a00660f5fcc7898e0fa788',1,'Kernel::PCI::Device::Bar()'],['../classKernel_1_1PCI_1_1BAR.html',1,'Kernel::PCI::BAR']]],
   ['bar1_2',['BAR1',['../classKernel_1_1PCI_1_1BAR.html#ac7b2d33322c6bd3d54cb28327c8cac80',1,'Kernel::PCI::BAR']]],
   ['bar2_3',['BAR2',['../classKernel_1_1PCI_1_1BAR.html#ad73102d223f2c0962e478105a7d47a96',1,'Kernel::PCI::BAR']]],
@@ -27,7 +27,7 @@ var searchData=
   ['binarymutex_24',['binarymutex',['../classKernel_1_1BinaryMutex.html',1,'Kernel::BinaryMutex'],['../classKernel_1_1BinaryMutex.html#aea178ed2d18341633a21e0bfa7bc05d8',1,'Kernel::BinaryMutex::BinaryMutex()']]],
   ['binarymutex_2ecc_25',['BinaryMutex.cc',['../BinaryMutex_8cc.html',1,'']]],
   ['binarymutex_2eh_26',['BinaryMutex.h',['../BinaryMutex_8h.html',1,'']]],
-  ['bist_27',['bist',['../structHbaFlags_1_1HbaFlags__.html#a728a6aedf72231f8eeca4540138e1630',1,'HbaFlags::HbaFlags_::BIST'],['../structKernel_1_1PCI_1_1DeviceHeader.html#aa5505d6991796a8ce66c735efb1136dc',1,'Kernel::PCI::DeviceHeader::Bist'],['../structHbaCmdHeader_1_1HbaFlags_1_1HbaFlags__.html#ae0a327c10e73fafebcf4a4a4d91481b4',1,'HbaCmdHeader::HbaFlags::HbaFlags_::BIST']]],
+  ['bist_27',['bist',['../structKernel_1_1PCI_1_1DeviceHeader.html#aa5505d6991796a8ce66c735efb1136dc',1,'Kernel::PCI::DeviceHeader::Bist'],['../structHbaCmdHeader_1_1HbaFlags_1_1HbaFlags__.html#ae0a327c10e73fafebcf4a4a4d91481b4',1,'HbaCmdHeader::HbaFlags::HbaFlags_::BIST'],['../structHbaFlags_1_1HbaFlags__.html#a728a6aedf72231f8eeca4540138e1630',1,'HbaFlags::HbaFlags_::BIST']]],
   ['bit_28',['bit',['../namespaceutl.html#ad229dcf753ec11932521622aa8d07864',1,'utl']]],
   ['bit_2eh_29',['bit.h',['../bit_8h.html',1,'']]],
   ['bit_5fceil_30',['bit_ceil',['../namespaceutl.html#a290a678beef81f5aff62822c7bf461b9',1,'utl']]],

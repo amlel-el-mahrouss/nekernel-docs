@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"kernel_2NewKit_2Defines_8h.html#a396f715bdd00aea1c9fc4060bd68fc47":[4,0,0,3,9,5,23],
+"kernel_2NewKit_2Defines_8h.html#a39b5bdb05ee1bd00df13897c8db5ee63":[4,0,0,3,9,5,33],
+"kernel_2NewKit_2Defines_8h.html#a3ec5b04a6ee57c6d83916de4e1fa1bc4":[4,0,0,3,9,5,36],
+"kernel_2NewKit_2Defines_8h.html#a4023c0dbc1028e46ac013c7a96ed5025":[4,0,0,3,9,5,8],
 "kernel_2NewKit_2Defines_8h.html#a422ed8f9cda660a97cb88bcdb57d8004":[4,0,0,3,9,5,12],
 "kernel_2NewKit_2Defines_8h.html#a43c76a8770f77cb9af3332a8e5767e50":[4,0,0,3,9,5,37],
 "kernel_2NewKit_2Defines_8h.html#a448defd2293246a8f38b7033eaf53771":[4,0,0,3,9,5,3],
@@ -64,8 +68,8 @@ var NAVTREEINDEX18 =
 "kernel_2NewKit_2Macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469":[4,0,0,3,9,11,28],
 "kernel_2NewKit_2Macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b":[4,0,0,3,9,11,17],
 "kernel_2NewKit_2Macros_8h.html#a73e964a8b06f3ee45f2d04ab6c91096c":[4,0,0,3,9,11,34],
-"kernel_2NewKit_2Macros_8h.html#a77366c1bd428629dc898e188bfd182a3":[4,0,0,3,9,11,12],
 "kernel_2NewKit_2Macros_8h.html#a77366c1bd428629dc898e188bfd182a3":[4,0,0,3,9,11,13],
+"kernel_2NewKit_2Macros_8h.html#a77366c1bd428629dc898e188bfd182a3":[4,0,0,3,9,11,12],
 "kernel_2NewKit_2Macros_8h.html#a7ebc9a785e5ab85457c98595aac81589":[4,0,0,3,9,11,43],
 "kernel_2NewKit_2Macros_8h.html#a7fae0c251a6c18c95ca3a6363c6b1da0":[4,0,0,3,9,11,1],
 "kernel_2NewKit_2Macros_8h.html#a88a22810bf835b7794ce207e15732da8":[4,0,0,3,9,11,40],
@@ -245,9 +249,5 @@ var NAVTREEINDEX18 =
 "modules_2ATA_2ATA_8h.html#acb5691a26e836afc6972577bd71b0d97":[4,0,0,4,3,0,39],
 "modules_2ATA_2ATA_8h.html#acba68da9027d95b9bae53901a8ea009b":[4,0,0,4,3,0,6],
 "modules_2ATA_2ATA_8h.html#acd25672516342decdb4acb14b13dfa03":[4,0,0,4,3,0,48],
-"modules_2ATA_2ATA_8h.html#ad2f2744a08145beb17b7ed6ca0465d85":[4,0,0,4,3,0,51],
-"modules_2ATA_2ATA_8h.html#ad514d776b09e8b873aa7087ef0091fe6":[4,0,0,4,3,0,65],
-"modules_2ATA_2ATA_8h.html#ad74934afc699945311360be6e3700ef5":[4,0,0,4,3,0,78],
-"modules_2ATA_2ATA_8h.html#ae0d046a29ce70e07d868961cf17b54c7":[4,0,0,4,3,0,34],
-"modules_2ATA_2ATA_8h.html#ae9be2cb739432bf835c6e5492cf92ba7":[4,0,0,4,3,0,37]
+"modules_2ATA_2ATA_8h.html#ad2f2744a08145beb17b7ed6ca0465d85":[4,0,0,4,3,0,51]
 };

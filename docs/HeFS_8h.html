@@ -156,7 +156,7 @@ Macros</h2></td></tr>
 <tr class="separator:a65013263baefd9d8964f9873bf737996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f60729bfef17a7492b037d333cf3834" id="r_a7f60729bfef17a7492b037d333cf3834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HeFS_8h.html#a7f60729bfef17a7492b037d333cf3834">kHeFSDefaultVoluneName</a>&#160;&#160;&#160;u8&quot;HeFS Volume&quot;</td></tr>
 <tr class="separator:a7f60729bfef17a7492b037d333cf3834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a565fa0969c1b91d050db9eaced1cf2cf" id="r_a565fa0969c1b91d050db9eaced1cf2cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HeFS_8h.html#a565fa0969c1b91d050db9eaced1cf2cf">kHeFSINDStartOffset</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structHEFS__INDEX__NODE__DIRECTORY.html">HEFS_INDEX_NODE_DIRECTORY</a>))</td></tr>
+<tr class="memitem:a565fa0969c1b91d050db9eaced1cf2cf" id="r_a565fa0969c1b91d050db9eaced1cf2cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HeFS_8h.html#a565fa0969c1b91d050db9eaced1cf2cf">kHeFSINDStartOffset</a>&#160;&#160;&#160;(sizeof(<a class="el" href="structHEFS__INDEX__NODE__DIRECTORY.html">HEFS_INDEX_NODE_DIRECTORY</a>) + sizeof(<a class="el" href="structHEFS__BOOT__NODE.html">HEFS_BOOT_NODE</a>))</td></tr>
 <tr class="separator:a565fa0969c1b91d050db9eaced1cf2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac100c02c069947d2e9b97a827b7e1233" id="r_ac100c02c069947d2e9b97a827b7e1233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HeFS_8h.html#ac100c02c069947d2e9b97a827b7e1233">kHeFSSearchAllStr</a>&#160;&#160;&#160;u8&quot;*&quot;</td></tr>
 <tr class="separator:ac100c02c069947d2e9b97a827b7e1233"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,7 +324,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kHeFSINDStartOffset&#160;&#160;&#160;(sizeof(<a class="el" href="structHEFS__INDEX__NODE__DIRECTORY.html">HEFS_INDEX_NODE_DIRECTORY</a>))</td>
+          <td class="memname">#define kHeFSINDStartOffset&#160;&#160;&#160;(sizeof(<a class="el" href="structHEFS__INDEX__NODE__DIRECTORY.html">HEFS_INDEX_NODE_DIRECTORY</a>) + sizeof(<a class="el" href="structHEFS__BOOT__NODE.html">HEFS_BOOT_NODE</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">

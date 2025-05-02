@@ -765,7 +765,7 @@ var searchData=
   ['kstepsstrlen_762',['kStepsStrLen',['../Steps_8h.html#a1b333266c3380f37eb79433974a8a359',1,'Steps.h']]],
   ['kstepsversion_763',['kStepsVersion',['../Steps_8h.html#a1179c7e8f326418f40529a73891d4028',1,'Steps.h']]],
   ['kstoragecount_764',['kStorageCount',['../namespaceKernel.html#a4db811c8102148181f6765d7a0116e68ac9725f76e8bf507bfe8bd849beb5ce08',1,'Kernel']]],
-  ['kstring_765',['kstring',['../classKernel_1_1KString.html#a753e431722ffd95bd009f37265867c63',1,'Kernel::KString::KString(SizeT Sz)'],['../classKernel_1_1KString.html#a9af98ff389d52297e7eb0cfe4510664c',1,'Kernel::KString::KString()'],['../classKernel_1_1Variant.html#a3df8075bec52e61d531760d036656f4fa302e56d566a2561033b27c13680ea4b2',1,'Kernel::Variant::kString'],['../classKernel_1_1KString.html',1,'Kernel::KString']]],
+  ['kstring_765',['kstring',['../classKernel_1_1Variant.html#a3df8075bec52e61d531760d036656f4fa302e56d566a2561033b27c13680ea4b2',1,'Kernel::Variant::kString'],['../classKernel_1_1KString.html#a753e431722ffd95bd009f37265867c63',1,'Kernel::KString::KString(SizeT Sz)'],['../classKernel_1_1KString.html#a9af98ff389d52297e7eb0cfe4510664c',1,'Kernel::KString::KString()'],['../classKernel_1_1KString.html',1,'Kernel::KString']]],
   ['kstring_2ecc_766',['KString.cc',['../KString_8cc.html',1,'']]],
   ['kstring_2eh_767',['KString.h',['../KString_8h.html',1,'']]],
   ['kstringbuilder_768',['kstringbuilder',['../classKernel_1_1KStringBuilder.html',1,'Kernel::KStringBuilder'],['../classKernel_1_1KString.html#ac83d991c5a35308db31e00c456913efa',1,'Kernel::KString::KStringBuilder']]],

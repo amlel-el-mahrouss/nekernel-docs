@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"structEfiBootServices.html#afd38f34c1000a900497466a17d491a67":[3,0,22,46],
+"structEfiDevicePathProtocol.html":[3,0,23],
+"structEfiDevicePathProtocol.html#a765eee3ba0f8dada167d7dd82cde0d9a":[3,0,23,1],
+"structEfiDevicePathProtocol.html#ab015d79ba7eca9ac609d2b93da76c0a0":[3,0,23,0],
 "structEfiDevicePathProtocol.html#ab6ecaf88e62160513100e1330562addc":[3,0,23,2],
 "structEfiFileDevicePathProtocol.html":[3,0,24],
 "structEfiFileDevicePathProtocol.html#a82198f6c6b8e21246454b29ed72126e2":[3,0,24,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "structFisRegH2D.html#a418bbc3c8761ed058aacb5aaaa4ef2b2":[3,0,55,10],
 "structFisRegH2D.html#a632648678411d9062430abe8199bd19a":[3,0,55,12],
 "structFisRegH2D.html#a72d5798da6fc9bba38941e8bfc08a9eb":[3,0,55,8],
-"structFisRegH2D.html#a7e80ce1b5cbae782783028df7dadab92":[3,0,55,17],
-"structFisRegH2D.html#a9c13ca498a0ea57e2aaacfb369d880d4":[3,0,55,13],
-"structFisRegH2D.html#a9dd1fac7b44cb7710d9a87e8f48f3e38":[3,0,55,11],
-"structFisRegH2D.html#aa20beaeed682ee8a70b7d9c17e229daa":[3,0,55,16],
-"structFisRegH2D.html#aa3a3b3aa4f56f2cbc0b3007853d04c87":[3,0,55,7]
+"structFisRegH2D.html#a7e80ce1b5cbae782783028df7dadab92":[3,0,55,17]
 };
