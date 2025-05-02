@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"kernel_2NewKit_2Defines_8h.html#a422ed8f9cda660a97cb88bcdb57d8004":[4,0,0,3,9,5,12],
+"kernel_2NewKit_2Defines_8h.html#a43c76a8770f77cb9af3332a8e5767e50":[4,0,0,3,9,5,37],
+"kernel_2NewKit_2Defines_8h.html#a448defd2293246a8f38b7033eaf53771":[4,0,0,3,9,5,3],
+"kernel_2NewKit_2Defines_8h.html#a46c45ec8d2e2504b10aa8b4d16ec12af":[4,0,0,3,9,5,21],
 "kernel_2NewKit_2Defines_8h.html#a491c180e187771df3ce5885241ed061b":[4,0,0,3,9,5,32],
 "kernel_2NewKit_2Defines_8h.html#a5801162fe3161371005a37736050c570":[4,0,0,3,9,5,14],
 "kernel_2NewKit_2Defines_8h.html#a5eb99afc826543f3460c9e30a1db7268":[4,0,0,3,9,5,20],
@@ -60,8 +64,8 @@ var NAVTREEINDEX18 =
 "kernel_2NewKit_2Macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469":[4,0,0,3,9,11,28],
 "kernel_2NewKit_2Macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b":[4,0,0,3,9,11,17],
 "kernel_2NewKit_2Macros_8h.html#a73e964a8b06f3ee45f2d04ab6c91096c":[4,0,0,3,9,11,34],
-"kernel_2NewKit_2Macros_8h.html#a77366c1bd428629dc898e188bfd182a3":[4,0,0,3,9,11,13],
 "kernel_2NewKit_2Macros_8h.html#a77366c1bd428629dc898e188bfd182a3":[4,0,0,3,9,11,12],
+"kernel_2NewKit_2Macros_8h.html#a77366c1bd428629dc898e188bfd182a3":[4,0,0,3,9,11,13],
 "kernel_2NewKit_2Macros_8h.html#a7ebc9a785e5ab85457c98595aac81589":[4,0,0,3,9,11,43],
 "kernel_2NewKit_2Macros_8h.html#a7fae0c251a6c18c95ca3a6363c6b1da0":[4,0,0,3,9,11,1],
 "kernel_2NewKit_2Macros_8h.html#a88a22810bf835b7794ce207e15732da8":[4,0,0,3,9,11,40],
@@ -245,9 +249,5 @@ var NAVTREEINDEX18 =
 "modules_2ATA_2ATA_8h.html#ad514d776b09e8b873aa7087ef0091fe6":[4,0,0,4,3,0,65],
 "modules_2ATA_2ATA_8h.html#ad74934afc699945311360be6e3700ef5":[4,0,0,4,3,0,78],
 "modules_2ATA_2ATA_8h.html#ae0d046a29ce70e07d868961cf17b54c7":[4,0,0,4,3,0,34],
-"modules_2ATA_2ATA_8h.html#ae9be2cb739432bf835c6e5492cf92ba7":[4,0,0,4,3,0,37],
-"modules_2ATA_2ATA_8h.html#aed1929007f388cab23229c908be5bbaf":[4,0,0,4,3,0,71],
-"modules_2ATA_2ATA_8h.html#aed29fb475f84d8a5fdebd6c83e932024":[4,0,0,4,3,0,80],
-"modules_2ATA_2ATA_8h.html#aefab351e75e10b6dbfa0b7828031cda4":[4,0,0,4,3,0,8],
-"modules_2ATA_2ATA_8h.html#af5f476aa2920211197aa8ff81f0dfdbd":[4,0,0,4,3,0,25]
+"modules_2ATA_2ATA_8h.html#ae9be2cb739432bf835c6e5492cf92ba7":[4,0,0,4,3,0,37]
 };

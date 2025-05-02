@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['b_0',['b',['../structCF_1_1CFColor.html#a4da236ec7c1aede2cf342307850c02b0',1,'CF::CFColor::b'],['../classKernel_1_1MountpointInterface.html#a173f14a34be0c859f3f4d2a1aba73d2b',1,'Kernel::MountpointInterface::B()']]],
-  ['bar_1',['bar',['../classKernel_1_1PCI_1_1Detail_1_1BAR.html',1,'Kernel::PCI::Detail::BAR'],['../classKernel_1_1PCI_1_1Device.html#ae49160f0d6a00660f5fcc7898e0fa788',1,'Kernel::PCI::Device::Bar()'],['../classKernel_1_1PCI_1_1Detail_1_1BAR.html#a47a6b09b9bb9b67a9c9c508e6261bab0',1,'Kernel::PCI::Detail::BAR::BAR()'],['../classKernel_1_1PCI_1_1BAR.html',1,'Kernel::PCI::BAR']]],
+  ['b_0',['b',['../classKernel_1_1MountpointInterface.html#a173f14a34be0c859f3f4d2a1aba73d2b',1,'Kernel::MountpointInterface::B()'],['../structCF_1_1CFColor.html#a4da236ec7c1aede2cf342307850c02b0',1,'CF::CFColor::b']]],
+  ['bar_1',['bar',['../classKernel_1_1PCI_1_1Detail_1_1BAR.html',1,'Kernel::PCI::Detail::BAR'],['../classKernel_1_1PCI_1_1Detail_1_1BAR.html#a47a6b09b9bb9b67a9c9c508e6261bab0',1,'Kernel::PCI::Detail::BAR::BAR()'],['../classKernel_1_1PCI_1_1Device.html#ae49160f0d6a00660f5fcc7898e0fa788',1,'Kernel::PCI::Device::Bar()'],['../classKernel_1_1PCI_1_1BAR.html',1,'Kernel::PCI::BAR']]],
   ['bar1_2',['BAR1',['../classKernel_1_1PCI_1_1BAR.html#ac7b2d33322c6bd3d54cb28327c8cac80',1,'Kernel::PCI::BAR']]],
   ['bar2_3',['BAR2',['../classKernel_1_1PCI_1_1BAR.html#ad73102d223f2c0962e478105a7d47a96',1,'Kernel::PCI::BAR']]],
   ['bar3_4',['BAR3',['../classKernel_1_1PCI_1_1BAR.html#afc6fd8ea0cf0171de64a42adddcfa7ec',1,'Kernel::PCI::BAR']]],

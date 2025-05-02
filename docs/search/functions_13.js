@@ -18,7 +18,7 @@ var searchData=
   ['select_5ffolder_15',['select_folder',['../classpfd_1_1select__folder.html#ac6611de7b07e4366ffd2442d22ae1924',1,'pfd::select_folder']]],
   ['select_5fmask_16',['select_mask',['../structqr_1_1Qr.html#a4878e135fef31830fef72568a1038aae',1,'qr::Qr']]],
   ['select_5fmode_17',['select_mode',['../namespaceqr.html#ac8796c4a6ee46d2f7b4b6c3ca51105a2',1,'qr']]],
-  ['separator_18',['separator',['../classpfd_1_1path.html#a73bb289af48853c52fb1569c2d00a40c',1,'pfd::path::separator()'],['../classKernel_1_1NeFileSystemHelper.html#ae178f70be1edbb69dec2012fca627aab',1,'Kernel::NeFileSystemHelper::Separator()']]],
+  ['separator_18',['separator',['../classKernel_1_1NeFileSystemHelper.html#ae178f70be1edbb69dec2012fca627aab',1,'Kernel::NeFileSystemHelper::Separator()'],['../classpfd_1_1path.html#a73bb289af48853c52fb1569c2d00a40c',1,'pfd::path::separator()']]],
   ['set_5farr_5fbit_19',['set_arr_bit',['../namespaceutl.html#a44192b27b1bbe99b59f7733f75aec331',1,'utl::set_arr_bit()'],['../structqr_1_1Qr.html#ac2ceff32be91db4c79ba8e9a2ff6a964',1,'qr::Qr::set_arr_bit()']]],
   ['set_5fbit_20',['set_bit',['../namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1',1,'utl']]],
   ['setcolor_21',['setColor',['../namespacerang_1_1rang__implementation.html#af1561ff8768eaa943f809d2e6d2a469d',1,'rang::rang_implementation']]],

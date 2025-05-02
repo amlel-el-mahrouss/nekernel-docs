@@ -1,15 +1,19 @@
 var NAVTREEINDEX23 =
 {
+"structCF_1_1CFRect.html#ad0f68de0376160e7c47cabdf16eb4bba":[2,0,1,8,2],
+"structCF_1_1CFRect.html#ad0f68de0376160e7c47cabdf16eb4bba":[3,0,1,8,2],
+"structCF_1_1CFRect.html#ae013e879d889656bb70f5c37f68d963f":[3,0,1,8,3],
+"structCF_1_1CFRect.html#ae013e879d889656bb70f5c37f68d963f":[2,0,1,8,3],
 "structCF_1_1CFRect.html#ae2e05b9b803696c27ad6251cf4efbd2c":[3,0,1,8,6],
 "structCF_1_1CFRect.html#ae2e05b9b803696c27ad6251cf4efbd2c":[2,0,1,8,6],
-"structCF_1_1CFRect.html#ae47852553b1830071ae2e31b7c6c220f":[3,0,1,8,1],
 "structCF_1_1CFRect.html#ae47852553b1830071ae2e31b7c6c220f":[2,0,1,8,1],
+"structCF_1_1CFRect.html#ae47852553b1830071ae2e31b7c6c220f":[3,0,1,8,1],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html":[2,0,1,0,2,0],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html":[3,0,1,0,1,0],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#a29961baf5a90dd855f7b52506c68a102":[3,0,1,0,1,0,0],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#a29961baf5a90dd855f7b52506c68a102":[2,0,1,0,2,0,0],
-"structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#a3beb4df6f9a2b75ce8f6d48992ed7207":[2,0,1,0,2,0,3],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#a3beb4df6f9a2b75ce8f6d48992ed7207":[3,0,1,0,1,0,3],
+"structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#a3beb4df6f9a2b75ce8f6d48992ed7207":[2,0,1,0,2,0,3],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#a61bd9947a3ae400088799e4a419d64a3":[3,0,1,0,1,0,1],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#a61bd9947a3ae400088799e4a419d64a3":[2,0,1,0,2,0,1],
 "structCF_1_1XRN_1_1GUIDSequence_1_1GUID.html#af1dbd5b78a4244020b0e750f9e105bb0":[3,0,1,0,1,0,2],
@@ -30,8 +34,8 @@ var NAVTREEINDEX23 =
 "structDDK__FINAL.html#ac913d8061e4ed4282ac2b0d5614a02e8":[3,0,16,13],
 "structDDK__FINAL.html#aeedbf4fb382799d47971eb9f8416040f":[3,0,16,6],
 "structDDK__FINAL.html#af14d29ebddd44f8ea0a657604b62a847":[3,0,16,1],
-"structDI_1_1DI__DISK__IMAGE.html":[2,0,3,0],
 "structDI_1_1DI__DISK__IMAGE.html":[3,0,2,0],
+"structDI_1_1DI__DISK__IMAGE.html":[2,0,3,0],
 "structDI_1_1DI__DISK__IMAGE.html#a26408fd2a5a36eca741f50a91f50f165":[3,0,2,0,0],
 "structDI_1_1DI__DISK__IMAGE.html#a26408fd2a5a36eca741f50a91f50f165":[2,0,3,0,0],
 "structDI_1_1DI__DISK__IMAGE.html#a406b080b93ecfd16d4f4285d421921d3":[3,0,2,0,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX23 =
 "structEfiBootServices.html#afd38f34c1000a900497466a17d491a67":[3,0,22,46],
 "structEfiDevicePathProtocol.html":[3,0,23],
 "structEfiDevicePathProtocol.html#a765eee3ba0f8dada167d7dd82cde0d9a":[3,0,23,1],
-"structEfiDevicePathProtocol.html#ab015d79ba7eca9ac609d2b93da76c0a0":[3,0,23,0],
-"structEfiDevicePathProtocol.html#ab6ecaf88e62160513100e1330562addc":[3,0,23,2],
-"structEfiFileDevicePathProtocol.html":[3,0,24],
-"structEfiFileDevicePathProtocol.html#a82198f6c6b8e21246454b29ed72126e2":[3,0,24,0],
-"structEfiFileDevicePathProtocol.html#ae1e77abcad57bc78d7f7194c613674a0":[3,0,24,1]
+"structEfiDevicePathProtocol.html#ab015d79ba7eca9ac609d2b93da76c0a0":[3,0,23,0]
 };

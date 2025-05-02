@@ -64,6 +64,6 @@ var searchData=
   ['try_5ffind_5fnode2_61',['TRY_FIND_NODE2',['../MutableArray_8h.html#a076eb36a090e7a5f46c9531f853fb9f7',1,'MutableArray.h']]],
   ['try_5fremove_5fnode_62',['TRY_REMOVE_NODE',['../MutableArray_8h.html#aa03228683e13f251ecccb07ee6247b98',1,'MutableArray.h']]],
   ['tryleak_63',['tryleak',['../classKernel_1_1Ref.html#a80e57eb624b5043130027901c09f8013',1,'Kernel::Ref::TryLeak()'],['../classCF_1_1CF__OBJECT.html#a0dcfa81c5907859d0d2ebefe0d7ac6d9',1,'CF::CF_OBJECT::TryLeak()']]],
-  ['type_64',['type',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a306b710f35459ada82182177d2063b17',1,'Kernel::HAL::SDT_OBJECT::Type'],['../classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fc',1,'pfd::internal::file_dialog::type']]],
+  ['type_64',['type',['../classpfd_1_1internal_1_1file__dialog.html#a758847a3fab54bb12a67abbf9ea683fc',1,'pfd::internal::file_dialog::type'],['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a306b710f35459ada82182177d2063b17',1,'Kernel::HAL::SDT_OBJECT::Type']]],
   ['typeattributes_65',['TypeAttributes',['../structKernel_1_1Detail_1_1AMD64_1_1InterruptDescriptorAMD64.html#a16cff344e6a991754485624c32987692',1,'Kernel::Detail::AMD64::InterruptDescriptorAMD64']]]
 ];
