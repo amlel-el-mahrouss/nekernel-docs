@@ -44,11 +44,12 @@ var searchData=
   ['create_5fdirectory_5fstructure_41',['create_directory_structure',['../namespacemk__fwrk.html#a7c2d76b445e63f4eee366241723439c5',1,'mk_fwrk']]],
   ['createalias_42',['CreateAlias',['../classKernel_1_1IFilesystemMgr.html#a081b5bb7a0f12db6b33f5ab4c6fdbf4e',1,'Kernel::IFilesystemMgr']]],
   ['createcatalog_43',['createcatalog',['../classKernel_1_1NeFileSystemParser.html#a73f1982e8e3619d16a3dc85aab9e1d98',1,'Kernel::NeFileSystemParser::CreateCatalog(_Input const Char *name, _Input const Int32 &amp;flags, _Input const Int32 &amp;kind)'],['../classKernel_1_1NeFileSystemParser.html#a6fe6970714cd3cdef57da15663f43396',1,'Kernel::NeFileSystemParser::CreateCatalog(_Input const Char *name)']]],
-  ['createdirectory_44',['createdirectory',['../classKernel_1_1HeFS_1_1HeFileSystemParser.html#ac1eaac1a84ddea68b3e6e4d68d8bed8a',1,'Kernel::HeFS::HeFileSystemParser::CreateDirectory()'],['../classKernel_1_1IFilesystemMgr.html#a20e8aa9196185c0a004076c57d58b8c8',1,'Kernel::IFilesystemMgr::CreateDirectory()']]],
-  ['createfile_45',['CreateFile',['../classKernel_1_1HeFS_1_1HeFileSystemParser.html#a8d4ecbd4f7fbc5524fd215fe3ff83f61',1,'Kernel::HeFS::HeFileSystemParser']]],
-  ['createfork_46',['CreateFork',['../classKernel_1_1NeFileSystemParser.html#a339e7d89af6b60e56a26557ac9101247',1,'Kernel::NeFileSystemParser']]],
-  ['createjournal_47',['CreateJournal',['../classKernel_1_1NeFileSystemJournal.html#a27bf342e545d387d39739291efa5eb0e',1,'Kernel::NeFileSystemJournal']]],
-  ['createswapfile_48',['CreateSwapFile',['../classKernel_1_1IFilesystemMgr.html#aeddacb2257837985d01a8b803663b9d0',1,'Kernel::IFilesystemMgr']]],
-  ['currentprocess_49',['CurrentProcess',['../classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486',1,'Kernel::UserProcessScheduler']]],
-  ['currentteam_50',['CurrentTeam',['../classKernel_1_1UserProcessScheduler.html#afdaeea0ed156471fc0906de143ec0337',1,'Kernel::UserProcessScheduler']]]
+  ['createdirectory_44',['CreateDirectory',['../classKernel_1_1IFilesystemMgr.html#a20e8aa9196185c0a004076c57d58b8c8',1,'Kernel::IFilesystemMgr']]],
+  ['createfork_45',['CreateFork',['../classKernel_1_1NeFileSystemParser.html#a339e7d89af6b60e56a26557ac9101247',1,'Kernel::NeFileSystemParser']]],
+  ['createinode_46',['CreateINode',['../classKernel_1_1HeFS_1_1HeFileSystemParser.html#abc2e4b7ed4618239f699144e92e94b8e',1,'Kernel::HeFS::HeFileSystemParser']]],
+  ['createinodedirectory_47',['CreateINodeDirectory',['../classKernel_1_1HeFS_1_1HeFileSystemParser.html#ac9400000bf31fa11c3cb93283c89f97e',1,'Kernel::HeFS::HeFileSystemParser']]],
+  ['createjournal_48',['CreateJournal',['../classKernel_1_1NeFileSystemJournal.html#a27bf342e545d387d39739291efa5eb0e',1,'Kernel::NeFileSystemJournal']]],
+  ['createswapfile_49',['CreateSwapFile',['../classKernel_1_1IFilesystemMgr.html#aeddacb2257837985d01a8b803663b9d0',1,'Kernel::IFilesystemMgr']]],
+  ['currentprocess_50',['CurrentProcess',['../classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486',1,'Kernel::UserProcessScheduler']]],
+  ['currentteam_51',['CurrentTeam',['../classKernel_1_1UserProcessScheduler.html#afdaeea0ed156471fc0906de143ec0337',1,'Kernel::UserProcessScheduler']]]
 ];

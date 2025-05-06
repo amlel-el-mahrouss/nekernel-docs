@@ -142,7 +142,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a36b750da7d2881be04e3dc2daf842e91" id="r_a36b750da7d2881be04e3dc2daf842e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HeFS_8h.html#a36b750da7d2881be04e3dc2daf842e91">kHeFSVersion</a>&#160;&#160;&#160;(0x0101)</td></tr>
+<tr class="memitem:a36b750da7d2881be04e3dc2daf842e91" id="r_a36b750da7d2881be04e3dc2daf842e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HeFS_8h.html#a36b750da7d2881be04e3dc2daf842e91">kHeFSVersion</a>&#160;&#160;&#160;(0x0103)</td></tr>
 <tr class="separator:a36b750da7d2881be04e3dc2daf842e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaad4ee1c87b58182385840f506b53509" id="r_aaad4ee1c87b58182385840f506b53509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HeFS_8h.html#aaad4ee1c87b58182385840f506b53509">kHeFSMagic</a>&#160;&#160;&#160;&quot;  HeFS&quot;</td></tr>
 <tr class="separator:aaad4ee1c87b58182385840f506b53509"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,46 +169,55 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a05589fbab0657f08285ebdfe93f5ec9e" id="r_a05589fbab0657f08285ebdfe93f5ec9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea149eeb0f0337cfe020fabea87c4051c4">kHeFSHardDrive</a> = 0xC0
-, <a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea0c25beca4348d30544e07d0998697584">kHeFSSolidStateDrive</a> = 0xC1
-, <a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea6fc491277bf9b7db373bb5673acc57b9">kHeFSOpticalDrive</a> = 0x0C
-, <a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9eaebde9d3da8e013dbdb99d43d7edb8eb8">kHeFSMassStorageDevice</a> = 0xCC
+<tr class="memitem:ab8555fdeb60d9e269d37e6cd158d119f" id="r_ab8555fdeb60d9e269d37e6cd158d119f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: UInt8 { <br />
+&#160;&#160;<a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119fa149eeb0f0337cfe020fabea87c4051c4">kHeFSHardDrive</a> = 0xC0
+, <a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119fa0c25beca4348d30544e07d0998697584">kHeFSSolidStateDrive</a> = 0xC1
+, <a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119fa6fc491277bf9b7db373bb5673acc57b9">kHeFSOpticalDrive</a> = 0x0C
+, <a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119faebde9d3da8e013dbdb99d43d7edb8eb8">kHeFSMassStorageDevice</a> = 0xCC
 , <br />
-&#160;&#160;<a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea8de9a5cc3587ff3e900d2a1d0dcc103a">kHeFSScsiDrive</a> = 0xC4
-, <a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea3320ddf153513c5bce2d69611e8b6289">kHeFSFlashDrive</a> = 0xC6
-, <a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea31db5f2a9b8fa625172ba0416f91c74a">kHeFSUnknown</a> = 0xFF
-, <a class="el" href="HeFS_8h.html#a05589fbab0657f08285ebdfe93f5ec9eac8ede45dfe2bb606ed73f37c3fc9cd06">kHeFSDriveCount</a> = 7
+&#160;&#160;<a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119fa8de9a5cc3587ff3e900d2a1d0dcc103a">kHeFSScsiDrive</a> = 0xC4
+, <a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119fa3320ddf153513c5bce2d69611e8b6289">kHeFSFlashDrive</a> = 0xC6
+, <a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119fa31db5f2a9b8fa625172ba0416f91c74a">kHeFSUnknown</a> = 0xFF
+, <a class="el" href="HeFS_8h.html#ab8555fdeb60d9e269d37e6cd158d119fac8ede45dfe2bb606ed73f37c3fc9cd06">kHeFSDriveCount</a> = 7
 <br />
  }</td></tr>
-<tr class="separator:a05589fbab0657f08285ebdfe93f5ec9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16af7b253440dadd46a80a4b9fddba4d" id="r_a16af7b253440dadd46a80a4b9fddba4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="HeFS_8h.html#a16af7b253440dadd46a80a4b9fddba4da8ddec408a97d99363633e122fb6ece8a">kHeFSStatusUnlocked</a> = 0x18
-, <a class="el" href="HeFS_8h.html#a16af7b253440dadd46a80a4b9fddba4dab0aa7c79b800b5d29cdcd5129357ff6d">kHeFSStatusLocked</a>
-, <a class="el" href="HeFS_8h.html#a16af7b253440dadd46a80a4b9fddba4daf904f5c47ca67f6a1590666ebfe861d6">kHeFSStatusError</a>
-, <a class="el" href="HeFS_8h.html#a16af7b253440dadd46a80a4b9fddba4da4ae3ea14ae196041ac88f2678d0f0e7f">kHeFSStatusInvalid</a>
+<tr class="separator:ab8555fdeb60d9e269d37e6cd158d119f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6590a1b3a5657ee4acda2e548fd3562" id="r_aa6590a1b3a5657ee4acda2e548fd3562"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: UInt8 { <br />
+&#160;&#160;<a class="el" href="HeFS_8h.html#aa6590a1b3a5657ee4acda2e548fd3562a8ddec408a97d99363633e122fb6ece8a">kHeFSStatusUnlocked</a> = 0x18
+, <a class="el" href="HeFS_8h.html#aa6590a1b3a5657ee4acda2e548fd3562ab0aa7c79b800b5d29cdcd5129357ff6d">kHeFSStatusLocked</a>
+, <a class="el" href="HeFS_8h.html#aa6590a1b3a5657ee4acda2e548fd3562af904f5c47ca67f6a1590666ebfe861d6">kHeFSStatusError</a>
+, <a class="el" href="HeFS_8h.html#aa6590a1b3a5657ee4acda2e548fd3562a4ae3ea14ae196041ac88f2678d0f0e7f">kHeFSStatusInvalid</a>
 , <br />
-&#160;&#160;<a class="el" href="HeFS_8h.html#a16af7b253440dadd46a80a4b9fddba4da199c8c283cb8c8878fbdbbfe0672590b">kHeFSStatusCount</a>
+&#160;&#160;<a class="el" href="HeFS_8h.html#aa6590a1b3a5657ee4acda2e548fd3562a199c8c283cb8c8878fbdbbfe0672590b">kHeFSStatusCount</a>
 <br />
  }</td></tr>
-<tr class="separator:a16af7b253440dadd46a80a4b9fddba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba01db17f4a2bfbc3db60dc172972a25" id="r_aba01db17f4a2bfbc3db60dc172972a25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25aded168b9b808a46a8c89e03d8db6b74a">kHeFSEncodingUTF8</a> = 0x00
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25ad6f4173546a3a6c669751c8babbcd842">kHeFSEncodingUTF16</a>
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25a95ed4f7e2d498eebfc6954cf4f3868ba">kHeFSEncodingUTF32</a>
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25a1606112ec5f74ad0d5f433972126eb3d">kHeFSEncodingUTF16BE</a>
+<tr class="separator:aa6590a1b3a5657ee4acda2e548fd3562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6fa9b27bc1298c39234b0c2fb7299b" id="r_a0c6fa9b27bc1298c39234b0c2fb7299b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: UInt16 { <br />
+&#160;&#160;<a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba6df4b65f959473c35f52217ee19f78ca">kHeFSEncodingFlagsUTF8</a> = 0x50
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299bac7b00dd7a671dc314ff21f60939d38eb">kHeFSEncodingFlagsUTF16</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299baf97685b0ba38addcd2d455764103a065">kHeFSEncodingFlagsUTF32</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba088a24fd3078418bfb282013f379daba">kHeFSEncodingFlagsUTF16BE</a>
 , <br />
-&#160;&#160;<a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25af889a5651f58e462d36fda0bdd42a4f7">kHeFSEncodingUTF16LE</a>
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25aa0b2f6b4d007b7e3205734128bf7b13c">kHeFSEncodingUTF32BE</a>
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25ae6e252b5cb220d1fa031d8a10a8056a7">kHeFSEncodingUTF32LE</a>
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25ae48c53608b98982149cf136360538d39">kHeFSEncodingUTF8BE</a>
+&#160;&#160;<a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299bad00af2787f6b297d7eb7a1e24f102e8d">kHeFSEncodingFlagsUTF16LE</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba3bb93090c5dbedbcb9233e4ab3808af9">kHeFSEncodingFlagsUTF32BE</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299bae27bea68f0b248b40dbcdcf2cd07ffed">kHeFSEncodingFlagsUTF32LE</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299babd267ee25600e0d1d2cd241e46077c09">kHeFSEncodingFlagsUTF8BE</a>
 , <br />
-&#160;&#160;<a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25a326f1e2c62c5d97b54a9d5e762d02448">kHeFSEncodingUTF8LE</a>
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25a01aec05624fa94ea34b0b12bf0facb58">kHeFSEncodingBinary</a>
-, <a class="el" href="HeFS_8h.html#aba01db17f4a2bfbc3db60dc172972a25a5877e7e397c13e339048e343f51113ac">kHeFSEncodingCount</a>
+&#160;&#160;<a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba4343bf1853e3afb82d669d5c8132464c">kHeFSEncodingFlagsUTF8LE</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299bae468a83acf6a919c64428840c6214d0d">kHeFSEncodingFlagsBinary</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba3a151e89ba850c7b15fc0f912f545362">kHeFSEncodingFlagsCount</a> = 11
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299badbee60e23607bc635e1911bf58759902">kHeFSFlagsNone</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299baa650da08a24a6428b5950c1d1c64f556">kHeFSFlagsReadOnly</a> = 0x100
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299bac560b3cc980c5e0292a61d0cc50109c7">kHeFSFlagsHidden</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299bac1f455c7680d796871b2512e3fb95cd0">kHeFSFlagsSystem</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba8b2b4afcc83e75ac659eb6baa78a13f3">kHeFSFlagsArchive</a>
+, <br />
+&#160;&#160;<a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba2a8bc1726c5499a258f7269be00e67e3">kHeFSFlagsDevice</a>
+, <a class="el" href="HeFS_8h.html#a0c6fa9b27bc1298c39234b0c2fb7299ba2b40cfed34def5c8a32f784c3cfe1869">kHeFSFlagsCount</a> = 5
 <br />
  }</td></tr>
-<tr class="separator:aba01db17f4a2bfbc3db60dc172972a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0c6fa9b27bc1298c39234b0c2fb7299b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf105ae5beaca1dee30ae54530691fce" id="r_aaf105ae5beaca1dee30ae54530691fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="HeFS_8h.html#aaf105ae5beaca1dee30ae54530691fcea0a7bea1fcf1b139c84eb5963830a7c64">kHeFSInvalidColor</a> = 0
 , <a class="el" href="HeFS_8h.html#aaf105ae5beaca1dee30ae54530691fcea27353f54afc54c0f072c9dff38c38d66">kHeFSRed</a> = 100
 , <a class="el" href="HeFS_8h.html#aaf105ae5beaca1dee30ae54530691fceac37964b8ee8e4bb696a725f3bd88e0e8">kHeFSBlack</a>
@@ -243,8 +252,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab8365a2fe9a8b33f7e5354ce6e7106e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef004bb04cd0e523e29f7b60a78f4f82" id="r_aef004bb04cd0e523e29f7b60a78f4f82"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1Detail.html#aef004bb04cd0e523e29f7b60a78f4f82">Kernel::Detail::hefs_file_flags_to_string</a> (<a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> flags) noexcept</td></tr>
 <tr class="separator:aef004bb04cd0e523e29f7b60a78f4f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f357627cfc3d6d71c4b6959e5d2598d" id="r_a7f357627cfc3d6d71c4b6959e5d2598d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HeFS.html#a7f357627cfc3d6d71c4b6959e5d2598d">Kernel::HeFS::fs_init_hefs</a> (<a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>) noexcept</td></tr>
-<tr class="separator:a7f357627cfc3d6d71c4b6959e5d2598d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52554767026cacdbb31a4a22374d3ac" id="r_ac52554767026cacdbb31a4a22374d3ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HeFS.html#ac52554767026cacdbb31a4a22374d3ac">Kernel::HeFS::fs_init_hefs</a> (<a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>)</td></tr>
+<tr class="memdesc:ac52554767026cacdbb31a4a22374d3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="namespaceKernel_1_1HeFS.html">HeFS</a> inside the main disk.  <br /></td></tr>
+<tr class="separator:ac52554767026cacdbb31a4a22374d3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -408,7 +418,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kHeFSVersion&#160;&#160;&#160;(0x0101)</td>
+          <td class="memname">#define kHeFSVersion&#160;&#160;&#160;(0x0103)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -416,74 +426,81 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a05589fbab0657f08285ebdfe93f5ec9e" name="a05589fbab0657f08285ebdfe93f5ec9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05589fbab0657f08285ebdfe93f5ec9e">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="ab8555fdeb60d9e269d37e6cd158d119f" name="ab8555fdeb60d9e269d37e6cd158d119f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8555fdeb60d9e269d37e6cd158d119f">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">anonymous enum : <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea149eeb0f0337cfe020fabea87c4051c4" name="a05589fbab0657f08285ebdfe93f5ec9ea149eeb0f0337cfe020fabea87c4051c4"></a>kHeFSHardDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea0c25beca4348d30544e07d0998697584" name="a05589fbab0657f08285ebdfe93f5ec9ea0c25beca4348d30544e07d0998697584"></a>kHeFSSolidStateDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea6fc491277bf9b7db373bb5673acc57b9" name="a05589fbab0657f08285ebdfe93f5ec9ea6fc491277bf9b7db373bb5673acc57b9"></a>kHeFSOpticalDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9eaebde9d3da8e013dbdb99d43d7edb8eb8" name="a05589fbab0657f08285ebdfe93f5ec9eaebde9d3da8e013dbdb99d43d7edb8eb8"></a>kHeFSMassStorageDevice&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea8de9a5cc3587ff3e900d2a1d0dcc103a" name="a05589fbab0657f08285ebdfe93f5ec9ea8de9a5cc3587ff3e900d2a1d0dcc103a"></a>kHeFSScsiDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea3320ddf153513c5bce2d69611e8b6289" name="a05589fbab0657f08285ebdfe93f5ec9ea3320ddf153513c5bce2d69611e8b6289"></a>kHeFSFlashDrive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9ea31db5f2a9b8fa625172ba0416f91c74a" name="a05589fbab0657f08285ebdfe93f5ec9ea31db5f2a9b8fa625172ba0416f91c74a"></a>kHeFSUnknown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05589fbab0657f08285ebdfe93f5ec9eac8ede45dfe2bb606ed73f37c3fc9cd06" name="a05589fbab0657f08285ebdfe93f5ec9eac8ede45dfe2bb606ed73f37c3fc9cd06"></a>kHeFSDriveCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119fa149eeb0f0337cfe020fabea87c4051c4" name="ab8555fdeb60d9e269d37e6cd158d119fa149eeb0f0337cfe020fabea87c4051c4"></a>kHeFSHardDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119fa0c25beca4348d30544e07d0998697584" name="ab8555fdeb60d9e269d37e6cd158d119fa0c25beca4348d30544e07d0998697584"></a>kHeFSSolidStateDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119fa6fc491277bf9b7db373bb5673acc57b9" name="ab8555fdeb60d9e269d37e6cd158d119fa6fc491277bf9b7db373bb5673acc57b9"></a>kHeFSOpticalDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119faebde9d3da8e013dbdb99d43d7edb8eb8" name="ab8555fdeb60d9e269d37e6cd158d119faebde9d3da8e013dbdb99d43d7edb8eb8"></a>kHeFSMassStorageDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119fa8de9a5cc3587ff3e900d2a1d0dcc103a" name="ab8555fdeb60d9e269d37e6cd158d119fa8de9a5cc3587ff3e900d2a1d0dcc103a"></a>kHeFSScsiDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119fa3320ddf153513c5bce2d69611e8b6289" name="ab8555fdeb60d9e269d37e6cd158d119fa3320ddf153513c5bce2d69611e8b6289"></a>kHeFSFlashDrive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119fa31db5f2a9b8fa625172ba0416f91c74a" name="ab8555fdeb60d9e269d37e6cd158d119fa31db5f2a9b8fa625172ba0416f91c74a"></a>kHeFSUnknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8555fdeb60d9e269d37e6cd158d119fac8ede45dfe2bb606ed73f37c3fc9cd06" name="ab8555fdeb60d9e269d37e6cd158d119fac8ede45dfe2bb606ed73f37c3fc9cd06"></a>kHeFSDriveCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a16af7b253440dadd46a80a4b9fddba4d" name="a16af7b253440dadd46a80a4b9fddba4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16af7b253440dadd46a80a4b9fddba4d">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="aa6590a1b3a5657ee4acda2e548fd3562" name="aa6590a1b3a5657ee4acda2e548fd3562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6590a1b3a5657ee4acda2e548fd3562">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">anonymous enum : <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da8ddec408a97d99363633e122fb6ece8a" name="a16af7b253440dadd46a80a4b9fddba4da8ddec408a97d99363633e122fb6ece8a"></a>kHeFSStatusUnlocked&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4dab0aa7c79b800b5d29cdcd5129357ff6d" name="a16af7b253440dadd46a80a4b9fddba4dab0aa7c79b800b5d29cdcd5129357ff6d"></a>kHeFSStatusLocked&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4daf904f5c47ca67f6a1590666ebfe861d6" name="a16af7b253440dadd46a80a4b9fddba4daf904f5c47ca67f6a1590666ebfe861d6"></a>kHeFSStatusError&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da4ae3ea14ae196041ac88f2678d0f0e7f" name="a16af7b253440dadd46a80a4b9fddba4da4ae3ea14ae196041ac88f2678d0f0e7f"></a>kHeFSStatusInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da199c8c283cb8c8878fbdbbfe0672590b" name="a16af7b253440dadd46a80a4b9fddba4da199c8c283cb8c8878fbdbbfe0672590b"></a>kHeFSStatusCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa6590a1b3a5657ee4acda2e548fd3562a8ddec408a97d99363633e122fb6ece8a" name="aa6590a1b3a5657ee4acda2e548fd3562a8ddec408a97d99363633e122fb6ece8a"></a>kHeFSStatusUnlocked&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa6590a1b3a5657ee4acda2e548fd3562ab0aa7c79b800b5d29cdcd5129357ff6d" name="aa6590a1b3a5657ee4acda2e548fd3562ab0aa7c79b800b5d29cdcd5129357ff6d"></a>kHeFSStatusLocked&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa6590a1b3a5657ee4acda2e548fd3562af904f5c47ca67f6a1590666ebfe861d6" name="aa6590a1b3a5657ee4acda2e548fd3562af904f5c47ca67f6a1590666ebfe861d6"></a>kHeFSStatusError&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa6590a1b3a5657ee4acda2e548fd3562a4ae3ea14ae196041ac88f2678d0f0e7f" name="aa6590a1b3a5657ee4acda2e548fd3562a4ae3ea14ae196041ac88f2678d0f0e7f"></a>kHeFSStatusInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa6590a1b3a5657ee4acda2e548fd3562a199c8c283cb8c8878fbdbbfe0672590b" name="aa6590a1b3a5657ee4acda2e548fd3562a199c8c283cb8c8878fbdbbfe0672590b"></a>kHeFSStatusCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="aba01db17f4a2bfbc3db60dc172972a25" name="aba01db17f4a2bfbc3db60dc172972a25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba01db17f4a2bfbc3db60dc172972a25">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a0c6fa9b27bc1298c39234b0c2fb7299b" name="a0c6fa9b27bc1298c39234b0c2fb7299b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c6fa9b27bc1298c39234b0c2fb7299b">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">anonymous enum : <a class="el" href="namespaceKernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25aded168b9b808a46a8c89e03d8db6b74a" name="aba01db17f4a2bfbc3db60dc172972a25aded168b9b808a46a8c89e03d8db6b74a"></a>kHeFSEncodingUTF8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25ad6f4173546a3a6c669751c8babbcd842" name="aba01db17f4a2bfbc3db60dc172972a25ad6f4173546a3a6c669751c8babbcd842"></a>kHeFSEncodingUTF16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a95ed4f7e2d498eebfc6954cf4f3868ba" name="aba01db17f4a2bfbc3db60dc172972a25a95ed4f7e2d498eebfc6954cf4f3868ba"></a>kHeFSEncodingUTF32&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a1606112ec5f74ad0d5f433972126eb3d" name="aba01db17f4a2bfbc3db60dc172972a25a1606112ec5f74ad0d5f433972126eb3d"></a>kHeFSEncodingUTF16BE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25af889a5651f58e462d36fda0bdd42a4f7" name="aba01db17f4a2bfbc3db60dc172972a25af889a5651f58e462d36fda0bdd42a4f7"></a>kHeFSEncodingUTF16LE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25aa0b2f6b4d007b7e3205734128bf7b13c" name="aba01db17f4a2bfbc3db60dc172972a25aa0b2f6b4d007b7e3205734128bf7b13c"></a>kHeFSEncodingUTF32BE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25ae6e252b5cb220d1fa031d8a10a8056a7" name="aba01db17f4a2bfbc3db60dc172972a25ae6e252b5cb220d1fa031d8a10a8056a7"></a>kHeFSEncodingUTF32LE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25ae48c53608b98982149cf136360538d39" name="aba01db17f4a2bfbc3db60dc172972a25ae48c53608b98982149cf136360538d39"></a>kHeFSEncodingUTF8BE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a326f1e2c62c5d97b54a9d5e762d02448" name="aba01db17f4a2bfbc3db60dc172972a25a326f1e2c62c5d97b54a9d5e762d02448"></a>kHeFSEncodingUTF8LE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a01aec05624fa94ea34b0b12bf0facb58" name="aba01db17f4a2bfbc3db60dc172972a25a01aec05624fa94ea34b0b12bf0facb58"></a>kHeFSEncodingBinary&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a5877e7e397c13e339048e343f51113ac" name="aba01db17f4a2bfbc3db60dc172972a25a5877e7e397c13e339048e343f51113ac"></a>kHeFSEncodingCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba6df4b65f959473c35f52217ee19f78ca" name="a0c6fa9b27bc1298c39234b0c2fb7299ba6df4b65f959473c35f52217ee19f78ca"></a>kHeFSEncodingFlagsUTF8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299bac7b00dd7a671dc314ff21f60939d38eb" name="a0c6fa9b27bc1298c39234b0c2fb7299bac7b00dd7a671dc314ff21f60939d38eb"></a>kHeFSEncodingFlagsUTF16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299baf97685b0ba38addcd2d455764103a065" name="a0c6fa9b27bc1298c39234b0c2fb7299baf97685b0ba38addcd2d455764103a065"></a>kHeFSEncodingFlagsUTF32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba088a24fd3078418bfb282013f379daba" name="a0c6fa9b27bc1298c39234b0c2fb7299ba088a24fd3078418bfb282013f379daba"></a>kHeFSEncodingFlagsUTF16BE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299bad00af2787f6b297d7eb7a1e24f102e8d" name="a0c6fa9b27bc1298c39234b0c2fb7299bad00af2787f6b297d7eb7a1e24f102e8d"></a>kHeFSEncodingFlagsUTF16LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba3bb93090c5dbedbcb9233e4ab3808af9" name="a0c6fa9b27bc1298c39234b0c2fb7299ba3bb93090c5dbedbcb9233e4ab3808af9"></a>kHeFSEncodingFlagsUTF32BE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299bae27bea68f0b248b40dbcdcf2cd07ffed" name="a0c6fa9b27bc1298c39234b0c2fb7299bae27bea68f0b248b40dbcdcf2cd07ffed"></a>kHeFSEncodingFlagsUTF32LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299babd267ee25600e0d1d2cd241e46077c09" name="a0c6fa9b27bc1298c39234b0c2fb7299babd267ee25600e0d1d2cd241e46077c09"></a>kHeFSEncodingFlagsUTF8BE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba4343bf1853e3afb82d669d5c8132464c" name="a0c6fa9b27bc1298c39234b0c2fb7299ba4343bf1853e3afb82d669d5c8132464c"></a>kHeFSEncodingFlagsUTF8LE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299bae468a83acf6a919c64428840c6214d0d" name="a0c6fa9b27bc1298c39234b0c2fb7299bae468a83acf6a919c64428840c6214d0d"></a>kHeFSEncodingFlagsBinary&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba3a151e89ba850c7b15fc0f912f545362" name="a0c6fa9b27bc1298c39234b0c2fb7299ba3a151e89ba850c7b15fc0f912f545362"></a>kHeFSEncodingFlagsCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299badbee60e23607bc635e1911bf58759902" name="a0c6fa9b27bc1298c39234b0c2fb7299badbee60e23607bc635e1911bf58759902"></a>kHeFSFlagsNone&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299baa650da08a24a6428b5950c1d1c64f556" name="a0c6fa9b27bc1298c39234b0c2fb7299baa650da08a24a6428b5950c1d1c64f556"></a>kHeFSFlagsReadOnly&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299bac560b3cc980c5e0292a61d0cc50109c7" name="a0c6fa9b27bc1298c39234b0c2fb7299bac560b3cc980c5e0292a61d0cc50109c7"></a>kHeFSFlagsHidden&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299bac1f455c7680d796871b2512e3fb95cd0" name="a0c6fa9b27bc1298c39234b0c2fb7299bac1f455c7680d796871b2512e3fb95cd0"></a>kHeFSFlagsSystem&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba8b2b4afcc83e75ac659eb6baa78a13f3" name="a0c6fa9b27bc1298c39234b0c2fb7299ba8b2b4afcc83e75ac659eb6baa78a13f3"></a>kHeFSFlagsArchive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba2a8bc1726c5499a258f7269be00e67e3" name="a0c6fa9b27bc1298c39234b0c2fb7299ba2a8bc1726c5499a258f7269be00e67e3"></a>kHeFSFlagsDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c6fa9b27bc1298c39234b0c2fb7299ba2b40cfed34def5c8a32f784c3cfe1869" name="a0c6fa9b27bc1298c39234b0c2fb7299ba2b40cfed34def5c8a32f784c3cfe1869"></a>kHeFSFlagsCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

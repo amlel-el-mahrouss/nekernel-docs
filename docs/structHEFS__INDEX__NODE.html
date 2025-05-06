@@ -104,8 +104,8 @@ $(document).ready(function(){initNavTree('structHEFS__INDEX__NODE.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a91c53ba3791bd3cb826834191caf321c" id="r_a91c53ba3791bd3cb826834191caf321c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Kernel::Utf8Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#a91c53ba3791bd3cb826834191caf321c">fName</a> [<a class="el" href="HeFS_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465">kHeFSFileNameLen</a>]</td></tr>
-<tr class="separator:a91c53ba3791bd3cb826834191caf321c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff66f063a69dc114614a9e78a05359a" id="r_a9ff66f063a69dc114614a9e78a05359a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#a9ff66f063a69dc114614a9e78a05359a">fHashPath</a></td></tr>
+<tr class="separator:a9ff66f063a69dc114614a9e78a05359a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a387f6da77be8ecf78ec73798394ce0" id="r_a3a387f6da77be8ecf78ec73798394ce0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#a3a387f6da77be8ecf78ec73798394ce0">fFlags</a></td></tr>
 <tr class="memdesc:a3a387f6da77be8ecf78ec73798394ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name.  <br /></td></tr>
 <tr class="separator:a3a387f6da77be8ecf78ec73798394ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,12 +138,20 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae5e8b76c028ef6e45c250e5df3c58f57" id="r_ae5e8b76c028ef6e45c250e5df3c58f57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#ae5e8b76c028ef6e45c250e5df3c58f57">fMode</a></td></tr>
 <tr class="memdesc:ae5e8b76c028ef6e45c250e5df3c58f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">User ID and Group ID of the file.  <br /></td></tr>
 <tr class="separator:ae5e8b76c028ef6e45c250e5df3c58f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a9f410a45622e0fe0188fa454f8285" id="r_a72a9f410a45622e0fe0188fa454f8285"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#a72a9f410a45622e0fe0188fa454f8285">fBlock</a> [<a class="el" href="HeFS_8h.html#af23fbee19fdaa427a1086ceb2b1801d4">kHeFSSliceCount</a>]</td></tr>
-<tr class="memdesc:a72a9f410a45622e0fe0188fa454f8285"><td class="mdescLeft">&#160;</td><td class="mdescRight">File mode. (read, write, execute, etc).  <br /></td></tr>
-<tr class="separator:a72a9f410a45622e0fe0188fa454f8285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa79e182fc264b32e602039780e20f6ad" id="r_aa79e182fc264b32e602039780e20f6ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#aa79e182fc264b32e602039780e20f6ad">fPad</a> [69]</td></tr>
-<tr class="memdesc:aa79e182fc264b32e602039780e20f6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">block slice.  <br /></td></tr>
-<tr class="separator:aa79e182fc264b32e602039780e20f6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad658d0710b036893e221caa9ad8cb66d" id="r_ad658d0710b036893e221caa9ad8cb66d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#ad658d0710b036893e221caa9ad8cb66d">fOffsetSlices</a></td></tr>
+<tr class="memdesc:ad658d0710b036893e221caa9ad8cb66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">File mode. (read, write, execute, etc).  <br /></td></tr>
+<tr class="separator:ad658d0710b036893e221caa9ad8cb66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1c2a793e067b913a819873edccde08" id="r_a3f1c2a793e067b913a819873edccde08"><td class="memItemLeft" >struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8dcc22722aee75441daa4abe53411a" id="r_a3e8dcc22722aee75441daa4abe53411a"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;&#160;&#160;<a class="el" href="structHEFS__INDEX__NODE.html#af37413fa631f34200bcc6eec853f749a">fBase</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3e8dcc22722aee75441daa4abe53411a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b58668e40688450a69b9d4cb4ffe34" id="r_a01b58668e40688450a69b9d4cb4ffe34"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;&#160;&#160;<a class="el" href="structHEFS__INDEX__NODE.html#a0b2098ffe3bdb372d97b87a58453bb7e">fLength</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a01b58668e40688450a69b9d4cb4ffe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1c2a793e067b913a819873edccde08" id="r_a3f1c2a793e067b913a819873edccde08"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#a3f1c2a793e067b913a819873edccde08">fSlices</a> [<a class="el" href="HeFS_8h.html#af23fbee19fdaa427a1086ceb2b1801d4">kHeFSSliceCount</a>]&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3f1c2a793e067b913a819873edccde08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3845ea45667d19728dd3c6ad4c2c77f0" id="r_a3845ea45667d19728dd3c6ad4c2c77f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHEFS__INDEX__NODE.html#a3845ea45667d19728dd3c6ad4c2c77f0">fPad</a> [309]</td></tr>
+<tr class="memdesc:a3845ea45667d19728dd3c6ad4c2c77f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">block slice  <br /></td></tr>
+<tr class="separator:a3845ea45667d19728dd3c6ad4c2c77f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>HeFS index node. </p>
@@ -165,19 +173,17 @@ The index node is used to store the file information of a file. </dd></dl>
 
 </div>
 </div>
-<a id="a72a9f410a45622e0fe0188fa454f8285" name="a72a9f410a45622e0fe0188fa454f8285"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72a9f410a45622e0fe0188fa454f8285">&#9670;&#160;</a></span>fBlock</h2>
+<a id="af37413fa631f34200bcc6eec853f749a" name="af37413fa631f34200bcc6eec853f749a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37413fa631f34200bcc6eec853f749a">&#9670;&#160;</a></span>fBase</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HEFS_INDEX_NODE::fBlock[<a class="el" href="HeFS_8h.html#af23fbee19fdaa427a1086ceb2b1801d4">kHeFSSliceCount</a>]</td>
+          <td class="memname"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HEFS_INDEX_NODE::fBase</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>File mode. (read, write, execute, etc). </p>
 
 </div>
 </div>
@@ -257,6 +263,20 @@ The index node is used to store the file information of a file. </dd></dl>
 
 </div>
 </div>
+<a id="a9ff66f063a69dc114614a9e78a05359a" name="a9ff66f063a69dc114614a9e78a05359a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff66f063a69dc114614a9e78a05359a">&#9670;&#160;</a></span>fHashPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HEFS_INDEX_NODE::fHashPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5c9fe118799621820b0aae78742dfba3" name="a5c9fe118799621820b0aae78742dfba3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c9fe118799621820b0aae78742dfba3">&#9670;&#160;</a></span>fKind</h2>
 
@@ -270,6 +290,20 @@ The index node is used to store the file information of a file. </dd></dl>
 </div><div class="memdoc">
 
 <p>File flags. </p>
+
+</div>
+</div>
+<a id="a0b2098ffe3bdb372d97b87a58453bb7e" name="a0b2098ffe3bdb372d97b87a58453bb7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b2098ffe3bdb372d97b87a58453bb7e">&#9670;&#160;</a></span>fLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> HEFS_INDEX_NODE::fLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -303,33 +337,37 @@ The index node is used to store the file information of a file. </dd></dl>
 
 </div>
 </div>
-<a id="a91c53ba3791bd3cb826834191caf321c" name="a91c53ba3791bd3cb826834191caf321c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c53ba3791bd3cb826834191caf321c">&#9670;&#160;</a></span>fName</h2>
+<a id="ad658d0710b036893e221caa9ad8cb66d" name="ad658d0710b036893e221caa9ad8cb66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad658d0710b036893e221caa9ad8cb66d">&#9670;&#160;</a></span>fOffsetSlices</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Kernel::Utf8Char</a> HEFS_INDEX_NODE::fName[<a class="el" href="HeFS_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465">kHeFSFileNameLen</a>]</td>
+          <td class="memname"><a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> HEFS_INDEX_NODE::fOffsetSlices</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>File mode. (read, write, execute, etc). </p>
+<p>Extents system by using blocks</p>
+<p>Using an offset to ask fBase, and fLength to compute each slice's length. </p>
+
 </div>
 </div>
-<a id="aa79e182fc264b32e602039780e20f6ad" name="aa79e182fc264b32e602039780e20f6ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa79e182fc264b32e602039780e20f6ad">&#9670;&#160;</a></span>fPad</h2>
+<a id="a3845ea45667d19728dd3c6ad4c2c77f0" name="a3845ea45667d19728dd3c6ad4c2c77f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3845ea45667d19728dd3c6ad4c2c77f0">&#9670;&#160;</a></span>fPad</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> HEFS_INDEX_NODE::fPad[69]</td>
+          <td class="memname"><a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> HEFS_INDEX_NODE::fPad[309]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>block slice. </p>
+<p>block slice </p>
 
 </div>
 </div>
@@ -346,6 +384,20 @@ The index node is used to store the file information of a file. </dd></dl>
 </div><div class="memdoc">
 
 <p>File kind. (Regular, Directory, Block, Character, FIFO, Socket, Symbolic Link, Unknown). </p>
+
+</div>
+</div>
+<a id="a3f1c2a793e067b913a819873edccde08" name="a3f1c2a793e067b913a819873edccde08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1c2a793e067b913a819873edccde08">&#9670;&#160;</a></span>[struct]</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  HEFS_INDEX_NODE::fSlices[<a class="el" href="HeFS_8h.html#af23fbee19fdaa427a1086ceb2b1801d4">kHeFSSliceCount</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

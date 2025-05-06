@@ -8,5 +8,6 @@ var SystemCalls_8cc =
     [ "MmCopyMemory", "SystemCalls_8cc.html#aa5a16136b6b95ab0385d2835d71ec738", null ],
     [ "MmFillMemory", "SystemCalls_8cc.html#a423e7c626951f84e6273fd5cc92c4504", null ],
     [ "MmStrLen", "SystemCalls_8cc.html#af6fde7dd98ac52b150dbf96bae527c50", null ],
-    [ "PrintOut", "SystemCalls_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da", null ]
+    [ "PrintOut", "SystemCalls_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da", null ],
+    [ "kInvalidSyscall", "SystemCalls_8cc.html#a495109a12f61aefd33d298bbb9f3a53e", null ]
 ];

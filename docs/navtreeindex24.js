@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structEfiBootServices.html#afa08bbbeb99a3d435ec530f1b54f35cd":[3,0,22,12],
 "structEfiBootServices.html#afd38f34c1000a900497466a17d491a67":[3,0,22,46],
 "structEfiDevicePathProtocol.html":[3,0,23],
 "structEfiDevicePathProtocol.html#a765eee3ba0f8dada167d7dd82cde0d9a":[3,0,23,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structFisRegH2D.html#a34e0389aedab473aa6ea3b4cbf808504":[3,0,55,9],
 "structFisRegH2D.html#a418bbc3c8761ed058aacb5aaaa4ef2b2":[3,0,55,10],
 "structFisRegH2D.html#a632648678411d9062430abe8199bd19a":[3,0,55,12],
-"structFisRegH2D.html#a72d5798da6fc9bba38941e8bfc08a9eb":[3,0,55,8],
-"structFisRegH2D.html#a7e80ce1b5cbae782783028df7dadab92":[3,0,55,17]
+"structFisRegH2D.html#a72d5798da6fc9bba38941e8bfc08a9eb":[3,0,55,8]
 };

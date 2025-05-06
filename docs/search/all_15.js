@@ -131,7 +131,7 @@ var searchData=
   ['processor_5fas_5fbsp_5fbit_128',['PROCESSOR_AS_BSP_BIT',['../EFI_2EFI_8h.html#aa4ad311602617250aebc4349c3ed4095',1,'EFI.h']]],
   ['processor_5fenabled_5fbit_129',['PROCESSOR_ENABLED_BIT',['../EFI_2EFI_8h.html#af71580b95c200041d3b9141572538880',1,'EFI.h']]],
   ['processor_5fhealth_5fstatus_5fbit_130',['PROCESSOR_HEALTH_STATUS_BIT',['../EFI_2EFI_8h.html#a45a9812a74077655a0925b86efd68a66',1,'EFI.h']]],
-  ['processorid_131',['processorid',['../struct__EfiProcessorInformation.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId'],['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a2bb115daade9c2268e6d61db72d9e046',1,'Kernel::HAL::SDT_OBJECT::ProcessorID']]],
+  ['processorid_131',['processorid',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a2bb115daade9c2268e6d61db72d9e046',1,'Kernel::HAL::SDT_OBJECT::ProcessorID'],['../struct__EfiProcessorInformation.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId']]],
   ['processscheduler_2eh_132',['ProcessScheduler.h',['../ProcessScheduler_8h.html',1,'']]],
   ['processstatuskind_133',['ProcessStatusKind',['../namespaceKernel.html#a9b3885a37472898354d34d8eb3125897',1,'Kernel']]],
   ['processsubsystem_134',['ProcessSubsystem',['../namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3',1,'Kernel']]],

@@ -91,12 +91,13 @@ $(document).ready(function(){initNavTree('SystemCalls_8cc.html',''); initResizab
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">SystemCalls.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Source file for the memory functions of the user.sys.  
+<p>Source file for the memory functions/syscalls for user.sys.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="Opts_8h_source.html">user/Opts.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="SystemCalls_8h_source.html">user/SystemCalls.h</a>&gt;</code><br />
@@ -107,10 +108,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa5a16136b6b95ab0385d2835d71ec738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy memory region.  <br /></td></tr>
 <tr class="separator:aa5a16136b6b95ab0385d2835d71ec738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fde7dd98ac52b150dbf96bae527c50" id="r_af6fde7dd98ac52b150dbf96bae527c50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2Macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2Macros_8h.html#a637e6553e682cc8b9ab17bf05201b051">SInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SystemCalls_8cc.html#af6fde7dd98ac52b150dbf96bae527c50">MmStrLen</a> (const <a class="el" href="user_2Macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *in)</td></tr>
-<tr class="memdesc:af6fde7dd98ac52b150dbf96bae527c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get string length.  <br /></td></tr>
+<tr class="memdesc:af6fde7dd98ac52b150dbf96bae527c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get length of string.  <br /></td></tr>
 <tr class="separator:af6fde7dd98ac52b150dbf96bae527c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423e7c626951f84e6273fd5cc92c4504" id="r_a423e7c626951f84e6273fd5cc92c4504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2Macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2Macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SystemCalls_8cc.html#a423e7c626951f84e6273fd5cc92c4504">MmFillMemory</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2Macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> dest, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> len, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a> value)</td></tr>
-<tr class="memdesc:a423e7c626951f84e6273fd5cc92c4504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill memory region <b>dest</b> with <b>value</b>.  <br /></td></tr>
+<tr class="memdesc:a423e7c626951f84e6273fd5cc92c4504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill memory region.  <br /></td></tr>
 <tr class="separator:a423e7c626951f84e6273fd5cc92c4504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c400265b6eb38961f70738210234585" id="r_a8c400265b6eb38961f70738210234585"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2Macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="SystemCalls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SystemCalls_8cc.html#a8c400265b6eb38961f70738210234585">IoOpenFile</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="user_2Macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *path, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="user_2Macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *drv_letter)</td></tr>
 <tr class="separator:a8c400265b6eb38961f70738210234585"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,13 +124,18 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa344a49b337e4a412c0ed302d79bd1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell the current position of the file pointer.  <br /></td></tr>
 <tr class="separator:aa344a49b337e4a412c0ed302d79bd1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea2aa02c8d1f2489ad35f7fbb1666da" id="r_afea2aa02c8d1f2489ad35f7fbb1666da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2Macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2Macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767">SInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SystemCalls_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da">PrintOut</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="SystemCalls_8h.html#a9df1cb6db51581fef1d78e96625d4ef2">IORef</a> desc, const char *fmt,...)</td></tr>
-<tr class="memdesc:afea2aa02c8d1f2489ad35f7fbb1666da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print to the file descriptor.  <br /></td></tr>
 <tr class="separator:afea2aa02c8d1f2489ad35f7fbb1666da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f6bff82b6524dea872f4d0adb1e82a" id="r_a09f6bff82b6524dea872f4d0adb1e82a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2Macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2Macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SystemCalls_8cc.html#a09f6bff82b6524dea872f4d0adb1e82a">_rtl_assert</a> (<a class="el" href="user_2Macros_8h.html#a76a8b016e5ad61faf9062cc387df5016">Bool</a> expr, const <a class="el" href="user_2Macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *origin)</td></tr>
 <tr class="separator:a09f6bff82b6524dea872f4d0adb1e82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a495109a12f61aefd33d298bbb9f3a53e" id="r_a495109a12f61aefd33d298bbb9f3a53e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SystemCalls_8cc.html#a495109a12f61aefd33d298bbb9f3a53e">kInvalidSyscall</a> = 0UL</td></tr>
+<tr class="memdesc:a495109a12f61aefd33d298bbb9f3a53e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Systems Calls implementation.  <br /></td></tr>
+<tr class="separator:a495109a12f61aefd33d298bbb9f3a53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Source file for the memory functions of the user.sys. </p>
+<div class="textblock"><p>Source file for the memory functions/syscalls for user.sys. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a09f6bff82b6524dea872f4d0adb1e82a" name="a09f6bff82b6524dea872f4d0adb1e82a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09f6bff82b6524dea872f4d0adb1e82a">&#9670;&#160;</a></span>_rtl_assert()</h2>
@@ -337,7 +343,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fill memory region <b>dest</b> with <b>value</b>. </p>
 <p>Fill memory region. </p>
 
 </div>
@@ -358,7 +363,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get string length. </p>
 <p>Get length of string. </p>
 
 </div>
@@ -395,13 +399,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print to the file descriptor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">desc</td><td>the file descriptor. </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a495109a12f61aefd33d298bbb9f3a53e" name="a495109a12f61aefd33d298bbb9f3a53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495109a12f61aefd33d298bbb9f3a53e">&#9670;&#160;</a></span>kInvalidSyscall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto kInvalidSyscall = 0UL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Systems Calls implementation. </p>
 
 </div>
 </div>

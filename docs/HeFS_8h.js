@@ -14,7 +14,7 @@ var HeFS_8h =
     [ "kHeFSSearchAllStr", "HeFS_8h.html#ac100c02c069947d2e9b97a827b7e1233", null ],
     [ "kHeFSVersion", "HeFS_8h.html#a36b750da7d2881be04e3dc2daf842e91", null ],
     [ "ATime", "HeFS_8h.html#a142217963adf859f32724308be1b8330", null ],
-    [ "fs_init_hefs", "HeFS_8h.html#a7f357627cfc3d6d71c4b6959e5d2598d", null ],
+    [ "fs_init_hefs", "HeFS_8h.html#ac52554767026cacdbb31a4a22374d3ac", null ],
     [ "hefs_day_get", "HeFS_8h.html#a08495e328a92830716267351514184ff", null ],
     [ "hefs_drive_kind_to_string", "HeFS_8h.html#a077d6a9359808c513a7695c5f2f0d98b", null ],
     [ "hefs_encoding_to_string", "HeFS_8h.html#a8a5c31ab41b4154b2099208d476fe49a", null ],

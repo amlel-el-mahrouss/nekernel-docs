@@ -22,7 +22,7 @@ var searchData=
   ['installprotocolinterface_19',['InstallProtocolInterface',['../structEfiBootServices.html#a96f64dda8653536df363144b91e05bf8',1,'EfiBootServices']]],
   ['interruptenable_20',['InterruptEnable',['../structKernel_1_1IMBCIHost.html#a91e3e6b39082dbedb874a10bbd9a54b9',1,'Kernel::IMBCIHost']]],
   ['ioaddress_21',['IoAddress',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#aa8406ca3903161bf823e0d1c967ad54e',1,'Kernel::HAL::SDT_OBJECT']]],
-  ['ioapic_22',['IOAPIC',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#afdb89cd0ae1237b87e1721feac5d5f31',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['ioapic_22',['IOAPIC',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#aaca02e80b6b746e67c60891de74f672f',1,'Kernel::HAL::SDT_OBJECT']]],
   ['ioid_23',['IoID',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a130767e1d48908cb4dea6476acb1bf23',1,'Kernel::HAL::SDT_OBJECT']]],
   ['ipccrc32_24',['IpcCRC32',['../structKernel_1_1IPC__MSG.html#a35159de796b3bfaf579732f6939bb919',1,'Kernel::IPC_MSG']]],
   ['ipcdata_25',['IpcData',['../structKernel_1_1IPC__MSG.html#a0cea690e4a49687f26f60c625965853c',1,'Kernel::IPC_MSG']]],

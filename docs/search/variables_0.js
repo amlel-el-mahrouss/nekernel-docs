@@ -24,7 +24,7 @@ var searchData=
   ['allocatepool_21',['AllocatePool',['../structEfiBootServices.html#a15d94f31ba81a2670edfca592ffb3cd8',1,'EfiBootServices']]],
   ['ang_22',['ang',['../structCF_1_1CFPoint.html#a4f467a80bdeeb5031119ae549a75c128',1,'CF::CFPoint']]],
   ['ap_23',['AP',['../structKernel_1_1HAL_1_1PTE__4KB.html#aa7bfc6ab15a7853fbb4e2a462fe6f0d5',1,'Kernel::HAL::PTE_4KB']]],
-  ['apic_24',['Apic',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a03675c9c30b657bdfeb9ddada18bc961',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['apic_24',['Apic',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a14ca63a1e25176a895582b114b15955d',1,'Kernel::HAL::SDT_OBJECT']]],
   ['atapi_25',['atapi',['../structHbaCmdHeader_1_1HbaFlags_1_1HbaFlags__.html#a86978055672d5061f81a11fe88f09465',1,'HbaCmdHeader::HbaFlags::HbaFlags_::Atapi'],['../structHbaFlags_1_1HbaFlags__.html#ad74d49a6e77fe6d5c4de95a6a1a1add0',1,'HbaFlags::HbaFlags_::Atapi']]],
   ['atrributes_26',['Atrributes',['../classKernel_1_1HAL_1_1InterruptDescriptor.html#a1197b235545d4202afb1f6bcabb83a8a',1,'Kernel::HAL::InterruptDescriptor']]],
   ['attrib_27',['attrib',['../structEfiFileProtocol.html#a92e743200fba9c60b7cfed93ab356997',1,'EfiFileProtocol::Attrib'],['../structEfiFileProtocol.html#ad459f81f9c27d3e9629b909251a1ed81',1,'EfiFileProtocol::Attrib']]],

@@ -58,7 +58,7 @@ var searchData=
   ['previoussibling_55',['PreviousSibling',['../structNEFS__FORK__STRUCT.html#a4046e2cc70c4ac690e31825cc5fd6fcb',1,'NEFS_FORK_STRUCT']]],
   ['prevsibling_56',['PrevSibling',['../structNEFS__CATALOG__STRUCT.html#af591376962fb70676a6d018620e1d8bf',1,'NEFS_CATALOG_STRUCT']]],
   ['processid_57',['ProcessId',['../classKernel_1_1USER__PROCESS.html#aa1c16e345c72a12b99251390c1ba39fe',1,'Kernel::USER_PROCESS']]],
-  ['processorid_58',['processorid',['../struct__EfiProcessorInformation.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId'],['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a2bb115daade9c2268e6d61db72d9e046',1,'Kernel::HAL::SDT_OBJECT::ProcessorID']]],
+  ['processorid_58',['processorid',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a2bb115daade9c2268e6d61db72d9e046',1,'Kernel::HAL::SDT_OBJECT::ProcessorID'],['../struct__EfiProcessorInformation.html#a8216fe3d70e7d1e6e8b688a063da1529',1,'_EfiProcessorInformation::ProcessorId']]],
   ['progif_59',['ProgIf',['../structKernel_1_1PCI_1_1DeviceHeader.html#af1695c7c58e8979c7232bef9538bcced',1,'Kernel::PCI::DeviceHeader']]],
   ['protectionkey_60',['ProtectionKey',['../structKernel_1_1HAL_1_1Detail_1_1PTE.html#a5986f884bd6f25c7a81aa210a2ea6901',1,'Kernel::HAL::Detail::PTE']]],
   ['proto_61',['Proto',['../structEfiFileDevicePathProtocol.html#ae1e77abcad57bc78d7f7194c613674a0',1,'EfiFileDevicePathProtocol']]],

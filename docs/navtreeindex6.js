@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"PEF_8h.html#af25a0b0fa23ae66742fdd12f6975477a":[4,0,0,3,7,20,2],
-"PEF_8h_source.html":[4,0,0,3,7,20],
 "PE_8h.html":[4,0,0,3,7,18],
 "PE_8h.html#a034e3c688c72b793a7f2b52812b2e5bc":[4,0,0,3,7,18,7],
 "PE_8h.html#a0e5dcbdb58ecf6a910963eadcbd3ae83":[4,0,0,3,7,18,11],
@@ -227,6 +225,7 @@ var NAVTREEINDEX6 =
 "SystemCalls_8cc.html":[4,0,0,5,1,0],
 "SystemCalls_8cc.html#a09f6bff82b6524dea872f4d0adb1e82a":[4,0,0,5,1,0,0],
 "SystemCalls_8cc.html#a423e7c626951f84e6273fd5cc92c4504":[4,0,0,5,1,0,6],
+"SystemCalls_8cc.html#a495109a12f61aefd33d298bbb9f3a53e":[4,0,0,5,1,0,9],
 "SystemCalls_8cc.html#a8c400265b6eb38961f70738210234585":[4,0,0,5,1,0,2],
 "SystemCalls_8cc.html#aa344a49b337e4a412c0ed302d79bd1d7":[4,0,0,5,1,0,4],
 "SystemCalls_8cc.html#aa5a16136b6b95ab0385d2835d71ec738":[4,0,0,5,1,0,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "SystemCalls_8h.html#a2a64df1382c503faab7cf9964e842963":[4,0,0,5,5,58],
 "SystemCalls_8h.html#a3077894cc2e0bb3b1b82e6f2b1e77fe1":[4,0,0,5,5,26],
 "SystemCalls_8h.html#a316fcbfe603c7c1e794a9035ea9b1a53":[4,0,0,5,5,38],
-"SystemCalls_8h.html#a33b5198f7ba47dba8faac36d3d787cc8":[4,0,0,5,5,6]
+"SystemCalls_8h.html#a33b5198f7ba47dba8faac36d3d787cc8":[4,0,0,5,5,6],
+"SystemCalls_8h.html#a3494e6092044a4d091b15b3812a18358":[4,0,0,5,5,55]
 };

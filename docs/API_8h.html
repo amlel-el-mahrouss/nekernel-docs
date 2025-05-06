@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('API_8h.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">API.h File Reference</div></div>
@@ -111,13 +110,6 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceBoot"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framebuffer helpers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a40dd3478791bf7a3996e84efb20bf13b" id="r_a40dd3478791bf7a3996e84efb20bf13b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="API_8h.html#a40dd3478791bf7a3996e84efb20bf13b">kNeWebsiteMacro</a>&#160;&#160;&#160;&quot;https://aker.com/help&quot;</td></tr>
-<tr class="separator:a40dd3478791bf7a3996e84efb20bf13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4916e571e9ef915eb186e535a9f6adc5" id="r_a4916e571e9ef915eb186e535a9f6adc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="API_8h.html#a4916e571e9ef915eb186e535a9f6adc5">kNeKernelSubsystem</a>&#160;&#160;&#160;(<a class="el" href="Support_8h.html#a94a5b7998848651b99c8b45e19c534d7">StrLen</a>(<a class="el" href="API_8h.html#a40dd3478791bf7a3996e84efb20bf13b">kNeWebsiteMacro</a>))</td></tr>
-<tr class="separator:a4916e571e9ef915eb186e535a9f6adc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a12e982db5e3c511132fa1479d1d447ec" id="r_a12e982db5e3c511132fa1479d1d447ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="API_8h.html#a12e982db5e3c511132fa1479d1d447ec">rt_cli</a> ()</td></tr>
@@ -125,7 +117,7 @@ Functions</h2></td></tr>
 <tr class="memitem:afb28b743ca08d44d7cb3cffb11ec098e" id="r_afb28b743ca08d44d7cb3cffb11ec098e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="API_8h.html#afb28b743ca08d44d7cb3cffb11ec098e">rt_halt</a> ()</td></tr>
 <tr class="separator:afb28b743ca08d44d7cb3cffb11ec098e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0bee034f9cce36874019301bc2ac40" id="r_a8b0bee034f9cce36874019301bc2ac40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBoot.html#a8b0bee034f9cce36874019301bc2ac40">Boot::Stop</a> () noexcept</td></tr>
-<tr class="memdesc:a8b0bee034f9cce36874019301bc2ac40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halt and clear interrupts.  <br /></td></tr>
+<tr class="memdesc:a8b0bee034f9cce36874019301bc2ac40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halt and clear interrut flag on x86.  <br /></td></tr>
 <tr class="separator:a8b0bee034f9cce36874019301bc2ac40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa247e784ff03f0a4d17ab37c5b0331dd" id="r_aa247e784ff03f0a4d17ab37c5b0331dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBoot.html#aa247e784ff03f0a4d17ab37c5b0331dd">Boot::ExitBootServices</a> (<a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> MapKey, <a class="el" href="EFI_2EFI_8h.html#ab0107dda581f0ae33368fc46411bc31e">EfiHandlePtr</a> ImageHandle) noexcept</td></tr>
 <tr class="memdesc:aa247e784ff03f0a4d17ab37c5b0331dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit EFI API to let the OS load correctly. Bascially frees everything we have in the EFI side.  <br /></td></tr>
@@ -144,35 +136,6 @@ Variables</h2></td></tr>
 <tr class="memitem:a67af7de1a62f48363917e0d14fbf2dc1" id="r_a67af7de1a62f48363917e0d14fbf2dc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEfiBootServices.html">EfiBootServices</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="API_8h.html#a67af7de1a62f48363917e0d14fbf2dc1">BS</a> = nullptr</td></tr>
 <tr class="separator:a67af7de1a62f48363917e0d14fbf2dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a4916e571e9ef915eb186e535a9f6adc5" name="a4916e571e9ef915eb186e535a9f6adc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4916e571e9ef915eb186e535a9f6adc5">&#9670;&#160;</a></span>kNeKernelSubsystem</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kNeKernelSubsystem&#160;&#160;&#160;(<a class="el" href="Support_8h.html#a94a5b7998848651b99c8b45e19c534d7">StrLen</a>(<a class="el" href="API_8h.html#a40dd3478791bf7a3996e84efb20bf13b">kNeWebsiteMacro</a>))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a40dd3478791bf7a3996e84efb20bf13b" name="a40dd3478791bf7a3996e84efb20bf13b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40dd3478791bf7a3996e84efb20bf13b">&#9670;&#160;</a></span>kNeWebsiteMacro</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kNeWebsiteMacro&#160;&#160;&#160;&quot;https://aker.com/help&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a147557aebdc51423b15e02788fcf7c31" name="a147557aebdc51423b15e02788fcf7c31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a147557aebdc51423b15e02788fcf7c31">&#9670;&#160;</a></span>fw_init_efi()</h2>

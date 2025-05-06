@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('CoreProcessScheduler_8h_source.html','
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3acf156487a4a7b6e44a568ab1303e3f37">kProcessSubsystemApplication</a>,</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a8069881ad9a19e2bda12ef381f1349e3">kProcessSubsystemService</a>,</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a5fecdbaa1dcade5c561b4ec47c284be3">kProcessSubsystemDriver</a>,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a4d03d85bad0d1656fc4c845b3531117b">kProcessSubsystemInvalid</a> = 256U,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a4d03d85bad0d1656fc4c845b3531117b">kProcessSubsystemInvalid</a> = 0xFFFFFFF,</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a8ac11671d61d56c2508a9f9c4d026739">kProcessSubsystemCount</a>   = 4,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
 </div>
@@ -138,13 +138,13 @@ $(document).ready(function(){initNavTree('CoreProcessScheduler_8h_source.html','
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/***********************************************************************************/</span></div>
 <div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897">   40</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897">ProcessStatusKind</a> : <a class="code hl_typedef" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897ab10913c938482a8aa4ba85b7a1116cb4">kInvalid</a>,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a03fb3e2d7f3d8e2d339479a2d4e337f6">kStarting</a>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897ab10913c938482a8aa4ba85b7a1116cb4">kInvalid</a>  = 0,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a03fb3e2d7f3d8e2d339479a2d4e337f6">kStarting</a> = 100,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a2fc7fbf0d19294f85dd3880460dd3c0a">kRunning</a>,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a1350eef47aadec7321071fa167454d1e">kKilled</a>,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a9b118db4682cb2b26264e1c068718b2d">kFrozen</a>,</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a16b903606caf0e3128389431c392faf3">kFinished</a>,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a5a162d352f3b3603e03fc9b2f043fb40">kCount</a>,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_enumvalue" href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897a5a162d352f3b3603e03fc9b2f043fb40">kCount</a> = 6,</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>

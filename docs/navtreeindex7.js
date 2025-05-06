@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"SystemCalls_8h.html#a3494e6092044a4d091b15b3812a18358":[4,0,0,5,5,55],
 "SystemCalls_8h.html#a3ae06d2bf36450a91d32edb5a84d1cff":[4,0,0,5,5,0],
 "SystemCalls_8h.html#a3e82902d328eeb55b65118925c68ada2":[4,0,0,5,5,66],
 "SystemCalls_8h.html#a423e7c626951f84e6273fd5cc92c4504":[4,0,0,5,5,45],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "classBootDeviceATA.html#a533d5abb7a3b35423ca5535f6c26b86c":[3,0,13,7],
 "classBootDeviceATA.html#a89755d1fc9adcb051b7ce1d397515306":[3,0,13,5],
 "classBootDeviceATA.html#aa6e3f9517d7e825623a763b2959dc7f8":[3,0,13,1],
-"classBootDeviceATA.html#aadb744c3661c97edd8da6305e45a9289":[3,0,13,2]
+"classBootDeviceATA.html#aadb744c3661c97edd8da6305e45a9289":[3,0,13,2],
+"classBootDeviceATA.html#ac77c6be7f4796b238798bb96235d58c0":[3,0,13,4]
 };

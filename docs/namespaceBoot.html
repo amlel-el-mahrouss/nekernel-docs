@@ -150,7 +150,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a44ca29987d47d4722498cac5fb53f3eb" id="r_a44ca29987d47d4722498cac5fb53f3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBoot.html#a44ca29987d47d4722498cac5fb53f3eb">rt_jump_to_address</a> (<a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> code, <a class="el" href="structKernel_1_1HEL_1_1BootInfoHeader.html">HEL::BootInfoHeader</a> *handover, <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *stack)</td></tr>
 <tr class="separator:a44ca29987d47d4722498cac5fb53f3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0bee034f9cce36874019301bc2ac40" id="r_a8b0bee034f9cce36874019301bc2ac40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBoot.html#a8b0bee034f9cce36874019301bc2ac40">Stop</a> () noexcept</td></tr>
-<tr class="memdesc:a8b0bee034f9cce36874019301bc2ac40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halt and clear interrupts.  <br /></td></tr>
+<tr class="memdesc:a8b0bee034f9cce36874019301bc2ac40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halt and clear interrut flag on x86.  <br /></td></tr>
 <tr class="separator:a8b0bee034f9cce36874019301bc2ac40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa247e784ff03f0a4d17ab37c5b0331dd" id="r_aa247e784ff03f0a4d17ab37c5b0331dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBoot.html#aa247e784ff03f0a4d17ab37c5b0331dd">ExitBootServices</a> (<a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> MapKey, <a class="el" href="EFI_2EFI_8h.html#ab0107dda581f0ae33368fc46411bc31e">EfiHandlePtr</a> ImageHandle) noexcept</td></tr>
 <tr class="memdesc:aa247e784ff03f0a4d17ab37c5b0331dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit EFI API to let the OS load correctly. Bascially frees everything we have in the EFI side.  <br /></td></tr>
@@ -480,7 +480,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Halt and clear interrupts. </p>
+<p>Halt and clear interrut flag on x86. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
