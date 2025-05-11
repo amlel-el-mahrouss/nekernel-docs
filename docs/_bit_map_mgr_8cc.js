@@ -3,7 +3,6 @@ var _bit_map_mgr_8cc =
     [ "Kernel::HAL::Detail::IBitMapProxy", "class_kernel_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy.html", "class_kernel_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy" ],
     [ "kBitMapMagic", "_bit_map_mgr_8cc.html#ae0a595d9e78aeeeadf15463af7d4cdcd", null ],
     [ "kBitMapMagIdx", "_bit_map_mgr_8cc.html#ade7018091efca568616090348e40e7ee", null ],
-    [ "kBitMapPadSize", "_bit_map_mgr_8cc.html#a17594eeafcb25a2f3549c04e77358626", null ],
     [ "kBitMapSizeIdx", "_bit_map_mgr_8cc.html#adbc27d0f4ec220b618c70228709244d0", null ],
     [ "kBitMapUsedIdx", "_bit_map_mgr_8cc.html#a9e794d29465d4273ec6fb05fb175b494", null ],
     [ "mm_alloc_bitmap", "_bit_map_mgr_8cc.html#affee534647fc06a87fa2cea64c032a9e", null ],

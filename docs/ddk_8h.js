@@ -1,6 +1,6 @@
 var ddk_8h =
 [
-    [ "DDK_FINAL", "structDDK__FINAL.html", "structDDK__FINAL" ],
+    [ "DDK_FINAL", "struct_d_d_k___f_i_n_a_l.html", "struct_d_d_k___f_i_n_a_l" ],
     [ "kalloc", "ddk_8h.html#a3846a7dd13e8ce2d288fcb7d54e76052", null ],
     [ "ke_add_syscall", "ddk_8h.html#a1d5f62254e7c1f833c5deb72a8916532", null ],
     [ "ke_call", "ddk_8h.html#ad5be25988d9d04cc388260a53c7453de", null ],

@@ -1,0 +1,25 @@
+var struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e =
+[
+    [ "fBadSectors", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#ab7cab0efe5708e7cae4a23ce377e4ff3", null ],
+    [ "fChecksum", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a5bbcfc643ed72f0ffb729b2b9faa266a", null ],
+    [ "fDiskFlags", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#abd332eb288504e5cd88a139cf753e76b", null ],
+    [ "fDiskKind", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#af5c0a83c00043c0e928e6466aaee4d33", null ],
+    [ "fDiskSize", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#ae0d1518186add26bb55104fdd95efe8e", null ],
+    [ "fDiskStatus", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a6cd4f2b29e9bdbd4d7ea894cf7fefe3b", null ],
+    [ "fEncoding", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a08014e308689d2301bfad4287677d91b", null ],
+    [ "fEndBlock", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a01793a3e5c219fb24575c6e2c13e8c2d", null ],
+    [ "fEndIN", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#aa9011a97435803d1363dd5c1b5048da7", null ],
+    [ "fEndIND", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#af2b5d59b6fe312f3c2d7eb291140a61f", null ],
+    [ "fINDCount", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a8d6ec7d60f15a04249bed6285d9034e5", null ],
+    [ "fJournalLBA", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a87249a1342f13e6d2959fbaffe2b9232", null ],
+    [ "fMagic", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a1de895d5666cc7d27fb52f372d597406", null ],
+    [ "fPad", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a3b99b89e60c7a6f7e83339f9daf82608", null ],
+    [ "fSectorCount", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a893d30db3c18e16b7063b727e046e986", null ],
+    [ "fSectorSize", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a5a1008323cd17c3d1b3c34bc2dc8c88a", null ],
+    [ "fStartBlock", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#af39281a0bd3586d11b1e15f28d550dc5", null ],
+    [ "fStartIN", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a2dd04fb46855ac42b995e907f91779f0", null ],
+    [ "fStartIND", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a200140e8972cff7753b032bf0bab8de4", null ],
+    [ "fVersion", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a0680c58f73bfece4e2f3df42f1171189", null ],
+    [ "fVID", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a3a04f7662a6dab69fee4c32e5f4bae73", null ],
+    [ "fVolName", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html#a3a3e37d6e8007ca2a3c78bd050c79720", null ]
+];

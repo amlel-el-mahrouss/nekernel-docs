@@ -16,5 +16,7 @@ var _new_kit_2_utils_8h =
     [ "rt_to_string", "_new_kit_2_utils_8h.html#ae5e8137e36fca427b59b0e8fb07eea3a", null ],
     [ "rt_to_uppercase", "_new_kit_2_utils_8h.html#afe6a25104090afb143ef3811237fbb40", null ],
     [ "rt_zero_memory", "_new_kit_2_utils_8h.html#a1b4831b13185ef765af5cd66d1747148", null ],
-    [ "wrt_string_len", "_new_kit_2_utils_8h.html#a3d324af99e9a0f770de9f82cc0c589d3", null ]
+    [ "urt_copy_memory", "_new_kit_2_utils_8h.html#ae46d5b75476f521f6b07979bb03bb112", null ],
+    [ "urt_set_memory", "_new_kit_2_utils_8h.html#a45d70ab8984c1fb610ee2e553e376311", null ],
+    [ "urt_string_len", "_new_kit_2_utils_8h.html#afd517a85266b9355a7baf20b428acbf6", null ]
 ];

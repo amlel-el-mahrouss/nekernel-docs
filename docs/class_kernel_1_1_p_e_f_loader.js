@@ -6,7 +6,7 @@ var class_kernel_1_1_p_e_f_loader =
     [ "~PEFLoader", "class_kernel_1_1_p_e_f_loader.html#afa0f30cf6aa5a84910bc6c188728f924", null ],
     [ "AsString", "class_kernel_1_1_p_e_f_loader.html#ae5419a860348fe3cce59820fa30a7318", null ],
     [ "FindStart", "class_kernel_1_1_p_e_f_loader.html#a324e7eadfe87c88fc628df564c5c9a7f", null ],
-    [ "FindSymbol", "class_kernel_1_1_p_e_f_loader.html#a6584410cc58d76cff70f230a25f201d8", null ],
+    [ "FindSymbol", "class_kernel_1_1_p_e_f_loader.html#adc672cbcce8f8e4b1c1af77c04d9d2a8", null ],
     [ "GetBlob", "class_kernel_1_1_p_e_f_loader.html#a803b5b85144ca6db1c81de99e4a59369", null ],
     [ "IsLoaded", "class_kernel_1_1_p_e_f_loader.html#ac62864c3e4874d99e7b735f276d25ced", null ],
     [ "MIME", "class_kernel_1_1_p_e_f_loader.html#ab26a45832e01caa8060322b737ca6518", null ],

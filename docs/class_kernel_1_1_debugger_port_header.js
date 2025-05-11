@@ -1,5 +1,5 @@
 var class_kernel_1_1_debugger_port_header =
 [
-    [ "fPort", "class_kernel_1_1_debugger_port_header.html#a46526ec36b48745ea20f4d047298dd67", null ],
-    [ "fPortCnt", "class_kernel_1_1_debugger_port_header.html#af00f39f4c54e94b2b7d14755dd28232d", null ]
+    [ "fPort", "class_kernel_1_1_debugger_port_header.html#ae338e8160ddcd17f181a82d91f1e0161", null ],
+    [ "fPortBsy", "class_kernel_1_1_debugger_port_header.html#a40d6c42fa4d01bb0d541574d44b42a28", null ]
 ];

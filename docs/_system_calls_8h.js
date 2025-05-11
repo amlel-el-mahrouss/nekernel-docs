@@ -28,6 +28,8 @@ var _system_calls_8h =
     [ "FsExists", "_system_calls_8h.html#ad33efc7e649880d9f04b36e7d48f4047", null ],
     [ "FsMove", "_system_calls_8h.html#a3077894cc2e0bb3b1b82e6f2b1e77fe1", null ],
     [ "IoCloseFile", "_system_calls_8h.html#a4584548748810311ef0533654d25155a", null ],
+    [ "IoCtrlFile", "_system_calls_8h.html#a75d6b3b2aab5673b2b5061ccb2aae33b", null ],
+    [ "IoDimFile", "_system_calls_8h.html#a02f3961238cd1d72cdb1a919c32eb69f", null ],
     [ "IoMimeFile", "_system_calls_8h.html#a135e951fb9a23312b088987ce392e88c", null ],
     [ "IoOpenFile", "_system_calls_8h.html#a245cde6423f248fdac4ba23a5696b8e7", null ],
     [ "IoReadFile", "_system_calls_8h.html#a9b65a22e35380aacb43bdb38378a8e85", null ],

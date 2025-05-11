@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['ddk_5ffinal_0',['DDK_FINAL',['../structDDK__FINAL.html',1,'']]],
-  ['debuggerportheader_1',['DebuggerPortHeader',['../classKernel_1_1DebuggerPortHeader.html',1,'Kernel']]],
-  ['device_2',['device',['../classDevice.html',1,'Device'],['../classKernel_1_1PCI_1_1Device.html',1,'Kernel::PCI::Device']]],
-  ['deviceheader_3',['DeviceHeader',['../structKernel_1_1PCI_1_1DeviceHeader.html',1,'Kernel::PCI']]],
-  ['di_5fdisk_5fimage_4',['DI_DISK_IMAGE',['../structDI_1_1DI__DISK__IMAGE.html',1,'DI']]],
+  ['ddk_5ffinal_0',['DDK_FINAL',['../struct_d_d_k___f_i_n_a_l.html',1,'']]],
+  ['debuggerportheader_1',['DebuggerPortHeader',['../class_kernel_1_1_debugger_port_header.html',1,'Kernel']]],
+  ['device_2',['device',['../class_device.html',1,'Device'],['../class_kernel_1_1_p_c_i_1_1_device.html',1,'Kernel::PCI::Device']]],
+  ['deviceheader_3',['DeviceHeader',['../struct_kernel_1_1_p_c_i_1_1_device_header.html',1,'Kernel::PCI']]],
+  ['di_5fdisk_5fimage_4',['DI_DISK_IMAGE',['../struct_d_i_1_1_d_i___d_i_s_k___i_m_a_g_e.html',1,'DI']]],
   ['dialog_5',['dialog',['../classpfd_1_1internal_1_1dialog.html',1,'pfd::internal']]],
-  ['diskswapinterface_6',['DiskSwapInterface',['../classKernel_1_1DiskSwapInterface.html',1,'Kernel']]],
-  ['dll_5ftraits_7',['DLL_TRAITS',['../structKernel_1_1IDylibObject_1_1DLL__TRAITS.html',1,'Kernel::IDylibObject']]],
-  ['dmafactory_8',['DMAFactory',['../classKernel_1_1DMAFactory.html',1,'Kernel']]],
-  ['dmawrapper_9',['DMAWrapper',['../classKernel_1_1DMAWrapper.html',1,'Kernel']]],
-  ['drivepacket_10',['DrivePacket',['../structKernel_1_1DriveTrait_1_1DrivePacket.html',1,'Kernel::DriveTrait']]],
-  ['drivetrait_11',['DriveTrait',['../structKernel_1_1DriveTrait.html',1,'Kernel']]]
+  ['diskswapinterface_6',['DiskSwapInterface',['../class_kernel_1_1_disk_swap_interface.html',1,'Kernel']]],
+  ['dll_5ftraits_7',['DLL_TRAITS',['../struct_kernel_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s.html',1,'Kernel::IDylibObject']]],
+  ['dmafactory_8',['DMAFactory',['../class_kernel_1_1_d_m_a_factory.html',1,'Kernel']]],
+  ['dmawrapper_9',['DMAWrapper',['../class_kernel_1_1_d_m_a_wrapper.html',1,'Kernel']]],
+  ['drivepacket_10',['DrivePacket',['../struct_kernel_1_1_drive_trait_1_1_drive_packet.html',1,'Kernel::DriveTrait']]],
+  ['drivetrait_11',['DriveTrait',['../struct_kernel_1_1_drive_trait.html',1,'Kernel']]]
 ];

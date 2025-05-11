@@ -52,6 +52,7 @@ var namespace_kernel_1_1_h_a_l_1_1_detail =
       [ "CacheDisable", "namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a310a6aa1b983a986a3f7c92ab71283c2", null ],
       [ "PageEnable", "namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a282b7048593d29199e7b7186c69c677a", null ]
     ] ],
+    [ "ATTRIBUTE", "namespace_kernel_1_1_h_a_l_1_1_detail.html#a29479abbb61b3d488e497e510f7b93f4", null ],
     [ "control_register_cast", "namespace_kernel_1_1_h_a_l_1_1_detail.html#aba17d0f554c358fb46749b3ee50b6ac4", null ],
     [ "hal_clear_irq_mask", "namespace_kernel_1_1_h_a_l_1_1_detail.html#a922ae91f65812613a862549bfd840568", null ],
     [ "hal_enable_pit", "namespace_kernel_1_1_h_a_l_1_1_detail.html#aa54828f386021e62103f157c4fe9e09c", null ],

@@ -1,6 +1,6 @@
 var _a_m_d64_2_hal_application_processor_8cc =
 [
-    [ "Kernel::HAL::PROCESS_CONTROL_BLOCK", "struct_kernel_1_1_h_a_l_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k.html", "struct_kernel_1_1_h_a_l_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k" ],
+    [ "Kernel::HAL::HAL_HARDWARE_THREAD", "struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html", "struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d" ],
     [ "Kernel::HAL::SDT_OBJECT", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t" ],
     [ "kAPIC_BASE_MSR", "_a_m_d64_2_hal_application_processor_8cc.html#ae11847d525c330927dec812ebf50d260", null ],
     [ "kAPIC_BASE_MSR_BSP", "_a_m_d64_2_hal_application_processor_8cc.html#aecbe7c61e55a2fc6ee204a4406848d0a", null ],
@@ -20,8 +20,8 @@ var _a_m_d64_2_hal_application_processor_8cc =
     [ "hal_ap_blob_start", "_a_m_d64_2_hal_application_processor_8cc.html#a57c2371779e3a9b23d103f19461a1fd5", null ],
     [ "kApicBaseAddress", "_a_m_d64_2_hal_application_processor_8cc.html#a823d3fa2584cbb1df1b4b63506a5ecd3", null ],
     [ "kAPICLocales", "_a_m_d64_2_hal_application_processor_8cc.html#a78b8ab4c16a5a67924f524855a64f6a1", null ],
-    [ "kMADTBlock", "_a_m_d64_2_hal_application_processor_8cc.html#ab0a5140028f7c8bf66c5a7eb1a15e787", null ],
-    [ "kProcessBlocks", "_a_m_d64_2_hal_application_processor_8cc.html#a0780acd69e495197417fab18a05a8dc5", null ],
+    [ "kHWThread", "_a_m_d64_2_hal_application_processor_8cc.html#abc52557f47d4364ad63e4dcf64ffceff", null ],
+    [ "kMADTBlock", "_a_m_d64_2_hal_application_processor_8cc.html#a4e00d97e0a463602229c259b045cd027", null ],
     [ "kRawMADT", "_a_m_d64_2_hal_application_processor_8cc.html#abbefd69805bc5bd6fc9f7c76f16189fa", null ],
     [ "kSMPAware", "_a_m_d64_2_hal_application_processor_8cc.html#a51b3fd0b52323b4e7cc2d3defd4c26cf", null ],
     [ "kSMPCount", "_a_m_d64_2_hal_application_processor_8cc.html#ab6b8704136dca87ca1005a0d67a5f410", null ],

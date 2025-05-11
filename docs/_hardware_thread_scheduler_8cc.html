@@ -98,34 +98,34 @@ $(document).ready(function(){initNavTree('_hardware_thread_scheduler_8cc.html','
 </div><!--header-->
 <div class="contents">
 
-<p>This file handles multi processing in the <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a>.  
+<p>This file handles multi processing in the <a class="el" href="namespace_kernel.html" title="USER_PROCESS inline definitions.">Kernel</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_hardware_thread_scheduler_8h_source.html">KernelKit/HardwareThreadScheduler.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dev_2kernel_2_c_f_kit_2_property_8h_source.html">CFKit/Property.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_hardware_thread_scheduler_8h_source.html">KernelKit/HardwareThreadScheduler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a36a6beda41f24859f5c253d100c4e7fa" id="r_a36a6beda41f24859f5c253d100c4e7fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a36a6beda41f24859f5c253d100c4e7fa">Kernel::hal_check_stack</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack_ptr)</td></tr>
+<tr class="memitem:a36a6beda41f24859f5c253d100c4e7fa" id="r_a36a6beda41f24859f5c253d100c4e7fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a36a6beda41f24859f5c253d100c4e7fa">Kernel::hal_check_stack</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack_ptr)</td></tr>
 <tr class="memdesc:a36a6beda41f24859f5c253d100c4e7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate user stack.  <br /></td></tr>
 <tr class="separator:a36a6beda41f24859f5c253d100c4e7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2bc0a36c74951a06b21313fc5e210f2" id="r_aa2bc0a36c74951a06b21313fc5e210f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa2bc0a36c74951a06b21313fc5e210f2">Kernel::mp_register_process</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack_frame, <a class="el" href="namespace_kernel.html#abba6700dd5b8786ae2dbee68de1a5cea">ProcessID</a> pid)</td></tr>
+<tr class="memitem:aa2bc0a36c74951a06b21313fc5e210f2" id="r_aa2bc0a36c74951a06b21313fc5e210f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa2bc0a36c74951a06b21313fc5e210f2">Kernel::mp_register_process</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack_frame, <a class="el" href="namespace_kernel.html#abba6700dd5b8786ae2dbee68de1a5cea">ProcessID</a> pid)</td></tr>
 <tr class="separator:aa2bc0a36c74951a06b21313fc5e210f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa66f65d40cbb5026e365c91ef8dff16c" id="r_aa66f65d40cbb5026e365c91ef8dff16c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_hardware_thread_scheduler.html">HardwareThreadScheduler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa66f65d40cbb5026e365c91ef8dff16c">Kernel::kHardwareThreadScheduler</a></td></tr>
+<tr class="memitem:aa66f65d40cbb5026e365c91ef8dff16c" id="r_aa66f65d40cbb5026e365c91ef8dff16c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_hardware_thread_scheduler.html">HardwareThreadScheduler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa66f65d40cbb5026e365c91ef8dff16c">Kernel::kHardwareThreadScheduler</a></td></tr>
 <tr class="separator:aa66f65d40cbb5026e365c91ef8dff16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file handles multi processing in the <a class="el" href="namespace_kernel.html" title="UserProcess scheduler inline definitions.">Kernel</a>. </p>
+<div class="textblock"><p>This file handles multi processing in the <a class="el" href="namespace_kernel.html" title="USER_PROCESS inline definitions.">Kernel</a>. </p>
 <p>!</p>
 <p>Multi processing is needed for multi-tasking operations. </p>
 </div></div><!-- contents -->

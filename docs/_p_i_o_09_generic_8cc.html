@@ -101,15 +101,15 @@ $(document).ready(function(){initNavTree('_p_i_o_09_generic_8cc.html',''); initR
 
 <p>ATA driver (PIO mode).  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="modules_2_a_t_a_2_a_t_a_8h_source.html">modules/ATA/ATA.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_drive_mgr_8h_source.html">KernelKit/DriveMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kernel_2_storage_kit_2_a_t_a_8h_source.html">StorageKit/ATA.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="modules_2_a_t_a_2_a_t_a_8h_source.html">modules/ATA/ATA.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
 <tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
@@ -137,26 +137,26 @@ Functions</h2></td></tr>
 <tr class="memitem:a579c5f9ee8979504d4222859640907e2" id="r_a579c5f9ee8979504d4222859640907e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a579c5f9ee8979504d4222859640907e2">drv_pio_get_size</a> ()</td></tr>
 <tr class="memdesc:a579c5f9ee8979504d4222859640907e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the drive size.  <br /></td></tr>
 <tr class="separator:a579c5f9ee8979504d4222859640907e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1990d2fef5f2ff0e0b9aaf2dc23b9530" id="r_a1990d2fef5f2ff0e0b9aaf2dc23b9530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a1990d2fef5f2ff0e0b9aaf2dc23b9530">Kernel::sk_init_pio_device</a> (<a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> is_master, <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;io, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> &amp;master)</td></tr>
-<tr class="memdesc:a1990d2fef5f2ff0e0b9aaf2dc23b9530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an PIO device (StorageKit function)  <br /></td></tr>
-<tr class="separator:a1990d2fef5f2ff0e0b9aaf2dc23b9530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa011d5e4bda18cdd44be2e47b387305c" id="r_aa011d5e4bda18cdd44be2e47b387305c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#aa011d5e4bda18cdd44be2e47b387305c">Kernel::Detail::sk_io_read_pio</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
+<tr class="memitem:a857c31714e87a5e8777f7d4981581adf" id="r_a857c31714e87a5e8777f7d4981581adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a857c31714e87a5e8777f7d4981581adf">Kernel::sk_init_ata_device</a> (<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> is_master, <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;io, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> &amp;master)</td></tr>
+<tr class="memdesc:a857c31714e87a5e8777f7d4981581adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an PIO device (StorageKit function)  <br /></td></tr>
+<tr class="separator:a857c31714e87a5e8777f7d4981581adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa011d5e4bda18cdd44be2e47b387305c" id="r_aa011d5e4bda18cdd44be2e47b387305c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#aa011d5e4bda18cdd44be2e47b387305c">Kernel::Detail::sk_io_read_pio</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
 <tr class="memdesc:aa011d5e4bda18cdd44be2e47b387305c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read PIO device.  <br /></td></tr>
 <tr class="separator:aa011d5e4bda18cdd44be2e47b387305c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a256c24bfbe268d9e3889b370bd6e32ee" id="r_a256c24bfbe268d9e3889b370bd6e32ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a256c24bfbe268d9e3889b370bd6e32ee">Kernel::Detail::sk_io_write_pio</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
+<tr class="memitem:a256c24bfbe268d9e3889b370bd6e32ee" id="r_a256c24bfbe268d9e3889b370bd6e32ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a256c24bfbe268d9e3889b370bd6e32ee">Kernel::Detail::sk_io_write_pio</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
 <tr class="memdesc:a256c24bfbe268d9e3889b370bd6e32ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write PIO device.  <br /></td></tr>
 <tr class="separator:a256c24bfbe268d9e3889b370bd6e32ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a219b3725030ebb2134a9a33950650667" id="r_a219b3725030ebb2134a9a33950650667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; <a class="el" href="class_kernel_1_1_a_t_a_device_interface.html">ATADeviceInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a219b3725030ebb2134a9a33950650667">Kernel::sk_acquire_pio_device</a> (<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_index)</td></tr>
-<tr class="memdesc:a219b3725030ebb2134a9a33950650667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a new PIO device with drv_index in mind.  <br /></td></tr>
-<tr class="separator:a219b3725030ebb2134a9a33950650667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077b5d580d77a1f4d0207d30f01b7ccf" id="r_a077b5d580d77a1f4d0207d30f01b7ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; <a class="el" href="class_kernel_1_1_a_t_a_device_interface.html">ATADeviceInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a077b5d580d77a1f4d0207d30f01b7ccf">Kernel::sk_acquire_ata_device</a> (<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_index)</td></tr>
+<tr class="memdesc:a077b5d580d77a1f4d0207d30f01b7ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a new PIO device with drv_index in mind.  <br /></td></tr>
+<tr class="separator:a077b5d580d77a1f4d0207d30f01b7ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aee1e18434ecc195aa90fa2b163ba9b3c" id="r_aee1e18434ecc195aa90fa2b163ba9b3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#aee1e18434ecc195aa90fa2b163ba9b3c">kATADetected</a> = <a class="el" href="user_2_macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr class="memitem:aee1e18434ecc195aa90fa2b163ba9b3c" id="r_aee1e18434ecc195aa90fa2b163ba9b3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#aee1e18434ecc195aa90fa2b163ba9b3c">kATADetected</a> = <a class="el" href="user_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="separator:aee1e18434ecc195aa90fa2b163ba9b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b530d12cf2bf96f9564e5cffdee99d1" id="r_a5b530d12cf2bf96f9564e5cffdee99d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a5b530d12cf2bf96f9564e5cffdee99d1">kATAIdentifyData</a> [<a class="el" href="_boot_a_t_a_8cc.html#a0ed1077d0b7cee4b51cb1ab93949a361">kATADataLen</a>] = {0}</td></tr>
+<tr class="memitem:a5b530d12cf2bf96f9564e5cffdee99d1" id="r_a5b530d12cf2bf96f9564e5cffdee99d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a5b530d12cf2bf96f9564e5cffdee99d1">kATAIdentifyData</a> [<a class="el" href="_boot_a_t_a_8cc.html#a0ed1077d0b7cee4b51cb1ab93949a361">kATADataLen</a>] = {0}</td></tr>
 <tr class="separator:a5b530d12cf2bf96f9564e5cffdee99d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6fbac92e05adb7093a0fbf334340367" id="r_ad6fbac92e05adb7093a0fbf334340367"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#ad6fbac92e05adb7093a0fbf334340367">kATADiskModel</a> [50] = {&quot;GENERIC PIO&quot;}</td></tr>
+<tr class="memitem:ad6fbac92e05adb7093a0fbf334340367" id="r_ad6fbac92e05adb7093a0fbf334340367"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#ad6fbac92e05adb7093a0fbf334340367">kATADiskModel</a> [50] = {&quot;GENERIC PIO&quot;}</td></tr>
 <tr class="separator:ad6fbac92e05adb7093a0fbf334340367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -392,7 +392,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> kATADetected = <a class="el" href="user_2_macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> kATADetected = <a class="el" href="user_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -406,7 +406,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> kATADiskModel[50] = {&quot;GENERIC PIO&quot;}</td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> kATADiskModel[50] = {&quot;GENERIC PIO&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -420,7 +420,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kATAIdentifyData[<a class="el" href="_boot_a_t_a_8cc.html#a0ed1077d0b7cee4b51cb1ab93949a361">kATADataLen</a>] = {0}</td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kATAIdentifyData[<a class="el" href="_boot_a_t_a_8cc.html#a0ed1077d0b7cee4b51cb1ab93949a361">kATADataLen</a>] = {0}</td>
         </tr>
       </table>
 </div><div class="memdoc">

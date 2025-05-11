@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('_kernel_panic_8h.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -115,7 +115,7 @@ Macros</h2></td></tr>
 <tr class="separator:abaca09ea2b9deed3f481a2303ea89826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1706c3dd2db94d27734f834a7be5ed1" id="r_aa1706c3dd2db94d27734f834a7be5ed1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#aa1706c3dd2db94d27734f834a7be5ed1">TRY</a>(X)</td></tr>
 <tr class="separator:aa1706c3dd2db94d27734f834a7be5ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90761906556ea7e47b7f55ca64423905" id="r_a90761906556ea7e47b7f55ca64423905"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a90761906556ea7e47b7f55ca64423905">__MUST_PASS</a>(EXPR,  FILE,  LINE)&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td></tr>
+<tr class="memitem:a90761906556ea7e47b7f55ca64423905" id="r_a90761906556ea7e47b7f55ca64423905"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a90761906556ea7e47b7f55ca64423905">__MUST_PASS</a>(EXPR,  FILE,  LINE)&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td></tr>
 <tr class="separator:a90761906556ea7e47b7f55ca64423905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21aee4c355d56e3630f2f341f59b9406" id="r_a21aee4c355d56e3630f2f341f59b9406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kernel_panic_8h.html#a21aee4c355d56e3630f2f341f59b9406">MUST_PASS</a>(EXPR)&#160;&#160;&#160;(<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)(EXPR)</td></tr>
 <tr class="separator:a21aee4c355d56e3630f2f341f59b9406"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2_macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#ad4673076c24720c3b405ad974edc5646">Kernel::ke_runtime_check</a>(EXPR, FILE, <a class="el" href="kernel_2_new_kit_2macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</a>(LINE))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -278,14 +278,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                      \</div>
-<div class="line">        <span class="keyword">auto</span> fn = X;       \</div>
-<div class="line">        if ((fn()) == <a class="code hl_define" href="ddk_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a>)  \</div>
-<div class="line">        {                  \</div>
-<div class="line">            MUST_PASS(<a class="code hl_define" href="ddk_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a>); \</div>
-<div class="line">        }                  \</div>
-<div class="line">    }</div>
-<div class="ttc" id="addk_8h_html_a996bde01ecac342918f0a2c4e7ce7bd5"><div class="ttname"><a href="ddk_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></div><div class="ttdeci">#define NO</div><div class="ttdef"><b>Definition</b> ddk.h:27</div></div>
+<b>Value:</b><div class="fragment"><div class="line">  {                     \</div>
+<div class="line">    <span class="keyword">auto</span> fn = X;        \</div>
+<div class="line">    if ((fn()) == <a class="code hl_define" href="ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a>) { \</div>
+<div class="line">      MUST_PASS(<a class="code hl_define" href="ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a>);    \</div>
+<div class="line">    }                   \</div>
+<div class="line">  }</div>
+<div class="ttc" id="addk_2_d_d_k_kit_2macros_8h_html_a996bde01ecac342918f0a2c4e7ce7bd5"><div class="ttname"><a href="ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></div><div class="ttdeci">#define NO</div><div class="ttdef"><b>Definition</b> macros.h:27</div></div>
 </div><!-- fragment -->
 </div>
 </div>

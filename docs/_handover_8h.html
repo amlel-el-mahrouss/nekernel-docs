@@ -116,18 +116,18 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_h_e_l" id="r_namespace_kernel_1_1_h_e_l"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_e_l.html">Kernel::HEL</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a443bd757976520ac5a90cc01fbaac596" id="r_a443bd757976520ac5a90cc01fbaac596"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_handover_8h.html#a443bd757976520ac5a90cc01fbaac596">kHandoverMagic</a>&#160;&#160;&#160;0xBADCC</td></tr>
+<tr class="memitem:a443bd757976520ac5a90cc01fbaac596" id="r_a443bd757976520ac5a90cc01fbaac596"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_handover_8h.html#a443bd757976520ac5a90cc01fbaac596">kHandoverMagic</a>&#160;&#160;&#160;(0xBADCC)</td></tr>
 <tr class="separator:a443bd757976520ac5a90cc01fbaac596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72dc4bbb04a1dbc05e645a2a2d497ae6" id="r_a72dc4bbb04a1dbc05e645a2a2d497ae6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_handover_8h.html#a72dc4bbb04a1dbc05e645a2a2d497ae6">kHandoverVersion</a>&#160;&#160;&#160;0x0117</td></tr>
+<tr class="memitem:a72dc4bbb04a1dbc05e645a2a2d497ae6" id="r_a72dc4bbb04a1dbc05e645a2a2d497ae6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_handover_8h.html#a72dc4bbb04a1dbc05e645a2a2d497ae6">kHandoverVersion</a>&#160;&#160;&#160;(0x0117)</td></tr>
 <tr class="separator:a72dc4bbb04a1dbc05e645a2a2d497ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad667acb388ffbc55c9b4812217254657" id="r_ad667acb388ffbc55c9b4812217254657"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_handover_8h.html#ad667acb388ffbc55c9b4812217254657">kHandoverBitMapSz</a>&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2_macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a>(4))</td></tr>
+<tr class="memitem:ad667acb388ffbc55c9b4812217254657" id="r_ad667acb388ffbc55c9b4812217254657"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_handover_8h.html#ad667acb388ffbc55c9b4812217254657">kHandoverBitMapSz</a>&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a>(4))</td></tr>
 <tr class="separator:ad667acb388ffbc55c9b4812217254657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb6f972064235181c6010db9b00c32a3" id="r_acb6f972064235181c6010db9b00c32a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_handover_8h.html#acb6f972064235181c6010db9b00c32a3">kHandoverStructSz</a>&#160;&#160;&#160;sizeof(<a class="el" href="struct_kernel_1_1_h_e_l_1_1_boot_info_header.html">HEL::BootInfoHeader</a>)</td></tr>
 <tr class="separator:acb6f972064235181c6010db9b00c32a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +184,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kHandoverBitMapSz&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2_macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a>(4))</td>
+          <td class="memname">#define kHandoverBitMapSz&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a>(4))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -198,7 +198,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kHandoverMagic&#160;&#160;&#160;0xBADCC</td>
+          <td class="memname">#define kHandoverMagic&#160;&#160;&#160;(0xBADCC)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,7 +226,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kHandoverVersion&#160;&#160;&#160;0x0117</td>
+          <td class="memname">#define kHandoverVersion&#160;&#160;&#160;(0x0117)</td>
         </tr>
       </table>
 </div><div class="memdoc">

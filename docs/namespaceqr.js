@@ -1,7 +1,7 @@
 var namespaceqr =
 [
-    [ "Qr", "structqr_1_1Qr.html", "structqr_1_1Qr" ],
-    [ "QrDelegate", "classqr_1_1QrDelegate.html", "classqr_1_1QrDelegate" ],
+    [ "Qr", "structqr_1_1_qr.html", "structqr_1_1_qr" ],
+    [ "QrDelegate", "classqr_1_1_qr_delegate.html", "classqr_1_1_qr_delegate" ],
     [ "Ecc", "namespaceqr.html#af98ebde8f935f582815540adba4b1865", [
       [ "L", "namespaceqr.html#af98ebde8f935f582815540adba4b1865afb446127f2771970216e8f03876813bc", null ],
       [ "M", "namespaceqr.html#af98ebde8f935f582815540adba4b1865afa1a3065f4423009e728ebdb1087de71", null ],

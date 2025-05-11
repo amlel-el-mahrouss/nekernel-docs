@@ -127,7 +127,7 @@ var _e_f_i_2_e_f_i_8h =
     [ "EfiGraphicsOutputProtocolSetMode", "_e_f_i_2_e_f_i_8h.html#ac8d51f75f67a29d13e0cc1585b7cefda", null ],
     [ "EfiGUID", "_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368", null ],
     [ "EfiHandleProtocol", "_e_f_i_2_e_f_i_8h.html#ac9856cc1033953d293cfbb5c1fcb0bad", null ],
-    [ "EfiHandlePtr", "_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2", null ],
+    [ "EfiHandlePtr", "_e_f_i_2_e_f_i_8h.html#ab0107dda581f0ae33368fc46411bc31e", null ],
     [ "EfiImageUnload", "_e_f_i_2_e_f_i_8h.html#abaa52d3b7317e43b5664548c3f6002d6", null ],
     [ "EfiInputReadKey", "_e_f_i_2_e_f_i_8h.html#a37fef6764a9431e6b410f086c15f3cd7", null ],
     [ "EfiInputReset", "_e_f_i_2_e_f_i_8h.html#a91d0028f78b3ddfb23e3941f3d793a7e", null ],

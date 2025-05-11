@@ -1,14 +1,15 @@
 var namespaces_dup =
 [
-    [ "Boot", "namespaceBoot.html", "namespaceBoot" ],
-    [ "CF", "namespaceCF.html", "namespaceCF" ],
+    [ "Boot", "namespace_boot.html", "namespace_boot" ],
+    [ "CF", "namespace_c_f.html", "namespace_c_f" ],
     [ "cxxabiv1", "namespacecxxabiv1.html", [
       [ "__guard", "namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715", null ]
     ] ],
-    [ "DI", "namespaceDI.html", "namespaceDI" ],
-    [ "FB", "namespaceFB.html", "namespaceFB" ],
-    [ "Firmware", "namespaceFirmware.html", "namespaceFirmware" ],
-    [ "Kernel", "namespaceKernel.html", "namespaceKernel" ],
+    [ "detail", "namespacedetail.html", null ],
+    [ "DI", "namespace_d_i.html", "namespace_d_i" ],
+    [ "FB", "namespace_f_b.html", "namespace_f_b" ],
+    [ "Firmware", "namespace_firmware.html", "namespace_firmware" ],
+    [ "Kernel", "namespace_kernel.html", "namespace_kernel" ],
     [ "mk_fwrk", "namespacemk__fwrk.html", [
       [ "create_directory_structure", "namespacemk__fwrk.html#a7c2d76b445e63f4eee366241723439c5", null ],
       [ "base_path", "namespacemk__fwrk.html#a426b03e3d46d056d27eaa4bde9eca48b", null ]
@@ -22,9 +23,9 @@ var namespaces_dup =
     [ "pfd", "namespacepfd.html", "namespacepfd" ],
     [ "qr", "namespaceqr.html", "namespaceqr" ],
     [ "rang", "namespacerang.html", "namespacerang" ],
-    [ "UI", "namespaceUI.html", [
-      [ "fb_real_t", "namespaceUI.html#add1f2f2f1cebd31c67a22adf590d3542", null ],
-      [ "fb_math_lerp", "namespaceUI.html#afa98a725532e675809b2059b36af5765", null ]
+    [ "UI", "namespace_u_i.html", [
+      [ "fb_real_t", "namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542", null ],
+      [ "fb_math_lerp", "namespace_u_i.html#afa98a725532e675809b2059b36af5765", null ]
     ] ],
     [ "utl", "namespaceutl.html", [
       [ "bit", "namespaceutl.html#ad229dcf753ec11932521622aa8d07864", null ],

@@ -93,22 +93,21 @@ $(document).ready(function(){initNavTree('_a_m_d64_2_hal_debug_output_8cc.html',
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">HalDebugOutput.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_debug_output_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_new_kit_2_utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_new_8h_source.html">NewKit/New.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_new_kit_2_utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_core_gfx_8h_source.html">modules/CoreGfx/CoreGfx.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_text_gfx_8h_source.html">modules/CoreGfx/TextGfx.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
 <tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
@@ -116,7 +115,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a7bc2f72a71bd085f3d4f7de8343008b9" id="r_a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9">Kernel::CommStatus</a> : UInt16 { <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5e92a48a74777783aafa4ff15071f5ea">Kernel::kStateInvalid</a>
+<tr class="memitem:a7bc2f72a71bd085f3d4f7de8343008b9" id="r_a7bc2f72a71bd085f3d4f7de8343008b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9">Kernel::CommStatus</a> : UInt16 { <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5e92a48a74777783aafa4ff15071f5ea">Kernel::kStateInvalid</a> = 0x64
 , <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9ac8ad6f8f9cd3b26e97883edb92c9e9a2">Kernel::kStateReady</a> = 0xCF
 , <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5343586fd107aaa721dfafa833524247">Kernel::kStateTransmit</a> = 0xFC
 , <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a1dbf76d5c3b4041e27a3510832614801">Kernel::kStateCnt</a> = 3
@@ -125,19 +124,18 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abcfc42bc1a7dac85b5349d71f3012141" id="r_abcfc42bc1a7dac85b5349d71f3012141"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_kernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a> PORT&gt; </td></tr>
+<tr class="memitem:a7df787e1a62bdf06b7a10e029a7c912b" id="r_a7df787e1a62bdf06b7a10e029a7c912b"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a7df787e1a62bdf06b7a10e029a7c912b">Kernel::Detail::ATTRIBUTE</a> (unused) const <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kPort=0x3F8 = <a class="el" href="namespace_kernel.html#a7bc2f72a71bd085f3d4f7de8343008b9a5e92a48a74777783aafa4ff15071f5ea">kStateInvalid</a></td></tr>
+<tr class="separator:a7df787e1a62bdf06b7a10e029a7c912b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfc42bc1a7dac85b5349d71f3012141" id="r_abcfc42bc1a7dac85b5349d71f3012141"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> PORT&gt; </td></tr>
 <tr class="memitem:abcfc42bc1a7dac85b5349d71f3012141"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#abcfc42bc1a7dac85b5349d71f3012141">Kernel::Detail::hal_serial_init</a> () noexcept</td></tr>
 <tr class="memdesc:abcfc42bc1a7dac85b5349d71f3012141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init COM1.  <br /></td></tr>
 <tr class="separator:abcfc42bc1a7dac85b5349d71f3012141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1085600b4f13e33bd21543937b0468a" id="r_ad1085600b4f13e33bd21543937b0468a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ad1085600b4f13e33bd21543937b0468a">Kernel::ke_io_write</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *obj, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
+<tr class="memitem:a66c3d3d7ac9f7d872b0fe937ce71bc81" id="r_a66c3d3d7ac9f7d872b0fe937ce71bc81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a66c3d3d7ac9f7d872b0fe937ce71bc81">Kernel::ke_utf_io_write</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> * &gt; *obj, const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *bytes)</td></tr>
+<tr class="separator:a66c3d3d7ac9f7d872b0fe937ce71bc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1085600b4f13e33bd21543937b0468a" id="r_ad1085600b4f13e33bd21543937b0468a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ad1085600b4f13e33bd21543937b0468a">Kernel::ke_io_write</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *obj, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
 <tr class="separator:ad1085600b4f13e33bd21543937b0468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d41361c1685ee5da3e190d75c529378" id="r_a9d41361c1685ee5da3e190d75c529378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a9d41361c1685ee5da3e190d75c529378">Kernel::ke_io_read</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
+<tr class="memitem:a9d41361c1685ee5da3e190d75c529378" id="r_a9d41361c1685ee5da3e190d75c529378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a9d41361c1685ee5da3e190d75c529378">Kernel::ke_io_read</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
 <tr class="separator:a9d41361c1685ee5da3e190d75c529378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a3eb709c5262ae6b615008c111788d4d7" id="r_a3eb709c5262ae6b615008c111788d4d7"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a3eb709c5262ae6b615008c111788d4d7">Kernel::Detail::kPort</a> = 0x3F8</td></tr>
-<tr class="separator:a3eb709c5262ae6b615008c111788d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

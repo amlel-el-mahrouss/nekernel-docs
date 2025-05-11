@@ -93,8 +93,7 @@ $(document).ready(function(){initNavTree('kernel_2_firmware_kit_2_core_boot_2_bo
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">BootNet.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -105,7 +104,7 @@ $(document).ready(function(){initNavTree('kernel_2_firmware_kit_2_core_boot_2_bo
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the internet header is used to download updates OTA.  <a href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Netboot Internet Header Consists of 4 magic characters, and a set of fields describing the current patch that's being sent (if m_preflight = 0)  <a href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -117,43 +116,11 @@ Macros</h2></td></tr>
 <tr class="memitem:ab5688e6874f49911962ec51ee153b65c" id="r_ab5688e6874f49911962ec51ee153b65c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#ab5688e6874f49911962ec51ee153b65c">kBootNetNameLen</a>&#160;&#160;&#160;(256U)</td></tr>
 <tr class="separator:ab5688e6874f49911962ec51ee153b65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a6e97287891efe3e36b11ccdbecac28a2" id="r_a6e97287891efe3e36b11ccdbecac28a2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a6e97287891efe3e36b11ccdbecac28a2">ATTRIBUTE</a> (packed) <a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a></td></tr>
-<tr class="memdesc:a6e97287891efe3e36b11ccdbecac28a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">the internet header is used to download updates OTA.  <br /></td></tr>
-<tr class="separator:a6e97287891efe3e36b11ccdbecac28a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a82fe21c8c3eee80b71d31a0ef0031266" id="r_a82fe21c8c3eee80b71d31a0ef0031266"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a82fe21c8c3eee80b71d31a0ef0031266">NB1</a></td></tr>
-<tr class="separator:a82fe21c8c3eee80b71d31a0ef0031266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78415dddede70bae6c557d7c1df3d61b" id="r_a78415dddede70bae6c557d7c1df3d61b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a78415dddede70bae6c557d7c1df3d61b">NB2</a></td></tr>
-<tr class="memdesc:a78415dddede70bae6c557d7c1df3d61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">magic char 1 'N'  <br /></td></tr>
-<tr class="separator:a78415dddede70bae6c557d7c1df3d61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ec5a92bf2fbbe3432b6f88760be7e6f" id="r_a8ec5a92bf2fbbe3432b6f88760be7e6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a8ec5a92bf2fbbe3432b6f88760be7e6f">NB3</a></td></tr>
-<tr class="memdesc:a8ec5a92bf2fbbe3432b6f88760be7e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">magic char 2 'E'  <br /></td></tr>
-<tr class="separator:a8ec5a92bf2fbbe3432b6f88760be7e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e27bf0c8db82d940fabd145d16801ff" id="r_a2e27bf0c8db82d940fabd145d16801ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a2e27bf0c8db82d940fabd145d16801ff">NB4</a></td></tr>
-<tr class="memdesc:a2e27bf0c8db82d940fabd145d16801ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">magic char 3 'T'  <br /></td></tr>
-<tr class="separator:a2e27bf0c8db82d940fabd145d16801ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1757715fce3da8bdf03ba708273d5930" id="r_a1757715fce3da8bdf03ba708273d5930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a1757715fce3da8bdf03ba708273d5930">Name</a> [<a class="el" href="boot_2modules_2_boot_net_2_boot_net_8h.html#ab5688e6874f49911962ec51ee153b65c">kBootNetNameLen</a>]</td></tr>
-<tr class="memdesc:a1757715fce3da8bdf03ba708273d5930"><td class="mdescLeft">&#160;</td><td class="mdescRight">magic char 4 'B'  <br /></td></tr>
-<tr class="separator:a1757715fce3da8bdf03ba708273d5930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea70ec619d1d10c549d99368e10ccf8" id="r_a5ea70ec619d1d10c549d99368e10ccf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a5ea70ec619d1d10c549d99368e10ccf8">Length</a></td></tr>
-<tr class="memdesc:a5ea70ec619d1d10c549d99368e10ccf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">example: Modjo  <br /></td></tr>
-<tr class="separator:a5ea70ec619d1d10c549d99368e10ccf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43b3feb29f46fe7aac36b26a87551ed0" id="r_a43b3feb29f46fe7aac36b26a87551ed0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a43b3feb29f46fe7aac36b26a87551ed0">Target</a> [<a class="el" href="boot_2modules_2_boot_net_2_boot_net_8h.html#ab5688e6874f49911962ec51ee153b65c">kBootNetNameLen</a>]</td></tr>
-<tr class="memdesc:a43b3feb29f46fe7aac36b26a87551ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">the patch length.  <br /></td></tr>
-<tr class="separator:a43b3feb29f46fe7aac36b26a87551ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae017405a1bb3ccf6f0ca624b8dc37979" id="r_ae017405a1bb3ccf6f0ca624b8dc37979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Kernel::Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#ae017405a1bb3ccf6f0ca624b8dc37979">ImpliesProgram</a></td></tr>
-<tr class="memdesc:ae017405a1bb3ccf6f0ca624b8dc37979"><td class="mdescLeft">&#160;</td><td class="mdescRight">the target file.  <br /></td></tr>
-<tr class="separator:ae017405a1bb3ccf6f0ca624b8dc37979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a10dde819e0ab90c522869111706ae" id="r_ae5a10dde819e0ab90c522869111706ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Kernel::Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#ae5a10dde819e0ab90c522869111706ae">Preflight</a></td></tr>
-<tr class="memdesc:ae5a10dde819e0ab90c522869111706ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">does it imply an EEPROM program?  <br /></td></tr>
-<tr class="separator:ae5a10dde819e0ab90c522869111706ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72b1e657d1e88a4f710edb303ad87cd1" id="r_a72b1e657d1e88a4f710edb303ad87cd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a72b1e657d1e88a4f710edb303ad87cd1">Data</a> [1]</td></tr>
-<tr class="memdesc:a72b1e657d1e88a4f710edb303ad87cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">is it a preflight packet.  <br /></td></tr>
-<tr class="separator:a72b1e657d1e88a4f710edb303ad87cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a499e3d38c5a5a4d11d4c12a3623e8e30" id="r_a499e3d38c5a5a4d11d4c12a3623e8e30"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kernel_2_firmware_kit_2_core_boot_2_boot_net_8h.html#a499e3d38c5a5a4d11d4c12a3623e8e30">BOOTNET_INTERNET_HEADER</a></td></tr>
+<tr class="memdesc:a499e3d38c5a5a4d11d4c12a3623e8e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Netboot Internet Header Consists of 4 magic characters, and a set of fields describing the current patch that's being sent (if m_preflight = 0)  <br /></td></tr>
+<tr class="separator:a499e3d38c5a5a4d11d4c12a3623e8e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac55aaef7b99a2da05c6220301de8d4b4" name="ac55aaef7b99a2da05c6220301de8d4b4"></a>
@@ -198,183 +165,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6e97287891efe3e36b11ccdbecac28a2" name="a6e97287891efe3e36b11ccdbecac28a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e97287891efe3e36b11ccdbecac28a2">&#9670;&#160;</a></span>ATTRIBUTE()</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a499e3d38c5a5a4d11d4c12a3623e8e30" name="a499e3d38c5a5a4d11d4c12a3623e8e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a499e3d38c5a5a4d11d4c12a3623e8e30">&#9670;&#160;</a></span>BOOTNET_INTERNET_HEADER</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a> ATTRIBUTE </td>
-          <td>(</td>
-          <td class="paramtype">packed&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef struct <a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a> <a class="el" href="struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html">BOOTNET_INTERNET_HEADER</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>the internet header is used to download updates OTA. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a72b1e657d1e88a4f710edb303ad87cd1" name="a72b1e657d1e88a4f710edb303ad87cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72b1e657d1e88a4f710edb303ad87cd1">&#9670;&#160;</a></span>Data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> Data[1]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>is it a preflight packet. </p>
-
-</div>
-</div>
-<a id="ae017405a1bb3ccf6f0ca624b8dc37979" name="ae017405a1bb3ccf6f0ca624b8dc37979"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae017405a1bb3ccf6f0ca624b8dc37979">&#9670;&#160;</a></span>ImpliesProgram</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Kernel::Boolean</a> ImpliesProgram</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the target file. </p>
-
-</div>
-</div>
-<a id="a5ea70ec619d1d10c549d99368e10ccf8" name="a5ea70ec619d1d10c549d99368e10ccf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ea70ec619d1d10c549d99368e10ccf8">&#9670;&#160;</a></span>Length</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a> Length</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>example: Modjo </p>
-
-</div>
-</div>
-<a id="a1757715fce3da8bdf03ba708273d5930" name="a1757715fce3da8bdf03ba708273d5930"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1757715fce3da8bdf03ba708273d5930">&#9670;&#160;</a></span>Name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> Name[<a class="el" href="boot_2modules_2_boot_net_2_boot_net_8h.html#ab5688e6874f49911962ec51ee153b65c">kBootNetNameLen</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>magic char 4 'B' </p>
-
-</div>
-</div>
-<a id="a82fe21c8c3eee80b71d31a0ef0031266" name="a82fe21c8c3eee80b71d31a0ef0031266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82fe21c8c3eee80b71d31a0ef0031266">&#9670;&#160;</a></span>NB1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> NB1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a78415dddede70bae6c557d7c1df3d61b" name="a78415dddede70bae6c557d7c1df3d61b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78415dddede70bae6c557d7c1df3d61b">&#9670;&#160;</a></span>NB2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> NB2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>magic char 1 'N' </p>
-
-</div>
-</div>
-<a id="a8ec5a92bf2fbbe3432b6f88760be7e6f" name="a8ec5a92bf2fbbe3432b6f88760be7e6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ec5a92bf2fbbe3432b6f88760be7e6f">&#9670;&#160;</a></span>NB3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> NB3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>magic char 2 'E' </p>
-
-</div>
-</div>
-<a id="a2e27bf0c8db82d940fabd145d16801ff" name="a2e27bf0c8db82d940fabd145d16801ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e27bf0c8db82d940fabd145d16801ff">&#9670;&#160;</a></span>NB4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> NB4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>magic char 3 'T' </p>
-
-</div>
-</div>
-<a id="ae5a10dde819e0ab90c522869111706ae" name="ae5a10dde819e0ab90c522869111706ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5a10dde819e0ab90c522869111706ae">&#9670;&#160;</a></span>Preflight</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Kernel::Boolean</a> Preflight</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>does it imply an EEPROM program? </p>
-
-</div>
-</div>
-<a id="a43b3feb29f46fe7aac36b26a87551ed0" name="a43b3feb29f46fe7aac36b26a87551ed0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43b3feb29f46fe7aac36b26a87551ed0">&#9670;&#160;</a></span>Target</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> Target[<a class="el" href="boot_2modules_2_boot_net_2_boot_net_8h.html#ab5688e6874f49911962ec51ee153b65c">kBootNetNameLen</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>the patch length. </p>
+<p>Netboot Internet Header Consists of 4 magic characters, and a set of fields describing the current patch that's being sent (if m_preflight = 0) </p>
+<dl class="section note"><dt>Note</dt><dd>Can be used to patch ROMs too (if ImpliesProgram = 1) </dd></dl>
 
 </div>
 </div>

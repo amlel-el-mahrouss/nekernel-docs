@@ -100,10 +100,10 @@ $(document).ready(function(){initNavTree('_ne_f_s_8h.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_compiler_kit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_compiler_hint_8h_source.html">hint/CompilerHint.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_drive_mgr_8h_source.html">KernelKit/DriveMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kernel_2_new_kit_2_defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_compiler_hint_8h_source.html">hint/CompilerHint.h</a>&gt;</code><br />
 </div>
 <p><a href="_ne_f_s_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -129,7 +129,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_ne_f_s" id="r_namespace_kernel_1_1_ne_f_s"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_ne_f_s.html">Kernel::NeFS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +143,9 @@ Macros</h2></td></tr>
 <tr class="separator:a9d0243599fd10b7b98bff5e22afc85b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87fd947a9f17688b55acd361f064b5ca" id="r_a87fd947a9f17688b55acd361f064b5ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#a87fd947a9f17688b55acd361f064b5ca">kNeFSCatalogNameLen</a>&#160;&#160;&#160;(256)</td></tr>
 <tr class="separator:a87fd947a9f17688b55acd361f064b5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf55712e23e5c7a0e2013d3b51250528" id="r_acf55712e23e5c7a0e2013d3b51250528"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#acf55712e23e5c7a0e2013d3b51250528">kNeFSMinimumDiskSize</a>&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(8))</td></tr>
+<tr class="memitem:a3db2b5c6d59d9c7e13b3ed5818ec8f5e" id="r_a3db2b5c6d59d9c7e13b3ed5818ec8f5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#a3db2b5c6d59d9c7e13b3ed5818ec8f5e">kNeFSVolumeName</a>&#160;&#160;&#160;&quot;NeFS Volume&quot;</td></tr>
+<tr class="separator:a3db2b5c6d59d9c7e13b3ed5818ec8f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf55712e23e5c7a0e2013d3b51250528" id="r_acf55712e23e5c7a0e2013d3b51250528"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#acf55712e23e5c7a0e2013d3b51250528">kNeFSMinimumDiskSize</a>&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(8))</td></tr>
 <tr class="separator:acf55712e23e5c7a0e2013d3b51250528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c16daa40382f0900e69a8d1007e4388" id="r_a3c16daa40382f0900e69a8d1007e4388"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#a3c16daa40382f0900e69a8d1007e4388">kNeFSSectorSz</a>&#160;&#160;&#160;(512)</td></tr>
 <tr class="separator:a3c16daa40382f0900e69a8d1007e4388"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +247,7 @@ Macros</h2></td></tr>
 <tr class="separator:abdc83b3461b6e9a5cf5de76d49afba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de74eb5c4a6672ff23e28bb05ded850" id="r_a7de74eb5c4a6672ff23e28bb05ded850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#a7de74eb5c4a6672ff23e28bb05ded850">kNeFSMimeNameLen</a>&#160;&#160;&#160;(200)</td></tr>
 <tr class="separator:a7de74eb5c4a6672ff23e28bb05ded850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce15e0241edade3ef3ee8abb3cd1d92" id="r_a2ce15e0241edade3ef3ee8abb3cd1d92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#a2ce15e0241edade3ef3ee8abb3cd1d92">kNeFSForkNameLen</a>&#160;&#160;&#160;(200)</td></tr>
+<tr class="memitem:a2ce15e0241edade3ef3ee8abb3cd1d92" id="r_a2ce15e0241edade3ef3ee8abb3cd1d92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#a2ce15e0241edade3ef3ee8abb3cd1d92">kNeFSForkNameLen</a>&#160;&#160;&#160;(199)</td></tr>
 <tr class="separator:a2ce15e0241edade3ef3ee8abb3cd1d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a947b77deefc690981ce4fd88efd2ce65" id="r_a947b77deefc690981ce4fd88efd2ce65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ne_f_s_8h.html#a947b77deefc690981ce4fd88efd2ce65">kNeFSFrameworkExt</a>&#160;&#160;&#160;&quot;.fwrk/&quot;</td></tr>
 <tr class="separator:a947b77deefc690981ce4fd88efd2ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -651,7 +653,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kNeFSForkNameLen&#160;&#160;&#160;(200)</td>
+          <td class="memname">#define kNeFSForkNameLen&#160;&#160;&#160;(199)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -822,7 +824,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kNeFSMinimumDiskSize&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(8))</td>
+          <td class="memname">#define kNeFSMinimumDiskSize&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(8))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1048,6 +1050,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define kNeFSVersionInteger&#160;&#160;&#160;(0x0129)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3db2b5c6d59d9c7e13b3ed5818ec8f5e" name="a3db2b5c6d59d9c7e13b3ed5818ec8f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db2b5c6d59d9c7e13b3ed5818ec8f5e">&#9670;&#160;</a></span>kNeFSVolumeName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kNeFSVolumeName&#160;&#160;&#160;&quot;NeFS Volume&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

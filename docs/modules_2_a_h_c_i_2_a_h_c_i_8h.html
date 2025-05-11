@@ -129,6 +129,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hba_cmd_header.html">HbaCmdHeader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_hba_cmd_header_1_1_hba_flags.html">HbaCmdHeader::HbaFlags</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hba_cmd_header_1_1_hba_flags_1_1_hba_flags__.html">HbaCmdHeader::HbaFlags::HbaFlags_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_hba_flags.html">HbaFlags</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hba_flags_1_1_hba_flags__.html">HbaFlags::HbaFlags_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hba_fis.html">HbaFis</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hba_prdt_entry.html">HbaPrdtEntry</a></td></tr>
@@ -174,30 +182,30 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ae8a3b6a5d0d3244ed73924ab2421a0d0" id="r_ae8a3b6a5d0d3244ed73924ab2421a0d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a7e7acf624ce36c06505fcfd159d51fde">kFISTypeRegH2D</a> = 0x27
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a1256a2f72997e007c437b61b2afb93e6">kFISTypeRegD2H</a> = 0x34
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a97c3e9f6b3613703e7f99888091213b1">kFISTypeDMAAct</a> = 0x39
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a1ba7997049e5fb1ca916730ce357a808">kFISTypeDMASetup</a> = 0x41
+<tr class="memitem:a394b3903fbf00ba2b6243f60689a5a5f" id="r_a394b3903fbf00ba2b6243f60689a5a5f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa7e7acf624ce36c06505fcfd159d51fde">kFISTypeRegH2D</a> = 0x27
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa1256a2f72997e007c437b61b2afb93e6">kFISTypeRegD2H</a> = 0x34
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa97c3e9f6b3613703e7f99888091213b1">kFISTypeDMAAct</a> = 0x39
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa1ba7997049e5fb1ca916730ce357a808">kFISTypeDMASetup</a> = 0x41
 , <br />
-&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0acec1c2d2a06015dfc6584a98cd316b1f">kFISTypeData</a> = 0x46
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a0a09e023746cc40e7a59d58d54c8868a">kFISTypeBIST</a> = 0x58
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a4157ae7c99f23e603cff8c5cdae6a8fd">kFISTypePIOSetup</a> = 0x5F
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a58b579f25ffdb7a80cc0053b2c34ccc9">kFISTypeDevBits</a> = 0xA1
+&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5facec1c2d2a06015dfc6584a98cd316b1f">kFISTypeData</a> = 0x46
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa0a09e023746cc40e7a59d58d54c8868a">kFISTypeBIST</a> = 0x58
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa4157ae7c99f23e603cff8c5cdae6a8fd">kFISTypePIOSetup</a> = 0x5F
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa58b579f25ffdb7a80cc0053b2c34ccc9">kFISTypeDevBits</a> = 0xA1
 <br />
  }</td></tr>
-<tr class="memdesc:ae8a3b6a5d0d3244ed73924ab2421a0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame information type.  <a href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0">More...</a><br /></td></tr>
-<tr class="separator:ae8a3b6a5d0d3244ed73924ab2421a0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af715e26dfffd1f8de1c18449e2770cff" id="r_af715e26dfffd1f8de1c18449e2770cff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#af715e26dfffd1f8de1c18449e2770cffa9e65a5e4d78a71f05dc84b374e791553">kAHCICmdIdentify</a> = 0xEC
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#af715e26dfffd1f8de1c18449e2770cffa1bfc9847d1bcd77d3cd862f8504d74df">kAHCICmdReadDma</a> = 0xC8
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#af715e26dfffd1f8de1c18449e2770cffa3ad8f6c7fd1993ed1dfa43d5cd794af0">kAHCICmdReadDmaEx</a> = 0x25
-, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#af715e26dfffd1f8de1c18449e2770cffa61d54d71d22e5d4996fc7019aa156220">kAHCICmdWriteDma</a> = 0xCA
+<tr class="memdesc:a394b3903fbf00ba2b6243f60689a5a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame information type.  <a href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a394b3903fbf00ba2b6243f60689a5a5f">More...</a><br /></td></tr>
+<tr class="separator:a394b3903fbf00ba2b6243f60689a5a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac205be2172292384dd687b5471a87edd" id="r_ac205be2172292384dd687b5471a87edd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ac205be2172292384dd687b5471a87edda9e65a5e4d78a71f05dc84b374e791553">kAHCICmdIdentify</a> = 0xEC
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ac205be2172292384dd687b5471a87edda1bfc9847d1bcd77d3cd862f8504d74df">kAHCICmdReadDma</a> = 0xC8
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ac205be2172292384dd687b5471a87edda3ad8f6c7fd1993ed1dfa43d5cd794af0">kAHCICmdReadDmaEx</a> = 0x25
+, <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ac205be2172292384dd687b5471a87edda61d54d71d22e5d4996fc7019aa156220">kAHCICmdWriteDma</a> = 0xCA
 , <br />
-&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#af715e26dfffd1f8de1c18449e2770cffa12d97546a5c2687c5d1cc3ea4263fb65">kAHCICmdWriteDmaEx</a> = 0x35
+&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ac205be2172292384dd687b5471a87edda12d97546a5c2687c5d1cc3ea4263fb65">kAHCICmdWriteDmaEx</a> = 0x35
 <br />
  }</td></tr>
-<tr class="separator:af715e26dfffd1f8de1c18449e2770cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac205be2172292384dd687b5471a87edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -214,46 +222,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a0cb62478959d78bdecd663efa903b693" id="r_a0cb62478959d78bdecd663efa903b693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a0cb62478959d78bdecd663efa903b693">drv_std_write</a> (<a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a> lba, <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a> *buf, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a> sector_sz, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a> buf_sz)</td></tr>
 <tr class="memdesc:a0cb62478959d78bdecd663efa903b693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to AHCI disk.  <br /></td></tr>
 <tr class="separator:a0cb62478959d78bdecd663efa903b693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91f1c816c2745e222f7f63aeb35b7839" id="r_a91f1c816c2745e222f7f63aeb35b7839"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a91f1c816c2745e222f7f63aeb35b7839">drv_get_sector_count</a> ()</td></tr>
-<tr class="memdesc:a91f1c816c2745e222f7f63aeb35b7839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the sector count from AHCI disk.  <br /></td></tr>
-<tr class="separator:a91f1c816c2745e222f7f63aeb35b7839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398a2404f790ea69ff77ea647654b875" id="r_a398a2404f790ea69ff77ea647654b875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a398a2404f790ea69ff77ea647654b875">drv_get_size</a> ()</td></tr>
-<tr class="memdesc:a398a2404f790ea69ff77ea647654b875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the AHCI disk size.  <br /></td></tr>
-<tr class="separator:a398a2404f790ea69ff77ea647654b875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f19ea7eaeedab94a424e96a35fc3108" id="r_a2f19ea7eaeedab94a424e96a35fc3108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a2f19ea7eaeedab94a424e96a35fc3108">drv_std_get_sector_count</a> ()</td></tr>
+<tr class="memdesc:a2f19ea7eaeedab94a424e96a35fc3108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the sector count from AHCI disk.  <br /></td></tr>
+<tr class="separator:a2f19ea7eaeedab94a424e96a35fc3108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97e2478de2193c0641899c6405f3db5" id="r_af97e2478de2193c0641899c6405f3db5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#af97e2478de2193c0641899c6405f3db5">drv_std_get_size</a> ()</td></tr>
+<tr class="memdesc:af97e2478de2193c0641899c6405f3db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the AHCI disk size.  <br /></td></tr>
+<tr class="separator:af97e2478de2193c0641899c6405f3db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757a0e1c2243ef5699dca8fe448c5e18" id="r_a757a0e1c2243ef5699dca8fe448c5e18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Kernel::Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a757a0e1c2243ef5699dca8fe448c5e18">drv_is_ready</a> (void)</td></tr>
 <tr class="memdesc:a757a0e1c2243ef5699dca8fe448c5e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the drive has completed the command.  <br /></td></tr>
 <tr class="separator:a757a0e1c2243ef5699dca8fe448c5e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae09cd06fe5fc5cd4f058abee646baa1a" id="r_ae09cd06fe5fc5cd4f058abee646baa1a"><td class="memItemLeft" >union {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d22996946372f473501132dbd93088" id="r_a47d22996946372f473501132dbd93088"><td class="memItemLeft" >&#160;&#160;&#160;struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:af456ae6b73132bd6965b03b4c6efcb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae4816431d79bb82c0040518aaa2c00" id="r_aeae4816431d79bb82c0040518aaa2c00"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a842bc82572a93882e3437a0fb9f9be62">Cfl</a>: 5&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aeae4816431d79bb82c0040518aaa2c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286bb77a8ec29a3c79dc426fbcf315ca" id="r_a286bb77a8ec29a3c79dc426fbcf315ca"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a3e49c7e07411b80293cfdd8ed3464777">Atapi</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a286bb77a8ec29a3c79dc426fbcf315ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a412f5f527db5d6e4e91f1c72604412fc" id="r_a412f5f527db5d6e4e91f1c72604412fc"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a89f84999dceb46d401161325dfb957b4">Write</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a412f5f527db5d6e4e91f1c72604412fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af599cd7254ef6bc6589283c8731a5b9d" id="r_af599cd7254ef6bc6589283c8731a5b9d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a24842212f0271b29174b777cabc6b527">Prefetchable</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:af599cd7254ef6bc6589283c8731a5b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b2971cf6ce96979ca81712ec79dfa14" id="r_a2b2971cf6ce96979ca81712ec79dfa14"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae7b57132b350445da71941c5303faa81">Reset</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a2b2971cf6ce96979ca81712ec79dfa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1129ee2398cf7c14f3cecb7ada7f573" id="r_aa1129ee2398cf7c14f3cecb7ada7f573"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a58856cd581f22043748b449b16ebc19f">BIST</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aa1129ee2398cf7c14f3cecb7ada7f573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6152e86292f96db90d014c8f1f1fc4b0" id="r_a6152e86292f96db90d014c8f1f1fc4b0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a5cd3d7d9f85246ea3220b100c5ea38ca">Clear</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a6152e86292f96db90d014c8f1f1fc4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd51f358ea0a45534bf2c332b585fbf4" id="r_abd51f358ea0a45534bf2c332b585fbf4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a9fa76e71426721ade4413a4d21d0a966">Reserved0</a>: 1&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:abd51f358ea0a45534bf2c332b585fbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdae03ba4a0ee5b0f07a43dcf901271e" id="r_abdae03ba4a0ee5b0f07a43dcf901271e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a6b57895b63f1fe5ea83e0ca8471e465a">Pmp</a>: 4&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:abdae03ba4a0ee5b0f07a43dcf901271e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d22996946372f473501132dbd93088" id="r_a47d22996946372f473501132dbd93088"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#af456ae6b73132bd6965b03b4c6efcb3a">Struc</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a47d22996946372f473501132dbd93088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01705568d7df7645206eec29feda677b" id="r_a01705568d7df7645206eec29feda677b"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">Kernel::UInt16</a>&#160;&#160;&#160;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a523527e601b54331315b6050ae1e1cc8">Flags</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a01705568d7df7645206eec29feda677b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae09cd06fe5fc5cd4f058abee646baa1a" id="r_ae09cd06fe5fc5cd4f058abee646baa1a"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom">&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ae09cd06fe5fc5cd4f058abee646baa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8668a3922cdc641125a38c7323d5c3" id="r_a6b8668a3922cdc641125a38c7323d5c3"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="union_hba_flags.html">HbaFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a6b8668a3922cdc641125a38c7323d5c3">HbaFlags</a></td></tr>
+<tr class="separator:a6b8668a3922cdc641125a38c7323d5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadb8c47906d32cd1bb17ff08bd94f57f" id="r_aadb8c47906d32cd1bb17ff08bd94f57f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">Kernel::UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#aadb8c47906d32cd1bb17ff08bd94f57f">Prdtl</a></td></tr>
 <tr class="separator:aadb8c47906d32cd1bb17ff08bd94f57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a698855497ea2828dc73d29b2e42f4095" id="r_a698855497ea2828dc73d29b2e42f4095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a698855497ea2828dc73d29b2e42f4095">Prdbc</a></td></tr>
@@ -470,8 +452,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ae8a3b6a5d0d3244ed73924ab2421a0d0" name="ae8a3b6a5d0d3244ed73924ab2421a0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8a3b6a5d0d3244ed73924ab2421a0d0">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a394b3903fbf00ba2b6243f60689a5a5f" name="a394b3903fbf00ba2b6243f60689a5a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a394b3903fbf00ba2b6243f60689a5a5f">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,20 +466,20 @@ Variables</h2></td></tr>
 
 <p>Frame information type. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0a7e7acf624ce36c06505fcfd159d51fde" name="ae8a3b6a5d0d3244ed73924ab2421a0d0a7e7acf624ce36c06505fcfd159d51fde"></a>kFISTypeRegH2D&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0a1256a2f72997e007c437b61b2afb93e6" name="ae8a3b6a5d0d3244ed73924ab2421a0d0a1256a2f72997e007c437b61b2afb93e6"></a>kFISTypeRegD2H&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0a97c3e9f6b3613703e7f99888091213b1" name="ae8a3b6a5d0d3244ed73924ab2421a0d0a97c3e9f6b3613703e7f99888091213b1"></a>kFISTypeDMAAct&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0a1ba7997049e5fb1ca916730ce357a808" name="ae8a3b6a5d0d3244ed73924ab2421a0d0a1ba7997049e5fb1ca916730ce357a808"></a>kFISTypeDMASetup&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0acec1c2d2a06015dfc6584a98cd316b1f" name="ae8a3b6a5d0d3244ed73924ab2421a0d0acec1c2d2a06015dfc6584a98cd316b1f"></a>kFISTypeData&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0a0a09e023746cc40e7a59d58d54c8868a" name="ae8a3b6a5d0d3244ed73924ab2421a0d0a0a09e023746cc40e7a59d58d54c8868a"></a>kFISTypeBIST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0a4157ae7c99f23e603cff8c5cdae6a8fd" name="ae8a3b6a5d0d3244ed73924ab2421a0d0a4157ae7c99f23e603cff8c5cdae6a8fd"></a>kFISTypePIOSetup&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae8a3b6a5d0d3244ed73924ab2421a0d0a58b579f25ffdb7a80cc0053b2c34ccc9" name="ae8a3b6a5d0d3244ed73924ab2421a0d0a58b579f25ffdb7a80cc0053b2c34ccc9"></a>kFISTypeDevBits&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa7e7acf624ce36c06505fcfd159d51fde" name="a394b3903fbf00ba2b6243f60689a5a5fa7e7acf624ce36c06505fcfd159d51fde"></a>kFISTypeRegH2D&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa1256a2f72997e007c437b61b2afb93e6" name="a394b3903fbf00ba2b6243f60689a5a5fa1256a2f72997e007c437b61b2afb93e6"></a>kFISTypeRegD2H&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa97c3e9f6b3613703e7f99888091213b1" name="a394b3903fbf00ba2b6243f60689a5a5fa97c3e9f6b3613703e7f99888091213b1"></a>kFISTypeDMAAct&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa1ba7997049e5fb1ca916730ce357a808" name="a394b3903fbf00ba2b6243f60689a5a5fa1ba7997049e5fb1ca916730ce357a808"></a>kFISTypeDMASetup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5facec1c2d2a06015dfc6584a98cd316b1f" name="a394b3903fbf00ba2b6243f60689a5a5facec1c2d2a06015dfc6584a98cd316b1f"></a>kFISTypeData&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa0a09e023746cc40e7a59d58d54c8868a" name="a394b3903fbf00ba2b6243f60689a5a5fa0a09e023746cc40e7a59d58d54c8868a"></a>kFISTypeBIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa4157ae7c99f23e603cff8c5cdae6a8fd" name="a394b3903fbf00ba2b6243f60689a5a5fa4157ae7c99f23e603cff8c5cdae6a8fd"></a>kFISTypePIOSetup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa58b579f25ffdb7a80cc0053b2c34ccc9" name="a394b3903fbf00ba2b6243f60689a5a5fa58b579f25ffdb7a80cc0053b2c34ccc9"></a>kFISTypeDevBits&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="af715e26dfffd1f8de1c18449e2770cff" name="af715e26dfffd1f8de1c18449e2770cff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af715e26dfffd1f8de1c18449e2770cff">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="ac205be2172292384dd687b5471a87edd" name="ac205be2172292384dd687b5471a87edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac205be2172292384dd687b5471a87edd">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,11 +490,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af715e26dfffd1f8de1c18449e2770cffa9e65a5e4d78a71f05dc84b374e791553" name="af715e26dfffd1f8de1c18449e2770cffa9e65a5e4d78a71f05dc84b374e791553"></a>kAHCICmdIdentify&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af715e26dfffd1f8de1c18449e2770cffa1bfc9847d1bcd77d3cd862f8504d74df" name="af715e26dfffd1f8de1c18449e2770cffa1bfc9847d1bcd77d3cd862f8504d74df"></a>kAHCICmdReadDma&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af715e26dfffd1f8de1c18449e2770cffa3ad8f6c7fd1993ed1dfa43d5cd794af0" name="af715e26dfffd1f8de1c18449e2770cffa3ad8f6c7fd1993ed1dfa43d5cd794af0"></a>kAHCICmdReadDmaEx&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af715e26dfffd1f8de1c18449e2770cffa61d54d71d22e5d4996fc7019aa156220" name="af715e26dfffd1f8de1c18449e2770cffa61d54d71d22e5d4996fc7019aa156220"></a>kAHCICmdWriteDma&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af715e26dfffd1f8de1c18449e2770cffa12d97546a5c2687c5d1cc3ea4263fb65" name="af715e26dfffd1f8de1c18449e2770cffa12d97546a5c2687c5d1cc3ea4263fb65"></a>kAHCICmdWriteDmaEx&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda9e65a5e4d78a71f05dc84b374e791553" name="ac205be2172292384dd687b5471a87edda9e65a5e4d78a71f05dc84b374e791553"></a>kAHCICmdIdentify&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda1bfc9847d1bcd77d3cd862f8504d74df" name="ac205be2172292384dd687b5471a87edda1bfc9847d1bcd77d3cd862f8504d74df"></a>kAHCICmdReadDma&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda3ad8f6c7fd1993ed1dfa43d5cd794af0" name="ac205be2172292384dd687b5471a87edda3ad8f6c7fd1993ed1dfa43d5cd794af0"></a>kAHCICmdReadDmaEx&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda61d54d71d22e5d4996fc7019aa156220" name="ac205be2172292384dd687b5471a87edda61d54d71d22e5d4996fc7019aa156220"></a>kAHCICmdWriteDma&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda12d97546a5c2687c5d1cc3ea4263fb65" name="ac205be2172292384dd687b5471a87edda12d97546a5c2687c5d1cc3ea4263fb65"></a>kAHCICmdWriteDmaEx&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -543,44 +525,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a91f1c816c2745e222f7f63aeb35b7839" name="a91f1c816c2745e222f7f63aeb35b7839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91f1c816c2745e222f7f63aeb35b7839">&#9670;&#160;</a></span>drv_get_sector_count()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a> drv_get_sector_count </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the sector count from AHCI disk. </p>
-
-</div>
-</div>
-<a id="a398a2404f790ea69ff77ea647654b875" name="a398a2404f790ea69ff77ea647654b875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a398a2404f790ea69ff77ea647654b875">&#9670;&#160;</a></span>drv_get_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a> drv_get_size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the AHCI disk size. </p>
 
 </div>
 </div>
@@ -619,6 +563,44 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f19ea7eaeedab94a424e96a35fc3108" name="a2f19ea7eaeedab94a424e96a35fc3108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f19ea7eaeedab94a424e96a35fc3108">&#9670;&#160;</a></span>drv_std_get_sector_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a> drv_std_get_sector_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the sector count from AHCI disk. </p>
+
+</div>
+</div>
+<a id="af97e2478de2193c0641899c6405f3db5" name="af97e2478de2193c0641899c6405f3db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97e2478de2193c0641899c6405f3db5">&#9670;&#160;</a></span>drv_std_get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a> drv_std_get_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the AHCI disk size. </p>
 
 </div>
 </div>
@@ -754,76 +736,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ae09cd06fe5fc5cd4f058abee646baa1a" name="ae09cd06fe5fc5cd4f058abee646baa1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae09cd06fe5fc5cd4f058abee646baa1a">&#9670;&#160;</a></span>[union]</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">union  { ... } </td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3e49c7e07411b80293cfdd8ed3464777" name="a3e49c7e07411b80293cfdd8ed3464777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e49c7e07411b80293cfdd8ed3464777">&#9670;&#160;</a></span>Atapi</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Atapi</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58856cd581f22043748b449b16ebc19f" name="a58856cd581f22043748b449b16ebc19f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58856cd581f22043748b449b16ebc19f">&#9670;&#160;</a></span>BIST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> BIST</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a842bc82572a93882e3437a0fb9f9be62" name="a842bc82572a93882e3437a0fb9f9be62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a842bc82572a93882e3437a0fb9f9be62">&#9670;&#160;</a></span>Cfl</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Cfl</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5cd3d7d9f85246ea3220b100c5ea38ca" name="a5cd3d7d9f85246ea3220b100c5ea38ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cd3d7d9f85246ea3220b100c5ea38ca">&#9670;&#160;</a></span>Clear</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Clear</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a499fb3ab16761a02acff712df4b7b3be" name="a499fb3ab16761a02acff712df4b7b3be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a499fb3ab16761a02acff712df4b7b3be">&#9670;&#160;</a></span>Ctba</h2>
 
@@ -852,28 +764,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a523527e601b54331315b6050ae1e1cc8" name="a523527e601b54331315b6050ae1e1cc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a523527e601b54331315b6050ae1e1cc8">&#9670;&#160;</a></span>Flags</h2>
+<a id="a6b8668a3922cdc641125a38c7323d5c3" name="a6b8668a3922cdc641125a38c7323d5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8668a3922cdc641125a38c7323d5c3">&#9670;&#160;</a></span>HbaFlags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">Kernel::UInt16</a> Flags</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b57895b63f1fe5ea83e0ca8471e465a" name="a6b57895b63f1fe5ea83e0ca8471e465a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b57895b63f1fe5ea83e0ca8471e465a">&#9670;&#160;</a></span>Pmp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Pmp</td>
+          <td class="memname">union <a class="el" href="union_hba_flags.html">HbaFlags</a> <a class="el" href="union_hba_flags.html">HbaFlags</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -908,48 +806,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a24842212f0271b29174b777cabc6b527" name="a24842212f0271b29174b777cabc6b527"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24842212f0271b29174b777cabc6b527">&#9670;&#160;</a></span>Prefetchable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Prefetchable</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9fa76e71426721ade4413a4d21d0a966" name="a9fa76e71426721ade4413a4d21d0a966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fa76e71426721ade4413a4d21d0a966">&#9670;&#160;</a></span>Reserved0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Reserved0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae7b57132b350445da71941c5303faa81" name="ae7b57132b350445da71941c5303faa81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b57132b350445da71941c5303faa81">&#9670;&#160;</a></span>Reset</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Reset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae4bdfb4804ffc221b07397ce93f73663" name="ae4bdfb4804ffc221b07397ce93f73663"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4bdfb4804ffc221b07397ce93f73663">&#9670;&#160;</a></span>Rsv</h2>
 
@@ -958,34 +814,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> Rsv[4]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af456ae6b73132bd6965b03b4c6efcb3a" name="af456ae6b73132bd6965b03b4c6efcb3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af456ae6b73132bd6965b03b4c6efcb3a">&#9670;&#160;</a></span>[struct]</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct  { ... }  Struc</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a89f84999dceb46d401161325dfb957b4" name="a89f84999dceb46d401161325dfb957b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89f84999dceb46d401161325dfb957b4">&#9670;&#160;</a></span>Write</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a> Write</td>
         </tr>
       </table>
 </div><div class="memdoc">

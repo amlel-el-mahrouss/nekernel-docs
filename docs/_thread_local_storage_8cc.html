@@ -98,17 +98,17 @@ $(document).ready(function(){initNavTree('_thread_local_storage_8cc.html',''); i
 
 <p>Process Thread Local Storage.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2_c_f_kit_2_property_8h_source.html">CFKit/Property.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="dev_2kernel_2_c_f_kit_2_property_8h_source.html">CFKit/Property.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_thread_local_storage_8h_source.html">KernelKit/ThreadLocalStorage.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8a532a538cb8d2511904c248aa2bf55c" id="r_a8a532a538cb8d2511904c248aa2bf55c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8cc.html#a8a532a538cb8d2511904c248aa2bf55c">tls_check_tib</a> (<a class="el" href="struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html">THREAD_INFORMATION_BLOCK</a> *tib_ptr)</td></tr>
 <tr class="memdesc:a8a532a538cb8d2511904c248aa2bf55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for cookie inside the TIB.  <br /></td></tr>
 <tr class="separator:a8a532a538cb8d2511904c248aa2bf55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e734b4f946b68eaab0d1c2f4b9f79f7" id="r_a6e734b4f946b68eaab0d1c2f4b9f79f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8cc.html#a6e734b4f946b68eaab0d1c2f4b9f79f7">tls_check_syscall_impl</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> tib_ptr) noexcept</td></tr>
+<tr class="memitem:a6e734b4f946b68eaab0d1c2f4b9f79f7" id="r_a6e734b4f946b68eaab0d1c2f4b9f79f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8cc.html#a6e734b4f946b68eaab0d1c2f4b9f79f7">tls_check_syscall_impl</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> tib_ptr) noexcept</td></tr>
 <tr class="memdesc:a6e734b4f946b68eaab0d1c2f4b9f79f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">System call implementation of the TLS check.  <br /></td></tr>
 <tr class="separator:a6e734b4f946b68eaab0d1c2f4b9f79f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -126,7 +126,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> tls_check_syscall_impl </td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> tls_check_syscall_impl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a>&#160;</td>
           <td class="paramname"><em>tib_ptr</em></td><td>)</td>

@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a808d8d6a196c24ad35ec6e48c2055066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec8d0f97c194e10a65f8c2feb22bc7ee" id="r_aec8d0f97c194e10a65f8c2feb22bc7ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_hardware_timer.html#aec8d0f97c194e10a65f8c2feb22bc7ee">~HardwareTimer</a> () override</td></tr>
 <tr class="separator:aec8d0f97c194e10a65f8c2feb22bc7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5686bbcfab1a78648dbfedcb89ddd349" id="r_a5686bbcfab1a78648dbfedcb89ddd349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_hardware_timer.html#a5686bbcfab1a78648dbfedcb89ddd349">Wait</a> () noexcept override</td></tr>
-<tr class="memdesc:a5686bbcfab1a78648dbfedcb89ddd349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unimplemented as it is an interface.  <br /></td></tr>
+<tr class="memitem:a5686bbcfab1a78648dbfedcb89ddd349" id="r_a5686bbcfab1a78648dbfedcb89ddd349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_hardware_timer.html#a5686bbcfab1a78648dbfedcb89ddd349">Wait</a> () noexcept override</td></tr>
+<tr class="memdesc:a5686bbcfab1a78648dbfedcb89ddd349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the timer to stop spinning.  <br /></td></tr>
 <tr class="separator:a5686bbcfab1a78648dbfedcb89ddd349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_kernel_1_1_timer_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_kernel_1_1_timer_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_kernel_1_1_timer_interface.html">Kernel::TimerInterface</a></td></tr>
 <tr class="memitem:ae7345c7b9c15383276efb51ef10158c6 inherit pub_methods_class_kernel_1_1_timer_interface" id="r_ae7345c7b9c15383276efb51ef10158c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_timer_interface.html#ae7345c7b9c15383276efb51ef10158c6">TimerInterface</a> ()=default</td></tr>
@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac380e2cd668d78df84f45c402da505c4" id="r_ac380e2cd668d78df84f45c402da505c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_hardware_timer.html#ac380e2cd668d78df84f45c402da505c4">fDigitalTimer</a> {nullptr}</td></tr>
-<tr class="separator:ac380e2cd668d78df84f45c402da505c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b064ce228e344756082e82006462b5" id="r_a33b064ce228e344756082e82006462b5"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_hardware_timer.html#a33b064ce228e344756082e82006462b5">fDigitalTimer</a> {nullptr}</td></tr>
+<tr class="separator:a33b064ce228e344756082e82006462b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6170c831851131f3a7f45343c1ddb03" id="r_ab6170c831851131f3a7f45343c1ddb03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a5801162fe3161371005a37736050c570">Int64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_hardware_timer.html#ab6170c831851131f3a7f45343c1ddb03">fWaitFor</a> {0}</td></tr>
 <tr class="separator:ab6170c831851131f3a7f45343c1ddb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -195,7 +195,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ddk_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> HardwareTimer::Wait </td>
+          <td class="memname"><a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> HardwareTimer::Wait </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -208,15 +208,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unimplemented as it is an interface. </p>
+<p>Wait for the timer to stop spinning. </p>
 
 <p>Reimplemented from <a class="el" href="class_kernel_1_1_timer_interface.html#a29a68a13a1624ce22a503e93b75c28dc">Kernel::TimerInterface</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac380e2cd668d78df84f45c402da505c4" name="ac380e2cd668d78df84f45c402da505c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac380e2cd668d78df84f45c402da505c4">&#9670;&#160;</a></span>fDigitalTimer</h2>
+<a id="a33b064ce228e344756082e82006462b5" name="a33b064ce228e344756082e82006462b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b064ce228e344756082e82006462b5">&#9670;&#160;</a></span>fDigitalTimer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +225,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>* Kernel::HardwareTimer::fDigitalTimer {nullptr}</td>
+          <td class="memname">volatile <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>* Kernel::HardwareTimer::fDigitalTimer {nullptr}</td>
         </tr>
       </table>
   </td>

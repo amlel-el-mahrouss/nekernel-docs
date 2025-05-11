@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['kstring_0',['KString',['../classKernel_1_1KString.html',1,'Kernel']]],
-  ['kstringbuilder_1',['KStringBuilder',['../classKernel_1_1KStringBuilder.html',1,'Kernel']]]
+  ['kstring_0',['KString',['../class_kernel_1_1_k_string.html',1,'Kernel']]],
+  ['kstringbuilder_1',['KStringBuilder',['../class_kernel_1_1_k_string_builder.html',1,'Kernel']]]
 ];

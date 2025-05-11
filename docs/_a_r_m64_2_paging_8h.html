@@ -113,7 +113,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_h_a_l" id="r_namespace_kernel_1_1_h_a_l"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html">Kernel::HAL</a></td></tr>
 <tr class="memdesc:namespace_kernel_1_1_h_a_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware Abstraction Layer. <br /></td></tr>
@@ -149,14 +149,14 @@ Macros</h2></td></tr>
 <tr class="separator:a99e49ffa72720b8d819832c5b52ead88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55be89edb8104111b4a110df41665739" id="r_a55be89edb8104111b4a110df41665739"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#a55be89edb8104111b4a110df41665739">c128BPage</a>&#160;&#160;&#160;0b111</td></tr>
 <tr class="separator:a55be89edb8104111b4a110df41665739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5f88c3e988cb0570227f3d7e4a91b6" id="r_a2d5f88c3e988cb0570227f3d7e4a91b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#a2d5f88c3e988cb0570227f3d7e4a91b6">cPageMAll</a></td></tr>
+<tr class="memitem:a2d5f88c3e988cb0570227f3d7e4a91b6" id="r_a2d5f88c3e988cb0570227f3d7e4a91b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#a2d5f88c3e988cb0570227f3d7e4a91b6">cPageMAll</a>&#160;&#160;&#160;  { 0b000, 0b000 }</td></tr>
 <tr class="memdesc:a2d5f88c3e988cb0570227f3d7e4a91b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Long format address range.  <br /></td></tr>
 <tr class="separator:a2d5f88c3e988cb0570227f3d7e4a91b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc519f7dffa031c1fe911b28dffc7788" id="r_acc519f7dffa031c1fe911b28dffc7788"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#acc519f7dffa031c1fe911b28dffc7788">cPageMToMax</a>(M)</td></tr>
+<tr class="memitem:acc519f7dffa031c1fe911b28dffc7788" id="r_acc519f7dffa031c1fe911b28dffc7788"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#acc519f7dffa031c1fe911b28dffc7788">cPageMToMax</a>(M)&#160;&#160;&#160;  { M, 0b000 }</td></tr>
 <tr class="separator:acc519f7dffa031c1fe911b28dffc7788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbe1efc45071eec6bfa51d4f7feeba7b" id="r_acbe1efc45071eec6bfa51d4f7feeba7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#acbe1efc45071eec6bfa51d4f7feeba7b">cPageMaxToM</a>(M)</td></tr>
+<tr class="memitem:acbe1efc45071eec6bfa51d4f7feeba7b" id="r_acbe1efc45071eec6bfa51d4f7feeba7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#acbe1efc45071eec6bfa51d4f7feeba7b">cPageMaxToM</a>(M)&#160;&#160;&#160;  { 0b000, M }</td></tr>
 <tr class="separator:acbe1efc45071eec6bfa51d4f7feeba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb9ef37cf5ba60dbf70bbe7c7a99f8a7" id="r_aeb9ef37cf5ba60dbf70bbe7c7a99f8a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#aeb9ef37cf5ba60dbf70bbe7c7a99f8a7">cPageMToN</a>(M,  N)</td></tr>
+<tr class="memitem:aeb9ef37cf5ba60dbf70bbe7c7a99f8a7" id="r_aeb9ef37cf5ba60dbf70bbe7c7a99f8a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#aeb9ef37cf5ba60dbf70bbe7c7a99f8a7">cPageMToN</a>(M,  N)&#160;&#160;&#160;  { M, N }</td></tr>
 <tr class="separator:aeb9ef37cf5ba60dbf70bbe7c7a99f8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -202,7 +202,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad6ccb1cd68f687229cb57f8326f780c4" id="r_ad6ccb1cd68f687229cb57f8326f780c4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#ad6ccb1cd68f687229cb57f8326f780c4">Kernel::HAL::mm_free_bitmap</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> ptr) -&gt; <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a></td></tr>
 <tr class="memdesc:ad6ccb1cd68f687229cb57f8326f780c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free Bitmap, and mark it as absent.  <br /></td></tr>
 <tr class="separator:ad6ccb1cd68f687229cb57f8326f780c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa9bfd1b4d6453035b4ac2e5f3063ebc" id="r_afa9bfd1b4d6453035b4ac2e5f3063ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#afa9bfd1b4d6453035b4ac2e5f3063ebc">hal_flush_tlb</a> ()</td></tr>
+<tr class="memitem:afa9bfd1b4d6453035b4ac2e5f3063ebc" id="r_afa9bfd1b4d6453035b4ac2e5f3063ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_r_m64_2_paging_8h.html#afa9bfd1b4d6453035b4ac2e5f3063ebc">hal_flush_tlb</a> ()</td></tr>
 <tr class="memdesc:afa9bfd1b4d6453035b4ac2e5f3063ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush TLB.  <br /></td></tr>
 <tr class="separator:afa9bfd1b4d6453035b4ac2e5f3063ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -328,14 +328,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define cPageMAll</td>
+          <td class="memname">#define cPageMAll&#160;&#160;&#160;  { 0b000, 0b000 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                \</div>
-<div class="line">        0b000, 0b000 \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 <p>Long format address range. </p>
 
 </div>
@@ -351,14 +348,11 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">M</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;  { 0b000, M }</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                  \</div>
-<div class="line">        0b000, M       \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="acc519f7dffa031c1fe911b28dffc7788" name="acc519f7dffa031c1fe911b28dffc7788"></a>
@@ -372,14 +366,11 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">M</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;  { M, 0b000 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                  \</div>
-<div class="line">        M, 0b000       \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aeb9ef37cf5ba60dbf70bbe7c7a99f8a7" name="aeb9ef37cf5ba60dbf70bbe7c7a99f8a7"></a>
@@ -403,14 +394,11 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;  { M, N }</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                   \</div>
-<div class="line">        M, N            \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afbb794a7f5ff6e99a30a4d0e6d3c37ff" name="afbb794a7f5ff6e99a30a4d0e6d3c37ff"></a>
@@ -470,7 +458,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void hal_flush_tlb </td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void hal_flush_tlb </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variant_0',['Variant',['../classKernel_1_1Variant.html',1,'Kernel']]]
+  ['variant_0',['Variant',['../class_kernel_1_1_variant.html',1,'Kernel']]]
 ];

@@ -1,7 +1,7 @@
 var dir_1c77728a91c2178621b4f526fb3fcc78 =
 [
-    [ "CoreAccess.h", "CoreAccess_8h.html", "CoreAccess_8h" ],
-    [ "CoreGfx.h", "CoreGfx_8h.html", "CoreGfx_8h" ],
-    [ "MathGfx.h", "MathGfx_8h.html", "MathGfx_8h" ],
-    [ "TextGfx.h", "TextGfx_8h.html", "TextGfx_8h" ]
+    [ "CoreAccess.h", "_core_access_8h.html", "_core_access_8h" ],
+    [ "CoreGfx.h", "_core_gfx_8h.html", "_core_gfx_8h" ],
+    [ "MathGfx.h", "_math_gfx_8h.html", "_math_gfx_8h" ],
+    [ "TextGfx.h", "_text_gfx_8h.html", "_text_gfx_8h" ]
 ];

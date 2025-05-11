@@ -2,7 +2,7 @@ var class_kernel_1_1_user_process_scheduler =
 [
     [ "UserProcessScheduler", "class_kernel_1_1_user_process_scheduler.html#a7eaeb9df2e14f1bd48e4fc2c87aaba54", null ],
     [ "~UserProcessScheduler", "class_kernel_1_1_user_process_scheduler.html#abc5b4557bd95a9969ad641189e7b6489", null ],
-    [ "CurrentProcess", "class_kernel_1_1_user_process_scheduler.html#aff3775ddd3d91e849a6ef9a80f1d356f", null ],
+    [ "CurrentProcess", "class_kernel_1_1_user_process_scheduler.html#ad8bfbbff90de2dc1b55465d4eb262486", null ],
     [ "CurrentTeam", "class_kernel_1_1_user_process_scheduler.html#afdaeea0ed156471fc0906de143ec0337", null ],
     [ "HasMP", "class_kernel_1_1_user_process_scheduler.html#a3cab8f007f15f573f7274d559b33b81b", null ],
     [ "IsKernel", "class_kernel_1_1_user_process_scheduler.html#a9fc7737adf96bba59d231b3cd596f72b", null ],

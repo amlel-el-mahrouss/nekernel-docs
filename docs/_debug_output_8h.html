@@ -100,10 +100,11 @@ $(document).ready(function(){initNavTree('_debug_output_8h.html',''); initResiza
   <div class="headertitle"><div class="title">DebugOutput.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_device_mgr_8h_source.html">KernelKit/DeviceMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_compiler_kit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_compiler_kit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_device_mgr_8h_source.html">KernelKit/DeviceMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_own_ptr_8h_source.html">NewKit/OwnPtr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_stream_8h_source.html">NewKit/Stream.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_new_kit_2_utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
 </div>
 <p><a href="_debug_output_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -111,13 +112,15 @@ $(document).ready(function(){initNavTree('_debug_output_8h.html',''); initResiza
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html">Kernel::NE_DEVICE&lt; const Char * &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4.html">Kernel::NE_DEVICE&lt; const Utf8Char * &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_debugger_port_header.html">Kernel::DebuggerPortHeader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
 <tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
@@ -125,11 +128,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa96cecb26744928a8fc336f1b87bd9a5" id="r_aa96cecb26744928a8fc336f1b87bd9a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#aa96cecb26744928a8fc336f1b87bd9a5">kDebugMaxPorts</a>&#160;&#160;&#160;56</td></tr>
-<tr class="separator:aa96cecb26744928a8fc336f1b87bd9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c52b60d0951f3927622b22f12e1da4" id="r_a28c52b60d0951f3927622b22f12e1da4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#a28c52b60d0951f3927622b22f12e1da4">kDebugUnboundPort</a>&#160;&#160;&#160;0x0FEED</td></tr>
 <tr class="separator:a28c52b60d0951f3927622b22f12e1da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2bcae557165602a54ba2ab8930b4820" id="r_aa2bcae557165602a54ba2ab8930b4820"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#aa2bcae557165602a54ba2ab8930b4820">kDebugMag0</a>&#160;&#160;&#160;'Z'</td></tr>
+<tr class="memitem:aa2bcae557165602a54ba2ab8930b4820" id="r_aa2bcae557165602a54ba2ab8930b4820"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#aa2bcae557165602a54ba2ab8930b4820">kDebugMag0</a>&#160;&#160;&#160;'K'</td></tr>
 <tr class="separator:aa2bcae557165602a54ba2ab8930b4820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a83401c4ff1a6662a2e65495ffcf505" id="r_a7a83401c4ff1a6662a2e65495ffcf505"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#a7a83401c4ff1a6662a2e65495ffcf505">kDebugMag1</a>&#160;&#160;&#160;'D'</td></tr>
 <tr class="separator:a7a83401c4ff1a6662a2e65495ffcf505"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +138,7 @@ Macros</h2></td></tr>
 <tr class="separator:a4044f2e2470238f2037c304c89a99958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace5ca2976b880cad64f54c7e126de9cc" id="r_ace5ca2976b880cad64f54c7e126de9cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#ace5ca2976b880cad64f54c7e126de9cc">kDebugMag3</a>&#160;&#160;&#160;'G'</td></tr>
 <tr class="separator:ace5ca2976b880cad64f54c7e126de9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6fd1fa71e265706b43f340ba9b94744" id="r_ae6fd1fa71e265706b43f340ba9b94744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#ae6fd1fa71e265706b43f340ba9b94744">kDebugSourceFile</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ae6fd1fa71e265706b43f340ba9b94744" id="r_ae6fd1fa71e265706b43f340ba9b94744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#ae6fd1fa71e265706b43f340ba9b94744">kDebugSourceFile</a>&#160;&#160;&#160;23</td></tr>
 <tr class="separator:ae6fd1fa71e265706b43f340ba9b94744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa034e77f3730c1eb70b64d7b927770a2" id="r_aa034e77f3730c1eb70b64d7b927770a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#aa034e77f3730c1eb70b64d7b927770a2">kDebugLine</a>&#160;&#160;&#160;33</td></tr>
 <tr class="separator:aa034e77f3730c1eb70b64d7b927770a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +150,10 @@ Macros</h2></td></tr>
 <tr class="separator:a18983745cdbaca69cc1eb2cb33f02ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a173df498dc6af1f7e50f8b1cd465d59a" id="r_a173df498dc6af1f7e50f8b1cd465d59a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#a173df498dc6af1f7e50f8b1cd465d59a">kendl</a>&#160;&#160;&#160;end_line()</td></tr>
 <tr class="separator:a173df498dc6af1f7e50f8b1cd465d59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa6d967deecadf6adbb8d8423a7e601" id="r_aefa6d967deecadf6adbb8d8423a7e601"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#aefa6d967deecadf6adbb8d8423a7e601">kout8</a>&#160;&#160;&#160;Utf8TerminalDevice::The()</td></tr>
+<tr class="separator:aefa6d967deecadf6adbb8d8423a7e601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c09e0f32f4579cbb5d091a62713e04" id="r_aa5c09e0f32f4579cbb5d091a62713e04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_debug_output_8h.html#aa5c09e0f32f4579cbb5d091a62713e04">kendl8</a>&#160;&#160;&#160;utf_end_line()</td></tr>
+<tr class="separator:aa5c09e0f32f4579cbb5d091a62713e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -163,6 +168,8 @@ Functions</h2></td></tr>
 <tr class="separator:a61e62477e4fb7bdc5cfe287786dc9324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde9d1be10ddd83974871c2ddbd99c5e" id="r_acde9d1be10ddd83974871c2ddbd99c5e"><td class="memItemLeft" align="right" valign="top">TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#acde9d1be10ddd83974871c2ddbd99c5e">Kernel::hex_number</a> (const <a class="el" href="namespace_kernel.html#aa70dde74e8db97cf15123c3e9a877e40">Long</a> &amp;x)</td></tr>
 <tr class="separator:acde9d1be10ddd83974871c2ddbd99c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c68a7584349cc2ad6660050c45ef89" id="r_ac3c68a7584349cc2ad6660050c45ef89"><td class="memItemLeft" align="right" valign="top">Utf8TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ac3c68a7584349cc2ad6660050c45ef89">Kernel::utf_end_line</a> ()</td></tr>
+<tr class="separator:ac3c68a7584349cc2ad6660050c45ef89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc9aca3eece3a98e6c7685e8cada39e" id="r_a2cc9aca3eece3a98e6c7685e8cada39e"><td class="memItemLeft" align="right" valign="top">TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a2cc9aca3eece3a98e6c7685e8cada39e">Kernel::carriage_return</a> ()</td></tr>
 <tr class="separator:a2cc9aca3eece3a98e6c7685e8cada39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425f3d84d33e04bcef91b80f33ce9bff" id="r_a425f3d84d33e04bcef91b80f33ce9bff"><td class="memItemLeft" align="right" valign="top">TerminalDevice&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a425f3d84d33e04bcef91b80f33ce9bff">Kernel::tabulate</a> ()</td></tr>
@@ -220,7 +227,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kDebugMag0&#160;&#160;&#160;'Z'</td>
+          <td class="memname">#define kDebugMag0&#160;&#160;&#160;'K'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -269,20 +276,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa96cecb26744928a8fc336f1b87bd9a5" name="aa96cecb26744928a8fc336f1b87bd9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa96cecb26744928a8fc336f1b87bd9a5">&#9670;&#160;</a></span>kDebugMaxPorts</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kDebugMaxPorts&#160;&#160;&#160;56</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae6fd1fa71e265706b43f340ba9b94744" name="ae6fd1fa71e265706b43f340ba9b94744"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6fd1fa71e265706b43f340ba9b94744">&#9670;&#160;</a></span>kDebugSourceFile</h2>
 
@@ -290,7 +283,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kDebugSourceFile&#160;&#160;&#160;0</td>
+          <td class="memname">#define kDebugSourceFile&#160;&#160;&#160;23</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -339,6 +332,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa5c09e0f32f4579cbb5d091a62713e04" name="aa5c09e0f32f4579cbb5d091a62713e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c09e0f32f4579cbb5d091a62713e04">&#9670;&#160;</a></span>kendl8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kendl8&#160;&#160;&#160;utf_end_line()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a18983745cdbaca69cc1eb2cb33f02ada" name="a18983745cdbaca69cc1eb2cb33f02ada"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18983745cdbaca69cc1eb2cb33f02ada">&#9670;&#160;</a></span>kout</h2>
 
@@ -347,6 +354,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define kout&#160;&#160;&#160;TerminalDevice::The()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefa6d967deecadf6adbb8d8423a7e601" name="aefa6d967deecadf6adbb8d8423a7e601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa6d967deecadf6adbb8d8423a7e601">&#9670;&#160;</a></span>kout8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kout8&#160;&#160;&#160;Utf8TerminalDevice::The()</td>
         </tr>
       </table>
 </div><div class="memdoc">

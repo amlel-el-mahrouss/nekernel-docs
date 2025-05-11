@@ -94,19 +94,21 @@ $(document).ready(function(){initNavTree('_disk_swap_8h.html',''); initResizable
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">DiskSwap.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2_new_kit_2_defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_compiler_kit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_compiler_kit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kernel_2_new_kit_2_defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_compiler_hint_8h_source.html">hint/CompilerHint.h</a>&gt;</code><br />
 </div>
 <p><a href="_disk_swap_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_swap_disk_interface.html">Kernel::SwapDiskInterface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual memory interface to swap memory chunks onto disk.  <a href="class_kernel_1_1_swap_disk_interface.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_disk_swap_interface.html">Kernel::DiskSwapInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual memory interface to swap memory chunks onto disk.  <a href="class_kernel_1_1_disk_swap_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">Kernel::SWAP_DISK_HEADER</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <a href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html#details">More...</a><br /></td></tr>
@@ -115,21 +117,38 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a018714f623dede19fb8a5101f5a4c844" id="r_a018714f623dede19fb8a5101f5a4c844"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a018714f623dede19fb8a5101f5a4c844">kSwapBlockMaxSize</a>&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(16))</td></tr>
+<tr class="memitem:a018714f623dede19fb8a5101f5a4c844" id="r_a018714f623dede19fb8a5101f5a4c844"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a018714f623dede19fb8a5101f5a4c844">kSwapBlockMaxSize</a>&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(16))</td></tr>
 <tr class="separator:a018714f623dede19fb8a5101f5a4c844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d7539724dd75f766b3e807b3d78581a" id="r_a7d7539724dd75f766b3e807b3d78581a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a7d7539724dd75f766b3e807b3d78581a">kSwapPageFile</a>&#160;&#160;&#160;&quot;/boot/pagefile.sys&quot;</td></tr>
-<tr class="separator:a7d7539724dd75f766b3e807b3d78581a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ea6ca94d72c9c0f7a019b0543db7b9" id="r_ae6ea6ca94d72c9c0f7a019b0543db7b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#ae6ea6ca94d72c9c0f7a019b0543db7b9">kSwapPageFilePath</a>&#160;&#160;&#160;&quot;/boot/pagefile.sys&quot;</td></tr>
+<tr class="separator:ae6ea6ca94d72c9c0f7a019b0543db7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a7d025f2d18ee23a8968b516036e8a734" id="r_a7d025f2d18ee23a8968b516036e8a734"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">Kernel::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a7d025f2d18ee23a8968b516036e8a734">Kernel::SWAP_DISK_HEADER</a></td></tr>
-<tr class="memdesc:a7d025f2d18ee23a8968b516036e8a734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
-<tr class="separator:a7d025f2d18ee23a8968b516036e8a734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2376392098330fa075017af59854f14d" id="r_a2376392098330fa075017af59854f14d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">Kernel::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a2376392098330fa075017af59854f14d">Kernel::ALIGN</a> (8) <a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">SWAP_DISK_HEADER</a></td></tr>
+<tr class="memdesc:a2376392098330fa075017af59854f14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
+<tr class="separator:a2376392098330fa075017af59854f14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af9f6c60aabaddcbbe31efbce4fae524a" id="r_af9f6c60aabaddcbbe31efbce4fae524a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#af9f6c60aabaddcbbe31efbce4fae524a">fMagic</a></td></tr>
+<tr class="separator:af9f6c60aabaddcbbe31efbce4fae524a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c8ebdce9efdb63eb3bdc7242769611" id="r_a02c8ebdce9efdb63eb3bdc7242769611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a02c8ebdce9efdb63eb3bdc7242769611">fHeaderSz</a></td></tr>
+<tr class="separator:a02c8ebdce9efdb63eb3bdc7242769611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9123c5e9cd7b06b44010adf1e5696a59" id="r_a9123c5e9cd7b06b44010adf1e5696a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a9123c5e9cd7b06b44010adf1e5696a59">fTeamID</a></td></tr>
+<tr class="separator:a9123c5e9cd7b06b44010adf1e5696a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2430c83e2a7ef28f2fe5c0f1d962b104" id="r_a2430c83e2a7ef28f2fe5c0f1d962b104"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a2430c83e2a7ef28f2fe5c0f1d962b104">fProcessID</a></td></tr>
+<tr class="separator:a2430c83e2a7ef28f2fe5c0f1d962b104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3adbb2bf09e67349939f6a236f4f31" id="r_ada3adbb2bf09e67349939f6a236f4f31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#ada3adbb2bf09e67349939f6a236f4f31">fVirtualAddress</a></td></tr>
+<tr class="separator:ada3adbb2bf09e67349939f6a236f4f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9f8316f241865f8335032603b19211" id="r_aeb9f8316f241865f8335032603b19211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#aeb9f8316f241865f8335032603b19211">fBlobSz</a></td></tr>
+<tr class="separator:aeb9f8316f241865f8335032603b19211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310cb434fe3f2a1dbc940d956a13d4f2" id="r_a310cb434fe3f2a1dbc940d956a13d4f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_disk_swap_8h.html#a310cb434fe3f2a1dbc940d956a13d4f2">fBlob</a> [1]</td></tr>
+<tr class="separator:a310cb434fe3f2a1dbc940d956a13d4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a018714f623dede19fb8a5101f5a4c844" name="a018714f623dede19fb8a5101f5a4c844"></a>
@@ -139,21 +158,120 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kSwapBlockMaxSize&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2_macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(16))</td>
+          <td class="memname">#define kSwapBlockMaxSize&#160;&#160;&#160;(<a class="el" href="kernel_2_new_kit_2macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852">mib_cast</a>(16))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7d7539724dd75f766b3e807b3d78581a" name="a7d7539724dd75f766b3e807b3d78581a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d7539724dd75f766b3e807b3d78581a">&#9670;&#160;</a></span>kSwapPageFile</h2>
+<a id="ae6ea6ca94d72c9c0f7a019b0543db7b9" name="ae6ea6ca94d72c9c0f7a019b0543db7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ea6ca94d72c9c0f7a019b0543db7b9">&#9670;&#160;</a></span>kSwapPageFilePath</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kSwapPageFile&#160;&#160;&#160;&quot;/boot/pagefile.sys&quot;</td>
+          <td class="memname">#define kSwapPageFilePath&#160;&#160;&#160;&quot;/boot/pagefile.sys&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a310cb434fe3f2a1dbc940d956a13d4f2" name="a310cb434fe3f2a1dbc940d956a13d4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310cb434fe3f2a1dbc940d956a13d4f2">&#9670;&#160;</a></span>fBlob</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="user_2macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a> fBlob[1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb9f8316f241865f8335032603b19211" name="aeb9f8316f241865f8335032603b19211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9f8316f241865f8335032603b19211">&#9670;&#160;</a></span>fBlobSz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> fBlobSz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02c8ebdce9efdb63eb3bdc7242769611" name="a02c8ebdce9efdb63eb3bdc7242769611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c8ebdce9efdb63eb3bdc7242769611">&#9670;&#160;</a></span>fHeaderSz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> fHeaderSz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9f6c60aabaddcbbe31efbce4fae524a" name="af9f6c60aabaddcbbe31efbce4fae524a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f6c60aabaddcbbe31efbce4fae524a">&#9670;&#160;</a></span>fMagic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="user_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a> fMagic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2430c83e2a7ef28f2fe5c0f1d962b104" name="a2430c83e2a7ef28f2fe5c0f1d962b104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2430c83e2a7ef28f2fe5c0f1d962b104">&#9670;&#160;</a></span>fProcessID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> fProcessID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9123c5e9cd7b06b44010adf1e5696a59" name="a9123c5e9cd7b06b44010adf1e5696a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9123c5e9cd7b06b44010adf1e5696a59">&#9670;&#160;</a></span>fTeamID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> fTeamID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada3adbb2bf09e67349939f6a236f4f31" name="ada3adbb2bf09e67349939f6a236f4f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3adbb2bf09e67349939f6a236f4f31">&#9670;&#160;</a></span>fVirtualAddress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> fVirtualAddress</td>
         </tr>
       </table>
 </div><div class="memdoc">

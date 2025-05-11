@@ -14,6 +14,7 @@ var _p_e_f_8h =
     [ "kPefMagic", "_p_e_f_8h.html#a1f008401c93b21562efac2bf62b1443f", null ],
     [ "kPefMagicFat", "_p_e_f_8h.html#ae1d4265864b168bbdf47eaf153b554a0", null ],
     [ "kPefMagicLen", "_p_e_f_8h.html#ac9750b18a6818b8c9d5fb229e0417c5d", null ],
+    [ "kPefMainSymbol", "_p_e_f_8h.html#ab34153adddce12303a01202270f4736c", null ],
     [ "kPefNameLen", "_p_e_f_8h.html#acfba2dc9def360cf0ca9fb0d3cc875ea", null ],
     [ "kPefObjectExt", "_p_e_f_8h.html#a02947bc4eff53eb410aeee3770e60685", null ],
     [ "kPefStart", "_p_e_f_8h.html#a24805061766bc16a2be024d217f64a45", null ],

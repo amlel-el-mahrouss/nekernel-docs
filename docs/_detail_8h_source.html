@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_detail_8h_source.html',''); initResiz
 <div class="contents">
 <a href="_detail_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* -------------------------------------------</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">    Copyright (C) 2024-2025, Amlal El Mahrouss, all rights reserved.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">  Copyright (C) 2024-2025, Amlal El Mahrouss, all rights reserved.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"></span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">------------------------------------------- */</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
@@ -108,30 +108,30 @@ $(document).ready(function(){initNavTree('_detail_8h_source.html',''); initResiz
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifdef __NEOSKRNL__</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_2_new_kit_2_defines_8h.html">NewKit/Defines.h</a>&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#endif </span><span class="comment">// ifdef __NEOSKRNL__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef __NEOSKRNL__</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="foldopen" id="foldopen00013" data-start="" data-end="">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_detail_8h.html#a5a448e2cf2aed07b6a8216f4007ade6b">   13</a></span><span class="preprocessor">#define NE_COPY_DELETE(KLASS)                \</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">    KLASS&amp; operator=(const KLASS&amp;) = delete; \</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">    KLASS(const KLASS&amp;)            = delete;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_detail_8h.html#a5a448e2cf2aed07b6a8216f4007ade6b">   13</a></span><span class="preprocessor">#define NE_COPY_DELETE(KLASS)              \</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">  KLASS&amp; operator=(const KLASS&amp;) = delete; \</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">  KLASS(const KLASS&amp;)            = delete;</span></div>
 </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="foldopen" id="foldopen00017" data-start="" data-end="">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">   17</a></span><span class="preprocessor">#define NE_COPY_DEFAULT(KLASS)                \</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">    KLASS&amp; operator=(const KLASS&amp;) = default; \</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    KLASS(const KLASS&amp;)            = default;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">   17</a></span><span class="preprocessor">#define NE_COPY_DEFAULT(KLASS)              \</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">  KLASS&amp; operator=(const KLASS&amp;) = default; \</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">  KLASS(const KLASS&amp;)            = default;</span></div>
 </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="foldopen" id="foldopen00021" data-start="" data-end="">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_detail_8h.html#a67bc00e00390de09e03471f0164911d4">   21</a></span><span class="preprocessor">#define NE_MOVE_DELETE(KLASS)           \</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    KLASS&amp; operator=(KLASS&amp;&amp;) = delete; \</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    KLASS(KLASS&amp;&amp;)            = delete;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_detail_8h.html#a67bc00e00390de09e03471f0164911d4">   21</a></span><span class="preprocessor">#define NE_MOVE_DELETE(KLASS)         \</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">  KLASS&amp; operator=(KLASS&amp;&amp;) = delete; \</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">  KLASS(KLASS&amp;&amp;)            = delete;</span></div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00025" data-start="" data-end="">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_detail_8h.html#adff973d5465995c6b64488ec934fab50">   25</a></span><span class="preprocessor">#define NE_MOVE_DEFAULT(KLASS)           \</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">    KLASS&amp; operator=(KLASS&amp;&amp;) = default; \</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">    KLASS(KLASS&amp;&amp;)            = default;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_detail_8h.html#adff973d5465995c6b64488ec934fab50">   25</a></span><span class="preprocessor">#define NE_MOVE_DEFAULT(KLASS)         \</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">  KLASS&amp; operator=(KLASS&amp;&amp;) = default; \</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">  KLASS(KLASS&amp;&amp;)            = default;</span></div>
 </div>
 <div class="ttc" id="akernel_2_new_kit_2_defines_8h_html"><div class="ttname"><a href="kernel_2_new_kit_2_defines_8h.html">Defines.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

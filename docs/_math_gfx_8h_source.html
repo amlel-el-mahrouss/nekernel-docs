@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_math_gfx_8h_source.html',''); initRes
 <div class="contents">
 <a href="_math_gfx_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* -------------------------------------------</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">    Copyright Amlal El Mahrouss.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">  Copyright Amlal El Mahrouss.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"></span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">------------------------------------------- */</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
@@ -108,25 +108,23 @@ $(document).ready(function(){initNavTree('_math_gfx_8h_source.html',''); initRes
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespace_u_i.html">   12</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_u_i.html">UI</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef NE_CORE_GFX_USE_DOUBLE</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">   17</a></span>    <span class="keyword">typedef</span> <span class="keywordtype">float</span> <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespace_u_i.html#afa98a725532e675809b2059b36af5765">   25</a></span>    <span class="keyword">inline</span> <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> <a class="code hl_function" href="namespace_u_i.html#afa98a725532e675809b2059b36af5765">fb_math_lerp</a>(<a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> to, <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> from, <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> stat)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> (from) + (to - from) * stat;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespace_u_i.html">   12</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_u_i.html">UI</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef NE_CORE_GFX_USE_DOUBLE</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">   16</a></span><span class="keyword">typedef</span> <span class="keywordtype">float</span> <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespace_u_i.html#afa98a725532e675809b2059b36af5765">   24</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> <a class="code hl_function" href="namespace_u_i.html#afa98a725532e675809b2059b36af5765">fb_math_lerp</a>(<a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> to, <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> from, <a class="code hl_typedef" href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">fb_real_t</a> stat) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordflow">return</span> (from) + (to - from) * stat;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace UI</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}  <span class="comment">// namespace UI</span></div>
 </div>
-<div class="ttc" id="anamespace_u_i_html"><div class="ttname"><a href="namespace_u_i.html">UI</a></div><div class="ttdef"><b>Definition</b> MathGfx.h:13</div></div>
-<div class="ttc" id="anamespace_u_i_html_add1f2f2f1cebd31c67a22adf590d3542"><div class="ttname"><a href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">UI::fb_real_t</a></div><div class="ttdeci">float fb_real_t</div><div class="ttdef"><b>Definition</b> MathGfx.h:17</div></div>
-<div class="ttc" id="anamespace_u_i_html_afa98a725532e675809b2059b36af5765"><div class="ttname"><a href="namespace_u_i.html#afa98a725532e675809b2059b36af5765">UI::fb_math_lerp</a></div><div class="ttdeci">fb_real_t fb_math_lerp(fb_real_t to, fb_real_t from, fb_real_t stat)</div><div class="ttdoc">Linear interpolation equation solver.</div><div class="ttdef"><b>Definition</b> MathGfx.h:25</div></div>
+<div class="ttc" id="anamespace_u_i_html"><div class="ttname"><a href="namespace_u_i.html">UI</a></div><div class="ttdef"><b>Definition</b> MathGfx.h:12</div></div>
+<div class="ttc" id="anamespace_u_i_html_add1f2f2f1cebd31c67a22adf590d3542"><div class="ttname"><a href="namespace_u_i.html#add1f2f2f1cebd31c67a22adf590d3542">UI::fb_real_t</a></div><div class="ttdeci">float fb_real_t</div><div class="ttdef"><b>Definition</b> MathGfx.h:16</div></div>
+<div class="ttc" id="anamespace_u_i_html_afa98a725532e675809b2059b36af5765"><div class="ttname"><a href="namespace_u_i.html#afa98a725532e675809b2059b36af5765">UI::fb_math_lerp</a></div><div class="ttdeci">fb_real_t fb_math_lerp(fb_real_t to, fb_real_t from, fb_real_t stat)</div><div class="ttdoc">Linear interpolation equation solver.</div><div class="ttdef"><b>Definition</b> MathGfx.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -98,9 +98,9 @@ $(document).ready(function(){initNavTree('_hal_timer_a_m_d64_8cc.html',''); init
   <div class="headertitle"><div class="title">HalTimerAMD64.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_a_c_p_i_factory_interface_8h_source.html">modules/ACPI/ACPIFactoryInterface.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_timer_8h_source.html">KernelKit/Timer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_a_c_p_i_factory_interface_8h_source.html">modules/ACPI/ACPIFactoryInterface.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -110,7 +110,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user_process.html">UserProcess</a> scheduler inline definitions. <br /></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
 <tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
@@ -118,14 +118,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a94aae555633dc4d50533b7be4e806579" id="r_a94aae555633dc4d50533b7be4e806579"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#a94aae555633dc4d50533b7be4e806579">cHPETCounterRegValue</a>&#160;&#160;&#160;(0x00)</td></tr>
-<tr class="separator:a94aae555633dc4d50533b7be4e806579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46fec006e04bf7882f74351e1320feec" id="r_a46fec006e04bf7882f74351e1320feec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#a46fec006e04bf7882f74351e1320feec">cHPETConfigRegValue</a>&#160;&#160;&#160;(0x20)</td></tr>
-<tr class="separator:a46fec006e04bf7882f74351e1320feec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee9339218de4ab221ffceb464959a64" id="r_a6ee9339218de4ab221ffceb464959a64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#a6ee9339218de4ab221ffceb464959a64">cHPETCompRegValue</a>&#160;&#160;&#160;(0x24)</td></tr>
-<tr class="separator:a6ee9339218de4ab221ffceb464959a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96157c78d1b917296fb2f26ec15494f" id="r_af96157c78d1b917296fb2f26ec15494f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#af96157c78d1b917296fb2f26ec15494f">cHPETInterruptRegValue</a>&#160;&#160;&#160;(0x2C)</td></tr>
-<tr class="separator:af96157c78d1b917296fb2f26ec15494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708e8c10222f199133fb34bddf5aac33" id="r_a708e8c10222f199133fb34bddf5aac33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#a708e8c10222f199133fb34bddf5aac33">kHPETCounterRegValue</a>&#160;&#160;&#160;(0x00)</td></tr>
+<tr class="separator:a708e8c10222f199133fb34bddf5aac33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a47e0c035aab9f6c3d0f6797a2c1d3c" id="r_a4a47e0c035aab9f6c3d0f6797a2c1d3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#a4a47e0c035aab9f6c3d0f6797a2c1d3c">kHPETConfigRegValue</a>&#160;&#160;&#160;(0x20)</td></tr>
+<tr class="separator:a4a47e0c035aab9f6c3d0f6797a2c1d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4991b4c6d75895bba81a43bcd37b613" id="r_ab4991b4c6d75895bba81a43bcd37b613"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#ab4991b4c6d75895bba81a43bcd37b613">kHPETCompRegValue</a>&#160;&#160;&#160;(0x24)</td></tr>
+<tr class="separator:ab4991b4c6d75895bba81a43bcd37b613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd53e6035f0b467daa1da12102df0cce" id="r_abd53e6035f0b467daa1da12102df0cce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_timer_a_m_d64_8cc.html#abd53e6035f0b467daa1da12102df0cce">kHPETInterruptRegValue</a>&#160;&#160;&#160;(0x2C)</td></tr>
+<tr class="separator:abd53e6035f0b467daa1da12102df0cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -133,56 +133,56 @@ Variables</h2></td></tr>
 <tr class="separator:a413dd27937a507eda0a290f6f19bb624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a6ee9339218de4ab221ffceb464959a64" name="a6ee9339218de4ab221ffceb464959a64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ee9339218de4ab221ffceb464959a64">&#9670;&#160;</a></span>cHPETCompRegValue</h2>
+<a id="ab4991b4c6d75895bba81a43bcd37b613" name="ab4991b4c6d75895bba81a43bcd37b613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4991b4c6d75895bba81a43bcd37b613">&#9670;&#160;</a></span>kHPETCompRegValue</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define cHPETCompRegValue&#160;&#160;&#160;(0x24)</td>
+          <td class="memname">#define kHPETCompRegValue&#160;&#160;&#160;(0x24)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a46fec006e04bf7882f74351e1320feec" name="a46fec006e04bf7882f74351e1320feec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46fec006e04bf7882f74351e1320feec">&#9670;&#160;</a></span>cHPETConfigRegValue</h2>
+<a id="a4a47e0c035aab9f6c3d0f6797a2c1d3c" name="a4a47e0c035aab9f6c3d0f6797a2c1d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a47e0c035aab9f6c3d0f6797a2c1d3c">&#9670;&#160;</a></span>kHPETConfigRegValue</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define cHPETConfigRegValue&#160;&#160;&#160;(0x20)</td>
+          <td class="memname">#define kHPETConfigRegValue&#160;&#160;&#160;(0x20)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a94aae555633dc4d50533b7be4e806579" name="a94aae555633dc4d50533b7be4e806579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94aae555633dc4d50533b7be4e806579">&#9670;&#160;</a></span>cHPETCounterRegValue</h2>
+<a id="a708e8c10222f199133fb34bddf5aac33" name="a708e8c10222f199133fb34bddf5aac33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a708e8c10222f199133fb34bddf5aac33">&#9670;&#160;</a></span>kHPETCounterRegValue</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define cHPETCounterRegValue&#160;&#160;&#160;(0x00)</td>
+          <td class="memname">#define kHPETCounterRegValue&#160;&#160;&#160;(0x00)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af96157c78d1b917296fb2f26ec15494f" name="af96157c78d1b917296fb2f26ec15494f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af96157c78d1b917296fb2f26ec15494f">&#9670;&#160;</a></span>cHPETInterruptRegValue</h2>
+<a id="abd53e6035f0b467daa1da12102df0cce" name="abd53e6035f0b467daa1da12102df0cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd53e6035f0b467daa1da12102df0cce">&#9670;&#160;</a></span>kHPETInterruptRegValue</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define cHPETInterruptRegValue&#160;&#160;&#160;(0x2C)</td>
+          <td class="memname">#define kHPETInterruptRegValue&#160;&#160;&#160;(0x2C)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -7,8 +7,6 @@ var _p_e_8h =
     [ "LDR_IMPORT_DIRECTORY", "struct_l_d_r___i_m_p_o_r_t___d_i_r_e_c_t_o_r_y.html", "struct_l_d_r___i_m_p_o_r_t___d_i_r_e_c_t_o_r_y" ],
     [ "LDR_DATA_DIRECTORY", "struct_l_d_r___d_a_t_a___d_i_r_e_c_t_o_r_y.html", "struct_l_d_r___d_a_t_a___d_i_r_e_c_t_o_r_y" ],
     [ "LDR_IMAGE_HEADER", "struct_l_d_r___i_m_a_g_e___h_e_a_d_e_r.html", "struct_l_d_r___i_m_a_g_e___h_e_a_d_e_r" ],
-    [ "kPeDLLBase", "_p_e_8h.html#a4a685cd60b80fe9a1ee77fe033d0db00", null ],
-    [ "kPeEXEBase", "_p_e_8h.html#a49cb4206c1e8cb582f1a5a51461a7ddd", null ],
     [ "kPeMachineAMD64", "_p_e_8h.html#a034e3c688c72b793a7f2b52812b2e5bc", null ],
     [ "kPeMachineARM64", "_p_e_8h.html#ac77d51aaee3a2624d1c2fd7f106ad7b9", null ],
     [ "kPeMagic32", "_p_e_8h.html#aaaa3f443ae89cf34b696508cdd68a892", null ],

@@ -91,43 +91,41 @@ $(document).ready(function(){initNavTree('modules_2_s_c_s_i_2_s_c_s_i_8h.html','
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">SCSI.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Serial SCSI driver.  
+<p>Small Computer System Interface device.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="kernel_2_new_kit_2_defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
 </div>
 <p><a href="modules_2_s_c_s_i_2_s_c_s_i_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad56b96da28e4a7693b37388e979340e5" id="r_ad56b96da28e4a7693b37388e979340e5"><td class="memTemplParams" colspan="2">template&lt;int PacketBitLen&gt; </td></tr>
-<tr class="memitem:ad56b96da28e4a7693b37388e979340e5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="modules_2_s_c_s_i_2_s_c_s_i_8h.html#ad56b96da28e4a7693b37388e979340e5">scsi_packet_type</a> = <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">Kernel::UInt16</a>[PacketBitLen]</td></tr>
-<tr class="separator:ad56b96da28e4a7693b37388e979340e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f06eab77d37172ac30ddc223eacbf0d" id="r_a1f06eab77d37172ac30ddc223eacbf0d"><td class="memTemplParams" colspan="2">template&lt;int PacketBitLen&gt; </td></tr>
+<tr class="memitem:a1f06eab77d37172ac30ddc223eacbf0d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a1f06eab77d37172ac30ddc223eacbf0d">Kernel::scsi_packet_type</a> = <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">Kernel::UInt16</a>[PacketBitLen]</td></tr>
+<tr class="separator:a1f06eab77d37172ac30ddc223eacbf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac027a5f3ae33c8056b7221beca87f626" id="r_ac027a5f3ae33c8056b7221beca87f626"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ac027a5f3ae33c8056b7221beca87f626">Kernel::scsi_packet_type_12</a> = <a class="el" href="namespace_kernel.html#a1f06eab77d37172ac30ddc223eacbf0d">scsi_packet_type</a>&lt; 12 &gt;</td></tr>
+<tr class="separator:ac027a5f3ae33c8056b7221beca87f626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a813e1647d0f32a059140ffa34dce7fda" id="r_a813e1647d0f32a059140ffa34dce7fda"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#a1f06eab77d37172ac30ddc223eacbf0d">scsi_packet_type</a>&lt; 12 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a813e1647d0f32a059140ffa34dce7fda">Kernel::kCDRomPacketTemplate</a></td></tr>
+<tr class="separator:a813e1647d0f32a059140ffa34dce7fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Serial SCSI driver. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="ad56b96da28e4a7693b37388e979340e5" name="ad56b96da28e4a7693b37388e979340e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad56b96da28e4a7693b37388e979340e5">&#9670;&#160;</a></span>scsi_packet_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int PacketBitLen&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="modules_2_s_c_s_i_2_s_c_s_i_8h.html#ad56b96da28e4a7693b37388e979340e5">scsi_packet_type</a> =  <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">Kernel::UInt16</a>[PacketBitLen]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Small Computer System Interface device. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
