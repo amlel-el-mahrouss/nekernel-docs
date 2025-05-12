@@ -1,0 +1,25 @@
+var partition_map_8h =
+[
+    [ "boot_guid", "structboot__guid.html", "structboot__guid" ],
+    [ "EPM_MAGIC", "partition-map_8h.html#a9ba05721358adcccdaf352b475800def", null ],
+    [ "EPM_MAGIC_32X0", "partition-map_8h.html#a687f024d0bcc02fac2dc9879605912f5", null ],
+    [ "EPM_MAGIC_64X0", "partition-map_8h.html#a1500f1da9b4ec18b0f3512538df81385", null ],
+    [ "EPM_MAGIC_ARM", "partition-map_8h.html#a9bf318b511d740441cd5c1b40f755e80", null ],
+    [ "EPM_MAGIC_PPC", "partition-map_8h.html#ae529d94f646d87b933605e810e8644d9", null ],
+    [ "EPM_MAGIC_RV", "partition-map_8h.html#a31754da0771aaf645023d89556097384", null ],
+    [ "EPM_MAGIC_X86", "partition-map_8h.html#a7d2162a356f07043e12e84af9bdfafc4", null ],
+    [ "EPM_MAX_BLKS", "partition-map_8h.html#ae36681c3aa465f79c7bf8d8a85dffd75", null ],
+    [ "EPM_PART_BLK_START", "partition-map_8h.html#a688ab4db56bddd006e5688469b156daf", null ],
+    [ "EPM_PART_BLK_SZ", "partition-map_8h.html#aace7529afeeb068064db4b93a100ea5b", null ],
+    [ "EPM_REVISION", "partition-map_8h.html#ae92c544d23f7a9f9f52bdd533a29f819", null ],
+    [ "part_block_t", "partition-map_8h.html#a24e0ceb1b906706ff52c24a6fc7a4a78", null ],
+    [ "__attribute__", "partition-map_8h.html#a509785e3ec5b1430f166ba89e78e11b2", null ],
+    [ "cb_filesystem_exists", "partition-map_8h.html#a1eb1c79f64a45ffab94370a1d9dac43f", null ],
+    [ "cb_parse_partition_block_at", "partition-map_8h.html#a166e77b01ad4d62e5f8a41664a504946", null ],
+    [ "cb_parse_partition_block_data_at", "partition-map_8h.html#a07083d44a6f2868847359b8e74256196", null ],
+    [ "__attribute__", "partition-map_8h.html#a720173e80c53ae6b5fa163fd6e81ad27", null ],
+    [ "data1", "partition-map_8h.html#a3270cb08ee97f587263cb0a50fa7b981", null ],
+    [ "data2", "partition-map_8h.html#a7d5dea5e2e41b5e1d8fd153b304a95a4", null ],
+    [ "data3", "partition-map_8h.html#abd0da67470efa5f3c799dc8fed74f734", null ],
+    [ "data4", "partition-map_8h.html#a96d42e5d41b1006e3889bb17ec642a36", null ]
+];
