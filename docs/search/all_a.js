@@ -92,7 +92,7 @@ var searchData=
   ['efiguid_89',['EfiGUID',['../_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368',1,'EFI.h']]],
   ['efihandle_90',['EfiHandle',['../struct_efi_handle.html',1,'']]],
   ['efihandleprotocol_91',['EfiHandleProtocol',['../_e_f_i_2_e_f_i_8h.html#ac9856cc1033953d293cfbb5c1fcb0bad',1,'EFI.h']]],
-  ['efihandleptr_92',['EfiHandlePtr',['../_e_f_i_2_e_f_i_8h.html#ab0107dda581f0ae33368fc46411bc31e',1,'EFI.h']]],
+  ['efihandleptr_92',['EfiHandlePtr',['../_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2',1,'EFI.h']]],
   ['efiimageunload_93',['EfiImageUnload',['../_e_f_i_2_e_f_i_8h.html#abaa52d3b7317e43b5664548c3f6002d6',1,'EFI.h']]],
   ['efiinputkey_94',['EfiInputKey',['../struct_efi_input_key.html',1,'']]],
   ['efiinputreadkey_95',['EfiInputReadKey',['../_e_f_i_2_e_f_i_8h.html#a37fef6764a9431e6b410f086c15f3cd7',1,'EFI.h']]],

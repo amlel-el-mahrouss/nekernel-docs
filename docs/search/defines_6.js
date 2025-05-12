@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['false_0',['false',['../user_2macros_8h.html#a65e9886d74aaee76545e83dd09011727',1,'false:&#160;Macros.h'],['../kernel_2_new_kit_2macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1',1,'FALSE:&#160;Macros.h']]],
+  ['false_0',['false',['../kernel_2_new_kit_2macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1',1,'FALSE:&#160;Macros.h'],['../user_2macros_8h.html#a65e9886d74aaee76545e83dd09011727',1,'false:&#160;Macros.h']]],
   ['fb_5fclear_1',['fb_clear',['../_core_gfx_8h.html#a5eb2b0e3f79ee92449f5bad2d00c664a',1,'CoreGfx.h']]],
   ['fb_5fcolor_2',['fb_color',['../_core_gfx_8h.html#af28350f097594c70f7262b748c26e298',1,'CoreGfx.h']]],
   ['fb_5fget_5fclear_5fclr_3',['fb_get_clear_clr',['../_core_gfx_8h.html#a191005e9f135522357849344f75bbfdf',1,'CoreGfx.h']]],

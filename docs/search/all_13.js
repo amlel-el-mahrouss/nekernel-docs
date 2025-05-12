@@ -84,7 +84,7 @@ var searchData=
   ['null_81',['NULL',['../ddk_2_d_d_k_kit_2macros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4',1,'macros.h']]],
   ['nullablemutablearray_82',['nullablemutablearray',['../class_kernel_1_1_nullable_mutable_array.html#a1a6312a443898ee88668fd10dce6391b',1,'Kernel::NullableMutableArray::NullableMutableArray()'],['../class_kernel_1_1_nullable_mutable_array.html',1,'Kernel::NullableMutableArray&lt; T, _PlaceHolderValue &gt;'],['../class_kernel_1_1_nullable_mutable_array.html#af5ec9787ff967003dd0179de09832955',1,'Kernel::NullableMutableArray::NullableMutableArray()']]],
   ['nullablemutablearray_3c_20voidptr_2c_20nullptr_20_3e_83',['NullableMutableArray&lt; voidPtr, nullptr &gt;',['../class_kernel_1_1_nullable_mutable_array.html',1,'Kernel']]],
-  ['nullptr_84',['nullptr',['../namespace_kernel.html#af238dbc75f805e5e25974dba5d38f773',1,'Kernel::NullPtr'],['../namespace_kernel.html#a46c45ec8d2e2504b10aa8b4d16ec12af',1,'Kernel::nullPtr']]],
+  ['nullptr_84',['nullptr',['../namespace_kernel.html#a46c45ec8d2e2504b10aa8b4d16ec12af',1,'Kernel::nullPtr'],['../namespace_kernel.html#af238dbc75f805e5e25974dba5d38f773',1,'Kernel::NullPtr']]],
   ['number_85',['number',['../namespace_kernel.html#a61e62477e4fb7bdc5cfe287786dc9324',1,'Kernel']]],
   ['numberoffunctions_86',['NumberOfFunctions',['../struct_l_d_r___e_x_p_o_r_t___d_i_r_e_c_t_o_r_y.html#ac5cf6988ed90f1705679c71d42553683',1,'LDR_EXPORT_DIRECTORY']]],
   ['numberoflinenumbers_87',['NumberOfLinenumbers',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#a51caafcc19c96bc5f49122bf1e02e300',1,'LDR_SECTION_HEADER']]],

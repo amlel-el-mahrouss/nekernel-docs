@@ -59,7 +59,7 @@ var searchData=
   ['tranfercount_56',['TranferCount',['../struct_fis_pio_setup.html#afddd5865e3ef88cf95ead529b94b7fee',1,'FisPioSetup']]],
   ['transfercount_57',['TransferCount',['../struct_fis_dma_setup.html#a6f97273bf001a3c2e164dfc35bdc1c55',1,'FisDmaSetup']]],
   ['transmit_58',['Transmit',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html#a28e63d3143a775c8ffe595e083a3d077',1,'EFI_SIMPLE_NETWORK_PROTOCOL']]],
-  ['true_59',['true',['../user_2macros_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;Macros.h'],['../kernel_2_new_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;Macros.h']]],
+  ['true_59',['true',['../kernel_2_new_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;Macros.h'],['../user_2macros_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;Macros.h']]],
   ['try_60',['TRY',['../_kernel_panic_8h.html#aa1706c3dd2db94d27734f834a7be5ed1',1,'KernelPanic.h']]],
   ['try_5ffind_5fnode_61',['TRY_FIND_NODE',['../_mutable_array_8h.html#acdc18e410f981fe6942451a9963cefe1',1,'MutableArray.h']]],
   ['try_5ffind_5fnode2_62',['TRY_FIND_NODE2',['../_mutable_array_8h.html#a076eb36a090e7a5f46c9531f853fb9f7',1,'MutableArray.h']]],

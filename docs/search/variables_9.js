@@ -47,13 +47,13 @@ var searchData=
   ['kerrornonblocking_44',['kerrornonblocking',['../_process_codes_8h.html#afbb24ef95eff8aa296c0268ad8c64f40',1,'kErrorNonBlocking:&#160;ProcessCodes.h'],['../namespace_kernel.html#a281c3cfe1ccb9968c64b5eadce35b50f',1,'Kernel::kErrorNonBlocking']]],
   ['kerrornonetwork_45',['kerrornonetwork',['../namespace_kernel.html#ad7436d81a18f7a82ccc1ded783e9d89f',1,'Kernel::kErrorNoNetwork'],['../_process_codes_8h.html#a6e763bdc19cc988bd39da63235cab833',1,'kErrorNoNetwork:&#160;ProcessCodes.h']]],
   ['kerrornosuchdisk_46',['kerrornosuchdisk',['../_process_codes_8h.html#a4426b7457da00206e53177f2c2b72154',1,'kErrorNoSuchDisk:&#160;ProcessCodes.h'],['../namespace_kernel.html#a40acf3055f67084395632863858b69f0',1,'Kernel::kErrorNoSuchDisk']]],
-  ['kerroroutofteamslot_47',['kerroroutofteamslot',['../namespace_kernel.html#a208c92bd598b4fc5f5e12b259a3b7e04',1,'Kernel::kErrorOutOfTeamSlot'],['../_process_codes_8h.html#aba15a4c9354c808766770fe098b25f8e',1,'kErrorOutOfTeamSlot:&#160;ProcessCodes.h']]],
+  ['kerroroutofteamslot_47',['kerroroutofteamslot',['../_process_codes_8h.html#aba15a4c9354c808766770fe098b25f8e',1,'kErrorOutOfTeamSlot:&#160;ProcessCodes.h'],['../namespace_kernel.html#a208c92bd598b4fc5f5e12b259a3b7e04',1,'Kernel::kErrorOutOfTeamSlot']]],
   ['kerrorprocessfault_48',['kerrorprocessfault',['../_process_codes_8h.html#a16c05e13a06ab3c1acd850a38623e79c',1,'kErrorProcessFault:&#160;ProcessCodes.h'],['../namespace_kernel.html#a03164bee24bf791bf524cc8c2b3c1360',1,'Kernel::kErrorProcessFault']]],
   ['kerrorsign_49',['kerrorsign',['../namespace_kernel.html#a1a75d893e943fc961fcd74219c8988c0',1,'Kernel::kErrorSign'],['../_process_codes_8h.html#a7fe640b9c3781d568a4c0ecb472e8ed2',1,'kErrorSign:&#160;ProcessCodes.h']]],
   ['kerrorsockethangup_50',['kerrorsockethangup',['../namespace_kernel.html#aa1f22f85192e03a778bc325f979fee82',1,'Kernel::kErrorSocketHangUp'],['../_process_codes_8h.html#a7b63e3ac557d6adc2b40574fb8e768da',1,'kErrorSocketHangUp:&#160;ProcessCodes.h']]],
   ['kerrorsuccess_51',['kerrorsuccess',['../_process_codes_8h.html#a8adc20d26f7c47aed5d0b30d210c1fd7',1,'kErrorSuccess:&#160;ProcessCodes.h'],['../namespace_kernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6',1,'Kernel::kErrorSuccess']]],
   ['kerrorthreadlocalstorage_52',['kerrorthreadlocalstorage',['../namespace_kernel.html#a653b3688dcefa58c93fd2f11a056a2be',1,'Kernel::kErrorThreadLocalStorage'],['../_process_codes_8h.html#a63724463ea9894232890f61f6a851288',1,'kErrorThreadLocalStorage:&#160;ProcessCodes.h']]],
-  ['kerrorunimplemented_53',['kerrorunimplemented',['../_process_codes_8h.html#ac63103423072d92e6802c8879c248b37',1,'kErrorUnimplemented:&#160;ProcessCodes.h'],['../namespace_kernel.html#aa412f1f2c6810c26e3295d988f1d1b01',1,'Kernel::kErrorUnimplemented']]],
+  ['kerrorunimplemented_53',['kerrorunimplemented',['../namespace_kernel.html#aa412f1f2c6810c26e3295d988f1d1b01',1,'Kernel::kErrorUnimplemented'],['../_process_codes_8h.html#ac63103423072d92e6802c8879c248b37',1,'kErrorUnimplemented:&#160;ProcessCodes.h']]],
   ['kerrorunrecoverabledisk_54',['kerrorunrecoverabledisk',['../namespace_kernel.html#aa1dd20c2cda43e48c1e6c7c596f90cfe',1,'Kernel::kErrorUnrecoverableDisk'],['../_process_codes_8h.html#a2b8b5881b13f55aa1d4ee43338cf0f9b',1,'kErrorUnrecoverableDisk:&#160;ProcessCodes.h']]],
   ['kfontbitmap_55',['kFontBitmap',['../_text_gfx_8h.html#a95cc0fcf28ef5e28a31a4ec577448cbb',1,'TextGfx.h']]],
   ['kgicenabled_56',['kGICEnabled',['../namespace_kernel_1_1_detail.html#a1d3140ee2ff731643e55951a785cb51b',1,'Kernel::Detail']]],
@@ -71,7 +71,7 @@ var searchData=
   ['khefsfilekindcharacter_68',['khefsfilekindcharacter',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#afb66f0c99bef9c517c47c84eb48838f1',1,'kHeFSFileKindCharacter:&#160;HeFS.h'],['../namespacemkfs_1_1hefs.html#ae3338c0a1b3ef6053e07099451759f10',1,'mkfs::hefs::kHeFSFileKindCharacter']]],
   ['khefsfilekindcount_69',['khefsfilekindcount',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#affc8ef9614f5e247cbdbed083ed022d4',1,'kHeFSFileKindCount:&#160;HeFS.h'],['../namespacemkfs_1_1hefs.html#acde4c4f83a696a68f62781de7a158369',1,'mkfs::hefs::kHeFSFileKindCount']]],
   ['khefsfilekinddirectory_70',['khefsfilekinddirectory',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a9105324b96d70f07f734d3aef3d3312e',1,'kHeFSFileKindDirectory:&#160;HeFS.h'],['../namespacemkfs_1_1hefs.html#a527692b14fef638c8b77ac1d24e99c0b',1,'mkfs::hefs::kHeFSFileKindDirectory']]],
-  ['khefsfilekindfifo_71',['khefsfilekindfifo',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aeb7be543f2dceafc3d8f18202f4f6102',1,'kHeFSFileKindFIFO:&#160;HeFS.h'],['../namespacemkfs_1_1hefs.html#a15a32866a602284ccfa00a2ddd8a6c88',1,'mkfs::hefs::kHeFSFileKindFIFO']]],
+  ['khefsfilekindfifo_71',['khefsfilekindfifo',['../namespacemkfs_1_1hefs.html#a15a32866a602284ccfa00a2ddd8a6c88',1,'mkfs::hefs::kHeFSFileKindFIFO'],['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aeb7be543f2dceafc3d8f18202f4f6102',1,'kHeFSFileKindFIFO:&#160;HeFS.h']]],
   ['khefsfilekindregular_72',['khefsfilekindregular',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a7e9b3d56c009d9b40f5de0e0f192cb4c',1,'kHeFSFileKindRegular:&#160;HeFS.h'],['../namespacemkfs_1_1hefs.html#a8f5806e565b9acaac166770cfff78f8f',1,'mkfs::hefs::kHeFSFileKindRegular']]],
   ['khefsfilekindsocket_73',['khefsfilekindsocket',['../namespacemkfs_1_1hefs.html#abeb063492477e5a312bdc8f79ba96b21',1,'mkfs::hefs::kHeFSFileKindSocket'],['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a8fb45c33874ffc32d6268e261297c051',1,'kHeFSFileKindSocket:&#160;HeFS.h']]],
   ['khefsfilekindsymboliclink_74',['khefsfilekindsymboliclink',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aec977316138c58cb6ae059a5e83cc1cf',1,'kHeFSFileKindSymbolicLink:&#160;HeFS.h'],['../namespacemkfs_1_1hefs.html#ae2dfac7ccd979fcb04f546cdef6e40f2',1,'mkfs::hefs::kHeFSFileKindSymbolicLink']]],
@@ -112,5 +112,7 @@ var searchData=
   ['ksmpcount_109',['kSMPCount',['../namespace_kernel_1_1_h_a_l.html#ab6b8704136dca87ca1005a0d67a5f410',1,'Kernel::HAL']]],
   ['ksmpinterrupt_110',['kSMPInterrupt',['../namespace_kernel_1_1_h_a_l.html#a64600185cf6ff9c7ac889c9c597672ea',1,'Kernel::HAL']]],
   ['ksyscalls_111',['kSysCalls',['../_arch_kit_8h.html#a8c2dcae0036637d6289443c89ddcd957',1,'ArchKit.h']]],
-  ['ktimeunit_112',['kTimeUnit',['../namespace_kernel.html#a23989070234f22893d7efb2d0648049e',1,'Kernel']]]
+  ['ktimeunit_112',['kTimeUnit',['../namespace_kernel.html#a23989070234f22893d7efb2d0648049e',1,'Kernel']]],
+  ['kx_113',['kX',['../namespace_kernel.html#acc8766616e693ca69c7b261574b23a04',1,'Kernel']]],
+  ['ky_114',['kY',['../namespace_kernel.html#acafdafdae7eaaa4b623d7e0f01d560a5',1,'Kernel']]]
 ];

@@ -17,6 +17,15 @@ var dev_2kernel_2_f_s_kit_2_he_f_s_8h =
     [ "kHeFSSearchAllStr", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#ac100c02c069947d2e9b97a827b7e1233", null ],
     [ "kHeFSVersion", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a36b750da7d2881be04e3dc2daf842e91", null ],
     [ "ATime", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a142217963adf859f32724308be1b8330", null ],
+    [ "HeFSJournalKind", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4", [
+      [ "kJournalKindInvalid", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4a04140928414c1198b8423a16016a08b8", null ],
+      [ "kJournalKindWrite", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4a7a237510e53065878f9a8375fff59b71", null ],
+      [ "kJournalKindRename", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4aa53f9c0a98a7a24a7f462652e4f20bd5", null ],
+      [ "kJournalKindDelete", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4af08a5a110c2358e02798fd08086a5a1f", null ],
+      [ "kJournalKindFlagEdit", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4a288d6cdadd98aadcdd803203a1f18ee8", null ],
+      [ "kJournalKindCreate", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4a2d9d3981a6893ecfaf73bacef64a6f61", null ],
+      [ "kJournalKindCount", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4ae1a255df150458344e5f910dc173ac98", null ]
+    ] ],
     [ "fs_init_hefs", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#ac52554767026cacdbb31a4a22374d3ac", null ],
     [ "hefs_day_get", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a813e72b32e5b26835684b6b6295fb21b", null ],
     [ "hefs_drive_kind_to_string", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a077d6a9359808c513a7695c5f2f0d98b", null ],

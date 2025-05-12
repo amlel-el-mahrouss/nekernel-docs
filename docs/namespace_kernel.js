@@ -266,6 +266,15 @@ var namespace_kernel =
       [ "kEndianMixed", "namespace_kernel.html#a72738721513022e56f50bc7098a71781abe567a5547db37d4f8d127ad1b384cf6", null ],
       [ "kEndianCount", "namespace_kernel.html#a72738721513022e56f50bc7098a71781ae1c864b238e802126209fd5391ec15b5", null ]
     ] ],
+    [ "HeFSJournalKind", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4", [
+      [ "kJournalKindInvalid", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4a04140928414c1198b8423a16016a08b8", null ],
+      [ "kJournalKindWrite", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4a7a237510e53065878f9a8375fff59b71", null ],
+      [ "kJournalKindRename", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4aa53f9c0a98a7a24a7f462652e4f20bd5", null ],
+      [ "kJournalKindDelete", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4af08a5a110c2358e02798fd08086a5a1f", null ],
+      [ "kJournalKindFlagEdit", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4a288d6cdadd98aadcdd803203a1f18ee8", null ],
+      [ "kJournalKindCreate", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4a2d9d3981a6893ecfaf73bacef64a6f61", null ],
+      [ "kJournalKindCount", "namespace_kernel.html#aa1565d0497e7ccea403426f62f2048a4ae1a255df150458344e5f910dc173ac98", null ]
+    ] ],
     [ "MBCIHostFlags", "namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8", [
       [ "kMBCIHostFlagsSupportsNothing", "namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8a7a470413e6a845a7d07b5fdbc10b6934", null ],
       [ "kMBCIHostFlagsSupportsAPM", "namespace_kernel.html#a6c04e0dbc40d1ccf2d772727ee1178d8a5b3e8da139156a7af93b378bb2e58df6", null ],
@@ -507,5 +516,7 @@ var namespace_kernel =
     [ "kProcessBlocks", "namespace_kernel.html#af1119dd09a498b2640f9c5a047f33b03", null ],
     [ "kRaiseOnBugCheck", "namespace_kernel.html#aef2c68641f1f96b055840c00715e5fe3", null ],
     [ "kScheduler", "namespace_kernel.html#a566fd374158c608cca7ebe8970da799f", null ],
-    [ "kTimeUnit", "namespace_kernel.html#a23989070234f22893d7efb2d0648049e", null ]
+    [ "kTimeUnit", "namespace_kernel.html#a23989070234f22893d7efb2d0648049e", null ],
+    [ "kX", "namespace_kernel.html#acc8766616e693ca69c7b261574b23a04", null ],
+    [ "kY", "namespace_kernel.html#acafdafdae7eaaa4b623d7e0f01d560a5", null ]
 ];

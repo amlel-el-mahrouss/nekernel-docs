@@ -38,7 +38,7 @@ var searchData=
   ['efigraphicsoutputprotocolsetmode_35',['EfiGraphicsOutputProtocolSetMode',['../_e_f_i_2_e_f_i_8h.html#ac8d51f75f67a29d13e0cc1585b7cefda',1,'EFI.h']]],
   ['efiguid_36',['EfiGUID',['../_e_f_i_2_e_f_i_8h.html#a8272a9918cbc3d38ad859425a95a9368',1,'EFI.h']]],
   ['efihandleprotocol_37',['EfiHandleProtocol',['../_e_f_i_2_e_f_i_8h.html#ac9856cc1033953d293cfbb5c1fcb0bad',1,'EFI.h']]],
-  ['efihandleptr_38',['EfiHandlePtr',['../_e_f_i_2_e_f_i_8h.html#ab0107dda581f0ae33368fc46411bc31e',1,'EFI.h']]],
+  ['efihandleptr_38',['EfiHandlePtr',['../_e_f_i_2_e_f_i_8h.html#abeaad389ed6ec7cf09f86461f4d8f8f2',1,'EFI.h']]],
   ['efiimageunload_39',['EfiImageUnload',['../_e_f_i_2_e_f_i_8h.html#abaa52d3b7317e43b5664548c3f6002d6',1,'EFI.h']]],
   ['efiinputreadkey_40',['EfiInputReadKey',['../_e_f_i_2_e_f_i_8h.html#a37fef6764a9431e6b410f086c15f3cd7',1,'EFI.h']]],
   ['efiinputreset_41',['EfiInputReset',['../_e_f_i_2_e_f_i_8h.html#a91d0028f78b3ddfb23e3941f3d793a7e',1,'EFI.h']]],

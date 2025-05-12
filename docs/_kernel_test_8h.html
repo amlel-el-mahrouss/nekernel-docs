@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -151,17 +151,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">class </span>KT_##NAME final {                    \</div>
-<div class="line">   <span class="keyword">public</span>:                                   \</div>
-<div class="line">    <span class="keywordtype">void</span>        Run();                       \</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span>* ToString();                  \</div>
-<div class="line">  };                                         \</div>
-<div class="line">  <span class="keyword">inline</span> <span class="keywordtype">void</span> KT_##NAME::Run() {             \</div>
-<div class="line">    MUST_PASS(FN() == <span class="keyword">true</span>);                 \</div>
-<div class="line">  }                                          \</div>
-<div class="line">  <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* KT_##NAME::ToString() { \</div>
-<div class="line">    <span class="keywordflow">return</span> #FN;                              \</div>
-<div class="line">  }</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">class </span>KT_##NAME final {                                          \</div>
+<div class="line">   <span class="keyword">public</span>:                                                         \</div>
+<div class="line">    <span class="keywordtype">void</span>        Run();                                             \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span>* ToString();                                        \</div>
+<div class="line">  };                                                               \</div>
+<div class="line">  <span class="keyword">inline</span> <span class="keywordtype">void</span>        KT_##NAME::Run() { <a class="code hl_define" href="_kernel_panic_8h.html#a21aee4c355d56e3630f2f341f59b9406">MUST_PASS</a>(FN() == <span class="keyword">true</span>); } \</div>
+<div class="line">  <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* KT_##NAME::ToString() { <span class="keywordflow">return</span> #FN; }</div>
+<div class="ttc" id="a_kernel_panic_8h_html_a21aee4c355d56e3630f2f341f59b9406"><div class="ttname"><a href="_kernel_panic_8h.html#a21aee4c355d56e3630f2f341f59b9406">MUST_PASS</a></div><div class="ttdeci">#define MUST_PASS(EXPR)</div><div class="ttdef"><b>Definition</b> KernelPanic.h:40</div></div>
 </div><!-- fragment -->
 </div>
 </div>

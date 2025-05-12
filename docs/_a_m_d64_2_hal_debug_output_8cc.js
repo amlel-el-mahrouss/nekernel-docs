@@ -10,5 +10,7 @@ var _a_m_d64_2_hal_debug_output_8cc =
     [ "hal_serial_init", "_a_m_d64_2_hal_debug_output_8cc.html#abcfc42bc1a7dac85b5349d71f3012141", null ],
     [ "ke_io_read", "_a_m_d64_2_hal_debug_output_8cc.html#a9d41361c1685ee5da3e190d75c529378", null ],
     [ "ke_io_write", "_a_m_d64_2_hal_debug_output_8cc.html#ad1085600b4f13e33bd21543937b0468a", null ],
-    [ "ke_utf_io_write", "_a_m_d64_2_hal_debug_output_8cc.html#a66c3d3d7ac9f7d872b0fe937ce71bc81", null ]
+    [ "ke_utf_io_write", "_a_m_d64_2_hal_debug_output_8cc.html#a66c3d3d7ac9f7d872b0fe937ce71bc81", null ],
+    [ "kX", "_a_m_d64_2_hal_debug_output_8cc.html#acc8766616e693ca69c7b261574b23a04", null ],
+    [ "kY", "_a_m_d64_2_hal_debug_output_8cc.html#acafdafdae7eaaa4b623d7e0f01d560a5", null ]
 ];
