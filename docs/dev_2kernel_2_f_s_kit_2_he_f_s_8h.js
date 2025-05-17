@@ -4,7 +4,7 @@ var dev_2kernel_2_f_s_kit_2_he_f_s_8h =
     [ "Kernel::HEFS_JOURNAL_NODE", "struct_kernel_1_1_h_e_f_s___j_o_u_r_n_a_l___n_o_d_e.html", "struct_kernel_1_1_h_e_f_s___j_o_u_r_n_a_l___n_o_d_e" ],
     [ "Kernel::HEFS_INDEX_NODE", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e.html", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e" ],
     [ "Kernel::HEFS_INDEX_NODE_DIRECTORY", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y" ],
-    [ "Kernel::HeFS::HeFileSystemParser", "class_kernel_1_1_he_f_s_1_1_he_file_system_parser.html", "class_kernel_1_1_he_f_s_1_1_he_file_system_parser" ],
+    [ "Kernel::HeFileSystemParser", "class_kernel_1_1_he_file_system_parser.html", "class_kernel_1_1_he_file_system_parser" ],
     [ "kHeFSBlockLen", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a9f6a555ea6a7aee293b774206e5e1e5d", null ],
     [ "kHeFSDefaultVolumeName", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a7825ddedc34c6ca0868234b6c44b9089", null ],
     [ "kHeFSFileNameLen", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465", null ],
@@ -26,7 +26,7 @@ var dev_2kernel_2_f_s_kit_2_he_f_s_8h =
       [ "kJournalKindCreate", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4a2d9d3981a6893ecfaf73bacef64a6f61", null ],
       [ "kJournalKindCount", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#aa1565d0497e7ccea403426f62f2048a4ae1a255df150458344e5f910dc173ac98", null ]
     ] ],
-    [ "fs_init_hefs", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#ac52554767026cacdbb31a4a22374d3ac", null ],
+    [ "fs_init_hefs", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a7f357627cfc3d6d71c4b6959e5d2598d", null ],
     [ "hefs_day_get", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a813e72b32e5b26835684b6b6295fb21b", null ],
     [ "hefs_drive_kind_to_string", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a077d6a9359808c513a7695c5f2f0d98b", null ],
     [ "hefs_encoding_to_string", "dev_2kernel_2_f_s_kit_2_he_f_s_8h.html#a8a5c31ab41b4154b2099208d476fe49a", null ],

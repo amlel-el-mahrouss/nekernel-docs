@@ -8,6 +8,6 @@ var struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e =
     [ "UserProcessScheduler", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#ae7f3883b24ca7b02772030239e8736d4", null ],
     [ "fBlob", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#a887bf979eee9495a7841339d28802e6f", null ],
     [ "fCode", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#afe5e1c6efe253b0ddbbe845e94d88ad8", null ],
-    [ "KERNEL_PROCESS", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#af1a634cd0aed397cfa30f613d9e9b9a0", null ],
+    [ "KERNEL_TASK", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#a66bd10a5d2417be0d84004af01e33f22", null ],
     [ "USER_PROCESS", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#a93409cd974b05b5b30cfe9ae3df49159", null ]
 ];

@@ -91,7 +91,6 @@ $(document).ready(function(){initNavTree('_hal_core_interrupt_handler_a_m_d64_8c
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">HalCoreInterruptHandlerAMD64.cc File Reference</div></div>
@@ -102,20 +101,16 @@ $(document).ready(function(){initNavTree('_hal_core_interrupt_handler_a_m_d64_8c
 <code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_signals_8h_source.html">SignalKit/Signals.h</a>&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
-<tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1846f02a6dd4e13c47f9da2c73c3c535" id="r_a1846f02a6dd4e13c47f9da2c73c3c535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#a1846f02a6dd4e13c47f9da2c73c3c535">idt_handle_gpf</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> rsp)</td></tr>
-<tr class="memdesc:a1846f02a6dd4e13c47f9da2c73c3c535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle GPF fault.  <br /></td></tr>
-<tr class="separator:a1846f02a6dd4e13c47f9da2c73c3c535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb31a7cee66049d67fb26ae1be31f8d1" id="r_adb31a7cee66049d67fb26ae1be31f8d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#adb31a7cee66049d67fb26ae1be31f8d1">idt_handle_breakpoint</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> rip)</td></tr>
+<tr class="separator:adb31a7cee66049d67fb26ae1be31f8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d2dc56bc6f868309188b57c3adc939" id="r_a19d2dc56bc6f868309188b57c3adc939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#a19d2dc56bc6f868309188b57c3adc939">hal_idt_send_eoi</a> (<a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> vector)</td></tr>
+<tr class="memdesc:a19d2dc56bc6f868309188b57c3adc939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify APIC and PIC that we're done with the interrupt.  <br /></td></tr>
+<tr class="separator:a19d2dc56bc6f868309188b57c3adc939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9f16fb747fc86a241402b88063d9ba" id="r_aaf9f16fb747fc86a241402b88063d9ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#aaf9f16fb747fc86a241402b88063d9ba">idt_handle_gpf</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> rsp)</td></tr>
+<tr class="memdesc:aaf9f16fb747fc86a241402b88063d9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle GPF fault.  <br /></td></tr>
+<tr class="separator:aaf9f16fb747fc86a241402b88063d9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b80f07ad6e6fcc921154fc73f7ea62" id="r_a10b80f07ad6e6fcc921154fc73f7ea62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#a10b80f07ad6e6fcc921154fc73f7ea62">idt_handle_pf</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> rsp)</td></tr>
 <tr class="memdesc:a10b80f07ad6e6fcc921154fc73f7ea62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle page fault.  <br /></td></tr>
 <tr class="separator:a10b80f07ad6e6fcc921154fc73f7ea62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +123,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a68bbb05f1b6e823f7e1aa5ea983cc892" id="r_a68bbb05f1b6e823f7e1aa5ea983cc892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#a68bbb05f1b6e823f7e1aa5ea983cc892">idt_handle_generic</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> rsp)</td></tr>
 <tr class="memdesc:a68bbb05f1b6e823f7e1aa5ea983cc892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle any generic fault.  <br /></td></tr>
 <tr class="separator:a68bbb05f1b6e823f7e1aa5ea983cc892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb31a7cee66049d67fb26ae1be31f8d1" id="r_adb31a7cee66049d67fb26ae1be31f8d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#adb31a7cee66049d67fb26ae1be31f8d1">idt_handle_breakpoint</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> rip)</td></tr>
-<tr class="separator:adb31a7cee66049d67fb26ae1be31f8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c8e878a3d5f6bec99ebbd019ae8998" id="r_a55c8e878a3d5f6bec99ebbd019ae8998"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#a55c8e878a3d5f6bec99ebbd019ae8998">idt_handle_ud</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> rsp)</td></tr>
 <tr class="memdesc:a55c8e878a3d5f6bec99ebbd019ae8998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle #UD fault.  <br /></td></tr>
 <tr class="separator:a55c8e878a3d5f6bec99ebbd019ae8998"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,10 +135,33 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a183e193880d8c0156e2e5611ae1b6024" id="r_a183e193880d8c0156e2e5611ae1b6024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#a183e193880d8c0156e2e5611ae1b6024">kIsScheduling</a> = <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></td></tr>
-<tr class="separator:a183e193880d8c0156e2e5611ae1b6024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7967847941328aca6769ba2156296f" id="r_afe7967847941328aca6769ba2156296f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#afe7967847941328aca6769ba2156296f">kApicBaseAddress</a></td></tr>
+<tr class="separator:afe7967847941328aca6769ba2156296f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f78bdfce9dd75a56f27c9e54cf8ae2a" id="r_a4f78bdfce9dd75a56f27c9e54cf8ae2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hal_core_interrupt_handler_a_m_d64_8cc.html#a4f78bdfce9dd75a56f27c9e54cf8ae2a">kIsRunning</a> = <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></td></tr>
+<tr class="separator:a4f78bdfce9dd75a56f27c9e54cf8ae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a19d2dc56bc6f868309188b57c3adc939" name="a19d2dc56bc6f868309188b57c3adc939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d2dc56bc6f868309188b57c3adc939">&#9670;&#160;</a></span>hal_idt_send_eoi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void hal_idt_send_eoi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify APIC and PIC that we're done with the interrupt. </p>
+<dl class="section note"><dt>Note</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a60746ad79af95f888079647e51ca5bab" name="a60746ad79af95f888079647e51ca5bab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60746ad79af95f888079647e51ca5bab">&#9670;&#160;</a></span>hal_kernel_call_enter()</h2>
 
@@ -264,14 +280,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1846f02a6dd4e13c47f9da2c73c3c535" name="a1846f02a6dd4e13c47f9da2c73c3c535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1846f02a6dd4e13c47f9da2c73c3c535">&#9670;&#160;</a></span>idt_handle_gpf()</h2>
+<a id="aaf9f16fb747fc86a241402b88063d9ba" name="aaf9f16fb747fc86a241402b88063d9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9f16fb747fc86a241402b88063d9ba">&#9670;&#160;</a></span>idt_handle_gpf()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void idt_handle_gpf </td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a> idt_handle_gpf </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a>&#160;</td>
           <td class="paramname"><em>rsp</em></td><td>)</td>
@@ -389,14 +405,28 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a183e193880d8c0156e2e5611ae1b6024" name="a183e193880d8c0156e2e5611ae1b6024"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a183e193880d8c0156e2e5611ae1b6024">&#9670;&#160;</a></span>kIsScheduling</h2>
+<a id="afe7967847941328aca6769ba2156296f" name="afe7967847941328aca6769ba2156296f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7967847941328aca6769ba2156296f">&#9670;&#160;</a></span>kApicBaseAddress</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> kIsScheduling = <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></td>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> kApicBaseAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f78bdfce9dd75a56f27c9e54cf8ae2a" name="a4f78bdfce9dd75a56f27c9e54cf8ae2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f78bdfce9dd75a56f27c9e54cf8ae2a">&#9670;&#160;</a></span>kIsRunning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> kIsRunning = <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5">NO</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

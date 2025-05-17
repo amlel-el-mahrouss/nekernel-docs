@@ -1,29 +1,6 @@
 var struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t =
 [
-    [ "AcpiID", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#aa173a8e62729f1c9318a65c2c895b316", null ],
     [ "Address", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a81177deed65d603c8aab3281f335e9e6", null ],
-    [ "Address", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a669a5bd46891cd7a0b978f11503c38d8", null ],
-    [ "Apic", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a03675c9c30b657bdfeb9ddada18bc961", null ],
-    [ "Flags", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#af5930e67c97d1f115f2ac15b4a3cd1ee", null ],
-    [ "Flags", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#adeeb4ebb2095288ac7b9ddb8ee92f43a", null ],
     [ "Flags", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a54e452c938f699963ebc5022692ecf52", null ],
-    [ "GISBase", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#afe6c62e9babe94df9b70715eb9365aa1", null ],
-    [ "GSI", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a21f8eb55ba9969fee4d6ecda4876c77e", null ],
-    [ "IoAddress", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#aa8406ca3903161bf823e0d1c967ad54e", null ],
-    [ "IOAPIC", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#afdb89cd0ae1237b87e1721feac5d5f31", null ],
-    [ "IoID", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a130767e1d48908cb4dea6476acb1bf23", null ],
-    [ "IRQSource", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#acd3cc75f826ff431b592e0c477816480", null ],
-    [ "LAPIC", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#acd3c04915fc80b764e1e1304aa2045af", null ],
-    [ "LApicNMI", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a233446d78ac93eb7c300f830518a93b2", null ],
-    [ "LApicOverride", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a4eecdb29962cf86bcc797a4ce724f905", null ],
-    [ "Len", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#acd40aeced48d2eed566bb2161d175d96", null ],
-    [ "LINT", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a015623b6d4121dc942a29369d8a46de8", null ],
-    [ "List", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a6172e258106214ec2fea055c84010296", null ],
-    [ "LocalApicX2", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#ac32f81a1e4146712b54bbaecf4096976", null ],
-    [ "ProcessorID", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a2bb115daade9c2268e6d61db72d9e046", null ],
-    [ "Reserved", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#ac5b15c9de4f06c6ac68a5e3542a7f5d9", null ],
-    [ "Source", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a09d418a7fb04ea640499bdf730d87971", null ],
-    [ "Type", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a306b710f35459ada82182177d2063b17", null ],
-    [ "x2APICID", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a42f77cad10ac1c8a0bdac77ae0b64750", null ],
-    [ "Zero", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a25b0ecfcccc171c3acbe7cb23e020102", null ]
+    [ "List", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a5cb7c16454aa3eecf9454fc6ddb3a162", null ]
 ];

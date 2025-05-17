@@ -9,6 +9,6 @@ var searchData=
   ['win32versionvalue_6',['Win32VersionValue',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#ae015a27d22072ee22f4409e2f063d6d9',1,'LDR_OPTIONAL_HEADER']]],
   ['worstc2latency_7',['WorstC2Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a53f6ef0ea10b55ad251f49b49b36befb',1,'Kernel::Detail::FADT']]],
   ['worstc3latency_8',['WorstC3Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a2659903a5f4bc8fc0e350d0144865bcf',1,'Kernel::Detail::FADT']]],
-  ['wr_9',['Wr',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#af6098d5e4049618cee678d0ecce9889a',1,'Kernel::HAL::Detail::PTE']]],
+  ['wr_9',['wr',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#af6098d5e4049618cee678d0ecce9889a',1,'Kernel::HAL::Detail::PTE::Wr'],['../struct_kernel_1_1_p_t_e.html#ab0f47a51a8f78cf43dd1e5e101161336',1,'Kernel::PTE::Wr']]],
   ['write_10',['write',['../struct_hba_cmd_header_1_1_hba_flags_1_1_hba_flags__.html#a0daa718f6a6701f167f65c4da9467a23',1,'HbaCmdHeader::HbaFlags::HbaFlags_::Write'],['../struct_hba_flags_1_1_hba_flags__.html#a4f27579b1c024a4c1c96cd71b782964f',1,'HbaFlags::HbaFlags_::Write']]]
 ];

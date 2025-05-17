@@ -12,7 +12,7 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "HardwareThreadScheduler.h", "_hardware_thread_scheduler_8h.html", "_hardware_thread_scheduler_8h" ],
     [ "IDylibObject.h", "_i_dylib_object_8h.html", "_i_dylib_object_8h" ],
     [ "IPEFDylibObject.h", "_i_p_e_f_dylib_object_8h.html", "_i_p_e_f_dylib_object_8h" ],
-    [ "KernelTaskScheduler.h", "_kernel_task_scheduler_8h.html", null ],
+    [ "KernelTaskScheduler.h", "_kernel_task_scheduler_8h.html", "_kernel_task_scheduler_8h" ],
     [ "KPC.h", "_k_p_c_8h.html", "_k_p_c_8h" ],
     [ "LoaderInterface.h", "_loader_interface_8h.html", "_loader_interface_8h" ],
     [ "LockDelegate.h", "_lock_delegate_8h.html", "_lock_delegate_8h" ],

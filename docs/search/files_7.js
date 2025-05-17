@@ -1,7 +1,7 @@
 var searchData=
 [
   ['halacpifactoryinterface_2ecc_0',['halacpifactoryinterface.cc',['../_a_r_m64_2_hal_a_c_p_i_factory_interface_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc.html',1,'(Global Namespace)']]],
-  ['halapiccontroller_2ecc_1',['HalAPICController.cc',['../_hal_a_p_i_c_controller_8cc.html',1,'']]],
+  ['halapicdmawrapper_2ecc_1',['HalAPICDmaWrapper.cc',['../_hal_a_p_i_c_dma_wrapper_8cc.html',1,'']]],
   ['halapplicationprocessor_2ecc_2',['halapplicationprocessor.cc',['../_a_r_m64_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_r_i_s_c_v_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_p_o_w_e_r_2_hal_application_processor_8cc.html',1,'(Global Namespace)']]],
   ['halcoreinterrupthandleramd64_2ecc_3',['HalCoreInterruptHandlerAMD64.cc',['../_hal_core_interrupt_handler_a_m_d64_8cc.html',1,'']]],
   ['halcoresystemcalls_2ecc_4',['HalCoreSystemCalls.cc',['../_hal_core_system_calls_8cc.html',1,'']]],

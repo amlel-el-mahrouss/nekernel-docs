@@ -1,6 +1,6 @@
 var class_kernel_1_1_process =
 [
-    [ "ProcessMemoryHeapList", "struct_kernel_1_1_process_1_1_process_memory_heap_list.html", "struct_kernel_1_1_process_1_1_process_memory_heap_list" ],
+    [ "ProcessMemoryHeapList", "struct_kernel_1_1_process_1_1_process_memory_ptr_list.html", "struct_kernel_1_1_process_1_1_process_memory_ptr_list" ],
     [ "ProcessSignal", "struct_kernel_1_1_process_1_1_process_signal.html", "struct_kernel_1_1_process_1_1_process_signal" ],
     [ "Process", "class_kernel_1_1_process.html#ad5f8bef8873157fc55971ac43f9e974e", null ],
     [ "~Process", "class_kernel_1_1_process.html#a8717d00cf315b4795e157fa50761341a", null ],

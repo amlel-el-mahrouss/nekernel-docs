@@ -8,6 +8,6 @@ var searchData=
   ['rt_5fsyscall_5fproc_5',['rt_syscall_proc',['../_arch_kit_8h.html#a8b2a6fead47ca043054ea08608b45e7b',1,'ArchKit.h']]],
   ['rtl_5fctor_5fkind_6',['rtl_ctor_kind',['../namespace_kernel.html#a65632a6a778ed791876488c7cab230b9',1,'Kernel']]],
   ['rtl_5fdtor_5fkind_7',['rtl_dtor_kind',['../namespace_kernel.html#a88ecda1c50a52cea1a41712482fa9844',1,'Kernel']]],
-  ['rtl_5fmain_5fkind_8',['rtl_main_kind',['../namespace_kernel.html#a9c9692fd9a42272f995f098936d5bd0e',1,'Kernel']]],
+  ['rtl_5fmain_5fkind_8',['rtl_main_kind',['../namespace_kernel.html#aa0b07d794e34e6b08fccc1bc494d87b6',1,'Kernel']]],
   ['rtl_5fruntime_5fcheck_9',['RTL_RUNTIME_CHECK',['../_kernel_panic_8h.html#a544450d6622b613e983172992807881a',1,'KernelPanic.h']]]
 ];

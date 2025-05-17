@@ -220,11 +220,7 @@ var menudata={children:[
 {text:"y",url:"functions_vars_y.html#index_y"},
 {text:"z",url:"functions_vars_z.html#index_z"}]},
 {text:"Enumerations",url:"functions_enum.html"},
-{text:"Enumerator",url:"functions_eval.html",children:[
-{text:"f",url:"functions_eval.html#index_f"},
-{text:"k",url:"functions_eval.html#index_k"},
-{text:"o",url:"functions_eval.html#index_o"},
-{text:"s",url:"functions_eval.html#index_s"}]},
+{text:"Enumerator",url:"functions_eval.html"},
 {text:"Related Symbols",url:"functions_rela.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
@@ -316,6 +312,7 @@ var menudata={children:[
 {text:"g",url:"globals_defs_g.html#index_g"},
 {text:"i",url:"globals_defs_i.html#index_i"},
 {text:"k",url:"globals_defs_k.html#index_k"},
+{text:"l",url:"globals_defs_l.html#index_l"},
 {text:"m",url:"globals_defs_m.html#index_m"},
 {text:"n",url:"globals_defs_n.html#index_n"},
 {text:"o",url:"globals_defs_o.html#index_o"},

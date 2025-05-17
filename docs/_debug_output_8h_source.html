@@ -276,8 +276,8 @@ $(document).ready(function(){initNavTree('_debug_output_8h_source.html',''); ini
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="namespace_kernel.html#acde9d1be10ddd83974871c2ddbd99c5e">  158</a></span><span class="keyword">inline</span> TerminalDevice <a class="code hl_function" href="namespace_kernel.html#acde9d1be10ddd83974871c2ddbd99c5e">hex_number</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_kernel.html#aa70dde74e8db97cf15123c3e9a877e40">Long</a>&amp; x) {</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  TerminalDevice self = TerminalDevice::The();</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <a class="code hl_function" href="namespace_kernel_1_1_detail.html#a8e8d2eed7173b4eb867187eb74924322">Detail::_write_number_hex</a>(x, self);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  self.operator&lt;&lt;(<span class="stringliteral">&quot;h&quot;</span>);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  self &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <a class="code hl_function" href="namespace_kernel_1_1_detail.html#a8e8d2eed7173b4eb867187eb74924322">Detail::_write_number_hex</a>(x, self);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keywordflow">return</span> self;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
@@ -307,45 +307,46 @@ $(document).ready(function(){initNavTree('_debug_output_8h_source.html',''); ini
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="namespace_kernel.html#afe9116ef3d01498b731cef67d840eedf">  185</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> <a class="code hl_typedef" href="namespace_kernel.html#afe9116ef3d01498b731cef67d840eedf">rt_debug_type</a>[<a class="code hl_variable" href="namespace_kernel.html#a767bc84b0b329c3c5bfe0ae00371878a">kDebugTypeLen</a>];</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="foldopen" id="foldopen00187" data-start="{" data-end="};">
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="class_kernel_1_1_debugger_port_header.html">  187</a></span><span class="keyword">class </span><a class="code hl_class" href="class_kernel_1_1_debugger_port_header.html">DebuggerPortHeader</a> final {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="class_kernel_1_1_debugger_port_header.html#ae338e8160ddcd17f181a82d91f1e0161">  189</a></span>  <a class="code hl_typedef" href="namespace_kernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a> <a class="code hl_variable" href="class_kernel_1_1_debugger_port_header.html#ae338e8160ddcd17f181a82d91f1e0161">fPort</a>;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_kernel_1_1_debugger_port_header.html#a40d6c42fa4d01bb0d541574d44b42a28">  190</a></span>  <a class="code hl_typedef" href="namespace_kernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a> <a class="code hl_variable" href="class_kernel_1_1_debugger_port_header.html#a40d6c42fa4d01bb0d541574d44b42a28">fPortBsy</a>;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>};</div>
+<div class="foldopen" id="foldopen00188" data-start="{" data-end="};">
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="class_kernel_1_1_kernel_debug_header.html">  188</a></span><span class="keyword">class </span><a class="code hl_class" href="class_kernel_1_1_kernel_debug_header.html">KernelDebugHeader</a> final {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_kernel_1_1_kernel_debug_header.html#aff00595fc10c2c36582f9fb95d10a081">  190</a></span>  <a class="code hl_typedef" href="namespace_kernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a>         <a class="code hl_variable" href="class_kernel_1_1_kernel_debug_header.html#aff00595fc10c2c36582f9fb95d10a081">fPort</a>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="class_kernel_1_1_kernel_debug_header.html#ae1b81350b87c9dae6fbeea059e8ecdcb">  191</a></span>  <a class="code hl_typedef" href="namespace_kernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a>         <a class="code hl_variable" href="class_kernel_1_1_kernel_debug_header.html#ae1b81350b87c9dae6fbeea059e8ecdcb">fPortKind</a>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="class_kernel_1_1_kernel_debug_header.html#aae665425496bede3bb383a0712a9c54f">  192</a></span>  <a class="code hl_typedef" href="namespace_kernel.html#afe9116ef3d01498b731cef67d840eedf">rt_debug_type</a> <a class="code hl_variable" href="class_kernel_1_1_kernel_debug_header.html#aae665425496bede3bb383a0712a9c54f">fPortBlob</a>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>};</div>
 </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="namespace_kernel.html#aa55dcd3646fb7f2f108a97f6ef0d6fca">  193</a></span><span class="keyword">inline</span> TerminalDevice&amp; <a class="code hl_function" href="namespace_kernel.html#aa55dcd3646fb7f2f108a97f6ef0d6fca">operator&lt;&lt;</a>(TerminalDevice&amp; src, <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_kernel.html#aa70dde74e8db97cf15123c3e9a877e40">Long</a>&amp; num) {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  src = <a class="code hl_function" href="namespace_kernel.html#a61e62477e4fb7bdc5cfe287786dc9324">number</a>(num);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keywordflow">return</span> src;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="foldopen" id="foldopen00195" data-start="{" data-end="}">
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="namespace_kernel.html#aa55dcd3646fb7f2f108a97f6ef0d6fca">  195</a></span><span class="keyword">inline</span> TerminalDevice&amp; <a class="code hl_function" href="namespace_kernel.html#aa55dcd3646fb7f2f108a97f6ef0d6fca">operator&lt;&lt;</a>(TerminalDevice&amp; src, <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_kernel.html#aa70dde74e8db97cf15123c3e9a877e40">Long</a>&amp; num) {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  src = <a class="code hl_function" href="namespace_kernel.html#a61e62477e4fb7bdc5cfe287786dc9324">number</a>(num);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keywordflow">return</span> src;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}</div>
 </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}  <span class="comment">// namespace Kernel</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#ifdef kout</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#undef kout</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kout</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#a18983745cdbaca69cc1eb2cb33f02ada">  203</a></span><span class="preprocessor">#define kout TerminalDevice::The()</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}  <span class="comment">// namespace Kernel</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#ifdef kout</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#undef kout</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kout</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#ifdef kendl</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#undef kendl</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kendl</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#a173df498dc6af1f7e50f8b1cd465d59a">  209</a></span><span class="preprocessor">#define kendl end_line()</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#a18983745cdbaca69cc1eb2cb33f02ada">  205</a></span><span class="preprocessor">#define kout TerminalDevice::The()</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">#ifdef kendl</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#undef kendl</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kendl</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#ifdef kout8</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#undef kout8</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kout8</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#aefa6d967deecadf6adbb8d8423a7e601">  215</a></span><span class="preprocessor">#define kout8 Utf8TerminalDevice::The()</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#a173df498dc6af1f7e50f8b1cd465d59a">  211</a></span><span class="preprocessor">#define kendl end_line()</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#ifdef kout8</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#undef kout8</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kout8</span></div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">#ifdef kendl8</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#undef kendl8</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kendl8</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#aa5c09e0f32f4579cbb5d091a62713e04">  221</a></span><span class="preprocessor">#define kendl8 utf_end_line()</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#aefa6d967deecadf6adbb8d8423a7e601">  217</a></span><span class="preprocessor">#define kout8 Utf8TerminalDevice::The()</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#ifdef kendl8</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">#undef kendl8</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef kendl8</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="_debug_output_8h.html#aa5c09e0f32f4579cbb5d091a62713e04">  223</a></span><span class="preprocessor">#define kendl8 utf_end_line()</span></div>
 <div class="ttc" id="a_compiler_kit_8h_html"><div class="ttname"><a href="_compiler_kit_8h.html">CompilerKit.h</a></div></div>
 <div class="ttc" id="a_detail_8h_html_a855fc6b9e935d41c084c0b89a4b82bd2"><div class="ttname"><a href="_detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">NE_COPY_DEFAULT</a></div><div class="ttdeci">#define NE_COPY_DEFAULT(KLASS)</div><div class="ttdef"><b>Definition</b> Detail.h:17</div></div>
 <div class="ttc" id="a_device_mgr_8h_html"><div class="ttname"><a href="_device_mgr_8h.html">DeviceMgr.h</a></div></div>
@@ -353,10 +354,11 @@ $(document).ready(function(){initNavTree('_debug_output_8h_source.html',''); ini
 <div class="ttc" id="a_new_kit_2_utils_8h_html"><div class="ttname"><a href="_new_kit_2_utils_8h.html">Utils.h</a></div></div>
 <div class="ttc" id="a_own_ptr_8h_html"><div class="ttname"><a href="_own_ptr_8h.html">OwnPtr.h</a></div></div>
 <div class="ttc" id="a_stream_8h_html"><div class="ttname"><a href="_stream_8h.html">Stream.h</a></div></div>
-<div class="ttc" id="aclass_kernel_1_1_debugger_port_header_html"><div class="ttname"><a href="class_kernel_1_1_debugger_port_header.html">Kernel::DebuggerPortHeader</a></div><div class="ttdef"><b>Definition</b> DebugOutput.h:187</div></div>
-<div class="ttc" id="aclass_kernel_1_1_debugger_port_header_html_a40d6c42fa4d01bb0d541574d44b42a28"><div class="ttname"><a href="class_kernel_1_1_debugger_port_header.html#a40d6c42fa4d01bb0d541574d44b42a28">Kernel::DebuggerPortHeader::fPortBsy</a></div><div class="ttdeci">Int16 fPortBsy</div><div class="ttdef"><b>Definition</b> DebugOutput.h:190</div></div>
-<div class="ttc" id="aclass_kernel_1_1_debugger_port_header_html_ae338e8160ddcd17f181a82d91f1e0161"><div class="ttname"><a href="class_kernel_1_1_debugger_port_header.html#ae338e8160ddcd17f181a82d91f1e0161">Kernel::DebuggerPortHeader::fPort</a></div><div class="ttdeci">Int16 fPort</div><div class="ttdef"><b>Definition</b> DebugOutput.h:189</div></div>
 <div class="ttc" id="aclass_kernel_1_1_i_device_object_html"><div class="ttname"><a href="class_kernel_1_1_i_device_object.html">Kernel::IDeviceObject</a></div><div class="ttdoc">Device contract interface, represents an HW device.</div><div class="ttdef"><b>Definition</b> DeviceMgr.h:39</div></div>
+<div class="ttc" id="aclass_kernel_1_1_kernel_debug_header_html"><div class="ttname"><a href="class_kernel_1_1_kernel_debug_header.html">Kernel::KernelDebugHeader</a></div><div class="ttdoc">KDBG's packet header.</div><div class="ttdef"><b>Definition</b> DebugOutput.h:188</div></div>
+<div class="ttc" id="aclass_kernel_1_1_kernel_debug_header_html_aae665425496bede3bb383a0712a9c54f"><div class="ttname"><a href="class_kernel_1_1_kernel_debug_header.html#aae665425496bede3bb383a0712a9c54f">Kernel::KernelDebugHeader::fPortBlob</a></div><div class="ttdeci">rt_debug_type fPortBlob</div><div class="ttdef"><b>Definition</b> DebugOutput.h:192</div></div>
+<div class="ttc" id="aclass_kernel_1_1_kernel_debug_header_html_ae1b81350b87c9dae6fbeea059e8ecdcb"><div class="ttname"><a href="class_kernel_1_1_kernel_debug_header.html#ae1b81350b87c9dae6fbeea059e8ecdcb">Kernel::KernelDebugHeader::fPortKind</a></div><div class="ttdeci">Int16 fPortKind</div><div class="ttdef"><b>Definition</b> DebugOutput.h:191</div></div>
+<div class="ttc" id="aclass_kernel_1_1_kernel_debug_header_html_aff00595fc10c2c36582f9fb95d10a081"><div class="ttname"><a href="class_kernel_1_1_kernel_debug_header.html#aff00595fc10c2c36582f9fb95d10a081">Kernel::KernelDebugHeader::fPort</a></div><div class="ttdeci">Int16 fPort</div><div class="ttdef"><b>Definition</b> DebugOutput.h:190</div></div>
 <div class="ttc" id="aclass_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4_html_a5a9854e5e5b94b568e9d0073ecf6856f"><div class="ttname"><a href="class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html#a5a9854e5e5b94b568e9d0073ecf6856f">Kernel::NE_DEVICE&lt; const Char * &gt;::~TerminalDevice</a></div><div class="ttdeci">~TerminalDevice() override</div></div>
 <div class="ttc" id="aclass_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4_html_ac1d90264b4738a0ded88b8d5ac65a174"><div class="ttname"><a href="class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html#ac1d90264b4738a0ded88b8d5ac65a174">Kernel::NE_DEVICE&lt; const Char * &gt;::TerminalDevice</a></div><div class="ttdeci">TerminalDevice(void(*print)(IDeviceObject *, const Char *), void(*gets)(IDeviceObject *, const Char *))</div><div class="ttdef"><b>Definition</b> DebugOutput.h:40</div></div>
 <div class="ttc" id="aclass_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4_html_ad9ff7e6f88497d7424280e07086d4571"><div class="ttname"><a href="class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html#ad9ff7e6f88497d7424280e07086d4571">Kernel::NE_DEVICE&lt; const Char * &gt;::Name</a></div><div class="ttdeci">const Char * Name() const override</div><div class="ttdoc">returns device name (terminal name)</div><div class="ttdef"><b>Definition</b> DebugOutput.h:48</div></div>
@@ -378,7 +380,7 @@ $(document).ready(function(){initNavTree('_debug_output_8h_source.html',''); ini
 <div class="ttc" id="anamespace_kernel_html_a767bc84b0b329c3c5bfe0ae00371878a"><div class="ttname"><a href="namespace_kernel.html#a767bc84b0b329c3c5bfe0ae00371878a">Kernel::kDebugTypeLen</a></div><div class="ttdeci">constexpr SizeT kDebugTypeLen</div><div class="ttdef"><b>Definition</b> DebugOutput.h:183</div></div>
 <div class="ttc" id="anamespace_kernel_html_a844c6a4fa8f9d2a62aa1b8d9ca002378"><div class="ttname"><a href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a></div><div class="ttdeci">char Char</div><div class="ttdef"><b>Definition</b> Defines.h:51</div></div>
 <div class="ttc" id="anamespace_kernel_html_a8c28f11eee13ca176221b6dbef084504"><div class="ttname"><a href="namespace_kernel.html#a8c28f11eee13ca176221b6dbef084504">Kernel::end_line</a></div><div class="ttdeci">TerminalDevice end_line()</div><div class="ttdef"><b>Definition</b> DebugOutput.h:72</div></div>
-<div class="ttc" id="anamespace_kernel_html_aa55dcd3646fb7f2f108a97f6ef0d6fca"><div class="ttname"><a href="namespace_kernel.html#aa55dcd3646fb7f2f108a97f6ef0d6fca">Kernel::operator&lt;&lt;</a></div><div class="ttdeci">TerminalDevice &amp; operator&lt;&lt;(TerminalDevice &amp;src, const Long &amp;num)</div><div class="ttdef"><b>Definition</b> DebugOutput.h:193</div></div>
+<div class="ttc" id="anamespace_kernel_html_aa55dcd3646fb7f2f108a97f6ef0d6fca"><div class="ttname"><a href="namespace_kernel.html#aa55dcd3646fb7f2f108a97f6ef0d6fca">Kernel::operator&lt;&lt;</a></div><div class="ttdeci">TerminalDevice &amp; operator&lt;&lt;(TerminalDevice &amp;src, const Long &amp;num)</div><div class="ttdef"><b>Definition</b> DebugOutput.h:195</div></div>
 <div class="ttc" id="anamespace_kernel_html_aa70dde74e8db97cf15123c3e9a877e40"><div class="ttname"><a href="namespace_kernel.html#aa70dde74e8db97cf15123c3e9a877e40">Kernel::Long</a></div><div class="ttdeci">__INT64_TYPE__ Long</div><div class="ttdef"><b>Definition</b> Defines.h:45</div></div>
 <div class="ttc" id="anamespace_kernel_html_aaa58f645f51896d26b963a7f871c9b66"><div class="ttname"><a href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Kernel::Utf8Char</a></div><div class="ttdeci">char8_t Utf8Char</div><div class="ttdef"><b>Definition</b> Defines.h:73</div></div>
 <div class="ttc" id="anamespace_kernel_html_ac3c68a7584349cc2ad6660050c45ef89"><div class="ttname"><a href="namespace_kernel.html#ac3c68a7584349cc2ad6660050c45ef89">Kernel::utf_end_line</a></div><div class="ttdeci">Utf8TerminalDevice utf_end_line()</div><div class="ttdef"><b>Definition</b> DebugOutput.h:79</div></div>

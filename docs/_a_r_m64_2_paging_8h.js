@@ -17,6 +17,8 @@ var _a_r_m64_2_paging_8h =
     [ "kPageAlign", "_a_r_m64_2_paging_8h.html#afbb794a7f5ff6e99a30a4d0e6d3c37ff", null ],
     [ "kPageMax", "_a_r_m64_2_paging_8h.html#a48a8d7bad7871c1630c7e8e191bb496b", null ],
     [ "kPageSize", "_a_r_m64_2_paging_8h.html#a735d8c85cb84a88d7b295df9dbd07a58", null ],
+    [ "PDE", "_a_r_m64_2_paging_8h.html#af7d7088a2bfaaad71c1183163121b340", null ],
+    [ "PTE", "_a_r_m64_2_paging_8h.html#a239a35524478ad7886f6a291ff718a84", null ],
     [ "ControlRegisterBits", "_a_r_m64_2_paging_8h.html#a97ce83f9cb52a5936bd5956630c6d412", [
       [ "ProtectedModeEnable", "_a_r_m64_2_paging_8h.html#a97ce83f9cb52a5936bd5956630c6d412a9dc63f0e7a22ebb856e41d14c41c4ceb", null ],
       [ "MonitorCoProcessor", "_a_r_m64_2_paging_8h.html#a97ce83f9cb52a5936bd5956630c6d412a44b1de65153deada585fc0e9d62a584e", null ],

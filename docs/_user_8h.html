@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('_user_8h.html',''); initResizable(); }
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_user.html">Kernel::User</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_user.html" title="User class.">User</a> class.  <a href="class_kernel_1_1_user.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">System <a class="el" href="class_kernel_1_1_user.html" title="System User class.">User</a> class.  <a href="class_kernel_1_1_user.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -120,13 +120,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9e0f6ecb453e7e95a520a4147023ba2a" id="r_a9e0f6ecb453e7e95a520a4147023ba2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_8h.html#a9e0f6ecb453e7e95a520a4147023ba2a">kSuperUser</a>&#160;&#160;&#160;&quot;OS AUTHORITY/SUPER/%s&quot;</td></tr>
+<tr class="memitem:a9e0f6ecb453e7e95a520a4147023ba2a" id="r_a9e0f6ecb453e7e95a520a4147023ba2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_8h.html#a9e0f6ecb453e7e95a520a4147023ba2a">kSuperUser</a>&#160;&#160;&#160;&quot;OS AUTHORITY/MGMT/%s&quot;</td></tr>
 <tr class="separator:a9e0f6ecb453e7e95a520a4147023ba2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ed3c5102fdfbd66e6ebe4ffa533090" id="r_a28ed3c5102fdfbd66e6ebe4ffa533090"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_8h.html#a28ed3c5102fdfbd66e6ebe4ffa533090">kGuestUser</a>&#160;&#160;&#160;&quot;OS AUTHORITY/GUEST/%s&quot;</td></tr>
 <tr class="separator:a28ed3c5102fdfbd66e6ebe4ffa533090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459b2f552c7e1b466fa966288e346bd8" id="r_a459b2f552c7e1b466fa966288e346bd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_8h.html#a459b2f552c7e1b466fa966288e346bd8">kStdUser</a>&#160;&#160;&#160;&quot;OS AUTHORITY/STD/%s&quot;</td></tr>
 <tr class="separator:a459b2f552c7e1b466fa966288e346bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc529e60867c5e413d39b6c10ac35afa" id="r_acc529e60867c5e413d39b6c10ac35afa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_8h.html#acc529e60867c5e413d39b6c10ac35afa">kUsersDir</a>&#160;&#160;&#160;&quot;/user/&quot;</td></tr>
+<tr class="memitem:acc529e60867c5e413d39b6c10ac35afa" id="r_acc529e60867c5e413d39b6c10ac35afa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_8h.html#acc529e60867c5e413d39b6c10ac35afa">kUsersDir</a>&#160;&#160;&#160;&quot;/users/&quot;</td></tr>
 <tr class="separator:acc529e60867c5e413d39b6c10ac35afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba00b766bc2c97aa304f881f413f8df9" id="r_aba00b766bc2c97aa304f881f413f8df9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_8h.html#aba00b766bc2c97aa304f881f413f8df9">kMaxUserNameLen</a>&#160;&#160;&#160;(256U)</td></tr>
 <tr class="separator:aba00b766bc2c97aa304f881f413f8df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +217,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kSuperUser&#160;&#160;&#160;&quot;OS AUTHORITY/SUPER/%s&quot;</td>
+          <td class="memname">#define kSuperUser&#160;&#160;&#160;&quot;OS AUTHORITY/MGMT/%s&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -232,7 +232,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kUsersDir&#160;&#160;&#160;&quot;/user/&quot;</td>
+          <td class="memname">#define kUsersDir&#160;&#160;&#160;&quot;/users/&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

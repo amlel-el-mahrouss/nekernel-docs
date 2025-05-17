@@ -1,5 +1,6 @@
 var _hal_processor_a_m_d64_8cc =
 [
+    [ "hal_get_msr", "_hal_processor_a_m_d64_8cc.html#a5f7e0946cafce8fda576de0f29dab6db", null ],
     [ "hal_set_msr", "_hal_processor_a_m_d64_8cc.html#aa5e151dde4e371a9c55074c4b067b51c", null ],
     [ "lrt_hal_in16", "_hal_processor_a_m_d64_8cc.html#acbe4365c788da6158070960bf43d9436", null ],
     [ "lrt_hal_in32", "_hal_processor_a_m_d64_8cc.html#a2e617039114299b276f25dc45b89f905", null ],

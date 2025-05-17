@@ -45,11 +45,12 @@ var annotated_dup =
           [ "NE_TSS", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_n_e___t_s_s.html", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_n_e___t_s_s" ],
           [ "PTE", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e" ]
         ] ],
-        [ "APICController", "class_kernel_1_1_h_a_l_1_1_a_p_i_c_controller.html", "class_kernel_1_1_h_a_l_1_1_a_p_i_c_controller" ],
         [ "GDTLoader", "class_kernel_1_1_h_a_l_1_1_g_d_t_loader.html", null ],
         [ "HAL_HARDWARE_THREAD", "struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html", "struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d" ],
         [ "IDTLoader", "class_kernel_1_1_h_a_l_1_1_i_d_t_loader.html", null ],
         [ "InterruptDescriptor", "class_kernel_1_1_h_a_l_1_1_interrupt_descriptor.html", "class_kernel_1_1_h_a_l_1_1_interrupt_descriptor" ],
+        [ "LAPIC", "struct_kernel_1_1_h_a_l_1_1_l_a_p_i_c.html", "struct_kernel_1_1_h_a_l_1_1_l_a_p_i_c" ],
+        [ "LAPICDmaWrapper", "class_kernel_1_1_h_a_l_1_1_l_a_p_i_c_dma_wrapper.html", "class_kernel_1_1_h_a_l_1_1_l_a_p_i_c_dma_wrapper" ],
         [ "NE_PAGE_STORE", "struct_kernel_1_1_h_a_l_1_1_n_e___p_a_g_e___s_t_o_r_e.html", "struct_kernel_1_1_h_a_l_1_1_n_e___p_a_g_e___s_t_o_r_e" ],
         [ "PDE_4KB", "struct_kernel_1_1_h_a_l_1_1_p_d_e__4_k_b.html", "struct_kernel_1_1_h_a_l_1_1_p_d_e__4_k_b" ],
         [ "PTE_4KB", "struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html", "struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b" ],
@@ -58,9 +59,6 @@ var annotated_dup =
         [ "SegmentDescriptor", "class_kernel_1_1_h_a_l_1_1_segment_descriptor.html", "class_kernel_1_1_h_a_l_1_1_segment_descriptor" ],
         [ "SegmentDescriptorComparator", "class_kernel_1_1_h_a_l_1_1_segment_descriptor_comparator.html", "class_kernel_1_1_h_a_l_1_1_segment_descriptor_comparator" ],
         [ "StackFrame", "struct_kernel_1_1_h_a_l_1_1_stack_frame.html", "struct_kernel_1_1_h_a_l_1_1_stack_frame" ]
-      ] ],
-      [ "HeFS", "namespace_kernel_1_1_he_f_s.html", [
-        [ "HeFileSystemParser", "class_kernel_1_1_he_f_s_1_1_he_file_system_parser.html", "class_kernel_1_1_he_f_s_1_1_he_file_system_parser" ]
       ] ],
       [ "HEL", "namespace_kernel_1_1_h_e_l.html", [
         [ "BootInfoHeader", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html", "struct_kernel_1_1_h_e_l_1_1_boot_info_header" ]
@@ -85,7 +83,6 @@ var annotated_dup =
       [ "Atom", "class_kernel_1_1_atom.html", "class_kernel_1_1_atom" ],
       [ "BinaryMutex", "class_kernel_1_1_binary_mutex.html", "class_kernel_1_1_binary_mutex" ],
       [ "ConfigHeader", "class_kernel_1_1_config_header.html", "class_kernel_1_1_config_header" ],
-      [ "DebuggerPortHeader", "class_kernel_1_1_debugger_port_header.html", "class_kernel_1_1_debugger_port_header" ],
       [ "DiskSwapInterface", "class_kernel_1_1_disk_swap_interface.html", "class_kernel_1_1_disk_swap_interface" ],
       [ "DMAFactory", "class_kernel_1_1_d_m_a_factory.html", null ],
       [ "DMAWrapper", "class_kernel_1_1_d_m_a_wrapper.html", "class_kernel_1_1_d_m_a_wrapper" ],
@@ -103,6 +100,7 @@ var annotated_dup =
       [ "HardwareThread", "class_kernel_1_1_hardware_thread.html", "class_kernel_1_1_hardware_thread" ],
       [ "HardwareThreadScheduler", "class_kernel_1_1_hardware_thread_scheduler.html", "class_kernel_1_1_hardware_thread_scheduler" ],
       [ "HardwareTimer", "class_kernel_1_1_hardware_timer.html", "class_kernel_1_1_hardware_timer" ],
+      [ "HeFileSystemParser", "class_kernel_1_1_he_file_system_parser.html", "class_kernel_1_1_he_file_system_parser" ],
       [ "HEFS_BOOT_NODE", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e.html", "struct_kernel_1_1_h_e_f_s___b_o_o_t___n_o_d_e" ],
       [ "HEFS_INDEX_NODE", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e.html", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e" ],
       [ "HEFS_INDEX_NODE_DIRECTORY", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y.html", "struct_kernel_1_1_h_e_f_s___i_n_d_e_x___n_o_d_e___d_i_r_e_c_t_o_r_y" ],
@@ -122,6 +120,8 @@ var annotated_dup =
       [ "ISchedulable", "class_kernel_1_1_i_schedulable.html", "class_kernel_1_1_i_schedulable" ],
       [ "Json", "class_kernel_1_1_json.html", "class_kernel_1_1_json" ],
       [ "JsonStreamReader", "struct_kernel_1_1_json_stream_reader.html", "struct_kernel_1_1_json_stream_reader" ],
+      [ "KERNEL_TASK", "struct_kernel_1_1_k_e_r_n_e_l___t_a_s_k.html", "struct_kernel_1_1_k_e_r_n_e_l___t_a_s_k" ],
+      [ "KernelDebugHeader", "class_kernel_1_1_kernel_debug_header.html", "class_kernel_1_1_kernel_debug_header" ],
       [ "KString", "class_kernel_1_1_k_string.html", "class_kernel_1_1_k_string" ],
       [ "KStringBuilder", "class_kernel_1_1_k_string_builder.html", null ],
       [ "LoaderInterface", "class_kernel_1_1_loader_interface.html", "class_kernel_1_1_loader_interface" ],
@@ -146,6 +146,7 @@ var annotated_dup =
       [ "NullableMutableArray", "class_kernel_1_1_nullable_mutable_array.html", "class_kernel_1_1_nullable_mutable_array" ],
       [ "OwnPtr", "class_kernel_1_1_own_ptr.html", "class_kernel_1_1_own_ptr" ],
       [ "PageMgr", "struct_kernel_1_1_page_mgr.html", "struct_kernel_1_1_page_mgr" ],
+      [ "PDE", "struct_kernel_1_1_p_d_e.html", "struct_kernel_1_1_p_d_e" ],
       [ "PE32Loader", "class_kernel_1_1_p_e32_loader.html", "class_kernel_1_1_p_e32_loader" ],
       [ "PEFCommandHeader", "struct_kernel_1_1_p_e_f_command_header.html", "struct_kernel_1_1_p_e_f_command_header" ],
       [ "PEFContainer", "struct_kernel_1_1_p_e_f_container.html", "struct_kernel_1_1_p_e_f_container" ],
@@ -154,7 +155,10 @@ var annotated_dup =
       [ "PowerFactory", "class_kernel_1_1_power_factory.html", "class_kernel_1_1_power_factory" ],
       [ "PRDT", "struct_kernel_1_1_p_r_d_t.html", "struct_kernel_1_1_p_r_d_t" ],
       [ "PROCESS_CONTROL_BLOCK", "struct_kernel_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k.html", "struct_kernel_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k" ],
+      [ "PROCESS_FILE_TREE", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e.html", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e" ],
+      [ "PROCESS_HEAP_TREE", "struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html", "struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e" ],
       [ "PROCESS_IMAGE", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e" ],
+      [ "PTE", "struct_kernel_1_1_p_t_e.html", "struct_kernel_1_1_p_t_e" ],
       [ "PTEWrapper", "class_kernel_1_1_p_t_e_wrapper.html", "class_kernel_1_1_p_t_e_wrapper" ],
       [ "RawIPAddress", "class_kernel_1_1_raw_i_p_address.html", "class_kernel_1_1_raw_i_p_address" ],
       [ "RawIPAddress6", "class_kernel_1_1_raw_i_p_address6.html", "class_kernel_1_1_raw_i_p_address6" ],

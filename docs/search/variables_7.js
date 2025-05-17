@@ -10,7 +10,7 @@ var searchData=
   ['header_7',['Header',['../struct_l_d_r___i_m_a_g_e___h_e_a_d_e_r.html#a169786e79f9913268324bf119d5be5bc',1,'LDR_IMAGE_HEADER']]],
   ['headersize_8',['headersize',['../struct_efi_table_header.html#aad006ccbae92f3b598f309e32be5ad92',1,'EfiTableHeader::HeaderSize'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a1f89b40391db08c23961d63f4ecb7a2f',1,'Kernel::GPT_PARTITION_TABLE::HeaderSize']]],
   ['headertype_9',['HeaderType',['../struct_kernel_1_1_p_c_i_1_1_device_header.html#a4d31e814b93d88e1d0461b729ece5e79',1,'Kernel::PCI::DeviceHeader']]],
-  ['heaptree_10',['HeapTree',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a886ec48444f49bb29dd9ef1b09e67b26',1,'Kernel::USER_PROCESS']]],
+  ['heaptree_10',['HeapTree',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a910476a292cfe185beb5edf3748bea28',1,'Kernel::USER_PROCESS']]],
   ['height_11',['height',['../struct_c_f_1_1_c_f_rect.html#ae013e879d889656bb70f5c37f68d963f',1,'CF::CFRect']]],
   ['horizontalresolution_12',['HorizontalResolution',['../struct_efi_graphics_output_protocol_mode_information.html#a14b4ae222d9f2cde20a5e7bfc48c2c89',1,'EfiGraphicsOutputProtocolModeInformation']]],
   ['hostflags_13',['HostFlags',['../struct_kernel_1_1_i_m_b_c_i_host.html#af6b7fba087d34cf2e7e9acc50679e389',1,'Kernel::IMBCIHost']]],

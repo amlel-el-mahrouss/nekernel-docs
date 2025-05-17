@@ -13,6 +13,6 @@ var searchData=
   ['tranfercount_10',['TranferCount',['../struct_fis_pio_setup.html#afddd5865e3ef88cf95ead529b94b7fee',1,'FisPioSetup']]],
   ['transfercount_11',['TransferCount',['../struct_fis_dma_setup.html#a6f97273bf001a3c2e164dfc35bdc1c55',1,'FisDmaSetup']]],
   ['transmit_12',['Transmit',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html#a28e63d3143a775c8ffe595e083a3d077',1,'EFI_SIMPLE_NETWORK_PROTOCOL']]],
-  ['type_13',['Type',['../struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#a306b710f35459ada82182177d2063b17',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['type_13',['Type',['../struct_kernel_1_1_h_a_l_1_1_l_a_p_i_c.html#ae6327c6574e15baa8917b7953d30f45a',1,'Kernel::HAL::LAPIC']]],
   ['typeattributes_14',['TypeAttributes',['../struct_kernel_1_1_detail_1_1_a_m_d64_1_1_interrupt_descriptor_a_m_d64.html#a16cff344e6a991754485624c32987692',1,'Kernel::Detail::AMD64::InterruptDescriptorAMD64']]]
 ];

@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('dev_2kernel_2_new_kit_2_ref_8h_source.
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_kernel_1_1_ref.html#afc2ac449dc51408136a03f90e03e21f0">   21</a></span>  <a class="code hl_function" href="class_kernel_1_1_ref.html#afc2ac449dc51408136a03f90e03e21f0">~Ref</a>() {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_kernel.html#a0a04e936e5176510cfb9c8227f2394d3">mm_is_valid_heap</a>(<a class="code hl_variable" href="class_kernel_1_1_ref.html#a63bca8eb56b686b8123c76afb5abf55f">fClass</a>)) <span class="keyword">delete</span> <a class="code hl_variable" href="class_kernel_1_1_ref.html#a63bca8eb56b686b8123c76afb5abf55f">fClass</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_kernel.html#a8d99c80d0b6fbf1d98e4f09cf480d984">mm_is_valid_ptr</a>(<a class="code hl_variable" href="class_kernel_1_1_ref.html#a63bca8eb56b686b8123c76afb5abf55f">fClass</a>)) <span class="keyword">delete</span> <a class="code hl_variable" href="class_kernel_1_1_ref.html#a63bca8eb56b686b8123c76afb5abf55f">fClass</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  }</div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -215,8 +215,8 @@ $(document).ready(function(){initNavTree('dev_2kernel_2_new_kit_2_ref_8h_source.
 <div class="ttc" id="aclass_kernel_1_1_ref_html_afc2ac449dc51408136a03f90e03e21f0"><div class="ttname"><a href="class_kernel_1_1_ref.html#afc2ac449dc51408136a03f90e03e21f0">Kernel::Ref::~Ref</a></div><div class="ttdeci">~Ref()</div><div class="ttdef"><b>Definition</b> Ref.h:21</div></div>
 <div class="ttc" id="akernel_2_new_kit_2_defines_8h_html"><div class="ttname"><a href="kernel_2_new_kit_2_defines_8h.html">Defines.h</a></div></div>
 <div class="ttc" id="anamespace_kernel_html"><div class="ttname"><a href="namespace_kernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
-<div class="ttc" id="anamespace_kernel_html_a0a04e936e5176510cfb9c8227f2394d3"><div class="ttname"><a href="namespace_kernel.html#a0a04e936e5176510cfb9c8227f2394d3">Kernel::mm_is_valid_heap</a></div><div class="ttdeci">Boolean mm_is_valid_heap(VoidPtr heap_ptr)</div><div class="ttdoc">Check if pointer is a valid Kernel pointer.</div><div class="ttdef"><b>Definition</b> MemoryMgr.cc:242</div></div>
 <div class="ttc" id="anamespace_kernel_html_a46c45ec8d2e2504b10aa8b4d16ec12af"><div class="ttname"><a href="namespace_kernel.html#a46c45ec8d2e2504b10aa8b4d16ec12af">Kernel::nullPtr</a></div><div class="ttdeci">decltype(nullptr) nullPtr</div><div class="ttdef"><b>Definition</b> Defines.h:34</div></div>
+<div class="ttc" id="anamespace_kernel_html_a8d99c80d0b6fbf1d98e4f09cf480d984"><div class="ttname"><a href="namespace_kernel.html#a8d99c80d0b6fbf1d98e4f09cf480d984">Kernel::mm_is_valid_ptr</a></div><div class="ttdeci">Boolean mm_is_valid_ptr(VoidPtr heap_ptr)</div><div class="ttdoc">Check if pointer is a valid Kernel pointer.</div><div class="ttdef"><b>Definition</b> MemoryMgr.cc:243</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

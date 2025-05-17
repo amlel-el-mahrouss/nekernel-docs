@@ -2,7 +2,7 @@ var _process_scheduler_8h =
 [
     [ "Kernel::ProcessImage", "struct_kernel_1_1_process_image.html", "struct_kernel_1_1_process_image" ],
     [ "Kernel::Process", "class_kernel_1_1_process.html", "class_kernel_1_1_process" ],
-    [ "Kernel::Process::ProcessMemoryHeapList", "struct_kernel_1_1_process_1_1_process_memory_heap_list.html", "struct_kernel_1_1_process_1_1_process_memory_heap_list" ],
+    [ "Kernel::Process::ProcessMemoryHeapList", "struct_kernel_1_1_process_1_1_process_memory_ptr_list.html", "struct_kernel_1_1_process_1_1_process_memory_ptr_list" ],
     [ "Kernel::Process::ProcessSignal", "struct_kernel_1_1_process_1_1_process_signal.html", "struct_kernel_1_1_process_1_1_process_signal" ],
     [ "Kernel::ProcessTeam", "class_kernel_1_1_process_team.html", "class_kernel_1_1_process_team" ],
     [ "Kernel::UserProcessScheduler", "class_kernel_1_1_user_process_scheduler.html", "class_kernel_1_1_user_process_scheduler" ],

@@ -1,8 +1,21 @@
 var searchData=
 [
-  ['open_5fapp_5fapp_5fflag_0',['OPEN_APP_APP_FLAG',['../open_2src_2_command_line_8cc.html#a6774ac380f39912cd5b7e6feeebc6d5e',1,'CommandLine.cc']]],
-  ['open_5fapp_5fbase_5fpath_1',['OPEN_APP_BASE_PATH',['../open_2src_2_command_line_8cc.html#a84e7a7540079b711ff8d4769629a50f5',1,'CommandLine.cc']]],
-  ['open_5fapp_5fhelp_5fflag_2',['OPEN_APP_HELP_FLAG',['../open_2src_2_command_line_8cc.html#aec91daedce87ce12dab761bb5d90bf3e',1,'CommandLine.cc']]],
-  ['optional_3',['OPTIONAL',['../_e_f_i_2_e_f_i_8h.html#afdff552467cc2d2d5815831e9656cffc',1,'EFI.h']]],
-  ['out_4',['OUT',['../_e_f_i_2_e_f_i_8h.html#aec78e7a9e90a406a56f859ee456e8eae',1,'EFI.h']]]
+  ['ne_5falign_5fnvme_0',['NE_ALIGN_NVME',['../modules_2_n_v_m_e_2_n_v_m_e_8h.html#aee349063183d3316c2ed371cb3670368',1,'NVME.h']]],
+  ['ne_5fbus_5fcount_1',['NE_BUS_COUNT',['../_iterator_8h.html#ad2c2fc7ad38dfeec31e0517686af0619',1,'Iterator.h']]],
+  ['ne_5fcopy_5fdefault_2',['NE_COPY_DEFAULT',['../_detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2',1,'Detail.h']]],
+  ['ne_5fcopy_5fdelete_3',['NE_COPY_DELETE',['../_detail_8h.html#a5a448e2cf2aed07b6a8216f4007ade6b',1,'Detail.h']]],
+  ['ne_5fdevice_4',['NE_DEVICE',['../_device_mgr_8h.html#a003e6c4700d518adbf5ca256c38f4b7e',1,'DeviceMgr.h']]],
+  ['ne_5fdevice_5fcount_5',['NE_DEVICE_COUNT',['../_iterator_8h.html#a4b521d8681e7d1ed0f69a835ebf6dab9',1,'Iterator.h']]],
+  ['ne_5fdylib_5fobject_6',['NE_DYLIB_OBJECT',['../_i_dylib_object_8h.html#ad76c84d4ccd748e38d8792cf7375cc16',1,'IDylibObject.h']]],
+  ['ne_5ffunction_5fcount_7',['NE_FUNCTION_COUNT',['../_iterator_8h.html#a12fcd21dfb4006c8099e6dce5605c8d7',1,'Iterator.h']]],
+  ['ne_5fmove_5fdefault_8',['NE_MOVE_DEFAULT',['../_detail_8h.html#adff973d5465995c6b64488ec934fab50',1,'Detail.h']]],
+  ['ne_5fmove_5fdelete_9',['NE_MOVE_DELETE',['../_detail_8h.html#a67bc00e00390de09e03471f0164911d4',1,'Detail.h']]],
+  ['ne_5fpower_5ffactory_10',['NE_POWER_FACTORY',['../_power_factory_8h.html#a0503cad957601c0d70f0ee9ecfed9b40',1,'PowerFactory.h']]],
+  ['ne_5funused_11',['NE_UNUSED',['../kernel_2_new_kit_2macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469',1,'Macros.h']]],
+  ['newkit_5fversion_5fbcd_12',['NEWKIT_VERSION_BCD',['../kernel_2_new_kit_2_defines_8h.html#a448defd2293246a8f38b7033eaf53771',1,'Defines.h']]],
+  ['newkit_5fversion_5fstr_13',['NEWKIT_VERSION_STR',['../kernel_2_new_kit_2_defines_8h.html#a10d3284449324d37668b895b31c78c79',1,'Defines.h']]],
+  ['nil_14',['nil',['../ddk_2_d_d_k_kit_2macros_8h.html#a7a7ca81d2a85873283b5ec82953b1b25',1,'macros.h']]],
+  ['no_15',['no',['../ddk_2_d_d_k_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;macros.h'],['../kernel_2_new_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h'],['../user_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h'],['../kernel_2_new_kit_2macros_8h.html#a554d6ecb4ae62985018db18be458114d',1,'No:&#160;Macros.h']]],
+  ['no_5fexec_16',['NO_EXEC',['../kernel_2_new_kit_2macros_8h.html#acd5f5a08cb161dddd3db84118b45b8d1',1,'Macros.h']]],
+  ['null_17',['NULL',['../ddk_2_d_d_k_kit_2macros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4',1,'macros.h']]]
 ];

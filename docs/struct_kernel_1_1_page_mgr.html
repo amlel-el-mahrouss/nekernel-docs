@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ad5a8e729a1cf1ed4b4459af0a7e841" id="r_a2ad5a8e729a1cf1ed4b4459af0a7e841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_page_mgr.html#a2ad5a8e729a1cf1ed4b4459af0a7e841">PageMgr</a> (const <a class="el" href="struct_kernel_1_1_page_mgr.html">PageMgr</a> &amp;)=default</td></tr>
 <tr class="separator:a2ad5a8e729a1cf1ed4b4459af0a7e841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198bbb52db582d5f01bc37a891a2d122" id="r_a198bbb52db582d5f01bc37a891a2d122"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_p_t_e_wrapper.html">PTEWrapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_page_mgr.html#a198bbb52db582d5f01bc37a891a2d122">Request</a> (<a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> Rw, <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> <a class="el" href="class_kernel_1_1_user.html">User</a>, <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> ExecDisable, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> Sz, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> Pad)</td></tr>
-<tr class="memdesc:a198bbb52db582d5f01bc37a891a2d122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a PTE.  <br /></td></tr>
+<tr class="memdesc:a198bbb52db582d5f01bc37a891a2d122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a <a class="el" href="struct_kernel_1_1_p_t_e.html">PTE</a>.  <br /></td></tr>
 <tr class="separator:a198bbb52db582d5f01bc37a891a2d122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad406d8f5eb8bdf3b70d8576f65c1b837" id="r_ad406d8f5eb8bdf3b70d8576f65c1b837"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_page_mgr.html#ad406d8f5eb8bdf3b70d8576f65c1b837">Free</a> (<a class="el" href="class_kernel_1_1_ref.html">Ref</a>&lt; <a class="el" href="class_kernel_1_1_p_t_e_wrapper.html">PTEWrapper</a> &gt; &amp;wrapper)</td></tr>
 <tr class="memdesc:ad406d8f5eb8bdf3b70d8576f65c1b837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable BitMap.  <br /></td></tr>
@@ -343,11 +343,11 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Request a PTE. </p>
+<p>Request a <a class="el" href="struct_kernel_1_1_p_t_e.html">PTE</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Rw</td><td>r/w? </td></tr>
-    <tr><td class="paramname"><a class="el" href="class_kernel_1_1_user.html" title="User class.">User</a></td><td>user mode? </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_kernel_1_1_user.html" title="System User class.">User</a></td><td>user mode? </td></tr>
     <tr><td class="paramname">ExecDisable</td><td>disable execution on page? </td></tr>
   </table>
   </dd>

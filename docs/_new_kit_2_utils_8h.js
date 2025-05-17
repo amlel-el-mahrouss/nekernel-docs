@@ -18,5 +18,6 @@ var _new_kit_2_utils_8h =
     [ "rt_zero_memory", "_new_kit_2_utils_8h.html#a1b4831b13185ef765af5cd66d1747148", null ],
     [ "urt_copy_memory", "_new_kit_2_utils_8h.html#ae46d5b75476f521f6b07979bb03bb112", null ],
     [ "urt_set_memory", "_new_kit_2_utils_8h.html#a45d70ab8984c1fb610ee2e553e376311", null ],
+    [ "urt_string_cmp", "_new_kit_2_utils_8h.html#aa84ad364f8fdd87326846bd1bc2e254e", null ],
     [ "urt_string_len", "_new_kit_2_utils_8h.html#afd517a85266b9355a7baf20b428acbf6", null ]
 ];

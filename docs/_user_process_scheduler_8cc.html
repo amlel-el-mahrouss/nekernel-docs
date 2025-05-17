@@ -101,12 +101,13 @@ $(document).ready(function(){initNavTree('_user_process_scheduler_8cc.html','');
 <p>Unprivileged/Ring-3 process scheduler.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_hardware_thread_scheduler_8h_source.html">KernelKit/HardwareThreadScheduler.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_i_p_e_f_dylib_object_8h_source.html">KernelKit/IPEFDylibObject.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_memory_mgr_8h_source.html">KernelKit/MemoryMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_signals_8h_source.html">SignalKit/Signals.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -116,12 +117,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a64c5bfb13cf6e63977db8c9a6b07d2a7" id="r_a64c5bfb13cf6e63977db8c9a6b07d2a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s_1_1_u_s_e_r___h_e_a_p___t_r_e_e.html">USER_PROCESS::USER_HEAP_TREE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a64c5bfb13cf6e63977db8c9a6b07d2a7">Kernel::sched_try_go_upper_heap_tree</a> (<a class="el" href="struct_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s_1_1_u_s_e_r___h_e_a_p___t_r_e_e.html">USER_PROCESS::USER_HEAP_TREE</a> *tree)</td></tr>
-<tr class="memdesc:a64c5bfb13cf6e63977db8c9a6b07d2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate pointer to heap tree.  <br /></td></tr>
-<tr class="separator:a64c5bfb13cf6e63977db8c9a6b07d2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ba6e2941ff935d1eb97d3c4b8e34ec" id="r_a57ba6e2941ff935d1eb97d3c4b8e34ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a57ba6e2941ff935d1eb97d3c4b8e34ec">Kernel::sched_free_heap_tree</a> (<a class="el" href="struct_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s_1_1_u_s_e_r___h_e_a_p___t_r_e_e.html">USER_PROCESS::USER_HEAP_TREE</a> *memory_heap_list)</td></tr>
-<tr class="memdesc:a57ba6e2941ff935d1eb97d3c4b8e34ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free heap tree.  <br /></td></tr>
-<tr class="separator:a57ba6e2941ff935d1eb97d3c4b8e34ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8365e177de9ff9530e4c9e66664aef99" id="r_a8365e177de9ff9530e4c9e66664aef99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a8365e177de9ff9530e4c9e66664aef99">Kernel::sched_jump_to_task</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack_frame)</td></tr>
+<tr class="separator:a8365e177de9ff9530e4c9e66664aef99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfcf573e9c2b2200ff3c79f49d5c78e" id="r_aabfcf573e9c2b2200ff3c79f49d5c78e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html">PROCESS_HEAP_TREE</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aabfcf573e9c2b2200ff3c79f49d5c78e">Kernel::sched_try_go_upper_ptr_tree</a> (<a class="el" href="struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html">PROCESS_HEAP_TREE</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt; *tree)</td></tr>
+<tr class="memdesc:aabfcf573e9c2b2200ff3c79f49d5c78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate pointer to heap tree.  <br /></td></tr>
+<tr class="separator:aabfcf573e9c2b2200ff3c79f49d5c78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf0128f7374dd6d408b76aebfee638b" id="r_adbf0128f7374dd6d408b76aebfee638b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#adbf0128f7374dd6d408b76aebfee638b">Kernel::sched_free_ptr_tree</a> (<a class="el" href="struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html">PROCESS_HEAP_TREE</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt; *memory_ptr_list)</td></tr>
+<tr class="memdesc:adbf0128f7374dd6d408b76aebfee638b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free heap tree.  <br /></td></tr>
+<tr class="separator:adbf0128f7374dd6d408b76aebfee638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">USER_PROCESS</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> class, holds information about the running process/thread. </p>
 </div></td></tr>
@@ -134,11 +137,6 @@ Variables</h2></td></tr>
 <tr class="memitem:aa8089b84581abd0e4212da55b348cd53" id="r_aa8089b84581abd0e4212da55b348cd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa8089b84581abd0e4212da55b348cd53">Kernel::kLastExitCode</a> = 0U</td></tr>
 <tr class="memdesc:aa8089b84581abd0e4212da55b348cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit Code global variable.  <br /></td></tr>
 <tr class="separator:aa8089b84581abd0e4212da55b348cd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b2da1fd0200cd7867dac455302ca08" id="r_ac6b2da1fd0200cd7867dac455302ca08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ac6b2da1fd0200cd7867dac455302ca08">Kernel::kCurrentlySwitching</a> = <a class="el" href="kernel_2_new_kit_2macros_8h.html#a554d6ecb4ae62985018db18be458114d">No</a></td></tr>
-<tr class="separator:ac6b2da1fd0200cd7867dac455302ca08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a566fd374158c608cca7ebe8970da799f" id="r_a566fd374158c608cca7ebe8970da799f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_user_process_scheduler.html">UserProcessScheduler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a566fd374158c608cca7ebe8970da799f">Kernel::kScheduler</a></td></tr>
-<tr class="memdesc:a566fd374158c608cca7ebe8970da799f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler itself.  <br /></td></tr>
-<tr class="separator:a566fd374158c608cca7ebe8970da799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unprivileged/Ring-3 process scheduler. </p>

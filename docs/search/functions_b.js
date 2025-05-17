@@ -15,7 +15,7 @@ var searchData=
   ['ke_5futf_5fio_5fwrite_12',['ke_utf_io_write',['../namespace_kernel.html#a66c3d3d7ac9f7d872b0fe937ce71bc81',1,'Kernel']]],
   ['kfree_13',['kfree',['../ddk_8h.html#a2e83e08d4d404fca342fac316b2b9c20',1,'kfree(void *the_ptr):&#160;ddk_alloc.c'],['../ddk__alloc_8c.html#a0ed703155f740e05ad722199ad48b118',1,'kfree(void *ptr):&#160;ddk_alloc.c']]],
   ['kill_14',['kill',['../classpfd_1_1internal_1_1executor.html#ab7766273bae572779a404c5543268406',1,'pfd::internal::executor::kill()'],['../classpfd_1_1internal_1_1dialog.html#a226b1502acd1d2cb86e34dd3df36772a',1,'pfd::internal::dialog::kill()']]],
-  ['kind_15',['kind',['../class_kernel_1_1_variant.html#a355fb60038d365d176c03e24ca8265b9',1,'Kernel::Variant::Kind()'],['../class_kernel_1_1_hardware_thread.html#aba35204bf23c3fda44027203f6a540ce',1,'Kernel::HardwareThread::Kind()']]],
+  ['kind_15',['kind',['../class_kernel_1_1_variant.html#a355fb60038d365d176c03e24ca8265b9',1,'Kernel::Variant::Kind()'],['../class_kernel_1_1_hardware_thread.html#a15bc48767421b53cdfb37a485100d1d0',1,'Kernel::HardwareThread::Kind()']]],
   ['kprint_16',['kprint',['../ddk__io_8c.html#ae25d3e45aff4aa44ac0792170341667e',1,'kprint(const char *message):&#160;ddk_io.c'],['../ddk_2_d_d_k_kit_2io_8h.html#ae25d3e45aff4aa44ac0792170341667e',1,'kprint(const char *message):&#160;ddk_io.c']]],
   ['kputc_17',['kputc',['../ddk__io_8c.html#aaa48261610b038fee444eb7dde06c8d8',1,'kputc(const char ch):&#160;ddk_io.c'],['../ddk_2_d_d_k_kit_2io_8h.html#aaa48261610b038fee444eb7dde06c8d8',1,'kputc(const char ch):&#160;ddk_io.c']]],
   ['ksatatimer_18',['kSATATimer',['../_a_h_c_i_09_generic_8cc.html#ab1139988002f8f9872916fa5478f9a17',1,'AHCI+Generic.cc']]],

@@ -3,6 +3,7 @@ var dir_e75dcc59ea39cc8560c57baaefc9f0b6 =
     [ "ArchKit", "dir_745df3f195f0a937bbd6a675008512a0.html", "dir_745df3f195f0a937bbd6a675008512a0" ],
     [ "CFKit", "dir_d57065060bb32d63b94ae916acf34f1c.html", "dir_d57065060bb32d63b94ae916acf34f1c" ],
     [ "CompilerKit", "dir_fd1a31aee5fdb118437e91689f47a457.html", "dir_fd1a31aee5fdb118437e91689f47a457" ],
+    [ "DmaKit", "dir_347de9d3b03ab7b1978ba5dda0eccbe4.html", "dir_347de9d3b03ab7b1978ba5dda0eccbe4" ],
     [ "FirmwareKit", "dir_43b55a39cf89394d789a94cf8d839131.html", "dir_43b55a39cf89394d789a94cf8d839131" ],
     [ "FSKit", "dir_49fa6c7b86ef4750537839e90a59df6f.html", "dir_49fa6c7b86ef4750537839e90a59df6f" ],
     [ "GfxKit", "dir_4491ecbea58c4937acddc65608324ad5.html", "dir_4491ecbea58c4937acddc65608324ad5" ],

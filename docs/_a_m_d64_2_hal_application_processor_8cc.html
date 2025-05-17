@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('_a_m_d64_2_hal_application_processor_8
 <code>#include &lt;<a class="el" href="_kernel_panic_8h_source.html">NewKit/KernelPanic.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_a_c_p_i_factory_interface_8h_source.html">modules/ACPI/ACPIFactoryInterface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_text_gfx_8h_source.html">modules/CoreGfx/TextGfx.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="kernel_2_new_kit_2_defines_8h_source.html">NewKit/Defines.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -115,6 +116,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html">Kernel::HAL::SDT_OBJECT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiple APIC Descriptor Table.  <a href="struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_h_a_l_1_1_l_a_p_i_c.html">Kernel::HAL::LAPIC</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -128,31 +131,42 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a718936083d7782818f2c1ed8a3cd1b6a" id="r_a718936083d7782818f2c1ed8a3cd1b6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a718936083d7782818f2c1ed8a3cd1b6a">kAPIC_Signature</a>&#160;&#160;&#160;&quot;APIC&quot;</td></tr>
-<tr class="separator:a718936083d7782818f2c1ed8a3cd1b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9607ce8830154318b19cdd08ed1ce202" id="r_a9607ce8830154318b19cdd08ed1ce202"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a9607ce8830154318b19cdd08ed1ce202">kAPIC_ICR_Low</a>&#160;&#160;&#160;0x300</td></tr>
-<tr class="separator:a9607ce8830154318b19cdd08ed1ce202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47fbccc70ccb5540f2e531ef123d849d" id="r_a47fbccc70ccb5540f2e531ef123d849d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a47fbccc70ccb5540f2e531ef123d849d">kAPIC_ICR_High</a>&#160;&#160;&#160;0x310</td></tr>
-<tr class="separator:a47fbccc70ccb5540f2e531ef123d849d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93ea84a645875568b3481bf17329f77" id="r_ac93ea84a645875568b3481bf17329f77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#ac93ea84a645875568b3481bf17329f77">kAPIC_SIPI_Vector</a>&#160;&#160;&#160;0x00500</td></tr>
-<tr class="separator:ac93ea84a645875568b3481bf17329f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f294cf029dc2dab5b9c62daaaa9bc3" id="r_a17f294cf029dc2dab5b9c62daaaa9bc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a17f294cf029dc2dab5b9c62daaaa9bc3">kAPIC_EIPI_Vector</a>&#160;&#160;&#160;0x00400</td></tr>
-<tr class="separator:a17f294cf029dc2dab5b9c62daaaa9bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae11847d525c330927dec812ebf50d260" id="r_ae11847d525c330927dec812ebf50d260"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#ae11847d525c330927dec812ebf50d260">kAPIC_BASE_MSR</a>&#160;&#160;&#160;0x1B</td></tr>
-<tr class="separator:ae11847d525c330927dec812ebf50d260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecbe7c61e55a2fc6ee204a4406848d0a" id="r_aecbe7c61e55a2fc6ee204a4406848d0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#aecbe7c61e55a2fc6ee204a4406848d0a">kAPIC_BASE_MSR_BSP</a>&#160;&#160;&#160;0x100</td></tr>
-<tr class="separator:aecbe7c61e55a2fc6ee204a4406848d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c24eef58f18d66cb74578b9a65bfb9" id="r_a07c24eef58f18d66cb74578b9a65bfb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a07c24eef58f18d66cb74578b9a65bfb9">kAPIC_BASE_MSR_ENABLE</a>&#160;&#160;&#160;0x800</td></tr>
-<tr class="separator:a07c24eef58f18d66cb74578b9a65bfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebba43379e5c672205d456a9a54d366" id="r_a8ebba43379e5c672205d456a9a54d366"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a8ebba43379e5c672205d456a9a54d366">APIC_MAG</a>&#160;&#160;&#160;&quot;APIC&quot;</td></tr>
+<tr class="separator:a8ebba43379e5c672205d456a9a54d366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76d54e1b8cf863f95a9ee68014f6c30" id="r_ae76d54e1b8cf863f95a9ee68014f6c30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#ae76d54e1b8cf863f95a9ee68014f6c30">AP_BLOB_SIZE</a>&#160;&#160;&#160;126</td></tr>
+<tr class="separator:ae76d54e1b8cf863f95a9ee68014f6c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4881a5cd4ac835ee7067833dd11dd0fb" id="r_a4881a5cd4ac835ee7067833dd11dd0fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a4881a5cd4ac835ee7067833dd11dd0fb">APIC_ICR_LOW</a>&#160;&#160;&#160;0x300</td></tr>
+<tr class="separator:a4881a5cd4ac835ee7067833dd11dd0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72955b951b6ac22fb4103193ed4c6015" id="r_a72955b951b6ac22fb4103193ed4c6015"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a72955b951b6ac22fb4103193ed4c6015">APIC_ICR_HIGH</a>&#160;&#160;&#160;0x310</td></tr>
+<tr class="separator:a72955b951b6ac22fb4103193ed4c6015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb76d8b8b2268de097af7e973f2cd52c" id="r_acb76d8b8b2268de097af7e973f2cd52c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#acb76d8b8b2268de097af7e973f2cd52c">APIC_SIPI_VEC</a>&#160;&#160;&#160;0x00500</td></tr>
+<tr class="separator:acb76d8b8b2268de097af7e973f2cd52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9b553a77c9ce1440aa2c8cfe84a1f0" id="r_adc9b553a77c9ce1440aa2c8cfe84a1f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#adc9b553a77c9ce1440aa2c8cfe84a1f0">APIC_EIPI_VEC</a>&#160;&#160;&#160;0x00400</td></tr>
+<tr class="separator:adc9b553a77c9ce1440aa2c8cfe84a1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36704238ee3655203992aeb0caf2ec13" id="r_a36704238ee3655203992aeb0caf2ec13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a36704238ee3655203992aeb0caf2ec13">LAPIC_REG_TIMER_LVT</a>&#160;&#160;&#160;0x320</td></tr>
+<tr class="separator:a36704238ee3655203992aeb0caf2ec13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a516dce6290bde45eecb6469a541346" id="r_a4a516dce6290bde45eecb6469a541346"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a4a516dce6290bde45eecb6469a541346">LAPIC_REG_TIMER_INITCNT</a>&#160;&#160;&#160;0x380</td></tr>
+<tr class="separator:a4a516dce6290bde45eecb6469a541346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0d9cab3e81e1d8f93f738b3e2add8f" id="r_a9d0d9cab3e81e1d8f93f738b3e2add8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a9d0d9cab3e81e1d8f93f738b3e2add8f">LAPIC_REG_TIMER_CURRCNT</a>&#160;&#160;&#160;0x390</td></tr>
+<tr class="separator:a9d0d9cab3e81e1d8f93f738b3e2add8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc0ce220e668a354b739768ec53436d" id="r_a9cc0ce220e668a354b739768ec53436d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a9cc0ce220e668a354b739768ec53436d">LAPIC_REG_TIMER_DIV</a>&#160;&#160;&#160;0x3E0</td></tr>
+<tr class="separator:a9cc0ce220e668a354b739768ec53436d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c5ffdd7c646bf56036c60f4abcd119" id="r_a14c5ffdd7c646bf56036c60f4abcd119"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a14c5ffdd7c646bf56036c60f4abcd119">LAPIC_REG_ENABLE</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:a14c5ffdd7c646bf56036c60f4abcd119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8600d50ad484d950d5b069a182e26e4d" id="r_a8600d50ad484d950d5b069a182e26e4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a8600d50ad484d950d5b069a182e26e4d">LAPIC_REG_SPURIOUS</a>&#160;&#160;&#160;0xF0</td></tr>
+<tr class="separator:a8600d50ad484d950d5b069a182e26e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bccef7658e28a44636ba3a66ff1fe1" id="r_a96bccef7658e28a44636ba3a66ff1fe1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a96bccef7658e28a44636ba3a66ff1fe1">APIC_BASE_MSR</a>&#160;&#160;&#160;0x1B</td></tr>
+<tr class="separator:a96bccef7658e28a44636ba3a66ff1fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9aa4bad680242450446df1230adf8f" id="r_a8d9aa4bad680242450446df1230adf8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#a8d9aa4bad680242450446df1230adf8f">APIC_BASE_MSR_BSP</a>&#160;&#160;&#160;0x100</td></tr>
+<tr class="separator:a8d9aa4bad680242450446df1230adf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41d667f86d1c94403420c6ff4a3c5de" id="r_ac41d667f86d1c94403420c6ff4a3c5de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_m_d64_2_hal_application_processor_8cc.html#ac41d667f86d1c94403420c6ff4a3c5de">APIC_BASE_MSR_ENABLE</a>&#160;&#160;&#160;0x800</td></tr>
+<tr class="separator:ac41d667f86d1c94403420c6ff4a3c5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a467d41de4530f8a3a11587d1a86687e7" id="r_a467d41de4530f8a3a11587d1a86687e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a467d41de4530f8a3a11587d1a86687e7">Kernel::HAL::hal_send_start_ipi</a> (<a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> target, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> apic_id)</td></tr>
-<tr class="memdesc:a467d41de4530f8a3a11587d1a86687e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send IPI command to APIC.  <br /></td></tr>
-<tr class="separator:a467d41de4530f8a3a11587d1a86687e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057bb3d6f704680802254eb44059a587" id="r_a057bb3d6f704680802254eb44059a587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a057bb3d6f704680802254eb44059a587">Kernel::HAL::hal_send_sipi</a> (<a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> target, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> apic_id, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> vector)</td></tr>
-<tr class="memdesc:a057bb3d6f704680802254eb44059a587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send end IPI for CPU.  <br /></td></tr>
-<tr class="separator:a057bb3d6f704680802254eb44059a587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9ad1a2d17409fa2d9afb0cdf6274d7" id="r_a6b9ad1a2d17409fa2d9afb0cdf6274d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a6b9ad1a2d17409fa2d9afb0cdf6274d7">Kernel::HAL::hal_send_ipi_msg</a> (<a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> target, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> apic_id, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> vector)</td></tr>
+<tr class="memdesc:a6b9ad1a2d17409fa2d9afb0cdf6274d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send end IPI for CPU.  <br /></td></tr>
+<tr class="separator:a6b9ad1a2d17409fa2d9afb0cdf6274d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2890148948bf2786bfc9350584e7925a" id="r_a2890148948bf2786bfc9350584e7925a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a2890148948bf2786bfc9350584e7925a">Kernel::HAL::mp_get_current_context</a> (<a class="el" href="namespace_kernel.html#a5801162fe3161371005a37736050c570">Int64</a> pid)</td></tr>
 <tr class="separator:a2890148948bf2786bfc9350584e7925a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b33e3de0af8cda2dd41fc8840cdb85" id="r_a62b33e3de0af8cda2dd41fc8840cdb85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a62b33e3de0af8cda2dd41fc8840cdb85">Kernel::HAL::mp_register_process</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack_frame, <a class="el" href="namespace_kernel.html#abba6700dd5b8786ae2dbee68de1a5cea">ProcessID</a> pid)</td></tr>
@@ -172,15 +186,15 @@ Variables</h2></td></tr>
 <tr class="separator:a51b3fd0b52323b4e7cc2d3defd4c26cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b8704136dca87ca1005a0d67a5f410" id="r_ab6b8704136dca87ca1005a0d67a5f410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5801162fe3161371005a37736050c570">Int64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#ab6b8704136dca87ca1005a0d67a5f410">Kernel::HAL::kSMPCount</a> = 0</td></tr>
 <tr class="separator:ab6b8704136dca87ca1005a0d67a5f410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a823d3fa2584cbb1df1b4b63506a5ecd3" id="r_a823d3fa2584cbb1df1b4b63506a5ecd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a823d3fa2584cbb1df1b4b63506a5ecd3">Kernel::HAL::kApicBaseAddress</a> = 0UL</td></tr>
-<tr class="separator:a823d3fa2584cbb1df1b4b63506a5ecd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7773e37d7b58206423ca0080559679f6" id="r_a7773e37d7b58206423ca0080559679f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a7773e37d7b58206423ca0080559679f6">Kernel::HAL::kApicBaseAddress</a></td></tr>
+<tr class="separator:a7773e37d7b58206423ca0080559679f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64600185cf6ff9c7ac889c9c597672ea" id="r_a64600185cf6ff9c7ac889c9c597672ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a64600185cf6ff9c7ac889c9c597672ea">Kernel::HAL::kSMPInterrupt</a> = 0</td></tr>
 <tr class="separator:a64600185cf6ff9c7ac889c9c597672ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78b8ab4c16a5a67924f524855a64f6a1" id="r_a78b8ab4c16a5a67924f524855a64f6a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a78b8ab4c16a5a67924f524855a64f6a1">Kernel::HAL::kAPICLocales</a> [<a class="el" href="_user_process_scheduler_8h.html#ae633e81676a77d8dc3d29554f5d283c9">kSchedProcessLimitPerTeam</a>] = {0}</td></tr>
+<tr class="memitem:a78b8ab4c16a5a67924f524855a64f6a1" id="r_a78b8ab4c16a5a67924f524855a64f6a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a78b8ab4c16a5a67924f524855a64f6a1">Kernel::HAL::kAPICLocales</a> [<a class="el" href="_core_process_scheduler_8h.html#ae633e81676a77d8dc3d29554f5d283c9">kSchedProcessLimitPerTeam</a>] = {0}</td></tr>
 <tr class="separator:a78b8ab4c16a5a67924f524855a64f6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbefd69805bc5bd6fc9f7c76f16189fa" id="r_abbefd69805bc5bd6fc9f7c76f16189fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#abbefd69805bc5bd6fc9f7c76f16189fa">Kernel::HAL::kRawMADT</a> = nullptr</td></tr>
 <tr class="separator:abbefd69805bc5bd6fc9f7c76f16189fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc52557f47d4364ad63e4dcf64ffceff" id="r_abc52557f47d4364ad63e4dcf64ffceff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html">HAL_HARDWARE_THREAD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#abc52557f47d4364ad63e4dcf64ffceff">Kernel::HAL::kHWThread</a> [<a class="el" href="_user_process_scheduler_8h.html#ae633e81676a77d8dc3d29554f5d283c9">kSchedProcessLimitPerTeam</a>] = {{}}</td></tr>
+<tr class="memitem:abc52557f47d4364ad63e4dcf64ffceff" id="r_abc52557f47d4364ad63e4dcf64ffceff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html">HAL_HARDWARE_THREAD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#abc52557f47d4364ad63e4dcf64ffceff">Kernel::HAL::kHWThread</a> [<a class="el" href="_core_process_scheduler_8h.html#ae633e81676a77d8dc3d29554f5d283c9">kSchedProcessLimitPerTeam</a>] = {{}}</td></tr>
 <tr class="separator:abc52557f47d4364ad63e4dcf64ffceff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c2371779e3a9b23d103f19461a1fd5" id="r_a57c2371779e3a9b23d103f19461a1fd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a57c2371779e3a9b23d103f19461a1fd5">Kernel::HAL::hal_ap_blob_start</a></td></tr>
 <tr class="memdesc:a57c2371779e3a9b23d103f19461a1fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembly symbol to bootstrap AP.  <br /></td></tr>
@@ -190,112 +204,210 @@ Variables</h2></td></tr>
 <tr class="separator:a37d70a3dba5387426e8df6b5107dbd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae11847d525c330927dec812ebf50d260" name="ae11847d525c330927dec812ebf50d260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae11847d525c330927dec812ebf50d260">&#9670;&#160;</a></span>kAPIC_BASE_MSR</h2>
+<a id="ae76d54e1b8cf863f95a9ee68014f6c30" name="ae76d54e1b8cf863f95a9ee68014f6c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae76d54e1b8cf863f95a9ee68014f6c30">&#9670;&#160;</a></span>AP_BLOB_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_BASE_MSR&#160;&#160;&#160;0x1B</td>
+          <td class="memname">#define AP_BLOB_SIZE&#160;&#160;&#160;126</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aecbe7c61e55a2fc6ee204a4406848d0a" name="aecbe7c61e55a2fc6ee204a4406848d0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecbe7c61e55a2fc6ee204a4406848d0a">&#9670;&#160;</a></span>kAPIC_BASE_MSR_BSP</h2>
+<a id="a96bccef7658e28a44636ba3a66ff1fe1" name="a96bccef7658e28a44636ba3a66ff1fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bccef7658e28a44636ba3a66ff1fe1">&#9670;&#160;</a></span>APIC_BASE_MSR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_BASE_MSR_BSP&#160;&#160;&#160;0x100</td>
+          <td class="memname">#define APIC_BASE_MSR&#160;&#160;&#160;0x1B</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a07c24eef58f18d66cb74578b9a65bfb9" name="a07c24eef58f18d66cb74578b9a65bfb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07c24eef58f18d66cb74578b9a65bfb9">&#9670;&#160;</a></span>kAPIC_BASE_MSR_ENABLE</h2>
+<a id="a8d9aa4bad680242450446df1230adf8f" name="a8d9aa4bad680242450446df1230adf8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9aa4bad680242450446df1230adf8f">&#9670;&#160;</a></span>APIC_BASE_MSR_BSP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_BASE_MSR_ENABLE&#160;&#160;&#160;0x800</td>
+          <td class="memname">#define APIC_BASE_MSR_BSP&#160;&#160;&#160;0x100</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a17f294cf029dc2dab5b9c62daaaa9bc3" name="a17f294cf029dc2dab5b9c62daaaa9bc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17f294cf029dc2dab5b9c62daaaa9bc3">&#9670;&#160;</a></span>kAPIC_EIPI_Vector</h2>
+<a id="ac41d667f86d1c94403420c6ff4a3c5de" name="ac41d667f86d1c94403420c6ff4a3c5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41d667f86d1c94403420c6ff4a3c5de">&#9670;&#160;</a></span>APIC_BASE_MSR_ENABLE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_EIPI_Vector&#160;&#160;&#160;0x00400</td>
+          <td class="memname">#define APIC_BASE_MSR_ENABLE&#160;&#160;&#160;0x800</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a47fbccc70ccb5540f2e531ef123d849d" name="a47fbccc70ccb5540f2e531ef123d849d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47fbccc70ccb5540f2e531ef123d849d">&#9670;&#160;</a></span>kAPIC_ICR_High</h2>
+<a id="adc9b553a77c9ce1440aa2c8cfe84a1f0" name="adc9b553a77c9ce1440aa2c8cfe84a1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9b553a77c9ce1440aa2c8cfe84a1f0">&#9670;&#160;</a></span>APIC_EIPI_VEC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_ICR_High&#160;&#160;&#160;0x310</td>
+          <td class="memname">#define APIC_EIPI_VEC&#160;&#160;&#160;0x00400</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9607ce8830154318b19cdd08ed1ce202" name="a9607ce8830154318b19cdd08ed1ce202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9607ce8830154318b19cdd08ed1ce202">&#9670;&#160;</a></span>kAPIC_ICR_Low</h2>
+<a id="a72955b951b6ac22fb4103193ed4c6015" name="a72955b951b6ac22fb4103193ed4c6015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72955b951b6ac22fb4103193ed4c6015">&#9670;&#160;</a></span>APIC_ICR_HIGH</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_ICR_Low&#160;&#160;&#160;0x300</td>
+          <td class="memname">#define APIC_ICR_HIGH&#160;&#160;&#160;0x310</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a718936083d7782818f2c1ed8a3cd1b6a" name="a718936083d7782818f2c1ed8a3cd1b6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a718936083d7782818f2c1ed8a3cd1b6a">&#9670;&#160;</a></span>kAPIC_Signature</h2>
+<a id="a4881a5cd4ac835ee7067833dd11dd0fb" name="a4881a5cd4ac835ee7067833dd11dd0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4881a5cd4ac835ee7067833dd11dd0fb">&#9670;&#160;</a></span>APIC_ICR_LOW</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_Signature&#160;&#160;&#160;&quot;APIC&quot;</td>
+          <td class="memname">#define APIC_ICR_LOW&#160;&#160;&#160;0x300</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac93ea84a645875568b3481bf17329f77" name="ac93ea84a645875568b3481bf17329f77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac93ea84a645875568b3481bf17329f77">&#9670;&#160;</a></span>kAPIC_SIPI_Vector</h2>
+<a id="a8ebba43379e5c672205d456a9a54d366" name="a8ebba43379e5c672205d456a9a54d366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ebba43379e5c672205d456a9a54d366">&#9670;&#160;</a></span>APIC_MAG</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kAPIC_SIPI_Vector&#160;&#160;&#160;0x00500</td>
+          <td class="memname">#define APIC_MAG&#160;&#160;&#160;&quot;APIC&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb76d8b8b2268de097af7e973f2cd52c" name="acb76d8b8b2268de097af7e973f2cd52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb76d8b8b2268de097af7e973f2cd52c">&#9670;&#160;</a></span>APIC_SIPI_VEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APIC_SIPI_VEC&#160;&#160;&#160;0x00500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14c5ffdd7c646bf56036c60f4abcd119" name="a14c5ffdd7c646bf56036c60f4abcd119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c5ffdd7c646bf56036c60f4abcd119">&#9670;&#160;</a></span>LAPIC_REG_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAPIC_REG_ENABLE&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8600d50ad484d950d5b069a182e26e4d" name="a8600d50ad484d950d5b069a182e26e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8600d50ad484d950d5b069a182e26e4d">&#9670;&#160;</a></span>LAPIC_REG_SPURIOUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAPIC_REG_SPURIOUS&#160;&#160;&#160;0xF0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d0d9cab3e81e1d8f93f738b3e2add8f" name="a9d0d9cab3e81e1d8f93f738b3e2add8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d0d9cab3e81e1d8f93f738b3e2add8f">&#9670;&#160;</a></span>LAPIC_REG_TIMER_CURRCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAPIC_REG_TIMER_CURRCNT&#160;&#160;&#160;0x390</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cc0ce220e668a354b739768ec53436d" name="a9cc0ce220e668a354b739768ec53436d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc0ce220e668a354b739768ec53436d">&#9670;&#160;</a></span>LAPIC_REG_TIMER_DIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAPIC_REG_TIMER_DIV&#160;&#160;&#160;0x3E0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a516dce6290bde45eecb6469a541346" name="a4a516dce6290bde45eecb6469a541346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a516dce6290bde45eecb6469a541346">&#9670;&#160;</a></span>LAPIC_REG_TIMER_INITCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAPIC_REG_TIMER_INITCNT&#160;&#160;&#160;0x380</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36704238ee3655203992aeb0caf2ec13" name="a36704238ee3655203992aeb0caf2ec13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36704238ee3655203992aeb0caf2ec13">&#9670;&#160;</a></span>LAPIC_REG_TIMER_LVT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LAPIC_REG_TIMER_LVT&#160;&#160;&#160;0x320</td>
         </tr>
       </table>
 </div><div class="memdoc">

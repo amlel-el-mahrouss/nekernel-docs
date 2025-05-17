@@ -2,7 +2,7 @@ var _debug_output_8h =
 [
     [ "Kernel::NE_DEVICE< const Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4" ],
     [ "Kernel::NE_DEVICE< const Utf8Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4.html", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4" ],
-    [ "Kernel::DebuggerPortHeader", "class_kernel_1_1_debugger_port_header.html", "class_kernel_1_1_debugger_port_header" ],
+    [ "Kernel::KernelDebugHeader", "class_kernel_1_1_kernel_debug_header.html", "class_kernel_1_1_kernel_debug_header" ],
     [ "kDebugEOP", "_debug_output_8h.html#ad5acb9641843f1e767f5933c22dc162d", null ],
     [ "kDebugLine", "_debug_output_8h.html#aa034e77f3730c1eb70b64d7b927770a2", null ],
     [ "kDebugMag0", "_debug_output_8h.html#aa2bcae557165602a54ba2ab8930b4820", null ],

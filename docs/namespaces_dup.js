@@ -10,8 +10,13 @@ var namespaces_dup =
     [ "FB", "namespace_f_b.html", "namespace_f_b" ],
     [ "Firmware", "namespace_firmware.html", "namespace_firmware" ],
     [ "Kernel", "namespace_kernel.html", "namespace_kernel" ],
+    [ "manual", "namespacemanual.html", null ],
+    [ "mk_app", "namespacemk__app.html", [
+      [ "create_directory_structure", "namespacemk__app.html#a5f5eaf1ba993e25c887ef320ec48f7df", null ],
+      [ "base_path", "namespacemk__app.html#a8bade9aacca4fb3e1be3297625376013", null ]
+    ] ],
     [ "mk_fwrk", "namespacemk__fwrk.html", [
-      [ "create_directory_structure", "namespacemk__fwrk.html#a7c2d76b445e63f4eee366241723439c5", null ],
+      [ "create_directory_structure", "namespacemk__fwrk.html#a9a65ae270a5199e7493f8ea669524d9b", null ],
       [ "base_path", "namespacemk__fwrk.html#a426b03e3d46d056d27eaa4bde9eca48b", null ]
     ] ],
     [ "mk_img", "namespacemk__img.html", [
