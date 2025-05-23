@@ -27,7 +27,6 @@ var _a_h_c_i_09_generic_8cc =
     [ "drv_std_detected_ahci", "_a_h_c_i_09_generic_8cc.html#a581628e54347deeee3e90542cb2e5c35", null ],
     [ "drv_std_init_ahci", "_a_h_c_i_09_generic_8cc.html#abf101e92a70ac5e67b6e7823ffc9152a", null ],
     [ "drv_std_input_output_ahci", "_a_h_c_i_09_generic_8cc.html#ab8b8dc8469414e865471bdbfeaad4206", null ],
-    [ "kSATATimer", "_a_h_c_i_09_generic_8cc.html#ab1139988002f8f9872916fa5478f9a17", null ],
     [ "sk_acquire_ahci_device", "_a_h_c_i_09_generic_8cc.html#a6b470af7f2a61a6294aa582770dcc33f", null ],
     [ "sk_init_ahci_device", "_a_h_c_i_09_generic_8cc.html#a1f72e96134d47a24bad09cdea3222847", null ],
     [ "sk_io_read_ahci", "_a_h_c_i_09_generic_8cc.html#af5309d5033bbee2c09242d9bc1a9249a", null ],

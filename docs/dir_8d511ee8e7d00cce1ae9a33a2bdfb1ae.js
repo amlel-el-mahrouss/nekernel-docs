@@ -19,6 +19,6 @@ var dir_8d511ee8e7d00cce1ae9a33a2bdfb1ae =
     [ "HalSchedulerCorePrimitivesAMD64.cc", "_hal_scheduler_core_primitives_a_m_d64_8cc.html", "_hal_scheduler_core_primitives_a_m_d64_8cc" ],
     [ "HalTimerAMD64.cc", "_hal_timer_a_m_d64_8cc.html", "_hal_timer_a_m_d64_8cc" ],
     [ "Hypervisor.h", "_hypervisor_8h.html", "_hypervisor_8h" ],
-    [ "Paging.h", "_a_m_d64_2_paging_8h.html", "_a_m_d64_2_paging_8h" ],
-    [ "Processor.h", "_a_m_d64_2_processor_8h.html", "_a_m_d64_2_processor_8h" ]
+    [ "Paging.h", "_a_m_d64_2_paging_8h.html", null ],
+    [ "Processor.h", "_a_m_d64_2_processor_8h.html", null ]
 ];

@@ -3,7 +3,7 @@ var searchData=
   ['_5f_5fattribute_5f_5f_0',['__attribute__',['../namespacemkfs_1_1hefs.html#a1478ebcc1a6659b62a6364d881efc09a',1,'mkfs::hefs']]],
   ['_5f_5fguard_1',['__guard',['../namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715',1,'cxxabiv1']]],
   ['_5f_5fmust_5fpass_2',['__MUST_PASS',['../_kernel_panic_8h.html#a90761906556ea7e47b7f55ca64423905',1,'KernelPanic.h']]],
-  ['_5f_5fne_5fver_5f_5f_3',['__NE_VER__',['../kernel_2_new_kit_2macros_8h.html#aeb2f846630e74da7c3ef2c61e72304d6',1,'Macros.h']]],
+  ['_5f_5fne_5fver_5f_5f_3',['__NE_VER__',['../kernel_2_ne_kit_2macros_8h.html#aeb2f846630e74da7c3ef2c61e72304d6',1,'Macros.h']]],
   ['_5f_5fzka_5fpure_5fcall_4',['__zka_pure_call',['../namespace_kernel.html#a6e4e780b2ff3eb6c4dfd73dea6e3fe5f',1,'Kernel::__zka_pure_call(void)'],['../namespace_kernel.html#add65731e2632ad429a95886971e45b16',1,'Kernel::__zka_pure_call(USER_PROCESS *process)']]],
   ['_5fdosheader_5',['_DosHeader',['../struct___dos_header.html',1,'']]],
   ['_5feficpuphyiscallocation_6',['_EfiCPUPhyiscalLocation',['../struct___efi_c_p_u_phyiscal_location.html',1,'']]],

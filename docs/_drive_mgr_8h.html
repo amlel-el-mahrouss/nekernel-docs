@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('_drive_mgr_8h.html',''); initResizable
 <code>#include &lt;<a class="el" href="_device_mgr_8h_source.html">KernelKit/DeviceMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kernel_2_new_kit_2_defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_k_string_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2_new_kit_2_ref_8h_source.html">NewKit/Ref.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kernel_2_ne_kit_2_defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_k_string_8h_source.html">NeKit/KString.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dev_2kernel_2_ne_kit_2_ref_8h_source.html">NeKit/Ref.h</a>&gt;</code><br />
 </div>
 <p><a href="_drive_mgr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -155,26 +155,26 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a4db811c8102148181f6765d7a0116e68" id="r_a4db811c8102148181f6765d7a0116e68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a30b5cda6cb0d4120b7818fae0a212ca8">Kernel::kInvalidDrive</a> = -1
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68ac9bdc44d5f5615551357f3ab0fecdc74">Kernel::kBlockDevice</a> = 0xAD
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a84c5bbb7feda914da99969aff89b9def">Kernel::kMassStorageDrive</a> = 0xDA
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68aa65245362b8bc3fa906fa46bec847760">Kernel::kFloppyDrive</a> = 0xCD
+<tr class="memitem:a084956ead668bca8a7cfe879b355ba09" id="r_a084956ead668bca8a7cfe879b355ba09"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a30b5cda6cb0d4120b7818fae0a212ca8">Kernel::kInvalidDrive</a> = -1
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09ac9bdc44d5f5615551357f3ab0fecdc74">Kernel::kBlockDevice</a> = 0xAD
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a84c5bbb7feda914da99969aff89b9def">Kernel::kMassStorageDrive</a> = 0xDA
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09aa65245362b8bc3fa906fa46bec847760">Kernel::kFloppyDrive</a> = 0xCD
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68ab779f6a5cf30ef8637711ad0f2364669">Kernel::kOpticalDrive</a> = 0xDC
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a4db0ee1cb280641f422d8784351035fc">Kernel::kTapeDrive</a> = 0xD7
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a5c42cfb2cc26712b415e146457a4caf7">Kernel::kReadOnlyDrive</a> = 0x10
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a099b1741447dcaacac9e19d58fa1d2dc">Kernel::kEPMDrive</a> = 0x11
+&#160;&#160;<a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09ab779f6a5cf30ef8637711ad0f2364669">Kernel::kOpticalDrive</a> = 0xDC
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a4db0ee1cb280641f422d8784351035fc">Kernel::kTapeDrive</a> = 0xD7
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a5c42cfb2cc26712b415e146457a4caf7">Kernel::kReadOnlyDrive</a> = 0x10
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a099b1741447dcaacac9e19d58fa1d2dc">Kernel::kEPMDrive</a> = 0x11
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68aa6c8b7f617fb2b952ff68bd78082badb">Kernel::kVEPMDrive</a> = 0x12
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a1b1b0f2367c91dbe56d44653dff69d9a">Kernel::kMBRDrive</a> = 0x13
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a03415ebe534ec9f44816a6c7129d78b6">Kernel::kGPTDrive</a> = 0x14
-, <a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68a753b9c0b9e1a83330035e1fe9ecb4397">Kernel::kUnformattedDrive</a> = 0x15
+&#160;&#160;<a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09aa6c8b7f617fb2b952ff68bd78082badb">Kernel::kVEPMDrive</a> = 0x12
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a1b1b0f2367c91dbe56d44653dff69d9a">Kernel::kMBRDrive</a> = 0x13
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a03415ebe534ec9f44816a6c7129d78b6">Kernel::kGPTDrive</a> = 0x14
+, <a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09a753b9c0b9e1a83330035e1fe9ecb4397">Kernel::kUnformattedDrive</a> = 0x15
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a4db811c8102148181f6765d7a0116e68ac9725f76e8bf507bfe8bd849beb5ce08">Kernel::kStorageCount</a> = 9
+&#160;&#160;<a class="el" href="namespace_kernel.html#a084956ead668bca8a7cfe879b355ba09ac9725f76e8bf507bfe8bd849beb5ce08">Kernel::kStorageCount</a> = 9
 <br />
  }</td></tr>
-<tr class="separator:a4db811c8102148181f6765d7a0116e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a084956ead668bca8a7cfe879b355ba09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>

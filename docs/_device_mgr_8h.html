@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('_device_mgr_8h.html',''); initResizabl
   <div class="headertitle"><div class="title">DeviceMgr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_error_or_8h_source.html">NewKit/ErrorOr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2_new_kit_2_ref_8h_source.html">NewKit/Ref.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_error_or_8h_source.html">NeKit/ErrorOr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dev_2kernel_2_ne_kit_2_ref_8h_source.html">NeKit/Ref.h</a>&gt;</code><br />
 </div>
 <p><a href="_device_mgr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -127,27 +127,27 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a9fa4669f2e389b0b1a99b964cd9ac251" id="r_a9fa4669f2e389b0b1a99b964cd9ac251"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a39be8e71e17a3f2000f277b4951dad58">Kernel::kDeviceTypeIDE</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a8be18d914a44eda2250fa1738a2aa7f9">Kernel::kDeviceTypeEthernet</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251abd1f30c70290d3771f96f04bd2bc13fe">Kernel::kDeviceTypeWiFi</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ab656fed2d875f01a0531fd947efc83c5">Kernel::kDeviceTypeFW</a>
+<tr class="memitem:aaa824fe1d5bc005fae23d42a7bb80e33" id="r_aaa824fe1d5bc005fae23d42a7bb80e33"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33a39be8e71e17a3f2000f277b4951dad58">Kernel::kDeviceTypeIDE</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33a8be18d914a44eda2250fa1738a2aa7f9">Kernel::kDeviceTypeEthernet</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33abd1f30c70290d3771f96f04bd2bc13fe">Kernel::kDeviceTypeWiFi</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33ab656fed2d875f01a0531fd947efc83c5">Kernel::kDeviceTypeFW</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a0c5a136eae3a4a460f7f0881771580b5">Kernel::kDeviceTypeBT</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ada9380e06d51517310cbc1ca1b08d103">Kernel::kDeviceTypeRS232</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251afd8db1895f93ee647c7c687e8acb46cf">Kernel::kDeviceTypeSCSI</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a15176f47a1d26d8cf925c00e0c12b513">Kernel::kDeviceTypeAHCI</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33a0c5a136eae3a4a460f7f0881771580b5">Kernel::kDeviceTypeBT</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33ada9380e06d51517310cbc1ca1b08d103">Kernel::kDeviceTypeRS232</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33afd8db1895f93ee647c7c687e8acb46cf">Kernel::kDeviceTypeSCSI</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33a15176f47a1d26d8cf925c00e0c12b513">Kernel::kDeviceTypeAHCI</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a52d1c5f98899ff49286ad90b3f2a911f">Kernel::kDeviceTypeMBCI</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ab56909e3f52cddfec70695d533459ba0">Kernel::kDeviceTypeATA</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a4b045e4f09fd750a02ceda1a84c93994">Kernel::kDeviceTypeUSB</a>
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ae2904e55c01503090a91d15dff50a6f4">Kernel::kDeviceTypeMediaCtrl</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33a52d1c5f98899ff49286ad90b3f2a911f">Kernel::kDeviceTypeMBCI</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33ab56909e3f52cddfec70695d533459ba0">Kernel::kDeviceTypeATA</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33a4b045e4f09fd750a02ceda1a84c93994">Kernel::kDeviceTypeUSB</a>
+, <a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33ae2904e55c01503090a91d15dff50a6f4">Kernel::kDeviceTypeMediaCtrl</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a64f682a6999b45e134d3201724bad0c5">Kernel::kDeviceTypeCount</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33a64f682a6999b45e134d3201724bad0c5">Kernel::kDeviceTypeCount</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a9fa4669f2e389b0b1a99b964cd9ac251"><td class="mdescLeft">&#160;</td><td class="mdescRight">!  <a href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251">More...</a><br /></td></tr>
-<tr class="separator:a9fa4669f2e389b0b1a99b964cd9ac251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:aaa824fe1d5bc005fae23d42a7bb80e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">!  <a href="namespace_kernel.html#aaa824fe1d5bc005fae23d42a7bb80e33">More...</a><br /></td></tr>
+<tr class="separator:aaa824fe1d5bc005fae23d42a7bb80e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab7e01a3cafb4b8eb1365b0bfc7e37b23" name="ab7e01a3cafb4b8eb1365b0bfc7e37b23"></a>

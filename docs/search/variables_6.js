@@ -12,14 +12,13 @@ var searchData=
   ['gettime_9',['GetTime',['../struct_efi_runtime_services.html#a2d0e74a2f7964f8d15eb974c9754bfe7',1,'EfiRuntimeServices']]],
   ['getwakeuptime_10',['GetWakeupTime',['../struct_efi_runtime_services.html#aca72509f68003ae2bc2a414b162f3d5d',1,'EfiRuntimeServices']]],
   ['ghc_11',['Ghc',['../struct_hba_mem.html#a3ac07e7681c6f789e29bafd0e2535e35',1,'HbaMem']]],
-  ['global_12',['global',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a592ee849e91094cd128acd149ab1c1fa',1,'Kernel::HAL::Detail::PTE::Global'],['../struct_kernel_1_1_p_t_e.html#a1b38a20d095c6f6cd521d921116551d8',1,'Kernel::PTE::Global']]],
+  ['global_12',['Global',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a592ee849e91094cd128acd149ab1c1fa',1,'Kernel::HAL::Detail::PTE']]],
   ['gpe0block_13',['GPE0Block',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a7195fc412d61def4716fea44810fc6be',1,'Kernel::Detail::FADT']]],
   ['gpe0length_14',['GPE0Length',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#ae6f374c4584eb899fcd4c8a3e8119c7f',1,'Kernel::Detail::FADT']]],
   ['gpe1base_15',['GPE1Base',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a24b15a75648a93fa7c3c82a516dc6af5',1,'Kernel::Detail::FADT']]],
   ['gpe1block_16',['GPE1Block',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a19edf017474468f0f01006874f6e9c6b',1,'Kernel::Detail::FADT']]],
   ['gpe1length_17',['GPE1Length',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a30ff7ff89eb4baaa95745bdad116ea81',1,'Kernel::Detail::FADT']]],
-  ['gran_18',['Gran',['../class_kernel_1_1_h_a_l_1_1_segment_descriptor.html#a524d5571859108cdf006e1bd81d48ab3',1,'Kernel::HAL::SegmentDescriptor']]],
-  ['green_19',['Green',['../struct_efi_graphics_output_blt_pixel.html#abb7cdfd4d3bd7e29ad4728f414ebbc1b',1,'EfiGraphicsOutputBltPixel']]],
-  ['greenmask_20',['GreenMask',['../struct_efi_bitmask.html#a88f33d6dc53e15c7294c0b677b9734cb',1,'EfiBitmask']]],
-  ['guid_21',['guid',['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a7a607d4efb637663353be5bad59f6b75',1,'EPM_PART_BLOCK::Guid'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a0349eea16af93cbb9de259a1546fe9c1',1,'Kernel::GPT_PARTITION_TABLE::Guid']]]
+  ['green_18',['Green',['../struct_efi_graphics_output_blt_pixel.html#abb7cdfd4d3bd7e29ad4728f414ebbc1b',1,'EfiGraphicsOutputBltPixel']]],
+  ['greenmask_19',['GreenMask',['../struct_efi_bitmask.html#a88f33d6dc53e15c7294c0b677b9734cb',1,'EfiBitmask']]],
+  ['guid_20',['guid',['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a7a607d4efb637663353be5bad59f6b75',1,'EPM_PART_BLOCK::Guid'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a0349eea16af93cbb9de259a1546fe9c1',1,'Kernel::GPT_PARTITION_TABLE::Guid']]]
 ];

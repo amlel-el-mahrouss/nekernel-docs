@@ -107,9 +107,9 @@ $(document).ready(function(){initNavTree('_memory_mgr_8cc.html',''); initResizab
 <code>#include &lt;<a class="el" href="_debug_output_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_memory_mgr_8h_source.html">KernelKit/MemoryMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_crc32_8h_source.html">NewKit/Crc32.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_page_mgr_8h_source.html">NewKit/PageMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_new_kit_2_utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_crc32_8h_source.html">NeKit/Crc32.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_page_mgr_8h_source.html">NeKit/PageMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_ne_kit_2_utils_8h_source.html">NeKit/Utils.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -143,9 +143,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a1f66348fbc5ecb5362ae1ca9ff512a81" id="r_a1f66348fbc5ecb5362ae1ca9ff512a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_hint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a1f66348fbc5ecb5362ae1ca9ff512a81">Kernel::Detail::mm_check_ptr_address</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr) -&gt; <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a></td></tr>
 <tr class="memdesc:a1f66348fbc5ecb5362ae1ca9ff512a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for heap address validity.  <br /></td></tr>
 <tr class="separator:a1f66348fbc5ecb5362ae1ca9ff512a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe9bbbdf627cf059e9a0a82fcad4d4b" id="r_aafe9bbbdf627cf059e9a0a82fcad4d4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aafe9bbbdf627cf059e9a0a82fcad4d4b">Kernel::mm_realloc_ptr</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> new_sz)</td></tr>
-<tr class="memdesc:aafe9bbbdf627cf059e9a0a82fcad4d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a new size for heap_ptr.  <br /></td></tr>
-<tr class="separator:aafe9bbbdf627cf059e9a0a82fcad4d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab26a8fd56aaad76b883b027cc5b47594" id="r_ab26a8fd56aaad76b883b027cc5b47594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab26a8fd56aaad76b883b027cc5b47594">Kernel::mm_new_ptr</a> (<a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> sz, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> wr, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> user, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> pad_amount=0)</td></tr>
 <tr class="memdesc:ab26a8fd56aaad76b883b027cc5b47594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate chunk of memory.  <br /></td></tr>
 <tr class="separator:ab26a8fd56aaad76b883b027cc5b47594"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +169,7 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aeb33a27af8d703b08d25c38a7ffbd143" id="r_aeb33a27af8d703b08d25c38a7ffbd143"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="namespace_kernel_1_1_detail.html#a413dd27937a507eda0a290f6f19bb624">PACKED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#aeb33a27af8d703b08d25c38a7ffbd143">Kernel::Detail::MM_INFORMATION_BLOCK</a></td></tr>
 <tr class="separator:aeb33a27af8d703b08d25c38a7ffbd143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ca92c021ae1f476ce50295dc9247747" id="r_a1ca92c021ae1f476ce50295dc9247747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_page_mgr.html">PageMgr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a1ca92c021ae1f476ce50295dc9247747">Kernel::kPageMgr</a></td></tr>
+<tr class="memitem:a1ca92c021ae1f476ce50295dc9247747" id="r_a1ca92c021ae1f476ce50295dc9247747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_page_mgr.html">PageMgr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a1ca92c021ae1f476ce50295dc9247747">Kernel::kPageMgr</a></td></tr>
 <tr class="separator:a1ca92c021ae1f476ce50295dc9247747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

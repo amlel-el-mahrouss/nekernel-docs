@@ -12,8 +12,8 @@ var searchData=
   ['sigkill_9',['SIGKILL',['../_signals_8h.html#addd8dcd406ce514ab3b4f576a5343d42',1,'Signals.h']]],
   ['sigpaus_10',['SIGPAUS',['../_signals_8h.html#a7a6ee33cbc5279bd9133923c4fb58a16',1,'Signals.h']]],
   ['sigtrap_11',['SIGTRAP',['../_signals_8h.html#aa2beb906ab1b46676e63823f4e773c38',1,'Signals.h']]],
-  ['static_12',['STATIC',['../kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'Macros.h']]],
+  ['static_12',['STATIC',['../kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'Macros.h']]],
   ['strcmp_13',['StrCmp',['../_support_8h.html#ab3944184d7c3bdf03f64a5c931464b08',1,'Support.h']]],
-  ['stringify_14',['STRINGIFY',['../kernel_2_new_kit_2macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'Macros.h']]],
+  ['stringify_14',['STRINGIFY',['../kernel_2_ne_kit_2macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'Macros.h']]],
   ['strlen_15',['StrLen',['../_support_8h.html#a94a5b7998848651b99c8b45e19c534d7',1,'Support.h']]]
 ];

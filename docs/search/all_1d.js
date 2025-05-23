@@ -19,6 +19,5 @@ var searchData=
   ['xcoff_5ffile_5fheader64_16',['XCOFF_FILE_HEADER64',['../_x_c_o_f_f_8h.html#a36923ad2a5e2579c33546dddef6a4cb5',1,'XCOFF.h']]],
   ['xcoff_5ffork_5fheader_17',['xcoff_fork_header',['../_x_c_o_f_f_8h.html#a6ed5ed1baa0bec226f725f447818a31d',1,'XCOFF_FORK_HEADER:&#160;XCOFF.h'],['../struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html',1,'XCOFF_FORK_HEADER']]],
   ['xhci_2eh_18',['XHCI.h',['../_x_h_c_i_8h.html',1,'']]],
-  ['xn_19',['XN',['../struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html#a1dd7d358fc9a60e756c703a6c038bd33',1,'Kernel::HAL::PTE_4KB']]],
-  ['xsdtaddress_20',['XsdtAddress',['../class_kernel_1_1_r_s_d_p.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
+  ['xsdtaddress_19',['XsdtAddress',['../class_kernel_1_1_r_s_d_p.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
 ];

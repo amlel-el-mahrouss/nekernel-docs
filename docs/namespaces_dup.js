@@ -51,5 +51,6 @@ var namespaces_dup =
       [ "set_bit", "namespaceutl.html#aa938e907f6abff4448ad6d7345c9b6c1", null ],
       [ "shift_left", "namespaceutl.html#abd67ca9cf9e9317ee527b31d44cae28d", null ],
       [ "words_in_bits", "namespaceutl.html#a30650c701569e3075fcb29e63348536e", null ]
-    ] ]
+    ] ],
+    [ "ZXD", "namespace_z_x_d.html", "namespace_z_x_d" ]
 ];

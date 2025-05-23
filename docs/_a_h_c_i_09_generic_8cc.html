@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_a_h_c_i_09_generic_8cc.html',''); ini
 <code>#include &lt;<a class="el" href="_iterator_8h_source.html">KernelKit/PCI/Iterator.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_timer_8h_source.html">KernelKit/Timer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_new_kit_2_utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_ne_kit_2_utils_8h_source.html">NeKit/Utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kernel_2_storage_kit_2_a_h_c_i_8h_source.html">StorageKit/AHCI.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h_source.html">modules/AHCI/AHCI.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="modules_2_a_t_a_2_a_t_a_8h_source.html">modules/ATA/ATA.h</a>&gt;</code><br />
@@ -161,33 +161,31 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab1139988002f8f9872916fa5478f9a17" id="r_ab1139988002f8f9872916fa5478f9a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_hardware_timer.html">HardwareTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#ab1139988002f8f9872916fa5478f9a17">kSATATimer</a> (rtl_milliseconds(5))</td></tr>
-<tr class="separator:ab1139988002f8f9872916fa5478f9a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3670d51fe96230509a7954eccf118f" id="r_a0a3670d51fe96230509a7954eccf118f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a0a3670d51fe96230509a7954eccf118f">ALIGN</a> (<a class="el" href="kernel_2_new_kit_2macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(4)) <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kIdentifyData[<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a84d4845ed5b2748f0406bdb131d4da7a">kAHCISectorSize</a>]</td></tr>
+<tr class="memitem:a0a3670d51fe96230509a7954eccf118f" id="r_a0a3670d51fe96230509a7954eccf118f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a0a3670d51fe96230509a7954eccf118f">ALIGN</a> (<a class="el" href="kernel_2_ne_kit_2macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(4)) <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kIdentifyData[<a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a84d4845ed5b2748f0406bdb131d4da7a">kAHCISectorSize</a>]</td></tr>
 <tr class="separator:a0a3670d51fe96230509a7954eccf118f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b8dc8469414e865471bdbfeaad4206" id="r_ab8b8dc8469414e865471bdbfeaad4206"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Write, <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> CommandOrCTRL, <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Identify&gt; </td></tr>
-<tr class="memitem:ab8b8dc8469414e865471bdbfeaad4206"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#ab8b8dc8469414e865471bdbfeaad4206">drv_std_input_output_ahci</a> (<a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> lba, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *buffer, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> sector_sz, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size_buffer) noexcept</td></tr>
+<tr class="memitem:ab8b8dc8469414e865471bdbfeaad4206"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#ab8b8dc8469414e865471bdbfeaad4206">drv_std_input_output_ahci</a> (<a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> lba, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *buffer, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> sector_sz, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size_buffer) noexcept</td></tr>
 <tr class="memdesc:ab8b8dc8469414e865471bdbfeaad4206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an AHCI command, according to the template parameters.  <br /></td></tr>
 <tr class="separator:ab8b8dc8469414e865471bdbfeaad4206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81793346f8465f747d5174aa7c5f3305" id="r_a81793346f8465f747d5174aa7c5f3305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a81793346f8465f747d5174aa7c5f3305">drv_find_cmd_slot_ahci</a> (<a class="el" href="struct_hba_port.html">HbaPort</a> *port) noexcept</td></tr>
+<tr class="memitem:a81793346f8465f747d5174aa7c5f3305" id="r_a81793346f8465f747d5174aa7c5f3305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a81793346f8465f747d5174aa7c5f3305">drv_find_cmd_slot_ahci</a> (<a class="el" href="struct_hba_port.html">HbaPort</a> *port) noexcept</td></tr>
 <tr class="memdesc:a81793346f8465f747d5174aa7c5f3305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a command slot for a HBA port.  <br /></td></tr>
 <tr class="separator:a81793346f8465f747d5174aa7c5f3305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67852af44304f7a502bc211ad0701db2" id="r_a67852af44304f7a502bc211ad0701db2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a67852af44304f7a502bc211ad0701db2">drv_compute_disk_ahci</a> () noexcept</td></tr>
+<tr class="memitem:a67852af44304f7a502bc211ad0701db2" id="r_a67852af44304f7a502bc211ad0701db2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a67852af44304f7a502bc211ad0701db2">drv_compute_disk_ahci</a> () noexcept</td></tr>
 <tr class="memdesc:a67852af44304f7a502bc211ad0701db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify device and read LBA info, Disk OEM vendor.  <br /></td></tr>
 <tr class="separator:a67852af44304f7a502bc211ad0701db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4769cdeecba4653577ddd0aa4692312" id="r_af4769cdeecba4653577ddd0aa4692312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#af4769cdeecba4653577ddd0aa4692312">drv_get_size_ahci</a> ()</td></tr>
+<tr class="memitem:af4769cdeecba4653577ddd0aa4692312" id="r_af4769cdeecba4653577ddd0aa4692312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#af4769cdeecba4653577ddd0aa4692312">drv_get_size_ahci</a> ()</td></tr>
 <tr class="separator:af4769cdeecba4653577ddd0aa4692312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5611ccbe12338713d724d62d411e0e53" id="r_a5611ccbe12338713d724d62d411e0e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a5611ccbe12338713d724d62d411e0e53">drv_get_sector_count_ahci</a> ()</td></tr>
+<tr class="memitem:a5611ccbe12338713d724d62d411e0e53" id="r_a5611ccbe12338713d724d62d411e0e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a5611ccbe12338713d724d62d411e0e53">drv_get_sector_count_ahci</a> ()</td></tr>
 <tr class="separator:a5611ccbe12338713d724d62d411e0e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d7813063c4a6f58790873fe6404b09" id="r_ab9d7813063c4a6f58790873fe6404b09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#ab9d7813063c4a6f58790873fe6404b09">ATTRIBUTE</a> (unused) <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> <a class="el" href="_a_h_c_i_09_generic_8cc.html#af4769cdeecba4653577ddd0aa4692312">drv_get_size_ahci</a>()</td></tr>
+<tr class="memitem:ab9d7813063c4a6f58790873fe6404b09" id="r_ab9d7813063c4a6f58790873fe6404b09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#ab9d7813063c4a6f58790873fe6404b09">ATTRIBUTE</a> (unused) <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> <a class="el" href="_a_h_c_i_09_generic_8cc.html#af4769cdeecba4653577ddd0aa4692312">drv_get_size_ahci</a>()</td></tr>
 <tr class="memdesc:ab9d7813063c4a6f58790873fe6404b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the drive size.  <br /></td></tr>
 <tr class="separator:ab9d7813063c4a6f58790873fe6404b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38329190ca6e876c73403c2e83216c49" id="r_a38329190ca6e876c73403c2e83216c49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a38329190ca6e876c73403c2e83216c49">ahci_enable_and_probe</a> ()</td></tr>
+<tr class="memitem:a38329190ca6e876c73403c2e83216c49" id="r_a38329190ca6e876c73403c2e83216c49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a38329190ca6e876c73403c2e83216c49">ahci_enable_and_probe</a> ()</td></tr>
 <tr class="memdesc:a38329190ca6e876c73403c2e83216c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Host and probe using the IDENTIFY command.  <br /></td></tr>
 <tr class="separator:a38329190ca6e876c73403c2e83216c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22af5797b4a4776794a0b7f5684705c4" id="r_a22af5797b4a4776794a0b7f5684705c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a22af5797b4a4776794a0b7f5684705c4">drv_init_command_structures_ahci</a> ()</td></tr>
+<tr class="memitem:a22af5797b4a4776794a0b7f5684705c4" id="r_a22af5797b4a4776794a0b7f5684705c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a22af5797b4a4776794a0b7f5684705c4">drv_init_command_structures_ahci</a> ()</td></tr>
 <tr class="separator:a22af5797b4a4776794a0b7f5684705c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf101e92a70ac5e67b6e7823ffc9152a" id="r_abf101e92a70ac5e67b6e7823ffc9152a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#abf101e92a70ac5e67b6e7823ffc9152a">drv_std_init_ahci</a> (<a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;pi, <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> &amp;atapi)</td></tr>
+<tr class="memitem:abf101e92a70ac5e67b6e7823ffc9152a" id="r_abf101e92a70ac5e67b6e7823ffc9152a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#abf101e92a70ac5e67b6e7823ffc9152a">drv_std_init_ahci</a> (<a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;pi, <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> &amp;atapi)</td></tr>
 <tr class="memdesc:abf101e92a70ac5e67b6e7823ffc9152a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an AHCI disk.  <br /></td></tr>
 <tr class="separator:abf101e92a70ac5e67b6e7823ffc9152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581628e54347deeee3e90542cb2e5c35" id="r_a581628e54347deeee3e90542cb2e5c35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a581628e54347deeee3e90542cb2e5c35">drv_std_detected_ahci</a> ()</td></tr>
@@ -196,10 +194,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a1f72e96134d47a24bad09cdea3222847" id="r_a1f72e96134d47a24bad09cdea3222847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a1f72e96134d47a24bad09cdea3222847">Kernel::sk_init_ahci_device</a> (<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> atapi)</td></tr>
 <tr class="memdesc:a1f72e96134d47a24bad09cdea3222847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an AHCI device (StorageKit)  <br /></td></tr>
 <tr class="separator:a1f72e96134d47a24bad09cdea3222847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5309d5033bbee2c09242d9bc1a9249a" id="r_af5309d5033bbee2c09242d9bc1a9249a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#af5309d5033bbee2c09242d9bc1a9249a">Kernel::Detail::sk_io_read_ahci</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
+<tr class="memitem:af5309d5033bbee2c09242d9bc1a9249a" id="r_af5309d5033bbee2c09242d9bc1a9249a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#af5309d5033bbee2c09242d9bc1a9249a">Kernel::Detail::sk_io_read_ahci</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
 <tr class="memdesc:af5309d5033bbee2c09242d9bc1a9249a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read AHCI device.  <br /></td></tr>
 <tr class="separator:af5309d5033bbee2c09242d9bc1a9249a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a56274e3fe11028ff6bd8bfe14c854" id="r_af0a56274e3fe11028ff6bd8bfe14c854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#af0a56274e3fe11028ff6bd8bfe14c854">Kernel::Detail::sk_io_write_ahci</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
+<tr class="memitem:af0a56274e3fe11028ff6bd8bfe14c854" id="r_af0a56274e3fe11028ff6bd8bfe14c854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#af0a56274e3fe11028ff6bd8bfe14c854">Kernel::Detail::sk_io_write_ahci</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
 <tr class="memdesc:af0a56274e3fe11028ff6bd8bfe14c854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write AHCI device.  <br /></td></tr>
 <tr class="separator:af0a56274e3fe11028ff6bd8bfe14c854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b470af7f2a61a6294aa582770dcc33f" id="r_a6b470af7f2a61a6294aa582770dcc33f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; AHCIDeviceInterface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a6b470af7f2a61a6294aa582770dcc33f">Kernel::sk_acquire_ahci_device</a> (<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_index)</td></tr>
@@ -208,17 +206,17 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:afd5804aa0056abe7581eacf5b2c7aedf" id="r_afd5804aa0056abe7581eacf5b2c7aedf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_p_c_i_1_1_device.html">PCI::Device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#afd5804aa0056abe7581eacf5b2c7aedf">kSATADev</a></td></tr>
+<tr class="memitem:afd5804aa0056abe7581eacf5b2c7aedf" id="r_afd5804aa0056abe7581eacf5b2c7aedf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_p_c_i_1_1_device.html">PCI::Device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#afd5804aa0056abe7581eacf5b2c7aedf">kSATADev</a></td></tr>
 <tr class="separator:afd5804aa0056abe7581eacf5b2c7aedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61f41f9f33998e2cecd6d824de6d6f98" id="r_a61f41f9f33998e2cecd6d824de6d6f98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a43b142b9efb9165ea0ac216f5ef89a73">HbaMemRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a61f41f9f33998e2cecd6d824de6d6f98">kSATAHba</a></td></tr>
+<tr class="memitem:a61f41f9f33998e2cecd6d824de6d6f98" id="r_a61f41f9f33998e2cecd6d824de6d6f98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a43b142b9efb9165ea0ac216f5ef89a73">HbaMemRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a61f41f9f33998e2cecd6d824de6d6f98">kSATAHba</a></td></tr>
 <tr class="separator:a61f41f9f33998e2cecd6d824de6d6f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874e4a5ae6c5e6c37c9515d4bddf4110" id="r_a874e4a5ae6c5e6c37c9515d4bddf4110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a874e4a5ae6c5e6c37c9515d4bddf4110">kSATASectorCount</a> = 0UL</td></tr>
+<tr class="memitem:a874e4a5ae6c5e6c37c9515d4bddf4110" id="r_a874e4a5ae6c5e6c37c9515d4bddf4110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a874e4a5ae6c5e6c37c9515d4bddf4110">kSATASectorCount</a> = 0UL</td></tr>
 <tr class="separator:a874e4a5ae6c5e6c37c9515d4bddf4110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5450b73830ec02982aa12ab3928aef3e" id="r_a5450b73830ec02982aa12ab3928aef3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a5450b73830ec02982aa12ab3928aef3e">kSATAIndex</a> = 0U</td></tr>
+<tr class="memitem:a5450b73830ec02982aa12ab3928aef3e" id="r_a5450b73830ec02982aa12ab3928aef3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a5450b73830ec02982aa12ab3928aef3e">kSATAIndex</a> = 0U</td></tr>
 <tr class="separator:a5450b73830ec02982aa12ab3928aef3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92964c52ff13bc8cf67c2d61c1feee74" id="r_a92964c52ff13bc8cf67c2d61c1feee74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a92964c52ff13bc8cf67c2d61c1feee74">kCurrentDiskModel</a> [50] = {&quot;GENERIC SATA&quot;}</td></tr>
+<tr class="memitem:a92964c52ff13bc8cf67c2d61c1feee74" id="r_a92964c52ff13bc8cf67c2d61c1feee74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a92964c52ff13bc8cf67c2d61c1feee74">kCurrentDiskModel</a> [50] = {&quot;GENERIC SATA&quot;}</td></tr>
 <tr class="separator:a92964c52ff13bc8cf67c2d61c1feee74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5b524098fc0bfdaf1a1dee5f0c93f2" id="r_a1c5b524098fc0bfdaf1a1dee5f0c93f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a1c5b524098fc0bfdaf1a1dee5f0c93f2">kSATAPortsImplemented</a> = 0U</td></tr>
+<tr class="memitem:a1c5b524098fc0bfdaf1a1dee5f0c93f2" id="r_a1c5b524098fc0bfdaf1a1dee5f0c93f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_h_c_i_09_generic_8cc.html#a1c5b524098fc0bfdaf1a1dee5f0c93f2">kSATAPortsImplemented</a> = 0U</td></tr>
 <tr class="separator:a1c5b524098fc0bfdaf1a1dee5f0c93f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -460,7 +458,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> ahci_enable_and_probe </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> ahci_enable_and_probe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -479,9 +477,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> ALIGN </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> ALIGN </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(4)&#160;</td>
+          <td class="paramtype"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(4)&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -497,7 +495,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> ATTRIBUTE </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> ATTRIBUTE </td>
           <td>(</td>
           <td class="paramtype">unused&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -522,7 +520,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> drv_compute_disk_ahci </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> drv_compute_disk_ahci </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -550,7 +548,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_find_cmd_slot_ahci </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_find_cmd_slot_ahci </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_hba_port.html">HbaPort</a> *&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
@@ -582,7 +580,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> drv_get_sector_count_ahci </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> drv_get_sector_count_ahci </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -599,7 +597,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> drv_get_size_ahci </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> drv_get_size_ahci </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -616,7 +614,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> drv_init_command_structures_ahci </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> drv_init_command_structures_ahci </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -653,7 +651,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> drv_std_init_ahci </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> drv_std_init_ahci </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;&#160;</td>
           <td class="paramname"><em>pi</em>, </td>
@@ -696,7 +694,7 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> drv_std_input_output_ahci </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> drv_std_input_output_ahci </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td>
           <td class="paramname"><em>lba</em>, </td>
@@ -745,24 +743,6 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
 
 </div>
 </div>
-<a id="ab1139988002f8f9872916fa5478f9a17" name="ab1139988002f8f9872916fa5478f9a17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1139988002f8f9872916fa5478f9a17">&#9670;&#160;</a></span>kSATATimer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_hardware_timer.html">HardwareTimer</a> kSATATimer </td>
-          <td>(</td>
-          <td class="paramtype">rtl_milliseconds(5)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a92964c52ff13bc8cf67c2d61c1feee74" name="a92964c52ff13bc8cf67c2d61c1feee74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92964c52ff13bc8cf67c2d61c1feee74">&#9670;&#160;</a></span>kCurrentDiskModel</h2>
@@ -771,7 +751,7 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> kCurrentDiskModel[50] = {&quot;GENERIC SATA&quot;}</td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> kCurrentDiskModel[50] = {&quot;GENERIC SATA&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -785,7 +765,7 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_p_c_i_1_1_device.html">PCI::Device</a> kSATADev</td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="class_kernel_1_1_p_c_i_1_1_device.html">PCI::Device</a> kSATADev</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -799,7 +779,7 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a43b142b9efb9165ea0ac216f5ef89a73">HbaMemRef</a> kSATAHba</td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="modules_2_a_h_c_i_2_a_h_c_i_8h.html#a43b142b9efb9165ea0ac216f5ef89a73">HbaMemRef</a> kSATAHba</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -813,7 +793,7 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kSATAIndex = 0U</td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kSATAIndex = 0U</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -827,7 +807,7 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kSATAPortsImplemented = 0U</td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kSATAPortsImplemented = 0U</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -841,7 +821,7 @@ template&lt;<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810f
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a> kSATASectorCount = 0UL</td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a> kSATASectorCount = 0UL</td>
         </tr>
       </table>
 </div><div class="memdoc">

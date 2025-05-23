@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('_hardware_thread_scheduler_8h.html',''
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_compiler_kit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2_new_kit_2_ref_8h_source.html">NewKit/Ref.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dev_2kernel_2_ne_kit_2_ref_8h_source.html">NeKit/Ref.h</a>&gt;</code><br />
 </div>
 <p><a href="_hardware_thread_scheduler_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -133,8 +133,8 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:abf43712634987021cb1b00decb0f91f2" id="r_abf43712634987021cb1b00decb0f91f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2">Kernel::ThreadKind</a> { <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2a88a960ab6395cc9b2eb61ee2e728549e">Kernel::kAPInvalid</a>
-, <a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2acfefe218fa2e85a473595c4913270913">Kernel::kAPSystemReserved</a>
+&#160;&#160;<a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2a88a960ab6395cc9b2eb61ee2e728549e">Kernel::kAPInvalid</a> = 0
+, <a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2acfefe218fa2e85a473595c4913270913">Kernel::kAPSystemReserved</a> = 100
 , <a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2a95045bf7fe74311aa0441da1df778acb">Kernel::kAPStandard</a>
 , <a class="el" href="namespace_kernel.html#abf43712634987021cb1b00decb0f91f2a08aa70989aa53b54244b6d014bee5643">Kernel::kAPRealTime</a>
 , <br />
@@ -149,10 +149,10 @@ Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">HardwareThreadScheduler</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Class to manage the thread scheduling. </p>
 </div></td></tr>
-<tr class="memitem:ab76a39d56c9856ec0080e25627843e96" id="r_ab76a39d56c9856ec0080e25627843e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab76a39d56c9856ec0080e25627843e96">Kernel::mp_wakeup_thread</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack)</td></tr>
+<tr class="memitem:ab76a39d56c9856ec0080e25627843e96" id="r_ab76a39d56c9856ec0080e25627843e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab76a39d56c9856ec0080e25627843e96">Kernel::mp_wakeup_thread</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#a170dff87d6222eaa9789656777293277">HAL::StackFramePtr</a> stack)</td></tr>
 <tr class="memdesc:ab76a39d56c9856ec0080e25627843e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">wakes up thread. wakes up thread from hang.  <br /></td></tr>
 <tr class="separator:ab76a39d56c9856ec0080e25627843e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add9ede6e160b5b12fffa1a1cbe003250" id="r_add9ede6e160b5b12fffa1a1cbe003250"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#add9ede6e160b5b12fffa1a1cbe003250">Kernel::mp_hang_thread</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#aba672fa291f54ca77d557633ee59c56b">HAL::StackFramePtr</a> stack)</td></tr>
+<tr class="memitem:add9ede6e160b5b12fffa1a1cbe003250" id="r_add9ede6e160b5b12fffa1a1cbe003250"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#add9ede6e160b5b12fffa1a1cbe003250">Kernel::mp_hang_thread</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#a170dff87d6222eaa9789656777293277">HAL::StackFramePtr</a> stack)</td></tr>
 <tr class="memdesc:add9ede6e160b5b12fffa1a1cbe003250"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes thread sleep. hooks and hangs thread to prevent code from executing.  <br /></td></tr>
 <tr class="separator:add9ede6e160b5b12fffa1a1cbe003250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

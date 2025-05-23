@@ -2,14 +2,14 @@ var searchData=
 [
   ['halacpifactoryinterface_2ecc_0',['halacpifactoryinterface.cc',['../_a_r_m64_2_hal_a_c_p_i_factory_interface_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc.html',1,'(Global Namespace)']]],
   ['halapicdmawrapper_2ecc_1',['HalAPICDmaWrapper.cc',['../_hal_a_p_i_c_dma_wrapper_8cc.html',1,'']]],
-  ['halapplicationprocessor_2ecc_2',['halapplicationprocessor.cc',['../_a_r_m64_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_r_i_s_c_v_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_p_o_w_e_r_2_hal_application_processor_8cc.html',1,'(Global Namespace)']]],
+  ['halapplicationprocessor_2ecc_2',['halapplicationprocessor.cc',['../_p_o_w_e_r_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_a_r_m64_2_hal_application_processor_8cc.html',1,'(Global Namespace)'],['../_r_i_s_c_v_2_hal_application_processor_8cc.html',1,'(Global Namespace)']]],
   ['halcoreinterrupthandleramd64_2ecc_3',['HalCoreInterruptHandlerAMD64.cc',['../_hal_core_interrupt_handler_a_m_d64_8cc.html',1,'']]],
   ['halcoresystemcalls_2ecc_4',['HalCoreSystemCalls.cc',['../_hal_core_system_calls_8cc.html',1,'']]],
-  ['haldebugoutput_2ecc_5',['haldebugoutput.cc',['../_p_o_w_e_r_2_hal_debug_output_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_debug_output_8cc.html',1,'(Global Namespace)'],['../_a_r_m64_2_hal_debug_output_8cc.html',1,'(Global Namespace)']]],
+  ['haldebugoutput_2ecc_5',['haldebugoutput.cc',['../_p_o_w_e_r_2_hal_debug_output_8cc.html',1,'(Global Namespace)'],['../_a_r_m64_2_hal_debug_output_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_debug_output_8cc.html',1,'(Global Namespace)']]],
   ['haldebugport_2ecc_6',['HalDebugPort.cc',['../_hal_debug_port_8cc.html',1,'']]],
   ['haldescriptorloader_2ecc_7',['HalDescriptorLoader.cc',['../_hal_descriptor_loader_8cc.html',1,'']]],
   ['halhardwarethread_2ecc_8',['HalHardwareThread.cc',['../_hal_hardware_thread_8cc.html',1,'']]],
-  ['halkernelmain_2ecc_9',['halkernelmain.cc',['../_a_r_m64_2_hal_kernel_main_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_hal_kernel_main_8cc.html',1,'(Global Namespace)']]],
+  ['halkernelmain_2ecc_9',['halkernelmain.cc',['../_a_m_d64_2_hal_kernel_main_8cc.html',1,'(Global Namespace)'],['../_a_r_m64_2_hal_kernel_main_8cc.html',1,'(Global Namespace)']]],
   ['halkernelpanic_2ecc_10',['halkernelpanic.cc',['../_a_m_d64_2_hal_kernel_panic_8cc.html',1,'(Global Namespace)'],['../_a_r_m64_2_hal_kernel_panic_8cc.html',1,'(Global Namespace)']]],
   ['halpagingmgramd64_2ecc_11',['HalPagingMgrAMD64.cc',['../_hal_paging_mgr_a_m_d64_8cc.html',1,'']]],
   ['halpagingmgrarm64_2ecc_12',['HalPagingMgrARM64.cc',['../_hal_paging_mgr_a_r_m64_8cc.html',1,'']]],
@@ -23,8 +23,11 @@ var searchData=
   ['handover_2eh_20',['Handover.h',['../_handover_8h.html',1,'']]],
   ['hardwarethreadscheduler_2ecc_21',['HardwareThreadScheduler.cc',['../_hardware_thread_scheduler_8cc.html',1,'']]],
   ['hardwarethreadscheduler_2eh_22',['HardwareThreadScheduler.h',['../_hardware_thread_scheduler_8h.html',1,'']]],
-  ['hefs_2bfilemgr_2ecc_23',['HeFS+FileMgr.cc',['../_he_f_s_09_file_mgr_8cc.html',1,'']]],
-  ['hefs_2bfilesystemparser_2ecc_24',['HeFS+FileSystemParser.cc',['../_he_f_s_09_file_system_parser_8cc.html',1,'']]],
-  ['hefs_2eh_25',['hefs.h',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html',1,'(Global Namespace)'],['../tooling_2_he_f_s_8h.html',1,'(Global Namespace)']]],
-  ['hypervisor_2eh_26',['Hypervisor.h',['../_hypervisor_8h.html',1,'']]]
+  ['heapmgr_2ecc_23',['HeapMgr.cc',['../_heap_mgr_8cc.html',1,'']]],
+  ['heapmgr_2eh_24',['HeapMgr.h',['../_heap_mgr_8h.html',1,'']]],
+  ['heapmgr_2einl_25',['HeapMgr.inl',['../_heap_mgr_8inl.html',1,'']]],
+  ['hefs_2bfilemgr_2ecc_26',['HeFS+FileMgr.cc',['../_he_f_s_09_file_mgr_8cc.html',1,'']]],
+  ['hefs_2bfilesystemparser_2ecc_27',['HeFS+FileSystemParser.cc',['../_he_f_s_09_file_system_parser_8cc.html',1,'']]],
+  ['hefs_2eh_28',['hefs.h',['../dev_2kernel_2_f_s_kit_2_he_f_s_8h.html',1,'(Global Namespace)'],['../tooling_2_he_f_s_8h.html',1,'(Global Namespace)']]],
+  ['hypervisor_2eh_29',['Hypervisor.h',['../_hypervisor_8h.html',1,'']]]
 ];

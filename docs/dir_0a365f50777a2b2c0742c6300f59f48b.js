@@ -12,6 +12,6 @@ var dir_0a365f50777a2b2c0742c6300f59f48b =
     [ "HalSchedulerCoreARM64.cc", "_hal_scheduler_core_a_r_m64_8cc.html", "_hal_scheduler_core_a_r_m64_8cc" ],
     [ "HalSchedulerCorePrimitivesARM64.cc", "_hal_scheduler_core_primitives_a_r_m64_8cc.html", "_hal_scheduler_core_primitives_a_r_m64_8cc" ],
     [ "HalTimerARM64.cc", "_hal_timer_a_r_m64_8cc.html", null ],
-    [ "Paging.h", "_a_r_m64_2_paging_8h.html", "_a_r_m64_2_paging_8h" ],
-    [ "Processor.h", "_a_r_m64_2_processor_8h.html", "_a_r_m64_2_processor_8h" ]
+    [ "Paging.h", "_a_r_m64_2_paging_8h.html", null ],
+    [ "Processor.h", "_a_r_m64_2_processor_8h.html", null ]
 ];

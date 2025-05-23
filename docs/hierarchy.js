@@ -97,7 +97,6 @@ var hierarchy =
     [ "FisRegD2H", "struct_fis_reg_d2_h.html", null ],
     [ "FisRegH2D", "struct_fis_reg_h2_d.html", null ],
     [ "Kernel::Function< T, Args >", "class_kernel_1_1_function.html", null ],
-    [ "Kernel::HAL::GDTLoader", "class_kernel_1_1_h_a_l_1_1_g_d_t_loader.html", null ],
     [ "Kernel::GPT_PARTITION_ENTRY", "struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___e_n_t_r_y.html", null ],
     [ "Kernel::GPT_PARTITION_TABLE", "struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html", null ],
     [ "CF::XRN::GUID", "class_c_f_1_1_x_r_n_1_1_g_u_i_d.html", null ],
@@ -134,13 +133,10 @@ var hierarchy =
     [ "Kernel::IDeviceObject< NetworkDeviceCommand >", "class_kernel_1_1_i_device_object.html", [
       [ "Kernel::NetworkDevice", "class_kernel_1_1_network_device.html", null ]
     ] ],
-    [ "Kernel::HAL::IDTLoader", "class_kernel_1_1_h_a_l_1_1_i_d_t_loader.html", null ],
     [ "Kernel::IDylibObject", "class_kernel_1_1_i_dylib_object.html", null ],
     [ "Kernel::IFilesystemMgr", "class_kernel_1_1_i_filesystem_mgr.html", null ],
     [ "Kernel::IMBCIHost", "struct_kernel_1_1_i_m_b_c_i_host.html", null ],
     [ "Kernel::Indexer::Index", "struct_kernel_1_1_indexer_1_1_index.html", null ],
-    [ "Kernel::HAL::InterruptDescriptor", "class_kernel_1_1_h_a_l_1_1_interrupt_descriptor.html", null ],
-    [ "Kernel::Detail::AMD64::InterruptDescriptorAMD64", "struct_kernel_1_1_detail_1_1_a_m_d64_1_1_interrupt_descriptor_a_m_d64.html", null ],
     [ "Kernel::IOArray< Sz >", "class_kernel_1_1_i_o_array.html", null ],
     [ "Kernel::IOBuf< T >", "class_kernel_1_1_i_o_buf.html", null ],
     [ "Kernel::IPC_ADDR", "struct_kernel_1_1_i_p_c___a_d_d_r.html", null ],
@@ -153,12 +149,11 @@ var hierarchy =
     [ "Kernel::PCI::Iterator", "class_kernel_1_1_p_c_i_1_1_iterator.html", null ],
     [ "Kernel::Json", "class_kernel_1_1_json.html", null ],
     [ "Kernel::JsonStreamReader", "struct_kernel_1_1_json_stream_reader.html", null ],
-    [ "Kernel::KERNEL_TASK", "struct_kernel_1_1_k_e_r_n_e_l___t_a_s_k.html", null ],
+    [ "Kernel::KERNEL_TASK", "class_kernel_1_1_k_e_r_n_e_l___t_a_s_k.html", null ],
     [ "Kernel::KernelDebugHeader", "class_kernel_1_1_kernel_debug_header.html", null ],
     [ "Kernel::KString", "class_kernel_1_1_k_string.html", null ],
     [ "Kernel::KStringBuilder", "class_kernel_1_1_k_string_builder.html", null ],
     [ "Kernel::HAL::LAPIC", "struct_kernel_1_1_h_a_l_1_1_l_a_p_i_c.html", null ],
-    [ "Kernel::HAL::LAPICDmaWrapper", "class_kernel_1_1_h_a_l_1_1_l_a_p_i_c_dma_wrapper.html", null ],
     [ "LDR_DATA_DIRECTORY", "struct_l_d_r___d_a_t_a___d_i_r_e_c_t_o_r_y.html", null ],
     [ "LDR_EXEC_HEADER", "struct_l_d_r___e_x_e_c___h_e_a_d_e_r.html", null ],
     [ "LDR_EXPORT_DIRECTORY", "struct_l_d_r___e_x_p_o_r_t___d_i_r_e_c_t_o_r_y.html", null ],
@@ -181,10 +176,7 @@ var hierarchy =
     [ "Kernel::NE_DEVICE< FBDevicePacket * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_f_b_device_packet_01_5_01_4.html", null ],
     [ "Kernel::NE_DEVICE< MountpointInterface * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4.html", null ],
     [ "Kernel::NE_DYLIB_OBJECT", "class_kernel_1_1_n_e___d_y_l_i_b___o_b_j_e_c_t.html", null ],
-    [ "Kernel::HAL::Detail::NE_GDT_ENTRY", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_n_e___g_d_t___e_n_t_r_y.html", null ],
-    [ "Kernel::HAL::NE_PAGE_STORE", "struct_kernel_1_1_h_a_l_1_1_n_e___p_a_g_e___s_t_o_r_e.html", null ],
     [ "Kernel::NE_POWER_FACTORY", "class_kernel_1_1_n_e___p_o_w_e_r___f_a_c_t_o_r_y.html", null ],
-    [ "Kernel::HAL::Detail::NE_TSS", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_n_e___t_s_s.html", null ],
     [ "Kernel::NeFileSystemHelper", "class_kernel_1_1_ne_file_system_helper.html", null ],
     [ "Kernel::NeFileSystemJournal", "class_kernel_1_1_ne_file_system_journal.html", null ],
     [ "Kernel::NeFileSystemParser", "class_kernel_1_1_ne_file_system_parser.html", null ],
@@ -201,8 +193,6 @@ var hierarchy =
     [ "Kernel::OwnPtr< T >", "class_kernel_1_1_own_ptr.html", null ],
     [ "Kernel::OwnPtr< Kernel::FileStream< Char > >", "class_kernel_1_1_own_ptr.html", null ],
     [ "Kernel::PageMgr", "struct_kernel_1_1_page_mgr.html", null ],
-    [ "Kernel::PDE", "struct_kernel_1_1_p_d_e.html", null ],
-    [ "Kernel::HAL::PDE_4KB", "struct_kernel_1_1_h_a_l_1_1_p_d_e__4_k_b.html", null ],
     [ "Kernel::PEFCommandHeader", "struct_kernel_1_1_p_e_f_command_header.html", null ],
     [ "Kernel::PEFContainer", "struct_kernel_1_1_p_e_f_container.html", null ],
     [ "pfd::internal::platform", "classpfd_1_1internal_1_1platform.html", [
@@ -220,7 +210,6 @@ var hierarchy =
     [ "Kernel::Pmm", "class_kernel_1_1_pmm.html", null ],
     [ "Kernel::PowerFactory", "class_kernel_1_1_power_factory.html", null ],
     [ "Kernel::PRDT", "struct_kernel_1_1_p_r_d_t.html", null ],
-    [ "Kernel::PROCESS_CONTROL_BLOCK", "struct_kernel_1_1_p_r_o_c_e_s_s___c_o_n_t_r_o_l___b_l_o_c_k.html", null ],
     [ "Kernel::PROCESS_FILE_TREE< T >", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e.html", null ],
     [ "Kernel::PROCESS_FILE_TREE< UInt32 * >", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e.html", null ],
     [ "Kernel::PROCESS_HEAP_TREE< T >", "struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html", null ],
@@ -230,8 +219,6 @@ var hierarchy =
       [ "Kernel::Indexer::IndexableProperty", "class_kernel_1_1_indexer_1_1_indexable_property.html", null ]
     ] ],
     [ "Kernel::HAL::Detail::PTE", "struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html", null ],
-    [ "Kernel::PTE", "struct_kernel_1_1_p_t_e.html", null ],
-    [ "Kernel::HAL::PTE_4KB", "struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html", null ],
     [ "Kernel::PTEWrapper", "class_kernel_1_1_p_t_e_wrapper.html", null ],
     [ "qr::Qr< V >", "structqr_1_1_qr.html", null ],
     [ "qr::QrDelegate", "classqr_1_1_qr_delegate.html", null ],
@@ -246,7 +233,6 @@ var hierarchy =
     [ "Kernel::Ref< Kernel::USER_PROCESS >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< Kind >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< StreamTrait >", "class_kernel_1_1_ref.html", null ],
-    [ "Kernel::HAL::Register64", "struct_kernel_1_1_h_a_l_1_1_register64.html", null ],
     [ "Kernel::RSDT", "class_kernel_1_1_r_s_d_t.html", null ],
     [ "BootDeviceSATA::SATATrait", "struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait.html", null ],
     [ "Kernel::SDT", "class_kernel_1_1_s_d_t.html", [
@@ -256,8 +242,6 @@ var hierarchy =
       [ "Kernel::RSDP", "class_kernel_1_1_r_s_d_p.html", null ]
     ] ],
     [ "Kernel::HAL::SDT_OBJECT", "struct_kernel_1_1_h_a_l_1_1_s_d_t___o_b_j_e_c_t.html", null ],
-    [ "Kernel::HAL::SegmentDescriptor", "class_kernel_1_1_h_a_l_1_1_segment_descriptor.html", null ],
-    [ "Kernel::HAL::SegmentDescriptorComparator", "class_kernel_1_1_h_a_l_1_1_segment_descriptor_comparator.html", null ],
     [ "pfd::settings", "classpfd_1_1settings.html", [
       [ "pfd::internal::dialog", "classpfd_1_1internal_1_1dialog.html", null ]
     ] ],
@@ -283,5 +267,8 @@ var hierarchy =
     [ "Kernel::UserProcessTeam", "class_kernel_1_1_user_process_team.html", null ],
     [ "Kernel::Variant", "class_kernel_1_1_variant.html", null ],
     [ "XCOFF_FILE_HEADER", "struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html", null ],
-    [ "XCOFF_FORK_HEADER", "struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html", null ]
+    [ "XCOFF_FORK_HEADER", "struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html", null ],
+    [ "ZXD::ZXD_EXEC_HEADER", "struct_z_x_d_1_1_z_x_d___e_x_e_c___h_e_a_d_e_r.html", [
+      [ "ZXD::ZXD_STUB_HEADER", "struct_z_x_d_1_1_z_x_d___s_t_u_b___h_e_a_d_e_r.html", null ]
+    ] ]
 ];

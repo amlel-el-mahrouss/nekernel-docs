@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['packed_0',['PACKED',['../kernel_2_new_kit_2macros_8h.html#a36d525cf4d116b2fe4ecc00222b256f1',1,'Macros.h']]],
+  ['packed_0',['PACKED',['../kernel_2_ne_kit_2macros_8h.html#a36d525cf4d116b2fe4ecc00222b256f1',1,'Macros.h']]],
   ['pci_5fbar_5f64_1',['PCI_BAR_64',['../_device_8cc.html#a575c08ec947154460975c8a0c30e195d',1,'Device.cc']]],
   ['pci_5fbar_5fio_2',['PCI_BAR_IO',['../_device_8cc.html#a959211a91f46ea1222f3f67486db9fd6',1,'Device.cc']]],
   ['pci_5fbar_5flowmem_3',['PCI_BAR_LOWMEM',['../_device_8cc.html#a8e4d5a1733d63679c69d3284b0e2c012',1,'Device.cc']]],

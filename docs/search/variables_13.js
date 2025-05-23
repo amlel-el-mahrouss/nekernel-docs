@@ -9,7 +9,7 @@ var searchData=
   ['unloadimage_6',['UnloadImage',['../struct_efi_boot_services.html#a2d3d00b2de314d99854593170d168bf4',1,'EfiBootServices']]],
   ['updatecapsule_7',['UpdateCapsule',['../struct_efi_runtime_services.html#a5796e43b0bc613e59598f01a54adbd72',1,'EfiRuntimeServices']]],
   ['usedmemory_8',['UsedMemory',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#ab18cce69ec3086c82501a6ba0e3a42ef',1,'Kernel::USER_PROCESS']]],
-  ['user_9',['user',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a3eee5be80a953a9e97ef9378197fe5c3',1,'Kernel::HAL::Detail::PTE::User'],['../struct_kernel_1_1_p_t_e.html#a4b629c9b29780aa2345e092fdd62827e',1,'Kernel::PTE::User']]],
+  ['user_9',['User',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a3eee5be80a953a9e97ef9378197fe5c3',1,'Kernel::HAL::Detail::PTE']]],
   ['user_5fprocess_10',['USER_PROCESS',['../struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#a93409cd974b05b5b30cfe9ae3df49159',1,'Kernel::PROCESS_IMAGE']]],
   ['userprocesshelper_11',['UserProcessHelper',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#ae0a498e5eca7e014fa42499bb6df3f6b',1,'Kernel::USER_PROCESS']]],
   ['userprocessid_12',['UserProcessID',['../struct_kernel_1_1_i_p_c___a_d_d_r.html#a91b6fb7f9a416990383e765a5ca83910',1,'Kernel::IPC_ADDR']]],

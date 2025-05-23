@@ -13,6 +13,5 @@ var searchData=
   ['x_5fpm1beventblock_10',['X_PM1bEventBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a4d84e472ceec859901fb1ddbafd38ba7',1,'Kernel::Detail::FADT']]],
   ['x_5fpm2controlblock_11',['X_PM2ControlBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a3838926b46b2a3fa26a280260a4b47c3',1,'Kernel::Detail::FADT']]],
   ['x_5fpmtimerblock_12',['X_PMTimerBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a3ccba0eee7b816e0a9dbbdc3635e7466',1,'Kernel::Detail::FADT']]],
-  ['xn_13',['XN',['../struct_kernel_1_1_h_a_l_1_1_p_t_e__4_k_b.html#a1dd7d358fc9a60e756c703a6c038bd33',1,'Kernel::HAL::PTE_4KB']]],
-  ['xsdtaddress_14',['XsdtAddress',['../class_kernel_1_1_r_s_d_p.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
+  ['xsdtaddress_13',['XsdtAddress',['../class_kernel_1_1_r_s_d_p.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
 ];

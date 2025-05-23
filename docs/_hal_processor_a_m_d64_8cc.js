@@ -8,9 +8,9 @@ var _hal_processor_a_m_d64_8cc =
     [ "lrt_hal_out16", "_hal_processor_a_m_d64_8cc.html#a640b8bbfba2321e4d0fda5e148177b70", null ],
     [ "lrt_hal_out32", "_hal_processor_a_m_d64_8cc.html#a66e623f2ccc8acb502354f76f3a8de32", null ],
     [ "lrt_hal_out8", "_hal_processor_a_m_d64_8cc.html#a4020cca25cc89e7cefdbe021447427c8", null ],
-    [ "rt_cld", "_hal_processor_a_m_d64_8cc.html#ac7d132be7849daa833d6c13149af2fb4", null ],
+    [ "rt_cld", "_hal_processor_a_m_d64_8cc.html#ae92add2cf4c56e53aafdcb9574145cb5", null ],
     [ "rt_cli", "_hal_processor_a_m_d64_8cc.html#a59a59cca342806d0eaffc92111fb79fe", null ],
     [ "rt_halt", "_hal_processor_a_m_d64_8cc.html#a425b7a90d1d68113864d0e3aaf970643", null ],
-    [ "rt_std", "_hal_processor_a_m_d64_8cc.html#a3112382462d51034a84d4eedc0351ab3", null ],
-    [ "rt_sti", "_hal_processor_a_m_d64_8cc.html#ad0537e807031622fec2edc577e7fc4ee", null ]
+    [ "rt_std", "_hal_processor_a_m_d64_8cc.html#a9b3552568a70c0166fc199c54efa66d8", null ],
+    [ "rt_sti", "_hal_processor_a_m_d64_8cc.html#a3cf4d811d797221ac4d6f59b336ddfe1", null ]
 ];

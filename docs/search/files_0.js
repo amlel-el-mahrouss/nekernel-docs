@@ -13,11 +13,11 @@ var searchData=
   ['applicationprocessor_2eh_10',['ApplicationProcessor.h',['../_application_processor_8h.html',1,'']]],
   ['archkit_2eh_11',['ArchKit.h',['../_arch_kit_8h.html',1,'']]],
   ['array_2ecc_12',['Array.cc',['../_array_8cc.html',1,'']]],
-  ['array_2eh_13',['array.h',['../dev_2kernel_2_new_kit_2_array_8h.html',1,'(Global Namespace)'],['../public_2frameworks_2_core_foundation_8fwrk_2headers_2_array_8h.html',1,'(Global Namespace)']]],
+  ['array_2eh_13',['array.h',['../dev_2kernel_2_ne_kit_2_array_8h.html',1,'(Global Namespace)'],['../public_2frameworks_2_core_foundation_8fwrk_2headers_2_array_8h.html',1,'(Global Namespace)']]],
   ['arraylist_2ecc_14',['ArrayList.cc',['../_array_list_8cc.html',1,'']]],
   ['arraylist_2eh_15',['ArrayList.h',['../_array_list_8h.html',1,'']]],
   ['ata_2eh_16',['ata.h',['../boot_2_boot_kit_2_h_w_2_a_t_a_8h.html',1,'(Global Namespace)'],['../modules_2_a_t_a_2_a_t_a_8h.html',1,'(Global Namespace)'],['../kernel_2_storage_kit_2_a_t_a_8h.html',1,'(Global Namespace)']]],
   ['atadeviceinterface_2ecc_17',['ATADeviceInterface.cc',['../_a_t_a_device_interface_8cc.html',1,'']]],
   ['atom_2ecc_18',['Atom.cc',['../_atom_8cc.html',1,'']]],
-  ['atom_2eh_19',['atom.h',['../public_2frameworks_2_core_foundation_8fwrk_2headers_2_atom_8h.html',1,'(Global Namespace)'],['../dev_2kernel_2_new_kit_2_atom_8h.html',1,'(Global Namespace)']]]
+  ['atom_2eh_19',['atom.h',['../public_2frameworks_2_core_foundation_8fwrk_2headers_2_atom_8h.html',1,'(Global Namespace)'],['../dev_2kernel_2_ne_kit_2_atom_8h.html',1,'(Global Namespace)']]]
 ];

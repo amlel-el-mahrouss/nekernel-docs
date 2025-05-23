@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('_thread_local_storage_8h.html',''); in
   <div class="headertitle"><div class="title">ThreadLocalStorage.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2_new_kit_2_defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_error_or_8h_source.html">NewKit/ErrorOr.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2_ne_kit_2_defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_error_or_8h_source.html">NeKit/ErrorOr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_thread_local_storage_8inl_source.html">KernelKit/ThreadLocalStorage.inl</a>&gt;</code><br />
 </div>
 <p><a href="_thread_local_storage_8h_source.html">Go to the source code of this file.</a></p>
@@ -152,10 +152,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aeb447845d0d9eee77a67d2bd3bd4d86f"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8h.html#aeb447845d0d9eee77a67d2bd3bd4d86f">tls_new_class</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:aeb447845d0d9eee77a67d2bd3bd4d86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a C++ class, and then call the constructor of it.  <br /></td></tr>
 <tr class="separator:aeb447845d0d9eee77a67d2bd3bd4d86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78887fe531343d5c58429ed6ce78b401" id="r_a78887fe531343d5c58429ed6ce78b401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8h.html#a78887fe531343d5c58429ed6ce78b401">rt_install_tib</a> (<a class="el" href="struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html">THREAD_INFORMATION_BLOCK</a> *<a class="el" href="kernel_2_new_kit_2macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca">TIB</a>, <a class="el" href="struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html">THREAD_INFORMATION_BLOCK</a> *PIB)</td></tr>
+<tr class="memitem:a78887fe531343d5c58429ed6ce78b401" id="r_a78887fe531343d5c58429ed6ce78b401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8h.html#a78887fe531343d5c58429ed6ce78b401">rt_install_tib</a> (<a class="el" href="struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html">THREAD_INFORMATION_BLOCK</a> *<a class="el" href="kernel_2_ne_kit_2macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca">TIB</a>, <a class="el" href="struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html">THREAD_INFORMATION_BLOCK</a> *PIB)</td></tr>
 <tr class="memdesc:a78887fe531343d5c58429ed6ce78b401"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS install TIB and PIB. (syscall)  <br /></td></tr>
 <tr class="separator:a78887fe531343d5c58429ed6ce78b401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69fe1123b02ca28de94829abb328b269" id="r_a69fe1123b02ca28de94829abb328b269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Kernel::Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8h.html#a69fe1123b02ca28de94829abb328b269">tls_check_syscall_impl</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> <a class="el" href="kernel_2_new_kit_2macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca">TIB</a>) noexcept</td></tr>
+<tr class="memitem:a69fe1123b02ca28de94829abb328b269" id="r_a69fe1123b02ca28de94829abb328b269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Kernel::Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_local_storage_8h.html#a69fe1123b02ca28de94829abb328b269">tls_check_syscall_impl</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> <a class="el" href="kernel_2_ne_kit_2macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca">TIB</a>) noexcept</td></tr>
 <tr class="memdesc:a69fe1123b02ca28de94829abb328b269"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS check (syscall)  <br /></td></tr>
 <tr class="separator:a69fe1123b02ca28de94829abb328b269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -269,7 +269,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a> rt_install_tib </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a> rt_install_tib </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html">THREAD_INFORMATION_BLOCK</a> *&#160;</td>
           <td class="paramname"><em>TIB</em>, </td>
@@ -302,7 +302,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Kernel::Bool</a> tls_check_syscall_impl </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Kernel::Bool</a> tls_check_syscall_impl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a>&#160;</td>
           <td class="paramname"><em>tib_ptr</em></td><td>)</td>

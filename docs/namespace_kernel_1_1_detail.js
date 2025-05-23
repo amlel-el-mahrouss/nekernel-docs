@@ -1,6 +1,5 @@
 var namespace_kernel_1_1_detail =
 [
-    [ "AMD64", "namespace_kernel_1_1_detail_1_1_a_m_d64.html", "namespace_kernel_1_1_detail_1_1_a_m_d64" ],
     [ "FADT", "struct_kernel_1_1_detail_1_1_f_a_d_t.html", "struct_kernel_1_1_detail_1_1_f_a_d_t" ],
     [ "HPET_BLOCK", "struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html", "struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k" ],
     [ "MM_INFORMATION_BLOCK", "struct_kernel_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html", "struct_kernel_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k" ],
@@ -22,9 +21,9 @@ var namespace_kernel_1_1_detail =
     [ "io_detect_drive", "namespace_kernel_1_1_detail.html#a44c6ea754d5c28b34dff620149402180", null ],
     [ "ldr_get_platform", "namespace_kernel_1_1_detail.html#afd688bf34a4a06a2417ee52159eeb718", null ],
     [ "mm_check_ptr_address", "namespace_kernel_1_1_detail.html#a1f66348fbc5ecb5362ae1ca9ff512a81", null ],
-    [ "mp_handle_gic_interrupt_el0", "namespace_kernel_1_1_detail.html#aedd5f4f4181ace1817f83345fc73f12f", null ],
+    [ "mp_handle_gic_interrupt_el0", "namespace_kernel_1_1_detail.html#a9a536fa826b965fedc4a9bc0eae2db03", null ],
     [ "mp_hang_fn", "namespace_kernel_1_1_detail.html#a6c3cc05fa8d9f6dc5a43d122da95b12f", null ],
-    [ "mp_setup_gic_el0", "namespace_kernel_1_1_detail.html#ad27629969d1c8c83035cac27fc1d9bd9", null ],
+    [ "mp_setup_gic_el0", "namespace_kernel_1_1_detail.html#abc92ef4ad7f6efcbd4ba3e0e605b6dfe", null ],
     [ "sk_io_read_ahci", "namespace_kernel_1_1_detail.html#af5309d5033bbee2c09242d9bc1a9249a", null ],
     [ "sk_io_write_ahci", "namespace_kernel_1_1_detail.html#af0a56274e3fe11028ff6bd8bfe14c854", null ],
     [ "user_fnv_generator", "namespace_kernel_1_1_detail.html#ac6f9bb536b7b62154484718ce73603d0", null ],

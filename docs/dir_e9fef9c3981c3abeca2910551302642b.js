@@ -10,13 +10,14 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "DriveMgr.h", "_drive_mgr_8h.html", "_drive_mgr_8h" ],
     [ "FileMgr.h", "_file_mgr_8h.html", "_file_mgr_8h" ],
     [ "HardwareThreadScheduler.h", "_hardware_thread_scheduler_8h.html", "_hardware_thread_scheduler_8h" ],
+    [ "HeapMgr.h", "_heap_mgr_8h.html", "_heap_mgr_8h" ],
+    [ "HeapMgr.inl", "_heap_mgr_8inl.html", "_heap_mgr_8inl" ],
     [ "IDylibObject.h", "_i_dylib_object_8h.html", "_i_dylib_object_8h" ],
     [ "IPEFDylibObject.h", "_i_p_e_f_dylib_object_8h.html", "_i_p_e_f_dylib_object_8h" ],
     [ "KernelTaskScheduler.h", "_kernel_task_scheduler_8h.html", "_kernel_task_scheduler_8h" ],
     [ "KPC.h", "_k_p_c_8h.html", "_k_p_c_8h" ],
     [ "LoaderInterface.h", "_loader_interface_8h.html", "_loader_interface_8h" ],
     [ "LockDelegate.h", "_lock_delegate_8h.html", "_lock_delegate_8h" ],
-    [ "MemoryMgr.h", "_memory_mgr_8h.html", "_memory_mgr_8h" ],
     [ "MSDOS.h", "_m_s_d_o_s_8h.html", "_m_s_d_o_s_8h" ],
     [ "PE.h", "_p_e_8h.html", "_p_e_8h" ],
     [ "PECodeMgr.h", "_p_e_code_mgr_8h.html", "_p_e_code_mgr_8h" ],
@@ -30,5 +31,6 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "User.h", "_user_8h.html", "_user_8h" ],
     [ "UserProcessScheduler.h", "_user_process_scheduler_8h.html", "_user_process_scheduler_8h" ],
     [ "UserProcessScheduler.inl", "_user_process_scheduler_8inl.html", null ],
-    [ "XCOFF.h", "_x_c_o_f_f_8h.html", "_x_c_o_f_f_8h" ]
+    [ "XCOFF.h", "_x_c_o_f_f_8h.html", "_x_c_o_f_f_8h" ],
+    [ "Zxd.h", "_zxd_8h.html", "_zxd_8h" ]
 ];

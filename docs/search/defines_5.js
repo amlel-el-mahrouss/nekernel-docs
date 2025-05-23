@@ -32,11 +32,11 @@ var searchData=
   ['efiapi_29',['EFIAPI',['../_e_f_i_2_e_f_i_8h.html#aa3998ed6456694d79e9a45f821f379ed',1,'EFI.h']]],
   ['end_5fdevice_5fpath_5ftype_30',['END_DEVICE_PATH_TYPE',['../_e_f_i_2_e_f_i_8h.html#a90ddf9cdc77b5c3a9f8c3fd9cd73924a',1,'EFI.h']]],
   ['end_5fentire_5fdevice_5fpath_5fsubtype_31',['END_ENTIRE_DEVICE_PATH_SUBTYPE',['../_e_f_i_2_e_f_i_8h.html#a2f1e01d5ea1c8c2285d3c2630f163a45',1,'EFI.h']]],
-  ['end_5fenum_32',['END_ENUM',['../kernel_2_new_kit_2macros_8h.html#afb96a4f1fb3f74444883723265d6121b',1,'Macros.h']]],
+  ['end_5fenum_32',['END_ENUM',['../kernel_2_ne_kit_2macros_8h.html#afb96a4f1fb3f74444883723265d6121b',1,'Macros.h']]],
   ['end_5finstance_5fdevice_5fpath_5fsubtype_33',['END_INSTANCE_DEVICE_PATH_SUBTYPE',['../_e_f_i_2_e_f_i_8h.html#ad2de24cedc764ce62610bb79d74186a4',1,'EFI.h']]],
   ['end_5fof_5fcpu_5flist_34',['END_OF_CPU_LIST',['../_e_f_i_2_e_f_i_8h.html#a109a2fe493bc8647513673a63bcc790d',1,'EFI.h']]],
-  ['end_5fstring_5fenum_35',['END_STRING_ENUM',['../kernel_2_new_kit_2macros_8h.html#aba2e214220b4832db034e3a0fbd8319b',1,'Macros.h']]],
-  ['enum_5fstring_36',['ENUM_STRING',['../kernel_2_new_kit_2macros_8h.html#a973c5c37874adc092f94f3917df8f663',1,'Macros.h']]],
+  ['end_5fstring_5fenum_35',['END_STRING_ENUM',['../kernel_2_ne_kit_2macros_8h.html#aba2e214220b4832db034e3a0fbd8319b',1,'Macros.h']]],
+  ['enum_5fstring_36',['ENUM_STRING',['../kernel_2_ne_kit_2macros_8h.html#a973c5c37874adc092f94f3917df8f663',1,'Macros.h']]],
   ['err_5fglobal_5ffail_37',['err_global_fail',['../_k_p_c_8h.html#af31611a38f6e3ecdd31399a4bc087e26',1,'KPC.h']]],
   ['err_5fglobal_5fget_38',['err_global_get',['../_k_p_c_8h.html#a1a591a11fe40496846d0680bb30327b7',1,'KPC.h']]],
   ['err_5fglobal_5fok_39',['err_global_ok',['../_k_p_c_8h.html#a9087b27518ec9814ed79425db2e393a6',1,'KPC.h']]],
@@ -45,6 +45,6 @@ var searchData=
   ['err_5flocal_5fok_42',['err_local_ok',['../_k_p_c_8h.html#a6d06f6f12e3d087f30a0861d05152ff1',1,'err_local_ok:&#160;KPC.h'],['../_process_codes_8h.html#a6d06f6f12e3d087f30a0861d05152ff1',1,'err_local_ok:&#160;ProcessCodes.h']]],
   ['exit_5ffailure_43',['EXIT_FAILURE',['../user_2macros_8h.html#a73efe787c131b385070f25d18b7c9aa4',1,'Macros.h']]],
   ['exit_5fsuccess_44',['EXIT_SUCCESS',['../user_2macros_8h.html#a687984f47d8cce148d1b914d2b79612a',1,'Macros.h']]],
-  ['extern_45',['extern',['../kernel_2_new_kit_2macros_8h.html#a77366c1bd428629dc898e188bfd182a3',1,'EXTERN:&#160;Macros.h'],['../kernel_2_new_kit_2macros_8h.html#a77366c1bd428629dc898e188bfd182a3',1,'EXTERN:&#160;Macros.h']]],
-  ['extern_5fc_46',['EXTERN_C',['../kernel_2_new_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77',1,'Macros.h']]]
+  ['extern_45',['extern',['../kernel_2_ne_kit_2macros_8h.html#a77366c1bd428629dc898e188bfd182a3',1,'EXTERN:&#160;Macros.h'],['../kernel_2_ne_kit_2macros_8h.html#a77366c1bd428629dc898e188bfd182a3',1,'EXTERN:&#160;Macros.h']]],
+  ['extern_5fc_46',['EXTERN_C',['../kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77',1,'Macros.h']]]
 ];

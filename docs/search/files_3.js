@@ -12,7 +12,7 @@ var searchData=
   ['ddk_5fver_2ec_9',['ddk_ver.c',['../ddk__ver_8c.html',1,'']]],
   ['debugoutput_2eh_10',['DebugOutput.h',['../_debug_output_8h.html',1,'']]],
   ['defines_2ecc_11',['Defines.cc',['../_defines_8cc.html',1,'']]],
-  ['defines_2eh_12',['defines.h',['../modules_2_h_p_e_t_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_f_s_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_kernel_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_new_kit_2_defines_8h.html',1,'(Global Namespace)']]],
+  ['defines_2eh_12',['defines.h',['../modules_2_h_p_e_t_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_f_s_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_kernel_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_ne_kit_2_defines_8h.html',1,'(Global Namespace)']]],
   ['detail_2eh_13',['Detail.h',['../_detail_8h.html',1,'']]],
   ['dev_2eh_14',['dev.h',['../dev_8h.html',1,'']]],
   ['device_2ecc_15',['Device.cc',['../_device_8cc.html',1,'']]],

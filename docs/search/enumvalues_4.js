@@ -25,11 +25,9 @@ var searchData=
   ['efiunacceptedmemorytype_22',['EfiUnacceptedMemoryType',['../_e_f_i_2_e_f_i_8h.html#a5b524fe93de766914b9a99d5446f4d1faccba4111e51fabdba07eb1782eedb66a',1,'EFI.h']]],
   ['efiunusablememory_23',['EfiUnusableMemory',['../_e_f_i_2_e_f_i_8h.html#a5b524fe93de766914b9a99d5446f4d1fa0343d670021aa14e784b345ea5ed2d49',1,'EFI.h']]],
   ['einvalid_24',['eInvalid',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a49303b53652254acb58df67a9cc2770b',1,'Kernel']]],
-  ['emulation_25',['emulation',['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a430e23dfa8a1005a5eec889f0e7426ef',1,'Kernel::HAL::Detail::Emulation']]],
-  ['epci_26',['ePci',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a03006993233a9c9ac54d09f386410efb',1,'Kernel']]],
-  ['error_27',['error',['../namespacepfd.html#a96ff6709abe317ae8eff98d92bc8db85acb5e100e5a9a3e7f6d1fd97512215282',1,'pfd']]],
-  ['esmbus_28',['eSmBus',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a74d5beb9ae5c8f07eb47531cc0d49ff8',1,'Kernel']]],
-  ['esystemio_29',['eSystemIO',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afb105c7b9564beb0479ed5bfaea63984',1,'Kernel']]],
-  ['esystemmemory_30',['eSystemMemory',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afaf47a2ce3cd1a464062f9571d64c9fe',1,'Kernel']]],
-  ['extensiontype_31',['extensiontype',['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType'],['../namespace_kernel_1_1_h_a_l_1_1_detail.html#a97ce83f9cb52a5936bd5956630c6d412a1a43216615cf5a8e458ee01e92e38d76',1,'Kernel::HAL::Detail::ExtensionType']]]
+  ['epci_25',['ePci',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a03006993233a9c9ac54d09f386410efb',1,'Kernel']]],
+  ['error_26',['error',['../namespacepfd.html#a96ff6709abe317ae8eff98d92bc8db85acb5e100e5a9a3e7f6d1fd97512215282',1,'pfd']]],
+  ['esmbus_27',['eSmBus',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486a74d5beb9ae5c8f07eb47531cc0d49ff8',1,'Kernel']]],
+  ['esystemio_28',['eSystemIO',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afb105c7b9564beb0479ed5bfaea63984',1,'Kernel']]],
+  ['esystemmemory_29',['eSystemMemory',['../namespace_kernel.html#aa8e5b4bc80cbec73a76235e1bed52486afaf47a2ce3cd1a464062f9571d64c9fe',1,'Kernel']]]
 ];

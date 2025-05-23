@@ -567,7 +567,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    osvi.wServicePackMajor   = 0;</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    <span class="keywordflow">return</span> VerifyVersionInfoW(&amp;osvi, VER_MAJORVERSION | VER_MINORVERSION | VER_SERVICEPACKMAJOR,</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>                              mask) != <a class="code hl_define" href="kernel_2_new_kit_2macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>                              mask) != <a class="code hl_define" href="kernel_2_ne_kit_2macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  }</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
@@ -825,7 +825,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  DWORD pid;</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  <span class="keyword">auto</span>  tid = GetWindowThreadProcessId(hwnd, &amp;pid);</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  <span class="keywordflow">if</span> (tid == that-&gt;m_tid) that-&gt;m_windows.insert(hwnd);</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2_new_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2_ne_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>}</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
@@ -1455,7 +1455,7 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>  <span class="keyword">auto</span> inst = (<a class="code hl_class" href="classpfd_1_1internal_1_1file__dialog.html">file_dialog</a>*) pData;</div>
 <div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>  <span class="keywordflow">switch</span> (uMsg) {</div>
 <div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    <span class="keywordflow">case</span> BFFM_INITIALIZED:</div>
-<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>      SendMessage(hwnd, BFFM_SETSELECTIONW, <a class="code hl_define" href="kernel_2_new_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, (LPARAM) inst-&gt;m_wdefault_path.c_str());</div>
+<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>      SendMessage(hwnd, BFFM_SETSELECTIONW, <a class="code hl_define" href="kernel_2_ne_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, (LPARAM) inst-&gt;m_wdefault_path.c_str());</div>
 <div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>  }</div>
 <div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>  <span class="keywordflow">return</span> 0;</div>
@@ -2037,8 +2037,8 @@ $(document).ready(function(){initNavTree('_dialogs_8h_source.html',''); initResi
 <div class="ttc" id="addk_2_d_d_k_kit_2macros_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> macros.h:25</div></div>
 <div class="ttc" id="adev_8h_html_a4a97bf579d8dd726327a23ed36d594bf"><div class="ttname"><a href="dev_8h.html#a4a97bf579d8dd726327a23ed36d594bf">open</a></div><div class="ttdeci">DDK_EXTERN DDK_DEVICE_PTR open(const char *path)</div><div class="ttdoc">Open a new device from path.</div><div class="ttdef"><b>Definition</b> ddk_dev.c:13</div></div>
 <div class="ttc" id="adev_8h_html_a9b54c1e48e7a4f50016970a5187eadd8"><div class="ttname"><a href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a></div><div class="ttdeci">DDK_EXTERN BOOL close(DDK_DEVICE_PTR device)</div><div class="ttdoc">Close any device.</div><div class="ttdef"><b>Definition</b> ddk_dev.c:21</div></div>
-<div class="ttc" id="akernel_2_new_kit_2macros_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="kernel_2_new_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> Macros.h:139</div></div>
-<div class="ttc" id="akernel_2_new_kit_2macros_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="kernel_2_new_kit_2macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> Macros.h:140</div></div>
+<div class="ttc" id="akernel_2_ne_kit_2macros_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="kernel_2_ne_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> Macros.h:139</div></div>
+<div class="ttc" id="akernel_2_ne_kit_2macros_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="kernel_2_ne_kit_2macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> Macros.h:140</div></div>
 <div class="ttc" id="anamespacepfd_html"><div class="ttname"><a href="namespacepfd.html">pfd</a></div><div class="ttdef"><b>Definition</b> Dialogs.h:70</div></div>
 <div class="ttc" id="anamespacepfd_html_a1a482ccd57bb939dcbf7d9caacd3f997"><div class="ttname"><a href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997">pfd::opt</a></div><div class="ttdeci">opt</div><div class="ttdef"><b>Definition</b> Dialogs.h:99</div></div>
 <div class="ttc" id="anamespacepfd_html_a1a482ccd57bb939dcbf7d9caacd3f997a334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997a334c4a4c42fdb79d7ebc3e73b517e6f8">pfd::opt::none</a></div><div class="ttdeci">@ none</div></div>

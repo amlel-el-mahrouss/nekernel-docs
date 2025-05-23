@@ -12,7 +12,6 @@ var _memory_mgr_8cc =
     [ "mm_make_ptr_flags", "_memory_mgr_8cc.html#a5f354d5eaab4a9255950fa7a8c2b9cb8", null ],
     [ "mm_new_ptr", "_memory_mgr_8cc.html#ab26a8fd56aaad76b883b027cc5b47594", null ],
     [ "mm_protect_ptr", "_memory_mgr_8cc.html#a0c39d8ca7ebf773c6ee3e8b872b294f2", null ],
-    [ "mm_realloc_ptr", "_memory_mgr_8cc.html#aafe9bbbdf627cf059e9a0a82fcad4d4b", null ],
     [ "kPageMgr", "_memory_mgr_8cc.html#a1ca92c021ae1f476ce50295dc9247747", null ],
     [ "MM_INFORMATION_BLOCK", "_memory_mgr_8cc.html#aeb33a27af8d703b08d25c38a7ffbd143", null ]
 ];

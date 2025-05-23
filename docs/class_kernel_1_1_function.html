@@ -112,12 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf492fc72cbf8c41102af83f4858c799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05acc8b382c42294df8299f4b2cd91df" id="r_a05acc8b382c42294df8299f4b2cd91df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_function.html#a05acc8b382c42294df8299f4b2cd91df">Function</a> (const <a class="el" href="class_kernel_1_1_function.html">Function</a> &amp;)=default</td></tr>
 <tr class="separator:a05acc8b382c42294df8299f4b2cd91df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18f0813b3ee1e8bbb694919e5fd4c49a" id="r_a18f0813b3ee1e8bbb694919e5fd4c49a"><td class="memTemplParams" colspan="2">template&lt;typename... XArgs&gt; </td></tr>
-<tr class="memitem:a18f0813b3ee1e8bbb694919e5fd4c49a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_function.html#a18f0813b3ee1e8bbb694919e5fd4c49a">operator()</a> (Args... args)</td></tr>
-<tr class="separator:a18f0813b3ee1e8bbb694919e5fd4c49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc04a678413e8103f1dc155189affff" id="r_a5dc04a678413e8103f1dc155189affff"><td class="memTemplParams" colspan="2">template&lt;typename... XArgs&gt; </td></tr>
-<tr class="memitem:a5dc04a678413e8103f1dc155189affff"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_function.html#a5dc04a678413e8103f1dc155189affff">Call</a> (Args... args)</td></tr>
-<tr class="separator:a5dc04a678413e8103f1dc155189affff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505b7a644892ae37dc00b94c77cadf63" id="r_a505b7a644892ae37dc00b94c77cadf63"><td class="memTemplParams" colspan="2">template&lt;typename... XArgs&gt; </td></tr>
+<tr class="memitem:a505b7a644892ae37dc00b94c77cadf63"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_function.html#a505b7a644892ae37dc00b94c77cadf63">operator()</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a505b7a644892ae37dc00b94c77cadf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b69bb5825048512ae27f1f444478a7" id="r_af2b69bb5825048512ae27f1f444478a7"><td class="memTemplParams" colspan="2">template&lt;typename... XArgs&gt; </td></tr>
+<tr class="memitem:af2b69bb5825048512ae27f1f444478a7"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_function.html#af2b69bb5825048512ae27f1f444478a7">Call</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:af2b69bb5825048512ae27f1f444478a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ca33c1a7089bdcf377c78f36c27381" id="r_a02ca33c1a7089bdcf377c78f36c27381"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_function.html#a02ca33c1a7089bdcf377c78f36c27381">operator bool</a> ()</td></tr>
 <tr class="separator:a02ca33c1a7089bdcf377c78f36c27381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc56c30ebb7403189b873573ce9d4def" id="r_adc56c30ebb7403189b873573ce9d4def"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_function.html#adc56c30ebb7403189b873573ce9d4def">operator!</a> ()</td></tr>
@@ -240,8 +240,8 @@ template&lt;typename T , typename... Args&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5dc04a678413e8103f1dc155189affff" name="a5dc04a678413e8103f1dc155189affff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dc04a678413e8103f1dc155189affff">&#9670;&#160;</a></span>Call()</h2>
+<a id="af2b69bb5825048512ae27f1f444478a7" name="af2b69bb5825048512ae27f1f444478a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b69bb5825048512ae27f1f444478a7">&#9670;&#160;</a></span>Call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +256,7 @@ template&lt;typename... XArgs&gt; </div>
         <tr>
           <td class="memname">T <a class="el" href="class_kernel_1_1_function.html">Kernel::Function</a>&lt; T, Args &gt;::Call </td>
           <td>(</td>
-          <td class="paramtype">Args...&#160;</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
@@ -324,8 +324,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a18f0813b3ee1e8bbb694919e5fd4c49a" name="a18f0813b3ee1e8bbb694919e5fd4c49a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18f0813b3ee1e8bbb694919e5fd4c49a">&#9670;&#160;</a></span>operator()()</h2>
+<a id="a505b7a644892ae37dc00b94c77cadf63" name="a505b7a644892ae37dc00b94c77cadf63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505b7a644892ae37dc00b94c77cadf63">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +340,7 @@ template&lt;typename... XArgs&gt; </div>
         <tr>
           <td class="memname">T <a class="el" href="class_kernel_1_1_function.html">Kernel::Function</a>&lt; T, Args &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">Args...&#160;</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
@@ -408,7 +408,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>dev/kernel/NewKit/<a class="el" href="_function_8h_source.html">Function.h</a></li>
+<li>dev/kernel/NeKit/<a class="el" href="_function_8h_source.html">Function.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

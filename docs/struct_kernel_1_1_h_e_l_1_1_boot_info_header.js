@@ -21,6 +21,8 @@ var struct_kernel_1_1_h_e_l_1_1_boot_info_header =
     [ "f_PixelPerLine", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#aae627c7df59e3e3e999a947e5929e856", null ],
     [ "f_Size", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#ad3d0d8d4236234e285298b069f31d412", null ],
     [ "f_SmBios", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#ac800df8922283933a690d2ff7d8499df", null ],
+    [ "f_StackSz", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#ac716830b277489a55a71aaf411a43f56", null ],
+    [ "f_StackTop", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#affe299edfceb7b430215a9c0707b6b13", null ],
     [ "f_StartupImage", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#a785e511fd8fb5c8d187d6a43608a33a8", null ],
     [ "f_StartupSz", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#afa36465e2f136a44040706a5d304446f", null ],
     [ "f_The", "struct_kernel_1_1_h_e_l_1_1_boot_info_header.html#aa315b714229dce7cd76c41c432acba47", null ],

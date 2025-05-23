@@ -8,6 +8,5 @@ var _memory_mgr_8h =
     [ "mm_make_ptr_flags", "_memory_mgr_8h.html#a5f354d5eaab4a9255950fa7a8c2b9cb8", null ],
     [ "mm_new_class", "_memory_mgr_8h.html#a64b2a983bba7ef0619c8b07f50b4a10b", null ],
     [ "mm_new_ptr", "_memory_mgr_8h.html#ab26a8fd56aaad76b883b027cc5b47594", null ],
-    [ "mm_protect_ptr", "_memory_mgr_8h.html#a0c39d8ca7ebf773c6ee3e8b872b294f2", null ],
-    [ "mm_realloc_ptr", "_memory_mgr_8h.html#aafe9bbbdf627cf059e9a0a82fcad4d4b", null ]
+    [ "mm_protect_ptr", "_memory_mgr_8h.html#a0c39d8ca7ebf773c6ee3e8b872b294f2", null ]
 ];

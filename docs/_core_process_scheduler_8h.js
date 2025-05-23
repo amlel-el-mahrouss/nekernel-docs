@@ -49,5 +49,6 @@ var _core_process_scheduler_8h =
     [ "operator<", "_core_process_scheduler_8h.html#a9da5888cc3dfe4eedd8e660b093073f5", null ],
     [ "operator<=", "_core_process_scheduler_8h.html#a617504947ebbbd35037e88e8a8cedf86", null ],
     [ "operator>", "_core_process_scheduler_8h.html#af6f4a22aa0c1ae68ae5135200b66bf88", null ],
-    [ "operator>=", "_core_process_scheduler_8h.html#a338361367d8f4a60f12961f039dd4ac9", null ]
+    [ "operator>=", "_core_process_scheduler_8h.html#a338361367d8f4a60f12961f039dd4ac9", null ],
+    [ "sched_idle_task", "_core_process_scheduler_8h.html#a09e4aa181ce319bd663c388a28d1b3e0", null ]
 ];

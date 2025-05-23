@@ -5,5 +5,6 @@ var _hal_timer_a_m_d64_8cc =
     [ "kHPETConfigRegValue", "_hal_timer_a_m_d64_8cc.html#a4a47e0c035aab9f6c3d0f6797a2c1d3c", null ],
     [ "kHPETCounterRegValue", "_hal_timer_a_m_d64_8cc.html#a708e8c10222f199133fb34bddf5aac33", null ],
     [ "kHPETInterruptRegValue", "_hal_timer_a_m_d64_8cc.html#abd53e6035f0b467daa1da12102df0cce", null ],
+    [ "kHPETSignature", "_hal_timer_a_m_d64_8cc.html#a93dc121dfff171c2fb8e9adc0061de44", null ],
     [ "PACKED", "_hal_timer_a_m_d64_8cc.html#a413dd27937a507eda0a290f6f19bb624", null ]
 ];
