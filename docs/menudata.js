@@ -112,11 +112,11 @@ var menudata={children:[
 {text:"Enumerations",url:"namespacemembers_enum.html"},
 {text:"Enumerator",url:"namespacemembers_eval.html",children:[
 {text:"e",url:"namespacemembers_eval.html#index_e"},
-{text:"h",url:"namespacemembers_eval.html#index_h"},
-{text:"k",url:"namespacemembers_eval.html#index_k"},
-{text:"l",url:"namespacemembers_eval.html#index_l"},
-{text:"m",url:"namespacemembers_eval.html#index_m"},
-{text:"q",url:"namespacemembers_eval.html#index_q"}]}]}]},
+{text:"h",url:"namespacemembers_eval_h.html#index_h"},
+{text:"k",url:"namespacemembers_eval_k.html#index_k"},
+{text:"l",url:"namespacemembers_eval_l.html#index_l"},
+{text:"m",url:"namespacemembers_eval_m.html#index_m"},
+{text:"q",url:"namespacemembers_eval_q.html#index_q"}]}]}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
@@ -178,7 +178,8 @@ var menudata={children:[
 {text:"w",url:"functions_func_w.html#index_w"},
 {text:"~",url:"functions_func_~.html#index__7E"}]},
 {text:"Variables",url:"functions_vars.html",children:[
-{text:"a",url:"functions_vars.html#index_a"},
+{text:"_",url:"functions_vars.html#index__5F"},
+{text:"a",url:"functions_vars_a.html#index_a"},
 {text:"b",url:"functions_vars_b.html#index_b"},
 {text:"c",url:"functions_vars_c.html#index_c"},
 {text:"d",url:"functions_vars_d.html#index_d"},
@@ -270,6 +271,7 @@ var menudata={children:[
 {text:"h",url:"globals_type.html#index_h"},
 {text:"i",url:"globals_type.html#index_i"},
 {text:"l",url:"globals_type.html#index_l"},
+{text:"m",url:"globals_type.html#index_m"},
 {text:"n",url:"globals_type.html#index_n"},
 {text:"p",url:"globals_type.html#index_p"},
 {text:"r",url:"globals_type.html#index_r"},
@@ -304,5 +306,6 @@ var menudata={children:[
 {text:"r",url:"globals_defs_r.html#index_r"},
 {text:"s",url:"globals_defs_s.html#index_s"},
 {text:"t",url:"globals_defs_t.html#index_t"},
+{text:"u",url:"globals_defs_u.html#index_u"},
 {text:"y",url:"globals_defs_y.html#index_y"}]}]}]},
 {text:"Examples",url:"examples.html"}]}

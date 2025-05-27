@@ -8,10 +8,10 @@ var dir_0a365f50777a2b2c0742c6300f59f48b =
     [ "HalDebugOutput.cc", "_a_r_m64_2_hal_debug_output_8cc.html", "_a_r_m64_2_hal_debug_output_8cc" ],
     [ "HalKernelMain.cc", "_a_r_m64_2_hal_kernel_main_8cc.html", "_a_r_m64_2_hal_kernel_main_8cc" ],
     [ "HalKernelPanic.cc", "_a_r_m64_2_hal_kernel_panic_8cc.html", "_a_r_m64_2_hal_kernel_panic_8cc" ],
-    [ "HalPagingMgrARM64.cc", "_hal_paging_mgr_a_r_m64_8cc.html", "_hal_paging_mgr_a_r_m64_8cc" ],
-    [ "HalSchedulerCoreARM64.cc", "_hal_scheduler_core_a_r_m64_8cc.html", "_hal_scheduler_core_a_r_m64_8cc" ],
-    [ "HalSchedulerCorePrimitivesARM64.cc", "_hal_scheduler_core_primitives_a_r_m64_8cc.html", "_hal_scheduler_core_primitives_a_r_m64_8cc" ],
-    [ "HalTimerARM64.cc", "_hal_timer_a_r_m64_8cc.html", null ],
+    [ "HalPagingMgr.cc", "_a_r_m64_2_hal_paging_mgr_8cc.html", "_a_r_m64_2_hal_paging_mgr_8cc" ],
+    [ "HalSchedulerCore.cc", "_hal_scheduler_core_8cc.html", "_hal_scheduler_core_8cc" ],
+    [ "HalSchedulerCorePrimitives.cc", "_a_r_m64_2_hal_scheduler_core_primitives_8cc.html", "_a_r_m64_2_hal_scheduler_core_primitives_8cc" ],
+    [ "HalTimer.cc", "_a_r_m64_2_hal_timer_8cc.html", null ],
     [ "Paging.h", "_a_r_m64_2_paging_8h.html", null ],
     [ "Processor.h", "_a_r_m64_2_processor_8h.html", null ]
 ];

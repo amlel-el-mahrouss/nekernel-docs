@@ -37,6 +37,7 @@ var hierarchy =
     [ "CF::CFPoint", "struct_c_f_1_1_c_f_point.html", null ],
     [ "CF::CFRect", "struct_c_f_1_1_c_f_rect.html", null ],
     [ "CF::CFRef< T >", "class_c_f_1_1_c_f_ref.html", null ],
+    [ "Kernel::ChronoInterface", "class_kernel_1_1_chrono_interface.html", null ],
     [ "Kernel::ConfigHeader", "class_kernel_1_1_config_header.html", null ],
     [ "DDK_FINAL", "struct_d_d_k___f_i_n_a_l.html", null ],
     [ "Device", "class_device.html", [
@@ -46,11 +47,11 @@ var hierarchy =
     [ "Kernel::PCI::DeviceHeader", "struct_kernel_1_1_p_c_i_1_1_device_header.html", null ],
     [ "DI::DI_DISK_IMAGE", "struct_d_i_1_1_d_i___d_i_s_k___i_m_a_g_e.html", null ],
     [ "Kernel::DiskSwapInterface", "class_kernel_1_1_disk_swap_interface.html", null ],
-    [ "Kernel::IDylibObject::DLL_TRAITS", "struct_kernel_1_1_i_dylib_object_1_1_d_l_l___t_r_a_i_t_s.html", null ],
     [ "Kernel::DMAFactory", "class_kernel_1_1_d_m_a_factory.html", null ],
     [ "Kernel::DMAWrapper", "class_kernel_1_1_d_m_a_wrapper.html", null ],
     [ "Kernel::DriveTrait::DrivePacket", "struct_kernel_1_1_drive_trait_1_1_drive_packet.html", null ],
     [ "Kernel::DriveTrait", "struct_kernel_1_1_drive_trait.html", null ],
+    [ "Kernel::IDylibObject::DylibTraits", "struct_kernel_1_1_i_dylib_object_1_1_dylib_traits.html", null ],
     [ "EFI_FINAL", "struct_e_f_i___f_i_n_a_l.html", null ],
     [ "EFI_SIMPLE_NETWORK_MODE", "struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html", null ],
     [ "EFI_SIMPLE_NETWORK_PROTOCOL", "struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html", null ],
@@ -87,7 +88,7 @@ var hierarchy =
     [ "EXT2_SUPER_BLOCK", "struct_e_x_t2___s_u_p_e_r___b_l_o_c_k.html", null ],
     [ "FB::FBAccessibilty", "class_f_b_1_1_f_b_accessibilty.html", null ],
     [ "Kernel::FBDevicePacket", "struct_kernel_1_1_f_b_device_packet.html", null ],
-    [ "Kernel::FileRestrictKind", "struct_kernel_1_1_file_restrict_kind.html", null ],
+    [ "Kernel::FILEMGR_RESTRICT", "struct_kernel_1_1_f_i_l_e_m_g_r___r_e_s_t_r_i_c_t.html", null ],
     [ "Kernel::FileStream< Encoding, FSClass >", "class_kernel_1_1_file_stream.html", null ],
     [ "Kernel::FileStream< Char >", "class_kernel_1_1_file_stream.html", null ],
     [ "FisData", "struct_fis_data.html", null ],
@@ -102,11 +103,11 @@ var hierarchy =
     [ "CF::XRN::GUID", "class_c_f_1_1_x_r_n_1_1_g_u_i_d.html", null ],
     [ "CF::XRN::GUIDSequence::GUID", "struct_c_f_1_1_x_r_n_1_1_g_u_i_d_sequence_1_1_g_u_i_d.html", null ],
     [ "CF::XRN::GUIDSequence", "union_c_f_1_1_x_r_n_1_1_g_u_i_d_sequence.html", null ],
+    [ "HAL_DISPATCH_ENTRY", "struct_h_a_l___d_i_s_p_a_t_c_h___e_n_t_r_y.html", null ],
     [ "Kernel::HAL::HAL_HARDWARE_THREAD", "struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html", null ],
     [ "Kernel::HAL_HARDWARE_THREAD", "struct_kernel_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html", null ],
     [ "Kernel::HAL_NVME_BAR_0", "struct_kernel_1_1_h_a_l___n_v_m_e___b_a_r__0.html", null ],
     [ "Kernel::HAL_NVME_QUEUE", "struct_kernel_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html", null ],
-    [ "HalSyscallEntry", "struct_hal_syscall_entry.html", null ],
     [ "Kernel::HardwareThread", "class_kernel_1_1_hardware_thread.html", null ],
     [ "HbaCmdHeader", "struct_hba_cmd_header.html", null ],
     [ "HbaCmdTbl", "struct_hba_cmd_tbl.html", null ],
@@ -129,9 +130,6 @@ var hierarchy =
     [ "Kernel::IDeviceObject< T >", "class_kernel_1_1_i_device_object.html", null ],
     [ "Kernel::IDeviceObject< MountpointInterface * >", "class_kernel_1_1_i_device_object.html", [
       [ "Kernel::ATADeviceInterface", "class_kernel_1_1_a_t_a_device_interface.html", null ]
-    ] ],
-    [ "Kernel::IDeviceObject< NetworkDeviceCommand >", "class_kernel_1_1_i_device_object.html", [
-      [ "Kernel::NetworkDevice", "class_kernel_1_1_network_device.html", null ]
     ] ],
     [ "Kernel::IDylibObject", "class_kernel_1_1_i_dylib_object.html", null ],
     [ "Kernel::IFilesystemMgr", "class_kernel_1_1_i_filesystem_mgr.html", null ],
@@ -175,6 +173,7 @@ var hierarchy =
     [ "Kernel::NE_DEVICE< const Utf8Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4.html", null ],
     [ "Kernel::NE_DEVICE< FBDevicePacket * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_f_b_device_packet_01_5_01_4.html", null ],
     [ "Kernel::NE_DEVICE< MountpointInterface * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_mountpoint_interface_01_5_01_4.html", null ],
+    [ "Kernel::NE_DEVICE< NetworkDeviceCommand >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01_network_device_command_01_4.html", null ],
     [ "Kernel::NE_DYLIB_OBJECT", "class_kernel_1_1_n_e___d_y_l_i_b___o_b_j_e_c_t.html", null ],
     [ "Kernel::NE_POWER_FACTORY", "class_kernel_1_1_n_e___p_o_w_e_r___f_a_c_t_o_r_y.html", null ],
     [ "Kernel::NeFileSystemHelper", "class_kernel_1_1_ne_file_system_helper.html", null ],
@@ -233,6 +232,7 @@ var hierarchy =
     [ "Kernel::Ref< Kernel::USER_PROCESS >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< Kind >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< StreamTrait >", "class_kernel_1_1_ref.html", null ],
+    [ "RefType", "struct_ref_type.html", null ],
     [ "Kernel::RSDT", "class_kernel_1_1_r_s_d_t.html", null ],
     [ "BootDeviceSATA::SATATrait", "struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait.html", null ],
     [ "Kernel::SDT", "class_kernel_1_1_s_d_t.html", [
@@ -268,7 +268,6 @@ var hierarchy =
     [ "Kernel::Variant", "class_kernel_1_1_variant.html", null ],
     [ "XCOFF_FILE_HEADER", "struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html", null ],
     [ "XCOFF_FORK_HEADER", "struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html", null ],
-    [ "ZXD::ZXD_EXEC_HEADER", "struct_z_x_d_1_1_z_x_d___e_x_e_c___h_e_a_d_e_r.html", [
-      [ "ZXD::ZXD_STUB_HEADER", "struct_z_x_d_1_1_z_x_d___s_t_u_b___h_e_a_d_e_r.html", null ]
-    ] ]
+    [ "ZXD::ZXD_EXEC_HEADER", "struct_z_x_d_1_1_z_x_d___e_x_e_c___h_e_a_d_e_r.html", null ],
+    [ "ZXD::ZXD_STUB_HEADER", "struct_z_x_d_1_1_z_x_d___s_t_u_b___h_e_a_d_e_r.html", null ]
 ];

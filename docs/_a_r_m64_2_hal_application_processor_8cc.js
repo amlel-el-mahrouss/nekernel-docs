@@ -15,7 +15,7 @@ var _a_r_m64_2_hal_application_processor_8cc =
     [ "GICD_ISENABLER", "_a_r_m64_2_hal_application_processor_8cc.html#ad6013481a4c73be9ba10c48b63c0b4b3", null ],
     [ "GICD_ISPENDR", "_a_r_m64_2_hal_application_processor_8cc.html#adcfba29d834be7844951c0db7a9706c8", null ],
     [ "GICD_ITARGETSR", "_a_r_m64_2_hal_application_processor_8cc.html#a9128764019e69b9d5ec839ecd583dd87", null ],
-    [ "mp_get_current_context", "_a_r_m64_2_hal_application_processor_8cc.html#ab1593874a5bd680ff51aa6ec5be15211", null ],
+    [ "mp_get_current_task", "_a_r_m64_2_hal_application_processor_8cc.html#a64b1746030e3d8fb1f81e7f4debd8335", null ],
     [ "mp_handle_gic_interrupt_el0", "_a_r_m64_2_hal_application_processor_8cc.html#a9a536fa826b965fedc4a9bc0eae2db03", null ],
     [ "mp_init_cores", "_a_r_m64_2_hal_application_processor_8cc.html#a572ff592dc970ed6b041cded38d31028", null ],
     [ "mp_register_task", "_a_r_m64_2_hal_application_processor_8cc.html#aca71e974851c325b8699f4ff742c0be8", null ],

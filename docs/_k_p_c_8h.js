@@ -37,6 +37,7 @@ var _k_p_c_8h =
     [ "kErrorNonBlocking", "_k_p_c_8h.html#a281c3cfe1ccb9968c64b5eadce35b50f", null ],
     [ "kErrorNoNetwork", "_k_p_c_8h.html#ad7436d81a18f7a82ccc1ded783e9d89f", null ],
     [ "kErrorNoSuchDisk", "_k_p_c_8h.html#a40acf3055f67084395632863858b69f0", null ],
+    [ "kErrorOutOfBitMapMemory", "_k_p_c_8h.html#acb089b3719a36d936145b7ebe0aa0aab", null ],
     [ "kErrorOutOfTeamSlot", "_k_p_c_8h.html#a208c92bd598b4fc5f5e12b259a3b7e04", null ],
     [ "kErrorProcessFault", "_k_p_c_8h.html#a03164bee24bf791bf524cc8c2b3c1360", null ],
     [ "kErrorSign", "_k_p_c_8h.html#a1a75d893e943fc961fcd74219c8988c0", null ],

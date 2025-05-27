@@ -1,17 +1,14 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_c_f_1_1_c_f_rect.html#acf3dd4fbed0055bd0de39de7db3e6f3a',1,'CF::CFRect']]],
-  ['x_5f1_1',['x_1',['../struct_c_f_1_1_c_f_point.html#aaac55f616d75efb3e4fe6e4aa96873db',1,'CF::CFPoint']]],
-  ['x_5f2_2',['x_2',['../struct_c_f_1_1_c_f_point.html#aab89c18552380c95eee1f7bbc010a209',1,'CF::CFPoint']]],
-  ['x_5fdsdt_3',['X_Dsdt',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a9b03dcfcf4b8e040544c7080a10c5645',1,'Kernel::Detail::FADT']]],
-  ['x_5ffirmwarecontrol_4',['X_FirmwareControl',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a08940c1f347130e215dcb7330d8d0296',1,'Kernel::Detail::FADT']]],
-  ['x_5fgpe0block_5',['X_GPE0Block',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#ae82ebe0862d94a4ad5b3b843d2d7571e',1,'Kernel::Detail::FADT']]],
-  ['x_5fgpe1block_6',['X_GPE1Block',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#ac07e5105ad25c369a3634b2f40cf3459',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1acontrolblock_7',['X_PM1aControlBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#ae9a34017b668101c2d803887a79af791',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1aeventblock_8',['X_PM1aEventBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#ab05d3aeadfdff9805a9c60ed8a2a5a34',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1bcontrolblock_9',['X_PM1bControlBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a1de28cb25d53b0eab6bf7e531e9e9538',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1beventblock_10',['X_PM1bEventBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a4d84e472ceec859901fb1ddbafd38ba7',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm2controlblock_11',['X_PM2ControlBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a3838926b46b2a3fa26a280260a4b47c3',1,'Kernel::Detail::FADT']]],
-  ['x_5fpmtimerblock_12',['X_PMTimerBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a3ccba0eee7b816e0a9dbbdc3635e7466',1,'Kernel::Detail::FADT']]],
-  ['xsdtaddress_13',['XsdtAddress',['../class_kernel_1_1_r_s_d_p.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
+  ['waitforevent_0',['WaitForEvent',['../struct_efi_boot_services.html#afd38f34c1000a900497466a17d491a67',1,'EfiBootServices']]],
+  ['waitforkey_1',['WaitForKey',['../struct_efi_simple_text_input_protocol.html#ab0f7b1937c8f3192dc3953cbfe47884a',1,'EfiSimpleTextInputProtocol']]],
+  ['waitforpacket_2',['WaitForPacket',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html#a23a714bf4e50631e1b5621ac4e18d8ac',1,'EFI_SIMPLE_NETWORK_PROTOCOL']]],
+  ['watchdogcode_3',['WatchdogCode',['../struct_efi_boot_services.html#a11ab6fd62011829af61308f82f68595d',1,'EfiBootServices']]],
+  ['whoami_4',['WhoAmI',['../struct___efi_mp_services_protocol.html#ac89d032b0953a4428ca3b114e6f97ad5',1,'_EfiMpServicesProtocol']]],
+  ['width_5',['width',['../struct_c_f_1_1_c_f_rect.html#a1a074ab4157a98698df6c30be6600316',1,'CF::CFRect']]],
+  ['win32versionvalue_6',['Win32VersionValue',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#ae015a27d22072ee22f4409e2f063d6d9',1,'LDR_OPTIONAL_HEADER']]],
+  ['worstc2latency_7',['WorstC2Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a53f6ef0ea10b55ad251f49b49b36befb',1,'Kernel::Detail::FADT']]],
+  ['worstc3latency_8',['WorstC3Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a2659903a5f4bc8fc0e350d0144865bcf',1,'Kernel::Detail::FADT']]],
+  ['wr_9',['Wr',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#af6098d5e4049618cee678d0ecce9889a',1,'Kernel::HAL::Detail::PTE']]],
+  ['write_10',['write',['../struct_hba_cmd_header_1_1_hba_flags_1_1_hba_flags__.html#a0daa718f6a6701f167f65c4da9467a23',1,'HbaCmdHeader::HbaFlags::HbaFlags_::Write'],['../struct_hba_flags_1_1_hba_flags__.html#a4f27579b1c024a4c1c96cd71b782964f',1,'HbaFlags::HbaFlags_::Write']]]
 ];

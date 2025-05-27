@@ -12,7 +12,7 @@ var searchData=
   ['ddk_5fver_2ec_9',['ddk_ver.c',['../ddk__ver_8c.html',1,'']]],
   ['debugoutput_2eh_10',['DebugOutput.h',['../_debug_output_8h.html',1,'']]],
   ['defines_2ecc_11',['Defines.cc',['../_defines_8cc.html',1,'']]],
-  ['defines_2eh_12',['defines.h',['../modules_2_h_p_e_t_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_f_s_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_kernel_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_ne_kit_2_defines_8h.html',1,'(Global Namespace)']]],
+  ['defines_2eh_12',['defines.h',['../kernel_2_ne_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_f_s_kit_2_defines_8h.html',1,'(Global Namespace)'],['../kernel_2_kernel_kit_2_defines_8h.html',1,'(Global Namespace)'],['../modules_2_h_p_e_t_2_defines_8h.html',1,'(Global Namespace)']]],
   ['detail_2eh_13',['Detail.h',['../_detail_8h.html',1,'']]],
   ['dev_2eh_14',['dev.h',['../dev_8h.html',1,'']]],
   ['device_2ecc_15',['Device.cc',['../_device_8cc.html',1,'']]],
@@ -31,7 +31,6 @@ var searchData=
   ['dma_2eh_28',['DMA.h',['../_d_m_a_8h.html',1,'']]],
   ['dma_2einl_29',['DMA.inl',['../_d_m_a_8inl.html',1,'']]],
   ['dmapool_2eh_30',['DmaPool.h',['../_dma_pool_8h.html',1,'']]],
-  ['drivemgr_2bio_2ecc_31',['DriveMgr+IO.cc',['../_drive_mgr_09_i_o_8cc.html',1,'']]],
-  ['drivemgr_2ecc_32',['DriveMgr.cc',['../_drive_mgr_8cc.html',1,'']]],
-  ['drivemgr_2eh_33',['DriveMgr.h',['../_drive_mgr_8h.html',1,'']]]
+  ['drivemgr_2ecc_31',['DriveMgr.cc',['../_drive_mgr_8cc.html',1,'']]],
+  ['drivemgr_2eh_32',['DriveMgr.h',['../_drive_mgr_8h.html',1,'']]]
 ];

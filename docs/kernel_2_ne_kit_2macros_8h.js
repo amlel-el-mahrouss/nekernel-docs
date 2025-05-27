@@ -7,7 +7,7 @@ var kernel_2_ne_kit_2macros_8h =
     [ "BOOL", "kernel_2_ne_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa", null ],
     [ "CANT_REACH", "kernel_2_ne_kit_2macros_8h.html#a1e5a0d5e8d82cf431d053de327336909", null ],
     [ "CONST", "kernel_2_ne_kit_2macros_8h.html#a0c33b494a68ce28497e7ce8e5e95feff", null ],
-    [ "dbg_break_point", "kernel_2_ne_kit_2macros_8h.html#a39407ed8d5c7b81d124ee9eddcd75bf1", null ],
+    [ "DBG_TRAP", "kernel_2_ne_kit_2macros_8h.html#a3f2d54119c8cfd419ac8766ea89fa163", null ],
     [ "DEPRECATED", "kernel_2_ne_kit_2macros_8h.html#ac1e8a42306d8e67cb94ca31c3956ee78", null ],
     [ "END_ENUM", "kernel_2_ne_kit_2macros_8h.html#afb96a4f1fb3f74444883723265d6121b", null ],
     [ "END_STRING_ENUM", "kernel_2_ne_kit_2macros_8h.html#aba2e214220b4832db034e3a0fbd8319b", null ],
@@ -24,6 +24,7 @@ var kernel_2_ne_kit_2macros_8h =
     [ "kInvalidAddress", "kernel_2_ne_kit_2macros_8h.html#ae6907b878d2ef234fa615e99a1c92ce2", null ],
     [ "kMaxAddr", "kernel_2_ne_kit_2macros_8h.html#ace90abacfea16d359d2362b2b9750993", null ],
     [ "kPathLen", "kernel_2_ne_kit_2macros_8h.html#a348e01990cb6bce27f125183c9722b91", null ],
+    [ "LIKELY", "kernel_2_ne_kit_2macros_8h.html#ace15a4ce9b4ba026dd7e70f213bff952", null ],
     [ "MAKE_ENUM", "kernel_2_ne_kit_2macros_8h.html#aa8c1bad13059adc3e356392ae1ef9daf", null ],
     [ "MAKE_STRING_ENUM", "kernel_2_ne_kit_2macros_8h.html#a01626b98408c4d01b0f4c4e59f94539f", null ],
     [ "MIB", "kernel_2_ne_kit_2macros_8h.html#a3d3145295541b38666bf1e095a7d74f6", null ],
@@ -42,6 +43,7 @@ var kernel_2_ne_kit_2macros_8h =
     [ "TIB", "kernel_2_ne_kit_2macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca", null ],
     [ "tib_cast", "kernel_2_ne_kit_2macros_8h.html#a88a22810bf835b7794ce207e15732da8", null ],
     [ "TRUE", "kernel_2_ne_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d", null ],
+    [ "UNLIKELY", "kernel_2_ne_kit_2macros_8h.html#a24b6e8c86ed8291c69b50e480447382e", null ],
     [ "Yes", "kernel_2_ne_kit_2macros_8h.html#adf4f44e25f5216808d6ca83186e89119", null ],
     [ "YES", "kernel_2_ne_kit_2macros_8h.html#a7ebc9a785e5ab85457c98595aac81589", null ]
 ];

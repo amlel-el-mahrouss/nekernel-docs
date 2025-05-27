@@ -7,5 +7,6 @@ var _bit_map_mgr_8cc =
     [ "kBitMapUsedIdx", "_bit_map_mgr_8cc.html#a9e794d29465d4273ec6fb05fb175b494", null ],
     [ "mm_alloc_bitmap", "_bit_map_mgr_8cc.html#affee534647fc06a87fa2cea64c032a9e", null ],
     [ "mm_free_bitmap", "_bit_map_mgr_8cc.html#ad6ccb1cd68f687229cb57f8326f780c4", null ],
-    [ "mm_is_bitmap", "_bit_map_mgr_8cc.html#ac31e41dbca9a0caad492484ce4d99fca", null ]
+    [ "mm_is_bitmap", "_bit_map_mgr_8cc.html#ac31e41dbca9a0caad492484ce4d99fca", null ],
+    [ "kBitMapCursor", "_bit_map_mgr_8cc.html#a18d35b79fc60750b89379b6426552f30", null ]
 ];

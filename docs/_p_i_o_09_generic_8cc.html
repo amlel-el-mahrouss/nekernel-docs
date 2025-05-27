@@ -90,19 +90,364 @@ $(document).ready(function(){initNavTree('_p_i_o_09_generic_8cc.html',''); initR
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">PIO+Generic.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>ATA driver (PIO mode).  
 <a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_drive_mgr_8h_source.html">KernelKit/DriveMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kernel_2_storage_kit_2_a_t_a_8h_source.html">StorageKit/ATA.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="modules_2_a_t_a_2_a_t_a_8h_source.html">modules/ATA/ATA.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_kernel" id="r_namespace_kernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespace_kernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_kernel_1_1_detail" id="r_namespace_kernel_1_1_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html">Kernel::Detail</a></td></tr>
+<tr class="memdesc:namespace_kernel_1_1_detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0ed1077d0b7cee4b51cb1ab93949a361" id="r_a0ed1077d0b7cee4b51cb1ab93949a361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a0ed1077d0b7cee4b51cb1ab93949a361">kATADataLen</a>&#160;&#160;&#160;256</td></tr>
+<tr class="memdesc:a0ed1077d0b7cee4b51cb1ab93949a361"><td class="mdescLeft">&#160;</td><td class="mdescRight">BUGS: 0.  <br /></td></tr>
+<tr class="separator:a0ed1077d0b7cee4b51cb1ab93949a361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4b9ca446b766e0afcdb2507697e3716f" id="r_a4b9ca446b766e0afcdb2507697e3716f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a4b9ca446b766e0afcdb2507697e3716f">drv_pio_std_select</a> (<a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> Bus)</td></tr>
+<tr class="separator:a4b9ca446b766e0afcdb2507697e3716f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e0d520a4f9c7550a85263e56d38b9a" id="r_af2e0d520a4f9c7550a85263e56d38b9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#af2e0d520a4f9c7550a85263e56d38b9a">drv_pio_std_init</a> (<a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> Bus, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> Drive, <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;OutBus, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> &amp;OutMaster)</td></tr>
+<tr class="separator:af2e0d520a4f9c7550a85263e56d38b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad7a7b52cc819b6c9a3b824fc5cbbef" id="r_adad7a7b52cc819b6c9a3b824fc5cbbef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#adad7a7b52cc819b6c9a3b824fc5cbbef">drv_pio_std_read</a> (<a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> <a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a>, <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> IO, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> Master, <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *Buf, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> SectorSz, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>)</td></tr>
+<tr class="separator:adad7a7b52cc819b6c9a3b824fc5cbbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8bda5a5bc6350153e87a94507968f6" id="r_aef8bda5a5bc6350153e87a94507968f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#aef8bda5a5bc6350153e87a94507968f6">drv_pio_std_write</a> (<a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> <a class="el" href="namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a>, <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> IO, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> Master, <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *Buf, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> SectorSz, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>)</td></tr>
+<tr class="separator:aef8bda5a5bc6350153e87a94507968f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0d4828d78f55bd314a9ad227343f2c" id="r_a6f0d4828d78f55bd314a9ad227343f2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a6f0d4828d78f55bd314a9ad227343f2c">drv_pio_std_detected</a> (<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>)</td></tr>
+<tr class="memdesc:a6f0d4828d78f55bd314a9ad227343f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">is ATA detected?  <br /></td></tr>
+<tr class="separator:a6f0d4828d78f55bd314a9ad227343f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6fcdc349317b86b9b7e6809d5233de" id="r_a4f6fcdc349317b86b9b7e6809d5233de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a4f6fcdc349317b86b9b7e6809d5233de">drv_pio_get_sector_count</a> ()</td></tr>
+<tr class="separator:a4f6fcdc349317b86b9b7e6809d5233de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579c5f9ee8979504d4222859640907e2" id="r_a579c5f9ee8979504d4222859640907e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a579c5f9ee8979504d4222859640907e2">drv_pio_get_size</a> ()</td></tr>
+<tr class="memdesc:a579c5f9ee8979504d4222859640907e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the drive size.  <br /></td></tr>
+<tr class="separator:a579c5f9ee8979504d4222859640907e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857c31714e87a5e8777f7d4981581adf" id="r_a857c31714e87a5e8777f7d4981581adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a857c31714e87a5e8777f7d4981581adf">Kernel::sk_init_ata_device</a> (<a class="el" href="ddk_2_d_d_k_kit_2macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> is_master, <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;io, <a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> &amp;master)</td></tr>
+<tr class="memdesc:a857c31714e87a5e8777f7d4981581adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an PIO device (StorageKit function)  <br /></td></tr>
+<tr class="separator:a857c31714e87a5e8777f7d4981581adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa011d5e4bda18cdd44be2e47b387305c" id="r_aa011d5e4bda18cdd44be2e47b387305c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#aa011d5e4bda18cdd44be2e47b387305c">Kernel::Detail::sk_io_read_pio</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
+<tr class="memdesc:aa011d5e4bda18cdd44be2e47b387305c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read PIO device.  <br /></td></tr>
+<tr class="separator:aa011d5e4bda18cdd44be2e47b387305c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256c24bfbe268d9e3889b370bd6e32ee" id="r_a256c24bfbe268d9e3889b370bd6e32ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a256c24bfbe268d9e3889b370bd6e32ee">Kernel::Detail::sk_io_write_pio</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> * &gt; *self, <a class="el" href="class_kernel_1_1_mountpoint_interface.html">MountpointInterface</a> *mnt)</td></tr>
+<tr class="memdesc:a256c24bfbe268d9e3889b370bd6e32ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write PIO device.  <br /></td></tr>
+<tr class="separator:a256c24bfbe268d9e3889b370bd6e32ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077b5d580d77a1f4d0207d30f01b7ccf" id="r_a077b5d580d77a1f4d0207d30f01b7ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_kernel_1_1_error_or.html">ErrorOr</a>&lt; <a class="el" href="class_kernel_1_1_a_t_a_device_interface.html">ATADeviceInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a077b5d580d77a1f4d0207d30f01b7ccf">Kernel::sk_acquire_ata_device</a> (<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> drv_index)</td></tr>
+<tr class="memdesc:a077b5d580d77a1f4d0207d30f01b7ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a new PIO device with drv_index in mind.  <br /></td></tr>
+<tr class="separator:a077b5d580d77a1f4d0207d30f01b7ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aee1e18434ecc195aa90fa2b163ba9b3c" id="r_aee1e18434ecc195aa90fa2b163ba9b3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#aee1e18434ecc195aa90fa2b163ba9b3c">kATADetected</a> = <a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr class="separator:aee1e18434ecc195aa90fa2b163ba9b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b530d12cf2bf96f9564e5cffdee99d1" id="r_a5b530d12cf2bf96f9564e5cffdee99d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#a5b530d12cf2bf96f9564e5cffdee99d1">kATAIdentifyData</a> [<a class="el" href="_p_i_o_09_generic_8cc.html#a0ed1077d0b7cee4b51cb1ab93949a361">kATADataLen</a>] = {0}</td></tr>
+<tr class="separator:a5b530d12cf2bf96f9564e5cffdee99d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fbac92e05adb7093a0fbf334340367" id="r_ad6fbac92e05adb7093a0fbf334340367"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_p_i_o_09_generic_8cc.html#ad6fbac92e05adb7093a0fbf334340367">kATADiskModel</a> [50] = {&quot;GENERIC PIO&quot;}</td></tr>
+<tr class="separator:ad6fbac92e05adb7093a0fbf334340367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ATA driver (PIO mode). </p>
 <dl class="section author"><dt>Author</dt><dd>Amlal El Mahrouss (<a href="#" onclick="location.href='mai'+'lto:'+'aml'+'al'+'@ne'+'ke'+'rne'+'l.'+'org'; return false;">amlal<span class="obfuscator">.nosp@m.</span>@nek<span class="obfuscator">.nosp@m.</span>ernel<span class="obfuscator">.nosp@m.</span>.org</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024-02-02</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) Amlal El Mahrouss </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a0ed1077d0b7cee4b51cb1ab93949a361" name="a0ed1077d0b7cee4b51cb1ab93949a361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed1077d0b7cee4b51cb1ab93949a361">&#9670;&#160;</a></span>kATADataLen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kATADataLen&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BUGS: 0. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4f6fcdc349317b86b9b7e6809d5233de" name="a4f6fcdc349317b86b9b7e6809d5233de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6fcdc349317b86b9b7e6809d5233de">&#9670;&#160;</a></span>drv_pio_get_sector_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> drv_pio_get_sector_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a579c5f9ee8979504d4222859640907e2" name="a579c5f9ee8979504d4222859640907e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579c5f9ee8979504d4222859640907e2">&#9670;&#160;</a></span>drv_pio_get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> drv_pio_get_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the drive size. </p>
+
+</div>
+</div>
+<a id="a6f0d4828d78f55bd314a9ad227343f2c" name="a6f0d4828d78f55bd314a9ad227343f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0d4828d78f55bd314a9ad227343f2c">&#9670;&#160;</a></span>drv_pio_std_detected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> drv_pio_std_detected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>is ATA detected? </p>
+
+</div>
+</div>
+<a id="af2e0d520a4f9c7550a85263e56d38b9a" name="af2e0d520a4f9c7550a85263e56d38b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e0d520a4f9c7550a85263e56d38b9a">&#9670;&#160;</a></span>drv_pio_std_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> drv_pio_std_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td>
+          <td class="paramname"><em>Bus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>Drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> &amp;&#160;</td>
+          <td class="paramname"><em>OutBus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> &amp;&#160;</td>
+          <td class="paramname"><em>OutMaster</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>fetch serial info model, speed, number of sectors...</p>
+
+</div>
+</div>
+<a id="adad7a7b52cc819b6c9a3b824fc5cbbef" name="adad7a7b52cc819b6c9a3b824fc5cbbef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad7a7b52cc819b6c9a3b824fc5cbbef">&#9670;&#160;</a></span>drv_pio_std_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> drv_pio_std_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td>
+          <td class="paramname"><em>Lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td>
+          <td class="paramname"><em>IO</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>Master</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td>
+          <td class="paramname"><em>Buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td>
+          <td class="paramname"><em>SectorSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td>
+          <td class="paramname"><em>Size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b9ca446b766e0afcdb2507697e3716f" name="a4b9ca446b766e0afcdb2507697e3716f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9ca446b766e0afcdb2507697e3716f">&#9670;&#160;</a></span>drv_pio_std_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> drv_pio_std_select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td>
+          <td class="paramname"><em>Bus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef8bda5a5bc6350153e87a94507968f6" name="aef8bda5a5bc6350153e87a94507968f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8bda5a5bc6350153e87a94507968f6">&#9670;&#160;</a></span>drv_pio_std_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> drv_pio_std_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td>
+          <td class="paramname"><em>Lba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a>&#160;</td>
+          <td class="paramname"><em>IO</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>Master</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td>
+          <td class="paramname"><em>Buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td>
+          <td class="paramname"><em>SectorSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td>
+          <td class="paramname"><em>Size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aee1e18434ecc195aa90fa2b163ba9b3c" name="aee1e18434ecc195aa90fa2b163ba9b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee1e18434ecc195aa90fa2b163ba9b3c">&#9670;&#160;</a></span>kATADetected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a> kATADetected = <a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6fbac92e05adb7093a0fbf334340367" name="ad6fbac92e05adb7093a0fbf334340367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fbac92e05adb7093a0fbf334340367">&#9670;&#160;</a></span>kATADiskModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> kATADiskModel[50] = {&quot;GENERIC PIO&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b530d12cf2bf96f9564e5cffdee99d1" name="a5b530d12cf2bf96f9564e5cffdee99d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b530d12cf2bf96f9564e5cffdee99d1">&#9670;&#160;</a></span>kATAIdentifyData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260">UInt16</a> kATAIdentifyData[<a class="el" href="_p_i_o_09_generic_8cc.html#a0ed1077d0b7cee4b51cb1ab93949a361">kATADataLen</a>] = {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

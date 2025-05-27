@@ -6,6 +6,7 @@ var _p_i_o_09_generic_8cc =
     [ "drv_pio_std_detected", "_p_i_o_09_generic_8cc.html#a6f0d4828d78f55bd314a9ad227343f2c", null ],
     [ "drv_pio_std_init", "_p_i_o_09_generic_8cc.html#af2e0d520a4f9c7550a85263e56d38b9a", null ],
     [ "drv_pio_std_read", "_p_i_o_09_generic_8cc.html#adad7a7b52cc819b6c9a3b824fc5cbbef", null ],
+    [ "drv_pio_std_select", "_p_i_o_09_generic_8cc.html#a4b9ca446b766e0afcdb2507697e3716f", null ],
     [ "drv_pio_std_write", "_p_i_o_09_generic_8cc.html#aef8bda5a5bc6350153e87a94507968f6", null ],
     [ "sk_acquire_ata_device", "_p_i_o_09_generic_8cc.html#a077b5d580d77a1f4d0207d30f01b7ccf", null ],
     [ "sk_init_ata_device", "_p_i_o_09_generic_8cc.html#a857c31714e87a5e8777f7d4981581adf", null ],

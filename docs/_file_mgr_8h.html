@@ -95,7 +95,8 @@ $(document).ready(function(){initNavTree('_file_mgr_8h.html',''); initResizable(
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">FileMgr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -104,8 +105,8 @@ $(document).ready(function(){initNavTree('_file_mgr_8h.html',''); initResizable(
 <code>#include &lt;<a class="el" href="_ne_f_s_8h_source.html">FSKit/NeFS.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_compiler_kit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_debug_output_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_heap_mgr_8h_source.html">KernelKit/HeapMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_error_or_8h_source.html">NeKit/ErrorOr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dev_2kernel_2_ne_kit_2_ref_8h_source.html">NeKit/Ref.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_stream_8h_source.html">NeKit/Stream.h</a>&gt;</code><br />
@@ -120,8 +121,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_file_stream.html">Kernel::FileStream&lt; Encoding, FSClass &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_file_restrict_kind.html">Kernel::FileRestrictKind</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">restrict information about the file descriptor.  <a href="struct_kernel_1_1_file_restrict_kind.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_1_1_f_i_l_e_m_g_r___r_e_s_t_r_i_c_t.html">Kernel::FILEMGR_RESTRICT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">restrict information about the file descriptor.  <a href="struct_kernel_1_1_f_i_l_e_m_g_r___r_e_s_t_r_i_c_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -159,8 +160,10 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:aa519d3877ce6af25ab70f48dce4e25eb" id="r_aa519d3877ce6af25ab70f48dce4e25eb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa519d3877ce6af25ab70f48dce4e25eb">Kernel::NodePtr</a></td></tr>
 <tr class="separator:aa519d3877ce6af25ab70f48dce4e25eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e6c449e7adf6c129e3c34ee15d000f" id="r_ab1e6c449e7adf6c129e3c34ee15d000f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab1e6c449e7adf6c129e3c34ee15d000f">Kernel::FileStreamUTF8</a> = <a class="el" href="class_kernel_1_1_file_stream.html">FileStream</a>&lt; <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> &gt;</td></tr>
-<tr class="separator:ab1e6c449e7adf6c129e3c34ee15d000f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae135608e6c15640852e1e44d7ce869" id="r_a1ae135608e6c15640852e1e44d7ce869"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a1ae135608e6c15640852e1e44d7ce869">Kernel::FileStreamASCII</a> = <a class="el" href="class_kernel_1_1_file_stream.html">FileStream</a>&lt; <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> &gt;</td></tr>
+<tr class="separator:a1ae135608e6c15640852e1e44d7ce869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab078a4618829dd3093493db47715ac12" id="r_ab078a4618829dd3093493db47715ac12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab078a4618829dd3093493db47715ac12">Kernel::FileStreamUTF8</a> = <a class="el" href="class_kernel_1_1_file_stream.html">FileStream</a>&lt; <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> &gt;</td></tr>
+<tr class="separator:ab078a4618829dd3093493db47715ac12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95eb4ef37b2835b35ed3e5c3d165f6e4" id="r_a95eb4ef37b2835b35ed3e5c3d165f6e4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a95eb4ef37b2835b35ed3e5c3d165f6e4">Kernel::FileStreamUTF16</a> = <a class="el" href="class_kernel_1_1_file_stream.html">FileStream</a>&lt; <a class="el" href="namespace_kernel.html#ab7f195cb15ebd306ab70f4dae079c0f2">WideChar</a> &gt;</td></tr>
 <tr class="separator:a95eb4ef37b2835b35ed3e5c3d165f6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4915b883535302f04f978b1c160ad64" id="r_ac4915b883535302f04f978b1c160ad64"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ac4915b883535302f04f978b1c160ad64">Kernel::CursorType</a></td></tr>
@@ -181,6 +184,11 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9fa4669f2e389b0b1a99b964cd9ac251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3d05dc7ecb1b4ca1c7b09d74a4ee942d" id="r_a3d05dc7ecb1b4ca1c7b09d74a4ee942d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> const auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a3d05dc7ecb1b4ca1c7b09d74a4ee942d">Kernel::kRestrictStrLen</a> = 8U</td></tr>
+<tr class="separator:a3d05dc7ecb1b4ca1c7b09d74a4ee942d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a282b7015f5694ba92e3b80f866540191" name="a282b7015f5694ba92e3b80f866540191"></a>

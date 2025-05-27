@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('_heap_mgr_8cc.html',''); initResizable
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="_arch_kit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_debug_output_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_heap_mgr_8h_source.html">KernelKit/HeapMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_crc32_8h_source.html">NeKit/Crc32.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_page_mgr_8h_source.html">NeKit/PageMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_ne_kit_2_utils_8h_source.html">NeKit/Utils.h</a>&gt;</code><br />
@@ -128,10 +128,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a57441e7e52a2a46de57ce11eded38311" id="r_a57441e7e52a2a46de57ce11eded38311"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_heap_mgr_8cc.html#a57441e7e52a2a46de57ce11eded38311">kMemoryMgrMagic</a>&#160;&#160;&#160;(0xD4D75)</td></tr>
-<tr class="separator:a57441e7e52a2a46de57ce11eded38311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2f1160ea314725e28dd39120b7e6e0" id="r_a7b2f1160ea314725e28dd39120b7e6e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_heap_mgr_8cc.html#a7b2f1160ea314725e28dd39120b7e6e0">kMemoryMgrAlignSz</a>&#160;&#160;&#160;(4U)</td></tr>
-<tr class="separator:a7b2f1160ea314725e28dd39120b7e6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606f632d3102bb6bc04cf4ccca46b293" id="r_a606f632d3102bb6bc04cf4ccca46b293"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_heap_mgr_8cc.html#a606f632d3102bb6bc04cf4ccca46b293">kHeapMgrMagic</a>&#160;&#160;&#160;(0xD4D75)</td></tr>
+<tr class="separator:a606f632d3102bb6bc04cf4ccca46b293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f553a46dc9fd4c79f855d6c6f082c7f" id="r_a1f553a46dc9fd4c79f855d6c6f082c7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_heap_mgr_8cc.html#a1f553a46dc9fd4c79f855d6c6f082c7f">kHeapMgrAlignSz</a>&#160;&#160;&#160;(4U)</td></tr>
+<tr class="separator:a1f553a46dc9fd4c79f855d6c6f082c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -143,21 +143,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a1f66348fbc5ecb5362ae1ca9ff512a81" id="r_a1f66348fbc5ecb5362ae1ca9ff512a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_hint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel_1_1_detail.html#a1f66348fbc5ecb5362ae1ca9ff512a81">Kernel::Detail::mm_check_ptr_address</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr) -&gt; <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a></td></tr>
 <tr class="memdesc:a1f66348fbc5ecb5362ae1ca9ff512a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for heap address validity.  <br /></td></tr>
 <tr class="separator:a1f66348fbc5ecb5362ae1ca9ff512a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26a8fd56aaad76b883b027cc5b47594" id="r_ab26a8fd56aaad76b883b027cc5b47594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab26a8fd56aaad76b883b027cc5b47594">Kernel::mm_new_ptr</a> (<a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> sz, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> wr, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> user, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> pad_amount=0)</td></tr>
-<tr class="memdesc:ab26a8fd56aaad76b883b027cc5b47594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate chunk of memory.  <br /></td></tr>
-<tr class="separator:ab26a8fd56aaad76b883b027cc5b47594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab065e0cb192f929be2272ce79b32f036" id="r_ab065e0cb192f929be2272ce79b32f036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab065e0cb192f929be2272ce79b32f036">Kernel::mm_alloc_ptr</a> (<a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> sz, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> wr, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> user, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> pad_amount=0)</td></tr>
+<tr class="memdesc:ab065e0cb192f929be2272ce79b32f036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate chunk of memory.  <br /></td></tr>
+<tr class="separator:ab065e0cb192f929be2272ce79b32f036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b2de84a664e9ca3acf2bf456b08ca4e" id="r_a2b2de84a664e9ca3acf2bf456b08ca4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a2b2de84a664e9ca3acf2bf456b08ca4e">Kernel::mm_make_page</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr)</td></tr>
 <tr class="memdesc:a2b2de84a664e9ca3acf2bf456b08ca4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a <a class="el" href="namespace_kernel.html" title="USER_PROCESS inline definitions.">Kernel</a> page.  <br /></td></tr>
 <tr class="separator:a2b2de84a664e9ca3acf2bf456b08ca4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f354d5eaab4a9255950fa7a8c2b9cb8" id="r_a5f354d5eaab4a9255950fa7a8c2b9cb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a5f354d5eaab4a9255950fa7a8c2b9cb8">Kernel::mm_make_ptr_flags</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr, <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> flags)</td></tr>
-<tr class="memdesc:a5f354d5eaab4a9255950fa7a8c2b9cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites and set the flags of a heap header.  <br /></td></tr>
-<tr class="separator:a5f354d5eaab4a9255950fa7a8c2b9cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343c3df9af45e08e7843677c11859160" id="r_a343c3df9af45e08e7843677c11859160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a343c3df9af45e08e7843677c11859160">Kernel::mm_set_ptr_flags</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr, <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> flags)</td></tr>
+<tr class="memdesc:a343c3df9af45e08e7843677c11859160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites and set the flags of a heap header.  <br /></td></tr>
+<tr class="separator:a343c3df9af45e08e7843677c11859160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa392d28ee9599d73210e3abd6c9894c1" id="r_aa392d28ee9599d73210e3abd6c9894c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa392d28ee9599d73210e3abd6c9894c1">Kernel::mm_get_ptr_flags</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr)</td></tr>
 <tr class="memdesc:aa392d28ee9599d73210e3abd6c9894c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the flags of a heap header.  <br /></td></tr>
 <tr class="separator:aa392d28ee9599d73210e3abd6c9894c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0e5287045ed50874caf6eaf59ec26a" id="r_a3a0e5287045ed50874caf6eaf59ec26a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a3a0e5287045ed50874caf6eaf59ec26a">Kernel::mm_delete_ptr</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr)</td></tr>
-<tr class="memdesc:a3a0e5287045ed50874caf6eaf59ec26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare pointer as free.  <br /></td></tr>
-<tr class="separator:a3a0e5287045ed50874caf6eaf59ec26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78afdb7f1e3846aa5c243867edf475a5" id="r_a78afdb7f1e3846aa5c243867edf475a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a78afdb7f1e3846aa5c243867edf475a5">Kernel::mm_free_ptr</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr)</td></tr>
+<tr class="memdesc:a78afdb7f1e3846aa5c243867edf475a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare pointer as free.  <br /></td></tr>
+<tr class="separator:a78afdb7f1e3846aa5c243867edf475a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d99c80d0b6fbf1d98e4f09cf480d984" id="r_a8d99c80d0b6fbf1d98e4f09cf480d984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#aee72ffbdd081c974875f81f90af1f774">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a8d99c80d0b6fbf1d98e4f09cf480d984">Kernel::mm_is_valid_ptr</a> (<a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> heap_ptr)</td></tr>
 <tr class="memdesc:a8d99c80d0b6fbf1d98e4f09cf480d984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if pointer is a valid <a class="el" href="namespace_kernel.html" title="USER_PROCESS inline definitions.">Kernel</a> pointer.  <br /></td></tr>
 <tr class="separator:a8d99c80d0b6fbf1d98e4f09cf480d984"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,28 +175,28 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Heap system that serves as the main memory manager. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a7b2f1160ea314725e28dd39120b7e6e0" name="a7b2f1160ea314725e28dd39120b7e6e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b2f1160ea314725e28dd39120b7e6e0">&#9670;&#160;</a></span>kMemoryMgrAlignSz</h2>
+<a id="a1f553a46dc9fd4c79f855d6c6f082c7f" name="a1f553a46dc9fd4c79f855d6c6f082c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f553a46dc9fd4c79f855d6c6f082c7f">&#9670;&#160;</a></span>kHeapMgrAlignSz</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kMemoryMgrAlignSz&#160;&#160;&#160;(4U)</td>
+          <td class="memname">#define kHeapMgrAlignSz&#160;&#160;&#160;(4U)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a57441e7e52a2a46de57ce11eded38311" name="a57441e7e52a2a46de57ce11eded38311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57441e7e52a2a46de57ce11eded38311">&#9670;&#160;</a></span>kMemoryMgrMagic</h2>
+<a id="a606f632d3102bb6bc04cf4ccca46b293" name="a606f632d3102bb6bc04cf4ccca46b293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606f632d3102bb6bc04cf4ccca46b293">&#9670;&#160;</a></span>kHeapMgrMagic</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kMemoryMgrMagic&#160;&#160;&#160;(0xD4D75)</td>
+          <td class="memname">#define kHeapMgrMagic&#160;&#160;&#160;(0xD4D75)</td>
         </tr>
       </table>
 </div><div class="memdoc">

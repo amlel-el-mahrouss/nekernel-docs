@@ -10,7 +10,7 @@ var searchData=
   ['intfast64_7',['IntFast64',['../namespace_kernel.html#a2405d4af7251afad48311d9c7135a56f',1,'Kernel']]],
   ['intptr_8',['IntPtr',['../namespace_kernel.html#aa1785cdc0a94603b187d1374cd1b77f0',1,'Kernel']]],
   ['ioarray16_9',['IOArray16',['../namespace_kernel.html#a84861677e73d4851ccaa990031281416',1,'Kernel']]],
-  ['ioref_10',['IORef',['../_system_calls_8h.html#a9df1cb6db51581fef1d78e96625d4ef2',1,'SystemCalls.h']]],
+  ['ioref_10',['IORef',['../_system_8h.html#a9df1cb6db51581fef1d78e96625d4ef2',1,'System.h']]],
   ['ipc_5faddr_11',['IPC_ADDR',['../namespace_kernel.html#a577b78b1f3ed45a5961565fb99c46892',1,'Kernel']]],
   ['ipc_5fmsg_12',['IPC_MSG',['../namespace_kernel.html#ad2bc23e6231252cd293b06edbc201c6a',1,'Kernel']]],
   ['ipcnetworkdevice_13',['IPCNetworkDevice',['../namespace_kernel.html#a83da575b6420b596810c166a3228864e',1,'Kernel']]]

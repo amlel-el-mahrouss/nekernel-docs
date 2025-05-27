@@ -1,19 +1,15 @@
 var searchData=
 [
-  ['ufis_0',['Ufis',['../struct_hba_fis.html#add1d9b7afe3f121fe2e4024db15eb37a',1,'HbaFis']]],
-  ['unicodechar_1',['UnicodeChar',['../struct_efi_input_key.html#acd277339a6209aa9a1b6aadc1d869fdf',1,'EfiInputKey']]],
-  ['uninstallmultipleprotocolinterfaces_2',['UninstallMultipleProtocolInterfaces',['../struct_efi_boot_services.html#a8109f54afa3c5b25054ace50597e85e1',1,'EfiBootServices']]],
-  ['uninstallprotocolinterface_3',['UninstallProtocolInterface',['../struct_efi_boot_services.html#a5819c5c019beb98c81d4aee6e3070838',1,'EfiBootServices']]],
-  ['uniquepartitionguid_4',['UniquePartitionGUID',['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___e_n_t_r_y.html#a8d60dddffc75e7793480ec4fadf46bce',1,'Kernel::GPT_PARTITION_ENTRY']]],
-  ['unload_5',['Unload',['../struct_efi_load_image_protocol.html#a4dc0e91a59197aed35368cc9774ffe61',1,'EfiLoadImageProtocol']]],
-  ['unloadimage_6',['UnloadImage',['../struct_efi_boot_services.html#a2d3d00b2de314d99854593170d168bf4',1,'EfiBootServices']]],
-  ['updatecapsule_7',['UpdateCapsule',['../struct_efi_runtime_services.html#a5796e43b0bc613e59598f01a54adbd72',1,'EfiRuntimeServices']]],
-  ['usedmemory_8',['UsedMemory',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#ab18cce69ec3086c82501a6ba0e3a42ef',1,'Kernel::USER_PROCESS']]],
-  ['user_9',['User',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a3eee5be80a953a9e97ef9378197fe5c3',1,'Kernel::HAL::Detail::PTE']]],
-  ['user_5fprocess_10',['USER_PROCESS',['../struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#a93409cd974b05b5b30cfe9ae3df49159',1,'Kernel::PROCESS_IMAGE']]],
-  ['userprocesshelper_11',['UserProcessHelper',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#ae0a498e5eca7e014fa42499bb6df3f6b',1,'Kernel::USER_PROCESS']]],
-  ['userprocessid_12',['UserProcessID',['../struct_kernel_1_1_i_p_c___a_d_d_r.html#a91b6fb7f9a416990383e765a5ca83910',1,'Kernel::IPC_ADDR']]],
-  ['userprocessscheduler_13',['UserProcessScheduler',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a31015addbbf397ceb32ffe720dab00c5',1,'Kernel::USER_PROCESS']]],
-  ['userprocessteam_14',['UserProcessTeam',['../struct_kernel_1_1_i_p_c___a_d_d_r.html#af7b19c728c4cfb14fa89bd2f6148c0a3',1,'Kernel::IPC_ADDR']]],
-  ['utime_15',['UTime',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a95eac61304485187614ffe2ce2af2f10',1,'Kernel::USER_PROCESS']]]
+  ['target_0',['Target',['../struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#a0751bd4fb59e9c020936cf5dc9c749e8',1,'BOOTNET_INTERNET_HEADER']]],
+  ['teststring_1',['TestString',['../struct_efi_simple_text_output_protocol.html#abf8a0436ae85ac8c04fbb313cafd52af',1,'EfiSimpleTextOutputProtocol']]],
+  ['tfd_2',['Tfd',['../struct_hba_port.html#ad500b94e114a4be3c915580ceb726248',1,'HbaPort']]],
+  ['thread_3',['Thread',['../struct___efi_c_p_u_phyiscal_location.html#abaf714defc717c9a7d46f903fdf3ff46',1,'_EfiCPUPhyiscalLocation']]],
+  ['thunktablerva_4',['ThunkTableRva',['../struct_l_d_r___i_m_p_o_r_t___d_i_r_e_c_t_o_r_y.html#aa1d103286b0d8bf221be909c1b9555dd',1,'LDR_IMPORT_DIRECTORY']]],
+  ['timedatestamp_5',['timedatestamp',['../struct_l_d_r___e_x_e_c___h_e_a_d_e_r.html#a65a7712ef790df2372b293c75e7f6ddd',1,'LDR_EXEC_HEADER::TimeDateStamp'],['../struct_l_d_r___e_x_p_o_r_t___d_i_r_e_c_t_o_r_y.html#a81f211fa79acd36ad48efdb91f103430',1,'LDR_EXPORT_DIRECTORY::TimeDateStamp'],['../struct_l_d_r___i_m_p_o_r_t___d_i_r_e_c_t_o_r_y.html#ab135c2e125d2f0f022c6f51e002d9020',1,'LDR_IMPORT_DIRECTORY::TimeDateStamp']]],
+  ['timezone_6',['TimeZone',['../struct_efi_time.html#a449853c49a93d06f681036a0f50d26c3',1,'EfiTime']]],
+  ['token_7',['token',['../struct_efi_file_protocol.html#a47d8ad2c135d95a7299de12b9d45e12b',1,'EfiFileProtocol::Token'],['../struct_efi_file_protocol.html#ac6d1c4eab54ac39cf150855b7d8c3dd6',1,'EfiFileProtocol::Token']]],
+  ['tranfercount_8',['TranferCount',['../struct_fis_pio_setup.html#afddd5865e3ef88cf95ead529b94b7fee',1,'FisPioSetup']]],
+  ['transfercount_9',['TransferCount',['../struct_fis_dma_setup.html#a6f97273bf001a3c2e164dfc35bdc1c55',1,'FisDmaSetup']]],
+  ['transmit_10',['Transmit',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html#a28e63d3143a775c8ffe595e083a3d077',1,'EFI_SIMPLE_NETWORK_PROTOCOL']]],
+  ['type_11',['Type',['../struct_kernel_1_1_h_a_l_1_1_l_a_p_i_c.html#ae6327c6574e15baa8917b7953d30f45a',1,'Kernel::HAL::LAPIC']]]
 ];

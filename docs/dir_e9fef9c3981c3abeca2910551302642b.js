@@ -13,6 +13,7 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "HeapMgr.h", "_heap_mgr_8h.html", "_heap_mgr_8h" ],
     [ "HeapMgr.inl", "_heap_mgr_8inl.html", "_heap_mgr_8inl" ],
     [ "IDylibObject.h", "_i_dylib_object_8h.html", "_i_dylib_object_8h" ],
+    [ "IFS.h", "_i_f_s_8h.html", "_i_f_s_8h" ],
     [ "IPEFDylibObject.h", "_i_p_e_f_dylib_object_8h.html", "_i_p_e_f_dylib_object_8h" ],
     [ "KernelTaskScheduler.h", "_kernel_task_scheduler_8h.html", "_kernel_task_scheduler_8h" ],
     [ "KPC.h", "_k_p_c_8h.html", "_k_p_c_8h" ],
@@ -28,9 +29,9 @@ var dir_e9fef9c3981c3abeca2910551302642b =
     [ "ThreadLocalStorage.h", "_thread_local_storage_8h.html", "_thread_local_storage_8h" ],
     [ "ThreadLocalStorage.inl", "_thread_local_storage_8inl.html", "_thread_local_storage_8inl" ],
     [ "Timer.h", "_timer_8h.html", "_timer_8h" ],
-    [ "User.h", "_user_8h.html", "_user_8h" ],
+    [ "UserMgr.h", "_user_mgr_8h.html", "_user_mgr_8h" ],
     [ "UserProcessScheduler.h", "_user_process_scheduler_8h.html", "_user_process_scheduler_8h" ],
     [ "UserProcessScheduler.inl", "_user_process_scheduler_8inl.html", null ],
     [ "XCOFF.h", "_x_c_o_f_f_8h.html", "_x_c_o_f_f_8h" ],
-    [ "Zxd.h", "_zxd_8h.html", "_zxd_8h" ]
+    [ "ZXD.h", "_z_x_d_8h.html", "_z_x_d_8h" ]
 ];

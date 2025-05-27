@@ -5,6 +5,7 @@ var class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s =
     [ "~USER_PROCESS", "class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a8171e4263098cb1cdeaae3dab1d54d4f", null ],
     [ "Crash", "class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a95a1de29016807b7006f955b6ca26fc5", null ],
     [ "Delete", "class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#aef80b219f5ef8244e878d7ae8461107e", null ],
+    [ "Delete", "class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a010523797ef99be97da8e204df5a3996", null ],
     [ "Exit", "class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#abc42b5ad9c06041163a69170849606ea", null ],
     [ "GetAffinity", "class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a4b4ea5826458c1701ce1ca4ecc0cf40a", null ],
     [ "GetExitCode", "class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a429d1d92eefb9c59a39bcfb2647718fa", null ],

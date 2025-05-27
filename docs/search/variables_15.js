@@ -1,14 +1,15 @@
 var searchData=
 [
-  ['waitforevent_0',['WaitForEvent',['../struct_efi_boot_services.html#afd38f34c1000a900497466a17d491a67',1,'EfiBootServices']]],
-  ['waitforkey_1',['WaitForKey',['../struct_efi_simple_text_input_protocol.html#ab0f7b1937c8f3192dc3953cbfe47884a',1,'EfiSimpleTextInputProtocol']]],
-  ['waitforpacket_2',['WaitForPacket',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html#a23a714bf4e50631e1b5621ac4e18d8ac',1,'EFI_SIMPLE_NETWORK_PROTOCOL']]],
-  ['watchdogcode_3',['WatchdogCode',['../struct_efi_boot_services.html#a11ab6fd62011829af61308f82f68595d',1,'EfiBootServices']]],
-  ['whoami_4',['WhoAmI',['../struct___efi_mp_services_protocol.html#ac89d032b0953a4428ca3b114e6f97ad5',1,'_EfiMpServicesProtocol']]],
-  ['width_5',['width',['../struct_c_f_1_1_c_f_rect.html#a1a074ab4157a98698df6c30be6600316',1,'CF::CFRect']]],
-  ['win32versionvalue_6',['Win32VersionValue',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#ae015a27d22072ee22f4409e2f063d6d9',1,'LDR_OPTIONAL_HEADER']]],
-  ['worstc2latency_7',['WorstC2Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a53f6ef0ea10b55ad251f49b49b36befb',1,'Kernel::Detail::FADT']]],
-  ['worstc3latency_8',['WorstC3Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a2659903a5f4bc8fc0e350d0144865bcf',1,'Kernel::Detail::FADT']]],
-  ['wr_9',['Wr',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#af6098d5e4049618cee678d0ecce9889a',1,'Kernel::HAL::Detail::PTE']]],
-  ['write_10',['write',['../struct_hba_cmd_header_1_1_hba_flags_1_1_hba_flags__.html#a0daa718f6a6701f167f65c4da9467a23',1,'HbaCmdHeader::HbaFlags::HbaFlags_::Write'],['../struct_hba_flags_1_1_hba_flags__.html#a4f27579b1c024a4c1c96cd71b782964f',1,'HbaFlags::HbaFlags_::Write']]]
+  ['vendor_0',['vendor',['../struct_hba_port.html#a77210981d8177ce5713d43ac4175dba9',1,'HbaPort::Vendor'],['../struct_hba_mem.html#a6bbc29823304f83a73c77206226e0ed0',1,'HbaMem::Vendor']]],
+  ['vendorguid_1',['vendorguid',['../struct_efi_runtime_services.html#af566347b07772cc7504e2cc1497e63f4',1,'EfiRuntimeServices::VendorGUID'],['../struct_efi_system_table.html#a123b84490a0e34ab8e1c07a007a510c2',1,'EfiSystemTable::VendorGUID']]],
+  ['vendorid_2',['vendorid',['../struct_kernel_1_1_p_c_i_1_1_device_header.html#a4bc471e7ea7c01d9646062bf25062c4a',1,'Kernel::PCI::DeviceHeader::VendorId'],['../struct_kernel_1_1_i_m_b_c_i_host.html#a246a265d01392e6f5f30a7cbf286e2cc',1,'Kernel::IMBCIHost::VendorId']]],
+  ['vendortable_3',['VendorTable',['../struct_efi_system_table.html#a4bd3c922838a28d4d5996d18880d061f',1,'EfiSystemTable']]],
+  ['version_4',['version',['../struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html#a46acc2f0d0b74bab9b7277432181db39',1,'STEPS_COMMON_RECORD::version'],['../struct_efi_graphics_output_protocol_mode_information.html#a979a0c5efe00e8d64ee88eed5dfc2678',1,'EfiGraphicsOutputProtocolModeInformation::Version'],['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a8a9eb4acb3612a661ff7235508410d35',1,'EPM_PART_BLOCK::Version'],['../struct_n_e_f_s___r_o_o_t___p_a_r_t_i_t_i_o_n___b_l_o_c_k.html#a058a5b44f1377e48afe282845f0cc36a',1,'NEFS_ROOT_PARTITION_BLOCK::Version'],['../struct_kernel_1_1_p_e_f_container.html#ad99a9e36bc6b890ef4699e0f90e919a6',1,'Kernel::PEFContainer::Version']]],
+  ['verticalresolution_5',['VerticalResolution',['../struct_efi_graphics_output_protocol_mode_information.html#a86f19cf632cb09b18ded1968d1ecef4e',1,'EfiGraphicsOutputProtocolModeInformation']]],
+  ['virtualaddress_6',['virtualaddress',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#a42a41a7991b23de9a203c13b9b6d759e',1,'LDR_SECTION_HEADER::VirtualAddress'],['../struct_l_d_r___d_a_t_a___d_i_r_e_c_t_o_r_y.html#a4360402031e4f8a2c0dd126dccd1a5e0',1,'LDR_DATA_DIRECTORY::VirtualAddress']]],
+  ['virtualsize_7',['VirtualSize',['../struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html#a624c83616cb562d6bbdf2068b647ce3d',1,'LDR_SECTION_HEADER']]],
+  ['virtualstart_8',['VirtualStart',['../struct_efi_memory_descriptor.html#aa28b4fe6eb5213737e970336a1e94d7d',1,'EfiMemoryDescriptor']]],
+  ['vmaddress_9',['VMAddress',['../struct_kernel_1_1_p_e_f_command_header.html#a19a2c745ce9b4468a1d8435778fa1d4f',1,'Kernel::PEFCommandHeader']]],
+  ['vmregister_10',['VMRegister',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#acf7c45c3e0b2172373ef6765db2381d6',1,'Kernel::USER_PROCESS']]],
+  ['vs_11',['Vs',['../struct_hba_mem.html#ac0c830f2792fcd0ef3962e461e4cfad4',1,'HbaMem']]]
 ];

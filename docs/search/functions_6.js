@@ -27,12 +27,12 @@ var searchData=
   ['fs_5findex_5ffile_24',['fs_index_file',['../namespace_kernel_1_1_indexer.html#a8c5c9e89e49e3c278c0084267cbf68b0',1,'Kernel::Indexer']]],
   ['fs_5finit_5fhefs_25',['fs_init_hefs',['../namespace_kernel_1_1_he_f_s.html#a7f357627cfc3d6d71c4b6959e5d2598d',1,'Kernel::HeFS']]],
   ['fs_5finit_5fnefs_26',['fs_init_nefs',['../namespace_kernel_1_1_ne_f_s.html#aaa13bea36a33c7dba1cb564b2566b0c7',1,'Kernel::NeFS']]],
-  ['fscopy_27',['FsCopy',['../_system_calls_8h.html#a9980a3b17a8995c99ea6c208e77e3a61',1,'SystemCalls.h']]],
-  ['fscreatealias_28',['FsCreateAlias',['../_system_calls_8h.html#a9f7c6da36bd51df490bbf5aa841adfb1',1,'SystemCalls.h']]],
-  ['fscreatedir_29',['FsCreateDir',['../_system_calls_8h.html#ac08b8d20e6cca84fd8b3e1cd7f05f2ce',1,'SystemCalls.h']]],
-  ['fscreatefile_30',['FsCreateFile',['../_system_calls_8h.html#a4f099070e35c4b963de541dd6a2b0cfd',1,'SystemCalls.h']]],
-  ['fsexists_31',['FsExists',['../_system_calls_8h.html#ad33efc7e649880d9f04b36e7d48f4047',1,'SystemCalls.h']]],
-  ['fsmove_32',['FsMove',['../_system_calls_8h.html#a3077894cc2e0bb3b1b82e6f2b1e77fe1',1,'SystemCalls.h']]],
+  ['fscopy_27',['FsCopy',['../_system_8h.html#a9980a3b17a8995c99ea6c208e77e3a61',1,'System.h']]],
+  ['fscreatealias_28',['FsCreateAlias',['../_system_8h.html#a9f7c6da36bd51df490bbf5aa841adfb1',1,'System.h']]],
+  ['fscreatedir_29',['FsCreateDir',['../_system_8h.html#ac08b8d20e6cca84fd8b3e1cd7f05f2ce',1,'System.h']]],
+  ['fscreatefile_30',['FsCreateFile',['../_system_8h.html#a4f099070e35c4b963de541dd6a2b0cfd',1,'System.h']]],
+  ['fsexists_31',['FsExists',['../_system_8h.html#ad33efc7e649880d9f04b36e7d48f4047',1,'System.h']]],
+  ['fsmove_32',['FsMove',['../_system_8h.html#a3077894cc2e0bb3b1b82e6f2b1e77fe1',1,'System.h']]],
   ['function_33',['function',['../class_kernel_1_1_function.html#a05acc8b382c42294df8299f4b2cd91df',1,'Kernel::Function::Function(const Function &amp;)=default'],['../class_kernel_1_1_function.html#a1808ebd300f2954bca05f2e556594490',1,'Kernel::Function::Function(T(*Fn)(Args... args))'],['../class_kernel_1_1_function.html#a7c1a7601f5aabaea7a1dc91b59959ca3',1,'Kernel::Function::Function()=default']]],
   ['fw_5finit_5fefi_34',['fw_init_efi',['../_a_p_i_8h.html#a147557aebdc51423b15e02788fcf7c31',1,'API.h']]]
 ];

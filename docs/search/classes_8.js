@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['hal_5fhardware_5fthread_0',['hal_hardware_thread',['../struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL::HAL_HARDWARE_THREAD'],['../struct_kernel_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL_HARDWARE_THREAD']]],
-  ['hal_5fnvme_5fbar_5f0_1',['HAL_NVME_BAR_0',['../struct_kernel_1_1_h_a_l___n_v_m_e___b_a_r__0.html',1,'Kernel']]],
-  ['hal_5fnvme_5fqueue_2',['HAL_NVME_QUEUE',['../struct_kernel_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html',1,'Kernel']]],
-  ['halsyscallentry_3',['HalSyscallEntry',['../struct_hal_syscall_entry.html',1,'']]],
+  ['hal_5fdispatch_5fentry_0',['HAL_DISPATCH_ENTRY',['../struct_h_a_l___d_i_s_p_a_t_c_h___e_n_t_r_y.html',1,'']]],
+  ['hal_5fhardware_5fthread_1',['hal_hardware_thread',['../struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL::HAL_HARDWARE_THREAD'],['../struct_kernel_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL_HARDWARE_THREAD']]],
+  ['hal_5fnvme_5fbar_5f0_2',['HAL_NVME_BAR_0',['../struct_kernel_1_1_h_a_l___n_v_m_e___b_a_r__0.html',1,'Kernel']]],
+  ['hal_5fnvme_5fqueue_3',['HAL_NVME_QUEUE',['../struct_kernel_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html',1,'Kernel']]],
   ['hardwarethread_4',['HardwareThread',['../class_kernel_1_1_hardware_thread.html',1,'Kernel']]],
   ['hardwarethreadscheduler_5',['HardwareThreadScheduler',['../class_kernel_1_1_hardware_thread_scheduler.html',1,'Kernel']]],
   ['hardwaretimer_6',['HardwareTimer',['../class_kernel_1_1_hardware_timer.html',1,'Kernel']]],

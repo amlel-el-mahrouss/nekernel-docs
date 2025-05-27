@@ -9,7 +9,7 @@ var searchData=
   ['apic_5ficr_5flow_6',['APIC_ICR_LOW',['../_a_m_d64_2_hal_application_processor_8cc.html#a4881a5cd4ac835ee7067833dd11dd0fb',1,'HalApplicationProcessor.cc']]],
   ['apic_5fmag_7',['APIC_MAG',['../_a_m_d64_2_hal_application_processor_8cc.html#a8ebba43379e5c672205d456a9a54d366',1,'HalApplicationProcessor.cc']]],
   ['apic_5fsipi_5fvec_8',['APIC_SIPI_VEC',['../_a_m_d64_2_hal_application_processor_8cc.html#acb76d8b8b2268de097af7e973f2cd52c',1,'HalApplicationProcessor.cc']]],
-  ['array_5fsize_9',['array_size',['../kernel_2_ne_kit_2macros_8h.html#a25f003de16c08a4888b69f619d70f427',1,'ARRAY_SIZE:&#160;Macros.h'],['../user_2macros_8h.html#a4c526443298e9519783b86076f06a258',1,'ARRAY_SIZE:&#160;Macros.h']]],
+  ['array_5fsize_9',['array_size',['../kernel_2_ne_kit_2macros_8h.html#a25f003de16c08a4888b69f619d70f427',1,'ARRAY_SIZE:&#160;Macros.h'],['../lib_system_2macros_8h.html#a4c526443298e9519783b86076f06a258',1,'ARRAY_SIZE:&#160;Macros.h']]],
   ['assert_10',['assert',['../_kernel_panic_8h.html#a5b1dafe65f1b0085675cf1fffe12b53e',1,'KernelPanic.h']]],
   ['ata_5faddress1_11',['ATA_ADDRESS1',['../modules_2_a_t_a_2_a_t_a_8h.html#ab903a9fddb6c8f0f88ffe45f28e27c6f',1,'ATA.h']]],
   ['ata_5faddress2_12',['ATA_ADDRESS2',['../modules_2_a_t_a_2_a_t_a_8h.html#a72cbdddc51db35488afe8f727d5dad0d',1,'ATA.h']]],
@@ -91,5 +91,5 @@ var searchData=
   ['ata_5fsr_5ferr_88',['ATA_SR_ERR',['../modules_2_a_t_a_2_a_t_a_8h.html#a8a2cf843df1ae63d4d16748dfe72a592',1,'ATA.h']]],
   ['ata_5fsr_5fidx_89',['ATA_SR_IDX',['../modules_2_a_t_a_2_a_t_a_8h.html#ad74934afc699945311360be6e3700ef5',1,'ATA.h']]],
   ['ata_5fwrite_90',['ATA_WRITE',['../modules_2_a_t_a_2_a_t_a_8h.html#a9a19b84aa7a02ac7e07528795816ffb2',1,'ATA.h']]],
-  ['attribute_91',['attribute',['../ddk_2_d_d_k_kit_2macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;macros.h'],['../kernel_2_ne_kit_2macros_8h.html#a8e09fc0acc49f63edf8ca7dd1c194598',1,'ATTRIBUTE:&#160;Macros.h'],['../user_2macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;Macros.h']]]
+  ['attribute_91',['attribute',['../ddk_2_d_d_k_kit_2macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;macros.h'],['../kernel_2_ne_kit_2macros_8h.html#a8e09fc0acc49f63edf8ca7dd1c194598',1,'ATTRIBUTE:&#160;Macros.h'],['../lib_system_2macros_8h.html#a9254c960163dfe80c8fe6aa8dfdf56a5',1,'ATTRIBUTE:&#160;Macros.h']]]
 ];
