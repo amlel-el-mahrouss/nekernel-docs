@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -142,16 +141,16 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abf116f03274e4531209432eae894db9e" id="r_abf116f03274e4531209432eae894db9e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9e">Kernel::UserRingKind</a> { <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea06332aa62b5d9ea6c7d63d969677734e">Kernel::kRingInvalid</a> = 0
-, <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea4273218a9bea7fb97d46ca7501cbeb5b">Kernel::kRingStdUser</a> = 1
-, <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea4215aa66f39b8ac7be3873fb4f938164">Kernel::kRingSuperUser</a> = 2
-, <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9eaa475eaec0320dbeccd09f64fc4beff05">Kernel::kRingGuestUser</a> = 5
+<tr class="memitem:a74f29632df87476065f7ae44aeedef5c" id="r_a74f29632df87476065f7ae44aeedef5c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5c">Kernel::UserRingKind</a> : Int32 { <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca06332aa62b5d9ea6c7d63d969677734e">Kernel::kRingInvalid</a> = 0
+, <a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca4273218a9bea7fb97d46ca7501cbeb5b">Kernel::kRingStdUser</a> = 444
+, <a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca4215aa66f39b8ac7be3873fb4f938164">Kernel::kRingSuperUser</a> = 666
+, <a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5caa475eaec0320dbeccd09f64fc4beff05">Kernel::kRingGuestUser</a> = 777
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea9fb09bc213dbaf1dff9fc3a42d0237b5">Kernel::kRingCount</a> = 3
+&#160;&#160;<a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca9fb09bc213dbaf1dff9fc3a42d0237b5">Kernel::kRingCount</a> = 3
 <br />
  }</td></tr>
-<tr class="separator:abf116f03274e4531209432eae894db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a74f29632df87476065f7ae44aeedef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a28ed3c5102fdfbd66e6ebe4ffa533090" name="a28ed3c5102fdfbd66e6ebe4ffa533090"></a>
@@ -221,7 +220,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>! We got the Super, Standard (s format) and Guest user, all are used to make authorization operations on the OS. </p>
+<p>! We got the MGMT, STD (s format) and GUEST users, all are used to make authorized operations. </p>
 
 </div>
 </div>

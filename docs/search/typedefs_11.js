@@ -1,20 +1,11 @@
 var searchData=
 [
-  ['scsi_5fpacket_5ftype_0',['scsi_packet_type',['../namespace_kernel.html#a1f06eab77d37172ac30ddc223eacbf0d',1,'Kernel']]],
-  ['scsi_5fpacket_5ftype_5f12_1',['scsi_packet_type_12',['../namespace_kernel.html#ac027a5f3ae33c8056b7221beca87f626',1,'Kernel']]],
-  ['semaphore_2',['Semaphore',['../namespace_kernel.html#a2b8b9e81b4f070c7efab3420d14975e8',1,'Kernel']]],
-  ['semaphoreref_3',['SemaphoreRef',['../_system_8h.html#abbe2d45665ed2898d33ca8b439958fce',1,'System.h']]],
-  ['short_4',['Short',['../namespace_kernel.html#ac861a8f71a08950dbdacbf5814efddae',1,'Kernel']]],
-  ['signalkind_5',['SignalKind',['../namespace_kernel.html#a39b76eab2ccf186a18143464b97e73c7',1,'Kernel']]],
-  ['sint16_6',['sint16',['../namespace_kernel.html#ae9d81b8d5478b971df17a4295efeaf39',1,'Kernel::SInt16'],['../lib_system_2macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
-  ['sint32_7',['sint32',['../namespace_kernel.html#acbc040f7132975ab615ece6b877b4c25',1,'Kernel::SInt32'],['../lib_system_2macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
-  ['sint64_8',['sint64',['../namespace_kernel.html#aaa04483922d796a944f29817e74a4ba3',1,'Kernel::SInt64'],['../lib_system_2macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],
-  ['sint8_9',['SInt8',['../lib_system_2macros_8h.html#aaa25d67f876e77346aeca5db9fdc34e8',1,'Macros.h']]],
-  ['size_10',['Size',['../namespace_kernel.html#a491c180e187771df3ce5885241ed061b',1,'Kernel']]],
-  ['size_5ft_11',['size_t',['../_new_8h.html#aa9d55e2f20e580b7445617d0d12fff6e',1,'New.h']]],
-  ['sizet_12',['sizet',['../namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63',1,'Kernel::SizeT'],['../lib_system_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10',1,'SizeT:&#160;Macros.h']]],
-  ['socketref_13',['SocketRef',['../_system_8h.html#a33b5198f7ba47dba8faac36d3d787cc8',1,'System.h']]],
-  ['ssize_14',['SSize',['../namespace_kernel.html#a2bc4382d02e68601e3976fa71cb8338b',1,'Kernel']]],
-  ['ssizet_15',['SSizeT',['../namespace_kernel.html#a193842946b685b42acd908caef26c30d',1,'Kernel']]],
-  ['stackframeptr_16',['StackFramePtr',['../namespace_kernel_1_1_h_a_l.html#a170dff87d6222eaa9789656777293277',1,'Kernel::HAL']]]
+  ['ref_0',['Ref',['../_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d',1,'System.h']]],
+  ['reg_1',['Reg',['../namespace_kernel_1_1_h_a_l.html#a0e6c177fa2ec78f7015d0cfec1b1f7c9',1,'Kernel::HAL']]],
+  ['rt_5fdebug_5ftype_2',['rt_debug_type',['../namespace_kernel.html#afe9116ef3d01498b731cef67d840eedf',1,'Kernel']]],
+  ['rt_5fsyscall_5fproc_3',['rt_syscall_proc',['../_arch_kit_8h.html#a8b2a6fead47ca043054ea08608b45e7b',1,'ArchKit.h']]],
+  ['rtl_5fcxx_5fctor_5fkind_4',['rtl_cxx_ctor_kind',['../namespace_kernel.html#a7f8a10af03c067e35e87901a72eff850',1,'Kernel']]],
+  ['rtl_5fcxx_5fdtor_5fkind_5',['rtl_cxx_dtor_kind',['../namespace_kernel.html#ab101191d58f1fd2cd114dbd6c20dc55c',1,'Kernel']]],
+  ['rtl_5fmain_5fkind_6',['rtl_main_kind',['../namespace_kernel.html#aa0b07d794e34e6b08fccc1bc494d87b6',1,'Kernel']]],
+  ['rtl_5fruntime_5fcheck_7',['RTL_RUNTIME_CHECK',['../_kernel_panic_8h.html#a544450d6622b613e983172992807881a',1,'KernelPanic.h']]]
 ];

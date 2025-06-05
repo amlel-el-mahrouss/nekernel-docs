@@ -13,6 +13,6 @@ var searchData=
   ['user_5fprocess_10',['USER_PROCESS',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a07a482dc1b83205959b929a493f155a1',1,'Kernel::USER_PROCESS']]],
   ['userprocessscheduler_11',['UserProcessScheduler',['../class_kernel_1_1_user_process_scheduler.html#a7eaeb9df2e14f1bd48e4fc2c87aaba54',1,'Kernel::UserProcessScheduler']]],
   ['userprocessteam_12',['UserProcessTeam',['../class_kernel_1_1_user_process_team.html#ad2875195cdcc6eb0a02d2794e9a9e36d',1,'Kernel::UserProcessTeam']]],
-  ['utf8terminaldevice_13',['Utf8TerminalDevice',['../class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4.html#aa24137c85887e5d891a49c76dd5edc64',1,'Kernel::NE_DEVICE&lt; const Utf8Char * &gt;']]],
+  ['utf8terminaldevice_13',['Utf8TerminalDevice',['../class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4.html#aa1c3a8eacdaf16d3b1c92528da9428fd',1,'Kernel::NE_DEVICE&lt; const Utf8Char * &gt;']]],
   ['utf_5fend_5fline_14',['utf_end_line',['../namespace_kernel.html#ac3c68a7584349cc2ad6660050c45ef89',1,'Kernel']]]
 ];

@@ -16,7 +16,7 @@ var searchData=
   ['wintermmode_13',['winTermMode',['../namespacerang_1_1rang__implementation.html#a0883547d97b7b5572aa6f4cb62d370c6',1,'rang::rang_implementation']]],
   ['wirelesscontroller_14',['WirelessController',['../namespace_kernel_1_1_types.html#a5c5c4eda9d3dd5916ce058b2f65e59d0ad7bfe93024f3abbf793e2c5dff0fcffc',1,'Kernel::Types']]],
   ['words_5fin_5fbits_15',['words_in_bits',['../namespaceutl.html#a30650c701569e3075fcb29e63348536e',1,'utl']]],
-  ['works_16',['works',['..//Volumes/Projects/src/nekernel/dev/libSystem/docs/SPECIFICATION_SYSCALLS.md#autotoc_md31',1,'# 1: How It Works'],['..//Volumes/Projects/src/nekernel/dev/ddk/docs/SPECIFICATION_DDK.md#autotoc_md25',1,'1: How It works']]],
+  ['works_16',['works',['..//Volumes/Projects/oss-nekernel-org/nekernel/dev/libSystem/docs/SPECIFICATION_SYSCALLS.md#autotoc_md31',1,'# 1: How It Works'],['..//Volumes/Projects/oss-nekernel-org/nekernel/dev/ddk/docs/SPECIFICATION_DDK.md#autotoc_md25',1,'1: How It works']]],
   ['worstc2latency_17',['WorstC2Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a53f6ef0ea10b55ad251f49b49b36befb',1,'Kernel::Detail::FADT']]],
   ['worstc3latency_18',['WorstC3Latency',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a2659903a5f4bc8fc0e350d0144865bcf',1,'Kernel::Detail::FADT']]],
   ['wr_19',['Wr',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#af6098d5e4049618cee678d0ecce9889a',1,'Kernel::HAL::Detail::PTE']]],

@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -115,9 +114,9 @@ $(document).ready(function(){initNavTree('_x64_chrono_8h_source.html',''); initR
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>X64ChronoTraits;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span>X64ChronoTraits {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_define" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="code hl_typedef" href="lib_system_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> TickImpl_(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_typedef" href="lib_system_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> a = 0, d = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_define" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="code hl_typedef" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> TickImpl_(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_typedef" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> a = 0, d = 0;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    __asm__ <span class="keyword">volatile</span>(<span class="stringliteral">&quot;rdtsc&quot;</span> : <span class="stringliteral">&quot;=a&quot;</span>(a), <span class="stringliteral">&quot;=d&quot;</span>(d));</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> (d &lt;&lt; 32) | a;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  }</div>
@@ -142,11 +141,11 @@ $(document).ready(function(){initNavTree('_x64_chrono_8h_source.html',''); initR
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    fStop  = 0;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_typedef" href="lib_system_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> GetElapsedTime()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> fStart - fStop; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_typedef" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> GetElapsedTime()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> fStop - fStart; }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_typedef" href="lib_system_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> fStart = 0;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_typedef" href="lib_system_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> fStop  = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_typedef" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> fStart = 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_typedef" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> fStop  = 0;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}  <span class="comment">// namespace Kernel</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -154,7 +153,7 @@ $(document).ready(function(){initNavTree('_x64_chrono_8h_source.html',''); initR
 <div class="ttc" id="a_chrono_8h_html"><div class="ttname"><a href="_chrono_8h.html">Chrono.h</a></div></div>
 <div class="ttc" id="a_detail_8h_html_a855fc6b9e935d41c084c0b89a4b82bd2"><div class="ttname"><a href="_detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">NE_COPY_DEFAULT</a></div><div class="ttdeci">#define NE_COPY_DEFAULT(KLASS)</div><div class="ttdef"><b>Definition</b> Detail.h:17</div></div>
 <div class="ttc" id="akernel_2_ne_kit_2macros_8h_html_a10b2d890d871e1489bb02b7e70d9bdfb"><div class="ttname"><a href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a></div><div class="ttdeci">#define STATIC</div><div class="ttdef"><b>Definition</b> Macros.h:112</div></div>
-<div class="ttc" id="alib_system_2macros_8h_html_a3fb8aedfc4331bfce8facae4e2630dc9"><div class="ttname"><a href="lib_system_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a></div><div class="ttdeci">__UINT64_TYPE__ UInt64</div><div class="ttdef"><b>Definition</b> Macros.h:47</div></div>
+<div class="ttc" id="alib_system_2_system_kit_2macros_8h_html_a3fb8aedfc4331bfce8facae4e2630dc9"><div class="ttname"><a href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a></div><div class="ttdeci">__UINT64_TYPE__ UInt64</div><div class="ttdef"><b>Definition</b> Macros.h:47</div></div>
 <div class="ttc" id="anamespace_boot_html_a8b0bee034f9cce36874019301bc2ac40"><div class="ttname"><a href="namespace_boot.html#a8b0bee034f9cce36874019301bc2ac40">Boot::Stop</a></div><div class="ttdeci">Void Stop() noexcept</div><div class="ttdoc">Halt and clear interrut flag on x86.</div><div class="ttdef"><b>Definition</b> API.h:34</div></div>
 <div class="ttc" id="anamespace_kernel_html"><div class="ttname"><a href="namespace_kernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
 </div><!-- fragment --></div><!-- contents -->

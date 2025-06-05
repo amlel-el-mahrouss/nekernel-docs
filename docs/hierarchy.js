@@ -45,6 +45,10 @@ var hierarchy =
     ] ],
     [ "Kernel::PCI::Device", "class_kernel_1_1_p_c_i_1_1_device.html", null ],
     [ "Kernel::PCI::DeviceHeader", "struct_kernel_1_1_p_c_i_1_1_device_header.html", null ],
+    [ "Kernel::DeviceInterface< T >", "class_kernel_1_1_device_interface.html", null ],
+    [ "Kernel::DeviceInterface< MountpointInterface * >", "class_kernel_1_1_device_interface.html", [
+      [ "Kernel::ATADeviceInterface", "class_kernel_1_1_a_t_a_device_interface.html", null ]
+    ] ],
     [ "DI::DI_DISK_IMAGE", "struct_d_i_1_1_d_i___d_i_s_k___i_m_a_g_e.html", null ],
     [ "Kernel::DiskSwapInterface", "class_kernel_1_1_disk_swap_interface.html", null ],
     [ "Kernel::DMAFactory", "class_kernel_1_1_d_m_a_factory.html", null ],
@@ -127,10 +131,6 @@ var hierarchy =
     [ "Kernel::HPETAddressStructure", "struct_kernel_1_1_h_p_e_t_address_structure.html", null ],
     [ "Kernel::HAL::Detail::IBitMapProxy", "class_kernel_1_1_h_a_l_1_1_detail_1_1_i_bit_map_proxy.html", null ],
     [ "Kernel::ICodec", "class_kernel_1_1_i_codec.html", null ],
-    [ "Kernel::IDeviceObject< T >", "class_kernel_1_1_i_device_object.html", null ],
-    [ "Kernel::IDeviceObject< MountpointInterface * >", "class_kernel_1_1_i_device_object.html", [
-      [ "Kernel::ATADeviceInterface", "class_kernel_1_1_a_t_a_device_interface.html", null ]
-    ] ],
     [ "Kernel::IDylibObject", "class_kernel_1_1_i_dylib_object.html", null ],
     [ "Kernel::IFilesystemMgr", "class_kernel_1_1_i_filesystem_mgr.html", null ],
     [ "Kernel::IMBCIHost", "struct_kernel_1_1_i_m_b_c_i_host.html", null ],
@@ -145,6 +145,7 @@ var hierarchy =
       [ "Kernel::UserProcessScheduler", "class_kernel_1_1_user_process_scheduler.html", null ]
     ] ],
     [ "Kernel::PCI::Iterator", "class_kernel_1_1_p_c_i_1_1_iterator.html", null ],
+    [ "JAIL_INFO", "struct_j_a_i_l___i_n_f_o.html", null ],
     [ "Kernel::Json", "class_kernel_1_1_json.html", null ],
     [ "Kernel::JsonStreamReader", "struct_kernel_1_1_json_stream_reader.html", null ],
     [ "Kernel::KERNEL_TASK", "class_kernel_1_1_k_e_r_n_e_l___t_a_s_k.html", null ],
@@ -168,6 +169,7 @@ var hierarchy =
     [ "Kernel::Detail::MM_INFORMATION_BLOCK", "struct_kernel_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html", null ],
     [ "Kernel::MountpointInterface", "class_kernel_1_1_mountpoint_interface.html", null ],
     [ "Kernel::MutableLinkedList< T >", "class_kernel_1_1_mutable_linked_list.html", null ],
+    [ "Kernel::MutableLinkedList< OPENMSG_EXPR >", "class_kernel_1_1_mutable_linked_list.html", null ],
     [ "Kernel::MutableLinkedList< voidPtr >", "class_kernel_1_1_mutable_linked_list.html", null ],
     [ "Kernel::NE_DEVICE< const Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html", null ],
     [ "Kernel::NE_DEVICE< const Utf8Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4.html", null ],
@@ -187,8 +189,10 @@ var hierarchy =
     [ "Kernel::NonNullRefPtr< T >", "class_kernel_1_1_non_null_ref_ptr.html", null ],
     [ "Kernel::NullableMutableArray< T, _PlaceHolderValue >", "class_kernel_1_1_nullable_mutable_array.html", null ],
     [ "Kernel::NullableMutableArray< voidPtr, nullptr >", "class_kernel_1_1_nullable_mutable_array.html", [
+      [ "Kernel::MutableArray< OPENMSG_EXPR >", "class_kernel_1_1_mutable_array.html", null ],
       [ "Kernel::MutableArray< T >", "class_kernel_1_1_mutable_array.html", null ]
     ] ],
+    [ "OPENMSG_EXPR", "struct_o_p_e_n_m_s_g___e_x_p_r.html", null ],
     [ "Kernel::OwnPtr< T >", "class_kernel_1_1_own_ptr.html", null ],
     [ "Kernel::OwnPtr< Kernel::FileStream< Char > >", "class_kernel_1_1_own_ptr.html", null ],
     [ "Kernel::PageMgr", "struct_kernel_1_1_page_mgr.html", null ],
@@ -229,10 +233,10 @@ var hierarchy =
     [ "Kernel::Ref< CFGUID >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< Kernel::KString >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< Kernel::PageMgr >", "class_kernel_1_1_ref.html", null ],
-    [ "Kernel::Ref< Kernel::USER_PROCESS >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< Kind >", "class_kernel_1_1_ref.html", null ],
     [ "Kernel::Ref< StreamTrait >", "class_kernel_1_1_ref.html", null ],
-    [ "RefType", "struct_ref_type.html", null ],
+    [ "Kernel::Ref< USER_PROCESS >", "class_kernel_1_1_ref.html", null ],
+    [ "REF_TYPE", "struct_r_e_f___t_y_p_e.html", null ],
     [ "Kernel::RSDT", "class_kernel_1_1_r_s_d_t.html", null ],
     [ "BootDeviceSATA::SATATrait", "struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait.html", null ],
     [ "Kernel::SDT", "class_kernel_1_1_s_d_t.html", [

@@ -1,6 +1,6 @@
 var _system_8h =
 [
-    [ "RefType", "struct_ref_type.html", "struct_ref_type" ],
+    [ "REF_TYPE", "struct_r_e_f___t_y_p_e.html", "struct_r_e_f___t_y_p_e" ],
     [ "AffinityRef", "_system_8h.html#a3ae06d2bf36450a91d32edb5a84d1cff", null ],
     [ "DylibRef", "_system_8h.html#a91f9595f0c7ff4279fb5ae6729f04e75", null ],
     [ "EventRef", "_system_8h.html#aee845a6b44919e3e56803b7d49e3bd1f", null ],
@@ -9,7 +9,7 @@ var _system_8h =
     [ "MutexRef", "_system_8h.html#a3176c229102a1942ea35a25ed4d3f5ae", null ],
     [ "NetworkRef", "_system_8h.html#a3d705329e96a62b3deae9da911627d05", null ],
     [ "ProcessRef", "_system_8h.html#a7dfcc89f60688a288f4c4ea4df00669a", null ],
-    [ "Ref", "_system_8h.html#a70dd3553ad48b85fa6198a81c5d4ef77", null ],
+    [ "Ref", "_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d", null ],
     [ "SemaphoreRef", "_system_8h.html#abbe2d45665ed2898d33ca8b439958fce", null ],
     [ "SocketRef", "_system_8h.html#a33b5198f7ba47dba8faac36d3d787cc8", null ],
     [ "ThreadRef", "_system_8h.html#ad88ea14c0f28fc81e5a53a6a473cf263", null ],

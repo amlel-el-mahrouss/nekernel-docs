@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hal_5fcheck_5fstack_0',['hal_check_stack',['../namespace_kernel.html#a36a6beda41f24859f5c253d100c4e7fa',1,'Kernel']]],
+  ['hal_5fcheck_5ftask_0',['hal_check_task',['../namespace_kernel.html#a192ebd8507e4eb279e34601d71f77460',1,'Kernel']]],
   ['hal_5fflush_5ftlb_1',['hal_flush_tlb',['../_hal_virtual_memory_8cc.html#afa9bfd1b4d6453035b4ac2e5f3063ebc',1,'hal_flush_tlb():&#160;HalVirtualMemory.cc'],['../_p_o_w_e_r_2_processor_8h.html#a5d3eac193288b7a300de57a1cdf77d72',1,'hal_flush_tlb():&#160;HalVirtualMemory.cc']]],
   ['hal_5fget_5fmsr_2',['hal_get_msr',['../namespace_kernel_1_1_h_a_l.html#a5f7e0946cafce8fda576de0f29dab6db',1,'Kernel::HAL']]],
   ['hal_5fhas_5fmsr_3',['hal_has_msr',['../namespace_kernel_1_1_h_a_l.html#a0263d5b1a15a5bd7a77f03fd4fb72f17',1,'Kernel::HAL']]],

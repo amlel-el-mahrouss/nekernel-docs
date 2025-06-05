@@ -84,6 +84,6 @@ var searchData=
   ['epm_5fguid_81',['EPM_GUID',['../kernel_2_firmware_kit_2_e_p_m_8h.html#a4d08a9ca3b695caf4113b6e13e291856',1,'EPM.h']]],
   ['errororany_82',['ErrorOrAny',['../namespace_kernel.html#ae93d3ed63889cb9899feae5c3f489ebd',1,'Kernel']]],
   ['errort_83',['ErrorT',['../namespace_kernel.html#a7c65ae6e6a2df84f4bab9ce133cc838d',1,'Kernel']]],
-  ['errref_84',['ErrRef',['../_codes_8h.html#a07cae73966b3677e49bad25770c45400',1,'Codes.h']]],
+  ['errref_84',['ErrRef',['../_err_8h.html#a07cae73966b3677e49bad25770c45400',1,'Err.h']]],
   ['eventref_85',['EventRef',['../_system_8h.html#aee845a6b44919e3e56803b7d49e3bd1f',1,'System.h']]]
 ];

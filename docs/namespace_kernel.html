@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -152,6 +151,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_config_header.html">ConfigHeader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_device_interface.html">DeviceInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_device.html" title="Device type.">Device</a> contract interface, represents an HW device.  <a href="class_kernel_1_1_device_interface.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_disk_swap_interface.html">DiskSwapInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual memory interface to swap memory chunks onto disk.  <a href="class_kernel_1_1_disk_swap_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,9 +214,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_i_codec.html">ICodec</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encoding interface, used as a proxy to convert T to Char* Used to cast A to B or B to A.  <a href="class_kernel_1_1_i_codec.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_device.html" title="Device type.">Device</a> contract interface, represents an HW device.  <a href="class_kernel_1_1_i_device_object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kernel_1_1_i_dylib_object.html">IDylibObject</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dylib class object. A handle to a shared library.  <a href="class_kernel_1_1_i_dylib_object.html#details">More...</a><br /></td></tr>
@@ -685,7 +684,7 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a9b3885a37472898354d34d8eb3125897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local Process status enum.  <a href="namespace_kernel.html#a9b3885a37472898354d34d8eb3125897">More...</a><br /></td></tr>
 <tr class="separator:a9b3885a37472898354d34d8eb3125897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa465d631a5c82e89384453c2546651f1" id="r_aa465d631a5c82e89384453c2546651f1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> : Int32 { <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1ae0f4fc1e0994e23b803ed82fb5e9930b">kRealTime</a> = 50
+&#160;&#160;<a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1ae0f4fc1e0994e23b803ed82fb5e9930b">kRealTime</a> = 100
 , <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1ab19e80cac5b7f585659031a6cff1489b">kVeryHigh</a> = 150
 , <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1aa022f15e910eb36278094efb6e808a07">kHigh</a> = 200
 , <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1a821da62632c491ea619ead7b31c094bf">kStandard</a> = 1000
@@ -826,16 +825,16 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_kernel.html#a7ed6af00ece6653218fec541e5dd3625aefde1fc09c9af3208404a41e6541fa85">kPefLinkerID</a> = 0x1
  }</td></tr>
 <tr class="separator:a7ed6af00ece6653218fec541e5dd3625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf116f03274e4531209432eae894db9e" id="r_abf116f03274e4531209432eae894db9e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9e">UserRingKind</a> { <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea06332aa62b5d9ea6c7d63d969677734e">kRingInvalid</a> = 0
-, <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea4273218a9bea7fb97d46ca7501cbeb5b">kRingStdUser</a> = 1
-, <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea4215aa66f39b8ac7be3873fb4f938164">kRingSuperUser</a> = 2
-, <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9eaa475eaec0320dbeccd09f64fc4beff05">kRingGuestUser</a> = 5
+<tr class="memitem:a74f29632df87476065f7ae44aeedef5c" id="r_a74f29632df87476065f7ae44aeedef5c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5c">UserRingKind</a> : Int32 { <br />
+&#160;&#160;<a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca06332aa62b5d9ea6c7d63d969677734e">kRingInvalid</a> = 0
+, <a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca4273218a9bea7fb97d46ca7501cbeb5b">kRingStdUser</a> = 444
+, <a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca4215aa66f39b8ac7be3873fb4f938164">kRingSuperUser</a> = 666
+, <a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5caa475eaec0320dbeccd09f64fc4beff05">kRingGuestUser</a> = 777
 , <br />
-&#160;&#160;<a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9ea9fb09bc213dbaf1dff9fc3a42d0237b5">kRingCount</a> = 3
+&#160;&#160;<a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5ca9fb09bc213dbaf1dff9fc3a42d0237b5">kRingCount</a> = 3
 <br />
  }</td></tr>
-<tr class="separator:abf116f03274e4531209432eae894db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a74f29632df87476065f7ae44aeedef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72738721513022e56f50bc7098a71781" id="r_a72738721513022e56f50bc7098a71781"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a72738721513022e56f50bc7098a71781">Endian</a> : UInt8 { <br />
 &#160;&#160;<a class="el" href="namespace_kernel.html#a72738721513022e56f50bc7098a71781a0ee0032d578e8beea522734ead76c405">kEndianInvalid</a>
 , <a class="el" href="namespace_kernel.html#a72738721513022e56f50bc7098a71781aa9bf0a902ac186ab6b7c9a0b22c485ad">kEndianBig</a>
@@ -953,12 +952,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a23276512ee4401fb1f759001a137da55"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a23276512ee4401fb1f759001a137da55">ke_dma_read</a> (<a class="el" href="namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a> base, DataKind reg) noexcept</td></tr>
 <tr class="memdesc:a23276512ee4401fb1f759001a137da55"><td class="mdescLeft">&#160;</td><td class="mdescRight">read from mapped memory register.  <br /></td></tr>
 <tr class="separator:a23276512ee4401fb1f759001a137da55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c3d3d7ac9f7d872b0fe937ce71bc81" id="r_a66c3d3d7ac9f7d872b0fe937ce71bc81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a66c3d3d7ac9f7d872b0fe937ce71bc81">ke_utf_io_write</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> * &gt; *obj, const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *bytes)</td></tr>
-<tr class="separator:a66c3d3d7ac9f7d872b0fe937ce71bc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1085600b4f13e33bd21543937b0468a" id="r_ad1085600b4f13e33bd21543937b0468a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ad1085600b4f13e33bd21543937b0468a">ke_io_write</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *obj, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
-<tr class="separator:ad1085600b4f13e33bd21543937b0468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d41361c1685ee5da3e190d75c529378" id="r_a9d41361c1685ee5da3e190d75c529378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a9d41361c1685ee5da3e190d75c529378">ke_io_read</a> (<a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
-<tr class="separator:a9d41361c1685ee5da3e190d75c529378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b17b317544d56d022317b68ed787438" id="r_a9b17b317544d56d022317b68ed787438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a9b17b317544d56d022317b68ed787438">ke_utf_io_write</a> (<a class="el" href="class_kernel_1_1_device_interface.html">DeviceInterface</a>&lt; const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> * &gt; *obj, const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *bytes)</td></tr>
+<tr class="separator:a9b17b317544d56d022317b68ed787438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd14f7d877daece48d8b74ac8095bbd5" id="r_afd14f7d877daece48d8b74ac8095bbd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#afd14f7d877daece48d8b74ac8095bbd5">ke_io_write</a> (<a class="el" href="class_kernel_1_1_device_interface.html">DeviceInterface</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *obj, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
+<tr class="separator:afd14f7d877daece48d8b74ac8095bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098d16d939f56212493af4e7e1eff6ed" id="r_a098d16d939f56212493af4e7e1eff6ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a098d16d939f56212493af4e7e1eff6ed">ke_io_read</a> (<a class="el" href="class_kernel_1_1_device_interface.html">DeviceInterface</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *bytes)</td></tr>
+<tr class="separator:a098d16d939f56212493af4e7e1eff6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05f4ac957b25737365c415f1a1396dbc" id="r_a05f4ac957b25737365c415f1a1396dbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a05f4ac957b25737365c415f1a1396dbc">ke_panic</a> (const <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a> &amp;id, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *message)</td></tr>
 <tr class="memdesc:a05f4ac957b25737365c415f1a1396dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops execution of the kernel.  <br /></td></tr>
 <tr class="separator:a05f4ac957b25737365c415f1a1396dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -967,9 +966,9 @@ Functions</h2></td></tr>
 <tr class="memitem:add65731e2632ad429a95886971e45b16" id="r_add65731e2632ad429a95886971e45b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#add65731e2632ad429a95886971e45b16">__zka_pure_call</a> (<a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> *process)</td></tr>
 <tr class="memdesc:add65731e2632ad429a95886971e45b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unimplemented function (crashes by default)  <br /></td></tr>
 <tr class="separator:add65731e2632ad429a95886971e45b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a6beda41f24859f5c253d100c4e7fa" id="r_a36a6beda41f24859f5c253d100c4e7fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a36a6beda41f24859f5c253d100c4e7fa">hal_check_stack</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#a170dff87d6222eaa9789656777293277">HAL::StackFramePtr</a> stack_ptr)</td></tr>
-<tr class="memdesc:a36a6beda41f24859f5c253d100c4e7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate user stack.  <br /></td></tr>
-<tr class="separator:a36a6beda41f24859f5c253d100c4e7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192ebd8507e4eb279e34601d71f77460" id="r_a192ebd8507e4eb279e34601d71f77460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a192ebd8507e4eb279e34601d71f77460">hal_check_task</a> (<a class="el" href="namespace_kernel_1_1_h_a_l.html#a170dff87d6222eaa9789656777293277">HAL::StackFramePtr</a> stack_ptr)</td></tr>
+<tr class="memdesc:a192ebd8507e4eb279e34601d71f77460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate user stack.  <br /></td></tr>
+<tr class="separator:a192ebd8507e4eb279e34601d71f77460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e60b7abb449e3b2ff9003ee789718b1" id="r_a3e60b7abb449e3b2ff9003ee789718b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a3e60b7abb449e3b2ff9003ee789718b1">mp_wakeup_thread</a> (<a class="el" href="struct_kernel_1_1_h_a_l_1_1_stack_frame.html">HAL::StackFrame</a> *stack)</td></tr>
 <tr class="memdesc:a3e60b7abb449e3b2ff9003ee789718b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wakes up thread. Wakes up thread from the hang state.  <br /></td></tr>
 <tr class="separator:a3e60b7abb449e3b2ff9003ee789718b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1173,7 +1172,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0b5d3cda316618d22331719222056df3" id="r_a0b5d3cda316618d22331719222056df3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a0b5d3cda316618d22331719222056df3">rt_string_in_string</a> (const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *in, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *needle)</td></tr>
 <tr class="separator:a0b5d3cda316618d22331719222056df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b8acc5a1e5af65434a6b29e46d7711" id="r_a01b8acc5a1e5af65434a6b29e46d7711"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a01b8acc5a1e5af65434a6b29e46d7711">rt_string_has_char</a> (<a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *str, <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> chr)</td></tr>
-<tr class="memdesc:a01b8acc5a1e5af65434a6b29e46d7711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for a string start at the character.  <br /></td></tr>
 <tr class="separator:a01b8acc5a1e5af65434a6b29e46d7711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa84ad364f8fdd87326846bd1bc2e254e" id="r_aa84ad364f8fdd87326846bd1bc2e254e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a28475bf17d6d4cdb8ed5583d556343fb">Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa84ad364f8fdd87326846bd1bc2e254e">urt_string_cmp</a> (const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *src, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *cmp, <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a> len)</td></tr>
 <tr class="separator:aa84ad364f8fdd87326846bd1bc2e254e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1228,8 +1226,20 @@ Functions</h2></td></tr>
 <tr class="separator:adbf0128f7374dd6d408b76aebfee638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77104fa427205e1ff1917a8d295902c9" id="r_a77104fa427205e1ff1917a8d295902c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a77104fa427205e1ff1917a8d295902c9">rt_string_cmp</a> (const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *src, const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *cmp, <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a> size)</td></tr>
 <tr class="separator:a77104fa427205e1ff1917a8d295902c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacc50b44cc6645673525772574875e48" id="r_aacc50b44cc6645673525772574875e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aacc50b44cc6645673525772574875e48">rt_to_char</a> (<a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> base, <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> limit)</td></tr>
-<tr class="separator:aacc50b44cc6645673525772574875e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edf36c4226731eb9078483752fd9617" id="r_a5edf36c4226731eb9078483752fd9617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a28475bf17d6d4cdb8ed5583d556343fb">Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a5edf36c4226731eb9078483752fd9617">rt_copy_memory_safe</a> (const <a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a> src, <a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a> dst, <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a> len, <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a> dst_size)</td></tr>
+<tr class="separator:a5edf36c4226731eb9078483752fd9617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fcf994b09c8a91c3dbbdda179fc58b" id="r_a26fcf994b09c8a91c3dbbdda179fc58b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a26fcf994b09c8a91c3dbbdda179fc58b">rt_set_memory_safe</a> (<a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a> dst, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> value, <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a> len, <a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a> dst_size)</td></tr>
+<tr class="separator:a26fcf994b09c8a91c3dbbdda179fc58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab439ccee6fff035376be900fbd42f9f5" id="r_ab439ccee6fff035376be900fbd42f9f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ab439ccee6fff035376be900fbd42f9f5">rt_to_char</a> (<a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> value, <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> base)</td></tr>
+<tr class="separator:ab439ccee6fff035376be900fbd42f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95105095e6e32a522816c351c803e1f" id="r_ac95105095e6e32a522816c351c803e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ac95105095e6e32a522816c351c803e1f">rt_strcmp</a> (const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *a, const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *b)</td></tr>
+<tr class="separator:ac95105095e6e32a522816c351c803e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20202d6ba6e9d9b4608eaa2eab422a5a" id="r_a20202d6ba6e9d9b4608eaa2eab422a5a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a20202d6ba6e9d9b4608eaa2eab422a5a">memset</a> (void *dst, int c, long long unsigned int len)</td></tr>
+<tr class="separator:a20202d6ba6e9d9b4608eaa2eab422a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee312bf549bd04849f563511897f7463" id="r_aee312bf549bd04849f563511897f7463"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aee312bf549bd04849f563511897f7463">memcpy</a> (void *dst, const void *src, long long unsigned int len)</td></tr>
+<tr class="separator:aee312bf549bd04849f563511897f7463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac947b554a813243e516ad10aef6c8ca1" id="r_ac947b554a813243e516ad10aef6c8ca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ac947b554a813243e516ad10aef6c8ca1">strcmp</a> (const char *a, const char *b)</td></tr>
+<tr class="separator:ac947b554a813243e516ad10aef6c8ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2376392098330fa075017af59854f14d" id="r_a2376392098330fa075017af59854f14d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">Kernel::SWAP_DISK_HEADER</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a2376392098330fa075017af59854f14d">ALIGN</a> (8) <a class="el" href="struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html">SWAP_DISK_HEADER</a></td></tr>
 <tr class="memdesc:a2376392098330fa075017af59854f14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap disk header, containing information about the held virtual memory.  <br /></td></tr>
 <tr class="separator:a2376392098330fa075017af59854f14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1249,7 +1259,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3a6d8fe1c3beca6fd861cf6286ccd236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an admin command for a DMA operation.  <br /></td></tr>
 <tr class="separator:a3a6d8fe1c3beca6fd861cf6286ccd236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a297b1f0144294bbec714c6bd02520e9f" id="r_a297b1f0144294bbec714c6bd02520e9f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> Opcode&gt; </td></tr>
-<tr class="memitem:a297b1f0144294bbec714c6bd02520e9f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a297b1f0144294bbec714c6bd02520e9f">nvme_create_io_command</a> (<a class="el" href="struct_kernel_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html">HAL_NVME_QUEUE</a> *entry, <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> baseAddress, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> identLoAndQueueSizeHi, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> flagsLoAndQueueComplIdHi, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> identify, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> provideIdentify=<a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> namespaceIdentify=<a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
+<tr class="memitem:a297b1f0144294bbec714c6bd02520e9f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a297b1f0144294bbec714c6bd02520e9f">nvme_create_io_command</a> (<a class="el" href="struct_kernel_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html">HAL_NVME_QUEUE</a> *entry, <a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> baseAddress, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> identLoAndQueueSizeHi, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> flagsLoAndQueueComplIdHi, <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> identify, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> provideIdentify=<a class="el" href="lib_system_2_system_kit_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>, <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> namespaceIdentify=<a class="el" href="lib_system_2_system_kit_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
 <tr class="memdesc:a297b1f0144294bbec714c6bd02520e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an I/O command for a DMA operation.  <br /></td></tr>
 <tr class="separator:a297b1f0144294bbec714c6bd02520e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">HardwareThreadScheduler</div></td></tr>
@@ -1372,7 +1382,7 @@ Variables</h2></td></tr>
 <tr class="separator:aa66f65d40cbb5026e365c91ef8dff16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ca92c021ae1f476ce50295dc9247747" id="r_a1ca92c021ae1f476ce50295dc9247747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_page_mgr.html">PageMgr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a1ca92c021ae1f476ce50295dc9247747">kPageMgr</a></td></tr>
 <tr class="separator:a1ca92c021ae1f476ce50295dc9247747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2c68641f1f96b055840c00715e5fe3" id="r_aef2c68641f1f96b055840c00715e5fe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aef2c68641f1f96b055840c00715e5fe3">kRaiseOnBugCheck</a> = <a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr class="memitem:aef2c68641f1f96b055840c00715e5fe3" id="r_aef2c68641f1f96b055840c00715e5fe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aef2c68641f1f96b055840c00715e5fe3">kRaiseOnBugCheck</a> = <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="separator:aef2c68641f1f96b055840c00715e5fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8089b84581abd0e4212da55b348cd53" id="r_aa8089b84581abd0e4212da55b348cd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa8089b84581abd0e4212da55b348cd53">kLastExitCode</a> = 0U</td></tr>
 <tr class="memdesc:aa8089b84581abd0e4212da55b348cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit Code global variable.  <br /></td></tr>
@@ -1387,6 +1397,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr class="memitem:a2e89020a71017b422a9afb9e1e464ebc" id="r_a2e89020a71017b422a9afb9e1e464ebc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_kernel_1_1_array.html">Array</a>&lt; <a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a>, <a class="el" href="_core_process_scheduler_8h.html#ae633e81676a77d8dc3d29554f5d283c9">kSchedProcessLimitPerTeam</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a2e89020a71017b422a9afb9e1e464ebc">USER_PROCESS_ARRAY</a></td></tr>
 <tr class="separator:a2e89020a71017b422a9afb9e1e464ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a5e0e0479e820c37a0995bd7af5843" id="r_af9a5e0e0479e820c37a0995bd7af5843"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_kernel_1_1_ref.html">Ref</a>&lt; <a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#af9a5e0e0479e820c37a0995bd7af5843">USER_PROCESS_REF</a></td></tr>
+<tr class="separator:af9a5e0e0479e820c37a0995bd7af5843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa51450a0519e76d9ba3d82a715a009c5" id="r_aa51450a0519e76d9ba3d82a715a009c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa51450a0519e76d9ba3d82a715a009c5">sched_get_exit_code</a> (void) noexcept</td></tr>
 <tr class="memdesc:aa51450a0519e76d9ba3d82a715a009c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last exit code.  <br /></td></tr>
 <tr class="separator:aa51450a0519e76d9ba3d82a715a009c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2751,6 +2763,20 @@ template&lt;int PacketBitLen&gt; </div>
 
 </div>
 </div>
+<a id="af9a5e0e0479e820c37a0995bd7af5843" name="af9a5e0e0479e820c37a0995bd7af5843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a5e0e0479e820c37a0995bd7af5843">&#9670;&#160;</a></span>USER_PROCESS_REF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_kernel_1_1_ref.html">Ref</a>&lt;<a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a>&gt; <a class="el" href="namespace_kernel.html#af9a5e0e0479e820c37a0995bd7af5843">Kernel::USER_PROCESS_REF</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9eec37da34f03b8e1395bed5deae3104" name="a9eec37da34f03b8e1395bed5deae3104"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9eec37da34f03b8e1395bed5deae3104">&#9670;&#160;</a></span>UserPublicKey</h2>
 
@@ -3641,8 +3667,8 @@ template&lt;int PacketBitLen&gt; </div>
 
 </div>
 </div>
-<a id="abf116f03274e4531209432eae894db9e" name="abf116f03274e4531209432eae894db9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf116f03274e4531209432eae894db9e">&#9670;&#160;</a></span>UserRingKind</h2>
+<a id="a74f29632df87476065f7ae44aeedef5c" name="a74f29632df87476065f7ae44aeedef5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f29632df87476065f7ae44aeedef5c">&#9670;&#160;</a></span>UserRingKind</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3651,7 +3677,7 @@ template&lt;int PacketBitLen&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="namespace_kernel.html#abf116f03274e4531209432eae894db9e">Kernel::UserRingKind</a></td>
+          <td class="memname">enum class <a class="el" href="namespace_kernel.html#a74f29632df87476065f7ae44aeedef5c">Kernel::UserRingKind</a> : <a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a></td>
         </tr>
       </table>
   </td>
@@ -3661,11 +3687,11 @@ template&lt;int PacketBitLen&gt; </div>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abf116f03274e4531209432eae894db9ea06332aa62b5d9ea6c7d63d969677734e" name="abf116f03274e4531209432eae894db9ea06332aa62b5d9ea6c7d63d969677734e"></a>kRingInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abf116f03274e4531209432eae894db9ea4273218a9bea7fb97d46ca7501cbeb5b" name="abf116f03274e4531209432eae894db9ea4273218a9bea7fb97d46ca7501cbeb5b"></a>kRingStdUser&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abf116f03274e4531209432eae894db9ea4215aa66f39b8ac7be3873fb4f938164" name="abf116f03274e4531209432eae894db9ea4215aa66f39b8ac7be3873fb4f938164"></a>kRingSuperUser&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abf116f03274e4531209432eae894db9eaa475eaec0320dbeccd09f64fc4beff05" name="abf116f03274e4531209432eae894db9eaa475eaec0320dbeccd09f64fc4beff05"></a>kRingGuestUser&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abf116f03274e4531209432eae894db9ea9fb09bc213dbaf1dff9fc3a42d0237b5" name="abf116f03274e4531209432eae894db9ea9fb09bc213dbaf1dff9fc3a42d0237b5"></a>kRingCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a74f29632df87476065f7ae44aeedef5ca06332aa62b5d9ea6c7d63d969677734e" name="a74f29632df87476065f7ae44aeedef5ca06332aa62b5d9ea6c7d63d969677734e"></a>kRingInvalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74f29632df87476065f7ae44aeedef5ca4273218a9bea7fb97d46ca7501cbeb5b" name="a74f29632df87476065f7ae44aeedef5ca4273218a9bea7fb97d46ca7501cbeb5b"></a>kRingStdUser&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74f29632df87476065f7ae44aeedef5ca4215aa66f39b8ac7be3873fb4f938164" name="a74f29632df87476065f7ae44aeedef5ca4215aa66f39b8ac7be3873fb4f938164"></a>kRingSuperUser&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74f29632df87476065f7ae44aeedef5caa475eaec0320dbeccd09f64fc4beff05" name="a74f29632df87476065f7ae44aeedef5caa475eaec0320dbeccd09f64fc4beff05"></a>kRingGuestUser&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a74f29632df87476065f7ae44aeedef5ca9fb09bc213dbaf1dff9fc3a42d0237b5" name="a74f29632df87476065f7ae44aeedef5ca9fb09bc213dbaf1dff9fc3a42d0237b5"></a>kRingCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -4442,14 +4468,14 @@ template&lt;typename Args &gt; </div>
 
 </div>
 </div>
-<a id="a36a6beda41f24859f5c253d100c4e7fa" name="a36a6beda41f24859f5c253d100c4e7fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36a6beda41f24859f5c253d100c4e7fa">&#9670;&#160;</a></span>hal_check_stack()</h2>
+<a id="a192ebd8507e4eb279e34601d71f77460" name="a192ebd8507e4eb279e34601d71f77460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192ebd8507e4eb279e34601d71f77460">&#9670;&#160;</a></span>hal_check_task()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::hal_check_stack </td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::hal_check_task </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_kernel_1_1_h_a_l.html#a170dff87d6222eaa9789656777293277">HAL::StackFramePtr</a>&#160;</td>
           <td class="paramname"><em>stack_ptr</em></td><td>)</td>
@@ -5141,8 +5167,8 @@ template&lt;typename DataKind &gt; </div>
 
 </div>
 </div>
-<a id="a9d41361c1685ee5da3e190d75c529378" name="a9d41361c1685ee5da3e190d75c529378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d41361c1685ee5da3e190d75c529378">&#9670;&#160;</a></span>ke_io_read()</h2>
+<a id="a098d16d939f56212493af4e7e1eff6ed" name="a098d16d939f56212493af4e7e1eff6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a098d16d939f56212493af4e7e1eff6ed">&#9670;&#160;</a></span>ke_io_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5150,7 +5176,7 @@ template&lt;typename DataKind &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void Kernel::ke_io_read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_kernel_1_1_device_interface.html">DeviceInterface</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *&#160;</td>
           <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
@@ -5169,8 +5195,8 @@ template&lt;typename DataKind &gt; </div>
 
 </div>
 </div>
-<a id="ad1085600b4f13e33bd21543937b0468a" name="ad1085600b4f13e33bd21543937b0468a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1085600b4f13e33bd21543937b0468a">&#9670;&#160;</a></span>ke_io_write()</h2>
+<a id="afd14f7d877daece48d8b74ac8095bbd5" name="afd14f7d877daece48d8b74ac8095bbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd14f7d877daece48d8b74ac8095bbd5">&#9670;&#160;</a></span>ke_io_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5178,7 +5204,7 @@ template&lt;typename DataKind &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void Kernel::ke_io_write </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_kernel_1_1_device_interface.html">DeviceInterface</a>&lt; const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> * &gt; *&#160;</td>
           <td class="paramname"><em>obj</em>, </td>
         </tr>
         <tr>
@@ -5267,8 +5293,8 @@ template&lt;typename DataKind &gt; </div>
 
 </div>
 </div>
-<a id="a66c3d3d7ac9f7d872b0fe937ce71bc81" name="a66c3d3d7ac9f7d872b0fe937ce71bc81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66c3d3d7ac9f7d872b0fe937ce71bc81">&#9670;&#160;</a></span>ke_utf_io_write()</h2>
+<a id="a9b17b317544d56d022317b68ed787438" name="a9b17b317544d56d022317b68ed787438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b17b317544d56d022317b68ed787438">&#9670;&#160;</a></span>ke_utf_io_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5276,7 +5302,7 @@ template&lt;typename DataKind &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void Kernel::ke_utf_io_write </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_kernel_1_1_i_device_object.html">IDeviceObject</a>&lt; const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> * &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_kernel_1_1_device_interface.html">DeviceInterface</a>&lt; const <a class="el" href="namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> * &gt; *&#160;</td>
           <td class="paramname"><em>obj</em>, </td>
         </tr>
         <tr>
@@ -5395,6 +5421,74 @@ template&lt;<a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the 24-bit key. </dd></dl>
+
+</div>
+</div>
+<a id="aee312bf549bd04849f563511897f7463" name="aee312bf549bd04849f563511897f7463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee312bf549bd04849f563511897f7463">&#9670;&#160;</a></span>memcpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * Kernel::memcpy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20202d6ba6e9d9b4608eaa2eab422a5a" name="a20202d6ba6e9d9b4608eaa2eab422a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20202d6ba6e9d9b4608eaa2eab422a5a">&#9670;&#160;</a></span>memset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * Kernel::memset </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -6114,13 +6208,13 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td>
-          <td class="paramname"><em>provideIdentify</em> = <code><a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></code>, </td>
+          <td class="paramname"><em>provideIdentify</em> = <code><a class="el" href="lib_system_2_system_kit_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td>
-          <td class="paramname"><em>namespaceIdentify</em> = <code><a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></code>&#160;</td>
+          <td class="paramname"><em>namespaceIdentify</em> = <code><a class="el" href="lib_system_2_system_kit_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6373,6 +6467,46 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
 
 </div>
 </div>
+<a id="a5edf36c4226731eb9078483752fd9617" name="a5edf36c4226731eb9078483752fd9617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edf36c4226731eb9078483752fd9617">&#9670;&#160;</a></span>rt_copy_memory_safe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a28475bf17d6d4cdb8ed5583d556343fb">Int</a> Kernel::rt_copy_memory_safe </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a>&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a>&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td>
+          <td class="paramname"><em>dst_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a320cdc46a50e5cd2e7f82f0e6da0a85f" name="a320cdc46a50e5cd2e7f82f0e6da0a85f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a320cdc46a50e5cd2e7f82f0e6da0a85f">&#9670;&#160;</a></span>rt_hash_seed()</h2>
 
@@ -6531,6 +6665,74 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
 
 </div>
 </div>
+<a id="a26fcf994b09c8a91c3dbbdda179fc58b" name="a26fcf994b09c8a91c3dbbdda179fc58b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fcf994b09c8a91c3dbbdda179fc58b">&#9670;&#160;</a></span>rt_set_memory_safe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a> Kernel::rt_set_memory_safe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#ae85992ad6327764e411e958ab18b218b">voidPtr</a>&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_kernel.html#a491c180e187771df3ce5885241ed061b">Size</a>&#160;</td>
+          <td class="paramname"><em>dst_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac95105095e6e32a522816c351c803e1f" name="ac95105095e6e32a522816c351c803e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95105095e6e32a522816c351c803e1f">&#9670;&#160;</a></span>rt_strcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> Kernel::rt_strcmp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a265ab23b17f2f8c6a5e9c342de863f96" name="a265ab23b17f2f8c6a5e9c342de863f96"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a265ab23b17f2f8c6a5e9c342de863f96">&#9670;&#160;</a></span>rt_string_append()</h2>
 
@@ -6659,8 +6861,6 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
       </table>
 </div><div class="memdoc">
 
-<p>Checks for a string start at the character. </p>
-
 </div>
 </div>
 <a id="a0b5d3cda316618d22331719222056df3" name="a0b5d3cda316618d22331719222056df3"></a>
@@ -6737,8 +6937,8 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
 
 </div>
 </div>
-<a id="aacc50b44cc6645673525772574875e48" name="aacc50b44cc6645673525772574875e48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacc50b44cc6645673525772574875e48">&#9670;&#160;</a></span>rt_to_char()</h2>
+<a id="ab439ccee6fff035376be900fbd42f9f5" name="ab439ccee6fff035376be900fbd42f9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab439ccee6fff035376be900fbd42f9f5">&#9670;&#160;</a></span>rt_to_char()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6747,13 +6947,13 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
           <td class="memname"><a class="el" href="namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> Kernel::rt_to_char </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td>
-          <td class="paramname"><em>base</em>, </td>
+          <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td>
-          <td class="paramname"><em>limit</em>&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -7259,6 +7459,34 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>[io:master] for PIO device. </dd></dl>
+
+</div>
+</div>
+<a id="ac947b554a813243e516ad10aef6c8ca1" name="ac947b554a813243e516ad10aef6c8ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac947b554a813243e516ad10aef6c8ca1">&#9670;&#160;</a></span>strcmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a> Kernel::strcmp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -8534,7 +8762,7 @@ template&lt;<a class="el" href="namespace_kernel.html#a8fbad4cd517f76cba246c3c17
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::kRaiseOnBugCheck = <a class="el" href="lib_system_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::kRaiseOnBugCheck = <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

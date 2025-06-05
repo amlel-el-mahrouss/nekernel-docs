@@ -10,8 +10,8 @@ var _p_i_o_09_generic_8cc =
     [ "drv_pio_std_write", "_p_i_o_09_generic_8cc.html#aef8bda5a5bc6350153e87a94507968f6", null ],
     [ "sk_acquire_ata_device", "_p_i_o_09_generic_8cc.html#a077b5d580d77a1f4d0207d30f01b7ccf", null ],
     [ "sk_init_ata_device", "_p_i_o_09_generic_8cc.html#a857c31714e87a5e8777f7d4981581adf", null ],
-    [ "sk_io_read_pio", "_p_i_o_09_generic_8cc.html#aa011d5e4bda18cdd44be2e47b387305c", null ],
-    [ "sk_io_write_pio", "_p_i_o_09_generic_8cc.html#a256c24bfbe268d9e3889b370bd6e32ee", null ],
+    [ "sk_io_read_pio", "_p_i_o_09_generic_8cc.html#a2afb65cb7a98b2bab7fde609ca916ce3", null ],
+    [ "sk_io_write_pio", "_p_i_o_09_generic_8cc.html#accb7fdd89dcf7a1bea5e146da6106648", null ],
     [ "kATADetected", "_p_i_o_09_generic_8cc.html#aee1e18434ecc195aa90fa2b163ba9b3c", null ],
     [ "kATADiskModel", "_p_i_o_09_generic_8cc.html#ad6fbac92e05adb7093a0fbf334340367", null ],
     [ "kATAIdentifyData", "_p_i_o_09_generic_8cc.html#a5b530d12cf2bf96f9564e5cffdee99d1", null ]

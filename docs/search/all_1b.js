@@ -21,7 +21,7 @@ var searchData=
   ['virtualstart_18',['VirtualStart',['../struct_efi_memory_descriptor.html#aa28b4fe6eb5213737e970336a1e94d7d',1,'EfiMemoryDescriptor']]],
   ['vmaddress_19',['VMAddress',['../struct_kernel_1_1_p_e_f_command_header.html#a19a2c745ce9b4468a1d8435778fa1d4f',1,'Kernel::PEFCommandHeader']]],
   ['vmregister_20',['VMRegister',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#acf7c45c3e0b2172373ef6765db2381d6',1,'Kernel::USER_PROCESS']]],
-  ['void_21',['void',['../namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796',1,'Kernel::Void'],['../lib_system_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea',1,'Void:&#160;Macros.h']]],
-  ['voidptr_22',['voidptr',['../namespace_kernel.html#ae85992ad6327764e411e958ab18b218b',1,'Kernel::voidPtr'],['../namespace_kernel.html#aac30f48665b606a2bc482f2792369408',1,'Kernel::VoidPtr'],['../lib_system_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h']]],
+  ['void_21',['void',['../namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796',1,'Kernel::Void'],['../lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea',1,'Void:&#160;Macros.h']]],
+  ['voidptr_22',['voidptr',['../namespace_kernel.html#ae85992ad6327764e411e958ab18b218b',1,'Kernel::voidPtr'],['../namespace_kernel.html#aac30f48665b606a2bc482f2792369408',1,'Kernel::VoidPtr'],['../lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h']]],
   ['vs_23',['Vs',['../struct_hba_mem.html#ac0c830f2792fcd0ef3962e461e4cfad4',1,'HbaMem']]]
 ];

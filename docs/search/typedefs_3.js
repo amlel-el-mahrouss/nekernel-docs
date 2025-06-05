@@ -8,7 +8,7 @@ var searchData=
   ['cfpropertyarray_5',['CFPropertyArray',['../namespace_c_f.html#a2b229dda071d3ccb79e55a6d27458c91',1,'CF']]],
   ['cfpropertyid_6',['CFPropertyId',['../namespace_c_f.html#a3bdf31935f4a453f6583ae9407727be1',1,'CF']]],
   ['cfreal_7',['CFReal',['../namespace_c_f.html#a015f9e006989dd7e727692d9d9cb4a54',1,'CF']]],
-  ['char_8',['char',['../namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378',1,'Kernel::Char'],['../lib_system_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e',1,'Char:&#160;Macros.h']]],
+  ['char_8',['char',['../namespace_kernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378',1,'Kernel::Char'],['../lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e',1,'Char:&#160;Macros.h']]],
   ['char16_9',['Char16',['../namespace_kernel.html#a4023c0dbc1028e46ac013c7a96ed5025',1,'Kernel']]],
   ['charactertypeascii_10',['CharacterTypeASCII',['../namespace_boot.html#af598e810f47394f29f144cc3084daaec',1,'Boot']]],
   ['charactertypeutf16_11',['CharacterTypeUTF16',['../namespace_boot.html#ae3c6485eaee1c210cf856d442ce3c7a7',1,'Boot']]],

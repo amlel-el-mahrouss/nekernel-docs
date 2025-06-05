@@ -6,5 +6,6 @@ var _user_process_scheduler_8h =
     [ "Kernel::UserProcessScheduler", "class_kernel_1_1_user_process_scheduler.html", "class_kernel_1_1_user_process_scheduler" ],
     [ "Kernel::UserProcessHelper", "class_kernel_1_1_user_process_helper.html", "class_kernel_1_1_user_process_helper" ],
     [ "USER_PROCESS_ARRAY", "_user_process_scheduler_8h.html#a2e89020a71017b422a9afb9e1e464ebc", null ],
+    [ "USER_PROCESS_REF", "_user_process_scheduler_8h.html#af9a5e0e0479e820c37a0995bd7af5843", null ],
     [ "sched_get_exit_code", "_user_process_scheduler_8h.html#aa51450a0519e76d9ba3d82a715a009c5", null ]
 ];

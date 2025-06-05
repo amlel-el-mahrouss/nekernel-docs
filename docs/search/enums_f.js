@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userringkind_0',['UserRingKind',['../namespace_kernel.html#abf116f03274e4531209432eae894db9e',1,'Kernel']]]
+  ['userringkind_0',['UserRingKind',['../namespace_kernel.html#a74f29632df87476065f7ae44aeedef5c',1,'Kernel']]]
 ];

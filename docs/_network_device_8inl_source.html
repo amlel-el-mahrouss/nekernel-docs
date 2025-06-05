@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -113,12 +112,12 @@ $(document).ready(function(){initNavTree('_network_device_8inl_source.html','');
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif  </span><span class="comment">// __INC_NETWORK_DEVICE_H__</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_kernel.html">Kernel</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">inline</span> NetworkDevice::NetworkDevice(<span class="keywordtype">void</span> (*out)(IDeviceObject&lt;NetworkDeviceCommand&gt;*,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">inline</span> NetworkDevice::NetworkDevice(<span class="keywordtype">void</span> (*out)(DeviceInterface&lt;NetworkDeviceCommand&gt;*,</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                                                NetworkDeviceCommand),</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                                    <span class="keywordtype">void</span> (*in)(IDeviceObject&lt;NetworkDeviceCommand&gt;*,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                                    <span class="keywordtype">void</span> (*in)(DeviceInterface&lt;NetworkDeviceCommand&gt;*,</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                                               NetworkDeviceCommand),</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                                    <span class="keywordtype">void</span> (*on_cleanup)(<span class="keywordtype">void</span>))</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    : IDeviceObject&lt;NetworkDeviceCommand&gt;(out, in), fCleanup(on_cleanup) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    : DeviceInterface&lt;NetworkDeviceCommand&gt;(out, in), fCleanup(on_cleanup) {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_define" href="_debug_output_8h.html#a18983745cdbaca69cc1eb2cb33f02ada">kout</a> &lt;&lt; <span class="stringliteral">&quot;NetworkDevice initialized.\r&quot;</span>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_define" href="_kernel_panic_8h.html#a21aee4c355d56e3630f2f341f59b9406">MUST_PASS</a>(out &amp;&amp; in &amp;&amp; on_cleanup);</div>

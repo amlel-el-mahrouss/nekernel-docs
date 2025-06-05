@@ -9,11 +9,11 @@ var _user_mgr_8h =
     [ "kUsersDir", "_user_mgr_8h.html#acc529e60867c5e413d39b6c10ac35afa", null ],
     [ "UserPublicKey", "_user_mgr_8h.html#a9eec37da34f03b8e1395bed5deae3104", null ],
     [ "UserPublicKeyType", "_user_mgr_8h.html#a58503a2dd8c6303cb88b24fb615a6a71", null ],
-    [ "UserRingKind", "_user_mgr_8h.html#abf116f03274e4531209432eae894db9e", [
-      [ "kRingInvalid", "_user_mgr_8h.html#abf116f03274e4531209432eae894db9ea06332aa62b5d9ea6c7d63d969677734e", null ],
-      [ "kRingStdUser", "_user_mgr_8h.html#abf116f03274e4531209432eae894db9ea4273218a9bea7fb97d46ca7501cbeb5b", null ],
-      [ "kRingSuperUser", "_user_mgr_8h.html#abf116f03274e4531209432eae894db9ea4215aa66f39b8ac7be3873fb4f938164", null ],
-      [ "kRingGuestUser", "_user_mgr_8h.html#abf116f03274e4531209432eae894db9eaa475eaec0320dbeccd09f64fc4beff05", null ],
-      [ "kRingCount", "_user_mgr_8h.html#abf116f03274e4531209432eae894db9ea9fb09bc213dbaf1dff9fc3a42d0237b5", null ]
+    [ "UserRingKind", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5c", [
+      [ "kRingInvalid", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5ca06332aa62b5d9ea6c7d63d969677734e", null ],
+      [ "kRingStdUser", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5ca4273218a9bea7fb97d46ca7501cbeb5b", null ],
+      [ "kRingSuperUser", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5ca4215aa66f39b8ac7be3873fb4f938164", null ],
+      [ "kRingGuestUser", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5caa475eaec0320dbeccd09f64fc4beff05", null ],
+      [ "kRingCount", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5ca9fb09bc213dbaf1dff9fc3a42d0237b5", null ]
     ] ]
 ];
