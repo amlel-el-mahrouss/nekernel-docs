@@ -91,8 +91,7 @@ $(document).ready(function(){initNavTree('_user_process_scheduler_8cc.html','');
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">UserProcessScheduler.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -106,6 +105,7 @@ $(document).ready(function(){initNavTree('_user_process_scheduler_8cc.html','');
 <code>#include &lt;<a class="el" href="_k_p_c_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_process_scheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_k_string_8h_source.html">NeKit/KString.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_ne_kit_2_utils_8h_source.html">NeKit/Utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_signals_8h_source.html">SignalKit/Signals.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -116,24 +116,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aabfcf573e9c2b2200ff3c79f49d5c78e" id="r_aabfcf573e9c2b2200ff3c79f49d5c78e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html">PROCESS_HEAP_TREE</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aabfcf573e9c2b2200ff3c79f49d5c78e">Kernel::sched_try_go_upper_ptr_tree</a> (<a class="el" href="struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html">PROCESS_HEAP_TREE</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt; *tree)</td></tr>
-<tr class="memdesc:aabfcf573e9c2b2200ff3c79f49d5c78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate pointer to heap tree.  <br /></td></tr>
-<tr class="separator:aabfcf573e9c2b2200ff3c79f49d5c78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbf0128f7374dd6d408b76aebfee638b" id="r_adbf0128f7374dd6d408b76aebfee638b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#adbf0128f7374dd6d408b76aebfee638b">Kernel::sched_free_ptr_tree</a> (<a class="el" href="struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html">PROCESS_HEAP_TREE</a>&lt; <a class="el" href="namespace_kernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> &gt; *memory_ptr_list)</td></tr>
-<tr class="memdesc:adbf0128f7374dd6d408b76aebfee638b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free heap tree.  <br /></td></tr>
-<tr class="separator:adbf0128f7374dd6d408b76aebfee638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">USER_PROCESS</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p><a class="el" href="class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html">USER_PROCESS</a> class, holds information about the running process/thread. </p>
-</div></td></tr>
-<tr class="memitem:aa51450a0519e76d9ba3d82a715a009c5" id="r_aa51450a0519e76d9ba3d82a715a009c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa51450a0519e76d9ba3d82a715a009c5">Kernel::sched_get_exit_code</a> (void) noexcept</td></tr>
-<tr class="memdesc:aa51450a0519e76d9ba3d82a715a009c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last exit code.  <br /></td></tr>
-<tr class="separator:aa51450a0519e76d9ba3d82a715a009c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa8089b84581abd0e4212da55b348cd53" id="r_aa8089b84581abd0e4212da55b348cd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#aa8089b84581abd0e4212da55b348cd53">Kernel::kLastExitCode</a> = 0U</td></tr>
-<tr class="memdesc:aa8089b84581abd0e4212da55b348cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit Code global variable.  <br /></td></tr>
-<tr class="separator:aa8089b84581abd0e4212da55b348cd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe45e609d08f611195aedf7e322efe0" id="r_a6fe45e609d08f611195aedf7e322efe0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6fe45e609d08f611195aedf7e322efe0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a6fe45e609d08f611195aedf7e322efe0">Kernel::sched_try_go_upper_ptr_tree</a> (T *tree)</td></tr>
+<tr class="memdesc:a6fe45e609d08f611195aedf7e322efe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate pointer to heap tree.  <br /></td></tr>
+<tr class="separator:a6fe45e609d08f611195aedf7e322efe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d2e127878baab79e35e39b35c186da" id="r_ae8d2e127878baab79e35e39b35c186da"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae8d2e127878baab79e35e39b35c186da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#ae8d2e127878baab79e35e39b35c186da">Kernel::sched_free_ptr_tree</a> (T *tree)</td></tr>
+<tr class="memdesc:ae8d2e127878baab79e35e39b35c186da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free heap tree.  <br /></td></tr>
+<tr class="separator:ae8d2e127878baab79e35e39b35c186da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unprivileged/Ring-3 process scheduler. </p>

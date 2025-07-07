@@ -1,24 +1,6 @@
 var searchData=
 [
-  ['uarch_5ft_0',['uarch_t',['../_cxx_abi_8h.html#a35fc01d4eba01f3f2ec636bd6b5ff34f',1,'CxxAbi.h']]],
-  ['uchar_1',['UChar',['../namespace_kernel.html#a3ec5b04a6ee57c6d83916de4e1fa1bc4',1,'Kernel']]],
-  ['udpnetworkdevice_2',['UDPNetworkDevice',['../namespace_kernel.html#afcbc34890cf01b2365866531e173c55b',1,'Kernel']]],
-  ['uint_3',['UInt',['../namespace_kernel.html#a43c76a8770f77cb9af3332a8e5767e50',1,'Kernel']]],
-  ['uint16_4',['uint16',['../namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260',1,'Kernel::UInt16'],['../lib_system_2_system_kit_2macros_8h.html#a52977b924e23d8e96863e9e904a29048',1,'UInt16:&#160;Macros.h']]],
-  ['uint32_5',['uint32',['../namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf',1,'Kernel::UInt32'],['../lib_system_2_system_kit_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada',1,'UInt32:&#160;Macros.h']]],
-  ['uint64_6',['uint64',['../namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5',1,'Kernel::UInt64'],['../lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9',1,'UInt64:&#160;Macros.h']]],
-  ['uint8_7',['uint8',['../namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33',1,'Kernel::UInt8'],['../lib_system_2_system_kit_2macros_8h.html#afa67a934526c218d732989fc15aac69e',1,'UInt8:&#160;Macros.h']]],
-  ['uintptr_8',['uintptr',['../namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb',1,'Kernel::UIntPtr'],['../lib_system_2_system_kit_2macros_8h.html#aea33bdc955927086847adc88212e6b2e',1,'UIntPtr:&#160;Macros.h']]],
-  ['ulong_9',['ULong',['../namespace_kernel.html#acb5a68327a792bee71ba0699916a126d',1,'Kernel']]],
-  ['usbcommandregister_10',['USBCommandRegister',['../_x_h_c_i_8h.html#a778f1b0e26a9b6a2cb36d6b870ad6621',1,'XHCI.h']]],
-  ['usbinterruptenableregister_11',['USBInterruptEnableRegister',['../_x_h_c_i_8h.html#a39372bb8fa687ce43846106f45b5307f',1,'XHCI.h']]],
-  ['usbstatusregister_12',['USBStatusRegister',['../_x_h_c_i_8h.html#afead76bbcaaaad0f8db120d4b37933d9',1,'XHCI.h']]],
-  ['user_5fprocess_5farray_13',['USER_PROCESS_ARRAY',['../namespace_kernel.html#a2e89020a71017b422a9afb9e1e464ebc',1,'Kernel']]],
-  ['user_5fprocess_5fref_14',['USER_PROCESS_REF',['../namespace_kernel.html#af9a5e0e0479e820c37a0995bd7af5843',1,'Kernel']]],
-  ['userpublickey_15',['UserPublicKey',['../namespace_kernel.html#a9eec37da34f03b8e1395bed5deae3104',1,'Kernel']]],
-  ['userpublickeytype_16',['UserPublicKeyType',['../namespace_kernel.html#a58503a2dd8c6303cb88b24fb615a6a71',1,'Kernel']]],
-  ['ushort_17',['UShort',['../namespace_kernel.html#a2ddad4e971bf86b7ccd3fa1fb9eb3da1',1,'Kernel']]],
-  ['utf16char_18',['Utf16Char',['../namespace_kernel.html#a2c6ff14dd8a82831d54d27370d39c5e1',1,'Kernel']]],
-  ['utf32char_19',['Utf32Char',['../namespace_kernel.html#afc9778e6f44b1c6c0febf4ad9e29058f',1,'Kernel']]],
-  ['utf8char_20',['Utf8Char',['../namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66',1,'Kernel']]]
+  ['virtualaddresskind_0',['VirtualAddressKind',['../namespace_kernel.html#ae5db4560682715b38ce628278c85ac59',1,'Kernel']]],
+  ['void_1',['void',['../namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796',1,'Kernel::Void'],['../lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea',1,'Void:&#160;Macros.h']]],
+  ['voidptr_2',['voidptr',['../namespace_kernel.html#aac30f48665b606a2bc482f2792369408',1,'Kernel::VoidPtr'],['../lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h'],['../namespace_kernel.html#ae85992ad6327764e411e958ab18b218b',1,'Kernel::voidPtr']]]
 ];

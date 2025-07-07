@@ -5,6 +5,7 @@ var dir_0a365f50777a2b2c0742c6300f59f48b =
     [ "ApplicationProcessor.h", "_application_processor_8h.html", "_application_processor_8h" ],
     [ "HalACPIFactoryInterface.cc", "_a_r_m64_2_hal_a_c_p_i_factory_interface_8cc.html", null ],
     [ "HalApplicationProcessor.cc", "_a_r_m64_2_hal_application_processor_8cc.html", "_a_r_m64_2_hal_application_processor_8cc" ],
+    [ "HalCoreInterruptHandler.cc", "_a_r_m64_2_hal_core_interrupt_handler_8cc.html", "_a_r_m64_2_hal_core_interrupt_handler_8cc" ],
     [ "HalDebugOutput.cc", "_a_r_m64_2_hal_debug_output_8cc.html", "_a_r_m64_2_hal_debug_output_8cc" ],
     [ "HalKernelMain.cc", "_a_r_m64_2_hal_kernel_main_8cc.html", "_a_r_m64_2_hal_kernel_main_8cc" ],
     [ "HalKernelPanic.cc", "_a_r_m64_2_hal_kernel_panic_8cc.html", "_a_r_m64_2_hal_kernel_panic_8cc" ],

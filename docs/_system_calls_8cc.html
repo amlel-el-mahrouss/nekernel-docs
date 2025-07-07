@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: dev/user/src/SystemCalls.cc File Reference</title>
+<title>NeKernel: dev/libSystem/src/SystemCalls.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -91,52 +90,40 @@ $(document).ready(function(){initNavTree('_system_calls_8cc.html',''); initResiz
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">SystemCalls.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Source file for the memory functions/syscalls for user.sys.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="_sci_calls_8h_source.html">user/SciCalls.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_system_calls_8h_source.html">user/SystemCalls.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_syscall_8h_source.html">libSystem/SystemKit/Syscall.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_system_8h_source.html">libSystem/SystemKit/System.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa5a16136b6b95ab0385d2835d71ec738" id="r_aa5a16136b6b95ab0385d2835d71ec738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aa5a16136b6b95ab0385d2835d71ec738">MmCopyMemory</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> dest, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> src, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> len)</td></tr>
+<tr class="memitem:aa5a16136b6b95ab0385d2835d71ec738" id="r_aa5a16136b6b95ab0385d2835d71ec738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aa5a16136b6b95ab0385d2835d71ec738">MmCopyMemory</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> dest, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> src, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> len)</td></tr>
 <tr class="memdesc:aa5a16136b6b95ab0385d2835d71ec738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy memory region.  <br /></td></tr>
 <tr class="separator:aa5a16136b6b95ab0385d2835d71ec738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fde7dd98ac52b150dbf96bae527c50" id="r_af6fde7dd98ac52b150dbf96bae527c50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a637e6553e682cc8b9ab17bf05201b051">SInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#af6fde7dd98ac52b150dbf96bae527c50">MmStrLen</a> (const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *in)</td></tr>
+<tr class="memitem:af6fde7dd98ac52b150dbf96bae527c50" id="r_af6fde7dd98ac52b150dbf96bae527c50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a637e6553e682cc8b9ab17bf05201b051">SInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#af6fde7dd98ac52b150dbf96bae527c50">MmStrLen</a> (const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *in)</td></tr>
 <tr class="memdesc:af6fde7dd98ac52b150dbf96bae527c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get length of string.  <br /></td></tr>
 <tr class="separator:af6fde7dd98ac52b150dbf96bae527c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a423e7c626951f84e6273fd5cc92c4504" id="r_a423e7c626951f84e6273fd5cc92c4504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#a423e7c626951f84e6273fd5cc92c4504">MmFillMemory</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> dest, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> len, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a> value)</td></tr>
+<tr class="memitem:a423e7c626951f84e6273fd5cc92c4504" id="r_a423e7c626951f84e6273fd5cc92c4504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#a423e7c626951f84e6273fd5cc92c4504">MmFillMemory</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> dest, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> len, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a> value)</td></tr>
 <tr class="memdesc:a423e7c626951f84e6273fd5cc92c4504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill memory region.  <br /></td></tr>
 <tr class="separator:a423e7c626951f84e6273fd5cc92c4504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c400265b6eb38961f70738210234585" id="r_a8c400265b6eb38961f70738210234585"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#a8c400265b6eb38961f70738210234585">IoOpenFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *path, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *drv_letter)</td></tr>
+<tr class="memitem:a8c400265b6eb38961f70738210234585" id="r_a8c400265b6eb38961f70738210234585"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#a8c400265b6eb38961f70738210234585">IoOpenFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *path, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *drv_letter)</td></tr>
 <tr class="separator:a8c400265b6eb38961f70738210234585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff80c6b44867badfd0933a9a913f6c86" id="r_aff80c6b44867badfd0933a9a913f6c86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aff80c6b44867badfd0933a9a913f6c86">IoCloseFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a> desc)</td></tr>
+<tr class="memitem:aff80c6b44867badfd0933a9a913f6c86" id="r_aff80c6b44867badfd0933a9a913f6c86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aff80c6b44867badfd0933a9a913f6c86">IoCloseFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a> desc)</td></tr>
 <tr class="memdesc:aff80c6b44867badfd0933a9a913f6c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a file and flushes its content.  <br /></td></tr>
 <tr class="separator:aff80c6b44867badfd0933a9a913f6c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84923ed5f8d6c6753bb4a9e49ad6253" id="r_aa84923ed5f8d6c6753bb4a9e49ad6253"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aa84923ed5f8d6c6753bb4a9e49ad6253">IoSeekFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a> desc, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> off)</td></tr>
+<tr class="memitem:aa84923ed5f8d6c6753bb4a9e49ad6253" id="r_aa84923ed5f8d6c6753bb4a9e49ad6253"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aa84923ed5f8d6c6753bb4a9e49ad6253">IoSeekFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a> desc, <a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> off)</td></tr>
 <tr class="separator:aa84923ed5f8d6c6753bb4a9e49ad6253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa344a49b337e4a412c0ed302d79bd1d7" id="r_aa344a49b337e4a412c0ed302d79bd1d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aa344a49b337e4a412c0ed302d79bd1d7">IoTellFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a> desc)</td></tr>
+<tr class="memitem:aa344a49b337e4a412c0ed302d79bd1d7" id="r_aa344a49b337e4a412c0ed302d79bd1d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#aa344a49b337e4a412c0ed302d79bd1d7">IoTellFile</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a> desc)</td></tr>
 <tr class="memdesc:aa344a49b337e4a412c0ed302d79bd1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell the current position of the file pointer.  <br /></td></tr>
 <tr class="separator:aa344a49b337e4a412c0ed302d79bd1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afea2aa02c8d1f2489ad35f7fbb1666da" id="r_afea2aa02c8d1f2489ad35f7fbb1666da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767">SInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da">PrintOut</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a9df1cb6db51581fef1d78e96625d4ef2">IORef</a> desc, const char *fmt,...)</td></tr>
+<tr class="memitem:afea2aa02c8d1f2489ad35f7fbb1666da" id="r_afea2aa02c8d1f2489ad35f7fbb1666da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767">SInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da">PrintOut</a> (<a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a9df1cb6db51581fef1d78e96625d4ef2">IORef</a> desc, const char *fmt,...)</td></tr>
 <tr class="separator:afea2aa02c8d1f2489ad35f7fbb1666da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09f6bff82b6524dea872f4d0adb1e82a" id="r_a09f6bff82b6524dea872f4d0adb1e82a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#a09f6bff82b6524dea872f4d0adb1e82a">_rtl_assert</a> (<a class="el" href="user_2macros_8h.html#a76a8b016e5ad61faf9062cc387df5016">Bool</a> expr, const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *origin)</td></tr>
+<tr class="memitem:a09f6bff82b6524dea872f4d0adb1e82a" id="r_a09f6bff82b6524dea872f4d0adb1e82a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#a09f6bff82b6524dea872f4d0adb1e82a">_rtl_assert</a> (<a class="el" href="lib_system_2_system_kit_2macros_8h.html#a76a8b016e5ad61faf9062cc387df5016">Bool</a> expr, const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *origin)</td></tr>
 <tr class="separator:a09f6bff82b6524dea872f4d0adb1e82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a495109a12f61aefd33d298bbb9f3a53e" id="r_a495109a12f61aefd33d298bbb9f3a53e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_system_calls_8cc.html#a495109a12f61aefd33d298bbb9f3a53e">kInvalidSyscall</a> = 0UL</td></tr>
-<tr class="memdesc:a495109a12f61aefd33d298bbb9f3a53e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Systems Calls implementation.  <br /></td></tr>
-<tr class="separator:a495109a12f61aefd33d298bbb9f3a53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Source file for the memory functions/syscalls for user.sys. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a09f6bff82b6524dea872f4d0adb1e82a" name="a09f6bff82b6524dea872f4d0adb1e82a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09f6bff82b6524dea872f4d0adb1e82a">&#9670;&#160;</a></span>_rtl_assert()</h2>
 
@@ -144,15 +131,15 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a> _rtl_assert </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a> _rtl_assert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="user_2macros_8h.html#a76a8b016e5ad61faf9062cc387df5016">Bool</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#a76a8b016e5ad61faf9062cc387df5016">Bool</a>&#160;</td>
           <td class="paramname"><em>expr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
           <td class="paramname"><em>origin</em>&#160;</td>
         </tr>
         <tr>
@@ -172,9 +159,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a> IoCloseFile </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a> IoCloseFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a>&#160;</td>
           <td class="paramname"><em>file_desc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -199,15 +186,15 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a> IoOpenFile </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a> IoOpenFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
           <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
           <td class="paramname"><em>drv_letter</em>&#160;</td>
         </tr>
         <tr>
@@ -227,15 +214,15 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> IoSeekFile </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> IoSeekFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a>&#160;</td>
           <td class="paramname"><em>desc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a>&#160;</td>
           <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
@@ -255,9 +242,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> IoTellFile </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9">UInt64</a> IoTellFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a569e85f2d10d138139759df87f3b8508">Ref</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a747dbc02265c19d7ca467061f3d9fa1d">Ref</a>&#160;</td>
           <td class="paramname"><em>file_desc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -282,21 +269,21 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> MmCopyMemory </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> MmCopyMemory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td>
           <td class="paramname"><em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -318,21 +305,21 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> MmFillMemory </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> MmFillMemory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>&#160;</td>
           <td class="paramname"><em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a>&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="user_2macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -354,9 +341,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#a637e6553e682cc8b9ab17bf05201b051">SInt64</a> MmStrLen </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a637e6553e682cc8b9ab17bf05201b051">SInt64</a> MmStrLen </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="user_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e">Char</a> *&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
           <td></td>
         </tr>
@@ -374,9 +361,9 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="user_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="user_2macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767">SInt32</a> PrintOut </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767">SInt32</a> PrintOut </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_calls_8h.html#a9df1cb6db51581fef1d78e96625d4ef2">IORef</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_compiler_hint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="_system_8h.html#a9df1cb6db51581fef1d78e96625d4ef2">IORef</a>&#160;</td>
           <td class="paramname"><em>desc</em>, </td>
         </tr>
         <tr>
@@ -401,37 +388,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a495109a12f61aefd33d298bbb9f3a53e" name="a495109a12f61aefd33d298bbb9f3a53e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a495109a12f61aefd33d298bbb9f3a53e">&#9670;&#160;</a></span>kInvalidSyscall</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto kInvalidSyscall = 0UL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Systems Calls implementation. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_743f3da7347624d2794a80b1828a9f0e.html">user</a></li><li class="navelem"><a class="el" href="dir_158128e862e7d554db32468ec9e98202.html">src</a></li><li class="navelem"><a class="el" href="_system_calls_8cc.html">SystemCalls.cc</a></li>
+    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_891fd38c5f06b7a6c350768d09f5098a.html">libSystem</a></li><li class="navelem"><a class="el" href="dir_007e7c784b5b150e57ad4ce43bcb0245.html">src</a></li><li class="navelem"><a class="el" href="_system_calls_8cc.html">SystemCalls.cc</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

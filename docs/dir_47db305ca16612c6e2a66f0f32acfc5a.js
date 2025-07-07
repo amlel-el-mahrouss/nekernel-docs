@@ -8,6 +8,7 @@ var dir_47db305ca16612c6e2a66f0f32acfc5a =
     [ "ACPIFactoryInterface.cc", "_a_c_p_i_factory_interface_8cc.html", "_a_c_p_i_factory_interface_8cc" ],
     [ "Array.cc", "_array_8cc.html", null ],
     [ "ArrayList.cc", "_array_list_8cc.html", null ],
+    [ "AsciiUtils.cc", "_ascii_utils_8cc.html", "_ascii_utils_8cc" ],
     [ "Atom.cc", "_atom_8cc.html", null ],
     [ "BinaryMutex.cc", "_binary_mutex_8cc.html", null ],
     [ "BitMapMgr.cc", "_bit_map_mgr_8cc.html", "_bit_map_mgr_8cc" ],
@@ -50,6 +51,5 @@ var dir_47db305ca16612c6e2a66f0f32acfc5a =
     [ "UserProcessScheduler.cc", "_user_process_scheduler_8cc.html", "_user_process_scheduler_8cc" ],
     [ "UserProcessTeam.cc", "_user_process_team_8cc.html", null ],
     [ "UtfUtils.cc", "_utf_utils_8cc.html", "_utf_utils_8cc" ],
-    [ "Utils.cc", "_utils_8cc.html", "_utils_8cc" ],
     [ "Variant.cc", "_variant_8cc.html", null ]
 ];

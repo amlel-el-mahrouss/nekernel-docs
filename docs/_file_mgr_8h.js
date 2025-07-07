@@ -5,7 +5,6 @@ var _file_mgr_8h =
     [ "Kernel::FILEMGR_RESTRICT", "struct_kernel_1_1_f_i_l_e_m_g_r___r_e_s_t_r_i_c_t.html", "struct_kernel_1_1_f_i_l_e_m_g_r___r_e_s_t_r_i_c_t" ],
     [ "kFileMgrNPos", "_file_mgr_8h.html#a282b7015f5694ba92e3b80f866540191", null ],
     [ "kFileMimeGeneric", "_file_mgr_8h.html#aa15d37f24895cfd300c5e721fd7c543f", null ],
-    [ "kFileOpsCount", "_file_mgr_8h.html#a4a0af5b6c912d5dae27719048452ebcf", null ],
     [ "kRestrictMax", "_file_mgr_8h.html#acf34611c032243432eb577c447651563", null ],
     [ "kRestrictR", "_file_mgr_8h.html#aeb975638ccc0749cc0f20f97e9d92c8e", null ],
     [ "kRestrictRB", "_file_mgr_8h.html#ada5e2574cd77043f7f484c2c864d51ba", null ],

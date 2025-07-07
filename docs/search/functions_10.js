@@ -15,7 +15,7 @@ var searchData=
   ['printcreate_12',['PrintCreate',['../_system_8h.html#a0c36c64b7124be0618419205653f4860',1,'System.h']]],
   ['printget_13',['PrintGet',['../_system_8h.html#aa8a7c9aa3be967a3ba2324db1188c7a7',1,'System.h']]],
   ['printin_14',['PrintIn',['../_system_8h.html#a9dccac8b24037e387043d31e215d2e30',1,'System.h']]],
-  ['printout_15',['printout',['../_system_8h.html#ab4fe33f58b392cdb3a3674b5b3dbe1d1',1,'PrintOut(IORef file, const Char *fmt,...):&#160;System.h'],['../_system_impl_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da',1,'PrintOut(_Input IORef desc, const char *fmt,...):&#160;SystemImpl.cc']]],
+  ['printout_15',['printout',['../_system_8h.html#ab4fe33f58b392cdb3a3674b5b3dbe1d1',1,'PrintOut(IORef file, const Char *fmt,...):&#160;System.h'],['../_system_calls_8cc.html#afea2aa02c8d1f2489ad35f7fbb1666da',1,'PrintOut(_Input IORef desc, const char *fmt,...):&#160;SystemCalls.cc']]],
   ['printrelease_16',['PrintRelease',['../_system_8h.html#ae59729d13d54a387c19cfc99b25c6619',1,'System.h']]],
   ['process_5fimage_17',['PROCESS_IMAGE',['../struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#a5da95848b155160f32c22abdd8cbb07e',1,'Kernel::PROCESS_IMAGE']]],
   ['progif_18',['ProgIf',['../class_kernel_1_1_p_c_i_1_1_device.html#a072e178ab31ff129666b916e2f73b920',1,'Kernel::PCI::Device']]],

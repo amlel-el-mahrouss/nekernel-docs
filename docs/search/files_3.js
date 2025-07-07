@@ -32,6 +32,5 @@ var searchData=
   ['dma_2einl_29',['DMA.inl',['../_d_m_a_8inl.html',1,'']]],
   ['dmapool_2eh_30',['DmaPool.h',['../_dma_pool_8h.html',1,'']]],
   ['drivemgr_2ecc_31',['DriveMgr.cc',['../_drive_mgr_8cc.html',1,'']]],
-  ['drivemgr_2eh_32',['DriveMgr.h',['../_drive_mgr_8h.html',1,'']]],
-  ['dylibmain_2ecc_33',['DylibMain.cc',['../_dylib_main_8cc.html',1,'']]]
+  ['drivemgr_2eh_32',['DriveMgr.h',['../_drive_mgr_8h.html',1,'']]]
 ];

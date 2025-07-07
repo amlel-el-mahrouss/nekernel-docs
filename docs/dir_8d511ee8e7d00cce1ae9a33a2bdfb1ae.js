@@ -7,7 +7,7 @@ var dir_8d511ee8e7d00cce1ae9a33a2bdfb1ae =
     [ "HalACPIFactoryInterface.cc", "_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc.html", "_a_m_d64_2_hal_a_c_p_i_factory_interface_8cc" ],
     [ "HalAPICDmaWrapper.cc", "_hal_a_p_i_c_dma_wrapper_8cc.html", null ],
     [ "HalApplicationProcessor.cc", "_a_m_d64_2_hal_application_processor_8cc.html", "_a_m_d64_2_hal_application_processor_8cc" ],
-    [ "HalCoreInterruptHandler.cc", "_hal_core_interrupt_handler_8cc.html", "_hal_core_interrupt_handler_8cc" ],
+    [ "HalCoreInterruptHandler.cc", "_a_m_d64_2_hal_core_interrupt_handler_8cc.html", "_a_m_d64_2_hal_core_interrupt_handler_8cc" ],
     [ "HalCoreSystemCalls.cc", "_hal_core_system_calls_8cc.html", null ],
     [ "HalDebugOutput.cc", "_a_m_d64_2_hal_debug_output_8cc.html", "_a_m_d64_2_hal_debug_output_8cc" ],
     [ "HalDebugProtocol.cc", "_hal_debug_protocol_8cc.html", null ],

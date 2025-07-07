@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: tooling/mkfs.h Source File</title>
+<title>NeKernel: tooling/libmkfs/mkfs.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -110,34 +110,71 @@ $(document).ready(function(){initNavTree('mkfs_8h_source.html',''); initResizabl
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemkfs.html">mkfs</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharType&gt;</div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespacemkfs.html#ada41fcde69477f1027aa8a69070a09f6">   17</a></span><span class="keyword">inline</span> std::basic_string&lt;CharType&gt; <a class="code hl_function" href="namespacemkfs.html#ada41fcde69477f1027aa8a69070a09f6">get_option</a>(<span class="keyword">const</span> std::basic_string&lt;CharType&gt;&amp; args,</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                                              <span class="keyword">const</span> std::basic_string&lt;CharType&gt;&amp; option) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">size_t</span> pos = args.find(option + CharType(<span class="charliteral">&#39;=&#39;</span>));</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordflow">if</span> (pos != std::string::npos) {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">size_t</span> start = pos + option.length() + 1;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">size_t</span> end   = args.find(<span class="charliteral">&#39; &#39;</span>, start);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> args.substr(start, end - start);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordflow">return</span> std::basic_string&lt;CharType&gt;{};</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespacemkfs_1_1detail.html">   16</a></span><span class="keyword">namespace </span>detail {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_define" href="kernel_2_ne_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a>(uint32_t gb) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(gb) * 1024ULL * 1024ULL * 1024ULL;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> parse_decimal(<span class="keyword">const</span> std::string&amp; opt, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>&amp; out) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span> (opt.empty()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">char</span>*              endptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> val    = std::strtoull(opt.c_str(), &amp;endptr, 10);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (endptr == opt.c_str() || *endptr != <span class="charliteral">&#39;\0&#39;</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    out = val;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> parse_signed(<span class="keyword">const</span> std::string&amp; opt, <span class="keywordtype">long</span>&amp; out, <span class="keywordtype">int</span> base = 10) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (opt.empty()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">char</span>* endptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">long</span>  val    = std::strtol(opt.c_str(), &amp;endptr, base);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (endptr == opt.c_str() || *endptr != <span class="charliteral">&#39;\0&#39;</span> || val &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    out = val;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">static</span> std::string build_args(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::string combined;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; argc; ++i) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      combined += argv[i];</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      combined += <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> combined;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}  <span class="comment">// namespace detail</span></div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespacemkfs.html#a0ba3abbd38d04e1f80e5b1acbb3ebe8b">   30</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemkfs.html#a0ba3abbd38d04e1f80e5b1acbb3ebe8b">console_out</a>() -&gt; std::ostream&amp; {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  std::ostream&amp; conout = std::cout;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  conout &lt;&lt; <a class="code hl_enumvalue" href="namespacerang.html#a41a68f6ed991b29fa720fcfbcd319ef9abda9643ac6601722a28f238714274da4">rang::fg::red</a> &lt;&lt; <span class="stringliteral">&quot;mkfs: &quot;</span> &lt;&lt; <a class="code hl_enumvalue" href="namespacerang.html#add4e682fec2856474978ff76efcc8b4ea86266ee937d97f812a8e57d22b62ee29">rang::style::reset</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">return</span> conout;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharType&gt;</div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacemkfs.html#ada41fcde69477f1027aa8a69070a09f6">   53</a></span><span class="keyword">inline</span> std::basic_string&lt;CharType&gt; <a class="code hl_function" href="namespacemkfs.html#ada41fcde69477f1027aa8a69070a09f6">get_option</a>(<span class="keyword">const</span> std::basic_string&lt;CharType&gt;&amp; args,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                              <span class="keyword">const</span> std::basic_string&lt;CharType&gt;&amp; option) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">size_t</span> pos = args.find(option + CharType(<span class="charliteral">&#39;=&#39;</span>));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">if</span> (pos != std::string::npos) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">size_t</span> start = pos + option.length() + 1;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">size_t</span> end   = args.find(<span class="charliteral">&#39; &#39;</span>, start);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> args.substr(start, end - start);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">return</span> std::basic_string&lt;CharType&gt;{};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}  <span class="comment">// namespace mkfs</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="namespacemkfs.html#a0ba3abbd38d04e1f80e5b1acbb3ebe8b">   66</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemkfs.html#a0ba3abbd38d04e1f80e5b1acbb3ebe8b">console_out</a>() -&gt; std::ostream&amp; {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  std::ostream&amp; conout = std::cout;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  conout &lt;&lt; <a class="code hl_enumvalue" href="namespacerang.html#a41a68f6ed991b29fa720fcfbcd319ef9abda9643ac6601722a28f238714274da4">rang::fg::red</a> &lt;&lt; <span class="stringliteral">&quot;mkfs: &quot;</span> &lt;&lt; <a class="code hl_enumvalue" href="namespacerang.html#add4e682fec2856474978ff76efcc8b4ea86266ee937d97f812a8e57d22b62ee29">rang::style::reset</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordflow">return</span> conout;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}  <span class="comment">// namespace mkfs</span></div>
+<div class="ttc" id="akernel_2_ne_kit_2macros_8h_html_a64fe7b8422cbe3b1e09bef7fa04e177b"><div class="ttname"><a href="kernel_2_ne_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a></div><div class="ttdeci">#define gib_cast(X)</div><div class="ttdef"><b>Definition</b> Macros.h:35</div></div>
 <div class="ttc" id="anamespacemkfs_html"><div class="ttname"><a href="namespacemkfs.html">mkfs</a></div><div class="ttdef"><b>Definition</b> hefs.h:21</div></div>
-<div class="ttc" id="anamespacemkfs_html_a0ba3abbd38d04e1f80e5b1acbb3ebe8b"><div class="ttname"><a href="namespacemkfs.html#a0ba3abbd38d04e1f80e5b1acbb3ebe8b">mkfs::console_out</a></div><div class="ttdeci">auto console_out() -&gt; std::ostream &amp;</div><div class="ttdef"><b>Definition</b> mkfs.h:30</div></div>
-<div class="ttc" id="anamespacemkfs_html_ada41fcde69477f1027aa8a69070a09f6"><div class="ttname"><a href="namespacemkfs.html#ada41fcde69477f1027aa8a69070a09f6">mkfs::get_option</a></div><div class="ttdeci">std::basic_string&lt; CharType &gt; get_option(const std::basic_string&lt; CharType &gt; &amp;args, const std::basic_string&lt; CharType &gt; &amp;option)</div><div class="ttdoc">Helper function to get the option value from command line arguments.</div><div class="ttdef"><b>Definition</b> mkfs.h:17</div></div>
+<div class="ttc" id="anamespacemkfs_html_a0ba3abbd38d04e1f80e5b1acbb3ebe8b"><div class="ttname"><a href="namespacemkfs.html#a0ba3abbd38d04e1f80e5b1acbb3ebe8b">mkfs::console_out</a></div><div class="ttdeci">auto console_out() -&gt; std::ostream &amp;</div><div class="ttdef"><b>Definition</b> mkfs.h:66</div></div>
+<div class="ttc" id="anamespacemkfs_html_ada41fcde69477f1027aa8a69070a09f6"><div class="ttname"><a href="namespacemkfs.html#ada41fcde69477f1027aa8a69070a09f6">mkfs::get_option</a></div><div class="ttdeci">std::basic_string&lt; CharType &gt; get_option(const std::basic_string&lt; CharType &gt; &amp;args, const std::basic_string&lt; CharType &gt; &amp;option)</div><div class="ttdoc">Helper function to get the option value from command line arguments.</div><div class="ttdef"><b>Definition</b> mkfs.h:53</div></div>
 <div class="ttc" id="anamespacerang_html_a41a68f6ed991b29fa720fcfbcd319ef9abda9643ac6601722a28f238714274da4"><div class="ttname"><a href="namespacerang.html#a41a68f6ed991b29fa720fcfbcd319ef9abda9643ac6601722a28f238714274da4">rang::fg::red</a></div><div class="ttdeci">@ red</div></div>
 <div class="ttc" id="anamespacerang_html_add4e682fec2856474978ff76efcc8b4ea86266ee937d97f812a8e57d22b62ee29"><div class="ttname"><a href="namespacerang.html#add4e682fec2856474978ff76efcc8b4ea86266ee937d97f812a8e57d22b62ee29">rang::style::reset</a></div><div class="ttdeci">@ reset</div></div>
 <div class="ttc" id="arang_8h_html"><div class="ttname"><a href="rang_8h.html">rang.h</a></div></div>
@@ -146,7 +183,7 @@ $(document).ready(function(){initNavTree('mkfs_8h_source.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2f3df458abe3356131be8f386c04f82e.html">tooling</a></li><li class="navelem"><a class="el" href="mkfs_8h.html">mkfs.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2f3df458abe3356131be8f386c04f82e.html">tooling</a></li><li class="navelem"><a class="el" href="dir_f7d0c75ae612e1ccf9a4abeb28445f31.html">libmkfs</a></li><li class="navelem"><a class="el" href="mkfs_8h.html">mkfs.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

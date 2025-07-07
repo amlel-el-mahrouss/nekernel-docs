@@ -22,5 +22,5 @@ var searchData=
   ['syscall_2eh_19',['Syscall.h',['../_syscall_8h.html',1,'']]],
   ['syschk_2ecc_20',['SysChk.cc',['../_sys_chk_8cc.html',1,'']]],
   ['system_2eh_21',['System.h',['../_system_8h.html',1,'']]],
-  ['systemimpl_2ecc_22',['SystemImpl.cc',['../_system_impl_8cc.html',1,'']]]
+  ['systemcalls_2ecc_22',['SystemCalls.cc',['../_system_calls_8cc.html',1,'']]]
 ];

@@ -2,11 +2,10 @@ var struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r =
 [
     [ "AddressOfEntryPoint", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a0d4c6b2e2eb490d1cebfa930e26b7432", null ],
     [ "BaseOfCode", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#acf4db63b7b97103de90dbc554960a415", null ],
-    [ "BaseOfData", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a5256362cd8d4adc91dee32389c8900c7", null ],
     [ "CheckSum", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a745110862e14ce5edf752695d247530a", null ],
     [ "DllCharacteristics", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#ac12c49bf07d36fac6f412a884ca48dc1", null ],
     [ "FileAlignment", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#ab56d4e548e5de77eebccc613c459f8c3", null ],
-    [ "ImageBase", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a0a764790fe3af1e34cfed25380b5a19b", null ],
+    [ "ImageBase", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#af511f688f9614caf9accea6dca2a6a0e", null ],
     [ "LoaderFlags", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a4ee80ae66fdeb7afe6ddacc487fc3e64", null ],
     [ "Magic", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a4066e8aa601f1fc6e55b5e95d233a725", null ],
     [ "MajorImageVersion", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a343bfe47d8c2cd60869b10c8f321a199", null ],

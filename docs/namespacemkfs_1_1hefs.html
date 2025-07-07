@@ -114,7 +114,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a6fd1ddaf8a52b8a9a21c645da7240790a5023bdccdc82b66ced7a4ec6fa20d8da">kHeFSScsiDrive</a> = 0xC4
 , <a class="el" href="namespacemkfs_1_1hefs.html#a6fd1ddaf8a52b8a9a21c645da7240790a6b190216a19a8c436ead8f7c435be4be">kHeFSFlashDrive</a> = 0xC6
 , <a class="el" href="namespacemkfs_1_1hefs.html#a6fd1ddaf8a52b8a9a21c645da7240790a6906e45672d9c88596bfc93d58f82890">kHeFSUnknown</a> = 0xFF
-, <a class="el" href="namespacemkfs_1_1hefs.html#a6fd1ddaf8a52b8a9a21c645da7240790afccacaf6abbd73e01365230fa18218c2">kHeFSDriveCount</a> = 7
+, <a class="el" href="namespacemkfs_1_1hefs.html#a6fd1ddaf8a52b8a9a21c645da7240790afccacaf6abbd73e01365230fa18218c2">kHeFSDriveCount</a> = 8
 <br />
  }</td></tr>
 <tr class="separator:a6fd1ddaf8a52b8a9a21c645da7240790"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +129,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a1603b1ba015461ed98e788f591ada195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90ac9820d0805aaf1d5a6a29665be363" id="r_a90ac9820d0805aaf1d5a6a29665be363"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a97ea45bfd30a5315533148d0194cf641">kHeFSEncodingFlagsUTF8</a> = 0x00
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a97ea45bfd30a5315533148d0194cf641">kHeFSEncodingFlagsUTF8</a> = 0x50
 , <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363aece906278aec6a63d8de987193a354fa">kHeFSEncodingFlagsUTF16</a>
 , <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363aee628b068f98ab54adbe00d19e1d6ddf">kHeFSEncodingFlagsUTF32</a>
 , <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a685f640d3e2d1084530e4faaf5109ed8">kHeFSEncodingFlagsUTF16BE</a>
@@ -141,7 +141,16 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a019753d765df7062ba415c8833764ce0">kHeFSEncodingFlagsUTF8LE</a>
 , <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a9940f7017840875efacae2f8dc52f2bc">kHeFSEncodingFlagsBinary</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a3a76c14033396ae2c0810715df415f2a">kHeFSEncodingFlagsCount</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a3a76c14033396ae2c0810715df415f2a">kHeFSEncodingFlagsCount</a> = 11
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363ae9cc2b23b1a9419bdbbc05d8f4c06097">kHeFSFlagsNone</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a8467b73732c659bf5aac50e4de37249d">kHeFSFlagsReadOnly</a> = 0x100
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363af9e2b209c9a9219b5258483c7d508134">kHeFSFlagsHidden</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a46f2b89187d2ff17ff40beb9e68649b9">kHeFSFlagsSystem</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a5807c40782dceece33fa519176ad2852">kHeFSFlagsArchive</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363ac1941e37914ed7008acc79bfe5eac525">kHeFSFlagsDevice</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a6c2a9f9725f85a1c48dcec9b45068961">kHeFSFlagsCount</a> = 7
 <br />
  }</td></tr>
 <tr class="separator:a90ac9820d0805aaf1d5a6a29665be363"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,6 +275,13 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363a019753d765df7062ba415c8833764ce0" name="a90ac9820d0805aaf1d5a6a29665be363a019753d765df7062ba415c8833764ce0"></a>kHeFSEncodingFlagsUTF8LE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363a9940f7017840875efacae2f8dc52f2bc" name="a90ac9820d0805aaf1d5a6a29665be363a9940f7017840875efacae2f8dc52f2bc"></a>kHeFSEncodingFlagsBinary&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363a3a76c14033396ae2c0810715df415f2a" name="a90ac9820d0805aaf1d5a6a29665be363a3a76c14033396ae2c0810715df415f2a"></a>kHeFSEncodingFlagsCount&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363ae9cc2b23b1a9419bdbbc05d8f4c06097" name="a90ac9820d0805aaf1d5a6a29665be363ae9cc2b23b1a9419bdbbc05d8f4c06097"></a>kHeFSFlagsNone&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363a8467b73732c659bf5aac50e4de37249d" name="a90ac9820d0805aaf1d5a6a29665be363a8467b73732c659bf5aac50e4de37249d"></a>kHeFSFlagsReadOnly&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363af9e2b209c9a9219b5258483c7d508134" name="a90ac9820d0805aaf1d5a6a29665be363af9e2b209c9a9219b5258483c7d508134"></a>kHeFSFlagsHidden&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363a46f2b89187d2ff17ff40beb9e68649b9" name="a90ac9820d0805aaf1d5a6a29665be363a46f2b89187d2ff17ff40beb9e68649b9"></a>kHeFSFlagsSystem&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363a5807c40782dceece33fa519176ad2852" name="a90ac9820d0805aaf1d5a6a29665be363a5807c40782dceece33fa519176ad2852"></a>kHeFSFlagsArchive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363ac1941e37914ed7008acc79bfe5eac525" name="a90ac9820d0805aaf1d5a6a29665be363ac1941e37914ed7008acc79bfe5eac525"></a>kHeFSFlagsDevice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a90ac9820d0805aaf1d5a6a29665be363a6c2a9f9725f85a1c48dcec9b45068961" name="a90ac9820d0805aaf1d5a6a29665be363a6c2a9f9725f85a1c48dcec9b45068961"></a>kHeFSFlagsCount&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

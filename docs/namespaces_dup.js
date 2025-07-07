@@ -5,7 +5,6 @@ var namespaces_dup =
     [ "cxxabiv1", "namespacecxxabiv1.html", [
       [ "__guard", "namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715", null ]
     ] ],
-    [ "detail", "namespacedetail.html", null ],
     [ "DI", "namespace_d_i.html", "namespace_d_i" ],
     [ "FB", "namespace_f_b.html", "namespace_f_b" ],
     [ "Firmware", "namespace_firmware.html", "namespace_firmware" ],

@@ -110,6 +110,7 @@ var hierarchy =
     [ "HAL_DISPATCH_ENTRY", "struct_h_a_l___d_i_s_p_a_t_c_h___e_n_t_r_y.html", null ],
     [ "Kernel::HAL::HAL_HARDWARE_THREAD", "struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html", null ],
     [ "Kernel::HAL_HARDWARE_THREAD", "struct_kernel_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html", null ],
+    [ "HAL_KERNEL_DISPATCH_ENTRY", "struct_h_a_l___k_e_r_n_e_l___d_i_s_p_a_t_c_h___e_n_t_r_y.html", null ],
     [ "Kernel::HAL_NVME_BAR_0", "struct_kernel_1_1_h_a_l___n_v_m_e___b_a_r__0.html", null ],
     [ "Kernel::HAL_NVME_QUEUE", "struct_kernel_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html", null ],
     [ "Kernel::HardwareThread", "class_kernel_1_1_hardware_thread.html", null ],
@@ -149,7 +150,6 @@ var hierarchy =
     [ "Kernel::Json", "class_kernel_1_1_json.html", null ],
     [ "Kernel::JsonStreamReader", "struct_kernel_1_1_json_stream_reader.html", null ],
     [ "Kernel::KERNEL_TASK", "class_kernel_1_1_k_e_r_n_e_l___t_a_s_k.html", null ],
-    [ "Kernel::KernelDebugHeader", "class_kernel_1_1_kernel_debug_header.html", null ],
     [ "Kernel::KString", "class_kernel_1_1_k_string.html", null ],
     [ "Kernel::KStringBuilder", "class_kernel_1_1_k_string_builder.html", null ],
     [ "Kernel::HAL::LAPIC", "struct_kernel_1_1_h_a_l_1_1_l_a_p_i_c.html", null ],
@@ -160,6 +160,7 @@ var hierarchy =
     [ "LDR_IMPORT_DIRECTORY", "struct_l_d_r___i_m_p_o_r_t___d_i_r_e_c_t_o_r_y.html", null ],
     [ "LDR_OPTIONAL_HEADER", "struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html", null ],
     [ "LDR_SECTION_HEADER", "struct_l_d_r___s_e_c_t_i_o_n___h_e_a_d_e_r.html", null ],
+    [ "LIBMSG_EXPR", "struct_l_i_b_m_s_g___e_x_p_r.html", null ],
     [ "Kernel::LoaderInterface", "class_kernel_1_1_loader_interface.html", [
       [ "Kernel::PE32Loader", "class_kernel_1_1_p_e32_loader.html", null ],
       [ "Kernel::PEFLoader", "class_kernel_1_1_p_e_f_loader.html", null ]
@@ -169,7 +170,6 @@ var hierarchy =
     [ "Kernel::Detail::MM_INFORMATION_BLOCK", "struct_kernel_1_1_detail_1_1_m_m___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html", null ],
     [ "Kernel::MountpointInterface", "class_kernel_1_1_mountpoint_interface.html", null ],
     [ "Kernel::MutableLinkedList< T >", "class_kernel_1_1_mutable_linked_list.html", null ],
-    [ "Kernel::MutableLinkedList< OPENMSG_EXPR >", "class_kernel_1_1_mutable_linked_list.html", null ],
     [ "Kernel::MutableLinkedList< voidPtr >", "class_kernel_1_1_mutable_linked_list.html", null ],
     [ "Kernel::NE_DEVICE< const Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_char_01_5_01_4.html", null ],
     [ "Kernel::NE_DEVICE< const Utf8Char * >", "class_kernel_1_1_n_e___d_e_v_i_c_e_3_01const_01_utf8_char_01_5_01_4.html", null ],
@@ -189,10 +189,8 @@ var hierarchy =
     [ "Kernel::NonNullRefPtr< T >", "class_kernel_1_1_non_null_ref_ptr.html", null ],
     [ "Kernel::NullableMutableArray< T, _PlaceHolderValue >", "class_kernel_1_1_nullable_mutable_array.html", null ],
     [ "Kernel::NullableMutableArray< voidPtr, nullptr >", "class_kernel_1_1_nullable_mutable_array.html", [
-      [ "Kernel::MutableArray< OPENMSG_EXPR >", "class_kernel_1_1_mutable_array.html", null ],
       [ "Kernel::MutableArray< T >", "class_kernel_1_1_mutable_array.html", null ]
     ] ],
-    [ "OPENMSG_EXPR", "struct_o_p_e_n_m_s_g___e_x_p_r.html", null ],
     [ "Kernel::OwnPtr< T >", "class_kernel_1_1_own_ptr.html", null ],
     [ "Kernel::OwnPtr< Kernel::FileStream< Char > >", "class_kernel_1_1_own_ptr.html", null ],
     [ "Kernel::PageMgr", "struct_kernel_1_1_page_mgr.html", null ],
@@ -214,7 +212,7 @@ var hierarchy =
     [ "Kernel::PowerFactory", "class_kernel_1_1_power_factory.html", null ],
     [ "Kernel::PRDT", "struct_kernel_1_1_p_r_d_t.html", null ],
     [ "Kernel::PROCESS_FILE_TREE< T >", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e.html", null ],
-    [ "Kernel::PROCESS_FILE_TREE< UInt32 * >", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e.html", null ],
+    [ "Kernel::PROCESS_FILE_TREE< VoidPtr >", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e.html", null ],
     [ "Kernel::PROCESS_HEAP_TREE< T >", "struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html", null ],
     [ "Kernel::PROCESS_HEAP_TREE< VoidPtr >", "struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html", null ],
     [ "Kernel::PROCESS_IMAGE", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html", null ],
@@ -238,7 +236,6 @@ var hierarchy =
     [ "Kernel::Ref< USER_PROCESS >", "class_kernel_1_1_ref.html", null ],
     [ "REF_TYPE", "struct_r_e_f___t_y_p_e.html", null ],
     [ "Kernel::RSDT", "class_kernel_1_1_r_s_d_t.html", null ],
-    [ "BootDeviceSATA::SATATrait", "struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait.html", null ],
     [ "Kernel::SDT", "class_kernel_1_1_s_d_t.html", [
       [ "Kernel::Detail::FADT", "struct_kernel_1_1_detail_1_1_f_a_d_t.html", null ],
       [ "Kernel::Detail::HPET_BLOCK", "struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html", null ],
@@ -259,7 +256,8 @@ var hierarchy =
       [ "Kernel::SoftwareTimer", "class_kernel_1_1_software_timer.html", null ]
     ] ],
     [ "Device::Trait", "struct_device_1_1_trait.html", [
-      [ "BootDeviceATA::ATATrait", "struct_boot_device_a_t_a_1_1_a_t_a_trait.html", null ]
+      [ "BootDeviceATA::ATATrait", "struct_boot_device_a_t_a_1_1_a_t_a_trait.html", null ],
+      [ "BootDeviceSATA::SATATrait", "struct_boot_device_s_a_t_a_1_1_s_a_t_a_trait.html", null ]
     ] ],
     [ "USBCommandRegister", "struct_u_s_b_command_register.html", null ],
     [ "USBInterruptEnableRegister", "struct_u_s_b_interrupt_enable_register.html", null ],

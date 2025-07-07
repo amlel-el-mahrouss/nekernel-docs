@@ -1,5 +1,6 @@
 var namespacemkfs =
 [
+    [ "detail", "namespacemkfs_1_1detail.html", null ],
     [ "hefs", "namespacemkfs_1_1hefs.html", [
       [ "ATime", "namespacemkfs_1_1hefs.html#a32493ad67b46f0ec54a847baa414ac9d", null ],
       [ "__attribute__", "namespacemkfs_1_1hefs.html#a1478ebcc1a6659b62a6364d881efc09a", null ],

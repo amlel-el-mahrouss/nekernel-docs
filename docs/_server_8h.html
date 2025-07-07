@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: dev/open_msg/MsgKit/Server.h File Reference</title>
+<title>NeKernel: dev/libMsg/MsgKit/Server.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,37 +96,39 @@ $(document).ready(function(){initNavTree('_server_8h.html',''); initResizable();
   <div class="headertitle"><div class="title">Server.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_k_string_8h_source.html">NeKit/KString.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_mutable_array_8h_source.html">NeKit/MutableArray.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_system_8h_source.html">libSystem/SystemKit/System.h</a>&gt;</code><br />
 </div>
 <p><a href="_server_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_p_e_n_m_s_g___e_x_p_r.html">OPENMSG_EXPR</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_i_b_m_s_g___e_x_p_r.html">LIBMSG_EXPR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">an expression chain of LibMSG.  <a href="struct_l_i_b_m_s_g___e_x_p_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a444b988647fce3f5b38c254688dd2c00" id="r_a444b988647fce3f5b38c254688dd2c00"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_server_8h.html#a444b988647fce3f5b38c254688dd2c00">openmsg_func_t</a>) (<a class="el" href="struct_o_p_e_n_m_s_g___e_x_p_r.html">OPENMSG_EXPR</a> *arg)</td></tr>
-<tr class="separator:a444b988647fce3f5b38c254688dd2c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f8f7f6b190c7a66bf14b36b2da0c56" id="r_ae6f8f7f6b190c7a66bf14b36b2da0c56"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_server_8h.html#ae6f8f7f6b190c7a66bf14b36b2da0c56">libmsg_func_t</a>) (<a class="el" href="struct_l_i_b_m_s_g___e_x_p_r.html">LIBMSG_EXPR</a> *arg)</td></tr>
+<tr class="separator:ae6f8f7f6b190c7a66bf14b36b2da0c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9dd6bfbfb2d3b252273915eefb163185" id="r_a9dd6bfbfb2d3b252273915eefb163185"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_server_8h.html#a9dd6bfbfb2d3b252273915eefb163185">openmsg_init_library</a> (<a class="el" href="_server_8h.html#a444b988647fce3f5b38c254688dd2c00">openmsg_func_t</a> *funcs, <a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a> cnt)</td></tr>
-<tr class="separator:a9dd6bfbfb2d3b252273915eefb163185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190779b8958ec123ee8610bdf4f04ec6" id="r_a190779b8958ec123ee8610bdf4f04ec6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_server_8h.html#a190779b8958ec123ee8610bdf4f04ec6">openmsg_close_library</a> (<a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>)</td></tr>
-<tr class="separator:a190779b8958ec123ee8610bdf4f04ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9eae3af1b2eb4f8e30ed9d341ba571" id="r_a0a9eae3af1b2eb4f8e30ed9d341ba571"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_server_8h.html#a0a9eae3af1b2eb4f8e30ed9d341ba571">libmsg_init_library</a> (<a class="el" href="_server_8h.html#ae6f8f7f6b190c7a66bf14b36b2da0c56">libmsg_func_t</a> *funcs, <a class="el" href="lib_system_2_system_kit_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> cnt)</td></tr>
+<tr class="separator:a0a9eae3af1b2eb4f8e30ed9d341ba571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c94f818fad09155cf3a10c92a7d3d09" id="r_a0c94f818fad09155cf3a10c92a7d3d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_server_8h.html#a0c94f818fad09155cf3a10c92a7d3d09">libmsg_eval_library</a> (struct <a class="el" href="struct_l_i_b_m_s_g___e_x_p_r.html">LIBMSG_EXPR</a> *head)</td></tr>
+<tr class="separator:a0c94f818fad09155cf3a10c92a7d3d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c24b23b955263e61add4d3b800ceeea" id="r_a9c24b23b955263e61add4d3b800ceeea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_server_8h.html#a9c24b23b955263e61add4d3b800ceeea">libmsg_close_library</a> (<a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>)</td></tr>
+<tr class="separator:a9c24b23b955263e61add4d3b800ceeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a444b988647fce3f5b38c254688dd2c00" name="a444b988647fce3f5b38c254688dd2c00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a444b988647fce3f5b38c254688dd2c00">&#9670;&#160;</a></span>openmsg_func_t</h2>
+<a id="ae6f8f7f6b190c7a66bf14b36b2da0c56" name="ae6f8f7f6b190c7a66bf14b36b2da0c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f8f7f6b190c7a66bf14b36b2da0c56">&#9670;&#160;</a></span>libmsg_func_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>(* openmsg_func_t) (<a class="el" href="struct_o_p_e_n_m_s_g___e_x_p_r.html">OPENMSG_EXPR</a> *arg)</td>
+          <td class="memname">typedef <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>(* libmsg_func_t) (<a class="el" href="struct_l_i_b_m_s_g___e_x_p_r.html">LIBMSG_EXPR</a> *arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -134,16 +136,16 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a190779b8958ec123ee8610bdf4f04ec6" name="a190779b8958ec123ee8610bdf4f04ec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a190779b8958ec123ee8610bdf4f04ec6">&#9670;&#160;</a></span>openmsg_close_library()</h2>
+<a id="a9c24b23b955263e61add4d3b800ceeea" name="a9c24b23b955263e61add4d3b800ceeea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c24b23b955263e61add4d3b800ceeea">&#9670;&#160;</a></span>libmsg_close_library()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a> openmsg_close_library </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a> libmsg_close_library </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -152,22 +154,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9dd6bfbfb2d3b252273915eefb163185" name="a9dd6bfbfb2d3b252273915eefb163185"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd6bfbfb2d3b252273915eefb163185">&#9670;&#160;</a></span>openmsg_init_library()</h2>
+<a id="a0c94f818fad09155cf3a10c92a7d3d09" name="a0c94f818fad09155cf3a10c92a7d3d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c94f818fad09155cf3a10c92a7d3d09">&#9670;&#160;</a></span>libmsg_eval_library()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2_ne_kit_2macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a> openmsg_init_library </td>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada">UInt32</a> libmsg_eval_library </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_server_8h.html#a444b988647fce3f5b38c254688dd2c00">openmsg_func_t</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="struct_l_i_b_m_s_g___e_x_p_r.html">LIBMSG_EXPR</a> *&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a9eae3af1b2eb4f8e30ed9d341ba571" name="a0a9eae3af1b2eb4f8e30ed9d341ba571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9eae3af1b2eb4f8e30ed9d341ba571">&#9670;&#160;</a></span>libmsg_init_library()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ac8c44412d7453216e1f1b939bf235b89">IMPORT_C</a> <a class="el" href="lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a> libmsg_init_library </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_server_8h.html#ae6f8f7f6b190c7a66bf14b36b2da0c56">libmsg_func_t</a> *&#160;</td>
           <td class="paramname"><em>funcs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_kernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="lib_system_2_system_kit_2macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a>&#160;</td>
           <td class="paramname"><em>cnt</em>&#160;</td>
         </tr>
         <tr>
@@ -185,7 +205,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_52e7d2d859e4ff40439f23d7bca90cee.html">open_msg</a></li><li class="navelem"><a class="el" href="dir_f3d7844c89b58db16185103ea953b6cf.html">MsgKit</a></li><li class="navelem"><a class="el" href="_server_8h.html">Server.h</a></li>
+    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_2387994cf013d610e89ebe74d5709014.html">libMsg</a></li><li class="navelem"><a class="el" href="dir_9d5c5f7eaf4a85b842ccbdd79e1fed4d.html">MsgKit</a></li><li class="navelem"><a class="el" href="_server_8h.html">Server.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

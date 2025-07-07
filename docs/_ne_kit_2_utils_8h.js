@@ -2,11 +2,13 @@ var _ne_kit_2_utils_8h =
 [
     [ "rt_alloc_string", "_ne_kit_2_utils_8h.html#a5910f9795b6dc366b1d905a48e626d8c", null ],
     [ "rt_copy_memory", "_ne_kit_2_utils_8h.html#ad182e1cc3dc568fb3988e848c84e385e", null ],
+    [ "rt_copy_memory_safe", "_ne_kit_2_utils_8h.html#acb03d43a0b169c3d04c93398524d32d7", null ],
     [ "rt_is_alnum", "_ne_kit_2_utils_8h.html#affe3c455ea86c5156bd4374a443574d2", null ],
     [ "rt_is_newln", "_ne_kit_2_utils_8h.html#a0eb7a12ff7869fc14b1d5e70cce9e3b2", null ],
     [ "rt_is_space", "_ne_kit_2_utils_8h.html#a768278e9fe819a74b000778dcbb0a331", null ],
     [ "rt_move_memory", "_ne_kit_2_utils_8h.html#ab7e0ccd310766c48a1294a6d45374261", null ],
     [ "rt_set_memory", "_ne_kit_2_utils_8h.html#af3fa23f151981e18e4f067b9bd7f6154", null ],
+    [ "rt_set_memory_safe", "_ne_kit_2_utils_8h.html#a41a1eddb0f2fbbc31167aee319491f07", null ],
     [ "rt_string_cmp", "_ne_kit_2_utils_8h.html#a3dcbc4da2ce0cbd3841bab1977c3fb42", null ],
     [ "rt_string_has_char", "_ne_kit_2_utils_8h.html#a01b8acc5a1e5af65434a6b29e46d7711", null ],
     [ "rt_string_in_string", "_ne_kit_2_utils_8h.html#a0b5d3cda316618d22331719222056df3", null ],

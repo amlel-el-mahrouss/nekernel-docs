@@ -9,5 +9,6 @@ var struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r =
     [ "NB3", "struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#aea4bf3e39101934bd335675084e69c45", null ],
     [ "NB4", "struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#a8388ed6d5ef9e16e8a0397ae6955f048", null ],
     [ "Preflight", "struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#aae3e54769b0fff338b6aa54f3603a5d6", null ],
-    [ "Target", "struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#a0751bd4fb59e9c020936cf5dc9c749e8", null ]
+    [ "Target", "struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#a0751bd4fb59e9c020936cf5dc9c749e8", null ],
+    [ "Version", "struct_b_o_o_t_n_e_t___i_n_t_e_r_n_e_t___h_e_a_d_e_r.html#afdf1ae98fc13312201a518db02c87bc7", null ]
 ];

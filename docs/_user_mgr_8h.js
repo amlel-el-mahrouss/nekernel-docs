@@ -15,5 +15,7 @@ var _user_mgr_8h =
       [ "kRingSuperUser", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5ca4215aa66f39b8ac7be3873fb4f938164", null ],
       [ "kRingGuestUser", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5caa475eaec0320dbeccd09f64fc4beff05", null ],
       [ "kRingCount", "_user_mgr_8h.html#a74f29632df87476065f7ae44aeedef5ca9fb09bc213dbaf1dff9fc3a42d0237b5", null ]
-    ] ]
+    ] ],
+    [ "kCurrentUser", "_user_mgr_8h.html#a10b5b42cf391c1c3111ba181c307461f", null ],
+    [ "kRootUser", "_user_mgr_8h.html#a143553b412713ad5d1e73384e8f95cfc", null ]
 ];

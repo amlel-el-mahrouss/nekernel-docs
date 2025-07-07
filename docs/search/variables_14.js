@@ -11,9 +11,10 @@ var searchData=
   ['usedmemory_8',['UsedMemory',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#ab18cce69ec3086c82501a6ba0e3a42ef',1,'Kernel::USER_PROCESS']]],
   ['user_9',['User',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#a3eee5be80a953a9e97ef9378197fe5c3',1,'Kernel::HAL::Detail::PTE']]],
   ['user_5fprocess_10',['USER_PROCESS',['../struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html#a93409cd974b05b5b30cfe9ae3df49159',1,'Kernel::PROCESS_IMAGE']]],
-  ['userprocesshelper_11',['UserProcessHelper',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#ae0a498e5eca7e014fa42499bb6df3f6b',1,'Kernel::USER_PROCESS']]],
-  ['userprocessid_12',['UserProcessID',['../struct_kernel_1_1_i_p_c___a_d_d_r.html#a91b6fb7f9a416990383e765a5ca83910',1,'Kernel::IPC_ADDR']]],
-  ['userprocessscheduler_13',['UserProcessScheduler',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a31015addbbf397ceb32ffe720dab00c5',1,'Kernel::USER_PROCESS']]],
-  ['userprocessteam_14',['UserProcessTeam',['../struct_kernel_1_1_i_p_c___a_d_d_r.html#af7b19c728c4cfb14fa89bd2f6148c0a3',1,'Kernel::IPC_ADDR']]],
-  ['utime_15',['UTime',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a95eac61304485187614ffe2ce2af2f10',1,'Kernel::USER_PROCESS']]]
+  ['userdata_11',['UserData',['../struct_t_h_r_e_a_d___i_n_f_o_r_m_a_t_i_o_n___b_l_o_c_k.html#abf218465cd51833756b5cda4ec388e5f',1,'THREAD_INFORMATION_BLOCK']]],
+  ['userprocesshelper_12',['UserProcessHelper',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#ae0a498e5eca7e014fa42499bb6df3f6b',1,'Kernel::USER_PROCESS']]],
+  ['userprocessid_13',['UserProcessID',['../struct_kernel_1_1_i_p_c___a_d_d_r.html#a91b6fb7f9a416990383e765a5ca83910',1,'Kernel::IPC_ADDR']]],
+  ['userprocessscheduler_14',['UserProcessScheduler',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a31015addbbf397ceb32ffe720dab00c5',1,'Kernel::USER_PROCESS']]],
+  ['userprocessteam_15',['UserProcessTeam',['../struct_kernel_1_1_i_p_c___a_d_d_r.html#af7b19c728c4cfb14fa89bd2f6148c0a3',1,'Kernel::IPC_ADDR']]],
+  ['utime_16',['UTime',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a95eac61304485187614ffe2ce2af2f10',1,'Kernel::USER_PROCESS']]]
 ];

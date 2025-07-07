@@ -22,7 +22,7 @@ var namespace_kernel_1_1_h_a_l =
     [ "mm_free_bitmap", "namespace_kernel_1_1_h_a_l.html#ad6ccb1cd68f687229cb57f8326f780c4", null ],
     [ "mm_get_page_addr", "namespace_kernel_1_1_h_a_l.html#a7cf86635bed031f39e3c3895224e2000", null ],
     [ "mm_is_bitmap", "namespace_kernel_1_1_h_a_l.html#ac31e41dbca9a0caad492484ce4d99fca", null ],
-    [ "mm_map_page", "namespace_kernel_1_1_h_a_l.html#afebb7d01ea9b86a4b1b9822e09071c67", null ],
+    [ "mm_map_page", "namespace_kernel_1_1_h_a_l.html#ab6a42a0c54bb2275811bbe9659aabc0e", null ],
     [ "mm_memory_fence", "namespace_kernel_1_1_h_a_l.html#ad627503a26fe29846ed83730aa2f36dd", null ],
     [ "mmi_page_status", "namespace_kernel_1_1_h_a_l.html#a47f3770483cefaffb7992c1c190fd2d8", null ],
     [ "mp_get_current_task", "namespace_kernel_1_1_h_a_l.html#a4d240b341d5615f30ab5b3914efabfb3", null ],

@@ -1,6 +1,8 @@
 var _system_8h =
 [
     [ "REF_TYPE", "struct_r_e_f___t_y_p_e.html", "struct_r_e_f___t_y_p_e" ],
+    [ "kCDDevicePath", "_system_8h.html#a297357fcb2c31bffaceecbb1297d9ccf", null ],
+    [ "kPrintDevicePath", "_system_8h.html#a9d876181a86155e5322a0525543cd021", null ],
     [ "AffinityRef", "_system_8h.html#a3ae06d2bf36450a91d32edb5a84d1cff", null ],
     [ "DylibRef", "_system_8h.html#a91f9595f0c7ff4279fb5ae6729f04e75", null ],
     [ "EventRef", "_system_8h.html#aee845a6b44919e3e56803b7d49e3bd1f", null ],
@@ -15,8 +17,8 @@ var _system_8h =
     [ "ThreadRef", "_system_8h.html#ad88ea14c0f28fc81e5a53a6a473cf263", null ],
     [ "ThrProcKind", "_system_8h.html#a75deecf3c394b1be5b3a3ec3bd5796e6", null ],
     [ "CdCloseTray", "_system_8h.html#a9a4828f379362d34f5c96bfcd3162dc4", null ],
-    [ "CdEjectDrive", "_system_8h.html#a58bf18fc34e5ed49f164825dc914e94b", null ],
-    [ "CdOpenTray", "_system_8h.html#a1928483462b1cdcceb9bd37a5ff1f793", null ],
+    [ "CdEjectDrive", "_system_8h.html#a357d4436ed290f75b0d5226a7df8cf16", null ],
+    [ "CdOpenTray", "_system_8h.html#a21166437861e94eb61d5f715f91ffaba", null ],
     [ "DrvGetDefaultDriveLetter", "_system_8h.html#aa4ff8a48caa384ca992fcbb6466c9c8d", null ],
     [ "DrvGetDriveLetterFromPath", "_system_8h.html#ab94895acae1c9d4b1979d58e19bb6f55", null ],
     [ "DrvGetMountedDrive", "_system_8h.html#a8b847c37abfdae924e3c06e29e4ff88c", null ],

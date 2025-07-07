@@ -1,7 +1,7 @@
 var searchData=
 [
   ['g_0',['g',['../struct_c_f_1_1_c_f_color.html#add95544825e9ba2c0414bbdb78bb4351',1,'CF::CFColor']]],
-  ['general_20information_1',['general information',['..//Volumes/Projects/oss-nekernel-org/nekernel/dev/libSystem/docs/SPECIFICATION_SYSCALLS.md#autotoc_md29',1,'# 0: General Information'],['..//Volumes/Projects/oss-nekernel-org/nekernel/docs/md/SPECIFICATION_MBCI.md#autotoc_md48',1,'0: General Information'],['..//Volumes/Projects/oss-nekernel-org/nekernel/docs/md/SPECIFICATION_KERNEL.md#autotoc_md33',1,'0: General Information'],['..//Volumes/Projects/oss-nekernel-org/nekernel/dev/ddk/docs/SPECIFICATION_DDK.md#autotoc_md22',1,'0: General Information']]],
+  ['general_20information_1',['general information',['..//Volumes/Projects/oss/nekernel/dev/libSystem/docs/SPECIFICATION_SYSCALLS.md#autotoc_md29',1,'# 0: General Information'],['..//Volumes/Projects/oss/nekernel/docs/md/SPECIFICATION_MBCI.md#autotoc_md48',1,'0: General Information'],['..//Volumes/Projects/oss/nekernel/docs/md/SPECIFICATION_KERNEL.md#autotoc_md33',1,'0: General Information'],['..//Volumes/Projects/oss/nekernel/dev/ddk/docs/SPECIFICATION_DDK.md#autotoc_md22',1,'0: General Information']]],
   ['generator_2',['generator',['../namespaceqr.html#abe85340a4c802d0e304cf1dd6803f1cb',1,'qr']]],
   ['generic_2bbasic_2brtl8139_2ecc_3',['Generic+Basic+RTL8139.cc',['../_generic_09_basic_09_r_t_l8139_8cc.html',1,'']]],
   ['genericsystemperipheral_4',['GenericSystemPeripheral',['../namespace_kernel_1_1_types.html#a5c5c4eda9d3dd5916ce058b2f65e59d0a9814ee757f194b07466929e7077a229f',1,'Kernel::Types']]],
@@ -39,7 +39,7 @@ var searchData=
   ['getsectorscount_36',['GetSectorsCount',['../class_boot_device_a_t_a.html#ac77c6be7f4796b238798bb96235d58c0',1,'BootDeviceATA']]],
   ['getstatus_37',['getstatus',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html#ad7f2c635a3087fdfc141b715c14ee5a9',1,'EFI_SIMPLE_NETWORK_PROTOCOL::GetStatus'],['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a1b167958161849ccd4394877d654e4f6',1,'Kernel::USER_PROCESS::GetStatus()']]],
   ['gettime_38',['GetTime',['../struct_efi_runtime_services.html#a2d0e74a2f7964f8d15eb974c9754bfe7',1,'EfiRuntimeServices']]],
-  ['getting_20started_3a_39',['Getting Started:',['../md__r_e_a_d_m_e.html#autotoc_md59',1,'']]],
+  ['getting_20started_39',['Getting Started',['../md__r_e_a_d_m_e.html#autotoc_md61',1,'']]],
   ['getvalue_40',['getvalue',['../class_c_f_1_1_property.html#a445c0272e4f27e6127bd3f67f8f4febc',1,'CF::Property::GetValue()'],['../class_c_f_1_1_c_f___o_b_j_e_c_t.html#a7c9bc58be0a7a5c96d0c59e291577d3e',1,'CF::CF_OBJECT::GetValue()']]],
   ['getwakeuptime_41',['GetWakeupTime',['../struct_efi_runtime_services.html#aca72509f68003ae2bc2a414b162f3d5d',1,'EfiRuntimeServices']]],
   ['gf_5fgen_5fpoly_42',['gf_gen_poly',['../namespaceqr.html#aeded86590df2c771bb3c036757edbd3e',1,'qr']]],
@@ -76,7 +76,7 @@ var searchData=
   ['green_73',['green',['../namespacerang.html#a3b83d0d73d49b5a75c3b92031f2c77eea9f27410725ab8cc8854a2769c7a516b8',1,'rang::green'],['../struct_efi_graphics_output_blt_pixel.html#abb7cdfd4d3bd7e29ad4728f414ebbc1b',1,'EfiGraphicsOutputBltPixel::Green'],['../namespacerang.html#a42edf1c1b0d8e843ceb1208259177f08a9f27410725ab8cc8854a2769c7a516b8',1,'rang::green'],['../namespacerang.html#ad33ed681a0b63f07283bbb55d19da7d2a9f27410725ab8cc8854a2769c7a516b8',1,'rang::green'],['../namespacerang.html#a41a68f6ed991b29fa720fcfbcd319ef9a9f27410725ab8cc8854a2769c7a516b8',1,'rang::green']]],
   ['greenmask_74',['GreenMask',['../struct_efi_bitmask.html#a88f33d6dc53e15c7294c0b677b9734cb',1,'EfiBitmask']]],
   ['gsmnetworkdevice_75',['GSMNetworkDevice',['../namespace_kernel.html#a5d21e6bf43ae6a69aca0cfc81fb6f386',1,'Kernel']]],
-  ['guid_76',['guid',['../class_c_f_1_1_x_r_n_1_1_g_u_i_d.html#ac702d98692395ea6ac6c1ce664ed6d46',1,'CF::XRN::GUID::GUID(const GUID &amp;)=default'],['../class_c_f_1_1_x_r_n_1_1_g_u_i_d.html#abc93e30d8906fb6f5b7399e03e8caee4',1,'CF::XRN::GUID::GUID()=default'],['../struct_c_f_1_1_x_r_n_1_1_g_u_i_d_sequence_1_1_g_u_i_d.html',1,'CF::XRN::GUIDSequence::GUID'],['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a7a607d4efb637663353be5bad59f6b75',1,'EPM_PART_BLOCK::Guid'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a3e1255873538f5d24242a90887f174bf',1,'Kernel::GPT_PARTITION_TABLE::Guid'],['../class_c_f_1_1_x_r_n_1_1_g_u_i_d.html',1,'CF::XRN::GUID']]],
+  ['guid_76',['guid',['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a3e1255873538f5d24242a90887f174bf',1,'Kernel::GPT_PARTITION_TABLE::Guid'],['../struct_e_p_m___p_a_r_t___b_l_o_c_k.html#a7a607d4efb637663353be5bad59f6b75',1,'EPM_PART_BLOCK::Guid'],['../struct_c_f_1_1_x_r_n_1_1_g_u_i_d_sequence_1_1_g_u_i_d.html',1,'CF::XRN::GUIDSequence::GUID'],['../class_c_f_1_1_x_r_n_1_1_g_u_i_d.html#abc93e30d8906fb6f5b7399e03e8caee4',1,'CF::XRN::GUID::GUID()=default'],['../class_c_f_1_1_x_r_n_1_1_g_u_i_d.html#ac702d98692395ea6ac6c1ce664ed6d46',1,'CF::XRN::GUID::GUID(const GUID &amp;)=default'],['../class_c_f_1_1_x_r_n_1_1_g_u_i_d.html',1,'CF::XRN::GUID']]],
   ['guidsequence_77',['GUIDSequence',['../union_c_f_1_1_x_r_n_1_1_g_u_i_d_sequence.html',1,'CF::XRN']]],
   ['guidwizard_2ecc_78',['GUIDWizard.cc',['../_g_u_i_d_wizard_8cc.html',1,'']]],
   ['guidwizard_2eh_79',['GUIDWizard.h',['../_g_u_i_d_wizard_8h.html',1,'']]],

@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('_core_process_scheduler_8h.html',''); 
   <div class="headertitle"><div class="title">CoreProcessScheduler.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Core Process Scheduler header file.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="kernel_2_ne_kit_2_defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_error_or_8h_source.html">NeKit/ErrorOr.h</a>&gt;</code><br />
 </div>
@@ -157,7 +160,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:aa3e0f5a7a3575efaa32f0dafaed9a812" id="r_aa3e0f5a7a3575efaa32f0dafaed9a812"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespace_kernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812acfc20a69d3e3b844e9db48ec8a6fb1a9">Kernel::kInvalidTreeKind</a> = 0U
 , <a class="el" href="namespace_kernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812ac204b9e3749d3736325c3facadd32f2a">Kernel::kRedTreeKind</a> = 100U
 , <a class="el" href="namespace_kernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812acee4566590a4532befe9fb81568b1d51">Kernel::kBlackTreeKind</a> = 101U
-, <a class="el" href="namespace_kernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812a7e6fdea67dc2c1b7fc37f82081253d72">Kernel::kTreeKindCount</a> = 2U
+, <a class="el" href="namespace_kernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812a7e6fdea67dc2c1b7fc37f82081253d72">Kernel::kTreeKindCount</a> = 3U
  }</td></tr>
 <tr class="separator:aa3e0f5a7a3575efaa32f0dafaed9a812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5398d1286c684b8da52e3ab119ccdbe3" id="r_a5398d1286c684b8da52e3ab119ccdbe3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a5398d1286c684b8da52e3ab119ccdbe3">Kernel::ProcessSubsystem</a> : Int32 { <br />
@@ -200,7 +203,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a865cfc3ba8dace65e34b58be9bbe568b" id="r_a865cfc3ba8dace65e34b58be9bbe568b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a865cfc3ba8dace65e34b58be9bbe568b">Kernel::ProcessLevelRing</a> : Int32 { <a class="el" href="namespace_kernel.html#a865cfc3ba8dace65e34b58be9bbe568ba4273218a9bea7fb97d46ca7501cbeb5b">Kernel::kRingStdUser</a> = 1
 , <a class="el" href="namespace_kernel.html#a865cfc3ba8dace65e34b58be9bbe568ba4215aa66f39b8ac7be3873fb4f938164">Kernel::kRingSuperUser</a> = 2
 , <a class="el" href="namespace_kernel.html#a865cfc3ba8dace65e34b58be9bbe568baa475eaec0320dbeccd09f64fc4beff05">Kernel::kRingGuestUser</a> = 5
-, <a class="el" href="namespace_kernel.html#a865cfc3ba8dace65e34b58be9bbe568ba9fb09bc213dbaf1dff9fc3a42d0237b5">Kernel::kRingCount</a> = 5
+, <a class="el" href="namespace_kernel.html#a865cfc3ba8dace65e34b58be9bbe568ba9fb09bc213dbaf1dff9fc3a42d0237b5">Kernel::kRingCount</a> = 3
  }</td></tr>
 <tr class="separator:a865cfc3ba8dace65e34b58be9bbe568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -218,7 +221,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a338361367d8f4a60f12961f039dd4ac9" id="r_a338361367d8f4a60f12961f039dd4ac9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_kernel.html#a338361367d8f4a60f12961f039dd4ac9">Kernel::operator&gt;=</a> (<a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> lhs, <a class="el" href="namespace_kernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> rhs)</td></tr>
 <tr class="separator:a338361367d8f4a60f12961f039dd4ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Core Process Scheduler header file. </p>
+<dl class="section author"><dt>Author</dt><dd>Amlal El Mahrouss (<a href="#" onclick="location.href='mai'+'lto:'+'aml'+'al'+'@ne'+'ke'+'rne'+'l.'+'org'; return false;">amlal<span class="obfuscator">.nosp@m.</span>@nek<span class="obfuscator">.nosp@m.</span>ernel<span class="obfuscator">.nosp@m.</span>.org</a>) </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a1d537f5b893dc6838811704135744b72" name="a1d537f5b893dc6838811704135744b72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d537f5b893dc6838811704135744b72">&#9670;&#160;</a></span>kSchedInvalidPID</h2>
 

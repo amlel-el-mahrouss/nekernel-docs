@@ -147,8 +147,6 @@ Macros</h2></td></tr>
 <tr class="separator:acf34611c032243432eb577c447651563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea404150653b03d7993de5dc12be955" id="r_a0ea404150653b03d7993de5dc12be955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_mgr_8h.html#a0ea404150653b03d7993de5dc12be955">rtl_node_cast</a>(PTR)&#160;&#160;&#160;reinterpret_cast&lt;<a class="el" href="namespace_kernel.html#aa519d3877ce6af25ab70f48dce4e25eb">Kernel::NodePtr</a>&gt;(PTR)</td></tr>
 <tr class="separator:a0ea404150653b03d7993de5dc12be955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0af5b6c912d5dae27719048452ebcf" id="r_a4a0af5b6c912d5dae27719048452ebcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_mgr_8h.html#a4a0af5b6c912d5dae27719048452ebcf">kFileOpsCount</a>&#160;&#160;&#160;(4U)</td></tr>
-<tr class="separator:a4a0af5b6c912d5dae27719048452ebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa15d37f24895cfd300c5e721fd7c543f" id="r_aa15d37f24895cfd300c5e721fd7c543f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_mgr_8h.html#aa15d37f24895cfd300c5e721fd7c543f">kFileMimeGeneric</a>&#160;&#160;&#160;&quot;ne-application-kind/all&quot;</td></tr>
 <tr class="separator:aa15d37f24895cfd300c5e721fd7c543f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a282b7015f5694ba92e3b80f866540191" id="r_a282b7015f5694ba92e3b80f866540191"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_mgr_8h.html#a282b7015f5694ba92e3b80f866540191">kFileMgrNPos</a>&#160;&#160;&#160;(~0UL)</td></tr>
@@ -177,9 +175,9 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a3ce868ebee02ab8718d189f573113dd2">Kernel::kFileReadChunk</a> = 102
 , <br />
 &#160;&#160;<a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ab66ea1f76a91bc3bbfcdb01e41b35270">Kernel::kFileWriteChunk</a> = 103
-, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a769ba765cbcf1e2e5edb4d4050bd34a1">Kernel::kFileIOCnt</a> = (kFileWriteChunk - kFileWriteAll) + 1
 , <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ad20629548848dc9fe6d5f543f9253ebd">Kernel::kFileFlagRsrc</a> = 104
 , <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a45d559b6b45f5ac01bb6a239a3b5d3d7">Kernel::kFileFlagData</a> = 105
+, <a class="el" href="namespace_kernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a769ba765cbcf1e2e5edb4d4050bd34a1">Kernel::kFileIOCnt</a> = (kFileFlagData - kFileWriteAll) + 1
 <br />
  }</td></tr>
 <tr class="separator:a9fa4669f2e389b0b1a99b964cd9ac251"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,21 +215,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a0af5b6c912d5dae27719048452ebcf" name="a4a0af5b6c912d5dae27719048452ebcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a0af5b6c912d5dae27719048452ebcf">&#9670;&#160;</a></span>kFileOpsCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kFileOpsCount&#160;&#160;&#160;(4U)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Refer to first enum. </dd></dl>
 
 </div>
 </div>

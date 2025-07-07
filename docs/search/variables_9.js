@@ -8,7 +8,7 @@ var searchData=
   ['ignored2_5',['Ignored2',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html#aef8de7e63e56b962e54310da90fab9ee',1,'Kernel::HAL::Detail::PTE']]],
   ['image_6',['image',['../class_kernel_1_1_k_e_r_n_e_l___t_a_s_k.html#a95390084334ab52ca563d0b3b5ff13c7',1,'Kernel::KERNEL_TASK::Image'],['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a37c9e26d16d08021fe29d7243eed2bff',1,'Kernel::USER_PROCESS::Image']]],
   ['image_5fpath_7',['image_path',['../namespacemk__img.html#a192818c1387c58f1905ca13c3f9cffac',1,'mk_img']]],
-  ['imagebase_8',['imagebase',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#a0a764790fe3af1e34cfed25380b5a19b',1,'LDR_OPTIONAL_HEADER::ImageBase'],['../struct_efi_load_image_protocol.html#a1cfced080aebf1787c5334911fa78207',1,'EfiLoadImageProtocol::ImageBase']]],
+  ['imagebase_8',['imagebase',['../struct_l_d_r___o_p_t_i_o_n_a_l___h_e_a_d_e_r.html#af511f688f9614caf9accea6dca2a6a0e',1,'LDR_OPTIONAL_HEADER::ImageBase'],['../struct_efi_load_image_protocol.html#a1cfced080aebf1787c5334911fa78207',1,'EfiLoadImageProtocol::ImageBase']]],
   ['imagecodetype_9',['ImageCodeType',['../struct_efi_load_image_protocol.html#a2a4c683608226df043f8df0398322f57',1,'EfiLoadImageProtocol']]],
   ['imagedatatype_10',['ImageDataType',['../struct_efi_load_image_protocol.html#ab19cdf40c2b2fc45e17b2787bcb88266',1,'EfiLoadImageProtocol']]],
   ['imageentrypointoffset_11',['ImageEntrypointOffset',['../struct_kernel_1_1_i_dylib_object_1_1_dylib_traits.html#aff110d4f86daf558f0abc68136a64345',1,'Kernel::IDylibObject::DylibTraits']]],
