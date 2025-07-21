@@ -1,8 +1,8 @@
 var searchData=
 [
   ['sata_2eh_0',['SATA.h',['../_s_a_t_a_8h.html',1,'']]],
-  ['scsi_2bgeneric_2ecc_1',['scsi+generic.cc',['../_a_r_m64_2_storage_2_s_c_s_i_09_generic_8cc.html',1,'(Global Namespace)'],['../_a_m_d64_2_storage_2_s_c_s_i_09_generic_8cc.html',1,'(Global Namespace)']]],
-  ['scsi_2eh_2',['scsi.h',['../kernel_2_storage_kit_2_s_c_s_i_8h.html',1,'(Global Namespace)'],['../modules_2_s_c_s_i_2_s_c_s_i_8h.html',1,'(Global Namespace)']]],
+  ['scsi_2bgeneric_2ecc_1',['SCSI+Generic.cc',['../_a_m_d64_2_storage_2_s_c_s_i_09_generic_8cc.html',1,'(Global Namespace)'],['../_a_r_m64_2_storage_2_s_c_s_i_09_generic_8cc.html',1,'(Global Namespace)']]],
+  ['scsi_2eh_2',['SCSI.h',['../kernel_2_storage_kit_2_s_c_s_i_8h.html',1,'(Global Namespace)'],['../modules_2_s_c_s_i_2_s_c_s_i_8h.html',1,'(Global Namespace)']]],
   ['scsideviceinterface_2ecc_3',['SCSIDeviceInterface.cc',['../_s_c_s_i_device_interface_8cc.html',1,'']]],
   ['semaphore_2eh_4',['Semaphore.h',['../_semaphore_8h.html',1,'']]],
   ['server_2eh_5',['Server.h',['../_server_8h.html',1,'']]],

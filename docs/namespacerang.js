@@ -1,7 +1,7 @@
 var namespacerang =
 [
     [ "rang_implementation", "namespacerang_1_1rang__implementation.html", [
-      [ "enableStd", "namespacerang_1_1rang__implementation.html#a8d8b41181073c6e9ef8b412f9cb0081c", null ],
+      [ "enableStd", "namespacerang_1_1rang__implementation.html#ab7f354159c53079e890d6c5ddcc5c06e", null ],
       [ "controlMode", "namespacerang_1_1rang__implementation.html#a55b24057ec0aee2a5570193ab9e38a50", null ],
       [ "isTerminal", "namespacerang_1_1rang__implementation.html#af195c8344db945b8027c500cdf835964", null ],
       [ "setColor", "namespacerang_1_1rang__implementation.html#af1561ff8768eaa943f809d2e6d2a469d", null ],

@@ -1,6 +1,6 @@
 var _error_or_8h =
 [
     [ "Kernel::ErrorOr< T >", "class_kernel_1_1_error_or.html", "class_kernel_1_1_error_or" ],
-    [ "ErrorOrAny", "_error_or_8h.html#ae93d3ed63889cb9899feae5c3f489ebd", null ],
-    [ "ErrorT", "_error_or_8h.html#a7c65ae6e6a2df84f4bab9ce133cc838d", null ]
+    [ "Kernel::ErrorOrAny", "namespace_kernel.html#a43b4ad4dd29c8984f0b41002f91d26d3", null ],
+    [ "Kernel::ErrorT", "namespace_kernel.html#a4810a6ba3eb3309c26e8d1b68d9ccfd9", null ]
 ];

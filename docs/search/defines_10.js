@@ -11,9 +11,9 @@ var searchData=
   ['sigkill_8',['SIGKILL',['../_signals_8h.html#addd8dcd406ce514ab3b4f576a5343d42',1,'Signals.h']]],
   ['sigpaus_9',['SIGPAUS',['../_signals_8h.html#a7a6ee33cbc5279bd9133923c4fb58a16',1,'Signals.h']]],
   ['sigtrap_10',['SIGTRAP',['../_signals_8h.html#aa2beb906ab1b46676e63823f4e773c38',1,'Signals.h']]],
-  ['static_11',['STATIC',['../kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'Macros.h']]],
+  ['static_11',['STATIC',['../_e_f_i_2_n_s_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'STATIC:&#160;NS.h'],['../_c_p_u_i_d_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'STATIC:&#160;CPUID.h'],['../kernel_2_ne_kit_2macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'STATIC:&#160;Macros.h']]],
   ['strcmp_12',['StrCmp',['../_support_8h.html#ab3944184d7c3bdf03f64a5c931464b08',1,'Support.h']]],
-  ['stringify_13',['STRINGIFY',['../kernel_2_ne_kit_2macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'Macros.h']]],
+  ['stringify_13',['STRINGIFY',['../_e_f_i_2_n_s_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY:&#160;NS.h'],['../_c_p_u_i_d_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY:&#160;CPUID.h'],['../kernel_2_ne_kit_2macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'STRINGIFY:&#160;Macros.h']]],
   ['strlen_14',['StrLen',['../_support_8h.html#a94a5b7998848651b99c8b45e19c534d7',1,'Support.h']]],
   ['syscall_5fhash_15',['SYSCALL_HASH',['../_syscall_8h.html#a62520d10e511fd15c0e64e96f1a1c82c',1,'Syscall.h']]]
 ];

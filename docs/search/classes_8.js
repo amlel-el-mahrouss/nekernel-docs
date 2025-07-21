@@ -1,7 +1,7 @@
 var searchData=
 [
   ['hal_5fdispatch_5fentry_0',['HAL_DISPATCH_ENTRY',['../struct_h_a_l___d_i_s_p_a_t_c_h___e_n_t_r_y.html',1,'']]],
-  ['hal_5fhardware_5fthread_1',['hal_hardware_thread',['../struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL::HAL_HARDWARE_THREAD'],['../struct_kernel_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL_HARDWARE_THREAD']]],
+  ['hal_5fhardware_5fthread_1',['HAL_HARDWARE_THREAD',['../struct_kernel_1_1_h_a_l_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL::HAL_HARDWARE_THREAD'],['../struct_kernel_1_1_h_a_l___h_a_r_d_w_a_r_e___t_h_r_e_a_d.html',1,'Kernel::HAL_HARDWARE_THREAD']]],
   ['hal_5fkernel_5fdispatch_5fentry_2',['HAL_KERNEL_DISPATCH_ENTRY',['../struct_h_a_l___k_e_r_n_e_l___d_i_s_p_a_t_c_h___e_n_t_r_y.html',1,'']]],
   ['hal_5fnvme_5fbar_5f0_3',['HAL_NVME_BAR_0',['../struct_kernel_1_1_h_a_l___n_v_m_e___b_a_r__0.html',1,'Kernel']]],
   ['hal_5fnvme_5fqueue_4',['HAL_NVME_QUEUE',['../struct_kernel_1_1_h_a_l___n_v_m_e___q_u_e_u_e.html',1,'Kernel']]],
@@ -11,8 +11,8 @@ var searchData=
   ['hbacmdheader_8',['HbaCmdHeader',['../struct_hba_cmd_header.html',1,'']]],
   ['hbacmdtbl_9',['HbaCmdTbl',['../struct_hba_cmd_tbl.html',1,'']]],
   ['hbafis_10',['HbaFis',['../struct_hba_fis.html',1,'']]],
-  ['hbaflags_11',['hbaflags',['../union_hba_cmd_header_1_1_hba_flags.html',1,'HbaCmdHeader::HbaFlags'],['../union_hba_flags.html',1,'HbaFlags']]],
-  ['hbaflags_5f_12',['hbaflags_',['../struct_hba_cmd_header_1_1_hba_flags_1_1_hba_flags__.html',1,'HbaCmdHeader::HbaFlags::HbaFlags_'],['../struct_hba_flags_1_1_hba_flags__.html',1,'HbaFlags::HbaFlags_']]],
+  ['hbaflags_11',['HbaFlags',['../union_hba_cmd_header_1_1_hba_flags.html',1,'HbaCmdHeader::HbaFlags'],['../union_hba_flags.html',1,'HbaFlags']]],
+  ['hbaflags_5f_12',['HbaFlags_',['../struct_hba_cmd_header_1_1_hba_flags_1_1_hba_flags__.html',1,'HbaCmdHeader::HbaFlags::HbaFlags_'],['../struct_hba_flags_1_1_hba_flags__.html',1,'HbaFlags::HbaFlags_']]],
   ['hbamem_13',['HbaMem',['../struct_hba_mem.html',1,'']]],
   ['hbaport_14',['HbaPort',['../struct_hba_port.html',1,'']]],
   ['hbaprdtentry_15',['HbaPrdtEntry',['../struct_hba_prdt_entry.html',1,'']]],

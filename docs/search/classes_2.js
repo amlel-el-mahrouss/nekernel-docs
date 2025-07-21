@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['bar_0',['bar',['../class_kernel_1_1_p_c_i_1_1_b_a_r.html',1,'Kernel::PCI::BAR'],['../class_kernel_1_1_p_c_i_1_1_detail_1_1_b_a_r.html',1,'Kernel::PCI::Detail::BAR']]],
+  ['bar_0',['BAR',['../class_kernel_1_1_p_c_i_1_1_b_a_r.html',1,'Kernel::PCI::BAR'],['../class_kernel_1_1_p_c_i_1_1_detail_1_1_b_a_r.html',1,'Kernel::PCI::Detail::BAR']]],
   ['bdiskformatfactory_1',['BDiskFormatFactory',['../class_boot_1_1_b_disk_format_factory.html',1,'Boot']]],
   ['bfiledescriptor_2',['BFileDescriptor',['../struct_boot_1_1_b_disk_format_factory_1_1_b_file_descriptor.html',1,'Boot::BDiskFormatFactory']]],
   ['binarymutex_3',['BinaryMutex',['../class_kernel_1_1_binary_mutex.html',1,'Kernel']]],

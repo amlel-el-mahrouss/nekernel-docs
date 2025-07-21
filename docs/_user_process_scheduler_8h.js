@@ -5,6 +5,6 @@ var _user_process_scheduler_8h =
     [ "Kernel::UserProcessTeam", "class_kernel_1_1_user_process_team.html", "class_kernel_1_1_user_process_team" ],
     [ "Kernel::UserProcessScheduler", "class_kernel_1_1_user_process_scheduler.html", "class_kernel_1_1_user_process_scheduler" ],
     [ "Kernel::UserProcessHelper", "class_kernel_1_1_user_process_helper.html", "class_kernel_1_1_user_process_helper" ],
-    [ "USER_PROCESS_ARRAY", "_user_process_scheduler_8h.html#a2e89020a71017b422a9afb9e1e464ebc", null ],
-    [ "USER_PROCESS_REF", "_user_process_scheduler_8h.html#af9a5e0e0479e820c37a0995bd7af5843", null ]
+    [ "Kernel::USER_PROCESS_ARRAY", "namespace_kernel.html#a2e89020a71017b422a9afb9e1e464ebc", null ],
+    [ "Kernel::USER_PROCESS_REF", "namespace_kernel.html#af9a5e0e0479e820c37a0995bd7af5843", null ]
 ];

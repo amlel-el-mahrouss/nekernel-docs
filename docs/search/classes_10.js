@@ -15,7 +15,8 @@ var searchData=
   ['process_5fheap_5ftree_12',['PROCESS_HEAP_TREE',['../struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html',1,'Kernel']]],
   ['process_5fheap_5ftree_3c_20voidptr_20_3e_13',['PROCESS_HEAP_TREE&lt; VoidPtr &gt;',['../struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html',1,'Kernel']]],
   ['process_5fimage_14',['PROCESS_IMAGE',['../struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html',1,'Kernel']]],
-  ['property_15',['Property',['../class_c_f_1_1_property.html',1,'CF']]],
-  ['pte_16',['PTE',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html',1,'Kernel::HAL::Detail']]],
-  ['ptewrapper_17',['PTEWrapper',['../class_kernel_1_1_p_t_e_wrapper.html',1,'Kernel']]]
+  ['process_5fspecial_5ftree_15',['PROCESS_SPECIAL_TREE',['../struct_kernel_1_1_p_r_o_c_e_s_s___s_p_e_c_i_a_l___t_r_e_e.html',1,'Kernel']]],
+  ['property_16',['Property',['../class_c_f_1_1_property.html',1,'CF']]],
+  ['pte_17',['PTE',['../struct_kernel_1_1_h_a_l_1_1_detail_1_1_p_t_e.html',1,'Kernel::HAL::Detail']]],
+  ['ptewrapper_18',['PTEWrapper',['../class_kernel_1_1_p_t_e_wrapper.html',1,'Kernel']]]
 ];

@@ -19,6 +19,6 @@ var _p_e_f_8h =
     [ "kPefObjectExt", "_p_e_f_8h.html#a02947bc4eff53eb410aeee3770e60685", null ],
     [ "kPefStart", "_p_e_f_8h.html#a24805061766bc16a2be024d217f64a45", null ],
     [ "kPefVersion", "_p_e_f_8h.html#a59a1c4fa90abbb06331de310cc22c228", null ],
-    [ "PEFCommandHeader", "_p_e_f_8h.html#a0626234a2ff1fbb74eabc3f8c0cb1bcf", null ],
-    [ "PEFContainer", "_p_e_f_8h.html#a66e9322503a2c59644efa91a11b1a412", null ]
+    [ "Kernel::PEFCommandHeader", "namespace_kernel.html#a0626234a2ff1fbb74eabc3f8c0cb1bcf", null ],
+    [ "Kernel::PEFContainer", "namespace_kernel.html#a66e9322503a2c59644efa91a11b1a412", null ]
 ];

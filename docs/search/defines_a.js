@@ -7,5 +7,5 @@ var searchData=
   ['lapic_5freg_5ftimer_5finitcnt_4',['LAPIC_REG_TIMER_INITCNT',['../_a_m_d64_2_hal_application_processor_8cc.html#a4a516dce6290bde45eecb6469a541346',1,'HalApplicationProcessor.cc']]],
   ['lapic_5freg_5ftimer_5flvt_5',['LAPIC_REG_TIMER_LVT',['../_a_m_d64_2_hal_application_processor_8cc.html#a36704238ee3655203992aeb0caf2ec13',1,'HalApplicationProcessor.cc']]],
   ['libsys_5funused_6',['LIBSYS_UNUSED',['../lib_system_2_system_kit_2macros_8h.html#a1a0cdba421efe545bef6da1d7a79ca3f',1,'Macros.h']]],
-  ['likely_7',['LIKELY',['../kernel_2_ne_kit_2macros_8h.html#ace15a4ce9b4ba026dd7e70f213bff952',1,'Macros.h']]]
+  ['likely_7',['LIKELY',['../_e_f_i_2_n_s_8h.html#ace15a4ce9b4ba026dd7e70f213bff952',1,'LIKELY:&#160;NS.h'],['../_c_p_u_i_d_8h.html#ace15a4ce9b4ba026dd7e70f213bff952',1,'LIKELY:&#160;CPUID.h'],['../kernel_2_ne_kit_2macros_8h.html#ace15a4ce9b4ba026dd7e70f213bff952',1,'LIKELY:&#160;Macros.h']]]
 ];

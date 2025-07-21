@@ -9,9 +9,9 @@ var searchData=
   ['networkdevice_2ecc_6',['NetworkDevice.cc',['../_network_device_8cc.html',1,'']]],
   ['networkdevice_2eh_7',['NetworkDevice.h',['../_network_device_8h.html',1,'']]],
   ['networkdevice_2einl_8',['NetworkDevice.inl',['../_network_device_8inl.html',1,'']]],
-  ['new_2bdelete_2ecc_9',['new+delete.cc',['../boot_2src_2_new_09_delete_8cc.html',1,'(Global Namespace)'],['../kernel_2src_2_new_09_delete_8cc.html',1,'(Global Namespace)']]],
+  ['new_2bdelete_2ecc_9',['New+Delete.cc',['../boot_2src_2_new_09_delete_8cc.html',1,'(Global Namespace)'],['../kernel_2src_2_new_09_delete_8cc.html',1,'(Global Namespace)']]],
   ['new_2eh_10',['New.h',['../_new_8h.html',1,'']]],
-  ['ns_2eh_11',['ns.h',['../_e_f_i_2_n_s_8h.html',1,'(Global Namespace)'],['../_core_boot_2_n_s_8h.html',1,'(Global Namespace)']]],
-  ['nvme_2eh_12',['nvme.h',['../modules_2_n_v_m_e_2_n_v_m_e_8h.html',1,'(Global Namespace)'],['../kernel_2_storage_kit_2_n_v_m_e_8h.html',1,'(Global Namespace)']]],
+  ['ns_2eh_11',['NS.h',['../_core_boot_2_n_s_8h.html',1,'(Global Namespace)'],['../_e_f_i_2_n_s_8h.html',1,'(Global Namespace)']]],
+  ['nvme_2eh_12',['NVME.h',['../kernel_2_storage_kit_2_n_v_m_e_8h.html',1,'(Global Namespace)'],['../modules_2_n_v_m_e_2_n_v_m_e_8h.html',1,'(Global Namespace)']]],
   ['nvmedeviceinterface_2ecc_13',['NVMEDeviceInterface.cc',['../_n_v_m_e_device_interface_8cc.html',1,'']]]
 ];

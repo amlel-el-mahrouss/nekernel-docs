@@ -65,5 +65,5 @@ var _ne_f_s_8h =
     [ "kResourceTypeMenu", "_ne_f_s_8h.html#a86a7957445741df9a771b7d3d7f328f0", null ],
     [ "kResourceTypeSound", "_ne_f_s_8h.html#a7a700e52f6bcf888e244cd9541241fb6", null ],
     [ "kResourceTypeString", "_ne_f_s_8h.html#aeea0cfeb0756651743a012aa2374b45f", null ],
-    [ "fs_init_nefs", "_ne_f_s_8h.html#aaa13bea36a33c7dba1cb564b2566b0c7", null ]
+    [ "Kernel::NeFS::fs_init_nefs", "namespace_kernel_1_1_ne_f_s.html#aaa13bea36a33c7dba1cb564b2566b0c7", null ]
 ];

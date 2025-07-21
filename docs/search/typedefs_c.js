@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lba_0',['Lba',['../namespace_kernel.html#a97976246f60a4a7f7af8ef73dda4236a',1,'Kernel']]],
+  ['lba_0',['Lba',['../namespace_kernel.html#a56a758c147f538dc05f74af58ed4fbea',1,'Kernel']]],
   ['ldr_5fdata_5fdirectory_1',['LDR_DATA_DIRECTORY',['../_p_e_8h.html#a2cddfb1a70743da344bb5e752368e7fb',1,'PE.h']]],
   ['ldr_5fdata_5fdirectory_5fptr_2',['LDR_DATA_DIRECTORY_PTR',['../_p_e_8h.html#ab4f7ccecb09f24b726af6add42cb7dbe',1,'PE.h']]],
   ['ldr_5fexec_5fheader_3',['LDR_EXEC_HEADER',['../_p_e_8h.html#afb7b39cdd52f09786425e81245f6785e',1,'PE.h']]],
@@ -15,9 +15,9 @@ var searchData=
   ['ldr_5foptional_5fheader_5fptr_12',['LDR_OPTIONAL_HEADER_PTR',['../_p_e_8h.html#a7acf40b3cbcf5afda57dc0cd46f74923',1,'PE.h']]],
   ['ldr_5fsection_5fheader_13',['LDR_SECTION_HEADER',['../_p_e_8h.html#a51444aba45ca8a8ddb41a9b39fe73336',1,'PE.h']]],
   ['ldr_5fsection_5fheader_5fptr_14',['LDR_SECTION_HEADER_PTR',['../_p_e_8h.html#aeaae806c1883a7032a89c1328a069ec2',1,'PE.h']]],
-  ['libmsg_5ffunc_5ft_15',['libmsg_func_t',['../_server_8h.html#ae6f8f7f6b190c7a66bf14b36b2da0c56',1,'Server.h']]],
+  ['libmsg_5ffunc_5ft_15',['libmsg_func_t',['../_server_8h.html#a4a7ab7e06f8de9eded442cf2499b9bd8',1,'Server.h']]],
   ['lockptr_16',['LockPtr',['../namespace_kernel.html#a81d9b874a80b06e86973949394e76bdb',1,'Kernel']]],
-  ['long_17',['Long',['../namespace_kernel.html#aa70dde74e8db97cf15123c3e9a877e40',1,'Kernel']]],
-  ['longdouble_18',['LongDouble',['../namespace_kernel.html#a5eb99afc826543f3460c9e30a1db7268',1,'Kernel']]],
-  ['ltenetworkdevice_19',['LTENetworkDevice',['../namespace_kernel.html#a551c63cbbac605c6696adf91d55cdc8a',1,'Kernel']]]
+  ['long_17',['Long',['../namespace_kernel.html#a493a4a2271000fb900e0f87f49b9d233',1,'Kernel']]],
+  ['longdouble_18',['LongDouble',['../namespace_kernel.html#ac0b1b35af6fd0fdd4f7ff1662b24a858',1,'Kernel']]],
+  ['ltenetworkdevice_19',['LTENetworkDevice',['../namespace_kernel.html#a6d708a2312630dda2139254d96768373',1,'Kernel']]]
 ];

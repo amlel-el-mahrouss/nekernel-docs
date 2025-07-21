@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['widechar_0',['WideChar',['../namespace_kernel.html#ab7f195cb15ebd306ab70f4dae079c0f2',1,'Kernel']]]
+  ['widechar_0',['WideChar',['../namespace_kernel.html#afa7bc7b62be1adf927843c08348ed00c',1,'Kernel']]]
 ];

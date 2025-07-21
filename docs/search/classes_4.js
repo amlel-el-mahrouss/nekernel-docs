@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ddk_5ffinal_0',['DDK_FINAL',['../struct_d_d_k___f_i_n_a_l.html',1,'']]],
-  ['device_1',['device',['../class_device.html',1,'Device'],['../class_kernel_1_1_p_c_i_1_1_device.html',1,'Kernel::PCI::Device']]],
+  ['device_1',['Device',['../class_device.html',1,'Device'],['../class_kernel_1_1_p_c_i_1_1_device.html',1,'Kernel::PCI::Device']]],
   ['deviceheader_2',['DeviceHeader',['../struct_kernel_1_1_p_c_i_1_1_device_header.html',1,'Kernel::PCI']]],
   ['deviceinterface_3',['DeviceInterface',['../class_kernel_1_1_device_interface.html',1,'Kernel']]],
   ['deviceinterface_3c_20mountpointinterface_20_2a_20_3e_4',['DeviceInterface&lt; MountpointInterface * &gt;',['../class_kernel_1_1_device_interface.html',1,'Kernel']]],

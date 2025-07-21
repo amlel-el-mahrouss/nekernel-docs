@@ -26,6 +26,6 @@ var _kernel_panic_8h =
       [ "RUNTIME_CHECK_INVALID", "_kernel_panic_8h.html#ae8f6c6e9ebbc1cc782b2dfa4524229d4aa7e9f4f55366b48d9ead120dfbe630c9", null ],
       [ "RUNTIME_CHECK_COUNT", "_kernel_panic_8h.html#ae8f6c6e9ebbc1cc782b2dfa4524229d4a716660d7deb97b759f4a22ca6fb3ff6f", null ]
     ] ],
-    [ "ke_panic", "_kernel_panic_8h.html#a05f4ac957b25737365c415f1a1396dbc", null ],
-    [ "ke_runtime_check", "_kernel_panic_8h.html#ad4673076c24720c3b405ad974edc5646", null ]
+    [ "Kernel::ke_panic", "namespace_kernel.html#a05f4ac957b25737365c415f1a1396dbc", null ],
+    [ "Kernel::ke_runtime_check", "namespace_kernel.html#ad4673076c24720c3b405ad974edc5646", null ]
 ];

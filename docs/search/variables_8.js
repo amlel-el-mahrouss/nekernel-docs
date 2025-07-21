@@ -1,21 +1,21 @@
 var searchData=
 [
-  ['handleprotocol_0',['HandleProtocol',['../struct_efi_boot_services.html#ad0056e920569301e1810c488f00680b1',1,'EfiBootServices']]],
+  ['handleprotocol_0',['HandleProtocol',['../struct_efi_boot_services.html#ad0056e920569301e1810c488f00680b1',1,'EfiBootServices::HandleProtocol'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_boot_services.html#ad4e851f1e3606c6618d4f18aac6166c6',1,'Firmware::Detail::EFI::EfiBootServices::HandleProtocol']]],
   ['hardware_5frev_5fid_1',['hardware_rev_id',['../struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html#a6741d27167a0991b9f89aaadb31bd1d4',1,'Kernel::Detail::HPET_BLOCK']]],
   ['hardwarerevid_2',['HardwareRevId',['../struct_kernel_1_1_h_p_e_t_header.html#a1d01789d9a05d26efe16dbee6d62db87',1,'Kernel::HPETHeader']]],
-  ['hbaflags_3',['hbaflags',['../struct_hba_cmd_header.html#ae8aed9d24649b3d47ad6b0f464e4383e',1,'HbaCmdHeader::HbaFlags'],['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#a6b8668a3922cdc641125a38c7323d5c3',1,'HbaFlags:&#160;AHCI.h']]],
+  ['hbaflags_3',['HbaFlags',['../struct_hba_cmd_header.html#ae8aed9d24649b3d47ad6b0f464e4383e',1,'HbaCmdHeader::HbaFlags'],['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#a6b8668a3922cdc641125a38c7323d5c3',1,'HbaFlags:&#160;AHCI.h']]],
   ['hdrsz_4',['HdrSz',['../struct_kernel_1_1_p_e_f_container.html#ad232d32453ae39d5a9095b0437b0a675',1,'Kernel::PEFContainer']]],
   ['header_5',['Header',['../struct_l_d_r___i_m_a_g_e___h_e_a_d_e_r.html#a169786e79f9913268324bf119d5be5bc',1,'LDR_IMAGE_HEADER']]],
-  ['headersize_6',['headersize',['../struct_efi_table_header.html#aad006ccbae92f3b598f309e32be5ad92',1,'EfiTableHeader::HeaderSize'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a1f89b40391db08c23961d63f4ecb7a2f',1,'Kernel::GPT_PARTITION_TABLE::HeaderSize']]],
+  ['headersize_6',['HeaderSize',['../struct_efi_table_header.html#aad006ccbae92f3b598f309e32be5ad92',1,'EfiTableHeader::HeaderSize'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_table_header.html#ad9e7c69e71a62f9000ddaa0adcd1c2f2',1,'Firmware::Detail::EFI::EfiTableHeader::HeaderSize'],['../struct_kernel_1_1_g_p_t___p_a_r_t_i_t_i_o_n___t_a_b_l_e.html#a1f89b40391db08c23961d63f4ecb7a2f',1,'Kernel::GPT_PARTITION_TABLE::HeaderSize']]],
   ['headertype_7',['HeaderType',['../struct_kernel_1_1_p_c_i_1_1_device_header.html#a4d31e814b93d88e1d0461b729ece5e79',1,'Kernel::PCI::DeviceHeader']]],
   ['heaptree_8',['HeapTree',['../class_kernel_1_1_u_s_e_r___p_r_o_c_e_s_s.html#a910476a292cfe185beb5edf3748bea28',1,'Kernel::USER_PROCESS']]],
   ['height_9',['height',['../struct_c_f_1_1_c_f_rect.html#ae013e879d889656bb70f5c37f68d963f',1,'CF::CFRect']]],
-  ['horizontalresolution_10',['HorizontalResolution',['../struct_efi_graphics_output_protocol_mode_information.html#a14b4ae222d9f2cde20a5e7bfc48c2c89',1,'EfiGraphicsOutputProtocolModeInformation']]],
+  ['horizontalresolution_10',['HorizontalResolution',['../struct_efi_graphics_output_protocol_mode_information.html#a14b4ae222d9f2cde20a5e7bfc48c2c89',1,'EfiGraphicsOutputProtocolModeInformation::HorizontalResolution'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol_mode_information.html#ae38a9df67f3d972840b4dc50af51c246',1,'Firmware::Detail::EFI::EfiGraphicsOutputProtocolModeInformation::HorizontalResolution']]],
   ['hostflags_11',['HostFlags',['../struct_kernel_1_1_i_m_b_c_i_host.html#af6b7fba087d34cf2e7e9acc50679e389',1,'Kernel::IMBCIHost']]],
   ['hostid_12',['HostId',['../struct_kernel_1_1_i_m_b_c_i_host.html#a84b388401ccf66bec9af101a289762ff',1,'Kernel::IMBCIHost']]],
   ['hosttype_13',['HostType',['../struct_kernel_1_1_i_m_b_c_i_host.html#aa5ba350cf59f74e563534b39dc8710a7',1,'Kernel::IMBCIHost']]],
-  ['hour_14',['Hour',['../struct_efi_time.html#a1c31faf74a62d31e9f2482ad38e2a031',1,'EfiTime']]],
+  ['hour_14',['Hour',['../struct_efi_time.html#a1c31faf74a62d31e9f2482ad38e2a031',1,'EfiTime::Hour'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_time.html#a061a5342c5960f4fb6504a6c57d58750',1,'Firmware::Detail::EFI::EfiTime::Hour']]],
   ['hpet_5fnumber_15',['hpet_number',['../struct_kernel_1_1_detail_1_1_h_p_e_t___b_l_o_c_k.html#a6182d13428229b1757b407e880b2bd11',1,'Kernel::Detail::HPET_BLOCK']]],
   ['hpetnumber_16',['HpetNumber',['../struct_kernel_1_1_h_p_e_t_header.html#a80ba95daac7ca341dfaacf43dfb348b7',1,'Kernel::HPETHeader']]],
-  ['hwaddresssize_17',['HwAddressSize',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html#abf033583bba4778bc352e61ab7018eb3',1,'EFI_SIMPLE_NETWORK_MODE']]]
+  ['hwaddresssize_17',['HwAddressSize',['../struct_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html#abf033583bba4778bc352e61ab7018eb3',1,'EFI_SIMPLE_NETWORK_MODE::HwAddressSize'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html#a3398fbf7338c23c98045d6736ad062ce',1,'Firmware::Detail::EFI::EFI_SIMPLE_NETWORK_MODE::HwAddressSize']]]
 ];
