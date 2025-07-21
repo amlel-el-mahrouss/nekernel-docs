@@ -1,6 +1,7 @@
 var searchData=
 [
   ['virtualaddresskind_0',['VirtualAddressKind',['../namespace_kernel.html#ae5db4560682715b38ce628278c85ac59',1,'Kernel']]],
-  ['void_1',['void',['../namespace_kernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796',1,'Kernel::Void'],['../lib_system_2_system_kit_2macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea',1,'Void:&#160;Macros.h']]],
-  ['voidptr_2',['voidptr',['../namespace_kernel.html#aac30f48665b606a2bc482f2792369408',1,'Kernel::VoidPtr'],['../lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h'],['../namespace_kernel.html#ae85992ad6327764e411e958ab18b218b',1,'Kernel::voidPtr']]]
+  ['void_1',['Void',['../namespace_kernel.html#a099be27951ddf291235a27ef6b660d93',1,'Kernel']]],
+  ['voidptr_2',['VoidPtr',['../namespace_kernel.html#a9a0bbd6c5271686d5d2c5e2256bf883e',1,'Kernel::VoidPtr'],['../lib_system_2_system_kit_2macros_8h.html#a5cca82c5e941051f93ff720e101e6b53',1,'VoidPtr:&#160;Macros.h']]],
+  ['voidptr_3',['voidPtr',['../namespace_kernel.html#a4d20969656f004d70ba4f899d56c3072',1,'Kernel']]]
 ];

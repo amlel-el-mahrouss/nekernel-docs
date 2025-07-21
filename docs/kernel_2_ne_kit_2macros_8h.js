@@ -30,8 +30,8 @@ var kernel_2_ne_kit_2macros_8h =
     [ "MIB", "kernel_2_ne_kit_2macros_8h.html#a3d3145295541b38666bf1e095a7d74f6", null ],
     [ "mib_cast", "kernel_2_ne_kit_2macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852", null ],
     [ "NE_UNUSED", "kernel_2_ne_kit_2macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469", null ],
-    [ "No", "kernel_2_ne_kit_2macros_8h.html#a554d6ecb4ae62985018db18be458114d", null ],
     [ "NO", "kernel_2_ne_kit_2macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5", null ],
+    [ "No", "kernel_2_ne_kit_2macros_8h.html#a554d6ecb4ae62985018db18be458114d", null ],
     [ "NO_EXEC", "kernel_2_ne_kit_2macros_8h.html#acd5f5a08cb161dddd3db84118b45b8d1", null ],
     [ "PACKED", "kernel_2_ne_kit_2macros_8h.html#a36d525cf4d116b2fe4ecc00222b256f1", null ],
     [ "RGB", "kernel_2_ne_kit_2macros_8h.html#a52d6f67c629ccece695186d3ccceba54", null ],
@@ -44,6 +44,6 @@ var kernel_2_ne_kit_2macros_8h =
     [ "tib_cast", "kernel_2_ne_kit_2macros_8h.html#a88a22810bf835b7794ce207e15732da8", null ],
     [ "TRUE", "kernel_2_ne_kit_2macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d", null ],
     [ "UNLIKELY", "kernel_2_ne_kit_2macros_8h.html#a24b6e8c86ed8291c69b50e480447382e", null ],
-    [ "Yes", "kernel_2_ne_kit_2macros_8h.html#adf4f44e25f5216808d6ca83186e89119", null ],
-    [ "YES", "kernel_2_ne_kit_2macros_8h.html#a7ebc9a785e5ab85457c98595aac81589", null ]
+    [ "YES", "kernel_2_ne_kit_2macros_8h.html#a7ebc9a785e5ab85457c98595aac81589", null ],
+    [ "Yes", "kernel_2_ne_kit_2macros_8h.html#adf4f44e25f5216808d6ca83186e89119", null ]
 ];

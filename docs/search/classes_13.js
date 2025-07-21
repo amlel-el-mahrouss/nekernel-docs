@@ -10,5 +10,6 @@ var searchData=
   ['stackframe_7',['StackFrame',['../struct_kernel_1_1_h_a_l_1_1_stack_frame.html',1,'Kernel::HAL']]],
   ['steps_5fcommon_5frecord_8',['STEPS_COMMON_RECORD',['../struct_s_t_e_p_s___c_o_m_m_o_n___r_e_c_o_r_d.html',1,'']]],
   ['stream_9',['Stream',['../class_kernel_1_1_stream.html',1,'Kernel']]],
-  ['swap_5fdisk_5fheader_10',['SWAP_DISK_HEADER',['../struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html',1,'Kernel']]]
+  ['stream_3c_20jsonstreamreader_2c_20json_20_3e_10',['Stream&lt; JsonStreamReader, Json &gt;',['../class_kernel_1_1_stream.html',1,'Kernel']]],
+  ['swap_5fdisk_5fheader_11',['SWAP_DISK_HEADER',['../struct_kernel_1_1_s_w_a_p___d_i_s_k___h_e_a_d_e_r.html',1,'Kernel']]]
 ];

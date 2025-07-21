@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['querycapsulecapabilites_0',['QueryCapsuleCapabilites',['../struct_efi_runtime_services.html#a25fbb923f55088618e434eafaed3ae4f',1,'EfiRuntimeServices']]],
-  ['querymode_1',['querymode',['../struct_efi_graphics_output_protocol.html#ab32db1dc9f05d723a77df21841f2a1a5',1,'EfiGraphicsOutputProtocol::QueryMode'],['../struct_efi_simple_text_output_protocol.html#ae0dfc6782629801c9823434ffb725f7e',1,'EfiSimpleTextOutputProtocol::QueryMode']]],
-  ['queryvariableinfo_2',['QueryVariableInfo',['../struct_efi_runtime_services.html#ab44cab3549da14c1260fb2b91b98a700',1,'EfiRuntimeServices']]]
+  ['querycapsulecapabilites_0',['QueryCapsuleCapabilites',['../struct_efi_runtime_services.html#a25fbb923f55088618e434eafaed3ae4f',1,'EfiRuntimeServices::QueryCapsuleCapabilites'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_runtime_services.html#a1c399c37fd1b50fabfbdea17346d2824',1,'Firmware::Detail::EFI::EfiRuntimeServices::QueryCapsuleCapabilites']]],
+  ['querymode_1',['QueryMode',['../struct_efi_graphics_output_protocol.html#ab32db1dc9f05d723a77df21841f2a1a5',1,'EfiGraphicsOutputProtocol::QueryMode'],['../struct_efi_simple_text_output_protocol.html#ae0dfc6782629801c9823434ffb725f7e',1,'EfiSimpleTextOutputProtocol::QueryMode'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol.html#af4ecca85aed02c12d52fc0cf4dea32d7',1,'Firmware::Detail::EFI::EfiGraphicsOutputProtocol::QueryMode'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_simple_text_output_protocol.html#ab99a5164a7a5c9b5e61cb6772963c744',1,'Firmware::Detail::EFI::EfiSimpleTextOutputProtocol::QueryMode']]],
+  ['queryvariableinfo_2',['QueryVariableInfo',['../struct_efi_runtime_services.html#ab44cab3549da14c1260fb2b91b98a700',1,'EfiRuntimeServices::QueryVariableInfo'],['../struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_runtime_services.html#a5762ef7a9d877ff8882c4f473defdc21',1,'Firmware::Detail::EFI::EfiRuntimeServices::QueryVariableInfo']]]
 ];

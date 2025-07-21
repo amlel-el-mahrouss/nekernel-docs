@@ -5,16 +5,16 @@ var searchData=
   ['fbcoord2x2_2',['FBCoord2x2',['../namespace_kernel.html#a4f6a0ef412462dd12fd95dd532d389bd',1,'Kernel']]],
   ['fbdim2x2_3',['FBDim2x2',['../namespace_kernel.html#a0482957a006352051bd8de03009dbb6e',1,'Kernel']]],
   ['fbflags_4',['FBFlags',['../namespace_kernel.html#a8f881de49519e1f9b518716dff0e8f00',1,'Kernel']]],
-  ['filestreamascii_5',['FileStreamASCII',['../namespace_kernel.html#a1ae135608e6c15640852e1e44d7ce869',1,'Kernel']]],
-  ['filestreamutf16_6',['FileStreamUTF16',['../namespace_kernel.html#a95eb4ef37b2835b35ed3e5c3d165f6e4',1,'Kernel']]],
-  ['filestreamutf8_7',['FileStreamUTF8',['../namespace_kernel.html#ab078a4618829dd3093493db47715ac12',1,'Kernel']]],
+  ['filestreamascii_5',['FileStreamASCII',['../namespace_kernel.html#a2d29b6e56c9852148c3a28682f0a1523',1,'Kernel']]],
+  ['filestreamutf16_6',['FileStreamUTF16',['../namespace_kernel.html#acaf13fe82fcffcff64ae1f9a14afe7dc',1,'Kernel']]],
+  ['filestreamutf8_7',['FileStreamUTF8',['../namespace_kernel.html#a30c09d6fd1233585f6a2001901abdaf8',1,'Kernel']]],
   ['fisdata_8',['FisData',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#ad8fe03609bdc51803c7208d0b7ac2f3e',1,'AHCI.h']]],
   ['fisdevbits_9',['FisDevBits',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#ab0562fe39bdb0639fcb509cedac7ab92',1,'AHCI.h']]],
   ['fisdmasetup_10',['FisDmaSetup',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#adb5257c931c05710337a588c466de7a2',1,'AHCI.h']]],
   ['fispiosetup_11',['FisPioSetup',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#ad4f950c2487c8b130756a4bd2d995976',1,'AHCI.h']]],
   ['fisregd2h_12',['FisRegD2H',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#ad23a76075e16a2eb1f52ec46242fb2d6',1,'AHCI.h']]],
   ['fisregh2d_13',['FisRegH2D',['../modules_2_a_h_c_i_2_a_h_c_i_8h.html#ae4f2fa264cc741e915213fb1925dee16',1,'AHCI.h']]],
-  ['float_14',['Float',['../namespace_kernel.html#a700cdc4c3eab1d4db2060f9fe82b53de',1,'Kernel']]],
+  ['float_14',['Float',['../namespace_kernel.html#a379f59153b2bed91190438c3b6a8f3bc',1,'Kernel']]],
   ['fsref_15',['FSRef',['../_system_8h.html#a8f41f69272b428acdd0c8f885e238a15',1,'System.h']]],
-  ['functionor_16',['FunctionOr',['../namespace_kernel.html#a3066630848dbf82b3fedb2a0a3b63b59',1,'Kernel']]]
+  ['functionor_16',['FunctionOr',['../namespace_kernel.html#a4eb4fc3f90ddb0c311861bcb859715b6',1,'Kernel']]]
 ];

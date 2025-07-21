@@ -1,8 +1,13 @@
 var namespacemkfs =
 [
-    [ "detail", "namespacemkfs_1_1detail.html", null ],
+    [ "detail", "namespacemkfs_1_1detail.html", [
+      [ "build_args", "namespacemkfs_1_1detail.html#a107761c6d75211714d80a4dfbdf81a4f", null ],
+      [ "gib_cast", "namespacemkfs_1_1detail.html#ade4206537faa553332f90b29b47a5e5d", null ],
+      [ "parse_decimal", "namespacemkfs_1_1detail.html#ade0c559e37a1f6fab39f5bd551247786", null ],
+      [ "parse_signed", "namespacemkfs_1_1detail.html#a46649ac0947d82242b2f5bb5c48f77c5", null ]
+    ] ],
     [ "hefs", "namespacemkfs_1_1hefs.html", [
-      [ "ATime", "namespacemkfs_1_1hefs.html#a32493ad67b46f0ec54a847baa414ac9d", null ],
+      [ "ATime", "namespacemkfs_1_1hefs.html#af55f2f527081d81a5ae7282cb4c50330", null ],
       [ "__attribute__", "namespacemkfs_1_1hefs.html#a1478ebcc1a6659b62a6364d881efc09a", null ],
       [ "kHeFSFileKindBlock", "namespacemkfs_1_1hefs.html#afbd91b04f40843e711ce8392b65e890b", null ],
       [ "kHeFSFileKindCharacter", "namespacemkfs_1_1hefs.html#ae3338c0a1b3ef6053e07099451759f10", null ],

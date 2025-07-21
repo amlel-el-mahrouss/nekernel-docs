@@ -18,5 +18,5 @@ var _core_gfx_8h =
     [ "FBDrawInRegionA", "_core_gfx_8h.html#a3b5376cf44e86bc87da600e543cc4b0a", null ],
     [ "FBDrawInRegionToRgn", "_core_gfx_8h.html#af9d02ee14e669791281c792990cb5d5a", null ],
     [ "FBDrawInRegionToRgn", "_core_gfx_8h.html#af9d02ee14e669791281c792990cb5d5a", null ],
-    [ "fb_clear_video", "_core_gfx_8h.html#a86893a7ee234e9028efa997f5bab2139", null ]
+    [ "FB::fb_clear_video", "namespace_f_b.html#a86893a7ee234e9028efa997f5bab2139", null ]
 ];

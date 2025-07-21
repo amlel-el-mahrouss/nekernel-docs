@@ -29,6 +29,43 @@ var annotated_dup =
     [ "FB", "namespace_f_b.html", [
       [ "FBAccessibilty", "class_f_b_1_1_f_b_accessibilty.html", "class_f_b_1_1_f_b_accessibilty" ]
     ] ],
+    [ "Firmware", "namespace_firmware.html", [
+      [ "Detail", "namespace_firmware_1_1_detail.html", [
+        [ "EFI", "namespace_firmware_1_1_detail_1_1_e_f_i.html", [
+          [ "_EfiCPUPhyiscalLocation", "struct_firmware_1_1_detail_1_1_e_f_i_1_1___efi_c_p_u_phyiscal_location.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1___efi_c_p_u_phyiscal_location" ],
+          [ "_EfiExtendedProcessorInformation", "union_firmware_1_1_detail_1_1_e_f_i_1_1___efi_extended_processor_information.html", "union_firmware_1_1_detail_1_1_e_f_i_1_1___efi_extended_processor_information" ],
+          [ "_EfiMpServicesProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1___efi_mp_services_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1___efi_mp_services_protocol" ],
+          [ "_EfiProcessorInformation", "struct_firmware_1_1_detail_1_1_e_f_i_1_1___efi_processor_information.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1___efi_processor_information" ],
+          [ "EFI_FINAL", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_e_f_i___f_i_n_a_l.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_e_f_i___f_i_n_a_l" ],
+          [ "EFI_SIMPLE_NETWORK_MODE", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___m_o_d_e" ],
+          [ "EFI_SIMPLE_NETWORK_PROTOCOL", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_e_f_i___s_i_m_p_l_e___n_e_t_w_o_r_k___p_r_o_t_o_c_o_l" ],
+          [ "EfiBitmask", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_bitmask.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_bitmask" ],
+          [ "EfiBootServices", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_boot_services.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_boot_services" ],
+          [ "EfiDevicePathProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_device_path_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_device_path_protocol" ],
+          [ "EfiFileDevicePathProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_file_device_path_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_file_device_path_protocol" ],
+          [ "EfiFileProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_file_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_file_protocol" ],
+          [ "EfiGraphicsOutputBltPixel", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_blt_pixel.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_blt_pixel" ],
+          [ "EfiGraphicsOutputProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol" ],
+          [ "EfiGraphicsOutputProtocolMode", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol_mode.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol_mode" ],
+          [ "EfiGraphicsOutputProtocolModeInformation", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol_mode_information.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_graphics_output_protocol_mode_information" ],
+          [ "EfiHandle", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_handle.html", null ],
+          [ "EfiInputKey", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_input_key.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_input_key" ],
+          [ "EfiIOToken", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_i_o_token.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_i_o_token" ],
+          [ "EfiIPV4", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_i_p_v4.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_i_p_v4" ],
+          [ "EfiIPV6", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_i_p_v6.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_i_p_v6" ],
+          [ "EfiLoadFileProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_load_file_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_load_file_protocol" ],
+          [ "EfiLoadImageProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_load_image_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_load_image_protocol" ],
+          [ "EfiMemoryDescriptor", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_memory_descriptor.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_memory_descriptor" ],
+          [ "EfiRuntimeServices", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_runtime_services.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_runtime_services" ],
+          [ "EfiSimpleFilesystemProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_simple_filesystem_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_simple_filesystem_protocol" ],
+          [ "EfiSimpleTextInputProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_simple_text_input_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_simple_text_input_protocol" ],
+          [ "EfiSimpleTextOutputProtocol", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_simple_text_output_protocol.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_simple_text_output_protocol" ],
+          [ "EfiSystemTable", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_system_table.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_system_table" ],
+          [ "EfiTableHeader", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_table_header.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_table_header" ],
+          [ "EfiTime", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_time.html", "struct_firmware_1_1_detail_1_1_e_f_i_1_1_efi_time" ]
+        ] ]
+      ] ]
+    ] ],
     [ "Kernel", "namespace_kernel.html", [
       [ "Detail", "namespace_kernel_1_1_detail.html", [
         [ "FADT", "struct_kernel_1_1_detail_1_1_f_a_d_t.html", "struct_kernel_1_1_detail_1_1_f_a_d_t" ],
@@ -107,6 +144,7 @@ var annotated_dup =
       [ "Json", "class_kernel_1_1_json.html", "class_kernel_1_1_json" ],
       [ "JsonStreamReader", "struct_kernel_1_1_json_stream_reader.html", "struct_kernel_1_1_json_stream_reader" ],
       [ "KERNEL_TASK", "class_kernel_1_1_k_e_r_n_e_l___t_a_s_k.html", "class_kernel_1_1_k_e_r_n_e_l___t_a_s_k" ],
+      [ "KernelTaskHelper", "class_kernel_1_1_kernel_task_helper.html", "class_kernel_1_1_kernel_task_helper" ],
       [ "KString", "class_kernel_1_1_k_string.html", "class_kernel_1_1_k_string" ],
       [ "KStringBuilder", "class_kernel_1_1_k_string_builder.html", null ],
       [ "LoaderInterface", "class_kernel_1_1_loader_interface.html", "class_kernel_1_1_loader_interface" ],
@@ -141,6 +179,7 @@ var annotated_dup =
       [ "PROCESS_FILE_TREE", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e.html", "struct_kernel_1_1_p_r_o_c_e_s_s___f_i_l_e___t_r_e_e" ],
       [ "PROCESS_HEAP_TREE", "struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e.html", "struct_kernel_1_1_p_r_o_c_e_s_s___h_e_a_p___t_r_e_e" ],
       [ "PROCESS_IMAGE", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e.html", "struct_kernel_1_1_p_r_o_c_e_s_s___i_m_a_g_e" ],
+      [ "PROCESS_SPECIAL_TREE", "struct_kernel_1_1_p_r_o_c_e_s_s___s_p_e_c_i_a_l___t_r_e_e.html", null ],
       [ "PTEWrapper", "class_kernel_1_1_p_t_e_wrapper.html", "class_kernel_1_1_p_t_e_wrapper" ],
       [ "RawIPAddress", "class_kernel_1_1_raw_i_p_address.html", "class_kernel_1_1_raw_i_p_address" ],
       [ "RawIPAddress6", "class_kernel_1_1_raw_i_p_address6.html", "class_kernel_1_1_raw_i_p_address6" ],

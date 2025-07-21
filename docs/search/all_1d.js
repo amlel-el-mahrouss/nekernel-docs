@@ -15,10 +15,10 @@ var searchData=
   ['x_5fpm2controlblock_12',['X_PM2ControlBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a3838926b46b2a3fa26a280260a4b47c3',1,'Kernel::Detail::FADT']]],
   ['x_5fpmtimerblock_13',['X_PMTimerBlock',['../struct_kernel_1_1_detail_1_1_f_a_d_t.html#a3ccba0eee7b816e0a9dbbdc3635e7466',1,'Kernel::Detail::FADT']]],
   ['xcoff_2eh_14',['XCOFF.h',['../_x_c_o_f_f_8h.html',1,'']]],
-  ['xcoff_5ffile_5fheader_15',['xcoff_file_header',['../struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html',1,'XCOFF_FILE_HEADER'],['../_x_c_o_f_f_8h.html#a58f7cba32efe2a5336c3ee2c130ccff7',1,'XCOFF_FILE_HEADER:&#160;XCOFF.h']]],
+  ['xcoff_5ffile_5fheader_15',['XCOFF_FILE_HEADER',['../struct_x_c_o_f_f___f_i_l_e___h_e_a_d_e_r.html',1,'XCOFF_FILE_HEADER'],['../_x_c_o_f_f_8h.html#a58f7cba32efe2a5336c3ee2c130ccff7',1,'XCOFF_FILE_HEADER:&#160;XCOFF.h']]],
   ['xcoff_5ffile_5fheader32_16',['XCOFF_FILE_HEADER32',['../_x_c_o_f_f_8h.html#a3a42856c4d8be38da23da82ffb8f37c4',1,'XCOFF.h']]],
   ['xcoff_5ffile_5fheader64_17',['XCOFF_FILE_HEADER64',['../_x_c_o_f_f_8h.html#a36923ad2a5e2579c33546dddef6a4cb5',1,'XCOFF.h']]],
-  ['xcoff_5ffork_5fheader_18',['xcoff_fork_header',['../_x_c_o_f_f_8h.html#a6ed5ed1baa0bec226f725f447818a31d',1,'XCOFF_FORK_HEADER:&#160;XCOFF.h'],['../struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html',1,'XCOFF_FORK_HEADER']]],
+  ['xcoff_5ffork_5fheader_18',['XCOFF_FORK_HEADER',['../struct_x_c_o_f_f___f_o_r_k___h_e_a_d_e_r.html',1,'XCOFF_FORK_HEADER'],['../_x_c_o_f_f_8h.html#a6ed5ed1baa0bec226f725f447818a31d',1,'XCOFF_FORK_HEADER:&#160;XCOFF.h']]],
   ['xhci_2eh_19',['XHCI.h',['../_x_h_c_i_8h.html',1,'']]],
   ['xsdtaddress_20',['XsdtAddress',['../class_kernel_1_1_r_s_d_p.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['gib_0',['gib',['../kernel_2_ne_kit_2macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95',1,'GIB:&#160;Macros.h'],['../lib_system_2_system_kit_2macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95',1,'GIB:&#160;Macros.h']]],
-  ['gib_5fcast_1',['gib_cast',['../kernel_2_ne_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b',1,'gib_cast:&#160;Macros.h'],['../lib_system_2_system_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b',1,'gib_cast:&#160;Macros.h']]],
+  ['gib_0',['GIB',['../_e_f_i_2_n_s_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95',1,'GIB:&#160;NS.h'],['../_c_p_u_i_d_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95',1,'GIB:&#160;CPUID.h'],['../kernel_2_ne_kit_2macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95',1,'GIB:&#160;Macros.h'],['../lib_system_2_system_kit_2macros_8h.html#a9b71ebdfa9bf39cd412661b46eb3dc95',1,'GIB:&#160;Macros.h']]],
+  ['gib_5fcast_1',['gib_cast',['../_e_f_i_2_n_s_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b',1,'gib_cast:&#160;NS.h'],['../_c_p_u_i_d_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b',1,'gib_cast:&#160;CPUID.h'],['../kernel_2_ne_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b',1,'gib_cast:&#160;Macros.h'],['../lib_system_2_system_kit_2macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b',1,'gib_cast:&#160;Macros.h']]],
   ['gicc_5fbase_2',['GICC_BASE',['../_a_r_m64_2_hal_application_processor_8cc.html#a971c4b3a9504879ce74b96226288f742',1,'HalApplicationProcessor.cc']]],
   ['gicc_5fctlr_3',['GICC_CTLR',['../_a_r_m64_2_hal_application_processor_8cc.html#a11871e15a62cbfcc1e54f3dd2ce21e74',1,'HalApplicationProcessor.cc']]],
   ['gicc_5feoir_4',['GICC_EOIR',['../_a_r_m64_2_hal_application_processor_8cc.html#af92519fe60b0cf2183a6100bea15dd43',1,'HalApplicationProcessor.cc']]],

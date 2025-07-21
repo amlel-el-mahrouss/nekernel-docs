@@ -2,7 +2,7 @@ var searchData=
 [
   ['pagemgr_2ecc_0',['PageMgr.cc',['../_page_mgr_8cc.html',1,'']]],
   ['pagemgr_2eh_1',['PageMgr.h',['../_page_mgr_8h.html',1,'']]],
-  ['paging_2eh_2',['paging.h',['../_a_m_d64_2_paging_8h.html',1,'(Global Namespace)'],['../_a_r_m64_2_paging_8h.html',1,'(Global Namespace)']]],
+  ['paging_2eh_2',['Paging.h',['../_a_m_d64_2_paging_8h.html',1,'(Global Namespace)'],['../_a_r_m64_2_paging_8h.html',1,'(Global Namespace)']]],
   ['pair_2eh_3',['Pair.h',['../_pair_8h.html',1,'']]],
   ['pci_2ecc_4',['PCI.cc',['../_p_c_i_8cc.html',1,'']]],
   ['pci_2eh_5',['PCI.h',['../_p_c_i_8h.html',1,'']]],
@@ -18,9 +18,9 @@ var searchData=
   ['powerfactory_2eh_15',['PowerFactory.h',['../_power_factory_8h.html',1,'']]],
   ['prdt_2ecc_16',['PRDT.cc',['../_p_r_d_t_8cc.html',1,'']]],
   ['prdt_2eh_17',['PRDT.h',['../_p_r_d_t_8h.html',1,'']]],
-  ['processor_2eh_18',['processor.h',['../_a_r_m64_2_processor_8h.html',1,'(Global Namespace)'],['../_p_o_w_e_r_2_processor_8h.html',1,'(Global Namespace)'],['../_a_m_d64_2_processor_8h.html',1,'(Global Namespace)']]],
+  ['processor_2eh_18',['Processor.h',['../_a_m_d64_2_processor_8h.html',1,'(Global Namespace)'],['../_a_r_m64_2_processor_8h.html',1,'(Global Namespace)'],['../_p_o_w_e_r_2_processor_8h.html',1,'(Global Namespace)']]],
   ['processscheduler_2eh_19',['ProcessScheduler.h',['../_process_scheduler_8h.html',1,'']]],
   ['property_2ecc_20',['Property.cc',['../_property_8cc.html',1,'']]],
-  ['property_2eh_21',['property.h',['../dev_2kernel_2_c_f_kit_2_property_8h.html',1,'(Global Namespace)'],['../public_2frameworks_2_core_foundation_8fwrk_2headers_2_property_8h.html',1,'(Global Namespace)']]],
+  ['property_2eh_21',['Property.h',['../dev_2kernel_2_c_f_kit_2_property_8h.html',1,'(Global Namespace)'],['../public_2frameworks_2_core_foundation_8fwrk_2headers_2_property_8h.html',1,'(Global Namespace)']]],
   ['protocol_2eh_22',['Protocol.h',['../_protocol_8h.html',1,'']]]
 ];

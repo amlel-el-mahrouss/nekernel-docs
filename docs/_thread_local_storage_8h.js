@@ -7,7 +7,7 @@ var _thread_local_storage_8h =
     [ "kCookieMag1Idx", "_thread_local_storage_8h.html#ab1357a121e283459f40f1118dfa9d395", null ],
     [ "kCookieMag2", "_thread_local_storage_8h.html#aaa7f99f2086a60125a41be9ee290c1d4", null ],
     [ "kCookieMag2Idx", "_thread_local_storage_8h.html#a5d55858d4f22bdb9c35fdeb1c0ca88c8", null ],
-    [ "kTLSCookieLen", "_thread_local_storage_8h.html#a3254ac69ed0c1cc604149addb63c3402", null ],
+    [ "kCookieMagLen", "_thread_local_storage_8h.html#af069ae893187b25905d2731ebae20af0", null ],
     [ "rt_install_tib", "_thread_local_storage_8h.html#a78887fe531343d5c58429ed6ce78b401", null ],
     [ "tls_check_syscall_impl", "_thread_local_storage_8h.html#a69fe1123b02ca28de94829abb328b269", null ],
     [ "tls_check_tib", "_thread_local_storage_8h.html#ad638241642268000c48db243cd4fe1a7", null ],

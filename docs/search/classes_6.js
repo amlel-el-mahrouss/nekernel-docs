@@ -7,11 +7,13 @@ var searchData=
   ['filemgr_5frestrict_4',['FILEMGR_RESTRICT',['../struct_kernel_1_1_f_i_l_e_m_g_r___r_e_s_t_r_i_c_t.html',1,'Kernel']]],
   ['filestream_5',['FileStream',['../class_kernel_1_1_file_stream.html',1,'Kernel']]],
   ['filestream_3c_20char_20_3e_6',['FileStream&lt; Char &gt;',['../class_kernel_1_1_file_stream.html',1,'Kernel']]],
-  ['fisdata_7',['FisData',['../struct_fis_data.html',1,'']]],
-  ['fisdevbits_8',['FisDevBits',['../struct_fis_dev_bits.html',1,'']]],
-  ['fisdmasetup_9',['FisDmaSetup',['../struct_fis_dma_setup.html',1,'']]],
-  ['fispiosetup_10',['FisPioSetup',['../struct_fis_pio_setup.html',1,'']]],
-  ['fisregd2h_11',['FisRegD2H',['../struct_fis_reg_d2_h.html',1,'']]],
-  ['fisregh2d_12',['FisRegH2D',['../struct_fis_reg_h2_d.html',1,'']]],
-  ['function_13',['Function',['../class_kernel_1_1_function.html',1,'Kernel']]]
+  ['filestream_3c_20utf8char_20_3e_7',['FileStream&lt; Utf8Char &gt;',['../class_kernel_1_1_file_stream.html',1,'Kernel']]],
+  ['filestream_3c_20widechar_20_3e_8',['FileStream&lt; WideChar &gt;',['../class_kernel_1_1_file_stream.html',1,'Kernel']]],
+  ['fisdata_9',['FisData',['../struct_fis_data.html',1,'']]],
+  ['fisdevbits_10',['FisDevBits',['../struct_fis_dev_bits.html',1,'']]],
+  ['fisdmasetup_11',['FisDmaSetup',['../struct_fis_dma_setup.html',1,'']]],
+  ['fispiosetup_12',['FisPioSetup',['../struct_fis_pio_setup.html',1,'']]],
+  ['fisregd2h_13',['FisRegD2H',['../struct_fis_reg_d2_h.html',1,'']]],
+  ['fisregh2d_14',['FisRegH2D',['../struct_fis_reg_h2_d.html',1,'']]],
+  ['function_15',['Function',['../class_kernel_1_1_function.html',1,'Kernel']]]
 ];

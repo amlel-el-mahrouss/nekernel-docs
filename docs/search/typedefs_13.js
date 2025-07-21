@@ -1,15 +1,15 @@
 var searchData=
 [
   ['uarch_5ft_0',['uarch_t',['../_cxx_abi_8h.html#a35fc01d4eba01f3f2ec636bd6b5ff34f',1,'CxxAbi.h']]],
-  ['uchar_1',['UChar',['../namespace_kernel.html#a3ec5b04a6ee57c6d83916de4e1fa1bc4',1,'Kernel']]],
-  ['udpnetworkdevice_2',['UDPNetworkDevice',['../namespace_kernel.html#afcbc34890cf01b2365866531e173c55b',1,'Kernel']]],
-  ['uint_3',['UInt',['../namespace_kernel.html#a43c76a8770f77cb9af3332a8e5767e50',1,'Kernel']]],
-  ['uint16_4',['uint16',['../namespace_kernel.html#abdd8e7fddca73c28a672334b0a1bb260',1,'Kernel::UInt16'],['../lib_system_2_system_kit_2macros_8h.html#a52977b924e23d8e96863e9e904a29048',1,'UInt16:&#160;Macros.h']]],
-  ['uint32_5',['uint32',['../namespace_kernel.html#a2d323bd3aa6691b734a555200de5b4cf',1,'Kernel::UInt32'],['../lib_system_2_system_kit_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada',1,'UInt32:&#160;Macros.h']]],
-  ['uint64_6',['uint64',['../namespace_kernel.html#a6d35555a92a80d5864d0a1cce15a38a5',1,'Kernel::UInt64'],['../lib_system_2_system_kit_2macros_8h.html#a3fb8aedfc4331bfce8facae4e2630dc9',1,'UInt64:&#160;Macros.h']]],
-  ['uint8_7',['uint8',['../namespace_kernel.html#afbb00ca67495bf45618a429cf4f82f33',1,'Kernel::UInt8'],['../lib_system_2_system_kit_2macros_8h.html#afa67a934526c218d732989fc15aac69e',1,'UInt8:&#160;Macros.h']]],
-  ['uintptr_8',['uintptr',['../namespace_kernel.html#a84f01a3121e81004f9e4f9406efbb2bb',1,'Kernel::UIntPtr'],['../lib_system_2_system_kit_2macros_8h.html#aea33bdc955927086847adc88212e6b2e',1,'UIntPtr:&#160;Macros.h']]],
-  ['ulong_9',['ULong',['../namespace_kernel.html#acb5a68327a792bee71ba0699916a126d',1,'Kernel']]],
+  ['uchar_1',['UChar',['../namespace_kernel.html#aa60c607eae5a25cde07888640575d83f',1,'Kernel']]],
+  ['udpnetworkdevice_2',['UDPNetworkDevice',['../namespace_kernel.html#a6a78f6a7bd04a83cc2b481a125d8c0a1',1,'Kernel']]],
+  ['uint_3',['UInt',['../namespace_kernel.html#afcf806338fbc4ce82b6d7ac33fcfc4e2',1,'Kernel']]],
+  ['uint16_4',['UInt16',['../namespace_kernel.html#aca0bb960bafa2c3bf2d6137215d36106',1,'Kernel::UInt16'],['../lib_system_2_system_kit_2macros_8h.html#a52977b924e23d8e96863e9e904a29048',1,'UInt16:&#160;Macros.h']]],
+  ['uint32_5',['UInt32',['../namespace_kernel.html#a7442035f935923c9907205528c22c747',1,'Kernel::UInt32'],['../lib_system_2_system_kit_2macros_8h.html#a1f75821f5858b98dc453711e46bf9ada',1,'UInt32:&#160;Macros.h']]],
+  ['uint64_6',['UInt64',['../namespace_kernel.html#af50e3ac58719ff9711f002f1bab2186b',1,'Kernel']]],
+  ['uint8_7',['UInt8',['../namespace_kernel.html#a449f8e58a47ebd1e132b25359201a703',1,'Kernel::UInt8'],['../lib_system_2_system_kit_2macros_8h.html#afa67a934526c218d732989fc15aac69e',1,'UInt8:&#160;Macros.h']]],
+  ['uintptr_8',['UIntPtr',['../namespace_kernel.html#ae249f1525eae0bea0e0e1412bb50fc1e',1,'Kernel']]],
+  ['ulong_9',['ULong',['../namespace_kernel.html#a846207b7a0530ea027f97916f2d0501a',1,'Kernel']]],
   ['usbcommandregister_10',['USBCommandRegister',['../_x_h_c_i_8h.html#a778f1b0e26a9b6a2cb36d6b870ad6621',1,'XHCI.h']]],
   ['usbinterruptenableregister_11',['USBInterruptEnableRegister',['../_x_h_c_i_8h.html#a39372bb8fa687ce43846106f45b5307f',1,'XHCI.h']]],
   ['usbstatusregister_12',['USBStatusRegister',['../_x_h_c_i_8h.html#afead76bbcaaaad0f8db120d4b37933d9',1,'XHCI.h']]],
@@ -17,8 +17,8 @@ var searchData=
   ['user_5fprocess_5fref_14',['USER_PROCESS_REF',['../namespace_kernel.html#af9a5e0e0479e820c37a0995bd7af5843',1,'Kernel']]],
   ['userpublickey_15',['UserPublicKey',['../namespace_kernel.html#a9eec37da34f03b8e1395bed5deae3104',1,'Kernel']]],
   ['userpublickeytype_16',['UserPublicKeyType',['../namespace_kernel.html#a58503a2dd8c6303cb88b24fb615a6a71',1,'Kernel']]],
-  ['ushort_17',['UShort',['../namespace_kernel.html#a2ddad4e971bf86b7ccd3fa1fb9eb3da1',1,'Kernel']]],
-  ['utf16char_18',['Utf16Char',['../namespace_kernel.html#a2c6ff14dd8a82831d54d27370d39c5e1',1,'Kernel']]],
-  ['utf32char_19',['Utf32Char',['../namespace_kernel.html#afc9778e6f44b1c6c0febf4ad9e29058f',1,'Kernel']]],
-  ['utf8char_20',['Utf8Char',['../namespace_kernel.html#aaa58f645f51896d26b963a7f871c9b66',1,'Kernel']]]
+  ['ushort_17',['UShort',['../namespace_kernel.html#aae66edaec93df410c0371fecb97483c1',1,'Kernel']]],
+  ['utf16char_18',['Utf16Char',['../namespace_kernel.html#ae85089c91b3e950645d5f899f57c7848',1,'Kernel']]],
+  ['utf32char_19',['Utf32Char',['../namespace_kernel.html#a0bc4ca8ca02eb72f0503857abac18ec5',1,'Kernel']]],
+  ['utf8char_20',['Utf8Char',['../namespace_kernel.html#ac61c3fe72708c429304a09d5fb4425a4',1,'Kernel']]]
 ];

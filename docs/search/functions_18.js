@@ -19,7 +19,7 @@ var searchData=
   ['_7ecfproperty_16',['~CFProperty',['../class_c_f_1_1_c_f___o_b_j_e_c_t.html#ab0d11cf93450938236b51e71ccddec36',1,'CF::CF_OBJECT']]],
   ['_7ecfref_17',['~CFRef',['../class_c_f_1_1_c_f___o_b_j_e_c_t.html#a2e17c0c821f7ff139fd2d475bc3ceb7f',1,'CF::CF_OBJECT']]],
   ['_7echronointerface_18',['~ChronoInterface',['../class_kernel_1_1_chrono_interface.html#a4fbaab824fc5f21c9ac9bc6a8b0a7470',1,'Kernel::ChronoInterface']]],
-  ['_7edevice_19',['~device',['../class_device.html#a6fef4f7180512c7517c9696cd95e503a',1,'Device::~Device()'],['../class_kernel_1_1_p_c_i_1_1_device.html#a9dabc419c8d8df3a686c33ce042bc99a',1,'Kernel::PCI::Device::~Device()']]],
+  ['_7edevice_19',['~Device',['../class_device.html#a6fef4f7180512c7517c9696cd95e503a',1,'Device::~Device()'],['../class_kernel_1_1_p_c_i_1_1_device.html#a9dabc419c8d8df3a686c33ce042bc99a',1,'Kernel::PCI::Device::~Device()']]],
   ['_7edeviceinterface_20',['~DeviceInterface',['../class_kernel_1_1_device_interface.html#a1cdbe4874989cff974a8fe6322b45df9',1,'Kernel::DeviceInterface']]],
   ['_7ediskswapinterface_21',['~DiskSwapInterface',['../class_kernel_1_1_disk_swap_interface.html#a725414af6893cde93fe72b2b27b827ed',1,'Kernel::DiskSwapInterface']]],
   ['_7edmawrapper_22',['~DMAWrapper',['../class_kernel_1_1_d_m_a_wrapper.html#a6a9e31472dfde1c6dc638c3220bd08c2',1,'Kernel::DMAWrapper']]],

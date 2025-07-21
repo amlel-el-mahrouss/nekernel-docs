@@ -34,13 +34,13 @@ var namespace_kernel_1_1_h_a_l =
     [ "rt_halt", "namespace_kernel_1_1_h_a_l.html#a425b7a90d1d68113864d0e3aaf970643", null ],
     [ "rt_std", "namespace_kernel_1_1_h_a_l.html#a9b3552568a70c0166fc199c54efa66d8", null ],
     [ "rt_sti", "namespace_kernel_1_1_h_a_l.html#a3cf4d811d797221ac4d6f59b336ddfe1", null ],
-    [ "sched_jump_to_task", "namespace_kernel_1_1_h_a_l.html#acd205dc2ac194a0c7a91734ef3da276f", null ],
+    [ "sched_jump_to_task", "namespace_kernel_1_1_h_a_l.html#ab5c8f5faf01d22b03ed9bde6fb341a6a", null ],
     [ "kApicBaseAddress", "namespace_kernel_1_1_h_a_l.html#a7773e37d7b58206423ca0080559679f6", null ],
     [ "kAPICLocales", "namespace_kernel_1_1_h_a_l.html#a262496e4eaef336eacc416c4fc64777c", null ],
     [ "kHWThread", "namespace_kernel_1_1_h_a_l.html#abc52557f47d4364ad63e4dcf64ffceff", null ],
-    [ "kMADTBlock", "namespace_kernel_1_1_h_a_l.html#a4e00d97e0a463602229c259b045cd027", null ],
     [ "kRawMADT", "namespace_kernel_1_1_h_a_l.html#abbefd69805bc5bd6fc9f7c76f16189fa", null ],
     [ "kSMPAware", "namespace_kernel_1_1_h_a_l.html#a51b3fd0b52323b4e7cc2d3defd4c26cf", null ],
+    [ "kSMPBlock", "namespace_kernel_1_1_h_a_l.html#a1f746026bbf17e4f5d8702b57a805bf9", null ],
     [ "kSMPCount", "namespace_kernel_1_1_h_a_l.html#ab6b8704136dca87ca1005a0d67a5f410", null ],
     [ "kSMPInterrupt", "namespace_kernel_1_1_h_a_l.html#a64600185cf6ff9c7ac889c9c597672ea", null ]
 ];

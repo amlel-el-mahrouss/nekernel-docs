@@ -14,8 +14,6 @@ var dir_47db305ca16612c6e2a66f0f32acfc5a =
     [ "BitMapMgr.cc", "_bit_map_mgr_8cc.html", "_bit_map_mgr_8cc" ],
     [ "CodeMgr.cc", "_code_mgr_8cc.html", "_code_mgr_8cc" ],
     [ "Crc32.cc", "_crc32_8cc.html", "_crc32_8cc" ],
-    [ "CxxAbi-AMD64.cc", "_cxx_abi-_a_m_d64_8cc.html", null ],
-    [ "CxxAbi-ARM64.cc", "_cxx_abi-_a_r_m64_8cc.html", null ],
     [ "Defines.cc", "_defines_8cc.html", null ],
     [ "DeviceMgr.cc", "_device_mgr_8cc.html", null ],
     [ "DriveMgr.cc", "_drive_mgr_8cc.html", "_drive_mgr_8cc" ],

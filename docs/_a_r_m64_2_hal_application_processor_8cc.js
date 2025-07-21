@@ -15,11 +15,11 @@ var _a_r_m64_2_hal_application_processor_8cc =
     [ "GICD_ISENABLER", "_a_r_m64_2_hal_application_processor_8cc.html#ad6013481a4c73be9ba10c48b63c0b4b3", null ],
     [ "GICD_ISPENDR", "_a_r_m64_2_hal_application_processor_8cc.html#adcfba29d834be7844951c0db7a9706c8", null ],
     [ "GICD_ITARGETSR", "_a_r_m64_2_hal_application_processor_8cc.html#a9128764019e69b9d5ec839ecd583dd87", null ],
-    [ "mp_get_current_task", "_a_r_m64_2_hal_application_processor_8cc.html#a64b1746030e3d8fb1f81e7f4debd8335", null ],
-    [ "mp_handle_gic_interrupt_el0", "_a_r_m64_2_hal_application_processor_8cc.html#a9a536fa826b965fedc4a9bc0eae2db03", null ],
-    [ "mp_init_cores", "_a_r_m64_2_hal_application_processor_8cc.html#a572ff592dc970ed6b041cded38d31028", null ],
-    [ "mp_register_task", "_a_r_m64_2_hal_application_processor_8cc.html#aca71e974851c325b8699f4ff742c0be8", null ],
-    [ "mp_setup_gic_el0", "_a_r_m64_2_hal_application_processor_8cc.html#abc92ef4ad7f6efcbd4ba3e0e605b6dfe", null ],
-    [ "kGICEnabled", "_a_r_m64_2_hal_application_processor_8cc.html#a1d3140ee2ff731643e55951a785cb51b", null ],
-    [ "kHWThread", "_a_r_m64_2_hal_application_processor_8cc.html#ae3f6bde4264c866ebce2c2646250e191", null ]
+    [ "Kernel::mp_get_current_task", "namespace_kernel.html#a64b1746030e3d8fb1f81e7f4debd8335", null ],
+    [ "Kernel::Detail::mp_handle_gic_interrupt_el0", "namespace_kernel_1_1_detail.html#a9a536fa826b965fedc4a9bc0eae2db03", null ],
+    [ "Kernel::mp_init_cores", "namespace_kernel.html#a572ff592dc970ed6b041cded38d31028", null ],
+    [ "Kernel::mp_register_task", "namespace_kernel.html#aca71e974851c325b8699f4ff742c0be8", null ],
+    [ "Kernel::Detail::mp_setup_gic_el0", "namespace_kernel_1_1_detail.html#abc92ef4ad7f6efcbd4ba3e0e605b6dfe", null ],
+    [ "Kernel::Detail::kGICEnabled", "namespace_kernel_1_1_detail.html#a1d3140ee2ff731643e55951a785cb51b", null ],
+    [ "Kernel::kHWThread", "namespace_kernel.html#ae3f6bde4264c866ebce2c2646250e191", null ]
 ];
