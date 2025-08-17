@@ -1,19 +1,9 @@
 var searchData=
 [
-  ['sci_5funused_0',['SCI_UNUSED',['../user_2Macros_8h.html#ae7c0aa58e0c6f5934c5738a8cd63a530',1,'Macros.h']]],
-  ['sdt_5fobject_1',['SDT_OBJECT',['../ACPI_8h.html#a7a338e800248cd56cde3effbf5cc6c44',1,'ACPI.h']]],
-  ['setmem_2',['SetMem',['../Support_8h.html#a14e2d58d4f377e1e0b972ecf1f4be97e',1,'Support.h']]],
-  ['sigabrt_3',['SIGABRT',['../Signals_8h.html#aa86c630133e5b5174ac970227b273446',1,'Signals.h']]],
-  ['sigatch_4',['SIGATCH',['../Signals_8h.html#a6947e0d9bc20ca04f86d55f044fb2a27',1,'Signals.h']]],
-  ['sigbrek_5',['SIGBREK',['../Signals_8h.html#a6a3be77437e6f054434df7fa7652b9f0',1,'Signals.h']]],
-  ['sigcont_6',['SIGCONT',['../Signals_8h.html#a024f43063003e753afc6cca1acd6e104',1,'Signals.h']]],
-  ['sigdtch_7',['SIGDTCH',['../Signals_8h.html#a11459d7423f08501215a99d656c08621',1,'Signals.h']]],
-  ['sigexec_8',['SIGEXEC',['../Signals_8h.html#a828579793e98da2b4e33e182721cc92d',1,'Signals.h']]],
-  ['sigkill_9',['SIGKILL',['../Signals_8h.html#addd8dcd406ce514ab3b4f576a5343d42',1,'Signals.h']]],
-  ['sigpaus_10',['SIGPAUS',['../Signals_8h.html#a7a6ee33cbc5279bd9133923c4fb58a16',1,'Signals.h']]],
-  ['sigtrap_11',['SIGTRAP',['../Signals_8h.html#aa2beb906ab1b46676e63823f4e773c38',1,'Signals.h']]],
-  ['static_12',['STATIC',['../kernel_2NewKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'Macros.h']]],
-  ['strcmp_13',['StrCmp',['../Support_8h.html#ab3944184d7c3bdf03f64a5c931464b08',1,'Support.h']]],
-  ['stringify_14',['STRINGIFY',['../kernel_2NewKit_2Macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'Macros.h']]],
-  ['strlen_15',['StrLen',['../Support_8h.html#a94a5b7998848651b99c8b45e19c534d7',1,'Support.h']]]
+  ['rgb_0',['RGB',['../kernel_2NeKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54',1,'Macros.h']]],
+  ['rtl_5falloca_1',['RTL_ALLOCA',['../kernel_2NeKit_2Macros_8h.html#a73e964a8b06f3ee45f2d04ab6c91096c',1,'Macros.h']]],
+  ['rtl_5fendian_2',['RTL_ENDIAN',['../kernel_2NeKit_2Macros_8h.html#aa5758c5d37f292d61ebb9ea3c58f1cc5',1,'Macros.h']]],
+  ['rtl_5finit_5fobject_3',['RTL_INIT_OBJECT',['../kernel_2NeKit_2Macros_8h.html#a171cc9c81f84474d52f4fc6df2dc12fe',1,'Macros.h']]],
+  ['rtl_5fnode_5fcast_4',['rtl_node_cast',['../FileMgr_8h.html#a0ea404150653b03d7993de5dc12be955',1,'FileMgr.h']]],
+  ['rtl_5fnop_5fop_5',['rtl_nop_op',['../POWER_2Processor_8h.html#aafe21c2912bcd2f65c893a84a917af87',1,'Processor.h']]]
 ];

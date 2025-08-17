@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -111,8 +110,47 @@ Functions</h2></td></tr>
 <tr class="memitem:aef8691815475d96a9eacc0ccf7ef16e8" id="r_aef8691815475d96a9eacc0ccf7ef16e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#acbc040f7132975ab615ece6b877b4c25">SInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDI.html#aef8691815475d96a9eacc0ccf7ef16e8">DIFormatFilesystemNeFS</a> (struct <a class="el" href="structDI_1_1DI__DISK__IMAGE.html">DI_DISK_IMAGE</a> &amp;img) noexcept</td></tr>
 <tr class="memdesc:aef8691815475d96a9eacc0ccf7ef16e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">NeFS format over EPM.  <br /></td></tr>
 <tr class="separator:aef8691815475d96a9eacc0ccf7ef16e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35a57c1b2b488ba9bf6c3314a414920" id="r_ac35a57c1b2b488ba9bf6c3314a414920"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#acbc040f7132975ab615ece6b877b4c25">SInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDI.html#ac35a57c1b2b488ba9bf6c3314a414920">DIFormatFilesystemHeFS</a> (struct <a class="el" href="structDI_1_1DI__DISK__IMAGE.html">DI_DISK_IMAGE</a> &amp;img) noexcept</td></tr>
+<tr class="memdesc:ac35a57c1b2b488ba9bf6c3314a414920"><td class="mdescLeft">&#160;</td><td class="mdescRight">HeFS format over EPM.  <br /></td></tr>
+<tr class="separator:ac35a57c1b2b488ba9bf6c3314a414920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ac35a57c1b2b488ba9bf6c3314a414920" name="ac35a57c1b2b488ba9bf6c3314a414920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35a57c1b2b488ba9bf6c3314a414920">&#9670;&#160;</a></span>DIFormatFilesystemHeFS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceKernel.html#acbc040f7132975ab615ece6b877b4c25">SInt32</a> DI::DIFormatFilesystemHeFS </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structDI_1_1DI__DISK__IMAGE.html">DI_DISK_IMAGE</a> &amp;&#160;</td>
+          <td class="paramname"><em>img</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>HeFS format over EPM. </p>
+<p>format HeFS over an EPM disk.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">img</td><td>disk image structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status code upon completion. </dd></dl>
+
+</div>
+</div>
 <a id="aef8691815475d96a9eacc0ccf7ef16e8" name="aef8691815475d96a9eacc0ccf7ef16e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef8691815475d96a9eacc0ccf7ef16e8">&#9670;&#160;</a></span>DIFormatFilesystemNeFS()</h2>
 
@@ -138,6 +176,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>NeFS format over EPM. </p>
+<p>format NeFS over an EPM disk.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">img</td><td>disk image structure. </td></tr>

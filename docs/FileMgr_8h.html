@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -95,20 +94,24 @@ $(document).ready(function(){initNavTree('FileMgr_8h.html',''); initResizable();
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">FileMgr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>File Manager.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="Ext2_8h_source.html">FSKit/Ext2.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="HeFS_8h_source.html">FSKit/HeFS.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="NeFS_8h_source.html">FSKit/NeFS.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="CompilerKit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="DebugOutput_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="HeapMgr_8h_source.html">KernelKit/HeapMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="KPC_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="MemoryMgr_8h_source.html">KernelKit/MemoryMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ErrorOr_8h_source.html">NewKit/ErrorOr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2NewKit_2Ref_8h_source.html">NewKit/Ref.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Stream_8h_source.html">NewKit/Stream.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ErrorOr_8h_source.html">NeKit/ErrorOr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dev_2kernel_2NeKit_2Ref_8h_source.html">NeKit/Ref.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Stream_8h_source.html">NeKit/Stream.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="CompilerHint_8h_source.html">hint/CompilerHint.h</a>&gt;</code><br />
 </div>
 <p><a href="FileMgr_8h_source.html">Go to the source code of this file.</a></p>
@@ -120,8 +123,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1FileStream.html">Kernel::FileStream&lt; Encoding, FSClass &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1FileRestrictKind.html">Kernel::FileRestrictKind</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">restrict information about the file descriptor.  <a href="structKernel_1_1FileRestrictKind.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1FILEMGR__RESTRICT.html">Kernel::FILEMGR_RESTRICT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">restrict information about the file descriptor.  <a href="structKernel_1_1FILEMGR__RESTRICT.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -133,7 +136,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:aeb975638ccc0749cc0f20f97e9d92c8e" id="r_aeb975638ccc0749cc0f20f97e9d92c8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FileMgr_8h.html#aeb975638ccc0749cc0f20f97e9d92c8e">kRestrictR</a>&#160;&#160;&#160;&quot;r&quot;</td></tr>
-<tr class="memdesc:aeb975638ccc0749cc0f20f97e9d92c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include filesystems that neoskrnl supports.  <br /></td></tr>
+<tr class="memdesc:aeb975638ccc0749cc0f20f97e9d92c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include filesystems that NeKernel supports.  <br /></td></tr>
 <tr class="separator:aeb975638ccc0749cc0f20f97e9d92c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5e2574cd77043f7f484c2c864d51ba" id="r_ada5e2574cd77043f7f484c2c864d51ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FileMgr_8h.html#ada5e2574cd77043f7f484c2c864d51ba">kRestrictRB</a>&#160;&#160;&#160;&quot;rb&quot;</td></tr>
 <tr class="separator:ada5e2574cd77043f7f484c2c864d51ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +150,6 @@ Macros</h2></td></tr>
 <tr class="separator:acf34611c032243432eb577c447651563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea404150653b03d7993de5dc12be955" id="r_a0ea404150653b03d7993de5dc12be955"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FileMgr_8h.html#a0ea404150653b03d7993de5dc12be955">rtl_node_cast</a>(PTR)&#160;&#160;&#160;reinterpret_cast&lt;<a class="el" href="namespaceKernel.html#aa519d3877ce6af25ab70f48dce4e25eb">Kernel::NodePtr</a>&gt;(PTR)</td></tr>
 <tr class="separator:a0ea404150653b03d7993de5dc12be955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0af5b6c912d5dae27719048452ebcf" id="r_a4a0af5b6c912d5dae27719048452ebcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FileMgr_8h.html#a4a0af5b6c912d5dae27719048452ebcf">kFileOpsCount</a>&#160;&#160;&#160;(4U)</td></tr>
-<tr class="separator:a4a0af5b6c912d5dae27719048452ebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa15d37f24895cfd300c5e721fd7c543f" id="r_aa15d37f24895cfd300c5e721fd7c543f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FileMgr_8h.html#aa15d37f24895cfd300c5e721fd7c543f">kFileMimeGeneric</a>&#160;&#160;&#160;&quot;ne-application-kind/all&quot;</td></tr>
 <tr class="separator:aa15d37f24895cfd300c5e721fd7c543f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a282b7015f5694ba92e3b80f866540191" id="r_a282b7015f5694ba92e3b80f866540191"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FileMgr_8h.html#a282b7015f5694ba92e3b80f866540191">kFileMgrNPos</a>&#160;&#160;&#160;(~0UL)</td></tr>
@@ -159,8 +160,10 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:aa519d3877ce6af25ab70f48dce4e25eb" id="r_aa519d3877ce6af25ab70f48dce4e25eb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa519d3877ce6af25ab70f48dce4e25eb">Kernel::NodePtr</a></td></tr>
 <tr class="separator:aa519d3877ce6af25ab70f48dce4e25eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e6c449e7adf6c129e3c34ee15d000f" id="r_ab1e6c449e7adf6c129e3c34ee15d000f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ab1e6c449e7adf6c129e3c34ee15d000f">Kernel::FileStreamUTF8</a> = <a class="el" href="classKernel_1_1FileStream.html">FileStream</a>&lt; <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> &gt;</td></tr>
-<tr class="separator:ab1e6c449e7adf6c129e3c34ee15d000f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae135608e6c15640852e1e44d7ce869" id="r_a1ae135608e6c15640852e1e44d7ce869"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1ae135608e6c15640852e1e44d7ce869">Kernel::FileStreamASCII</a> = <a class="el" href="classKernel_1_1FileStream.html">FileStream</a>&lt; <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> &gt;</td></tr>
+<tr class="separator:a1ae135608e6c15640852e1e44d7ce869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab078a4618829dd3093493db47715ac12" id="r_ab078a4618829dd3093493db47715ac12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ab078a4618829dd3093493db47715ac12">Kernel::FileStreamUTF8</a> = <a class="el" href="classKernel_1_1FileStream.html">FileStream</a>&lt; <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> &gt;</td></tr>
+<tr class="separator:ab078a4618829dd3093493db47715ac12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95eb4ef37b2835b35ed3e5c3d165f6e4" id="r_a95eb4ef37b2835b35ed3e5c3d165f6e4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a95eb4ef37b2835b35ed3e5c3d165f6e4">Kernel::FileStreamUTF16</a> = <a class="el" href="classKernel_1_1FileStream.html">FileStream</a>&lt; <a class="el" href="namespaceKernel.html#ab7f195cb15ebd306ab70f4dae079c0f2">WideChar</a> &gt;</td></tr>
 <tr class="separator:a95eb4ef37b2835b35ed3e5c3d165f6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4915b883535302f04f978b1c160ad64" id="r_ac4915b883535302f04f978b1c160ad64"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ac4915b883535302f04f978b1c160ad64">Kernel::CursorType</a></td></tr>
@@ -168,21 +171,29 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a045764e87b8a7bc9dff7a5c2c9d695c4" id="r_a045764e87b8a7bc9dff7a5c2c9d695c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4aa5807964cec5547c74b542b4c025dfd7">Kernel::kFileIOInvalid</a> = 0
-, <a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4a8d61f20f458902683d6af5376385689f">Kernel::kFileWriteAll</a> = 100
-, <a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4a98cf54f2e9d54d86bbff85b5175eab41">Kernel::kFileReadAll</a> = 101
-, <a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4a3ce868ebee02ab8718d189f573113dd2">Kernel::kFileReadChunk</a> = 102
+<tr class="memitem:a9fa4669f2e389b0b1a99b964cd9ac251" id="r_a9fa4669f2e389b0b1a99b964cd9ac251"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251aa5807964cec5547c74b542b4c025dfd7">Kernel::kFileIOInvalid</a> = 0
+, <a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a8d61f20f458902683d6af5376385689f">Kernel::kFileWriteAll</a> = 100
+, <a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a98cf54f2e9d54d86bbff85b5175eab41">Kernel::kFileReadAll</a> = 101
+, <a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a3ce868ebee02ab8718d189f573113dd2">Kernel::kFileReadChunk</a> = 102
 , <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4ab66ea1f76a91bc3bbfcdb01e41b35270">Kernel::kFileWriteChunk</a> = 103
-, <a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4a769ba765cbcf1e2e5edb4d4050bd34a1">Kernel::kFileIOCnt</a> = (kFileWriteChunk - kFileWriteAll) + 1
-, <a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4ad20629548848dc9fe6d5f543f9253ebd">Kernel::kFileFlagRsrc</a> = 104
-, <a class="el" href="namespaceKernel.html#a045764e87b8a7bc9dff7a5c2c9d695c4a45d559b6b45f5ac01bb6a239a3b5d3d7">Kernel::kFileFlagData</a> = 105
+&#160;&#160;<a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ab66ea1f76a91bc3bbfcdb01e41b35270">Kernel::kFileWriteChunk</a> = 103
+, <a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251ad20629548848dc9fe6d5f543f9253ebd">Kernel::kFileFlagRsrc</a> = 104
+, <a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a45d559b6b45f5ac01bb6a239a3b5d3d7">Kernel::kFileFlagData</a> = 105
+, <a class="el" href="namespaceKernel.html#a9fa4669f2e389b0b1a99b964cd9ac251a769ba765cbcf1e2e5edb4d4050bd34a1">Kernel::kFileIOCnt</a> = (kFileFlagData - kFileWriteAll) + 1
 <br />
  }</td></tr>
-<tr class="separator:a045764e87b8a7bc9dff7a5c2c9d695c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9fa4669f2e389b0b1a99b964cd9ac251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3d05dc7ecb1b4ca1c7b09d74a4ee942d" id="r_a3d05dc7ecb1b4ca1c7b09d74a4ee942d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NeKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> const auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a3d05dc7ecb1b4ca1c7b09d74a4ee942d">Kernel::kRestrictStrLen</a> = 8U</td></tr>
+<tr class="separator:a3d05dc7ecb1b4ca1c7b09d74a4ee942d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>File Manager. </p>
+<dl class="section author"><dt>Author</dt><dd>Amlal El Mahrouss (<a href="#" onclick="location.href='mai'+'lto:'+'aml'+'al'+'@ne'+'ke'+'rne'+'l.'+'org'; return false;">amlal<span class="obfuscator">.nosp@m.</span>@nek<span class="obfuscator">.nosp@m.</span>ernel<span class="obfuscator">.nosp@m.</span>.org</a>) </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a282b7015f5694ba92e3b80f866540191" name="a282b7015f5694ba92e3b80f866540191"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a282b7015f5694ba92e3b80f866540191">&#9670;&#160;</a></span>kFileMgrNPos</h2>
 
@@ -213,21 +224,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a0af5b6c912d5dae27719048452ebcf" name="a4a0af5b6c912d5dae27719048452ebcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a0af5b6c912d5dae27719048452ebcf">&#9670;&#160;</a></span>kFileOpsCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kFileOpsCount&#160;&#160;&#160;(4U)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Refer to first enum. </dd></dl>
-
-</div>
-</div>
 <a id="acf34611c032243432eb577c447651563" name="acf34611c032243432eb577c447651563"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf34611c032243432eb577c447651563">&#9670;&#160;</a></span>kRestrictMax</h2>
 
@@ -254,8 +250,8 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Include filesystems that neoskrnl supports. </p>
-<p>Filesystem manager, abstraction over mounted filesystem. Works like the VFS or IFS subsystem. </p>
+<p>Include filesystems that NeKernel supports. </p>
+<p>Filesystem manager, abstraction over mounted filesystem. Works like an VFS (Virtual File System) or IFS subsystem on NT/OS 2. </p>
 
 </div>
 </div>

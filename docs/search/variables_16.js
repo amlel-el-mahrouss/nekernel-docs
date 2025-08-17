@@ -1,19 +1,14 @@
 var searchData=
 [
-  ['x_0',['x',['../structCF_1_1CFRect.html#acf3dd4fbed0055bd0de39de7db3e6f3a',1,'CF::CFRect']]],
-  ['x2apicid_1',['x2APICID',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a42f77cad10ac1c8a0bdac77ae0b64750',1,'Kernel::HAL::SDT_OBJECT']]],
-  ['x_5f1_2',['x_1',['../structCF_1_1CFPoint.html#aaac55f616d75efb3e4fe6e4aa96873db',1,'CF::CFPoint']]],
-  ['x_5f2_3',['x_2',['../structCF_1_1CFPoint.html#aab89c18552380c95eee1f7bbc010a209',1,'CF::CFPoint']]],
-  ['x_5fdsdt_4',['X_Dsdt',['../structKernel_1_1Detail_1_1FADT.html#a9b03dcfcf4b8e040544c7080a10c5645',1,'Kernel::Detail::FADT']]],
-  ['x_5ffirmwarecontrol_5',['X_FirmwareControl',['../structKernel_1_1Detail_1_1FADT.html#a08940c1f347130e215dcb7330d8d0296',1,'Kernel::Detail::FADT']]],
-  ['x_5fgpe0block_6',['X_GPE0Block',['../structKernel_1_1Detail_1_1FADT.html#ae82ebe0862d94a4ad5b3b843d2d7571e',1,'Kernel::Detail::FADT']]],
-  ['x_5fgpe1block_7',['X_GPE1Block',['../structKernel_1_1Detail_1_1FADT.html#ac07e5105ad25c369a3634b2f40cf3459',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1acontrolblock_8',['X_PM1aControlBlock',['../structKernel_1_1Detail_1_1FADT.html#ae9a34017b668101c2d803887a79af791',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1aeventblock_9',['X_PM1aEventBlock',['../structKernel_1_1Detail_1_1FADT.html#ab05d3aeadfdff9805a9c60ed8a2a5a34',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1bcontrolblock_10',['X_PM1bControlBlock',['../structKernel_1_1Detail_1_1FADT.html#a1de28cb25d53b0eab6bf7e531e9e9538',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm1beventblock_11',['X_PM1bEventBlock',['../structKernel_1_1Detail_1_1FADT.html#a4d84e472ceec859901fb1ddbafd38ba7',1,'Kernel::Detail::FADT']]],
-  ['x_5fpm2controlblock_12',['X_PM2ControlBlock',['../structKernel_1_1Detail_1_1FADT.html#a3838926b46b2a3fa26a280260a4b47c3',1,'Kernel::Detail::FADT']]],
-  ['x_5fpmtimerblock_13',['X_PMTimerBlock',['../structKernel_1_1Detail_1_1FADT.html#a3ccba0eee7b816e0a9dbbdc3635e7466',1,'Kernel::Detail::FADT']]],
-  ['xn_14',['XN',['../structKernel_1_1HAL_1_1PTE__4KB.html#a1dd7d358fc9a60e756c703a6c038bd33',1,'Kernel::HAL::PTE_4KB']]],
-  ['xsdtaddress_15',['XsdtAddress',['../classKernel_1_1RSDP.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
+  ['waitforevent_0',['WaitForEvent',['../structEfiBootServices.html#afd38f34c1000a900497466a17d491a67',1,'EfiBootServices']]],
+  ['waitforkey_1',['WaitForKey',['../structEfiSimpleTextInputProtocol.html#ab0f7b1937c8f3192dc3953cbfe47884a',1,'EfiSimpleTextInputProtocol']]],
+  ['waitforpacket_2',['WaitForPacket',['../structEFI__SIMPLE__NETWORK__PROTOCOL.html#a23a714bf4e50631e1b5621ac4e18d8ac',1,'EFI_SIMPLE_NETWORK_PROTOCOL']]],
+  ['watchdogcode_3',['WatchdogCode',['../structEfiBootServices.html#a11ab6fd62011829af61308f82f68595d',1,'EfiBootServices']]],
+  ['whoami_4',['WhoAmI',['../struct__EfiMpServicesProtocol.html#ac89d032b0953a4428ca3b114e6f97ad5',1,'_EfiMpServicesProtocol']]],
+  ['width_5',['width',['../structCF_1_1CFRect.html#a1a074ab4157a98698df6c30be6600316',1,'CF::CFRect']]],
+  ['win32versionvalue_6',['Win32VersionValue',['../structLDR__OPTIONAL__HEADER.html#ae015a27d22072ee22f4409e2f063d6d9',1,'LDR_OPTIONAL_HEADER']]],
+  ['worstc2latency_7',['WorstC2Latency',['../structKernel_1_1Detail_1_1FADT.html#a53f6ef0ea10b55ad251f49b49b36befb',1,'Kernel::Detail::FADT']]],
+  ['worstc3latency_8',['WorstC3Latency',['../structKernel_1_1Detail_1_1FADT.html#a2659903a5f4bc8fc0e350d0144865bcf',1,'Kernel::Detail::FADT']]],
+  ['wr_9',['Wr',['../structKernel_1_1HAL_1_1Detail_1_1PTE.html#af6098d5e4049618cee678d0ecce9889a',1,'Kernel::HAL::Detail::PTE']]],
+  ['write_10',['write',['../structHbaCmdHeader_1_1HbaFlags_1_1HbaFlags__.html#a0daa718f6a6701f167f65c4da9467a23',1,'HbaCmdHeader::HbaFlags::HbaFlags_::Write'],['../structHbaFlags_1_1HbaFlags__.html#a4f27579b1c024a4c1c96cd71b782964f',1,'HbaFlags::HbaFlags_::Write']]]
 ];

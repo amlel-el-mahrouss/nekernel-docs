@@ -1,21 +1,11 @@
 var searchData=
 [
-  ['ne_5falign_5fnvme_0',['NE_ALIGN_NVME',['../modules_2NVME_2NVME_8h.html#aee349063183d3316c2ed371cb3670368',1,'NVME.h']]],
-  ['ne_5fbus_5fcount_1',['NE_BUS_COUNT',['../Iterator_8h.html#ad2c2fc7ad38dfeec31e0517686af0619',1,'Iterator.h']]],
-  ['ne_5fcopy_5fdefault_2',['NE_COPY_DEFAULT',['../Detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2',1,'Detail.h']]],
-  ['ne_5fcopy_5fdelete_3',['NE_COPY_DELETE',['../Detail_8h.html#a5a448e2cf2aed07b6a8216f4007ade6b',1,'Detail.h']]],
-  ['ne_5fdevice_4',['NE_DEVICE',['../DeviceMgr_8h.html#a003e6c4700d518adbf5ca256c38f4b7e',1,'DeviceMgr.h']]],
-  ['ne_5fdevice_5fcount_5',['NE_DEVICE_COUNT',['../Iterator_8h.html#a4b521d8681e7d1ed0f69a835ebf6dab9',1,'Iterator.h']]],
-  ['ne_5fdylib_5fobject_6',['NE_DYLIB_OBJECT',['../IDylibObject_8h.html#ad76c84d4ccd748e38d8792cf7375cc16',1,'IDylibObject.h']]],
-  ['ne_5ffunction_5fcount_7',['NE_FUNCTION_COUNT',['../Iterator_8h.html#a12fcd21dfb4006c8099e6dce5605c8d7',1,'Iterator.h']]],
-  ['ne_5fmove_5fdefault_8',['NE_MOVE_DEFAULT',['../Detail_8h.html#adff973d5465995c6b64488ec934fab50',1,'Detail.h']]],
-  ['ne_5fmove_5fdelete_9',['NE_MOVE_DELETE',['../Detail_8h.html#a67bc00e00390de09e03471f0164911d4',1,'Detail.h']]],
-  ['ne_5fpower_5ffactory_10',['NE_POWER_FACTORY',['../PowerFactory_8h.html#a0503cad957601c0d70f0ee9ecfed9b40',1,'PowerFactory.h']]],
-  ['ne_5funused_11',['NE_UNUSED',['../kernel_2NewKit_2Macros_8h.html#a6177d0ef3b5f68134c0b7df840f47469',1,'Macros.h']]],
-  ['newkit_5fversion_5fbcd_12',['NEWKIT_VERSION_BCD',['../kernel_2NewKit_2Defines_8h.html#a448defd2293246a8f38b7033eaf53771',1,'Defines.h']]],
-  ['newkit_5fversion_5fstr_13',['NEWKIT_VERSION_STR',['../kernel_2NewKit_2Defines_8h.html#a10d3284449324d37668b895b31c78c79',1,'Defines.h']]],
-  ['nil_14',['nil',['../macros_8h.html#a7a7ca81d2a85873283b5ec82953b1b25',1,'macros.h']]],
-  ['no_15',['no',['../kernel_2NewKit_2Macros_8h.html#a554d6ecb4ae62985018db18be458114d',1,'No:&#160;Macros.h'],['../macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;macros.h'],['../kernel_2NewKit_2Macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h'],['../user_2Macros_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5',1,'NO:&#160;Macros.h']]],
-  ['no_5fexec_16',['NO_EXEC',['../kernel_2NewKit_2Macros_8h.html#acd5f5a08cb161dddd3db84118b45b8d1',1,'Macros.h']]],
-  ['null_17',['NULL',['../macros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4',1,'macros.h']]]
+  ['make_5fenum_0',['MAKE_ENUM',['../kernel_2NeKit_2Macros_8h.html#aa8c1bad13059adc3e356392ae1ef9daf',1,'Macros.h']]],
+  ['make_5fstring_5fenum_1',['MAKE_STRING_ENUM',['../kernel_2NeKit_2Macros_8h.html#a01626b98408c4d01b0f4c4e59f94539f',1,'Macros.h']]],
+  ['max_5fmcast_5ffilter_5fcnt_2',['MAX_MCAST_FILTER_CNT',['../EFI_2EFI_8h.html#a92547b2a4527b836bcc0dbe454172341',1,'EFI.h']]],
+  ['mib_3',['mib',['../kernel_2NeKit_2Macros_8h.html#a3d3145295541b38666bf1e095a7d74f6',1,'MIB:&#160;Macros.h'],['../libSystem_2SystemKit_2Macros_8h.html#a3d3145295541b38666bf1e095a7d74f6',1,'MIB:&#160;Macros.h']]],
+  ['mib_5fcast_4',['mib_cast',['../kernel_2NeKit_2Macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852',1,'mib_cast:&#160;Macros.h'],['../libSystem_2SystemKit_2Macros_8h.html#a3bbca7c26c20ee1c42338c1b55993852',1,'mib_cast:&#160;Macros.h']]],
+  ['movemem_5',['MoveMem',['../Support_8h.html#a3d0f4556ea847605b0cbfb9c86c0a6aa',1,'Support.h']]],
+  ['must_5fpass_6',['must_pass',['../KernelPanic_8h.html#a21aee4c355d56e3630f2f341f59b9406',1,'MUST_PASS:&#160;KernelPanic.h'],['../libSystem_2SystemKit_2Macros_8h.html#a02377315d8ab2909d7fb9345f5f82984',1,'MUST_PASS:&#160;Macros.h']]],
+  ['must_5fpass_5fcompiler_7',['MUST_PASS_COMPILER',['../KernelPanic_8h.html#abaca09ea2b9deed3f481a2303ea89826',1,'KernelPanic.h']]]
 ];

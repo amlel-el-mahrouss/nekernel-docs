@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['di_0',['DI',['../namespaceDI.html',1,'']]]
+  ['detail_0',['Detail',['../namespaceDetail.html',1,'']]],
+  ['di_1',['DI',['../namespaceDI.html',1,'']]]
 ];

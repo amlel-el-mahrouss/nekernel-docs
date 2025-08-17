@@ -1,14 +1,20 @@
 var searchData=
 [
   ['fb_5freal_5ft_0',['fb_real_t',['../namespaceUI.html#add1f2f2f1cebd31c67a22adf590d3542',1,'UI']]],
-  ['filestreamutf16_1',['FileStreamUTF16',['../namespaceKernel.html#a95eb4ef37b2835b35ed3e5c3d165f6e4',1,'Kernel']]],
-  ['filestreamutf8_2',['FileStreamUTF8',['../namespaceKernel.html#ab1e6c449e7adf6c129e3c34ee15d000f',1,'Kernel']]],
-  ['fisdata_3',['FisData',['../modules_2AHCI_2AHCI_8h.html#ad8fe03609bdc51803c7208d0b7ac2f3e',1,'AHCI.h']]],
-  ['fisdevbits_4',['FisDevBits',['../modules_2AHCI_2AHCI_8h.html#ab0562fe39bdb0639fcb509cedac7ab92',1,'AHCI.h']]],
-  ['fisdmasetup_5',['FisDmaSetup',['../modules_2AHCI_2AHCI_8h.html#adb5257c931c05710337a588c466de7a2',1,'AHCI.h']]],
-  ['fispiosetup_6',['FisPioSetup',['../modules_2AHCI_2AHCI_8h.html#ad4f950c2487c8b130756a4bd2d995976',1,'AHCI.h']]],
-  ['fisregd2h_7',['FisRegD2H',['../modules_2AHCI_2AHCI_8h.html#ad23a76075e16a2eb1f52ec46242fb2d6',1,'AHCI.h']]],
-  ['fisregh2d_8',['FisRegH2D',['../modules_2AHCI_2AHCI_8h.html#ae4f2fa264cc741e915213fb1925dee16',1,'AHCI.h']]],
-  ['float_9',['Float',['../namespaceKernel.html#a700cdc4c3eab1d4db2060f9fe82b53de',1,'Kernel']]],
-  ['fsref_10',['FSRef',['../SystemCalls_8h.html#a8f41f69272b428acdd0c8f885e238a15',1,'SystemCalls.h']]]
+  ['fbcolorprofile_1',['FBColorProfile',['../namespaceKernel.html#adffc47486dda41b5477d1b7b6c29995d',1,'Kernel']]],
+  ['fbcoord2x2_2',['FBCoord2x2',['../namespaceKernel.html#a4f6a0ef412462dd12fd95dd532d389bd',1,'Kernel']]],
+  ['fbdim2x2_3',['FBDim2x2',['../namespaceKernel.html#a0482957a006352051bd8de03009dbb6e',1,'Kernel']]],
+  ['fbflags_4',['FBFlags',['../namespaceKernel.html#a8f881de49519e1f9b518716dff0e8f00',1,'Kernel']]],
+  ['filestreamascii_5',['FileStreamASCII',['../namespaceKernel.html#a1ae135608e6c15640852e1e44d7ce869',1,'Kernel']]],
+  ['filestreamutf16_6',['FileStreamUTF16',['../namespaceKernel.html#a95eb4ef37b2835b35ed3e5c3d165f6e4',1,'Kernel']]],
+  ['filestreamutf8_7',['FileStreamUTF8',['../namespaceKernel.html#ab078a4618829dd3093493db47715ac12',1,'Kernel']]],
+  ['fisdata_8',['FisData',['../modules_2AHCI_2AHCI_8h.html#ad8fe03609bdc51803c7208d0b7ac2f3e',1,'AHCI.h']]],
+  ['fisdevbits_9',['FisDevBits',['../modules_2AHCI_2AHCI_8h.html#ab0562fe39bdb0639fcb509cedac7ab92',1,'AHCI.h']]],
+  ['fisdmasetup_10',['FisDmaSetup',['../modules_2AHCI_2AHCI_8h.html#adb5257c931c05710337a588c466de7a2',1,'AHCI.h']]],
+  ['fispiosetup_11',['FisPioSetup',['../modules_2AHCI_2AHCI_8h.html#ad4f950c2487c8b130756a4bd2d995976',1,'AHCI.h']]],
+  ['fisregd2h_12',['FisRegD2H',['../modules_2AHCI_2AHCI_8h.html#ad23a76075e16a2eb1f52ec46242fb2d6',1,'AHCI.h']]],
+  ['fisregh2d_13',['FisRegH2D',['../modules_2AHCI_2AHCI_8h.html#ae4f2fa264cc741e915213fb1925dee16',1,'AHCI.h']]],
+  ['float_14',['Float',['../namespaceKernel.html#a700cdc4c3eab1d4db2060f9fe82b53de',1,'Kernel']]],
+  ['fsref_15',['FSRef',['../System_8h.html#a8f41f69272b428acdd0c8f885e238a15',1,'System.h']]],
+  ['functionor_16',['FunctionOr',['../namespaceKernel.html#a3066630848dbf82b3fedb2a0a3b63b59',1,'Kernel']]]
 ];

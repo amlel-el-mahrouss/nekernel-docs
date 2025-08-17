@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: dev/kernel/StorageKit/DmaPool.h File Reference</title>
+<title>NeKernel: dev/kernel/DmaKit/DmaPool.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -90,18 +89,70 @@ $(document).ready(function(){initNavTree('DmaPool_8h.html',''); initResizable();
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">DmaPool.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="DebugOutput_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
 </div>
 <p><a href="DmaPool_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceKernel" id="r_namespaceKernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html">Kernel</a></td></tr>
+<tr class="memdesc:namespaceKernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab0dd12405759d1364c39016cfcdbe899" id="r_ab0dd12405759d1364c39016cfcdbe899"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DmaPool_8h.html#ab0dd12405759d1364c39016cfcdbe899">kNeDMABestAlign</a>&#160;&#160;&#160;(8)</td></tr>
+<tr class="separator:ab0dd12405759d1364c39016cfcdbe899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aca98e485ceb72c24939df2b9acc5bbdf" id="r_aca98e485ceb72c24939df2b9acc5bbdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aca98e485ceb72c24939df2b9acc5bbdf">Kernel::rtl_dma_alloc</a> (<a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size, <a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> align)</td></tr>
+<tr class="memdesc:aca98e485ceb72c24939df2b9acc5bbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate from the rtl_dma_alloc system.  <br /></td></tr>
+<tr class="separator:aca98e485ceb72c24939df2b9acc5bbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac505bd255db23ec431980259140b4d11" id="r_ac505bd255db23ec431980259140b4d11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ac505bd255db23ec431980259140b4d11">Kernel::rtl_dma_free</a> (<a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size)</td></tr>
+<tr class="memdesc:ac505bd255db23ec431980259140b4d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free DMA pointer.  <br /></td></tr>
+<tr class="separator:ac505bd255db23ec431980259140b4d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add158dcc82a74a666f8a4e0975f55d45" id="r_add158dcc82a74a666f8a4e0975f55d45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#add158dcc82a74a666f8a4e0975f55d45">Kernel::rtl_dma_flush</a> (<a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> ptr, <a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size_buffer)</td></tr>
+<tr class="memdesc:add158dcc82a74a666f8a4e0975f55d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush DMA pointer.  <br /></td></tr>
+<tr class="separator:add158dcc82a74a666f8a4e0975f55d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abbffa5ec811c645f21003f5cd54da6b2" id="r_abbffa5ec811c645f21003f5cd54da6b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">Kernel::kDmaPoolPtr</a> = (<a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) kNeDMAPoolStart</td></tr>
+<tr class="memdesc:abbffa5ec811c645f21003f5cd54da6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA pool base pointer, here we're sure that AHCI or whatever tricky standard sees it.  <br /></td></tr>
+<tr class="separator:abbffa5ec811c645f21003f5cd54da6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac257f5e6b2b3b28c5e43974279acd0dd" id="r_ac257f5e6b2b3b28c5e43974279acd0dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ac257f5e6b2b3b28c5e43974279acd0dd">Kernel::kDmaPoolEnd</a> = (<a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) (kNeDMAPoolStart + kNeDMAPoolSize)</td></tr>
+<tr class="separator:ac257f5e6b2b3b28c5e43974279acd0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ab0dd12405759d1364c39016cfcdbe899" name="ab0dd12405759d1364c39016cfcdbe899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0dd12405759d1364c39016cfcdbe899">&#9670;&#160;</a></span>kNeDMABestAlign</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kNeDMABestAlign&#160;&#160;&#160;(8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_e75dcc59ea39cc8560c57baaefc9f0b6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_b2941941db3977fe373a778817728589.html">StorageKit</a></li><li class="navelem"><a class="el" href="DmaPool_8h.html">DmaPool.h</a></li>
+    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_e75dcc59ea39cc8560c57baaefc9f0b6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_347de9d3b03ab7b1978ba5dda0eccbe4.html">DmaKit</a></li><li class="navelem"><a class="el" href="DmaPool_8h.html">DmaPool.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

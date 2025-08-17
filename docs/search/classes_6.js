@@ -4,7 +4,7 @@ var searchData=
   ['fbaccessibilty_1',['FBAccessibilty',['../classFB_1_1FBAccessibilty.html',1,'FB']]],
   ['fbdevicepacket_2',['FBDevicePacket',['../structKernel_1_1FBDevicePacket.html',1,'Kernel']]],
   ['file_5fdialog_3',['file_dialog',['../classpfd_1_1internal_1_1file__dialog.html',1,'pfd::internal']]],
-  ['filerestrictkind_4',['FileRestrictKind',['../structKernel_1_1FileRestrictKind.html',1,'Kernel']]],
+  ['filemgr_5frestrict_4',['FILEMGR_RESTRICT',['../structKernel_1_1FILEMGR__RESTRICT.html',1,'Kernel']]],
   ['filestream_5',['FileStream',['../classKernel_1_1FileStream.html',1,'Kernel']]],
   ['filestream_3c_20char_20_3e_6',['FileStream&lt; Char &gt;',['../classKernel_1_1FileStream.html',1,'Kernel']]],
   ['fisdata_7',['FisData',['../structFisData.html',1,'']]],

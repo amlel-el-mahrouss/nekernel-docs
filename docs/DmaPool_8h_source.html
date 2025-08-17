@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: dev/kernel/StorageKit/DmaPool.h Source File</title>
+<title>NeKernel: dev/kernel/DmaKit/DmaPool.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -98,107 +97,131 @@ $(document).ready(function(){initNavTree('DmaPool_8h_source.html',''); initResiz
   <div class="headertitle"><div class="title">DmaPool.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="DmaPool_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2025 Amlal El Mahrouss. All rights reserved.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * in the Software without restriction, including without limitation the rights</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * furnished to do so, subject to the following conditions:</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * The above copyright notice and this permission notice shall be included in</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * all copies or substantial portions of the Software.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * THE SOFTWARE.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="DebugOutput_8h.html">KernelKit/DebugOutput.h</a>&gt;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#ifdef __NE_AMD64__</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define NE_DMA_POOL_START (0x1000000)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define NE_DMA_POOL_SIZE (0x1000000)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel.html">Kernel</a> {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">inline</span> <a class="code hl_typedef" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>*       kDmaPoolPtr = (<a class="code hl_typedef" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>*) NE_DMA_POOL_START;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>* kDmaPoolEnd = (<a class="code hl_typedef" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>*) (NE_DMA_POOL_START + NE_DMA_POOL_SIZE);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/***********************************************************************************/</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/***********************************************************************************/</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">inline</span> <a class="code hl_typedef" href="user_2Macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> rtl_dma_alloc(<a class="code hl_typedef" href="user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> size, <a class="code hl_typedef" href="user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> align) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordflow">if</span> (!size) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_typedef" href="user_2Macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a> addr = (<a class="code hl_typedef" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>) kDmaPoolPtr;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  addr = (addr + (align - 1)) &amp; ~(align - 1);</div>
+<a href="DmaPool_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* -------------------------------------------</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">  Copyright (C) 2025, Amlal El Mahrouss , all rights reserved.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"></span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">  File: DmaPool.h</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">  Purpose: Dma Pool Manager.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">------------------------------------------- */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="DebugOutput_8h.html">KernelKit/DebugOutput.h</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __NE_AMD64__</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="AMD64_2Processor_8h.html">HALKit/AMD64/Processor.h</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define kNeDMAPoolStart (0x1000000)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define kNeDMAPoolSize (0x1000000)</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#elif defined(__NE_ARM64__)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="ARM64_2Processor_8h.html">HALKit/ARM64/Processor.h</a>&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define kNeDMAPoolStart (0x1000000)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define kNeDMAPoolSize (0x1000000)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define kNeDMABestAlign __BIGGEST_ALIGNMENT__</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="DmaPool_8h.html#ab0dd12405759d1364c39016cfcdbe899">   29</a></span><span class="preprocessor">#define kNeDMABestAlign (8)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel.html">Kernel</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">   34</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*       <a class="code hl_variable" href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">kDmaPoolPtr</a> = (<a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) kNeDMAPoolStart;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespaceKernel.html#ac257f5e6b2b3b28c5e43974279acd0dd">   35</a></span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>* <a class="code hl_variable" href="namespaceKernel.html#ac257f5e6b2b3b28c5e43974279acd0dd">kDmaPoolEnd</a> = (<a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) (kNeDMAPoolStart + kNeDMAPoolSize);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/***********************************************************************************/</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/***********************************************************************************/</span></div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespaceKernel.html#aca98e485ceb72c24939df2b9acc5bbdf">   42</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> <a class="code hl_function" href="namespaceKernel.html#aca98e485ceb72c24939df2b9acc5bbdf">rtl_dma_alloc</a>(<a class="code hl_typedef" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size, <a class="code hl_typedef" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> align) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">if</span> (!size) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    ++size;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">if</span> ((align % <a class="code hl_define" href="DmaPool_8h.html#ab0dd12405759d1364c39016cfcdbe899">kNeDMABestAlign</a>) != 0) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">if</span> ((addr + size) &gt;= <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="user_2Macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a><span class="keyword">&gt;</span>(kDmaPoolEnd)) {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_define" href="DebugOutput_8h.html#a18983745cdbaca69cc1eb2cb33f02ada">kout</a> &lt;&lt; <span class="stringliteral">&quot;DMA Pool is exhausted!\r&quot;</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">kErrorDmaExhausted</a>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  kDmaPoolPtr = (<a class="code hl_typedef" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>*) (addr + size);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">return</span> (<a class="code hl_typedef" href="user_2Macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a>) addr;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/***********************************************************************************/</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/***********************************************************************************/</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">inline</span> <a class="code hl_typedef" href="user_2Macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a> rtl_dma_free(<a class="code hl_typedef" href="user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> size) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordflow">if</span> (!size) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_typedef" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a> addr = (<a class="code hl_typedef" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>) <a class="code hl_variable" href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">kDmaPoolPtr</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  addr = (addr + (align - 1)) &amp; ~(align - 1);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">if</span> ((addr + size) &gt; <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a><span class="keyword">&gt;</span>(<a class="code hl_variable" href="namespaceKernel.html#ac257f5e6b2b3b28c5e43974279acd0dd">kDmaPoolEnd</a>)) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">kErrorDmaExhausted</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_variable" href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">kDmaPoolPtr</a> = (<a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) (addr + size);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <a class="code hl_function" href="namespaceKernel_1_1HAL.html#ad627503a26fe29846ed83730aa2f36dd">HAL::mm_memory_fence</a>((<a class="code hl_typedef" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>) addr);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> (<a class="code hl_typedef" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>) addr;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  kDmaPoolPtr = (<a class="code hl_typedef" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>*) (kDmaPoolPtr - size);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/***********************************************************************************/</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">/***********************************************************************************/</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">inline</span> <a class="code hl_typedef" href="user_2Macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a> rtl_dma_flush(<a class="code hl_typedef" href="user_2Macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a> ptr, <a class="code hl_typedef" href="user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> size_buffer) {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">if</span> (ptr &gt; (<a class="code hl_typedef" href="user_2Macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a>*) (NE_DMA_POOL_START + NE_DMA_POOL_SIZE)) {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordflow">if</span> (!ptr) {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/***********************************************************************************/</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/***********************************************************************************/</span></div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="namespaceKernel.html#ac505bd255db23ec431980259140b4d11">   73</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> <a class="code hl_function" href="namespaceKernel.html#ac505bd255db23ec431980259140b4d11">rtl_dma_free</a>(<a class="code hl_typedef" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordflow">if</span> (!size) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">auto</span> ptr = (<a class="code hl_variable" href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">kDmaPoolPtr</a> - size);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordflow">if</span> (!ptr || ptr &lt; (<a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) kNeDMAPoolStart) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">kErrorDmaExhausted</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_variable" href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">kDmaPoolPtr</a> = ptr;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a> i = 0; i &lt; size_buffer; ++i) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;clflush (%0)&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span>((<a class="code hl_typedef" href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a>*) ptr + i) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mfence&quot;</span> ::: <span class="stringliteral">&quot;memory&quot;</span>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}  <span class="comment">// namespace Kernel</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code hl_function" href="namespaceKernel_1_1HAL.html#ad627503a26fe29846ed83730aa2f36dd">HAL::mm_memory_fence</a>(ptr);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">/***********************************************************************************/</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">/***********************************************************************************/</span></div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="namespaceKernel.html#add158dcc82a74a666f8a4e0975f55d45">   91</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a> <a class="code hl_function" href="namespaceKernel.html#add158dcc82a74a666f8a4e0975f55d45">rtl_dma_flush</a>(<a class="code hl_typedef" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> ptr, <a class="code hl_typedef" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> size_buffer) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">if</span> (ptr &gt; <a class="code hl_variable" href="namespaceKernel.html#ac257f5e6b2b3b28c5e43974279acd0dd">kDmaPoolEnd</a>) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordflow">if</span> (!ptr || ptr &lt; (<a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) kNeDMAPoolStart) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">kErrorDmaExhausted</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> buf_idx = 0UL; buf_idx &lt; size_buffer; ++buf_idx) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_function" href="namespaceKernel_1_1HAL.html#ad627503a26fe29846ed83730aa2f36dd">HAL::mm_memory_fence</a>((<a class="code hl_typedef" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>) ((<a class="code hl_typedef" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>*) ptr + buf_idx));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}  <span class="comment">// namespace Kernel</span></div>
+<div class="ttc" id="aAMD64_2Processor_8h_html"><div class="ttname"><a href="AMD64_2Processor_8h.html">Processor.h</a></div></div>
+<div class="ttc" id="aARM64_2Processor_8h_html"><div class="ttname"><a href="ARM64_2Processor_8h.html">Processor.h</a></div></div>
 <div class="ttc" id="aDebugOutput_8h_html"><div class="ttname"><a href="DebugOutput_8h.html">DebugOutput.h</a></div></div>
-<div class="ttc" id="aDebugOutput_8h_html_a18983745cdbaca69cc1eb2cb33f02ada"><div class="ttname"><a href="DebugOutput_8h.html#a18983745cdbaca69cc1eb2cb33f02ada">kout</a></div><div class="ttdeci">#define kout</div><div class="ttdef"><b>Definition</b> DebugOutput.h:203</div></div>
-<div class="ttc" id="aKPC_8h_html_a1a591a11fe40496846d0680bb30327b7"><div class="ttname"><a href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a></div><div class="ttdeci">#define err_global_get()</div><div class="ttdef"><b>Definition</b> KPC.h:24</div></div>
-<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
+<div class="ttc" id="aDmaPool_8h_html_ab0dd12405759d1364c39016cfcdbe899"><div class="ttname"><a href="DmaPool_8h.html#ab0dd12405759d1364c39016cfcdbe899">kNeDMABestAlign</a></div><div class="ttdeci">#define kNeDMABestAlign</div><div class="ttdef"><b>Definition</b> DmaPool.h:29</div></div>
+<div class="ttc" id="aKPC_8h_html_a1a591a11fe40496846d0680bb30327b7"><div class="ttname"><a href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a></div><div class="ttdeci">#define err_global_get()</div><div class="ttdef"><b>Definition</b> KPC.h:25</div></div>
+<div class="ttc" id="anamespaceKernel_1_1HAL_html_ad627503a26fe29846ed83730aa2f36dd"><div class="ttname"><a href="namespaceKernel_1_1HAL.html#ad627503a26fe29846ed83730aa2f36dd">Kernel::HAL::mm_memory_fence</a></div><div class="ttdeci">EXTERN_C Int32 mm_memory_fence(VoidPtr virtual_address)</div><div class="ttdoc">clflush+mfence helper function.</div><div class="ttdef"><b>Definition</b> HalPagingMgr.cc:104</div></div>
+<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Device.h:12</div></div>
+<div class="ttc" id="anamespaceKernel_html_a39b5bdb05ee1bd00df13897c8db5ee63"><div class="ttname"><a href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a></div><div class="ttdeci">__SIZE_TYPE__ SizeT</div><div class="ttdef"><b>Definition</b> Defines.h:58</div></div>
 <div class="ttc" id="anamespaceKernel_html_a84f01a3121e81004f9e4f9406efbb2bb"><div class="ttname"><a href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a></div><div class="ttdeci">__UINTPTR_TYPE__ UIntPtr</div><div class="ttdef"><b>Definition</b> Defines.h:60</div></div>
-<div class="ttc" id="anamespaceKernel_html_a8f62c13b2e830499aba115dfe1037956"><div class="ttname"><a href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">Kernel::kErrorDmaExhausted</a></div><div class="ttdeci">constexpr KPCError kErrorDmaExhausted</div><div class="ttdoc">Kernel errors.</div><div class="ttdef"><b>Definition</b> KPC.h:66</div></div>
-<div class="ttc" id="auser_2Macros_8h_html_a5cca82c5e941051f93ff720e101e6b53"><div class="ttname"><a href="user_2Macros_8h.html#a5cca82c5e941051f93ff720e101e6b53">VoidPtr</a></div><div class="ttdeci">void * VoidPtr</div><div class="ttdef"><b>Definition</b> Macros.h:59</div></div>
-<div class="ttc" id="auser_2Macros_8h_html_ab5060adaff7d15b3ac19481139e04c10"><div class="ttname"><a href="user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10">SizeT</a></div><div class="ttdeci">__SIZE_TYPE__ SizeT</div><div class="ttdef"><b>Definition</b> Macros.h:52</div></div>
-<div class="ttc" id="auser_2Macros_8h_html_aea33bdc955927086847adc88212e6b2e"><div class="ttname"><a href="user_2Macros_8h.html#aea33bdc955927086847adc88212e6b2e">UIntPtr</a></div><div class="ttdeci">__UINTPTR_TYPE__ UIntPtr</div><div class="ttdef"><b>Definition</b> Macros.h:60</div></div>
-<div class="ttc" id="auser_2Macros_8h_html_afa67a934526c218d732989fc15aac69e"><div class="ttname"><a href="user_2Macros_8h.html#afa67a934526c218d732989fc15aac69e">UInt8</a></div><div class="ttdeci">__UINT8_TYPE__ UInt8</div><div class="ttdef"><b>Definition</b> Macros.h:50</div></div>
-<div class="ttc" id="auser_2Macros_8h_html_afdf0f22c576e6ee1b982f64b839c4bea"><div class="ttname"><a href="user_2Macros_8h.html#afdf0f22c576e6ee1b982f64b839c4bea">Void</a></div><div class="ttdeci">void Void</div><div class="ttdef"><b>Definition</b> Macros.h:37</div></div>
+<div class="ttc" id="anamespaceKernel_html_a8f62c13b2e830499aba115dfe1037956"><div class="ttname"><a href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">Kernel::kErrorDmaExhausted</a></div><div class="ttdeci">constexpr KPCError kErrorDmaExhausted</div><div class="ttdef"><b>Definition</b> KPC.h:66</div></div>
+<div class="ttc" id="anamespaceKernel_html_aac30f48665b606a2bc482f2792369408"><div class="ttname"><a href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a></div><div class="ttdeci">void * VoidPtr</div><div class="ttdef"><b>Definition</b> Defines.h:33</div></div>
+<div class="ttc" id="anamespaceKernel_html_abbffa5ec811c645f21003f5cd54da6b2"><div class="ttname"><a href="namespaceKernel.html#abbffa5ec811c645f21003f5cd54da6b2">Kernel::kDmaPoolPtr</a></div><div class="ttdeci">UInt8 * kDmaPoolPtr</div><div class="ttdoc">DMA pool base pointer, here we're sure that AHCI or whatever tricky standard sees it.</div><div class="ttdef"><b>Definition</b> DmaPool.h:34</div></div>
+<div class="ttc" id="anamespaceKernel_html_ac257f5e6b2b3b28c5e43974279acd0dd"><div class="ttname"><a href="namespaceKernel.html#ac257f5e6b2b3b28c5e43974279acd0dd">Kernel::kDmaPoolEnd</a></div><div class="ttdeci">const UInt8 * kDmaPoolEnd</div><div class="ttdef"><b>Definition</b> DmaPool.h:35</div></div>
+<div class="ttc" id="anamespaceKernel_html_ac505bd255db23ec431980259140b4d11"><div class="ttname"><a href="namespaceKernel.html#ac505bd255db23ec431980259140b4d11">Kernel::rtl_dma_free</a></div><div class="ttdeci">Void rtl_dma_free(SizeT size)</div><div class="ttdoc">Free DMA pointer.</div><div class="ttdef"><b>Definition</b> DmaPool.h:73</div></div>
+<div class="ttc" id="anamespaceKernel_html_aca98e485ceb72c24939df2b9acc5bbdf"><div class="ttname"><a href="namespaceKernel.html#aca98e485ceb72c24939df2b9acc5bbdf">Kernel::rtl_dma_alloc</a></div><div class="ttdeci">VoidPtr rtl_dma_alloc(SizeT size, SizeT align)</div><div class="ttdoc">allocate from the rtl_dma_alloc system.</div><div class="ttdef"><b>Definition</b> DmaPool.h:42</div></div>
+<div class="ttc" id="anamespaceKernel_html_add158dcc82a74a666f8a4e0975f55d45"><div class="ttname"><a href="namespaceKernel.html#add158dcc82a74a666f8a4e0975f55d45">Kernel::rtl_dma_flush</a></div><div class="ttdeci">Void rtl_dma_flush(VoidPtr ptr, SizeT size_buffer)</div><div class="ttdoc">Flush DMA pointer.</div><div class="ttdef"><b>Definition</b> DmaPool.h:91</div></div>
+<div class="ttc" id="anamespaceKernel_html_af3e79270fb5e7c7e4ddcc6ec45c95796"><div class="ttname"><a href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Kernel::Void</a></div><div class="ttdeci">void Void</div><div class="ttdef"><b>Definition</b> Defines.h:85</div></div>
+<div class="ttc" id="anamespaceKernel_html_afbb00ca67495bf45618a429cf4f82f33"><div class="ttname"><a href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a></div><div class="ttdeci">unsigned char UInt8</div><div class="ttdef"><b>Definition</b> Defines.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_e75dcc59ea39cc8560c57baaefc9f0b6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_b2941941db3977fe373a778817728589.html">StorageKit</a></li><li class="navelem"><a class="el" href="DmaPool_8h.html">DmaPool.h</a></li>
+    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_e75dcc59ea39cc8560c57baaefc9f0b6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_347de9d3b03ab7b1978ba5dda0eccbe4.html">DmaKit</a></li><li class="navelem"><a class="el" href="DmaPool_8h.html">DmaPool.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -104,8 +103,8 @@ $(document).ready(function(){initNavTree('IPC_8h.html',''); initResizable(); });
 
 <p>IPC comm. protocol.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2NewKit_2Defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="KString_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2NeKit_2Defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="KString_8h_source.html">NeKit/KString.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="CompilerHint_8h_source.html">hint/CompilerHint.h</a>&gt;</code><br />
 </div>
 <p><a href="IPC_8h_source.html">Go to the source code of this file.</a></p>
@@ -146,11 +145,16 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ad8f1944d4df007456fb725c501649539" id="r_ad8f1944d4df007456fb725c501649539"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceKernel.html#ad8f1944d4df007456fb725c501649539ac91c61da257bf355b364411f6f146507">Kernel::kIPCLittleEndian</a> = 0
-, <a class="el" href="namespaceKernel.html#ad8f1944d4df007456fb725c501649539aa14658b76be547afd249f37864ceaeb6">Kernel::kIPCBigEndian</a> = 1
-, <a class="el" href="namespaceKernel.html#ad8f1944d4df007456fb725c501649539abbcbfaf32af4b6c07db438b5ed7078a3">Kernel::kIPCMixedEndian</a> = 2
+<tr class="memitem:a7d94b34197ca5437fbf07704812f3027" id="r_a7d94b34197ca5437fbf07704812f3027"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceKernel.html#a7d94b34197ca5437fbf07704812f3027ac91c61da257bf355b364411f6f146507">Kernel::kIPCLittleEndian</a> = 0
+, <a class="el" href="namespaceKernel.html#a7d94b34197ca5437fbf07704812f3027aa14658b76be547afd249f37864ceaeb6">Kernel::kIPCBigEndian</a> = 1
+, <a class="el" href="namespaceKernel.html#a7d94b34197ca5437fbf07704812f3027abbcbfaf32af4b6c07db438b5ed7078a3">Kernel::kIPCMixedEndian</a> = 2
  }</td></tr>
-<tr class="separator:ad8f1944d4df007456fb725c501649539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7d94b34197ca5437fbf07704812f3027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c294ec2d03f48e31466bcecdea8a608" id="r_a3c294ec2d03f48e31466bcecdea8a608"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceKernel.html#a3c294ec2d03f48e31466bcecdea8a608a5de5df7e9cf9b06d776a4249bcb1e789">Kernel::kIPCLockInvalid</a>
+, <a class="el" href="namespaceKernel.html#a3c294ec2d03f48e31466bcecdea8a608a1ee22ea6a9954b1648c2b1396837325a">Kernel::kIPCLockFree</a> = 1
+, <a class="el" href="namespaceKernel.html#a3c294ec2d03f48e31466bcecdea8a608a41647f4134b6a5dc8894547fc5094e21">Kernel::kIPCLockUsed</a> = 2
+ }</td></tr>
+<tr class="separator:a3c294ec2d03f48e31466bcecdea8a608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>

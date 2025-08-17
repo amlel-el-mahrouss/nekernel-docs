@@ -33,6 +33,6 @@ var MBCI_8h =
       [ "kMBCIHostStateFail", "MBCI_8h.html#aba316bb1bff2d7b01d4a08595031ef71a467bd33e40d0ce92f1ad6743f72384f1", null ],
       [ "kMBCIHostStateCount", "MBCI_8h.html#aba316bb1bff2d7b01d4a08595031ef71a513b3c1a7d92a5cb70f3cd365a0a345d", null ]
     ] ],
-    [ "mbci_read_auth_key", "MBCI_8h.html#aefbab5b54c53d4fe74eeabccbaf1f76b", null ],
-    [ "mbci_test_mmio", "MBCI_8h.html#a33f3da5faf26a5bf6b814b4080170637", null ]
+    [ "busi_test_mmio", "MBCI_8h.html#ad57ab90c87f282dafbfe5a5b60527b66", null ],
+    [ "mbci_read_auth_key", "MBCI_8h.html#a5b2d813c4530eb41ad55dd23d9b6ffc5", null ]
 ];

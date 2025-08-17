@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -90,9 +89,164 @@ $(document).ready(function(){initNavTree('namespacemkfs_1_1detail.html',''); ini
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">mkfs::detail Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ade4206537faa553332f90b29b47a5e5d" id="r_ade4206537faa553332f90b29b47a5e5d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemkfs_1_1detail.html#ade4206537faa553332f90b29b47a5e5d">gib_cast</a> (uint32_t gb)</td></tr>
+<tr class="separator:ade4206537faa553332f90b29b47a5e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0c559e37a1f6fab39f5bd551247786" id="r_ade0c559e37a1f6fab39f5bd551247786"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemkfs_1_1detail.html#ade0c559e37a1f6fab39f5bd551247786">parse_decimal</a> (const std::string &amp;opt, unsigned long long &amp;out)</td></tr>
+<tr class="separator:ade0c559e37a1f6fab39f5bd551247786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46649ac0947d82242b2f5bb5c48f77c5" id="r_a46649ac0947d82242b2f5bb5c48f77c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemkfs_1_1detail.html#a46649ac0947d82242b2f5bb5c48f77c5">parse_signed</a> (const std::string &amp;opt, long &amp;out, int base=10)</td></tr>
+<tr class="separator:a46649ac0947d82242b2f5bb5c48f77c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107761c6d75211714d80a4dfbdf81a4f" id="r_a107761c6d75211714d80a4dfbdf81a4f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemkfs_1_1detail.html#a107761c6d75211714d80a4dfbdf81a4f">build_args</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a107761c6d75211714d80a4dfbdf81a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a107761c6d75211714d80a4dfbdf81a4f" name="a107761c6d75211714d80a4dfbdf81a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107761c6d75211714d80a4dfbdf81a4f">&#9670;&#160;</a></span>build_args()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mkfs::detail::build_args </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade4206537faa553332f90b29b47a5e5d" name="ade4206537faa553332f90b29b47a5e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4206537faa553332f90b29b47a5e5d">&#9670;&#160;</a></span>gib_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a> mkfs::detail::gib_cast </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>gb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade0c559e37a1f6fab39f5bd551247786" name="ade0c559e37a1f6fab39f5bd551247786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0c559e37a1f6fab39f5bd551247786">&#9670;&#160;</a></span>parse_decimal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mkfs::detail::parse_decimal </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long &amp;&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46649ac0947d82242b2f5bb5c48f77c5" name="a46649ac0947d82242b2f5bb5c48f77c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46649ac0947d82242b2f5bb5c48f77c5">&#9670;&#160;</a></span>parse_signed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mkfs::detail::parse_signed </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

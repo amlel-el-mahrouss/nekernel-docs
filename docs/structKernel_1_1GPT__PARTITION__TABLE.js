@@ -3,7 +3,7 @@ var structKernel_1_1GPT__PARTITION__TABLE =
     [ "CRC32", "structKernel_1_1GPT__PARTITION__TABLE.html#aba25e091435b662371028056f84daa6c", null ],
     [ "CRC32PartEntry", "structKernel_1_1GPT__PARTITION__TABLE.html#a61cbf974dfd000a9cb9f24b86172d7c0", null ],
     [ "FirstGPTEntry", "structKernel_1_1GPT__PARTITION__TABLE.html#a03f029ed8e9c02598392241915e67593", null ],
-    [ "Guid", "structKernel_1_1GPT__PARTITION__TABLE.html#a0349eea16af93cbb9de259a1546fe9c1", null ],
+    [ "Guid", "structKernel_1_1GPT__PARTITION__TABLE.html#a3e1255873538f5d24242a90887f174bf", null ],
     [ "HeaderSize", "structKernel_1_1GPT__PARTITION__TABLE.html#a1f89b40391db08c23961d63f4ecb7a2f", null ],
     [ "LastGPTEntry", "structKernel_1_1GPT__PARTITION__TABLE.html#ac8b5210eeb7a62b7a565b19bb86bc0e4", null ],
     [ "LBAAltHeader", "structKernel_1_1GPT__PARTITION__TABLE.html#a17549914b52cf9747462eabee2d9b60b", null ],

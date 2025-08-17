@@ -1,6 +1,6 @@
 var hefs_8h =
 [
-    [ "kHeFSDefaultVoluneName", "hefs_8h.html#a7f60729bfef17a7492b037d333cf3834", null ],
+    [ "kHeFSDefaultVolumeName", "hefs_8h.html#a7825ddedc34c6ca0868234b6c44b9089", null ],
     [ "kHeFSFileNameLen", "hefs_8h.html#a8fe1a4a1874f9a4c75283c46c13ad465", null ],
     [ "kHeFSMagic", "hefs_8h.html#aaad4ee1c87b58182385840f506b53509", null ],
     [ "kHeFSMagicLen", "hefs_8h.html#a1f0681bf6e2fc8eec0657760dc2348c7", null ],

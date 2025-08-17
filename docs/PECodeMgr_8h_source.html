@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -120,8 +119,8 @@ $(document).ready(function(){initNavTree('PECodeMgr_8h_source.html',''); initRes
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="FileMgr_8h.html">KernelKit/FileMgr.h</a>&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="LoaderInterface_8h.html">KernelKit/LoaderInterface.h</a>&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="PE_8h.html">KernelKit/PE.h</a>&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="ErrorOr_8h.html">NewKit/ErrorOr.h</a>&gt;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="KString_8h.html">NewKit/KString.h</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="ErrorOr_8h.html">NeKit/ErrorOr.h</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="KString_8h.html">NeKit/KString.h</a>&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifndef INC_PROCESS_SCHEDULER_H</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="ProcessScheduler_8h.html">KernelKit/ProcessScheduler.h</a>&gt;</span></div>
@@ -173,7 +172,7 @@ $(document).ready(function(){initNavTree('PECodeMgr_8h_source.html',''); initRes
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}  <span class="comment">// namespace Kernel</span></div>
 <div class="ttc" id="aDetail_8h_html_a855fc6b9e935d41c084c0b89a4b82bd2"><div class="ttname"><a href="Detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">NE_COPY_DEFAULT</a></div><div class="ttdeci">#define NE_COPY_DEFAULT(KLASS)</div><div class="ttdef"><b>Definition</b> Detail.h:17</div></div>
 <div class="ttc" id="aErrorOr_8h_html"><div class="ttname"><a href="ErrorOr_8h.html">ErrorOr.h</a></div></div>
-<div class="ttc" id="aFileMgr_8h_html"><div class="ttname"><a href="FileMgr_8h.html">FileMgr.h</a></div></div>
+<div class="ttc" id="aFileMgr_8h_html"><div class="ttname"><a href="FileMgr_8h.html">FileMgr.h</a></div><div class="ttdoc">File Manager.</div></div>
 <div class="ttc" id="aKString_8h_html"><div class="ttname"><a href="KString_8h.html">KString.h</a></div></div>
 <div class="ttc" id="aLoaderInterface_8h_html"><div class="ttname"><a href="LoaderInterface_8h.html">LoaderInterface.h</a></div></div>
 <div class="ttc" id="aPE_8h_html"><div class="ttname"><a href="PE_8h.html">PE.h</a></div></div>
@@ -197,8 +196,8 @@ $(document).ready(function(){initNavTree('PECodeMgr_8h_source.html',''); initRes
 <div class="ttc" id="aclassKernel_1_1PE32Loader_html_aef3b4e31341a22af8ea39f09755735b7"><div class="ttname"><a href="classKernel_1_1PE32Loader.html#aef3b4e31341a22af8ea39f09755735b7">Kernel::PE32Loader::fFile</a></div><div class="ttdeci">OwnPtr&lt; FileStream&lt; Char &gt; &gt; fFile</div><div class="ttdef"><b>Definition</b> PECodeMgr.h:70</div></div>
 <div class="ttc" id="aclassKernel_1_1PE32Loader_html_af18e74bf631b92d37e8d986fd58bc9a6"><div class="ttname"><a href="classKernel_1_1PE32Loader.html#af18e74bf631b92d37e8d986fd58bc9a6">Kernel::PE32Loader::GetBlob</a></div><div class="ttdeci">ErrorOr&lt; VoidPtr &gt; GetBlob() override</div></div>
 <div class="ttc" id="aclassKernel_1_1PE32Loader_html_aff4062165b45cae5c30f7504c1017704"><div class="ttname"><a href="classKernel_1_1PE32Loader.html#aff4062165b45cae5c30f7504c1017704">Kernel::PE32Loader::PE32Loader</a></div><div class="ttdeci">PE32Loader(const VoidPtr blob)</div></div>
-<div class="ttc" id="aclassKernel_1_1Ref_html"><div class="ttname"><a href="classKernel_1_1Ref.html">Kernel::Ref</a></div><div class="ttdef"><b>Definition</b> Ref.h:17</div></div>
-<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
+<div class="ttc" id="aclassKernel_1_1Ref_html"><div class="ttname"><a href="classKernel_1_1Ref.html">Kernel::Ref</a></div><div class="ttdef"><b>Definition</b> Ref.h:18</div></div>
+<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Device.h:12</div></div>
 <div class="ttc" id="anamespaceKernel_html_a844c6a4fa8f9d2a62aa1b8d9ca002378"><div class="ttname"><a href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Kernel::Char</a></div><div class="ttdeci">char Char</div><div class="ttdef"><b>Definition</b> Defines.h:51</div></div>
 <div class="ttc" id="anamespaceKernel_html_a8fbad4cd517f76cba246c3c170de141d"><div class="ttname"><a href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a></div><div class="ttdeci">int Int32</div><div class="ttdef"><b>Definition</b> Defines.h:38</div></div>
 <div class="ttc" id="anamespaceKernel_html_aac30f48665b606a2bc482f2792369408"><div class="ttname"><a href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a></div><div class="ttdeci">void * VoidPtr</div><div class="ttdef"><b>Definition</b> Defines.h:33</div></div>

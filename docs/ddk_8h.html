@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: dev/ddk/DDKKit/ddk.h File Reference</title>
+<title>NeKernel: dev/ddk/DriverKit/ddk.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -97,7 +96,7 @@ $(document).ready(function(){initNavTree('ddk_8h.html',''); initResizable(); });
   <div class="headertitle"><div class="title">ddk.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="macros_8h_source.html">DDKKit/macros.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="macros_8h_source.html">DriverKit/macros.h</a>&gt;</code><br />
 </div>
 <p><a href="ddk_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -109,12 +108,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad5be25988d9d04cc388260a53c7453de" id="r_ad5be25988d9d04cc388260a53c7453de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#ad5be25988d9d04cc388260a53c7453de">ke_call</a> (const char *name, int32_t cnt, void *dat, <a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a> sz)</td></tr>
-<tr class="memdesc:ad5be25988d9d04cc388260a53c7453de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> procedure.  <br /></td></tr>
-<tr class="separator:ad5be25988d9d04cc388260a53c7453de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d5f62254e7c1f833c5deb72a8916532" id="r_a1d5f62254e7c1f833c5deb72a8916532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a1d5f62254e7c1f833c5deb72a8916532">ke_add_syscall</a> (const int32_t slot, void(*slotFn)(void *a0))</td></tr>
-<tr class="memdesc:a1d5f62254e7c1f833c5deb72a8916532"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a system call.  <br /></td></tr>
-<tr class="separator:a1d5f62254e7c1f833c5deb72a8916532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329b4822703895d5a895b1bd85cffa23" id="r_a329b4822703895d5a895b1bd85cffa23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a329b4822703895d5a895b1bd85cffa23">ke_call_dispatch</a> (const char *name, int32_t cnt, void *dat, <a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a> sz)</td></tr>
+<tr class="memdesc:a329b4822703895d5a895b1bd85cffa23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> procedure.  <br /></td></tr>
+<tr class="separator:a329b4822703895d5a895b1bd85cffa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f29c0888e4b15936dc4d907b72f51d" id="r_a74f29c0888e4b15936dc4d907b72f51d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a74f29c0888e4b15936dc4d907b72f51d">ke_set_syscall</a> (const int32_t slot, void(*slotFn)(void *a0))</td></tr>
+<tr class="memdesc:a74f29c0888e4b15936dc4d907b72f51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a system call.  <br /></td></tr>
+<tr class="separator:a74f29c0888e4b15936dc4d907b72f51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3846a7dd13e8ce2d288fcb7d54e76052" id="r_a3846a7dd13e8ce2d288fcb7d54e76052"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a3846a7dd13e8ce2d288fcb7d54e76052">kalloc</a> (<a class="el" href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a> sz)</td></tr>
 <tr class="memdesc:a3846a7dd13e8ce2d288fcb7d54e76052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates an heap ptr.  <br /></td></tr>
 <tr class="separator:a3846a7dd13e8ce2d288fcb7d54e76052"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,15 +129,15 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a98b043e184a1fc76fb961197db8ce2eb" id="r_a98b043e184a1fc76fb961197db8ce2eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a98b043e184a1fc76fb961197db8ce2eb">kApiVersionHighest</a></td></tr>
-<tr class="memdesc:a98b043e184a1fc76fb961197db8ce2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The highest API version of the DDK.  <br /></td></tr>
-<tr class="separator:a98b043e184a1fc76fb961197db8ce2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae975680533ba71cd3c3bb9edc62f6596" id="r_ae975680533ba71cd3c3bb9edc62f6596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#ae975680533ba71cd3c3bb9edc62f6596">kApiVersionLowest</a></td></tr>
-<tr class="memdesc:ae975680533ba71cd3c3bb9edc62f6596"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lowest API version of the DDK.  <br /></td></tr>
-<tr class="separator:ae975680533ba71cd3c3bb9edc62f6596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a70a2af5cb8091f4553f378fb0fa31d" id="r_a1a70a2af5cb8091f4553f378fb0fa31d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a1a70a2af5cb8091f4553f378fb0fa31d">kApiVersion</a></td></tr>
-<tr class="memdesc:a1a70a2af5cb8091f4553f378fb0fa31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">API version in BCD.  <br /></td></tr>
-<tr class="separator:a1a70a2af5cb8091f4553f378fb0fa31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae166fc495b0c116f89fa30453d18d7fa" id="r_ae166fc495b0c116f89fa30453d18d7fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#ae166fc495b0c116f89fa30453d18d7fa">kApiVersionHighest</a></td></tr>
+<tr class="memdesc:ae166fc495b0c116f89fa30453d18d7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The highest API version of the DDK.  <br /></td></tr>
+<tr class="separator:ae166fc495b0c116f89fa30453d18d7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528b8572a3085e0da7741c06deef6bbd" id="r_a528b8572a3085e0da7741c06deef6bbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a528b8572a3085e0da7741c06deef6bbd">kApiVersionLowest</a></td></tr>
+<tr class="memdesc:a528b8572a3085e0da7741c06deef6bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lowest API version of the DDK.  <br /></td></tr>
+<tr class="separator:a528b8572a3085e0da7741c06deef6bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61210c9d7473e46b189ad19e72129ffd" id="r_a61210c9d7473e46b189ad19e72129ffd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ddk_8h.html#a61210c9d7473e46b189ad19e72129ffd">kApiVersion</a></td></tr>
+<tr class="memdesc:a61210c9d7473e46b189ad19e72129ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">API version in BCD.  <br /></td></tr>
+<tr class="separator:a61210c9d7473e46b189ad19e72129ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a3846a7dd13e8ce2d288fcb7d54e76052" name="a3846a7dd13e8ce2d288fcb7d54e76052"></a>
@@ -176,51 +175,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d5f62254e7c1f833c5deb72a8916532" name="a1d5f62254e7c1f833c5deb72a8916532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d5f62254e7c1f833c5deb72a8916532">&#9670;&#160;</a></span>ke_add_syscall()</h2>
+<a id="a329b4822703895d5a895b1bd85cffa23" name="a329b4822703895d5a895b1bd85cffa23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329b4822703895d5a895b1bd85cffa23">&#9670;&#160;</a></span>ke_call_dispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void ke_add_syscall </td>
-          <td>(</td>
-          <td class="paramtype">const int32_t&#160;</td>
-          <td class="paramname"><em>slot</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(*)(void *a0)&#160;</td>
-          <td class="paramname"><em>slotFn</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>add a system call. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">slot</td><td>system call slot id. </td></tr>
-    <tr><td class="paramname">slotFn,syscall</td><td>slot. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad5be25988d9d04cc388260a53c7453de" name="ad5be25988d9d04cc388260a53c7453de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5be25988d9d04cc388260a53c7453de">&#9670;&#160;</a></span>ke_call()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void * ke_call </td>
+          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void * ke_call_dispatch </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -235,7 +197,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dat</em>, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -261,7 +223,24 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>result of call </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>result of call</dd></dl>
+<p>Call <a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> procedure.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>RPC name </td></tr>
+    <tr><td class="paramname">cnt</td><td>number of elements in <b>data</b> pointer. </td></tr>
+    <tr><td class="paramname">data</td><td>data pointer. </td></tr>
+    <tr><td class="paramname">sz</td><td>The size of the whole data pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void*</td><td><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> call was successful. </td></tr>
+    <tr><td class="paramname">nil</td><td><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> call failed, call KernelLastError(void) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -351,6 +330,43 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a74f29c0888e4b15936dc4d907b72f51d" name="a74f29c0888e4b15936dc4d907b72f51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f29c0888e4b15936dc4d907b72f51d">&#9670;&#160;</a></span>ke_set_syscall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> void ke_set_syscall </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *a0)&#160;</td>
+          <td class="paramname"><em>slotFn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add a system call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>system call slot id. </td></tr>
+    <tr><td class="paramname">slotFn,syscall</td><td>slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2e83e08d4d404fca342fac316b2b9c20" name="a2e83e08d4d404fca342fac316b2b9c20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e83e08d4d404fca342fac316b2b9c20">&#9670;&#160;</a></span>kfree()</h2>
 
@@ -385,14 +401,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a1a70a2af5cb8091f4553f378fb0fa31d" name="a1a70a2af5cb8091f4553f378fb0fa31d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a70a2af5cb8091f4553f378fb0fa31d">&#9670;&#160;</a></span>kApiVersion</h2>
+<a id="a61210c9d7473e46b189ad19e72129ffd" name="a61210c9d7473e46b189ad19e72129ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61210c9d7473e46b189ad19e72129ffd">&#9670;&#160;</a></span>kApiVersion</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t kApiVersion</td>
+          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t kApiVersion</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -401,14 +417,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a98b043e184a1fc76fb961197db8ce2eb" name="a98b043e184a1fc76fb961197db8ce2eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b043e184a1fc76fb961197db8ce2eb">&#9670;&#160;</a></span>kApiVersionHighest</h2>
+<a id="ae166fc495b0c116f89fa30453d18d7fa" name="ae166fc495b0c116f89fa30453d18d7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae166fc495b0c116f89fa30453d18d7fa">&#9670;&#160;</a></span>kApiVersionHighest</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t kApiVersionHighest</td>
+          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t kApiVersionHighest</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,14 +433,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae975680533ba71cd3c3bb9edc62f6596" name="ae975680533ba71cd3c3bb9edc62f6596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae975680533ba71cd3c3bb9edc62f6596">&#9670;&#160;</a></span>kApiVersionLowest</h2>
+<a id="a528b8572a3085e0da7741c06deef6bbd" name="a528b8572a3085e0da7741c06deef6bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528b8572a3085e0da7741c06deef6bbd">&#9670;&#160;</a></span>kApiVersionLowest</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t kApiVersionLowest</td>
+          <td class="memname"><a class="el" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t kApiVersionLowest</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -438,7 +454,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_cb313133c02d2d0617899da27889f8cf.html">ddk</a></li><li class="navelem"><a class="el" href="dir_a37694a0cd0bd9fc164f3470b98e3cc6.html">DDKKit</a></li><li class="navelem"><a class="el" href="ddk_8h.html">ddk.h</a></li>
+    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_cb313133c02d2d0617899da27889f8cf.html">ddk</a></li><li class="navelem"><a class="el" href="dir_f2de59f4f675de3db3620268889bead9.html">DriverKit</a></li><li class="navelem"><a class="el" href="ddk_8h.html">ddk.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

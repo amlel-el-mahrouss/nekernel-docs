@@ -2,10 +2,10 @@ var structEfiRuntimeServices =
 [
     [ "UInt64", "structEfiRuntimeServices.html#a8c5509591849f911293a3859d4424878", null ],
     [ "UInt64", "structEfiRuntimeServices.html#a8343150dbf8bef0899f1e5e23aee91aa", null ],
-    [ "Attributes", "structEfiRuntimeServices.html#a397901b41cfadb7c7786e34ab980b634", null ],
+    [ "Attributes", "structEfiRuntimeServices.html#ad2fccb8e2f1625fee27be9db691baa57", null ],
     [ "ConvertPointer", "structEfiRuntimeServices.html#a59c772ebd93070734246b0446e26ff6a", null ],
-    [ "Data", "structEfiRuntimeServices.html#a24485f8e3009c891deb448fb8906d89a", null ],
-    [ "DataSize", "structEfiRuntimeServices.html#a88c59b0a4bae88cd24f86a201cb5399e", null ],
+    [ "Data", "structEfiRuntimeServices.html#a8d06e3207e84d54c52d767c4237f55d4", null ],
+    [ "DataSize", "structEfiRuntimeServices.html#a1a448e279a436d8255ac1ab76dff903e", null ],
     [ "GetNextHighMonotonicCount", "structEfiRuntimeServices.html#ab55cdedbcb34b3a22e76d9cec0a89b34", null ],
     [ "GetNextVariable", "structEfiRuntimeServices.html#a76ef1da34327674d9deac57c0a9e44fb", null ],
     [ "GetTime", "structEfiRuntimeServices.html#a2d0e74a2f7964f8d15eb974c9754bfe7", null ],
@@ -18,5 +18,5 @@ var structEfiRuntimeServices =
     [ "SetWakeupTime", "structEfiRuntimeServices.html#a895affa0feedf05c76c7280a8ab2fe1c", null ],
     [ "SystemTable", "structEfiRuntimeServices.html#a1c7878e174117a3b995c894e45c1765b", null ],
     [ "UpdateCapsule", "structEfiRuntimeServices.html#a5796e43b0bc613e59598f01a54adbd72", null ],
-    [ "VendorGUID", "structEfiRuntimeServices.html#a4ca582138d3fd4ab015563c3fc8eb58a", null ]
+    [ "VendorGUID", "structEfiRuntimeServices.html#af566347b07772cc7504e2cc1497e63f4", null ]
 ];

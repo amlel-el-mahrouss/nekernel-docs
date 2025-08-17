@@ -1,0 +1,25 @@
+var structKernel_1_1HEFS__BOOT__NODE =
+[
+    [ "fBadSectors", "structKernel_1_1HEFS__BOOT__NODE.html#ab7cab0efe5708e7cae4a23ce377e4ff3", null ],
+    [ "fChecksum", "structKernel_1_1HEFS__BOOT__NODE.html#a5bbcfc643ed72f0ffb729b2b9faa266a", null ],
+    [ "fDiskFlags", "structKernel_1_1HEFS__BOOT__NODE.html#abd332eb288504e5cd88a139cf753e76b", null ],
+    [ "fDiskKind", "structKernel_1_1HEFS__BOOT__NODE.html#af5c0a83c00043c0e928e6466aaee4d33", null ],
+    [ "fDiskSize", "structKernel_1_1HEFS__BOOT__NODE.html#ae0d1518186add26bb55104fdd95efe8e", null ],
+    [ "fDiskStatus", "structKernel_1_1HEFS__BOOT__NODE.html#a6cd4f2b29e9bdbd4d7ea894cf7fefe3b", null ],
+    [ "fEncoding", "structKernel_1_1HEFS__BOOT__NODE.html#a08014e308689d2301bfad4287677d91b", null ],
+    [ "fEndBlock", "structKernel_1_1HEFS__BOOT__NODE.html#a01793a3e5c219fb24575c6e2c13e8c2d", null ],
+    [ "fEndIN", "structKernel_1_1HEFS__BOOT__NODE.html#aa9011a97435803d1363dd5c1b5048da7", null ],
+    [ "fEndIND", "structKernel_1_1HEFS__BOOT__NODE.html#af2b5d59b6fe312f3c2d7eb291140a61f", null ],
+    [ "fINDCount", "structKernel_1_1HEFS__BOOT__NODE.html#a8d6ec7d60f15a04249bed6285d9034e5", null ],
+    [ "fJournalLBA", "structKernel_1_1HEFS__BOOT__NODE.html#a87249a1342f13e6d2959fbaffe2b9232", null ],
+    [ "fMagic", "structKernel_1_1HEFS__BOOT__NODE.html#a1de895d5666cc7d27fb52f372d597406", null ],
+    [ "fPad", "structKernel_1_1HEFS__BOOT__NODE.html#a3b99b89e60c7a6f7e83339f9daf82608", null ],
+    [ "fSectorCount", "structKernel_1_1HEFS__BOOT__NODE.html#a893d30db3c18e16b7063b727e046e986", null ],
+    [ "fSectorSize", "structKernel_1_1HEFS__BOOT__NODE.html#a5a1008323cd17c3d1b3c34bc2dc8c88a", null ],
+    [ "fStartBlock", "structKernel_1_1HEFS__BOOT__NODE.html#af39281a0bd3586d11b1e15f28d550dc5", null ],
+    [ "fStartIN", "structKernel_1_1HEFS__BOOT__NODE.html#a2dd04fb46855ac42b995e907f91779f0", null ],
+    [ "fStartIND", "structKernel_1_1HEFS__BOOT__NODE.html#a200140e8972cff7753b032bf0bab8de4", null ],
+    [ "fVersion", "structKernel_1_1HEFS__BOOT__NODE.html#a0680c58f73bfece4e2f3df42f1171189", null ],
+    [ "fVID", "structKernel_1_1HEFS__BOOT__NODE.html#a3a04f7662a6dab69fee4c32e5f4bae73", null ],
+    [ "fVolName", "structKernel_1_1HEFS__BOOT__NODE.html#a3a3e37d6e8007ca2a3c78bd050c79720", null ]
+];

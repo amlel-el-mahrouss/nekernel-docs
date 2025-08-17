@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -91,13 +91,13 @@ $(document).ready(function(){initNavTree('classKernel_1_1HeFileSystemParser.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classKernel_1_1HeFileSystemParser-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Kernel::HeFileSystemParser Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>HeFS filesystem parser class.  
+<p><a class="el" href="namespaceKernel_1_1HeFS.html">HeFS</a> filesystem parser class.  
  <a href="classKernel_1_1HeFileSystemParser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="HeFS_8h_source.html">HeFS.h</a>&gt;</code></p>
@@ -116,21 +116,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a92d197a6cdff88db973dc631fff92a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672ea55006ddd92c33e530f246673fd4" id="r_a672ea55006ddd92c33e530f246673fd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKernel_1_1HeFileSystemParser.html">HeFileSystemParser</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a672ea55006ddd92c33e530f246673fd4">operator=</a> (<a class="el" href="classKernel_1_1HeFileSystemParser.html">HeFileSystemParser</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a672ea55006ddd92c33e530f246673fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c32b38465be1ff42c755c14cbea6bb" id="r_a67c32b38465be1ff42c755c14cbea6bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a67c32b38465be1ff42c755c14cbea6bb">FormatEPM</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a> end_lba, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *part_name)</td></tr>
-<tr class="memdesc:a67c32b38465be1ff42c755c14cbea6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a EPM+HeFS drive out of the disk.  <br /></td></tr>
-<tr class="separator:a67c32b38465be1ff42c755c14cbea6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac89a91dbba364f44e5fe35abeb0f1f64" id="r_ac89a91dbba364f44e5fe35abeb0f1f64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#ac89a91dbba364f44e5fe35abeb0f1f64">FormatGPT</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a> end_lba, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *part_name)</td></tr>
-<tr class="memdesc:ac89a91dbba364f44e5fe35abeb0f1f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a GPT+HeFS drive out of the disk.  <br /></td></tr>
-<tr class="separator:ac89a91dbba364f44e5fe35abeb0f1f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbd97c145095ca40019de998345b2ae" id="r_a3cbd97c145095ca40019de998345b2ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a3cbd97c145095ca40019de998345b2ae">Format</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *part_name)</td></tr>
+<tr class="memdesc:a3cbd97c145095ca40019de998345b2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a EPM+HeFS drive out of the disk.  <br /></td></tr>
+<tr class="separator:a3cbd97c145095ca40019de998345b2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2ffe47860c4a3f73784721be6c8ea1" id="r_a5f2ffe47860c4a3f73784721be6c8ea1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a5f2ffe47860c4a3f73784721be6c8ea1">CreateINodeDirectory</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *dir)</td></tr>
+<tr class="separator:a5f2ffe47860c4a3f73784721be6c8ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41310ecb4c8b97e8f219ff8352551eda" id="r_a41310ecb4c8b97e8f219ff8352551eda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a41310ecb4c8b97e8f219ff8352551eda">RemoveINodeDirectory</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *dir)</td></tr>
+<tr class="separator:a41310ecb4c8b97e8f219ff8352551eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c42cf32ec2f6b447a6376e7970cce87" id="r_a0c42cf32ec2f6b447a6376e7970cce87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a0c42cf32ec2f6b447a6376e7970cce87">CreateINode</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *dir, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *name, const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kind)</td></tr>
+<tr class="separator:a0c42cf32ec2f6b447a6376e7970cce87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74eea189588ddf53fce3999c603512b9" id="r_a74eea189588ddf53fce3999c603512b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a74eea189588ddf53fce3999c603512b9">DeleteINode</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *dir, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *name, const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kind)</td></tr>
+<tr class="separator:a74eea189588ddf53fce3999c603512b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2381e951a47681af1c500b4fe3902d08" id="r_a2381e951a47681af1c500b4fe3902d08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a2381e951a47681af1c500b4fe3902d08">INodeManip</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> block, <a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a> block_sz, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *dir, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *name, const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kind, const <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> input)</td></tr>
+<tr class="separator:a2381e951a47681af1c500b4fe3902d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a88f35f478e6768005459c9182287bea0" id="r_a88f35f478e6768005459c9182287bea0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a88f35f478e6768005459c9182287bea0">mDriveIndex</a> {<a class="el" href="classKernel_1_1MountpointInterface.html#ab568b7efb2213414b2d0dc05036c182ea49e193c612ba56e84bae89d6a930cab1">MountpointInterface::kDriveIndexA</a>}</td></tr>
-<tr class="separator:a88f35f478e6768005459c9182287bea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a628f2e894d87ef93b3b49ecfa4863c45" id="r_a628f2e894d87ef93b3b49ecfa4863c45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a628f2e894d87ef93b3b49ecfa4863c45">INodeCtlManip</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *dir, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *name, const <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> delete_or_create, const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> kind)</td></tr>
+<tr class="separator:a628f2e894d87ef93b3b49ecfa4863c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c5939edcc33cf3692588d056cddb09" id="r_a13c5939edcc33cf3692588d056cddb09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1HeFileSystemParser.html#a13c5939edcc33cf3692588d056cddb09">INodeDirectoryCtlManip</a> (<a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *drive, <a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> flags, const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *dir, const <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> delete_or_create)</td></tr>
+<tr class="separator:a13c5939edcc33cf3692588d056cddb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>HeFS filesystem parser class. </p>
-<p>This class is used to parse the HeFS filesystem. </p>
+<div class="textblock"><p><a class="el" href="namespaceKernel_1_1HeFS.html">HeFS</a> filesystem parser class. </p>
+<p>This class is used to parse the <a class="el" href="namespaceKernel_1_1HeFS.html">HeFS</a> filesystem. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae95be1ca1aae2ed80eb0b2fd3cb6ce4a" name="ae95be1ca1aae2ed80eb0b2fd3cb6ce4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae95be1ca1aae2ed80eb0b2fd3cb6ce4a">&#9670;&#160;</a></span>HeFileSystemParser() <span class="overload">[1/3]</span></h2>
@@ -235,23 +244,17 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a67c32b38465be1ff42c755c14cbea6bb" name="a67c32b38465be1ff42c755c14cbea6bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67c32b38465be1ff42c755c14cbea6bb">&#9670;&#160;</a></span>FormatEPM()</h2>
+<a id="a0c42cf32ec2f6b447a6376e7970cce87" name="a0c42cf32ec2f6b447a6376e7970cce87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c42cf32ec2f6b447a6376e7970cce87">&#9670;&#160;</a></span>CreateINode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::FormatEPM </td>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::CreateINode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
           <td class="paramname"><em>drive</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a>&#160;</td>
-          <td class="paramname"><em>end_lba</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -262,7 +265,133 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>kind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f2ffe47860c4a3f73784721be6c8ea1" name="a5f2ffe47860c4a3f73784721be6c8ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f2ffe47860c4a3f73784721be6c8ea1">&#9670;&#160;</a></span>CreateINodeDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::CreateINodeDirectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramname"><em>drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74eea189588ddf53fce3999c603512b9" name="a74eea189588ddf53fce3999c603512b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74eea189588ddf53fce3999c603512b9">&#9670;&#160;</a></span>DeleteINode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::DeleteINode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramname"><em>drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>kind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cbd97c145095ca40019de998345b2ae" name="a3cbd97c145095ca40019de998345b2ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cbd97c145095ca40019de998345b2ae">&#9670;&#160;</a></span>Format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::Format </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramname"><em>drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
           <td class="paramname"><em>part_name</em>&#160;</td>
         </tr>
         <tr>
@@ -284,23 +413,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac89a91dbba364f44e5fe35abeb0f1f64" name="ac89a91dbba364f44e5fe35abeb0f1f64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac89a91dbba364f44e5fe35abeb0f1f64">&#9670;&#160;</a></span>FormatGPT()</h2>
+<a id="a628f2e894d87ef93b3b49ecfa4863c45" name="a628f2e894d87ef93b3b49ecfa4863c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628f2e894d87ef93b3b49ecfa4863c45">&#9670;&#160;</a></span>INodeCtlManip()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::FormatGPT </td>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::INodeCtlManip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
           <td class="paramname"><em>drive</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a97976246f60a4a7f7af8ef73dda4236a">Lba</a>&#160;</td>
-          <td class="paramname"><em>end_lba</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -311,8 +437,137 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378">Char</a> *&#160;</td>
-          <td class="paramname"><em>part_name</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td>
+          <td class="paramname"><em>delete_or_create</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>kind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13c5939edcc33cf3692588d056cddb09" name="a13c5939edcc33cf3692588d056cddb09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c5939edcc33cf3692588d056cddb09">&#9670;&#160;</a></span>INodeDirectoryCtlManip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::INodeDirectoryCtlManip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramname"><em>drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td>
+          <td class="paramname"><em>delete_or_create</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2381e951a47681af1c500b4fe3902d08" name="a2381e951a47681af1c500b4fe3902d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2381e951a47681af1c500b4fe3902d08">&#9670;&#160;</a></span>INodeManip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::INodeManip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramname"><em>drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">SizeT</a>&#160;</td>
+          <td class="paramname"><em>block_sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td>
+          <td class="paramname"><em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -321,15 +576,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Make a GPT+HeFS drive out of the disk. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drive</td><td>The drive to write on. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If it was sucessful, see <a class="el" href="KPC_8h.html#a0dd62977e726877749cf96209a818111">err_local_get()</a>. </dd></dl>
 
 </div>
 </div>
@@ -385,15 +631,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a88f35f478e6768005459c9182287bea0" name="a88f35f478e6768005459c9182287bea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88f35f478e6768005459c9182287bea0">&#9670;&#160;</a></span>mDriveIndex</h2>
+<a id="a41310ecb4c8b97e8f219ff8352551eda" name="a41310ecb4c8b97e8f219ff8352551eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41310ecb4c8b97e8f219ff8352551eda">&#9670;&#160;</a></span>RemoveINodeDirectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> Kernel::HeFileSystemParser::mDriveIndex {<a class="el" href="classKernel_1_1MountpointInterface.html#ab568b7efb2213414b2d0dc05036c182ea49e193c612ba56e84bae89d6a930cab1">MountpointInterface::kDriveIndexA</a>}</td>
+          <td class="memname"><a class="el" href="CompilerHint_8h.html#a4094fc0c2f4383d929303d4dfbbae001">_Output</a> <a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::HeFileSystemParser::RemoveINodeDirectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> *&#160;</td>
+          <td class="paramname"><em>drive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1">_Input</a> const <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#aaa58f645f51896d26b963a7f871c9b66">Utf8Char</a> *&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

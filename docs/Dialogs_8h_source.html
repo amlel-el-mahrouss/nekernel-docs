@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -556,7 +555,7 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> is_vista() {</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    OSVERSIONINFOEXW osvi;</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <a class="code hl_function" href="Utils_8cc.html#a53393f40237f7cca6734f3125e091645">memset</a>(&amp;osvi, 0, <span class="keyword">sizeof</span>(osvi));</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <a class="code hl_function" href="namespaceKernel.html#a5d61ffabf654ed6448ba5424b4eefa4c">memset</a>(&amp;osvi, 0, <span class="keyword">sizeof</span>(osvi));</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    DWORDLONG <span class="keyword">const</span> mask = VerSetConditionMask(</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        VerSetConditionMask(VerSetConditionMask(0, VER_MAJORVERSION, VER_GREATER_EQUAL),</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>                            VER_MINORVERSION, VER_GREATER_EQUAL),</div>
@@ -567,7 +566,7 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    osvi.wServicePackMajor   = 0;</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    <span class="keywordflow">return</span> VerifyVersionInfoW(&amp;osvi, VER_MAJORVERSION | VER_MINORVERSION | VER_SERVICEPACKMAJOR,</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>                              mask) != <a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>                              mask) != <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  }</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
@@ -825,7 +824,7 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  DWORD pid;</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  <span class="keyword">auto</span>  tid = GetWindowThreadProcessId(hwnd, &amp;pid);</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  <span class="keywordflow">if</span> (tid == that-&gt;m_tid) that-&gt;m_windows.insert(hwnd);</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>}</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
@@ -1189,7 +1188,7 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span> </div>
 <div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>          BROWSEINFOW bi;</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>          <a class="code hl_function" href="Utils_8cc.html#a53393f40237f7cca6734f3125e091645">memset</a>(&amp;bi, 0, <span class="keyword">sizeof</span>(bi));</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>          memset(&amp;bi, 0, <span class="keyword">sizeof</span>(bi));</div>
 <div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span> </div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>          bi.lpfn   = &amp;bffcallback;</div>
 <div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>          bi.lParam = (LPARAM) <span class="keyword">this</span>;</div>
@@ -1213,7 +1212,7 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>        }</div>
 <div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span> </div>
 <div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>        OPENFILENAMEW ofn;</div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>        <a class="code hl_function" href="Utils_8cc.html#a53393f40237f7cca6734f3125e091645">memset</a>(&amp;ofn, 0, <span class="keyword">sizeof</span>(ofn));</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>        memset(&amp;ofn, 0, <span class="keyword">sizeof</span>(ofn));</div>
 <div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>        ofn.lStructSize = <span class="keyword">sizeof</span>(OPENFILENAMEW);</div>
 <div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>        ofn.hwndOwner   = GetActiveWindow();</div>
 <div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span> </div>
@@ -1454,7 +1453,7 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>  <span class="keyword">auto</span> inst = (<a class="code hl_class" href="classpfd_1_1internal_1_1file__dialog.html">file_dialog</a>*) pData;</div>
 <div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>  <span class="keywordflow">switch</span> (uMsg) {</div>
 <div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>    <span class="keywordflow">case</span> BFFM_INITIALIZED:</div>
-<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>      SendMessage(hwnd, BFFM_SETSELECTIONW, <a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, (LPARAM) inst-&gt;m_wdefault_path.c_str());</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>      SendMessage(hwnd, BFFM_SETSELECTIONW, <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, (LPARAM) inst-&gt;m_wdefault_path.c_str());</div>
 <div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>  }</div>
 <div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>  <span class="keywordflow">return</span> 0;</div>
@@ -1963,7 +1962,6 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="ttc" id="aDialogs_8h_html_a0851d0adb9dc3b40d5c9961d6325ca33"><div class="ttname"><a href="Dialogs_8h.html#a0851d0adb9dc3b40d5c9961d6325ca33">PFD_OSX_ICON</a></div><div class="ttdeci">#define PFD_OSX_ICON(n)</div></div>
 <div class="ttc" id="aNew_8h_html_aa9d55e2f20e580b7445617d0d12fff6e"><div class="ttname"><a href="New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e">size_t</a></div><div class="ttdeci">__SIZE_TYPE__ size_t</div><div class="ttdef"><b>Definition</b> New.h:13</div></div>
 <div class="ttc" id="aSignals_8h_html_addd8dcd406ce514ab3b4f576a5343d42"><div class="ttname"><a href="Signals_8h.html#addd8dcd406ce514ab3b4f576a5343d42">SIGKILL</a></div><div class="ttdeci">#define SIGKILL</div><div class="ttdef"><b>Definition</b> Signals.h:11</div></div>
-<div class="ttc" id="aUtils_8cc_html_a53393f40237f7cca6734f3125e091645"><div class="ttname"><a href="Utils_8cc.html#a53393f40237f7cca6734f3125e091645">memset</a></div><div class="ttdeci">EXTERN_C void * memset(void *dst, int c, long long unsigned int len)</div><div class="ttdef"><b>Definition</b> Utils.cc:184</div></div>
 <div class="ttc" id="aclasspfd_1_1internal_1_1dialog_html"><div class="ttname"><a href="classpfd_1_1internal_1_1dialog.html">pfd::internal::dialog</a></div><div class="ttdef"><b>Definition</b> Dialogs.h:255</div></div>
 <div class="ttc" id="aclasspfd_1_1internal_1_1dialog_html_a05f9a4fcba8f8a9411d7dfaf18ee11ad"><div class="ttname"><a href="classpfd_1_1internal_1_1dialog.html#a05f9a4fcba8f8a9411d7dfaf18ee11ad">pfd::internal::dialog::dialog</a></div><div class="ttdeci">dialog()</div><div class="ttdef"><b>Definition</b> Dialogs.h:875</div></div>
 <div class="ttc" id="aclasspfd_1_1internal_1_1dialog_html_a1a4f28c3c2bbd1629f2f882314fff63e"><div class="ttname"><a href="classpfd_1_1internal_1_1dialog.html#a1a4f28c3c2bbd1629f2f882314fff63e">pfd::internal::dialog::shell_quote</a></div><div class="ttdeci">std::string shell_quote(std::string const &amp;str) const</div><div class="ttdef"><b>Definition</b> Dialogs.h:948</div></div>
@@ -2035,9 +2033,10 @@ $(document).ready(function(){initNavTree('Dialogs_8h_source.html',''); initResiz
 <div class="ttc" id="aclasspfd_1_1settings_html_af1c2f6e88ffafd59a2f7609631a9eade"><div class="ttname"><a href="classpfd_1_1settings.html#af1c2f6e88ffafd59a2f7609631a9eade">pfd::settings::check_program</a></div><div class="ttdeci">bool check_program(std::string const &amp;program)</div><div class="ttdef"><b>Definition</b> Dialogs.h:535</div></div>
 <div class="ttc" id="adev_8h_html_a4a97bf579d8dd726327a23ed36d594bf"><div class="ttname"><a href="dev_8h.html#a4a97bf579d8dd726327a23ed36d594bf">open</a></div><div class="ttdeci">DDK_EXTERN DDK_DEVICE_PTR open(const char *path)</div><div class="ttdoc">Open a new device from path.</div><div class="ttdef"><b>Definition</b> ddk_dev.c:13</div></div>
 <div class="ttc" id="adev_8h_html_a9b54c1e48e7a4f50016970a5187eadd8"><div class="ttname"><a href="dev_8h.html#a9b54c1e48e7a4f50016970a5187eadd8">close</a></div><div class="ttdeci">DDK_EXTERN BOOL close(DDK_DEVICE_PTR device)</div><div class="ttdoc">Close any device.</div><div class="ttdef"><b>Definition</b> ddk_dev.c:21</div></div>
-<div class="ttc" id="akernel_2NewKit_2Macros_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="kernel_2NewKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> Macros.h:139</div></div>
-<div class="ttc" id="akernel_2NewKit_2Macros_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="kernel_2NewKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> Macros.h:140</div></div>
+<div class="ttc" id="akernel_2NeKit_2Macros_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> Macros.h:142</div></div>
+<div class="ttc" id="akernel_2NeKit_2Macros_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> Macros.h:143</div></div>
 <div class="ttc" id="amacros_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> macros.h:25</div></div>
+<div class="ttc" id="anamespaceKernel_html_a5d61ffabf654ed6448ba5424b4eefa4c"><div class="ttname"><a href="namespaceKernel.html#a5d61ffabf654ed6448ba5424b4eefa4c">Kernel::memset</a></div><div class="ttdeci">EXTERN_C void * memset(void *dst, int c, long long unsigned int len)</div><div class="ttdef"><b>Definition</b> AsciiUtils.cc:158</div></div>
 <div class="ttc" id="anamespacepfd_html"><div class="ttname"><a href="namespacepfd.html">pfd</a></div><div class="ttdef"><b>Definition</b> Dialogs.h:70</div></div>
 <div class="ttc" id="anamespacepfd_html_a1a482ccd57bb939dcbf7d9caacd3f997"><div class="ttname"><a href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997">pfd::opt</a></div><div class="ttdeci">opt</div><div class="ttdef"><b>Definition</b> Dialogs.h:99</div></div>
 <div class="ttc" id="anamespacepfd_html_a1a482ccd57bb939dcbf7d9caacd3f997a334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespacepfd.html#a1a482ccd57bb939dcbf7d9caacd3f997a334c4a4c42fdb79d7ebc3e73b517e6f8">pfd::opt::none</a></div><div class="ttdeci">@ none</div></div>

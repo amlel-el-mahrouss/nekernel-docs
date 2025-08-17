@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: tooling/hefs.h File Reference</title>
+<title>NeKernel: tools/libmkfs/hefs.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -124,8 +123,8 @@ Macros</h2></td></tr>
 <tr class="separator:a8fe1a4a1874f9a4c75283c46c13ad465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab08ee8e374ad69d5f02d7cdb327b56e7" id="r_ab08ee8e374ad69d5f02d7cdb327b56e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hefs_8h.html#ab08ee8e374ad69d5f02d7cdb327b56e7">kHeFSPartNameLen</a>&#160;&#160;&#160;(128U)</td></tr>
 <tr class="separator:ab08ee8e374ad69d5f02d7cdb327b56e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f60729bfef17a7492b037d333cf3834" id="r_a7f60729bfef17a7492b037d333cf3834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hefs_8h.html#a7f60729bfef17a7492b037d333cf3834">kHeFSDefaultVoluneName</a>&#160;&#160;&#160;u8&quot;HeFS Volume&quot;</td></tr>
-<tr class="separator:a7f60729bfef17a7492b037d333cf3834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7825ddedc34c6ca0868234b6c44b9089" id="r_a7825ddedc34c6ca0868234b6c44b9089"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hefs_8h.html#a7825ddedc34c6ca0868234b6c44b9089">kHeFSDefaultVolumeName</a>&#160;&#160;&#160;u8&quot;HeFS Volume&quot;</td></tr>
+<tr class="separator:a7825ddedc34c6ca0868234b6c44b9089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -134,52 +133,61 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aeaf1768105f35425ae9139bdc5d342d6" id="r_aeaf1768105f35425ae9139bdc5d342d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6a4d31b8e55e2ca1071e8008f9647e970b">mkfs::hefs::kHeFSHardDrive</a> = 0xC0
-, <a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6a0ea7962df8e67ab1adbb4d76f1611532">mkfs::hefs::kHeFSSolidStateDrive</a> = 0xC1
-, <a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6a981e72d020c3b13b542b6b569e74b212">mkfs::hefs::kHeFSOpticalDrive</a> = 0x0C
-, <a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6a7be5f6236ba48fcad69e412df1b6ce6f">mkfs::hefs::kHeFSMassStorageDevice</a> = 0xCC
+<tr class="memitem:a1603b1ba015461ed98e788f591ada195" id="r_a1603b1ba015461ed98e788f591ada195"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195a4d31b8e55e2ca1071e8008f9647e970b">mkfs::hefs::kHeFSHardDrive</a> = 0xC0
+, <a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195a0ea7962df8e67ab1adbb4d76f1611532">mkfs::hefs::kHeFSSolidStateDrive</a> = 0xC1
+, <a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195a981e72d020c3b13b542b6b569e74b212">mkfs::hefs::kHeFSOpticalDrive</a> = 0x0C
+, <a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195a7be5f6236ba48fcad69e412df1b6ce6f">mkfs::hefs::kHeFSMassStorageDevice</a> = 0xCC
 , <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6a5023bdccdc82b66ced7a4ec6fa20d8da">mkfs::hefs::kHeFSScsiDrive</a> = 0xC4
-, <a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6a6b190216a19a8c436ead8f7c435be4be">mkfs::hefs::kHeFSFlashDrive</a> = 0xC6
-, <a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6a6906e45672d9c88596bfc93d58f82890">mkfs::hefs::kHeFSUnknown</a> = 0xFF
-, <a class="el" href="namespacemkfs_1_1hefs.html#aeaf1768105f35425ae9139bdc5d342d6afccacaf6abbd73e01365230fa18218c2">mkfs::hefs::kHeFSDriveCount</a> = 7
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195a5023bdccdc82b66ced7a4ec6fa20d8da">mkfs::hefs::kHeFSScsiDrive</a> = 0xC4
+, <a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195a6b190216a19a8c436ead8f7c435be4be">mkfs::hefs::kHeFSFlashDrive</a> = 0xC6
+, <a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195a6906e45672d9c88596bfc93d58f82890">mkfs::hefs::kHeFSUnknown</a> = 0xFF
+, <a class="el" href="namespacemkfs_1_1hefs.html#a1603b1ba015461ed98e788f591ada195afccacaf6abbd73e01365230fa18218c2">mkfs::hefs::kHeFSDriveCount</a> = 8
 <br />
  }</td></tr>
-<tr class="separator:aeaf1768105f35425ae9139bdc5d342d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc520cdb879fdf0d4861f873fb013a8" id="r_addc520cdb879fdf0d4861f873fb013a8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#addc520cdb879fdf0d4861f873fb013a8a56bef7f81392c83bd9477f5de86e2af2">mkfs::hefs::kHeFSStatusUnlocked</a> = 0x18
-, <a class="el" href="namespacemkfs_1_1hefs.html#addc520cdb879fdf0d4861f873fb013a8a0d141157c5f0d0a3b4a2a3b003a5b243">mkfs::hefs::kHeFSStatusLocked</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#addc520cdb879fdf0d4861f873fb013a8a25347d5f3cc510842ce1cb73e3ac2908">mkfs::hefs::kHeFSStatusError</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#addc520cdb879fdf0d4861f873fb013a8aaef1232dcd8bf1f10ede6b700344a269">mkfs::hefs::kHeFSStatusInvalid</a>
+<tr class="separator:a1603b1ba015461ed98e788f591ada195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ac9820d0805aaf1d5a6a29665be363" id="r_a90ac9820d0805aaf1d5a6a29665be363"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a56bef7f81392c83bd9477f5de86e2af2">mkfs::hefs::kHeFSStatusUnlocked</a> = 0x18
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a0d141157c5f0d0a3b4a2a3b003a5b243">mkfs::hefs::kHeFSStatusLocked</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a25347d5f3cc510842ce1cb73e3ac2908">mkfs::hefs::kHeFSStatusError</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363aaef1232dcd8bf1f10ede6b700344a269">mkfs::hefs::kHeFSStatusInvalid</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#addc520cdb879fdf0d4861f873fb013a8a8184f79408370d1bc39d2396febaa8cc">mkfs::hefs::kHeFSStatusCount</a>
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#a90ac9820d0805aaf1d5a6a29665be363a8184f79408370d1bc39d2396febaa8cc">mkfs::hefs::kHeFSStatusCount</a>
 <br />
  }</td></tr>
-<tr class="separator:addc520cdb879fdf0d4861f873fb013a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3c5a67079bc990454755858b851c2ad" id="r_ab3c5a67079bc990454755858b851c2ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada97ea45bfd30a5315533148d0194cf641">mkfs::hefs::kHeFSEncodingFlagsUTF8</a> = 0x00
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2adaece906278aec6a63d8de987193a354fa">mkfs::hefs::kHeFSEncodingFlagsUTF16</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2adaee628b068f98ab54adbe00d19e1d6ddf">mkfs::hefs::kHeFSEncodingFlagsUTF32</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada685f640d3e2d1084530e4faaf5109ed8">mkfs::hefs::kHeFSEncodingFlagsUTF16BE</a>
+<tr class="separator:a90ac9820d0805aaf1d5a6a29665be363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78b6c72ca6bdb73d658a1b9297686fb" id="r_ad78b6c72ca6bdb73d658a1b9297686fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba97ea45bfd30a5315533148d0194cf641">mkfs::hefs::kHeFSEncodingFlagsUTF8</a> = 0x50
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fbaece906278aec6a63d8de987193a354fa">mkfs::hefs::kHeFSEncodingFlagsUTF16</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fbaee628b068f98ab54adbe00d19e1d6ddf">mkfs::hefs::kHeFSEncodingFlagsUTF32</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba685f640d3e2d1084530e4faaf5109ed8">mkfs::hefs::kHeFSEncodingFlagsUTF16BE</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada8aadbd8d912c03c7e0d494439d5714f1">mkfs::hefs::kHeFSEncodingFlagsUTF16LE</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada237309f634fe5421e36fe3d208e83cc7">mkfs::hefs::kHeFSEncodingFlagsUTF32BE</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2adaddbbda48b1d135dbef0490245f86a622">mkfs::hefs::kHeFSEncodingFlagsUTF32LE</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada654f5535e143b2ef287b2a27ffd3ca53">mkfs::hefs::kHeFSEncodingFlagsUTF8BE</a>
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba8aadbd8d912c03c7e0d494439d5714f1">mkfs::hefs::kHeFSEncodingFlagsUTF16LE</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba237309f634fe5421e36fe3d208e83cc7">mkfs::hefs::kHeFSEncodingFlagsUTF32BE</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fbaddbbda48b1d135dbef0490245f86a622">mkfs::hefs::kHeFSEncodingFlagsUTF32LE</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba654f5535e143b2ef287b2a27ffd3ca53">mkfs::hefs::kHeFSEncodingFlagsUTF8BE</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada019753d765df7062ba415c8833764ce0">mkfs::hefs::kHeFSEncodingFlagsUTF8LE</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada9940f7017840875efacae2f8dc52f2bc">mkfs::hefs::kHeFSEncodingFlagsBinary</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#ab3c5a67079bc990454755858b851c2ada3a76c14033396ae2c0810715df415f2a">mkfs::hefs::kHeFSEncodingFlagsCount</a>
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba019753d765df7062ba415c8833764ce0">mkfs::hefs::kHeFSEncodingFlagsUTF8LE</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba9940f7017840875efacae2f8dc52f2bc">mkfs::hefs::kHeFSEncodingFlagsBinary</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba3a76c14033396ae2c0810715df415f2a">mkfs::hefs::kHeFSEncodingFlagsCount</a> = 11
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fbae9cc2b23b1a9419bdbbc05d8f4c06097">mkfs::hefs::kHeFSFlagsNone</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba8467b73732c659bf5aac50e4de37249d">mkfs::hefs::kHeFSFlagsReadOnly</a> = 0x100
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fbaf9e2b209c9a9219b5258483c7d508134">mkfs::hefs::kHeFSFlagsHidden</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba46f2b89187d2ff17ff40beb9e68649b9">mkfs::hefs::kHeFSFlagsSystem</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba5807c40782dceece33fa519176ad2852">mkfs::hefs::kHeFSFlagsArchive</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fbac1941e37914ed7008acc79bfe5eac525">mkfs::hefs::kHeFSFlagsDevice</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#ad78b6c72ca6bdb73d658a1b9297686fba6c2a9f9725f85a1c48dcec9b45068961">mkfs::hefs::kHeFSFlagsCount</a> = 7
 <br />
  }</td></tr>
-<tr class="separator:ab3c5a67079bc990454755858b851c2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1257c76c2b857c5b321bec330658ab9f" id="r_a1257c76c2b857c5b321bec330658ab9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespacemkfs_1_1hefs.html#a1257c76c2b857c5b321bec330658ab9fa5ea7c7ff1bee514a21425e2353a08a0a">mkfs::hefs::kHeFSInvalidColor</a> = 0
-, <a class="el" href="namespacemkfs_1_1hefs.html#a1257c76c2b857c5b321bec330658ab9fa2ecb5f61ade972d6803710fb1c0663da">mkfs::hefs::kHeFSRed</a> = 100
-, <a class="el" href="namespacemkfs_1_1hefs.html#a1257c76c2b857c5b321bec330658ab9fa2f492fcf820662edf2310f1cf745a2e6">mkfs::hefs::kHeFSBlack</a>
-, <a class="el" href="namespacemkfs_1_1hefs.html#a1257c76c2b857c5b321bec330658ab9fad1991b40b76d4795a7e1e52136e34d5d">mkfs::hefs::kHeFSColorCount</a>
+<tr class="separator:ad78b6c72ca6bdb73d658a1b9297686fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5555b5ff55860d8f560cd3378d3a1842" id="r_a5555b5ff55860d8f560cd3378d3a1842"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespacemkfs_1_1hefs.html#a5555b5ff55860d8f560cd3378d3a1842a5ea7c7ff1bee514a21425e2353a08a0a">mkfs::hefs::kHeFSInvalidColor</a> = 0
+, <a class="el" href="namespacemkfs_1_1hefs.html#a5555b5ff55860d8f560cd3378d3a1842a2ecb5f61ade972d6803710fb1c0663da">mkfs::hefs::kHeFSRed</a> = 100
+, <a class="el" href="namespacemkfs_1_1hefs.html#a5555b5ff55860d8f560cd3378d3a1842a2f492fcf820662edf2310f1cf745a2e6">mkfs::hefs::kHeFSBlack</a>
+, <a class="el" href="namespacemkfs_1_1hefs.html#a5555b5ff55860d8f560cd3378d3a1842ad1991b40b76d4795a7e1e52136e34d5d">mkfs::hefs::kHeFSColorCount</a>
  }</td></tr>
-<tr class="separator:a1257c76c2b857c5b321bec330658ab9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5555b5ff55860d8f560cd3378d3a1842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -212,14 +220,14 @@ Variables</h2></td></tr>
 <tr class="separator:a61ca883bf4e62758e78620875b3ff93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a7f60729bfef17a7492b037d333cf3834" name="a7f60729bfef17a7492b037d333cf3834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f60729bfef17a7492b037d333cf3834">&#9670;&#160;</a></span>kHeFSDefaultVoluneName</h2>
+<a id="a7825ddedc34c6ca0868234b6c44b9089" name="a7825ddedc34c6ca0868234b6c44b9089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7825ddedc34c6ca0868234b6c44b9089">&#9670;&#160;</a></span>kHeFSDefaultVolumeName</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define kHeFSDefaultVoluneName&#160;&#160;&#160;u8&quot;HeFS Volume&quot;</td>
+          <td class="memname">#define kHeFSDefaultVolumeName&#160;&#160;&#160;u8&quot;HeFS Volume&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -301,7 +309,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2f3df458abe3356131be8f386c04f82e.html">tooling</a></li><li class="navelem"><a class="el" href="hefs_8h.html">hefs.h</a></li>
+    <li class="navelem"><a class="el" href="dir_4eeb864c4eec08c7d6b9d3b0352cfdde.html">tools</a></li><li class="navelem"><a class="el" href="dir_d5f235ae5d205fda848550ab130ac0d1.html">libmkfs</a></li><li class="navelem"><a class="el" href="hefs_8h.html">hefs.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

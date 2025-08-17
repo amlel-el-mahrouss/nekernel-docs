@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -92,13 +91,18 @@ $(document).ready(function(){initNavTree('Semaphore_8h.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Semaphore.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Semaphore structure and functions for synchronization in the kernel.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="CompilerKit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Timer_8h_source.html">KernelKit/Timer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kernel_2NewKit_2Defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kernel_2NeKit_2Defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
 </div>
 <p><a href="Semaphore_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -108,11 +112,122 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceKernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3f1fb71b94fd7475d8e6c78657aa877f" id="r_a3f1fb71b94fd7475d8e6c78657aa877f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>&#160;&#160;&#160;(0U)</td></tr>
+<tr class="separator:a3f1fb71b94fd7475d8e6c78657aa877f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf0f0f2c71d74142d87fd0e1a9762b2" id="r_a4cf0f0f2c71d74142d87fd0e1a9762b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>&#160;&#160;&#160;(1U)</td></tr>
+<tr class="separator:a4cf0f0f2c71d74142d87fd0e1a9762b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee634077849bf1a4517de16a378202b6" id="r_aee634077849bf1a4517de16a378202b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Semaphore_8h.html#aee634077849bf1a4517de16a378202b6">kSemaphoreCount</a>&#160;&#160;&#160;(2U)</td></tr>
+<tr class="separator:aee634077849bf1a4517de16a378202b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa94dd073965cce377c48dab9ca8e3a" id="r_afaa94dd073965cce377c48dab9ca8e3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Semaphore_8h.html#afaa94dd073965cce377c48dab9ca8e3a">kSemaphoreIncrementOwner</a>(sem)&#160;&#160;&#160;(sem[<a class="el" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>]++)</td></tr>
+<tr class="separator:afaa94dd073965cce377c48dab9ca8e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c015773501fa1b07a1872c6ad95eff" id="r_a81c015773501fa1b07a1872c6ad95eff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Semaphore_8h.html#a81c015773501fa1b07a1872c6ad95eff">kSemaphoreDecrementOwner</a>(sem)&#160;&#160;&#160;(sem[<a class="el" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>]--)</td></tr>
+<tr class="separator:a81c015773501fa1b07a1872c6ad95eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2b8b9e81b4f070c7efab3420d14975e8" id="r_a2b8b9e81b4f070c7efab3420d14975e8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2b8b9e81b4f070c7efab3420d14975e8">Kernel::Semaphore</a></td></tr>
-<tr class="separator:a2b8b9e81b4f070c7efab3420d14975e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2466defc76d36bb6518d8774bd28f32e" id="r_a2466defc76d36bb6518d8774bd28f32e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">Kernel::SemaphoreArr</a>[<a class="el" href="Semaphore_8h.html#aee634077849bf1a4517de16a378202b6">kSemaphoreCount</a>]</td></tr>
+<tr class="memdesc:a2466defc76d36bb6518d8774bd28f32e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphore structure used for synchronization.  <br /></td></tr>
+<tr class="separator:a2466defc76d36bb6518d8774bd28f32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a37ae1640115d77d0117467a040c8da29" id="r_a37ae1640115d77d0117467a040c8da29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a37ae1640115d77d0117467a040c8da29">Kernel::rtl_sem_is_valid</a> (const <a class="el" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a> &amp;sem, <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> owner=0)</td></tr>
+<tr class="memdesc:a37ae1640115d77d0117467a040c8da29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the semaphore is valid.  <br /></td></tr>
+<tr class="separator:a37ae1640115d77d0117467a040c8da29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df0d99e29c7133bde1457192a66f9f1" id="r_a9df0d99e29c7133bde1457192a66f9f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9df0d99e29c7133bde1457192a66f9f1">Kernel::rtl_sem_release</a> (<a class="el" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a> &amp;sem)</td></tr>
+<tr class="memdesc:a9df0d99e29c7133bde1457192a66f9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the semaphore, resetting its owner and count.  <br /></td></tr>
+<tr class="separator:a9df0d99e29c7133bde1457192a66f9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad0012c444c4b63644c6a287d675a81" id="r_a2ad0012c444c4b63644c6a287d675a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a2ad0012c444c4b63644c6a287d675a81">Kernel::rtl_sem_acquire</a> (<a class="el" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a> &amp;sem, <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> owner)</td></tr>
+<tr class="memdesc:a2ad0012c444c4b63644c6a287d675a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the semaphore with an owner and a count of zero.  <br /></td></tr>
+<tr class="separator:a2ad0012c444c4b63644c6a287d675a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e184b3dabb1f479642b7ba64aafeb5d" id="r_a1e184b3dabb1f479642b7ba64aafeb5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a1e184b3dabb1f479642b7ba64aafeb5d">Kernel::rtl_sem_wait</a> (<a class="el" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a> &amp;sem, <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> owner, <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> timeout, <a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> *condition=nullptr)</td></tr>
+<tr class="memdesc:a1e184b3dabb1f479642b7ba64aafeb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for the semaphore to be available, blocking until it is.  <br /></td></tr>
+<tr class="separator:a1e184b3dabb1f479642b7ba64aafeb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Semaphore structure and functions for synchronization in the kernel. </p>
+<dl class="section author"><dt>Author</dt><dd>Amlal El Mahrouss </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aee634077849bf1a4517de16a378202b6" name="aee634077849bf1a4517de16a378202b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee634077849bf1a4517de16a378202b6">&#9670;&#160;</a></span>kSemaphoreCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSemaphoreCount&#160;&#160;&#160;(2U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cf0f0f2c71d74142d87fd0e1a9762b2" name="a4cf0f0f2c71d74142d87fd0e1a9762b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf0f0f2c71d74142d87fd0e1a9762b2">&#9670;&#160;</a></span>kSemaphoreCountIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSemaphoreCountIndex&#160;&#160;&#160;(1U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81c015773501fa1b07a1872c6ad95eff" name="a81c015773501fa1b07a1872c6ad95eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c015773501fa1b07a1872c6ad95eff">&#9670;&#160;</a></span>kSemaphoreDecrementOwner</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSemaphoreDecrementOwner</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sem</td><td>)</td>
+          <td>&#160;&#160;&#160;(sem[<a class="el" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>]--)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaa94dd073965cce377c48dab9ca8e3a" name="afaa94dd073965cce377c48dab9ca8e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa94dd073965cce377c48dab9ca8e3a">&#9670;&#160;</a></span>kSemaphoreIncrementOwner</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSemaphoreIncrementOwner</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sem</td><td>)</td>
+          <td>&#160;&#160;&#160;(sem[<a class="el" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>]++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f1fb71b94fd7475d8e6c78657aa877f" name="a3f1fb71b94fd7475d8e6c78657aa877f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1fb71b94fd7475d8e6c78657aa877f">&#9670;&#160;</a></span>kSemaphoreOwnerIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSemaphoreOwnerIndex&#160;&#160;&#160;(0U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -107,9 +106,9 @@ $(document).ready(function(){initNavTree('IO_8h_source.html',''); initResizable(
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="ArchKit_8h.html">ArchKit/ArchKit.h</a>&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="dev_2kernel_2NewKit_2Array_8h.html">NewKit/Array.h</a>&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_2NewKit_2Defines_8h.html">NewKit/Defines.h</a>&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="dev_2kernel_2NewKit_2Ref_8h.html">NewKit/Ref.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="dev_2kernel_2NeKit_2Array_8h.html">NeKit/Array.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_2NeKit_2Defines_8h.html">NeKit/Defines.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="dev_2kernel_2NeKit_2Ref_8h.html">NeKit/Ref.h</a>&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel.html">Kernel</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;SizeT Sz&gt;</div>
@@ -160,15 +159,15 @@ $(document).ready(function(){initNavTree('IO_8h_source.html',''); initResizable(
 </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}  <span class="comment">// namespace Kernel</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#ifdef __x86_64__</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#ifdef __NE_AMD64__</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#include &lt;<a class="code" href="IOArray_09AMD64_8inl.html">KernelKit/PCI/IOArray+AMD64.inl</a>&gt;</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#error Please provide platform specific code for the I/O</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef __x86_64__</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif  </span><span class="comment">// ifdef __NE_AMD64__</span></div>
 <div class="ttc" id="aArchKit_8h_html"><div class="ttname"><a href="ArchKit_8h.html">ArchKit.h</a></div></div>
 <div class="ttc" id="aIOArray_09AMD64_8inl_html"><div class="ttname"><a href="IOArray_09AMD64_8inl.html">IOArray+AMD64.inl</a></div></div>
 <div class="ttc" id="aclassKernel_1_1Array_html"><div class="ttname"><a href="classKernel_1_1Array.html">Kernel::Array</a></div><div class="ttdef"><b>Definition</b> Array.h:15</div></div>
-<div class="ttc" id="aclassKernel_1_1Array_html_af9335d78c6ad94319ed250f8edaf7c38"><div class="ttname"><a href="classKernel_1_1Array.html#af9335d78c6ad94319ed250f8edaf7c38">Kernel::Array::Empty</a></div><div class="ttdeci">Boolean Empty()</div><div class="ttdef"><b>Definition</b> Array.h:28</div></div>
+<div class="ttc" id="aclassKernel_1_1Array_html_af9335d78c6ad94319ed250f8edaf7c38"><div class="ttname"><a href="classKernel_1_1Array.html#af9335d78c6ad94319ed250f8edaf7c38">Kernel::Array::Empty</a></div><div class="ttdeci">Boolean Empty()</div><div class="ttdef"><b>Definition</b> Array.h:25</div></div>
 <div class="ttc" id="aclassKernel_1_1IOArray_html"><div class="ttname"><a href="classKernel_1_1IOArray.html">Kernel::IOArray</a></div><div class="ttdef"><b>Definition</b> IO.h:16</div></div>
 <div class="ttc" id="aclassKernel_1_1IOArray_html_a275ea4826d6e409d9862b2be4785cafa"><div class="ttname"><a href="classKernel_1_1IOArray.html#a275ea4826d6e409d9862b2be4785cafa">Kernel::IOArray::operator=</a></div><div class="ttdeci">IOArray &amp; operator=(const IOArray &amp;)=default</div></div>
 <div class="ttc" id="aclassKernel_1_1IOArray_html_a2f6f38c2bf51454950d3cfbbb320c020"><div class="ttname"><a href="classKernel_1_1IOArray.html#a2f6f38c2bf51454950d3cfbbb320c020">Kernel::IOArray::IOArray</a></div><div class="ttdeci">IOArray()=delete</div></div>
@@ -179,10 +178,10 @@ $(document).ready(function(){initNavTree('IO_8h_source.html',''); initResizable(
 <div class="ttc" id="aclassKernel_1_1IOArray_html_aa17031c3573b5a551adafe721c0ae6c2"><div class="ttname"><a href="classKernel_1_1IOArray.html#aa17031c3573b5a551adafe721c0ae6c2">Kernel::IOArray::Out</a></div><div class="ttdeci">void Out(SizeT index, T value)</div><div class="ttdef"><b>Definition</b> IOArray+AMD64.inl:35</div></div>
 <div class="ttc" id="aclassKernel_1_1IOArray_html_aa9cdcdff23868062741e85d958822b41"><div class="ttname"><a href="classKernel_1_1IOArray.html#aa9cdcdff23868062741e85d958822b41">Kernel::IOArray::IOArray</a></div><div class="ttdeci">IOArray(const IOArray &amp;)=default</div></div>
 <div class="ttc" id="aclassKernel_1_1IOArray_html_af361db3def6d8a53e31a5f504988a830"><div class="ttname"><a href="classKernel_1_1IOArray.html#af361db3def6d8a53e31a5f504988a830">Kernel::IOArray::~IOArray</a></div><div class="ttdeci">~IOArray()</div><div class="ttdef"><b>Definition</b> IO.h:24</div></div>
-<div class="ttc" id="adev_2kernel_2NewKit_2Array_8h_html"><div class="ttname"><a href="dev_2kernel_2NewKit_2Array_8h.html">Array.h</a></div></div>
-<div class="ttc" id="adev_2kernel_2NewKit_2Ref_8h_html"><div class="ttname"><a href="dev_2kernel_2NewKit_2Ref_8h.html">Ref.h</a></div></div>
-<div class="ttc" id="akernel_2NewKit_2Defines_8h_html"><div class="ttname"><a href="kernel_2NewKit_2Defines_8h.html">Defines.h</a></div></div>
-<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
+<div class="ttc" id="adev_2kernel_2NeKit_2Array_8h_html"><div class="ttname"><a href="dev_2kernel_2NeKit_2Array_8h.html">Array.h</a></div></div>
+<div class="ttc" id="adev_2kernel_2NeKit_2Ref_8h_html"><div class="ttname"><a href="dev_2kernel_2NeKit_2Ref_8h.html">Ref.h</a></div></div>
+<div class="ttc" id="akernel_2NeKit_2Defines_8h_html"><div class="ttname"><a href="kernel_2NeKit_2Defines_8h.html">Defines.h</a></div></div>
+<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Device.h:12</div></div>
 <div class="ttc" id="anamespaceKernel_html_a2ddad4e971bf86b7ccd3fa1fb9eb3da1"><div class="ttname"><a href="namespaceKernel.html#a2ddad4e971bf86b7ccd3fa1fb9eb3da1">Kernel::UShort</a></div><div class="ttdeci">unsigned short UShort</div><div class="ttdef"><b>Definition</b> Defines.h:39</div></div>
 <div class="ttc" id="anamespaceKernel_html_a2e276a5001adc36e16b123cec7ba24ba"><div class="ttname"><a href="namespaceKernel.html#a2e276a5001adc36e16b123cec7ba24ba">Kernel::kMaxPorts</a></div><div class="ttdeci">constexpr UInt16 kMaxPorts</div><div class="ttdef"><b>Definition</b> IO.h:43</div></div>
 <div class="ttc" id="anamespaceKernel_html_a39b5bdb05ee1bd00df13897c8db5ee63"><div class="ttname"><a href="namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63">Kernel::SizeT</a></div><div class="ttdeci">__SIZE_TYPE__ SizeT</div><div class="ttdef"><b>Definition</b> Defines.h:58</div></div>

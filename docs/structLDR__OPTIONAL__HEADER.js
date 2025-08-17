@@ -2,11 +2,10 @@ var structLDR__OPTIONAL__HEADER =
 [
     [ "AddressOfEntryPoint", "structLDR__OPTIONAL__HEADER.html#a0d4c6b2e2eb490d1cebfa930e26b7432", null ],
     [ "BaseOfCode", "structLDR__OPTIONAL__HEADER.html#acf4db63b7b97103de90dbc554960a415", null ],
-    [ "BaseOfData", "structLDR__OPTIONAL__HEADER.html#a5256362cd8d4adc91dee32389c8900c7", null ],
     [ "CheckSum", "structLDR__OPTIONAL__HEADER.html#a745110862e14ce5edf752695d247530a", null ],
     [ "DllCharacteristics", "structLDR__OPTIONAL__HEADER.html#ac12c49bf07d36fac6f412a884ca48dc1", null ],
     [ "FileAlignment", "structLDR__OPTIONAL__HEADER.html#ab56d4e548e5de77eebccc613c459f8c3", null ],
-    [ "ImageBase", "structLDR__OPTIONAL__HEADER.html#a0a764790fe3af1e34cfed25380b5a19b", null ],
+    [ "ImageBase", "structLDR__OPTIONAL__HEADER.html#af511f688f9614caf9accea6dca2a6a0e", null ],
     [ "LoaderFlags", "structLDR__OPTIONAL__HEADER.html#a4ee80ae66fdeb7afe6ddacc487fc3e64", null ],
     [ "Magic", "structLDR__OPTIONAL__HEADER.html#a4066e8aa601f1fc6e55b5e95d233a725", null ],
     [ "MajorImageVersion", "structLDR__OPTIONAL__HEADER.html#a343bfe47d8c2cd60869b10c8f321a199", null ],

@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -115,20 +114,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24d253b09c46b1cc16d2808607d2a3fa" id="r_a24d253b09c46b1cc16d2808607d2a3fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#a24d253b09c46b1cc16d2808607d2a3fa">Unlock</a> () noexcept</td></tr>
 <tr class="memdesc:a24d253b09c46b1cc16d2808607d2a3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the binary mutex.  <br /></td></tr>
 <tr class="separator:a24d253b09c46b1cc16d2808607d2a3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb1f3cbf4618cc7374dee36f424b40f5" id="r_afb1f3cbf4618cc7374dee36f424b40f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#afb1f3cbf4618cc7374dee36f424b40f5">WaitForProcess</a> (const <a class="el" href="namespaceKernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a> &amp;sec) noexcept</td></tr>
-<tr class="memdesc:afb1f3cbf4618cc7374dee36f424b40f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for process <b>sec</b> until we check if it's free.  <br /></td></tr>
-<tr class="separator:afb1f3cbf4618cc7374dee36f424b40f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4845aefc38b04625415f5d3a7fdad9" id="r_a8f4845aefc38b04625415f5d3a7fdad9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#a8f4845aefc38b04625415f5d3a7fdad9">Lock</a> (<a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> &amp;process)</td></tr>
-<tr class="memdesc:a8f4845aefc38b04625415f5d3a7fdad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks process in the binary mutex.  <br /></td></tr>
-<tr class="separator:a8f4845aefc38b04625415f5d3a7fdad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0812764ca7e8fedd9bf981986a231e4f" id="r_a0812764ca7e8fedd9bf981986a231e4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#a0812764ca7e8fedd9bf981986a231e4f">LockOrWait</a> (<a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> &amp;process, <a class="el" href="classKernel_1_1TimerInterface.html">TimerInterface</a> *timer)</td></tr>
-<tr class="memdesc:a0812764ca7e8fedd9bf981986a231e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try lock or wait.  <br /></td></tr>
-<tr class="separator:a0812764ca7e8fedd9bf981986a231e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af719187db187fbca63e2772a6177e0b1" id="r_af719187db187fbca63e2772a6177e0b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#af719187db187fbca63e2772a6177e0b1">WaitForProcess</a> (const <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp;sec) noexcept</td></tr>
+<tr class="memdesc:af719187db187fbca63e2772a6177e0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for process <b>sec</b> until we check if it's free.  <br /></td></tr>
+<tr class="separator:af719187db187fbca63e2772a6177e0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20a716f4880cfe057f04312a380733d" id="r_ac20a716f4880cfe057f04312a380733d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#ac20a716f4880cfe057f04312a380733d">Lock</a> (<a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> *process)</td></tr>
+<tr class="memdesc:ac20a716f4880cfe057f04312a380733d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks process in the binary mutex.  <br /></td></tr>
+<tr class="separator:ac20a716f4880cfe057f04312a380733d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3e55220eb3e5652df82aa9cb389774" id="r_a8e3e55220eb3e5652df82aa9cb389774"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#a8e3e55220eb3e5652df82aa9cb389774">LockOrWait</a> (<a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> *process, <a class="el" href="classKernel_1_1TimerInterface.html">TimerInterface</a> *timer)</td></tr>
+<tr class="memdesc:a8e3e55220eb3e5652df82aa9cb389774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try lock or wait.  <br /></td></tr>
+<tr class="separator:a8e3e55220eb3e5652df82aa9cb389774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8ad4df6f793180674ae0cefe39d35308" id="r_a8ad4df6f793180674ae0cefe39d35308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#a8ad4df6f793180674ae0cefe39d35308">fLockingProcess</a></td></tr>
-<tr class="separator:a8ad4df6f793180674ae0cefe39d35308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f7ad404d31a8d5f8fba19a1d0b86b0" id="r_a53f7ad404d31a8d5f8fba19a1d0b86b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1BinaryMutex.html#a53f7ad404d31a8d5f8fba19a1d0b86b0">fLockingProcess</a> {nullptr}</td></tr>
+<tr class="separator:a53f7ad404d31a8d5f8fba19a1d0b86b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Access control class, which locks a task until one is done. </p>
@@ -203,8 +202,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f4845aefc38b04625415f5d3a7fdad9" name="a8f4845aefc38b04625415f5d3a7fdad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f4845aefc38b04625415f5d3a7fdad9">&#9670;&#160;</a></span>Lock()</h2>
+<a id="ac20a716f4880cfe057f04312a380733d" name="ac20a716f4880cfe057f04312a380733d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20a716f4880cfe057f04312a380733d">&#9670;&#160;</a></span>Lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +211,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::BinaryMutex::Lock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> *&#160;</td>
           <td class="paramname"><em>process</em></td><td>)</td>
           <td></td>
         </tr>
@@ -223,8 +222,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0812764ca7e8fedd9bf981986a231e4f" name="a0812764ca7e8fedd9bf981986a231e4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0812764ca7e8fedd9bf981986a231e4f">&#9670;&#160;</a></span>LockOrWait()</h2>
+<a id="a8e3e55220eb3e5652df82aa9cb389774" name="a8e3e55220eb3e5652df82aa9cb389774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3e55220eb3e5652df82aa9cb389774">&#9670;&#160;</a></span>LockOrWait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +231,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespaceKernel.html#a5ec1c5952e55f0f29f5f4f8ac20d13ad">Bool</a> Kernel::BinaryMutex::LockOrWait </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> *&#160;</td>
           <td class="paramname"><em>process</em>, </td>
         </tr>
         <tr>
@@ -280,8 +279,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afb1f3cbf4618cc7374dee36f424b40f5" name="afb1f3cbf4618cc7374dee36f424b40f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb1f3cbf4618cc7374dee36f424b40f5">&#9670;&#160;</a></span>WaitForProcess()</h2>
+<a id="af719187db187fbca63e2772a6177e0b1" name="af719187db187fbca63e2772a6177e0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af719187db187fbca63e2772a6177e0b1">&#9670;&#160;</a></span>WaitForProcess()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +291,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::BinaryMutex::WaitForProcess </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceKernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Int16</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> &amp;&#160;</td>
           <td class="paramname"><em>sec</em></td><td>)</td>
           <td></td>
         </tr>
@@ -315,8 +314,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8ad4df6f793180674ae0cefe39d35308" name="a8ad4df6f793180674ae0cefe39d35308"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ad4df6f793180674ae0cefe39d35308">&#9670;&#160;</a></span>fLockingProcess</h2>
+<a id="a53f7ad404d31a8d5f8fba19a1d0b86b0" name="a53f7ad404d31a8d5f8fba19a1d0b86b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f7ad404d31a8d5f8fba19a1d0b86b0">&#9670;&#160;</a></span>fLockingProcess</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +324,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a>&amp; Kernel::BinaryMutex::fLockingProcess</td>
+          <td class="memname"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a>* Kernel::BinaryMutex::fLockingProcess {nullptr}</td>
         </tr>
       </table>
   </td>

@@ -9,5 +9,6 @@ var structBOOTNET__INTERNET__HEADER =
     [ "NB3", "structBOOTNET__INTERNET__HEADER.html#aea4bf3e39101934bd335675084e69c45", null ],
     [ "NB4", "structBOOTNET__INTERNET__HEADER.html#a8388ed6d5ef9e16e8a0397ae6955f048", null ],
     [ "Preflight", "structBOOTNET__INTERNET__HEADER.html#aae3e54769b0fff338b6aa54f3603a5d6", null ],
-    [ "Target", "structBOOTNET__INTERNET__HEADER.html#a0751bd4fb59e9c020936cf5dc9c749e8", null ]
+    [ "Target", "structBOOTNET__INTERNET__HEADER.html#a0751bd4fb59e9c020936cf5dc9c749e8", null ],
+    [ "Version", "structBOOTNET__INTERNET__HEADER.html#afdf1ae98fc13312201a518db02c87bc7", null ]
 ];

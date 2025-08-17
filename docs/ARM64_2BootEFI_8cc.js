@@ -7,6 +7,6 @@ var ARM64_2BootEFI_8cc =
     [ "rt_reset_hardware", "ARM64_2BootEFI_8cc.html#a0908b40c96960891de26d84dfa738fda", null ],
     [ "BS", "ARM64_2BootEFI_8cc.html#a78d359eab2435f640c4c7633e81155bd", null ],
     [ "kGop", "ARM64_2BootEFI_8cc.html#a3829aba0f8fbd5c64a3b79ae0799b53c", null ],
-    [ "kGopGuid", "ARM64_2BootEFI_8cc.html#a7a5243ff8016352eb7720bd8393200be", null ],
+    [ "kGopGuid", "ARM64_2BootEFI_8cc.html#a5a3aa7f7830a346a4d531c14b7bc576d", null ],
     [ "kGopStride", "ARM64_2BootEFI_8cc.html#ab1b13e56d446b2b0bd3c580bf6a9e059", null ]
 ];

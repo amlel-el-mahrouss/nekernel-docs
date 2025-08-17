@@ -2,19 +2,19 @@ var searchData=
 [
   ['scsi_5fpacket_5ftype_0',['scsi_packet_type',['../namespaceKernel.html#a1f06eab77d37172ac30ddc223eacbf0d',1,'Kernel']]],
   ['scsi_5fpacket_5ftype_5f12_1',['scsi_packet_type_12',['../namespaceKernel.html#ac027a5f3ae33c8056b7221beca87f626',1,'Kernel']]],
-  ['segmentarray_2',['SegmentArray',['../namespaceKernel_1_1HAL.html#a5307b33b203457671876a78de0e37231',1,'Kernel::HAL']]],
-  ['semaphore_3',['Semaphore',['../namespaceKernel.html#a2b8b9e81b4f070c7efab3420d14975e8',1,'Kernel']]],
+  ['semaphorearr_2',['SemaphoreArr',['../namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e',1,'Kernel']]],
+  ['semaphoreref_3',['SemaphoreRef',['../System_8h.html#abbe2d45665ed2898d33ca8b439958fce',1,'System.h']]],
   ['short_4',['Short',['../namespaceKernel.html#ac861a8f71a08950dbdacbf5814efddae',1,'Kernel']]],
   ['signalkind_5',['SignalKind',['../namespaceKernel.html#a39b76eab2ccf186a18143464b97e73c7',1,'Kernel']]],
-  ['sint16_6',['sint16',['../namespaceKernel.html#ae9d81b8d5478b971df17a4295efeaf39',1,'Kernel::SInt16'],['../user_2Macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
-  ['sint32_7',['sint32',['../namespaceKernel.html#acbc040f7132975ab615ece6b877b4c25',1,'Kernel::SInt32'],['../user_2Macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
-  ['sint64_8',['sint64',['../namespaceKernel.html#aaa04483922d796a944f29817e74a4ba3',1,'Kernel::SInt64'],['../user_2Macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],
-  ['sint8_9',['SInt8',['../user_2Macros_8h.html#aaa25d67f876e77346aeca5db9fdc34e8',1,'Macros.h']]],
+  ['sint16_6',['sint16',['../namespaceKernel.html#ae9d81b8d5478b971df17a4295efeaf39',1,'Kernel::SInt16'],['../libSystem_2SystemKit_2Macros_8h.html#aab68908257a1ee8e227048141326e457',1,'SInt16:&#160;Macros.h']]],
+  ['sint32_7',['sint32',['../namespaceKernel.html#acbc040f7132975ab615ece6b877b4c25',1,'Kernel::SInt32'],['../libSystem_2SystemKit_2Macros_8h.html#af45a51e25ce5df3f319f7e085d6d3767',1,'SInt32:&#160;Macros.h']]],
+  ['sint64_8',['sint64',['../namespaceKernel.html#aaa04483922d796a944f29817e74a4ba3',1,'Kernel::SInt64'],['../libSystem_2SystemKit_2Macros_8h.html#a637e6553e682cc8b9ab17bf05201b051',1,'SInt64:&#160;Macros.h']]],
+  ['sint8_9',['SInt8',['../libSystem_2SystemKit_2Macros_8h.html#aaa25d67f876e77346aeca5db9fdc34e8',1,'Macros.h']]],
   ['size_10',['Size',['../namespaceKernel.html#a491c180e187771df3ce5885241ed061b',1,'Kernel']]],
   ['size_5ft_11',['size_t',['../New_8h.html#aa9d55e2f20e580b7445617d0d12fff6e',1,'New.h']]],
-  ['sizet_12',['sizet',['../namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63',1,'Kernel::SizeT'],['../user_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10',1,'SizeT:&#160;Macros.h']]],
-  ['socketref_13',['SocketRef',['../SystemCalls_8h.html#a33b5198f7ba47dba8faac36d3d787cc8',1,'SystemCalls.h']]],
+  ['sizet_12',['sizet',['../namespaceKernel.html#a39b5bdb05ee1bd00df13897c8db5ee63',1,'Kernel::SizeT'],['../libSystem_2SystemKit_2Macros_8h.html#ab5060adaff7d15b3ac19481139e04c10',1,'SizeT:&#160;Macros.h']]],
+  ['socketref_13',['SocketRef',['../System_8h.html#a33b5198f7ba47dba8faac36d3d787cc8',1,'System.h']]],
   ['ssize_14',['SSize',['../namespaceKernel.html#a2bc4382d02e68601e3976fa71cb8338b',1,'Kernel']]],
   ['ssizet_15',['SSizeT',['../namespaceKernel.html#a193842946b685b42acd908caef26c30d',1,'Kernel']]],
-  ['stackframeptr_16',['StackFramePtr',['../namespaceKernel_1_1HAL.html#aba672fa291f54ca77d557633ee59c56b',1,'Kernel::HAL']]]
+  ['stackframeptr_16',['StackFramePtr',['../namespaceKernel_1_1HAL.html#a170dff87d6222eaa9789656777293277',1,'Kernel::HAL']]]
 ];

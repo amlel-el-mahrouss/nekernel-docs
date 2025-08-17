@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -106,19 +105,122 @@ $(document).ready(function(){initNavTree('Semaphore_8h_source.html',''); initRes
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="CompilerKit_8h.html">CompilerKit/CompilerKit.h</a>&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="Timer_8h.html">KernelKit/Timer.h</a>&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_2NewKit_2Defines_8h.html">NewKit/Defines.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel.html">Kernel</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a2b8b9e81b4f070c7efab3420d14975e8">   14</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a> <a class="code hl_typedef" href="namespaceKernel.html#a2b8b9e81b4f070c7efab3420d14975e8">Semaphore</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}  <span class="comment">// namespace Kernel</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="CompilerKit_8h.html">CompilerKit/CompilerKit.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="Timer_8h.html">KernelKit/Timer.h</a>&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_2NeKit_2Defines_8h.html">NeKit/Defines.h</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">   17</a></span><span class="preprocessor">#define kSemaphoreOwnerIndex (0U)</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">   18</a></span><span class="preprocessor">#define kSemaphoreCountIndex (1U)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="Semaphore_8h.html#aee634077849bf1a4517de16a378202b6">   20</a></span><span class="preprocessor">#define kSemaphoreCount (2U)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="Semaphore_8h.html#afaa94dd073965cce377c48dab9ca8e3a">   22</a></span><span class="preprocessor">#define kSemaphoreIncrementOwner(sem) (sem[kSemaphoreOwnerIndex]++)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="Semaphore_8h.html#a81c015773501fa1b07a1872c6ad95eff">   23</a></span><span class="preprocessor">#define kSemaphoreDecrementOwner(sem) (sem[kSemaphoreOwnerIndex]--)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel.html">Kernel</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">   27</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> <a class="code hl_typedef" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a>[<a class="code hl_define" href="Semaphore_8h.html#aee634077849bf1a4517de16a378202b6">kSemaphoreCount</a>];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a37ae1640115d77d0117467a040c8da29">   30</a></span><span class="keyword">inline</span> <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="namespaceKernel.html#a37ae1640115d77d0117467a040c8da29">rtl_sem_is_valid</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a>&amp; sem, <a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> owner = 0) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">return</span> sem[<a class="code hl_define" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>] == owner &amp;&amp; sem[<a class="code hl_define" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>] &gt; 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a9df0d99e29c7133bde1457192a66f9f1">   37</a></span><span class="keyword">inline</span> <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="namespaceKernel.html#a9df0d99e29c7133bde1457192a66f9f1">rtl_sem_release</a>(<a class="code hl_typedef" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a>&amp; sem) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  sem[<a class="code hl_define" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>] = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  sem[<a class="code hl_define" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>] = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a2ad0012c444c4b63644c6a287d675a81">   48</a></span><span class="keyword">inline</span> <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="namespaceKernel.html#a2ad0012c444c4b63644c6a287d675a81">rtl_sem_acquire</a>(<a class="code hl_typedef" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a>&amp; sem, <a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> owner) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">if</span> (!owner) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a9b3bc9dd8d64d3133dec0c36f0d1e54c">kErrorInvalidData</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;  <span class="comment">// Invalid owner</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  sem[<a class="code hl_define" href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a>] = owner;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  sem[<a class="code hl_define" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>] = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a1e184b3dabb1f479642b7ba64aafeb5d">   65</a></span><span class="keyword">inline</span> <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="namespaceKernel.html#a1e184b3dabb1f479642b7ba64aafeb5d">rtl_sem_wait</a>(<a class="code hl_typedef" href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">SemaphoreArr</a>&amp; sem, <a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> owner, <a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> timeout,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                         <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>* condition = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceKernel.html#a37ae1640115d77d0117467a040c8da29">rtl_sem_is_valid</a>(sem, owner)) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span> (timeout &lt;= 0) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#ae1a21ebdc1d9fd7340f2528ced6e8111">kErrorTimeout</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">if</span> (!condition || *condition) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">if</span> (sem[<a class="code hl_define" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>] == 0) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a5bfb2c7165385dd129b376202cdb5afa">kErrorUnavailable</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">kErrorSuccess</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    sem[<a class="code hl_define" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>]--;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <a class="code hl_class" href="classKernel_1_1HardwareTimer.html">HardwareTimer</a> timer(timeout);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>          ret = timer.<a class="code hl_function" href="classKernel_1_1HardwareTimer.html#a5686bbcfab1a78648dbfedcb89ddd349">Wait</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">if</span> (ret) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (!condition || *condition) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">if</span> (sem[<a class="code hl_define" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>] == 0) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a5bfb2c7165385dd129b376202cdb5afa">kErrorUnavailable</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">kErrorSuccess</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      sem[<a class="code hl_define" href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a>]--;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <a class="code hl_define" href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a>() = <a class="code hl_variable" href="namespaceKernel.html#ae1a21ebdc1d9fd7340f2528ced6e8111">kErrorTimeout</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;  <span class="comment">// Failed to acquire semaphore</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}  <span class="comment">// namespace Kernel</span></div>
 <div class="ttc" id="aCompilerKit_8h_html"><div class="ttname"><a href="CompilerKit_8h.html">CompilerKit.h</a></div></div>
+<div class="ttc" id="aKPC_8h_html_a1a591a11fe40496846d0680bb30327b7"><div class="ttname"><a href="KPC_8h.html#a1a591a11fe40496846d0680bb30327b7">err_global_get</a></div><div class="ttdeci">#define err_global_get()</div><div class="ttdef"><b>Definition</b> KPC.h:25</div></div>
+<div class="ttc" id="aSemaphore_8h_html_a3f1fb71b94fd7475d8e6c78657aa877f"><div class="ttname"><a href="Semaphore_8h.html#a3f1fb71b94fd7475d8e6c78657aa877f">kSemaphoreOwnerIndex</a></div><div class="ttdeci">#define kSemaphoreOwnerIndex</div><div class="ttdef"><b>Definition</b> Semaphore.h:17</div></div>
+<div class="ttc" id="aSemaphore_8h_html_a4cf0f0f2c71d74142d87fd0e1a9762b2"><div class="ttname"><a href="Semaphore_8h.html#a4cf0f0f2c71d74142d87fd0e1a9762b2">kSemaphoreCountIndex</a></div><div class="ttdeci">#define kSemaphoreCountIndex</div><div class="ttdef"><b>Definition</b> Semaphore.h:18</div></div>
+<div class="ttc" id="aSemaphore_8h_html_aee634077849bf1a4517de16a378202b6"><div class="ttname"><a href="Semaphore_8h.html#aee634077849bf1a4517de16a378202b6">kSemaphoreCount</a></div><div class="ttdeci">#define kSemaphoreCount</div><div class="ttdef"><b>Definition</b> Semaphore.h:20</div></div>
 <div class="ttc" id="aTimer_8h_html"><div class="ttname"><a href="Timer_8h.html">Timer.h</a></div></div>
-<div class="ttc" id="akernel_2NewKit_2Defines_8h_html"><div class="ttname"><a href="kernel_2NewKit_2Defines_8h.html">Defines.h</a></div></div>
-<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
-<div class="ttc" id="anamespaceKernel_html_a2b8b9e81b4f070c7efab3420d14975e8"><div class="ttname"><a href="namespaceKernel.html#a2b8b9e81b4f070c7efab3420d14975e8">Kernel::Semaphore</a></div><div class="ttdeci">Int64 Semaphore</div><div class="ttdef"><b>Definition</b> Semaphore.h:14</div></div>
-<div class="ttc" id="anamespaceKernel_html_a5801162fe3161371005a37736050c570"><div class="ttname"><a href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Kernel::Int64</a></div><div class="ttdeci">__INT64_TYPE__ Int64</div><div class="ttdef"><b>Definition</b> Defines.h:46</div></div>
+<div class="ttc" id="aclassKernel_1_1HardwareTimer_html"><div class="ttname"><a href="classKernel_1_1HardwareTimer.html">Kernel::HardwareTimer</a></div><div class="ttdef"><b>Definition</b> Timer.h:47</div></div>
+<div class="ttc" id="aclassKernel_1_1HardwareTimer_html_a5686bbcfab1a78648dbfedcb89ddd349"><div class="ttname"><a href="classKernel_1_1HardwareTimer.html#a5686bbcfab1a78648dbfedcb89ddd349">Kernel::HardwareTimer::Wait</a></div><div class="ttdeci">BOOL Wait() noexcept override</div><div class="ttdoc">Wait for the timer to stop spinning.</div><div class="ttdef"><b>Definition</b> HalTimer.cc:78</div></div>
+<div class="ttc" id="akernel_2NeKit_2Defines_8h_html"><div class="ttname"><a href="kernel_2NeKit_2Defines_8h.html">Defines.h</a></div></div>
+<div class="ttc" id="akernel_2NeKit_2Macros_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="kernel_2NeKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> Macros.h:142</div></div>
+<div class="ttc" id="akernel_2NeKit_2Macros_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="kernel_2NeKit_2Macros_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> Macros.h:143</div></div>
+<div class="ttc" id="amacros_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> macros.h:25</div></div>
+<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Device.h:12</div></div>
+<div class="ttc" id="anamespaceKernel_html_a1e184b3dabb1f479642b7ba64aafeb5d"><div class="ttname"><a href="namespaceKernel.html#a1e184b3dabb1f479642b7ba64aafeb5d">Kernel::rtl_sem_wait</a></div><div class="ttdeci">BOOL rtl_sem_wait(SemaphoreArr &amp;sem, UInt64 owner, UInt64 timeout, BOOL *condition=nullptr)</div><div class="ttdoc">Waits for the semaphore to be available, blocking until it is.</div><div class="ttdef"><b>Definition</b> Semaphore.h:65</div></div>
+<div class="ttc" id="anamespaceKernel_html_a1ee8cad04f3464b7e0a2df9e45099dc6"><div class="ttname"><a href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a></div><div class="ttdeci">constexpr KPCError kErrorSuccess</div><div class="ttdef"><b>Definition</b> KPC.h:32</div></div>
+<div class="ttc" id="anamespaceKernel_html_a2466defc76d36bb6518d8774bd28f32e"><div class="ttname"><a href="namespaceKernel.html#a2466defc76d36bb6518d8774bd28f32e">Kernel::SemaphoreArr</a></div><div class="ttdeci">UInt64 SemaphoreArr[kSemaphoreCount]</div><div class="ttdoc">Semaphore structure used for synchronization.</div><div class="ttdef"><b>Definition</b> Semaphore.h:27</div></div>
+<div class="ttc" id="anamespaceKernel_html_a2ad0012c444c4b63644c6a287d675a81"><div class="ttname"><a href="namespaceKernel.html#a2ad0012c444c4b63644c6a287d675a81">Kernel::rtl_sem_acquire</a></div><div class="ttdeci">BOOL rtl_sem_acquire(SemaphoreArr &amp;sem, UInt64 owner)</div><div class="ttdoc">Initializes the semaphore with an owner and a count of zero.</div><div class="ttdef"><b>Definition</b> Semaphore.h:48</div></div>
+<div class="ttc" id="anamespaceKernel_html_a37ae1640115d77d0117467a040c8da29"><div class="ttname"><a href="namespaceKernel.html#a37ae1640115d77d0117467a040c8da29">Kernel::rtl_sem_is_valid</a></div><div class="ttdeci">BOOL rtl_sem_is_valid(const SemaphoreArr &amp;sem, UInt64 owner=0)</div><div class="ttdoc">Checks if the semaphore is valid.</div><div class="ttdef"><b>Definition</b> Semaphore.h:30</div></div>
+<div class="ttc" id="anamespaceKernel_html_a5bfb2c7165385dd129b376202cdb5afa"><div class="ttname"><a href="namespaceKernel.html#a5bfb2c7165385dd129b376202cdb5afa">Kernel::kErrorUnavailable</a></div><div class="ttdeci">constexpr KPCError kErrorUnavailable</div><div class="ttdef"><b>Definition</b> KPC.h:70</div></div>
+<div class="ttc" id="anamespaceKernel_html_a6d35555a92a80d5864d0a1cce15a38a5"><div class="ttname"><a href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a></div><div class="ttdeci">__UINT64_TYPE__ UInt64</div><div class="ttdef"><b>Definition</b> Defines.h:48</div></div>
+<div class="ttc" id="anamespaceKernel_html_a9b3bc9dd8d64d3133dec0c36f0d1e54c"><div class="ttname"><a href="namespaceKernel.html#a9b3bc9dd8d64d3133dec0c36f0d1e54c">Kernel::kErrorInvalidData</a></div><div class="ttdeci">constexpr KPCError kErrorInvalidData</div><div class="ttdef"><b>Definition</b> KPC.h:56</div></div>
+<div class="ttc" id="anamespaceKernel_html_a9df0d99e29c7133bde1457192a66f9f1"><div class="ttname"><a href="namespaceKernel.html#a9df0d99e29c7133bde1457192a66f9f1">Kernel::rtl_sem_release</a></div><div class="ttdeci">BOOL rtl_sem_release(SemaphoreArr &amp;sem)</div><div class="ttdoc">Releases the semaphore, resetting its owner and count.</div><div class="ttdef"><b>Definition</b> Semaphore.h:37</div></div>
+<div class="ttc" id="anamespaceKernel_html_ae1a21ebdc1d9fd7340f2528ced6e8111"><div class="ttname"><a href="namespaceKernel.html#ae1a21ebdc1d9fd7340f2528ced6e8111">Kernel::kErrorTimeout</a></div><div class="ttdeci">constexpr KPCError kErrorTimeout</div><div class="ttdef"><b>Definition</b> KPC.h:68</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

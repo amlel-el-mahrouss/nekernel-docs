@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -93,40 +92,92 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
   <div class="headertitle"><div class="title">README</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div align="center"> <img src="meta/png/nekernel.png" alt="Logo" width="256" class="inline"/> </div><p><br  />
-</p>
-<p><img src="https://github.com/amlel-el-mahrouss/nekernel/actions/workflows/boot-pio.yml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/> <img src="https://github.com/amlel-el-mahrouss/nekernel/actions/workflows/kernel-ahci.yml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/> [<img src="https://img.shields.io/badge/license-GPL--3.0-blue.svg" alt="License: GPL-3.0" style="pointer-events: none;" class="inline"/>](LICENSE) "" "![QEMU Tested](https://img.shields.io/badge/QEMU-Tested-success)"</p>
-<h2><a class="anchor" id="autotoc_md39"></a>
-Brief:</h2>
-<p>A kernel for engineers who want a custom solution for their stack, written mostly in C++ it aims to provide a base for other projects/products.</p>
-<h2><a class="anchor" id="autotoc_md40"></a>
-User Friendly Diagram:</h2>
-<div align="center"> <img src="docs/svg/OS_DESIGN.png" alt="Diagram" class="inline"/> </div><h2><a class="anchor" id="autotoc_md41"></a>
-Notice for Doxygen:</h2>
-<p>Use the doxygen command to build documentation. <br  />
- A documentation for NeKernel is available here: <a href="https://nekernel-org.github.io/docs/">https://nekernel-org.github.io/docs/</a></p>
-<h2><a class="anchor" id="autotoc_md42"></a>
-Requirements:</h2>
+<div class="textblock"><div align="center"> <img src="meta/png/nekernel.png" alt="NeKernel Logo" width="180" class="inline"/> <h1>NeKernel</h1>
+</div><div align="center"> </div><div align="center"> <b>Modern, Modular, and Secure Microkernel for Next-Generation Systems</b> </div><div align="center"> </div><div align="center"> <a href="https://github.com/nekernel-org/nekernel/actions/workflows/boot-pio.yml"><img src="https://github.com/amlel-el-mahrouss/nekernel/actions/workflows/boot-pio.yml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/nekernel-org/nekernel/actions/workflows/kernel-ahci.yml"><img src="https://github.com/amlel-el-mahrouss/nekernel/actions/workflows/kernel-ahci.yml/badge.svg" alt="CI" style="pointer-events: none;" class="inline"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue.svg" alt="License" style="pointer-events: none;" class="inline"/></a> <img src="https://img.shields.io/badge/QEMU-Tested-success" alt="QEMU Tested" class="inline"/> </div><div align="center"> </div><hr  />
+<h2><a class="anchor" id="autotoc_md59"></a>
+Overview</h2>
+<p><b>NeKernel</b> is a modern, multi-platform microkernel designed for security, modularity, and performance. It features a custom VFS, advanced memory management, a flexible DDK (Driver Development Kit), and robust userland tools. NeKernel is built for research, education, and next-generation OS development.</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md61"></a>
+Features</h2>
 <ul>
-<li><a href="https://www.mingw-w64.org/">MINGW-W64</a></li>
-<li><a href="https://clang.llvm.org/">CLANG</a></li>
+<li><b>Modular Microkernel Architecture</b>: Clean separation of kernel, drivers, userland, and frameworks.</li>
+<li><b>Custom Filesystems</b>: (HeFS), catalog/fork model (NeFS), and metadata handling.</li>
+<li><b>Memory Management</b>: Custom heap manager, page manager, and safe memory utilities. <a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> heap allocations are protected with metadata and CRCs. Userland and kernel memory separation.</li>
+<li><b>Device and Driver Model</b>: Abstracted device interfaces for storage, network, and more. DDK (Device Driver Kit) for writing drivers in C/C++ with kernel RPC and memory-safe APIs.</li>
+<li><b>Userland Tooling</b>: CLI tools for formatting, checking, and managing filesystems, disk image utilities, and system utilities. All tools interact with kernel or disk images using well-defined APIs.</li>
+<li><b>System Call Interface</b>: low-level syscall ABI, with a stable high-level SDK for user applications. System calls are routed through a syscall manager and abstracted by <code>libSystem</code>.</li>
+<li><b>Security and Robustness</b>: kernel and tools (bounds checks, safe memory copy/set, error codes). <a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> panics and error reporting for critical failures. No dynamic code loading in kernel space.</li>
+<li><b>Documentation and Specs</b>: Full LaTeX specifications for HeFS and NeFS, with on-disk structure diagrams and API documentation. Markdown docs for tools and usage.</li>
+<li><b>Cross-Platform <a class="el" href="namespaceBoot.html" title="Framebuffer helpers.">Boot</a> Support</b>: Bootloader and platform code for AMD64 and ARM64, with handover and hardware abstraction layers.</li>
+<li><b>Testing and Debugging</b>: Logging, debug output, and kernel test framework headers. (Note: Fuzzing/sanitizer support is planned but not fully implemented.)</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md63"></a>
+Getting Started</h2>
+<h3><a class="anchor" id="autotoc_md64"></a>
+&lt;strong&gt;Requirements&lt;/strong&gt;</h3>
+<ul>
+<li><a href="https://www.mingw-w64.org/">MinGW</a> (cross-compiling)</li>
+<li><a href="https://clang.llvm.org/">Clang</a></li>
 <li><a href="https://nasm.us/">NASM</a></li>
-<li><a href="https://git-scm.com/">GIT</a></li>
-<li><a href="https://github.com/nekernel-org/btb">BTB</a></li>
+<li><a href="https://github.com/nekernel-org/nebuild">NeBuild</a> (build system)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md43"></a>
-Notice for Contributors:</h2>
-<ul>
-<li>Run <code>format.sh</code> before commiting, it formats the code according to the .clang-format.</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md44"></a>
-Getting Started:</h2>
-<div class="fragment"><div class="line">git clone git@github.com:nekernel-org/nekernel.git</div>
+<h3><a class="anchor" id="autotoc_md65"></a>
+&lt;strong&gt;Build &amp; Run&lt;/strong&gt;</h3>
+<div class="fragment"><div class="line">git clone https://github.com/nekernel-org/nekernel.git</div>
 <div class="line">cd nekernel</div>
 <div class="line">./setup_x64.sh</div>
-<div class="line">./debug_ata_x64.sh # Generic ATA PIO target</div>
-</div><!-- fragment --><h6>Copyright (C) 2024-2025 Amlal El Mahrouss, All rights reserved.</h6>
-</div></div><!-- contents -->
+<div class="line">./debug_ata_x64.sh   # For generic ATA PIO target (QEMU)</div>
+</div><!-- fragment --><ul>
+<li>For ARM64 or other targets, see the scripts in <code>dev/boot/</code>.</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md67"></a>
+Structure</h2>
+<ul>
+<li><code>dev/kernel/</code> — Core kernel source (scheduling, memory, VFS, drivers)</li>
+<li><code>dev/boot/</code> — Bootloader, platform bring-up, and early system code</li>
+<li><code>dev/ddk/</code> — Driver Development Kit (DDK) and sample drivers</li>
+<li><code>dev/libSystem/</code> — Userland system call interface and runtime</li>
+<li><code>public/tools/</code> — CLI tools (mkfs, fsck, open, manual, etc.)</li>
+<li><code>public/frameworks/</code> — Userland frameworks (CoreFoundation, DiskImage, etc.)</li>
+<li><code>docs/</code> — Specifications, design docs, and diagrams</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md69"></a>
+Security</h2>
+<ul>
+<li><b>Vulnerability Disclosure:</b> <br  />
+ Please report security issues privately via email or GitHub Security Advisories.</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md71"></a>
+Documentation</h2>
+<ul>
+<li><a href="https://nekernel-org.github.io/doc/">API Reference (Doxygen)</a></li>
+<li><a href="docs/tex/">Filesystem Specifications</a></li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md73"></a>
+Contributing</h2>
+<ul>
+<li>Please run <code>format.sh</code> before committing (uses <code>.clang-format</code>).</li>
+<li>All contributions (code, docs, fuzzing, security) are welcome!</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md75"></a>
+Authors &amp; Credits</h2>
+<ul>
+<li><b>Amlal El Mahrouss</b> — Lead developer, kernel architect</li>
+<li><a href="https://github.com/nekernel-org/nekernel/graphs/contributors">Full contributor list</a></li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md77"></a>
+License</h2>
+<p>This project is licensed under the [GPL-3.0 License](LICENSE).</p>
+<hr  />
+<div align="center"> <sub> &copy; 2024-2025 Amlal El Mahrouss &amp; NeKernel contributors. All rights reserved. </sub> </div> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

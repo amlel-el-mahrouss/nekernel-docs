@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -109,7 +108,7 @@ $(document).ready(function(){initNavTree('public_2frameworks_2CoreFoundation_8fw
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define _REF_H_</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="Object_8h.html">CoreFoundation.fwrk/headers/Object.h</a>&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="SystemCalls_8h.html">user/SystemCalls.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="System_8h.html">libSystem/SystemKit/System.h</a>&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceCF.html">CF</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
@@ -122,7 +121,7 @@ $(document).ready(function(){initNavTree('public_2frameworks_2CoreFoundation_8fw
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classCF_1_1CF__OBJECT.html#a2e17c0c821f7ff139fd2d475bc3ceb7f">   23</a></span>  <a class="code hl_function" href="classCF_1_1CF__OBJECT.html#a2e17c0c821f7ff139fd2d475bc3ceb7f">~CFRef</a>() {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="SystemCalls_8h.html#aa33333c25d871ad24aab58d3d21436ab">MmGetHeapFlags</a>(fClass) != -1) <span class="keyword">delete</span> fClass;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="System_8h.html#aa33333c25d871ad24aab58d3d21436ab">MmGetHeapFlags</a>(fClass) != -1) <span class="keyword">delete</span> fClass;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  }</div>
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
@@ -194,8 +193,8 @@ $(document).ready(function(){initNavTree('public_2frameworks_2CoreFoundation_8fw
 <div class="ttc" id="aKernelPanic_8h_html_a21aee4c355d56e3630f2f341f59b9406"><div class="ttname"><a href="KernelPanic_8h.html#a21aee4c355d56e3630f2f341f59b9406">MUST_PASS</a></div><div class="ttdeci">#define MUST_PASS(EXPR)</div><div class="ttdef"><b>Definition</b> KernelPanic.h:40</div></div>
 <div class="ttc" id="aObject_8h_html"><div class="ttname"><a href="Object_8h.html">Object.h</a></div></div>
 <div class="ttc" id="aObject_8h_html_aaaa3f6329bcb486279ed2497eeaaedc2"><div class="ttname"><a href="Object_8h.html#aaaa3f6329bcb486279ed2497eeaaedc2">CF_OBJECT</a></div><div class="ttdeci">#define CF_OBJECT</div><div class="ttdef"><b>Definition</b> Object.h:12</div></div>
-<div class="ttc" id="aSystemCalls_8h_html"><div class="ttname"><a href="SystemCalls_8h.html">SystemCalls.h</a></div></div>
-<div class="ttc" id="aSystemCalls_8h_html_aa33333c25d871ad24aab58d3d21436ab"><div class="ttname"><a href="SystemCalls_8h.html#aa33333c25d871ad24aab58d3d21436ab">MmGetHeapFlags</a></div><div class="ttdeci">IMPORT_C UInt32 MmGetHeapFlags(_Input VoidPtr heap)</div><div class="ttdoc">Change protection flags of a memory region.</div></div>
+<div class="ttc" id="aSystem_8h_html"><div class="ttname"><a href="System_8h.html">System.h</a></div></div>
+<div class="ttc" id="aSystem_8h_html_aa33333c25d871ad24aab58d3d21436ab"><div class="ttname"><a href="System_8h.html#aa33333c25d871ad24aab58d3d21436ab">MmGetHeapFlags</a></div><div class="ttdeci">IMPORT_C UInt32 MmGetHeapFlags(_Input VoidPtr heap)</div><div class="ttdoc">Change protection flags of a memory region.</div></div>
 <div class="ttc" id="aclassCF_1_1CFNonNullRef_html"><div class="ttname"><a href="classCF_1_1CFNonNullRef.html">CF::CFNonNullRef</a></div><div class="ttdef"><b>Definition</b> Ref.h:61</div></div>
 <div class="ttc" id="aclassCF_1_1CFNonNullRef_html_a0249046fc72fd60e44070fae1f1ddc40"><div class="ttname"><a href="classCF_1_1CFNonNullRef.html#a0249046fc72fd60e44070fae1f1ddc40">CF::CFNonNullRef::CFNonNullRef</a></div><div class="ttdeci">CFNonNullRef(nullPtr)=delete</div></div>
 <div class="ttc" id="aclassCF_1_1CFNonNullRef_html_a15194f4b379dcd66ea51e29d0c4ca188"><div class="ttname"><a href="classCF_1_1CFNonNullRef.html#a15194f4b379dcd66ea51e29d0c4ca188">CF::CFNonNullRef::fRef</a></div><div class="ttdeci">CFRef&lt; T &gt; fRef</div><div class="ttdef"><b>Definition</b> Ref.h:77</div></div>

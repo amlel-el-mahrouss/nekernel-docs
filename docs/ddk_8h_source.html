@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: dev/ddk/DDKKit/ddk.h Source File</title>
+<title>NeKernel: dev/ddk/DriverKit/ddk.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -109,7 +108,7 @@ $(document).ready(function(){initNavTree('ddk_8h_source.html',''); initResizable
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="macros_8h.html">DDKKit/macros.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="macros_8h.html">DriverKit/macros.h</a>&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span>DDK_STATUS_STRUCT;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>DDK_OBJECT_MANIFEST;</div>
@@ -129,9 +128,9 @@ $(document).ready(function(){initNavTree('ddk_8h_source.html',''); initResizable
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structDDK__FINAL.html#aba46ae71b61dbb738ea9a90904e71063">   29</a></span>  <span class="keyword">struct </span>DDK_OBJECT_MANIFEST* <a class="code hl_variable" href="structDDK__FINAL.html#aba46ae71b61dbb738ea9a90904e71063">s_object</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="ddk_8h.html#ad5be25988d9d04cc388260a53c7453de">   38</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> <span class="keywordtype">void</span>* <a class="code hl_function" href="ddk_8h.html#ad5be25988d9d04cc388260a53c7453de">ke_call</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t cnt, <span class="keywordtype">void</span>* dat, <span class="keywordtype">size_t</span> sz);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> <span class="keywordtype">void</span>* <a class="code hl_function" href="ddk_8h.html#a329b4822703895d5a895b1bd85cffa23">ke_call_dispatch</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t cnt, <span class="keywordtype">void</span>* dat, <span class="keywordtype">size_t</span> sz);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="ddk_8h.html#a1d5f62254e7c1f833c5deb72a8916532">   43</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> <span class="keywordtype">void</span> <a class="code hl_function" href="ddk_8h.html#a1d5f62254e7c1f833c5deb72a8916532">ke_add_syscall</a>(<span class="keyword">const</span> int32_t slot, <span class="keywordtype">void</span> (*slotFn)(<span class="keywordtype">void</span>* a0));</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="ddk_8h.html#a74f29c0888e4b15936dc4d907b72f51d">   43</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> <span class="keywordtype">void</span> <a class="code hl_function" href="ddk_8h.html#a74f29c0888e4b15936dc4d907b72f51d">ke_set_syscall</a>(<span class="keyword">const</span> int32_t slot, <span class="keywordtype">void</span> (*slotFn)(<span class="keywordtype">void</span>* a0));</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> <span class="keywordtype">void</span>* <a class="code hl_function" href="ddk_8h.html#a3846a7dd13e8ce2d288fcb7d54e76052">kalloc</a>(<span class="keywordtype">size_t</span> sz);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
@@ -141,20 +140,20 @@ $(document).ready(function(){initNavTree('ddk_8h_source.html',''); initResizable
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="ddk_8h.html#a685b048ef66c79d2d6eea41a92e4e8cb">   65</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> <span class="keywordtype">void</span>* <a class="code hl_function" href="ddk_8h.html#a685b048ef66c79d2d6eea41a92e4e8cb">ke_set_obj</a>(<span class="keyword">const</span> int32_t slot, <span class="keyword">const</span> <span class="keyword">struct</span> DDK_OBJECT_MANIFEST* ddk_pr);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="ddk_8h.html#a98b043e184a1fc76fb961197db8ce2eb">   68</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t <a class="code hl_variable" href="ddk_8h.html#a98b043e184a1fc76fb961197db8ce2eb">kApiVersionHighest</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="ddk_8h.html#ae166fc495b0c116f89fa30453d18d7fa">   68</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t <a class="code hl_variable" href="ddk_8h.html#ae166fc495b0c116f89fa30453d18d7fa">kApiVersionHighest</a>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="ddk_8h.html#ae975680533ba71cd3c3bb9edc62f6596">   71</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t <a class="code hl_variable" href="ddk_8h.html#ae975680533ba71cd3c3bb9edc62f6596">kApiVersionLowest</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="ddk_8h.html#a528b8572a3085e0da7741c06deef6bbd">   71</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t <a class="code hl_variable" href="ddk_8h.html#a528b8572a3085e0da7741c06deef6bbd">kApiVersionLowest</a>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="ddk_8h.html#a1a70a2af5cb8091f4553f378fb0fa31d">   74</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> int32_t <a class="code hl_variable" href="ddk_8h.html#a1a70a2af5cb8091f4553f378fb0fa31d">kApiVersion</a>;</div>
-<div class="ttc" id="addk_8h_html_a1a70a2af5cb8091f4553f378fb0fa31d"><div class="ttname"><a href="ddk_8h.html#a1a70a2af5cb8091f4553f378fb0fa31d">kApiVersion</a></div><div class="ttdeci">DDK_EXTERN int32_t kApiVersion</div><div class="ttdoc">API version in BCD.</div><div class="ttdef"><b>Definition</b> ddk.h:74</div></div>
-<div class="ttc" id="addk_8h_html_a1d5f62254e7c1f833c5deb72a8916532"><div class="ttname"><a href="ddk_8h.html#a1d5f62254e7c1f833c5deb72a8916532">ke_add_syscall</a></div><div class="ttdeci">DDK_EXTERN void ke_add_syscall(const int32_t slot, void(*slotFn)(void *a0))</div><div class="ttdoc">add a system call.</div></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="ddk_8h.html#a61210c9d7473e46b189ad19e72129ffd">   74</a></span><a class="code hl_define" href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a> uint32_t <a class="code hl_variable" href="ddk_8h.html#a61210c9d7473e46b189ad19e72129ffd">kApiVersion</a>;</div>
 <div class="ttc" id="addk_8h_html_a2e83e08d4d404fca342fac316b2b9c20"><div class="ttname"><a href="ddk_8h.html#a2e83e08d4d404fca342fac316b2b9c20">kfree</a></div><div class="ttdeci">DDK_EXTERN void kfree(void *the_ptr)</div><div class="ttdoc">Frees an heap ptr.</div><div class="ttdef"><b>Definition</b> ddk_alloc.c:28</div></div>
+<div class="ttc" id="addk_8h_html_a329b4822703895d5a895b1bd85cffa23"><div class="ttname"><a href="ddk_8h.html#a329b4822703895d5a895b1bd85cffa23">ke_call_dispatch</a></div><div class="ttdeci">DDK_EXTERN void * ke_call_dispatch(const char *name, int32_t cnt, void *dat, size_t sz)</div><div class="ttdoc">Call Kernel procedure.</div><div class="ttdef"><b>Definition</b> ddk_kernel_call.c:44</div></div>
 <div class="ttc" id="addk_8h_html_a3846a7dd13e8ce2d288fcb7d54e76052"><div class="ttname"><a href="ddk_8h.html#a3846a7dd13e8ce2d288fcb7d54e76052">kalloc</a></div><div class="ttdeci">DDK_EXTERN void * kalloc(size_t sz)</div><div class="ttdoc">Allocates an heap ptr.</div><div class="ttdef"><b>Definition</b> ddk_alloc.c:16</div></div>
+<div class="ttc" id="addk_8h_html_a528b8572a3085e0da7741c06deef6bbd"><div class="ttname"><a href="ddk_8h.html#a528b8572a3085e0da7741c06deef6bbd">kApiVersionLowest</a></div><div class="ttdeci">DDK_EXTERN uint32_t kApiVersionLowest</div><div class="ttdoc">The lowest API version of the DDK.</div><div class="ttdef"><b>Definition</b> ddk.h:71</div></div>
+<div class="ttc" id="addk_8h_html_a61210c9d7473e46b189ad19e72129ffd"><div class="ttname"><a href="ddk_8h.html#a61210c9d7473e46b189ad19e72129ffd">kApiVersion</a></div><div class="ttdeci">DDK_EXTERN uint32_t kApiVersion</div><div class="ttdoc">API version in BCD.</div><div class="ttdef"><b>Definition</b> ddk.h:74</div></div>
 <div class="ttc" id="addk_8h_html_a685b048ef66c79d2d6eea41a92e4e8cb"><div class="ttname"><a href="ddk_8h.html#a685b048ef66c79d2d6eea41a92e4e8cb">ke_set_obj</a></div><div class="ttdeci">DDK_EXTERN void * ke_set_obj(const int32_t slot, const struct DDK_OBJECT_MANIFEST *ddk_pr)</div><div class="ttdoc">Set a Kernel object.</div></div>
-<div class="ttc" id="addk_8h_html_a763d2d877f202682c19575d9cc6e0e29"><div class="ttname"><a href="ddk_8h.html#a763d2d877f202682c19575d9cc6e0e29">ke_get_obj</a></div><div class="ttdeci">DDK_EXTERN struct DDK_OBJECT_MANIFEST * ke_get_obj(const int slot, const char *name)</div><div class="ttdoc">Gets a Kernel object.</div><div class="ttdef"><b>Definition</b> ddk_kernel_call.c:40</div></div>
-<div class="ttc" id="addk_8h_html_a98b043e184a1fc76fb961197db8ce2eb"><div class="ttname"><a href="ddk_8h.html#a98b043e184a1fc76fb961197db8ce2eb">kApiVersionHighest</a></div><div class="ttdeci">DDK_EXTERN int32_t kApiVersionHighest</div><div class="ttdoc">The highest API version of the DDK.</div><div class="ttdef"><b>Definition</b> ddk.h:68</div></div>
-<div class="ttc" id="addk_8h_html_ad5be25988d9d04cc388260a53c7453de"><div class="ttname"><a href="ddk_8h.html#ad5be25988d9d04cc388260a53c7453de">ke_call</a></div><div class="ttdeci">DDK_EXTERN void * ke_call(const char *name, int32_t cnt, void *dat, size_t sz)</div><div class="ttdoc">Call Kernel procedure.</div></div>
-<div class="ttc" id="addk_8h_html_ae975680533ba71cd3c3bb9edc62f6596"><div class="ttname"><a href="ddk_8h.html#ae975680533ba71cd3c3bb9edc62f6596">kApiVersionLowest</a></div><div class="ttdeci">DDK_EXTERN int32_t kApiVersionLowest</div><div class="ttdoc">The lowest API version of the DDK.</div><div class="ttdef"><b>Definition</b> ddk.h:71</div></div>
+<div class="ttc" id="addk_8h_html_a74f29c0888e4b15936dc4d907b72f51d"><div class="ttname"><a href="ddk_8h.html#a74f29c0888e4b15936dc4d907b72f51d">ke_set_syscall</a></div><div class="ttdeci">DDK_EXTERN void ke_set_syscall(const int32_t slot, void(*slotFn)(void *a0))</div><div class="ttdoc">add a system call.</div></div>
+<div class="ttc" id="addk_8h_html_a763d2d877f202682c19575d9cc6e0e29"><div class="ttname"><a href="ddk_8h.html#a763d2d877f202682c19575d9cc6e0e29">ke_get_obj</a></div><div class="ttdeci">DDK_EXTERN struct DDK_OBJECT_MANIFEST * ke_get_obj(const int slot, const char *name)</div><div class="ttdoc">Gets a Kernel object.</div><div class="ttdef"><b>Definition</b> ddk_kernel_call.c:60</div></div>
+<div class="ttc" id="addk_8h_html_ae166fc495b0c116f89fa30453d18d7fa"><div class="ttname"><a href="ddk_8h.html#ae166fc495b0c116f89fa30453d18d7fa">kApiVersionHighest</a></div><div class="ttdeci">DDK_EXTERN uint32_t kApiVersionHighest</div><div class="ttdoc">The highest API version of the DDK.</div><div class="ttdef"><b>Definition</b> ddk.h:68</div></div>
 <div class="ttc" id="amacros_8h_html"><div class="ttname"><a href="macros_8h.html">macros.h</a></div></div>
 <div class="ttc" id="amacros_8h_html_a24efff7fe40f8abca1f11c4c8ee3b0ba"><div class="ttname"><a href="macros_8h.html#a24efff7fe40f8abca1f11c4c8ee3b0ba">DDK_EXTERN</a></div><div class="ttdeci">#define DDK_EXTERN</div><div class="ttdef"><b>Definition</b> macros.h:28</div></div>
 <div class="ttc" id="astructDDK__FINAL_html"><div class="ttname"><a href="structDDK__FINAL.html">DDK_FINAL</a></div><div class="ttdoc">Object handle manifest.</div><div class="ttdef"><b>Definition</b> ddk.h:18</div></div>
@@ -170,7 +169,7 @@ $(document).ready(function(){initNavTree('ddk_8h_source.html',''); initResizable
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_cb313133c02d2d0617899da27889f8cf.html">ddk</a></li><li class="navelem"><a class="el" href="dir_a37694a0cd0bd9fc164f3470b98e3cc6.html">DDKKit</a></li><li class="navelem"><a class="el" href="ddk_8h.html">ddk.h</a></li>
+    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_cb313133c02d2d0617899da27889f8cf.html">ddk</a></li><li class="navelem"><a class="el" href="dir_f2de59f4f675de3db3620268889bead9.html">DriverKit</a></li><li class="navelem"><a class="el" href="ddk_8h.html">ddk.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

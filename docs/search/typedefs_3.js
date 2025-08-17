@@ -8,9 +8,10 @@ var searchData=
   ['cfpropertyarray_5',['CFPropertyArray',['../namespaceCF.html#a2b229dda071d3ccb79e55a6d27458c91',1,'CF']]],
   ['cfpropertyid_6',['CFPropertyId',['../namespaceCF.html#a3bdf31935f4a453f6583ae9407727be1',1,'CF']]],
   ['cfreal_7',['CFReal',['../namespaceCF.html#a015f9e006989dd7e727692d9d9cb4a54',1,'CF']]],
-  ['char_8',['char',['../namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378',1,'Kernel::Char'],['../user_2Macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e',1,'Char:&#160;Macros.h']]],
+  ['char_8',['char',['../namespaceKernel.html#a844c6a4fa8f9d2a62aa1b8d9ca002378',1,'Kernel::Char'],['../libSystem_2SystemKit_2Macros_8h.html#a7942e32f6409fbd1fd347a8c23ef725e',1,'Char:&#160;Macros.h']]],
   ['char16_9',['Char16',['../namespaceKernel.html#a4023c0dbc1028e46ac013c7a96ed5025',1,'Kernel']]],
-  ['charactertypeutf16_10',['CharacterTypeUTF16',['../namespaceBoot.html#ae3c6485eaee1c210cf856d442ce3c7a7',1,'Boot']]],
-  ['charactertypeutf8_11',['CharacterTypeUTF8',['../namespaceBoot.html#af4fbfbcef45cf86b54114a8d8ac49525',1,'Boot']]],
-  ['cursortype_12',['CursorType',['../namespaceKernel.html#ac4915b883535302f04f978b1c160ad64',1,'Kernel']]]
+  ['charactertypeascii_10',['CharacterTypeASCII',['../namespaceBoot.html#af598e810f47394f29f144cc3084daaec',1,'Boot']]],
+  ['charactertypeutf16_11',['CharacterTypeUTF16',['../namespaceBoot.html#ae3c6485eaee1c210cf856d442ce3c7a7',1,'Boot']]],
+  ['charactertypeutf8_12',['CharacterTypeUTF8',['../namespaceBoot.html#a5943fa357a5ad4ffec7ec08b0798363c',1,'Boot']]],
+  ['cursortype_13',['CursorType',['../namespaceKernel.html#ac4915b883535302f04f978b1c160ad64',1,'Kernel']]]
 ];

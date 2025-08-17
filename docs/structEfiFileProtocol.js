@@ -2,7 +2,7 @@ var structEfiFileProtocol =
 [
     [ "EfiStatusType", "structEfiFileProtocol.html#a7d9973f84f35b52138186a1e82c32814", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#a5b956ff7fd85d9f216baff78982620d6", null ],
-    [ "EfiStatusType", "structEfiFileProtocol.html#a15054fcde50c122903abbc36fd19f9f1", null ],
+    [ "EfiStatusType", "structEfiFileProtocol.html#a0975c9cd5029b5c296c7b2d739b32c98", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#a921b1aa2833e27a2bf4be4d503ace140", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#ad0c75867446eb2f84fd19c23c642e26a", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#a532161a78b4156cc262fff32b672234e", null ],
@@ -10,7 +10,7 @@ var structEfiFileProtocol =
     [ "EfiStatusType", "structEfiFileProtocol.html#a451f02fa58435781b9fc765fdd3b38ee", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#acb53b89ff670db63143ae2742e97dae8", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#a8031d8d7cc092a45990c883cdfe3246c", null ],
-    [ "EfiStatusType", "structEfiFileProtocol.html#aaf5c7ff7183fe7367783683da346f007", null ],
+    [ "EfiStatusType", "structEfiFileProtocol.html#a341c7eb26a852ef4eb2caa17bed7ef5d", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#a3c303c3ed76aa622b167d8fc95c01162", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#ab9d3a6b2ad1994e6738693b00172bb66", null ],
     [ "EfiStatusType", "structEfiFileProtocol.html#afba59f1eaf3f1efe9bca959ead8b0391", null ],

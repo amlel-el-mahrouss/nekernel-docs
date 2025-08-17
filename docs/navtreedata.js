@@ -25,8 +25,28 @@
 var NAVTREE =
 [
   [ "NeKernel", "index.html", [
-    [ "/props/kern_ver", "md_dev_2boot_2src_2docs_2KERN__VER.html", null ],
+    [ "<tt>/props/kern_ver</tt> — NVRAM EFI Variable", "md_dev_2boot_2src_2docs_2KERN__VER.html", [
+      [ "🛠 Reason", "md_dev_2boot_2src_2docs_2KERN__VER.html#autotoc_md1", null ],
+      [ "🧪 Usage", "md_dev_2boot_2src_2docs_2KERN__VER.html#autotoc_md2", null ],
+      [ "© License", "md_dev_2boot_2src_2docs_2KERN__VER.html#autotoc_md3", null ]
+    ] ],
+    [ "<tt>mkfs.hefs</tt> – HeFS Filesystem Formatter", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html", [
+      [ "🛠 Features", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md6", null ],
+      [ "🧪 Usage", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md8", null ],
+      [ "🧾 Arguments", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md9", null ],
+      [ "</blockquote>", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md10", null ],
+      [ "🧷 Notes", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md11", null ],
+      [ "💻 Example", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md13", null ],
+      [ "📁 BootNode Structure", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md15", null ],
+      [ "⚠️ Error Handling", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md16", null ],
+      [ "📚 Source Location", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md18", null ],
+      [ "© License", "md_dev_2boot_2src_2docs_2MKFS__HEFS.html#autotoc_md20", null ]
+    ] ],
+    [ "Notice for LaTeX documents.", "md_docs_2tex_2NOTICE.html", [
+      [ "Recommended Tool", "md_docs_2tex_2NOTICE.html#autotoc_md57", null ]
+    ] ],
     [ "README", "md_README.html", null ],
+    [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -35,7 +55,7 @@ var NAVTREE =
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Enumerator", "namespacemembers_eval.html", "namespacemembers_eval" ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -70,36 +90,36 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ACPIFactoryInterface_8cc.html",
-"ARM64_2HalApplicationProcessor_8cc.html#aa2bc0a36c74951a06b21313fc5e210f2",
-"Crc32_8cc.html#a975017fe71e8bd3726877bf268387150",
-"EFI_2EFI_8h.html#a5b524fe93de766914b9a99d5446f4d1fab8cd8f20847ddf6580ee3477bee4a86c",
-"HalTimerAMD64_8cc.html",
-"LoaderInterface_8h.html",
-"PE_8h.html",
-"SystemCalls_8h.html#a3ae06d2bf36450a91d32edb5a84d1cff",
-"classBootDeviceATA.html#ade6204df6767071354ba438f34d72aae",
-"classCF_1_1XRN_1_1GUID.html#a213220cbda5417f70b2102bcf6559fa8",
-"classKernel_1_1ErrorOr.html#ad5558009d92165fc579e6bb581f43634",
-"classKernel_1_1ICodec.html#a48adda88e3732051d3b8b5e54682667c",
-"classKernel_1_1MacAddressGetter.html",
-"classKernel_1_1NetworkDevice.html",
-"classKernel_1_1PTEWrapper.html#a460e25811d9fc32fc5d9884362fe2b74",
-"classKernel_1_1USER__PROCESS.html#a01bfdaa9219267c891710247e364aa5b",
-"classpfd_1_1internal_1_1executor.html#a7a164503ced150f7ad6c3e6084d4ff9b",
-"dir_f1d17ceec7cf07100894915f0f4395bb.html",
-"kernel_2NewKit_2Defines_8h.html#a30ca716b7a4d726297809b6b70fdafcb",
-"modules_2ATA_2ATA_8h.html#ad2f2744a08145beb17b7ed6ca0465d85",
-"namespaceKernel.html#a832ed369b02764ea7582cc7c5587c022",
-"namespaceKernel_1_1HAL.html#a59a59cca342806d0eaffc92111fb79fe",
-"namespaceqr.html#abfa7cbee2c756321897cac3449729613",
-"structCF_1_1CFRect.html#a1a074ab4157a98698df6c30be6600316",
-"structEfiBootServices.html#afa08bbbeb99a3d435ec530f1b54f35cd",
-"structFisRegH2D.html#a7e80ce1b5cbae782783028df7dadab92",
-"structKernel_1_1Detail_1_1FADT.html#a92a02cee0d88bc5f2bc9f98a52d68f3d",
-"structKernel_1_1HAL_1_1Detail_1_1PTE.html#a6c993e6385364d5a782c2a5c025fd4ec",
-"structKernel_1_1HEL_1_1BootInfoHeader.html#a71c28c7c9946738815e626bf9c589319",
-"structKernel_1_1PROCESS__CONTROL__BLOCK.html",
-"structXCOFF__FILE__HEADER.html#ad5b1554ab8bb3ac8e2ea3cd88af91040"
+"ARM64_2HalKernelPanic_8cc.html#ad4673076c24720c3b405ad974edc5646",
+"Database_8h.html#a5c5c4eda9d3dd5916ce058b2f65e59d0a4bbb8f967da6d1a610596d7257179c2b",
+"EFI_2EFI_8h.html#a736398d849ac3f4727517fb2c0560e83",
+"HalVirtualMemory_8cc.html#afa9bfd1b4d6453035b4ac2e5f3063ebc",
+"KString_8h.html#a56e50714a0b0b5e8ca9b3b4108744763",
+"PEFCodeMgr_8h.html#a762eb5cf09e18dc00262eff3bb5f3db1",
+"System_8h.html#a297357fcb2c31bffaceecbb1297d9ccf",
+"classBootDeviceATA.html#afe7c0c6b8f7c7f89e150bf7451aceddd",
+"classCF_1_1Property.html#ae9084197b152ea6a4cb04a743a6a1691",
+"classKernel_1_1DeviceInterface.html#a944903ff1955bc2f360e8d55657e474b",
+"classKernel_1_1IDylibObject.html#a03522e2a6160e0b8d26e3ddf4e3e0677",
+"classKernel_1_1MountpointInterface.html",
+"classKernel_1_1NeFileSystemParser.html#ab91db7b2dd5da3fc65d33072a2d36161",
+"classKernel_1_1PTEWrapper.html#a6887fcc47a953f5a2754b0b002d1d45f",
+"classKernel_1_1USER__PROCESS.html#a19f6ec44845982d128928fd84fdf011c",
+"classpfd_1_1internal_1_1executor.html#a7eb363f3dc9d6dc21f1a8b6ce6a33679",
+"dir_d57065060bb32d63b94ae916acf34f1c.html",
+"kernel_2KernelKit_2PCI_2Device_8h.html",
+"mkfs_8hefs_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627",
+"namespaceKernel.html#a320cdc46a50e5cd2e7f82f0e6da0a85f",
+"namespaceKernel.html#abf43712634987021cb1b00decb0f91f2a4f35917a1d837b96d2cb4d6500431dea",
+"namespacemembers_j.html",
+"rang_8h.html#a42edf1c1b0d8e843ceb1208259177f08ad487dd0b55dfcacdd920ccbdaeafa351",
+"structEXT2__SUPER__BLOCK.html#a1604ae6b288d3a2badf04201b0f37842",
+"structEfiTableHeader.html#a100f11e9c42c5fc389b42fabc7ec668c",
+"structKernel_1_1Detail_1_1FADT.html#a3838926b46b2a3fa26a280260a4b47c3",
+"structKernel_1_1HAL_1_1Detail_1_1PTE.html#aa823450c80e4cb597780d8d920a7f1af",
+"structKernel_1_1HEL_1_1BootInfoHeader.html#a1b37bd1721bb1dfc841323fde4e9b7cb",
+"structKernel_1_1PEFContainer.html#a5b9a265c814dce51f728a3e539eaef1b",
+"structNEFS__CATALOG__STRUCT.html#a6c6d9ecd7d8e3b3d6f00d8863d8815e9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

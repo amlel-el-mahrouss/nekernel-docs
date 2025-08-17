@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -166,19 +165,19 @@ $(document).ready(function(){initNavTree('Timer_8h_source.html',''); initResizab
 </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="namespaceKernel.html#acade57f30b3025e4b731ebf9ffc99642">   63</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a> <a class="code hl_function" href="namespaceKernel.html#acade57f30b3025e4b731ebf9ffc99642">rtl_microseconds</a>(<a class="code hl_typedef" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a> time) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">if</span> (time &lt; 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a85320092aa737ebeb487c57b358c69a9">   63</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> <a class="code hl_function" href="namespaceKernel.html#a85320092aa737ebeb487c57b358c69a9">rtl_microseconds</a>(<a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> time) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">if</span> (time &lt; 1) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// TODO: nanoseconds maybe?</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceKernel.html#a23989070234f22893d7efb2d0648049e">kTimeUnit</a> * time;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> time / <a class="code hl_variable" href="namespaceKernel.html#a23989070234f22893d7efb2d0648049e">kTimeUnit</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a434117fd39dfbb491cb4166095534a65">   70</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a> <a class="code hl_function" href="namespaceKernel.html#a434117fd39dfbb491cb4166095534a65">rtl_milliseconds</a>(<a class="code hl_typedef" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a> time) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span> (time &lt; 0) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="namespaceKernel.html#ade2ab4149909cd85f392fcf1dea22e97">   70</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> <a class="code hl_function" href="namespaceKernel.html#ade2ab4149909cd85f392fcf1dea22e97">rtl_milliseconds</a>(<a class="code hl_typedef" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a> time) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span> (time &lt; 1) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceKernel.html#a23989070234f22893d7efb2d0648049e">kTimeUnit</a> * <a class="code hl_variable" href="namespaceKernel.html#a23989070234f22893d7efb2d0648049e">kTimeUnit</a> * time;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">return</span> time;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace Kernel</span></div>
@@ -188,18 +187,18 @@ $(document).ready(function(){initNavTree('Timer_8h_source.html',''); initResizab
 <div class="ttc" id="aclassKernel_1_1HardwareTimer_html"><div class="ttname"><a href="classKernel_1_1HardwareTimer.html">Kernel::HardwareTimer</a></div><div class="ttdef"><b>Definition</b> Timer.h:47</div></div>
 <div class="ttc" id="aclassKernel_1_1SoftwareTimer_html"><div class="ttname"><a href="classKernel_1_1SoftwareTimer.html">Kernel::SoftwareTimer</a></div><div class="ttdef"><b>Definition</b> Timer.h:31</div></div>
 <div class="ttc" id="aclassKernel_1_1TimerInterface_html"><div class="ttname"><a href="classKernel_1_1TimerInterface.html">Kernel::TimerInterface</a></div><div class="ttdef"><b>Definition</b> Timer.h:18</div></div>
-<div class="ttc" id="aclassKernel_1_1TimerInterface_html_a29a68a13a1624ce22a503e93b75c28dc"><div class="ttname"><a href="classKernel_1_1TimerInterface.html#a29a68a13a1624ce22a503e93b75c28dc">Kernel::TimerInterface::Wait</a></div><div class="ttdeci">virtual BOOL Wait() noexcept</div><div class="ttdoc">Unimplemented as it is an interface.</div><div class="ttdef"><b>Definition</b> Timer.cc:16</div></div>
+<div class="ttc" id="aclassKernel_1_1TimerInterface_html_a29a68a13a1624ce22a503e93b75c28dc"><div class="ttname"><a href="classKernel_1_1TimerInterface.html#a29a68a13a1624ce22a503e93b75c28dc">Kernel::TimerInterface::Wait</a></div><div class="ttdeci">virtual BOOL Wait() noexcept</div><div class="ttdoc">Unimplemented as it is an interface.</div><div class="ttdef"><b>Definition</b> Timer.cc:17</div></div>
 <div class="ttc" id="aclassKernel_1_1TimerInterface_html_a50449de80ef29681056d59f3f9f70bbf"><div class="ttname"><a href="classKernel_1_1TimerInterface.html#a50449de80ef29681056d59f3f9f70bbf">Kernel::TimerInterface::~TimerInterface</a></div><div class="ttdeci">virtual ~TimerInterface()=default</div></div>
 <div class="ttc" id="aclassKernel_1_1TimerInterface_html_ae7345c7b9c15383276efb51ef10158c6"><div class="ttname"><a href="classKernel_1_1TimerInterface.html#ae7345c7b9c15383276efb51ef10158c6">Kernel::TimerInterface::TimerInterface</a></div><div class="ttdeci">TimerInterface()=default</div><div class="ttdoc">Default constructor.</div></div>
 <div class="ttc" id="amacros_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> macros.h:25</div></div>
-<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
+<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Device.h:12</div></div>
 <div class="ttc" id="anamespaceKernel_html_a23989070234f22893d7efb2d0648049e"><div class="ttname"><a href="namespaceKernel.html#a23989070234f22893d7efb2d0648049e">Kernel::kTimeUnit</a></div><div class="ttdeci">constexpr Int16 kTimeUnit</div><div class="ttdef"><b>Definition</b> Timer.h:16</div></div>
 <div class="ttc" id="anamespaceKernel_html_a422ed8f9cda660a97cb88bcdb57d8004"><div class="ttname"><a href="namespaceKernel.html#a422ed8f9cda660a97cb88bcdb57d8004">Kernel::Int16</a></div><div class="ttdeci">short Int16</div><div class="ttdef"><b>Definition</b> Defines.h:42</div></div>
-<div class="ttc" id="anamespaceKernel_html_a434117fd39dfbb491cb4166095534a65"><div class="ttname"><a href="namespaceKernel.html#a434117fd39dfbb491cb4166095534a65">Kernel::rtl_milliseconds</a></div><div class="ttdeci">Int64 rtl_milliseconds(Int64 time)</div><div class="ttdef"><b>Definition</b> Timer.h:70</div></div>
 <div class="ttc" id="anamespaceKernel_html_a5801162fe3161371005a37736050c570"><div class="ttname"><a href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Kernel::Int64</a></div><div class="ttdeci">__INT64_TYPE__ Int64</div><div class="ttdef"><b>Definition</b> Defines.h:46</div></div>
 <div class="ttc" id="anamespaceKernel_html_a6d35555a92a80d5864d0a1cce15a38a5"><div class="ttname"><a href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">Kernel::UInt64</a></div><div class="ttdeci">__UINT64_TYPE__ UInt64</div><div class="ttdef"><b>Definition</b> Defines.h:48</div></div>
 <div class="ttc" id="anamespaceKernel_html_a84f01a3121e81004f9e4f9406efbb2bb"><div class="ttname"><a href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a></div><div class="ttdeci">__UINTPTR_TYPE__ UIntPtr</div><div class="ttdef"><b>Definition</b> Defines.h:60</div></div>
-<div class="ttc" id="anamespaceKernel_html_acade57f30b3025e4b731ebf9ffc99642"><div class="ttname"><a href="namespaceKernel.html#acade57f30b3025e4b731ebf9ffc99642">Kernel::rtl_microseconds</a></div><div class="ttdeci">Int64 rtl_microseconds(Int64 time)</div><div class="ttdef"><b>Definition</b> Timer.h:63</div></div>
+<div class="ttc" id="anamespaceKernel_html_a85320092aa737ebeb487c57b358c69a9"><div class="ttname"><a href="namespaceKernel.html#a85320092aa737ebeb487c57b358c69a9">Kernel::rtl_microseconds</a></div><div class="ttdeci">UInt64 rtl_microseconds(UInt64 time)</div><div class="ttdef"><b>Definition</b> Timer.h:63</div></div>
+<div class="ttc" id="anamespaceKernel_html_ade2ab4149909cd85f392fcf1dea22e97"><div class="ttname"><a href="namespaceKernel.html#ade2ab4149909cd85f392fcf1dea22e97">Kernel::rtl_milliseconds</a></div><div class="ttdeci">UInt64 rtl_milliseconds(UInt64 time)</div><div class="ttdef"><b>Definition</b> Timer.h:70</div></div>
 <div class="ttc" id="anamespaceKernel_html_afbb00ca67495bf45618a429cf4f82f33"><div class="ttname"><a href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">Kernel::UInt8</a></div><div class="ttdeci">unsigned char UInt8</div><div class="ttdef"><b>Definition</b> Defines.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

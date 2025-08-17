@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -98,21 +97,22 @@ $(document).ready(function(){initNavTree('ARM64_2HalKernelMain_8cc.html',''); in
 <div class="textblock"><code>#include &lt;<a class="el" href="ArchKit_8h_source.html">ArchKit/ArchKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dev_2kernel_2CFKit_2Property_8h_source.html">CFKit/Property.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Handover_8h_source.html">FirmwareKit/Handover.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ApplicationProcessor_8h_source.html">HALKit/ARM64/ApplicationProcessor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ARM64_2Processor_8h_source.html">HALKit/ARM64/Processor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="CodeMgr_8h_source.html">KernelKit/CodeMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="FileMgr_8h_source.html">KernelKit/FileMgr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="MemoryMgr_8h_source.html">KernelKit/MemoryMgr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="HardwareThreadScheduler_8h_source.html">KernelKit/HardwareThreadScheduler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="HeapMgr_8h_source.html">KernelKit/HeapMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="PEFCodeMgr_8h_source.html">KernelKit/PEFCodeMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ProcessScheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Json_8h_source.html">NeKit/Json.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="IPC_8h_source.html">NetworkKit/IPC.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="Json_8h_source.html">NewKit/Json.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ACPIFactoryInterface_8h_source.html">modules/ACPI/ACPIFactoryInterface.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="CoreGfx_8h_source.html">modules/CoreGfx/CoreGfx.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ApplicationProcessor_8h_source.html">HALKit/ARM64/ApplicationProcessor.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af63d9696be7d357457e365c506daee5a" id="r_af63d9696be7d357457e365c506daee5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ARM64_2HalKernelMain_8cc.html#af63d9696be7d357457e365c506daee5a">hal_init_platform</a> (<a class="el" href="structKernel_1_1HEL_1_1BootInfoHeader.html">Kernel::HEL::BootInfoHeader</a> *handover_hdr)</td></tr>
+<tr class="memitem:af63d9696be7d357457e365c506daee5a" id="r_af63d9696be7d357457e365c506daee5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NeKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ARM64_2HalKernelMain_8cc.html#af63d9696be7d357457e365c506daee5a">hal_init_platform</a> (<a class="el" href="structKernel_1_1HEL_1_1BootInfoHeader.html">Kernel::HEL::BootInfoHeader</a> *handover_hdr)</td></tr>
 <tr class="separator:af63d9696be7d357457e365c506daee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -123,7 +123,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void hal_init_platform </td>
+          <td class="memname"><a class="el" href="kernel_2NeKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void hal_init_platform </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structKernel_1_1HEL_1_1BootInfoHeader.html">Kernel::HEL::BootInfoHeader</a> *&#160;</td>
           <td class="paramname"><em>handover_hdr</em></td><td>)</td>
@@ -132,10 +132,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>do initialize the interrupts after it.</dd></dl>
-<p>after the scheduler runs, we must look over teams, every 5000s in order to schedule every process according to their affinity fairly.</p>
-<p>Team switch time in milliseconds.</p>
-<p>This just loops over the teams and switches between them.</p>
-<p>Not even round-robin, just a simple loop in this boot core we're at.</p>
+<p>Mgmt command server.</p>
+<p>launchd</p>
+<p>Login Server</p>
 
 </div>
 </div>

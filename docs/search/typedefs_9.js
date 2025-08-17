@@ -6,14 +6,12 @@ var searchData=
   ['int16_3',['Int16',['../namespaceKernel.html#a422ed8f9cda660a97cb88bcdb57d8004',1,'Kernel']]],
   ['int32_4',['Int32',['../namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d',1,'Kernel']]],
   ['int64_5',['Int64',['../namespaceKernel.html#a5801162fe3161371005a37736050c570',1,'Kernel']]],
-  ['interruptdescriptorarray_6',['InterruptDescriptorArray',['../namespaceKernel_1_1HAL.html#abb62973acfb3fd39812cb7f51512af9b',1,'Kernel::HAL']]],
-  ['interruptid_7',['InterruptId',['../namespaceKernel_1_1HAL.html#a0de85a083af726672ec8d509fb36efd5',1,'Kernel::HAL']]],
-  ['intfast_8',['IntFast',['../namespaceKernel.html#ae7a73e7d355ffed259fa3112bbddecf2',1,'Kernel']]],
-  ['intfast64_9',['IntFast64',['../namespaceKernel.html#a2405d4af7251afad48311d9c7135a56f',1,'Kernel']]],
-  ['intptr_10',['IntPtr',['../namespaceKernel.html#aa1785cdc0a94603b187d1374cd1b77f0',1,'Kernel']]],
-  ['ioarray16_11',['IOArray16',['../namespaceKernel.html#a84861677e73d4851ccaa990031281416',1,'Kernel']]],
-  ['ioref_12',['IORef',['../SystemCalls_8h.html#a9df1cb6db51581fef1d78e96625d4ef2',1,'SystemCalls.h']]],
-  ['ipc_5faddr_13',['IPC_ADDR',['../namespaceKernel.html#a577b78b1f3ed45a5961565fb99c46892',1,'Kernel']]],
-  ['ipc_5fmsg_14',['IPC_MSG',['../namespaceKernel.html#ad2bc23e6231252cd293b06edbc201c6a',1,'Kernel']]],
-  ['ipcnetworkdevice_15',['IPCNetworkDevice',['../namespaceKernel.html#a83da575b6420b596810c166a3228864e',1,'Kernel']]]
+  ['intfast_6',['IntFast',['../namespaceKernel.html#ae7a73e7d355ffed259fa3112bbddecf2',1,'Kernel']]],
+  ['intfast64_7',['IntFast64',['../namespaceKernel.html#a2405d4af7251afad48311d9c7135a56f',1,'Kernel']]],
+  ['intptr_8',['IntPtr',['../namespaceKernel.html#aa1785cdc0a94603b187d1374cd1b77f0',1,'Kernel']]],
+  ['ioarray16_9',['IOArray16',['../namespaceKernel.html#a84861677e73d4851ccaa990031281416',1,'Kernel']]],
+  ['ioref_10',['IORef',['../System_8h.html#a9df1cb6db51581fef1d78e96625d4ef2',1,'System.h']]],
+  ['ipc_5faddr_11',['IPC_ADDR',['../namespaceKernel.html#a577b78b1f3ed45a5961565fb99c46892',1,'Kernel']]],
+  ['ipc_5fmsg_12',['IPC_MSG',['../namespaceKernel.html#ad2bc23e6231252cd293b06edbc201c6a',1,'Kernel']]],
+  ['ipcnetworkdevice_13',['IPCNetworkDevice',['../namespaceKernel.html#a83da575b6420b596810c166a3228864e',1,'Kernel']]]
 ];

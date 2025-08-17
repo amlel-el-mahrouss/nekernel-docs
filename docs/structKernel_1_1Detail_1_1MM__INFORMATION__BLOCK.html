@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -132,9 +131,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5596435396f306e770b7080cffb08f94" id="r_a5596435396f306e770b7080cffb08f94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1Detail_1_1MM__INFORMATION__BLOCK.html#a5596435396f306e770b7080cffb08f94">fPad</a></td></tr>
 <tr class="memdesc:a5596435396f306e770b7080cffb08f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding.  <br /></td></tr>
 <tr class="separator:a5596435396f306e770b7080cffb08f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0efcd9adb0edb48dabd186eef33dcb96" id="r_a0efcd9adb0edb48dabd186eef33dcb96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1Detail_1_1MM__INFORMATION__BLOCK.html#a0efcd9adb0edb48dabd186eef33dcb96">fPadding</a> [<a class="el" href="MemoryMgr_8cc.html#a7b2f1160ea314725e28dd39120b7e6e0">kMemoryMgrAlignSz</a>]</td></tr>
-<tr class="memdesc:a0efcd9adb0edb48dabd186eef33dcb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding bytes for header.  <br /></td></tr>
-<tr class="separator:a0efcd9adb0edb48dabd186eef33dcb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4a887dfae133b9ae8b4533bad74dc0" id="r_ada4a887dfae133b9ae8b4533bad74dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1Detail_1_1MM__INFORMATION__BLOCK.html#ada4a887dfae133b9ae8b4533bad74dc0">fPadding</a> [<a class="el" href="HeapMgr_8cc.html#a1f553a46dc9fd4c79f855d6c6f082c7f">kHeapMgrAlignSz</a>]</td></tr>
+<tr class="memdesc:ada4a887dfae133b9ae8b4533bad74dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding bytes for header.  <br /></td></tr>
+<tr class="separator:ada4a887dfae133b9ae8b4533bad74dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> heap information block. Located before the address bytes. | HIB | CLASS/STRUCT/DATA TYPES... |. </p>
@@ -220,14 +219,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0efcd9adb0edb48dabd186eef33dcb96" name="a0efcd9adb0edb48dabd186eef33dcb96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0efcd9adb0edb48dabd186eef33dcb96">&#9670;&#160;</a></span>fPadding</h2>
+<a id="ada4a887dfae133b9ae8b4533bad74dc0" name="ada4a887dfae133b9ae8b4533bad74dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4a887dfae133b9ae8b4533bad74dc0">&#9670;&#160;</a></span>fPadding</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> Kernel::Detail::MM_INFORMATION_BLOCK::fPadding[<a class="el" href="MemoryMgr_8cc.html#a7b2f1160ea314725e28dd39120b7e6e0">kMemoryMgrAlignSz</a>]</td>
+          <td class="memname"><a class="el" href="namespaceKernel.html#afbb00ca67495bf45618a429cf4f82f33">UInt8</a> Kernel::Detail::MM_INFORMATION_BLOCK::fPadding[<a class="el" href="HeapMgr_8cc.html#a1f553a46dc9fd4c79f855d6c6f082c7f">kHeapMgrAlignSz</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -318,7 +317,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>dev/kernel/src/<a class="el" href="MemoryMgr_8cc.html">MemoryMgr.cc</a></li>
+<li>dev/kernel/src/<a class="el" href="HeapMgr_8cc.html">HeapMgr.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

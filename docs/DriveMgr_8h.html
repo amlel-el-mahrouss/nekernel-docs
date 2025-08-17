@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -100,14 +99,17 @@ $(document).ready(function(){initNavTree('DriveMgr_8h.html',''); initResizable()
   <div class="headertitle"><div class="title">DriveMgr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Drive Manager.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="CompilerKit_8h_source.html">CompilerKit/CompilerKit.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="DebugOutput_8h_source.html">KernelKit/DebugOutput.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="DeviceMgr_8h_source.html">KernelKit/DeviceMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="KPC_8h_source.html">KernelKit/KPC.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ProcessScheduler_8h_source.html">KernelKit/ProcessScheduler.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kernel_2NewKit_2Defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="KString_8h_source.html">NewKit/KString.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2NewKit_2Ref_8h_source.html">NewKit/Ref.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kernel_2NeKit_2Defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="KString_8h_source.html">NeKit/KString.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dev_2kernel_2NeKit_2Ref_8h_source.html">NeKit/Ref.h</a>&gt;</code><br />
 </div>
 <p><a href="DriveMgr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -146,6 +148,8 @@ Macros</h2></td></tr>
 <tr class="separator:adb8e15f10bd1de61647614c474a0b7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f819334af550cb126a68e3f3b314803" id="r_a0f819334af550cb126a68e3f3b314803"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DriveMgr_8h.html#a0f819334af550cb126a68e3f3b314803">drv_sector_cnt</a>(SIZE,  SECTOR_SZ)&#160;&#160;&#160;(((SIZE) + (SECTOR_SZ)) / (SECTOR_SZ))</td></tr>
 <tr class="separator:a0f819334af550cb126a68e3f3b314803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee943af181e8a76c7e7a0e3ae90840be" id="r_aee943af181e8a76c7e7a0e3ae90840be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DriveMgr_8h.html#aee943af181e8a76c7e7a0e3ae90840be">kDriveHiddenPrefix</a>&#160;&#160;&#160;'~'</td></tr>
+<tr class="separator:aee943af181e8a76c7e7a0e3ae90840be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -155,26 +159,26 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a36ac896f8c8a4ff09af62d26de4811fa" id="r_a36ac896f8c8a4ff09af62d26de4811fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa30b5cda6cb0d4120b7818fae0a212ca8">Kernel::kInvalidDrive</a> = -1
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faac9bdc44d5f5615551357f3ab0fecdc74">Kernel::kBlockDevice</a> = 0xAD
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa84c5bbb7feda914da99969aff89b9def">Kernel::kMassStorageDrive</a> = 0xDA
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faaa65245362b8bc3fa906fa46bec847760">Kernel::kFloppyDrive</a> = 0xCD
+<tr class="memitem:a084956ead668bca8a7cfe879b355ba09" id="r_a084956ead668bca8a7cfe879b355ba09"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a30b5cda6cb0d4120b7818fae0a212ca8">Kernel::kInvalidDrive</a> = -1
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09ac9bdc44d5f5615551357f3ab0fecdc74">Kernel::kBlockDevice</a> = 0xAD
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a84c5bbb7feda914da99969aff89b9def">Kernel::kMassStorageDrive</a> = 0xDA
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09aa65245362b8bc3fa906fa46bec847760">Kernel::kFloppyDrive</a> = 0xCD
 , <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faab779f6a5cf30ef8637711ad0f2364669">Kernel::kOpticalDrive</a> = 0xDC
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa4db0ee1cb280641f422d8784351035fc">Kernel::kTapeDrive</a> = 0xD7
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa5c42cfb2cc26712b415e146457a4caf7">Kernel::kReadOnlyDrive</a> = 0x10
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa099b1741447dcaacac9e19d58fa1d2dc">Kernel::kEPMDrive</a> = 0x11
+&#160;&#160;<a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09ab779f6a5cf30ef8637711ad0f2364669">Kernel::kOpticalDrive</a> = 0xDC
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a4db0ee1cb280641f422d8784351035fc">Kernel::kTapeDrive</a> = 0xD7
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a5c42cfb2cc26712b415e146457a4caf7">Kernel::kReadOnlyDrive</a> = 0x10
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a099b1741447dcaacac9e19d58fa1d2dc">Kernel::kEPMDrive</a> = 0x11
 , <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faaa6c8b7f617fb2b952ff68bd78082badb">Kernel::kVEPMDrive</a> = 0x12
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa1b1b0f2367c91dbe56d44653dff69d9a">Kernel::kMBRDrive</a> = 0x13
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa03415ebe534ec9f44816a6c7129d78b6">Kernel::kGPTDrive</a> = 0x14
-, <a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faa753b9c0b9e1a83330035e1fe9ecb4397">Kernel::kUnformattedDrive</a> = 0x15
+&#160;&#160;<a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09aa6c8b7f617fb2b952ff68bd78082badb">Kernel::kVEPMDrive</a> = 0x12
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a1b1b0f2367c91dbe56d44653dff69d9a">Kernel::kMBRDrive</a> = 0x13
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a03415ebe534ec9f44816a6c7129d78b6">Kernel::kGPTDrive</a> = 0x14
+, <a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09a753b9c0b9e1a83330035e1fe9ecb4397">Kernel::kUnformattedDrive</a> = 0x15
 , <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#a36ac896f8c8a4ff09af62d26de4811faac9725f76e8bf507bfe8bd849beb5ce08">Kernel::kStorageCount</a> = 9
+&#160;&#160;<a class="el" href="namespaceKernel.html#a084956ead668bca8a7cfe879b355ba09ac9725f76e8bf507bfe8bd849beb5ce08">Kernel::kStorageCount</a> = 9
 <br />
  }</td></tr>
-<tr class="separator:a36ac896f8c8a4ff09af62d26de4811fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a084956ead668bca8a7cfe879b355ba09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -198,14 +202,11 @@ Functions</h2></td></tr>
 <tr class="separator:ad790ea6a819b0d66cfd7d4bd7301b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64eb9503628cb0e98272e815728d453a" id="r_a64eb9503628cb0e98272e815728d453a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a64eb9503628cb0e98272e815728d453a">Kernel::io_drv_output</a> (<a class="el" href="structKernel_1_1DriveTrait_1_1DrivePacket.html">DriveTrait::DrivePacket</a> pckt)</td></tr>
 <tr class="separator:a64eb9503628cb0e98272e815728d453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04b092f37c60b382792b8e4d473366fd" id="r_a04b092f37c60b382792b8e4d473366fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a04b092f37c60b382792b8e4d473366fd">Kernel::fs_ifs_read</a> (<a class="el" href="classKernel_1_1MountpointInterface.html">MountpointInterface</a> *Mnt, <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> &amp;DrvTrait, <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> DrvIndex)</td></tr>
-<tr class="memdesc:a04b092f37c60b382792b8e4d473366fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from IFS disk.  <br /></td></tr>
-<tr class="separator:a04b092f37c60b382792b8e4d473366fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb3d2a027cf345995c54c44a205ad5c" id="r_a9fb3d2a027cf345995c54c44a205ad5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9fb3d2a027cf345995c54c44a205ad5c">Kernel::fs_ifs_write</a> (<a class="el" href="classKernel_1_1MountpointInterface.html">MountpointInterface</a> *Mnt, <a class="el" href="structKernel_1_1DriveTrait.html">DriveTrait</a> &amp;DrvTrait, <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> DrvIndex)</td></tr>
-<tr class="memdesc:a9fb3d2a027cf345995c54c44a205ad5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to IFS disk.  <br /></td></tr>
-<tr class="separator:a9fb3d2a027cf345995c54c44a205ad5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Drive Manager. </p>
+<dl class="section author"><dt>Author</dt><dd>Amlal El Mahrouss (<a href="#" onclick="location.href='mai'+'lto:'+'aml'+'al'+'@ne'+'ke'+'rne'+'l.'+'org'; return false;">amlal<span class="obfuscator">.nosp@m.</span>@nek<span class="obfuscator">.nosp@m.</span>ernel<span class="obfuscator">.nosp@m.</span>.org</a>) </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0f819334af550cb126a68e3f3b314803" name="a0f819334af550cb126a68e3f3b314803"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f819334af550cb126a68e3f3b314803">&#9670;&#160;</a></span>drv_sector_cnt</h2>
 
@@ -228,6 +229,20 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;(((SIZE) + (SECTOR_SZ)) / (SECTOR_SZ))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee943af181e8a76c7e7a0e3ae90840be" name="aee943af181e8a76c7e7a0e3ae90840be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee943af181e8a76c7e7a0e3ae90840be">&#9670;&#160;</a></span>kDriveHiddenPrefix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kDriveHiddenPrefix&#160;&#160;&#160;'~'</td>
         </tr>
       </table>
 </div><div class="memdoc">

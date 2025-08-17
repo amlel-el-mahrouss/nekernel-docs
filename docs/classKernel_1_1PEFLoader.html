@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -159,10 +158,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a6cacfef2cc767b206b572dc1a62621ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9172431cb328a70b7fe81a26d44d4831" id="r_a9172431cb328a70b7fe81a26d44d4831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1PEFLoader.html#a9172431cb328a70b7fe81a26d44d4831">fCachedBlob</a></td></tr>
 <tr class="separator:a9172431cb328a70b7fe81a26d44d4831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1d6e9ee2b09d092f13d76265c0640ec" id="r_ae1d6e9ee2b09d092f13d76265c0640ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1PEFLoader.html#ae1d6e9ee2b09d092f13d76265c0640ec">fFatBinary</a></td></tr>
-<tr class="separator:ae1d6e9ee2b09d092f13d76265c0640ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d535f3af4f060a66b9b5dce41d1280b" id="r_a3d535f3af4f060a66b9b5dce41d1280b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1PEFLoader.html#a3d535f3af4f060a66b9b5dce41d1280b">fBad</a></td></tr>
-<tr class="separator:a3d535f3af4f060a66b9b5dce41d1280b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb2d976bc26e91cb5587decd1643861" id="r_a7cb2d976bc26e91cb5587decd1643861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1PEFLoader.html#a7cb2d976bc26e91cb5587decd1643861">fFatBinary</a> {}</td></tr>
+<tr class="separator:a7cb2d976bc26e91cb5587decd1643861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9838b9f8072ecd2a4f2bff8e361f231" id="r_ae9838b9f8072ecd2a4f2bff8e361f231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKernel_1_1PEFLoader.html#ae9838b9f8072ecd2a4f2bff8e361f231">fBad</a> {}</td></tr>
+<tr class="separator:ae9838b9f8072ecd2a4f2bff8e361f231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3fff35cb27d1264dd9c9736c28425f4c" name="a3fff35cb27d1264dd9c9736c28425f4c"></a>
@@ -255,7 +254,8 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This is a fat binary.</p>
+<dl class="section note"><dt>Note</dt><dd>zero here means that the FileMgr will read every container header inside the file.</dd></dl>
+<p>This is a fat binary, treat it as such.</p>
 
 </div>
 </div>
@@ -386,6 +386,8 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>fat binary check.</p>
+<p>We set the VMAddress to nullptr, if the mapping fail here.</p>
 
 </div>
 </div>
@@ -499,8 +501,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3d535f3af4f060a66b9b5dce41d1280b" name="a3d535f3af4f060a66b9b5dce41d1280b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d535f3af4f060a66b9b5dce41d1280b">&#9670;&#160;</a></span>fBad</h2>
+<a id="ae9838b9f8072ecd2a4f2bff8e361f231" name="ae9838b9f8072ecd2a4f2bff8e361f231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9838b9f8072ecd2a4f2bff8e361f231">&#9670;&#160;</a></span>fBad</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,7 +511,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Kernel::PEFLoader::fBad</td>
+          <td class="memname"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::PEFLoader::fBad {}</td>
         </tr>
       </table>
   </td>
@@ -543,8 +545,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1d6e9ee2b09d092f13d76265c0640ec" name="ae1d6e9ee2b09d092f13d76265c0640ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1d6e9ee2b09d092f13d76265c0640ec">&#9670;&#160;</a></span>fFatBinary</h2>
+<a id="a7cb2d976bc26e91cb5587decd1643861" name="a7cb2d976bc26e91cb5587decd1643861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb2d976bc26e91cb5587decd1643861">&#9670;&#160;</a></span>fFatBinary</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,7 +555,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Kernel::PEFLoader::fFatBinary</td>
+          <td class="memname"><a class="el" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> Kernel::PEFLoader::fFatBinary {}</td>
         </tr>
       </table>
   </td>

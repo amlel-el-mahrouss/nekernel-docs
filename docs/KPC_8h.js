@@ -8,6 +8,7 @@ var KPC_8h =
     [ "err_local_ok", "KPC_8h.html#a6d06f6f12e3d087f30a0861d05152ff1", null ],
     [ "KPCError", "KPC_8h.html#abc239cb5934f4419d0c801c4ee6ee356", null ],
     [ "err_bug_check_raise", "KPC_8h.html#a4bbcb271341a8d8b811a9bcfff7dbc8a", null ],
+    [ "kErrorAccessDenied", "KPC_8h.html#ae089743ae9525b61c4013abc58d21c7b", null ],
     [ "kErrorAsync", "KPC_8h.html#a2193979561378b120bceb77a58c102b3", null ],
     [ "kErrorCDTrayBroken", "KPC_8h.html#a84c304047e79acb4ea75641016aa7358", null ],
     [ "kErrorDirectoryNotFound", "KPC_8h.html#a1becde09241a3ca50e61cd0622573c79", null ],
@@ -37,12 +38,15 @@ var KPC_8h =
     [ "kErrorNonBlocking", "KPC_8h.html#a281c3cfe1ccb9968c64b5eadce35b50f", null ],
     [ "kErrorNoNetwork", "KPC_8h.html#ad7436d81a18f7a82ccc1ded783e9d89f", null ],
     [ "kErrorNoSuchDisk", "KPC_8h.html#a40acf3055f67084395632863858b69f0", null ],
+    [ "kErrorOutOfBitMapMemory", "KPC_8h.html#acb089b3719a36d936145b7ebe0aa0aab", null ],
     [ "kErrorOutOfTeamSlot", "KPC_8h.html#a208c92bd598b4fc5f5e12b259a3b7e04", null ],
     [ "kErrorProcessFault", "KPC_8h.html#a03164bee24bf791bf524cc8c2b3c1360", null ],
     [ "kErrorSign", "KPC_8h.html#a1a75d893e943fc961fcd74219c8988c0", null ],
     [ "kErrorSocketHangUp", "KPC_8h.html#aa1f22f85192e03a778bc325f979fee82", null ],
     [ "kErrorSuccess", "KPC_8h.html#a1ee8cad04f3464b7e0a2df9e45099dc6", null ],
     [ "kErrorThreadLocalStorage", "KPC_8h.html#a653b3688dcefa58c93fd2f11a056a2be", null ],
+    [ "kErrorTimeout", "KPC_8h.html#ae1a21ebdc1d9fd7340f2528ced6e8111", null ],
+    [ "kErrorUnavailable", "KPC_8h.html#a5bfb2c7165385dd129b376202cdb5afa", null ],
     [ "kErrorUnimplemented", "KPC_8h.html#aa412f1f2c6810c26e3295d988f1d1b01", null ],
     [ "kErrorUnrecoverableDisk", "KPC_8h.html#aa1dd20c2cda43e48c1e6c7c596f90cfe", null ]
 ];

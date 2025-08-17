@@ -1,7 +1,7 @@
 var searchData=
 [
   ['x_0',['x',['../structCF_1_1CFRect.html#acf3dd4fbed0055bd0de39de7db3e6f3a',1,'CF::CFRect']]],
-  ['x2apicid_1',['x2APICID',['../structKernel_1_1HAL_1_1SDT__OBJECT.html#a42f77cad10ac1c8a0bdac77ae0b64750',1,'Kernel::HAL::SDT_OBJECT']]],
+  ['x64chrono_2eh_1',['X64Chrono.h',['../X64Chrono_8h.html',1,'']]],
   ['x_5f1_2',['x_1',['../structCF_1_1CFPoint.html#aaac55f616d75efb3e4fe6e4aa96873db',1,'CF::CFPoint']]],
   ['x_5f2_3',['x_2',['../structCF_1_1CFPoint.html#aab89c18552380c95eee1f7bbc010a209',1,'CF::CFPoint']]],
   ['x_5fdsdt_4',['X_Dsdt',['../structKernel_1_1Detail_1_1FADT.html#a9b03dcfcf4b8e040544c7080a10c5645',1,'Kernel::Detail::FADT']]],
@@ -20,6 +20,5 @@ var searchData=
   ['xcoff_5ffile_5fheader64_17',['XCOFF_FILE_HEADER64',['../XCOFF_8h.html#a36923ad2a5e2579c33546dddef6a4cb5',1,'XCOFF.h']]],
   ['xcoff_5ffork_5fheader_18',['xcoff_fork_header',['../XCOFF_8h.html#a6ed5ed1baa0bec226f725f447818a31d',1,'XCOFF_FORK_HEADER:&#160;XCOFF.h'],['../structXCOFF__FORK__HEADER.html',1,'XCOFF_FORK_HEADER']]],
   ['xhci_2eh_19',['XHCI.h',['../XHCI_8h.html',1,'']]],
-  ['xn_20',['XN',['../structKernel_1_1HAL_1_1PTE__4KB.html#a1dd7d358fc9a60e756c703a6c038bd33',1,'Kernel::HAL::PTE_4KB']]],
-  ['xsdtaddress_21',['XsdtAddress',['../classKernel_1_1RSDP.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
+  ['xsdtaddress_20',['XsdtAddress',['../classKernel_1_1RSDP.html#a881cd1e51bb36f179ae930b164725e87',1,'Kernel::RSDP']]]
 ];

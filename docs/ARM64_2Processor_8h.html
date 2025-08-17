@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -90,177 +89,11 @@ $(document).ready(function(){initNavTree('ARM64_2Processor_8h.html',''); initRes
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Processor.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="Handover_8h_source.html">FirmwareKit/Handover.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2NewKit_2Array_8h_source.html">NewKit/Array.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="kernel_2NewKit_2Defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="NewKit_2Utils_8h_source.html">NewKit/Utils.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ARM64_2Paging_8h_source.html">HALKit/ARM64/Paging.h</a>&gt;</code><br />
-</div>
+
 <p><a href="ARM64_2Processor_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1HAL_1_1Register64.html">Kernel::HAL::Register64</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1HAL_1_1StackFrame.html">Kernel::HAL::StackFrame</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack frame (as retrieved from assembly.)  <a href="structKernel_1_1HAL_1_1StackFrame.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceKernel" id="r_namespaceKernel"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html">Kernel</a></td></tr>
-<tr class="memdesc:namespaceKernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceKernel_1_1HAL" id="r_namespaceKernel_1_1HAL"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html">Kernel::HAL</a></td></tr>
-<tr class="memdesc:namespaceKernel_1_1HAL"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware Abstraction Layer. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a2a2868f5eae47ed9c297019db1dcd02a" id="r_a2a2868f5eae47ed9c297019db1dcd02a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ARM64_2Processor_8h.html#a2a2868f5eae47ed9c297019db1dcd02a">kCPUBackendName</a>&#160;&#160;&#160;&quot;ARMv8&quot;</td></tr>
-<tr class="separator:a2a2868f5eae47ed9c297019db1dcd02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a67d280aa9f255270d18db39badf23d2e" id="r_a67d280aa9f255270d18db39badf23d2e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structKernel_1_1HAL_1_1Register64.html">Register64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a67d280aa9f255270d18db39badf23d2e">Kernel::HAL::Register</a></td></tr>
-<tr class="separator:a67d280aa9f255270d18db39badf23d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a8b7814b5eea5ad80dc1f658ebc91ec5c" id="r_a8b7814b5eea5ad80dc1f658ebc91ec5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="namespaceKernel_1_1HAL.html#a8b7814b5eea5ad80dc1f658ebc91ec5ca98f2dc274adcde2d648a1506216a036b">Kernel::HAL::kMMFlagsPresent</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespaceKernel_1_1HAL.html#a8b7814b5eea5ad80dc1f658ebc91ec5cac675385ca2bda009405ff829a99f377a">Kernel::HAL::kMMFlagsWr</a> = 1 &lt;&lt; 2
-, <a class="el" href="namespaceKernel_1_1HAL.html#a8b7814b5eea5ad80dc1f658ebc91ec5ca40c6d06f8856362557697b5aa1b97c3e">Kernel::HAL::kMMFlagsUser</a> = 1 &lt;&lt; 3
-, <a class="el" href="namespaceKernel_1_1HAL.html#a8b7814b5eea5ad80dc1f658ebc91ec5cadf99fca18b393aa1e91a3f1e3ab19405">Kernel::HAL::kMMFlagsNX</a> = 1 &lt;&lt; 4
-, <br />
-&#160;&#160;<a class="el" href="namespaceKernel_1_1HAL.html#a8b7814b5eea5ad80dc1f658ebc91ec5ca5909a8141f29b44089b3154260724eb0">Kernel::HAL::kMMFlagsPCD</a> = 1 &lt;&lt; 5
-, <a class="el" href="namespaceKernel_1_1HAL.html#a8b7814b5eea5ad80dc1f658ebc91ec5ca4449ea9787fa26a3e944dc25e05a37d3">Kernel::HAL::kMMFlagsCount</a> = 4
-<br />
- }</td></tr>
-<tr class="memdesc:a8b7814b5eea5ad80dc1f658ebc91ec5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory Manager mapping flags.  <a href="namespaceKernel_1_1HAL.html#a8b7814b5eea5ad80dc1f658ebc91ec5c">More...</a><br /></td></tr>
-<tr class="separator:a8b7814b5eea5ad80dc1f658ebc91ec5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:afebb7d01ea9b86a4b1b9822e09071c67" id="r_afebb7d01ea9b86a4b1b9822e09071c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NewKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#afebb7d01ea9b86a4b1b9822e09071c67">Kernel::HAL::mm_map_page</a> (<a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> virtual_address, <a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> physical_address, <a class="el" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> flags)</td></tr>
-<tr class="memdesc:afebb7d01ea9b86a4b1b9822e09071c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps or allocates a page from virtual_address.  <br /></td></tr>
-<tr class="separator:afebb7d01ea9b86a4b1b9822e09071c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58bfdb0e21d1b8dcf2724ddf5d5a558d" id="r_a58bfdb0e21d1b8dcf2724ddf5d5a558d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a58bfdb0e21d1b8dcf2724ddf5d5a558d">Kernel::HAL::mm_get_phys_address</a> (<a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a> virt)</td></tr>
-<tr class="memdesc:a58bfdb0e21d1b8dcf2724ddf5d5a558d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a physical address from a virtual address.  <br /></td></tr>
-<tr class="separator:a58bfdb0e21d1b8dcf2724ddf5d5a558d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425b7a90d1d68113864d0e3aaf970643" id="r_a425b7a90d1d68113864d0e3aaf970643"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a425b7a90d1d68113864d0e3aaf970643">Kernel::HAL::rt_halt</a> ()</td></tr>
-<tr class="separator:a425b7a90d1d68113864d0e3aaf970643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add77523142e47c756f775db6d660651a" id="r_add77523142e47c756f775db6d660651a"><td class="memTemplParams" colspan="2">template&lt;typename DataKind &gt; </td></tr>
-<tr class="memitem:add77523142e47c756f775db6d660651a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#add77523142e47c756f775db6d660651a">Kernel::HAL::hal_dma_write</a> (<a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a> address, DataKind value)</td></tr>
-<tr class="separator:add77523142e47c756f775db6d660651a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1acd7e94a3999f75290e28e1278af1ec" id="r_a1acd7e94a3999f75290e28e1278af1ec"><td class="memTemplParams" colspan="2">template&lt;typename DataKind &gt; </td></tr>
-<tr class="memitem:a1acd7e94a3999f75290e28e1278af1ec"><td class="memTemplItemLeft" align="right" valign="top">DataKind&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a1acd7e94a3999f75290e28e1278af1ec">Kernel::HAL::hal_dma_read</a> (<a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">UIntPtr</a> address)</td></tr>
-<tr class="separator:a1acd7e94a3999f75290e28e1278af1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283520cc258b217d1da19cc214466ed0" id="r_a283520cc258b217d1da19cc214466ed0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel_1_1HAL.html#a283520cc258b217d1da19cc214466ed0">Kernel::HAL::hal_wfi</a> (<a class="el" href="namespaceKernel.html#af3e79270fb5e7c7e4ddcc6ec45c95796">Void</a>)</td></tr>
-<tr class="separator:a283520cc258b217d1da19cc214466ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:adc564ab38f9b6f54fff5ad1cefc49690" id="r_adc564ab38f9b6f54fff5ad1cefc49690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ARM64_2Processor_8h.html#adc564ab38f9b6f54fff5ad1cefc49690">kKernelBitMpStart</a> = nullptr</td></tr>
-<tr class="separator:adc564ab38f9b6f54fff5ad1cefc49690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c2b89fe4c1a68fc758344835a4afb5" id="r_a26c2b89fe4c1a68fc758344835a4afb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ARM64_2Processor_8h.html#a26c2b89fe4c1a68fc758344835a4afb5">kKernelBitMpSize</a> = 0UL</td></tr>
-<tr class="separator:a26c2b89fe4c1a68fc758344835a4afb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a867d6dbed437eedd9d40a9402af6a423" id="r_a867d6dbed437eedd9d40a9402af6a423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ARM64_2Processor_8h.html#a867d6dbed437eedd9d40a9402af6a423">kKernelPhysicalStart</a> = nullptr</td></tr>
-<tr class="separator:a867d6dbed437eedd9d40a9402af6a423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a2a2868f5eae47ed9c297019db1dcd02a" name="a2a2868f5eae47ed9c297019db1dcd02a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a2868f5eae47ed9c297019db1dcd02a">&#9670;&#160;</a></span>kCPUBackendName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define kCPUBackendName&#160;&#160;&#160;&quot;ARMv8&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a26c2b89fe4c1a68fc758344835a4afb5" name="a26c2b89fe4c1a68fc758344835a4afb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26c2b89fe4c1a68fc758344835a4afb5">&#9670;&#160;</a></span>kKernelBitMpSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#a84f01a3121e81004f9e4f9406efbb2bb">Kernel::UIntPtr</a> kKernelBitMpSize = 0UL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adc564ab38f9b6f54fff5ad1cefc49690" name="adc564ab38f9b6f54fff5ad1cefc49690"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc564ab38f9b6f54fff5ad1cefc49690">&#9670;&#160;</a></span>kKernelBitMpStart</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> kKernelBitMpStart = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a867d6dbed437eedd9d40a9402af6a423" name="a867d6dbed437eedd9d40a9402af6a423"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a867d6dbed437eedd9d40a9402af6a423">&#9670;&#160;</a></span>kKernelPhysicalStart</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">Kernel::VoidPtr</a> kKernelPhysicalStart = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

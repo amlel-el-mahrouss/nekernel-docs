@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -441,7 +440,7 @@ $(document).ready(function(){initNavTree('Qr_8h_source.html',''); initResizable(
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; (this-&gt;side_size()); ++y) {</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; (this-&gt;side_size()); ++x) {</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      <a class="code hl_define" href="CoreGfx_8h.html#a1b705c9b5bf3dc14dfc742420dc843d2">FBDrawInRegion</a>((this-&gt;module(x, y) ? <a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a>(00, 00, 00) : <a class="code hl_define" href="kernel_2NewKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a>(0xFF, 0xFF, 0xFF)), 1, 1,</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      <a class="code hl_define" href="CoreGfx_8h.html#a1b705c9b5bf3dc14dfc742420dc843d2">FBDrawInRegion</a>((this-&gt;module(x, y) ? <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a>(00, 00, 00) : <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a>(0xFF, 0xFF, 0xFF)), 1, 1,</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                     x + whereX, y + whereY);</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    }</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  }</div>
@@ -955,7 +954,7 @@ $(document).ready(function(){initNavTree('Qr_8h_source.html',''); initResizable(
 </div>
 <div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
 <div class="foldopen" id="foldopen00793" data-start="{" data-end="}">
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno"><a class="line" href="namespaceKernel.html">  793</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel_1_1Qr.html">Kernel::Qr</a> {</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno"><a class="line" href="namespaceKernel_1_1Qr.html">  793</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel_1_1Qr.html">Kernel::Qr</a> {</div>
 <div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceqr.html">qr</a>;</div>
 <div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>}  <span class="comment">// namespace Kernel::Qr</span></div>
 </div>
@@ -969,17 +968,17 @@ $(document).ready(function(){initNavTree('Qr_8h_source.html',''); initResizable(
 <div class="ttc" id="aDetail_8h_html_a855fc6b9e935d41c084c0b89a4b82bd2"><div class="ttname"><a href="Detail_8h.html#a855fc6b9e935d41c084c0b89a4b82bd2">NE_COPY_DEFAULT</a></div><div class="ttdeci">#define NE_COPY_DEFAULT(KLASS)</div><div class="ttdef"><b>Definition</b> Detail.h:17</div></div>
 <div class="ttc" id="aQrPrelude_8h_html"><div class="ttname"><a href="QrPrelude_8h.html">QrPrelude.h</a></div></div>
 <div class="ttc" id="aSupport_8h_html"><div class="ttname"><a href="Support_8h.html">Support.h</a></div><div class="ttdoc">Purpose of this file is to help port libs into the bootloader.</div></div>
-<div class="ttc" id="aSupport_8h_html_a013574543d2f27a210fdfd5fa284ebe3"><div class="ttname"><a href="Support_8h.html#a013574543d2f27a210fdfd5fa284ebe3">CopyMem</a></div><div class="ttdeci">#define CopyMem(dst, src, sz)</div><div class="ttdef"><b>Definition</b> Support.h:47</div></div>
-<div class="ttc" id="aSupport_8h_html_a14e2d58d4f377e1e0b972ecf1f4be97e"><div class="ttname"><a href="Support_8h.html#a14e2d58d4f377e1e0b972ecf1f4be97e">SetMem</a></div><div class="ttdeci">#define SetMem(dst, c, sz)</div><div class="ttdef"><b>Definition</b> Support.h:45</div></div>
-<div class="ttc" id="aSupport_8h_html_a3d0f4556ea847605b0cbfb9c86c0a6aa"><div class="ttname"><a href="Support_8h.html#a3d0f4556ea847605b0cbfb9c86c0a6aa">MoveMem</a></div><div class="ttdeci">#define MoveMem(dst, src, sz)</div><div class="ttdef"><b>Definition</b> Support.h:46</div></div>
-<div class="ttc" id="aSupport_8h_html_af25309cafd06a4e5d3dcefba4e156acd"><div class="ttname"><a href="Support_8h.html#af25309cafd06a4e5d3dcefba4e156acd">StringToLong</a></div><div class="ttdeci">long StringToLong(const char *nptr, char **endptr, int base)</div><div class="ttdef"><b>Definition</b> Support.h:65</div></div>
+<div class="ttc" id="aSupport_8h_html_a013574543d2f27a210fdfd5fa284ebe3"><div class="ttname"><a href="Support_8h.html#a013574543d2f27a210fdfd5fa284ebe3">CopyMem</a></div><div class="ttdeci">#define CopyMem(dst, src, sz)</div><div class="ttdef"><b>Definition</b> Support.h:49</div></div>
+<div class="ttc" id="aSupport_8h_html_a14e2d58d4f377e1e0b972ecf1f4be97e"><div class="ttname"><a href="Support_8h.html#a14e2d58d4f377e1e0b972ecf1f4be97e">SetMem</a></div><div class="ttdeci">#define SetMem(dst, c, sz)</div><div class="ttdef"><b>Definition</b> Support.h:47</div></div>
+<div class="ttc" id="aSupport_8h_html_a3d0f4556ea847605b0cbfb9c86c0a6aa"><div class="ttname"><a href="Support_8h.html#a3d0f4556ea847605b0cbfb9c86c0a6aa">MoveMem</a></div><div class="ttdeci">#define MoveMem(dst, src, sz)</div><div class="ttdef"><b>Definition</b> Support.h:48</div></div>
+<div class="ttc" id="aSupport_8h_html_af25309cafd06a4e5d3dcefba4e156acd"><div class="ttname"><a href="Support_8h.html#af25309cafd06a4e5d3dcefba4e156acd">StringToLong</a></div><div class="ttdeci">long StringToLong(const char *nptr, char **endptr, int base)</div><div class="ttdef"><b>Definition</b> Support.h:67</div></div>
 <div class="ttc" id="abase_8h_html"><div class="ttname"><a href="base_8h.html">base.h</a></div></div>
 <div class="ttc" id="abit_8h_html"><div class="ttname"><a href="bit_8h.html">bit.h</a></div></div>
 <div class="ttc" id="aclassqr_1_1QrDelegate_html"><div class="ttname"><a href="classqr_1_1QrDelegate.html">qr::QrDelegate</a></div><div class="ttdoc">QR code encoder class.</div><div class="ttdef"><b>Definition</b> Qr.h:778</div></div>
 <div class="ttc" id="aclassqr_1_1QrDelegate_html_a0342aef47d459c32076b53d082e98672"><div class="ttname"><a href="classqr_1_1QrDelegate.html#a0342aef47d459c32076b53d082e98672">qr::QrDelegate::~QrDelegate</a></div><div class="ttdeci">~QrDelegate()=default</div></div>
 <div class="ttc" id="aclassqr_1_1QrDelegate_html_a1b5f0ba642703957cface508e82e551a"><div class="ttname"><a href="classqr_1_1QrDelegate.html#a1b5f0ba642703957cface508e82e551a">qr::QrDelegate::QrDelegate</a></div><div class="ttdeci">QrDelegate()=default</div></div>
 <div class="ttc" id="aclassqr_1_1QrDelegate_html_a2b625dfea22f60d2b857f7691148ca2f"><div class="ttname"><a href="classqr_1_1QrDelegate.html#a2b625dfea22f60d2b857f7691148ca2f">qr::QrDelegate::draw</a></div><div class="ttdeci">bool draw(Qr&lt; V &gt; &amp;subject, Int32 x, Int32 y) noexcept</div><div class="ttdoc">Draw method delegate.</div><div class="ttdef"><b>Definition</b> Qr.h:787</div></div>
-<div class="ttc" id="akernel_2NewKit_2Macros_8h_html_a52d6f67c629ccece695186d3ccceba54"><div class="ttname"><a href="kernel_2NewKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a></div><div class="ttdeci">#define RGB(R, G, B)</div><div class="ttdef"><b>Definition</b> Macros.h:120</div></div>
+<div class="ttc" id="akernel_2NeKit_2Macros_8h_html_a52d6f67c629ccece695186d3ccceba54"><div class="ttname"><a href="kernel_2NeKit_2Macros_8h.html#a52d6f67c629ccece695186d3ccceba54">RGB</a></div><div class="ttdeci">#define RGB(R, G, B)</div><div class="ttdef"><b>Definition</b> Macros.h:120</div></div>
 <div class="ttc" id="amacros_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="macros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> macros.h:31</div></div>
 <div class="ttc" id="anamespaceKernel_1_1Qr_html"><div class="ttname"><a href="namespaceKernel_1_1Qr.html">Kernel::Qr</a></div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
 <div class="ttc" id="anamespaceKernel_html_a8fbad4cd517f76cba246c3c170de141d"><div class="ttname"><a href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Kernel::Int32</a></div><div class="ttdeci">int Int32</div><div class="ttdef"><b>Definition</b> Defines.h:38</div></div>

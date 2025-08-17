@@ -1,8 +1,8 @@
 var searchData=
 [
   ['tcpnetworkdevice_0',['TCPNetworkDevice',['../namespaceKernel.html#a1ffce7d5ea25555a8fe5104835da9c1f',1,'Kernel']]],
-  ['thread_5fproc_5fkind_1',['thread_proc_kind',['../SystemCalls_8h.html#a11728dc14f45b0db402dd385679b2a72',1,'SystemCalls.h']]],
-  ['threadid_2',['ThreadID',['../namespaceKernel.html#a08b8ab6ca1547ec251abf45ef1e2e0af',1,'Kernel']]],
-  ['threadkind_3',['ThreadKind',['../namespaceKernel.html#a9192b011073165dcf43bee53f2e4c0b3',1,'Kernel']]],
-  ['threadref_4',['ThreadRef',['../SystemCalls_8h.html#ad88ea14c0f28fc81e5a53a6a473cf263',1,'SystemCalls.h']]]
+  ['threadid_1',['ThreadID',['../namespaceKernel.html#a08b8ab6ca1547ec251abf45ef1e2e0af',1,'Kernel']]],
+  ['threadkind_2',['ThreadKind',['../namespaceKernel.html#a9192b011073165dcf43bee53f2e4c0b3',1,'Kernel']]],
+  ['threadref_3',['ThreadRef',['../System_8h.html#ad88ea14c0f28fc81e5a53a6a473cf263',1,'System.h']]],
+  ['thrprockind_4',['ThrProcKind',['../System_8h.html#a75deecf3c394b1be5b3a3ec3bd5796e6',1,'System.h']]]
 ];

@@ -1,8 +1,8 @@
 var boot_2BootKit_2Device_8h =
 [
-    [ "Device", "classDevice.html", "classDevice" ],
-    [ "Device::Trait", "structDevice_1_1Trait.html", "structDevice_1_1Trait" ],
-    [ "BootDevice", "boot_2BootKit_2Device_8h.html#a30a15ab7226949e31b6049b8c7b11039", null ],
-    [ "DiskDevice", "boot_2BootKit_2Device_8h.html#a6dda5a08386a6d212033f7e9391636d6", null ],
-    [ "NetworkDevice", "boot_2BootKit_2Device_8h.html#a854d1f480db598f55d54c4fa5d07d3b6", null ]
+    [ "Kernel::Device", "classKernel_1_1Device.html", "classKernel_1_1Device" ],
+    [ "Kernel::Device::Trait", "structKernel_1_1Device_1_1Trait.html", "structKernel_1_1Device_1_1Trait" ],
+    [ "BootDevice", "boot_2BootKit_2Device_8h.html#aa2862dfd6a18056bc921e5d6cb0370f3", null ],
+    [ "DiskDevice", "boot_2BootKit_2Device_8h.html#a2895b7c381b62c56601df69252a70b80", null ],
+    [ "NetworkDevice", "boot_2BootKit_2Device_8h.html#a9d4ff1fe988dec41e6400e8c479e5fac", null ]
 ];

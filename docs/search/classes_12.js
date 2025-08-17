@@ -8,10 +8,10 @@ var searchData=
   ['ref_3c_20cfguid_20_3e_5',['Ref&lt; CFGUID &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
   ['ref_3c_20kernel_3a_3akstring_20_3e_6',['Ref&lt; Kernel::KString &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
   ['ref_3c_20kernel_3a_3apagemgr_20_3e_7',['Ref&lt; Kernel::PageMgr &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
-  ['ref_3c_20kernel_3a_3auser_5fprocess_20_3e_8',['Ref&lt; Kernel::USER_PROCESS &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
-  ['ref_3c_20kind_20_3e_9',['Ref&lt; Kind &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
-  ['ref_3c_20streamtrait_20_3e_10',['Ref&lt; StreamTrait &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
-  ['register64_11',['Register64',['../structKernel_1_1HAL_1_1Register64.html',1,'Kernel::HAL']]],
+  ['ref_3c_20kind_20_3e_8',['Ref&lt; Kind &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
+  ['ref_3c_20streamtrait_20_3e_9',['Ref&lt; StreamTrait &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
+  ['ref_3c_20user_5fprocess_20_3e_10',['Ref&lt; USER_PROCESS &gt;',['../classKernel_1_1Ref.html',1,'Kernel']]],
+  ['ref_5ftype_11',['REF_TYPE',['../structREF__TYPE.html',1,'']]],
   ['rsdp_12',['RSDP',['../classKernel_1_1RSDP.html',1,'Kernel']]],
   ['rsdt_13',['RSDT',['../classKernel_1_1RSDT.html',1,'Kernel']]]
 ];

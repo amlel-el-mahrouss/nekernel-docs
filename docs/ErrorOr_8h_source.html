@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NeKernel: dev/kernel/NewKit/ErrorOr.h Source File</title>
+<title>NeKernel: dev/kernel/NeKit/ErrorOr.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -109,8 +108,8 @@ $(document).ready(function(){initNavTree('ErrorOr_8h_source.html',''); initResiz
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_2NewKit_2Defines_8h.html">NewKit/Defines.h</a>&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="dev_2kernel_2NewKit_2Ref_8h.html">NewKit/Ref.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="kernel_2NeKit_2Defines_8h.html">NeKit/Defines.h</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="dev_2kernel_2NeKit_2Ref_8h.html">NeKit/Ref.h</a>&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceKernel.html">Kernel</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceKernel.html#a7c65ae6e6a2df84f4bab9ce133cc838d">   16</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceKernel.html#a7c65ae6e6a2df84f4bab9ce133cc838d">ErrorT</a> = <a class="code hl_typedef" href="namespaceKernel.html#a43c76a8770f77cb9af3332a8e5767e50">UInt</a>;</div>
@@ -119,13 +118,13 @@ $(document).ready(function(){initNavTree('ErrorOr_8h_source.html',''); initResiz
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classKernel_1_1ErrorOr.html">ErrorOr</a> final {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#aefa1687c8939db54ed15a226b9991891">   21</a></span>  <a class="code hl_function" href="classKernel_1_1ErrorOr.html#aefa1687c8939db54ed15a226b9991891">ErrorOr</a>()  = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a3dc51f14073aedd0e600394cf14b1c1f">   22</a></span>  <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a3dc51f14073aedd0e600394cf14b1c1f">~ErrorOr</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#aefa1687c8939db54ed15a226b9991891">   21</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#aefa1687c8939db54ed15a226b9991891">ErrorOr</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a3dc51f14073aedd0e600394cf14b1c1f">   22</a></span>  <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a3dc51f14073aedd0e600394cf14b1c1f">~ErrorOr</a>()         = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a5b494dbef02dc87ffc523d5093de9e37">   25</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a5b494dbef02dc87ffc523d5093de9e37">ErrorOr</a>(<a class="code hl_typedef" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> err) : <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#abfabf65627fd19a23ba91b0f97034e78">mId</a>(err) {}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a5b494dbef02dc87ffc523d5093de9e37">   25</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a5b494dbef02dc87ffc523d5093de9e37">ErrorOr</a>(<a class="code hl_typedef" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> err) : <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#ac5aed41db3a4fcb063bfb6b843499f09">mRef</a>((T*) <a class="code hl_define" href="kernel_2NeKit_2Macros_8h.html#a73e964a8b06f3ee45f2d04ab6c91096c">RTL_ALLOCA</a>(sizeof(T))), <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#adb554af0c93fa32443937f9ec2577602">mId</a>(err) {}</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a7d23bc2a8c534d7da6f13534b6d9fa5b">   27</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a7d23bc2a8c534d7da6f13534b6d9fa5b">ErrorOr</a>(<a class="code hl_typedef" href="namespaceKernel.html#a46c45ec8d2e2504b10aa8b4d16ec12af">nullPtr</a> Null) {}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a448d2cc8666507e52d986b4be4dd8f7e">   27</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a448d2cc8666507e52d986b4be4dd8f7e">ErrorOr</a>(<a class="code hl_typedef" href="namespaceKernel.html#a46c45ec8d2e2504b10aa8b4d16ec12af">nullPtr</a>) {}</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a4eaa432fe47d13c59bc2148b9e483438">   29</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a4eaa432fe47d13c59bc2148b9e483438">ErrorOr</a>(T* Class) : <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#ac5aed41db3a4fcb063bfb6b843499f09">mRef</a>(Class) {}</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
@@ -143,15 +142,15 @@ $(document).ready(function(){initNavTree('ErrorOr_8h_source.html',''); initResiz
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#ae39814c838e66279dc043982685715e0">   41</a></span>  <a class="code hl_class" href="classKernel_1_1Ref.html">Ref&lt;T&gt;</a>&amp; <a class="code hl_function" href="classKernel_1_1ErrorOr.html#ae39814c838e66279dc043982685715e0">Leak</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#ac5aed41db3a4fcb063bfb6b843499f09">mRef</a>; }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a4593b2618454484917069d056808165c">   43</a></span>  <a class="code hl_typedef" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a4593b2618454484917069d056808165c">Error</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#abfabf65627fd19a23ba91b0f97034e78">mId</a>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a4593b2618454484917069d056808165c">   43</a></span>  <a class="code hl_typedef" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a4593b2618454484917069d056808165c">Error</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#adb554af0c93fa32443937f9ec2577602">mId</a>; }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#ac3f5c703f05d7965eaad2f2c42750ff0">   45</a></span>  <span class="keyword">operator</span> bool() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#ac5aed41db3a4fcb063bfb6b843499f09">mRef</a>; }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a8bf54ab839226985f5e908b0e3f3705f">   47</a></span>  <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a8bf54ab839226985f5e908b0e3f3705f">HasError</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classKernel_1_1ErrorOr.html#abfabf65627fd19a23ba91b0f97034e78">mId</a> &gt; 0; }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#a8bf54ab839226985f5e908b0e3f3705f">   47</a></span>  <a class="code hl_define" href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a> <a class="code hl_function" href="classKernel_1_1ErrorOr.html#a8bf54ab839226985f5e908b0e3f3705f">HasError</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classKernel_1_1ErrorOr.html#adb554af0c93fa32443937f9ec2577602">mId</a> &gt; 0; }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#ac5aed41db3a4fcb063bfb6b843499f09">   50</a></span>  <a class="code hl_class" href="classKernel_1_1Ref.html">Ref&lt;T&gt;</a> <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#ac5aed41db3a4fcb063bfb6b843499f09">mRef</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#abfabf65627fd19a23ba91b0f97034e78">   51</a></span>  <a class="code hl_typedef" href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">UInt32</a> <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#abfabf65627fd19a23ba91b0f97034e78">mId</a>{0};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classKernel_1_1ErrorOr.html#adb554af0c93fa32443937f9ec2577602">   51</a></span>  <a class="code hl_typedef" href="namespaceKernel.html#a8fbad4cd517f76cba246c3c170de141d">Int32</a>  <a class="code hl_variable" href="classKernel_1_1ErrorOr.html#adb554af0c93fa32443937f9ec2577602">mId</a>{0};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
 </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -161,24 +160,24 @@ $(document).ready(function(){initNavTree('ErrorOr_8h_source.html',''); initResiz
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html"><div class="ttname"><a href="classKernel_1_1ErrorOr.html">Kernel::ErrorOr</a></div><div class="ttdef"><b>Definition</b> ErrorOr.h:19</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_a04ab50efa7d50703ed51cc42b19e2773"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a04ab50efa7d50703ed51cc42b19e2773">Kernel::ErrorOr::operator=</a></div><div class="ttdeci">ErrorOr &amp; operator=(const ErrorOr &amp;)=default</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_a3dc51f14073aedd0e600394cf14b1c1f"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a3dc51f14073aedd0e600394cf14b1c1f">Kernel::ErrorOr::~ErrorOr</a></div><div class="ttdeci">~ErrorOr()=default</div></div>
+<div class="ttc" id="aclassKernel_1_1ErrorOr_html_a448d2cc8666507e52d986b4be4dd8f7e"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a448d2cc8666507e52d986b4be4dd8f7e">Kernel::ErrorOr::ErrorOr</a></div><div class="ttdeci">ErrorOr(nullPtr)</div><div class="ttdef"><b>Definition</b> ErrorOr.h:27</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_a4593b2618454484917069d056808165c"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a4593b2618454484917069d056808165c">Kernel::ErrorOr::Error</a></div><div class="ttdeci">Int32 Error()</div><div class="ttdef"><b>Definition</b> ErrorOr.h:43</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_a4eaa432fe47d13c59bc2148b9e483438"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a4eaa432fe47d13c59bc2148b9e483438">Kernel::ErrorOr::ErrorOr</a></div><div class="ttdeci">ErrorOr(T *Class)</div><div class="ttdef"><b>Definition</b> ErrorOr.h:29</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_a50bfc290c4354bb1878edc28dc8795c0"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a50bfc290c4354bb1878edc28dc8795c0">Kernel::ErrorOr::ErrorOr</a></div><div class="ttdeci">ErrorOr(const ErrorOr &amp;)=default</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_a5b494dbef02dc87ffc523d5093de9e37"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a5b494dbef02dc87ffc523d5093de9e37">Kernel::ErrorOr::ErrorOr</a></div><div class="ttdeci">ErrorOr(Int32 err)</div><div class="ttdef"><b>Definition</b> ErrorOr.h:25</div></div>
-<div class="ttc" id="aclassKernel_1_1ErrorOr_html_a7d23bc2a8c534d7da6f13534b6d9fa5b"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a7d23bc2a8c534d7da6f13534b6d9fa5b">Kernel::ErrorOr::ErrorOr</a></div><div class="ttdeci">ErrorOr(nullPtr Null)</div><div class="ttdef"><b>Definition</b> ErrorOr.h:27</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_a8bf54ab839226985f5e908b0e3f3705f"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#a8bf54ab839226985f5e908b0e3f3705f">Kernel::ErrorOr::HasError</a></div><div class="ttdeci">BOOL HasError()</div><div class="ttdef"><b>Definition</b> ErrorOr.h:47</div></div>
-<div class="ttc" id="aclassKernel_1_1ErrorOr_html_abfabf65627fd19a23ba91b0f97034e78"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#abfabf65627fd19a23ba91b0f97034e78">Kernel::ErrorOr::mId</a></div><div class="ttdeci">UInt32 mId</div><div class="ttdef"><b>Definition</b> ErrorOr.h:51</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_ac5aed41db3a4fcb063bfb6b843499f09"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#ac5aed41db3a4fcb063bfb6b843499f09">Kernel::ErrorOr::mRef</a></div><div class="ttdeci">Ref&lt; T &gt; mRef</div><div class="ttdef"><b>Definition</b> ErrorOr.h:50</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_ad5558009d92165fc579e6bb581f43634"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#ad5558009d92165fc579e6bb581f43634">Kernel::ErrorOr::operator=</a></div><div class="ttdeci">ErrorOr &amp; operator=(const Ref&lt; T &gt; &amp;refErr)</div><div class="ttdef"><b>Definition</b> ErrorOr.h:36</div></div>
+<div class="ttc" id="aclassKernel_1_1ErrorOr_html_adb554af0c93fa32443937f9ec2577602"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#adb554af0c93fa32443937f9ec2577602">Kernel::ErrorOr::mId</a></div><div class="ttdeci">Int32 mId</div><div class="ttdef"><b>Definition</b> ErrorOr.h:51</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_ae39814c838e66279dc043982685715e0"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#ae39814c838e66279dc043982685715e0">Kernel::ErrorOr::Leak</a></div><div class="ttdeci">Ref&lt; T &gt; &amp; Leak()</div><div class="ttdef"><b>Definition</b> ErrorOr.h:41</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_aef2dd9127811a169e32a16b3760f86a7"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#aef2dd9127811a169e32a16b3760f86a7">Kernel::ErrorOr::ErrorOr</a></div><div class="ttdeci">ErrorOr(T Class)</div><div class="ttdef"><b>Definition</b> ErrorOr.h:31</div></div>
 <div class="ttc" id="aclassKernel_1_1ErrorOr_html_aefa1687c8939db54ed15a226b9991891"><div class="ttname"><a href="classKernel_1_1ErrorOr.html#aefa1687c8939db54ed15a226b9991891">Kernel::ErrorOr::ErrorOr</a></div><div class="ttdeci">ErrorOr()=default</div></div>
-<div class="ttc" id="aclassKernel_1_1Ref_html"><div class="ttname"><a href="classKernel_1_1Ref.html">Kernel::Ref</a></div><div class="ttdef"><b>Definition</b> Ref.h:17</div></div>
-<div class="ttc" id="adev_2kernel_2NewKit_2Ref_8h_html"><div class="ttname"><a href="dev_2kernel_2NewKit_2Ref_8h.html">Ref.h</a></div></div>
-<div class="ttc" id="akernel_2NewKit_2Defines_8h_html"><div class="ttname"><a href="kernel_2NewKit_2Defines_8h.html">Defines.h</a></div></div>
+<div class="ttc" id="aclassKernel_1_1Ref_html"><div class="ttname"><a href="classKernel_1_1Ref.html">Kernel::Ref</a></div><div class="ttdef"><b>Definition</b> Ref.h:18</div></div>
+<div class="ttc" id="adev_2kernel_2NeKit_2Ref_8h_html"><div class="ttname"><a href="dev_2kernel_2NeKit_2Ref_8h.html">Ref.h</a></div></div>
+<div class="ttc" id="akernel_2NeKit_2Defines_8h_html"><div class="ttname"><a href="kernel_2NeKit_2Defines_8h.html">Defines.h</a></div></div>
+<div class="ttc" id="akernel_2NeKit_2Macros_8h_html_a73e964a8b06f3ee45f2d04ab6c91096c"><div class="ttname"><a href="kernel_2NeKit_2Macros_8h.html#a73e964a8b06f3ee45f2d04ab6c91096c">RTL_ALLOCA</a></div><div class="ttdeci">#define RTL_ALLOCA(sz)</div><div class="ttdef"><b>Definition</b> Macros.h:96</div></div>
 <div class="ttc" id="amacros_8h_html_ae4cc35dcc70810fa972cc8a5185a28fa"><div class="ttname"><a href="macros_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa">BOOL</a></div><div class="ttdeci">#define BOOL</div><div class="ttdef"><b>Definition</b> macros.h:25</div></div>
-<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Qr.h:793</div></div>
-<div class="ttc" id="anamespaceKernel_html_a2d323bd3aa6691b734a555200de5b4cf"><div class="ttname"><a href="namespaceKernel.html#a2d323bd3aa6691b734a555200de5b4cf">Kernel::UInt32</a></div><div class="ttdeci">unsigned int UInt32</div><div class="ttdef"><b>Definition</b> Defines.h:44</div></div>
+<div class="ttc" id="anamespaceKernel_html"><div class="ttname"><a href="namespaceKernel.html">Kernel</a></div><div class="ttdoc">USER_PROCESS inline definitions.</div><div class="ttdef"><b>Definition</b> Device.h:12</div></div>
 <div class="ttc" id="anamespaceKernel_html_a43c76a8770f77cb9af3332a8e5767e50"><div class="ttname"><a href="namespaceKernel.html#a43c76a8770f77cb9af3332a8e5767e50">Kernel::UInt</a></div><div class="ttdeci">unsigned int UInt</div><div class="ttdef"><b>Definition</b> Defines.h:43</div></div>
 <div class="ttc" id="anamespaceKernel_html_a46c45ec8d2e2504b10aa8b4d16ec12af"><div class="ttname"><a href="namespaceKernel.html#a46c45ec8d2e2504b10aa8b4d16ec12af">Kernel::nullPtr</a></div><div class="ttdeci">decltype(nullptr) nullPtr</div><div class="ttdef"><b>Definition</b> Defines.h:34</div></div>
 <div class="ttc" id="anamespaceKernel_html_a7c65ae6e6a2df84f4bab9ce133cc838d"><div class="ttname"><a href="namespaceKernel.html#a7c65ae6e6a2df84f4bab9ce133cc838d">Kernel::ErrorT</a></div><div class="ttdeci">UInt ErrorT</div><div class="ttdef"><b>Definition</b> ErrorOr.h:16</div></div>
@@ -188,7 +187,7 @@ $(document).ready(function(){initNavTree('ErrorOr_8h_source.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_e75dcc59ea39cc8560c57baaefc9f0b6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_0e4688895a884590adf21df6f9574e9f.html">NewKit</a></li><li class="navelem"><a class="el" href="ErrorOr_8h.html">ErrorOr.h</a></li>
+    <li class="navelem"><a class="el" href="dir_5fc0168d11760b9445bd29fa15d9290f.html">dev</a></li><li class="navelem"><a class="el" href="dir_e75dcc59ea39cc8560c57baaefc9f0b6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_1341a204799944278b40a2c0eb6dfe7b.html">NeKit</a></li><li class="navelem"><a class="el" href="ErrorOr_8h.html">ErrorOr.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

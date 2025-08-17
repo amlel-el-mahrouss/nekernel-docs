@@ -9,5 +9,6 @@ var searchData=
   ['cfpoint_6',['CFPoint',['../structCF_1_1CFPoint.html',1,'CF']]],
   ['cfrect_7',['CFRect',['../structCF_1_1CFRect.html',1,'CF']]],
   ['cfref_8',['CFRef',['../classCF_1_1CFRef.html',1,'CF']]],
-  ['configheader_9',['ConfigHeader',['../classKernel_1_1ConfigHeader.html',1,'Kernel']]]
+  ['chronointerface_9',['ChronoInterface',['../classKernel_1_1ChronoInterface.html',1,'Kernel']]],
+  ['configheader_10',['ConfigHeader',['../classKernel_1_1ConfigHeader.html',1,'Kernel']]]
 ];

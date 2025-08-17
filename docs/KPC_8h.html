@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -102,7 +101,7 @@ $(document).ready(function(){initNavTree('KPC_8h.html',''); initResizable(); });
 
 <p><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> Procedure Code.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2NewKit_2Defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2NeKit_2Defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
 </div>
 <p><a href="KPC_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -118,7 +117,7 @@ Macros</h2></td></tr>
 <tr class="separator:a6d06f6f12e3d087f30a0861d05152ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcefdee1c11dc9099a5660844c01d542" id="r_afcefdee1c11dc9099a5660844c01d542"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KPC_8h.html#afcefdee1c11dc9099a5660844c01d542">err_local_fail</a>()</td></tr>
 <tr class="separator:afcefdee1c11dc9099a5660844c01d542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd62977e726877749cf96209a818111" id="r_a0dd62977e726877749cf96209a818111"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KPC_8h.html#a0dd62977e726877749cf96209a818111">err_local_get</a>()&#160;&#160;&#160;(<a class="el" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().CurrentProcess().Leak().GetLocalCode())</td></tr>
+<tr class="memitem:a0dd62977e726877749cf96209a818111" id="r_a0dd62977e726877749cf96209a818111"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KPC_8h.html#a0dd62977e726877749cf96209a818111">err_local_get</a>()&#160;&#160;&#160;  (<a class="el" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().TheCurrentProcess().Leak().GetLocalCode())</td></tr>
 <tr class="separator:a0dd62977e726877749cf96209a818111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9087b27518ec9814ed79425db2e393a6" id="r_a9087b27518ec9814ed79425db2e393a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="KPC_8h.html#a9087b27518ec9814ed79425db2e393a6">err_global_ok</a>()&#160;&#160;&#160;(<a class="el" href="namespaceKernel.html#aeafcdb795af5236ba9ecf8b3109a0bcd">Kernel::kErrorLocalNumber</a> == <a class="el" href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a>)</td></tr>
 <tr class="separator:a9087b27518ec9814ed79425db2e393a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,9 +209,16 @@ Variables</h2></td></tr>
 <tr class="separator:a965a6d3158e148bdc99c38def6ca9dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d9f09eaa96c8da5d8cb446890618236" id="r_a9d9f09eaa96c8da5d8cb446890618236"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9d9f09eaa96c8da5d8cb446890618236">Kernel::kErrorDiskIsTooTiny</a> = 65</td></tr>
 <tr class="separator:a9d9f09eaa96c8da5d8cb446890618236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f62c13b2e830499aba115dfe1037956" id="r_a8f62c13b2e830499aba115dfe1037956"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">Kernel::kErrorDmaExhausted</a> = 101</td></tr>
-<tr class="memdesc:a8f62c13b2e830499aba115dfe1037956"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceKernel.html" title="USER_PROCESS inline definitions.">Kernel</a> errors.  <br /></td></tr>
+<tr class="memitem:a8f62c13b2e830499aba115dfe1037956" id="r_a8f62c13b2e830499aba115dfe1037956"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a8f62c13b2e830499aba115dfe1037956">Kernel::kErrorDmaExhausted</a> = 66</td></tr>
 <tr class="separator:a8f62c13b2e830499aba115dfe1037956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb089b3719a36d936145b7ebe0aa0aab" id="r_acb089b3719a36d936145b7ebe0aa0aab"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#acb089b3719a36d936145b7ebe0aa0aab">Kernel::kErrorOutOfBitMapMemory</a> = 67</td></tr>
+<tr class="separator:acb089b3719a36d936145b7ebe0aa0aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a21ebdc1d9fd7340f2528ced6e8111" id="r_ae1a21ebdc1d9fd7340f2528ced6e8111"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae1a21ebdc1d9fd7340f2528ced6e8111">Kernel::kErrorTimeout</a> = 68</td></tr>
+<tr class="separator:ae1a21ebdc1d9fd7340f2528ced6e8111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae089743ae9525b61c4013abc58d21c7b" id="r_ae089743ae9525b61c4013abc58d21c7b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ae089743ae9525b61c4013abc58d21c7b">Kernel::kErrorAccessDenied</a> = 69</td></tr>
+<tr class="separator:ae089743ae9525b61c4013abc58d21c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bfb2c7165385dd129b376202cdb5afa" id="r_a5bfb2c7165385dd129b376202cdb5afa"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a5bfb2c7165385dd129b376202cdb5afa">Kernel::kErrorUnavailable</a> = 70</td></tr>
+<tr class="separator:a5bfb2c7165385dd129b376202cdb5afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa412f1f2c6810c26e3295d988f1d1b01" id="r_aa412f1f2c6810c26e3295d988f1d1b01"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceKernel.html#abc239cb5934f4419d0c801c4ee6ee356">KPCError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa412f1f2c6810c26e3295d988f1d1b01">Kernel::kErrorUnimplemented</a> = -1</td></tr>
 <tr class="memdesc:aa412f1f2c6810c26e3295d988f1d1b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic errors.  <br /></td></tr>
 <tr class="separator:aa412f1f2c6810c26e3295d988f1d1b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,11 +291,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486">CurrentProcess</a>().Leak().GetLocalCode() != \</div>
+<b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#a4ef263b14f6d0a62c3d3db51e7345238">TheCurrentProcess</a>().<a class="code hl_function" href="classKernel_1_1Ref.html#a72b16dadb3caf99190b03f019b4f8d77">Leak</a>().<a class="code hl_function" href="classKernel_1_1USER__PROCESS.html#a4e003b4fcc80363eb061b9492f8df15a">GetLocalCode</a>() != \</div>
 <div class="line">   <a class="code hl_variable" href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a>)</div>
-<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_a19e948d65beac1bee639cf6b6880dd21"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a></div><div class="ttdeci">STATIC UserProcessScheduler &amp; The()</div><div class="ttdoc">Retrieves the singleton of the process scheduler.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:449</div></div>
-<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_ad8bfbbff90de2dc1b55465d4eb262486"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486">Kernel::UserProcessScheduler::CurrentProcess</a></div><div class="ttdeci">Ref&lt; USER_PROCESS &gt; &amp; CurrentProcess()</div><div class="ttdoc">Gets current running process.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:596</div></div>
-<div class="ttc" id="anamespaceKernel_html_a1ee8cad04f3464b7e0a2df9e45099dc6"><div class="ttname"><a href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a></div><div class="ttdeci">constexpr KPCError kErrorSuccess</div><div class="ttdef"><b>Definition</b> KPC.h:31</div></div>
+<div class="ttc" id="aclassKernel_1_1Ref_html_a72b16dadb3caf99190b03f019b4f8d77"><div class="ttname"><a href="classKernel_1_1Ref.html#a72b16dadb3caf99190b03f019b4f8d77">Kernel::Ref::Leak</a></div><div class="ttdeci">T &amp; Leak() noexcept</div><div class="ttdef"><b>Definition</b> Ref.h:37</div></div>
+<div class="ttc" id="aclassKernel_1_1USER__PROCESS_html_a4e003b4fcc80363eb061b9492f8df15a"><div class="ttname"><a href="classKernel_1_1USER__PROCESS.html#a4e003b4fcc80363eb061b9492f8df15a">Kernel::USER_PROCESS::GetLocalCode</a></div><div class="ttdeci">KPCError &amp; GetLocalCode() noexcept</div><div class="ttdoc">return local error code of process.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:70</div></div>
+<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_a19e948d65beac1bee639cf6b6880dd21"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a></div><div class="ttdeci">STATIC UserProcessScheduler &amp; The()</div><div class="ttdoc">Retrieves the singleton of the process scheduler.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:450</div></div>
+<div class="ttc" id="aclassKernel_1_1UserProcessScheduler_html_a4ef263b14f6d0a62c3d3db51e7345238"><div class="ttname"><a href="classKernel_1_1UserProcessScheduler.html#a4ef263b14f6d0a62c3d3db51e7345238">Kernel::UserProcessScheduler::TheCurrentProcess</a></div><div class="ttdeci">USER_PROCESS_REF &amp; TheCurrentProcess()</div><div class="ttdoc">Gets current running process.</div><div class="ttdef"><b>Definition</b> UserProcessScheduler.cc:570</div></div>
+<div class="ttc" id="anamespaceKernel_html_a1ee8cad04f3464b7e0a2df9e45099dc6"><div class="ttname"><a href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a></div><div class="ttdeci">constexpr KPCError kErrorSuccess</div><div class="ttdef"><b>Definition</b> KPC.h:32</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -303,7 +311,7 @@ Variables</h2></td></tr>
           <td class="memname">#define err_local_get</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().CurrentProcess().Leak().GetLocalCode())</td>
+          <td>&#160;&#160;&#160;  (<a class="el" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().TheCurrentProcess().Leak().GetLocalCode())</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -324,7 +332,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#ad8bfbbff90de2dc1b55465d4eb262486">CurrentProcess</a>().Leak().GetLocalCode() == \</div>
+<b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#a19e948d65beac1bee639cf6b6880dd21">Kernel::UserProcessScheduler::The</a>().<a class="code hl_function" href="classKernel_1_1UserProcessScheduler.html#a4ef263b14f6d0a62c3d3db51e7345238">TheCurrentProcess</a>().<a class="code hl_function" href="classKernel_1_1Ref.html#a72b16dadb3caf99190b03f019b4f8d77">Leak</a>().<a class="code hl_function" href="classKernel_1_1USER__PROCESS.html#a4e003b4fcc80363eb061b9492f8df15a">GetLocalCode</a>() == \</div>
 <div class="line">   <a class="code hl_variable" href="namespaceKernel.html#a1ee8cad04f3464b7e0a2df9e45099dc6">Kernel::kErrorSuccess</a>)</div>
 </div><!-- fragment -->
 </div>

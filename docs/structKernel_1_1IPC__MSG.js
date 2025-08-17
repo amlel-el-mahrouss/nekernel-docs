@@ -5,6 +5,7 @@ var structKernel_1_1IPC__MSG =
     [ "IpcEndianess", "structKernel_1_1IPC__MSG.html#a8aeb89aae0d77b1788df1df82bbfb300", null ],
     [ "IpcFrom", "structKernel_1_1IPC__MSG.html#aef284b81102b0230c722ba5c672fa916", null ],
     [ "IpcHeaderMagic", "structKernel_1_1IPC__MSG.html#a267f844af337de3b335ded1510859648", null ],
+    [ "IpcLock", "structKernel_1_1IPC__MSG.html#af2e45ec915c06c87f6e4ff2b61cdbf2e", null ],
     [ "IpcMsg", "structKernel_1_1IPC__MSG.html#ac9391acdcc949449afb0f67bbbf79c41", null ],
     [ "IpcMsgSz", "structKernel_1_1IPC__MSG.html#af0290a5da70b50d24eb01313652ec5ea", null ],
     [ "IpcPacketSize", "structKernel_1_1IPC__MSG.html#aef1a8249aefa53c68e4e4384b7fd0acd", null ],

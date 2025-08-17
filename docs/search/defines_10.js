@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['tib_0',['tib',['../kernel_2NewKit_2Macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca',1,'TIB:&#160;Macros.h'],['../user_2Macros_8h.html#a8d236eda4577d4fc3bf28ffc5e36b5ca',1,'TIB:&#160;Macros.h']]],
-  ['tib_5fcast_1',['tib_cast',['../kernel_2NewKit_2Macros_8h.html#a88a22810bf835b7794ce207e15732da8',1,'tib_cast:&#160;Macros.h'],['../user_2Macros_8h.html#a88a22810bf835b7794ce207e15732da8',1,'tib_cast:&#160;Macros.h']]],
-  ['true_2',['true',['../user_2Macros_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;Macros.h'],['../kernel_2NewKit_2Macros_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE:&#160;Macros.h']]],
-  ['try_3',['TRY',['../KernelPanic_8h.html#aa1706c3dd2db94d27734f834a7be5ed1',1,'KernelPanic.h']]],
-  ['try_5ffind_5fnode_4',['TRY_FIND_NODE',['../MutableArray_8h.html#acdc18e410f981fe6942451a9963cefe1',1,'MutableArray.h']]],
-  ['try_5ffind_5fnode2_5',['TRY_FIND_NODE2',['../MutableArray_8h.html#a076eb36a090e7a5f46c9531f853fb9f7',1,'MutableArray.h']]],
-  ['try_5fremove_5fnode_6',['TRY_REMOVE_NODE',['../MutableArray_8h.html#aa03228683e13f251ecccb07ee6247b98',1,'MutableArray.h']]]
+  ['sdt_5fobject_0',['SDT_OBJECT',['../ACPI_8h.html#a7a338e800248cd56cde3effbf5cc6c44',1,'ACPI.h']]],
+  ['setmem_1',['SetMem',['../Support_8h.html#a14e2d58d4f377e1e0b972ecf1f4be97e',1,'Support.h']]],
+  ['sigabrt_2',['SIGABRT',['../Signals_8h.html#aa86c630133e5b5174ac970227b273446',1,'Signals.h']]],
+  ['sigatch_3',['SIGATCH',['../Signals_8h.html#a6947e0d9bc20ca04f86d55f044fb2a27',1,'Signals.h']]],
+  ['sigbrek_4',['SIGBREK',['../Signals_8h.html#a6a3be77437e6f054434df7fa7652b9f0',1,'Signals.h']]],
+  ['sigcont_5',['SIGCONT',['../Signals_8h.html#a024f43063003e753afc6cca1acd6e104',1,'Signals.h']]],
+  ['sigdtch_6',['SIGDTCH',['../Signals_8h.html#a11459d7423f08501215a99d656c08621',1,'Signals.h']]],
+  ['sigexec_7',['SIGEXEC',['../Signals_8h.html#a828579793e98da2b4e33e182721cc92d',1,'Signals.h']]],
+  ['sigkill_8',['SIGKILL',['../Signals_8h.html#addd8dcd406ce514ab3b4f576a5343d42',1,'Signals.h']]],
+  ['sigpaus_9',['SIGPAUS',['../Signals_8h.html#a7a6ee33cbc5279bd9133923c4fb58a16',1,'Signals.h']]],
+  ['sigtrap_10',['SIGTRAP',['../Signals_8h.html#aa2beb906ab1b46676e63823f4e773c38',1,'Signals.h']]],
+  ['static_11',['STATIC',['../kernel_2NeKit_2Macros_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb',1,'Macros.h']]],
+  ['strcmp_12',['StrCmp',['../Support_8h.html#ab3944184d7c3bdf03f64a5c931464b08',1,'Support.h']]],
+  ['stringify_13',['STRINGIFY',['../kernel_2NeKit_2Macros_8h.html#a43e1cad902b6477bec893cb6430bd6c8',1,'Macros.h']]],
+  ['strlen_14',['StrLen',['../Support_8h.html#a94a5b7998848651b99c8b45e19c534d7',1,'Support.h']]],
+  ['syscall_5fhash_15',['SYSCALL_HASH',['../Syscall_8h.html#a62520d10e511fd15c0e64e96f1a1c82c',1,'Syscall.h']]]
 ];

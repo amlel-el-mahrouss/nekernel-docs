@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -93,19 +92,27 @@ $(document).ready(function(){initNavTree('CoreProcessScheduler_8h.html',''); ini
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CoreProcessScheduler.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2NewKit_2Defines_8h_source.html">NewKit/Defines.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ErrorOr_8h_source.html">NewKit/ErrorOr.h</a>&gt;</code><br />
+
+<p>Core Process Scheduler header file.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="kernel_2NeKit_2Defines_8h_source.html">NeKit/Defines.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ErrorOr_8h_source.html">NeKit/ErrorOr.h</a>&gt;</code><br />
 </div>
 <p><a href="CoreProcessScheduler_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1PROCESS__HEAP__TREE.html">Kernel::PROCESS_HEAP_TREE&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1PROCESS__FILE__TREE.html">Kernel::PROCESS_FILE_TREE&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKernel_1_1PROCESS__IMAGE.html">Kernel::PROCESS_IMAGE</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to contain a process's image and blob.  <a href="structKernel_1_1PROCESS__IMAGE.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,15 +123,32 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceKernel"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classKernel_1_1USER__PROCESS.html">USER_PROCESS</a> inline definitions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8c5f8dfaa515acaa19b5a50204a39bdd" id="r_a8c5f8dfaa515acaa19b5a50204a39bdd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#a8c5f8dfaa515acaa19b5a50204a39bdd">kSchedMinMicroTime</a>&#160;&#160;&#160;(AffinityKind::kStandard)</td></tr>
+<tr class="separator:a8c5f8dfaa515acaa19b5a50204a39bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d537f5b893dc6838811704135744b72" id="r_a1d537f5b893dc6838811704135744b72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#a1d537f5b893dc6838811704135744b72">kSchedInvalidPID</a>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:a1d537f5b893dc6838811704135744b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae633e81676a77d8dc3d29554f5d283c9" id="r_ae633e81676a77d8dc3d29554f5d283c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#ae633e81676a77d8dc3d29554f5d283c9">kSchedProcessLimitPerTeam</a>&#160;&#160;&#160;(32U)</td></tr>
+<tr class="separator:ae633e81676a77d8dc3d29554f5d283c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0526184e35eaadd87e1d060741c148" id="r_a1c0526184e35eaadd87e1d060741c148"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#a1c0526184e35eaadd87e1d060741c148">kSchedTeamCount</a>&#160;&#160;&#160;(256U)</td></tr>
+<tr class="separator:a1c0526184e35eaadd87e1d060741c148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15d27971febb6ea29dd62469e47424d" id="r_af15d27971febb6ea29dd62469e47424d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#af15d27971febb6ea29dd62469e47424d">kSchedMaxMemoryLimit</a>&#160;&#160;&#160;(<a class="el" href="kernel_2NeKit_2Macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a>(128)) /* max physical memory limit */</td></tr>
+<tr class="separator:af15d27971febb6ea29dd62469e47424d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab226cdb47327ca7fe2c483852d35ce2c" id="r_ab226cdb47327ca7fe2c483852d35ce2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#ab226cdb47327ca7fe2c483852d35ce2c">kSchedMaxStackSz</a>&#160;&#160;&#160;(<a class="el" href="kernel_2NeKit_2Macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(8))       /* maximum stack size */</td></tr>
+<tr class="separator:ab226cdb47327ca7fe2c483852d35ce2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb9d23e50da76cda835116808be093c" id="r_a9cb9d23e50da76cda835116808be093c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#a9cb9d23e50da76cda835116808be093c">kSchedNameLen</a>&#160;&#160;&#160;(128U)</td></tr>
+<tr class="separator:a9cb9d23e50da76cda835116808be093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab243f568e39786fa0c77447aaeab2bf3" id="r_ab243f568e39786fa0c77447aaeab2bf3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#ab243f568e39786fa0c77447aaeab2bf3">Kernel::PTime</a></td></tr>
-<tr class="separator:ab243f568e39786fa0c77447aaeab2bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba6700dd5b8786ae2dbee68de1a5cea" id="r_abba6700dd5b8786ae2dbee68de1a5cea"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#abba6700dd5b8786ae2dbee68de1a5cea">Kernel::ProcessID</a></td></tr>
 <tr class="memdesc:abba6700dd5b8786ae2dbee68de1a5cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local Process identifier.  <br /></td></tr>
 <tr class="separator:abba6700dd5b8786ae2dbee68de1a5cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4955d9cb19cc64481b15add47aaa41bc" id="r_a4955d9cb19cc64481b15add47aaa41bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a4955d9cb19cc64481b15add47aaa41bc">Kernel::ProcessTime</a> = <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a></td></tr>
-<tr class="separator:a4955d9cb19cc64481b15add47aaa41bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70739ca2e65a15d9e9c87d76be687e7e" id="r_a70739ca2e65a15d9e9c87d76be687e7e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a70739ca2e65a15d9e9c87d76be687e7e">Kernel::PTime</a> = <a class="el" href="namespaceKernel.html#a6d35555a92a80d5864d0a1cce15a38a5">UInt64</a></td></tr>
+<tr class="separator:a70739ca2e65a15d9e9c87d76be687e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2a12c4ac04b46531b8a646d98a2275" id="r_a3a2a12c4ac04b46531b8a646d98a2275"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a3a2a12c4ac04b46531b8a646d98a2275">Kernel::ProcessTime</a> = <a class="el" href="namespaceKernel.html#a70739ca2e65a15d9e9c87d76be687e7e">PTime</a></td></tr>
+<tr class="separator:a3a2a12c4ac04b46531b8a646d98a2275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cd7ab8391bdadcb7f183eca492dcf1c" id="r_a3cd7ab8391bdadcb7f183eca492dcf1c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a3cd7ab8391bdadcb7f183eca492dcf1c">Kernel::PID</a> = <a class="el" href="namespaceKernel.html#a5801162fe3161371005a37736050c570">Int64</a></td></tr>
 <tr class="separator:a3cd7ab8391bdadcb7f183eca492dcf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d7c52dbc42ca1b2db49277a0bf6104" id="r_a60d7c52dbc42ca1b2db49277a0bf6104"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a60d7c52dbc42ca1b2db49277a0bf6104">Kernel::ImagePtr</a> = <a class="el" href="namespaceKernel.html#aac30f48665b606a2bc482f2792369408">VoidPtr</a></td></tr>
@@ -133,9 +157,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:aa3e0f5a7a3575efaa32f0dafaed9a812" id="r_aa3e0f5a7a3575efaa32f0dafaed9a812"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="namespaceKernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812acfc20a69d3e3b844e9db48ec8a6fb1a9">Kernel::kInvalidTreeKind</a> = 0U
+, <a class="el" href="namespaceKernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812ac204b9e3749d3736325c3facadd32f2a">Kernel::kRedTreeKind</a> = 100U
+, <a class="el" href="namespaceKernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812acee4566590a4532befe9fb81568b1d51">Kernel::kBlackTreeKind</a> = 101U
+, <a class="el" href="namespaceKernel.html#aa3e0f5a7a3575efaa32f0dafaed9a812a7e6fdea67dc2c1b7fc37f82081253d72">Kernel::kTreeKindCount</a> = 3U
+ }</td></tr>
+<tr class="separator:aa3e0f5a7a3575efaa32f0dafaed9a812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5398d1286c684b8da52e3ab119ccdbe3" id="r_a5398d1286c684b8da52e3ab119ccdbe3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3">Kernel::ProcessSubsystem</a> : Int32 { <br />
 &#160;&#160;<a class="el" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a3866b7f130c172bcbd757548fa82cd02">Kernel::kProcessSubsystemSecurity</a> = 100
-, <a class="el" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3acf156487a4a7b6e44a568ab1303e3f37">Kernel::kProcessSubsystemApplication</a>
+, <a class="el" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a0ccb3c3a3bcc4dbd8f02d53cadf2ee37">Kernel::kProcessSubsystemUser</a>
 , <a class="el" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a8069881ad9a19e2bda12ef381f1349e3">Kernel::kProcessSubsystemService</a>
 , <a class="el" href="namespaceKernel.html#a5398d1286c684b8da52e3ab119ccdbe3a5fecdbaa1dcade5c561b4ec47c284be3">Kernel::kProcessSubsystemDriver</a>
 , <br />
@@ -159,8 +189,8 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a9b3885a37472898354d34d8eb3125897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local Process status enum.  <a href="namespaceKernel.html#a9b3885a37472898354d34d8eb3125897">More...</a><br /></td></tr>
 <tr class="separator:a9b3885a37472898354d34d8eb3125897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa465d631a5c82e89384453c2546651f1" id="r_aa465d631a5c82e89384453c2546651f1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1">Kernel::AffinityKind</a> : Int32 { <br />
-&#160;&#160;<a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1ae0f4fc1e0994e23b803ed82fb5e9930b">Kernel::kRealTime</a> = 500
-, <a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1ab19e80cac5b7f585659031a6cff1489b">Kernel::kVeryHigh</a> = 250
+&#160;&#160;<a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1ae0f4fc1e0994e23b803ed82fb5e9930b">Kernel::kRealTime</a> = 100
+, <a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1ab19e80cac5b7f585659031a6cff1489b">Kernel::kVeryHigh</a> = 150
 , <a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1aa022f15e910eb36278094efb6e808a07">Kernel::kHigh</a> = 200
 , <a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1a821da62632c491ea619ead7b31c094bf">Kernel::kStandard</a> = 1000
 , <br />
@@ -173,12 +203,14 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a865cfc3ba8dace65e34b58be9bbe568b" id="r_a865cfc3ba8dace65e34b58be9bbe568b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a865cfc3ba8dace65e34b58be9bbe568b">Kernel::ProcessLevelRing</a> : Int32 { <a class="el" href="namespaceKernel.html#a865cfc3ba8dace65e34b58be9bbe568ba4273218a9bea7fb97d46ca7501cbeb5b">Kernel::kRingStdUser</a> = 1
 , <a class="el" href="namespaceKernel.html#a865cfc3ba8dace65e34b58be9bbe568ba4215aa66f39b8ac7be3873fb4f938164">Kernel::kRingSuperUser</a> = 2
 , <a class="el" href="namespaceKernel.html#a865cfc3ba8dace65e34b58be9bbe568baa475eaec0320dbeccd09f64fc4beff05">Kernel::kRingGuestUser</a> = 5
-, <a class="el" href="namespaceKernel.html#a865cfc3ba8dace65e34b58be9bbe568ba9fb09bc213dbaf1dff9fc3a42d0237b5">Kernel::kRingCount</a> = 5
+, <a class="el" href="namespaceKernel.html#a865cfc3ba8dace65e34b58be9bbe568ba9fb09bc213dbaf1dff9fc3a42d0237b5">Kernel::kRingCount</a> = 3
  }</td></tr>
 <tr class="separator:a865cfc3ba8dace65e34b58be9bbe568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a09e4aa181ce319bd663c388a28d1b3e0" id="r_a09e4aa181ce319bd663c388a28d1b3e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kernel_2NeKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CoreProcessScheduler_8h.html#a09e4aa181ce319bd663c388a28d1b3e0">sched_idle_task</a> (void)</td></tr>
+<tr class="separator:a09e4aa181ce319bd663c388a28d1b3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da5888cc3dfe4eedd8e660b093073f5" id="r_a9da5888cc3dfe4eedd8e660b093073f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a9da5888cc3dfe4eedd8e660b093073f5">Kernel::operator&lt;</a> (<a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> lhs, <a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> rhs)</td></tr>
 <tr class="memdesc:a9da5888cc3dfe4eedd8e660b093073f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operators for AffinityKind.  <br /></td></tr>
 <tr class="separator:a9da5888cc3dfe4eedd8e660b093073f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +221,127 @@ Functions</h2></td></tr>
 <tr class="memitem:a338361367d8f4a60f12961f039dd4ac9" id="r_a338361367d8f4a60f12961f039dd4ac9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#a338361367d8f4a60f12961f039dd4ac9">Kernel::operator&gt;=</a> (<a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> lhs, <a class="el" href="namespaceKernel.html#aa465d631a5c82e89384453c2546651f1">AffinityKind</a> rhs)</td></tr>
 <tr class="separator:a338361367d8f4a60f12961f039dd4ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Core Process Scheduler header file. </p>
+<dl class="section author"><dt>Author</dt><dd>Amlal El Mahrouss (<a href="#" onclick="location.href='mai'+'lto:'+'aml'+'al'+'@ne'+'ke'+'rne'+'l.'+'org'; return false;">amlal<span class="obfuscator">.nosp@m.</span>@nek<span class="obfuscator">.nosp@m.</span>ernel<span class="obfuscator">.nosp@m.</span>.org</a>) </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a1d537f5b893dc6838811704135744b72" name="a1d537f5b893dc6838811704135744b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d537f5b893dc6838811704135744b72">&#9670;&#160;</a></span>kSchedInvalidPID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSchedInvalidPID&#160;&#160;&#160;(-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af15d27971febb6ea29dd62469e47424d" name="af15d27971febb6ea29dd62469e47424d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15d27971febb6ea29dd62469e47424d">&#9670;&#160;</a></span>kSchedMaxMemoryLimit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSchedMaxMemoryLimit&#160;&#160;&#160;(<a class="el" href="kernel_2NeKit_2Macros_8h.html#a64fe7b8422cbe3b1e09bef7fa04e177b">gib_cast</a>(128)) /* max physical memory limit */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab226cdb47327ca7fe2c483852d35ce2c" name="ab226cdb47327ca7fe2c483852d35ce2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab226cdb47327ca7fe2c483852d35ce2c">&#9670;&#160;</a></span>kSchedMaxStackSz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSchedMaxStackSz&#160;&#160;&#160;(<a class="el" href="kernel_2NeKit_2Macros_8h.html#a52e48c290bb7842c6640ef253c9023ab">kib_cast</a>(8))       /* maximum stack size */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c5f8dfaa515acaa19b5a50204a39bdd" name="a8c5f8dfaa515acaa19b5a50204a39bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5f8dfaa515acaa19b5a50204a39bdd">&#9670;&#160;</a></span>kSchedMinMicroTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSchedMinMicroTime&#160;&#160;&#160;(AffinityKind::kStandard)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cb9d23e50da76cda835116808be093c" name="a9cb9d23e50da76cda835116808be093c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb9d23e50da76cda835116808be093c">&#9670;&#160;</a></span>kSchedNameLen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSchedNameLen&#160;&#160;&#160;(128U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae633e81676a77d8dc3d29554f5d283c9" name="ae633e81676a77d8dc3d29554f5d283c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae633e81676a77d8dc3d29554f5d283c9">&#9670;&#160;</a></span>kSchedProcessLimitPerTeam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSchedProcessLimitPerTeam&#160;&#160;&#160;(32U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c0526184e35eaadd87e1d060741c148" name="a1c0526184e35eaadd87e1d060741c148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c0526184e35eaadd87e1d060741c148">&#9670;&#160;</a></span>kSchedTeamCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kSchedTeamCount&#160;&#160;&#160;(256U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a09e4aa181ce319bd663c388a28d1b3e0" name="a09e4aa181ce319bd663c388a28d1b3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e4aa181ce319bd663c388a28d1b3e0">&#9670;&#160;</a></span>sched_idle_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="kernel_2NeKit_2Macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> void sched_idle_task </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

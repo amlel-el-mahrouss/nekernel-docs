@@ -13,6 +13,6 @@ var structEfiSystemTable =
     [ "StandardErrorHandle", "structEfiSystemTable.html#a9f6fd23f39d5276641ce5e7005333456", null ],
     [ "StdErr", "structEfiSystemTable.html#ad629bdaaf942faae82a5c6bf71fc9ff7", null ],
     [ "SystemHeader", "structEfiSystemTable.html#af0985f55edaee9540d7a21f569cefe44", null ],
-    [ "VendorGUID", "structEfiSystemTable.html#aa0d618419c0d5bf1b1745c4a4f9931c4", null ],
+    [ "VendorGUID", "structEfiSystemTable.html#a123b84490a0e34ab8e1c07a007a510c2", null ],
     [ "VendorTable", "structEfiSystemTable.html#a4bd3c922838a28d4d5996d18880d061f", null ]
 ];

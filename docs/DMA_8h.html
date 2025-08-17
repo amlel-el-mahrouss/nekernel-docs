@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -26,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NeKernel<span id="projectnumber">&#160;0.0.1dev</span>
+   <div id="projectname">NeKernel<span id="projectnumber">&#160;dev</span>
    </div>
   </td>
  </tr>
@@ -99,9 +98,9 @@ $(document).ready(function(){initNavTree('DMA_8h.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="DeviceMgr_8h_source.html">KernelKit/DeviceMgr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="kernel_2KernelKit_2PCI_2Device_8h_source.html">KernelKit/PCI/Device.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2NewKit_2Array_8h_source.html">NewKit/Array.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="OwnPtr_8h_source.html">NewKit/OwnPtr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dev_2kernel_2NewKit_2Ref_8h_source.html">NewKit/Ref.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dev_2kernel_2NeKit_2Array_8h_source.html">NeKit/Array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="OwnPtr_8h_source.html">NeKit/OwnPtr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dev_2kernel_2NeKit_2Ref_8h_source.html">NeKit/Ref.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="DMA_8inl_source.html">KernelKit/PCI/DMA.inl</a>&gt;</code><br />
 </div>
 <p><a href="DMA_8h_source.html">Go to the source code of this file.</a></p>
@@ -121,9 +120,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aeb50351586bdabc9c91534f64cc58e42" id="r_aeb50351586bdabc9c91534f64cc58e42"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42">Kernel::DmaKind</a> { <a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42ac89b74e7544d782dd33c25fdaae40b8f">Kernel::PCI</a>
+<tr class="memitem:aeb50351586bdabc9c91534f64cc58e42" id="r_aeb50351586bdabc9c91534f64cc58e42"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42">Kernel::DmaKind</a> { <a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42ac89b74e7544d782dd33c25fdaae40b8f">Kernel::PCI</a> = 10
 , <a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42a64f288ef838ec6e8bd8a3a8833c54047">Kernel::ISA</a>
-, <a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42a4bbb8f967da6d1a610596d7257179c2b">Kernel::Invalid</a>
+, <a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42ae93f994f01c537c4e2f7d8528c3eb5e9">Kernel::Count</a> = 2
+, <a class="el" href="namespaceKernel.html#aeb50351586bdabc9c91534f64cc58e42a4bbb8f967da6d1a610596d7257179c2b">Kernel::Invalid</a> = 0
  }</td></tr>
 <tr class="separator:aeb50351586bdabc9c91534f64cc58e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

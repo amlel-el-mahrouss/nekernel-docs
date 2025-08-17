@@ -1,6 +1,6 @@
 var classKernel_1_1ATADeviceInterface =
 [
-    [ "ATADeviceInterface", "classKernel_1_1ATADeviceInterface.html#a4e6f17763c5e30442566c36ffe51286d", null ],
+    [ "ATADeviceInterface", "classKernel_1_1ATADeviceInterface.html#a4a63650265184c949bd2b4803dbae2d6", null ],
     [ "~ATADeviceInterface", "classKernel_1_1ATADeviceInterface.html#afddd8bf021e50ca5dd3dc766b9382437", null ],
     [ "ATADeviceInterface", "classKernel_1_1ATADeviceInterface.html#acdd911501fd3ec10ad3c2970f78040b5", null ],
     [ "GetIndex", "classKernel_1_1ATADeviceInterface.html#a4be0c9e26a314fc23da3eb0e152113b3", null ],

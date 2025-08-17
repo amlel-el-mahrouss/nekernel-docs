@@ -1,17 +1,32 @@
 var namespaces_dup =
 [
+    [ "BenchKit", "namespaceBenchKit.html", null ],
     [ "Boot", "namespaceBoot.html", "namespaceBoot" ],
     [ "CF", "namespaceCF.html", "namespaceCF" ],
     [ "cxxabiv1", "namespacecxxabiv1.html", [
-      [ "__guard", "namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715", null ]
+      [ "__guard", "namespacecxxabiv1.html#adc8125a35cc41340ef2406f9f6565715", null ],
+      [ "__cxa_guard_abort", "namespacecxxabiv1.html#a8ae37ecf31aae68dcc40cb770cc943ae", null ],
+      [ "__cxa_guard_acquire", "namespacecxxabiv1.html#aefb7cd8950a22cb6854da07d36f37a03", null ],
+      [ "__cxa_guard_release", "namespacecxxabiv1.html#a81b1ba1685e62ebcd82f72a3a7120a2c", null ]
     ] ],
+    [ "Detail", "namespaceDetail.html", null ],
     [ "DI", "namespaceDI.html", "namespaceDI" ],
     [ "FB", "namespaceFB.html", "namespaceFB" ],
     [ "Firmware", "namespaceFirmware.html", "namespaceFirmware" ],
     [ "Kernel", "namespaceKernel.html", "namespaceKernel" ],
+    [ "mk_app", "namespacemk__app.html", [
+      [ "create_directory_structure", "namespacemk__app.html#a5f5eaf1ba993e25c887ef320ec48f7df", null ],
+      [ "base_path", "namespacemk__app.html#a8bade9aacca4fb3e1be3297625376013", null ]
+    ] ],
     [ "mk_fwrk", "namespacemk__fwrk.html", [
-      [ "create_directory_structure", "namespacemk__fwrk.html#a7c2d76b445e63f4eee366241723439c5", null ],
+      [ "create_directory_structure", "namespacemk__fwrk.html#a9a65ae270a5199e7493f8ea669524d9b", null ],
       [ "base_path", "namespacemk__fwrk.html#a426b03e3d46d056d27eaa4bde9eca48b", null ]
+    ] ],
+    [ "mk_htman", "namespacemk__htman.html", [
+      [ "content", "namespacemk__htman.html#a3483f1b5a3559ef51b2f466e3f699fba", null ],
+      [ "html_content", "namespacemk__htman.html#a09a70881b0dbe44373d5908b72d3d76d", null ],
+      [ "html_path", "namespacemk__htman.html#a91b99659b83ae6d633e00a94c01db408", null ],
+      [ "manual_path", "namespacemk__htman.html#af02819ee168999b039967b414a1603c0", null ]
     ] ],
     [ "mk_img", "namespacemk__img.html", [
       [ "copy_to_fat", "namespacemk__img.html#a9c2d5f770ba16a06ac49ef5c6b1db74d", null ],

@@ -1,22 +1,8 @@
 var searchData=
 [
-  ['c128bpage_0',['c128BPage',['../ARM64_2Paging_8h.html#a55be89edb8104111b4a110df41665739',1,'Paging.h']]],
-  ['c16kbpage_1',['c16KBPage',['../ARM64_2Paging_8h.html#a3f09244236afbbbb05cbb7b85162521c',1,'Paging.h']]],
-  ['c1kbpage_2',['c1KBPage',['../ARM64_2Paging_8h.html#adc0e27705a0319ec169bcb3597f3b20a',1,'Paging.h']]],
-  ['c256bpage_3',['c256BPage',['../ARM64_2Paging_8h.html#a99e49ffa72720b8d819832c5b52ead88',1,'Paging.h']]],
-  ['c2kbpage_4',['c2KBPage',['../ARM64_2Paging_8h.html#aa200d37aee984703cbdfa9d8c3f3ac2b',1,'Paging.h']]],
-  ['c4kbpage_5',['c4KBPage',['../ARM64_2Paging_8h.html#a6b71755ca610ad28107016e808d15535',1,'Paging.h']]],
-  ['c512bpage_6',['c512BPage',['../ARM64_2Paging_8h.html#a735833a5cd3c7ab8a66cdb655bad056f',1,'Paging.h']]],
-  ['c8kbpage_7',['c8KBPage',['../ARM64_2Paging_8h.html#a9fe0bf777364b26923da4cd85b02d94e',1,'Paging.h']]],
-  ['cant_5freach_8',['CANT_REACH',['../kernel_2NewKit_2Macros_8h.html#a1e5a0d5e8d82cf431d053de327336909',1,'Macros.h']]],
-  ['cf_5fobject_9',['CF_OBJECT',['../Object_8h.html#aaaa3f6329bcb486279ed2497eeaaedc2',1,'Object.h']]],
-  ['char8_5ft_10',['char8_t',['../kernel_2NewKit_2Defines_8h.html#a054e39e306fb3948d07aadf394da2fbf',1,'Defines.h']]],
-  ['cioapicregreg_11',['cIOAPICRegReg',['../HalAPICController_8cc.html#aef92b8fd30c7cdf190120c9306def907',1,'HalAPICController.cc']]],
-  ['cioapicregval_12',['cIOAPICRegVal',['../HalAPICController_8cc.html#a637f4a6d5946424eb7eb709fe187a373',1,'HalAPICController.cc']]],
-  ['const_13',['CONST',['../kernel_2NewKit_2Macros_8h.html#a0c33b494a68ce28497e7ce8e5e95feff',1,'Macros.h']]],
-  ['copymem_14',['CopyMem',['../Support_8h.html#a013574543d2f27a210fdfd5fa284ebe3',1,'Support.h']]],
-  ['cpagemall_15',['cPageMAll',['../ARM64_2Paging_8h.html#a2d5f88c3e988cb0570227f3d7e4a91b6',1,'Paging.h']]],
-  ['cpagemaxtom_16',['cPageMaxToM',['../ARM64_2Paging_8h.html#acbe1efc45071eec6bfa51d4f7feeba7b',1,'Paging.h']]],
-  ['cpagemtomax_17',['cPageMToMax',['../ARM64_2Paging_8h.html#acc519f7dffa031c1fe911b28dffc7788',1,'Paging.h']]],
-  ['cpagemton_18',['cPageMToN',['../ARM64_2Paging_8h.html#aeb9ef37cf5ba60dbf70bbe7c7a99f8a7',1,'Paging.h']]]
+  ['cant_5freach_0',['CANT_REACH',['../kernel_2NeKit_2Macros_8h.html#a1e5a0d5e8d82cf431d053de327336909',1,'Macros.h']]],
+  ['cf_5fobject_1',['CF_OBJECT',['../Object_8h.html#aaaa3f6329bcb486279ed2497eeaaedc2',1,'Object.h']]],
+  ['char8_5ft_2',['char8_t',['../kernel_2NeKit_2Defines_8h.html#a054e39e306fb3948d07aadf394da2fbf',1,'Defines.h']]],
+  ['const_3',['CONST',['../kernel_2NeKit_2Macros_8h.html#a0c33b494a68ce28497e7ce8e5e95feff',1,'Macros.h']]],
+  ['copymem_4',['CopyMem',['../Support_8h.html#a013574543d2f27a210fdfd5fa284ebe3',1,'Support.h']]]
 ];

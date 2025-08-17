@@ -1,7 +1,7 @@
 var searchData=
 [
   ['_5f_5fmust_5fpass_0',['__MUST_PASS',['../KernelPanic_8h.html#a90761906556ea7e47b7f55ca64423905',1,'KernelPanic.h']]],
-  ['_5f_5fne_5fver_5f_5f_1',['__NE_VER__',['../kernel_2NewKit_2Macros_8h.html#aeb2f846630e74da7c3ef2c61e72304d6',1,'Macros.h']]],
+  ['_5f_5fne_5fver_5f_5f_1',['__NE_VER__',['../kernel_2NeKit_2Macros_8h.html#aeb2f846630e74da7c3ef2c61e72304d6',1,'Macros.h']]],
   ['_5finout_2',['_InOut',['../CompilerHint_8h.html#ad7a3a963bda607b63a69add825e55973',1,'CompilerHint.h']]],
   ['_5finput_3',['_Input',['../CompilerHint_8h.html#a9e1208aa9152d0712c61a4e34561abd1',1,'CompilerHint.h']]],
   ['_5foptional_4',['_Optional',['../CompilerHint_8h.html#ae67cfc2338e59f550636eb166115fba2',1,'CompilerHint.h']]],
